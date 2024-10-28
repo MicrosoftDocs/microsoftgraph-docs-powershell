@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaEntitlementManagementConnectedOrganization
@@ -61,6 +63,12 @@ Get-MgBetaEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a connectedOrganization object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-connectedorganizations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-get-permissions.md)]

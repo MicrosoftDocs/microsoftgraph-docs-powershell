@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagementdirectoryrole
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaScheduleRoleManagementDirectoryRole
@@ -23,6 +24,9 @@ Invoke-MgBetaScheduleRoleManagementDirectoryRole [-AppScopeId <String>] [-Count]
 
 ## DESCRIPTION
 Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-roleschedules-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-roleschedules-permissions.md)]

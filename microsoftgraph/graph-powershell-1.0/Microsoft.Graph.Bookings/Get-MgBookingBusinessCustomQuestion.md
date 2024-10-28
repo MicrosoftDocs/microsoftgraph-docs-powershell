@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bo
 schema: 2.0.0
 ms.subservice: microsoft-bookings
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Get-MgBookingBusinessCustomQuestion
@@ -41,6 +43,12 @@ Get-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Read the properties and relationships of a bookingCustomQuestion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomquestion-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-customquestions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomquestion-get-permissions.md)]

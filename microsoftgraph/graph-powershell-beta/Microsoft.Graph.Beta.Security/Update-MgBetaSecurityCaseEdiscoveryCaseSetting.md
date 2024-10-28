@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesetting
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Update-MgBetaSecurityCaseEdiscoveryCaseSetting
@@ -51,6 +52,9 @@ Update-MgBetaSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the properties of an ediscoveryCaseSettings object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycasesettings-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycasesettings-update-permissions.md)]

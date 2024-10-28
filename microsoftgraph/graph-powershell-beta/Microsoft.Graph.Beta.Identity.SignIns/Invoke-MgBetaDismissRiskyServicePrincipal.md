@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaDismissRiskyServicePrincipal
@@ -37,6 +38,9 @@ Invoke-MgBetaDismissRiskyServicePrincipal
 Dismiss the risk of one or more riskyServicePrincipal objects.
 This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyserviceprincipal-dismiss-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyserviceprincipal-dismiss-permissions.md)]

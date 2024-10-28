@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgTeamScheduleOpenShift
@@ -50,6 +51,9 @@ Update-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the properties of an openShift object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-update-permissions.md)]

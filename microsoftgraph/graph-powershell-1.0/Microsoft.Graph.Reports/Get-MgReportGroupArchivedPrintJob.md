@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportgrouparchivedprintjob
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgReportGroupArchivedPrintJob
@@ -32,6 +33,9 @@ Get-MgReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Fil
 
 ## DESCRIPTION
 Get a list of archived print jobs for a particular group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reports-getgrouparchivedprintjobs-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reports-getgrouparchivedprintjobs-permissions.md)]

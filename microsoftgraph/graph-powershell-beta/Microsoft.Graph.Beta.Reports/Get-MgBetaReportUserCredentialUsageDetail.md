@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportusercredentialusagedetail
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportUserCredentialUsageDetail
@@ -37,6 +38,9 @@ Get-MgBetaReportUserCredentialUsageDetail -InputObject <IReportsIdentity> [-Expa
 
 ## DESCRIPTION
 Represents the self-service password reset (SSPR) usage for a given tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-usercredentialusagedetails-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-usercredentialusagedetails-permissions.md)]

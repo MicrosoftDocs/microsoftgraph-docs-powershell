@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflow
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaIdentityB2XUserFlow
@@ -32,6 +33,9 @@ Remove-MgBetaIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete a b2xIdentityUserFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-delete-permissions.md)]

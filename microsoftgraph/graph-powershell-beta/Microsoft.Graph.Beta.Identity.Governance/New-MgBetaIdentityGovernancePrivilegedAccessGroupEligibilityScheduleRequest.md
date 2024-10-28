@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
@@ -39,6 +40,9 @@ New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 
 ## DESCRIPTION
 Create a new privilegedAccessGroupEligibilityScheduleRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroup-post-eligibilityschedulerequests-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroup-post-eligibilityschedulerequests-permissions.md)]

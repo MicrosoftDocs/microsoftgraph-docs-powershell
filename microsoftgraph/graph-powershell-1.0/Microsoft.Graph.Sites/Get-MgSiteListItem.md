@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.si
 schema: 2.0.0
 ms.subservice: sharepoint
 ms.subservice: sharepoint
+ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgSiteListItem
@@ -41,6 +43,12 @@ Get-MgSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 
 ## DESCRIPTION
 Returns the metadata for an item in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-get-permissions.md)]

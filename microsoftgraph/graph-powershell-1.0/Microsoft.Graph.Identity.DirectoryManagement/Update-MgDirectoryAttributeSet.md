@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryattributeset
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Update-MgDirectoryAttributeSet
@@ -47,6 +48,9 @@ Update-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentit
 
 ## DESCRIPTION
 Update the properties of an attributeSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attributeset-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attributeset-update-permissions.md)]

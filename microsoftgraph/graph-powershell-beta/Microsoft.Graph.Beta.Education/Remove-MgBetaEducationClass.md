@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclass
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgBetaEducationClass
@@ -34,6 +35,9 @@ Remove-MgBetaEducationClass -InputObject <IEducationIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-permissions.md)]

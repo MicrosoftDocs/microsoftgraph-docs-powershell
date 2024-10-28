@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasubsite
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaSubSite
@@ -40,6 +41,9 @@ Get-MgBetaSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-P
 
 ## DESCRIPTION
 The collection of the sub-sites under this site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-subsites-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-subsites-permissions.md)]

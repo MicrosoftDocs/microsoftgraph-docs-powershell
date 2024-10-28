@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: partner-customer-administration
 ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # Get-MgTenantRelationshipDelegatedAdminCustomer
@@ -41,6 +43,12 @@ Get-MgTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPartnerIde
 
 ## DESCRIPTION
 Read the properties of a delegatedAdminCustomer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadmincustomer-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantrelationship-list-delegatedadmincustomers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadmincustomer-get-permissions.md)]

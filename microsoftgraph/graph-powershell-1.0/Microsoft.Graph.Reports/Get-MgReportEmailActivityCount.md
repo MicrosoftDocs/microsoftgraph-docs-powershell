@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivitycount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportEmailActivityCount
@@ -31,6 +32,9 @@ Get-MgReportEmailActivityCount -InputObject <IReportsIdentity> -OutFile <String>
 
 ## DESCRIPTION
 Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailactivitycounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailactivitycounts-permissions.md)]

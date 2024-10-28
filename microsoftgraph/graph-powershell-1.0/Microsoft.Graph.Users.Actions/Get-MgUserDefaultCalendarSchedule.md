@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguserdefaultcalendarschedule
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Get-MgUserDefaultCalendarSchedule
@@ -50,6 +51,9 @@ Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-getschedule-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-getschedule-permissions.md)]

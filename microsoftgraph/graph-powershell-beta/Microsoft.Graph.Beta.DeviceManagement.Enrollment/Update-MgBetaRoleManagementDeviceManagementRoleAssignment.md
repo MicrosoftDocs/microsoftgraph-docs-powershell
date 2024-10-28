@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroleassignment
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Update-MgBetaRoleManagementDeviceManagementRoleAssignment
@@ -53,6 +54,9 @@ Update-MgBetaRoleManagementDeviceManagementRoleAssignment -InputObject <IDeviceM
 ## DESCRIPTION
 Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune) In contrast, unifiedRoleAssignment does not support update.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-update-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimeoffrequest
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamScheduleTimeOffRequest
@@ -32,6 +33,9 @@ Remove-MgBetaTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete a timeOffRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffrequest-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffrequest-delete-permissions.md)]

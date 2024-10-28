@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupdriverootcheckout
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Remove-MgBetaGroupDriveRootCheckout
@@ -37,6 +38,9 @@ This action releases a driveItem resource that was previously checked out.
 Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-discardcheckout-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-discardcheckout-permissions.md)]

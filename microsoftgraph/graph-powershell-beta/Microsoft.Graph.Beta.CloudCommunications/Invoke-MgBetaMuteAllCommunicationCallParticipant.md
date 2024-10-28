@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Invoke-MgBetaMuteAllCommunicationCallParticipant
@@ -46,6 +47,9 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicati
 
 ## DESCRIPTION
 Mute all participants in the call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-muteall-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-muteall-permissions.md)]

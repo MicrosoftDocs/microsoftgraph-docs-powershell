@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassmoduleupresourcefolder
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Set-MgEducationClassModuleUpResourceFolder
@@ -36,6 +37,9 @@ Set-MgEducationClassModuleUpResourceFolder -InputObject <IEducationIdentity>
 Create a SharePoint folder to upload files for a given educationModule.
 Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-setupresourcesfolder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-setupresourcesfolder-permissions.md)]

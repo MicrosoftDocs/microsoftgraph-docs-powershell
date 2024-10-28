@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: cloud-pc
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementMonitoringAlertRule
@@ -38,6 +40,12 @@ Get-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIde
 
 ## DESCRIPTION
 Read the properties and relationships of an alertRule object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-get-permissions.md)]

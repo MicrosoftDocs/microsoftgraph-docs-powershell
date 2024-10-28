@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityCollaborationAnalyzedEmail
@@ -37,6 +38,9 @@ Get-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity> [-
 
 ## DESCRIPTION
 Read the properties and relationships of an analyzedEmail object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-analyzedemail-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-analyzedemail-get-permissions.md)]

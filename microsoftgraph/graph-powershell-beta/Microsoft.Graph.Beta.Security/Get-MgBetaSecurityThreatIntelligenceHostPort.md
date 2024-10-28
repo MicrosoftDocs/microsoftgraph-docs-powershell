@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostport
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceHostPort
@@ -62,6 +63,9 @@ Get-MgBetaSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity> [-
 
 ## DESCRIPTION
 Read the properties and relationships of a hostPort object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostport-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostport-get-permissions.md)]

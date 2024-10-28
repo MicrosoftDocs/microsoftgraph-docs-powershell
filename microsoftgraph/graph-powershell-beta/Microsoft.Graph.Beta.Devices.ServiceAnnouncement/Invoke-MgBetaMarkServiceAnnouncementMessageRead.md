@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread
 schema: 2.0.0
 ms.subservice: service-communications
+ms.subservice: service-communications
 ---
 
 # Invoke-MgBetaMarkServiceAnnouncementMessageRead
@@ -33,6 +34,9 @@ Invoke-MgBetaMarkServiceAnnouncementMessageRead
 
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as read for the signed in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-markread-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-markread-permissions.md)]

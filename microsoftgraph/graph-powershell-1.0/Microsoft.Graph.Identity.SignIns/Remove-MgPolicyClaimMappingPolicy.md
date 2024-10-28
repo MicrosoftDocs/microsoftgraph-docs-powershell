@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyclaimmappingpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgPolicyClaimMappingPolicy
@@ -32,6 +33,9 @@ Remove-MgPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete a claimsMappingPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/claimsmappingpolicy-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/claimsmappingpolicy-delete-permissions.md)]

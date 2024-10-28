@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgPolicyAuthenticationStrengthPolicy
@@ -56,6 +57,9 @@ Update-MgPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdenti
 Update the properties of an authenticationStrengthPolicy object.
 You cannot update the allowed auth method combinations using this request.
 To do so, use the Update allowed combinations action.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-update-permissions.md)]

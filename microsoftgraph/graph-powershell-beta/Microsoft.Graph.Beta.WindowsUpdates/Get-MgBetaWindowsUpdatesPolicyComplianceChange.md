@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: autopatch
 ms.subservice: autopatch
+ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # Get-MgBetaWindowsUpdatesPolicyComplianceChange
@@ -38,6 +40,12 @@ Get-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIden
 
 ## DESCRIPTION
 Read the properties and relationships of a contentApproval object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-compliancechange-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-list-compliancechanges-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-compliancechange-get-permissions.md)]

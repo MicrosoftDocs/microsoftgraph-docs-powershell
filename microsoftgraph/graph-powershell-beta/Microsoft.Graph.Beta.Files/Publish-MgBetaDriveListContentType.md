@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Publish-MgBetaDriveListContentType
@@ -32,6 +33,9 @@ Publish-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-ResponseHeade
 
 ## DESCRIPTION
 Invoke action publish
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatpinnedmessage
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgChatPinnedMessage
@@ -32,6 +33,9 @@ Remove-MgChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Unpin a message from a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-pinnedmessages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-pinnedmessages-permissions.md)]

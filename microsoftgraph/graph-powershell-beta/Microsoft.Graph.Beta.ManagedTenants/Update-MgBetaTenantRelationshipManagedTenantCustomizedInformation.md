@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation
 schema: 2.0.0
 ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation
@@ -51,6 +52,9 @@ Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <
 
 ## DESCRIPTION
 Update the properties of a tenantCustomizedInformation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenantcustomizedinformation-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenantcustomizedinformation-update-permissions.md)]

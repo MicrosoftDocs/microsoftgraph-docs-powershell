@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchadditionalsource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource
@@ -42,6 +43,9 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecuri
 
 ## DESCRIPTION
 Adds an additional source to the eDiscovery search.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-list-additionalsources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-list-additionalsources-permissions.md)]

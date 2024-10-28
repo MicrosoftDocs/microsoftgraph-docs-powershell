@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryoutboundshareduserprofiletenant
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaDirectoryOutboundSharedUserProfileTenant
@@ -40,6 +41,9 @@ Get-MgBetaDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirect
 ## DESCRIPTION
 The collection of external Microsoft Entra tenants that the user shared profile data with.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outboundshareduserprofile-list-tenants-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outboundshareduserprofile-list-tenants-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinition
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Update-MgBetaPrintTaskDefinition
@@ -50,6 +51,9 @@ Update-MgBetaPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-update-taskdefinition-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-update-taskdefinition-permissions.md)]

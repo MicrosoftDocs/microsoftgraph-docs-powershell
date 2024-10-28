@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasereviewset
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseReviewSet
@@ -51,6 +52,9 @@ New-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new ediscoveryReviewSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-post-reviewsets-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-post-reviewsets-permissions.md)]

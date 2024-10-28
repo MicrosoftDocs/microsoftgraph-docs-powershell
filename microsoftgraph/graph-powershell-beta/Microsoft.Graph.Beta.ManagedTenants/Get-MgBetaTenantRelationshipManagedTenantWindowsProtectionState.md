@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: m365-lighthouse
 ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState
@@ -38,6 +40,12 @@ Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IM
 
 ## DESCRIPTION
 Read the properties and relationships of a windowsProtectionState object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-windowsprotectionstate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-windowsprotectionstates-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-windowsprotectionstate-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgEducationClassAssignmentCategoryByRef
@@ -27,6 +28,9 @@ Get-MgEducationClassAssignmentCategoryByRef -EducationAssignmentId <String> -Edu
 ## DESCRIPTION
 List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-list-categories-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-list-categories-permissions.md)]

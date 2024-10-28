@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetatransactionnetworkaccessreportsummary
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Invoke-MgBetaTransactionNetworkAccessReportSummary
@@ -29,6 +30,9 @@ Invoke-MgBetaTransactionNetworkAccessReportSummary -InputObject <INetworkAccessI
 
 ## DESCRIPTION
 Get the total number of transactions and the number of blocked transactions, grouped by traffic type.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-reports-transactionsummaries-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-reports-transactionsummaries-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.de
 schema: 2.0.0
 ms.subservice: universal-print
 ms.subservice: universal-print
+ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgPrintPrinterTaskTrigger
@@ -43,6 +45,12 @@ Get-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-Expand
 ## DESCRIPTION
 Get a task trigger from a printer.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printtasktrigger-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-list-tasktriggers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printtasktrigger-get-permissions.md)]

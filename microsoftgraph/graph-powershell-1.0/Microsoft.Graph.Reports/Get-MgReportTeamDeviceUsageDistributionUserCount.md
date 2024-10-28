@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusagedistributionusercount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportTeamDeviceUsageDistributionUserCount
@@ -32,6 +33,9 @@ Get-MgReportTeamDeviceUsageDistributionUserCount -InputObject <IReportsIdentity>
 
 ## DESCRIPTION
 Get the number of Microsoft Teams unique users by device type over the selected time period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsdeviceusagedistributionusercounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsdeviceusagedistributionusercounts-permissions.md)]

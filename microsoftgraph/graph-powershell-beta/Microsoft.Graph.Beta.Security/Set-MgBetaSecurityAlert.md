@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityalert
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Set-MgBetaSecurityAlert
@@ -32,6 +33,9 @@ Set-MgBetaSecurityAlert -InputObject <ISecurityIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Create a comment for an existing alert based on the specified alert id property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-post-comments-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-post-comments-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicyinclude
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgPolicyPermissionGrantPolicyInclude
@@ -54,6 +55,9 @@ New-MgPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Add conditions under which a permission grant event is *included* in a permission grant policy.
 You do this by adding a permissionGrantConditionSet to the includes collection of a  permissionGrantPolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-post-includes-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-post-includes-permissions.md)]

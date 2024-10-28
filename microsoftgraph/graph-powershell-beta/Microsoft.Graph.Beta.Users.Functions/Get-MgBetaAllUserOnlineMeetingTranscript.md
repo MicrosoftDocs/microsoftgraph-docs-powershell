@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingtranscript
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaAllUserOnlineMeetingTranscript
@@ -54,6 +55,9 @@ Typically, you do an initial full synchronization, and then get incremental chan
 For more information, see delta query.
 For more examples, see callTranscript: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-getalltranscripts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-getalltranscripts-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementvirtualendpointusersetting
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Set-MgDeviceManagementVirtualEndpointUserSetting
@@ -50,6 +51,9 @@ Set-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 
 ## DESCRIPTION
 Assign a cloudPcUserSetting to user groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-assign-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-assign-permissions.md)]

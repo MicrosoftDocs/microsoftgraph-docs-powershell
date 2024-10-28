@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaSolutionBackupRestoreSharePointRestoreSession
@@ -35,6 +36,9 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 
 ## DESCRIPTION
 Create a new sharePointRestoreSession object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-sharepointrestoresessions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-sharepointrestoresessions-permissions.md)]

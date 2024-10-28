@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplepronoun
 schema: 2.0.0
 ms.subservice: people
+ms.subservice: people
 ---
 
 # Update-MgBetaAdminPeoplePronoun
@@ -34,6 +35,9 @@ Update-MgBetaAdminPeoplePronoun -BodyParameter <IMicrosoftGraphPronounsSettings>
 ## DESCRIPTION
 Update the properties of a pronounsSettings object in an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pronounssettings-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pronounssettings-update-permissions.md)]

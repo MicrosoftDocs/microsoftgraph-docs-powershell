@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Invoke-MgBetaQuerySearch
@@ -35,6 +36,9 @@ Invoke-MgBetaQuerySearch
 ## DESCRIPTION
 Run a specified search query.
 Search results are provided in the response.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-query-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-query-permissions.md)]

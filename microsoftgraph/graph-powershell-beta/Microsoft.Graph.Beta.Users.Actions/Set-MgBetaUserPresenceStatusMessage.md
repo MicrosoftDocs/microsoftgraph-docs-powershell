@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresencestatusmessage
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Set-MgBetaUserPresenceStatusMessage
@@ -52,6 +53,9 @@ Set-MgBetaUserPresenceStatusMessage -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]

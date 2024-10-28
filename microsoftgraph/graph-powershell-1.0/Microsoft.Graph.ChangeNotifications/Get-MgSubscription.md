@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.ch
 schema: 2.0.0
 ms.subservice: change-notifications
 ms.subservice: change-notifications
+ms.subservice: change-notifications
+ms.subservice: change-notifications
 ---
 
 # Get-MgSubscription

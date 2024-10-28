@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriverootlistitempermission
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Grant-MgBetaDriveRootListItemPermission
@@ -46,6 +47,9 @@ Grant-MgBetaDriveRootListItemPermission -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]

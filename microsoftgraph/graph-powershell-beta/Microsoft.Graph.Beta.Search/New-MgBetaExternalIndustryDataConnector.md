@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector
 schema: 2.0.0
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # New-MgBetaExternalIndustryDataConnector
@@ -29,6 +30,9 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 
 ## DESCRIPTION
 Create a new oneRosterApiDataConnector object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-azuredatalakeconnector-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-azuredatalakeconnector-post-permissions.md)]

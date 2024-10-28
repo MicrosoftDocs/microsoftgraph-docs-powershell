@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflow
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgIdentityGovernanceLifecycleWorkflow
@@ -43,6 +44,9 @@ New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter <IMicrosoftGraphIdentit
 ## DESCRIPTION
 Create a new workflow object.
 You can create up to 100 workflows in a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-post-workflows-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-post-workflows-permissions.md)]

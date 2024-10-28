@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetagraphuserdrive
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaGraphUserDrive
@@ -36,6 +37,9 @@ Invoke-MgBetaGraphUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-Ex
 ## DESCRIPTION
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they're items from a different drive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-sharedwithme-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-sharedwithme-permissions.md)]

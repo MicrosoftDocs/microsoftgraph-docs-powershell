@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementconnectedorganization
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaEntitlementManagementConnectedOrganization
@@ -32,6 +33,9 @@ Remove-MgBetaEntitlementManagementConnectedOrganization -InputObject <IIdentityG
 
 ## DESCRIPTION
 Delete a connectedOrganization object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-delete-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionschema
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Get-MgBetaExternalConnectionSchema
@@ -32,6 +33,9 @@ Get-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Retrieve the properties of a schema for an externalConnection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-schema-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-schema-get-permissions.md)]

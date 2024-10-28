@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.se
 schema: 2.0.0
 ms.subservice: security
 ms.subservice: security
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityTriggerTypeRetentionEventType
@@ -41,6 +43,12 @@ Get-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> [-E
 
 ## DESCRIPTION
 Read the properties and relationships of a retentionEventType object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentioneventtype-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentioneventtype-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentioneventtype-get-permissions.md)]

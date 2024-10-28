@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaPolicyCrossTenantAccessPolicy
@@ -36,6 +37,9 @@ Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossT
 
 ## DESCRIPTION
 Update the properties of a cross-tenant access policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-update-permissions.md)]

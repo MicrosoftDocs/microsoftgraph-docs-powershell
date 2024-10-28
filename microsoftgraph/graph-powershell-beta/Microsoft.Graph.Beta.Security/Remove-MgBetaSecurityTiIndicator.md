@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicator
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Remove-MgBetaSecurityTiIndicator
@@ -29,6 +30,9 @@ Remove-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete a tiIndicator object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-delete-permissions.md)]

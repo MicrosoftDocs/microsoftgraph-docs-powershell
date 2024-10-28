@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaEntitlementManagementAccessPackage
@@ -43,6 +44,9 @@ New-MgBetaEntitlementManagementAccessPackage -BodyParameter <IMicrosoftGraphAcce
 Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 After the access package is created, you can then create accessPackageAssignmentPolicies which specify how users are assigned to the access package.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-accesspackages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-accesspackages-permissions.md)]

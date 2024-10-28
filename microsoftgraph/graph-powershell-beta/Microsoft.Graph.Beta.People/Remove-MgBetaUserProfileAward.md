@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaward
 schema: 2.0.0
 ms.subservice: people
+ms.subservice: people
 ---
 
 # Remove-MgBetaUserProfileAward
@@ -29,6 +30,9 @@ Remove-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Deletes a personAward object from a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personaward-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personaward-delete-permissions.md)]

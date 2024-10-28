@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelemail
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamworkDeletedTeamChannelEmail
@@ -37,6 +38,9 @@ Provision an email address for a channel.
 Microsoft Teams doesn't automatically provision an email address for a channel by default.
 To have Teams provision an email address, you can call provisionEmail, or through the Teams user interface, select Get email address, which triggers Teams to generate an email address if it didn't provisioned one.
 To remove the email address of a channel, use the removeEmail method.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-provisionemail-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-provisionemail-permissions.md)]

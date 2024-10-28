@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: outlook
 ms.subservice: outlook
+ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Get-MgBetaPlaceAsRoom
@@ -50,6 +52,12 @@ A place object can be one of the following types: The room, workspace and roomLi
 By default, this operation returns up to 100 places per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 For details about how they compare, see Using the places API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-list-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-list-permissions.md)]

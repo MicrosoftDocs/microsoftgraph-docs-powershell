@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptmetadatacontent
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaUserOnlineMeetingTranscriptMetadataContent

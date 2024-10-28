@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarbyuseridandrole
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinarByUserIdAndRole
@@ -34,6 +35,9 @@ Get-MgVirtualEventWebinarByUserIdAndRole -InputObject <IBookingsIdentity> [-Coun
 
 ## DESCRIPTION
 Get a virtualEventWebinar collection where the specified user is either the organizer or a coorganizer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventwebinar-getbyuseridandrole-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventwebinar-getbyuseridandrole-permissions.md)]

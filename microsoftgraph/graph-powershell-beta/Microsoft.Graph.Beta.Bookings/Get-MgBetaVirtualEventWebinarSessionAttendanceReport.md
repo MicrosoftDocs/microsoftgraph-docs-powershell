@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: cloud-communications
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarSessionAttendanceReport
@@ -45,6 +47,12 @@ Get-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIden
 ## DESCRIPTION
 Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
 When an online meeting ends, an attendance report is generated for that session.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingattendancereport-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingattendancereport-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingattendancereport-get-permissions.md)]

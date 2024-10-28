@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # New-MgBetaExternalConnectionGroupMember
@@ -46,6 +47,9 @@ New-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create a new externalGroupMember object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalgroup-post-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalgroup-post-members-permissions.md)]

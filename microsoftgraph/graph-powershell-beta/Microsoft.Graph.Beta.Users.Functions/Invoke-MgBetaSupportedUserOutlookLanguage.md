@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetasupporteduseroutlooklanguage
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Invoke-MgBetaSupportedUserOutlookLanguage
@@ -36,6 +37,9 @@ Invoke-MgBetaSupportedUserOutlookLanguage -InputObject <IUsersFunctionsIdentity>
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
 You can subsequently get the preferred language bygetting the user's mailbox settings.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-supportedlanguages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-supportedlanguages-permissions.md)]

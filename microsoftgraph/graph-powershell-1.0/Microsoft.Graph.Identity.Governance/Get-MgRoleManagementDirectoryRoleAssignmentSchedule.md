@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgRoleManagementDirectoryRoleAssignmentSchedule
@@ -41,6 +43,12 @@ Get-MgRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IIdentityGover
 
 ## DESCRIPTION
 Retrieve the schedule for an active role assignment operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentschedule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleassignmentschedules-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentschedule-get-permissions.md)]

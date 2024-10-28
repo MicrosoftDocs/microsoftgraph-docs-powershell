@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalog
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgEntitlementManagementCatalog
@@ -29,6 +30,9 @@ Remove-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
 
 ## DESCRIPTION
 Delete an accessPackageCatalog.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-delete-permissions.md)]

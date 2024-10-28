@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/add-mgidentitygovernanceaccessreviewdefinitioninstancedecision
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
@@ -34,6 +35,9 @@ Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <IId
 ## DESCRIPTION
 Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is false in the review's accessReviewScheduleSettings.
 The status of the accessReviewInstance must be Completed to call this method.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-applydecisions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-applydecisions-permissions.md)]

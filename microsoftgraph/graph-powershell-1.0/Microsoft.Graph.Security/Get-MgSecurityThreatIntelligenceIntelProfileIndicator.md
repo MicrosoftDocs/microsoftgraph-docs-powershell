@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceintelprofileindicator
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceIntelProfileIndicator
@@ -41,6 +42,9 @@ Get-MgSecurityThreatIntelligenceIntelProfileIndicator -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Includes an assemblage of high-fidelity network indicators of compromise.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-intelligenceprofile-list-indicators-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-intelligenceprofile-list-indicators-permissions.md)]

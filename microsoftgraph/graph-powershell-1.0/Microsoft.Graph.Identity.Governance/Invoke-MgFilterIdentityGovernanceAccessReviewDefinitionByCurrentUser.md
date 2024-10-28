@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewdefinitionbycurrentuser
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser
@@ -34,6 +35,9 @@ Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser -InputObjec
 
 ## DESCRIPTION
 Returns accessReviewScheduleDefinition objects where the calling user is a reviewer on one or more accessReviewInstance objects.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-filterbycurrentuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-filterbycurrentuser-permissions.md)]

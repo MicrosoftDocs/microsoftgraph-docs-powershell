@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamappsetting
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamworkTeamAppSetting
@@ -24,6 +25,9 @@ Get-MgBetaTeamworkTeamAppSetting [-ExpandProperty <String[]>] [-Property <String
 
 ## DESCRIPTION
 Read the properties and relationships of a teamsAppSettings object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappsettings-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappsettings-get-permissions.md)]

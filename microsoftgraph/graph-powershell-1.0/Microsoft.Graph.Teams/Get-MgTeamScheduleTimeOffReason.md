@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.te
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamScheduleTimeOffReason
@@ -41,6 +43,12 @@ Get-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeOffReason object by ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffreason-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-list-timeoffreasons-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffreason-get-permissions.md)]

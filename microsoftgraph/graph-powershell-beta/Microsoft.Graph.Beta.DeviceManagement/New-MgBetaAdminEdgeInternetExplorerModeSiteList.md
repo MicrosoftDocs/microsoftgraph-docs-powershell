@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelist
 schema: 2.0.0
 ms.subservice: edge-browser-management
+ms.subservice: edge-browser-management
 ---
 
 # New-MgBetaAdminEdgeInternetExplorerModeSiteList
@@ -36,6 +37,9 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphB
 
 ## DESCRIPTION
 Create a new browserSiteList object to support Internet Explorer mode.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internetexplorermode-post-sitelists-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internetexplorermode-post-sitelists-permissions.md)]

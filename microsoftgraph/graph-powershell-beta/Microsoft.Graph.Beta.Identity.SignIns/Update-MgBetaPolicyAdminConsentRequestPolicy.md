@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgBetaPolicyAdminConsentRequestPolicy
@@ -33,6 +34,9 @@ Update-MgBetaPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdmi
 
 ## DESCRIPTION
 Update the properties of an adminConsentRequestPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminconsentrequestpolicy-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminconsentrequestpolicy-update-permissions.md)]

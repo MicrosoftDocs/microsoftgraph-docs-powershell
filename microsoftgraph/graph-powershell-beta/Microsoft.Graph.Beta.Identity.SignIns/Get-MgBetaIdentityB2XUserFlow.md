@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityB2XUserFlow
@@ -41,6 +43,12 @@ Get-MgBetaIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-list-b2xuserflows-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-get-permissions.md)]

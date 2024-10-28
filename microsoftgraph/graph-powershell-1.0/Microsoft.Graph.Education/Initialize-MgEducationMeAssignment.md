@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/initialize-mgeducationmeassignment
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Initialize-MgEducationMeAssignment
@@ -32,6 +33,9 @@ Initialize-MgEducationMeAssignment -InputObject <IEducationIdentity> [-ResponseH
 ## DESCRIPTION
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers or students.
 This action can only be performed by a teacher on currently inactive assignments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-activate-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-activate-permissions.md)]

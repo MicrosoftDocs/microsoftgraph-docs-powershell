@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetauserdrivelistitempermissiongrant
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Revoke-MgBetaUserDriveListItemPermissionGrant
@@ -48,6 +49,9 @@ Revoke-MgBetaUserDriveListItemPermissionGrant -InputObject <IUsersActionsIdentit
 
 ## DESCRIPTION
 Revoke access to a listItem or driveItem granted via a sharing link by removing the specified recipient from the link.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-revokegrants-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-revokegrants-permissions.md)]

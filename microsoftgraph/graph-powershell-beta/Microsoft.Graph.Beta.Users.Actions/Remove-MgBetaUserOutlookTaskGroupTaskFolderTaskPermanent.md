@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauseroutlooktaskgrouptaskfoldertaskpermanent
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Remove-MgBetaUserOutlookTaskGroupTaskFolderTaskPermanent
@@ -36,6 +37,9 @@ Permanently delete an Outlook task and place it in the Purges folder in the user
 Email clients such as Outlook or the Outlook on the web can't access permanently deleted items.
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-permanentdelete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-permanentdelete-permissions.md)]

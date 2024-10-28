@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaSitePage
@@ -55,6 +56,9 @@ New-MgBetaSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Create a new sitePage in the site pages list in a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sitepage-create-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sitepage-create-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcremoteactionresult
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaUserCloudPcRemoteActionResult
@@ -29,6 +30,9 @@ Get-MgBetaUserCloudPcRemoteActionResult -InputObject <IUsersFunctionsIdentity> [
 
 ## DESCRIPTION
 Retrieve remote action results and check the status of a specific remote action performed on the associated Cloud PC device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-retrievecloudpcremoteactionresults-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-retrievecloudpcremoteactionresults-permissions.md)]

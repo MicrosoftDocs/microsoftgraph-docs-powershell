@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyexclude
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyPermissionGrantPolicyExclude
@@ -43,6 +44,9 @@ Get-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-list-excludes-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-list-excludes-permissions.md)]

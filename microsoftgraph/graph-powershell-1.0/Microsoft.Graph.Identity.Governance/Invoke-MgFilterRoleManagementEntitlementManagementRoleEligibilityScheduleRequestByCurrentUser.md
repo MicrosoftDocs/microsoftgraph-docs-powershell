@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagemententitlementmanagementroleeligibilityschedulerequestbycurrentuser
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequestByCurrentUser
@@ -37,6 +38,9 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 ## DESCRIPTION
 In PIM, retrieve the requests for role eligibilities for a particular principal.
 The principal can be the creator or approver of the unifiedRoleEligibilityScheduleRequest object, or they can be the target of the role eligibility.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedulerequest-filterbycurrentuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedulerequest-filterbycurrentuser-permissions.md)]

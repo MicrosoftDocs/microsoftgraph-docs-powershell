@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationflowpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyAuthenticationFlowPolicy
@@ -24,6 +25,9 @@ Get-MgBetaPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property
 
 ## DESCRIPTION
 Read the properties and relationships of an authenticationFlowsPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationflowspolicy-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationflowspolicy-get-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgEntitlementManagementCatalog
@@ -56,6 +58,12 @@ Get-MgEntitlementManagementCatalog [-ExpandProperty <String[]>] [-Property <Stri
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackageCatalog object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-list-catalogs-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-get-permissions.md)]

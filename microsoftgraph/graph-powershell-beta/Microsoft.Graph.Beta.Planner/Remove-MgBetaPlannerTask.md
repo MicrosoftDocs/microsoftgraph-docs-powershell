@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertask
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Remove-MgBetaPlannerTask
@@ -32,6 +33,9 @@ Remove-MgBetaPlannerTask -InputObject <IPlannerIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a plannerTask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delete-permissions.md)]

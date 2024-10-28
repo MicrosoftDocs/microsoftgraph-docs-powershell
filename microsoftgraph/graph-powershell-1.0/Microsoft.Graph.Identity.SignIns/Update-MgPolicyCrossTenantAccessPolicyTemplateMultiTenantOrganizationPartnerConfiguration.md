@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration
@@ -39,6 +40,9 @@ Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConf
 
 ## DESCRIPTION
 Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationpartnerconfigurationtemplate-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationpartnerconfigurationtemplate-update-permissions.md)]

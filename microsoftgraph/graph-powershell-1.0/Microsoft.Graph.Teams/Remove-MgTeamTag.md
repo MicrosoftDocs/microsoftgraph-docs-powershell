@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamtag
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgTeamTag
@@ -32,6 +33,9 @@ Remove-MgTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHea
 
 ## DESCRIPTION
 Delete a tag object permanently.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-delete-permissions.md)]

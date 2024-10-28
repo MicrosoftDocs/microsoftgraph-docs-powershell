@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignment
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationMeAssignment
@@ -42,6 +43,9 @@ Get-MgBetaEducationMeAssignment -InputObject <IEducationIdentity> [-ExpandProper
 ## DESCRIPTION
 List of assignments for the user.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-list-assignments-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-list-assignments-permissions.md)]

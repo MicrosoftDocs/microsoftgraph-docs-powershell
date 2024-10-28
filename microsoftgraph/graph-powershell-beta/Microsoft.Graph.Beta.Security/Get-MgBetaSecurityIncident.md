@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: security
 ms.subservice: security
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityIncident
@@ -45,6 +47,12 @@ Get-MgBetaSecurityIncident -InputObject <ISecurityIdentity> [-ExpandProperty <St
 Retrieve the properties and relationships of an incident object.
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-incident-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-list-incidents-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-incident-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyhomerealmdiscoverypolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgPolicyHomeRealmDiscoveryPolicy
@@ -32,6 +33,9 @@ Remove-MgPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity> 
 
 ## DESCRIPTION
 Delete a homeRealmDiscoveryPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/homerealmdiscoverypolicy-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/homerealmdiscoverypolicy-delete-permissions.md)]

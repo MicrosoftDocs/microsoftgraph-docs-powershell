@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowrunuserprocessingresulttaskprocessingresult
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult
@@ -43,6 +44,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingRe
 
 ## DESCRIPTION
 The associated individual task execution.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-userprocessingresult-list-taskprocessingresults-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-userprocessingresult-list-taskprocessingresults-permissions.md)]

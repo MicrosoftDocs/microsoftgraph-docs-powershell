@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresource
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgEntitlementManagementCatalogResource
@@ -37,6 +38,9 @@ Get-MgEntitlementManagementCatalogResource -InputObject <IIdentityGovernanceIden
 
 ## DESCRIPTION
 Access package resources in this catalog.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-list-resources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-list-resources-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupsettingtemplatemembergroup
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Confirm-MgGroupSettingTemplateMemberGroup

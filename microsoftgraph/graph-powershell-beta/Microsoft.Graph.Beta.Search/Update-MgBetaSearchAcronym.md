@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchacronym
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Update-MgBetaSearchAcronym
@@ -50,6 +51,9 @@ Update-MgBetaSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Update the properties of an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-update-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDevice
@@ -43,6 +45,12 @@ Get-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPro
 ## DESCRIPTION
 Get the properties and relationships of a device object.
 Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-get-permissions.md)]

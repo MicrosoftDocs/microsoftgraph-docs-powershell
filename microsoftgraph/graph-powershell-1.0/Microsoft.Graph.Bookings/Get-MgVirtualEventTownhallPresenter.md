@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bo
 schema: 2.0.0
 ms.subservice: cloud-communications
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventTownhallPresenter
@@ -43,6 +45,12 @@ Get-MgVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-ExpandPro
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventPresenter object.
 Currently the supported virtual event types are: - virtualEventTownhall- virtualEventWebinar
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventpresenter-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualevent-list-presenters-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventpresenter-get-permissions.md)]

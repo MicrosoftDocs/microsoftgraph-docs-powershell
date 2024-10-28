@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgPolicyAuthenticationStrengthPolicy
@@ -35,6 +36,9 @@ New-MgPolicyAuthenticationStrengthPolicy -BodyParameter <IMicrosoftGraphAuthenti
 
 ## DESCRIPTION
 Create a new custom authenticationStrengthPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthroot-post-policies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthroot-post-policies-permissions.md)]

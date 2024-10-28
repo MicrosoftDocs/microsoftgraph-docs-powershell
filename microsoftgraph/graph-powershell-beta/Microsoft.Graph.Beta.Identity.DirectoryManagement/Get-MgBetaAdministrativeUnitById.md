@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitbyid
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaAdministrativeUnitById
@@ -32,6 +33,9 @@ Get-MgBetaAdministrativeUnitById
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-getbyids-permissions.md)]

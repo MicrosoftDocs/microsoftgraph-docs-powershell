@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaIdentityB2CUserFlow
@@ -55,6 +56,9 @@ Update-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update the properties of a b2cIdentityUserFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-update-permissions.md)]

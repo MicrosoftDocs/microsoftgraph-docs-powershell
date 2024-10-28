@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesupdatableasset
 schema: 2.0.0
 ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # New-MgBetaWindowsUpdatesUpdatableAsset
@@ -30,6 +31,9 @@ New-MgBetaWindowsUpdatesUpdatableAsset -BodyParameter <Hashtable> [-ResponseHead
 ## DESCRIPTION
 Create a new updatableAssetGroup object.
 The updatableAssetGroup resource inherits from updatableAsset.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-post-updatableassets-updatableassetgroup-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-post-updatableassets-updatableassetgroup-permissions.md)]

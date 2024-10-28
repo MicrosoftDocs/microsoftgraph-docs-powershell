@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouplifecyclepolicy
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # New-MgBetaGroupLifecyclePolicy
@@ -63,6 +64,9 @@ New-MgBetaGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePoli
 
 ## DESCRIPTION
 Creates a new groupLifecyclePolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-post-grouplifecyclepolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-post-grouplifecyclepolicies-permissions.md)]

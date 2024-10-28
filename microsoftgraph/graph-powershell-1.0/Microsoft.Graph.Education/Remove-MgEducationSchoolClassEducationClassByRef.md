@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolclasseducationclassbyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgEducationSchoolClassEducationClassByRef
@@ -32,6 +33,9 @@ Remove-MgEducationSchoolClassEducationClassByRef -InputObject <IEducationIdentit
 
 ## DESCRIPTION
 Delete a class from a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delete-classes-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delete-classes-permissions.md)]

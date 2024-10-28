@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/add-mgbetawindowsupdatespolicyaudienceexclusionmember
 schema: 2.0.0
 ms.subservice: windows-update-business
+ms.subservice: windows-update-business
 ---
 
 # Add-MgBetaWindowsUpdatesPolicyAudienceExclusionMember
@@ -53,6 +54,9 @@ Add members to an updatableAssetGroup.
 You can add azureADDevice resources as members, but may not add updatableAssetGroup resources as members.
 Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an azureADDevice object, if it does not already exist.
 You can also use the method addMembersById to add members.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-addmembers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-addmembers-permissions.md)]

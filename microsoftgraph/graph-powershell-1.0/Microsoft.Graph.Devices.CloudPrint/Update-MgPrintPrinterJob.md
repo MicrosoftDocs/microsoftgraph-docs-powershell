@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinterjob
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Update-MgPrintPrinterJob
@@ -58,6 +59,9 @@ Update a print job.
 Only the configuration property can be updated.
 Updating a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-update-permissions.md)]

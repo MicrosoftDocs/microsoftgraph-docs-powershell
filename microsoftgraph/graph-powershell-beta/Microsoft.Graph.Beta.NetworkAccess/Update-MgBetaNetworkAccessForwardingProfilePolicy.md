@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofilepolicy
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessForwardingProfilePolicy
@@ -47,6 +48,9 @@ Update-MgBetaNetworkAccessForwardingProfilePolicy -InputObject <INetworkAccessId
 ## DESCRIPTION
 Update an existing forwarding policy link to modify the association between a forwarding policy and a forwarding profile.
 This operation allows for linking or unlinking them as needed.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingpolicylink-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingpolicylink-update-permissions.md)]

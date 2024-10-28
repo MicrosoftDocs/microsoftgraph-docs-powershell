@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
@@ -34,6 +35,9 @@ Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 
 ## DESCRIPTION
 Delete the user synchronization policy for a partner-specific configuration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantidentitysyncpolicypartner-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantidentitysyncpolicypartner-delete-permissions.md)]

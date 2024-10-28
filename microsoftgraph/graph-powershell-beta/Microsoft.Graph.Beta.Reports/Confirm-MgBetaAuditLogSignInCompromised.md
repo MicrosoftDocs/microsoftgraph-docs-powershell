@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Confirm-MgBetaAuditLogSignInCompromised
@@ -36,6 +37,9 @@ Allow admins to mark an event in the Microsoft Entra sign-in logs as risky.
 Events marked as risky by an admin are immediately flagged as high risk in Microsoft Entra ID Protection, overriding previous risk states.
 Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/signin-confirmcompromised-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/signin-confirmcompromised-permissions.md)]

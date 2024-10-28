@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamChannelMessage
@@ -64,6 +65,9 @@ New-MgBetaTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Send a new chatMessage in the specified channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-post-permissions.md)]

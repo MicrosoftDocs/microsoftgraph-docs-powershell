@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontentmodeltodrive
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaSiteContentModelToDrive
@@ -47,6 +48,9 @@ Add-MgBetaSiteContentModelToDrive -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Apply a contentModel to SharePoint document libraries.
 For an existing model that's already trained, this action automatically processes new documents that are added to the SharePoint libraries.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-addtodrive-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-addtodrive-permissions.md)]

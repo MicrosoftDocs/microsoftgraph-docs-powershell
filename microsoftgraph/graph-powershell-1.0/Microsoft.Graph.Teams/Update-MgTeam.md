@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteam
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgTeam
@@ -67,6 +68,9 @@ Update-MgTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam>
 
 ## DESCRIPTION
 Update the properties of the specified team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-update-permissions.md)]

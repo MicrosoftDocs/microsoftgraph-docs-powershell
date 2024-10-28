@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
@@ -33,6 +34,9 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Delete an ediscoveryReviewSetQuery object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-delete-queries-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-delete-queries-permissions.md)]

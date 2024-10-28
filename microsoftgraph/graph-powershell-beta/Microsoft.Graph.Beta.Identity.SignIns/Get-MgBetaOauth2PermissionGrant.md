@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-applications
 ms.subservice: entra-applications
+ms.subservice: entra-applications
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaOauth2PermissionGrant
@@ -43,6 +45,12 @@ Get-MgBetaOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 Retrieve the properties of a single delegated permission grant represented by an oAuth2PermissionGrant object.
 An oAuth2PermissionGrant represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-get-permissions.md)]

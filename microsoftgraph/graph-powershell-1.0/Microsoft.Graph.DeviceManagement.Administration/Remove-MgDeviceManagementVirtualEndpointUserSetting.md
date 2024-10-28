@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointusersetting
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Remove-MgDeviceManagementVirtualEndpointUserSetting
@@ -32,6 +33,9 @@ Remove-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagem
 
 ## DESCRIPTION
 Delete a cloudPcUserSetting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-delete-permissions.md)]

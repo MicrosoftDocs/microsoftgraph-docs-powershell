@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent
 schema: 2.0.0
 ms.subservice: security 
+ms.subservice: security 
 ---
 
 # New-MgBetaSecurityTriggerRetentionEvent
@@ -37,6 +38,9 @@ New-MgBetaSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityR
 
 ## DESCRIPTION
 Create a new retentionEvent object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionevent-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionevent-post-permissions.md)]

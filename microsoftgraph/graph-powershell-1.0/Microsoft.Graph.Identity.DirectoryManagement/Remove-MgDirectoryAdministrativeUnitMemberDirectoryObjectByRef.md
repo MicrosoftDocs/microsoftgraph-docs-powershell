@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberdirectoryobjectbyref
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef
@@ -33,6 +34,9 @@ Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef
 
 ## DESCRIPTION
 Use this API to remove a member (user, group, or device) from an administrative unit.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-delete-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-delete-members-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignment
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # New-MgBetaEducationClassAssignment
@@ -68,6 +69,9 @@ New-MgBetaEducationClassAssignment -InputObject <IEducationIdentity>
 Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in draft status, which means that students can't see the assignment until it's published.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-assignments-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-assignments-permissions.md)]

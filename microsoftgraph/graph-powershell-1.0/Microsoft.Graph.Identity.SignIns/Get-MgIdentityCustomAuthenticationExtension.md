@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityCustomAuthenticationExtension
@@ -41,6 +43,12 @@ Get-MgIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsIdenti
 
 ## DESCRIPTION
 Read the properties and relationships of a customAuthenticationExtension object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customauthenticationextension-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-list-customauthenticationextensions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customauthenticationextension-get-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.de
 schema: 2.0.0
 ms.subservice: cloud-pc
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointUserSetting
@@ -41,6 +43,12 @@ Get-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcUserSetting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-list-usersettings-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-get-permissions.md)]

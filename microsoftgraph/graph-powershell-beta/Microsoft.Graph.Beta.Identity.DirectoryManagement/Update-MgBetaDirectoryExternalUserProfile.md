@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryexternaluserprofile
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Update-MgBetaDirectoryExternalUserProfile
@@ -50,6 +51,9 @@ Update-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManage
 
 ## DESCRIPTION
 Update the properties of a externalUserProfile object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externaluserprofile-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externaluserprofile-update-permissions.md)]

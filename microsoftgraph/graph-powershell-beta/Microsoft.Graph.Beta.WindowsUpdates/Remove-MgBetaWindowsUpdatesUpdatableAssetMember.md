@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesupdatableassetmember
 schema: 2.0.0
 ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # Remove-MgBetaWindowsUpdatesUpdatableAssetMember
@@ -49,6 +50,9 @@ Remove-MgBetaWindowsUpdatesUpdatableAssetMember -InputObject <IWindowsUpdatesIde
 ## DESCRIPTION
 Remove members from an updatableAssetGroup.
 You can also use the method removeMembersById to remove members.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-removemembers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-removemembers-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaRoleManagementExchangeCustomAppScope
@@ -40,6 +42,12 @@ Get-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagementEn
 ## DESCRIPTION
 Get the properties of a customAppScope object for an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customappscope-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacapplication-list-customappscopes-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customappscope-get-permissions.md)]

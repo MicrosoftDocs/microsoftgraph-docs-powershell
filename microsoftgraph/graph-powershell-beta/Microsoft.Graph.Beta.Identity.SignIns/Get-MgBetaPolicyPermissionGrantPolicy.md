@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyPermissionGrantPolicy
@@ -41,6 +43,12 @@ Get-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-
 
 ## DESCRIPTION
 Retrieve a single permissionGrantPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-get-permissions.md)]

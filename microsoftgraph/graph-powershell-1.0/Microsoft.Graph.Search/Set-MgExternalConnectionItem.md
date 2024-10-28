@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Set-MgExternalConnectionItem
@@ -50,6 +51,9 @@ Set-MgExternalConnectionItem -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of an externalItem object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-put-items-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-put-items-permissions.md)]

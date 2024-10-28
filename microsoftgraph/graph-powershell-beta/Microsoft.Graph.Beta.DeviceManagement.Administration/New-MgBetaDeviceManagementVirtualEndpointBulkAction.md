@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # New-MgBetaDeviceManagementVirtualEndpointBulkAction
@@ -31,6 +32,9 @@ New-MgBetaDeviceManagementVirtualEndpointBulkAction -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Create a new cloudPcBulkAction object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-bulkactions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-bulkactions-permissions.md)]

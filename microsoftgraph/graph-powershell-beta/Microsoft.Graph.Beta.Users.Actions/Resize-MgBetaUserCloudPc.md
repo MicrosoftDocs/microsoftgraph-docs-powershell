@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausercloudpc
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Resize-MgBetaUserCloudPc
@@ -45,6 +46,9 @@ Resize-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-resize-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-resize-permissions.md)]

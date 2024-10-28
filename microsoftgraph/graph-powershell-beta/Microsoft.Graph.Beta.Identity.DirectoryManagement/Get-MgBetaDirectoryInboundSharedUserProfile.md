@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaDirectoryInboundSharedUserProfile
@@ -38,6 +40,12 @@ Get-MgBetaDirectoryInboundSharedUserProfile -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Read the properties of an inboundSharedUserProfile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-inboundshareduserprofiles-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-get-permissions.md)]

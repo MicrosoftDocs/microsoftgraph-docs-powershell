@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceappconsentrequestuserconsentrequestbycurrentuser
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser
@@ -35,6 +36,9 @@ Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUse
 
 ## DESCRIPTION
 Retrieve a collection of userConsentRequest objects for accessing a specified app, for which the current user is the reviewer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userconsentrequest-filterbycurrentuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userconsentrequest-filterbycurrentuser-permissions.md)]

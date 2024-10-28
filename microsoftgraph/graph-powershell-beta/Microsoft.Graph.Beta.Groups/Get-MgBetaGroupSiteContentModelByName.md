@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitecontentmodelbyname
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaGroupSiteContentModelByName
@@ -30,6 +31,9 @@ Get-MgBetaGroupSiteContentModelByName -InputObject <IGroupsIdentity> [-ResponseH
 ## DESCRIPTION
 Read the properties and relationships of a contentModel object by its model name.
 The name should be the full model filename, including the file extension; for example, exampleModel.classifier.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getbyname-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getbyname-permissions.md)]

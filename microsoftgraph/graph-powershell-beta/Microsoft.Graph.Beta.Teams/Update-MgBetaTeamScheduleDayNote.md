@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduledaynote
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamScheduleDayNote
@@ -47,6 +48,9 @@ Update-MgBetaTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update the properties of a day note.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/daynote-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/daynote-update-permissions.md)]

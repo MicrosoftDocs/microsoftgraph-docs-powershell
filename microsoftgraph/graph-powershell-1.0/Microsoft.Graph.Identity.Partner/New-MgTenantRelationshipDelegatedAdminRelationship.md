@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
 ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # New-MgTenantRelationshipDelegatedAdminRelationship
@@ -38,6 +39,9 @@ New-MgTenantRelationshipDelegatedAdminRelationship -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create a new delegatedAdminRelationship object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]

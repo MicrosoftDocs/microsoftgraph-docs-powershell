@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Convert-MgBetaUserExternalToInternalMemberUser
@@ -51,6 +52,9 @@ Convert-MgBetaUserExternalToInternalMemberUser -InputObject <IUsersActionsIdenti
 Convert an externally authenticated user into an internal user.
 The user is able to sign into the host tenant as an internal user and access resources as a member.
 For more information about this conversion, see Convert external users to internal users.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-convertexternaltointernalmemberuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-convertexternaltointernalmemberuser-permissions.md)]

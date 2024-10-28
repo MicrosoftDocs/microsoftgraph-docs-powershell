@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttypecolumn
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaSiteContentTypeColumn
@@ -68,6 +69,9 @@ New-MgBetaSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create columnDefinition for a content type
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-post-columns-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-post-columns-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessagereply
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgTeamChannelMessageReply
@@ -63,6 +64,9 @@ New-MgTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Send a new reply to a chatMessage in a specified channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-replies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-replies-permissions.md)]

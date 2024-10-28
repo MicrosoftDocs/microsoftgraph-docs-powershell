@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaTrustFrameworkPolicy
@@ -37,6 +38,9 @@ Get-MgBetaTrustFrameworkPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Get policies from trustFramework
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-list-trustframeworkpolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-list-trustframeworkpolicies-permissions.md)]

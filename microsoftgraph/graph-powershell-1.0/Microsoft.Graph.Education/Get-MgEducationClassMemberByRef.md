@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgEducationClassMemberByRef
@@ -24,6 +25,9 @@ Get-MgEducationClassMemberByRef -EducationClassId <String> [-Filter <String>] [-
 
 ## DESCRIPTION
 Retrieves the educationUser members of an educationClass.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-members-permissions.md)]

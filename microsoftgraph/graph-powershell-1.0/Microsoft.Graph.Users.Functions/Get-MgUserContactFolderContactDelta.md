@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactfoldercontactdelta
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Get-MgUserContactFolderContactDelta
@@ -38,6 +39,9 @@ Get-MgUserContactFolderContactDelta -InputObject <IUsersFunctionsIdentity> [-Exp
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
 A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
 This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-delta-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-delta-permissions.md)]

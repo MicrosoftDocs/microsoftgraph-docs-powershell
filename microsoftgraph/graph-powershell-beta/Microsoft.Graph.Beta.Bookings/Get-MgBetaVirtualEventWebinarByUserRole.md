@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuserrole
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarByUserRole
@@ -34,6 +35,9 @@ Get-MgBetaVirtualEventWebinarByUserRole -InputObject <IBookingsIdentity> [-Count
 
 ## DESCRIPTION
 Get a list of virtualEventWebinar objects where the signed-in user is either the organizer or a coorganizer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-getbyuserrole-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-getbyuserrole-permissions.md)]

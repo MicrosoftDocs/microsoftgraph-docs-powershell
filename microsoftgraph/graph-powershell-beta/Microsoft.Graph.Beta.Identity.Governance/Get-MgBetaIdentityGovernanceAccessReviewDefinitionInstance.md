@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
@@ -46,6 +48,12 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdenti
 Retrieve an accessReviewInstance object using the identifier of an accessReviewInstance and its parent accessReviewScheduleDefinition.
 This returns all properties of the instance except for the associated accessReviewInstanceDecisionItems.
 To retrieve the decisions on the instance, use List accessReviewInstanceDecisionItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewscheduledefinition-list-instances-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausercalendarpermanent
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Remove-MgBetaUserCalendarPermanent
@@ -45,6 +46,9 @@ Remove-MgBetaUserCalendarPermanent -InputObject <IUsersActionsIdentity> [-Respon
 ## DESCRIPTION
 Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-permanentdelete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-permanentdelete-permissions.md)]

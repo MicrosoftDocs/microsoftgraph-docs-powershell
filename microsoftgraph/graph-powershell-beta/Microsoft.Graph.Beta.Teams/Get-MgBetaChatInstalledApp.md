@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaChatInstalledApp
@@ -41,6 +43,12 @@ Get-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Get an app installed in a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-installedapps-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-installedapps-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-installedapps-permissions.md)]

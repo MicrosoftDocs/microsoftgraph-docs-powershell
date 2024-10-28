@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffavailability
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Get-MgBetaBookingBusinessStaffAvailability
@@ -50,6 +51,9 @@ Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Get the availability information of staff members of a Microsoft Bookings calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-getstaffavailability-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-getstaffavailability-permissions.md)]

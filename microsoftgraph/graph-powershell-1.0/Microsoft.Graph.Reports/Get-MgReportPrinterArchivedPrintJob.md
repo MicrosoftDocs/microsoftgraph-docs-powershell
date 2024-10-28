@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportprinterarchivedprintjob
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgReportPrinterArchivedPrintJob
@@ -33,6 +34,9 @@ Get-MgReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-F
 
 ## DESCRIPTION
 Get a list of archived print jobs that were queued for particular printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reports-getprinterarchivedprintjobs-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reports-getprinterarchivedprintjobs-permissions.md)]

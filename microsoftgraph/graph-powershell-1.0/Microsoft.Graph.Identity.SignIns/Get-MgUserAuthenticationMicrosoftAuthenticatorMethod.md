@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgUserAuthenticationMicrosoftAuthenticatorMethod
@@ -41,6 +43,12 @@ Get-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentitySign
 
 ## DESCRIPTION
 Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethod object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/microsoftauthenticatorauthenticationmethod-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/microsoftauthenticatorauthenticationmethod-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/microsoftauthenticatorauthenticationmethod-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Restore-MgBetaDeviceManagementVirtualEndpointCloudPc
@@ -51,6 +52,9 @@ Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManage
 ## DESCRIPTION
 Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-restore-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-restore-permissions.md)]

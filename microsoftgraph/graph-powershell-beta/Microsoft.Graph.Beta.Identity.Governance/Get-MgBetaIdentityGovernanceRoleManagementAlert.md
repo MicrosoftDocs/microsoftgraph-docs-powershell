@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalert
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceRoleManagementAlert
@@ -37,6 +38,9 @@ Get-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanc
 
 ## DESCRIPTION
 Represents the alert entity.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rolemanagementalert-list-alerts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rolemanagementalert-list-alerts-permissions.md)]

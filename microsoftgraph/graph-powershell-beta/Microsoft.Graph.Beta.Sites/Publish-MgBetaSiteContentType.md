@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetasitecontenttype
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Publish-MgBetaSiteContentType
@@ -32,6 +33,9 @@ Publish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersVar
 
 ## DESCRIPTION
 Invoke action publish
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]

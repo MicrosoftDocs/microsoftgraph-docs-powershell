@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusermanagerbyref
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Set-MgUserManagerByRef
@@ -46,6 +47,9 @@ Set-MgUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IReferenceU
 
 ## DESCRIPTION
 Assign a user's manager.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-manager-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-manager-permissions.md)]

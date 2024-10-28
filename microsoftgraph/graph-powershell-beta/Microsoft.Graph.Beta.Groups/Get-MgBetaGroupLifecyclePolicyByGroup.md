@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupLifecyclePolicyByGroup
@@ -25,6 +26,9 @@ Get-MgBetaGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String
 
 ## DESCRIPTION
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-grouplifecyclepolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-grouplifecyclepolicies-permissions.md)]

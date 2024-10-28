@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: cloud-pc
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointGalleryImage
@@ -41,6 +43,12 @@ Get-MgBetaDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManag
 
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPcGalleryImage object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcgalleryimage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-galleryimages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcgalleryimage-get-permissions.md)]

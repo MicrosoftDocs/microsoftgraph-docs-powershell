@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest
 schema: 2.0.0
 ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest
@@ -48,6 +49,9 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIde
 
 ## DESCRIPTION
 Create a new delegatedAdminRelationshipRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-post-requests-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-post-requests-permissions.md)]

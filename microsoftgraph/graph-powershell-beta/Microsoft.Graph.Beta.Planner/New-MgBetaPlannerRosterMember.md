@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerrostermember
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # New-MgBetaPlannerRosterMember
@@ -43,6 +44,9 @@ New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 
 ## DESCRIPTION
 Add a member to the plannerRoster object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-post-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-post-members-permissions.md)]

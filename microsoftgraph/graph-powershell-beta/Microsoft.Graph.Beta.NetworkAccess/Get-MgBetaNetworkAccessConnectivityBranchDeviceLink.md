@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivitybranchdevicelink
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessConnectivityBranchDeviceLink
@@ -39,6 +40,9 @@ Get-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAccess
 ## DESCRIPTION
 Each unique CPE device associated with a branch is specified.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-list-devicelinks-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-list-devicelinks-permissions.md)]

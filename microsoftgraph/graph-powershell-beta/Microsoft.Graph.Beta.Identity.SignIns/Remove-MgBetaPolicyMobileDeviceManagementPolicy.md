@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicy
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgBetaPolicyMobileDeviceManagementPolicy
@@ -29,6 +30,9 @@ Remove-MgBetaPolicyMobileDeviceManagementPolicy -InputObject <IIdentitySignInsId
 
 ## DESCRIPTION
 Delete a mobilityManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobiledevicemanagementpolicies-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobiledevicemanagementpolicies-delete-permissions.md)]

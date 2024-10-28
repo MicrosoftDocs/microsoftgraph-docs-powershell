@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasecustodianhold
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Add-MgSecurityCaseEdiscoveryCaseCustodianHold
@@ -68,6 +69,9 @@ Add-MgSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity>
 Start the process of applying hold on eDiscovery custodians.
 After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-applyhold-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-applyhold-permissions.md)]

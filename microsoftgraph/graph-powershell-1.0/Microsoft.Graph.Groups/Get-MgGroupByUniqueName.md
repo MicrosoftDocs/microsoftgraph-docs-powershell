@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupByUniqueName
@@ -38,6 +39,9 @@ Get the properties and relationships of a group object.
 This operation returns by default only a subset of all the available properties, as noted in the Properties section.
 To get properties that aren't_ returned by default, specify them in a $select OData query option.
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-permissions.md)]

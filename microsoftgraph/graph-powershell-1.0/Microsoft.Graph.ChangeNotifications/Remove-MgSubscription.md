@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
 schema: 2.0.0
 ms.subservice: change-notifications
+ms.subservice: change-notifications
 ---
 
 # Remove-MgSubscription

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaidentitygovernanceaccessreviewdecisioninstancedecision
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Reset-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision
@@ -29,6 +30,9 @@ Reset-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject 
 
 ## DESCRIPTION
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-resetdecisions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-resetdecisions-permissions.md)]

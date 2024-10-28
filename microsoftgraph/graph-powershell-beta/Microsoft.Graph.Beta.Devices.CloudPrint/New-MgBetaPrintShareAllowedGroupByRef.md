@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintshareallowedgroupbyref
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # New-MgBetaPrintShareAllowedGroupByRef
@@ -47,6 +48,9 @@ New-MgBetaPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity>
 
 ## DESCRIPTION
 Grant the specified group access to submit print jobs to the associated printerShare.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-post-allowedgroups-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-post-allowedgroups-permissions.md)]

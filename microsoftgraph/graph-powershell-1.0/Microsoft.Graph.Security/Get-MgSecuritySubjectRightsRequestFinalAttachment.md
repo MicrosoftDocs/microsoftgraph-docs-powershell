@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestfinalattachment
 schema: 2.0.0
 ms.subservice: compliance
+ms.subservice: compliance
 ---
 
 # Get-MgSecuritySubjectRightsRequestFinalAttachment
@@ -34,6 +35,9 @@ Get-MgSecuritySubjectRightsRequestFinalAttachment -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Get the final attachment for a subject rights request.
 The attachment is a zip file that contains all the files that were included by the privacy administrator.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-getfinalattachment-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-getfinalattachment-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityB2CUserFlowLanguage
@@ -46,6 +48,12 @@ These objects represent a language available in a user flow.
 Note: To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow.
 For more information, see Update b2cIdentityUserFlow.
 Language customization is enabled by default in Microsoft Entra user flows.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-list-languages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamtagmember
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamTagMember
@@ -32,6 +33,9 @@ Remove-MgBetaTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a member from a standard tag in a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktagmember-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktagmember-delete-permissions.md)]

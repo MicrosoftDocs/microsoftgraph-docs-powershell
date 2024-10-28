@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkworkforceintegration
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgTeamworkWorkforceIntegration
@@ -32,6 +33,9 @@ Remove-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete an instance of a workforceIntegration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-delete-permissions.md)]

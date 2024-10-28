@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserlicense
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Set-MgUserLicense
@@ -56,6 +57,9 @@ Add or remove licenses for the user to enable or disable their use of Microsoft 
 For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user.
 You can also enable and disable specific plans associated with a subscription.
 Direct user licensing method is an alternative to group-based licensing.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-assignlicense-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-assignlicense-permissions.md)]

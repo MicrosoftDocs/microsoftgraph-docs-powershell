@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaSubscribedSku
@@ -40,6 +42,12 @@ Get-MgBetaSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-Pr
 
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subscribedsku-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subscribedsku-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subscribedsku-get-permissions.md)]

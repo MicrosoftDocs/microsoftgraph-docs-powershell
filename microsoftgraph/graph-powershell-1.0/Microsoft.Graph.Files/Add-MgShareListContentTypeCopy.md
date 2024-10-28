@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgsharelistcontenttypecopy
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Add-MgShareListContentTypeCopy
@@ -48,6 +49,9 @@ Add-MgShareListContentTypeCopy -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Add a copy of a content type from a site to a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategorybyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # New-MgBetaEducationClassAssignmentCategoryByRef
@@ -50,6 +51,9 @@ New-MgBetaEducationClassAssignmentCategoryByRef -InputObject <IEducationIdentity
 ## DESCRIPTION
 Add one or more existing educationCategory objects to this educationAssignment.
 Only teachers and students can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-post-categories-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-post-categories-permissions.md)]

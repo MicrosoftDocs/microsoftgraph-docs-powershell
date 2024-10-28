@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # New-MgDevice
@@ -42,6 +43,9 @@ New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariable <S
 
 ## DESCRIPTION
 Create and register a new device in the organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-devices-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-devices-permissions.md)]

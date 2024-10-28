@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-groups
 ms.subservice: entra-groups
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupThreadPost
@@ -59,6 +61,12 @@ Get-MgBetaGroupThreadPost -InputObject <IGroupsIdentity> [-ExpandProperty <Strin
 Get the properties and relationships of a post in a specified thread.
 You can specify both the parentconversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationthread-list-posts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-get-permissions.md)]

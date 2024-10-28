@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpcgraceperiod
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Stop-MgBetaUserCloudPcGracePeriod
@@ -35,6 +36,9 @@ End the grace period for a specific Cloud PC.
 The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
 It allows users to access Cloud PCs for up to seven days before deprovisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-endgraceperiod-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-endgraceperiod-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetaapprovalitem
 schema: 2.0.0
 ms.subservice: approvals
+ms.subservice: approvals
 ---
 
 # Stop-MgBetaApprovalItem
@@ -30,6 +31,9 @@ Stop-MgBetaApprovalItem -InputObject <IBookingsIdentity> [-ResponseHeadersVariab
 ## DESCRIPTION
 Cancel the approval item.
 The owner of the approval can trigger this endpoint.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalitem-cancel-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalitem-cancel-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.te
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamMember
@@ -41,6 +43,12 @@ Get-MgTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 
 ## DESCRIPTION
 Get a conversationMember from a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-get-members-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-list-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-get-members-permissions.md)]

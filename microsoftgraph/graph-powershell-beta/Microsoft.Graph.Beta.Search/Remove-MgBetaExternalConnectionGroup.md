@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectiongroup
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Remove-MgBetaExternalConnectionGroup
@@ -32,6 +33,9 @@ Remove-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete an externalGroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalgroup-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalgroup-delete-permissions.md)]

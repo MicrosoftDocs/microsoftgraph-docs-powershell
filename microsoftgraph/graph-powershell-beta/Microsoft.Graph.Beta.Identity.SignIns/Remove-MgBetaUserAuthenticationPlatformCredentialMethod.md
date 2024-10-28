@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationplatformcredentialmethod
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaUserAuthenticationPlatformCredentialMethod
@@ -29,6 +30,9 @@ Remove-MgBetaUserAuthenticationPlatformCredentialMethod -InputObject <IIdentityS
 
 ## DESCRIPTION
 Delete a platformCredentialAuthenticationMethod object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/platformcredentialauthenticationmethod-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/platformcredentialauthenticationmethod-delete-permissions.md)]

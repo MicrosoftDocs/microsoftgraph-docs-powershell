@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentrequest
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaEntitlementManagementAccessPackageAssignmentRequest
@@ -62,6 +63,9 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-Justification <S
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, or to remove an access package assignment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-accesspackageassignmentrequests-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-accesspackageassignmentrequests-permissions.md)]

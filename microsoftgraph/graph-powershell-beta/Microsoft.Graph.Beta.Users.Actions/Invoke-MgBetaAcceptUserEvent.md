@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptuserevent
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Invoke-MgBetaAcceptUserEvent
@@ -48,6 +49,9 @@ Invoke-MgBetaAcceptUserEvent -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Accept the specified event in a user calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-accept-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-accept-permissions.md)]

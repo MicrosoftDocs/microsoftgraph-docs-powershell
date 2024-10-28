@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppasswordsinglesignoncredential
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Remove-MgBetaGroupPasswordSingleSignOnCredential
@@ -46,6 +47,9 @@ Remove-MgBetaGroupPasswordSingleSignOnCredential -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Delete the password-based single sign-on credentials for a given group to a given service principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-deletepasswordsinglesignoncredentials-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-deletepasswordsinglesignoncredentials-permissions.md)]

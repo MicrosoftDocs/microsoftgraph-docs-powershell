@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupPhoto
@@ -54,6 +55,9 @@ Get-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 The group's profile photo.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-photos-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-photos-permissions.md)]

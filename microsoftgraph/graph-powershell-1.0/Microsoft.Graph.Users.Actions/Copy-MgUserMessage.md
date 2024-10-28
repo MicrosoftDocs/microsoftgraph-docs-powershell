@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermessage
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Copy-MgUserMessage
@@ -48,6 +49,9 @@ Copy-MgUserMessage -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-copy-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-copy-permissions.md)]

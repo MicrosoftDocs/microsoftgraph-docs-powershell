@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
@@ -34,6 +35,9 @@ Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSucc
 ## DESCRIPTION
 Get the number of user authentication requests, during a specific time period, that satisfy a Conditional Access policy requiring devices to be managed.
 Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess-permissions.md)]

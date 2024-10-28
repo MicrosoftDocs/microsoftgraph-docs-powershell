@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplandetail
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Update-MgBetaPlannerPlanDetail
@@ -49,6 +50,9 @@ Update-MgBetaPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 
 ## DESCRIPTION
 Update the properties of plannerplandetails object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplandetails-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplandetails-update-permissions.md)]

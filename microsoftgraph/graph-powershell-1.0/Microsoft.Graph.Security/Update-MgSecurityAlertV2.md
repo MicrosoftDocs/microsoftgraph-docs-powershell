@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Update-MgSecurityAlertV2
@@ -64,6 +65,9 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Update the properties of an alert object in an organization based on the specified alert id property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-update-permissions.md)]

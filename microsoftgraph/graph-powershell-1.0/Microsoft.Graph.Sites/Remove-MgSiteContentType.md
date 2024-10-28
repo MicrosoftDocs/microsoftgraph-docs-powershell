@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttype
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Remove-MgSiteContentType
@@ -32,6 +33,9 @@ Remove-MgSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] [-Res
 
 ## DESCRIPTION
 Remove a content type from a list or a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-delete-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentcategoryeducationcategorybyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgEducationClassAssignmentCategoryEducationCategoryByRef
@@ -35,6 +36,9 @@ Remove-MgEducationClassAssignmentCategoryEducationCategoryByRef -InputObject <IE
 ## DESCRIPTION
 Remove an educationCategory from an educationAssignment.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-remove-category-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-remove-category-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamChannelMember
@@ -41,6 +43,12 @@ Get-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Get a conversationMember from a channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-get-members-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-list-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-get-members-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: m365-lighthouse
 ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
@@ -40,6 +42,12 @@ Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
 
 ## DESCRIPTION
 Read the properties and relationships of a managementActionTenantDeploymentStatus object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementactiontenantdeploymentstatus-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementactiontenantdeploymentstatus-get-permissions.md)]

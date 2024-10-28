@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitecontentmodelgetbynameapplieddrive
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive
@@ -30,6 +31,9 @@ Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive -InputObject <IGroupsIdenti
 
 ## DESCRIPTION
 List all the contentModelUsage information related to a contentModel applied to a SharePoint document library.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getapplieddrives-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getapplieddrives-permissions.md)]

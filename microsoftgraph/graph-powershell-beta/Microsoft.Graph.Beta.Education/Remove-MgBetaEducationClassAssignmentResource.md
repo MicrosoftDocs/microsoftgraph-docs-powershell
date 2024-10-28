@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentresource
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgBetaEducationClassAssignmentResource
@@ -37,6 +38,9 @@ Remove-MgBetaEducationClassAssignmentResource -InputObject <IEducationIdentity> 
 Delete a specific educationAssignmentResource attached to an assignment.
 Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-delete-permissions.md)]

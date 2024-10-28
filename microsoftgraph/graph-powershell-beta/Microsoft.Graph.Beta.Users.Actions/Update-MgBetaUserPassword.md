@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Update-MgBetaUserPassword
@@ -52,6 +53,9 @@ Update-MgBetaUserPassword -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Update the signed-in user's password.
 Any user can update their password without belonging to any administrator role.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-changepassword-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-changepassword-permissions.md)]

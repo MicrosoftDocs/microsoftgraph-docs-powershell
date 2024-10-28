@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingmanifest
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgBetaReportPartnerBillingManifest
@@ -40,6 +41,9 @@ Get-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Read the properties and relationships of a manifest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-manifest-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-manifest-get-permissions.md)]

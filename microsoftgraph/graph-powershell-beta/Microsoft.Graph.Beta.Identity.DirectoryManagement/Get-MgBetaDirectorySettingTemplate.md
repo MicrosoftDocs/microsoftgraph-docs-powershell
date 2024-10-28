@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectorySettingTemplate
@@ -40,6 +42,12 @@ Get-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 A directory setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysettingtemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysettingtemplate-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysettingtemplate-get-permissions.md)]

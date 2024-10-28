@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimecard
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamScheduleTimeCard
@@ -29,6 +30,9 @@ Remove-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete a timeCard instance in a schedule.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-delete-permissions.md)]

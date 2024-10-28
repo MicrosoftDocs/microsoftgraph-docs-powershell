@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoffreason
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgTeamScheduleTimeOffReason
@@ -50,6 +51,9 @@ Update-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Replace an existing timeOffReason.
 If the specified timeOffReason doesn't exist, this method returns 404 Not found.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffreason-put-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffreason-put-permissions.md)]

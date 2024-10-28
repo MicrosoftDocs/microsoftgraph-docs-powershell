@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Export-MgBetaReportPartnerBillingUsageBilled
@@ -33,6 +34,9 @@ Export-MgBetaReportPartnerBillingUsageBilled
 
 ## DESCRIPTION
 Export the billed Azure usage data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-billedusage-export-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-billedusage-export-permissions.md)]

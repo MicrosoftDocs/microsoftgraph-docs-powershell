@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallaudioroutinggroup
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Remove-MgBetaCommunicationCallAudioRoutingGroup
@@ -32,6 +33,9 @@ Remove-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicatio
 
 ## DESCRIPTION
 Delete the specified audioRoutingGroup.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/audioroutinggroup-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/audioroutinggroup-delete-permissions.md)]

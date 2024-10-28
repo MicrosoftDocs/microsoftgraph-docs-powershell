@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bo
 schema: 2.0.0
 ms.subservice: microsoft-bookings
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Get-MgBookingBusinessCustomer
@@ -41,6 +43,12 @@ Get-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Get the properties and relationships of a bookingCustomer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomer-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-customers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomer-get-permissions.md)]

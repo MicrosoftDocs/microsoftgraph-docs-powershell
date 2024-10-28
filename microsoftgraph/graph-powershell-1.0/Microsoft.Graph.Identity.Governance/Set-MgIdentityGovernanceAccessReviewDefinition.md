@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Set-MgIdentityGovernanceAccessReviewDefinition
@@ -62,6 +63,9 @@ Set-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-update-permissions.md)]

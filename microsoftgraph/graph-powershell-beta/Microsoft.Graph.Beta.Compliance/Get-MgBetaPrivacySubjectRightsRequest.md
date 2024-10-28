@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: compliance
 ms.subservice: compliance
+ms.subservice: compliance
+ms.subservice: compliance
 ---
 
 # Get-MgBetaPrivacySubjectRightsRequest
@@ -41,6 +43,12 @@ Get-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-Expan
 
 ## DESCRIPTION
 Read the properties and relationships of a subjectRightsRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-get-permissions.md)]

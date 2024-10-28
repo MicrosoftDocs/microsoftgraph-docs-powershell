@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainnamereference
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDomainNameReference
@@ -46,6 +47,9 @@ The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-domainnamereferences-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-domainnamereferences-permissions.md)]

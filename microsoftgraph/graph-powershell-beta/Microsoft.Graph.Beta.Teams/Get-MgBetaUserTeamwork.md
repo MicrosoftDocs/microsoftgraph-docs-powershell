@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamwork
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaUserTeamwork
@@ -32,6 +33,9 @@ Get-MgBetaUserTeamwork -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userteamwork-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userteamwork-get-permissions.md)]

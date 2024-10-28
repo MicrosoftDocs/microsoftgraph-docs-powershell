@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategorybyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassAssignmentCategoryByRef
@@ -27,6 +28,9 @@ Get-MgBetaEducationClassAssignmentCategoryByRef -EducationAssignmentId <String> 
 ## DESCRIPTION
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-categories-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-categories-permissions.md)]

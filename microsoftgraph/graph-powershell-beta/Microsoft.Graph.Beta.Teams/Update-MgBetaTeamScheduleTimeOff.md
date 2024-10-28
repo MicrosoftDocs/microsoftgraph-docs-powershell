@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoff
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamScheduleTimeOff
@@ -54,6 +55,9 @@ Update-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Replace an existing timeOff.
 If the specified timeOff doesn't exist, this method returns 404 Not found.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoff-put-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoff-put-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreserviceapp
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaSolutionBackupRestoreServiceApp
@@ -34,6 +35,9 @@ New-MgBetaSolutionBackupRestoreServiceApp -BodyParameter <IMicrosoftGraphService
 
 ## DESCRIPTION
 Create a new serviceApp.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-serviceapps-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-serviceapps-permissions.md)]

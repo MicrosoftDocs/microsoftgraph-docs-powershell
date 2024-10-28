@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdrivelistitemdocumentsetversion
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Restore-MgBetaUserDriveListItemDocumentSetVersion
@@ -32,6 +33,9 @@ Restore-MgBetaUserDriveListItemDocumentSetVersion -InputObject <IUsersActionsIde
 
 ## DESCRIPTION
 Restore a document set version.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-restore-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-restore-permissions.md)]

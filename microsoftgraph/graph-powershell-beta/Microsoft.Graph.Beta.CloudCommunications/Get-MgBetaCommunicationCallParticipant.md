@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: cloud-communications
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallParticipant
@@ -41,6 +43,12 @@ Get-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentit
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a participant object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-list-participants-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-get-permissions.md)]

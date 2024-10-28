@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractusersecurityinformationprotectionsensitivitylabelcontentlabel
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
@@ -50,6 +51,9 @@ Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabe
 ## DESCRIPTION
 Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-extractcontentlabel-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-extractcontentlabel-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyappmanagementpolicyapplyto
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyAppManagementPolicyApplyTo
@@ -40,6 +41,9 @@ Get-MgBetaPolicyAppManagementPolicyApplyTo -InputObject <IIdentitySignInsIdentit
 
 ## DESCRIPTION
 Collection of application and service principals to which a policy is applied.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-list-appliesto-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-list-appliesto-permissions.md)]

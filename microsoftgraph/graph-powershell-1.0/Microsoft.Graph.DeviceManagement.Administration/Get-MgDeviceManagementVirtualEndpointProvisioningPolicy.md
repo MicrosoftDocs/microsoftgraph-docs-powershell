@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.de
 schema: 2.0.0
 ms.subservice: cloud-pc
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointProvisioningPolicy
@@ -41,6 +43,12 @@ Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-list-provisioningpolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-get-permissions.md)]

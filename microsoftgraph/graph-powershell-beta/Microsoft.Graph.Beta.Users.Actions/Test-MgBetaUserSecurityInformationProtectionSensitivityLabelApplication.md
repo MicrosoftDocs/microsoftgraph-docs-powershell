@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication
@@ -53,6 +54,9 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -InputOb
 Compute the sensitivity label that should be applied and return the set of actions that must be taken to correctly label the information.
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-evaluateapplication-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-evaluateapplication-permissions.md)]

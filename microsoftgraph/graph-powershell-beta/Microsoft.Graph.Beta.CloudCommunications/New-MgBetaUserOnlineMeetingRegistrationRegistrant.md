@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationregistrant
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # New-MgBetaUserOnlineMeetingRegistrationRegistrant
@@ -45,6 +46,9 @@ New-MgBetaUserOnlineMeetingRegistrationRegistrant -InputObject <ICloudCommunicat
 ## DESCRIPTION
 Enroll a meeting registrant in an online meeting that has meeting registration enabled on behalf of the registrant.
 This operation has two scenarios: In either scenario, the registrant will receive an email notification that contains their registration information.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-post-registrants-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-post-registrants-permissions.md)]

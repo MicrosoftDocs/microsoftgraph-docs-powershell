@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewdecision
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaAccessReviewDecision
@@ -37,6 +38,9 @@ Get-MgBetaAccessReviewDecision -InputObject <IIdentityGovernanceIdentity> [-Expa
 
 ## DESCRIPTION
 The collection of decisions for this access review.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-listdecisions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-listdecisions-permissions.md)]

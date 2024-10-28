@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitecontenttypewithhubsite
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Join-MgSiteContentTypeWithHubSite
@@ -50,6 +51,9 @@ Join-MgSiteContentTypeWithHubSite -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Associate a published content type present in a content type hub with a list of hub sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]

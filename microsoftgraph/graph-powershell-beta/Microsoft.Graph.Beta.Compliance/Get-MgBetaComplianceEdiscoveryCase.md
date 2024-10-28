@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: ediscovery
 ms.subservice: ediscovery
+ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCase
@@ -38,6 +40,12 @@ Get-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a case object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-get-permissions.md)]

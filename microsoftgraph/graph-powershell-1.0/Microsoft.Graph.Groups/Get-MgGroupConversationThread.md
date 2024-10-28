@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthread
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupConversationThread
@@ -46,6 +47,9 @@ A collection of all the conversation threads in the conversation.
 A navigation property.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-list-threads-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-list-threads-permissions.md)]

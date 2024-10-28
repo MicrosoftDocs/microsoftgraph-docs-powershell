@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesresourceconnection
 schema: 2.0.0
 ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # New-MgBetaWindowsUpdatesResourceConnection
@@ -29,6 +30,9 @@ New-MgBetaWindowsUpdatesResourceConnection -BodyParameter <IMicrosoftGraphWindow
 
 ## DESCRIPTION
 Create a new operationalInsightsConnection object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection-permissions.md)]

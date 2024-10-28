@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappcategory
 schema: 2.0.0
 ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceAppManagementMobileAppCategory

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblewith
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgEntitlementManagementAccessPackageIncompatibleWith
@@ -42,6 +43,9 @@ Get-MgEntitlementManagementAccessPackageIncompatibleWith -InputObject <IIdentity
 ## DESCRIPTION
 The access packages that are incompatible with this package.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-accesspackagesincompatiblewith-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-accesspackagesincompatiblewith-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # New-MgExternalConnectionGroup
@@ -48,6 +49,9 @@ New-MgExternalConnectionGroup -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create a new externalGroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-post-groups-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-post-groups-permissions.md)]

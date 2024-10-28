@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodianusersource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource
@@ -44,6 +45,9 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityI
 ## DESCRIPTION
 Data source entity for a custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-list-usersources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-list-usersources-permissions.md)]

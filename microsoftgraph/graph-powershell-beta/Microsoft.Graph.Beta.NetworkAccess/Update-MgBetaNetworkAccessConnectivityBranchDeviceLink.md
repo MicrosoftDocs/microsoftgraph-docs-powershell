@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchdevicelink
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessConnectivityBranchDeviceLink
@@ -51,6 +52,9 @@ Update-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAcc
 
 ## DESCRIPTION
 Update the device link associated with a specific branch or remote network.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-update-permissions.md)]

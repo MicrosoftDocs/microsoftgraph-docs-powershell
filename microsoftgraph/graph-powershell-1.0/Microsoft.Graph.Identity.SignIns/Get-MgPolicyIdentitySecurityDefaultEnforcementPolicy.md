@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyidentitysecuritydefaultenforcementpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
@@ -24,6 +25,9 @@ Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitysecuritydefaultsenforcementpolicy-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitysecuritydefaultsenforcementpolicy-get-permissions.md)]

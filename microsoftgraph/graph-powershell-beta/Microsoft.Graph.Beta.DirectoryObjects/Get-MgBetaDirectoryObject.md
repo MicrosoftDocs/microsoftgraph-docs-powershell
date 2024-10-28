@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryObject
@@ -40,6 +41,9 @@ Get-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a directoryObject object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-get-permissions.md)]

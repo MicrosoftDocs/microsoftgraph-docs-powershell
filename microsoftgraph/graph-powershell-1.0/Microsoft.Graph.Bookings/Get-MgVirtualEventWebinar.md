@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bo
 schema: 2.0.0
 ms.subservice: cloud-communications
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinar
@@ -41,6 +43,12 @@ Get-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinar object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventwebinar-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventsroot-list-webinars-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventwebinar-get-permissions.md)]

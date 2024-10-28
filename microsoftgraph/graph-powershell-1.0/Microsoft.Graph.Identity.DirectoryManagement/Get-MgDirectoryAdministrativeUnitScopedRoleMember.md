@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryAdministrativeUnitScopedRoleMember
@@ -42,6 +44,12 @@ Get-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirecto
 
 ## DESCRIPTION
 Get a Microsoft Entra role assignment with administrative unit scope.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-get-scopedrolemembers-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-list-scopedrolemembers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-get-scopedrolemembers-permissions.md)]

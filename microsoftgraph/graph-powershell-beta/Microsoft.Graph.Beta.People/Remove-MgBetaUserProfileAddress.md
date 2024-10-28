@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress
 schema: 2.0.0
 ms.subservice: people
+ms.subservice: people
 ---
 
 # Remove-MgBetaUserProfileAddress
@@ -29,6 +30,9 @@ Remove-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Deletes an itemAddress object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemaddress-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemaddress-delete-permissions.md)]

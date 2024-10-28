@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeysetkey
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaTrustFrameworkKeySetKey
@@ -47,6 +48,9 @@ New-MgBetaTrustFrameworkKeySetKey -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Generate a trustFrameworkKey and a secret automatically in the trustFrameworkKeyset.
 The caller doesn't have to provide a secret.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-generatekey-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-generatekey-permissions.md)]

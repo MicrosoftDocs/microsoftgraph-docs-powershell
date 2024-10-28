@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsettinggradingcategory
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Update-MgBetaEducationClassAssignmentSettingGradingCategory
@@ -51,6 +52,9 @@ Update-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEduca
 ## DESCRIPTION
 Update a single gradingCategory on the educationAssignmentSettings.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingcategory-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingcategory-update-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeam
@@ -40,6 +42,12 @@ Get-MgBetaTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prop
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teams-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-get-permissions.md)]

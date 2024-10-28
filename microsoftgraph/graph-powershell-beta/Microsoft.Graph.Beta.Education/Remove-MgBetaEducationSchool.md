@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschool
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgBetaEducationSchool
@@ -32,6 +33,9 @@ Remove-MgBetaEducationSchool -InputObject <IEducationIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-delete-permissions.md)]

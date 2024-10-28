@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleswapshiftchangerequest
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgTeamScheduleSwapShiftChangeRequest
@@ -52,6 +53,9 @@ New-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create an instance of a swapShiftsChangeRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/swapshiftschangerequest-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/swapshiftschangerequest-post-permissions.md)]

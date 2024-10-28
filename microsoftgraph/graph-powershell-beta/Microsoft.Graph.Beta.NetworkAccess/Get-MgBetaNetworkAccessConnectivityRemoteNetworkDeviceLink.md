@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivityremotenetworkdevicelink
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink
@@ -37,6 +38,9 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -InputObject <INetwor
 
 ## DESCRIPTION
 Retrieves a specific device link associated with a remote network.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-get-permissions.md)]

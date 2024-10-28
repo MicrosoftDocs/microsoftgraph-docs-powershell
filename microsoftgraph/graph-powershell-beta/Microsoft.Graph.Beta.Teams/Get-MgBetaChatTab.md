@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaChatTab
@@ -41,6 +43,12 @@ Get-MgBetaChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-tabs-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-tabs-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-tabs-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bo
 schema: 2.0.0
 ms.subservice: microsoft-bookings
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Get-MgBookingBusinessAppointment
@@ -43,6 +45,12 @@ Get-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandProper
 ## DESCRIPTION
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The start and end properties are always returned in UTC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-appointments-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-get-permissions.md)]

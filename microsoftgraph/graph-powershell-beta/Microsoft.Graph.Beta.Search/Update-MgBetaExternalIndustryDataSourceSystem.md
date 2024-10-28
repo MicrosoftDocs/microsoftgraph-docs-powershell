@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem
 schema: 2.0.0
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # Update-MgBetaExternalIndustryDataSourceSystem
@@ -45,6 +46,9 @@ Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of a sourceSystemDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-update-permissions.md)]

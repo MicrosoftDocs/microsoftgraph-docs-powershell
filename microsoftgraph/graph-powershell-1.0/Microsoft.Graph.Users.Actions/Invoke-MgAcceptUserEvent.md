@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgacceptuserevent
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Invoke-MgAcceptUserEvent
@@ -48,6 +49,9 @@ Invoke-MgAcceptUserEvent -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Accept the specified event in a user calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-accept-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-accept-permissions.md)]

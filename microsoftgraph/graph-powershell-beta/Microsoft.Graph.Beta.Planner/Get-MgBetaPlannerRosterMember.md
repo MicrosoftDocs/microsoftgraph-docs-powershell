@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: planner
 ms.subservice: planner
+ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Get-MgBetaPlannerRosterMember
@@ -38,6 +40,12 @@ Get-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Read the properties and relationships of a plannerRosterMember object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerrostermember-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-list-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerrostermember-get-permissions.md)]

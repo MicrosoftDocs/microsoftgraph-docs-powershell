@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgfollowuserdriveitem
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgFollowUserDriveItem
@@ -31,6 +32,9 @@ Invoke-MgFollowUserDriveItem -InputObject <IUsersActionsIdentity> [-ResponseHead
 
 ## DESCRIPTION
 Follow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-follow-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-follow-permissions.md)]

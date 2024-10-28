@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: security
 ms.subservice: security
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityLabelCitation
@@ -41,6 +43,12 @@ Get-MgBetaSecurityLabelCitation -InputObject <ISecurityIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Read the properties and relationships of a citationTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-citationtemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-citations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-citationtemplate-get-permissions.md)]

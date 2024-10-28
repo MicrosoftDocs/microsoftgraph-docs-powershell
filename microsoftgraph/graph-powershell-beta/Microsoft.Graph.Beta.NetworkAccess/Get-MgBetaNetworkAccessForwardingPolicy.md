@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessForwardingPolicy
@@ -38,6 +40,12 @@ Get-MgBetaNetworkAccessForwardingPolicy -InputObject <INetworkAccessIdentity> [-
 
 ## DESCRIPTION
 Retrieve information about a specific forwarding policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-networkaccessroot-list-forwardingpolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingpolicy-get-permissions.md)]

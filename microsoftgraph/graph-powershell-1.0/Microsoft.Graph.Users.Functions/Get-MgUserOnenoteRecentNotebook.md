@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronenoterecentnotebook
 schema: 2.0.0
 ms.subservice: onenote
+ms.subservice: onenote
 ---
 
 # Get-MgUserOnenoteRecentNotebook
@@ -32,6 +33,9 @@ Get-MgUserOnenoteRecentNotebook -InputObject <IUsersFunctionsIdentity> [-Count] 
 
 ## DESCRIPTION
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-getrecentnotebooks-permissions.md)]

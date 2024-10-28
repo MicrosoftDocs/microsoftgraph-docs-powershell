@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitem
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaSiteListItem
@@ -64,6 +65,9 @@ New-MgBetaSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Create a new listItem in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-create-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-create-permissions.md)]

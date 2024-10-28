@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannerrostersensitivitylabel
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Set-MgBetaPlannerRosterSensitivityLabel
@@ -45,6 +46,9 @@ Set-MgBetaPlannerRosterSensitivityLabel -InputObject <IPlannerIdentity>
 
 ## DESCRIPTION
 Assign a sensitivity label to a plannerRoster object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-assignsensitivitylabel-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-assignsensitivitylabel-permissions.md)]

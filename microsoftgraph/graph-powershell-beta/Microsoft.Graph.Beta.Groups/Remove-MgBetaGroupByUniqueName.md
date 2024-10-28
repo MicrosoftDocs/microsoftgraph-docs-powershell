@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupbyuniquename
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Remove-MgBetaGroupByUniqueName
@@ -40,6 +41,9 @@ When deleted, Microsoft 365 groups are moved to a temporary container and can be
 After that time, they are permanently deleted.
 This isn't applicable to Security groups and Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-permissions.md)]

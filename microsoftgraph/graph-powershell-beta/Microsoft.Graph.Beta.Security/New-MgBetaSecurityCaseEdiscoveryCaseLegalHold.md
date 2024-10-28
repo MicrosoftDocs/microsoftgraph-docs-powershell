@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaselegalhold
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseLegalHold
@@ -52,6 +53,9 @@ New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new ediscoveryHoldPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-post-legalholds-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-post-legalholds-permissions.md)]

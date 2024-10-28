@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaoauth2permissiongrant
 schema: 2.0.0
 ms.subservice: entra-applications
+ms.subservice: entra-applications
 ---
 
 # Update-MgBetaOauth2PermissionGrant
@@ -50,6 +51,9 @@ Update-MgBetaOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
 An oAuth2PermissionGrant can be updated to change which delegated permissions are granted, by adding or removing items from the list in scopes.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-update-permissions.md)]

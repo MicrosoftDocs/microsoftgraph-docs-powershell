@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgBetaReportM365AppUserCount
@@ -31,6 +32,9 @@ Get-MgBetaReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <Strin
 
 ## DESCRIPTION
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getm365appusercounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getm365appusercounts-permissions.md)]

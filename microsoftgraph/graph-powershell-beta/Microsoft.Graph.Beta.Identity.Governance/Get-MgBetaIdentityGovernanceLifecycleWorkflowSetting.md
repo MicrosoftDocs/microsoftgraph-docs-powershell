@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowsetting
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting
@@ -24,6 +25,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Read the properties and relationships of a lifecycleManagementSettings object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecyclemanagementsettings-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecyclemanagementsettings-get-permissions.md)]

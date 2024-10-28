@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrenewgroup
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Invoke-MgRenewGroup
@@ -32,6 +33,9 @@ Invoke-MgRenewGroup -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <St
 ## DESCRIPTION
 Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-renew-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-renew-permissions.md)]

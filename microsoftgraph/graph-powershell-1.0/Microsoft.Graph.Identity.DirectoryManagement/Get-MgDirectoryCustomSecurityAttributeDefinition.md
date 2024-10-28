@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryCustomSecurityAttributeDefinition
@@ -41,6 +43,12 @@ Get-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirector
 
 ## DESCRIPTION
 Read the properties and relationships of a customSecurityAttributeDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-list-customsecurityattributedefinitions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-get-permissions.md)]

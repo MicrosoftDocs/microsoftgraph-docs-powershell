@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresession
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Remove-MgSolutionBackupRestoreSession
@@ -32,6 +33,9 @@ Remove-MgSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> [-If
 
 ## DESCRIPTION
 Delete a draft restoreSessionBase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/restoresessionbase-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/restoresessionbase-delete-permissions.md)]

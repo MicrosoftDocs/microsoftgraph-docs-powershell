@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupacceptedsenderdirectoryobjectbyref
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef
@@ -32,6 +33,9 @@ Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef -InputObject <IGroupsIdenti
 
 ## DESCRIPTION
 Remove a user or group from the accepted-senders list of the specified group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-acceptedsenders-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-acceptedsenders-permissions.md)]

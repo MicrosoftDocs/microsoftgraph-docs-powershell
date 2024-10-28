@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: security
 ms.subservice: security
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityAlertV2
@@ -41,6 +43,12 @@ Get-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get the properties and relationships of an alert object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-list-alerts_v2-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleeligibilityschedulerequest
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest
@@ -42,6 +43,9 @@ New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest
 ## DESCRIPTION
 Create a new unifiedRoleEligibilityScheduleRequest object.
 This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roleeligibilityschedulerequests-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roleeligibilityschedulerequests-permissions.md)]

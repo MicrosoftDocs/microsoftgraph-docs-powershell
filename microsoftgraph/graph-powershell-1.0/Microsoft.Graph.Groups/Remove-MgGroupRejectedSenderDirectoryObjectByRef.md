@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouprejectedsenderdirectoryobjectbyref
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Remove-MgGroupRejectedSenderDirectoryObjectByRef
@@ -32,6 +33,9 @@ Remove-MgGroupRejectedSenderDirectoryObjectByRef -InputObject <IGroupsIdentity> 
 
 ## DESCRIPTION
 Remove rejectedSender
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-rejectedsenders-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-rejectedsenders-permissions.md)]

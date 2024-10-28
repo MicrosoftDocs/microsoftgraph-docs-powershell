@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: education
 ms.subservice: education
+ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationUser
@@ -55,6 +57,12 @@ Get-MgBetaEducationUser -InputObject <IEducationIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-list-users-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-get-permissions.md)]

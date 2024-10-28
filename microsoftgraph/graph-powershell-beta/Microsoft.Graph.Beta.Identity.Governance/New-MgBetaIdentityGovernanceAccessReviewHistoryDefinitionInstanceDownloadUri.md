@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinitioninstancedownloaduri
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
@@ -37,6 +38,9 @@ New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
 Generates a URI for an accessReviewHistoryInstance object the status for which is done.
 Each URI can be used to retrieve the instance's review history data.
 Each URI is valid for 24 hours and can be retrieved by fetching the downloadUri property from the accessReviewHistoryInstance object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewhistoryinstance-generatedownloaduri-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewhistoryinstance-generatedownloaduri-permissions.md)]

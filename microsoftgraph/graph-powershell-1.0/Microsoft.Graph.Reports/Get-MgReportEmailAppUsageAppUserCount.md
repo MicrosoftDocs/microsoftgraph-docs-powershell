@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageappusercount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportEmailAppUsageAppUserCount
@@ -31,6 +32,9 @@ Get-MgReportEmailAppUsageAppUserCount -InputObject <IReportsIdentity> -OutFile <
 
 ## DESCRIPTION
 Get the count of unique users per email app.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailappusageappsusercounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailappusageappsusercounts-permissions.md)]

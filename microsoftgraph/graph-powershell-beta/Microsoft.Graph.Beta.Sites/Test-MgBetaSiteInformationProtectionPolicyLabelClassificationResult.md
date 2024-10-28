@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectionpolicylabelclassificationresult
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Test-MgBetaSiteInformationProtectionPolicyLabelClassificationResult
@@ -53,6 +54,9 @@ Using classification results, compute the information protection label that shou
 This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
 To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-evaluateclassificationresults-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-evaluateclassificationresults-permissions.md)]

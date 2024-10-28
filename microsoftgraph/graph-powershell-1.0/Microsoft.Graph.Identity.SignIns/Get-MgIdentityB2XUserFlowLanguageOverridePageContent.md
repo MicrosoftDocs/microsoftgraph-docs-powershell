@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguageoverridepagecontent
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityB2XUserFlowLanguageOverridePageContent
@@ -35,6 +36,9 @@ Get-MgIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentitySign
 ## DESCRIPTION
 Get the userFlowLanguagePage resources from the overridesPages navigation property.
 These pages are used to customize the values shown to the user during a user journey in a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-list-overridespages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-list-overridespages-permissions.md)]

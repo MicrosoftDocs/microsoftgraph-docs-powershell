@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggertyperetentioneventtype
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Remove-MgSecurityTriggerTypeRetentionEventType
@@ -32,6 +33,9 @@ Remove-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> 
 
 ## DESCRIPTION
 Delete a retentionEventType object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentioneventtype-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentioneventtype-delete-permissions.md)]

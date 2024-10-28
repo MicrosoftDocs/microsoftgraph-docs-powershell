@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Update-MgBetaSearchBookmark
@@ -58,6 +59,9 @@ Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the properties of a bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-update-permissions.md)]

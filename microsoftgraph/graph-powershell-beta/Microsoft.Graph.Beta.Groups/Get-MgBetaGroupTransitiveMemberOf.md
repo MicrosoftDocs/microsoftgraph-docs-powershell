@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberof
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupTransitiveMemberOf
@@ -42,6 +43,9 @@ Get-MgBetaGroupTransitiveMemberOf -InputObject <IGroupsIdentity> [-ExpandPropert
 ## DESCRIPTION
 The groups a group is a member of, either directly or through nested membership.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-transitivememberof-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-transitivememberof-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianlastindexoperation
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation
@@ -33,6 +34,9 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -InputObject <ISecur
 
 ## DESCRIPTION
 Get a list of the ediscoveryIndexOperations associated with an ediscoveryCustodian.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-list-lastindexoperation-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-list-lastindexoperation-permissions.md)]

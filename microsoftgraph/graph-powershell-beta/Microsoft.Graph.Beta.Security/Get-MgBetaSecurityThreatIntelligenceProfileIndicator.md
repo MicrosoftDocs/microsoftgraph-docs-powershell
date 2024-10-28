@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceprofileindicator
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceProfileIndicator
@@ -40,6 +41,9 @@ Get-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIden
 
 ## DESCRIPTION
 Read the properties and relationships of a intelligenceProfileIndicator object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-intelligenceprofileindicator-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-intelligenceprofileindicator-get-permissions.md)]

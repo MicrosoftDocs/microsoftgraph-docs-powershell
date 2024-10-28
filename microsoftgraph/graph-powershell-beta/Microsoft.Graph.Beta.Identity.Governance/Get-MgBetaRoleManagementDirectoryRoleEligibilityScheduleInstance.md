@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance
@@ -42,6 +44,12 @@ Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject <I
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityscheduleinstance-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleeligibilityscheduleinstances-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityscheduleinstance-get-permissions.md)]

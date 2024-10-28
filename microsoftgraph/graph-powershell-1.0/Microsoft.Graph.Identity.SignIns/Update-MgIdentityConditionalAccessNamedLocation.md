@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgIdentityConditionalAccessNamedLocation
@@ -48,6 +49,9 @@ Update-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsId
 
 ## DESCRIPTION
 Update the properties of a countryNamedLocation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/countrynamedlocation-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/countrynamedlocation-update-permissions.md)]

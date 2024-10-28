@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
 ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # Update-MgTenantRelationshipDelegatedAdminRelationship
@@ -60,6 +61,9 @@ Update-MgTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPar
 ## DESCRIPTION
 Update the properties of a delegatedAdminRelationship object.
 The following restrictions apply:- You can update this relationship when its status property is created.- You can update the autoExtendDuration property when status is either created or active.- You can only remove the Microsoft Entra Global Administrator role when the status property is active, which indicates a long-running operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-update-permissions.md)]

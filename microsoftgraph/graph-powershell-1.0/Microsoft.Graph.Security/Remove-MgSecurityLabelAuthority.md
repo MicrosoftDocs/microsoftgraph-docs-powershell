@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelauthority
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Remove-MgSecurityLabelAuthority
@@ -32,6 +33,9 @@ Remove-MgSecurityLabelAuthority -InputObject <ISecurityIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete a authorityTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-authorities-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-authorities-permissions.md)]

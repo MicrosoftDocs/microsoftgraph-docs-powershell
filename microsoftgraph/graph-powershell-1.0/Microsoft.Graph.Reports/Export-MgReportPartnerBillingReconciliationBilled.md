@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Export-MgReportPartnerBillingReconciliationBilled
@@ -33,6 +34,9 @@ Export-MgReportPartnerBillingReconciliationBilled
 
 ## DESCRIPTION
 Export the billed invoice reconciliation data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejob
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # New-MgBetaPrintShareJob
@@ -54,6 +55,9 @@ New-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter
 
 ## DESCRIPTION
 Create a new printJob for a printerShare.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-post-jobs-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-post-jobs-permissions.md)]

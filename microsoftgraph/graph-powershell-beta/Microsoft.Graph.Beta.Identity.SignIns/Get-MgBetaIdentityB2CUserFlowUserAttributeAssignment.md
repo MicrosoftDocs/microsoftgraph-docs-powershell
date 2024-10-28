@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment
@@ -39,6 +41,12 @@ Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 
 ## DESCRIPTION
 Read the properties and relationships of an identityUserFlowAttributeAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-list-userattributeassignments-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-get-permissions.md)]

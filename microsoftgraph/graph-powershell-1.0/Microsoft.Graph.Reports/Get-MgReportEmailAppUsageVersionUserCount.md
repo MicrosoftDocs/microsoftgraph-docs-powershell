@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageversionusercount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportEmailAppUsageVersionUserCount
@@ -32,6 +33,9 @@ Get-MgReportEmailAppUsageVersionUserCount -InputObject <IReportsIdentity> -OutFi
 
 ## DESCRIPTION
 Get the count of unique users by Outlook desktop version.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailappusageversionsusercounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailappusageversionsusercounts-permissions.md)]

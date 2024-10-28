@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttype
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Update-MgBetaSiteContentType
@@ -58,6 +59,9 @@ Update-MgBetaSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update contentType
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-update-permissions.md)]

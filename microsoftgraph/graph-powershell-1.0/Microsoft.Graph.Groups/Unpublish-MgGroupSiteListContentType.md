@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitelistcontenttype
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Unpublish-MgGroupSiteListContentType
@@ -32,6 +33,9 @@ Unpublish-MgGroupSiteListContentType -InputObject <IGroupsIdentity> [-ResponseHe
 
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycase
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Remove-MgBetaComplianceEdiscoveryCase
@@ -29,6 +30,9 @@ Remove-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete a case object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-delete-permissions.md)]

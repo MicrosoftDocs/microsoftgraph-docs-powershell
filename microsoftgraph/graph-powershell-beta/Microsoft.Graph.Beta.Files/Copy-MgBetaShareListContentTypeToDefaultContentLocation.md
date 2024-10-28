@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetasharelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Copy-MgBetaShareListContentTypeToDefaultContentLocation
@@ -50,6 +51,9 @@ Copy-MgBetaShareListContentTypeToDefaultContentLocation -InputObject <IFilesIden
 
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]

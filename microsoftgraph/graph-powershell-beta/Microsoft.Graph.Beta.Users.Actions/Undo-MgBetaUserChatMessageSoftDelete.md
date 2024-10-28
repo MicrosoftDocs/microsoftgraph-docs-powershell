@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagesoftdelete
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Undo-MgBetaUserChatMessageSoftDelete

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabatchuserpendingaccessreviewinstancerecorddecision
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision
@@ -48,6 +49,9 @@ Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IU
 
 ## DESCRIPTION
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using principalId, resourceId, or neither.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-batchrecorddecisions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-batchrecorddecisions-permissions.md)]

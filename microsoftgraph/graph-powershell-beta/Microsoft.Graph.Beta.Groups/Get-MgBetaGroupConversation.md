@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-groups
 ms.subservice: entra-groups
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupConversation
@@ -41,6 +43,9 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Retrieve the properties and relationships of conversation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-conversations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-conversations-permissions.md)]

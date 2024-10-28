@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentsubmissionresource
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgEducationClassAssignmentSubmissionResource
@@ -41,6 +42,9 @@ Only teachers and students can perform this operation.
 If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.
 This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmissionresource-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmissionresource-delete-permissions.md)]

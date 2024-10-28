@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyclaimmappingpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaPolicyClaimMappingPolicy
@@ -50,6 +51,9 @@ Update-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> -B
 
 ## DESCRIPTION
 Update the properties of a claimsMappingPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-update-permissions.md)]

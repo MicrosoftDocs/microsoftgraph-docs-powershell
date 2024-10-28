@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationSchoolAdministrativeUnit
@@ -32,6 +33,9 @@ Get-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-
 
 ## DESCRIPTION
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-get-administrativeunit-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-get-administrativeunit-permissions.md)]

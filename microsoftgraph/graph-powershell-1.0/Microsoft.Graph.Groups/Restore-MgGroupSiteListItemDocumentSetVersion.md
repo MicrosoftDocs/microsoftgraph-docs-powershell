@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsitelistitemdocumentsetversion
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Restore-MgGroupSiteListItemDocumentSetVersion
@@ -32,6 +33,9 @@ Restore-MgGroupSiteListItemDocumentSetVersion -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Restore a document set version.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]

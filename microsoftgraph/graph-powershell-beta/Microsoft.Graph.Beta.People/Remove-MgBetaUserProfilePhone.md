@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilephone
 schema: 2.0.0
 ms.subservice: people
+ms.subservice: people
 ---
 
 # Remove-MgBetaUserProfilePhone
@@ -29,6 +30,9 @@ Remove-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete an itemPhone object from the user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemphone-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemphone-delete-permissions.md)]

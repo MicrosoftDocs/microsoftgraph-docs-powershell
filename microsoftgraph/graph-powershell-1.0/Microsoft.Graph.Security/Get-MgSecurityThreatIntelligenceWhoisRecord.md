@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.se
 schema: 2.0.0
 ms.subservice: security
 ms.subservice: security
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceWhoisRecord
@@ -45,6 +47,12 @@ Get-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity> [-E
 Get the specified whoisRecord resource.
 Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
 - Specify an id value to get the corresponding whoisRecord.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-whoisrecord-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-threatintelligence-list-whoisrecords-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-whoisrecord-get-permissions.md)]

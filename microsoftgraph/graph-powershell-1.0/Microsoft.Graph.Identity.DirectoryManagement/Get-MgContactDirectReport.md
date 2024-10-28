@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdirectreport
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgContactDirectReport
@@ -46,6 +47,9 @@ The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.)  Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/orgcontact-list-directreports-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/orgcontact-list-directreports-permissions.md)]

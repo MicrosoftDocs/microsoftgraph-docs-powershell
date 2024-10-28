@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # New-MgSecurityLabelAuthority
@@ -31,6 +32,9 @@ New-MgSecurityLabelAuthority -BodyParameter <Hashtable> [-ResponseHeadersVariabl
 
 ## DESCRIPTION
 Create a new authorityTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-post-authorities-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-post-authorities-permissions.md)]

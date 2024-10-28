@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-groups
 ms.subservice: entra-groups
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupLifecyclePolicy
@@ -55,6 +57,12 @@ Get-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-get-permissions.md)]

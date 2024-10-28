@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaCommunicationOnlineMeeting
@@ -55,6 +56,9 @@ Get-MgBetaCommunicationOnlineMeeting [-ResponseHeadersVariable <String>]
 
 ## DESCRIPTION
 Get onlineMeetings from communications
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteam
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaUnarchiveTeam
@@ -37,6 +38,9 @@ Restore an archived team and restores users' ability to send messages and edit t
 Teams are archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-unarchive-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-unarchive-permissions.md)]

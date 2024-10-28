@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: search
 ms.subservice: search
+ms.subservice: search
+ms.subservice: search
 ---
 
 # Get-MgBetaSearchAcronym
@@ -41,6 +43,12 @@ Get-MgBetaSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Read the properties and relationships of an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-list-acronyms-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-get-permissions.md)]

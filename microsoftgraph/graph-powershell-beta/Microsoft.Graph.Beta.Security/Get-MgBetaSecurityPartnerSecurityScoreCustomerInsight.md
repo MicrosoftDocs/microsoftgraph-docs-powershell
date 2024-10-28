@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscorecustomerinsight
 schema: 2.0.0
 ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight
@@ -37,6 +38,9 @@ Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Contains customer-specific information for certain requirements.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-customerinsights-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-customerinsights-permissions.md)]

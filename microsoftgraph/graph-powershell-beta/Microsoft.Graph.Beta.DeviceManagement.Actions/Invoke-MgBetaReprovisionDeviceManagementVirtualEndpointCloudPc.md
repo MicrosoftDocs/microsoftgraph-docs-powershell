@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc
@@ -47,6 +48,9 @@ Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDe
 
 ## DESCRIPTION
 Reprovision a specific Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reprovision-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reprovision-permissions.md)]

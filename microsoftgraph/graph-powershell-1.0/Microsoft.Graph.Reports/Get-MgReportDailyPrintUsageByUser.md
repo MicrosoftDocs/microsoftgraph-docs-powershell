@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.re
 schema: 2.0.0
 ms.subservice: universal-print
 ms.subservice: universal-print
+ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgReportDailyPrintUsageByUser
@@ -43,6 +45,12 @@ Get-MgReportDailyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve a user's usage summary for a particular time period.
 For descriptions of each endpoint, see printUsageByUser.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printusagebyuser-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-list-dailyprintusagebyuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printusagebyuser-get-permissions.md)]

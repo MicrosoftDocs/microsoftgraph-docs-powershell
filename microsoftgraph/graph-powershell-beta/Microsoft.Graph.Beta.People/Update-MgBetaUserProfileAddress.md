@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaddress
 schema: 2.0.0
 ms.subservice: people
+ms.subservice: people
 ---
 
 # Update-MgBetaUserProfileAddress
@@ -51,6 +52,9 @@ Update-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update the properties of an itemAddress object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemaddress-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemaddress-update-permissions.md)]

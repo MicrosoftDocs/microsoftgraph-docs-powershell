@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamtag
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamTag
@@ -32,6 +33,9 @@ Remove-MgBetaTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respons
 
 ## DESCRIPTION
 Delete a tag object permanently.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-delete-permissions.md)]

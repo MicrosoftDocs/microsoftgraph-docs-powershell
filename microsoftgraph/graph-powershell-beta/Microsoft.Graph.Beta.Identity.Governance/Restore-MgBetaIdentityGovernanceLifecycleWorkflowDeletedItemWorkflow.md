@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/restore-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflow
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Restore-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
@@ -34,6 +35,9 @@ Restore-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -InputObjec
 ## DESCRIPTION
 Restore a workflow that has been deleted.
 You can only restore a workflow that was deleted within the last 30 days before Microsoft Entra ID automatically permanently deletes it.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-restore-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-restore-permissions.md)]

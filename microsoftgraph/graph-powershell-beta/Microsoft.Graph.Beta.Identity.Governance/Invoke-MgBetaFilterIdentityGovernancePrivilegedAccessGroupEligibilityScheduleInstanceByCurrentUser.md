@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupeligibilityscheduleinstancebycurrentuser
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser
@@ -35,6 +36,9 @@ Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleIns
 
 ## DESCRIPTION
 Return instances of membership and ownership eligibility schedules for the calling principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser-permissions.md)]

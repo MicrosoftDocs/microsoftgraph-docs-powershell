@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingiteminsight
 schema: 2.0.0
 ms.subservice: insights
+ms.subservice: insights
 ---
 
 # Update-MgUserSettingItemInsight
@@ -46,6 +47,9 @@ Update-MgUserSettingItemInsight -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the privacy settings for itemInsights and meeting hours insights of a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userinsightssettings-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userinsightssettings-update-permissions.md)]

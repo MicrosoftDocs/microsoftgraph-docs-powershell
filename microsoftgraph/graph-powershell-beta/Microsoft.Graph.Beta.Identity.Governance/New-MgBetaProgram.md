@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaProgram
@@ -28,6 +29,9 @@ New-MgBetaProgram -BodyParameter <IMicrosoftGraphProgram> [-ResponseHeadersVaria
 
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, create a new program object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-create-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-create-permissions.md)]

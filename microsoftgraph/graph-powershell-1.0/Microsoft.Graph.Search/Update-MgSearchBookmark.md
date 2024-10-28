@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Update-MgSearchBookmark
@@ -58,6 +59,9 @@ Update-MgSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Update the properties of a bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-update-permissions.md)]

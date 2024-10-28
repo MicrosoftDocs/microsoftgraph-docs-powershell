@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/unpublish-mgbookingbusiness
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Unpublish-MgBookingBusiness
@@ -34,6 +35,9 @@ Unpublish-MgBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeadersVa
 ## DESCRIPTION
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and the publicUrl property to null.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-unpublish-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-unpublish-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
@@ -41,6 +43,12 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
 
 ## DESCRIPTION
 Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentworkflowextension-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-list-accesspackagecustomworkflowextensions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentworkflowextension-get-permissions.md)]

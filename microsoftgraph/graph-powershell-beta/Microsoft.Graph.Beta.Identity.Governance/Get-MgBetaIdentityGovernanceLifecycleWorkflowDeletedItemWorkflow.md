@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
@@ -41,6 +43,12 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -InputObject <I
 
 ## DESCRIPTION
 Retrieve a deleted workflow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-deleteditemcontainer-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecycleworkflowscontainer-list-deleteditems-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-deleteditemcontainer-get-permissions.md)]

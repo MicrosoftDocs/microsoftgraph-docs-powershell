@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveroot
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaFollowDriveRoot
@@ -30,6 +31,9 @@ Invoke-MgBetaFollowDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVari
 
 ## DESCRIPTION
 Follow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]

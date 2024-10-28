@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # New-MgPlannerPlan
@@ -34,6 +35,9 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-ResponseHeadersV
 
 ## DESCRIPTION
 Create a new plannerPlan object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-plans-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-plans-permissions.md)]

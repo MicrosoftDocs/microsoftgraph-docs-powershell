@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointreportrealtimeremoteconnectionstatus
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
@@ -29,6 +30,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
 
 ## DESCRIPTION
 Get the real-time connection status information, such as signInStatus or daysSinceLastUse, for a Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrealtimeremoteconnectionstatus-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrealtimeremoteconnectionstatus-permissions.md)]

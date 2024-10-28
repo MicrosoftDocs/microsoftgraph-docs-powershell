@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantaggregatedpolicycompliance
 schema: 2.0.0
 ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance
@@ -37,6 +38,9 @@ Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance -InputObject
 
 ## DESCRIPTION
 Aggregate view of device compliance policies across managed tenants.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-aggregatedpolicycompliances-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-aggregatedpolicycompliances-permissions.md)]

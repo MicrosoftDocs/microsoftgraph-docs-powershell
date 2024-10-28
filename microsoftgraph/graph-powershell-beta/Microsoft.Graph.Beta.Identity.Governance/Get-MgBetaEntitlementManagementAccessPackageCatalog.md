@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageCatalog
@@ -61,6 +63,12 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackageCatalog object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackagecatalogs-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserpassword
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Test-MgBetaUserPassword
@@ -32,6 +33,9 @@ Test-MgBetaUserPassword
 ## DESCRIPTION
 Check a user's password against the organization's password validation policy and report whether the password is valid.
 Use this action to provide real-time feedback on password strength while the user types their password.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-validatepassword-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-validatepassword-permissions.md)]

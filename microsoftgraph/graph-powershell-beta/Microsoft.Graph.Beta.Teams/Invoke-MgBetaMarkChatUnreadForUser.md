@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatunreadforuser
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaMarkChatUnreadForUser
@@ -50,6 +51,9 @@ Invoke-MgBetaMarkChatUnreadForUser -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Mark a chat as unread for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-markchatunreadforuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-markchatunreadforuser-permissions.md)]

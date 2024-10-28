@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtimeoff
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamTimeOff
@@ -21,6 +22,9 @@ Get-MgBetaTeamTimeOff [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [
 
 ## DESCRIPTION
 Get all time off objects across all teams to which a user is a direct member.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-gettimesoff-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-gettimesoff-permissions.md)]

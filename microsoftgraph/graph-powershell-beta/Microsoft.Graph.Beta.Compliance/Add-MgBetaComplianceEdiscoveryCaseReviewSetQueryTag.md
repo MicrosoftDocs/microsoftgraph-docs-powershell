@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/add-mgbetacomplianceediscoverycasereviewsetquerytag
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag
@@ -50,6 +51,9 @@ Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIde
 
 ## DESCRIPTION
 Apply tags to documents that match the specified reviewSetQuery.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewsetquery-applytags-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewsetquery-applytags-permissions.md)]

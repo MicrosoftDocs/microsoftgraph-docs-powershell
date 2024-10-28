@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaDevice
@@ -45,6 +46,9 @@ New-MgBetaDevice -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariabl
 
 ## DESCRIPTION
 Create a new device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-devices-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-devices-permissions.md)]

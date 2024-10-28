@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityConditionalAccessTemplate
@@ -41,6 +43,12 @@ Get-MgBetaIdentityConditionalAccessTemplate -InputObject <IIdentitySignInsIdenti
 
 ## DESCRIPTION
 Read the properties and relationships of a conditionalAccessTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccesstemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-list-templates-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccesstemplate-get-permissions.md)]

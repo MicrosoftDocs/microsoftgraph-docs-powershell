@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.te
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamScheduleOpenShiftChangeRequest
@@ -41,6 +43,12 @@ Get-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an openShiftChangeRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshiftchangerequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshiftchangerequest-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshiftchangerequest-get-permissions.md)]

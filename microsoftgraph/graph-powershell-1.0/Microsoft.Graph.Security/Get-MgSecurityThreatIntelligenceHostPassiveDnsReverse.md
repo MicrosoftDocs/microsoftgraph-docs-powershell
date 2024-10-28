@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostpassivednsreverse
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse
@@ -40,6 +41,9 @@ Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Reverse passive DNS retrieval about this host.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-list-passivednsreverse-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-list-passivednsreverse-permissions.md)]

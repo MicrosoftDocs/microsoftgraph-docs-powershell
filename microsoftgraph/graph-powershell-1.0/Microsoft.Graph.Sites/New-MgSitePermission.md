@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepermission
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgSitePermission
@@ -56,6 +57,9 @@ New-MgSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create a new permission object on a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-permissions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-permissions-permissions.md)]

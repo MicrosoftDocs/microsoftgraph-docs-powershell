@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgOrganizationBranding
@@ -73,6 +74,9 @@ Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 
 ## DESCRIPTION
 Update the properties of the default branding object specified by the organizationalBranding resource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-update-permissions.md)]

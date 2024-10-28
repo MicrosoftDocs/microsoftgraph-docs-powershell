@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetadrivelistcontenttypewithhubsite
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Join-MgBetaDriveListContentTypeWithHubSite
@@ -50,6 +51,9 @@ Join-MgBetaDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action associateWithHubSites
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]

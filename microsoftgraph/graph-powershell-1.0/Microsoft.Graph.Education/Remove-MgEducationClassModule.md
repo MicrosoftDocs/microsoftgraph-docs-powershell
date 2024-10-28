@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmodule
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgEducationClassModule
@@ -34,6 +35,9 @@ Remove-MgEducationClassModule -InputObject <IEducationIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete an existing module in a class.
 Only teachers within a class can delete modules.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-delete-permissions.md)]

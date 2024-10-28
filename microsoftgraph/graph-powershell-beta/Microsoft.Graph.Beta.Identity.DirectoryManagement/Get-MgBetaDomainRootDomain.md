@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainrootdomain
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDomainRootDomain
@@ -32,6 +33,9 @@ Get-MgBetaDomainRootDomain -InputObject <IIdentityDirectoryManagementIdentity> [
 
 ## DESCRIPTION
 Get the root domain of a subdomain.The API returns a single object which is the root domain of the specified subdomain.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-list-rootdomain-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-list-rootdomain-permissions.md)]

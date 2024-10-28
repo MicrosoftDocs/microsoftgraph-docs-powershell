@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Send-MgTeamActivityNotification
@@ -55,6 +56,9 @@ Send-MgTeamActivityNotification -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send an activity feed notification in the scope of a team.
 For more information about sending notifications and the requirements for doing so, seesending Teams activity notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-sendactivitynotification-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-sendactivitynotification-permissions.md)]

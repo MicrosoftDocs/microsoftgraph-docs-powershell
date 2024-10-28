@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaTrustFrameworkKeySet
@@ -49,6 +50,9 @@ Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity>
 Update the properties of a trustFrameworkKeyset.
 This operation will replace the content of an existing keyset.
 Specifying the ID in the request payload is optional.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-update-permissions.md)]

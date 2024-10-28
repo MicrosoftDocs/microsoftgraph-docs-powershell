@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: m365-lighthouse
 ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantManagementTemplate
@@ -38,6 +40,12 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplate -InputObject <IManag
 
 ## DESCRIPTION
 Read the properties and relationships of a managementTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementtemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-managementtemplates-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementtemplate-get-permissions.md)]

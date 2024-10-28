@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregistereduserbyref
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # New-MgDeviceRegisteredUserByRef
@@ -47,6 +48,9 @@ New-MgDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementIdenti
 
 ## DESCRIPTION
 Add a registered user for the device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-registeredusers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-registeredusers-permissions.md)]

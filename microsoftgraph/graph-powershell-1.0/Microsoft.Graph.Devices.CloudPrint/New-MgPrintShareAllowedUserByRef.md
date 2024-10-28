@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharealloweduserbyref
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # New-MgPrintShareAllowedUserByRef
@@ -46,6 +47,9 @@ New-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -Body
 
 ## DESCRIPTION
 Grant the specified user access to submit print jobs to the associated printerShare.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-post-allowedusers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-post-allowedusers-permissions.md)]

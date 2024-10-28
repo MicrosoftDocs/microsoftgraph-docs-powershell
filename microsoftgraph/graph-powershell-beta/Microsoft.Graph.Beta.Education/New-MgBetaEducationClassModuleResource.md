@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmoduleresource
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # New-MgBetaEducationClassModuleResource
@@ -51,6 +52,9 @@ New-MgBetaEducationClassModuleResource -InputObject <IEducationIdentity>
 Create a resource in a module.
 Only teachers can perform this operation.
 You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-post-resources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-post-resources-permissions.md)]

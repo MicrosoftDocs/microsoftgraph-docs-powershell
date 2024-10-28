@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityAuthenticationEventFlow
@@ -43,6 +45,12 @@ Get-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-list-authenticationeventsflows-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-get-permissions.md)]

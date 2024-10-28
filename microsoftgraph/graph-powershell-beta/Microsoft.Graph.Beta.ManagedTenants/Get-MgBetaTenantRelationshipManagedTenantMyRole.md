@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmyrole
 schema: 2.0.0
 ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantMyRole
@@ -37,6 +38,9 @@ Get-MgBetaTenantRelationshipManagedTenantMyRole -InputObject <IManagedTenantsIde
 
 ## DESCRIPTION
 The collection of role assignments to a signed-in user for a managed tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-myroles-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-myroles-permissions.md)]

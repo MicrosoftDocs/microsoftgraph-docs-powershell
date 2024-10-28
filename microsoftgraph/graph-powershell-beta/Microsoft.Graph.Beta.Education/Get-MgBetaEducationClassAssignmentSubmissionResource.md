@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: education
 ms.subservice: education
+ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassAssignmentSubmissionResource
@@ -49,6 +51,12 @@ Retrieve the properties of a specific resource associated with a submission.
 Only teachers, students, and applications with application permissions can perform this operation.
 This resource is in the 'working' resource list and should be considered work in process by a student.
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmissionresource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-list-resources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmissionresource-get-permissions.md)]

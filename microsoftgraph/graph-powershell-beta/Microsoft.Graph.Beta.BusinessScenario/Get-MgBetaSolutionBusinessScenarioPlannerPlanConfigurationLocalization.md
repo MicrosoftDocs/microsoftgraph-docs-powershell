@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization
 schema: 2.0.0
 ms.subservice: business-scenarios
+ms.subservice: business-scenarios
 ---
 
 # Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization
@@ -38,6 +39,9 @@ Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -InputObj
 
 ## DESCRIPTION
 Localized names for the plan configuration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-list-localizations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-list-localizations-permissions.md)]

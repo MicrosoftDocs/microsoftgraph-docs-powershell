@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityB2XUserFlowLanguage
@@ -45,6 +47,12 @@ Get-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity> [-Expa
 Read the properties and relationships of a userFlowLanguageConfiguration object.
 These objects represent a language available in a user flow.
 Note: Language customization is enabled by default in Microsoft Entra user flows.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-list-languages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]

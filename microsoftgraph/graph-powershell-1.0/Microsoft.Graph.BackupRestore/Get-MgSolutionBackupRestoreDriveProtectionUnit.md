@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoredriveprotectionunit
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgSolutionBackupRestoreDriveProtectionUnit
@@ -40,6 +41,9 @@ Get-MgSolutionBackupRestoreDriveProtectionUnit -InputObject <IBackupRestoreIdent
 
 ## DESCRIPTION
 The list of drive protection units in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-list-driveprotectionunits-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-list-driveprotectionunits-permissions.md)]

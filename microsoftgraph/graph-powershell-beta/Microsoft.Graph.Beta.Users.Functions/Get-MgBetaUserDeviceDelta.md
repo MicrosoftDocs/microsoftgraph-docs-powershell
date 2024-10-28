@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdevicedelta
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaUserDeviceDelta
@@ -33,6 +34,9 @@ Get-MgBetaUserDeviceDelta -InputObject <IUsersFunctionsIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
 For more information, see Using delta query.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delta-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delta-permissions.md)]

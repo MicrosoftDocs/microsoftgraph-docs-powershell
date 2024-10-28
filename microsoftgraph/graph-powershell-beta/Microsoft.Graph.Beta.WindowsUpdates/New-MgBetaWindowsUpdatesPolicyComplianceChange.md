@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicycompliancechange
 schema: 2.0.0
 ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # New-MgBetaWindowsUpdatesPolicyComplianceChange
@@ -46,6 +47,9 @@ New-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIden
 
 ## DESCRIPTION
 Create a new contentApproval object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-post-compliancechanges-contentapproval-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-post-compliancechanges-contentapproval-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgPolicyDefaultAppManagementPolicy
@@ -24,6 +25,9 @@ Get-MgPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Property <
 
 ## DESCRIPTION
 Read the properties of a tenantAppManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantappmanagementpolicy-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantappmanagementpolicy-get-permissions.md)]

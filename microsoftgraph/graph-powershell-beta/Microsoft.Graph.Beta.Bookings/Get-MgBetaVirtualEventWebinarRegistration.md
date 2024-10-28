@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: cloud-communications
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarRegistration
@@ -41,6 +43,12 @@ Get-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-Exp
 
 ## DESCRIPTION
 Get the properties and relationships of a virtualEventRegistration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistration-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistration-get-permissions.md)]

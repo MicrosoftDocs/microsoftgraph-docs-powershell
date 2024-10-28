@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaPolicyAppManagementPolicy
@@ -50,6 +51,9 @@ Update-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update an appManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-update-permissions.md)]

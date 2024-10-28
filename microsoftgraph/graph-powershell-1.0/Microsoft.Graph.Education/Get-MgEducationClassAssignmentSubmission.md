@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.ed
 schema: 2.0.0
 ms.subservice: education
 ms.subservice: education
+ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgEducationClassAssignmentSubmission
@@ -58,6 +60,12 @@ A teacher or application with application permissions has full access to all sub
 The grade and feedback from a teacher are part of the educationOutcome associated with this object.
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students will not see the grade or feedback until the assignment has been released.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-list-submissions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-get-permissions.md)]

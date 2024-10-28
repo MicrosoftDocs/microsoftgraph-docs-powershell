@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Invoke-MgGraphChat
@@ -48,6 +49,9 @@ Invoke-MgGraphChat -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <Stri
 
 ## DESCRIPTION
 Unhide a chat for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-unhideforuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-unhideforuser-permissions.md)]

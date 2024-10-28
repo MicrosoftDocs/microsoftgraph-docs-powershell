@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.ed
 schema: 2.0.0
 ms.subservice: education
 ms.subservice: education
+ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgEducationClassAssignment
@@ -47,6 +49,12 @@ Get the properties and relationships of an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, the response value for the status property is unknownFutureValue.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-assignments-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-permissions.md)]

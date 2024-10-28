@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamprimarychannelmessagereplysoftdelete
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Undo-MgBetaTeamPrimaryChannelMessageReplySoftDelete

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccesspolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgIdentityConditionalAccessPolicy
@@ -32,6 +33,9 @@ Remove-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Delete a conditionalAccessPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccesspolicy-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccesspolicy-delete-permissions.md)]

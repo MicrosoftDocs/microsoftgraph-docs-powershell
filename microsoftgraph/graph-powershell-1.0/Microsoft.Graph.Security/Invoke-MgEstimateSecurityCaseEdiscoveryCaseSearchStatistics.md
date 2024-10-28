@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgestimatesecuritycaseediscoverycasesearchstatistics
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics
@@ -34,6 +35,9 @@ Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics -InputObject <ISecur
 ## DESCRIPTION
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-estimatestatistics-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-estimatestatistics-permissions.md)]

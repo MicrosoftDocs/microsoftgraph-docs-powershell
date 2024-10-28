@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriveitemactivitybyinterval
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgUserDriveItemActivityByInterval
@@ -53,6 +54,9 @@ Get-MgUserDriveItemActivityByInterval -InputObject <IUsersFunctionsIdentity> [-C
 ## DESCRIPTION
 Get a collection of itemActivityStats resources for the activities that took place on this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/itemactivitystat-getactivitybyinterval-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/itemactivitystat-getactivitybyinterval-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatayear
 schema: 2.0.0
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # Update-MgBetaExternalIndustryDataYear
@@ -45,6 +46,9 @@ Update-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of a yearTimePeriodDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-update-permissions.md)]

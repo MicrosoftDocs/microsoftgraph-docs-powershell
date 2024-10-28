@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaPolicyCrossTenantAccessPolicyPartner
@@ -42,6 +43,9 @@ New-MgBetaPolicyCrossTenantAccessPolicyPartner
 
 ## DESCRIPTION
 Create a new partner configuration in a cross-tenant access policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-post-partners-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-post-partners-permissions.md)]

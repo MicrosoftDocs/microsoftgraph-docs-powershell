@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: universal-print
 ms.subservice: universal-print
+ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaPrintShare
@@ -40,6 +42,9 @@ Get-MgBetaPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a printer share.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-list-shares-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-list-shares-permissions.md)]

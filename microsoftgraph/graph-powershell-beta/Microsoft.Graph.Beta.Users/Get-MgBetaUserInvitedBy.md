@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinvitedby
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Get-MgBetaUserInvitedBy
@@ -29,6 +30,9 @@ Get-MgBetaUserInvitedBy -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Get the user or servicePrincipal that invited the specified user into the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-invitedby-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-invitedby-permissions.md)]

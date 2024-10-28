@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowuserattributeassignmentorder
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder
@@ -50,6 +51,9 @@ Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentit
 
 ## DESCRIPTION
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-setorder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-setorder-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivityuserdetail
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportYammerActivityUserDetail
@@ -44,6 +45,9 @@ Get-MgReportYammerActivityUserDetail -InputObject <IReportsIdentity> -OutFile <S
 
 ## DESCRIPTION
 Get details about Yammer activity by user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammeractivityuserdetail-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammeractivityuserdetail-permissions.md)]

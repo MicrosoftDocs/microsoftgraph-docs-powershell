@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcolumn
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgSiteListColumn
@@ -40,6 +41,9 @@ Get-MgSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 The collection of field definitions for this list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-columns-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-columns-permissions.md)]

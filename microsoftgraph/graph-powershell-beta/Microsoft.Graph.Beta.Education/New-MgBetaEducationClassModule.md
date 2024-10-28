@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # New-MgBetaEducationClassModule
@@ -54,6 +55,9 @@ New-MgBetaEducationClassModule -InputObject <IEducationIdentity>
 Create a new module in a class.
 Only teachers in a class can create a module.
 Modules start in the draft state, which means that students won't see the modules until publication.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-module-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-module-permissions.md)]

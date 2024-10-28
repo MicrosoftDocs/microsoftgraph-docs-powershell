@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcontenttype
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaSiteListContentType
@@ -40,6 +41,9 @@ Get-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 The collection of content types present in this list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-contenttypes-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-contenttypes-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationoperation
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityAttackSimulationOperation
@@ -40,6 +41,9 @@ Get-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-E
 
 ## DESCRIPTION
 Get an attack simulation operation to track a long-running operation request for a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationoperation-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationoperation-get-permissions.md)]

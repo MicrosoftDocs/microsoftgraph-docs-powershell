@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusageuserdetail
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportYammerDeviceUsageUserDetail
@@ -44,6 +45,9 @@ Get-MgReportYammerDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile
 
 ## DESCRIPTION
 Get details about Yammer device usage by user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammerdeviceusageuserdetail-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammerdeviceusageuserdetail-permissions.md)]

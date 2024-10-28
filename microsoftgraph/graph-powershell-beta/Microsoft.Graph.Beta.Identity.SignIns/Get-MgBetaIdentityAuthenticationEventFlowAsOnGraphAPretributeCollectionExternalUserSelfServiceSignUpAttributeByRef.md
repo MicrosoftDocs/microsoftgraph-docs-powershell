@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef
@@ -27,6 +28,9 @@ Get-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalU
 ## DESCRIPTION
 Get an identityUserFlowAttribute collection associated with an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onattributecollectionexternalusersselfservicesignup-list-attributes-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onattributecollectionexternalusersselfservicesignup-list-attributes-permissions.md)]

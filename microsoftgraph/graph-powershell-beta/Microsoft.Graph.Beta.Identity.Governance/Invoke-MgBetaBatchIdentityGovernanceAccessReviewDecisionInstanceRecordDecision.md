@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewdecisioninstancerecorddecision
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
@@ -51,6 +52,9 @@ Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
 
 ## DESCRIPTION
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using principalId, resourceId, or neither.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-batchrecorddecisions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-batchrecorddecisions-permissions.md)]

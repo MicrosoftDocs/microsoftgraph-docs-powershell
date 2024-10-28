@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewsetquery
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgBetaComplianceEdiscoveryCaseReviewSetQuery
@@ -47,6 +48,9 @@ New-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdenti
 
 ## DESCRIPTION
 Create a new reviewSetQuery object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewsetquery-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewsetquery-post-permissions.md)]

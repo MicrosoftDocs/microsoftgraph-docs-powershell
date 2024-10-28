@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport
@@ -32,6 +33,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionRe
 
 ## DESCRIPTION
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-gettotalaggregatedremoteconnectionreports-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-gettotalaggregatedremoteconnectionreports-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesdeployment
 schema: 2.0.0
 ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # Remove-MgBetaWindowsUpdatesDeployment
@@ -29,6 +30,9 @@ Remove-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-I
 
 ## DESCRIPTION
 Delete a deployment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-deployment-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-deployment-delete-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy
@@ -35,6 +36,9 @@ Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy
 ## DESCRIPTION
 Delete a cloudPcProvisioningPolicy object.
 You can't delete a policy that's in use.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-delete-permissions.md)]

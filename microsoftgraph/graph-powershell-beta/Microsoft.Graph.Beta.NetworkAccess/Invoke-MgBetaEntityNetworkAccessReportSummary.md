@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetaentitynetworkaccessreportsummary
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Invoke-MgBetaEntityNetworkAccessReportSummary
@@ -29,6 +30,9 @@ Invoke-MgBetaEntityNetworkAccessReportSummary -InputObject <INetworkAccessIdenti
 
 ## DESCRIPTION
 Get the number of users, devices, and workloads per traffic type in a specified time period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-reports-entitiessummaries-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-reports-entitiessummaries-permissions.md)]

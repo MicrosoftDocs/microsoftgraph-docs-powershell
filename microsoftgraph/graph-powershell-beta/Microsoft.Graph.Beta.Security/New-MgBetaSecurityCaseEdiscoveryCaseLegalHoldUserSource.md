@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaselegalholdusersource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource
@@ -48,6 +49,9 @@ New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecurityI
 
 ## DESCRIPTION
 Create a new userSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryholdpolicy-post-usersources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryholdpolicy-post-usersources-permissions.md)]

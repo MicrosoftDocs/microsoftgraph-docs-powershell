@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermanager
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Get-MgBetaUserManager
@@ -34,6 +35,9 @@ Get-MgBetaUserManager -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-manager-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-manager-permissions.md)]

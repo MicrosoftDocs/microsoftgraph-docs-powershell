@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventextension
 schema: 2.0.0
 ms.subservice: extensions
+ms.subservice: extensions
 ---
 
 # Get-MgBetaGroupEventExtension

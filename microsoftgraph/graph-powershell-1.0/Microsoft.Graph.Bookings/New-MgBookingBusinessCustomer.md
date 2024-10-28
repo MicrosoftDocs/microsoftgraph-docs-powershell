@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomer
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # New-MgBookingBusinessCustomer
@@ -46,6 +47,9 @@ New-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> -BodyParameter <H
 
 ## DESCRIPTION
 Create a new bookingCustomer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-customers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-customers-permissions.md)]

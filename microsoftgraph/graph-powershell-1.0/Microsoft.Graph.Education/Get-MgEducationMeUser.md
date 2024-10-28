@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgEducationMeUser
@@ -23,6 +24,9 @@ Get-MgEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Resp
 
 ## DESCRIPTION
 Retrieve the simple directory user that corresponds to this educationUser.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-get-user-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-get-user-permissions.md)]

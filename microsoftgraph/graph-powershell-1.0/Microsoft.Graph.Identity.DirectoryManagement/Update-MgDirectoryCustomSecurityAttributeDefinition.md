@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinition
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Update-MgDirectoryCustomSecurityAttributeDefinition
@@ -52,6 +53,9 @@ Update-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirec
 
 ## DESCRIPTION
 Update the properties of a customSecurityAttributeDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-update-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: service-communications
 ms.subservice: service-communications
+ms.subservice: service-communications
+ms.subservice: service-communications
 ---
 
 # Get-MgBetaServiceAnnouncementMessageAttachment
@@ -42,6 +44,12 @@ Get-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnno
 
 ## DESCRIPTION
 Read the properties and relationships of a serviceAnnouncementAttachment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncementattachment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-list-attachments-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncementattachment-get-permissions.md)]

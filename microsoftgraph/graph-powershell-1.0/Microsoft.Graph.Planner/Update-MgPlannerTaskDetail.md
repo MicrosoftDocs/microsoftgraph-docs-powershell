@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskdetail
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Update-MgPlannerTaskDetail
@@ -48,6 +49,9 @@ Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 
 ## DESCRIPTION
 Update the properties of plannerTaskDetails object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertaskdetails-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertaskdetails-update-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagedetail
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportSharePointSiteUsageDetail
@@ -44,6 +45,9 @@ Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <
 
 ## DESCRIPTION
 Get details about SharePoint site usage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagedetail-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagedetail-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/update-mgbetasubscription
 schema: 2.0.0
 ms.subservice: change-notifications
+ms.subservice: change-notifications
 ---
 
 # Update-MgBetaSubscription

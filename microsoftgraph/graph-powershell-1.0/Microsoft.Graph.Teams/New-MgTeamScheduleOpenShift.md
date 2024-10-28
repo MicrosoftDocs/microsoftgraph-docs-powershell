@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgTeamScheduleOpenShift
@@ -50,6 +51,9 @@ New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Create an instance of an openShift object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-post-permissions.md)]

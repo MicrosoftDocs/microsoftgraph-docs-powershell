@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionbot
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaAppCatalogTeamAppDefinitionBot
@@ -32,6 +33,9 @@ Get-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Get the bot associated with a specific definition of the  TeamsApp.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkbot-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkbot-get-permissions.md)]

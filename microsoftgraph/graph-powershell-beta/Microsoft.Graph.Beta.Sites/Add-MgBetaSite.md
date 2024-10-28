@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaSite
@@ -32,6 +33,9 @@ Add-MgBetaSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbody
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-follow-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-follow-permissions.md)]

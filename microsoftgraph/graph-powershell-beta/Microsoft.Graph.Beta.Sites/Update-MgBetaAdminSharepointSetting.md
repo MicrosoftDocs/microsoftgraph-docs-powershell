@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepointsetting
 schema: 2.0.0
 ms.subservice: onedrive
+ms.subservice: onedrive
 ---
 
 # Update-MgBetaAdminSharepointSetting
@@ -43,6 +44,9 @@ Update-MgBetaAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSet
 
 ## DESCRIPTION
 Update one or more tenant-level settings for SharePoint and OneDrive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-update-permissions.md)]

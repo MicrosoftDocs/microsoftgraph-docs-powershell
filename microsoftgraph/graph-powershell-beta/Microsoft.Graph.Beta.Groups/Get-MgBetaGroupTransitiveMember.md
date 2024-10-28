@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemember
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupTransitiveMember
@@ -42,6 +43,9 @@ Get-MgBetaGroupTransitiveMember -InputObject <IGroupsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The direct and transitive members of a group.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-transitivemembers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-transitivemembers-permissions.md)]

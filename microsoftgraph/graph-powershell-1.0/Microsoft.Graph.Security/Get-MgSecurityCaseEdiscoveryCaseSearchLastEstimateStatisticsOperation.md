@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchlastestimatestatisticsoperation
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation
@@ -33,6 +34,9 @@ Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -InputObje
 
 ## DESCRIPTION
 Get the last  ediscoveryEstimateOperation objects and their properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-list-lastestimatestatisticsoperation-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-list-lastestimatestatisticsoperation-permissions.md)]

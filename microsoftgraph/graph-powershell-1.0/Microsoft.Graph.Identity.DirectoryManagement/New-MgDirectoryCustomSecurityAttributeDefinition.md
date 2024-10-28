@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinition
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # New-MgDirectoryCustomSecurityAttributeDefinition
@@ -34,6 +35,9 @@ New-MgDirectoryCustomSecurityAttributeDefinition
 
 ## DESCRIPTION
 Create a new customSecurityAttributeDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-post-customsecurityattributedefinitions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-post-customsecurityattributedefinitions-permissions.md)]

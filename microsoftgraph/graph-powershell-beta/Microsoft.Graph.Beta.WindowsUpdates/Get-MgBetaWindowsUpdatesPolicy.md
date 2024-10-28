@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: autopatch
 ms.subservice: autopatch
+ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # Get-MgBetaWindowsUpdatesPolicy
@@ -38,6 +40,12 @@ Get-MgBetaWindowsUpdatesPolicy -InputObject <IWindowsUpdatesIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Read the properties and relationships of an updatePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-list-updatepolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-get-permissions.md)]

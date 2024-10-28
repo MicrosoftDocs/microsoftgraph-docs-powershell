@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianindex
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex
@@ -66,6 +67,9 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Trigger an indexOperation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-updateindex-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-updateindex-permissions.md)]

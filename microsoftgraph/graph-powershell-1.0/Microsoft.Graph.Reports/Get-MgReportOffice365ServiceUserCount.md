@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365serviceusercount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportOffice365ServiceUserCount
@@ -31,6 +32,9 @@ Get-MgReportOffice365ServiceUserCount -InputObject <IReportsIdentity> -OutFile <
 
 ## DESCRIPTION
 Get the count of users by activity type and service.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365servicesusercounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365servicesusercounts-permissions.md)]

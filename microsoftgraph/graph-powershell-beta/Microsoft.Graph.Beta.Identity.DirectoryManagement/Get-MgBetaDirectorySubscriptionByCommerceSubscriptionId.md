@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId
@@ -32,6 +33,9 @@ Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId -InputObject <IIdentityD
 
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/companysubscription-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/companysubscription-get-permissions.md)]

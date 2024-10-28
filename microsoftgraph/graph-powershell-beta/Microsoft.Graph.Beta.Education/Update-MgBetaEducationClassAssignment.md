@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignment
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Update-MgBetaEducationClassAssignment
@@ -70,6 +71,9 @@ Update an educationAssignment object.
 Only teachers in the class can do this.
 You can't use a PATCH request to change the status of an assignment.
 Use the publish action to change the assignment status.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-update-permissions.md)]

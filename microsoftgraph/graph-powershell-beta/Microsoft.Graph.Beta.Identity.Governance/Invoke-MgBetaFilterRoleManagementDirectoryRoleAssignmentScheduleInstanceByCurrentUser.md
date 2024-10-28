@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagementdirectoryroleassignmentscheduleinstancebycurrentuser
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser
@@ -35,6 +36,9 @@ Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurren
 
 ## DESCRIPTION
 Get the instances of active role assignments for the calling principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentscheduleinstance-filterbycurrentuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentscheduleinstance-filterbycurrentuser-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
@@ -51,6 +52,9 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <IS
 
 ## DESCRIPTION
 Create a new unifiedGroupSource object associated with an eDiscovery custodian.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-post-unifiedgroupsources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-post-unifiedgroupsources-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportrelyingpartydetailedsummary
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportRelyingPartyDetailedSummary
@@ -34,6 +35,9 @@ Get-MgBetaReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Co
 
 ## DESCRIPTION
 Get a summary of AD FS relying parties information.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getrelyingpartydetailedsummary-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getrelyingpartydetailedsummary-permissions.md)]

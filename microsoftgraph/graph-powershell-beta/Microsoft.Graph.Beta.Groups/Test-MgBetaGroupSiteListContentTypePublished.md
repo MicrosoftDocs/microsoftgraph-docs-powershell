@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsitelistcontenttypepublished
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Test-MgBetaGroupSiteListContentTypePublished
@@ -31,6 +32,9 @@ Test-MgBetaGroupSiteListContentTypePublished -InputObject <IGroupsIdentity> [-Re
 
 ## DESCRIPTION
 Invoke function isPublished
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]

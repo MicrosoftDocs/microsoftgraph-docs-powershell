@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyclaimmappingpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgPolicyClaimMappingPolicy
@@ -32,6 +33,9 @@ New-MgPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-ResponseHeadersVaria
 
 ## DESCRIPTION
 Create a new claimsMappingPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/claimsmappingpolicy-post-claimsmappingpolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/claimsmappingpolicy-post-claimsmappingpolicies-permissions.md)]

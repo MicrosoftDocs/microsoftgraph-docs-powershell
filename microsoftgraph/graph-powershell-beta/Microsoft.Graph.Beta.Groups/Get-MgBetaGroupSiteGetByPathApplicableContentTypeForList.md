@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitegetbypathapplicablecontenttypeforlist
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList
@@ -34,6 +35,9 @@ Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList -InputObject <IGroupsId
 
 ## DESCRIPTION
 Get site contentTypes that can be added to a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getapplicablecontenttypesforlist-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getapplicablecontenttypesforlist-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyprinter
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgReportMonthlyPrintUsageByPrinter
@@ -40,6 +41,9 @@ Get-MgReportMonthlyPrintUsageByPrinter -InputObject <IReportsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Retrieve a list of monthly print usage summaries, grouped by printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-list-monthlyprintusagebyprinter-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-list-monthlyprintusagebyprinter-permissions.md)]

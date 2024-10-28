@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepageassitepagewebpart
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Remove-MgSitePageAsSitePageWebPart
@@ -32,6 +33,9 @@ Remove-MgSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete a webPart object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/webpart-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/webpart-delete-permissions.md)]

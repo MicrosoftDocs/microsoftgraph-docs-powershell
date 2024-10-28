@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: m365-lighthouse
 ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantTag
@@ -38,6 +40,12 @@ Get-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIdenti
 
 ## DESCRIPTION
 Read the properties and relationships of a tenantTag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-tenanttags-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Set-MgBetaExternalConnectionItem
@@ -54,6 +55,9 @@ Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
 Create a new externalItem.
 This API can be used to create a custom item.
 The containing externalConnection must have a schema registered of the corresponding type.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-update-permissions.md)]

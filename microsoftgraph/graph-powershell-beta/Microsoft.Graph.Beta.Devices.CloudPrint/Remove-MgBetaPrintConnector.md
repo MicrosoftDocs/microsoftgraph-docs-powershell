@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintconnector
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Remove-MgBetaPrintConnector
@@ -32,6 +33,9 @@ Remove-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete (unregister) a printConnector.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printconnector-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printconnector-delete-permissions.md)]

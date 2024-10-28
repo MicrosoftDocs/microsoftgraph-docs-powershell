@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.ca
 schema: 2.0.0
 ms.subservice: outlook
 ms.subservice: outlook
+ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Get-MgUserCalendarPermission

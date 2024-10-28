@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationjoinrequest
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
@@ -24,6 +25,9 @@ Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest [-ExpandProperty 
 
 ## DESCRIPTION
 Get the status of a tenant joining a multi-tenant organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationjoinrequestrecord-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationjoinrequestrecord-get-permissions.md)]

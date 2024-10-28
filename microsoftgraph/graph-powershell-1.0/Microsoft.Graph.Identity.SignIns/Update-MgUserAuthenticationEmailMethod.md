@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationemailmethod
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgUserAuthenticationEmailMethod
@@ -48,6 +49,9 @@ Update-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update a user's email address represented by an emailAuthenticationMethod object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/emailauthenticationmethod-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/emailauthenticationmethod-update-permissions.md)]

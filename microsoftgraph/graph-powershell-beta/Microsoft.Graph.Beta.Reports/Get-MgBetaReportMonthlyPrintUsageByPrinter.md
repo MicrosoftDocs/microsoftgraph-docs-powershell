@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyprinter
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaReportMonthlyPrintUsageByPrinter
@@ -40,6 +41,9 @@ Get-MgBetaReportMonthlyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Exp
 
 ## DESCRIPTION
 Retrieve a list of monthly print usage summaries, grouped by printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-monthlyprintusagebyprinter-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-monthlyprintusagebyprinter-permissions.md)]

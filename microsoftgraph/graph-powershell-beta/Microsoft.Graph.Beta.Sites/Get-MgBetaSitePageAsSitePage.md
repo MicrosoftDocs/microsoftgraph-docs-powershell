@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: sharepoint
 ms.subservice: sharepoint
+ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaSitePageAsSitePage
@@ -41,6 +43,12 @@ Get-MgBetaSitePageAsSitePage -InputObject <ISitesIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Returns the metadata for a sitePage in the site pages list in a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sitepage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sitepage-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sitepage-get-permissions.md)]

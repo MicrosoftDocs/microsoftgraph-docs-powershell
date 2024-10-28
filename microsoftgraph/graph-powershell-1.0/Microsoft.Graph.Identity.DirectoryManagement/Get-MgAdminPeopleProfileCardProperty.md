@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: people
 ms.subservice: people
+ms.subservice: people
+ms.subservice: people
 ---
 
 # Get-MgAdminPeopleProfileCardProperty
@@ -43,6 +45,12 @@ Get-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Retrieve the properties of a profileCardProperty entity.
 The profileCardProperty is identified by its directoryPropertyName property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/profilecardproperty-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/peopleadminsettings-list-profilecardproperties-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/profilecardproperty-get-permissions.md)]

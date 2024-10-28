@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Update-MgBetaSearchQna
@@ -56,6 +57,9 @@ Update-MgBetaSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the properties of a qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-update-permissions.md)]

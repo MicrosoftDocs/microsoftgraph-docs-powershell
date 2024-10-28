@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl
@@ -36,6 +37,9 @@ Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <IUsersFunction
 Get a join web URL for a Microsoft Virtual Appointment.
 This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms.
 With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-getvirtualappointmentjoinweburl-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-getvirtualappointmentjoinweburl-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckinuserdriveroot
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaCheckinUserDriveRoot
@@ -48,6 +49,9 @@ Invoke-MgBetaCheckinUserDriveRoot -InputObject <IUsersActionsIdentity> [-Respons
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]

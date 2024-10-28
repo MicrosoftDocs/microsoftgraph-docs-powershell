@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuser
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # New-MgBetaEducationUser
@@ -45,6 +46,9 @@ New-MgBetaEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-Response
 
 ## DESCRIPTION
 Create a new user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-post-users-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-post-users-permissions.md)]

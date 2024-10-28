@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachattab
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgBetaChatTab
@@ -32,6 +33,9 @@ Remove-MgBetaChatTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respons
 
 ## DESCRIPTION
 Remove (unpin) a tab from the specified chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-delete-tabs-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-delete-tabs-permissions.md)]

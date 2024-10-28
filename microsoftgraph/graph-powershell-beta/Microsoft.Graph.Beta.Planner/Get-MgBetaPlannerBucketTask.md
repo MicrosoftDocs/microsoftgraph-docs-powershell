@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbuckettask
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Get-MgBetaPlannerBucketTask
@@ -25,6 +26,9 @@ Get-MgBetaPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-list-tasks-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-list-tasks-permissions.md)]

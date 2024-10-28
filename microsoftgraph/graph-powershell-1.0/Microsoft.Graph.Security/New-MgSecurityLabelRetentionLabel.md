@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabel
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # New-MgSecurityLabelRetentionLabel
@@ -41,6 +42,9 @@ New-MgSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRetenti
 ## DESCRIPTION
 Create a new retentionLabel object.
 To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-post-retentionlabel-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-post-retentionlabel-permissions.md)]

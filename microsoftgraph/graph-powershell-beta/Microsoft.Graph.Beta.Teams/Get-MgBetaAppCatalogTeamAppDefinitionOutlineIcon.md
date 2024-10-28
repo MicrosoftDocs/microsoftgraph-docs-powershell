@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineicon
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon
@@ -29,6 +30,9 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity> [
 
 ## DESCRIPTION
 Retrieve a Teams app icon associated with a specific definition of an app.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappicon-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappicon-get-permissions.md)]

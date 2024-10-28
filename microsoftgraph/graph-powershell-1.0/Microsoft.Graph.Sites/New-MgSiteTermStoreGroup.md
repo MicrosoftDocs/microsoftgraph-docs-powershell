@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgSiteTermStoreGroup
@@ -82,6 +83,9 @@ New-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create a new group object in a term store.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-post-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatescatalogentry
 schema: 2.0.0
 ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # Get-MgBetaWindowsUpdatesCatalogEntry
@@ -39,6 +40,9 @@ Get-MgBetaWindowsUpdatesCatalogEntry -InputObject <IWindowsUpdatesIdentity> [-Ex
 ## DESCRIPTION
 Lists the content that you can approve for deployment.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-catalog-list-entries-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-catalog-list-entries-permissions.md)]

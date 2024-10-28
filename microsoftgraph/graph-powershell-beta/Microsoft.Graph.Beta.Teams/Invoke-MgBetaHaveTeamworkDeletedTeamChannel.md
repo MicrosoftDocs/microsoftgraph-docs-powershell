@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahaveteamworkdeletedteamchannel
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaHaveTeamworkDeletedTeamChannel
@@ -32,6 +33,9 @@ Invoke-MgBetaHaveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-Tena
 
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-doesuserhaveaccess-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-doesuserhaveaccess-permissions.md)]

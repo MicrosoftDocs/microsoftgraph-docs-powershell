@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryexternaluserprofile
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgBetaDirectoryExternalUserProfile
@@ -33,6 +34,9 @@ Remove-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManage
 Delete an externalUserProfile object.
 Note: To permanently delete the externalUserProfile, follow permanently delete an item.
 To restore an externalUserProfile, follow restore a deleted item.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-delete-externaluserprofiles-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-delete-externaluserprofiles-permissions.md)]

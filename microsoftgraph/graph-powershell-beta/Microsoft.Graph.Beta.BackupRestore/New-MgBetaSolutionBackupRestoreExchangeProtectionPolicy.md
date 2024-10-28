@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangeprotectionpolicy
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaSolutionBackupRestoreExchangeProtectionPolicy
@@ -40,6 +41,9 @@ New-MgBetaSolutionBackupRestoreExchangeProtectionPolicy
 Create a protection policy for the Exchange service in a Microsoft 365 tenant.
 The policy is set to inactive when it is created.
 Users can also provide a list of protection units under the policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-exchangeprotectionpolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-exchangeprotectionpolicies-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupacceptedsenderbyref
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # New-MgGroupAcceptedSenderByRef
@@ -50,6 +51,9 @@ New-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> -BodyParameter <IR
 Specify the user or group in @odata.id in the request body.
 Users in the accepted senders list can post to conversations of the group.
 Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you'll get an error.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-acceptedsenders-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-acceptedsenders-permissions.md)]

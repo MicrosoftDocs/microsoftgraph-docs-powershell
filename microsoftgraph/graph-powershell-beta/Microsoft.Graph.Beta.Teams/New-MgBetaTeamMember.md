@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateammember
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamMember
@@ -47,6 +48,9 @@ New-MgBetaTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Add a new conversation member to a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-post-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-post-members-permissions.md)]

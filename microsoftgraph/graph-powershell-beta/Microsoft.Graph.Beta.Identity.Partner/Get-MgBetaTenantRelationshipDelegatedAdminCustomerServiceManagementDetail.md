@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail
 schema: 2.0.0
 ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
@@ -42,6 +43,9 @@ Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 
 ## DESCRIPTION
 Contains the management details of a service in the customer tenant that's managed by delegated administration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadmincustomer-list-servicemanagementdetails-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadmincustomer-list-servicemanagementdetails-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallparticipant
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Remove-MgCommunicationCallParticipant
@@ -40,6 +41,9 @@ In some situations, it is appropriate for an application to remove a participant
 This action can be done before or after the participant answers the call.
 When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
 When an invited participant is removed, any outstanding add participant request is canceled.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-delete-permissions.md)]

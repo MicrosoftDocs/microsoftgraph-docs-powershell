@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
@@ -53,6 +54,9 @@ Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 ## DESCRIPTION
 Update the properties of a certificateBasedApplicationConfiguration object.
 To update the trustedCertificateAuthorities within a certificateBasedApplicationConfiguration object, use the Update certificateAuthorityAsEntity operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-update-permissions.md)]

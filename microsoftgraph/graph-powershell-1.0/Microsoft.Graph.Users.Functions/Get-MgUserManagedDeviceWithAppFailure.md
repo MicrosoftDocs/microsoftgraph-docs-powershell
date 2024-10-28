@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanageddevicewithappfailure
 schema: 2.0.0
 ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgUserManagedDeviceWithAppFailure

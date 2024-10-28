@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagementdirectoryroleeligibilityschedulebycurrentuser
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser
@@ -35,6 +36,9 @@ Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser
 
 ## DESCRIPTION
 Retrieve the schedules for role eligibilities for which the signed-in user is the principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedule-filterbycurrentuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedule-filterbycurrentuser-permissions.md)]

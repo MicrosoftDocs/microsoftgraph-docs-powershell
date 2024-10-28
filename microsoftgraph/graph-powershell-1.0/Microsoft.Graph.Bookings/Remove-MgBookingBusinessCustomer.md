@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinesscustomer
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Remove-MgBookingBusinessCustomer
@@ -32,6 +33,9 @@ Remove-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete the specified bookingCustomer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomer-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomer-delete-permissions.md)]

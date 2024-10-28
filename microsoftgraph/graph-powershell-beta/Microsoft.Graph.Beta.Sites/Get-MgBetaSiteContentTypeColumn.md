@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: sharepoint
 ms.subservice: sharepoint
+ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaSiteContentTypeColumn
@@ -41,6 +43,12 @@ Get-MgBetaSiteContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Retrieve the metadata for a site, list, or contentType column.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-list-columns-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-get-permissions.md)]

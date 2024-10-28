@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
 ms.subservice: edge-browser-management
+ms.subservice: edge-browser-management
 ---
 
 # Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
@@ -55,6 +56,9 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDe
 
 ## DESCRIPTION
 Update the properties of a browserSharedCookie object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersharedcookie-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersharedcookie-update-permissions.md)]

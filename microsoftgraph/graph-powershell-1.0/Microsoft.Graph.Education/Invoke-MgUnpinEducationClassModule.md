@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunpineducationclassmodule
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Invoke-MgUnpinEducationClassModule
@@ -35,6 +36,9 @@ Invoke-MgUnpinEducationClassModule -InputObject <IEducationIdentity> [-ResponseH
 Unpin an educationModule in the classwork list.
 This action sets the isPinned property to false for an educationModule.
 Only teachers in the class can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-unpin-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-unpin-permissions.md)]

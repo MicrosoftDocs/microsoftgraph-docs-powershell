@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # New-MgBetaEducationSchoolUserByRef
@@ -46,6 +47,9 @@ New-MgBetaEducationSchoolUserByRef -InputObject <IEducationIdentity> -BodyParame
 
 ## DESCRIPTION
 Add a user to a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-post-users-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-post-users-permissions.md)]

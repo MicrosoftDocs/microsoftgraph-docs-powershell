@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveroot
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Search-MgDriveRoot
@@ -34,6 +35,9 @@ Search-MgDriveRoot -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-search-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-search-permissions.md)]

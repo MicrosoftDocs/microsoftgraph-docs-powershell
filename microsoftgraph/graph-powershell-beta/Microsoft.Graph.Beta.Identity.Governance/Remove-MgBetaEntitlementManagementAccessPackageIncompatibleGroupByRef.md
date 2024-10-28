@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
@@ -33,6 +34,9 @@ Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
 
 ## DESCRIPTION
 Remove a group from the list of groups marked as incompatible on an accessPackage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-delete-incompatiblegroup-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-delete-incompatiblegroup-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresourcerole
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgEntitlementManagementCatalogResourceRole
@@ -86,6 +87,9 @@ Get-MgEntitlementManagementCatalogResourceRole -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 Get resourceRoles from identityGovernance
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-list-resourceroles-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-list-resourceroles-permissions.md)]

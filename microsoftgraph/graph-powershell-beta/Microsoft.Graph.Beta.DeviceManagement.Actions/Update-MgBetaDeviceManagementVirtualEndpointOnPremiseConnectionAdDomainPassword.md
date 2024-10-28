@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementvirtualendpointonpremiseconnectionaddomainpassword
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword
@@ -51,6 +52,9 @@ Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword
 ## DESCRIPTION
 Update the Active Directory domain password for a cloudPcOnPremisesConnection object.
 This API is supported when the type of the cloudPcOnPremisesConnection object is hybridAzureADJoin.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-updateaddomainpassword-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-updateaddomainpassword-permissions.md)]

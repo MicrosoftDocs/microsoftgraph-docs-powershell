@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # New-MgBetaSecurityAction
@@ -32,6 +33,9 @@ New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-Respon
 
 ## DESCRIPTION
 Create a new securityAction object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityactions-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityactions-post-permissions.md)]

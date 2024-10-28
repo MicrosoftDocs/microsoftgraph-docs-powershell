@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecordsession
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgCommunicationCallRecordSession
@@ -46,6 +47,9 @@ List of sessions involved in the call.
 Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecords-callrecord-list-sessions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecords-callrecord-list-sessions-permissions.md)]

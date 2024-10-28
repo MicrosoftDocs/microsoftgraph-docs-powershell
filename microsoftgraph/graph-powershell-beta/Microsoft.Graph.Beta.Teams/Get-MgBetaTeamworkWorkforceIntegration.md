@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamworkWorkforceIntegration
@@ -41,6 +43,12 @@ Get-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a workforceintegration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workforceintegration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workforceintegration-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workforceintegration-get-permissions.md)]

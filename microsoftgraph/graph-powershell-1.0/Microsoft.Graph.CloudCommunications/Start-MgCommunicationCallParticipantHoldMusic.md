@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Start-MgCommunicationCallParticipantHoldMusic
@@ -50,6 +51,9 @@ Start-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunications
 
 ## DESCRIPTION
 Put a participant on hold and play music in the background.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-startholdmusic-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-startholdmusic-permissions.md)]

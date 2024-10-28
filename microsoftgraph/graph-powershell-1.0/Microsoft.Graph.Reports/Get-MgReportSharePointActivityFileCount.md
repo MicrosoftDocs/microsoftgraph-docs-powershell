@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityfilecount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportSharePointActivityFileCount
@@ -31,6 +32,9 @@ Get-MgReportSharePointActivityFileCount -InputObject <IReportsIdentity> -OutFile
 
 ## DESCRIPTION
 Get the number of unique, licensed users who interacted with files stored on SharePoint sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivityfilecounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivityfilecounts-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgIdentityGovernanceLifecycleWorkflow
@@ -68,6 +69,9 @@ Update-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceId
 Update the properties of a workflow object.
 Only the properties listed in the request body table can be updated.
 To update any other workflow properties, see workflow: createNewVersion.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-update-permissions.md)]

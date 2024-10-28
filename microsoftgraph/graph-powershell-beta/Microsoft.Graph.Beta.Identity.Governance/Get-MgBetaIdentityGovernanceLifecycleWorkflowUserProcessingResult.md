@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowuserprocessingresult
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult
@@ -40,6 +41,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -InputObject <
 
 ## DESCRIPTION
 Per-user workflow execution results.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-list-userprocessingresults-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-list-userprocessingresults-permissions.md)]

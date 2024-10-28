@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassteacherbyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassTeacherByRef
@@ -26,6 +27,9 @@ Get-MgBetaEducationClassTeacherByRef -EducationClassId <String> [-Filter <String
 ## DESCRIPTION
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-teachers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-teachers-permissions.md)]

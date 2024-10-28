@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyadminconsentrequestpolicy
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaPolicyAdminConsentRequestPolicy
@@ -24,6 +25,9 @@ Get-MgBetaPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Propert
 
 ## DESCRIPTION
 Read the properties and relationships of an adminConsentRequestPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminconsentrequestpolicy-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminconsentrequestpolicy-get-permissions.md)]

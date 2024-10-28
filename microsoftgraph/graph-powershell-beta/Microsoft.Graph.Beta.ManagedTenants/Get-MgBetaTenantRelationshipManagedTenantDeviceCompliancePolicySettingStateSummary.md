@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: m365-lighthouse
 ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
@@ -40,6 +42,12 @@ Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSumma
 
 ## DESCRIPTION
 Read the properties and relationships of a deviceCompliancePolicySettingStateSummary object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-devicecompliancepolicysettingstatesummary-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-devicecompliancepolicysettingstatesummary-get-permissions.md)]

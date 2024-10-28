@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenotenotebookfromweburl
 schema: 2.0.0
 ms.subservice: onenote
+ms.subservice: onenote
 ---
 
 # Get-MgBetaGroupOnenoteNotebookFromWebUrl
@@ -50,6 +51,9 @@ Get-MgBetaGroupOnenoteNotebookFromWebUrl -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getnotebookfromweburl-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getnotebookfromweburl-permissions.md)]

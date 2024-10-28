@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaChatMessage
@@ -49,6 +51,9 @@ Get-MgBetaChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-messages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-messages-permissions.md)]

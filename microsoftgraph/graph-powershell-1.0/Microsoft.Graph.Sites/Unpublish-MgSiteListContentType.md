@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitelistcontenttype
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Unpublish-MgSiteListContentType
@@ -32,6 +33,9 @@ Unpublish-MgSiteListContentType -InputObject <ISitesIdentity> [-ResponseHeadersV
 
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]

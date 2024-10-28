@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting
 schema: 2.0.0
 ms.subservice: onedrive
+ms.subservice: onedrive
 ---
 
 # Update-MgAdminSharepointSetting
@@ -43,6 +44,9 @@ Update-MgAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSetting
 
 ## DESCRIPTION
 Update one or more tenant-level settings for SharePoint and OneDrive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharepointsettings-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharepointsettings-update-permissions.md)]

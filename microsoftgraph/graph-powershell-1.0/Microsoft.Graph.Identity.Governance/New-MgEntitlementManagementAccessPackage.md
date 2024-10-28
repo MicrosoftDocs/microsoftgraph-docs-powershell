@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackage
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgEntitlementManagementAccessPackage
@@ -39,6 +40,9 @@ New-MgEntitlementManagementAccessPackage -BodyParameter <IMicrosoftGraphAccessPa
 ## DESCRIPTION
 Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-accesspackages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-accesspackages-permissions.md)]

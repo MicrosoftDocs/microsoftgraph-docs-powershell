@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflowidentityproviderbyref
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityB2CUserFlowIdentityProviderByRef
@@ -45,6 +46,9 @@ New-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySignIn
 
 ## DESCRIPTION
 Add identity providers in a b2cIdentityUserFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-post-identityproviders-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-post-identityproviders-permissions.md)]

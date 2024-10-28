@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitecontenttypewithhubsite
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Join-MgBetaSiteContentTypeWithHubSite
@@ -50,6 +51,9 @@ Join-MgBetaSiteContentTypeWithHubSite -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Invoke action associateWithHubSites
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]

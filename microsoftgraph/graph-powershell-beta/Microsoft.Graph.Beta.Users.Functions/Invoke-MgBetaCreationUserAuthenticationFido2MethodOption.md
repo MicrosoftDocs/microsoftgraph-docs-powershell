@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetacreationuserauthenticationfido2methodoption
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaCreationUserAuthenticationFido2MethodOption
@@ -31,6 +32,9 @@ Invoke-MgBetaCreationUserAuthenticationFido2MethodOption -InputObject <IUsersFun
 ## DESCRIPTION
 Retrieve creation options required to generate and register a Microsoft Entra ID-compatible passkey.
 Self-service operations aren't supported.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/fido2authenticationmethod-creationoptions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/fido2authenticationmethod-creationoptions-permissions.md)]

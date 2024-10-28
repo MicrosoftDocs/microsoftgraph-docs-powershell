@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreprotectionunit
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaSolutionBackupRestoreProtectionUnit
@@ -40,6 +41,9 @@ Get-MgBetaSolutionBackupRestoreProtectionUnit -InputObject <IBackupRestoreIdenti
 
 ## DESCRIPTION
 Read the properties and relationships of a protectionUnitBase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionunitbase-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionunitbase-get-permissions.md)]

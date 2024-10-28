@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfile
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaIdentityGovernanceTermsOfUseAgreementFile
@@ -50,6 +51,9 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGover
 
 ## DESCRIPTION
 Create a new localized agreement file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-post-files-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-post-files-permissions.md)]

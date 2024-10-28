@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementcomanageddevicecloudpcreviewstatus
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus
@@ -29,6 +30,9 @@ Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus -InputObject <IDevi
 
 ## DESCRIPTION
 Get the review status of a specific Cloud PC device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcreviewstatus-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcreviewstatus-permissions.md)]

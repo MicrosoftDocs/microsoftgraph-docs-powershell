@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveroot
 schema: 2.0.0
 ms.subservice: onedrive
+ms.subservice: onedrive
 ---
 
 # Restore-MgDriveRoot
@@ -50,6 +51,9 @@ Restore-MgDriveRoot -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-restore-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-restore-permissions.md)]

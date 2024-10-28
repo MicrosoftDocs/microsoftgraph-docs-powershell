@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance
@@ -41,6 +43,12 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject <IIdent
 
 ## DESCRIPTION
 Get the instance of an active role assignment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentscheduleinstance-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleassignmentscheduleinstances-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentscheduleinstance-get-permissions.md)]

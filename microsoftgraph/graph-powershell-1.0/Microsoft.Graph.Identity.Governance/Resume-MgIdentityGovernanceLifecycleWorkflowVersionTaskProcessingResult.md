@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgidentitygovernancelifecycleworkflowversiontaskprocessingresult
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult
@@ -59,6 +60,9 @@ Resume-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult
 Resume a task processing result that's inProgress.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see: Lifecycle Workflows extensibility approach.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-taskprocessingresult-resume-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-taskprocessingresult-resume-permissions.md)]

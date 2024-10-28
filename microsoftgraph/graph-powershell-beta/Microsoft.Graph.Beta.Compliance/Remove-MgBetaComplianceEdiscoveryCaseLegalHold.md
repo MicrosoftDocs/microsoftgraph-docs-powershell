@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaselegalhold
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Remove-MgBetaComplianceEdiscoveryCaseLegalHold
@@ -29,6 +30,9 @@ Remove-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity
 
 ## DESCRIPTION
 Delete a legalHold object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-delete-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupdriverootpermission
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Grant-MgGroupDriveRootPermission
@@ -49,6 +50,9 @@ Grant-MgGroupDriveRootPermission -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-grant-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-grant-permissions.md)]

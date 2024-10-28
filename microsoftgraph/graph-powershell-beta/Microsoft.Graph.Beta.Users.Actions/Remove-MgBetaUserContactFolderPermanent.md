@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausercontactfolderpermanent
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Remove-MgBetaUserContactFolderPermanent
@@ -31,6 +32,9 @@ Remove-MgBetaUserContactFolderPermanent -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Permanently delete a contact folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-permanentdelete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-permanentdelete-permissions.md)]

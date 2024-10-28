@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstore
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaSiteTermStore
@@ -32,6 +33,9 @@ Get-MgBetaSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Read the properties and relationships of a store object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-store-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-store-get-permissions.md)]

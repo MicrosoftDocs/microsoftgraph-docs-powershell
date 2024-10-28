@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmember
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgTeamChannelMember
@@ -48,6 +49,9 @@ New-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Add a conversationMember to a channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmember-add-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmember-add-permissions.md)]

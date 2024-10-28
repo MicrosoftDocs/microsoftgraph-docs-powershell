@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepublication
 schema: 2.0.0
 ms.subservice: people
+ms.subservice: people
 ---
 
 # Update-MgBetaUserProfilePublication
@@ -53,6 +54,9 @@ Update-MgBetaUserProfilePublication -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Update the properties of an itemPublication object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itempublication-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itempublication-update-permissions.md)]

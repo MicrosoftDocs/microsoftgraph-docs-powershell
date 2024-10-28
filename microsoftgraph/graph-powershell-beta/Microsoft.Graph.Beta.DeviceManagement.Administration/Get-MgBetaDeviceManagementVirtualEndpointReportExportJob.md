@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointreportexportjob
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportExportJob
@@ -43,6 +44,9 @@ Read the properties and relationships of a cloudPcExportJob object.
 You can download a report by first creating a new cloudPcExportJob resource to initiate downloading.
 Use this GET operation to verify the exportJobStatus property of the cloudPcExportJob resource.
 The property becomes completed when the report finishes downloading in the location specified by the exportUrl property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexportjob-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexportjob-get-permissions.md)]

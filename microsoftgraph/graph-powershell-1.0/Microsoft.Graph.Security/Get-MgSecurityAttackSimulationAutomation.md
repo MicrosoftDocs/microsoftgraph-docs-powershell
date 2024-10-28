@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.se
 schema: 2.0.0
 ms.subservice: security
 ms.subservice: security
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityAttackSimulationAutomation
@@ -41,6 +43,12 @@ Get-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-Expa
 
 ## DESCRIPTION
 Get an attack simulation automation for a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/simulationautomation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-simulationautomations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/simulationautomation-get-permissions.md)]

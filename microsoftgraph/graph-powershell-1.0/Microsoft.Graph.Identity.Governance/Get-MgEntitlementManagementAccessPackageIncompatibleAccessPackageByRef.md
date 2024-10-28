@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatibleaccesspackagebyref
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
@@ -25,6 +26,9 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPa
 
 ## DESCRIPTION
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-incompatibleaccesspackages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-incompatibleaccesspackages-permissions.md)]

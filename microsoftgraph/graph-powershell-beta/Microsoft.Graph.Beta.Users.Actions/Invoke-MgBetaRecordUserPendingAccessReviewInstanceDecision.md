@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetarecorduserpendingaccessreviewinstancedecision
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaRecordUserPendingAccessReviewInstanceDecision
@@ -49,6 +50,9 @@ Invoke-MgBetaRecordUserPendingAccessReviewInstanceDecision -InputObject <IUsersA
 ## DESCRIPTION
 As a reviewer of an access review, record a decision for an accessReviewInstanceDecisionItem that is assigned to you and that matches the principal or resource IDs specified.
 If no IDs are specified, the decisions will apply to every accessReviewInstanceDecisionItem for which you are the reviewer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-recordalldecisions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-recordalldecisions-permissions.md)]

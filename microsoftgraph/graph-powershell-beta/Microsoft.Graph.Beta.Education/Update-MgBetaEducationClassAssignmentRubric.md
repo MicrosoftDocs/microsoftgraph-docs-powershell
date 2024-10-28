@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentrubric
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Update-MgBetaEducationClassAssignmentRubric
@@ -54,6 +55,9 @@ Update-MgBetaEducationClassAssignmentRubric -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-put-rubric-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-put-rubric-permissions.md)]

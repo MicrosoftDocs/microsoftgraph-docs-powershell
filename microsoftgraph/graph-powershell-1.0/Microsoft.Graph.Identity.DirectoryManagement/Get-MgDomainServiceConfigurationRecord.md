@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainserviceconfigurationrecord
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDomainServiceConfigurationRecord
@@ -44,6 +45,9 @@ Get-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManagemen
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-serviceconfigurationrecords-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-serviceconfigurationrecords-permissions.md)]

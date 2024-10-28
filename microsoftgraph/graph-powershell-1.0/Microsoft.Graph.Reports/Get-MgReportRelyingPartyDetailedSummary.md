@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportrelyingpartydetailedsummary
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgReportRelyingPartyDetailedSummary
@@ -34,6 +35,9 @@ Get-MgReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Count]
 
 ## DESCRIPTION
 Get a summary of AD FS relying parties information.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getrelyingpartydetailedsummary-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getrelyingpartydetailedsummary-permissions.md)]

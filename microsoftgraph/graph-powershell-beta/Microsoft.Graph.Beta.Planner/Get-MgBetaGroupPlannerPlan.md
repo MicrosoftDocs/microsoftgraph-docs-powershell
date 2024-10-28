@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplan
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Get-MgBetaGroupPlannerPlan
@@ -44,6 +45,9 @@ Get-MgBetaGroupPlannerPlan -InputObject <IPlannerIdentity> [-ExpandProperty <Str
 Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannergroup-list-plans-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannergroup-list-plans-permissions.md)]

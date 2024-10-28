@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationemailmethod
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaUserAuthenticationEmailMethod
@@ -48,6 +49,9 @@ Update-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentit
 
 ## DESCRIPTION
 Update a user's email address associated with an email Authentication Method object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/emailauthenticationmethod-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/emailauthenticationmethod-update-permissions.md)]

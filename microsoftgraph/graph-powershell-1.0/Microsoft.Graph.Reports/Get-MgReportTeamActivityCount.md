@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitycount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportTeamActivityCount
@@ -33,6 +34,9 @@ Get-MgReportTeamActivityCount -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Get the number of team activities across Microsoft Teams.
 The activity types are related to meetings and messages.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsteamactivitycounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsteamactivitycounts-permissions.md)]

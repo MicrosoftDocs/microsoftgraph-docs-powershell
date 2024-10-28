@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryPendingExternalUserProfile
@@ -38,6 +40,12 @@ Get-MgBetaDirectoryPendingExternalUserProfile -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 Retrieve the properties of a specific pendingExternalUserProfile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pendingexternaluserprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-pendingexternaluserprofile-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pendingexternaluserprofile-get-permissions.md)]

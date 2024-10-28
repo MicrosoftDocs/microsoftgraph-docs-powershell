@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentcategorydelta
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationUserAssignmentCategoryDelta
@@ -34,6 +35,9 @@ Get-MgBetaEducationUserAssignmentCategoryDelta -InputObject <IEducationIdentity>
 
 ## DESCRIPTION
 Get a list of newly created or updated educationCategory objects without performing a full read of the collection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-delta-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-delta-permissions.md)]

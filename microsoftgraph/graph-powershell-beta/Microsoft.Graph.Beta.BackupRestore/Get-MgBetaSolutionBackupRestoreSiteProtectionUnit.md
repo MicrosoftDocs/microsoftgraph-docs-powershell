@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresiteprotectionunit
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaSolutionBackupRestoreSiteProtectionUnit
@@ -40,6 +41,9 @@ Get-MgBetaSolutionBackupRestoreSiteProtectionUnit -InputObject <IBackupRestoreId
 
 ## DESCRIPTION
 The list of site protection units in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmerubric
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # New-MgEducationMeRubric
@@ -33,6 +34,9 @@ New-MgEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-Respon
 
 ## DESCRIPTION
 Create a new educationRubric object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-rubrics-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-rubrics-permissions.md)]

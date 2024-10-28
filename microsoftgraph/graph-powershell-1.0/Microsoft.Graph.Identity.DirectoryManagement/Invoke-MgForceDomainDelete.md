@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgforcedomaindelete
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Invoke-MgForceDomainDelete
@@ -55,6 +56,9 @@ Delete a domain using an asynchronous long-running operation.
 Before performing this operation, you must update or remove any references to Exchange as the provisioning service.
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain return an HTTP 404 status code.
 To verify deletion of a domain, you can perform a get domain operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-forcedelete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-forcedelete-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresenceuserpreferredpresence
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Set-MgBetaCommunicationPresenceUserPreferredPresence
@@ -60,6 +61,9 @@ Preferred presence takes effect only when there is at least one presence session
 Otherwise, the user's presence stays as Offline.
 A presence session can be created as a result of a successful setPresence operation, or if the user is signed in on a Teams client.
 Read more about presence sessions and their time-out and expiration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setuserpreferredpresence-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setuserpreferredpresence-permissions.md)]

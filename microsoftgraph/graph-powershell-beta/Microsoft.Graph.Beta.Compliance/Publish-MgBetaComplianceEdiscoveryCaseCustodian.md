@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Publish-MgBetaComplianceEdiscoveryCaseCustodian
@@ -31,6 +32,9 @@ Publish-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentit
 ## DESCRIPTION
 Release a custodian from a case.
 For details, see Release a custodian from a case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-release-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-release-permissions.md)]

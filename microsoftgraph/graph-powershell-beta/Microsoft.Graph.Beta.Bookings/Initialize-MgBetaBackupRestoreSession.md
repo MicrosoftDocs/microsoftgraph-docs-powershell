@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoresession
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Initialize-MgBetaBackupRestoreSession
@@ -32,6 +33,9 @@ Initialize-MgBetaBackupRestoreSession -InputObject <IBookingsIdentity> [-Respons
 ## DESCRIPTION
 Activate a draft restoreSessionBase object to restore a protection unit.
 The following points apply to restoring a protection unit:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-activate-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-activate-permissions.md)]

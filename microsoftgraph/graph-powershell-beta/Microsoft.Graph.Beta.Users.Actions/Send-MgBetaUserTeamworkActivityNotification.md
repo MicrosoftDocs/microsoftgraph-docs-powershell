@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserteamworkactivitynotification
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Send-MgBetaUserTeamworkActivityNotification
@@ -56,6 +57,9 @@ Send-MgBetaUserTeamworkActivityNotification -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Send an activity feed notification to a user.
 For more information, see sending Teams activity notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userteamwork-sendactivitynotification-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userteamwork-sendactivitynotification-permissions.md)]

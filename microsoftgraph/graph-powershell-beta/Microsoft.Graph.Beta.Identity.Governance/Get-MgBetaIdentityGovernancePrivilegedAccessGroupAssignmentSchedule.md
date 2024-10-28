@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule
@@ -42,6 +44,12 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -InputObject
 
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupAssignmentSchedule object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupassignmentschedule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroup-list-assignmentschedules-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupassignmentschedule-get-permissions.md)]

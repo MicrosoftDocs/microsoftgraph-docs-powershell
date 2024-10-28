@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatainboundflow
 schema: 2.0.0
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # Remove-MgBetaExternalIndustryDataInboundFlow
@@ -29,6 +30,9 @@ Remove-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-If
 
 ## DESCRIPTION
 Delete an inboundFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-delete-permissions.md)]

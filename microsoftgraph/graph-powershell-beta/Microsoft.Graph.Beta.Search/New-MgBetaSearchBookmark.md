@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchbookmark
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # New-MgBetaSearchBookmark
@@ -36,6 +37,9 @@ New-MgBetaSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-Respon
 
 ## DESCRIPTION
 Create a new bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]

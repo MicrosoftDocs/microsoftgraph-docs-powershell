@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserfollowedsite
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Remove-MgBetaUserFollowedSite
@@ -48,6 +49,9 @@ Remove-MgBetaUserFollowedSite -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Unfollow a user's site or multiple sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-unfollow-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-unfollow-permissions.md)]

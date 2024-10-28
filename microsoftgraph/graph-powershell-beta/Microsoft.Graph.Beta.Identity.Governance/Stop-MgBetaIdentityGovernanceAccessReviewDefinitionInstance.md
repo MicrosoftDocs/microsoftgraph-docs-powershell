@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewdefinitioninstance
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
@@ -38,6 +39,9 @@ Stop a currently active accessReviewInstance.
 After the access review instance stops, the instance status will be Completed, the reviewers can no longer give input, and the access review decisions can be applied.
 Stopping an instance will not effect future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-stop-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-stop-permissions.md)]

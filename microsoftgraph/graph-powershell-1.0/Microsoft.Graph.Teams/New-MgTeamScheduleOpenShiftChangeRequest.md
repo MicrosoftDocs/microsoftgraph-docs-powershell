@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshiftchangerequest
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgTeamScheduleOpenShiftChangeRequest
@@ -50,6 +51,9 @@ New-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create instance of an openShiftChangeRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshiftchangerequest-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshiftchangerequest-post-permissions.md)]

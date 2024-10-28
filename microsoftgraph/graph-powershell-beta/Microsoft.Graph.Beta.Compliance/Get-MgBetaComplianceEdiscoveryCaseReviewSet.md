@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewset
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseReviewSet
@@ -37,6 +38,9 @@ Get-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity> [
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a reviewSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewset-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewset-get-permissions.md)]

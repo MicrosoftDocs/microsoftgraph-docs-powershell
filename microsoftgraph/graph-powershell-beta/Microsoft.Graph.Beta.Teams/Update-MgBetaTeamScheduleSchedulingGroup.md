@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleschedulinggroup
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamScheduleSchedulingGroup
@@ -51,6 +52,9 @@ Update-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Replace an existing schedulingGroup.
 If the specified schedulingGroup doesn't exist, this method returns 404 Not found.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedulinggroup-put-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedulinggroup-put-permissions.md)]

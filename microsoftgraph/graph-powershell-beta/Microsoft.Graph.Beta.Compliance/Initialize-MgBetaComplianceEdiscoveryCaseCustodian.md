@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/initialize-mgbetacomplianceediscoverycasecustodian
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Initialize-MgBetaComplianceEdiscoveryCaseCustodian
@@ -33,6 +34,9 @@ Initialize-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIden
 Activate a custodian that was released from a case.
 This method makes the custodian part of the case again.
 For details, see Manage custodians in an Advanced eDiscovery case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-activate-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-activate-permissions.md)]

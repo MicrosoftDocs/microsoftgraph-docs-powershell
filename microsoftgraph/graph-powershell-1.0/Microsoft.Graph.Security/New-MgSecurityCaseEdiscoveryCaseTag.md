@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCaseTag
@@ -52,6 +53,9 @@ New-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new ediscoveryReviewTag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-post-tags-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-post-tags-permissions.md)]

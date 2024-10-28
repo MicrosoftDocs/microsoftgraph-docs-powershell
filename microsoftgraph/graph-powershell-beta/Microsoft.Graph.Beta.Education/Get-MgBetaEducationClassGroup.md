@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroup
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassGroup
@@ -32,6 +33,9 @@ Get-MgBetaEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 Retrieve the Microsoft 365 group that corresponds to this educationClass.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-get-group-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-get-group-permissions.md)]

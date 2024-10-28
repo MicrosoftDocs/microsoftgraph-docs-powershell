@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/test-mguserdrivelistcontenttypepublished
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Test-MgUserDriveListContentTypePublished
@@ -32,6 +33,9 @@ Test-MgUserDriveListContentTypePublished -InputObject <IUsersFunctionsIdentity>
 
 ## DESCRIPTION
 Check the publishing status of a contentType in a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-ispublished-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-ispublished-permissions.md)]

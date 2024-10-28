@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomain
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceSubdomain
@@ -40,6 +41,9 @@ Get-MgSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity> [-Exp
 
 ## DESCRIPTION
 Read the properties and relationships of a subdomain object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-subdomain-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-subdomain-get-permissions.md)]

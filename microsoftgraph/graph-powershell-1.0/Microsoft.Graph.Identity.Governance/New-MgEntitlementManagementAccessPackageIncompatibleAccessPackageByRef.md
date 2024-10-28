@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageincompatibleaccesspackagebyref
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
@@ -49,6 +50,9 @@ New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 
 ## DESCRIPTION
 Add an accessPackage to the list of access packages that have been marked as incompatible on an accessPackage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-post-incompatibleaccesspackage-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-post-incompatibleaccesspackage-permissions.md)]

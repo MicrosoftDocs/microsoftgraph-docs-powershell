@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition
@@ -41,6 +43,12 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -InputObject <IIdent
 
 ## DESCRIPTION
 Read the details of a built-in workflow task in Lifecycle Workflows.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-taskdefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-taskdefinition-get-permissions.md)]

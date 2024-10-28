@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimecard
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamScheduleTimeCard
@@ -51,6 +52,9 @@ Update-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Replace an existing timeCard with updated values.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-replace-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-replace-permissions.md)]

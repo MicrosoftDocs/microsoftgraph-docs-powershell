@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofile
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessFilteringProfile
@@ -51,6 +52,9 @@ Update-MgBetaNetworkAccessFilteringProfile -InputObject <INetworkAccessIdentity>
 
 ## DESCRIPTION
 Update the properties of a filteringProfile object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-filteringprofile-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-filteringprofile-update-permissions.md)]

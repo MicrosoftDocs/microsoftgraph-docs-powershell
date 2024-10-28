@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: security
 ms.subservice: security
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityLabelAuthority
@@ -41,6 +43,12 @@ Get-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Read the properties and relationships of a authorityTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-authoritytemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-authorities-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-authoritytemplate-get-permissions.md)]

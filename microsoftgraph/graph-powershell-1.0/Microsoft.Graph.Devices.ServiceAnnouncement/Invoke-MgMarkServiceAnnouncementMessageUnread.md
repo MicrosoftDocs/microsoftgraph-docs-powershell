@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageunread
 schema: 2.0.0
 ms.subservice: service-communications
+ms.subservice: service-communications
 ---
 
 # Invoke-MgMarkServiceAnnouncementMessageUnread
@@ -33,6 +34,9 @@ Invoke-MgMarkServiceAnnouncementMessageUnread
 
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as unread for the signed in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-markunread-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-markunread-permissions.md)]

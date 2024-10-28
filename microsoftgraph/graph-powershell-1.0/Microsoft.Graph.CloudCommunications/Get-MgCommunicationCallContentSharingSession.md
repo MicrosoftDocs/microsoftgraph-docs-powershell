@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cl
 schema: 2.0.0
 ms.subservice: cloud-communications
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgCommunicationCallContentSharingSession
@@ -41,6 +43,12 @@ Get-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsI
 
 ## DESCRIPTION
 Retrieve the properties of a contentSharingSession object in a call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contentsharingsession-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-list-contentsharingsessions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contentsharingsession-get-permissions.md)]

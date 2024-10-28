@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage
 schema: 2.0.0
 ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Send-MgDeviceManagementNotificationMessageTemplateTestMessage

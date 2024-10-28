@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaDirectoryPendingExternalUserProfile
@@ -31,6 +32,9 @@ New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter <Hashtable> [-Respo
 
 ## DESCRIPTION
 Create a new pendingExternalUserProfile object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-pendingexternaluserprofile-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-pendingexternaluserprofile-permissions.md)]

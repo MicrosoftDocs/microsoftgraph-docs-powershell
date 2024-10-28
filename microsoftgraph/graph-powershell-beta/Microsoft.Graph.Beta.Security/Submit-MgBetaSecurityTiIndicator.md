@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Submit-MgBetaSecurityTiIndicator
@@ -30,6 +31,9 @@ Submit-MgBetaSecurityTiIndicator
 
 ## DESCRIPTION
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-submittiindicators-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-submittiindicators-permissions.md)]

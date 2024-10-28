@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: universal-print
 ms.subservice: universal-print
+ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaPrintConnector
@@ -41,6 +43,12 @@ Get-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a printConnector object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printconnector-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-list-connectors-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printconnector-get-permissions.md)]

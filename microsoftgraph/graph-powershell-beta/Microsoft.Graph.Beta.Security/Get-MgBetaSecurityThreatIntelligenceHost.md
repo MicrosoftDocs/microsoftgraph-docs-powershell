@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehost
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceHost
@@ -44,6 +45,9 @@ Get-MgBetaSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-Expa
 Read the properties and relationships of a host object.
 The host resource is the abstract base type that returns an implementation.
 A host can be of one of the following types:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-get-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: search
 ms.subservice: search
+ms.subservice: search
+ms.subservice: search
 ---
 
 # Get-MgBetaSearchQna
@@ -40,6 +42,12 @@ Get-MgBetaSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 Read the properties and relationships of a qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-list-qnas-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-get-permissions.md)]

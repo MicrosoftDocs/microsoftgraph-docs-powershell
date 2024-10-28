@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallaudioroutinggroup
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Update-MgCommunicationCallAudioRoutingGroup
@@ -48,6 +49,9 @@ Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsId
 
 ## DESCRIPTION
 Modify sources and receivers of an audioRoutingGroup.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/audioroutinggroup-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/audioroutinggroup-update-permissions.md)]

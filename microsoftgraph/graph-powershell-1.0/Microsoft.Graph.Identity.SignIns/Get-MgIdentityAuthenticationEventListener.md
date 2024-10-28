@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityAuthenticationEventListener
@@ -43,6 +45,12 @@ Get-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventlistener-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-list-authenticationeventlisteners-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventlistener-get-permissions.md)]

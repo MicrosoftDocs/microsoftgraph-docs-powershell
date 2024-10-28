@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: ediscovery
 ms.subservice: ediscovery
+ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseOperation
@@ -41,6 +43,12 @@ Get-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [
 
 ## DESCRIPTION
 Read the properties and relationships of a caseOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-caseoperation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-list-operations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-caseoperation-get-permissions.md)]

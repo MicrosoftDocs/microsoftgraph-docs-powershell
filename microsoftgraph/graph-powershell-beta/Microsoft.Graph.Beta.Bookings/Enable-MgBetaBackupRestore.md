@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/enable-mgbetabackuprestore
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Enable-MgBetaBackupRestore
@@ -39,6 +40,9 @@ Enable the Microsoft 365 Backup Storage service for a tenant.
 Before you call this API, call List protection policies to initialize the data store in the tenant.
 Data store initialization takes about 5 minutes.
 If you call this API before the data store is initialized, the call results in an error.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-enable-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-enable-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Invoke-MgViewUserReminder
@@ -32,6 +33,9 @@ Invoke-MgViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-Filt
 
 ## DESCRIPTION
 Invoke function reminderView
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-reminderview-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-reminderview-permissions.md)]

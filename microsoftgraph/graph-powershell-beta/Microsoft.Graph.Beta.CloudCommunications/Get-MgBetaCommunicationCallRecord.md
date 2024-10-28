@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecord
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallRecord
@@ -34,6 +35,9 @@ Get-MgBetaCommunicationCallRecord -InputObject <ICloudCommunicationsIdentity> [-
 ## DESCRIPTION
 Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the id of a callRecord:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/callrecords-callrecord-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/callrecords-callrecord-get-permissions.md)]

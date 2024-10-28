@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroup
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Remove-MgSiteTermStoreGroup
@@ -46,6 +47,9 @@ Remove-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a group object in a term \[store\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-delete-permissions.md)]

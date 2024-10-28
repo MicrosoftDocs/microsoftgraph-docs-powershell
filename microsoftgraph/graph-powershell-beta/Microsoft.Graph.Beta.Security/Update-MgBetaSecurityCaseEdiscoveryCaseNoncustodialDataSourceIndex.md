@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasenoncustodialdatasourceindex
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex
@@ -66,6 +67,9 @@ Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -InputObject 
 
 ## DESCRIPTION
 Trigger an indexOperation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverynoncustodialdatasource-updateindex-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverynoncustodialdatasource-updateindex-permissions.md)]

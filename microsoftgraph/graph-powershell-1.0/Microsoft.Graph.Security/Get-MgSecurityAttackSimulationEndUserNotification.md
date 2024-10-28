@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationendusernotification
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityAttackSimulationEndUserNotification
@@ -40,6 +41,9 @@ Get-MgSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIdentit
 
 ## DESCRIPTION
 Represents an end user's notification for an attack simulation training.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-endusernotifications-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-endusernotifications-permissions.md)]

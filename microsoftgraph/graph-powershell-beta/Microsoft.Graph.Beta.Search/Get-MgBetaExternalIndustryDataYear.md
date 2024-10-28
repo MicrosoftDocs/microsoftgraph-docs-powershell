@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: industry-data-etl
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataYear
@@ -38,6 +40,12 @@ Get-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Read the properties and relationships of a yearTimePeriodDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-get-permissions.md)]

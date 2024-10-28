@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasenoncustodialdatasource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
@@ -52,6 +53,9 @@ New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityId
 
 ## DESCRIPTION
 Create a new ediscoveryNoncustodialDataSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-post-noncustodialdatasources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-post-noncustodialdatasources-permissions.md)]

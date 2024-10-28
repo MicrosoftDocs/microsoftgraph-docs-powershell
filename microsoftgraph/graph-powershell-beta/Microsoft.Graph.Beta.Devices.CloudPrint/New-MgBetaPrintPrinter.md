@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinter
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # New-MgBetaPrintPrinter
@@ -37,6 +38,9 @@ New-MgBetaPrintPrinter
 ## DESCRIPTION
 Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-create-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-create-permissions.md)]

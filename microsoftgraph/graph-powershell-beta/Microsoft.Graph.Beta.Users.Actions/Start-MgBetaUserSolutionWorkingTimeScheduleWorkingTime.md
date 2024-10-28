@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/start-mgbetausersolutionworkingtimescheduleworkingtime
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime
@@ -32,6 +33,9 @@ Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersActio
 
 ## DESCRIPTION
 Trigger the policies associated with the start of working hours for a specific user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workingtimeschedule-startworkingtime-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workingtimeschedule-startworkingtime-permissions.md)]

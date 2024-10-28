@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarregistrationconfigurationquestion
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion
@@ -35,6 +36,9 @@ Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <
 ## DESCRIPTION
 Delete a registration question from a webinar.
 The question can either be a predefined registration question or a custom registration question.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistrationquestionbase-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistrationquestionbase-delete-permissions.md)]

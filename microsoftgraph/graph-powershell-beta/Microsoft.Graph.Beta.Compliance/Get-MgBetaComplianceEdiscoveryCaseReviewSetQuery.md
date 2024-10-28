@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: ediscovery
 ms.subservice: ediscovery
+ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery
@@ -39,6 +41,12 @@ Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdenti
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an eDiscovery reviewSetQuery object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewsetquery-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewsetquery-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewsetquery-get-permissions.md)]

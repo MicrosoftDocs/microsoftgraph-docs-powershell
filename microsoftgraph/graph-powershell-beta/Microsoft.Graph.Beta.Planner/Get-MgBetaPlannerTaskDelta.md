@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdelta
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Get-MgBetaPlannerTaskDelta
@@ -24,6 +25,9 @@ Get-MgBetaPlannerTaskDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 ## DESCRIPTION
 Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delta-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delta-permissions.md)]

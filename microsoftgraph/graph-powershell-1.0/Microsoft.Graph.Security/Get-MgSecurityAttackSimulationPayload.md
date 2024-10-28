@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationpayload
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityAttackSimulationPayload
@@ -54,6 +55,9 @@ Get-MgSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-ExpandP
 
 ## DESCRIPTION
 Represents an attack simulation training campaign payload in a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-payloads-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-payloads-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Update-MgSiteTermStoreSet
@@ -87,6 +88,9 @@ Update-MgSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Update the properties of a set object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-update-permissions.md)]

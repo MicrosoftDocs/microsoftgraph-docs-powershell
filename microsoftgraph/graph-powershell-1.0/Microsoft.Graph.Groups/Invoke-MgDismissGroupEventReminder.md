@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgdismissgroupeventreminder
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Invoke-MgDismissGroupEventReminder
@@ -32,6 +33,9 @@ Invoke-MgDismissGroupEventReminder -InputObject <IGroupsIdentity> [-ResponseHead
 
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-dismissreminder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-dismissreminder-permissions.md)]

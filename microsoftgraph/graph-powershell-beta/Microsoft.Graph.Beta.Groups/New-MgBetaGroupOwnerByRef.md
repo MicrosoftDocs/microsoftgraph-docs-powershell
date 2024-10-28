@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupownerbyref
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # New-MgBetaGroupOwnerByRef
@@ -48,6 +49,9 @@ New-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> -BodyParameter <IRefere
 ## DESCRIPTION
 Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-owners-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-owners-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertask
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Remove-MgPlannerTask
@@ -32,6 +33,9 @@ Remove-MgPlannerTask -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Respo
 
 ## DESCRIPTION
 Delete a plannerTask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertask-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertask-delete-permissions.md)]

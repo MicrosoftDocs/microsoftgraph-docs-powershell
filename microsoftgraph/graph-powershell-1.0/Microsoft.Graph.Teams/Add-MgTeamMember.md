@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteammember
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Add-MgTeamMember
@@ -50,6 +51,9 @@ Add-MgTeamMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmembers-add-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmembers-add-permissions.md)]

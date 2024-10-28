@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamwork
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamwork
@@ -23,6 +24,9 @@ Get-MgBetaTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [-Respons
 
 ## DESCRIPTION
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamwork-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamwork-get-permissions.md)]

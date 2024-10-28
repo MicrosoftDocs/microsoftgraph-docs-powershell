@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Start-MgBetaDeviceManagementVirtualEndpointCloudPc
@@ -49,6 +50,9 @@ Power on a Windows 365 Frontline Cloud PC.
 This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately.
 Only IT admin users can perform this action.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweron-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweron-permissions.md)]

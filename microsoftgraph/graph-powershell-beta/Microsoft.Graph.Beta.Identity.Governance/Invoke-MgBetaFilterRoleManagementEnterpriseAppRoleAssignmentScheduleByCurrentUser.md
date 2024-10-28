@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententerpriseapproleassignmentschedulebycurrentuser
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleByCurrentUser
@@ -32,6 +33,9 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleByCurrentUse
 
 ## DESCRIPTION
 Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentschedule-filterbycurrentuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentschedule-filterbycurrentuser-permissions.md)]

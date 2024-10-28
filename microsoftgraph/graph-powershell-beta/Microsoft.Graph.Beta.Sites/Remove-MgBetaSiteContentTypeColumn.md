@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttypecolumn
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Remove-MgBetaSiteContentTypeColumn
@@ -32,6 +33,9 @@ Remove-MgBetaSiteContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete columnDefinition
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]

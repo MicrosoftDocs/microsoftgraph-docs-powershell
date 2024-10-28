@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingshiftpreference
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgBetaUserSettingShiftPreference
@@ -48,6 +49,9 @@ Update-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the properties and relationships of a shiftPreferences object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shiftpreferences-put-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shiftpreferences-put-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesearch
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Update-MgSecurityCaseEdiscoveryCaseSearch
@@ -61,6 +62,9 @@ Update-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the properties of an ediscoverySearch object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-update-permissions.md)]

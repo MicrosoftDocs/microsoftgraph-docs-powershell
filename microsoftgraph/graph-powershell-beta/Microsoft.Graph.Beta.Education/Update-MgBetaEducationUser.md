@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Update-MgBetaEducationUser
@@ -74,6 +75,9 @@ Update-MgBetaEducationUser -InputObject <IEducationIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the properties of an educationuser object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-update-permissions.md)]

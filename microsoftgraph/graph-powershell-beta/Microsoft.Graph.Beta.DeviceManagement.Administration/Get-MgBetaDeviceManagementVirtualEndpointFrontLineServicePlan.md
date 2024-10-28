@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: cloud-pc
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
@@ -39,6 +41,12 @@ Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 
 ## DESCRIPTION
 Get the properties and relationships of a cloudPcFrontLineServicePlan object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcfrontlineserviceplan-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-frontlineserviceplans-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcfrontlineserviceplan-get-permissions.md)]

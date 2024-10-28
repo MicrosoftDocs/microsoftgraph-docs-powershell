@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationmeassignmentupfeedbackresourcefolder
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Set-MgEducationMeAssignmentUpFeedbackResourceFolder
@@ -36,6 +37,9 @@ Set-MgEducationMeAssignmentUpFeedbackResourceFolder -InputObject <IEducationIden
 Create a SharePoint folder to upload feedback files for a given educationSubmission.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-setupfeedbackresourcesfolder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-setupfeedbackresourcesfolder-permissions.md)]

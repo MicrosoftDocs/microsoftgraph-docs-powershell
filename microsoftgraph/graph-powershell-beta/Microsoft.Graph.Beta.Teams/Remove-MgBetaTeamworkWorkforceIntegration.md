@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkworkforceintegration
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamworkWorkforceIntegration
@@ -32,6 +33,9 @@ Remove-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-IfMatc
 
 ## DESCRIPTION
 Delete an instance of a workforceIntegration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workforceintegration-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workforceintegration-delete-permissions.md)]

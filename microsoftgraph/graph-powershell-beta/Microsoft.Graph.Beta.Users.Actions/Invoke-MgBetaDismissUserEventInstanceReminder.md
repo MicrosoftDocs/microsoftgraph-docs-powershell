@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadismissusereventinstancereminder
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Invoke-MgBetaDismissUserEventInstanceReminder
@@ -32,6 +33,9 @@ Invoke-MgBetaDismissUserEventInstanceReminder -InputObject <IUsersActionsIdentit
 
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-dismissreminder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-dismissreminder-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskassignedtotaskboardformat
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Get-MgPlannerTaskAssignedToTaskBoardFormat
@@ -32,6 +33,9 @@ Get-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [-Exp
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerAssignedToTaskBoardTaskFormat object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerassignedtotaskboardtaskformat-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerassignedtotaskboardtaskformat-get-permissions.md)]

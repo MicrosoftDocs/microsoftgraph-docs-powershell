@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceprivilegedaccessgroupassignmentschedulerequest
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
@@ -33,6 +34,9 @@ Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 
 ## DESCRIPTION
 Cancel an access assignment request to a group whose membership and ownership are governed by PIM.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupassignmentschedulerequest-cancel-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupassignmentschedulerequest-cancel-permissions.md)]

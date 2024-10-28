@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: industry-data-etl
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataConnector
@@ -38,6 +40,12 @@ Get-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-ExpandP
 
 ## DESCRIPTION
 Read the properties and relationships of an industryDataConnector object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointdeviceimagesourceimage
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage
@@ -26,6 +27,9 @@ Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage [-Count] [-Filter <S
 ## DESCRIPTION
 Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs.
 View a list of all the managed image resources from your Microsoft Entra subscriptions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcdeviceimage-getsourceimages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcdeviceimage-getsourceimages-permissions.md)]

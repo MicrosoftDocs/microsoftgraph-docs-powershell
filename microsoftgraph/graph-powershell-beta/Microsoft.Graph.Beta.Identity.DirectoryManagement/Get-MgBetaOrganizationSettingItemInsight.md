@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingiteminsight
 schema: 2.0.0
 ms.subservice: insights
+ms.subservice: insights
 ---
 
 # Get-MgBetaOrganizationSettingItemInsight
@@ -31,6 +32,9 @@ Get-MgBetaOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-iteminsights-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-iteminsights-permissions.md)]

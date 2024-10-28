@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # New-MgBetaCommunicationCallAudioRoutingGroup
@@ -48,6 +49,9 @@ New-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsI
 
 ## DESCRIPTION
 Create a new audioRoutingGroup.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-post-audioroutinggroups-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-post-audioroutinggroups-permissions.md)]

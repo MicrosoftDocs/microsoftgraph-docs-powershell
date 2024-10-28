@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Set-MgGroupTeam
@@ -75,6 +76,9 @@ In order to create a team, the group must have a least one owner.
 If the creation of the team call is delayed, you can retry the call up to three times before you have to wait for 15 minutes due to a propagation delay.
 If the group was created less than 15 minutes ago, the call might fail with a 404 error code due to replication delays.
 If the group was created less than 15 minutes ago, it's possible for a call to create a team to fail with a 404 error code, due to ongoing replication delays.The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-put-teams-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-put-teams-permissions.md)]

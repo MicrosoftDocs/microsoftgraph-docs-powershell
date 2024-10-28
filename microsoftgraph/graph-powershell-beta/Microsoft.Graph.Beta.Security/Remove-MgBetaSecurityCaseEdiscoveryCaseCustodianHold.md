@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianhold
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold
@@ -66,6 +67,9 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIden
 
 ## DESCRIPTION
 Invoke action removeHold
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-removehold-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-removehold-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreonedriveforbusinessprotectionpolicydriveprotectionunit
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit
@@ -43,6 +44,9 @@ Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectio
 
 ## DESCRIPTION
 Contains the protection units associated with a  OneDrive for Business protection policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-driveprotectionunits-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-driveprotectionunits-permissions.md)]

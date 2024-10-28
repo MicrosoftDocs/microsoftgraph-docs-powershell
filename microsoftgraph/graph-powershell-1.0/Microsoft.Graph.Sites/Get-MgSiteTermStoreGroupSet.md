@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupset
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgSiteTermStoreGroupSet
@@ -62,6 +63,9 @@ Get-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 All sets under the group in a term \[store\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-list-sets-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-list-sets-permissions.md)]

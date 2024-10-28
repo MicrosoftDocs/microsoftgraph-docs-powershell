@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingscheme
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgBetaEducationClassAssignmentSettingGradingScheme
@@ -30,6 +31,9 @@ Remove-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducati
 
 ## DESCRIPTION
 Delete an educationGradingScheme object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingscheme-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingscheme-delete-permissions.md)]

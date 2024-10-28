@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/invoke-mgbetadeactivatesolutionbackuprestoreprotectionpolicy
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy
@@ -32,6 +33,9 @@ Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy -InputObject <IBook
 
 ## DESCRIPTION
 Deactivate a protectionPolicyBase.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-deactivate-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-deactivate-permissions.md)]

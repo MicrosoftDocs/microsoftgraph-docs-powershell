@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimecard
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamScheduleTimeCard
@@ -51,6 +52,9 @@ New-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Create a timeCard instance in a schedule.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-post-permissions.md)]

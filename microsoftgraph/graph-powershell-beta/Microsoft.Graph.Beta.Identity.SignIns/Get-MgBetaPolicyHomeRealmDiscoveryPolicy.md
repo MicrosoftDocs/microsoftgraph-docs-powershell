@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyHomeRealmDiscoveryPolicy
@@ -41,6 +43,12 @@ Get-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-get-permissions.md)]

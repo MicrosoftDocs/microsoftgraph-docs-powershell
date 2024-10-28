@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Stop-MgBetaSecurityAction
@@ -29,6 +30,9 @@ Stop-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-ResponseHeadersVari
 
 ## DESCRIPTION
 Cancel a security operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityaction-cancelsecurityaction-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityaction-cancelsecurityaction-permissions.md)]

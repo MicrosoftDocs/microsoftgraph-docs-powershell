@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgEducationUserTaughtClass
@@ -40,6 +41,9 @@ Get-MgEducationUserTaughtClass -InputObject <IEducationIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Classes for which the user is a teacher.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-taughtclasses-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-taughtclasses-permissions.md)]

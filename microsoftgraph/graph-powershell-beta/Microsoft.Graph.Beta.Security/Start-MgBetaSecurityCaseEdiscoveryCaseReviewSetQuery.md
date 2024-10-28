@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
@@ -32,6 +33,9 @@ Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIden
 
 ## DESCRIPTION
 Run reviewset query to get the list of files.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewsetquery-run-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewsetquery-run-permissions.md)]

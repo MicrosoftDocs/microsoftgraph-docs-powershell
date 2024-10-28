@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetadatapolicyoperation
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaDataPolicyOperation
@@ -40,6 +41,9 @@ Get-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Retrieve the properties of the dataPolicyOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/datapolicyoperation-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/datapolicyoperation-get-permissions.md)]

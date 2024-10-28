@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Rename-MgCommunicationCallScreenSharingRole
@@ -49,6 +50,9 @@ Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsId
 
 ## DESCRIPTION
 Allow applications to share screen content with the participants of a group call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-changescreensharingrole-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-changescreensharingrole-permissions.md)]

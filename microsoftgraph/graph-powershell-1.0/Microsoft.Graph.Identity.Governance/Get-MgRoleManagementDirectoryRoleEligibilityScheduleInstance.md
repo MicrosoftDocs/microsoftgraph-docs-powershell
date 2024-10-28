@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance
@@ -41,6 +43,12 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject <IIden
 
 ## DESCRIPTION
 Get the instance of a role eligibility.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityscheduleinstance-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleeligibilityscheduleinstances-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityscheduleinstance-get-permissions.md)]

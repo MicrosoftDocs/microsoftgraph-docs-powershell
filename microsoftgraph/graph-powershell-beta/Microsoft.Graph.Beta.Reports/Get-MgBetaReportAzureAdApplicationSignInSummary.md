@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportAzureAdApplicationSignInSummary
@@ -31,6 +32,9 @@ Get-MgBetaReportAzureAdApplicationSignInSummary -InputObject <IReportsIdentity> 
 
 ## DESCRIPTION
 Retrieve applicationSigninSummary objects within either the last seven or 30 days.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getazureadapplicationsigninsummary-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getazureadapplicationsigninsummary-permissions.md)]

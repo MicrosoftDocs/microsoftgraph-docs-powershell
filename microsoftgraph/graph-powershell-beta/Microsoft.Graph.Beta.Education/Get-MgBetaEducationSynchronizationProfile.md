@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: education
 ms.subservice: education
+ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationSynchronizationProfile
@@ -38,6 +40,12 @@ Get-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Ex
 
 ## DESCRIPTION
 Retrieve a school data synchronization profile in the tenant based on the identifier.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-get-permissions.md)]

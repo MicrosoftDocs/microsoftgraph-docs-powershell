@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaDirectoryRole
@@ -39,6 +40,9 @@ Activate a directory role.
 To read a directory role or update its members, it must first be activated in the tenant.
 The Company Administrators and the implicit user directory roles (User, Guest User, and Restricted Guest User roles) are activated by default.
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-post-directoryroles-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-post-directoryroles-permissions.md)]

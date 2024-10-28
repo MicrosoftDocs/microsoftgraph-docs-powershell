@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace
 schema: 2.0.0
 ms.subservice: calendar
+ms.subservice: calendar
 ---
 
 # Update-MgBetaPlace
@@ -49,6 +50,9 @@ Update-MgBetaPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the properties of place object, which can be a room, workspace, or roomList.
 You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-update-permissions.md)]

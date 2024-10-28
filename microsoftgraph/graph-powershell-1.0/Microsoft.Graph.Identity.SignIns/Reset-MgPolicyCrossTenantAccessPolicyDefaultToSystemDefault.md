@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/reset-mgpolicycrosstenantaccesspolicydefaulttosystemdefault
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault
@@ -24,6 +25,9 @@ Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault [-ResponseHeadersVar
 
 ## DESCRIPTION
 Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-permissions.md)]

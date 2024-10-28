@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreprotectionpolicy
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Remove-MgSolutionBackupRestoreProtectionPolicy
@@ -34,6 +35,9 @@ Remove-MgSolutionBackupRestoreProtectionPolicy -InputObject <IBackupRestoreIdent
 ## DESCRIPTION
 Delete a protection policy.
 Read the properties and relationships of a protectionPolicyBase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/protectionpolicybase-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/protectionpolicybase-delete-permissions.md)]

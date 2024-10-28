@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementvirtualendpointcloudpcresize
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize
@@ -34,6 +35,9 @@ Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize
 Perform a bulk resize action to resize a group of cloudPCs that successfully pass validation.
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-bulkresize-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-bulkresize-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
@@ -43,6 +45,12 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject 
 
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-decisions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-get-permissions.md)]

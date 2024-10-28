@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaviewuserreminder
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Invoke-MgBetaViewUserReminder
@@ -32,6 +33,9 @@ Invoke-MgBetaViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-
 
 ## DESCRIPTION
 Return a list of event reminders in a user calendar within the specified start and end times.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-reminderview-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-reminderview-permissions.md)]

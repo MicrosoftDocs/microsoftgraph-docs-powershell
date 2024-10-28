@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # New-MgEducationSchool
@@ -36,6 +37,9 @@ New-MgEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-Response
 
 ## DESCRIPTION
 Create a new educationSchool object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-permissions.md)]

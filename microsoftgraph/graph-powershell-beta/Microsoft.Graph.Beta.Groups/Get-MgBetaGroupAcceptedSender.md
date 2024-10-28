@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsender
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupAcceptedSender
@@ -29,6 +30,9 @@ Get-MgBetaGroupAcceptedSender -GroupId <String> [-ExpandProperty <String[]>] [-F
 Get a list of users or groups that are in the accepted-senders list for this group.
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-acceptedsenders-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-acceptedsenders-permissions.md)]

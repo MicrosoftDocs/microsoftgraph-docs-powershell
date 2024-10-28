@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiterecentnotebook
 schema: 2.0.0
 ms.subservice: onenote
+ms.subservice: onenote
 ---
 
 # Get-MgBetaSiteRecentNotebook
@@ -32,6 +33,9 @@ Get-MgBetaSiteRecentNotebook -InputObject <ISitesIdentity> [-Count] [-Filter <St
 
 ## DESCRIPTION
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getrecentnotebooks-permissions.md)]

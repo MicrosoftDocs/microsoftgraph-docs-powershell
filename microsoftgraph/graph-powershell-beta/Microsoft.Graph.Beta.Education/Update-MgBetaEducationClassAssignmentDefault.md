@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Update-MgBetaEducationClassAssignmentDefault
@@ -50,6 +51,9 @@ Update-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentdefaults-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentdefaults-update-permissions.md)]

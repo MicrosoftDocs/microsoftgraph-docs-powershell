@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaoauth2permissiongrant
 schema: 2.0.0
 ms.subservice: entra-applications
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaOauth2PermissionGrant
@@ -35,6 +36,9 @@ New-MgBetaOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionG
 ## DESCRIPTION
 Create a delegated permission grant, represented by an oAuth2PermissionGrant object.
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-post-permissions.md)]

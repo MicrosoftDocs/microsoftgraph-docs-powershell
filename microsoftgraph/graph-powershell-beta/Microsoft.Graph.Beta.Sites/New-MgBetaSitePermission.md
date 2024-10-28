@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaSitePermission
@@ -56,6 +57,9 @@ New-MgBetaSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create a new permission object on a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-permissions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-permissions-permissions.md)]

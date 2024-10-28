@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.se
 schema: 2.0.0
 ms.subservice: ediscovery
 ms.subservice: ediscovery
+ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCase
@@ -41,6 +43,12 @@ Get-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryCase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-casesroot-list-ediscoverycases-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-get-permissions.md)]

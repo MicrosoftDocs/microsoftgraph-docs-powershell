@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Invoke-MgRedirectCommunicationCall
@@ -56,6 +57,9 @@ Redirect an incoming call that hasn't been answered or rejected yet.
 The terms 'redirecting' and 'forwarding' a call are used interchangeably.
 The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-redirect-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-redirect-permissions.md)]

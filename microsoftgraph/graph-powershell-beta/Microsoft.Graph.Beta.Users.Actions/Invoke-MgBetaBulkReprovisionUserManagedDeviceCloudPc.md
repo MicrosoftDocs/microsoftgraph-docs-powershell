@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkreprovisionusermanageddevicecloudpc
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaBulkReprovisionUserManagedDeviceCloudPc
@@ -45,6 +46,9 @@ Invoke-MgBetaBulkReprovisionUserManagedDeviceCloudPc -InputObject <IUsersActions
 
 ## DESCRIPTION
 Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-bulkreprovisioncloudpc-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-bulkreprovisioncloudpc-permissions.md)]

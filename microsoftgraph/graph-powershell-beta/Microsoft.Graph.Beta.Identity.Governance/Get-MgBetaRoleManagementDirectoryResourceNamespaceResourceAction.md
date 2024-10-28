@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction
@@ -42,6 +44,12 @@ Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <I
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceAction object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourceaction-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourcenamespace-list-resourceactions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourceaction-get-permissions.md)]

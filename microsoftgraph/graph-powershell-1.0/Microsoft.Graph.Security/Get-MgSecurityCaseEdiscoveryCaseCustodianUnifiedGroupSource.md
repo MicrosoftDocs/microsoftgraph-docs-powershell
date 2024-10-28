@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianunifiedgroupsource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
@@ -42,6 +43,9 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISecur
 
 ## DESCRIPTION
 Data source entity for groups associated with the custodian.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-list-unifiedgroupsources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-list-unifiedgroupsources-permissions.md)]

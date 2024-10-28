@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyactiveuser
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportUserInsightMonthlyActiveUser
@@ -37,6 +38,9 @@ Get-MgBetaReportUserInsightMonthlyActiveUser -InputObject <IReportsIdentity> [-E
 
 ## DESCRIPTION
 Insights for active users on apps registered in the tenant for a specified period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-activeusers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-activeusers-permissions.md)]

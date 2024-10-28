@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentpolicy
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
@@ -32,6 +33,9 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -InputObject <II
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, delete an accessPackageAssignmentPolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentpolicy-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentpolicy-delete-permissions.md)]

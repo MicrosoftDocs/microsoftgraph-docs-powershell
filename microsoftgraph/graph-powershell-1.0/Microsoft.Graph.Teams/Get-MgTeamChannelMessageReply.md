@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.te
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamChannelMessageReply
@@ -41,6 +43,9 @@ Get-MgTeamChannelMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-list-replies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-list-replies-permissions.md)]

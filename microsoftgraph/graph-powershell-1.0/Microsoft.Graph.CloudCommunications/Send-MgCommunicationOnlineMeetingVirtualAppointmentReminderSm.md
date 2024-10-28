@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentremindersm
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm
@@ -54,6 +55,9 @@ Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm -InputObject <IClo
 ## DESCRIPTION
 Send an SMS reminder to external attendees for a Teams virtual appointment.
 This feature requires Teams premium and attendees must have a valid United States phone number to receive SMS notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]

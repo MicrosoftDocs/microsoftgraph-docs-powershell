@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgOrganizationCertificateBasedAuthConfiguration
@@ -48,6 +49,9 @@ New-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Create a new certificateBasedAuthConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreprotectionpolicy
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Initialize-MgBetaBackupRestoreProtectionPolicy
@@ -36,6 +37,9 @@ Initialize-MgBetaBackupRestoreProtectionPolicy -InputObject <IBookingsIdentity>
 Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-activate-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-activate-permissions.md)]

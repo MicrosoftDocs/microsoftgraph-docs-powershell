@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancelifecycleworkflow
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaIdentityGovernanceLifecycleWorkflow
@@ -34,6 +35,9 @@ Remove-MgBetaIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernan
 ## DESCRIPTION
 Delete a workflow object and its associated tasks, taskProcessingResults and versions.
 You can restore a deleted workflow and its associated objects within 30 days of deletion.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-delete-permissions.md)]

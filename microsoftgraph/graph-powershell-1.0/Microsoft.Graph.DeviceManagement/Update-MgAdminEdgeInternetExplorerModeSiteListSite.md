@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
 ms.subservice: edge-browser-management
+ms.subservice: edge-browser-management
 ---
 
 # Update-MgAdminEdgeInternetExplorerModeSiteListSite
@@ -56,6 +57,9 @@ Update-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManageme
 
 ## DESCRIPTION
 Update the properties of a browserSite object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersite-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersite-update-permissions.md)]

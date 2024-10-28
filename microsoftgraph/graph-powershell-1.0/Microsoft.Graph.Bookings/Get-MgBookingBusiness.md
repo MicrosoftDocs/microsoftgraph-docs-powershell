@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bo
 schema: 2.0.0
 ms.subservice: microsoft-bookings
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Get-MgBookingBusiness
@@ -40,6 +42,12 @@ Get-MgBookingBusiness -InputObject <IBookingsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get the properties and relationships of a bookingBusiness object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-get-permissions.md)]

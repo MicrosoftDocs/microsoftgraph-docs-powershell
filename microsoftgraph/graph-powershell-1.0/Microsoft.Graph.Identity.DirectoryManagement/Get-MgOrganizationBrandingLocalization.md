@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgOrganizationBrandingLocalization
@@ -43,6 +45,12 @@ Get-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Read the properties and relationships of an organizationalBrandingLocalization object.
 To retrieve a localization branding object, specify the value of id in the URL.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-get-permissions.md)]

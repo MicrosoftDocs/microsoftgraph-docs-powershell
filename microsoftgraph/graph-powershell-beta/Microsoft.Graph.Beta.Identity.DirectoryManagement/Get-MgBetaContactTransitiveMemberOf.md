@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontacttransitivememberof
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaContactTransitiveMemberOf
@@ -42,6 +43,9 @@ Get-MgBetaContactTransitiveMemberOf -InputObject <IIdentityDirectoryManagementId
 
 ## DESCRIPTION
 Get transitiveMemberOf from contacts
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-list-transitivememberof-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-list-transitivememberof-permissions.md)]

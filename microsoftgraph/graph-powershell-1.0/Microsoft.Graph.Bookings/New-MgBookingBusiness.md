@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # New-MgBookingBusiness
@@ -43,6 +44,9 @@ New-MgBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-Response
 Create a new Microsoft Bookings business in a tenant.
 This is the first step in setting up a Bookings business where you must specify the business display name.
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-bookingbusinesses-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-bookingbusinesses-permissions.md)]

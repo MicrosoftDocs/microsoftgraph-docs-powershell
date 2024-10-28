@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtag
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamTag
@@ -48,6 +49,9 @@ New-MgBetaTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 
 ## DESCRIPTION
 Create a standard tag for members in the team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-post-permissions.md)]

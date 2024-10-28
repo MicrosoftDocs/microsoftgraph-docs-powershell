@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: autopatch
 ms.subservice: autopatch
+ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # Get-MgBetaWindowsUpdatesUpdatableAsset
@@ -38,6 +40,12 @@ Get-MgBetaWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-
 
 ## DESCRIPTION
 Read the properties and relationships of an updatableAsset object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableasset-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-list-updatableassets-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableasset-get-permissions.md)]

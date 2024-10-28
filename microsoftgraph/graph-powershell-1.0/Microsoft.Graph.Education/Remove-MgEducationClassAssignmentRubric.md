@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentrubric
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgEducationClassAssignmentRubric
@@ -34,6 +35,9 @@ Remove-MgEducationClassAssignmentRubric -InputObject <IEducationIdentity> [-IfMa
 ## DESCRIPTION
 Remove an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-delete-rubric-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-delete-rubric-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/add-mgbetasecuritycaseediscoverycasenoncustodialdatasourcehold
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold
@@ -70,6 +71,9 @@ Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISe
 Start the process of applying hold on eDiscovery non-custodial data sources.
 After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that returns an eDiscoveryHoldOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverynoncustodialdatasource-applyhold-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverynoncustodialdatasource-applyhold-permissions.md)]

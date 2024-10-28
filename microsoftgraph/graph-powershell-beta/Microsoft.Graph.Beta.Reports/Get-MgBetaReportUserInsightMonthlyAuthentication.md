@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyauthentication
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportUserInsightMonthlyAuthentication
@@ -37,6 +38,9 @@ Get-MgBetaReportUserInsightMonthlyAuthentication -InputObject <IReportsIdentity>
 
 ## DESCRIPTION
 Insights for authentications on apps registered in the tenant for a specified period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-authentications-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-authentications-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # New-MgBetaExternalConnection
@@ -41,6 +42,9 @@ New-MgBetaExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsEx
 
 ## DESCRIPTION
 Create a new externalConnection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-external-post-connections-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-external-post-connections-permissions.md)]

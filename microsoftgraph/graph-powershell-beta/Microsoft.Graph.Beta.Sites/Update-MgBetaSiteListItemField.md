@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Update-MgBetaSiteListItemField
@@ -46,6 +47,9 @@ Update-MgBetaSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Has
 
 ## DESCRIPTION
 Update the properties on a listItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-update-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup
@@ -22,6 +23,9 @@ Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicy
 
 ## DESCRIPTION
 Get the list of groups that are included in a mobile app management policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-list-includedgroups-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-list-includedgroups-permissions.md)]

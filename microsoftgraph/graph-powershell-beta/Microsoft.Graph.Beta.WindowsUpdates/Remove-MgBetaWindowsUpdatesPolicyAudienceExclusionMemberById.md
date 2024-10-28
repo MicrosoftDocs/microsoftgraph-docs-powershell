@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyaudienceexclusionmemberbyid
 schema: 2.0.0
 ms.subservice: autopatch
+ms.subservice: autopatch
 ---
 
 # Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById
@@ -50,6 +51,9 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById -InputObject <IWind
 ## DESCRIPTION
 Remove members of the same type from an updatableAssetGroup.
 You can also use the method removeMembers to remove members.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-removemembersbyid-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-removemembersbyid-permissions.md)]

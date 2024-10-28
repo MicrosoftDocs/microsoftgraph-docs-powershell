@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityuserdetail
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportSharePointActivityUserDetail
@@ -44,6 +45,9 @@ Get-MgReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -OutFil
 
 ## DESCRIPTION
 Get details about SharePoint activity by user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivityuserdetail-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivityuserdetail-permissions.md)]

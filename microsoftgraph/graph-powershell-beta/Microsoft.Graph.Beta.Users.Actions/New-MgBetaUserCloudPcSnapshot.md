@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausercloudpcsnapshot
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # New-MgBetaUserCloudPcSnapshot
@@ -29,6 +30,9 @@ New-MgBetaUserCloudPcSnapshot -InputObject <IUsersActionsIdentity> [-ResponseHea
 
 ## DESCRIPTION
 Create a snapshot for a specific Cloud PC device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-createsnapshot-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-createsnapshot-permissions.md)]

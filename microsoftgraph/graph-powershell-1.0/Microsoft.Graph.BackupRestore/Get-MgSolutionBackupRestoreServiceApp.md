@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.ba
 schema: 2.0.0
 ms.subservice: m365-backup-storage
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgSolutionBackupRestoreServiceApp
@@ -41,6 +43,12 @@ Get-MgSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity> [-Ex
 
 ## DESCRIPTION
 Read the properties and relationships of a serviceApp object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceapp-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-list-serviceapps-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceapp-get-permissions.md)]

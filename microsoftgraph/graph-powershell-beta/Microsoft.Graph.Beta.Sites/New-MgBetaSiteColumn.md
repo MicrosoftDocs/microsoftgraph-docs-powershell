@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecolumn
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaSiteColumn
@@ -67,6 +68,9 @@ New-MgBetaSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create columnDefinition for a site
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-columns-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-columns-permissions.md)]

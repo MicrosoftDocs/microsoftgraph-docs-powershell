@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainformationprotectionthreatassessmentrequest
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # New-MgBetaInformationProtectionThreatAssessmentRequest
@@ -37,6 +38,9 @@ New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]

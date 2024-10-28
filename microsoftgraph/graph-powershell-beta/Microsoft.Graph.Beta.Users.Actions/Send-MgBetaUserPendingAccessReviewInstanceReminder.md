@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserpendingaccessreviewinstancereminder
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Send-MgBetaUserPendingAccessReviewInstanceReminder
@@ -29,6 +30,9 @@ Send-MgBetaUserPendingAccessReviewInstanceReminder -InputObject <IUsersActionsId
 
 ## DESCRIPTION
 Send a reminder to the reviewers of a currently active accessReviewInstance.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]

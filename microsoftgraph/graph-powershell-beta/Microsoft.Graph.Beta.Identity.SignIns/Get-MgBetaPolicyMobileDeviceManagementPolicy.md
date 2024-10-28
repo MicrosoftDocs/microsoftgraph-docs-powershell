@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaPolicyMobileDeviceManagementPolicy
@@ -38,6 +40,12 @@ Get-MgBetaPolicyMobileDeviceManagementPolicy -InputObject <IIdentitySignInsIdent
 
 ## DESCRIPTION
 Read the properties and relationships of a mobilityManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobiledevicemanagementpolicies-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobiledevicemanagementpolicies-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobiledevicemanagementpolicies-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassteacher
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgEducationClassTeacher
@@ -27,6 +28,9 @@ Get-MgEducationClassTeacher -EducationClassId <String> [-ExpandProperty <String[
 ## DESCRIPTION
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-teachers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-teachers-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaServicePrincipalRiskDetection
@@ -41,6 +43,12 @@ Get-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> 
 
 ## DESCRIPTION
 Read the properties and relationships of a servicePrincipalRiskDetection object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalriskdetection-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityprotectionroot-list-serviceprincipalriskdetections-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalriskdetection-get-permissions.md)]

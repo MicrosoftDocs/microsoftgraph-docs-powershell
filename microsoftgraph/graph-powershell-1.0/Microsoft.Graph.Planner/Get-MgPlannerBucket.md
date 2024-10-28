@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.pl
 schema: 2.0.0
 ms.subservice: planner
 ms.subservice: planner
+ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Get-MgPlannerBucket
@@ -40,6 +42,12 @@ Get-MgPlannerBucket -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerBucket object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbucket-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-list-buckets-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbucket-get-permissions.md)]

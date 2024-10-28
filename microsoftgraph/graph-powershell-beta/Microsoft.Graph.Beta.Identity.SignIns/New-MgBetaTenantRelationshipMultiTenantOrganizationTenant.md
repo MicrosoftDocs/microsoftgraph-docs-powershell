@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaTenantRelationshipMultiTenantOrganizationTenant
@@ -41,6 +42,9 @@ Add a tenant to a multitenant organization.
 The administrator of an owner tenant has the permissions to add tenants to the multitenant organization.
 The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request.
 A tenant can be part of only one multitenant organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-post-tenants-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-post-tenants-permissions.md)]

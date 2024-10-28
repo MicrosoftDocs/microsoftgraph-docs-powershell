@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryonpremisesynchronization
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryOnPremiseSynchronization
@@ -40,6 +41,9 @@ Get-MgBetaDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesdirectorysynchronization-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesdirectorysynchronization-get-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.te
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamworkWorkforceIntegration
@@ -41,6 +43,12 @@ Get-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a workforceIntegration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignment
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgEducationMeAssignment
@@ -40,6 +41,9 @@ Get-MgEducationMeAssignment -InputObject <IEducationIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Assignments belonging to the user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-assignments-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-list-assignments-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaPolicyFederatedTokenValidationPolicy
@@ -30,6 +31,9 @@ Update-MgBetaPolicyFederatedTokenValidationPolicy
 
 ## DESCRIPTION
 Update the properties of a federatedTokenValidationPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedtokenvalidationpolicy-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedtokenvalidationpolicy-update-permissions.md)]

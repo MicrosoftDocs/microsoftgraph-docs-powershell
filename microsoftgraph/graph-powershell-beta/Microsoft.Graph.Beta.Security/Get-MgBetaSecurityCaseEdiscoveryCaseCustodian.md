@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: ediscovery
 ms.subservice: ediscovery
+ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseCustodian
@@ -41,6 +43,12 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryCustodian object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-list-custodians-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasenoncustodialdatasource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource
@@ -49,6 +50,9 @@ New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplian
 
 ## DESCRIPTION
 Create a new noncustodialDataSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-post-permissions.md)]

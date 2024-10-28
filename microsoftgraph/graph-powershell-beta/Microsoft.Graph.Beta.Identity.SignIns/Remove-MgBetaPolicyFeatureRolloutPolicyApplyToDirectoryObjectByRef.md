@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicyapplytodirectoryobjectbyref
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef
@@ -33,6 +34,9 @@ Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef -InputObject 
 
 ## DESCRIPTION
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-delete-appliesto-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-delete-appliesto-permissions.md)]

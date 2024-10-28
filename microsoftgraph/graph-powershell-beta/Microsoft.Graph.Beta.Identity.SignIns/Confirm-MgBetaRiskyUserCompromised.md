@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusercompromised
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Confirm-MgBetaRiskyUserCompromised
@@ -35,6 +36,9 @@ Confirm-MgBetaRiskyUserCompromised
 ## DESCRIPTION
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-confirmcompromised-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-confirmcompromised-permissions.md)]

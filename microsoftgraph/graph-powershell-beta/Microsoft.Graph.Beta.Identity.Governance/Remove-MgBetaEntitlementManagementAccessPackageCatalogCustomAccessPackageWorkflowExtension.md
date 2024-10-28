@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
@@ -45,6 +46,9 @@ For example, https://graph.microsoft.com/beta/identityGovernance/entitlementMana
 Use the access package catalog ID and retrieve the ID of the accessPackageCustomWorkflowExtension object that you want to delete by running the List accessPackageCustomWorkflowExtensions operation.3.
 Call the Update accessPackageAssignmentPolicy operation to remove the custom workflow extension object from the policy.
 For an example, see Example 3: Remove the customExtensionStageSettings from a policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequestworkflowextension-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequestworkflowextension-delete-permissions.md)]

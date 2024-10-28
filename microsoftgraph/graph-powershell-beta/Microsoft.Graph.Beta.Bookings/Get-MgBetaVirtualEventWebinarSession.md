@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: cloud-communications
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarSession
@@ -43,6 +45,9 @@ Get-MgBetaVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-ExpandPr
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventSession object.
 Currently, the following virtual event types are supported: virtualEventTownhall and virtualEventWebinar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventsession-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventsession-get-permissions.md)]

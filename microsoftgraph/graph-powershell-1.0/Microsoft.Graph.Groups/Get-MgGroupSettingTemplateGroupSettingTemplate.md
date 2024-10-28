@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.gr
 schema: 2.0.0
 ms.subservice: entra-groups
 ms.subservice: entra-groups
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupSettingTemplateGroupSettingTemplate
@@ -40,6 +42,12 @@ Get-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity> [-
 ## DESCRIPTION
 A group setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsettingtemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsettingtemplate-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsettingtemplate-get-permissions.md)]

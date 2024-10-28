@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest
@@ -42,6 +44,12 @@ Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <II
 
 ## DESCRIPTION
 Read the properties and relationships of a userConsentRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userconsentrequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appconsentrequest-list-userconsentrequests-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userconsentrequest-get-permissions.md)]

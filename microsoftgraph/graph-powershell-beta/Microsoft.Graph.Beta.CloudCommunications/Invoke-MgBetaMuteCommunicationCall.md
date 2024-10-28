@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamutecommunicationcall
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Invoke-MgBetaMuteCommunicationCall
@@ -52,6 +53,9 @@ Invoke-MgBetaMuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 Allows the application to mute itself.
 This is a server mute, meaning that the server drops all audio packets for this participant, even if the participant continues to stream audio.
 For more information about how to handle mute operations, see muteParticipantOperation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-mute-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-mute-permissions.md)]

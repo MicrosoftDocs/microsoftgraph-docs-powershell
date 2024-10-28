@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecolumn
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaSiteColumn
@@ -40,6 +41,9 @@ Get-MgBetaSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-columns-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-columns-permissions.md)]

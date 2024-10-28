@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
 ms.subservice: edge-browser-management
+ms.subservice: edge-browser-management
 ---
 
 # New-MgAdminEdgeInternetExplorerModeSiteListSite
@@ -56,6 +57,9 @@ New-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagementI
 
 ## DESCRIPTION
 Create a new browserSite object in a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-post-sites-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-post-sites-permissions.md)]

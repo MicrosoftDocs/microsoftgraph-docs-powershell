@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachat
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgBetaChat
@@ -34,6 +35,9 @@ Remove-MgBetaChat -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHe
 ## DESCRIPTION
 Soft-delete a chat.
 When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-delete-permissions.md)]

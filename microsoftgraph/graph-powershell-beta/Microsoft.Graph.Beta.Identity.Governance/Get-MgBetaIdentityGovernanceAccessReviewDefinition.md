@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceAccessReviewDefinition
@@ -49,6 +51,12 @@ This returns all properties of the scheduled access review series except for the
 Each accessReviewScheduleDefinition has at least one instance.
 An instance represents a review for a specific resource (such as a particular group's members), during one occurrence (for example, March 2021) of a recurring review.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewscheduledefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewset-list-definitions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewscheduledefinition-get-permissions.md)]

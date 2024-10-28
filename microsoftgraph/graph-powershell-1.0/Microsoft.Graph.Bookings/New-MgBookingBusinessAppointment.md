@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # New-MgBookingBusinessAppointment
@@ -64,6 +65,9 @@ New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create a new bookingAppointment for the specified bookingBusiness.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-appointments-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-appointments-permissions.md)]

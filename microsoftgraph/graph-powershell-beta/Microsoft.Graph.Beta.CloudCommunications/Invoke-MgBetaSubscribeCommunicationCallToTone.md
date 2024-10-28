@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetasubscribecommunicationcalltotone
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Invoke-MgBetaSubscribeCommunicationCallToTone
@@ -50,6 +51,9 @@ Invoke-MgBetaSubscribeCommunicationCallToTone -InputObject <ICloudCommunications
 ## DESCRIPTION
 Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notified when the user presses keys on a dialpad.
 This action is supported only for calls that are initiated with serviceHostedMediaConfig.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-subscribetotone-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-subscribetotone-permissions.md)]

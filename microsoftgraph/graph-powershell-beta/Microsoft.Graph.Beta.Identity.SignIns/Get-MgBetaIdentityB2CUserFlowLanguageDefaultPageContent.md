@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguagedefaultpagecontent
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent
@@ -32,6 +33,9 @@ Get-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent -InputObject <IIdentityS
 ## DESCRIPTION
 Get the userFlowLanguagePage resources from the defaultPages navigation property.
 These contain the values shown to the user in a default user journey of a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-list-defaultpages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-list-defaultpages-permissions.md)]

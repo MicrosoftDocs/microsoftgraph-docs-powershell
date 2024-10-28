@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointprotectionpolicy
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaSolutionBackupRestoreSharePointProtectionPolicy
@@ -40,6 +41,9 @@ New-MgBetaSolutionBackupRestoreSharePointProtectionPolicy
 Create a protection policy for a M365 service SharePoint.
 Policy will be created in inactive state.
 User can also provide a list of protection units under the policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-sharepointprotectionpolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-sharepointprotectionpolicies-permissions.md)]

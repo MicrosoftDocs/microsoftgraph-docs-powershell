@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetsecret
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaUploadTrustFrameworkKeySetSecret
@@ -51,6 +52,9 @@ Invoke-MgBetaUploadTrustFrameworkKeySetSecret -InputObject <IIdentitySignInsIden
 Upload a plain text secret to a trustFrameworkKeyset.
 Examples of secrets are application secrets in Microsoft Entra ID, Google, Facebook, or any other identity provider.
 his method returns trustFrameworkKey.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-uploadsecret-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-uploadsecret-permissions.md)]

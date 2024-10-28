@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenariobyuniquename
 schema: 2.0.0
 ms.subservice: business-scenarios
+ms.subservice: business-scenarios
 ---
 
 # Remove-MgBetaSolutionBusinessScenarioByUniqueName
@@ -31,6 +32,9 @@ Remove-MgBetaSolutionBusinessScenarioByUniqueName -InputObject <IBusinessScenari
 ## DESCRIPTION
 Delete a businessScenario object.
 The deletion of a scenario causes all data associated with the scenario to be deleted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-delete-permissions.md)]

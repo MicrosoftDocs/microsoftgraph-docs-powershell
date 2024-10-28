@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcalloperation
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgCommunicationCallOperation
@@ -40,6 +41,9 @@ Get-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity> [-E
 
 ## DESCRIPTION
 Get the status of an operation that adds the large gallery view to a call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/addlargegalleryviewoperation-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/addlargegalleryviewoperation-get-permissions.md)]

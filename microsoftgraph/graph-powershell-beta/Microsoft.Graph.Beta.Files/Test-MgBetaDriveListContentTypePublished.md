@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetadrivelistcontenttypepublished
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Test-MgBetaDriveListContentTypePublished
@@ -31,6 +32,9 @@ Test-MgBetaDriveListContentTypePublished -InputObject <IFilesIdentity> [-Respons
 
 ## DESCRIPTION
 Invoke function isPublished
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]

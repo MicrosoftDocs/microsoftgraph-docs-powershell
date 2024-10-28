@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganizationexternalsponsorbyref
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef
@@ -27,6 +28,9 @@ Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef -Connec
 ## DESCRIPTION
 Retrieve a list of a connectedOrganization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-list-externalsponsors-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-list-externalsponsors-permissions.md)]

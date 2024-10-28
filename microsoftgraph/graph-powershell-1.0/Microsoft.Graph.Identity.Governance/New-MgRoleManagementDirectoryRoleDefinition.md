@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinition
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # New-MgRoleManagementDirectoryRoleDefinition
@@ -37,6 +38,9 @@ New-MgRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphUnifi
 ## DESCRIPTION
 Create a new custom unifiedRoleDefinition object.
 This feature requires a Microsoft Entra ID P1 or P2 license.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roledefinitions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roledefinitions-permissions.md)]

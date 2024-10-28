@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizesharelistsubscription
 schema: 2.0.0
 ms.subservice: change-notifications
+ms.subservice: change-notifications
 ---
 
 # Invoke-MgBetaReauthorizeShareListSubscription

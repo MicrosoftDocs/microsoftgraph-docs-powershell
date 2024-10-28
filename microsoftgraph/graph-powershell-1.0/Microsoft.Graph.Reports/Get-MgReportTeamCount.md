@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportTeamCount
@@ -30,6 +31,9 @@ Get-MgReportTeamCount -InputObject <IReportsIdentity> -OutFile <String> [-Respon
 
 ## DESCRIPTION
 Get the number of teams of a particular type in an instance of Microsoft Teams.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsteamcounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsteamcounts-permissions.md)]

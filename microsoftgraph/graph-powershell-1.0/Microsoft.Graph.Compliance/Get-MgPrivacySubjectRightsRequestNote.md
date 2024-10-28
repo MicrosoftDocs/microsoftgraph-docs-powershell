@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote
 schema: 2.0.0
 ms.subservice: compliance
+ms.subservice: compliance
 ---
 
 # Get-MgPrivacySubjectRightsRequestNote
@@ -40,6 +41,9 @@ Get-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-Expan
 
 ## DESCRIPTION
 List of notes associated with the request.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-list-notes-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-list-notes-permissions.md)]

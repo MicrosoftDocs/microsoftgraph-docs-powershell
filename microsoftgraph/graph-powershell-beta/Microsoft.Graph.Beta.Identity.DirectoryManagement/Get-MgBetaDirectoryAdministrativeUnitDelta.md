@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunitdelta
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryAdministrativeUnitDelta
@@ -27,6 +28,9 @@ Get-MgBetaDirectoryAdministrativeUnitDelta [-ExpandProperty <String[]>] [-Filter
 ## DESCRIPTION
 Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
 For details, see Using delta query.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delta-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delta-permissions.md)]

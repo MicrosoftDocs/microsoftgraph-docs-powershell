@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupeventreminder
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Invoke-MgBetaSnoozeGroupEventReminder
@@ -48,6 +49,9 @@ Invoke-MgBetaSnoozeGroupEventReminder -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-snoozereminder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-snoozereminder-permissions.md)]

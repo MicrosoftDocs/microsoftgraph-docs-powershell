@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow
 schema: 2.0.0
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # New-MgBetaExternalIndustryDataInboundFlow
@@ -32,6 +33,9 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 
 ## DESCRIPTION
 Create a new inboundFileFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-post-permissions.md)]

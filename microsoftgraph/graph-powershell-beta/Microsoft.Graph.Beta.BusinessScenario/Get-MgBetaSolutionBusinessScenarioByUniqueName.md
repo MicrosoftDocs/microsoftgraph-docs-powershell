@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenariobyuniquename
 schema: 2.0.0
 ms.subservice: business-scenarios
+ms.subservice: business-scenarios
 ---
 
 # Get-MgBetaSolutionBusinessScenarioByUniqueName
@@ -29,6 +30,9 @@ Get-MgBetaSolutionBusinessScenarioByUniqueName -InputObject <IBusinessScenarioId
 
 ## DESCRIPTION
 Read the properties and relationships of a businessScenario object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/reset-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow
 schema: 2.0.0
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow
@@ -32,6 +33,9 @@ Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -Inp
 ## DESCRIPTION
 Reset a provisioningFlow.
 This action reprovisions all current data as if it were the initial run, and clears out the existing errors associated with the flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-provisioningflow-reset-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-provisioningflow-reset-permissions.md)]

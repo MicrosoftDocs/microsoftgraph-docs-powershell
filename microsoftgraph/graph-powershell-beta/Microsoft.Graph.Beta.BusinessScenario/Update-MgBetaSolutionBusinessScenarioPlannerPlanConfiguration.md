@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration
 schema: 2.0.0
 ms.subservice: business-scenarios
+ms.subservice: business-scenarios
 ---
 
 # Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration
@@ -51,6 +52,9 @@ Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -InputObject <IBus
 
 ## DESCRIPTION
 Update the properties of a plannerPlanConfiguration object and its plannerPlanConfigurationLocalization collection for a businessScenario.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-update-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementvirtualendpointusersetting
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Set-MgBetaDeviceManagementVirtualEndpointUserSetting
@@ -50,6 +51,9 @@ Set-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Assign a cloudPcUserSetting to user groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-assign-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-assign-permissions.md)]

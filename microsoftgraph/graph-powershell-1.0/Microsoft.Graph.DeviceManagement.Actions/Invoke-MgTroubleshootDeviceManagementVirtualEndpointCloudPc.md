@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc
@@ -34,6 +35,9 @@ Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc -InputObject <IDevic
 ## DESCRIPTION
 Troubleshoot a specific cloudPC object.
 Use this API to check the health status of the Cloud PC and the session host.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-troubleshoot-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-troubleshoot-permissions.md)]

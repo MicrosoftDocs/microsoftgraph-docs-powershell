@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofilestatus
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationSynchronizationProfileStatus
@@ -31,6 +32,9 @@ Get-MgBetaEducationSynchronizationProfileStatus -InputObject <IEducationIdentity
 ## DESCRIPTION
 Get the status of a specific school data synchronization profile in the tenant.
 The response will indicate the status of the sync.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofilestatus-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofilestatus-get-permissions.md)]

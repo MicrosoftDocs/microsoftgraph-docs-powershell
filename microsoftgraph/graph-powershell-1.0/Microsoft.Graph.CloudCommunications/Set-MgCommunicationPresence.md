@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresence
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Set-MgCommunicationPresence
@@ -50,6 +51,9 @@ Set-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Set the state of a user's presence session as an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setpresence-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setpresence-permissions.md)]

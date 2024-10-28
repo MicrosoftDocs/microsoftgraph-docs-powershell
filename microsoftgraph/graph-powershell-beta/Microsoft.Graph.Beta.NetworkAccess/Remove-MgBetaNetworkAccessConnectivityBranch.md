@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivitybranch
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Remove-MgBetaNetworkAccessConnectivityBranch
@@ -29,6 +30,9 @@ Remove-MgBetaNetworkAccessConnectivityBranch -InputObject <INetworkAccessIdentit
 
 ## DESCRIPTION
 Delete a specific branch.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-delete-permissions.md)]

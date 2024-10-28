@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapromotedomain
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Invoke-MgBetaPromoteDomain
@@ -33,6 +34,9 @@ Invoke-MgBetaPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-promote-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-promote-permissions.md)]

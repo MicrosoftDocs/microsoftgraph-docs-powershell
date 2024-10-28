@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportYammerGroupActivityDetail
@@ -44,6 +45,9 @@ Get-MgReportYammerGroupActivityDetail -InputObject <IReportsIdentity> -OutFile <
 
 ## DESCRIPTION
 Get details about Yammer groups activity by group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammergroupsactivitydetail-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammergroupsactivitydetail-permissions.md)]

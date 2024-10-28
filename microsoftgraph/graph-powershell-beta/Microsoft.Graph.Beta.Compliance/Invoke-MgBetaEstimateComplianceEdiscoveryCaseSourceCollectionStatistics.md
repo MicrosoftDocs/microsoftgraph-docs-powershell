@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaestimatecomplianceediscoverycasesourcecollectionstatistics
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics
@@ -31,6 +32,9 @@ Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics -InputOb
 ## DESCRIPTION
 Run an estimate of the number of emails and documents in the source collection.
 To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-estimatestatistics-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-estimatestatistics-permissions.md)]

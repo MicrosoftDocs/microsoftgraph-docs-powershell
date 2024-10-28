@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpagecontent
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityB2XUserFlowLanguageDefaultPageContent
@@ -35,6 +36,9 @@ Get-MgIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentitySignI
 ## DESCRIPTION
 Read the values in a userFlowLanguagePage object for a language in a user flow.
 These values are shown to a user during a user journey defined by a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguagepage-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguagepage-get-permissions.md)]

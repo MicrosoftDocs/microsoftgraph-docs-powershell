@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointexternalpartnersetting
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
@@ -47,6 +48,9 @@ Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 
 ## DESCRIPTION
 Update the properties of a cloudPcExternalPartnerSetting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexternalpartnersetting-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexternalpartnersetting-update-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgRecentDrive
@@ -34,6 +35,9 @@ Invoke-MgRecentDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <St
 
 ## DESCRIPTION
 List a set of items that have been recently used by the signed in user.This collection includes items that are in the user's drive and items they have access to from other drives.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-recent-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-recent-permissions.md)]

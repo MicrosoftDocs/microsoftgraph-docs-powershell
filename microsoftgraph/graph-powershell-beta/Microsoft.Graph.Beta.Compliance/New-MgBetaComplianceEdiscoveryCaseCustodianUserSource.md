@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodianusersource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgBetaComplianceEdiscoveryCaseCustodianUserSource
@@ -47,6 +48,9 @@ New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceI
 
 ## DESCRIPTION
 Create a new custodian userSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-post-usersources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-post-usersources-permissions.md)]

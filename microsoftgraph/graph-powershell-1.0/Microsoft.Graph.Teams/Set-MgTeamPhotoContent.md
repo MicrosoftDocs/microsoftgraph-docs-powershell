@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamphotocontent
 schema: 2.0.0
 ms.subservice: people
+ms.subservice: people
 ---
 
 # Set-MgTeamPhotoContent

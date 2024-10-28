@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
@@ -42,6 +43,9 @@ Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 
 ## DESCRIPTION
 Read the properties and relationships of an externalAuthenticationMethodConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalauthenticationmethodconfiguration-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalauthenticationmethodconfiguration-get-permissions.md)]

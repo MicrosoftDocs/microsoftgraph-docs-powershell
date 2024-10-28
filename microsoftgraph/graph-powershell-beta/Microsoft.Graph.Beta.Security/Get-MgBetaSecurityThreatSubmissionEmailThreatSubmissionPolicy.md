@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: security
 ms.subservice: security
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy
@@ -38,6 +40,12 @@ Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <ISec
 
 ## DESCRIPTION
 Read the properties and relationships of an emailThreatSubmissionPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-emailthreatsubmissionpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-emailthreatsubmissionpolicy-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-emailthreatsubmissionpolicy-get-permissions.md)]

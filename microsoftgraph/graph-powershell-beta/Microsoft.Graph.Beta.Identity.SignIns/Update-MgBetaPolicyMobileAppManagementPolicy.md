@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicymobileappmanagementpolicy
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Update-MgBetaPolicyMobileAppManagementPolicy
@@ -47,6 +48,9 @@ Update-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdent
 
 ## DESCRIPTION
 Update the properties of a mobilityManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-update-permissions.md)]

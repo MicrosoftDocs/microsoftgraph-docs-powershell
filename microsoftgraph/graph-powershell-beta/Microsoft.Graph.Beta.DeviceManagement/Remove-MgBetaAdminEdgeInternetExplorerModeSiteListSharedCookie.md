@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
 ms.subservice: edge-browser-management
+ms.subservice: edge-browser-management
 ---
 
 # Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
@@ -32,6 +33,9 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDe
 
 ## DESCRIPTION
 Delete a browserSharedCookie from a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-delete-sharedcookies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-delete-sharedcookies-permissions.md)]

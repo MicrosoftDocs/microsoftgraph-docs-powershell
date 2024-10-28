@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary
 schema: 2.0.0
 ms.subservice: intune
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary

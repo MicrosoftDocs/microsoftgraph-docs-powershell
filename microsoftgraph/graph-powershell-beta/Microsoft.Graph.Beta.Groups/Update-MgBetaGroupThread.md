@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Update-MgBetaGroupThread
@@ -50,6 +51,9 @@ Update-MgBetaGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Update a thread object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-update-thread-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-update-thread-permissions.md)]

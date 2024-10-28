@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension
 schema: 2.0.0
 ms.subservice: extensions
+ms.subservice: extensions
 ---
 
 # Remove-MgSchemaExtension
@@ -36,6 +37,9 @@ Remove-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-IfMatch <Str
 Delete the definition of a schema extension.
 Only the app that created the schema extension (owner app) can delete the schema extension definition, and only when the extension is in the InDevelopment state.
 Deleting a schema extension definition does not affect accessing custom data that has been added to resource instances based on that definition.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schemaextension-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schemaextension-delete-permissions.md)]

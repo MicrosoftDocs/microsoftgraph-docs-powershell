@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportfrontlinereport
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport
@@ -32,6 +33,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport -OutFile <String>
 
 ## DESCRIPTION
 Get the Windows 365 Frontline reports, such as real-time or historical data reports.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getfrontlinereport-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getfrontlinereport-permissions.md)]

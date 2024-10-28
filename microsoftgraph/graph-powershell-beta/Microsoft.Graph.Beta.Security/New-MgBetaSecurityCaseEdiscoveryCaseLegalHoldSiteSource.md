@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaselegalholdsitesource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource
@@ -48,6 +49,9 @@ New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource -InputObject <ISecurityI
 
 ## DESCRIPTION
 Create a new siteSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryholdpolicy-post-sitesources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryholdpolicy-post-sitesources-permissions.md)]

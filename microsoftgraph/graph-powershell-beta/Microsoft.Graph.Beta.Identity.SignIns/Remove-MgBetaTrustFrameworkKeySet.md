@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatrustframeworkkeyset
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaTrustFrameworkKeySet
@@ -29,6 +30,9 @@ Remove-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete a trustFrameworkKeySet.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-delete-permissions.md)]

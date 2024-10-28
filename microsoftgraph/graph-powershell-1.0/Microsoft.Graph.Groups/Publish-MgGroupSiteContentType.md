@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupsitecontenttype
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Publish-MgGroupSiteContentType
@@ -32,6 +33,9 @@ Publish-MgGroupSiteContentType -InputObject <IGroupsIdentity> [-ResponseHeadersV
 
 ## DESCRIPTION
 Publishes a contentType present in the content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-publish-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-publish-permissions.md)]

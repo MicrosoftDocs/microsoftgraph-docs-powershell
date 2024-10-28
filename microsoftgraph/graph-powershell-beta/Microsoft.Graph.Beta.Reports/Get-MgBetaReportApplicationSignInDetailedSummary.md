@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportApplicationSignInDetailedSummary
@@ -38,6 +40,12 @@ Get-MgBetaReportApplicationSignInDetailedSummary -InputObject <IReportsIdentity>
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationsignindetailedsummary-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-applicationsignindetailedsummary-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationsignindetailedsummary-get-permissions.md)]

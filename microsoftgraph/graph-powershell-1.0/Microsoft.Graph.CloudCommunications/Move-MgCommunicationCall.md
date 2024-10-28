@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Move-MgCommunicationCall
@@ -54,6 +55,9 @@ Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 Transfer an active peer-to-peer call or group call.
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
 This is opposed to transfering the call directly.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-transfer-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-transfer-permissions.md)]

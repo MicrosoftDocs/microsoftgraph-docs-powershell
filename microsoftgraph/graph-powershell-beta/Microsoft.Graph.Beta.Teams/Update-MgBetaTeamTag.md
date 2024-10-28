@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamTag
@@ -48,6 +49,9 @@ Update-MgBetaTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Update the properties of a teamworkTag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-update-permissions.md)]

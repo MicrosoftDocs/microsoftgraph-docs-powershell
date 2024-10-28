@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restart-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Restart-MgBetaDeviceManagementVirtualEndpointCloudPc
@@ -32,6 +33,9 @@ Restart-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Reboot a specific Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlymfacompletion
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportUserInsightMonthlyMfaCompletion
@@ -37,6 +38,9 @@ Get-MgBetaReportUserInsightMonthlyMfaCompletion -InputObject <IReportsIdentity> 
 
 ## DESCRIPTION
 Insights for MFA usage on apps registered in the tenant for a specified period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-mfacompletions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-mfacompletions-permissions.md)]

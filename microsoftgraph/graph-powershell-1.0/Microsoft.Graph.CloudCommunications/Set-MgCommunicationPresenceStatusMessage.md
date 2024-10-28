@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresencestatusmessage
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Set-MgCommunicationPresenceStatusMessage
@@ -52,6 +53,9 @@ Set-MgCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsIdent
 ## DESCRIPTION
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setstatusmessage-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setstatusmessage-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: industry-data-etl
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataReferenceDefinition
@@ -38,6 +40,12 @@ Get-MgBetaExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Read the properties and relationships of a referenceDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-referencedefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-referencedefinition-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-referencedefinition-get-permissions.md)]

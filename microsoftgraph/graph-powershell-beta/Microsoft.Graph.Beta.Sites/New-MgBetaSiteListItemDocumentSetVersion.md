@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemdocumentsetversion
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaSiteListItemDocumentSetVersion
@@ -54,6 +55,9 @@ New-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create a new version of a document set item in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-post-documentsetversions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-post-documentsetversions-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitem
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Remove-MgExternalConnectionItem
@@ -32,6 +33,9 @@ Remove-MgExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete an externalItem object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalitem-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalitem-delete-permissions.md)]

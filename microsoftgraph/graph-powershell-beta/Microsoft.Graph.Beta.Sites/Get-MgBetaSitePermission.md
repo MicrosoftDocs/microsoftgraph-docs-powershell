@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: sharepoint
 ms.subservice: sharepoint
+ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaSitePermission
@@ -41,6 +43,12 @@ Get-MgBetaSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a permission object on a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-get-permission-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-permissions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-get-permission-permissions.md)]

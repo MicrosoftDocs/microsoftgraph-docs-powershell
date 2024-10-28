@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyuser
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaDismissRiskyUser
@@ -37,6 +38,9 @@ Invoke-MgBetaDismissRiskyUser
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 The maximum count of users to dismiss in one call is 60.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-dismiss-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-dismiss-permissions.md)]

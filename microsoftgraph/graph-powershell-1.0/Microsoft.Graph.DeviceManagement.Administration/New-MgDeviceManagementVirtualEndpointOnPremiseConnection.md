@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointonpremiseconnection
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # New-MgDeviceManagementVirtualEndpointOnPremiseConnection
@@ -37,6 +38,9 @@ New-MgDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## DESCRIPTION
 Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-onpremisesconnections-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-onpremisesconnections-permissions.md)]

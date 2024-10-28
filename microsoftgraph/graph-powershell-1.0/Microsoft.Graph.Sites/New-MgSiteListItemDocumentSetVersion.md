@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemdocumentsetversion
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgSiteListItemDocumentSetVersion
@@ -54,6 +55,9 @@ New-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create a new version of a document set item in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-post-documentsetversions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-post-documentsetversions-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Remove-MgBetaSearchQna
@@ -32,6 +33,9 @@ Remove-MgBetaSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Resp
 
 ## DESCRIPTION
 Delete a qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-delete-permissions.md)]

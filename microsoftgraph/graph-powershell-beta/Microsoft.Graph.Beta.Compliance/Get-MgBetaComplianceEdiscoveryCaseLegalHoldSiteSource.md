@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalholdsitesource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource
@@ -37,6 +38,9 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplianceI
 
 ## DESCRIPTION
 Data source entity for SharePoint sites associated with the legal hold.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-list-sitesources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-list-sitesources-permissions.md)]

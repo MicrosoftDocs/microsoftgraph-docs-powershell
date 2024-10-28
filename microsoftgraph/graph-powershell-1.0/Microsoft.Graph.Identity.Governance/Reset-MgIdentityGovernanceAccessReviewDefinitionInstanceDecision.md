@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/reset-mgidentitygovernanceaccessreviewdefinitioninstancedecision
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
@@ -32,6 +33,9 @@ Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <I
 
 ## DESCRIPTION
 Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-resetdecisions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-resetdecisions-permissions.md)]

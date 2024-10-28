@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausermanagerbyref
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Remove-MgBetaUserManagerByRef
@@ -32,6 +33,9 @@ Remove-MgBetaUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Remove a user's manager.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delete-manager-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delete-manager-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityConditionalAccessPolicy
@@ -41,6 +43,12 @@ Get-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity> [-
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a conditionalAccessPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccesspolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccessroot-list-policies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccesspolicy-get-permissions.md)]

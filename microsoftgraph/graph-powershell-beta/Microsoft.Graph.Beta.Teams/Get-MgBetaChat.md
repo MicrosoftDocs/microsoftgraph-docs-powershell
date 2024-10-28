@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaChat
@@ -44,6 +46,9 @@ Get-MgBetaChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prop
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-permissions.md)]

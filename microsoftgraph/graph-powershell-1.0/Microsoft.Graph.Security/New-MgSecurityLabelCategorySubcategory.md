@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # New-MgSecurityLabelCategorySubcategory
@@ -48,6 +49,9 @@ New-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -BodyPar
 
 ## DESCRIPTION
 Create a new subcategoryTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-categorytemplate-post-subcategories-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-categorytemplate-post-subcategories-permissions.md)]

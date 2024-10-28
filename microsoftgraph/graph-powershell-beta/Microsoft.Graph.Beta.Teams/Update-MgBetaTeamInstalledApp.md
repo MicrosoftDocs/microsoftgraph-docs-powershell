@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateaminstalledapp
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamInstalledApp
@@ -50,6 +51,9 @@ Update-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Upgrade an app installation within a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-teamsappinstallation-upgrade-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-teamsappinstallation-upgrade-permissions.md)]

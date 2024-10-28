@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharealloweduserbyref
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Remove-MgPrintShareAllowedUserByRef
@@ -46,6 +47,9 @@ Remove-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -I
 
 ## DESCRIPTION
 Revoke the specified user's access to submit print jobs to the associated printerShare.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-delete-alloweduser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-delete-alloweduser-permissions.md)]

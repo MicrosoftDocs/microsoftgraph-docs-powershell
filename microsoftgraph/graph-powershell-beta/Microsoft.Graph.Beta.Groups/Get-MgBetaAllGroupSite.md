@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetaallgroupsite
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaAllGroupSite
@@ -36,6 +37,9 @@ Get-MgBetaAllGroupSite -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty 
 ## DESCRIPTION
 List sites across geographies in an organization.
 For more details, see Best practices for discovering files and detecting changes at scale.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getallsites-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getallsites-permissions.md)]

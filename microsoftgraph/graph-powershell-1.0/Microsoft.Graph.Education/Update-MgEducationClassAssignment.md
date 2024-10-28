@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Update-MgEducationClassAssignment
@@ -68,6 +69,9 @@ Update an educationAssignment object.
 Only teachers can perform this action.
 Alternatively, request to change the status of an assignment with publish action.
 Don't use a PATCH operation for this purpose.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-update-permissions.md)]

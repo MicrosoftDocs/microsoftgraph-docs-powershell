@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Update-MgBetaPlannerTaskAssignedToTaskBoardFormat
@@ -48,6 +49,9 @@ Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity
 
 ## DESCRIPTION
 Update the properties of plannerAssignedToTaskBoardTaskFormat object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]

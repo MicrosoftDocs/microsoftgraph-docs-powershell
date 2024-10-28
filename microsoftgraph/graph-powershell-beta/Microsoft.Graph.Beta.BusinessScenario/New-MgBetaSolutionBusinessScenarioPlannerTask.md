@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannertask
 schema: 2.0.0
 ms.subservice: business-scenarios
+ms.subservice: business-scenarios
 ---
 
 # New-MgBetaSolutionBusinessScenarioPlannerTask
@@ -75,6 +76,9 @@ New-MgBetaSolutionBusinessScenarioPlannerTask -InputObject <IBusinessScenarioIde
 
 ## DESCRIPTION
 Create a new businessScenarioTask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-post-tasks-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-post-tasks-permissions.md)]

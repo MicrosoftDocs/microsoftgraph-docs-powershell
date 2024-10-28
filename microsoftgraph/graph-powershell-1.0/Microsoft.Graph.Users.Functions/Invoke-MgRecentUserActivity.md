@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuseractivity
 schema: 2.0.0
 ms.subservice: project-rome
+ms.subservice: project-rome
 ---
 
 # Invoke-MgRecentUserActivity
@@ -48,6 +49,9 @@ This means that activities without activityHistoryItems won't be included in the
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-get-recent-activities-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-get-recent-activities-permissions.md)]

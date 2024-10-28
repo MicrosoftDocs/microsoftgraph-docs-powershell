@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaavailableidentityprovidertype
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaAvailableIdentityProviderType
@@ -24,6 +25,9 @@ Invoke-MgBetaAvailableIdentityProviderType [-Count] [-Filter <String>] [-Search 
 
 ## DESCRIPTION
 Get all identity providers supported in a directory.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityproviderbase-availableprovidertypes-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityproviderbase-availableprovidertypes-permissions.md)]

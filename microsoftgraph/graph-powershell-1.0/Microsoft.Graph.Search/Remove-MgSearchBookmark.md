@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Remove-MgSearchBookmark
@@ -32,6 +33,9 @@ Remove-MgSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>] [-Res
 
 ## DESCRIPTION
 Delete a bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-delete-permissions.md)]

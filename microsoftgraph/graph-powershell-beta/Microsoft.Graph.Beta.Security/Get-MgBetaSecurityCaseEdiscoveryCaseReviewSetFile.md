@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: ediscovery
 ms.subservice: ediscovery
+ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile
@@ -39,6 +41,12 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentit
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryFile object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryfile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-list-files-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryfile-get-permissions.md)]

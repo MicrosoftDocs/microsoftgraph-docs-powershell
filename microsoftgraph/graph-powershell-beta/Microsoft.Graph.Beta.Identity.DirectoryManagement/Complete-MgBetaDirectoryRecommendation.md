@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendation
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Complete-MgBetaDirectoryRecommendation
@@ -28,6 +29,9 @@ Complete-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagemen
 
 ## DESCRIPTION
 Complete a recommendation object and update its status to completedByUser.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-complete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-complete-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/export-mgbetauserpersonaldata
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Export-MgBetaUserPersonalData
@@ -52,6 +53,9 @@ Export-MgBetaUserPersonalData -InputObject <IUsersActionsIdentity>
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
 For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-exportpersonaldata-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-exportpersonaldata-permissions.md)]

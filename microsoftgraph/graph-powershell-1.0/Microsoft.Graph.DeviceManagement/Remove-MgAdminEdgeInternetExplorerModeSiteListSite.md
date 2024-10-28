@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
 ms.subservice: edge-browser-management
+ms.subservice: edge-browser-management
 ---
 
 # Remove-MgAdminEdgeInternetExplorerModeSiteListSite
@@ -32,6 +33,9 @@ Remove-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManageme
 
 ## DESCRIPTION
 Delete a browserSite from a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-delete-sites-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-delete-sites-permissions.md)]

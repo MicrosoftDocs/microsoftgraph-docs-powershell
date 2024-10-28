@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
@@ -42,6 +44,12 @@ Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -InputObj
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a authenticationContextClassReference object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcontextclassreference-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-list-authenticationcontextclassreferences-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcontextclassreference-get-permissions.md)]

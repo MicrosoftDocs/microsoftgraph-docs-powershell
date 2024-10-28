@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser
 schema: 2.0.0
 ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Update-MgUser
@@ -161,6 +162,9 @@ Update-MgUser -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUser>
 
 ## DESCRIPTION
 Update the properties of a user object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-update-permissions.md)]

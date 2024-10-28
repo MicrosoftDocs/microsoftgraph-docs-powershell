@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationwindowshelloforbusinessmethod
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgUserAuthenticationWindowsHelloForBusinessMethod
@@ -33,6 +34,9 @@ Remove-MgUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIdentity
 
 ## DESCRIPTION
 Deletes a windowsHelloForBusinessAuthenticationMethod object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/windowshelloforbusinessauthenticationmethod-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/windowshelloforbusinessauthenticationmethod-delete-permissions.md)]

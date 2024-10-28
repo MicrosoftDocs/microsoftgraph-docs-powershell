@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension
 schema: 2.0.0
 ms.subservice: extensions
+ms.subservice: extensions
 ---
 
 # Update-MgSchemaExtension
@@ -64,6 +65,9 @@ For delegated flows, the signed-in user can update a schema extension as long as
 That application can be the one that initially created the extension, or some other application owned by the signed-in user.
 This criteria for the owner property allows a signed-in user to make updates through other applications they don't own, such as Microsoft Graph Explorer.
 When using Graph Explorer to update a schemaExtension resource, include the owner property in the PATCH request body.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schemaextension-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schemaextension-update-permissions.md)]

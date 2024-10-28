@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupassignmentscheduleinstancebycurrentuser
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceByCurrentUser
@@ -35,6 +36,9 @@ Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInst
 
 ## DESCRIPTION
 In PIM for groups, retrieve the schedule instances for membership or ownership assignments for the calling principal to groups that are governed by PIM.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupassignmentscheduleinstance-filterbycurrentuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupassignmentscheduleinstance-filterbycurrentuser-permissions.md)]

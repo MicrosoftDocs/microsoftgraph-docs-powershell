@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionschema
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Get-MgExternalConnectionSchema
@@ -32,6 +33,9 @@ Get-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Read the properties and relationships of a schema object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-schema-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-schema-get-permissions.md)]

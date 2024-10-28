@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionoutcome
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Update-MgBetaEducationClassAssignmentSubmissionOutcome
@@ -52,6 +53,9 @@ Update-MgBetaEducationClassAssignmentSubmissionOutcome -InputObject <IEducationI
 ## DESCRIPTION
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationoutcome-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationoutcome-update-permissions.md)]

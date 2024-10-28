@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgAllGroupSite
@@ -38,6 +39,9 @@ Get-MgAllGroupSite -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty <Str
 List sites across geographies in an organization.
 This API can also be used to enumerate all sites in a non-multi-geo tenant.
 For more information, see Best practices for discovering files and detecting changes at scale.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-getallsites-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-getallsites-permissions.md)]

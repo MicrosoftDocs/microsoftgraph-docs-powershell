@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgdeactivateeducationmeassignment
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Invoke-MgDeactivateEducationMeAssignment
@@ -32,6 +33,9 @@ Invoke-MgDeactivateEducationMeAssignment -InputObject <IEducationIdentity> [-Res
 ## DESCRIPTION
 Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
 This action can only be performed by a teacher on assigned assignments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-deactivate-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-deactivate-permissions.md)]

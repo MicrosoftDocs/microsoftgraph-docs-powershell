@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalization
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgAgreementFileLocalization
@@ -40,6 +41,9 @@ Get-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity> [-Exp
 
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreementfile-list-localizations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreementfile-list-localizations-permissions.md)]

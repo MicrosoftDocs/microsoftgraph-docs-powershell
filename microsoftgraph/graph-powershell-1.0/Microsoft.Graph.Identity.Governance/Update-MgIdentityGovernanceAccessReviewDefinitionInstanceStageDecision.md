@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
@@ -61,6 +62,9 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 
 ## DESCRIPTION
 Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstancedecisionitem-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstancedecisionitem-update-permissions.md)]

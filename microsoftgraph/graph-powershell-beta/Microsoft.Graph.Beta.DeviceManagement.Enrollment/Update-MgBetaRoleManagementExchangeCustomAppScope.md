@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangecustomappscope
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Update-MgBetaRoleManagementExchangeCustomAppScope
@@ -47,6 +48,9 @@ Update-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Update an existing customAppScope object of an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customappscope-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customappscope-update-permissions.md)]

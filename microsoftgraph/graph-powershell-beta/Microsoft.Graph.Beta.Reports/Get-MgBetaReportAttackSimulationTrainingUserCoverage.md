@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationtrainingusercoverage
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgBetaReportAttackSimulationTrainingUserCoverage
@@ -23,6 +24,9 @@ Get-MgBetaReportAttackSimulationTrainingUserCoverage [-Count] [-Filter <String>]
 ## DESCRIPTION
 List training coverage for each user of a tenant in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getattacksimulationtrainingusercoverage-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getattacksimulationtrainingusercoverage-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostextension
 schema: 2.0.0
 ms.subservice: extensions
+ms.subservice: extensions
 ---
 
 # Get-MgGroupThreadPostExtension

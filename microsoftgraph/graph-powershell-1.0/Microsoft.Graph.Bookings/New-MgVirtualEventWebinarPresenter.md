@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarpresenter
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # New-MgVirtualEventWebinarPresenter
@@ -50,6 +51,9 @@ New-MgVirtualEventWebinarPresenter -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new virtualEventPresenter object on a virtual event.
 Currently, the following types of virtual events are supported: - virtualEventTownhall- virtualEventWebinar
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualevent-post-presenters-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualevent-post-presenters-permissions.md)]

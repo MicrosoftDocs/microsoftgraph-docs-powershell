@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult
@@ -42,6 +44,12 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -InputObjec
 
 ## DESCRIPTION
 Get the user processing result of a user processing result of a run.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-userprocessingresult-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-run-list-userprocessingresults-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-userprocessingresult-get-permissions.md)]

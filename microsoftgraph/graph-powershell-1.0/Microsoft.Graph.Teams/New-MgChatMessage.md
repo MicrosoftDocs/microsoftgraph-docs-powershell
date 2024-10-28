@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgChatMessage
@@ -64,6 +65,9 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ## DESCRIPTION
 Send a new chatMessage in the specified chat.
 This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-permissions.md)]

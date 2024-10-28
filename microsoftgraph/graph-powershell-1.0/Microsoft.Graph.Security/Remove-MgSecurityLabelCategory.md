@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Remove-MgSecurityLabelCategory
@@ -32,6 +33,9 @@ Remove-MgSecurityLabelCategory -InputObject <ISecurityIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete a categoryTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-categories-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-categories-permissions.md)]

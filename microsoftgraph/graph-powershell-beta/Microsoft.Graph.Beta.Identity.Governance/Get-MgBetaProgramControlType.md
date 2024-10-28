@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprogramcontroltype
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaProgramControlType
@@ -37,6 +38,9 @@ Get-MgBetaProgramControlType -InputObject <IIdentityGovernanceIdentity> [-Expand
 
 ## DESCRIPTION
 Get entity from programControlTypes by key
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/programcontroltype-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/programcontroltype-list-permissions.md)]

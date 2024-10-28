@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitycount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportYammerGroupActivityCount
@@ -31,6 +32,9 @@ Get-MgReportYammerGroupActivityCount -InputObject <IReportsIdentity> -OutFile <S
 
 ## DESCRIPTION
 Get the number of Yammer messages posted, read, and liked in groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammergroupsactivitycounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammergroupsactivitycounts-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackagebycurrentuser
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser
@@ -34,6 +35,9 @@ Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser -InputObject 
 
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackage objects filtered on the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-filterbycurrentuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-filterbycurrentuser-permissions.md)]

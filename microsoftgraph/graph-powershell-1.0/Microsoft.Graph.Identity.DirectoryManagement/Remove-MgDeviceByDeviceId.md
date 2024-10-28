@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdevicebydeviceid
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgDeviceByDeviceId
@@ -32,6 +33,9 @@ Remove-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-
 
 ## DESCRIPTION
 Delete a registered device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-permissions.md)]

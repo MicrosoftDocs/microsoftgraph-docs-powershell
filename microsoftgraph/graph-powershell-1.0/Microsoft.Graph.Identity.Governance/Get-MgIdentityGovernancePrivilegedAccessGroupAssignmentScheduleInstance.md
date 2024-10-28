@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
@@ -43,6 +45,12 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupassignmentscheduleinstance-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-list-assignmentscheduleinstances-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupassignmentscheduleinstance-get-permissions.md)]

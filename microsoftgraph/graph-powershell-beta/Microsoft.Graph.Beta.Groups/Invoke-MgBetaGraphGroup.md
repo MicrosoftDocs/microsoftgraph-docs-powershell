@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetagraphgroup
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Invoke-MgBetaGraphGroup
@@ -33,6 +34,9 @@ Invoke-MgBetaGraphGroup -InputObject <IGroupsIdentity> [-ResponseHeadersVariable
 ## DESCRIPTION
 Calling this method disables the current user to receive email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-unsubscribebymail-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-unsubscribebymail-permissions.md)]

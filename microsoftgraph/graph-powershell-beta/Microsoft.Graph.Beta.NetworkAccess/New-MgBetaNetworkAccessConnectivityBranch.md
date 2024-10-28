@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranch
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # New-MgBetaNetworkAccessConnectivityBranch
@@ -33,6 +34,9 @@ New-MgBetaNetworkAccessConnectivityBranch -BodyParameter <IMicrosoftGraphNetwork
 
 ## DESCRIPTION
 Create a new branch.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-connectivity-post-branches-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-connectivity-post-branches-permissions.md)]

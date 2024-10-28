@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatpinnedmessage
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgBetaChatPinnedMessage
@@ -48,6 +49,9 @@ New-MgBetaChatPinnedMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Pin a chat message in the specified chat.
 This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-post-pinnedmessages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-post-pinnedmessages-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationmicrosoftauthenticatormethod
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod
@@ -33,6 +34,9 @@ Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdent
 
 ## DESCRIPTION
 Deletes a microsoftAuthenticatorAuthenticationMethod object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftauthenticatorauthenticationmethod-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftauthenticatorauthenticationmethod-delete-permissions.md)]

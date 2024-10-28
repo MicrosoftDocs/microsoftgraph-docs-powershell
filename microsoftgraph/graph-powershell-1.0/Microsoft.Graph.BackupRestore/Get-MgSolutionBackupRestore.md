@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestore
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgSolutionBackupRestore
@@ -24,6 +25,9 @@ Get-MgSolutionBackupRestore [-ExpandProperty <String[]>] [-Property <String[]>]
 
 ## DESCRIPTION
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-get-permissions.md)]

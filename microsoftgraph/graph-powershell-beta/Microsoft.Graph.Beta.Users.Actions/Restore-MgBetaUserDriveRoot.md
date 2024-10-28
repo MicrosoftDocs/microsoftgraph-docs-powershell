@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveroot
 schema: 2.0.0
 ms.subservice: onedrive
+ms.subservice: onedrive
 ---
 
 # Restore-MgBetaUserDriveRoot
@@ -48,6 +49,9 @@ Restore-MgBetaUserDriveRoot -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]

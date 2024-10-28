@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgentitlementmanagementassignmentpolicy
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Set-MgEntitlementManagementAssignmentPolicy
@@ -63,6 +64,9 @@ Set-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernanceIde
 
 ## DESCRIPTION
 Update an existing accessPackageAssignmentPolicy object to change one or more of its properties, such as the display name or description.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentpolicy-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentpolicy-update-permissions.md)]

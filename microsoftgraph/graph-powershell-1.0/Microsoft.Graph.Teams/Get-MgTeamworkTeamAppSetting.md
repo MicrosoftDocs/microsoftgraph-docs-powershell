@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkteamappsetting
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamworkTeamAppSetting
@@ -24,6 +25,9 @@ Get-MgTeamworkTeamAppSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 
 ## DESCRIPTION
 Get the tenant-wide teamsAppSettings for all Teams apps in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsappsettings-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsappsettings-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteaminstalledapp
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgTeamInstalledApp
@@ -32,6 +33,9 @@ Remove-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 
 ## DESCRIPTION
 Uninstalls an app from the specified team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-delete-installedapps-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-delete-installedapps-permissions.md)]

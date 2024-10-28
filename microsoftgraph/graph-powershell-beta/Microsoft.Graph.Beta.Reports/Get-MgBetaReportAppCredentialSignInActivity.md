@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaReportAppCredentialSignInActivity
@@ -38,6 +40,12 @@ Get-MgBetaReportAppCredentialSignInActivity -InputObject <IReportsIdentity> [-Ex
 
 ## DESCRIPTION
 Get an appCredentialSignInActivity object that contains recent activity of an application credential.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appcredentialsigninactivity-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-appcredentialsigninactivities-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appcredentialsigninactivity-get-permissions.md)]

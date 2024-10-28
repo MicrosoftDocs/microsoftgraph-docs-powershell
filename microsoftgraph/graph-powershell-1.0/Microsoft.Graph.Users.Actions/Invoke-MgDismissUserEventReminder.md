@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdismissusereventreminder
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Invoke-MgDismissUserEventReminder
@@ -32,6 +33,9 @@ Invoke-MgDismissUserEventReminder -InputObject <IUsersActionsIdentity> [-Respons
 
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-dismissreminder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-dismissreminder-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistrationbyuserid
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinarRegistrationByUserId
@@ -32,6 +33,9 @@ Get-MgVirtualEventWebinarRegistrationByUserId -InputObject <IBookingsIdentity> [
 
 ## DESCRIPTION
 Get the properties and relationships of a virtualEventRegistration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistration-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistration-get-permissions.md)]

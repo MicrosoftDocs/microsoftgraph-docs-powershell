@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolderchildfolder
 schema: 2.0.0
 ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Copy-MgBetaUserMailFolderChildFolder
@@ -48,6 +49,9 @@ Copy-MgBetaUserMailFolderChildFolder -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Copy a mail folder and its contents to another mail folder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-copy-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-copy-permissions.md)]

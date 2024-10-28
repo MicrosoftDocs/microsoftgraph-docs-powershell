@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreserviceapp
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Remove-MgBetaSolutionBackupRestoreServiceApp
@@ -32,6 +33,9 @@ Remove-MgBetaSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentit
 
 ## DESCRIPTION
 Delete a serviceApp.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-delete-serviceapps-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-delete-serviceapps-permissions.md)]

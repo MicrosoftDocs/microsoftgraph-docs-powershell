@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryAdministrativeUnitMember
@@ -25,6 +26,9 @@ Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandP
 
 ## DESCRIPTION
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-list-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-list-members-permissions.md)]

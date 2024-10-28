@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchanneltab
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # New-MgTeamChannelTab
@@ -50,6 +51,9 @@ New-MgTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Add (pin) a tab to the specified channel within a team.
 The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-tabs-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-tabs-permissions.md)]

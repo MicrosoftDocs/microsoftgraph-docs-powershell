@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.id
 schema: 2.0.0
 ms.subservice: entra-directory-management
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
@@ -43,6 +45,12 @@ Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## DESCRIPTION
 Read the properties and relationships of an allowedValue object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/allowedvalue-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-list-allowedvalues-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/allowedvalue-get-permissions.md)]

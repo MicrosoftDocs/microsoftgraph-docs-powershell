@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitem
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Remove-MgBetaSiteListItem
@@ -32,6 +33,9 @@ Remove-MgBetaSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>] [-Re
 
 ## DESCRIPTION
 Removes an item from a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-delete-permissions.md)]

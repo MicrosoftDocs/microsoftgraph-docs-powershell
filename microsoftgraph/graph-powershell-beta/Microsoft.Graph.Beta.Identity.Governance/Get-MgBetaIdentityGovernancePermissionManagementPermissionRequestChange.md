@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-permissions-management
 ms.subservice: entra-id-governance
+ms.subservice: entra-permissions-management
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
@@ -39,6 +41,12 @@ Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 
 ## DESCRIPTION
 Read the properties and relationships of a permissionsRequestChange object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsrequestchange-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsmanagement-list-permissionsrequestchanges-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsrequestchange-get-permissions.md)]

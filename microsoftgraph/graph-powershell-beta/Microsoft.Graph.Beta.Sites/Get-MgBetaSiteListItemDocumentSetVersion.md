@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: sharepoint
 ms.subservice: sharepoint
+ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaSiteListItemDocumentSetVersion
@@ -41,6 +43,12 @@ Get-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-ExpandP
 
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-list-documentsetversions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]

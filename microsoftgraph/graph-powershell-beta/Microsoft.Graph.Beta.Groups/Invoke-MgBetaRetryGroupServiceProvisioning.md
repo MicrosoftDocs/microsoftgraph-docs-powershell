@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaretrygroupserviceprovisioning
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Invoke-MgBetaRetryGroupServiceProvisioning
@@ -32,6 +33,9 @@ Invoke-MgBetaRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Resp
 
 ## DESCRIPTION
 Retry the group service provisioning.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-retryserviceprovisioning-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-retryserviceprovisioning-permissions.md)]

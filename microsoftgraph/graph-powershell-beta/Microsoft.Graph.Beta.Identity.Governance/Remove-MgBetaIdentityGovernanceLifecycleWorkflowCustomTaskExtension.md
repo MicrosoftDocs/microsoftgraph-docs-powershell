@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension
@@ -34,6 +35,9 @@ Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject
 ## DESCRIPTION
 Delete a customTaskExtension object.
 A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-customtaskextension-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-customtaskextension-delete-permissions.md)]

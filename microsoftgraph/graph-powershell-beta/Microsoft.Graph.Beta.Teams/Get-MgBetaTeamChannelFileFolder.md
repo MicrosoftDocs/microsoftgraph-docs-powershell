@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelfilefolder
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamChannelFileFolder
@@ -32,6 +33,9 @@ Get-MgBetaTeamChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Get the metadata for the location where the files of a channel are stored.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-get-filesfolder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-get-filesfolder-permissions.md)]

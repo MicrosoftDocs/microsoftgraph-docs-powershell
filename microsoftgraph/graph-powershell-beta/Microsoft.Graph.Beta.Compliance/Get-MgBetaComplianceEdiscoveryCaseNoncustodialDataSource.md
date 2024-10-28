@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: ediscovery
 ms.subservice: ediscovery
+ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource
@@ -38,6 +40,12 @@ Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplian
 
 ## DESCRIPTION
 Read the properties and relationships of a noncustodialDataSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-get-permissions.md)]

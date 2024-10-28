@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsubmissionoutcome
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgBetaEducationClassAssignmentSubmissionOutcome
@@ -35,6 +36,9 @@ Remove-MgBetaEducationClassAssignmentSubmissionOutcome -InputObject <IEducationI
 ## DESCRIPTION
 Delete a feedback resource from a submission.
 This can only be done by a teacher.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationfeedbackresourceoutcome-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationfeedbackresourceoutcome-delete-permissions.md)]

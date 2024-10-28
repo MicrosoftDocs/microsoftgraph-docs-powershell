@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgunmutecommunicationcall
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Invoke-MgUnmuteCommunicationCall
@@ -52,6 +53,9 @@ Invoke-MgUnmuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 Allow the application to unmute itself.
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-unmute-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-unmute-permissions.md)]

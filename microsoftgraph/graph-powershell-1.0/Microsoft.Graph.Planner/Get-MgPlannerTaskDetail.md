@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskdetail
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Get-MgPlannerTaskDetail
@@ -32,6 +33,9 @@ Get-MgPlannerTaskDetail -InputObject <IPlannerIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerTaskDetails object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertaskdetails-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertaskdetails-get-permissions.md)]

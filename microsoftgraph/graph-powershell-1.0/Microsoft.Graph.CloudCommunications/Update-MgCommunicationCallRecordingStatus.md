@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordingstatus
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Update-MgCommunicationCallRecordingStatus
@@ -51,6 +52,9 @@ Update-MgCommunicationCallRecordingStatus -InputObject <ICloudCommunicationsIden
 ## DESCRIPTION
 Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-updaterecordingstatus-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-updaterecordingstatus-permissions.md)]

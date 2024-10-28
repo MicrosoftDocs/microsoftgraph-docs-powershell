@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgBetaAdminReportSetting
@@ -24,6 +25,9 @@ Get-MgBetaAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 
 ## DESCRIPTION
 Get the tenant-level settings for Microsoft 365 reports.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminreportsettings-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminreportsettings-get-permissions.md)]

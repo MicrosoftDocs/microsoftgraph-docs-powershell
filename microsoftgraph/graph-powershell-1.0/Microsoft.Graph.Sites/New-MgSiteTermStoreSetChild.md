@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetchild
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # New-MgSiteTermStoreSetChild
@@ -165,6 +166,9 @@ New-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Create a new term object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-post-permissions.md)]

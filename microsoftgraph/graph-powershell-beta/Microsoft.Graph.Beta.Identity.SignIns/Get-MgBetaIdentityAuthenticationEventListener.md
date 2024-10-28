@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventlistener
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityAuthenticationEventListener
@@ -40,6 +41,9 @@ Get-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIden
 
 ## DESCRIPTION
 Get authenticationEventListeners from identity
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-list-authenticationeventlisteners-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-list-authenticationeventlisteners-permissions.md)]

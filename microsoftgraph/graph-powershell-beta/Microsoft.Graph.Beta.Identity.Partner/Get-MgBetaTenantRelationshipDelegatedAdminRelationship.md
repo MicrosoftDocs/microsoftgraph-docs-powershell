@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: partner-customer-administration
 ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # Get-MgBetaTenantRelationshipDelegatedAdminRelationship
@@ -41,6 +43,12 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPa
 
 ## DESCRIPTION
 Read the properties of a delegatedAdminRelationship object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantrelationship-list-delegatedadminrelationships-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-get-permissions.md)]

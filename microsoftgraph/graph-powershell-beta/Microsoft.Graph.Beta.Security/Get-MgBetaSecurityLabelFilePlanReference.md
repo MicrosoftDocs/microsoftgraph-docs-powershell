@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: security
 ms.subservice: security
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityLabelFilePlanReference
@@ -41,6 +43,12 @@ Get-MgBetaSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-Expa
 
 ## DESCRIPTION
 Read the properties and relationships of a filePlanReferenceTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-fileplanreferencetemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-fileplanreferences-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-fileplanreferencetemplate-get-permissions.md)]

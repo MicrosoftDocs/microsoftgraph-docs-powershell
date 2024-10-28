@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: education
 ms.subservice: education
+ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassAssignmentSubmission
@@ -62,6 +64,12 @@ Only teachers or applications with application permissions can add or change gra
 Students will not see the grade or feedback until the assignment has been released.
 Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
 For details, see the examples section.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-submissions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-get-permissions.md)]

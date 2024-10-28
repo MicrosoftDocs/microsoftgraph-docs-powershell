@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupDelta
@@ -26,6 +27,9 @@ Get-MgGroupDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Str
 ## DESCRIPTION
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
 See Using Delta Query for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delta-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delta-permissions.md)]

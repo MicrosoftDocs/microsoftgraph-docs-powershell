@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/grant-mgbetauserdrivelistpermission
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Grant-MgBetaUserDriveListPermission
@@ -46,6 +47,9 @@ Grant-MgBetaUserDriveListPermission -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]

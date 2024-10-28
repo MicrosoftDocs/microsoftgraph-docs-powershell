@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintercapability
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaPrintPrinterCapability
@@ -27,6 +28,9 @@ Get-MgBetaPrintPrinterCapability -InputObject <IDevicesCloudPrintIdentity> [-Res
 
 ## DESCRIPTION
 Get a list of capabilities for the printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-getcapabilities-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-getcapabilities-permissions.md)]

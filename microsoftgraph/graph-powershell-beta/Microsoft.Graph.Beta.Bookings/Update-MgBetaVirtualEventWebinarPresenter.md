@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarpresenter
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Update-MgBetaVirtualEventWebinarPresenter
@@ -52,6 +53,9 @@ Update-MgBetaVirtualEventWebinarPresenter -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a virtualEventPresenter object.
 Currently the supported virtual event type is virtualEventWebinar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventpresenter-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventpresenter-update-permissions.md)]

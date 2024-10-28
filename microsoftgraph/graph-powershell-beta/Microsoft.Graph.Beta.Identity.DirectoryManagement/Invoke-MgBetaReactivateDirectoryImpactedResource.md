@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryimpactedresource
 schema: 2.0.0
 ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Invoke-MgBetaReactivateDirectoryImpactedResource
@@ -33,6 +34,9 @@ Invoke-MgBetaReactivateDirectoryImpactedResource -InputObject <IIdentityDirector
 Reactivate an accidentally dismissed, completed, or postponed impactedResource object.
 This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-reactivate-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-reactivate-permissions.md)]

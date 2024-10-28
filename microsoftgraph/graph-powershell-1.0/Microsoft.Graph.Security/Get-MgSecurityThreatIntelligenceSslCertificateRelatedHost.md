@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificaterelatedhost
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost
@@ -40,6 +41,9 @@ Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost -InputObject <ISecurit
 
 ## DESCRIPTION
 The host resources related with this sslCertificate.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-sslcertificate-list-relatedhosts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-sslcertificate-list-relatedhosts-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingmicrosoftapplicationdataaccess
 schema: 2.0.0
 ms.subservice: insights
+ms.subservice: insights
 ---
 
 # Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
@@ -47,6 +48,9 @@ Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 
 ## DESCRIPTION
 Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftapplicationdataaccesssettings-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftapplicationdataaccesssettings-update-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresencebyuserid
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgCommunicationPresenceByUserId
@@ -33,6 +34,9 @@ Get-MgCommunicationPresenceByUserId
 
 ## DESCRIPTION
 Get the presence information for multiple users.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudcommunications-getpresencesbyuserid-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudcommunications-getpresencesbyuserid-permissions.md)]

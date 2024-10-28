@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetabookingbusiness
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Publish-MgBetaBookingBusiness
@@ -48,6 +49,9 @@ Publish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Make the scheduling page of this business available to external customers.
 Set the isPublished property to true, and publicUrl property to the URL of the scheduling page.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-publish-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-publish-permissions.md)]

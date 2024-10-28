@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventlistener
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgIdentityAuthenticationEventListener
@@ -32,6 +33,9 @@ Remove-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdent
 
 ## DESCRIPTION
 Delete an authenticationEventListener object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventlistener-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventlistener-delete-permissions.md)]

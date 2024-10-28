@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest
 schema: 2.0.0
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
@@ -33,6 +34,9 @@ Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 
 ## DESCRIPTION
 Cancel an eligibility assignment request to a group whose membership and ownership are governed by PIM.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupeligibilityschedulerequest-cancel-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupeligibilityschedulerequest-cancel-permissions.md)]

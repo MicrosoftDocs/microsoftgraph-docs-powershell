@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityConditionalAccessNamedLocation
@@ -41,6 +43,12 @@ Get-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsI
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an ipNamedLocation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/namedlocation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-list-namedlocations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/namedlocation-get-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmessagedelta
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamPrimaryChannelMessageDelta
@@ -52,6 +53,9 @@ To proceed with a round of change tracking, copy and apply the @odata.nextLink o
 A @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
 You can save and use the @odata.deltaLink URL when you begin the to retrieve additional changes (messages changed or posted after acquiring @odata.deltaLink).
 For more information, see the delta query documentation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-delta-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-delta-permissions.md)]

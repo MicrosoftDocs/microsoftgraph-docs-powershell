@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Get-MgBetaPlannerRoster
@@ -37,6 +38,9 @@ Get-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Read the properties and relationships of a plannerRoster object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-get-permissions.md)]

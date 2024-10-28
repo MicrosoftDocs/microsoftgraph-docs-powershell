@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycase
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Remove-MgBetaSecurityCaseEdiscoveryCase
@@ -32,6 +33,9 @@ Remove-MgBetaSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete an ediscoveryCase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-casesroot-delete-ediscoverycases-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-casesroot-delete-ediscoverycases-permissions.md)]

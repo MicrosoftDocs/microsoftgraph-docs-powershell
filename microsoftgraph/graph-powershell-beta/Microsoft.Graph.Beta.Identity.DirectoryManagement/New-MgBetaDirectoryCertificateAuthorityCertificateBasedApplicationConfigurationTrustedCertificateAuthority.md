@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority
@@ -49,6 +50,9 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
 
 ## DESCRIPTION
 Create a new trusted certificate authority in a certificateBasedApplicationConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities-permissions.md)]

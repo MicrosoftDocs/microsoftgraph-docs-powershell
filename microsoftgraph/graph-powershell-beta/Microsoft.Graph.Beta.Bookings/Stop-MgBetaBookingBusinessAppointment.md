@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Stop-MgBetaBookingBusinessAppointment
@@ -49,6 +50,9 @@ Stop-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-cancel-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-cancel-permissions.md)]

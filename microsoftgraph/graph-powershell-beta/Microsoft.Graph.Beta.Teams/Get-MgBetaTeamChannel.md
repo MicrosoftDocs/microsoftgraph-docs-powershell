@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamChannel
@@ -45,6 +47,12 @@ Get-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 Retrieve the properties and relationships of a channel.
 This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-get-permissions.md)]

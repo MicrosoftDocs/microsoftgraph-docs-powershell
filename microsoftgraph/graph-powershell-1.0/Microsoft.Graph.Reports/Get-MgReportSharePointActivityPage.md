@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivitypage
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportSharePointActivityPage
@@ -31,6 +32,9 @@ Get-MgReportSharePointActivityPage -InputObject <IReportsIdentity> -OutFile <Str
 
 ## DESCRIPTION
 Get the number of unique pages visited by users.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivitypages-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivitypages-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannerplanconfiguration
 schema: 2.0.0
 ms.subservice: business-scenarios
+ms.subservice: business-scenarios
 ---
 
 # Get-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration
@@ -29,6 +30,9 @@ Get-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -InputObject <IBusine
 
 ## DESCRIPTION
 Read the properties and relationships of a plannerPlanConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-get-permissions.md)]

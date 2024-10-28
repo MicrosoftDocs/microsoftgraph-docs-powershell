@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.us
 schema: 2.0.0
 ms.subservice: entra-users
 ms.subservice: entra-users
+ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Get-MgUserMemberOfAsGroup
@@ -45,6 +47,12 @@ Get-MgUserMemberOfAsGroup -InputObject <IUsersIdentity> [-ExpandProperty <String
 Get groups, directory roles, and administrative units that the user is a direct member of.
 This operation isn't transitive.
 To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-memberof-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-memberof-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-memberof-permissions.md)]

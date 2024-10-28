@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask
 schema: 2.0.0
 ms.subservice: planner
+ms.subservice: planner
 ---
 
 # New-MgPlannerTask
@@ -40,6 +41,9 @@ New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHeadersV
 
 ## DESCRIPTION
 Create a new plannerTask.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-tasks-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-tasks-permissions.md)]

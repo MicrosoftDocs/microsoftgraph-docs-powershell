@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusagedistributionusercount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportYammerDeviceUsageDistributionUserCount
@@ -32,6 +33,9 @@ Get-MgReportYammerDeviceUsageDistributionUserCount -InputObject <IReportsIdentit
 
 ## DESCRIPTION
 Get the number of users by device type.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammerdeviceusagedistributionusercounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammerdeviceusagedistributionusercounts-permissions.md)]

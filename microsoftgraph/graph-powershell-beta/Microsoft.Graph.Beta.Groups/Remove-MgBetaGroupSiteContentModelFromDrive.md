@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsitecontentmodelfromdrive
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Remove-MgBetaGroupSiteContentModelFromDrive
@@ -46,6 +47,9 @@ Remove-MgBetaGroupSiteContentModelFromDrive -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Remove a contentModel from a SharePoint document library.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-removefromdrive-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-removefromdrive-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadministrativeunitscopedrolemember
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgBetaAdministrativeUnitScopedRoleMember
@@ -29,6 +30,9 @@ Remove-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectory
 
 ## DESCRIPTION
 Remove a Microsoft Entra role assignment with administrative unit scope.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delete-scopedrolemembers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delete-scopedrolemembers-permissions.md)]

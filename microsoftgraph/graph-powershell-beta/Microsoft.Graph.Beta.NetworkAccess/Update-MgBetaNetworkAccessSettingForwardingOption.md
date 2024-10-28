@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingforwardingoption
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessSettingForwardingOption
@@ -31,6 +32,9 @@ Update-MgBetaNetworkAccessSettingForwardingOption
 ## DESCRIPTION
 the forwarding options for the tenant, with a specific focus on the skipDnsLookupState flag.
 This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingoptions-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingoptions-update-permissions.md)]

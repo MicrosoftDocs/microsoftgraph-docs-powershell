@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeople
 schema: 2.0.0
 ms.subservice: people
+ms.subservice: people
 ---
 
 # Get-MgAdminPeople
@@ -23,6 +24,9 @@ Get-MgAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [-Response
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a peopleAdminSettings object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/peopleadminsettings-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/peopleadminsettings-get-permissions.md)]

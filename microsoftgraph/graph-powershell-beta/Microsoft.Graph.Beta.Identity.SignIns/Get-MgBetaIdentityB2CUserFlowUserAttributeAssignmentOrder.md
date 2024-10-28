@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignmentorder
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder
@@ -29,6 +30,9 @@ Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder -InputObject <IIdentit
 
 ## DESCRIPTION
 Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-getorder-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-getorder-permissions.md)]

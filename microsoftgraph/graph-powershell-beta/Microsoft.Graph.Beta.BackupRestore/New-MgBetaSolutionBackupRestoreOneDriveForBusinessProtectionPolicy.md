@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessprotectionpolicy
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
@@ -40,6 +41,9 @@ New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
 Create a protection policy for the OneDrive service in Microsoft 365.
 When the policy is created, its state is set to inactive.
 Users can also provide a list of protection units under the policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-onedriveforbusinessprotectionpolicies-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-onedriveforbusinessprotectionpolicies-permissions.md)]

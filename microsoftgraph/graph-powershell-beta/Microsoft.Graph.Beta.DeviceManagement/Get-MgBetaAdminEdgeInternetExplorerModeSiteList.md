@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: edge-browser-management
 ms.subservice: edge-browser-management
+ms.subservice: edge-browser-management
+ms.subservice: edge-browser-management
 ---
 
 # Get-MgBetaAdminEdgeInternetExplorerModeSiteList
@@ -41,6 +43,12 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementI
 
 ## DESCRIPTION
 Get a browserSiteList that contains browserSite and browserSharedCookie resources.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internetexplorermode-list-sitelists-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-get-permissions.md)]

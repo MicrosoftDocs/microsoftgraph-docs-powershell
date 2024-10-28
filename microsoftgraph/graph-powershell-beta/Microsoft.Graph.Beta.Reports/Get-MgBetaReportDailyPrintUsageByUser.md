@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: universal-print
 ms.subservice: universal-print
+ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaReportDailyPrintUsageByUser
@@ -43,6 +45,12 @@ Get-MgBetaReportDailyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandPr
 ## DESCRIPTION
 Retrieve a user's usage summary for a particular time period.
 See the printUsageByUser documentation for descriptions of each of the endpoints.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printusagebyuser-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-dailyprintusagebyuser-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printusagebyuser-get-permissions.md)]

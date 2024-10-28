@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmanager
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaContactManager
@@ -32,6 +33,9 @@ Get-MgBetaContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-E
 
 ## DESCRIPTION
 Get the contact's manager
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-manager-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-manager-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimeoffreason
 schema: 2.0.0
 ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamScheduleTimeOffReason
@@ -38,6 +39,9 @@ Mark a timeOffReason as inactive by setting the isActive property.
 Every team must include at least one timeOffReason.
 This method doesn't remove the specified timeOffReason instance.
 timeOffItem instances that were assigned this reason remain assigned to this reason.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffreason-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffreason-delete-permissions.md)]

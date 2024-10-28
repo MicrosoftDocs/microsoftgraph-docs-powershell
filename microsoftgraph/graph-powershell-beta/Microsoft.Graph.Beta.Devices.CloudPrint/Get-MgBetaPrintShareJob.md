@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejob
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaPrintShareJob
@@ -40,6 +41,9 @@ Get-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Get jobs from print
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-list-jobs-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-list-jobs-permissions.md)]

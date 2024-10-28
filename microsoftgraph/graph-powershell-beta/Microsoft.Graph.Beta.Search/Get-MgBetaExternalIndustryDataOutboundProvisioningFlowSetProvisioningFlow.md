@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow
 schema: 2.0.0
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow
@@ -39,6 +40,9 @@ Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -Input
 
 ## DESCRIPTION
 A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-outboundprovisioningflowset-list-provisioningflows-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-outboundprovisioningflowset-list-provisioningflows-permissions.md)]

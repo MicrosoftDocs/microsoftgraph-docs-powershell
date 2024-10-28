@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatasourcesystem
 schema: 2.0.0
 ms.subservice: industry-data-etl
+ms.subservice: industry-data-etl
 ---
 
 # New-MgBetaExternalIndustryDataSourceSystem
@@ -30,6 +31,9 @@ New-MgBetaExternalIndustryDataSourceSystem -BodyParameter <IMicrosoftGraphIndust
 
 ## DESCRIPTION
 Create a new sourceSystemDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-post-permissions.md)]

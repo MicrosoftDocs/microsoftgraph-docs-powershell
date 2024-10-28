@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasesourcecollection
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # New-MgBetaComplianceEdiscoveryCaseSourceCollection
@@ -58,6 +59,9 @@ New-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIden
 
 ## DESCRIPTION
 Create a new sourceCollection object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-post-sourcecollections-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-post-sourcecollections-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Update-MgBetaSecurityIncident
@@ -58,6 +59,9 @@ Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update the properties of an incident object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-incident-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-incident-update-permissions.md)]

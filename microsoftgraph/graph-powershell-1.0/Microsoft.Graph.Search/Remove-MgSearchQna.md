@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Remove-MgSearchQna
@@ -32,6 +33,9 @@ Remove-MgSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Response
 
 ## DESCRIPTION
 Delete a qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-delete-permissions.md)]

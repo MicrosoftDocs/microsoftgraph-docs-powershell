@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostwhoi
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceHostWhoi
@@ -36,6 +37,9 @@ Get-MgBetaSecurityThreatIntelligenceHostWhoi -InputObject <ISecurityIdentity> [-
 Get the specified whoisRecord resource.
 Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
 - Specify an id value to get the corresponding whoisRecord.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-whoisrecord-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-whoisrecord-get-permissions.md)]

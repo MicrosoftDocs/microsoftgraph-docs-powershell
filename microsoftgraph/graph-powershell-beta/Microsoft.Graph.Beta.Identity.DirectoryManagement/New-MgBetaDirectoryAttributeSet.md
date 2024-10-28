@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset
 schema: 2.0.0
 ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaDirectoryAttributeSet
@@ -32,6 +33,9 @@ New-MgBetaDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet>
 
 ## DESCRIPTION
 Create a new attributeSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-attributesets-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-attributesets-permissions.md)]

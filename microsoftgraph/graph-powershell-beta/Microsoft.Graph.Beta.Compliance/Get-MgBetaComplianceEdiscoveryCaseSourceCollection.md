@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollection
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseSourceCollection
@@ -37,6 +38,9 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIden
 
 ## DESCRIPTION
 Returns a list of sourceCollection objects associated with this case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-list-sourcecollections-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-list-sourcecollections-permissions.md)]

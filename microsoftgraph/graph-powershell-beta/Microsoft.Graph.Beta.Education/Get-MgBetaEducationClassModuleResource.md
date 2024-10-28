@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: education
 ms.subservice: education
+ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassModuleResource
@@ -44,6 +46,12 @@ Get-MgBetaEducationClassModuleResource -InputObject <IEducationIdentity> [-Expan
 ## DESCRIPTION
 Get the properties of a resource associated with a module.
 Only teachers, students, and applications with application permissions can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmoduleresource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-list-resources-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmoduleresource-get-permissions.md)]

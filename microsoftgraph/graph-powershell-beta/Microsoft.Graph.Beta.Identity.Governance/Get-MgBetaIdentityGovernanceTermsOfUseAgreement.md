@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-id-governance
 ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaIdentityGovernanceTermsOfUseAgreement
@@ -41,6 +43,12 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanc
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an agreement object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-list-files-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termsofusecontainer-list-agreements-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-list-files-permissions.md)]

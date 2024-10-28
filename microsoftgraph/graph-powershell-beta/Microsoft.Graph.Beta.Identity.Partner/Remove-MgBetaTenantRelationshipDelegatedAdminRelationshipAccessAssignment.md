@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment
 schema: 2.0.0
 ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
@@ -34,6 +35,9 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 ## DESCRIPTION
 Delete a delegatedAdminAccessAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminaccessassignment-delete-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminaccessassignment-delete-permissions.md)]

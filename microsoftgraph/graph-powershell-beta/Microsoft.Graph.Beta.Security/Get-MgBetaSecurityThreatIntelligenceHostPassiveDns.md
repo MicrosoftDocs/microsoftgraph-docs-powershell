@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostpassivedns
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceHostPassiveDns
@@ -40,6 +41,9 @@ Get-MgBetaSecurityThreatIntelligenceHostPassiveDns -InputObject <ISecurityIdenti
 
 ## DESCRIPTION
 Passive DNS retrieval about this host.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-list-passivedns-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-list-passivedns-permissions.md)]

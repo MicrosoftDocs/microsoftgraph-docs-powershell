@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension
 schema: 2.0.0
 ms.subservice: extensions
+ms.subservice: extensions
 ---
 
 # Update-MgBetaGroupThreadPostExtension

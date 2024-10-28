@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaadminsharepointsetting
 schema: 2.0.0
 ms.subservice: onedrive
+ms.subservice: onedrive
 ---
 
 # Get-MgBetaAdminSharepointSetting
@@ -24,6 +25,9 @@ Get-MgBetaAdminSharepointSetting [-ExpandProperty <String[]>] [-Property <String
 
 ## DESCRIPTION
 Get the tenant-level settings for SharePoint and OneDrive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-get-permissions.md)]

@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: teams
 ms.subservice: teams
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamScheduleTimeOffRequest
@@ -41,6 +43,12 @@ Get-MgBetaTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeoffrequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffrequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffrequest-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffrequest-get-permissions.md)]

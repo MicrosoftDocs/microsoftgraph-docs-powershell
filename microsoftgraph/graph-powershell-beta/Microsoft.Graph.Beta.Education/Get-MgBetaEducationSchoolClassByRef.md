@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschoolclassbyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationSchoolClassByRef
@@ -24,6 +25,9 @@ Get-MgBetaEducationSchoolClassByRef -EducationSchoolId <String> [-Filter <String
 
 ## DESCRIPTION
 Retrieve a list of classes owned by a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-list-classes-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-list-classes-permissions.md)]

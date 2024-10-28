@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationconfigurationquestion
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion
@@ -41,6 +42,9 @@ Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBo
 
 ## DESCRIPTION
 Registration questions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistrationconfiguration-list-questions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistrationconfiguration-list-questions-permissions.md)]

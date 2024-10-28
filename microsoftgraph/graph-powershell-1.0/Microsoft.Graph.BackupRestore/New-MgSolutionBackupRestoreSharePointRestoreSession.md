@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresharepointrestoresession
 schema: 2.0.0
 ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgSolutionBackupRestoreSharePointRestoreSession
@@ -35,6 +36,9 @@ New-MgSolutionBackupRestoreSharePointRestoreSession -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Create a new sharePointRestoreSession object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-post-sharepointrestoresessions-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-post-sharepointrestoresessions-permissions.md)]

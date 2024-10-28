@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpc
 schema: 2.0.0
 ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Stop-MgBetaUserCloudPc
@@ -49,6 +50,9 @@ Power off a Windows 365 Frontline Cloud PC.
 This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered off, it's deallocated, and licenses are revoked immediately.
 Only IT admin users can perform this action.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweroff-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweroff-permissions.md)]

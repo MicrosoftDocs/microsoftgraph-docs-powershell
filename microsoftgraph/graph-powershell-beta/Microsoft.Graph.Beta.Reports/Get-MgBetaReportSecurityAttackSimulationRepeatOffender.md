@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationrepeatoffender
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgBetaReportSecurityAttackSimulationRepeatOffender
@@ -26,6 +27,9 @@ Get-MgBetaReportSecurityAttackSimulationRepeatOffender [-Count] [-Filter <String
 ## DESCRIPTION
 List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityreportsroot-getattacksimulationrepeatoffenders-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityreportsroot-getattacksimulationrepeatoffenders-permissions.md)]

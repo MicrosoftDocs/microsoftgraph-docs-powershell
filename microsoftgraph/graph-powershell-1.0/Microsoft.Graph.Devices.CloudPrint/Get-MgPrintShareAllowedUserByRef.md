@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduserbyref
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgPrintShareAllowedUserByRef
@@ -24,6 +25,9 @@ Get-MgPrintShareAllowedUserByRef -PrinterShareId <String> [-Filter <String>] [-S
 
 ## DESCRIPTION
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-list-allowedusers-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-list-allowedusers-permissions.md)]

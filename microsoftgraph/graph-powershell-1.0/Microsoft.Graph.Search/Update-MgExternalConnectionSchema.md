@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema
 schema: 2.0.0
 ms.subservice: search
+ms.subservice: search
 ---
 
 # Update-MgExternalConnectionSchema
@@ -48,6 +49,9 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create a new or update an existing schema for a Microsoft Search connection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]

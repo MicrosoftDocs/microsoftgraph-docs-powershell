@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/reset-mggroupunseencount
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Reset-MgGroupUnseenCount
@@ -33,6 +34,9 @@ Reset-MgGroupUnseenCount -InputObject <IGroupsIdentity> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Reset the unseenCount of all the posts that the current user hasn't seen since their last visit.
 Supported for Microsoft 365 groups only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-resetunseencount-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-resetunseencount-permissions.md)]

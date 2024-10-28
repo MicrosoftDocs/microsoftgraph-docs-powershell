@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintoperation
 schema: 2.0.0
 ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaPrintOperation
@@ -40,6 +41,9 @@ Get-MgBetaPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a printOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printoperation-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printoperation-get-permissions.md)]

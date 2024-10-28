@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenissuancepolicy
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaPolicyTokenIssuancePolicy
@@ -32,6 +33,9 @@ New-MgBetaPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-ResponseHeaders
 
 ## DESCRIPTION
 Create a new tokenIssuancePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-post-tokenissuancepolicy-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-post-tokenissuancepolicy-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityruledetectionrule
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityRuleDetectionRule
@@ -37,6 +38,9 @@ Get-MgBetaSecurityRuleDetectionRule -InputObject <ISecurityIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Get detectionRules from security
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-detectionrule-list-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-detectionrule-list-permissions.md)]

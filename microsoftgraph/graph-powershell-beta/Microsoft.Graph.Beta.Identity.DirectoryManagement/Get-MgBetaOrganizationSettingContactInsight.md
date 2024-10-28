@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingcontactinsight
 schema: 2.0.0
 ms.subservice: insights
+ms.subservice: insights
 ---
 
 # Get-MgBetaOrganizationSettingContactInsight
@@ -29,6 +30,9 @@ Get-MgBetaOrganizationSettingContactInsight -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Get the properties of an insightsSettings object for displaying or returning contact insights in an organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-contactinsights-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-contactinsights-permissions.md)]

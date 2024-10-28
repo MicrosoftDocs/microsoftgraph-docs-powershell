@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Update-MgBookingBusinessStaffMember
@@ -46,6 +47,9 @@ Update-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParame
 
 ## DESCRIPTION
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingstaffmember-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingstaffmember-update-permissions.md)]

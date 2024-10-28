@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivitybranchconnectivityconfiguration
 schema: 2.0.0
 ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfiguration
@@ -31,6 +32,9 @@ Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfiguration -InputObject 
 ## DESCRIPTION
 Retrieve the IPSec tunnel configuration required to establish a bidirectional communication link between your organization's router and the Microsoft gateway.
 This information is vital for configuring your router (customer premise equipment) after creating a deviceLink.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchconnectivityconfiguration-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchconnectivityconfiguration-get-permissions.md)]

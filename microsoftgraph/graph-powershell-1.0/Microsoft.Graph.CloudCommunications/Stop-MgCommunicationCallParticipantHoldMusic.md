@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallparticipantholdmusic
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Stop-MgCommunicationCallParticipantHoldMusic
@@ -48,6 +49,9 @@ Stop-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsI
 
 ## DESCRIPTION
 Reincorporate a participant previously put on hold to the call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-stopholdmusic-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-stopholdmusic-permissions.md)]

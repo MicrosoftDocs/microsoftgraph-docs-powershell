@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite
 schema: 2.0.0
 ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Remove-MgBetaGroupFavorite
@@ -33,6 +34,9 @@ Remove-MgBetaGroupFavorite -InputObject <IGroupsIdentity> [-ResponseHeadersVaria
 ## DESCRIPTION
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-removefavorite-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-removefavorite-permissions.md)]

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmembereducationuserbyref
 schema: 2.0.0
 ms.subservice: education
+ms.subservice: education
 ---
 
 # Remove-MgBetaEducationClassMemberEducationUserByRef
@@ -32,6 +33,9 @@ Remove-MgBetaEducationClassMemberEducationUserByRef -InputObject <IEducationIden
 
 ## DESCRIPTION
 Remove an educationUser from an educationClass.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-members-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-members-permissions.md)]

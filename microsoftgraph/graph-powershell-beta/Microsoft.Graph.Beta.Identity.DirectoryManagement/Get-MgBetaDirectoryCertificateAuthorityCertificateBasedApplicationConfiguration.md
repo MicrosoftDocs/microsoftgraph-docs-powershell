@@ -5,6 +5,8 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ms.subservice: entra-sign-in
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
@@ -40,6 +42,12 @@ Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 
 ## DESCRIPTION
 Read the properties and relationships of a certificateBasedApplicationConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificateauthoritypath-list-certificatebasedapplicationconfigurations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-get-permissions.md)]

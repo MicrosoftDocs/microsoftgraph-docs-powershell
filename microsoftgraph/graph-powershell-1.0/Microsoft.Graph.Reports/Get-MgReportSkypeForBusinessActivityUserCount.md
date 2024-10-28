@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessactivityusercount
 schema: 2.0.0
 ms.subservice: reports
+ms.subservice: reports
 ---
 
 # Get-MgReportSkypeForBusinessActivityUserCount
@@ -34,6 +35,9 @@ Get-MgReportSkypeForBusinessActivityUserCount -InputObject <IReportsIdentity> -O
 ## DESCRIPTION
 Get the trends on how many unique users organized and participated in conference sessions held in your organization through Skype for Business.
 The report also includes the number of peer-to-peer sessions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessactivityusercounts-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessactivityusercounts-permissions.md)]

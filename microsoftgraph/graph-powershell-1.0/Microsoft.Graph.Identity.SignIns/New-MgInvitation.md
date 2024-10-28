@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgInvitation
@@ -39,6 +40,9 @@ New-MgInvitation -BodyParameter <IMicrosoftGraphInvitation> [-ResponseHeadersVar
 Use this API to create a new invitation or reset the redemption status for a guest user who already redeemed their invitation.
 Invitation adds an external user to the organization.
 When creating a new invitation, you have several options available:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/invitation-post-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/invitation-post-permissions.md)]

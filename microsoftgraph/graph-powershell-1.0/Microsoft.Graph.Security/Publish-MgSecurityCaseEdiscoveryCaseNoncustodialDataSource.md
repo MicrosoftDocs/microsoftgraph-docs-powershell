@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/publish-mgsecuritycaseediscoverycasenoncustodialdatasource
 schema: 2.0.0
 ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
@@ -32,6 +33,9 @@ Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecuri
 
 ## DESCRIPTION
 Release the non-custodial data source from the case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverynoncustodialdatasource-release-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverynoncustodialdatasource-release-permissions.md)]

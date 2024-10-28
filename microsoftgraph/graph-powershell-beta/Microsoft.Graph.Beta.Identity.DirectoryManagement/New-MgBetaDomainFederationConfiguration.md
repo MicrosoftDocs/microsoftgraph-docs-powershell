@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration
 schema: 2.0.0
 ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaDomainFederationConfiguration
@@ -57,6 +58,9 @@ New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 
 ## DESCRIPTION
 Create a new internalDomainFederation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-post-federationconfiguration-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-post-federationconfiguration-permissions.md)]

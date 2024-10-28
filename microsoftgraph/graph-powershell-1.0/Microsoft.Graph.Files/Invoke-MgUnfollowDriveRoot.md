@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveroot
 schema: 2.0.0
 ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgUnfollowDriveRoot
@@ -31,6 +32,9 @@ Invoke-MgUnfollowDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariab
 
 ## DESCRIPTION
 Unfollow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]

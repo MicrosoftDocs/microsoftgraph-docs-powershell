@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomquestion
 schema: 2.0.0
 ms.subservice: microsoft-bookings
+ms.subservice: microsoft-bookings
 ---
 
 # Update-MgBookingBusinessCustomQuestion
@@ -49,6 +50,9 @@ Update-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the properties of a bookingCustomQuestion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomquestion-update-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomquestion-update-permissions.md)]
