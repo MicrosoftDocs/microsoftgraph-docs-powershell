@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Update-MgSearchAcronym
@@ -46,6 +47,9 @@ Update-MgSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the properties of an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-update-permissions.md)]
 
 ## EXAMPLES
 

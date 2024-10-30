@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetwork
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # New-MgBetaNetworkAccessConnectivityRemoteNetwork
@@ -32,6 +33,9 @@ New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Create a new remote network.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-connectivity-post-remotenetworks-permissions.md)]
 
 ## EXAMPLES
 

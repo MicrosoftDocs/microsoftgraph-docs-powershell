@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdelta
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaShareListItemDelta
@@ -60,6 +61,9 @@ If an item was renamed twice, it only shows up once, with its latest name.The sa
 You should use the last occurrence you see.
 Deleted items are returned with the deleted facet.
 Deleted indicates that the item is deleted and can't be restored.Items with this property should be removed from your local state.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-delta-permissions.md)]
 
 ## EXAMPLES
 

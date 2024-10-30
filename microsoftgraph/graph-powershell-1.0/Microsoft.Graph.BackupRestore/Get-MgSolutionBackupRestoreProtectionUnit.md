@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreprotectionunit
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgSolutionBackupRestoreProtectionUnit
@@ -36,6 +37,9 @@ Get-MgSolutionBackupRestoreProtectionUnit -InputObject <IBackupRestoreIdentity> 
 
 ## DESCRIPTION
 Read the properties and relationships of a protectionUnitBase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/protectionunitbase-get-permissions.md)]
 
 ## EXAMPLES
 

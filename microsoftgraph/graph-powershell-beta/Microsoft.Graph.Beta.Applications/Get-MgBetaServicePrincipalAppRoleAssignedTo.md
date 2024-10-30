@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignedto
 schema: 2.0.0
+ms.subservice: entra-applications
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaServicePrincipalAppRoleAssignedTo
@@ -36,6 +38,9 @@ Get-MgBetaServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Read the properties and relationships of an appRoleAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-approleassignedto-permissions.md)]
 
 ## EXAMPLES
 

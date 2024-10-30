@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom
 schema: 2.0.0
+ms.subservice: outlook
+ms.subservice: outlook
 ---
 
 # Get-MgPlaceAsRoom
@@ -45,6 +47,12 @@ A place object can be one of the following types: Both room and roomList are der
 By default, this operation returns 100 places per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 See details for how they compare.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/place-list-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/place-list-permissions.md)]
 
 ## EXAMPLES
 

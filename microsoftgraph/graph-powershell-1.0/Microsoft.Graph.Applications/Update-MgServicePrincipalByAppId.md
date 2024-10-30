@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgServicePrincipalByAppId
@@ -99,6 +100,9 @@ Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-upsert-permissions.md)]
 
 ## EXAMPLES
 

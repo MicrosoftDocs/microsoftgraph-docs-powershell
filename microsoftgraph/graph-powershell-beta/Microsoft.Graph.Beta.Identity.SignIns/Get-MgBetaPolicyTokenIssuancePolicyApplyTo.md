@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenissuancepolicyapplyto
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyTokenIssuancePolicyApplyTo
@@ -36,6 +37,9 @@ Get-MgBetaPolicyTokenIssuancePolicyApplyTo -InputObject <IIdentitySignInsIdentit
 
 ## DESCRIPTION
 Get appliesTo from policies
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-list-appliesto-permissions.md)]
 
 ## EXAMPLES
 

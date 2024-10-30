@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancestagebycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterUserPendingAccessReviewInstanceStageByCurrentUser
@@ -30,6 +31,9 @@ Invoke-MgBetaFilterUserPendingAccessReviewInstanceStageByCurrentUser -InputObjec
 
 ## DESCRIPTION
 Return all accessReviewStage objects on a given accessReviewInstance where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewstage-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
 

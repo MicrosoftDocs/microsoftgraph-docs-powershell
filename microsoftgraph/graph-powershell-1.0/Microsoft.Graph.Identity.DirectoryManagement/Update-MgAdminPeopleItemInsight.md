@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleiteminsight
 schema: 2.0.0
+ms.subservice: insights
 ---
 
 # Update-MgAdminPeopleItemInsight
@@ -32,6 +33,9 @@ Update-MgAdminPeopleItemInsight -BodyParameter <IMicrosoftGraphInsightsSettings>
 Update privacy settings to display or return the specified type of insights in an organization.
 Currently, itemInsights is the only supported type of settings.
 To learn more about customizing insights privacy for your organization, see Customize item insights privacy in Microsoft Graph.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/insightssettings-update-permissions.md)]
 
 ## EXAMPLES
 

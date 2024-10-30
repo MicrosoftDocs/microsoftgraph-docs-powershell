@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserplannerplanbuckettaskdelta
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Get-MgBetaUserPlannerPlanBucketTaskDelta
@@ -32,6 +33,9 @@ Get-MgBetaUserPlannerPlanBucketTaskDelta -InputObject <IUsersFunctionsIdentity> 
 ## DESCRIPTION
 Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delta-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetashareteamschedule
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaShareTeamSchedule
@@ -56,6 +57,9 @@ Each shift, openshift and timeOff instance in a schedule supports a draft versio
 The draft version is viewable only by managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedule-share-permissions.md)]
 
 ## EXAMPLES
 

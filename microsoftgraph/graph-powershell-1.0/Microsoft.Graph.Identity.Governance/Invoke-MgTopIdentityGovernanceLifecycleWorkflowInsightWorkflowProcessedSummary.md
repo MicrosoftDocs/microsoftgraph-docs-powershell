@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgtopidentitygovernancelifecycleworkflowinsightworkflowprocessedsummary
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary
@@ -34,6 +35,9 @@ Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary
 Provide a summary of the workflows processed the most, known as top workflows, for a specified period in a tenant.
 Workflow basic details are given, along with run information.
 For information about tasks processed, see insights: topTasksProcessedSummary.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-insights-topworkflowsprocessedsummary-permissions.md)]
 
 ## EXAMPLES
 

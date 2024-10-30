@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaaccessreviewinstancedecision
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Reset-MgBetaAccessReviewInstanceDecision
@@ -32,6 +33,9 @@ Reset-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdenti
 In the Microsoft Entra access reviews feature, reset the decisions of a currently active accessReview.
 The target object can be either a one-time access review, or an instance of a recurring access review.
 Previous decisions are no longer recorded, but reviewers can continue to update decisions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-reset-permissions.md)]
 
 ## EXAMPLES
 

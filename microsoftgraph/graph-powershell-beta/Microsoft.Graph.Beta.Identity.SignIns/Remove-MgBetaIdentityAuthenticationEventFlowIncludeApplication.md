@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowincludeapplication
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication
@@ -31,6 +32,9 @@ Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication -InputObject <IId
 ## DESCRIPTION
 Remove or unlink an application from an external identities self-service sign-up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 This disables the authentication experience that's defined by the user flow for the application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationconditionapplication-delete-permissions.md)]
 
 ## EXAMPLES
 

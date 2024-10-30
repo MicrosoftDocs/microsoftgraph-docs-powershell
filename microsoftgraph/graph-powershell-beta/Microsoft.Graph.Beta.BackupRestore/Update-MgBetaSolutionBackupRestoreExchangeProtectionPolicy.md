@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreexchangeprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy
@@ -54,6 +55,9 @@ Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackup
 ## DESCRIPTION
 Update an Exchange protection policy.
 This method adds a mailboxprotectionunit to or removes it from the protection policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangeprotectionpolicy-update-permissions.md)]
 
 ## EXAMPLES
 

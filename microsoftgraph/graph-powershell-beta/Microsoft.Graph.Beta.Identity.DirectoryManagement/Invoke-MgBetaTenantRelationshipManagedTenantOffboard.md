@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantoffboard
 schema: 2.0.0
+ms.subservice: m365-lighthouse
 ---
 
 # Invoke-MgBetaTenantRelationshipManagedTenantOffboard
@@ -31,6 +32,9 @@ Invoke-MgBetaTenantRelationshipManagedTenantOffboard -InputObject <IIdentityDire
 Carries out the appropriate procedures to remove a managed tenant from the multitenant management platform.
 No relationships, such as commerce and delegate administrative privileges, will be impacted.
 The only change made by invoking this action is the tenant will be deprovisioned from the multitenant management platform.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenant-offboardtenant-permissions.md)]
 
 ## EXAMPLES
 

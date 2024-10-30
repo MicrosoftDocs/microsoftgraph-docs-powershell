@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority
@@ -48,6 +49,9 @@ Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 
 ## DESCRIPTION
 Update the properties of a certificateAuthorityAsEntity object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificateauthorityasentity-update-permissions.md)]
 
 ## EXAMPLES
 

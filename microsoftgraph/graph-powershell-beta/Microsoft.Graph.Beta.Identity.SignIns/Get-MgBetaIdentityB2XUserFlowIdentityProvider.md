@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowidentityprovider
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityB2XUserFlowIdentityProvider
@@ -44,6 +45,9 @@ Get-MgBetaIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsIden
 
 ## DESCRIPTION
 The identity providers included in the user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-list-identityproviders-permissions.md)]
 
 ## EXAMPLES
 
