@@ -37,14 +37,18 @@ Get a list of recentNotebook instances that have been accessed by the signed-in 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Functions
-```
 
 # A UPN can also be used as -UserId.
-Get-MgUserOnenoteRecentNotebook -UserId $userId -IncludePersonalNotebooks $includePersonalNotebooksId
+Get-MgUserOnenoteRecentNotebook -UserId $userId -IncludePersonalNotebooks $includePersonalNotebooksId 
+
+```
+This example shows how to use the Get-MgUserOnenoteRecentNotebook Cmdlet.
+
 
 ## PARAMETERS
 

@@ -34,11 +34,11 @@ Update the conditional access settings to include the preservation of the origin
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-conditionalaccesssettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	"@odata.context" = "https://graph.microsoft.com/beta/networkAccess/settings/$metadata#conditionalAccess"
@@ -46,6 +46,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessSettingConditionalAccess -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessSettingConditionalAccess Cmdlet.
+
 
 ## PARAMETERS
 

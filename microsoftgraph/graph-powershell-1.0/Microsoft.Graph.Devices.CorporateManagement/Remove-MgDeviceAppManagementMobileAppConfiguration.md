@@ -34,13 +34,17 @@ Remove-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorpora
 Deletes a iosMobileAppConfiguration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Remove-MgDeviceAppManagementMobileAppConfiguration -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
+
+```
+This example shows how to use the Remove-MgDeviceAppManagementMobileAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

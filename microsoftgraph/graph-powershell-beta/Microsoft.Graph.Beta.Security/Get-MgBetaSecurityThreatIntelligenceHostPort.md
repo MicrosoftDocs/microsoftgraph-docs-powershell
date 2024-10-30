@@ -67,13 +67,17 @@ Read the properties and relationships of a hostPort object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostport-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatIntelligenceHostPort -HostPortId $hostPortId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostPort Cmdlet.
+
 
 ## PARAMETERS
 

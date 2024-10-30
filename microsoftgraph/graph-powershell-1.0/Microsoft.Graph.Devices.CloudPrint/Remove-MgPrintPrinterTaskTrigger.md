@@ -37,13 +37,17 @@ Delete the task trigger of a printer to prevent related print events from trigge
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-delete-tasktrigger-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintPrinterTaskTrigger -PrinterId $printerId -PrintTaskTriggerId $printTaskTriggerId
+
+```
+This example shows how to use the Remove-MgPrintPrinterTaskTrigger Cmdlet.
+
 
 ## PARAMETERS
 

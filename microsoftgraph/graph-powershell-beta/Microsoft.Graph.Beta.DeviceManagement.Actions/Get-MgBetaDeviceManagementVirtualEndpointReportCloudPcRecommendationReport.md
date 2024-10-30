@@ -39,11 +39,11 @@ The usage category report categorizes a Cloud PC as Undersized, Oversized, Right
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getcloudpcrecommendationreports-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List recommendation reports by device
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	reportName = "cloudPcUsageCategoryReports"
@@ -68,10 +68,14 @@ orderBy = @(
 
 Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will list recommendation reports by device
+
+### Example 2: Get summary reports by usage insight
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	reportName = "cloudPcUsageCategoryReports"
@@ -85,6 +89,10 @@ filter = ""
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
+
+```
+This example will get summary reports by usage insight
+
 
 ## PARAMETERS
 

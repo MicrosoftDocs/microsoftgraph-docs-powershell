@@ -46,13 +46,17 @@ Read the properties and relationships of a cloudPcSnapshot object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-snapshots-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointSnapshot
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet.
+
 
 ## PARAMETERS
 

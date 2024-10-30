@@ -36,18 +36,6 @@ Optionally, you can expand the manager's chain up to the root node.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-manager-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -168,6 +156,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanagerbyref)
 
 [https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-1.0)
+
 
 
 

@@ -30,18 +30,6 @@ Set-MgBetaFinancialCompanyInformationPicture -InputObject <IFinancialsIdentity> 
 ## DESCRIPTION
 Update picture for the navigation property companyInformation in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -287,6 +275,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/set-mgbetafinancialcompanyinformationpicture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/set-mgbetafinancialcompanyinformationpicture)
+
 
 
 

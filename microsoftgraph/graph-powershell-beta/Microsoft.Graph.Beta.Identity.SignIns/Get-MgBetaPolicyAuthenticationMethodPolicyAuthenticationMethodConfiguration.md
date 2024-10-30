@@ -47,13 +47,17 @@ Read the properties and relationships of an externalAuthenticationMethodConfigur
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalauthenticationmethodconfiguration-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+
+```
+This example shows how to use the Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

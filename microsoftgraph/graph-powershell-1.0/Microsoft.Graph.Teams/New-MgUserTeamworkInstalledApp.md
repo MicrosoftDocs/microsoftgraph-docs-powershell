@@ -55,11 +55,11 @@ Install an app in the personal scope of the specified user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-post-installedapps-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Install an app for a user
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
@@ -67,10 +67,14 @@ $params = @{
 
 New-MgUserTeamworkInstalledApp -UserId $userId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will install an app for a user
+
+### Example 2: Install an app for a user and consent to the resource-specific permissions required by the app
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
@@ -85,6 +89,10 @@ $params = @{
 }
 
 New-MgUserTeamworkInstalledApp -UserId $userId -BodyParameter $params
+
+```
+This example will install an app for a user and consent to the resource-specific permissions required by the app
+
 
 ## PARAMETERS
 

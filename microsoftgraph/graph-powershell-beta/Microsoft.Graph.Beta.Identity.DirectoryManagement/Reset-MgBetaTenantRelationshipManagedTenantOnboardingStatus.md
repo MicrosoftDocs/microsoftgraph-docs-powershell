@@ -36,13 +36,17 @@ By invoking this action the platform attempts to onboard the managed tenant for 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenant-resettenantonboardingstatus-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus -TenantId $tenantId
+
+```
+This example shows how to use the Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus Cmdlet.
+
 
 ## PARAMETERS
 

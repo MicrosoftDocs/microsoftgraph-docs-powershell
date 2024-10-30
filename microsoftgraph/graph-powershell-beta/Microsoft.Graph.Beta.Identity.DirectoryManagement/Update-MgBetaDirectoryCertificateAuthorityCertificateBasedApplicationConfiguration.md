@@ -58,11 +58,11 @@ To update the trustedCertificateAuthorities within a certificateBasedApplication
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.certificateBasedApplicationConfiguration"
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration -CertificateBasedApplicationConfigurationId $certificateBasedApplicationConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

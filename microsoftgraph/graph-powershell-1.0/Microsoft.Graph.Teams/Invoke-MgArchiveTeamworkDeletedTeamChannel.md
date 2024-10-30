@@ -67,18 +67,6 @@ A channel can't be archived or unarchived if its team is archived.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-archive-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -325,6 +313,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteamworkdeletedteamchannel)
 
 [https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-1.0)
+
 
 
 

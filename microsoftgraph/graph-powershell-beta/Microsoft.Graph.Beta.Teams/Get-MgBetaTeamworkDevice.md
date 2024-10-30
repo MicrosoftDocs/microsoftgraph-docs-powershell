@@ -48,13 +48,17 @@ For example, you can use this method to get the device type, hardware detail, ac
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkdevice-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamworkDevice
+
+```
+This example shows how to use the Get-MgBetaTeamworkDevice Cmdlet.
+
 
 ## PARAMETERS
 

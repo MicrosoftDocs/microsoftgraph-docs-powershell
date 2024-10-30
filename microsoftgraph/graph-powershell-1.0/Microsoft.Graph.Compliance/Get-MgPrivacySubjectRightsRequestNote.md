@@ -45,13 +45,17 @@ List of notes associated with the request.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-list-notes-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Compliance
-```
 
 Get-MgPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId
+
+```
+This example shows how to use the Get-MgPrivacySubjectRightsRequestNote Cmdlet.
+
 
 ## PARAMETERS
 

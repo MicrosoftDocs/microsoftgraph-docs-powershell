@@ -30,13 +30,17 @@ Get newly created, updated, or deleted service principals without having to perf
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalDelta
+
+```
+This example shows how to use the Get-MgServicePrincipalDelta Cmdlet.
+
 
 ## PARAMETERS
 

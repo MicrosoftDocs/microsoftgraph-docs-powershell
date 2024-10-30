@@ -39,11 +39,11 @@ The remaining devices are provisioned for the resize process.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-bulkresize-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	cloudPcIds = @(
@@ -54,6 +54,10 @@ targetServicePlanId = "662009bc-7732-4f6f-8726-25883518b33e"
 }
 
 Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize Cmdlet.
+
 
 ## PARAMETERS
 

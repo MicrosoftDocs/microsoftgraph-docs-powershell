@@ -34,11 +34,11 @@ Create a new yearTimePeriodDefinition object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	displayName = "Fiscal Year 2022"
@@ -50,6 +50,10 @@ $params = @{
 }
 
 New-MgBetaExternalIndustryDataYear -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaExternalIndustryDataYear Cmdlet.
+
 
 ## PARAMETERS
 

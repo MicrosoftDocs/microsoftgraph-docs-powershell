@@ -29,18 +29,6 @@ Reset-MgBetaDeviceManagementComanagedDevicePasscode -InputObject <IDeviceManagem
 ## DESCRIPTION
 Reset passcode
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -241,6 +229,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/reset-mgbetadevicemanagementcomanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/reset-mgbetadevicemanagementcomanageddevicepasscode)
+
 
 
 

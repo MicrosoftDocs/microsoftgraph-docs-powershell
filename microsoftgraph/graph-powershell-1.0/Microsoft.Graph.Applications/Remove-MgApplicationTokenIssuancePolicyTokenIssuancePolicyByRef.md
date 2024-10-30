@@ -38,13 +38,17 @@ Remove a tokenIssuancePolicy from an application.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-tokenissuancepolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef -ApplicationId $applicationId -TokenIssuancePolicyId $tokenIssuancePolicyId
+
+```
+This example shows how to use the Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 

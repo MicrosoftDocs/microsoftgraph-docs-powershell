@@ -28,13 +28,17 @@ This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingoptions-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Get-MgBetaNetworkAccessSettingForwardingOption
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessSettingForwardingOption Cmdlet.
+
 
 ## PARAMETERS
 

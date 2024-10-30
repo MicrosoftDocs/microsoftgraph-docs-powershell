@@ -39,13 +39,17 @@ It triggers a new health check for the cloudPcOnPremisesConnection (../resources
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpconpremisesconnection-runhealthcheck-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
+
+```
+This example shows how to use the Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck Cmdlet.
+
 
 ## PARAMETERS
 

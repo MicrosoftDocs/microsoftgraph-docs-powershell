@@ -37,13 +37,17 @@ Get the default channel, General, of a team.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-get-primarychannel-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamPrimaryChannel -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamPrimaryChannel Cmdlet.
+
 
 ## PARAMETERS
 

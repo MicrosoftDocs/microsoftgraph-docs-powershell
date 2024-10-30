@@ -45,13 +45,17 @@ Measurements of tenants' security posture to help protect them from threats.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-list-securescores-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
-Get-MgBetaSecuritySecureScore -Top 1
+Get-MgBetaSecuritySecureScore -Top 1 
+
+```
+This example shows how to use the Get-MgBetaSecuritySecureScore Cmdlet.
+
 
 ## PARAMETERS
 

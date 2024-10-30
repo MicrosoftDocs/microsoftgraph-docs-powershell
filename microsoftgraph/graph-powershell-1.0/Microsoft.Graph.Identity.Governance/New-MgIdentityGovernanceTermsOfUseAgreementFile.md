@@ -55,11 +55,11 @@ Create a new localized agreement file.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-post-files-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	fileName = "Contoso ToU for guest users (French)"
@@ -68,11 +68,15 @@ $params = @{
 	isMajorVersion = $false
 	displayName = "Contoso ToU for guest users (French)"
 	fileData = @{
-		data = \[System.Text.Encoding\]::ASCII.GetBytes("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data")
+		data = [System.Text.Encoding]::ASCII.GetBytes("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data")
 	}
 }
 
 New-MgIdentityGovernanceTermsOfUseAgreementFile -AgreementId $agreementId -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityGovernanceTermsOfUseAgreementFile Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,13 +42,17 @@ Read the properties and relationships of an analyzedEmail object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-analyzedemail-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCollaborationAnalyzedEmail -AnalyzedEmailId $analyzedEmailId
+
+```
+This example shows how to use the Get-MgBetaSecurityCollaborationAnalyzedEmail Cmdlet.
+
 
 ## PARAMETERS
 

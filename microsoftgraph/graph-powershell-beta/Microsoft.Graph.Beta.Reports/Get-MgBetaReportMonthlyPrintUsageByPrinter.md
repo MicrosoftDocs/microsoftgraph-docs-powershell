@@ -45,13 +45,17 @@ Retrieve a list of monthly print usage summaries, grouped by printer.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-monthlyprintusagebyprinter-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportMonthlyPrintUsageByPrinter
+
+```
+This example shows how to use the Get-MgBetaReportMonthlyPrintUsageByPrinter Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,14 +39,18 @@ This operation prevents access to the organization's data through applications o
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-revokesigninsessions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 # A UPN can also be used as -UserId.
 Revoke-MgUserSignInSession -UserId $userId
+
+```
+This example shows how to use the Revoke-MgUserSignInSession Cmdlet.
+
 
 ## PARAMETERS
 

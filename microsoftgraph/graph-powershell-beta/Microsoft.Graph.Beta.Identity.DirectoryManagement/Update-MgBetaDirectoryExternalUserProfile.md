@@ -55,17 +55,21 @@ Update the properties of a externalUserProfile object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externaluserprofile-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	jobTitle = "Contractor"
 }
 
 Update-MgBetaDirectoryExternalUserProfile -ExternalUserProfileId $externalUserProfileId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDirectoryExternalUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

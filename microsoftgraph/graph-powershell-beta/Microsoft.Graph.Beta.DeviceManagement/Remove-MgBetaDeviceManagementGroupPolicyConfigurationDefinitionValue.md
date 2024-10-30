@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -InputObjec
 ## DESCRIPTION
 Delete navigation property definitionValues for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupPolicyConfigurationId
@@ -359,6 +347,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvalue)
+
 
 
 

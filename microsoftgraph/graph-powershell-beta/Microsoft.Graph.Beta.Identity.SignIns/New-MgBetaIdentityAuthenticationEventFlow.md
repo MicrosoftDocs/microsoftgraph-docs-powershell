@@ -40,11 +40,11 @@ You can create only an externalUsersSelfServiceSignupEventsFlow object type.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-authenticationeventsflows-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a basic External Identities sign-up and sign-in user flow in an external tenant
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -91,7 +91,7 @@ $params = @{
 							editable = $false
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^\[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_\`{|}~-\]+@\[a-zA-Z0-9-\]+(?:.\[a-zA-Z0-9-\]+)*$"
+							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
 						}
 						@{
 							attribute = "displayName"
@@ -101,7 +101,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 						}
 					)
 				}
@@ -112,10 +112,14 @@ $params = @{
 
 New-MgBetaIdentityAuthenticationEventFlow -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a basic external identities sign-up and sign-in user flow in an external tenant
+
+### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -171,7 +175,7 @@ $params = @{
 							editable = $false
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^\[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_\`{|}~-\]+@\[a-zA-Z0-9-\]+(?:.\[a-zA-Z0-9-\]+)*$"
+							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
 						}
 						@{
 							attribute = "displayName"
@@ -181,7 +185,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 						}
 					)
 				}
@@ -192,10 +196,14 @@ $params = @{
 
 New-MgBetaIdentityAuthenticationEventFlow -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
+
+### Example 3: Create an External Identities sign-up and sign-in user flow with social providers and a custom attribute
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -255,7 +263,7 @@ $params = @{
 							editable = $false
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^\[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_\`{|}~-\]+@\[a-zA-Z0-9-\]+(?:.\[a-zA-Z0-9-\]+)*$"
+							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
 						}
 						@{
 							attribute = "displayName"
@@ -265,7 +273,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 						}
 						@{
 							attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor"
@@ -275,7 +283,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $false
-							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 						}
 					)
 				}
@@ -285,6 +293,10 @@ $params = @{
 }
 
 New-MgBetaIdentityAuthenticationEventFlow -BodyParameter $params
+
+```
+This example will create an external identities sign-up and sign-in user flow with social providers and a custom attribute
+
 
 ## PARAMETERS
 

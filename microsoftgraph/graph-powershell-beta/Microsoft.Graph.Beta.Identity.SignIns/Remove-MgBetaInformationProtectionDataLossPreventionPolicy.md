@@ -29,18 +29,6 @@ Remove-MgBetaInformationProtectionDataLossPreventionPolicy -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property dataLossPreventionPolicies for informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DataLossPreventionPolicyId
@@ -279,6 +267,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainformationprotectiondatalosspreventionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainformationprotectiondatalosspreventionpolicy)
+
 
 
 

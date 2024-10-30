@@ -37,11 +37,11 @@ Create a new scheduledPermissionsRequest object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsmanagement-post-scheduledpermissionsrequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: AWS policy request
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	requestedPermissions = @{
@@ -84,10 +84,14 @@ $params = @{
 
 New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will aws policy request
+
+### Example 2: Azure roles request
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	requestedPermissions = @{
@@ -134,10 +138,14 @@ $params = @{
 
 New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will azure roles request
+
+### Example 3: GCP actions request
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	requestedPermissions = @{
@@ -177,6 +185,10 @@ ticketInfo = @{
 }
 
 New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest -BodyParameter $params
+
+```
+This example will gcp actions request
+
 
 ## PARAMETERS
 

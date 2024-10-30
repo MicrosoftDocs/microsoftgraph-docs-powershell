@@ -62,13 +62,17 @@ Retrieve a single message or a message reply in a channel or a chat.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-list-messages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a message in a channel
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+
+```
+This example will get a message in a channel
+
 
 ## PARAMETERS
 

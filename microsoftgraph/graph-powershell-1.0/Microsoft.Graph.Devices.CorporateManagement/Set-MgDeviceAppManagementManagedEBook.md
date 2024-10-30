@@ -52,11 +52,11 @@ Set-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementI
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	managedEBookAssignments = @(
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Set-MgDeviceAppManagementManagedEBook -ManagedEBookId $managedEBookId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceAppManagementManagedEBook Cmdlet.
+
 
 ## PARAMETERS
 

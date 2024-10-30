@@ -37,16 +37,21 @@ Update tenant-level settings for Microsoft 365 reports.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminreportsettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+$params = @{
+	displayConcealedNames = $true
+}
+
+Update-MgAdminReportSetting -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgAdminReportSetting Cmdlet.
+
 
 ## PARAMETERS
 

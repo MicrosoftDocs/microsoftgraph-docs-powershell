@@ -37,13 +37,15 @@ Delete a namedLocation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/namedlocation-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Remove a named location
 
-### EXAMPLE 1
-```
-Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
-```
+```powershell
+Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
 Remove-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
+```
+
+This example removed the named location specified by `$namedLocationId`.
 
 ## PARAMETERS
 

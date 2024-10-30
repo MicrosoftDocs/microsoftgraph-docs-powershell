@@ -40,11 +40,11 @@ Create a new conditionalAccessPolicy.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-post-policies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Access to EXO requires MFA"
@@ -83,10 +83,14 @@ builtInControls = @(
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will require mfa to access exchange online outside of trusted locations
+
+### Example 2: Block access to Exchange Online from nontrusted regions
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Block access to EXO non-trusted regions."
@@ -121,10 +125,14 @@ builtInControls = @(
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will block access to exchange online from nontrusted regions
+
+### Example 3: Use all conditions/controls
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Demo app for documentation"
@@ -236,10 +244,14 @@ isEnabled = $true
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will use all conditions/controls
+
+### Example 4: Require MFA to Exchange Online from non-compliant devices
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Require MFA to EXO from non-complaint devices."
@@ -273,6 +285,10 @@ builtInControls = @(
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+
+```
+This example will require mfa to exchange online from non-compliant devices
+
 
 ## PARAMETERS
 

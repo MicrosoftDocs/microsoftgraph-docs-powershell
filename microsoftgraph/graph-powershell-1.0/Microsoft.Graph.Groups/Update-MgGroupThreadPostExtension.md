@@ -52,11 +52,11 @@ The data in an extension can be primitive types or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	"@odata.type" = "Microsoft.OutlookServices.OpenTypeExtension"
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Update-MgGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgGroupThreadPostExtension Cmdlet.
+
 
 ## PARAMETERS
 

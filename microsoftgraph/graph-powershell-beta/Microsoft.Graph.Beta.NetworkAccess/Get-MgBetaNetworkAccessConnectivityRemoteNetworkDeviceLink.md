@@ -42,13 +42,17 @@ Retrieves a specific device link associated with a remote network.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -RemoteNetworkId $remoteNetworkId -DeviceLinkId $deviceLinkId
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink Cmdlet.
+
 
 ## PARAMETERS
 

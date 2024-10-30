@@ -33,18 +33,6 @@ Retrieve the properties and relationships of an accessPackageCatalog object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -276,6 +264,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogbyuniquename)
 
 [https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-beta)
+
 
 
 

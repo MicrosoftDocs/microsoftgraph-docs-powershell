@@ -46,13 +46,17 @@ Read the properties and relationships of an industryDataConnector object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalIndustryDataConnector
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataConnector Cmdlet.
+
 
 ## PARAMETERS
 

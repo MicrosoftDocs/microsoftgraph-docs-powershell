@@ -48,18 +48,6 @@ Retrieve the properties of a deviceLocalCredentialInfo for a specified device ob
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-devicelocalcredentials-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +349,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-beta)
+
+
 
 
 

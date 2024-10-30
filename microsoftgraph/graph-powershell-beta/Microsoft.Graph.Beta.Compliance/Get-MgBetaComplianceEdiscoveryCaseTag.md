@@ -46,13 +46,17 @@ Read the properties and relationships of a tag object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-list-tags-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseTag Cmdlet.
+
 
 ## PARAMETERS
 

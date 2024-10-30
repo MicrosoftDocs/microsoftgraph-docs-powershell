@@ -39,11 +39,11 @@ Create a new authenticationCombinationConfiguration object which can be of one o
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-post-combinationconfigurations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a fido2combinationConfiguration object
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fido2CombinationConfiguration"
@@ -59,10 +59,14 @@ appliesToCombinations = @(
 
 New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a fido2combinationconfiguration object
+
+### Example 2: Create a x509CertificateCombinationConfiguration object
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.x509CertificateCombinationConfiguration"
@@ -77,6 +81,10 @@ appliesToCombinations = @(
 }
 
 New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
+
+```
+This example will create a x509certificatecombinationconfiguration object
+
 
 ## PARAMETERS
 

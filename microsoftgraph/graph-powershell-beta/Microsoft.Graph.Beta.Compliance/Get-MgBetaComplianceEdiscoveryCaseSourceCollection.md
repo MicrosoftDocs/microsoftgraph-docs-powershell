@@ -42,13 +42,17 @@ Returns a list of sourceCollection objects associated with this case.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-list-sourcecollections-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet.
+
 
 ## PARAMETERS
 

@@ -30,13 +30,17 @@ This object provides you with your tenant's actual performance against this comm
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/azureadauthentication-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportSlaAzureAdAuthentication
+
+```
+This example shows how to use the Get-MgBetaReportSlaAzureAdAuthentication Cmdlet.
+
 
 ## PARAMETERS
 

@@ -71,11 +71,11 @@ Update the properties of a partner-specific configuration.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicyconfigurationpartner-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Configure inbound trust settings
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	inboundTrust = @{
@@ -87,10 +87,14 @@ $params = @{
 
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will configure inbound trust settings
+
+### Example 2: Configure automaticUserConsent settings
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	automaticUserConsentSettings = @{
@@ -100,6 +104,10 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+
+```
+This example will configure automaticuserconsent settings
+
 
 ## PARAMETERS
 

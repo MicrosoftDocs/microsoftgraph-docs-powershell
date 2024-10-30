@@ -49,13 +49,17 @@ Get details about Yammer device usage by user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammerdeviceusageuserdetail-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportYammerDeviceUsageUserDetail
+
+```
+This example shows how to use the Get-MgReportYammerDeviceUsageUserDetail Cmdlet.
+
 
 ## PARAMETERS
 

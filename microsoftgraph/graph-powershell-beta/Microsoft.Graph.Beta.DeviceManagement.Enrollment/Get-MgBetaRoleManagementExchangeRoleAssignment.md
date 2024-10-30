@@ -40,13 +40,17 @@ Get-MgBetaRoleManagementExchangeRoleAssignment -InputObject <IDeviceManagementEn
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
 ## EXAMPLES
+### Example 1: Get details of a role assignment from Exchange Online Provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 Get-MgBetaRoleManagementExchangeRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
+```
+This example will get details of a role assignment from exchange online provider
+
 
 ## PARAMETERS
 

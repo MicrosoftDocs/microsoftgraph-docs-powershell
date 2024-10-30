@@ -54,11 +54,11 @@ You can identify the room, workspace, or roomList by specifying the id or emailA
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.room"
@@ -71,10 +71,14 @@ $params = @{
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the Update-MgBetaPlace Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.workspace"
@@ -86,6 +90,10 @@ $params = @{
 }
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPlace Cmdlet.
+
 
 ## PARAMETERS
 

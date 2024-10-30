@@ -46,13 +46,17 @@ Retrieve a school data synchronization profile in the tenant based on the identi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationSynchronizationProfile
+
+```
+This example shows how to use the Get-MgBetaEducationSynchronizationProfile Cmdlet.
+
 
 ## PARAMETERS
 

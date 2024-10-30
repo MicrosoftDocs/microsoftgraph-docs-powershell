@@ -29,18 +29,6 @@ Invoke-MgBetaAppUserManagedDeviceDiagnostic -InputObject <IUsersFunctionsIdentit
 ## DESCRIPTION
 Invoke function appDiagnostics
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -268,6 +256,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaappusermanageddevicediagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaappusermanageddevicediagnostic)
+
 
 
 

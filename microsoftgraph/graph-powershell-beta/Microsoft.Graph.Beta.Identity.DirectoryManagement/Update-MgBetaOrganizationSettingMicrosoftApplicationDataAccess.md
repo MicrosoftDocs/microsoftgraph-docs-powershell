@@ -52,17 +52,21 @@ Update the settings in a microsoftApplicationDataAccessSettings object that spec
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftapplicationdataaccesssettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	disabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 
 Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet.
+
 
 ## PARAMETERS
 

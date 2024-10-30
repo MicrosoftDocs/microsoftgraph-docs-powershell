@@ -45,13 +45,17 @@ Get appliesTo from policies
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/homerealmdiscoverypolicy-list-appliesto-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
+
+```
+This example shows how to use the Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo Cmdlet.
+
 
 ## PARAMETERS
 

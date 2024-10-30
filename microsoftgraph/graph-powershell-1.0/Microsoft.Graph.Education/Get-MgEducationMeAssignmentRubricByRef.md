@@ -30,18 +30,6 @@ Get-MgEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity> [-Respo
 ## DESCRIPTION
 When set, the grading rubric attached to this assignment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -154,6 +142,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentrubricbyref)
+
 
 
 

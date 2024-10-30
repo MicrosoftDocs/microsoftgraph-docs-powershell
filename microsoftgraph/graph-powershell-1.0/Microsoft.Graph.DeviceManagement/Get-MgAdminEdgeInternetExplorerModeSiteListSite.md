@@ -49,13 +49,17 @@ Get a browserSite that resides on a browserSiteList.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-list-sites-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId
+
+```
+This example shows how to use the Get-MgAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
+
 
 ## PARAMETERS
 

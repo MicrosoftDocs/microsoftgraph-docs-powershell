@@ -42,13 +42,17 @@ Get-MgVirtualEventTownhall -InputObject <IBookingsIdentity> [-ExpandProperty <St
 Read the properties and relationships of a virtualEventTownhall object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId
+
+```
+This example shows how to use the Get-MgVirtualEventTownhall Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,13 +49,17 @@ Read the properties of a delegatedAdminCustomer object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantrelationship-list-delegatedadmincustomers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Partner
-```
 
 Get-MgBetaTenantRelationshipDelegatedAdminCustomer
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipDelegatedAdminCustomer Cmdlet.
+
 
 ## PARAMETERS
 

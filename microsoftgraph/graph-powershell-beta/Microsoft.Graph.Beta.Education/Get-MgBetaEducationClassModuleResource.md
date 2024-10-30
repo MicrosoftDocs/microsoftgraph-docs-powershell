@@ -52,62 +52,94 @@ Only teachers, students, and applications with application permissions can perfo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-list-resources-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get an educationWordResource
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-### EXAMPLE 2
 ```
+This example will get an educationwordresource
+
+### Example 2: Get an educationLinkResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-### EXAMPLE 3
 ```
+This example will get an educationlinkresource
+
+### Example 3: Get an educationExcelResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-### EXAMPLE 4
 ```
+This example will get an educationexcelresource
+
+### Example 4: Get an educationPowerPointResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-### EXAMPLE 5
 ```
+This example will get an educationpowerpointresource
+
+### Example 5: Get an educationFileResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-### EXAMPLE 6
 ```
+This example will get an educationfileresource
+
+### Example 6: Get an educationMediaResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-### EXAMPLE 7
 ```
+This example will get an educationmediaresource
+
+### Example 7: Get an educationChannelResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-### EXAMPLE 8
 ```
+This example will get an educationchannelresource
+
+### Example 8: Get an educationLinkedAssignmentResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
+
+```
+This example will get an educationlinkedassignmentresource
+
 
 ## PARAMETERS
 

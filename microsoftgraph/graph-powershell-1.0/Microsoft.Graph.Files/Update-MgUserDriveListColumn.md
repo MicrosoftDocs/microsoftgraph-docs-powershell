@@ -68,18 +68,6 @@ Update-MgUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property columns in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1280,6 +1268,7 @@ For examples, see Examples of common formulas in lists.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcolumn)
+
 
 
 

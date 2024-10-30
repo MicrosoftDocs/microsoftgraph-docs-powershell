@@ -57,11 +57,11 @@ As part of the request validation for this method, a proof of possession of an e
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-removekey-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	keyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
@@ -69,6 +69,10 @@ $params = @{
 }
 
 Remove-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgBetaApplicationKey Cmdlet.
+
 
 ## PARAMETERS
 

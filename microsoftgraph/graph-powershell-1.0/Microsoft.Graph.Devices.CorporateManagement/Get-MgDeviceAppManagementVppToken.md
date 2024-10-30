@@ -41,13 +41,17 @@ Get-MgDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementIdent
 Read properties and relationships of the vppToken object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementVppToken
+
+```
+This example shows how to use the Get-MgDeviceAppManagementVppToken Cmdlet.
+
 
 ## PARAMETERS
 

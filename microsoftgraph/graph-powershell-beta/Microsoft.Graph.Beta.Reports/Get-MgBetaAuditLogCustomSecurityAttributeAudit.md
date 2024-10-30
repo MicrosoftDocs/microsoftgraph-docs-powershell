@@ -42,13 +42,17 @@ Represents a custom security attribute audit log.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/auditlogroot-list-customsecurityattributeaudits-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
-Get-MgBetaAuditLogCustomSecurityAttributeAudit -Top 1
+Get-MgBetaAuditLogCustomSecurityAttributeAudit -Top 1 
+
+```
+This example shows how to use the Get-MgBetaAuditLogCustomSecurityAttributeAudit Cmdlet.
+
 
 ## PARAMETERS
 

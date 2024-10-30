@@ -41,11 +41,11 @@ Create a new browserSiteList object to support Internet Explorer mode.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internetexplorermode-post-sitelists-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	displayName = "Production Site List A"
@@ -53,6 +53,10 @@ $params = @{
 }
 
 New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter $params
+
+```
+This example shows how to use the New-MgAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 

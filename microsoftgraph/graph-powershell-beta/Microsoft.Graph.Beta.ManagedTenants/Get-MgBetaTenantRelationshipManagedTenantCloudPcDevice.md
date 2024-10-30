@@ -46,13 +46,17 @@ Read the properties and relationships of a cloudPcDevice object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-cloudpcdevices-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice Cmdlet.
+
 
 ## PARAMETERS
 

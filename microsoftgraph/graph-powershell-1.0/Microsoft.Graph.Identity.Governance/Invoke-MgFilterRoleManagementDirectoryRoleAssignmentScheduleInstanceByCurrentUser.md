@@ -40,13 +40,17 @@ Get the instances of active role assignments for the calling principal.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentscheduleinstance-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
-Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser -On $onId
+Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

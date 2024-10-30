@@ -49,13 +49,17 @@ Read the properties of a richLongRunningOperation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-operations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteOperation -SiteId $siteId
+
+```
+This example shows how to use the Get-MgBetaSiteOperation Cmdlet.
+
 
 ## PARAMETERS
 
