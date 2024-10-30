@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Activate a serviceApp.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Initialize-MgBetaBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Beta.Bookings/Initialize-MgBetaBackupRestoreServiceApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ActivateExpanded (Default)

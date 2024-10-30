@@ -11,6 +11,9 @@ schema: 2.0.0
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

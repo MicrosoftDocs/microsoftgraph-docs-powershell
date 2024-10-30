@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Update the properties of an educationUser object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

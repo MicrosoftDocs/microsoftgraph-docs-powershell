@@ -12,6 +12,9 @@ ms.subservice: cloud-communications
 Create a registration record for a registrant of a webinar.
 This method registers the person for the webinar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaUserFollowedSite](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgBetaUserFollowedSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

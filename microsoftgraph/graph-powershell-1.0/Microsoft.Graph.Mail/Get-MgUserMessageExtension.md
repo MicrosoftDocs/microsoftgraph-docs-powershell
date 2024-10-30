@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for the message.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

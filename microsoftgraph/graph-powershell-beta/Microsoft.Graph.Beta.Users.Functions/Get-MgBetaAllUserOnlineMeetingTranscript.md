@@ -20,6 +20,9 @@ For more information, see delta query.
 For more examples, see callTranscript: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgAllUserOnlineMeetingTranscript?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

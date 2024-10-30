@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Host used to reach the childHost.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPairParentHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPairParentHost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

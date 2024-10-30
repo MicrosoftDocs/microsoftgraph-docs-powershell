@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createLink
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListItemLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItemLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

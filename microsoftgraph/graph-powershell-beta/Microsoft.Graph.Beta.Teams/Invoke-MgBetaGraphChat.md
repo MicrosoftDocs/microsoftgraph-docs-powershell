@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Unhide a chat for a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphChat](/powershell/module/Microsoft.Graph.Teams/Invoke-MgGraphChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GraphExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 The deleted team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

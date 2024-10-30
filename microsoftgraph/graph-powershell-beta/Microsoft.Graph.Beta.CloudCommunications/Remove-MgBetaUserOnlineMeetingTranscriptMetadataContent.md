@@ -11,6 +11,9 @@ schema: 2.0.0
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingTranscriptMetadataContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -12,6 +12,9 @@ ms.subservice: reports
 Get the number of Microsoft Teams activities by activity type.
 The activities are performed by Microsoft Teams licensed users.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamUserActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

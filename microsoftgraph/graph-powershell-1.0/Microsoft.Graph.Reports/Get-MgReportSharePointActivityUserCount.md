@@ -12,6 +12,9 @@ ms.subservice: reports
 Get the trend in the number of active users.
 A user is considered active if they have executed a file activity (save, sync, modify, or share) or visited a page within the specified time period.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

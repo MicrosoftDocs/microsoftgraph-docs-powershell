@@ -12,6 +12,9 @@ ms.subservice: m365-backup-storage
 Activate a draft restoreSessionBase object to restore a protection unit.
 The following points apply to restoring a protection unit:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgBackupRestoreSession](/powershell/module/Microsoft.Graph.Bookings/Initialize-MgBackupRestoreSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Activate (Default)

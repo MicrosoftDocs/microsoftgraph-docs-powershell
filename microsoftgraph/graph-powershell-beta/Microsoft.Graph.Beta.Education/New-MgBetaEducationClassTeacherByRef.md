@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Add a teacher to a class.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassTeacherByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

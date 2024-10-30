@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Get the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
