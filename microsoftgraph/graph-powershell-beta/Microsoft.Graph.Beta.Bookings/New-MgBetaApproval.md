@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetaapproval
 schema: 2.0.0
-ms.subservice: approvals
 ---
 
 # New-MgBetaApproval
@@ -21,21 +20,17 @@ New-MgBetaApproval [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] 
 ## DESCRIPTION
 Provision an approvalSolution on behalf of a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalsolution-provision-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Bookings
-
-New-MgBetaApproval
-
+### EXAMPLE 1
 ```
-This example shows how to use the New-MgBetaApproval Cmdlet.
+{{ Add code here }}
+```
 
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -146,7 +141,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetaapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetaapproval)
 
 [https://learn.microsoft.com/graph/api/approvalsolution-provision?view=graph-rest-beta](https://learn.microsoft.com/graph/api/approvalsolution-provision?view=graph-rest-beta)
-
-
-
 

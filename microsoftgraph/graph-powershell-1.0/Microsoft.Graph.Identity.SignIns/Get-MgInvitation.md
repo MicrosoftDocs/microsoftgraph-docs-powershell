@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitation
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get entities from invitations
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitation?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,18 @@ Get-MgInvitation [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Str
 
 ## DESCRIPTION
 Get entities from invitations
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -236,8 +245,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitation)
-
-
-
-
 

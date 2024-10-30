@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproduct
@@ -30,6 +30,18 @@ New-MgBetaWindowsUpdatesProduct -BodyParameter <IMicrosoftGraphWindowsUpdatesPro
 
 ## DESCRIPTION
 Create new navigation property to products for admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -271,235 +283,231 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesProduct>`: product
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsUpdatesProduct\>: product
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Editions <IMicrosoftGraphWindowsUpdatesEdition- `[]`>]`: Represents an edition of a particular Windows product.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Editions \<IMicrosoftGraphWindowsUpdatesEdition\[\]\>\]: Represents an edition of a particular Windows product.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeviceFamily <String>]`: The device family targeted by the edition.
-    - `[EndOfServiceDateTime <DateTime?>]`: The date and time when the edition reached the end of service.
+    \[DeviceFamily \<String\>\]: The device family targeted by the edition.
+    \[EndOfServiceDateTime \<DateTime?\>\]: The date and time when the edition reached the end of service.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[GeneralAvailabilityDateTime <DateTime?>]`: The date and time when the edition became available to the general customers for the first time.
+    \[GeneralAvailabilityDateTime \<DateTime?\>\]: The date and time when the edition became available to the general customers for the first time.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[IsInService <Boolean?>]`: Indicates whether the edition is in service or out of service.
-    - `[Name <String>]`: The name of the edition.
+    \[IsInService \<Boolean?\>\]: Indicates whether the edition is in service or out of service.
+    \[Name \<String\>\]: The name of the edition.
 Read-only.
-    - `[ReleasedName <String>]`: The public name of the edition.
+    \[ReleasedName \<String\>\]: The public name of the edition.
 Read-only.
-    - `[ServicingPeriods <IMicrosoftGraphWindowsUpdatesServicingPeriod- `[]`>]`: 
-      - `[EndDateTime <DateTime?>]`: The date and time when the servicing period ends.
+    \[ServicingPeriods \<IMicrosoftGraphWindowsUpdatesServicingPeriod\[\]\>\]: 
+      \[EndDateTime \<DateTime?\>\]: The date and time when the servicing period ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-      - `[Name <String>]`: The name of the servicing period.
+      \[Name \<String\>\]: The name of the servicing period.
 For example, Modern Lifecycle.
-      - `[StartDateTime <DateTime?>]`: The start date and time of the servicing period.
+      \[StartDateTime \<DateTime?\>\]: The start date and time of the servicing period.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[FriendlyNames <String- `[]`>]`: The friendly names of the product.
+  \[FriendlyNames \<String\[\]\>\]: The friendly names of the product.
 For example, Version 22H2 (OS build 22621).
 Read-only.
-  - `[GroupName <String>]`: The name of the product group.
+  \[GroupName \<String\>\]: The name of the product group.
 For example, Windows 11.
 Read-only.
-  - `[KnownIssues <IMicrosoftGraphWindowsUpdatesKnownIssue- `[]`>]`: Represents a known issue related to a Windows product.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[KnownIssues \<IMicrosoftGraphWindowsUpdatesKnownIssue\[\]\>\]: Represents a known issue related to a Windows product.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Description <String>]`: The description of the particular known issue.
-    - `[KnownIssueHistories <IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem- `[]`>]`: 
-      - `[Body <IMicrosoftGraphWindowsUpdatesItemBody>]`: itemBody
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Content <String>]`: The content of the item.
-        - `[ContentType <String>]`: bodyType
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the post was created.
+    \[Description \<String\>\]: The description of the particular known issue.
+    \[KnownIssueHistories \<IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem\[\]\>\]: 
+      \[Body \<IMicrosoftGraphWindowsUpdatesItemBody\>\]: itemBody
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Content \<String\>\]: The content of the item.
+        \[ContentType \<String\>\]: bodyType
+      \[CreatedDateTime \<DateTime?\>\]: The date and time when the post was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[LastUpdatedDateTime <DateTime?>]`: The date and time when the known issue was last updated.
+    \[LastUpdatedDateTime \<DateTime?\>\]: The date and time when the known issue was last updated.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[OriginatingKnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]`: knowledgeBaseArticle
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[OriginatingKnowledgeBaseArticle \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>\]: knowledgeBaseArticle
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Url <String>]`: The URL of the knowledge base article.
+      \[Url \<String\>\]: The URL of the knowledge base article.
 Read-only.
-    - `[ResolvedDateTime <DateTime?>]`: The date and time when the known issue was resolved or mitigated.
+    \[ResolvedDateTime \<DateTime?\>\]: The date and time when the known issue was resolved or mitigated.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[ResolvingKnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]`: knowledgeBaseArticle
-    - `[SafeguardHoldIds <Int32- `[]`>]`: 
-    - `[StartDateTime <DateTime?>]`: The date and time when the known issue was first reported.
+    \[ResolvingKnowledgeBaseArticle \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>\]: knowledgeBaseArticle
+    \[SafeguardHoldIds \<Int32\[\]\>\]: 
+    \[StartDateTime \<DateTime?\>\]: The date and time when the known issue was first reported.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Status <String>]`: windowsReleaseHealthStatus
-    - `[Title <String>]`: The title of the known issue.
-    - `[WebViewUrl <String>]`: The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.
-  - `[Name <String>]`: The name of the product.
+    \[Status \<String\>\]: windowsReleaseHealthStatus
+    \[Title \<String\>\]: The title of the known issue.
+    \[WebViewUrl \<String\>\]: The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.
+  \[Name \<String\>\]: The name of the product.
 For example, Windows 11, version 22H2.
 Read-only.
-  - `[Revisions <IMicrosoftGraphWindowsUpdatesProductRevision- `[]`>]`: Represents a product revision.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Revisions \<IMicrosoftGraphWindowsUpdatesProductRevision\[\]\>\]: Represents a product revision.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>]`: catalogEntry
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[CatalogEntry \<IMicrosoftGraphWindowsUpdatesCatalogEntry\>\]: catalogEntry
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[DeployableUntilDateTime <DateTime?>]`: The date on which the content is no longer available to deploy.
+      \[DeployableUntilDateTime \<DateTime?\>\]: The date on which the content is no longer available to deploy.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-      - `[DisplayName <String>]`: The display name of the content.
+      \[DisplayName \<String\>\]: The display name of the content.
 Read-only.
-      - `[ReleaseDateTime <DateTime?>]`: The release date for the content.
+      \[ReleaseDateTime \<DateTime?\>\]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[DisplayName <String>]`: The display name of the content.
+    \[DisplayName \<String\>\]: The display name of the content.
 Read-only.
-    - `[KnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]`: knowledgeBaseArticle
-    - `[OSBuild <IMicrosoftGraphWindowsUpdatesBuildVersionDetails>]`: buildVersionDetails
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[BuildNumber <Int32?>]`: The build number of the product release.
+    \[KnowledgeBaseArticle \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>\]: knowledgeBaseArticle
+    \[OSBuild \<IMicrosoftGraphWindowsUpdatesBuildVersionDetails\>\]: buildVersionDetails
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[BuildNumber \<Int32?\>\]: The build number of the product release.
 Read-only.
-      - `[MajorVersion <Int32?>]`: The major version of the product release.
+      \[MajorVersion \<Int32?\>\]: The major version of the product release.
 Read-only.
-      - `[MinorVersion <Int32?>]`: The minor version of the product release.
+      \[MinorVersion \<Int32?\>\]: The minor version of the product release.
 Read-only.
-      - `[UpdateBuildRevision <Int32?>]`: The update build revision number of the product revision.
+      \[UpdateBuildRevision \<Int32?\>\]: The update build revision number of the product revision.
 Read-only.
-    - `[Product <String>]`: The product of the revision.
+    \[Product \<String\>\]: The product of the revision.
 Possible values are: Windows 10, Windows 11.
 Read-only.
-    - `[ReleaseDateTime <DateTime?>]`: The release date for the content.
+    \[ReleaseDateTime \<DateTime?\>\]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[Version <String>]`: The version of the feature update.
+    \[Version \<String\>\]: The version of the feature update.
 Read-only.
 
-EDITIONS <IMicrosoftGraphWindowsUpdatesEdition- `[]`>: Represents an edition of a particular Windows product.
-  - `[Id <String>]`: The unique identifier for an entity.
+EDITIONS \<IMicrosoftGraphWindowsUpdatesEdition\[\]\>: Represents an edition of a particular Windows product.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeviceFamily <String>]`: The device family targeted by the edition.
-  - `[EndOfServiceDateTime <DateTime?>]`: The date and time when the edition reached the end of service.
+  \[DeviceFamily \<String\>\]: The device family targeted by the edition.
+  \[EndOfServiceDateTime \<DateTime?\>\]: The date and time when the edition reached the end of service.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[GeneralAvailabilityDateTime <DateTime?>]`: The date and time when the edition became available to the general customers for the first time.
+  \[GeneralAvailabilityDateTime \<DateTime?\>\]: The date and time when the edition became available to the general customers for the first time.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[IsInService <Boolean?>]`: Indicates whether the edition is in service or out of service.
-  - `[Name <String>]`: The name of the edition.
+  \[IsInService \<Boolean?\>\]: Indicates whether the edition is in service or out of service.
+  \[Name \<String\>\]: The name of the edition.
 Read-only.
-  - `[ReleasedName <String>]`: The public name of the edition.
+  \[ReleasedName \<String\>\]: The public name of the edition.
 Read-only.
-  - `[ServicingPeriods <IMicrosoftGraphWindowsUpdatesServicingPeriod- `[]`>]`: 
-    - `[EndDateTime <DateTime?>]`: The date and time when the servicing period ends.
+  \[ServicingPeriods \<IMicrosoftGraphWindowsUpdatesServicingPeriod\[\]\>\]: 
+    \[EndDateTime \<DateTime?\>\]: The date and time when the servicing period ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[Name <String>]`: The name of the servicing period.
+    \[Name \<String\>\]: The name of the servicing period.
 For example, Modern Lifecycle.
-    - `[StartDateTime <DateTime?>]`: The start date and time of the servicing period.
+    \[StartDateTime \<DateTime?\>\]: The start date and time of the servicing period.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
-KNOWNISSUES <IMicrosoftGraphWindowsUpdatesKnownIssue- `[]`>: Represents a known issue related to a Windows product.
-  - `[Id <String>]`: The unique identifier for an entity.
+KNOWNISSUES \<IMicrosoftGraphWindowsUpdatesKnownIssue\[\]\>: Represents a known issue related to a Windows product.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: The description of the particular known issue.
-  - `[KnownIssueHistories <IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem- `[]`>]`: 
-    - `[Body <IMicrosoftGraphWindowsUpdatesItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the post was created.
+  \[Description \<String\>\]: The description of the particular known issue.
+  \[KnownIssueHistories \<IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem\[\]\>\]: 
+    \[Body \<IMicrosoftGraphWindowsUpdatesItemBody\>\]: itemBody
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Content \<String\>\]: The content of the item.
+      \[ContentType \<String\>\]: bodyType
+    \[CreatedDateTime \<DateTime?\>\]: The date and time when the post was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[LastUpdatedDateTime <DateTime?>]`: The date and time when the known issue was last updated.
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date and time when the known issue was last updated.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[OriginatingKnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]`: knowledgeBaseArticle
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[OriginatingKnowledgeBaseArticle \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>\]: knowledgeBaseArticle
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Url <String>]`: The URL of the knowledge base article.
+    \[Url \<String\>\]: The URL of the knowledge base article.
 Read-only.
-  - `[ResolvedDateTime <DateTime?>]`: The date and time when the known issue was resolved or mitigated.
+  \[ResolvedDateTime \<DateTime?\>\]: The date and time when the known issue was resolved or mitigated.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ResolvingKnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]`: knowledgeBaseArticle
-  - `[SafeguardHoldIds <Int32- `[]`>]`: 
-  - `[StartDateTime <DateTime?>]`: The date and time when the known issue was first reported.
+  \[ResolvingKnowledgeBaseArticle \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>\]: knowledgeBaseArticle
+  \[SafeguardHoldIds \<Int32\[\]\>\]: 
+  \[StartDateTime \<DateTime?\>\]: The date and time when the known issue was first reported.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Status <String>]`: windowsReleaseHealthStatus
-  - `[Title <String>]`: The title of the known issue.
-  - `[WebViewUrl <String>]`: The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.
+  \[Status \<String\>\]: windowsReleaseHealthStatus
+  \[Title \<String\>\]: The title of the known issue.
+  \[WebViewUrl \<String\>\]: The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.
 
-REVISIONS <IMicrosoftGraphWindowsUpdatesProductRevision- `[]`>: Represents a product revision.
-  - `[Id <String>]`: The unique identifier for an entity.
+REVISIONS \<IMicrosoftGraphWindowsUpdatesProductRevision\[\]\>: Represents a product revision.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>]`: catalogEntry
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[CatalogEntry \<IMicrosoftGraphWindowsUpdatesCatalogEntry\>\]: catalogEntry
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeployableUntilDateTime <DateTime?>]`: The date on which the content is no longer available to deploy.
+    \[DeployableUntilDateTime \<DateTime?\>\]: The date on which the content is no longer available to deploy.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[DisplayName <String>]`: The display name of the content.
+    \[DisplayName \<String\>\]: The display name of the content.
 Read-only.
-    - `[ReleaseDateTime <DateTime?>]`: The release date for the content.
+    \[ReleaseDateTime \<DateTime?\>\]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[DisplayName <String>]`: The display name of the content.
+  \[DisplayName \<String\>\]: The display name of the content.
 Read-only.
-  - `[KnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]`: knowledgeBaseArticle
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[KnowledgeBaseArticle \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>\]: knowledgeBaseArticle
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Url <String>]`: The URL of the knowledge base article.
+    \[Url \<String\>\]: The URL of the knowledge base article.
 Read-only.
-  - `[OSBuild <IMicrosoftGraphWindowsUpdatesBuildVersionDetails>]`: buildVersionDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BuildNumber <Int32?>]`: The build number of the product release.
+  \[OSBuild \<IMicrosoftGraphWindowsUpdatesBuildVersionDetails\>\]: buildVersionDetails
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[BuildNumber \<Int32?\>\]: The build number of the product release.
 Read-only.
-    - `[MajorVersion <Int32?>]`: The major version of the product release.
+    \[MajorVersion \<Int32?\>\]: The major version of the product release.
 Read-only.
-    - `[MinorVersion <Int32?>]`: The minor version of the product release.
+    \[MinorVersion \<Int32?\>\]: The minor version of the product release.
 Read-only.
-    - `[UpdateBuildRevision <Int32?>]`: The update build revision number of the product revision.
+    \[UpdateBuildRevision \<Int32?\>\]: The update build revision number of the product revision.
 Read-only.
-  - `[Product <String>]`: The product of the revision.
+  \[Product \<String\>\]: The product of the revision.
 Possible values are: Windows 10, Windows 11.
 Read-only.
-  - `[ReleaseDateTime <DateTime?>]`: The release date for the content.
+  \[ReleaseDateTime \<DateTime?\>\]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Version <String>]`: The version of the feature update.
+  \[Version \<String\>\]: The version of the feature update.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproduct](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproduct)
-
-
-
-
 
