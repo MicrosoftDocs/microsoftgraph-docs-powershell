@@ -32,18 +32,6 @@ Get-MgBetaDeviceManagementReportDeviceStatusSummaryByCompliacePolicyReport -OutF
 ## DESCRIPTION
 Invoke action getDeviceStatusSummaryByCompliacePolicyReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -333,6 +321,7 @@ BODYPARAMETER `<IPaths3B69WqDevicemanagementReportsMicrosoftGraphGetdevicestatus
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicestatussummarybycompliacepolicyreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicestatussummarybycompliacepolicyreport)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgEducationClassTeacherCount -InputObject <IEducationIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -186,6 +174,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassteachercount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassteachercount)
+
 
 
 

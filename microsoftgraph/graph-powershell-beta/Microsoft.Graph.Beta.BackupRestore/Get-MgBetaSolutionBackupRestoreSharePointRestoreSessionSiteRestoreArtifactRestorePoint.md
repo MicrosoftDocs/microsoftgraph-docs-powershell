@@ -34,18 +34,6 @@ Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestor
 ## DESCRIPTION
 Represents the date and time when an artifact is protected by a protectionPolicy and can be restored.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -211,6 +199,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifactrestorepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifactrestorepoint)
+
 
 
 

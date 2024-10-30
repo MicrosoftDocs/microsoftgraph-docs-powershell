@@ -30,18 +30,6 @@ Get-MgBetaNetworkAccessReportDestinationSummary -InputObject <INetworkAccessIden
 ## DESCRIPTION
 Get counts of the visits to the top destination aggregations.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AggregatedBy
@@ -265,6 +253,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdestinationsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdestinationsummary)
+
 
 
 

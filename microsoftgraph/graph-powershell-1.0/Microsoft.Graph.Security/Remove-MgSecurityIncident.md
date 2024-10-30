@@ -32,18 +32,6 @@ Remove-MgSecurityIncident -InputObject <ISecurityIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property incidents for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -265,6 +253,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityincident)
+
 
 
 

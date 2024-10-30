@@ -72,22 +72,6 @@ Create columnDefinition for a content type
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-post-columns-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1306,6 +1290,7 @@ For examples, see Examples of common formulas in lists
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttypecolumn)
 
 [https://learn.microsoft.com/graph/api/contenttype-post-columns?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-post-columns?view=graph-rest-beta)
+
 
 
 

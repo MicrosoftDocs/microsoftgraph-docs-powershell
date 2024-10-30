@@ -40,18 +40,6 @@ Get-MgSolutionBackupRestoreMailboxInclusionRule -InputObject <IBackupRestoreIden
 ## DESCRIPTION
 The list of mailbox inclusion rules applied to the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -323,6 +311,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoremailboxinclusionrule](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoremailboxinclusionrule)
+
 
 
 

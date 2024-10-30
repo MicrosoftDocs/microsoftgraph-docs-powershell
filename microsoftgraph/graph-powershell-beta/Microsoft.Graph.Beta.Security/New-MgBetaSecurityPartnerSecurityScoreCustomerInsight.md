@@ -30,18 +30,6 @@ New-MgBetaSecurityPartnerSecurityScoreCustomerInsight
 ## DESCRIPTION
 Create new navigation property to customerInsights for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -222,6 +210,7 @@ MFA `<IMicrosoftGraphPartnerSecurityCustomerMfaInsight>`: customerMfaInsight
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorecustomerinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorecustomerinsight)
+
 
 
 
