@@ -634,7 +634,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITIES <IMicrosoftGraphItemActivityOld- `[]`>: The list of recent activities that took place on this item.
+ACTIVITIES `<IMicrosoftGraphItemActivityOld- `[]`>`: The list of recent activities that took place on this item.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Action <IMicrosoftGraphItemActionSet>]`: itemActionSet
@@ -991,7 +991,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -1314,7 +1314,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -9031,7 +9031,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
               - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -9354,7 +9354,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
               - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -17068,7 +17068,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -17391,7 +17391,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -25140,7 +25140,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -25463,7 +25463,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -32886,7 +32886,7 @@ DELETED `<IMicrosoftGraphDeleted>`: deleted
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[State <String>]`: Represents the state of the deleted item.
 
-DOCUMENTSETVERSIONS <IMicrosoftGraphDocumentSetVersion- `[]`>: Version information for a document set version created by a user.
+DOCUMENTSETVERSIONS `<IMicrosoftGraphDocumentSetVersion- `[]`>`: Version information for a document set version created by a user.
   - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -33243,7 +33243,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -33566,7 +33566,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -41336,7 +41336,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -41659,7 +41659,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -49107,7 +49107,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-PERMISSIONS <IMicrosoftGraphPermission- `[]`>: The set of permissions for the item.
+PERMISSIONS `<IMicrosoftGraphPermission- `[]`>`: The set of permissions for the item.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -49212,7 +49212,7 @@ SHAREPOINTIDS `<IMicrosoftGraphSharepointIds>`: sharepointIds
   - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
   - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
 
-VERSIONS <IMicrosoftGraphListItemVersion- `[]`>: The list of previous versions of the list item.
+VERSIONS `<IMicrosoftGraphListItemVersion- `[]`>`: The list of previous versions of the list item.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -49244,6 +49244,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitem)
+
+
 
 
 

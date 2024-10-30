@@ -443,7 +443,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Email <String>]`: Email address of the user.
 
-DETAILS <IMicrosoftGraphEndUserNotificationDetail- `[]`>: .
+DETAILS `<IMicrosoftGraphEndUserNotificationDetail- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[EmailContent <String>]`: Email HTML content.
@@ -561,6 +561,8 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationendusernotification)
+
+
 
 
 

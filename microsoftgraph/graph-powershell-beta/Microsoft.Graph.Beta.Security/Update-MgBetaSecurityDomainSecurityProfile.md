@@ -473,7 +473,7 @@ Required
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-DOMAINCATEGORIES <IMicrosoftGraphReputationCategory- `[]`>: .
+DOMAINCATEGORIES `<IMicrosoftGraphReputationCategory- `[]`>`: .
   - `[Description <String>]`: 
   - `[Name <String>]`: 
   - `[Vendor <String>]`: 
@@ -586,6 +586,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydomainsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydomainsecurityprofile)
+
+
 
 
 

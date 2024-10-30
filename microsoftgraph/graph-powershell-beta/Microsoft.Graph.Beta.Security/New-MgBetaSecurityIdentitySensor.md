@@ -373,7 +373,7 @@ Read-only.
       - `[Name <String>]`: 
   - `[Version <String>]`: 
 
-HEALTHISSUES <IMicrosoftGraphSecurityHealthIssue- `[]`>: .
+HEALTHISSUES `<IMicrosoftGraphSecurityHealthIssue- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdditionalInformation <String- `[]`>]`: Contains additional information about the issue, such as a list of items to fix.
@@ -413,6 +413,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensor)
+
+
 
 
 

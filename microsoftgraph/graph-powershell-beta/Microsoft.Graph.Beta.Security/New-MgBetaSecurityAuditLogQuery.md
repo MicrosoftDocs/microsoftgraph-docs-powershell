@@ -457,7 +457,7 @@ It indicates that the 'user' who performed the activity was an application with 
   - `[Status <String>]`: auditLogQueryStatus
   - `[UserPrincipalNameFilters <String- `[]`>]`: The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, myname@mydomain_name.
 
-RECORDS <IMicrosoftGraphSecurityAuditLogRecord- `[]`>: An individual audit log record.
+RECORDS `<IMicrosoftGraphSecurityAuditLogRecord- `[]`>`: An individual audit log record.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdministrativeUnits <String- `[]`>]`: The administrative units tagged to an audit log record.
@@ -485,6 +485,8 @@ It indicates that the 'user' who performed the activity was an application with 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogquery)
 
 [https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-beta)
+
+
 
 
 

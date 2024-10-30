@@ -894,7 +894,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
               - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -1217,7 +1217,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
               - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -8830,7 +8830,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian- `[]`>: Returns a list of case ediscoveryCustodian objects for this case.
+CUSTODIANS `<IMicrosoftGraphSecurityEdiscoveryCustodian- `[]`>`: Returns a list of case ediscoveryCustodian objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -9182,7 +9182,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -9505,7 +9505,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -17044,7 +17044,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LEGALHOLDS <IMicrosoftGraphSecurityEdiscoveryHoldPolicy- `[]`>: Returns a list of case eDiscoveryHoldPolicy objects for this case.
+LEGALHOLDS `<IMicrosoftGraphSecurityEdiscoveryHoldPolicy- `[]`>`: Returns a list of case eDiscoveryHoldPolicy objects for this case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -17385,7 +17385,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -17708,7 +17708,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -25136,7 +25136,7 @@ Read-only.
     - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site.
 Read-only.
 
-NONCUSTODIALDATASOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
+NONCUSTODIALDATASOURCES `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>`: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -25179,7 +25179,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-OPERATIONS <IMicrosoftGraphSecurityCaseOperation- `[]`>: Returns a list of case caseOperation objects for this case.
+OPERATIONS `<IMicrosoftGraphSecurityCaseOperation- `[]`>`: Returns a list of case caseOperation objects for this case.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Action <String>]`: caseAction
@@ -25204,7 +25204,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: caseOperationStatus
 
-REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet- `[]`>: Returns a list of eDiscoveryReviewSet objects in the case.
+REVIEWSETS `<IMicrosoftGraphSecurityEdiscoveryReviewSet- `[]`>`: Returns a list of eDiscoveryReviewSet objects in the case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -25579,7 +25579,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
                 - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -25902,7 +25902,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
                 - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -33360,7 +33360,7 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch- `[]`>: Returns a list of eDiscoverySearch objects associated with this case.
+SEARCHES `<IMicrosoftGraphSecurityEdiscoverySearch- `[]`>`: Returns a list of eDiscoverySearch objects associated with this case.
   - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -33757,7 +33757,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
                     - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -34080,7 +34080,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
                     - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -41606,7 +41606,7 @@ To learn more, see Include numbers in themes.
     - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set.
 To learn more, see Maximum number of themes.
 
-TAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>: Returns a list of ediscoveryReviewTag objects associated to this case.
+TAGS `<IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>`: Returns a list of ediscoveryReviewTag objects associated to this case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -41632,6 +41632,8 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycase)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverycase-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverycase-update?view=graph-rest-beta)
+
+
 
 
 

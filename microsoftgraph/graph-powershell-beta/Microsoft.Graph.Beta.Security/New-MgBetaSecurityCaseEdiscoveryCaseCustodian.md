@@ -787,7 +787,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -1110,7 +1110,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -8637,7 +8637,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-SITESOURCES <IMicrosoftGraphSecuritySiteSource- `[]`>: Data source entity for SharePoint sites associated with the custodian.
+SITESOURCES `<IMicrosoftGraphSecuritySiteSource- `[]`>`: Data source entity for SharePoint sites associated with the custodian.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -8963,7 +8963,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -9286,7 +9286,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -16703,7 +16703,7 @@ Read-only.
       - `[LanguageTags <String- `[]`>]`: List of languages for the term store.
       - `[Sets <IMicrosoftGraphTermStoreSet- `[]`>]`: Collection of all sets available in the term store.
 
-UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource- `[]`>: Data source entity for groups associated with the custodian.
+UNIFIEDGROUPSOURCES `<IMicrosoftGraphSecurityUnifiedGroupSource- `[]`>`: Data source entity for groups associated with the custodian.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -17460,7 +17460,7 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -17783,7 +17783,7 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges    and characters in the ranges
 
 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
@@ -24768,7 +24768,7 @@ Microsoft Entra security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
   - `[IncludedSources <String>]`: sourceType
 
-USERSOURCES <IMicrosoftGraphSecurityUserSource- `[]`>: Data source entity for a custodian.
+USERSOURCES `<IMicrosoftGraphSecurityUserSource- `[]`>`: Data source entity for a custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24796,6 +24796,8 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodian)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverycase-post-custodians?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-custodians?view=graph-rest-beta)
+
+
 
 
 

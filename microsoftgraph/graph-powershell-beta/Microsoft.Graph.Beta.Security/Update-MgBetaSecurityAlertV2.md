@@ -796,12 +796,12 @@ Values are free-form.
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
   - `[Title <String>]`: Brief identifying string value describing the alert.
 
-COMMENTS <IMicrosoftGraphSecurityAlertComment- `[]`>: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+COMMENTS `<IMicrosoftGraphSecurityAlertComment- `[]`>`: Array of comments created by the Security Operations (SecOps) team during the alert management process.
   - `[Comment <String>]`: The comment text.
   - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
 
-EVIDENCE <IMicrosoftGraphSecurityAlertEvidence- `[]`>: Collection of evidence related to the alert.
+EVIDENCE `<IMicrosoftGraphSecurityAlertEvidence- `[]`>`: Collection of evidence related to the alert.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the evidence was created and added to the alert.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -907,6 +907,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2)
 
 [https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-beta)
+
+
 
 
 

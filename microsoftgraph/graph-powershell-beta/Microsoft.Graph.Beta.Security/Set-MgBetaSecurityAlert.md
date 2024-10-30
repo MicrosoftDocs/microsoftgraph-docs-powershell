@@ -211,7 +211,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityAlertComment- `[]`>: Array of microsoft.graph.security.alertComment
+BODYPARAMETER `<IMicrosoftGraphSecurityAlertComment- `[]`>`: Array of microsoft.graph.security.alertComment
   - `[Comment <String>]`: The comment text.
   - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
@@ -310,6 +310,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityalert)
 
 [https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-beta)
+
+
 
 
 

@@ -881,7 +881,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-HISTORY <IMicrosoftGraphSecurityWhoisHistoryRecord- `[]`>: The collection of historical records associated to this WHOIS object.
+HISTORY `<IMicrosoftGraphSecurityWhoisHistoryRecord- `[]`>`: The collection of historical records associated to this WHOIS object.
   - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1526,7 +1526,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-NAMESERVERS <IMicrosoftGraphSecurityWhoisNameserver- `[]`>: The nameservers for this WHOIS object.
+NAMESERVERS `<IMicrosoftGraphSecurityWhoisNameserver- `[]`>`: The nameservers for this WHOIS object.
   - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1907,6 +1907,8 @@ No format is guaranteed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoisrecord)
+
+
 
 
 

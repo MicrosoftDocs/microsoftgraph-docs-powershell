@@ -487,12 +487,12 @@ ERRORINFO `<IMicrosoftGraphResultInfo>`: resultInfo
   - `[Message <String>]`: The message.
   - `[Subcode <Int32?>]`: The result sub-code.
 
-PARAMETERS <IMicrosoftGraphKeyValuePair- `[]`>: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
+PARAMETERS `<IMicrosoftGraphKeyValuePair- `[]`>`: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
 Required.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-STATES <IMicrosoftGraphSecurityActionState- `[]`>: Collection of securityActionState to keep the history of an action.
+STATES `<IMicrosoftGraphSecurityActionState- `[]`>`: Collection of securityActionState to keep the history of an action.
   - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the action.
 The appId should be extracted from the auth token and not entered manually by the calling application.
   - `[Status <String>]`: operationStatus
@@ -516,6 +516,8 @@ Required
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
 
 [https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta)
+
+
 
 
 

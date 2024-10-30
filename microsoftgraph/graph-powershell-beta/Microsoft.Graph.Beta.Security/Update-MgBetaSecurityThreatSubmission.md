@@ -379,7 +379,7 @@ It's extracted from the token of the post API call.
 Read-only.
     - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
-EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission- `[]`>: .
+EMAILTHREATS `<IMicrosoftGraphSecurityEmailThreatSubmission- `[]`>`: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email.
@@ -441,7 +441,7 @@ This information is present in the email header.
       - `[Status <String>]`: longRunningOperationStatus
       - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
 
-EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy- `[]`>: .
+EMAILTHREATSUBMISSIONPOLICIES `<IMicrosoftGraphSecurityEmailThreatSubmissionPolicy- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean.
@@ -484,7 +484,7 @@ Required for creation.
 The default value is false.
 Optional for creation.
 
-FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission- `[]`>: .
+FILETHREATS `<IMicrosoftGraphSecurityFileThreatSubmission- `[]`>`: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email.
@@ -522,7 +522,7 @@ It's extracted from the token of the post API call.
 Read-only.
   - `[FileName <String>]`: It specifies the file name to be submitted.
 
-URLTHREATS <IMicrosoftGraphSecurityUrlThreatSubmission- `[]`>: .
+URLTHREATS `<IMicrosoftGraphSecurityUrlThreatSubmission- `[]`>`: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email.
@@ -563,6 +563,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmission)
+
+
 
 
 

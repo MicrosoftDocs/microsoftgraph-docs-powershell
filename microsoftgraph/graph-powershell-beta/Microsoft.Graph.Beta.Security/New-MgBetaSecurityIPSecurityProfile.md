@@ -406,12 +406,12 @@ Required
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-IPCATEGORIES <IMicrosoftGraphIPCategory- `[]`>: .
+IPCATEGORIES `<IMicrosoftGraphIPCategory- `[]`>`: .
   - `[Description <String>]`: 
   - `[Name <String>]`: 
   - `[Vendor <String>]`: 
 
-IPREFERENCEDATA <IMicrosoftGraphIPReferenceData- `[]`>: .
+IPREFERENCEDATA `<IMicrosoftGraphIPReferenceData- `[]`>`: .
   - `[Asn <Int64?>]`: 
   - `[City <String>]`: 
   - `[CountryOrRegionCode <String>]`: 
@@ -431,6 +431,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile)
+
+
 
 
 

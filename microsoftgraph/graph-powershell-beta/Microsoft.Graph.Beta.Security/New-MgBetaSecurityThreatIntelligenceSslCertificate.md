@@ -637,7 +637,7 @@ It's a free-format string value, for example, 'United States'.
   - `[SerialNumber <String>]`: A serial number assigned to the entity; usually only available if the entity is the issuer.
   - `[Surname <String>]`: If the entity is a person, this is the person's surname (last name).
 
-RELATEDHOSTS <IMicrosoftGraphSecurityHost- `[]`>: The host resources related with this sslCertificate.
+RELATEDHOSTS `<IMicrosoftGraphSecurityHost- `[]`>`: The host resources related with this sslCertificate.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair- `[]`>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
@@ -938,6 +938,8 @@ It's a free-format string value, for example, 'United States'.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencesslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencesslcertificate)
+
+
 
 
 

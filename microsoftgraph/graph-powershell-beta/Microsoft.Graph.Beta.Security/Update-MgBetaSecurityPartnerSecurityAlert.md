@@ -561,7 +561,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITYLOGS <IMicrosoftGraphPartnerSecurityActivityLog- `[]`>: Represents the activity by a partner and includes details of state transitions, who performed them, and when they occurred.
+ACTIVITYLOGS `<IMicrosoftGraphPartnerSecurityActivityLog- `[]`>`: Represents the activity by a partner and includes details of state transitions, who performed them, and when they occurred.
   - `[StatusFrom <String>]`: securityAlertStatus
   - `[StatusTo <String>]`: securityAlertStatus
   - `[UpdatedBy <String>]`: The UPN of the partner user who did the status update activity.
@@ -571,7 +571,7 @@ This attribute is set by the system.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-AFFECTEDRESOURCES <IMicrosoftGraphPartnerSecurityAffectedResource- `[]`>: Contains details of the resources affected by the security alert.
+AFFECTEDRESOURCES `<IMicrosoftGraphPartnerSecurityAffectedResource- `[]`>`: Contains details of the resources affected by the security alert.
   - `[ResourceId <String>]`: The resource path of the resource affected by the security alert.
   - `[ResourceType <String>]`: The type of resource.
 
@@ -714,6 +714,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityalert)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-update?view=graph-rest-beta)
+
+
 
 
 
