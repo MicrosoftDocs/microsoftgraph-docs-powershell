@@ -5,7 +5,7 @@ description: "Learn how to use app-only authentication to enable non-interactive
 author: msewaweru
 manager: CelesteDG
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/28/2024
 ms.author: eunicewaweru
 
 #customer intent: As a developer, I want to authenticate with Microsoft Graph using app-only access, so that I can perform non-interactive operations, such as listing users and groups, using the Microsoft Graph PowerShell SDK.
@@ -13,18 +13,18 @@ ms.author: eunicewaweru
 
 # Use app-only authentication with the Microsoft Graph PowerShell SDK
 
-The PowerShell SDK supports two types of authentication: [delegated access](/graph/auth-v2-user), and [app-only access](/graph/auth-v2-service). This guide will focus on the configuration needed to enable app-only access.
+The Microsoft Graph PowerShell SDK supports two types of authentication: [delegated access](/graph/auth-v2-user), and [app-only access](/graph/auth-v2-service). This guide will focus on the configuration needed to enable app-only access.
 
 > [!IMPORTANT]
 > App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more information on app-only access, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-Let's configure app-only access for a simple script to list users and groups in your Microsoft 365 tenant.
+Let's configure app-only access for a simple script to list users and groups in your Microsoft Entra tenant.
 
 ## Prerequisites
 
 Before you can use app-only access with the Microsoft Graph PowerShell SDK, make sure you have the required prerequisites:
 
-- Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
+- The Microsoft Graph PowerShell SDK is installed. To install the SDK, follow the [installation guide](installation.md).
 - A certificate to use as a credential for the application. This certificate can be a self-signed certificate or a certificate from an authority. Refer to the [See also](#see-also) section for guidance on how to create a self-signed certificate.
     1. Have an X.509 certificate installed in your user's trusted store on the machine where you'll run the script.
     1. Export the certificate's public key in .cer, .pem, or .crt format.
@@ -33,15 +33,13 @@ Before you can use app-only access with the Microsoft Graph PowerShell SDK, make
 
 ### Step 1: Register an application
 
-You can register an application using the PowerShell SDK with delegated access by signing in as an administrator, and creating the app registration. 
+You can register an application using the Microsoft Graph PowerShell SDK with delegated access by signing in as an administrator, and creating the app registration. Follow these steps to register an application using the Microsoft Graph PowerShell SDK.
 
 1. Use a text editor to create a new file named **RegisterAppOnly.ps1**. Paste the following code into the file.
 
     :::code language="powershell" source="RegisterAppOnly.ps1":::
 
 1. Save the file. Open PowerShell in the directory that contains **RegisterAppOnly.ps1** and run the following command. If you don't already have a certificate, you can create a self-signed certificate using the [See also](#see-also) section.
-
-    
 
     ```powershell
     .\RegisterAppOnly.ps1 -AppName "Graph PowerShell Script" -CertPath "PATH_TO_PUBLIC_KEY_FILE"
@@ -77,7 +75,7 @@ We'll use this information to test authentication. Open PowerShell and run the f
 Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT ## Or -CertificateThumbprint instead of -CertificateName
 ```
 
-If the command succeeds, you'll see `Welcome To Microsoft Graph!`. Run `Get-MgContext` to verify that you've authenticated with app-only. The output should look like the following.
+If the command succeeds, you see `Welcome To Microsoft Graph!`. Run `Get-MgContext` to verify that you authenticated with app-only. The output should look like the following.
 
 ```powershell
 ClientId              : YOUR_APP_ID
@@ -144,7 +142,7 @@ Mark 8 Project Team                 2bf1b0d0-81f6-4e80-b971-d1db69f8d651
 ...
 ```
 
-We've used app-only access to authenticate with Microsoft Graph and list users and groups in our tenant. You can use this same pattern to create scripts that perform any operation supported by the Microsoft Graph PowerShell SDK for non-interactive scenarios.
+We used app-only access to authenticate with Microsoft Graph and list users and groups in our tenant. You can use this same pattern to create scripts that perform any operation supported by the Microsoft Graph PowerShell SDK for non-interactive scenarios.
 
 ## See also
 
