@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset
@@ -220,18 +220,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSETS \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+ASSETS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-BODY \<IPaths1T34IjjAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Assets \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODY `<IPaths1T34IjjAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[UpdateCategory \<String\>\]: updateCategory
+  - `[UpdateCategory <String>]`: updateCategory
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

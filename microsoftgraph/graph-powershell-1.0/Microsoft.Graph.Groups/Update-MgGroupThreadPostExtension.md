@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupThreadPostExtension
 
 ## SYNOPSIS
-Update an open extension (openTypeExtension object) on a supported resource type.\n- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\n- Otherwise, that property and its data are added to the extension.
+Update an open extension (openTypeExtension object) on a supported resource type.- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.- Otherwise, that property and its data are added to the extension.
 The data in an extension can be primitive types or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
 
@@ -43,7 +43,7 @@ Update-MgGroupThreadPostExtension -InputObject <IGroupsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update an open extension (openTypeExtension object) on a supported resource type.\n- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\n- Otherwise, that property and its data are added to the extension.
+Update an open extension (openTypeExtension object) on a supported resource type.- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.- Otherwise, that property and its data are added to the extension.
 The data in an extension can be primitive types or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
 
@@ -286,51 +286,72 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[ConversationId \<String\>\]: The unique identifier of conversation
-  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[EventId \<String\>\]: The unique identifier of event
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
-  \[GroupSettingId \<String\>\]: The unique identifier of groupSetting
-  \[GroupSettingTemplateId \<String\>\]: The unique identifier of groupSettingTemplate
-  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
-  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
-  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ListId \<String\>\]: The unique identifier of list
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[Path \<String\>\]: Usage: path='{path}'
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[PostId \<String\>\]: The unique identifier of post
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[Q \<String\>\]: Usage: q='{q}'
-  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[Token \<String\>\]: Usage: token='{token}'
-  \[UniqueName \<String\>\]: Alternate key of group
-  \[User \<String\>\]: Usage: User='{User}'
-  \[WebPartId \<String\>\]: The unique identifier of webPart
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[ConversationId <String>]`: The unique identifier of conversation
+  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EventId <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
+  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
+  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ListId <String>]`: The unique identifier of list
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[PostId <String>]`: The unique identifier of post
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[Q <String>]`: Usage: q='{q}'
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[Token <String>]`: Usage: token='{token}'
+  - `[UniqueName <String>]`: Alternate key of group
+  - `[User <String>]`: Usage: User='{User}'
+  - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension)
 
 [https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
