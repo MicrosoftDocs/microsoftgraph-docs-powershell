@@ -86,6 +86,7 @@ function Update-Files {
                 Remove-Item -Path $FilePath
             }
             Update-NoteSection -FilePath $FilePath
+            Cleanup-NoteSection -FilePath $FilePath
             Update-ParameterSection -FilePath $FilePath
             Update-SpecificStrings -FilePath $FilePath
             CleanupFile -File $FilePath
@@ -135,6 +136,47 @@ function Update-NoteSection {
 
     }
     
+}
+
+function Cleanup-NoteSection {
+    param (
+        [ValidateNotNullOrEmpty()]
+        [string] $FilePath
+    )
+    try {
+        $CleanUpBlock = "## NOTES(?s).*## RELATED LINKS"
+        $CleanUpBlock2 = "\w+ <\w+- ```\[]```>:"
+        $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
+        $CleanUpRe = [regex]::new($CleanUpBlock, $option)
+        $cleanUpRe2 = [regex]::new($CleanUpBlock2, $option)
+        $CleanUpDestinationContent = Get-Content -Raw $FilePath
+        $CleanUpText = $CleanUpDestinationContent.ToString()
+        if ($CleanUpDestinationContent -match $CleanUpRe) {
+            $Extracted = $Matches[0]
+            $FinalCleanUpText = $Extracted
+            if ($Extracted -match $cleanUpRe2) {
+                $MatchingLines = $cleanUpRe2.Matches($Extracted)
+                foreach ($Match in $MatchingLines) {
+                    
+                    $CT = $Match.Value
+                    $CR = $CT.Replace("<", "``<").Replace(">", ">``")
+                    $FinalCleanUpText = $FinalCleanUpText.Replace($CT, $CR)
+                }
+            }
+            $CleanUpText = $CleanUpText.Replace($Extracted, $FinalCleanUpText)
+            
+            $CleanUpText | Out-File $FilePath -Encoding UTF8
+        }
+           
+             
+    }
+    catch {
+        Write-Host "`nError Message: " $_.Exception.Message
+        Write-Host "`nError in Line: " $_.InvocationInfo.Line
+        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+        Write-Host "`nError Item Name: "$_.Exception.ItemName
+
+    }
 }
 
 function Update-ParameterSection {
@@ -189,6 +231,7 @@ function Update-SpecificStrings {
         $s.Values | ForEach-Object {  
             $string = $_
             $g = IsEscaped -Val $string
+            Write-Host $g
             $TempContent = Get-Content -Encoding UTF8 -Raw $FilePath
             $TempContent = $TempContent.Replace($g, $string)
             $TempContent | Out-File $FilePath -Encoding UTF8
