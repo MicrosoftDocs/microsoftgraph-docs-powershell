@@ -545,7 +545,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet- `[]`>: For type permissions, the details of the users to whom permission was granted.
+GRANTEDTOIDENTITIES `<IMicrosoftGraphIdentitySet- `[]`>`: For type permissions, the details of the users to whom permission was granted.
 Read-only.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -557,7 +557,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIESV2 <IMicrosoftGraphSharePointIdentitySet- `[]`>: For link type permissions, the details of the users to whom permission was granted.
+GRANTEDTOIDENTITIESV2 `<IMicrosoftGraphSharePointIdentitySet- `[]`>`: For link type permissions, the details of the users to whom permission was granted.
 Read-only.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -696,6 +696,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistitempermission)
+
 
 
 
