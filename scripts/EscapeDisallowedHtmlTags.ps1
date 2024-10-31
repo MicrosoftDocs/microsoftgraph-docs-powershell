@@ -146,9 +146,11 @@ function Cleanup-NoteSection {
     try {
         $CleanUpBlock = "## NOTES(?s).*## RELATED LINKS"
         $CleanUpBlock2 = "\w+ <\w+- ```\[]```>:"
+        $CleanUpBlock3 = "\w+ <\w+>:"
         $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
         $CleanUpRe = [regex]::new($CleanUpBlock, $option)
         $cleanUpRe2 = [regex]::new($CleanUpBlock2, $option)
+        $cleanUpRe3 = [regex]::new($CleanUpBlock3, $option)
         $CleanUpDestinationContent = Get-Content -Raw $FilePath
         $CleanUpText = $CleanUpDestinationContent.ToString()
         if ($CleanUpDestinationContent -match $CleanUpRe) {
@@ -161,6 +163,15 @@ function Cleanup-NoteSection {
                     $CT = $Match.Value
                     $CR = $CT.Replace("<", "``<").Replace(">", ">``")
                     $FinalCleanUpText = $FinalCleanUpText.Replace($CT, $CR)
+                }
+            }
+            if ($Extracted -match $cleanUpRe3) {
+                $MatchingLines = $cleanUpRe3.Matches($Extracted)
+                foreach ($Match in $MatchingLines) {
+                    
+                    $C_T = $Match.Value
+                    $C_R = $C_T.Replace("<", "``<").Replace(">", ">``")
+                    $FinalCleanUpText = $FinalCleanUpText.Replace($C_T, $C_R)
                 }
             }
             $CleanUpText = $CleanUpText.Replace($Extracted, $FinalCleanUpText)
