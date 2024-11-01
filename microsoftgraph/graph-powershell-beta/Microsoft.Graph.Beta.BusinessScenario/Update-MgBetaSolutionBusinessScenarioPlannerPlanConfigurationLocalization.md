@@ -49,18 +49,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization
 ## DESCRIPTION
 Update the navigation property localizations in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,6 +306,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization)
+
 
 
 

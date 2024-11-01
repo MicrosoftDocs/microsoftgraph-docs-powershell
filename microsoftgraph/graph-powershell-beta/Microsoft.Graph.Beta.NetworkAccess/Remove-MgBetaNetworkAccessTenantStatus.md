@@ -21,18 +21,6 @@ Remove-MgBetaNetworkAccessTenantStatus [-IfMatch <String>] [-ResponseHeadersVari
 ## DESCRIPTION
 Delete navigation property tenantStatus for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -155,6 +143,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesstenantstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesstenantstatus)
+
 
 
 

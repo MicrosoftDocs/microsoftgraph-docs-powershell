@@ -59,18 +59,6 @@ Update the properties of a oneDriveForBusinessRestoreSession object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onedriveforbusinessrestoresession-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -551,6 +539,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession)
 
 [https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-beta)
+
 
 
 
