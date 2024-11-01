@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: ae521d0d-63a8-41d5-b4d5-2e07cc9c3150
+Module Guid: c815d004-5149-4443-991f-e0b513007fba
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.reports/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -328,5 +328,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgReportPartnerBillingUsageBilled](Update-MgReportPartnerBillingUsageBilled.md)
 
 ### [Update-MgReportPartnerBillingUsageUnbilled](Update-MgReportPartnerBillingUsageUnbilled.md)
-
 

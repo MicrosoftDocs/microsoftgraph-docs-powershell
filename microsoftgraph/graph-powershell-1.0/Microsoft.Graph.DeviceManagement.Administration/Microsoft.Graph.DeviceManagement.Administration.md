@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-Module Guid: b4e4f841-85c5-402d-af77-d35ae9722120
+Module Guid: fb3c0dfc-acf0-485f-9326-eed3b7efc355
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -314,5 +314,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDeviceManagementVirtualEndpointUserSetting](Update-MgDeviceManagementVirtualEndpointUserSetting.md)
 
 ### [Update-MgDeviceManagementVirtualEndpointUserSettingAssignment](Update-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
-
 

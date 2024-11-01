@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetagraphwindowsupdatesupdatableasset
@@ -32,6 +32,18 @@ Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset
 ## DESCRIPTION
 Unenroll updatableAsset resources of the same type from update management by Windows Autopatch.
 You can also use the method unenrollAssets to unenroll assets.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -218,17 +230,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths4Wme8AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String- `[]`>]`: 
-  - `[MemberEntityType <String>]`: 
-  - `[UpdateCategory <String>]`: updateCategory
+BODY \<IPaths4Wme8AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Ids \<String\[\]\>\]: 
+  \[MemberEntityType \<String\>\]: 
+  \[UpdateCategory \<String\>\]: updateCategory
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetagraphwindowsupdatesupdatableasset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetagraphwindowsupdatesupdatableasset)
-
-
-
-
 

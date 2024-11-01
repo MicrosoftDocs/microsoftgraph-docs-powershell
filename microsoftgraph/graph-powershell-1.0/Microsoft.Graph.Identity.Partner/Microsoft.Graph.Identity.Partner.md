@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Partner
-Module Guid: 5514fbd3-c218-4fee-8f4d-d17b07f5de40
+Module Guid: 295198eb-d29b-4ea9-8ef8-a3d7e97bb2d4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.partner/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -82,5 +82,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgTenantRelationshipDelegatedAdminRelationshipOperation](Update-MgTenantRelationshipDelegatedAdminRelationshipOperation.md)
 
 ### [Update-MgTenantRelationshipDelegatedAdminRelationshipRequest](Update-MgTenantRelationshipDelegatedAdminRelationshipRequest.md)
-
 

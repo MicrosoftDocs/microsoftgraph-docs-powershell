@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
 Create a new activityBasedTimeoutPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,15 +29,12 @@ New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-ResponseHead
 ## DESCRIPTION
 Create a new activityBasedTimeoutPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	definition = @(
@@ -52,10 +45,6 @@ isOrganizationDefault = $true
 }
 
 New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter $params
-
-```
-This example shows how to use the New-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -295,10 +284,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+APPLIESTO \<IMicrosoftGraphDirectoryObject\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
@@ -306,7 +295,4 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy)
 
 [https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-1.0)
-
-
-
 

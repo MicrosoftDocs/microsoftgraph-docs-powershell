@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallpresenter
 schema: 2.0.0
-ms.subservice: cloud-communications
 ---
 
 # Remove-MgBetaVirtualEventTownhallPresenter
@@ -11,9 +10,6 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Delete a virtualEventPresenter from a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventTownhallPresenter?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,21 +31,14 @@ Remove-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-If
 Delete a virtualEventPresenter from a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventpresenter-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
+```
 
 Remove-MgBetaVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -VirtualEventPresenterId $virtualEventPresenterId
-
-```
-This example shows how to use the Remove-MgBetaVirtualEventTownhallPresenter Cmdlet.
-
 
 ## PARAMETERS
 
@@ -221,39 +210,36 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
-  - `[UserId <String>]`: Alternate key of virtualEventRegistration
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[ApprovalItemId \<String\>\]: The unique identifier of approvalItem
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[Email \<String\>\]: Alternate key of virtualEventRegistration
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[ProtectionPolicyBaseId \<String\>\]: The unique identifier of protectionPolicyBase
+  \[RestoreSessionBaseId \<String\>\]: The unique identifier of restoreSessionBase
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[ServiceAppId \<String\>\]: The unique identifier of serviceApp
+  \[UserId \<String\>\]: Alternate key of virtualEventRegistration
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventRegistrationQuestionBaseId \<String\>\]: The unique identifier of virtualEventRegistrationQuestionBase
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallpresenter)
 
 [https://learn.microsoft.com/graph/api/virtualeventpresenter-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventpresenter-delete?view=graph-rest-beta)
-
-
-
 

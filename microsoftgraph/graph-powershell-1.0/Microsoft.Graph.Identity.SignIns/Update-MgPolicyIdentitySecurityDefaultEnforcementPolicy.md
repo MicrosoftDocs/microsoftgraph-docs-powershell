@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyidentitysecuritydefaultenforcementpolicy
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,25 +30,18 @@ Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 ## DESCRIPTION
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitysecuritydefaultsenforcementpolicy-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	isEnabled = $false
 }
 
 Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
-
-```
-This example shows how to use the Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -258,24 +247,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy>`: identitySecurityDefaultsEnforcementPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description for this policy.
+BODYPARAMETER \<IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy\>: identitySecurityDefaultsEnforcementPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: Description for this policy.
 Required.
-  - `[DisplayName <String>]`: Display name for this policy.
+  \[DisplayName \<String\>\]: Display name for this policy.
 Required.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsEnabled <Boolean?>]`: If set to true, Microsoft Entra security defaults are enabled for the tenant.
+  \[IsEnabled \<Boolean?\>\]: If set to true, Microsoft Entra security defaults are enabled for the tenant.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyidentitysecuritydefaultenforcementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyidentitysecuritydefaultenforcementpolicy)
 
 [https://learn.microsoft.com/graph/api/identitysecuritydefaultsenforcementpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitysecuritydefaultsenforcementpolicy-update?view=graph-rest-1.0)
-
-
-
 
