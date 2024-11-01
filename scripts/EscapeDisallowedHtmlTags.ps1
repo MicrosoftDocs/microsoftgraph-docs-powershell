@@ -322,5 +322,20 @@ function CleanupFile {
 }
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-EscapeDisallowedHtmlTags -ModulesToGenerate $ModulesToGenerate
+#EscapeDisallowedHtmlTags -ModulesToGenerate $ModulesToGenerate
+#Add files to an array
+$files = @()
+$files += "$PsScriptRoot\..\microsoftgraph\graph-powershell-1.0\Microsoft.Graph.Files\New-MgDriveItemPermission.md"
+$files += "$PsScriptRoot\..\microsoftgraph\graph-powershell-1.0\Microsoft.Graph.Files\Update-MgDriveRootPermission.md"
+$files += "$PsScriptRoot\..\microsoftgraph\graph-powershell-beta\Microsoft.Graph.Beta.Files\New-MgBetaDriveRootListItemPermission.md"
+$files += "$PsScriptRoot\..\microsoftgraph\graph-powershell-beta\Microsoft.Graph.Beta.Files\New-MgBetaUserDriveListItemPermission.md"
+
+
+
+
+
+#Loop through the files and escape disallowed html tags
+foreach ($file in $files) {
+    Cleanup-NoteSection -FilePath $file
+}
 Write-Host -ForegroundColor Green "-------------Done-------------"
