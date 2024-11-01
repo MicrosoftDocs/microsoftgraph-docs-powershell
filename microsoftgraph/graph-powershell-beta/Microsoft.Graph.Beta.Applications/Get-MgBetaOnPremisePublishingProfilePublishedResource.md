@@ -47,13 +47,17 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
-Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups"
+Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups" 
+
+```
+This example shows how to use the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet.
+
 
 ## PARAMETERS
 

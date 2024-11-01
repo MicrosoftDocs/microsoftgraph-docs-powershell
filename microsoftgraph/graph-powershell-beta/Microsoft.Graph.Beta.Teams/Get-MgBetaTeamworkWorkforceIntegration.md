@@ -49,13 +49,17 @@ Retrieve the properties and relationships of a workforceintegration object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workforceintegration-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamworkWorkforceIntegration
+
+```
+This example shows how to use the Get-MgBetaTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,13 +42,17 @@ A team is unarchived once the async operation completes successfully, which migh
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-unarchive-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Invoke-MgBetaUnarchiveTeam -TeamId $teamId
+
+```
+This example shows how to use the Invoke-MgBetaUnarchiveTeam Cmdlet.
+
 
 ## PARAMETERS
 

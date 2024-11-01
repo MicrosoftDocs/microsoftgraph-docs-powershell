@@ -46,13 +46,17 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-list-attachments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 Get-MgBetaUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId
+
+```
+This example shows how to use the Get-MgBetaUserOutlookTaskAttachment Cmdlet.
+
 
 ## PARAMETERS
 

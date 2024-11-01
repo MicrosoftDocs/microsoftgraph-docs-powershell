@@ -53,18 +53,6 @@ New-MgBetaGroupSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to sets for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -718,6 +706,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoregroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoregroupset)
+
 
 
 

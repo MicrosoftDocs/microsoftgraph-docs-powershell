@@ -41,13 +41,17 @@ Return all accessReviewStage objects on a given accessReviewInstance where the c
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewstage-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
-Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -On $onId
+Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

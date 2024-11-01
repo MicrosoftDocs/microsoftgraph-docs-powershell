@@ -35,13 +35,17 @@ List all storage accounts cloudPcForensicStorageAccount that can be used to stor
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcsnapshot-getstorageaccounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount Cmdlet.
+
 
 ## PARAMETERS
 

@@ -54,11 +54,11 @@ Update the properties of an updatePolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.updatePolicy"
@@ -75,6 +75,10 @@ $params = @{
 }
 
 Update-MgBetaWindowsUpdatesPolicy -UpdatePolicyId $updatePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaWindowsUpdatesPolicy Cmdlet.
+
 
 ## PARAMETERS
 

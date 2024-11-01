@@ -32,18 +32,6 @@ Remove-MgContact -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete entity from contacts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -230,6 +218,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontact)
+
 
 
 

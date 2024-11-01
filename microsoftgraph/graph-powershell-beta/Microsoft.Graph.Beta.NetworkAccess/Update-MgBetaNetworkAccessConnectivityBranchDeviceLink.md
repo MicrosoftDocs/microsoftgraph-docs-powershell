@@ -56,17 +56,21 @@ Update the device link associated with a specific branch or remote network.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	name = "Backup Link"
 }
 
 Update-MgBetaNetworkAccessConnectivityBranchDeviceLink -BranchSiteId $branchSiteId -DeviceLinkId $deviceLinkId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessConnectivityBranchDeviceLink Cmdlet.
+
 
 ## PARAMETERS
 

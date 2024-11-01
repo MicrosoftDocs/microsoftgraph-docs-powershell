@@ -46,18 +46,6 @@ Resize-MgBetaUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -315,6 +303,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausermanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausermanageddevicecloudpc)
 
 [https://learn.microsoft.com/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta)
+
 
 
 

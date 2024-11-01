@@ -66,13 +66,17 @@ Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupSetting -GroupId $groupId
+
+```
+This example shows how to use the Get-MgGroupSetting Cmdlet.
+
 
 ## PARAMETERS
 
