@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudience
 schema: 2.0.0
+ms.subservice: autopatch
 ---
 
 # Update-MgBetaWindowsUpdatesDeploymentAudience
@@ -56,6 +57,9 @@ Update the members and exclusions relationships of a deploymentAudience.
 Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object, if it doesn't already exist.
 If the same updatableAsset gets included in the exclusions and members collections of a deploymentAudience, the deployment doesn't apply to that asset.
 If all updatableAsset objects are the same type, you can also use the method updateAudienceById to update the deploymentAudience.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-deploymentaudience-updateaudience-permissions.md)]
 
 ## EXAMPLES
 

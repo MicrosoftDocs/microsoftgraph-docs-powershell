@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaChatMember
@@ -43,6 +44,9 @@ New-MgBetaChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Add a conversationMember to a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-post-members-permissions.md)]
 
 ## EXAMPLES
 

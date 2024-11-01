@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagebyuniquename
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageByUniqueName
@@ -28,6 +29,9 @@ Get-MgBetaEntitlementManagementAccessPackageByUniqueName -InputObject <IIdentity
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackage object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-list-accesspackageresourcerolescopes-permissions.md)]
 
 ## EXAMPLES
 

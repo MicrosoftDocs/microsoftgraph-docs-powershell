@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgexcuseeducationclassassignmentsubmission
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Invoke-MgExcuseEducationClassAssignmentSubmission
@@ -40,6 +41,9 @@ Only teachers can perform this action.
 If the Prefer: include-unknown-enum-members request header is provided, the excused submission shows the excused status.
 Otherwise, the submission status retains the returned status.
 For more information about how to use this header, see the Examples section.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-excuse-permissions.md)]
 
 ## EXAMPLES
 

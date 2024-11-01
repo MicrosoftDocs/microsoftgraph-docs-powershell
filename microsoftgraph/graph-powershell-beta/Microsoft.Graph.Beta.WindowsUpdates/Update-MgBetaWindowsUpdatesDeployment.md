@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeployment
 schema: 2.0.0
+ms.subservice: autopatch
 ---
 
 # Update-MgBetaWindowsUpdatesDeployment
@@ -49,6 +50,9 @@ Update-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity>
 
 ## DESCRIPTION
 Update the properties of a deployment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-deployment-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/reset-mgbetagroupunseencount
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Reset-MgBetaGroupUnseenCount
@@ -29,6 +30,9 @@ Reset-MgBetaGroupUnseenCount -InputObject <IGroupsIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Reset the unseenCount of all the posts that the current user hasn't seen since their last visit.
 Supported for Microsoft 365 groups only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-resetunseencount-permissions.md)]
 
 ## EXAMPLES
 

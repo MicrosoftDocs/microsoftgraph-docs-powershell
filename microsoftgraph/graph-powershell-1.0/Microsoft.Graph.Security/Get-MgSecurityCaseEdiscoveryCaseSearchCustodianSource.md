@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchcustodiansource
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource
@@ -37,6 +38,9 @@ Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Custodian sources that are included in the eDiscovery search.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-list-custodiansources-permissions.md)]
 
 ## EXAMPLES
 
