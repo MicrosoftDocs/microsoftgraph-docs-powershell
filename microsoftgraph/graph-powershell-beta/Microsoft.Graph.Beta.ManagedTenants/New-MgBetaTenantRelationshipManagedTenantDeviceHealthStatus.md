@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus
@@ -411,27 +411,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsDeviceHealthStatus\>: deviceHealthStatus
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsDeviceHealthStatus>`: deviceHealthStatus
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[BlueScreenCount \<Int32?\>\]: 
-  \[BootTotalDurationInSeconds \<Double?\>\]: 
-  \[DeviceId \<String\>\]: 
-  \[DeviceMake \<String\>\]: 
-  \[DeviceModel \<String\>\]: 
-  \[DeviceName \<String\>\]: 
-  \[HealthStatus \<String\>\]: 
-  \[LastUpdatedDateTime \<DateTime?\>\]: 
-  \[OSVersion \<String\>\]: 
-  \[PrimaryDiskType \<String\>\]: 
-  \[RestartCount \<Int32?\>\]: 
-  \[StartupPerformanceScore \<Double?\>\]: 
-  \[TenantDisplayName \<String\>\]: 
-  \[TenantId \<String\>\]: 
-  \[TopProcesses \<String\>\]:
+  - `[BlueScreenCount <Int32?>]`: 
+  - `[BootTotalDurationInSeconds <Double?>]`: 
+  - `[DeviceId <String>]`: 
+  - `[DeviceMake <String>]`: 
+  - `[DeviceModel <String>]`: 
+  - `[DeviceName <String>]`: 
+  - `[HealthStatus <String>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[OSVersion <String>]`: 
+  - `[PrimaryDiskType <String>]`: 
+  - `[RestartCount <Int32?>]`: 
+  - `[StartupPerformanceScore <Double?>]`: 
+  - `[TenantDisplayName <String>]`: 
+  - `[TenantId <String>]`: 
+  - `[TopProcesses <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus)
+
+
+
 
