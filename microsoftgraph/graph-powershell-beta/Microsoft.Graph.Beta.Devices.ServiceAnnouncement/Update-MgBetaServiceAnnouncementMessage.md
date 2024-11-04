@@ -553,3 +553,21 @@ VIEWPOINT `<IMicrosoftGraphServiceUpdateMessageViewpoint>`: serviceUpdateMessage
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

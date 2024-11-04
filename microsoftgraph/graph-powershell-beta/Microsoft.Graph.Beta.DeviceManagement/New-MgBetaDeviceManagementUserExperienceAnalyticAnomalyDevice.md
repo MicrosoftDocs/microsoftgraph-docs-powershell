@@ -364,3 +364,21 @@ Eg: Device status can be anomalous, affected, at risk.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

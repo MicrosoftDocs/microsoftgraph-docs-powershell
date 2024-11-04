@@ -345,3 +345,21 @@ BODYPARAMETER `<IPaths1QqqzoyDevicemanagementReportsMicrosoftGraphGetcompliances
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

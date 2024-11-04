@@ -8798,7 +8798,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
       - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-      - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+      - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
 
 ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog>`: accessPackageCatalog
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9017,7 +9017,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
           - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-          - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+          - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
     - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
     - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
@@ -17451,7 +17451,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
         - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
   - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
   - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
@@ -25776,7 +25776,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
         - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
   - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
   - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
@@ -34100,7 +34100,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
         - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
   - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
   - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
@@ -50251,6 +50251,24 @@ If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage)
 
 [https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackages?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

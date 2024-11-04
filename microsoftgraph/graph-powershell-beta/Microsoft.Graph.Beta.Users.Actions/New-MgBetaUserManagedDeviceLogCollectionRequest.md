@@ -301,3 +301,21 @@ TEMPLATETYPE `<IMicrosoftGraphDeviceLogCollectionRequest>`: Windows Log Collecti
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -326,3 +326,21 @@ BODYPARAMETER `<IPathsGai8B5DevicemanagementReportsMicrosoftGraphGetdevicestatus
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

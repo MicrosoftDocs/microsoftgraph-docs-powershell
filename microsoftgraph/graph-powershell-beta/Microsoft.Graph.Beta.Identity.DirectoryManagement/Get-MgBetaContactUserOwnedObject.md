@@ -206,3 +206,21 @@ BODYPARAMETER `<IPaths1Bsgnp0ContactsMicrosoftGraphGetuserownedobjectsPostReques
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

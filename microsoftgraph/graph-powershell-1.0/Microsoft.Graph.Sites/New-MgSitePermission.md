@@ -542,7 +542,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet- `[]`>: For type permissions, the details of the users to whom permission was granted.
+GRANTEDTOIDENTITIES `<IMicrosoftGraphIdentitySet- `[]`>`: For type permissions, the details of the users to whom permission was granted.
 Read-only.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -553,7 +553,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIESV2 <IMicrosoftGraphSharePointIdentitySet- `[]`>: For link type permissions, the details of the users to whom permission was granted.
+GRANTEDTOIDENTITIESV2 `<IMicrosoftGraphSharePointIdentitySet- `[]`>`: For link type permissions, the details of the users to whom permission was granted.
 Read-only.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -573,7 +573,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
 
-GRANTEDTOV2 <IMicrosoftGraphSharePointIdentitySet>: sharePointIdentitySet
+GRANTEDTOV2 `<IMicrosoftGraphSharePointIdentitySet>`: sharePointIdentitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -706,6 +706,26 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepermission)
 
 [https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -756,3 +756,21 @@ SHIPMENTMETHOD `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

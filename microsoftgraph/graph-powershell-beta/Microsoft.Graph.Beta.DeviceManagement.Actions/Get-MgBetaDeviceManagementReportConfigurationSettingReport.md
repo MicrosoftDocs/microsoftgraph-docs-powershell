@@ -342,3 +342,21 @@ BODYPARAMETER `<IPathsS32AefDevicemanagementReportsMicrosoftGraphGetconfiguratio
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

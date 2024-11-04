@@ -357,3 +357,21 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

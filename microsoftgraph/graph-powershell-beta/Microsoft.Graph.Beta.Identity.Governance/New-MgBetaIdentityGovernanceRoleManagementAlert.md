@@ -459,3 +459,21 @@ DirectoryRole is the only currently supported scope type for Microsoft Entra rol
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

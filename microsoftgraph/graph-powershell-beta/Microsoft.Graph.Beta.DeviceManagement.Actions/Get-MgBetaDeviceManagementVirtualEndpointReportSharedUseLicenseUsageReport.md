@@ -357,3 +357,21 @@ BODYPARAMETER `<IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraph
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

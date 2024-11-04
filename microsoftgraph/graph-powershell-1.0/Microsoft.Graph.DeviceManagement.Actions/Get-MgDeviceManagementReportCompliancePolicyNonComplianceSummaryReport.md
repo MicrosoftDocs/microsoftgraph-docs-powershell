@@ -378,3 +378,21 @@ BODYPARAMETER `<IPaths6K2Wa1DevicemanagementReportsMicrosoftGraphGetcompliancepo
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

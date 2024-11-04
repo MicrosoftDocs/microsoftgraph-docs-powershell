@@ -459,3 +459,21 @@ PHONES <IMicrosoftGraphPhone- `[]`>: Phone numbers associated with the customer,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

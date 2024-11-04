@@ -342,3 +342,21 @@ BODYPARAMETER `<IPathsK1AqbDevicemanagementReportsMicrosoftGraphGetconfiguration
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

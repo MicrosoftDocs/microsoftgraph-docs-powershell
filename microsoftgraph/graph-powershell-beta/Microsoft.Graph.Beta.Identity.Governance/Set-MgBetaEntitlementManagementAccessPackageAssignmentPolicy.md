@@ -967,7 +967,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
         - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
   - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
   - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
@@ -9274,7 +9274,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
           - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-          - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+          - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
     - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
     - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
@@ -25725,7 +25725,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
       - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-      - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+      - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
 
 CUSTOMEXTENSIONHANDLERS <IMicrosoftGraphCustomExtensionHandler- `[]`>: The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
@@ -25931,13 +25931,31 @@ VERIFIABLECREDENTIALSETTINGS `<IMicrosoftGraphVerifiableCredentialSettings>`: ve
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
     - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-    - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+    - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaentitlementmanagementaccesspackageassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

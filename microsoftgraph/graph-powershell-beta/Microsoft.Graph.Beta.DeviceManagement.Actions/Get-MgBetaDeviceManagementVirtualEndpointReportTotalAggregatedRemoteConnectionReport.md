@@ -343,3 +343,21 @@ BODYPARAMETER `<IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraph
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

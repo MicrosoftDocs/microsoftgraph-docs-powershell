@@ -520,3 +520,21 @@ TEMPLATEREFERENCE `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateRe
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

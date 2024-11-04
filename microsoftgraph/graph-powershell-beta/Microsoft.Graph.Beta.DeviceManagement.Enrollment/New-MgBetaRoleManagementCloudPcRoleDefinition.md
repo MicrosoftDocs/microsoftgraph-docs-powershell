@@ -65,7 +65,6 @@ New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params
 This example shows how to use the New-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
 
 
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -496,6 +495,24 @@ Not supported for custom roles.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition)
 
 [https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

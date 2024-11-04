@@ -490,3 +490,21 @@ ROLLOUTSETTINGS `<IMicrosoftGraphWindowsUpdateRolloutSettings>`: A complex type 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

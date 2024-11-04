@@ -495,3 +495,21 @@ POSTS <IMicrosoftGraphServiceHealthIssuePost- `[]`>: Collection of historical po
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -326,3 +326,21 @@ BODYPARAMETER `<IPathsI8PptzDevicemanagementReportsMicrosoftGraphGetdevicesstatu
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

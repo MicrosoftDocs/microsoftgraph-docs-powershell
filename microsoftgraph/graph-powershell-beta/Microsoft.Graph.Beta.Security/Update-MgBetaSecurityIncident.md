@@ -818,3 +818,21 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

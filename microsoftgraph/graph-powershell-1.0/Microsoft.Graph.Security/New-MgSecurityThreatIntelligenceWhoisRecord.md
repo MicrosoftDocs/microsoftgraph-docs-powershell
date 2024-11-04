@@ -818,7 +818,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-HISTORY <IMicrosoftGraphSecurityWhoisHistoryRecord- `[]`>: The collection of historical records associated to this WHOIS object.
+HISTORY `<IMicrosoftGraphSecurityWhoisHistoryRecord- `[]`>`: The collection of historical records associated to this WHOIS object.
   - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1094,7 +1094,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-HOST1 <IMicrosoftGraphSecurityHost>: host
+HOST1 `<IMicrosoftGraphSecurityHost>`: host
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1370,7 +1370,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-NAMESERVERS <IMicrosoftGraphSecurityWhoisNameserver- `[]`>: The nameservers for this WHOIS object.
+NAMESERVERS `<IMicrosoftGraphSecurityWhoisNameserver- `[]`>`: The nameservers for this WHOIS object.
   - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1739,6 +1739,26 @@ No format is guaranteed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoisrecord)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

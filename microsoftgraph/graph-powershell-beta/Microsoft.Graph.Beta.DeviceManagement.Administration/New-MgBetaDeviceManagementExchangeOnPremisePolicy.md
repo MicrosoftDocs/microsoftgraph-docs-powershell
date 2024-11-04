@@ -311,3 +311,21 @@ KNOWNDEVICECLASSES <IMicrosoftGraphDeviceManagementExchangeDeviceClass- `[]`>: T
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

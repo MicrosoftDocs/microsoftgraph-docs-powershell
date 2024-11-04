@@ -632,3 +632,21 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: .
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

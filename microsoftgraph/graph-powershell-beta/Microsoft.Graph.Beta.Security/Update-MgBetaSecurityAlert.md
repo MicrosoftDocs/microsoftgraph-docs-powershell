@@ -1434,3 +1434,21 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: Threat intelligen
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

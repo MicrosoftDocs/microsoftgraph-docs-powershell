@@ -404,3 +404,21 @@ MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

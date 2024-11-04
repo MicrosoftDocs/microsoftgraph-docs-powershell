@@ -473,3 +473,21 @@ DEFINITIONTEMPLATE `<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>`:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

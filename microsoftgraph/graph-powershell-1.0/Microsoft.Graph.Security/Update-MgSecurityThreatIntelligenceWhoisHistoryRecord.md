@@ -580,7 +580,7 @@ No format is guaranteed.
   - `[Telephone <String>]`: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-HOST1 <IMicrosoftGraphSecurityHost>: host
+HOST1 `<IMicrosoftGraphSecurityHost>`: host
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -919,7 +919,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-NAMESERVERS <IMicrosoftGraphSecurityWhoisNameserver- `[]`>: The nameservers for this WHOIS object.
+NAMESERVERS `<IMicrosoftGraphSecurityWhoisNameserver- `[]`>`: The nameservers for this WHOIS object.
   - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1288,6 +1288,26 @@ No format is guaranteed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

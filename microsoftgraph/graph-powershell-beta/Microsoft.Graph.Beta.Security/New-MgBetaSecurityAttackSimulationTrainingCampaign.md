@@ -707,3 +707,21 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

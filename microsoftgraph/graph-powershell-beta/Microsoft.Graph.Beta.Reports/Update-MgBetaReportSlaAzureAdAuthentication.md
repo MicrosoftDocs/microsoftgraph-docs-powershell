@@ -213,3 +213,21 @@ Values are expressed as a percentage of availability for the tenant.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

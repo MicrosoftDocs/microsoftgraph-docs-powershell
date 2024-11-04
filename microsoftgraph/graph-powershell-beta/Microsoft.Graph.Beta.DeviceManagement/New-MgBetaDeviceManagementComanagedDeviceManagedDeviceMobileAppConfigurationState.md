@@ -544,3 +544,21 @@ SETTINGSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState- `
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

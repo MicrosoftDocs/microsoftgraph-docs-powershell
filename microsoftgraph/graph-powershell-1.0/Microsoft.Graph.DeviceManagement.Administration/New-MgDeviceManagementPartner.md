@@ -377,3 +377,21 @@ GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignme
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

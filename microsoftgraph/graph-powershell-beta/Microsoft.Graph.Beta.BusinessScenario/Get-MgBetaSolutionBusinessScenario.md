@@ -320,3 +320,21 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

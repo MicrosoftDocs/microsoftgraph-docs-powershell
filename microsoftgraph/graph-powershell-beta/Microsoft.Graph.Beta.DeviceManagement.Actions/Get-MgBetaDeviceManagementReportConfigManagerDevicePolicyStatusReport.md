@@ -342,3 +342,21 @@ BODYPARAMETER `<IPathsYuwr1TDevicemanagementReportsMicrosoftGraphGetconfigmanage
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

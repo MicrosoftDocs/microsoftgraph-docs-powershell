@@ -1348,3 +1348,21 @@ TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

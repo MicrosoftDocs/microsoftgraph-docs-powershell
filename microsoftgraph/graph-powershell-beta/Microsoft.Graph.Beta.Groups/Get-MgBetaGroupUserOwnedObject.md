@@ -206,3 +206,21 @@ BODYPARAMETER `<IPaths16ZshinGroupsMicrosoftGraphGetuserownedobjectsPostRequestb
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

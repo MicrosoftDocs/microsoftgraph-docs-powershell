@@ -591,3 +591,21 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

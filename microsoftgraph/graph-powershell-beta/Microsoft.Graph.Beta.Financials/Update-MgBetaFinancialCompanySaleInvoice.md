@@ -1225,3 +1225,21 @@ SHIPPINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

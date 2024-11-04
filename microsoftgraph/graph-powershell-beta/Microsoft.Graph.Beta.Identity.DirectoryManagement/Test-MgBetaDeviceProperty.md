@@ -271,3 +271,21 @@ BODYPARAMETER `<IPaths7X6XkrDevicesMicrosoftGraphValidatepropertiesPostRequestbo
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

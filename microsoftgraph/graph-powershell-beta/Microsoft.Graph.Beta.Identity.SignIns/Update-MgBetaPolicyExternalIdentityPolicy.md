@@ -296,3 +296,21 @@ When the external user leaves the tenant, their data in the guest tenant is firs
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

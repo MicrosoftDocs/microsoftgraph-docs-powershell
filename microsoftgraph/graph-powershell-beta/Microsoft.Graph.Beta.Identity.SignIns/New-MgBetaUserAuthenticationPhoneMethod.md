@@ -322,7 +322,7 @@ BODYPARAMETER `<IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationM
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[PhoneNumber <String>]`: The phone number to text or call for authentication.
-Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
+Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
   - `[PhoneType <String>]`: authenticationPhoneType
@@ -413,6 +413,24 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationphonemethod)
 
 [https://learn.microsoft.com/graph/api/authentication-post-phonemethods?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-post-phonemethods?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

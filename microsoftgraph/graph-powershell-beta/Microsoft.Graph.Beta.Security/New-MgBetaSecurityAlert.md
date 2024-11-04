@@ -1215,3 +1215,21 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: Threat intelligen
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
