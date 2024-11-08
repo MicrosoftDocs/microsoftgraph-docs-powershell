@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercountsummary
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgBetaReportMicrosoft365CopilotUserCountSummary
@@ -28,6 +29,9 @@ Get-MgBetaReportMicrosoft365CopilotUserCountSummary -InputObject <IReportsIdenti
 
 ## DESCRIPTION
 Get the aggregated number of active and enabled users of Copilot for Microsoft 365 for a specified time period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getmicrosoft365copilotusercountsummary-permissions.md)]
 
 ## EXAMPLES
 

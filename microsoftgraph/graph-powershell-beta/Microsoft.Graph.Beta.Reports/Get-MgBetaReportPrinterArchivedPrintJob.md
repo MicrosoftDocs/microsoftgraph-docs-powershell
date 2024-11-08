@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaReportPrinterArchivedPrintJob
@@ -29,6 +30,9 @@ Get-MgBetaReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count]
 
 ## DESCRIPTION
 Get a list of archived print jobs that were queued for particular printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reports-getprinterarchivedprintjobs-permissions.md)]
 
 ## EXAMPLES
 

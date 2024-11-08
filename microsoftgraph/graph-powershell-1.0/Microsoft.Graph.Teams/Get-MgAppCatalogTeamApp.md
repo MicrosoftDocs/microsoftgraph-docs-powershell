@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamapp
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgAppCatalogTeamApp
@@ -36,6 +37,9 @@ Get-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Get teamsApps from appCatalogs
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appcatalogs-list-teamsapps-permissions.md)]
 
 ## EXAMPLES
 

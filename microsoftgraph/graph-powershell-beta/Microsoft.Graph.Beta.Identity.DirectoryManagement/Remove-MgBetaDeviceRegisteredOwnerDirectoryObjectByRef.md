@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregisteredownerdirectoryobjectbyref
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef
@@ -28,6 +29,9 @@ Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef -InputObject <IIdentityDi
 
 ## DESCRIPTION
 Remove a user as a registered owner of the device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-registeredowners-permissions.md)]
 
 ## EXAMPLES
 

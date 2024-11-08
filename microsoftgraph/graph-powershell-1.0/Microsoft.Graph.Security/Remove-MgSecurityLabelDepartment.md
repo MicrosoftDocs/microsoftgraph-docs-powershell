@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabeldepartment
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Remove-MgSecurityLabelDepartment
@@ -28,6 +29,9 @@ Remove-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete a departmentTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-departments-permissions.md)]
 
 ## EXAMPLES
 

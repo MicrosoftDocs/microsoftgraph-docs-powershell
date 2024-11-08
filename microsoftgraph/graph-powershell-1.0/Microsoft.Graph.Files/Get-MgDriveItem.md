@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgDriveItem
@@ -40,6 +41,9 @@ Get-MgDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 All items contained in the drive.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-sharedwithme-permissions.md)]
 
 ## EXAMPLES
 

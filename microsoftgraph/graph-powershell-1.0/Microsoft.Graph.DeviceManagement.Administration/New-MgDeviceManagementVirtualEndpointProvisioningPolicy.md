@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # New-MgDeviceManagementVirtualEndpointProvisioningPolicy
@@ -34,6 +35,9 @@ New-MgDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## DESCRIPTION
 Create a new cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-provisioningpolicies-permissions.md)]
 
 ## EXAMPLES
 

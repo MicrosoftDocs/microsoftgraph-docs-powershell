@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagedetail
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportMailboxUsageDetail
@@ -27,6 +28,9 @@ Get-MgReportMailboxUsageDetail -InputObject <IReportsIdentity> -OutFile <String>
 
 ## DESCRIPTION
 Get details about mailbox usage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getmailboxusagedetail-permissions.md)]
 
 ## EXAMPLES
 

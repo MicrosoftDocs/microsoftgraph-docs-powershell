@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenissuancepolicytokenissuancepolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef
@@ -29,6 +30,9 @@ Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef -InputObject
 
 ## DESCRIPTION
 Remove a tokenIssuancePolicy from an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-tokenissuancepolicies-permissions.md)]
 
 ## EXAMPLES
 

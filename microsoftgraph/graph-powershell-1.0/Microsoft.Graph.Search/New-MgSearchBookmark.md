@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # New-MgSearchBookmark
@@ -32,6 +33,9 @@ New-MgSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-ResponseHe
 
 ## DESCRIPTION
 Create a new bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
 
 ## EXAMPLES
 

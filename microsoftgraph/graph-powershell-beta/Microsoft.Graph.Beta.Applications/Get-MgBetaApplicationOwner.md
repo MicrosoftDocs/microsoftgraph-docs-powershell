@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationowner
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplicationOwner
@@ -21,6 +22,9 @@ Get-MgBetaApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 Retrieve a list of owners for an application that are directoryObject types.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-list-owners-permissions.md)]
 
 ## EXAMPLES
 

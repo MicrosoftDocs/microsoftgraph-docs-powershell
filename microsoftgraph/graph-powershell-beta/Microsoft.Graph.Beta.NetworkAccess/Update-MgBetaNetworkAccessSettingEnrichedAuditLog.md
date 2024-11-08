@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingenrichedauditlog
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessSettingEnrichedAuditLog
@@ -30,6 +31,9 @@ Update-MgBetaNetworkAccessSettingEnrichedAuditLog
 
 ## DESCRIPTION
 Update the settings for the enriched audit logs workloads to control the enrichment feature for each partner workload, such as SharePoint, Teams, and Exchange.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-enrichedauditlogs-update-permissions.md)]
 
 ## EXAMPLES
 

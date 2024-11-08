@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupeventpermanent
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Remove-MgBetaGroupEventPermanent
@@ -34,6 +35,9 @@ Permanently delete an event and place it in the Purges folder in the dumpster in
 Email clients such as Outlook or the Outlook on the web can't access permanently deleted items.
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-permanentdelete-permissions.md)]
 
 ## EXAMPLES
 

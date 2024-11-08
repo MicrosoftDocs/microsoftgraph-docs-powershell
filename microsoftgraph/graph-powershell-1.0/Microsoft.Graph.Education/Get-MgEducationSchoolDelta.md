@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooldelta
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgEducationSchoolDelta
@@ -23,6 +24,9 @@ Get-MgEducationSchoolDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 ## DESCRIPTION
 Get newly created or updated schools without having to perform a full read of the entire school collection.
 See Use delta query for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delta-permissions.md)]
 
 ## EXAMPLES
 

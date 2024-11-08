@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreserviceapp
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgSolutionBackupRestoreServiceApp
@@ -30,6 +31,9 @@ New-MgSolutionBackupRestoreServiceApp -BodyParameter <IMicrosoftGraphServiceApp>
 
 ## DESCRIPTION
 Create a new serviceApp.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-post-serviceapps-permissions.md)]
 
 ## EXAMPLES
 
