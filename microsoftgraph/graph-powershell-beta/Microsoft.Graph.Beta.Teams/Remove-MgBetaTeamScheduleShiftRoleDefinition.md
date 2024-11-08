@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleshiftroledefinition
@@ -28,18 +28,6 @@ Remove-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity> [-IfM
 
 ## DESCRIPTION
 Delete navigation property shiftsRoleDefinitions for teams
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -257,4 +245,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleshiftroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleshiftroledefinition)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleshiftroledefinition
@@ -44,18 +44,6 @@ New-MgBetaGroupTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to shiftsRoleDefinitions for groups
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -336,4 +324,5 @@ Permissions that aren't in this collection are disabled.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleshiftroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleshiftroledefinition)
+
 

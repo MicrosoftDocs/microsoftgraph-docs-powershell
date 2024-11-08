@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostmentioncount
@@ -28,18 +28,6 @@ Get-MgBetaGroupConversationThreadPostMentionCount -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Get the number of the resource
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -263,4 +251,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostmentioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostmentioncount)
+
 

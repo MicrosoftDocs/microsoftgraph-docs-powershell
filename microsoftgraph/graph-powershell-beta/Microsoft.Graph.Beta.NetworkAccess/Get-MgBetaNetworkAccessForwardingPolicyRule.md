@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingpolicyrule
@@ -36,18 +36,6 @@ Get-MgBetaNetworkAccessForwardingPolicyRule -InputObject <INetworkAccessIdentity
 
 ## DESCRIPTION
 Represents the definition of the policy ruleset that makes up the core definition of a policy.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -333,4 +321,5 @@ INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingpolicyrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingpolicyrule)
+
 

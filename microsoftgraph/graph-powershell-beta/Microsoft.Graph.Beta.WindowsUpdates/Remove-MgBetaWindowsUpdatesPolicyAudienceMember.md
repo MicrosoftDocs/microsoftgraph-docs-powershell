@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyaudiencemember
@@ -62,18 +62,6 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIde
 
 ## DESCRIPTION
 Delete navigation property members for admin
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -325,4 +313,5 @@ INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyaudiencemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyaudiencemember)
 
 [https://learn.microsoft.com/graph/api/windowsupdates-updatableassetgroup-removemembers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-updatableassetgroup-removemembers?view=graph-rest-beta)
+
 

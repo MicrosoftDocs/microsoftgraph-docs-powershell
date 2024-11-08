@@ -32,18 +32,6 @@ Get-MgBetaDriveCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get createdByUser from drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -197,4 +185,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivecreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivecreatedbyuser)
+
 

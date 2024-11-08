@@ -33,18 +33,6 @@ Remove-MgUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-I
 ## DESCRIPTION
 Delete navigation property itemActivityStats for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -274,4 +262,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemanalyticitemactivitystat)
+
 

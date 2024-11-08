@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasapproleassignment
@@ -37,18 +37,6 @@ Get-MgApplicationOwnerAsAppRoleAssignment -InputObject <IApplicationsIdentity> [
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -355,4 +343,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasapproleassignment)
+
 

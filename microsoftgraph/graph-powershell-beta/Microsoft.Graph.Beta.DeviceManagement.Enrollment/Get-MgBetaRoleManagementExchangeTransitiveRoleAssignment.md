@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangetransitiveroleassignment
@@ -36,18 +36,6 @@ Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment -InputObject <IDeviceMa
 
 ## DESCRIPTION
 Resource to grant access to users or groups that are transitive.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -326,4 +314,5 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangetransitiveroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangetransitiveroleassignment)
+
 

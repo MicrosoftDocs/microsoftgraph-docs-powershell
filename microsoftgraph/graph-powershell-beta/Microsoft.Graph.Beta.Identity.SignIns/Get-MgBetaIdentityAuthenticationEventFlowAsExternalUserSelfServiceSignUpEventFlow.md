@@ -42,18 +42,6 @@ Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlo
 ## DESCRIPTION
 Get the item of type microsoft.graph.authenticationEventsFlow as microsoft.graph.externalUsersSelfServiceSignUpEventsFlow
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -382,4 +370,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasexternaluserselfservicesignupeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasexternaluserselfservicesignupeventflow)
+
 

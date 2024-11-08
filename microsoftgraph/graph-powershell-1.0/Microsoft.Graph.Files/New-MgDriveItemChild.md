@@ -82,18 +82,6 @@ New-MgDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to children for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30738,4 +30726,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemchild)
+
 

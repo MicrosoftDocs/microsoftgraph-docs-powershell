@@ -33,18 +33,6 @@ Get-MgBetaGroupSiteListItemDocumentSetVersionField -InputObject <ISitesIdentity>
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -289,4 +277,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitemdocumentsetversionfield)
+
 

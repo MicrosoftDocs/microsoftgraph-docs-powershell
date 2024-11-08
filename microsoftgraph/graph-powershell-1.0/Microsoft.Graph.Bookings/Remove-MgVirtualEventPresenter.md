@@ -32,18 +32,6 @@ Remove-MgVirtualEventPresenter -InputObject <IBookingsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property presenters for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -241,4 +229,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventpresenter)
+
 

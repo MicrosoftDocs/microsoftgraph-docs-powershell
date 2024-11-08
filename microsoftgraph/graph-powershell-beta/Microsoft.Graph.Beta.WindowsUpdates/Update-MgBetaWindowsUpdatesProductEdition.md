@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductedition
@@ -46,18 +46,6 @@ Update-MgBetaWindowsUpdatesProductEdition -InputObject <IWindowsUpdatesIdentity>
 
 ## DESCRIPTION
 Update the navigation property editions in admin
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -423,4 +411,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductedition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductedition)
+
 

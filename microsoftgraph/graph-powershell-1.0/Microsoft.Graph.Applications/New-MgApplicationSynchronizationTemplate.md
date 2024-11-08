@@ -50,18 +50,6 @@ New-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to templates for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -680,4 +668,5 @@ Must match one of the directory definitions in synchronizationSchema.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationtemplate)
+
 

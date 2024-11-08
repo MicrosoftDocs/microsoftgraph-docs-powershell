@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementexchangeonpremisepolicy
@@ -43,18 +43,6 @@ Get-MgBetaDeviceManagementExchangeOnPremisePolicy [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 The list of Exchange On Premisis policies configured by the tenant.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -362,4 +350,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementexchangeonpremisepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementexchangeonpremisepolicy)
+
 

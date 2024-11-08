@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportuserinsightmonthly
@@ -20,18 +20,6 @@ Remove-MgBetaReportUserInsightMonthly [-IfMatch <String>] [-ResponseHeadersVaria
 
 ## DESCRIPTION
 Delete navigation property monthly for reports
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -155,4 +143,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportuserinsightmonthly](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportuserinsightmonthly)
+
 
