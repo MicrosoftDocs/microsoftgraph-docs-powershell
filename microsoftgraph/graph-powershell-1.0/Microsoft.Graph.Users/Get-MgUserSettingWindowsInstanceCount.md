@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingwindowsinstancecount
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingWindowsInstanceCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWindowsInstanceCount?view=graph-powershell-beta)
 
 ## SYNTAX
 

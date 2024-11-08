@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemversion
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The list of previous versions of the list item.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 

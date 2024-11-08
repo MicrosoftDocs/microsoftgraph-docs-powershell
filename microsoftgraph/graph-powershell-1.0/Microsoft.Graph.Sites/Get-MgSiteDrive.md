@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedrive
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of drives (document libraries) under this site.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 

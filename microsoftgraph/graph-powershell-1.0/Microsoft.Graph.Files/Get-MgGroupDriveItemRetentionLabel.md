@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemretentionlabel
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Information about retention label and settings enforced on the driveItem.
 Read-write.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemRetentionLabel?view=graph-powershell-beta)
 
 ## SYNTAX
 

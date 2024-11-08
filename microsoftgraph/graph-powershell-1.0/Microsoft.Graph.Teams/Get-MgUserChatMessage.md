@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessage
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of all the messages in the chat.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 

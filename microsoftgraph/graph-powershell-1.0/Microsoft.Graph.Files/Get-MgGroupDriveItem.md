@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitem
@@ -11,6 +11,9 @@ schema: 2.0.0
 All items contained in the drive.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 

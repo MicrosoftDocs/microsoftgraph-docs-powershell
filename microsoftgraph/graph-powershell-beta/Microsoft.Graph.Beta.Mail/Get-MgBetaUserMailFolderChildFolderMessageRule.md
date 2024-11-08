@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessagerule
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of rules that apply to the user's Inbox folder.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentsubmission
@@ -11,6 +11,9 @@ schema: 2.0.0
 Once published, there is a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 

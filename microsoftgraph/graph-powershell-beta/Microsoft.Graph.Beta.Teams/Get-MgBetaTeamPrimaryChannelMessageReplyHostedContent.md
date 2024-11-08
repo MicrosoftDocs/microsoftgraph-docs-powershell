@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmessagereplyhostedcontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 

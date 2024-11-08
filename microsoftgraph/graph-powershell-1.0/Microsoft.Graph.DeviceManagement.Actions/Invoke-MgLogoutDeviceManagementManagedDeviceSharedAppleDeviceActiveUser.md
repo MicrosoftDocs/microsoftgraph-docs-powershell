@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Logout shared Apple device active user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Logout (Default)

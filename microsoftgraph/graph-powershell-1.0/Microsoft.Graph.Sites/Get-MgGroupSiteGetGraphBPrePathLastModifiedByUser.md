@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetgraphbprepathlastmodifiedbyuser
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Identity of the user who last modified the item.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetGraphBPrePathLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetGraphBPrePathLastModifiedByUser?view=graph-powershell-beta)
 
 ## SYNTAX
 

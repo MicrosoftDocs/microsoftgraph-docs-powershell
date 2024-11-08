@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventpresenter
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property presenters in solutions
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventPresenter](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventPresenter?view=graph-powershell-1.0)
 
 ## SYNTAX
 

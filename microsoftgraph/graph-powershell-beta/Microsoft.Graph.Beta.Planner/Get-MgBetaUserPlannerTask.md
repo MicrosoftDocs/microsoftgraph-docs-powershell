@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertask
@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 Nullable.
 Returns the plannerTasks assigned to the user.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
