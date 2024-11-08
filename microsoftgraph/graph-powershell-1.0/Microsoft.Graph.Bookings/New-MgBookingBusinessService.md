@@ -66,18 +66,6 @@ Create a new bookingService for the specified bookingBusiness.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-services-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -804,4 +792,5 @@ Use the email address specified in the email property of the bookingBusiness ent
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice)
 
 [https://learn.microsoft.com/graph/api/bookingbusiness-post-services?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-services?view=graph-rest-1.0)
+
 

@@ -42,13 +42,17 @@ Details of the usage of self-service password reset and multifactor authenticati
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-credentialuserregistrationdetails-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportCredentialUserRegistrationDetail
+
+```
+This example shows how to use the Get-MgBetaReportCredentialUserRegistrationDetail Cmdlet.
+
 
 ## PARAMETERS
 

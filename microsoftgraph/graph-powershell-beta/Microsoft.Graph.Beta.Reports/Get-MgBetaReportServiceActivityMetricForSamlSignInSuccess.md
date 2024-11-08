@@ -38,13 +38,17 @@ This health signal currently doesn't include WS-FED/SAML 1.1 apps that are integ
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceactivity-getmetricsforsamlsigninsuccess-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportServiceActivityMetricForSamlSignInSuccess
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityMetricForSamlSignInSuccess Cmdlet.
+
 
 ## PARAMETERS
 

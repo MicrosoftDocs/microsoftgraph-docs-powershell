@@ -39,13 +39,17 @@ Calling this method yields a redirect response with a preauthenticated URL that 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printdocument-get-file-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintPrinterJobDocumentContent -PrinterId $printerId -PrintJobId $printJobId -PrintDocumentId $printDocumentId -OutFile $outFileId
+
+```
+This example shows how to use the Get-MgBetaPrintPrinterJobDocumentContent Cmdlet.
+
 
 ## PARAMETERS
 

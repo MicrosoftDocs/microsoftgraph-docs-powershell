@@ -49,27 +49,39 @@ Read the properties and relationships of a customSecurityAttributeDefinition obj
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-list-customsecurityattributedefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get all custom security attributes
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryCustomSecurityAttributeDefinition
 
-### EXAMPLE 2
 ```
+This example will get all custom security attributes
+
+### Example 2: Filter custom security attributes based on name
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
-Get-MgDirectoryCustomSecurityAttributeDefinition -Filter "name eq 'Project' and status eq 'Available'"
+Get-MgDirectoryCustomSecurityAttributeDefinition -Filter "name eq 'Project' and status eq 'Available'" 
 
-### EXAMPLE 3
 ```
+This example will filter custom security attributes based on name
+
+### Example 3: Filter custom security attributes based on attribute set
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
-Get-MgDirectoryCustomSecurityAttributeDefinition -Filter "attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'"
+Get-MgDirectoryCustomSecurityAttributeDefinition -Filter "attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'" 
+
+```
+This example will filter custom security attributes based on attribute set
+
 
 ## PARAMETERS
 

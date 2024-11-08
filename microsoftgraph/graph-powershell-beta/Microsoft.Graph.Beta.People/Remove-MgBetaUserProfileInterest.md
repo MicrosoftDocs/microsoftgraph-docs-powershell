@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileinterest
@@ -30,14 +30,18 @@ Remove-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> [-IfMatch <Strin
 Delete navigation property interests for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileInterest -UserId $userId -PersonInterestId $personInterestId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileInterest Cmdlet.
+
 
 ## PARAMETERS
 

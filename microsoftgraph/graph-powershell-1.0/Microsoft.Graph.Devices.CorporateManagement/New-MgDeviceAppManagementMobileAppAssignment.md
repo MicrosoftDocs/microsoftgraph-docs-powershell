@@ -50,11 +50,11 @@ New-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateMana
 Create a new mobileAppAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mobileAppAssignment"
@@ -69,6 +69,10 @@ $params = @{
 }
 
 New-MgDeviceAppManagementMobileAppAssignment -MobileAppId $mobileAppId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementMobileAppAssignment Cmdlet.
+
 
 ## PARAMETERS
 

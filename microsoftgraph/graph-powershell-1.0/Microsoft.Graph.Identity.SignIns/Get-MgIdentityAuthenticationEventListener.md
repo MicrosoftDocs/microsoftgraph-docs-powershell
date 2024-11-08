@@ -51,13 +51,17 @@ The @odata.type property in the response object indicates the type of the authen
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-list-authenticationeventlisteners-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityAuthenticationEventListener
+
+```
+This example shows how to use the Get-MgIdentityAuthenticationEventListener Cmdlet.
+
 
 ## PARAMETERS
 

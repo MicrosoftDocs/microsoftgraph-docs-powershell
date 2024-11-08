@@ -58,11 +58,11 @@ The following RBAC providers are currently supported:\n- Cloud PC \n- device man
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 $params = @{
 	principalIds = @(
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Update-MgBetaRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaRoleManagementDeviceManagementRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

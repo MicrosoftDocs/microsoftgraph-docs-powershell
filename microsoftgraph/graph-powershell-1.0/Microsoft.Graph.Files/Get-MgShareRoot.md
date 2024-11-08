@@ -34,18 +34,6 @@ Get-MgShareRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 Used to access the underlying driveItem.
 Deprecated -- use driveItem instead.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -199,4 +187,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareroot)
+
 

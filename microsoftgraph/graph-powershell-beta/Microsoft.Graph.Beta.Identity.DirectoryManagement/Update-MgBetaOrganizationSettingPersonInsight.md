@@ -53,11 +53,11 @@ To learn more about customizing insights privacy for your organization, see:\n- 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/insightssettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Update settings for people insights
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	isEnabledInOrganization = $true
@@ -65,6 +65,10 @@ $params = @{
 }
 
 Update-MgBetaOrganizationSettingPersonInsight -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example will update settings for people insights
+
 
 ## PARAMETERS
 

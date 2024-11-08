@@ -63,16 +63,20 @@ For more information about purging Teams messages, see:\n- eDiscovery solution s
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-purgedata-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 }
 
 Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgSecurityCaseEdiscoveryCaseSearchData Cmdlet.
+
 
 ## PARAMETERS
 

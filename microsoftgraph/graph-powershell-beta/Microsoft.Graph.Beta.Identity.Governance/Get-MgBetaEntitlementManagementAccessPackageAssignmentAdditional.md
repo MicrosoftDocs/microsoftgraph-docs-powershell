@@ -46,18 +46,6 @@ It can be used to prepare to configure the incompatible access packages for a sp
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignment-additionalaccess-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -394,4 +382,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentadditional](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentadditional)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta)
+
 

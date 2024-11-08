@@ -46,18 +46,6 @@ Set-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> [-Data <Stream>] [-Re
 ## DESCRIPTION
 The group's profile photo.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -315,4 +303,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupphotocontent)
+
 

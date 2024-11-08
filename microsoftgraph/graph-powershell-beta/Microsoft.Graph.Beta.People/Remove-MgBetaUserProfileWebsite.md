@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebsite
@@ -30,14 +30,18 @@ Remove-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> [-IfMatch <String
 Delete navigation property websites for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileWebsite -UserId $userId -PersonWebsiteId $personWebsiteId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileWebsite Cmdlet.
+
 
 ## PARAMETERS
 

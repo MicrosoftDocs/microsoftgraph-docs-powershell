@@ -49,13 +49,17 @@ Read the properties and relationships of a customAuthenticationExtension object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-list-customauthenticationextensions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
-Get-MgIdentityCustomAuthenticationExtension -Filter "isOf('microsoft.graph.onTokenIssuanceStartCustomExtension')"
+Get-MgIdentityCustomAuthenticationExtension -Filter "isOf('microsoft.graph.onTokenIssuanceStartCustomExtension')" 
+
+```
+This example shows how to use the Get-MgIdentityCustomAuthenticationExtension Cmdlet.
+
 
 ## PARAMETERS
 

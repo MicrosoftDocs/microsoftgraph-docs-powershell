@@ -37,13 +37,17 @@ Unfollow a driveItem.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 Invoke-MgUnfollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Invoke-MgUnfollowDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

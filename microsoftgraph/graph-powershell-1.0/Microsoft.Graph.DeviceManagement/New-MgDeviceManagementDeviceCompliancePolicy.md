@@ -42,37 +42,35 @@ New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDevi
 Create a new windows10MobileCompliancePolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.macOSCompliancePolicy"
+	"@odata.type" = "#microsoft.graph.windowsPhone81CompliancePolicy"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
-	passwordRequired = $true
 	passwordBlockSimple = $true
 	passwordExpirationDays = 
 	passwordMinimumLength = 
 	passwordMinutesOfInactivityBeforeLock = 
-	passwordPreviousPasswordBlockCount = 
 	passwordMinimumCharacterSetCount = 
 	passwordRequiredType = "alphanumeric"
+	passwordPreviousPasswordBlockCount = 
+	passwordRequired = $true
 	osMinimumVersion = "Os Minimum Version value"
 	osMaximumVersion = "Os Maximum Version value"
-	systemIntegrityProtectionEnabled = $true
-	deviceThreatProtectionEnabled = $true
-	deviceThreatProtectionRequiredSecurityLevel = "secured"
 	storageRequireEncryption = $true
-	firewallEnabled = $true
-	firewallBlockAllIncoming = $true
-	firewallEnableStealthMode = $true
 }
 
 New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

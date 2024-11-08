@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetauserinformationprotectionsignature
@@ -46,18 +46,6 @@ Confirm-MgBetaUserInformationProtectionSignature -InputObject <IUsersActionsIden
 
 ## DESCRIPTION
 Invoke action verifySignature
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -316,4 +304,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetauserinformationprotectionsignature](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetauserinformationprotectionsignature)
+
 

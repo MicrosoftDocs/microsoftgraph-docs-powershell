@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileinterest
@@ -38,14 +38,18 @@ Get-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> [-ExpandProperty <S
 Provides detailed information about interests the user has associated with themselves in various services.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileInterest -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileInterest Cmdlet.
+
 
 ## PARAMETERS
 

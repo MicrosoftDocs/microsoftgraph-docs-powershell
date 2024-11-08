@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaccount
@@ -54,11 +54,11 @@ New-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
 Create new navigation property to account for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	allowedAudiences = "organization"
@@ -67,6 +67,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAccount -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileAccount Cmdlet.
+
 
 ## PARAMETERS
 

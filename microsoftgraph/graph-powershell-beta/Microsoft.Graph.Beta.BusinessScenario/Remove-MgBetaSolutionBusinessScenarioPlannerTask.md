@@ -34,13 +34,17 @@ Delete a businessScenarioTask object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-delete-tasks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.BusinessScenario
-```
 
 Remove-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -BusinessScenarioTaskId $businessScenarioTaskId
+
+```
+This example shows how to use the Remove-MgBetaSolutionBusinessScenarioPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

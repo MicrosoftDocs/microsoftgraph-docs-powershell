@@ -48,18 +48,6 @@ New-MgUserEventInstanceAttachment -InputObject <ICalendarIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to attachments for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,4 +354,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceattachment)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementcustomnotificationtocompanyportal
@@ -30,18 +30,6 @@ Send-MgBetaDeviceManagementCustomNotificationToCompanyPortal
 
 ## DESCRIPTION
 Invoke action sendCustomNotificationToCompanyPortal
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -237,4 +225,5 @@ BODYPARAMETER \<IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificatio
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementcustomnotificationtocompanyportal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementcustomnotificationtocompanyportal)
+
 

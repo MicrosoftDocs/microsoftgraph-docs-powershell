@@ -52,11 +52,11 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <I
 Update the properties of a deviceConfigurationDeviceOverview object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceConfigurationDeviceOverview"
@@ -65,11 +65,15 @@ $params = @{
 	successCount = 12
 	errorCount = 10
 	failedCount = 11
-	lastUpdateDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:21.6459442-08:00")
+	lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
 	configurationVersion = 4
 }
 
 Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview Cmdlet.
+
 
 ## PARAMETERS
 

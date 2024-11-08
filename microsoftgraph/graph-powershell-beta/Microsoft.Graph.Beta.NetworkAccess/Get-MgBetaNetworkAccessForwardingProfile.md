@@ -46,13 +46,17 @@ Retrieve information about a specific forwarding profile.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-networkaccessroot-list-forwardingprofiles-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Get-MgBetaNetworkAccessForwardingProfile
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessForwardingProfile Cmdlet.
+
 
 ## PARAMETERS
 

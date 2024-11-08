@@ -39,13 +39,17 @@ Because a class is also a universal group, deleting a class deletes the group.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClass -EducationClassId $educationClassId
+
+```
+This example shows how to use the Remove-MgEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

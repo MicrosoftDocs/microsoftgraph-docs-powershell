@@ -28,13 +28,17 @@ Retrieve the properties and relationships of a peopleAdminSettings object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/peopleadminsettings-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgAdminPeople
+
+```
+This example shows how to use the Get-MgAdminPeople Cmdlet.
+
 
 ## PARAMETERS
 
