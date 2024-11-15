@@ -51,17 +51,21 @@ Update the privacy settings for itemInsights and meeting hours insights of a use
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userinsightssettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 $params = @{
 	isEnabled = "false"
 }
 
 Update-MgBetaUserSettingItemInsight -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserSettingItemInsight Cmdlet.
+
 
 ## PARAMETERS
 

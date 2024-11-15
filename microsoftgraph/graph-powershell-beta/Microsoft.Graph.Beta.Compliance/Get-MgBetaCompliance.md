@@ -23,18 +23,6 @@ Get-MgBetaCompliance [-ExpandProperty <String[]>] [-Property <String[]>] [-Respo
 ## DESCRIPTION
 Get compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -126,4 +114,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacompliance)
+
 

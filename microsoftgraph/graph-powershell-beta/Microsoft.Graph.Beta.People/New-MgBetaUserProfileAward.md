@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaward
@@ -54,11 +54,11 @@ New-MgBetaUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 Create new navigation property to awards for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	description = "Lifetime Achievement award from the International Association of Branding Managers"
@@ -71,6 +71,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAward -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileAward Cmdlet.
+
 
 ## PARAMETERS
 

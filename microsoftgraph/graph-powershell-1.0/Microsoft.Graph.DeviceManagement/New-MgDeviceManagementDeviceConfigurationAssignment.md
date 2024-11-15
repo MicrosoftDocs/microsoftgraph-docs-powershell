@@ -48,11 +48,11 @@ New-MgDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagem
 Create a new deviceConfigurationAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceConfigurationAssignment"
@@ -63,6 +63,10 @@ $params = @{
 }
 
 New-MgDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementdevicecompliancepolicypayloadlink
@@ -29,18 +29,6 @@ Invoke-MgBetaHasDeviceManagementDeviceCompliancePolicyPayloadLink
 
 ## DESCRIPTION
 Invoke action hasPayloadLinks
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -189,4 +177,5 @@ BODY \<IPathsJjrzryDevicemanagementDevicecompliancepoliciesMicrosoftGraphHaspayl
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementdevicecompliancepolicypayloadlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementdevicecompliancepolicypayloadlink)
+
 

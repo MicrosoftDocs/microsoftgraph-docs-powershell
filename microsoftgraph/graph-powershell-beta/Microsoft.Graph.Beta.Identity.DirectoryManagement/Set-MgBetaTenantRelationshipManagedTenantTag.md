@@ -50,11 +50,11 @@ Assign the tenant tag to the specified managed tenants.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-assigntag-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	tenantIds = @(
@@ -63,6 +63,10 @@ $params = @{
 }
 
 Set-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
+
 
 ## PARAMETERS
 

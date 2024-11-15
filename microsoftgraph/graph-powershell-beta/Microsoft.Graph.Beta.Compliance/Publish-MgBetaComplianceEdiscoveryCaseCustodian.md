@@ -36,13 +36,17 @@ For details, see Release a custodian from a case.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-release-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Publish-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId
+
+```
+This example shows how to use the Publish-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

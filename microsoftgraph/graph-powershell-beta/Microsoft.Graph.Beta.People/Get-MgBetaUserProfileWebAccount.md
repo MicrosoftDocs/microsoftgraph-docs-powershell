@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilewebaccount
@@ -38,14 +38,18 @@ Get-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> [-ExpandProperty 
 Represents web accounts the user has indicated they use or has added to their user profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileWebAccount -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileWebAccount Cmdlet.
+
 
 ## PARAMETERS
 

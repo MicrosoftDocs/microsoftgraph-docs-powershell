@@ -36,13 +36,17 @@ Get the license status of a user in Microsoft Teams.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/licensedetails-getteamslicensingdetails-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Functions
-```
 
 Get-MgBetaUserLicenseDetailTeamLicensingDetail -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserLicenseDetailTeamLicensingDetail Cmdlet.
+
 
 ## PARAMETERS
 

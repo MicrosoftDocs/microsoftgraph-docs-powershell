@@ -48,11 +48,11 @@ Create a new connectedOrganization object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-connectedorganizations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Connected organization name"
@@ -68,6 +68,10 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
+
 
 ## PARAMETERS
 

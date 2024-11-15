@@ -35,16 +35,17 @@ The owner of the approval can trigger this endpoint.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalitem-cancel-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Stop-MgBetaApprovalItem -ApprovalItemId $approvalItemId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Stop-MgBetaApprovalItem Cmdlet.
+
 
 ## PARAMETERS
 

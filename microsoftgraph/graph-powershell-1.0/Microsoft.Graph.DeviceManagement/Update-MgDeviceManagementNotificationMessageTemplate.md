@@ -54,11 +54,11 @@ Update-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManage
 Update the properties of a notificationMessageTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.notificationMessageTemplate"
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementNotificationMessageTemplate -NotificationMessageTemplateId $notificationMessageTemplateId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementNotificationMessageTemplate Cmdlet.
+
 
 ## PARAMETERS
 

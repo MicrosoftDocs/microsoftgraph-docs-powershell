@@ -32,18 +32,6 @@ Remove-MgUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity> [-I
 ## DESCRIPTION
 Delete navigation property operations for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -278,4 +266,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationoperation)
+
 

@@ -48,18 +48,6 @@ Update-MgBetaUserChatLastMessagePreview -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property lastMessagePreview in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -415,4 +403,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatlastmessagepreview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatlastmessagepreview)
+
 

@@ -73,11 +73,11 @@ Update the properties of a cloudPcProvisioningPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcProvisioningPolicy"
@@ -100,9 +100,18 @@ $params = @{
 	autopatch = @{
 		autopatchGroupId = "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
 	}
+	autopilotConfiguration = @{
+		devicePreparationProfileId = "59e5d3d2-ec68-4bfe-9693-27975b318990"
+		applicationTimeoutInMinutes = 30
+		onFailureDeviceAccessDenied = $false
+	}
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+
 
 ## PARAMETERS
 

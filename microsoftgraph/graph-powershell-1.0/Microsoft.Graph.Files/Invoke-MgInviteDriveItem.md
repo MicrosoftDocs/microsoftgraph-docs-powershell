@@ -57,11 +57,11 @@ Sends a sharing invitation for a driveItem.\nA sharing invitation provides permi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-invite-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	recipients = @(
@@ -80,6 +80,10 @@ expirationDateTime = "2018-07-15T14:00:00.000Z"
 }
 
 Invoke-MgInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgInviteDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

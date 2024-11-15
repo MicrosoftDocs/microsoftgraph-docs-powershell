@@ -48,18 +48,6 @@ To update the properties of a published assignment, see update an assignment.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-publish-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -210,4 +198,5 @@ INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationmeassignment)
 
 [https://learn.microsoft.com/graph/api/educationassignment-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-publish?view=graph-rest-beta)
+
 

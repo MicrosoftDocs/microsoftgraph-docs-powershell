@@ -38,18 +38,6 @@ Get-MgAgreement -InputObject <IIdentityGovernanceIdentity> [-Property <String[]>
 ## DESCRIPTION
 Get entity from agreements by key
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -367,4 +355,6 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreement)
+
+
 

@@ -59,11 +59,11 @@ The containing externalConnection must have a schema registered of the correspon
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-update-permissions.md)]
 
 ## EXAMPLES
+### Example: Create a custom item
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	acl = @(
@@ -92,6 +92,10 @@ $params = @{
 }
 
 Set-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
+
+```
+This example will### example: create a custom item
+
 
 ## PARAMETERS
 

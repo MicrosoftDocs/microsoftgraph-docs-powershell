@@ -100,18 +100,6 @@ Create a new application object if it doesn't exist, or update the properties of
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-upsert-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddIns
@@ -2471,4 +2459,5 @@ WEB \<IMicrosoftGraphWebApplication\>: webApplication
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyappid)
 
 [https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0)
+
 

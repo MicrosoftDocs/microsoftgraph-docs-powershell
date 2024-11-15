@@ -41,13 +41,17 @@ The following derived subtypes are supported:\n- externalUsersSelfServiceSignupE
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventsflow-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId
+
+```
+This example shows how to use the Remove-MgIdentityAuthenticationEventFlow Cmdlet.
+
 
 ## PARAMETERS
 

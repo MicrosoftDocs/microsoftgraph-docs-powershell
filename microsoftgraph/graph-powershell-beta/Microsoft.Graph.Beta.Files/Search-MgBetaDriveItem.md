@@ -39,13 +39,17 @@ Search the hierarchy of items for items matching a query.\nYou can search within
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-search-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Search-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Search-MgBetaDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

@@ -43,13 +43,17 @@ Get-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorporateM
 Read properties and relationships of the iosMobileAppConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementMobileAppConfiguration
+
+```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

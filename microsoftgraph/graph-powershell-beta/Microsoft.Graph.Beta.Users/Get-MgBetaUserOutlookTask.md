@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktask
@@ -42,22 +42,30 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Get an Outlook task
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 
-### EXAMPLE 2
 ```
+This example will get an outlook task
+
+### Example 2: Get Outlook task with date-time properties in Pacific Standard Time
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
+
+```
+This example will get outlook task with date-time properties in pacific standard time
+
 
 ## PARAMETERS
 

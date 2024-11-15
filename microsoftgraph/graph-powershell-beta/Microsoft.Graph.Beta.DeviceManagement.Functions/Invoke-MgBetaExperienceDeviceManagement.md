@@ -23,18 +23,6 @@ Invoke-MgBetaExperienceDeviceManagement [-ResponseHeadersVariable <String>] [-He
 ## DESCRIPTION
 Invoke function userExperienceAnalyticsSummarizedDeviceScopes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -97,4 +85,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement)
+
 

@@ -30,13 +30,17 @@ Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-grouplifecyclepolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupLifecyclePolicyByGroup -GroupId $groupId
+
+```
+This example shows how to use the Get-MgGroupLifecyclePolicyByGroup Cmdlet.
+
 
 ## PARAMETERS
 

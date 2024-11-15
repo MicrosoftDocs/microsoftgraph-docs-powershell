@@ -42,18 +42,6 @@ Get-MgUserDriveBundle -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -358,4 +346,6 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivebundle)
+
+
 
