@@ -46,18 +46,6 @@ Remove-MgGroupPhotoContent -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 The group's profile photo
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -273,4 +261,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupphotocontent)
+
 

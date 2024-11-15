@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementoperationapprovalrequestmyrequest
@@ -29,18 +29,6 @@ Stop-MgBetaDeviceManagementOperationApprovalRequestMyRequest
 
 ## DESCRIPTION
 Invoke action cancelMyRequest
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -204,4 +192,5 @@ BODYPARAMETER \<IPathsN1ActbDevicemanagementOperationapprovalrequestsMicrosoftGr
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementoperationapprovalrequestmyrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementoperationapprovalrequestmyrequest)
+
 

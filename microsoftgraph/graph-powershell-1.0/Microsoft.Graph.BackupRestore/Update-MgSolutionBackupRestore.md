@@ -47,18 +47,6 @@ Update-MgSolutionBackupRestore -BodyParameter <IMicrosoftGraphBackupRestoreRoot>
 ## DESCRIPTION
 Update the navigation property backupRestore in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1509,4 +1497,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestore](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestore)
+
 

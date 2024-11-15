@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiterecyclebin
@@ -50,18 +50,6 @@ Update-MgBetaGroupSiteRecycleBin -InputObject <ISitesIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update the navigation property recycleBin in groups
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -32787,4 +32775,5 @@ For OneDrive, this property isn't populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiterecyclebin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiterecyclebin)
+
 
