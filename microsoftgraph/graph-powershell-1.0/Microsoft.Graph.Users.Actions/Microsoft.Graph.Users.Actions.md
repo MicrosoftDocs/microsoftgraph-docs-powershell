@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: 1e9ca128-c324-4b95-840b-dfbbb60f957f
+Module Guid: b54e8094-b88c-4ea6-811c-2908520f7b5f
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -362,23 +362,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserOnenotePageContent](Update-MgUserOnenotePageContent.md)
 
 ### [Update-MgUserPassword](Update-MgUserPassword.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

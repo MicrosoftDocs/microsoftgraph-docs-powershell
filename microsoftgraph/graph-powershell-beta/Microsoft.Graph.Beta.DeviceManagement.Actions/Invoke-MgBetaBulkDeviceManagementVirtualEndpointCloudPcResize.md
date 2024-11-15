@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementvirtualendpointcloudpcresize
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize
@@ -35,15 +34,12 @@ Perform a bulk resize action to resize a group of cloudPCs that successfully pas
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-bulkresize-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+```
 
 $params = @{
 	cloudPcIds = @(
@@ -54,10 +50,6 @@ targetServicePlanId = "662009bc-7732-4f6f-8726-25883518b33e"
 }
 
 Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize Cmdlet.
-
 
 ## PARAMETERS
 
@@ -214,35 +206,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsRwbgwyDevicemanagementVirtualendpointCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CloudPcIds <String- `[]`>]`: 
-  - `[TargetServicePlanId <String>]`:
+BODYPARAMETER \<IPathsRwbgwyDevicemanagementVirtualendpointCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CloudPcIds \<String\[\]\>\]: 
+  \[TargetServicePlanId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementvirtualendpointcloudpcresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementvirtualendpointcloudpcresize)
 
 [https://learn.microsoft.com/graph/api/cloudpc-bulkresize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-bulkresize?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

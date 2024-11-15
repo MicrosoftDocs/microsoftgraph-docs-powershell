@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.ChangeNotifications
-Module Guid: 601b0161-adb7-4492-9992-90a436d0de35
+Module Guid: 78cc0ac9-a85c-4f1e-8aac-60ef3e0c0fe7
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -22,23 +22,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSubscription](Remove-MgSubscription.md)
 
 ### [Update-MgSubscription](Update-MgSubscription.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

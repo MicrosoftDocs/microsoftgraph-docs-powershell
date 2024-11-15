@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicy
 schema: 2.0.0
-ms.subservice: autopatch
 ---
 
 # Remove-MgBetaWindowsUpdatesPolicy
@@ -30,21 +29,14 @@ Remove-MgBetaWindowsUpdatesPolicy -InputObject <IWindowsUpdatesIdentity> [-IfMat
 ## DESCRIPTION
 Delete an updatePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
+```
 
 Remove-MgBetaWindowsUpdatesPolicy -UpdatePolicyId $updatePolicyId
-
-```
-This example shows how to use the Remove-MgBetaWindowsUpdatesPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -201,47 +193,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
-  - `[ApplicableContentCatalogEntryId <String>]`: The unique identifier of applicableContent
-  - `[ApplicableContentDeviceMatchDeviceId <String>]`: The unique identifier of applicableContentDeviceMatch
-  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
-  - `[CatalogId <String>]`: Usage: catalogID='{catalogID}'
-  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
-  - `[DaysInPast <Int32?>]`: Usage: daysInPast={daysInPast}
-  - `[DeploymentId <String>]`: The unique identifier of deployment
-  - `[EditionId <String>]`: The unique identifier of edition
-  - `[KbNumber <Int32?>]`: Usage: kbNumber={kbNumber}
-  - `[KnownIssueId <String>]`: The unique identifier of knownIssue
-  - `[ProductId <String>]`: The unique identifier of product
-  - `[ProductRevisionId <String>]`: The unique identifier of productRevision
-  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
-  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
-  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
+INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
+  \[ApplicableContentCatalogEntryId \<String\>\]: The unique identifier of applicableContent
+  \[ApplicableContentDeviceMatchDeviceId \<String\>\]: The unique identifier of applicableContentDeviceMatch
+  \[CatalogEntryId \<String\>\]: The unique identifier of catalogEntry
+  \[CatalogId \<String\>\]: Usage: catalogID='{catalogID}'
+  \[ComplianceChangeId \<String\>\]: The unique identifier of complianceChange
+  \[DaysInPast \<Int32?\>\]: Usage: daysInPast={daysInPast}
+  \[DeploymentId \<String\>\]: The unique identifier of deployment
+  \[EditionId \<String\>\]: The unique identifier of edition
+  \[KbNumber \<Int32?\>\]: Usage: kbNumber={kbNumber}
+  \[KnownIssueId \<String\>\]: The unique identifier of knownIssue
+  \[ProductId \<String\>\]: The unique identifier of product
+  \[ProductRevisionId \<String\>\]: The unique identifier of productRevision
+  \[ResourceConnectionId \<String\>\]: The unique identifier of resourceConnection
+  \[UpdatableAssetId \<String\>\]: The unique identifier of updatableAsset
+  \[UpdatePolicyId \<String\>\]: The unique identifier of updatePolicy
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicy)
 
 [https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

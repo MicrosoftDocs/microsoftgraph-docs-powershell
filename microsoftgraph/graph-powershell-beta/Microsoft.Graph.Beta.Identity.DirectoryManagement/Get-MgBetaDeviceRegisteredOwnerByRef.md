@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredownerbyref
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDeviceRegisteredOwnerByRef
@@ -13,9 +12,6 @@ Retrieve a list of users that are registered owners of the device.
 A registered owner is the user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
 Currently, there can be only one owner.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredOwnerByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,8 +28,17 @@ A registered owner is the user that cloud joined the device or registered their 
 The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-registeredowners-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -250,26 +255,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredownerbyref)
 
 [https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

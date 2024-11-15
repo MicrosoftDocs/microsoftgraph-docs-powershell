@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunitdelta
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryAdministrativeUnitDelta
@@ -11,9 +10,6 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
 For details, see Using delta query.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAdministrativeUnitDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,8 +24,17 @@ Get-MgBetaDirectoryAdministrativeUnitDelta [-ExpandProperty <String[]>] [-Filter
 Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
 For details, see Using delta query.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delta-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -245,26 +250,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunitdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunitdelta)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
