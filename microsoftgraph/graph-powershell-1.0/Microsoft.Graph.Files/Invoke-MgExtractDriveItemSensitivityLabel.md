@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgextractdriveitemsensitivitylabel
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action extractSensitivityLabels
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaExtractDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaExtractDriveItemSensitivityLabel?view=graph-powershell-beta)
 
 ## SYNTAX
 

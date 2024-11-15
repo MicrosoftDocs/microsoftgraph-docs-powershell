@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostextension
@@ -12,6 +12,9 @@ The collection of open extensions defined for the post.
 Read-only.
 Nullable.
 Supports $expand.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPostExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 

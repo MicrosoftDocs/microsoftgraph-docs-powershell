@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Create a new group object in a term store.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

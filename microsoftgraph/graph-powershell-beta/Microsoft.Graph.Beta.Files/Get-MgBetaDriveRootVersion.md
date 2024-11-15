@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootversion
@@ -12,6 +12,9 @@ The list of previous versions of the item.
 For more info, see getting previous versions.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 

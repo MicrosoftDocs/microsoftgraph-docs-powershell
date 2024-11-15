@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestteam
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Information about the Microsoft Teams team that was created for the request.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 

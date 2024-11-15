@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouppermissiongrant
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to permissionGrants for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 
 ## SYNTAX
 

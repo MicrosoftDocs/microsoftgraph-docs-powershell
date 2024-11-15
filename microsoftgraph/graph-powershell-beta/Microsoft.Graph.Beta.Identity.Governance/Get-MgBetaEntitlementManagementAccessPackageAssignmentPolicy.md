@@ -12,6 +12,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ListAll (Default)

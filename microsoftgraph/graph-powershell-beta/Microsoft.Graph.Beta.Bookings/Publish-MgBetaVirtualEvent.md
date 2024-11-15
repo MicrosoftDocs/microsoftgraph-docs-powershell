@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetavirtualevent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action publish
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgVirtualEvent](/powershell/module/Microsoft.Graph.Bookings/Publish-MgVirtualEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 

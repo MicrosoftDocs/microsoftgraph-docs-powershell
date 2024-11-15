@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicy
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property oneDriveForBusinessProtectionPolicies for solutions
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 

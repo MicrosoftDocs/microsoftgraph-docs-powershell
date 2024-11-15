@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarsessionattendancereportattendancerecord
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to attendanceRecords for solutions
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 

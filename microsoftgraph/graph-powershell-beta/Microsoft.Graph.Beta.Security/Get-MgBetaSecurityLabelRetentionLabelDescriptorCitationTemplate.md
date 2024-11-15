@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldescriptorcitationtemplate
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 

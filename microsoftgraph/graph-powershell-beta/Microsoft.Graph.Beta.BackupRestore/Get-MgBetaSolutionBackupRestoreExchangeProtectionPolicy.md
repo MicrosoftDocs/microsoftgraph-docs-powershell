@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreexchangeprotectionpolicy
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The list of Exchange protection policies in the tenant.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreExchangeProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreExchangeProtectionPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 

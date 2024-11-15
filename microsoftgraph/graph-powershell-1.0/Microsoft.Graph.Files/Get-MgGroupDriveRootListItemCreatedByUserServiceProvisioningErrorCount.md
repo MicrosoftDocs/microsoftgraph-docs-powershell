@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemcreatedbyuserserviceprovisioningerrorcount
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-beta)
 
 ## SYNTAX
 

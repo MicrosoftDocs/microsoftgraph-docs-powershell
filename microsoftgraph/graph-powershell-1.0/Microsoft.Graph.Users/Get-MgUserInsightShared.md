@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsightshared
@@ -12,6 +12,9 @@ Calculated relationship that identifies documents shared with or by the user.
 This includes URLs, file attachments, and reference attachments to OneDrive for work or school and SharePoint files found in Outlook messages and meetings.
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightShared](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightShared?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreprotectionpolicy
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to protectionPolicies for solutions
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 

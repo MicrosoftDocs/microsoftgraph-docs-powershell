@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoredriveinclusionrule
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to driveInclusionRules for solutions
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreDriveInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreDriveInclusionRule?view=graph-powershell-beta)
 
 ## SYNTAX
 

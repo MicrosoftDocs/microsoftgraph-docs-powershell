@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/set-mgbetausermailfoldermessagecontent
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The unique identifier for an entity.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserMailFolderMessageContent](/powershell/module/Microsoft.Graph.Mail/Set-MgUserMailFolderMessageContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoreset
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of all sets available in the term store.
 This relationship can only be used to load a specific term set.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
 ## SYNTAX
 

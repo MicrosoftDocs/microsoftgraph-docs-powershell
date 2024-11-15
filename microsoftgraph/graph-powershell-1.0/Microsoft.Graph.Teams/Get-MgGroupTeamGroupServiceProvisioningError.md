@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroupserviceprovisioningerror
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamGroupServiceProvisioningError?view=graph-powershell-beta)
 
 ## SYNTAX
 

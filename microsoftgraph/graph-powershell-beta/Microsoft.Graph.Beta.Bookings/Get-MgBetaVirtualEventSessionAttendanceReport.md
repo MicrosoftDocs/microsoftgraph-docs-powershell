@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionattendancereport
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The attendance reports of an online meeting.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionAttendanceReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 

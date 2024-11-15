@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Install an app to the specified team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgTeamInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

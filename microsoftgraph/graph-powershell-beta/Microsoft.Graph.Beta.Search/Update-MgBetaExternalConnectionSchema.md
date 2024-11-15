@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Update the properties of a schema for an externalConnection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

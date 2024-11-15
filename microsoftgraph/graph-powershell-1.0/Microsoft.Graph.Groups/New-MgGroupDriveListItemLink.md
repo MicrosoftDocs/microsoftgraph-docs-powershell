@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdrivelistitemlink
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action createLink
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListItemLink](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveListItemLink?view=graph-powershell-beta)
 
 ## SYNTAX
 

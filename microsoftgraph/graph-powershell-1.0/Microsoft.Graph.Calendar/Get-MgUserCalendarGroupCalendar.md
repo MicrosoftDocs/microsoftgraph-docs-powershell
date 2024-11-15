@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar
@@ -12,6 +12,9 @@ The calendars in the calendar group.
 Navigation property.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 

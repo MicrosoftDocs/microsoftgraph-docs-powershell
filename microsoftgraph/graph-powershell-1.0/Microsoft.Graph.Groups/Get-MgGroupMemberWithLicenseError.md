@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberwithlicenseerror
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A list of group members with license errors from this group-based license assignment.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberWithLicenseError](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberWithLicenseError?view=graph-powershell-beta)
 
 ## SYNTAX
 

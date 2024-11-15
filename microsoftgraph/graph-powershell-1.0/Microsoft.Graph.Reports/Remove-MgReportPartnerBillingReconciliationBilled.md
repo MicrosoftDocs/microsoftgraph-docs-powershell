@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingreconciliationbilled
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property billed for reports
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBillingReconciliationBilled?view=graph-powershell-beta)
 
 ## SYNTAX
 

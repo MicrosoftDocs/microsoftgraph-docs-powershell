@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupphotocontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The group's profile photo
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupPhotoContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

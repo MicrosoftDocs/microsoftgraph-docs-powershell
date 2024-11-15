@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistcontenttypecolumn
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property columns for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListContentTypeColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

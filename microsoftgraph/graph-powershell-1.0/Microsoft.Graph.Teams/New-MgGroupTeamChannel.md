@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to channels for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 

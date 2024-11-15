@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbaselinerebootanalyticmetric
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The scores and insights for the reboot analytics metrics.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric?view=graph-powershell-beta)
 
 ## SYNTAX
 

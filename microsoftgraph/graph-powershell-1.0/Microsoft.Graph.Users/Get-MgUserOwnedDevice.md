@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevice
@@ -12,6 +12,9 @@ Devices the user owns.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new complianceManagementPartner object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -12,6 +12,9 @@ ms.subservice: teams
 Send an activity feed notification in the scope of a team.
 For more information about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SendExpanded (Default)

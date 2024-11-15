@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandingfavicon
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingFavicon?view=graph-powershell-beta)
 
 ## SYNTAX
 

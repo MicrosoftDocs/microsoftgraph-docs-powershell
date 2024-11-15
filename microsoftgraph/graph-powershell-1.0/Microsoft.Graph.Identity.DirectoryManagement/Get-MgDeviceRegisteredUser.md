@@ -12,6 +12,9 @@ ms.subservice: entra-directory-management
 Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

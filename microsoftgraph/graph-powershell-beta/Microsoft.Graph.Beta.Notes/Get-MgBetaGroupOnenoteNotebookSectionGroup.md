@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebooksectiongroup
@@ -11,6 +11,9 @@ schema: 2.0.0
 The section groups in the notebook.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 

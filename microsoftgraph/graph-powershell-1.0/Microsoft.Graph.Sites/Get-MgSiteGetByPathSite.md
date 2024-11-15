@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathsite
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of the sub-sites under this site.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathSite?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptor
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptor?view=graph-powershell-beta)
 
 ## SYNTAX
 

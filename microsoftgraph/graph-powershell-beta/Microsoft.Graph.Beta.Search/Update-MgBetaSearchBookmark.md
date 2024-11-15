@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Update the properties of a bookmark object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Update-MgSearchBookmark?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

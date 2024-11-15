@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstance
@@ -14,6 +14,9 @@ It doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventInstance](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 

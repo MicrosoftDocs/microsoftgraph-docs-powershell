@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingrecordingdelta
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingRecordingDelta](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingRecordingDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 

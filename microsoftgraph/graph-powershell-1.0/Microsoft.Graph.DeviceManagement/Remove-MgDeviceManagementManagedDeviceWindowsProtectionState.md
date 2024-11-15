@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmanageddevicewindowsprotectionstate
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property windowsProtectionState for deviceManagement
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
 
 ## SYNTAX
 

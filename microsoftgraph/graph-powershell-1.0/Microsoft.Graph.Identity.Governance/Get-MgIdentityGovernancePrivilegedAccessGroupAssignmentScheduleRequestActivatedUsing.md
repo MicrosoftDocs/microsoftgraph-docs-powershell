@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentschedulerequestactivatedusing
@@ -11,6 +11,9 @@ schema: 2.0.0
 When the request activates a membership or ownership assignment in PIM for groups, this object represents the eligibility policy for the group.
 Otherwise, it is null.
 Supports $expand.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing?view=graph-powershell-beta)
 
 ## SYNTAX
 

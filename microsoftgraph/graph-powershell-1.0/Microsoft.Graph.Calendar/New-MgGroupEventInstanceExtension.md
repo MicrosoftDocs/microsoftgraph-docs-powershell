@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventinstanceextension
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to extensions for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventInstanceExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 

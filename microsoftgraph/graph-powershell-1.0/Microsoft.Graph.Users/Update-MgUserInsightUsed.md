@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsightused
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property used in users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserInsightUsed](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserInsightUsed?view=graph-powershell-beta)
 
 ## SYNTAX
 

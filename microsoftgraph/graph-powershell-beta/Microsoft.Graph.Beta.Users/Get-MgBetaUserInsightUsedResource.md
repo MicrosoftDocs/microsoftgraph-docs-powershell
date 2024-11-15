@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsightusedresource
@@ -11,6 +11,9 @@ schema: 2.0.0
 Used for navigating to the item that was used.
 For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserInsightUsedResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightUsedResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 

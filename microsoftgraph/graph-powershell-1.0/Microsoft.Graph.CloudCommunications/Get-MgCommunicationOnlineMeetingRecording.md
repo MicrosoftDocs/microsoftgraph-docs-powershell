@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingrecording
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The recordings of an online meeting.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingRecording?view=graph-powershell-beta)
 
 ## SYNTAX
 
