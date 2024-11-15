@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetatopidentitygovernancelifecycleworkflowinsighttaskprocessedsummary
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary
@@ -34,6 +35,9 @@ Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary
 Provide a summary of the most processed tasks, known as top tasks, for a specified time period in a tenant.
 The task definition is provided, along with numerical counts of total, successful, and failed runs.
 For information about workflows processed, see insights: topWorkflowsProcessedSummary.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-insights-toptasksprocessedsummary-permissions.md)]
 
 ## EXAMPLES
 

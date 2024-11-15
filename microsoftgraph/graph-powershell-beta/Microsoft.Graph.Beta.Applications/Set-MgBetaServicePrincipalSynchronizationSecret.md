@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationsecret
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Set-MgBetaServicePrincipalSynchronizationSecret
@@ -46,6 +47,9 @@ Set-MgBetaServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdent
 
 ## DESCRIPTION
 Provide credentials for establishing connectivity with the target system.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-serviceprincipal-put-synchronization-permissions.md)]
 
 ## EXAMPLES
 

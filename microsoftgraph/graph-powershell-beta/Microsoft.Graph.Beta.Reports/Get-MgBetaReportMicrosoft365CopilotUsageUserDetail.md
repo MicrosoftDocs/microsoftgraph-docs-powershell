@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusageuserdetail
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgBetaReportMicrosoft365CopilotUsageUserDetail
@@ -28,6 +29,9 @@ Get-MgBetaReportMicrosoft365CopilotUsageUserDetail -InputObject <IReportsIdentit
 
 ## DESCRIPTION
 Get the most recent activity data for enabled users of Copilot for Microsoft 365 apps.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getmicrosoft365copilotusageuserdetail-permissions.md)]
 
 ## EXAMPLES
 

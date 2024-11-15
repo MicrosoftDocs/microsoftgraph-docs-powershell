@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistcolumn
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaSiteListColumn
@@ -64,6 +65,9 @@ New-MgBetaSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create columnDefinition
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-post-columns-permissions.md)]
 
 ## EXAMPLES
 

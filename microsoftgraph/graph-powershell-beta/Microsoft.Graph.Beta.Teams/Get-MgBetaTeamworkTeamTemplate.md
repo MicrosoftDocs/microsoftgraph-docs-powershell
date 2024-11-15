@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplate
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamworkTeamTemplate
@@ -36,6 +37,9 @@ Get-MgBetaTeamworkTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 The templates associated with a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamtemplate-list-definitions-permissions.md)]
 
 ## EXAMPLES
 

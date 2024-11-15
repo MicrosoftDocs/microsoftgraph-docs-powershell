@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityConditionalAccessNamedLocation
@@ -31,6 +32,9 @@ New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-post-namedlocations-permissions.md)]
 
 ## EXAMPLES
 

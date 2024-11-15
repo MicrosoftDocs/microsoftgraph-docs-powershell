@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreonedriveforbusinessrestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession
@@ -50,6 +51,9 @@ Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession -InputObject <IB
 
 ## DESCRIPTION
 Update the properties of a oneDriveForBusinessRestoreSession object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onedriveforbusinessrestoresession-update-permissions.md)]
 
 ## EXAMPLES
 

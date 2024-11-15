@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenariobyuniquename
 schema: 2.0.0
+ms.subservice: business-scenarios
 ---
 
 # Update-MgBetaSolutionBusinessScenarioByUniqueName
@@ -49,6 +50,9 @@ Update-MgBetaSolutionBusinessScenarioByUniqueName -InputObject <IBusinessScenari
 
 ## DESCRIPTION
 Update the properties of a businessScenario object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-update-permissions.md)]
 
 ## EXAMPLES
 

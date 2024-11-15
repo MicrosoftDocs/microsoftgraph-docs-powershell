@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mggraphidentitygovernancelifecycleworkflowinsight
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight
@@ -30,6 +31,9 @@ Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight -InputObject <IIdentity
 ## DESCRIPTION
 Provide a summary of workflows processed, by category, in a tenant.
 This allows you to quickly get category information, by numerical value, bypassing other information found in the WorkflowsProcessedSummary call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-insights-workflowsprocessedbycategory-permissions.md)]
 
 ## EXAMPLES
 

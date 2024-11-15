@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetauserapproleassignment
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # New-MgBetaUserAppRoleAssignment
@@ -48,6 +49,9 @@ New-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Use this API to assign an app role to a user, creating an appRoleAssignment object.
 To grant an app role assignment to a user, you need three identifiers:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-approleassignments-permissions.md)]
 
 ## EXAMPLES
 

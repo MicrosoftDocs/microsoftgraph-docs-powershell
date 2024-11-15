@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamChannel
@@ -59,6 +60,9 @@ Create a new channel in a team, as specified in the request body.
 When you create a channel, the maximum length of the channel's displayName is 50 characters.
 This display name appears to the user in Microsoft Teams.
 You can add a maximum of 200 members when you create a private channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-post-permissions.md)]
 
 ## EXAMPLES
 

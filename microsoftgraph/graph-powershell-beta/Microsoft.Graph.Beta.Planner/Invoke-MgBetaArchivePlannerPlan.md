@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaarchiveplannerplan
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Invoke-MgBetaArchivePlannerPlan
@@ -56,6 +57,9 @@ Archived entities cannot be updated.
 An archived plan can be unarchived.
 All archived entities can be deleted.
 Archived tasks are not included in the response for list of tasks assigned to a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-archive-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpreapprovalpolicy
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgBetaPolicyPermissionGrantPreApprovalPolicy
@@ -44,6 +45,9 @@ Update-MgBetaPolicyPermissionGrantPreApprovalPolicy -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Update the properties of a permissionGrantPreApprovalPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpreapprovalpolicy-update-permissions.md)]
 
 ## EXAMPLES
 

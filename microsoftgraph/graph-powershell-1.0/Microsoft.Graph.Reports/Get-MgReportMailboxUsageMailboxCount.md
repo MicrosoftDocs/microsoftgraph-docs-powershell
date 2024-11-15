@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportMailboxUsageMailboxCount
@@ -29,6 +30,9 @@ Get-MgReportMailboxUsageMailboxCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Get the total number of user mailboxes in your organization and how many are active each day of the reporting period.
 A mailbox is considered active if the user sent or read any email.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getmailboxusagemailboxcounts-permissions.md)]
 
 ## EXAMPLES
 

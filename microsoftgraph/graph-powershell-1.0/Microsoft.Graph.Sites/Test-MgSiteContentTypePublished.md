@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Test-MgSiteContentTypePublished
@@ -26,6 +27,9 @@ Test-MgSiteContentTypePublished -InputObject <ISitesIdentity> [-ResponseHeadersV
 
 ## DESCRIPTION
 Check the publishing status of a contentType in a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-ispublished-permissions.md)]
 
 ## EXAMPLES
 

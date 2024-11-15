@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy
 schema: 2.0.0
+ms.subservice: entra-id
 ---
 
 # Update-MgBetaServicePrincipalClaimPolicy
@@ -45,6 +46,9 @@ Update-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update a customClaimsPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-put-claimspolicy-permissions.md)]
 
 ## EXAMPLES
 

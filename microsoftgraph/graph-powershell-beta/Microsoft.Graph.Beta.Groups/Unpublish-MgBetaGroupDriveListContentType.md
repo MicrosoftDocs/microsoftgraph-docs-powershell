@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupdrivelistcontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Unpublish-MgBetaGroupDriveListContentType
@@ -28,6 +29,9 @@ Unpublish-MgBetaGroupDriveListContentType -InputObject <IGroupsIdentity> [-Respo
 
 ## DESCRIPTION
 Invoke action unpublish
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassrecentlymodifiedsubmission
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassRecentlyModifiedSubmission
@@ -44,6 +45,9 @@ A teacher or application with application permissions has full access to all sub
 The grade and feedback from a teacher are part of the educationOutcome associated with this object.
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students can't see the grade or feedback until the assignment is released.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-getrecentlymodifiedsubmissions-permissions.md)]
 
 ## EXAMPLES
 

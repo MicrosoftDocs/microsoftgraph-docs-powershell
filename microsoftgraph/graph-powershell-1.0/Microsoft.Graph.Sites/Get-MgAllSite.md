@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgAllSite
@@ -24,6 +25,9 @@ Get-MgAllSite [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [-Propert
 List sites across geographies in an organization.
 This API can also be used to enumerate all sites in a non-multi-geo tenant.
 For more information, see Best practices for discovering files and detecting changes at scale.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-getallsites-permissions.md)]
 
 ## EXAMPLES
 

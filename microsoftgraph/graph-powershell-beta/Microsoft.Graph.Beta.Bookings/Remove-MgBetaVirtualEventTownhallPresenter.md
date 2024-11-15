@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallpresenter
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Remove-MgBetaVirtualEventTownhallPresenter
@@ -30,6 +31,9 @@ Remove-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-If
 ## DESCRIPTION
 Delete a virtualEventPresenter from a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventpresenter-delete-permissions.md)]
 
 ## EXAMPLES
 

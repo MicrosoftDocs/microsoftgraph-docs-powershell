@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouplifecyclepolicy
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Update-MgBetaGroupLifecyclePolicy
@@ -75,6 +76,9 @@ Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-update-permissions.md)]
 
 ## EXAMPLES
 

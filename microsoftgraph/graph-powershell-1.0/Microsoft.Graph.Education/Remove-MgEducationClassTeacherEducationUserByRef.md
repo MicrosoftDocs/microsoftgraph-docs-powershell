@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassteachereducationuserbyref
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Remove-MgEducationClassTeacherEducationUserByRef
@@ -28,6 +29,9 @@ Remove-MgEducationClassTeacherEducationUserByRef -InputObject <IEducationIdentit
 
 ## DESCRIPTION
 Remove a teacher from an educationClass.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-delete-teachers-permissions.md)]
 
 ## EXAMPLES
 

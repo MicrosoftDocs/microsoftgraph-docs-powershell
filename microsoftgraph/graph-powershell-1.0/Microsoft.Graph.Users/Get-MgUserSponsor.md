@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Get-MgUserSponsor
@@ -40,6 +41,9 @@ Get-MgUserSponsor -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-sponsors-permissions.md)]
 
 ## EXAMPLES
 

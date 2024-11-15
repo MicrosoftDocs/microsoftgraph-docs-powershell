@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremiseconnection
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Update-MgDeviceManagementVirtualEndpointOnPremiseConnection
@@ -54,6 +55,9 @@ Update-MgDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## DESCRIPTION
 Update the properties of a cloudPcOnPremisesConnection object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpconpremisesconnection-update-permissions.md)]
 
 ## EXAMPLES
 

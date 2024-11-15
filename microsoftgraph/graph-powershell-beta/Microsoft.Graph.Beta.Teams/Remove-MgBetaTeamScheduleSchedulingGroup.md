@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleschedulinggroup
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamScheduleSchedulingGroup
@@ -30,6 +31,9 @@ Remove-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-IfMatch
 ## DESCRIPTION
 Mark a schedulingGroup as inactive by setting its isActive property.\nThis method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedulinggroup-delete-permissions.md)]
 
 ## EXAMPLES
 
