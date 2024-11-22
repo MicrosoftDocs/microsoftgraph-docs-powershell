@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Create a new listItem in a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

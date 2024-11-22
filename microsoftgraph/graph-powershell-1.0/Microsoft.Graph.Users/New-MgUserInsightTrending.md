@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserinsighttrending
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to trending for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserInsightTrending](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserInsightTrending?view=graph-powershell-beta)
 
 ## SYNTAX
 

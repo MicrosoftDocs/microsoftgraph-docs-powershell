@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequest
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get subjectRightsRequests from security
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 

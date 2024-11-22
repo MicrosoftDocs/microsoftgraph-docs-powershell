@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignmentcategory
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to categories for education
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 

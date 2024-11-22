@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserchatretainedmessage
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getAllRetainedMessages
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatRetainedMessage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserChatRetainedMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 

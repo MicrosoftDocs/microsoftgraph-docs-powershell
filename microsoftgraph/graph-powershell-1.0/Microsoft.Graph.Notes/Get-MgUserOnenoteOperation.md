@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenoteoperation
@@ -12,6 +12,9 @@ The status of OneNote operations.
 Getting an operations collection isn't supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 

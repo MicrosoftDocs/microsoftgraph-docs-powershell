@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetacommitdeviceappmanagementmobileappmicrosoftgraphwin32lobappcontentversionfile
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Commits a file of a given app.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile?view=graph-powershell-1.0)
 
 ## SYNTAX
 

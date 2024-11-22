@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresessionmailboxrestoreartifact
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property mailboxRestoreArtifacts in solutions
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact?view=graph-powershell-beta)
 
 ## SYNTAX
 

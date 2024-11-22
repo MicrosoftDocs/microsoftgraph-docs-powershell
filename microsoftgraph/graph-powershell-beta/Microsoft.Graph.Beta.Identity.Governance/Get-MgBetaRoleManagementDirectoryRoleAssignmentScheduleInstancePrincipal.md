@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignmentscheduleinstanceprincipal
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The principal that's getting a role assignment or role eligibility through the request.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstancePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 

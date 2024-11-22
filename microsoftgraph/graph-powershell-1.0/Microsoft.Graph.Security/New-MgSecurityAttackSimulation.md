@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Create an attack simulation campaign for a tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

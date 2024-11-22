@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistcreatedbyusermailboxsetting
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update property mailboxSettings value.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListCreatedByUserMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgsummaryidentitygovernancelifecycleworkflowtaskreport
@@ -11,6 +11,9 @@ schema: 2.0.0
 Get a taskReportSummary object.
 This API provides a summary of task processing results for a specified time period.
 Because the volume of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-beta)
 
 ## SYNTAX
 

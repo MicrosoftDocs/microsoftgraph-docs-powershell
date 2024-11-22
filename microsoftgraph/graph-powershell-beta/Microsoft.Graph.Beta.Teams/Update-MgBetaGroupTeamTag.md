@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamtag
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property tags in groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamTag?view=graph-powershell-1.0)
 
 ## SYNTAX
 

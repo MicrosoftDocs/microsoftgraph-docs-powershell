@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbaselineworkfromanywheremetric
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The scores and insights for the work from anywhere metrics.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric?view=graph-powershell-beta)
 
 ## SYNTAX
 

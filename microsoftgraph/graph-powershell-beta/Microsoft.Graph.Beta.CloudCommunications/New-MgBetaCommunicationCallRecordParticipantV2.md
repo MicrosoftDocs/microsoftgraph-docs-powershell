@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallrecordparticipantv2
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to participants_v2 for communications
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallRecordParticipantV2](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallRecordParticipantV2?view=graph-powershell-1.0)
 
 ## SYNTAX
 

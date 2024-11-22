@@ -12,6 +12,9 @@ ms.subservice: security
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

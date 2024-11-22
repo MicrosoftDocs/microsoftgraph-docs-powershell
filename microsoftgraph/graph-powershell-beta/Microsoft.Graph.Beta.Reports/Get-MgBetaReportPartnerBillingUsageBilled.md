@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingusagebilled
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents details for billed Azure usage data.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingUsageBilled?view=graph-powershell-1.0)
 
 ## SYNTAX
 

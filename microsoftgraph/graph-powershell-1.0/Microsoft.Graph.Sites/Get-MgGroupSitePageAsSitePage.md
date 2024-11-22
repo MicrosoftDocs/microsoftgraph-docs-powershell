@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepage
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.baseSitePage as microsoft.graph.sitePage
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePage?view=graph-powershell-beta)
 
 ## SYNTAX
 

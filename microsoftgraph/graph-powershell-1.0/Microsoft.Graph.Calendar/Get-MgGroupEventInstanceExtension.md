@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventinstanceextension
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of open extensions defined for the event.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstanceExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 

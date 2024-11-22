@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcreatedonbehalfof
@@ -11,6 +11,9 @@ schema: 2.0.0
 The user (or application) that created the group.
 NOTE: This property isn't set if the user is an administrator.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCreatedOnBehalfOf?view=graph-powershell-beta)
 
 ## SYNTAX
 

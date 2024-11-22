@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemitemlastmodifiedbyuser
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Identity of the user who last modified the item.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemItemLastModifiedByUser?view=graph-powershell-beta)
 
 ## SYNTAX
 

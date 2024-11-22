@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasexternaluserselfservicesignupeventflowonattributecollection
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The configuration for what to invoke when attributes are ready to be collected from the user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAttributeCollection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAttributeCollection?view=graph-powershell-beta)
 
 ## SYNTAX
 

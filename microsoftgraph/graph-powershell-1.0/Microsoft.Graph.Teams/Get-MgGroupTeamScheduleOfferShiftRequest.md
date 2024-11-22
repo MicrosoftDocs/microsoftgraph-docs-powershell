@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleoffershiftrequest
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The offer requests for shifts in the schedule.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 

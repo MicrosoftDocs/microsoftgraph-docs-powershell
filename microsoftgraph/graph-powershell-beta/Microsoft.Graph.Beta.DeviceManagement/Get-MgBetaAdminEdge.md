@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedge
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A container for Microsoft Edge resources.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdge?view=graph-powershell-1.0)
 
 ## SYNTAX
 

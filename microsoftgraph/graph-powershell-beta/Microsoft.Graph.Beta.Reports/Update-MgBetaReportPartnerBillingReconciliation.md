@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingreconciliation
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property reconciliation in reports
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgReportPartnerBillingReconciliation](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingReconciliation?view=graph-powershell-1.0)
 
 ## SYNTAX
 

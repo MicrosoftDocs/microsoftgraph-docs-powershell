@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Update the properties of a teamsAppSettings object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Update the properties of a set object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

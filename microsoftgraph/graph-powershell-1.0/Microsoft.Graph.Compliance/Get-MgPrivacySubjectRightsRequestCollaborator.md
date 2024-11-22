@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestcollaborator
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Collection of users who can collaborate on the request.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestCollaborator](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestCollaborator?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 List a set of items that have been recently used by the signed in user.\nThis collection includes items that are in the user's drive and items they have access to from other drives.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaRecentDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recent (Default)

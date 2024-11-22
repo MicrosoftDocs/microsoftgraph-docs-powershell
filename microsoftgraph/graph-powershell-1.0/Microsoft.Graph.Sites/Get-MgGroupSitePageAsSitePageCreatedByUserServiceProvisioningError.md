@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagecreatedbyuserserviceprovisioningerror
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 ## SYNTAX
 

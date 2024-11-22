@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelsharedwithteam
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A collection of teams with which a channel is shared.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelSharedWithTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachment
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A collection of file attachments for the task.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 

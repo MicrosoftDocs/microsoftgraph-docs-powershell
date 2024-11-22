@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversationthreadpostinreplytoattachment
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property attachments for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 

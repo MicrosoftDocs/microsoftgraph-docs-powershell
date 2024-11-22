@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsightshared
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Access this property from the derived type itemInsights.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightShared?view=graph-powershell-1.0)
 
 ## SYNTAX
 

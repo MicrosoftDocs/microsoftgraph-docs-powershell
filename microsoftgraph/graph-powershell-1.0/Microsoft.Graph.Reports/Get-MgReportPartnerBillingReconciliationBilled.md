@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingreconciliationbilled
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents details for billed invoice reconciliation data.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingReconciliationBilled?view=graph-powershell-beta)
 
 ## SYNTAX
 

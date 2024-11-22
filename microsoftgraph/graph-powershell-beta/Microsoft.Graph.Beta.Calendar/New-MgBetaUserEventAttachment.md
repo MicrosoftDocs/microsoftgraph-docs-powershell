@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventattachment
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to attachments for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventAttachment?view=graph-powershell-1.0)
 
 ## SYNTAX
 

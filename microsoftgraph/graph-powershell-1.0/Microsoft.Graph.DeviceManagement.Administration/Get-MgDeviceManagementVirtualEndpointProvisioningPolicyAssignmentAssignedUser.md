@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointprovisioningpolicyassignmentassigneduser
@@ -12,6 +12,9 @@ The assignment targeted users for the provisioning policy.
 This list of users is computed based on assignments, licenses, group memberships, and policies.
 Read-only.
 Supports$expand.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser?view=graph-powershell-beta)
 
 ## SYNTAX
 

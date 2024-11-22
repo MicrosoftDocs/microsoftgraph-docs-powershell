@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreexchangeprotectionpolicymailboxprotectionunit
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The protection units (mailboxes) that are  protected under the Exchange protection policy.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 

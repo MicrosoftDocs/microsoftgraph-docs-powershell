@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthreadpostextension
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property extensions in groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupConversationThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupConversationThreadPostExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 

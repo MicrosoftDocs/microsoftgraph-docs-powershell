@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolder
@@ -11,6 +11,9 @@ schema: 2.0.0
 The user's contacts folders.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 

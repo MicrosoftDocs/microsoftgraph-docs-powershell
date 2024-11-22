@@ -12,6 +12,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Get the properties and relationships of a member of a standard tag in a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTagMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
