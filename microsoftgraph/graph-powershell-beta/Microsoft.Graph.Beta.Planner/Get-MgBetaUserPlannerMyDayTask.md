@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannermydaytask
@@ -40,18 +40,6 @@ Get-MgBetaUserPlannerMyDayTask -InputObject <IPlannerIdentity> [-ExpandProperty 
 Read-only.
 Nullable.
 Returns the plannerTasks to be shown in the My Day view of the user.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -326,4 +314,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannermydaytask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannermydaytask)
+
 

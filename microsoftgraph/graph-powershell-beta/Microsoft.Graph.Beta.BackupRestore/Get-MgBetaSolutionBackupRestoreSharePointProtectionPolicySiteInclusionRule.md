@@ -59,18 +59,6 @@ After the rule is applied, the state is either completed or completedWithErrors.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointprotectionpolicy-list-siteinclusionrules-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,4 +349,5 @@ INPUTOBJECT \<IBackupRestoreIdentity\>: Identity Parameter
 [https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteinclusionrules?view=graph-rest-beta](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteinclusionrules?view=graph-rest-beta)
+
 

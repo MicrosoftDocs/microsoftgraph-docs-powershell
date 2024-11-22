@@ -23,18 +23,6 @@ Get-MgSecurityLabelDepartmentCount [-Filter <String>] [-Search <String>] [-Respo
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -126,4 +114,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartmentcount)
+
 

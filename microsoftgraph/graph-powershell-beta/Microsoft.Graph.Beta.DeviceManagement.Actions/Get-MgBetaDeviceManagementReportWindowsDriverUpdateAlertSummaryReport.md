@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsdriverupdatealertsummaryreport
@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementReportWindowsDriverUpdateAlertSummaryReport -OutFile <
 
 ## DESCRIPTION
 Invoke action getWindowsDriverUpdateAlertSummaryReport
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -349,4 +337,5 @@ BODYPARAMETER \<IPathsK9VofmDevicemanagementReportsMicrosoftGraphGetwindowsdrive
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsdriverupdatealertsummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwindowsdriverupdatealertsummaryreport)
+
 

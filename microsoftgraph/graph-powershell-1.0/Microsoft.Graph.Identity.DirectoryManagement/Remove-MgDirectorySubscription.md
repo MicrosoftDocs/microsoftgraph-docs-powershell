@@ -32,18 +32,6 @@ Remove-MgDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Delete navigation property subscriptions for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanySubscriptionId
@@ -230,4 +218,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorysubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorysubscription)
+
 

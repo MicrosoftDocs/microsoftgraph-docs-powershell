@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroiddeviceownerenrollmentprofile
@@ -58,18 +58,6 @@ Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 
 ## DESCRIPTION
 Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceManagement
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -636,4 +624,5 @@ QRCODEIMAGE \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mi
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroiddeviceownerenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroiddeviceownerenrollmentprofile)
+
 

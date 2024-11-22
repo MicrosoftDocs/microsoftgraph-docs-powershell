@@ -32,18 +32,6 @@ Remove-MgBetaSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackup
 ## DESCRIPTION
 Delete navigation property sharePointRestoreSessions for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -225,4 +213,5 @@ INPUTOBJECT \<IBackupRestoreIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresharepointrestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresharepointrestoresession)
+
 
