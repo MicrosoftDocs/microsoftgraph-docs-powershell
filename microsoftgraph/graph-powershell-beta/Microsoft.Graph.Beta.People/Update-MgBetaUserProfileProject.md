@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileproject
@@ -58,11 +58,11 @@ Update-MgBetaUserProfileProject -InputObject <IPeopleIdentity>
 Update the navigation property projects in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	allowedAudiences = "organization"
@@ -74,6 +74,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileProject Cmdlet.
+
 
 ## PARAMETERS
 

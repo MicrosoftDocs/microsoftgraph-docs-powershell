@@ -39,11 +39,11 @@ Create a new cloudPcUserSetting object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-usersettings-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
@@ -56,6 +56,10 @@ $params = @{
 }
 
 New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 

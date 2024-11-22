@@ -58,18 +58,6 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-getallrecordings-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -362,4 +350,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluseronlinemeetingrecording)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-1.0)
+
 

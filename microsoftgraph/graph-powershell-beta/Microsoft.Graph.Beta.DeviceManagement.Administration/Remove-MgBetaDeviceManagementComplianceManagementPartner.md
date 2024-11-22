@@ -32,18 +32,6 @@ Remove-MgBetaDeviceManagementComplianceManagementPartner -InputObject <IDeviceMa
 ## DESCRIPTION
 Delete navigation property complianceManagementPartners for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ComplianceManagementPartnerId
@@ -260,4 +248,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementcompliancemanagementpartner)
+
 

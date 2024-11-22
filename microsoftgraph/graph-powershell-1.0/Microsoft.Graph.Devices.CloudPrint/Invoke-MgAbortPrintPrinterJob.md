@@ -59,17 +59,21 @@ For details about how to register a task trigger, see Extending Universal Print 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-abort-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	reason = "String"
 }
 
 Invoke-MgAbortPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgAbortPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 

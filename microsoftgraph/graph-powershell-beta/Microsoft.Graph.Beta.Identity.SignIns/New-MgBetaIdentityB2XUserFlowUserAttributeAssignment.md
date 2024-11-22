@@ -55,11 +55,11 @@ Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-post-userattributeassignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	isOptional = $false
@@ -74,6 +74,10 @@ $params = @{
 }
 
 New-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -44,13 +44,17 @@ Get-MgDeviceManagementDeviceCompliancePolicyUserStatus -InputObject <IDeviceMana
 Read properties and relationships of the deviceComplianceUserStatus object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgDeviceManagementDeviceCompliancePolicyUserStatus -DeviceCompliancePolicyId $deviceCompliancePolicyId
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicyUserStatus Cmdlet.
+
 
 ## PARAMETERS
 

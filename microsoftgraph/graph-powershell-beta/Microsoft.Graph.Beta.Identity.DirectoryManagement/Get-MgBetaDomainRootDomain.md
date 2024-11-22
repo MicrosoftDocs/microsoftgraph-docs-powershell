@@ -37,13 +37,17 @@ Get the root domain of a subdomain.\nThe API returns a single object which is th
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-list-rootdomain-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDomainRootDomain -DomainId $domainId
+
+```
+This example shows how to use the Get-MgBetaDomainRootDomain Cmdlet.
+
 
 ## PARAMETERS
 

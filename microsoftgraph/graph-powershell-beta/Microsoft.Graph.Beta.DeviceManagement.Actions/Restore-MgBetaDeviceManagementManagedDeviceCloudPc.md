@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementmanageddevicecloudpc
@@ -48,17 +48,21 @@ Restore-MgBetaDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManageme
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	cloudPcSnapshotId = "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8"
 }
 
 Restore-MgBetaDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgBetaDeviceManagementManagedDeviceCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

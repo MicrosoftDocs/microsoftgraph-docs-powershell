@@ -32,18 +32,6 @@ Get-MgGroupDriveItemContent -InputObject <IFilesIdentity> [-Format <String>] -Ou
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -242,4 +230,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemcontent)
+
 

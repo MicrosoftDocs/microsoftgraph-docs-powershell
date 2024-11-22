@@ -39,13 +39,17 @@ The report also includes the number of peer-to-peer sessions.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessactivityusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSkypeForBusinessActivityUserCount -Period $periodId
+Get-MgReportSkypeForBusinessActivityUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,13 +49,17 @@ Read the properties and relationships of an article object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-threatintelligence-list-articles-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityThreatIntelligenceArticle
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceArticle Cmdlet.
+
 
 ## PARAMETERS
 

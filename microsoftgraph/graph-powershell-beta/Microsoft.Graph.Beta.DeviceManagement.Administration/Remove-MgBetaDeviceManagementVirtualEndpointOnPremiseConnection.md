@@ -42,13 +42,17 @@ You can't delete an Azure network connection when it's in use, as indicated by t
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
 
 Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
+
+```
+This example shows how to use the Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
+
 
 ## PARAMETERS
 

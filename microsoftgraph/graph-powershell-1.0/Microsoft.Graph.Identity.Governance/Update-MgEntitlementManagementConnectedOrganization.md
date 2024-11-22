@@ -57,11 +57,11 @@ Update a connectedOrganization object to change one or more of its properties.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/connectedorganization-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Connected organization new name"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 Update-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEntitlementManagementConnectedOrganization Cmdlet.
+
 
 ## PARAMETERS
 

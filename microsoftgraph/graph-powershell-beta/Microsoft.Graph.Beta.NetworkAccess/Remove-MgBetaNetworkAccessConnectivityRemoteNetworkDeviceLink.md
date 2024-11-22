@@ -34,13 +34,17 @@ Removes the link between the branch or remote network and the CPE device, effect
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Remove-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -RemoteNetworkId $remoteNetworkId -DeviceLinkId $deviceLinkId
+
+```
+This example shows how to use the Remove-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink Cmdlet.
+
 
 ## PARAMETERS
 

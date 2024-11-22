@@ -32,18 +32,6 @@ Remove-MgShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property columns for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -258,4 +246,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcontenttypecolumn)
+
 

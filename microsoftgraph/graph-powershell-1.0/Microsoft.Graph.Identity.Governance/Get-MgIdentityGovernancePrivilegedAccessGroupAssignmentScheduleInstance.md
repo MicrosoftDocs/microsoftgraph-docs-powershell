@@ -51,13 +51,17 @@ Read the properties and relationships of a privilegedAccessGroupAssignmentSchedu
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-list-assignmentscheduleinstances-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
-Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance -Filter "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'"
+Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance -Filter "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'" 
+
+```
+This example shows how to use the Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance Cmdlet.
+
 
 ## PARAMETERS
 

@@ -63,27 +63,39 @@ Note: you should only delete a folder locally if it's empty after syncing all th
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId
 
-### EXAMPLE 2
 ```
+This example shows how to use the Get-MgBetaDriveItemDelta Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
-Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "latest"
+Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "latest" 
 
-### EXAMPLE 3
 ```
+This example shows how to use the Get-MgBetaDriveItemDelta Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
-Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "2021-09-29T20:00:00Z"
+Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "2021-09-29T20:00:00Z" 
+
+```
+This example shows how to use the Get-MgBetaDriveItemDelta Cmdlet.
+
 
 ## PARAMETERS
 

@@ -53,13 +53,17 @@ When an online meeting ends, an attendance report is generated for that session.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/meetingattendancereport-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the attendance report for a webinar session by ID
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgVirtualEventWebinarSessionAttendanceReport -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventSessionId $virtualEventSessionId -MeetingAttendanceReportId $meetingAttendanceReportId
+
+```
+This example will get the attendance report for a webinar session by id
+
 
 ## PARAMETERS
 

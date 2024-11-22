@@ -49,13 +49,17 @@ Read the properties and relationships of a specific cloudPcDeviceImage object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-list-deviceimages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementVirtualEndpointDeviceImage
+
+```
+This example shows how to use the Get-MgDeviceManagementVirtualEndpointDeviceImage Cmdlet.
+
 
 ## PARAMETERS
 

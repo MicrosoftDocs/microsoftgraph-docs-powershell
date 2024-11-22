@@ -38,18 +38,6 @@ List a set of items recently used by the signed-in user.\nThis collection includ
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-recent-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -334,4 +322,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarecentgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarecentgroupdrive)
 
 [https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-beta](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-beta)
+
 

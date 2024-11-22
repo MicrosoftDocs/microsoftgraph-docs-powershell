@@ -50,11 +50,11 @@ Update-MgDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceMana
 Update the properties of a deviceConfigurationAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceConfigurationAssignment"
@@ -65,6 +65,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationId $deviceConfigurationId -DeviceConfigurationAssignmentId $deviceConfigurationAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

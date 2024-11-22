@@ -39,13 +39,17 @@ In Microsoft Entra Entitlement Management, retrieve a list of accessPackage obje
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
-Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser -On $onId
+Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

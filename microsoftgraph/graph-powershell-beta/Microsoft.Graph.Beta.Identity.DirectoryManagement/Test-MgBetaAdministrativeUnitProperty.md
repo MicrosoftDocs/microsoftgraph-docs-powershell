@@ -51,18 +51,6 @@ However, you can validate both the mail nickname and the display name and receiv
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-validateproperties-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -275,4 +263,5 @@ BODYPARAMETER \<IPaths1B6V5BxAdministrativeunitsMicrosoftGraphValidateproperties
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetaadministrativeunitproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetaadministrativeunitproperty)
 
 [https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+
 

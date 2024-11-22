@@ -42,13 +42,17 @@ A filtering profile associates network access policies with Microsoft Entra ID C
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-filteringprofile-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Get-MgBetaNetworkAccessFilteringProfile
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessFilteringProfile Cmdlet.
+
 
 ## PARAMETERS
 

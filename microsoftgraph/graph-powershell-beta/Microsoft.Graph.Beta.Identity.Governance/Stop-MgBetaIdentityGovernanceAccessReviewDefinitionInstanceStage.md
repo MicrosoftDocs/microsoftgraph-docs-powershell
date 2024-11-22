@@ -44,13 +44,17 @@ The accessReviewInstanceDecisionItem objects will always reflect the last decisi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewstage-stop-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId
+
+```
+This example shows how to use the Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
+
 
 ## PARAMETERS
 

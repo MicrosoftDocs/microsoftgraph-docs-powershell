@@ -31,18 +31,6 @@ New-MgDirectoryObject -BodyParameter <IMicrosoftGraphDirectoryObject> [-Response
 ## DESCRIPTION
 Add new entity to directoryObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -210,4 +198,5 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject)
+
 

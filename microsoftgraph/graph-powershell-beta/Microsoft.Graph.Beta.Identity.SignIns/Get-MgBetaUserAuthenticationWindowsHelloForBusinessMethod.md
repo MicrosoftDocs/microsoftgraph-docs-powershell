@@ -50,13 +50,17 @@ Read the properties and relationships of a windowsHelloForBusinessAuthentication
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowshelloforbusinessauthenticationmethod-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod Cmdlet.
+
 
 ## PARAMETERS
 
