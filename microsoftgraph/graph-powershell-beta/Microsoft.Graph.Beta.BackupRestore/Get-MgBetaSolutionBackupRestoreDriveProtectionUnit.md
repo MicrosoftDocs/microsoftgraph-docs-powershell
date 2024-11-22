@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoredriveprotectionunit
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaSolutionBackupRestoreDriveProtectionUnit
@@ -36,6 +37,9 @@ Get-MgBetaSolutionBackupRestoreDriveProtectionUnit -InputObject <IBackupRestoreI
 
 ## DESCRIPTION
 The list of drive protection units in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-driveprotectionunits-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgtenantrelationshipmultitenantorganizationtenant
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgTenantRelationshipMultiTenantOrganizationTenant
@@ -30,6 +31,9 @@ Remove-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentity
 ## DESCRIPTION
 Remove a tenant from a multitenant organization.
 A tenant can be removed in the following scenarios:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-delete-tenants-permissions.md)]
 
 ## EXAMPLES
 

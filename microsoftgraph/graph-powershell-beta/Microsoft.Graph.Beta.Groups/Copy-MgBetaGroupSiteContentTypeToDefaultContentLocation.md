@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupsitecontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation
@@ -47,6 +48,9 @@ Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation -InputObject <IGroupsIde
 
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgtenantrelationshipmultitenantorganizationtenant
 schema: 2.0.0
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgTenantRelationshipMultiTenantOrganizationTenant
@@ -36,6 +38,12 @@ Get-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentitySig
 
 ## DESCRIPTION
 Get a tenant and its properties in the multitenant organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationmember-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-list-tenants-permissions.md)]
 
 ## EXAMPLES
 

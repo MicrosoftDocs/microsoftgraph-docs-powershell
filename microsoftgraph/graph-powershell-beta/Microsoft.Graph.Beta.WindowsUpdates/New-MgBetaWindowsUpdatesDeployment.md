@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesdeployment
 schema: 2.0.0
+ms.subservice: autopatch
 ---
 
 # New-MgBetaWindowsUpdatesDeployment
@@ -31,6 +32,9 @@ New-MgBetaWindowsUpdatesDeployment -BodyParameter <IMicrosoftGraphWindowsUpdates
 
 ## DESCRIPTION
 Create a new deployment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-post-deployments-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicy
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaPolicyMobileAppManagementPolicy
@@ -36,6 +38,12 @@ Get-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdentity
 
 ## DESCRIPTION
 Read the properties and relationships of a mobilityManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-list-permissions.md)]
 
 ## EXAMPLES
 

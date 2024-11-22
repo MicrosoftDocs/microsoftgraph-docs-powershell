@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmemberof
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgContactMemberOf
@@ -42,6 +43,9 @@ Groups that this contact is a member of.
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/orgcontact-list-memberof-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityschedule
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
@@ -37,6 +39,12 @@ Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule -InputObject <I
 
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupEligibilitySchedule object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupeligibilityschedule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-list-eligibilityschedules-permissions.md)]
 
 ## EXAMPLES
 

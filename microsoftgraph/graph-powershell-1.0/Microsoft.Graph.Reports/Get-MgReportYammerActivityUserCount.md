@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivityusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportYammerActivityUserCount
@@ -27,6 +28,9 @@ Get-MgReportYammerActivityUserCount -InputObject <IReportsIdentity> -OutFile <St
 
 ## DESCRIPTION
 Get the trends on the number of unique users who posted, read, and liked Yammer messages.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammeractivityusercounts-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaDriveItem
@@ -40,6 +41,9 @@ Get-MgBetaDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 All items contained in the drive.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-sharedwithme-permissions.md)]
 
 ## EXAMPLES
 

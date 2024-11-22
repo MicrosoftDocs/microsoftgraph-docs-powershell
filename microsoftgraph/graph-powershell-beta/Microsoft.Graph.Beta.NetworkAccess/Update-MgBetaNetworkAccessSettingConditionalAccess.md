@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingconditionalaccess
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessSettingConditionalAccess
@@ -28,6 +29,9 @@ Update-MgBetaNetworkAccessSettingConditionalAccess
 
 ## DESCRIPTION
 Update the conditional access settings to include the preservation of the original source IP address in network traffic for accurate identification and tracking, as well as the establishment of scalable network connectivity through the Global Secure Access services.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-conditionalaccesssettings-update-permissions.md)]
 
 ## EXAMPLES
 

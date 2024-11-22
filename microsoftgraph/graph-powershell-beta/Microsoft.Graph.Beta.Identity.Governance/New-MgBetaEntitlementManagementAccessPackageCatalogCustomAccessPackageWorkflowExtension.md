@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
@@ -52,6 +53,9 @@ New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowEx
 
 ## DESCRIPTION
 Create a new customAccessPackageWorkflowExtension object and add it to an existing accessPackageCatalog object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-post-customaccesspackageworkflowextensions-permissions.md)]
 
 ## EXAMPLES
 

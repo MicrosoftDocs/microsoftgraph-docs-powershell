@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscore
 schema: 2.0.0
+ms.subservice: partner-customer-administration
 ---
 
 # Get-MgBetaSecurityPartnerSecurityScore
@@ -20,6 +21,9 @@ Get-MgBetaSecurityPartnerSecurityScore [-ExpandProperty <String[]>] [-Property <
 
 ## DESCRIPTION
 Read the properties and relationships of a partnerSecurityScore object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-get-permissions.md)]
 
 ## EXAMPLES
 

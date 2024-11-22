@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendarpermission
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # New-MgBetaUserCalendarPermission

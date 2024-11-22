@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Update-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
@@ -55,6 +56,9 @@ Update-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy -InputObject <
 ## DESCRIPTION
 Update the protection policy for the OneDrive service in Microsoft 365.
 This method adds a driveProtectionUnit to or removes it from a oneDriveForBusinessProtectionPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onedriveforbusinessprotectionpolicy-update-permissions.md)]
 
 ## EXAMPLES
 

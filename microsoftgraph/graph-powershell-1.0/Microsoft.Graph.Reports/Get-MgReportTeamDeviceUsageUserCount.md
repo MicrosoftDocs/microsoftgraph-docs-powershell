@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusageusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportTeamDeviceUsageUserCount
@@ -27,6 +28,9 @@ Get-MgReportTeamDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile <S
 
 ## DESCRIPTION
 Get the number of Microsoft Teams daily unique users by device type.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsdeviceusageusercounts-permissions.md)]
 
 ## EXAMPLES
 

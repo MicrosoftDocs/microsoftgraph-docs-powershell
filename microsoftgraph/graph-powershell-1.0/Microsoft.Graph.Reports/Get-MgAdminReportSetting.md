@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgadminreportsetting
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgAdminReportSetting
@@ -20,6 +21,9 @@ Get-MgAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 
 ## DESCRIPTION
 Get the tenant-level settings for Microsoft 365 reports.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminreportsettings-get-permissions.md)]
 
 ## EXAMPLES
 

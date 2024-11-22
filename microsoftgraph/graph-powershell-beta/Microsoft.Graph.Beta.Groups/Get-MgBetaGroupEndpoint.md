@@ -1,8 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint
 schema: 2.0.0
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupEndpoint
@@ -36,6 +38,12 @@ Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a specific endpoint object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/endpoint-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-endpoints-permissions.md)]
 
 ## EXAMPLES
 

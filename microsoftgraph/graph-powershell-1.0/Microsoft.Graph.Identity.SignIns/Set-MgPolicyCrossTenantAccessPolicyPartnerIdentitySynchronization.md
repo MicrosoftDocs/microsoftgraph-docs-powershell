@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
@@ -46,6 +47,9 @@ Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObject <
 
 ## DESCRIPTION
 Update the user synchronization policy of a partner-specific configuration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantidentitysyncpolicypartner-update-permissions.md)]
 
 ## EXAMPLES
 

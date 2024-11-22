@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetatenantrelationshipmanagedtenanttag
 schema: 2.0.0
+ms.subservice: m365-lighthouse
 ---
 
 # Set-MgBetaTenantRelationshipManagedTenantTag
@@ -44,6 +45,9 @@ Set-MgBetaTenantRelationshipManagedTenantTag -InputObject <IIdentityDirectoryMan
 
 ## DESCRIPTION
 Assign the tenant tag to the specified managed tenants.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-assigntag-permissions.md)]
 
 ## EXAMPLES
 

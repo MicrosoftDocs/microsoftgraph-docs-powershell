@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Add-MgApplicationPassword
@@ -46,6 +47,9 @@ Add-MgApplicationPassword -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Adds a strong password or secret to an application.
 You can also add passwords while creating the application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-addpassword-permissions.md)]
 
 ## EXAMPLES
 

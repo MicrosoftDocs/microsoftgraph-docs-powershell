@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenlifetimepolicy
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgApplicationTokenLifetimePolicy
@@ -23,6 +24,9 @@ Get-MgApplicationTokenLifetimePolicy -ApplicationId <String> [-ExpandProperty <S
 ## DESCRIPTION
 List the tokenLifetimePolicy objects that are assigned to an application.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-tokenlifetimepolicies-permissions.md)]
 
 ## EXAMPLES
 

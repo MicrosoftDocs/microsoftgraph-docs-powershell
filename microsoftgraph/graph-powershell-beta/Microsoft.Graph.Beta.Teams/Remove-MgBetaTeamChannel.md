@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamChannel
@@ -28,6 +29,9 @@ Remove-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Res
 
 ## DESCRIPTION
 Delete the channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-delete-permissions.md)]
 
 ## EXAMPLES
 

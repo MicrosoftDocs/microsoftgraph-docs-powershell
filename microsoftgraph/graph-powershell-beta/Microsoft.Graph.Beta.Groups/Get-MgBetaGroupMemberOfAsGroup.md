@@ -1,8 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberofasgroup
 schema: 2.0.0
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupMemberOfAsGroup
@@ -40,6 +42,12 @@ Get-MgBetaGroupMemberOfAsGroup -InputObject <IGroupsIdentity> [-ExpandProperty <
 Get groups and administrative units that the group is a direct member of.
 This operation is not transitive.
 Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-memberof-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-memberof-permissions.md)]
 
 ## EXAMPLES
 

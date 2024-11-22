@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforsamlsigninsuccess
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportServiceActivityMetricForSamlSignInSuccess
@@ -32,6 +33,9 @@ Get-MgBetaReportServiceActivityMetricForSamlSignInSuccess -InputObject <IReports
 ## DESCRIPTION
 Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant during a specified time period.
 This health signal currently doesn't include WS-FED/SAML 1.1 apps that are integrated with Microsoft Entra.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceactivity-getmetricsforsamlsigninsuccess-permissions.md)]
 
 ## EXAMPLES
 

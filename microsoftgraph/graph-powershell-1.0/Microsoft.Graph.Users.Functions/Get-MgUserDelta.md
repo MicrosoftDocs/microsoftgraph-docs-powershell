@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Get-MgUserDelta
@@ -22,6 +23,9 @@ Get-MgUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Stri
 ## DESCRIPTION
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 See change tracking for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delta-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationconfiguration
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarRegistrationConfiguration
@@ -28,6 +29,9 @@ Get-MgBetaVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsId
 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinarRegistrationConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinarregistrationconfiguration-get-permissions.md)]
 
 ## EXAMPLES
 
