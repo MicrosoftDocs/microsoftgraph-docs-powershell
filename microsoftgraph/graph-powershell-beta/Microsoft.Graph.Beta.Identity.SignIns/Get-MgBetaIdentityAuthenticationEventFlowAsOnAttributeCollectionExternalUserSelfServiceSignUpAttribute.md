@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute
@@ -11,9 +10,6 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Get an identityUserFlowAttribute collection associated with an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,21 +25,14 @@ Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelf
 Get an identityUserFlowAttribute collection associated with an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onattributecollectionexternalusersselfservicesignup-list-attributes-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute -AuthenticationEventsFlowId $authenticationEventsFlowId
-
-```
-This example shows how to use the Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute Cmdlet.
-
 
 ## PARAMETERS
 
@@ -274,25 +263,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute)
 
 [https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

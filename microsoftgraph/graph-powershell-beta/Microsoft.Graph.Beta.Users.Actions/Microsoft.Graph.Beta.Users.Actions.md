@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users.Actions
-Module Guid: ed72c166-4f65-4647-8ab1-bcd19f187868
+Module Guid: 53a29575-29fc-4e97-946e-5c61309be599
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users.actions/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -640,23 +640,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserOnenotePageContent](Update-MgBetaUserOnenotePageContent.md)
 
 ### [Update-MgBetaUserPassword](Update-MgBetaUserPassword.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Bookings
-Module Guid: 566222a2-b915-4f41-9ead-4057a8dbb2bc
+Module Guid: 5b4e8a8c-eb73-49e2-af49-e9a8511faf2e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.bookings/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -474,23 +474,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
 
 ### [Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

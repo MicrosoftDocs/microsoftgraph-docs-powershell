@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-Module Guid: 5bf4fd39-69c3-41c1-9a8d-a30112de3981
+Module Guid: ef8962a7-1de5-4808-ae77-99f51a4ba7a2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -2312,23 +2312,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfile](Update-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
 
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

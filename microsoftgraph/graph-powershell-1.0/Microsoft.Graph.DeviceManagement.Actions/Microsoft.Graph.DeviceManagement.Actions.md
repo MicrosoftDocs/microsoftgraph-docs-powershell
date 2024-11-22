@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: c3b80fe6-2a7a-41d9-85ab-7de903950aa6
+Module Guid: 6139cf24-73ba-42f6-8d70-afe980bbc5d6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -130,23 +130,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount.md)
 
 ### [Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-Module Guid: 7c31e5c3-b896-45ac-870a-06e2c65d050a
+Module Guid: cff34e71-e326-496a-b28a-6ab99f27a2c6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.networkaccess/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -386,23 +386,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaNetworkAccessSettingForwardingOption](Update-MgBetaNetworkAccessSettingForwardingOption.md)
 
 ### [Update-MgBetaNetworkAccessTenantStatus](Update-MgBetaNetworkAccessTenantStatus.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

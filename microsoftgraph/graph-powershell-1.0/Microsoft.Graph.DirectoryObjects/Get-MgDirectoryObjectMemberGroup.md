@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryObjectMemberGroup
@@ -14,9 +13,6 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the DirectoryResultSizeLimitExceeded error code.
 If you get the DirectoryResultSizeLimitExceeded error code, use the List group transitive memberOf API instead.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectMemberGroup](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,21 +54,17 @@ If more than 11,000 results are available, it returns a 400 Bad Request error wi
 If you get the DirectoryResultSizeLimitExceeded error code, use the List group transitive memberOf API instead.
 
 ## EXAMPLES
-### Example 1: Check group memberships for a directory object
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	securityEnabledOnly = $false
 }
 
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
-```
-This example will check group memberships for a directory object
-
 
 ## PARAMETERS
 
@@ -246,37 +238,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths15Et6VvDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`: 
+BODYPARAMETER \<IPaths15Et6VvDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[SecurityEnabledOnly \<Boolean?\>\]: 
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+INPUTOBJECT \<IDirectoryObjectsIdentity\>: Identity Parameter
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
