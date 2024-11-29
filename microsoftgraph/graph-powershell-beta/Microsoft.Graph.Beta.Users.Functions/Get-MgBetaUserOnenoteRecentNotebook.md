@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Get-MgBetaUserOnenoteRecentNotebook
@@ -28,6 +29,9 @@ Get-MgBetaUserOnenoteRecentNotebook -InputObject <IUsersFunctionsIdentity> [-Cou
 
 ## DESCRIPTION
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
 
 ## EXAMPLES
 

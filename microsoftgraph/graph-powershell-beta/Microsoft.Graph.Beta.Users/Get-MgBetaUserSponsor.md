@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Get-MgBetaUserSponsor
@@ -40,6 +41,9 @@ Get-MgBetaUserSponsor -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-sponsors-permissions.md)]
 
 ## EXAMPLES
 

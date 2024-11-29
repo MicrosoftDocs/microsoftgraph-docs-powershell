@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpreapprovalpolicy
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaPolicyPermissionGrantPreApprovalPolicy
@@ -29,6 +30,9 @@ New-MgBetaPolicyPermissionGrantPreApprovalPolicy
 
 ## DESCRIPTION
 Create a new permissionGrantPreApprovalPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/policyroot-post-permissiongrantpreapprovalpolicies-permissions.md)]
 
 ## EXAMPLES
 

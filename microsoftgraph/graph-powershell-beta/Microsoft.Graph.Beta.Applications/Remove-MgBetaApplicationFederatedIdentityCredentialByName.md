@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationfederatedidentitycredentialbyname
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaApplicationFederatedIdentityCredentialByName
@@ -28,6 +29,9 @@ Remove-MgBetaApplicationFederatedIdentityCredentialByName -InputObject <IApplica
 
 ## DESCRIPTION
 Deletes a federatedIdentityCredential object from an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-delete-permissions.md)]
 
 ## EXAMPLES
 

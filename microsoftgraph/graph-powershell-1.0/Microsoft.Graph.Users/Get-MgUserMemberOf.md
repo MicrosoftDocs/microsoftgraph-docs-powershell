@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberof
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Get-MgUserMemberOf
@@ -42,6 +43,9 @@ The groups and directory roles that the user is a member of.
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-memberof-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabel
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityLabelRetentionLabel
@@ -36,6 +37,9 @@ Get-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Represents how customers can manage their data, whether and for how long to retain or delete it.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-list-retentionlabel-permissions.md)]
 
 ## EXAMPLES
 

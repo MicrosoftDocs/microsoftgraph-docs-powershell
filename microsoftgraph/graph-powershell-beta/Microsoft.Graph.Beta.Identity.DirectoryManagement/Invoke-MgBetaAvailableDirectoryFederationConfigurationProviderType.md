@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaavailabledirectoryfederationconfigurationprovidertype
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType
@@ -20,6 +21,9 @@ Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType [-Count] [-Fi
 
 ## DESCRIPTION
 Get all identity providers supported in a directory.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityproviderbase-availableprovidertypes-permissions.md)]
 
 ## EXAMPLES
 

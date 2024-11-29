@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamPrimaryChannel
@@ -28,6 +29,9 @@ Get-MgBetaTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get the default channel, General, of a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-get-primarychannel-permissions.md)]
 
 ## EXAMPLES
 

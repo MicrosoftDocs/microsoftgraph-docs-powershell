@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarunstatistics
 schema: 2.0.0
+ms.subservice: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataRunStatistics
@@ -32,6 +33,9 @@ Get-MgBetaExternalIndustryDataRunStatistics -InputObject <ISearchIdentity> [-Res
 
 ## DESCRIPTION
 Get statistics for an industryDataRun.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydatarun-getstatistics-permissions.md)]
 
 ## EXAMPLES
 

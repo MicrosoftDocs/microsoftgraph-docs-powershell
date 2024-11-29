@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitystorage
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOffice365GroupActivityStorage
@@ -28,6 +29,9 @@ Get-MgReportOffice365GroupActivityStorage -InputObject <IReportsIdentity> -OutFi
 
 ## DESCRIPTION
 Get the total storage used across all group mailboxes and group sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365groupsactivitystorage-permissions.md)]
 
 ## EXAMPLES
 

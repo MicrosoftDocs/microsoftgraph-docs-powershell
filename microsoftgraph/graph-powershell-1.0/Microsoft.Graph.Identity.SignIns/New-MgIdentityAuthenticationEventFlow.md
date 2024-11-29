@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityAuthenticationEventFlow
@@ -31,6 +32,9 @@ New-MgIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthenticat
 ## DESCRIPTION
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
 The following derived subtypes are supported:\n- externalUsersSelfServiceSignupEventsFlow object type.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-post-authenticationeventsflows-permissions.md)]
 
 ## EXAMPLES
 

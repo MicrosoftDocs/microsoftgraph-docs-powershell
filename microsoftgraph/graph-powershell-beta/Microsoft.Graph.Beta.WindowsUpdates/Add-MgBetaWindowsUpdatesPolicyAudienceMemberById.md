@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/add-mgbetawindowsupdatespolicyaudiencememberbyid
 schema: 2.0.0
+ms.subservice: autopatch
 ---
 
 # Add-MgBetaWindowsUpdatesPolicyAudienceMemberById
@@ -48,6 +49,9 @@ Add-MgBetaWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesId
 ## DESCRIPTION
 Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-addmembersbyid-permissions.md)]
 
 ## EXAMPLES
 

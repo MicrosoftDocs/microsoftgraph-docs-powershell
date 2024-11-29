@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreserviceapp
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Initialize-MgBetaBackupRestoreServiceApp
@@ -44,6 +45,9 @@ Initialize-MgBetaBackupRestoreServiceApp -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Activate a serviceApp.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceapp-activate-permissions.md)]
 
 ## EXAMPLES
 

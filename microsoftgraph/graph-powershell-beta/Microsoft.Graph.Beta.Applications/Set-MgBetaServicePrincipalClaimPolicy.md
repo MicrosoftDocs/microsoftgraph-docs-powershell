@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalclaimpolicy
 schema: 2.0.0
+ms.subservice: entra-id
 ---
 
 # Set-MgBetaServicePrincipalClaimPolicy
@@ -44,6 +45,9 @@ Set-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Create a new customClaimsPolicy object if it doesn't exist, or replace an existing one.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-put-claimspolicy-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupfavorite
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgGroupFavorite
@@ -29,6 +30,9 @@ Remove-MgGroupFavorite -InputObject <IGroupsIdentity> [-ResponseHeadersVariable 
 ## DESCRIPTION
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-removefavorite-permissions.md)]
 
 ## EXAMPLES
 

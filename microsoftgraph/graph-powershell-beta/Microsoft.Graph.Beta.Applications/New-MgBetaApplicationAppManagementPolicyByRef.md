@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationappmanagementpolicybyref
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaApplicationAppManagementPolicyByRef
@@ -47,6 +48,9 @@ New-MgBetaApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentit
 Assign an appManagementPolicy policy object to an application or service principal object.
 The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
 Only one policy object can be assigned to an application or service principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-post-appliesto-permissions.md)]
 
 ## EXAMPLES
 

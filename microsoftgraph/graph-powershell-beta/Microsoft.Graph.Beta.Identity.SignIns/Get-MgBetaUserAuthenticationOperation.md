@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationoperation
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaUserAuthenticationOperation
@@ -40,6 +41,9 @@ Get-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity> [-
 Read the properties and relationships of a longRunningOperation object.
 This API allows you to retrieve the details and status of the following long-running Microsoft Graph API operations.
 The possible states of the long-running operation are notStarted, running, succeeded, failed, unknownFutureValue where succeeded and failed are terminal states.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/longrunningoperation-get-permissions.md)]
 
 ## EXAMPLES
 

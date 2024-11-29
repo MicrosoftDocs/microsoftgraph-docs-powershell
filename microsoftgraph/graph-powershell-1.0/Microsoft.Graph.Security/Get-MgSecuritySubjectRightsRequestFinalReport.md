@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestfinalreport
 schema: 2.0.0
+ms.subservice: compliance
 ---
 
 # Get-MgSecuritySubjectRightsRequestFinalReport
@@ -30,6 +31,9 @@ Get-MgSecuritySubjectRightsRequestFinalReport -InputObject <ISecurityIdentity> -
 ## DESCRIPTION
 Get the final report for a subject rights request.
 The report is a text file that contains information about the files that were included by the privacy administrator.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-getfinalreport-permissions.md)]
 
 ## EXAMPLES
 

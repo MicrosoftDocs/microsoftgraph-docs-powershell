@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetaapproval
 schema: 2.0.0
+ms.subservice: approvals
 ---
 
 # New-MgBetaApproval
@@ -19,6 +20,9 @@ New-MgBetaApproval [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] 
 
 ## DESCRIPTION
 Provision an approvalSolution on behalf of a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalsolution-provision-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicyapplyto
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyClaimMappingPolicyApplyTo
@@ -36,6 +37,9 @@ Get-MgBetaPolicyClaimMappingPolicyApplyTo -InputObject <IIdentitySignInsIdentity
 
 ## DESCRIPTION
 Get appliesTo from policies
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-list-appliesto-permissions.md)]
 
 ## EXAMPLES
 
