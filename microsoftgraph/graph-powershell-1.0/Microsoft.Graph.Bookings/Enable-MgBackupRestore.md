@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/enable-mgbackuprestore
 schema: 2.0.0
-ms.subservice: m365-backup-storage
 ---
 
 # Enable-MgBackupRestore
@@ -13,9 +12,6 @@ Enable the Microsoft 365 Backup Storage service for a tenant.
 Before you call this API, call List protection policies to initialize the data store in the tenant.
 Data store initialization takes about 5 minutes.
 If you call this API before the data store is initialized, the call results in an error.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Enable-MgBetaBackupRestore](/powershell/module/Microsoft.Graph.Beta.Bookings/Enable-MgBetaBackupRestore?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,25 +36,18 @@ Before you call this API, call List protection policies to initialize the data s
 Data store initialization takes about 5 minutes.
 If you call this API before the data store is initialized, the call results in an error.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-enable-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Bookings
+```
 
 $params = @{
 	appOwnerTenantId = "23014d8c-71fe-4d00-a01a-31850bc5b42a"
 }
 
 Enable-MgBackupRestore -BodyParameter $params
-
-```
-This example shows how to use the Enable-MgBackupRestore Cmdlet.
-
 
 ## PARAMETERS
 
@@ -200,34 +189,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AppOwnerTenantId <String>]`:
+BODYPARAMETER \<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AppOwnerTenantId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/enable-mgbackuprestore](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/enable-mgbackuprestore)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
