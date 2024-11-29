@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitempermission
@@ -40,18 +40,6 @@ Get-MgBetaSiteListItemPermission -InputObject <ISitesIdentity> [-ExpandProperty 
 The set of permissions for the item.
 Read-only.
 Nullable.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -403,4 +391,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitempermission)
+
 

@@ -89,18 +89,6 @@ New-MgBetaDeviceAppManagementAndroidManagedAppProtection
 ## DESCRIPTION
 Create new navigation property to androidManagedAppProtections for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1969,4 +1957,5 @@ EXEMPTEDAPPPACKAGES \<IMicrosoftGraphKeyValuePair\[\]\>: App packages in this li
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection)
+
 

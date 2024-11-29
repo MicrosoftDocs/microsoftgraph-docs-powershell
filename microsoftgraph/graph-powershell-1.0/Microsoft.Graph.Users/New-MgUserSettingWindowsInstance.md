@@ -48,18 +48,6 @@ New-MgUserSettingWindowsInstance -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Create new navigation property to instances for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -347,4 +335,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingwindowsinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingwindowsinstance)
+
 

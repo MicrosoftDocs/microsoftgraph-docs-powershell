@@ -50,18 +50,6 @@ Update-MgUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property used in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -417,4 +405,5 @@ See the section Type property values for supported types.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsightused](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsightused)
+
 
