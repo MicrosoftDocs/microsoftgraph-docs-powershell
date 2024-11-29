@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserdefaultcalendar
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The user's primary calendar.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserDefaultCalendar?view=graph-powershell-1.0)
 
 ## SYNTAX
 

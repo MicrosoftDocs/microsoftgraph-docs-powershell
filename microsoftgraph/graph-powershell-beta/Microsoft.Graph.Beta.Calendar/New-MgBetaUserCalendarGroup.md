@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendargroup
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to calendarGroups for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 

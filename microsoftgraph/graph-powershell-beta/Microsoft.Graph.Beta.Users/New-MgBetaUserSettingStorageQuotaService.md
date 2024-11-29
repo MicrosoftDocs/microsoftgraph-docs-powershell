@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingstoragequotaservice
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to services for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserSettingStorageQuotaService](/powershell/module/Microsoft.Graph.Users/New-MgUserSettingStorageQuotaService?view=graph-powershell-1.0)
 
 ## SYNTAX
 

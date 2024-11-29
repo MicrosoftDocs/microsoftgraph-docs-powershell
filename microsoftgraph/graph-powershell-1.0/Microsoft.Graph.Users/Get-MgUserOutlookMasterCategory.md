@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A list of categories defined for the user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathoperation
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for sites
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 

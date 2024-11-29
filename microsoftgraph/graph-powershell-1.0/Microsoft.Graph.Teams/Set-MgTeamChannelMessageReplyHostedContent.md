@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelmessagereplyhostedcontent
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The unique identifier for an entity.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

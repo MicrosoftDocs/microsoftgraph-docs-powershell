@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask
@@ -11,6 +11,9 @@ schema: 2.0.0
 The tasks in this task list.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 

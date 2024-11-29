@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationlandingpagedetail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The detail information for a landing page associated with a simulation during its creation.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 

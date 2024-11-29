@@ -20,6 +20,9 @@ Find more information in the delta query documentation.
 For more examples, see callRecording: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgAllUserOnlineMeetingRecording?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

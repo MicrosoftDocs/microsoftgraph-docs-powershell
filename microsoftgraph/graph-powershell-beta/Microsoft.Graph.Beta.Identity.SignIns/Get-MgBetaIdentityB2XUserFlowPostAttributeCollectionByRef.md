@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowpostattributecollectionbyref
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get ref of postAttributeCollection from identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowPostAttributeCollectionByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowPostAttributeCollectionByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddevice
@@ -12,6 +12,9 @@ Devices owned by the user.
 Read-only.
 Nullable.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOwnedDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 

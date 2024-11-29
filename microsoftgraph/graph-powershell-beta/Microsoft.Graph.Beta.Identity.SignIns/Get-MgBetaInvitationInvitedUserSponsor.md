@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusersponsor
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The users or groups who are sponsors of the invited user.
 Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgInvitationInvitedUserSponsor](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitationInvitedUserSponsor?view=graph-powershell-1.0)
 
 ## SYNTAX
 

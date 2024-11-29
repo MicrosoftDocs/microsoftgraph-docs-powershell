@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetaprivacysubjectrightsrequestnote
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property notes for privacy
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 ## SYNTAX
 

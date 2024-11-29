@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagecanvalayout
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical sections.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
 
 ## SYNTAX
 

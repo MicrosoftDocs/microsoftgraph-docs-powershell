@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationonlinemeetingtranscriptmetadatacontent
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

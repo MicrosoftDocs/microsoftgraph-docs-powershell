@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarregistrationbyemail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property registrations for solutions
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventWebinarRegistrationByEmail](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarRegistrationByEmail?view=graph-powershell-1.0)
 
 ## SYNTAX
 

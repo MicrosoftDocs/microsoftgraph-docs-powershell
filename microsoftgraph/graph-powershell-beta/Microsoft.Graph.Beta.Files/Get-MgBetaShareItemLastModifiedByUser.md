@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetashareitemlastmodifiedbyuser
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get lastModifiedByUser from shares
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareItemLastModifiedByUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 

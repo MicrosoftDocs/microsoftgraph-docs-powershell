@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/remove-mgserviceannouncementmessageattachmentarchive
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The zip file that contains all attachments for a message.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Remove-MgBetaServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
 
 ## SYNTAX
 

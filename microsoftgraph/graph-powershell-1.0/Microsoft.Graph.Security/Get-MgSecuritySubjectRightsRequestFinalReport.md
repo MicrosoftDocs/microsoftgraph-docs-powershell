@@ -12,6 +12,9 @@ ms.subservice: compliance
 Get the final report for a subject rights request.
 The report is a text file that contains information about the files that were included by the privacy administrator.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestFinalReport](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestFinalReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

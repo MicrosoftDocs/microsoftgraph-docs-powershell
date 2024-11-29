@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveroot
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The root folder of the drive.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 

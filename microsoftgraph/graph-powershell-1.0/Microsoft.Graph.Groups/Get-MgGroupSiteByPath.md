@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitebypath
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getByPath
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteByPath](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteByPath?view=graph-powershell-beta)
 
 ## SYNTAX
 

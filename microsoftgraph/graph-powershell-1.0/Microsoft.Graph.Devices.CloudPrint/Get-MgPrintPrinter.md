@@ -12,6 +12,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Retrieve the properties and relationships of a printer object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

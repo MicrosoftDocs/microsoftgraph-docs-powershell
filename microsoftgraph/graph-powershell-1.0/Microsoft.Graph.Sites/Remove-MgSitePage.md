@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Delete a baseSitePage from the site pages list in a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

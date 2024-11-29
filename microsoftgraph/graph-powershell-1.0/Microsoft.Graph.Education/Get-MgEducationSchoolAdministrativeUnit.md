@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooladministrativeunit
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The underlying administrativeUnit for this school.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
 
 ## SYNTAX
 

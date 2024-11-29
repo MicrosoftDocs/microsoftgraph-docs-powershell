@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldescriptorcategorytemplate
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Specifies a group of similar types of content in a particular department.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDescriptorCategoryTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorCategoryTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 

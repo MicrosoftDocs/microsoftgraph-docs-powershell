@@ -12,6 +12,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Retrieve the properties and relationships of a print job.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
