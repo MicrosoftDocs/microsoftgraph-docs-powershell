@@ -40,18 +40,6 @@ After that time, they are permanently deleted.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -238,4 +226,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyuniquename)
 
 [https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-1.0)
+
 

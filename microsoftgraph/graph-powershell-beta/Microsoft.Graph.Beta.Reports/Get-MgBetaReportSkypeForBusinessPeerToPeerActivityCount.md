@@ -32,18 +32,6 @@ Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount -InputObject <IReportsId
 ## DESCRIPTION
 Invoke function getSkypeForBusinessPeerToPeerActivityCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -216,4 +204,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinesspeertopeeractivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinesspeertopeeractivitycount)
+
 

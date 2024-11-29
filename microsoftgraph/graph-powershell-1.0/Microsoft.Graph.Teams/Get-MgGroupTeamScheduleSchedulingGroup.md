@@ -40,18 +40,6 @@ Get-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-ExpandPro
 ## DESCRIPTION
 The logical grouping of users in the schedule (usually by role).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -350,4 +338,6 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleschedulinggroup)
+
+
 

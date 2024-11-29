@@ -39,13 +39,17 @@ A tenant can be removed in the following scenarios:
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-delete-tenants-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgTenantRelationshipMultiTenantOrganizationTenant -MultiTenantOrganizationMemberId $multiTenantOrganizationMemberId
+
+```
+This example shows how to use the Remove-MgTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
 
 ## PARAMETERS
 

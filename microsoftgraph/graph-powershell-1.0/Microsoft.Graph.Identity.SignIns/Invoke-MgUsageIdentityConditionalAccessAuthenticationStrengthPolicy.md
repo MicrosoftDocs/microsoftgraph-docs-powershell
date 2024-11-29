@@ -40,18 +40,6 @@ Policies in the former category are restricted in what kinds of changes may be m
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-usage-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationStrengthPolicyId
@@ -212,4 +200,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgusageidentityconditionalaccessauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgusageidentityconditionalaccessauthenticationstrengthpolicy)
 
 [https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-1.0)
+
 

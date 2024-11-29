@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileproject
@@ -38,14 +38,18 @@ Get-MgBetaUserProfileProject -InputObject <IPeopleIdentity> [-ExpandProperty <St
 Represents detailed information about projects associated with a user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileProject -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileProject Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,11 +38,11 @@ Create a new remote network.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-connectivity-post-remotenetworks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	name = "Bellevue branch"
@@ -51,10 +51,14 @@ $params = @{
 
 New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the New-MgBetaNetworkAccessConnectivityRemoteNetwork Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	name = "Bellevue branch w/ fwd profile"
@@ -68,10 +72,14 @@ $params = @{
 
 New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows how to use the New-MgBetaNetworkAccessConnectivityRemoteNetwork Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	name = "Bellevue branch w/ device link"
@@ -105,6 +113,10 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaNetworkAccessConnectivityRemoteNetwork Cmdlet.
+
 
 ## PARAMETERS
 

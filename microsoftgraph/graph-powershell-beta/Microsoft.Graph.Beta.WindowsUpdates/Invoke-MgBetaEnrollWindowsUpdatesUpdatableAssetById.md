@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableassetbyid
@@ -32,18 +32,6 @@ Invoke-MgBetaEnrollWindowsUpdatesUpdatableAssetById
 ## DESCRIPTION
 Enroll updatableAsset resources of the same type in update management by Windows Autopatch.
 You can also use the method enrollAssets to enroll assets.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -239,4 +227,5 @@ BODY \<IPaths134Mc7AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdate
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableassetbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableassetbyid)
+
 

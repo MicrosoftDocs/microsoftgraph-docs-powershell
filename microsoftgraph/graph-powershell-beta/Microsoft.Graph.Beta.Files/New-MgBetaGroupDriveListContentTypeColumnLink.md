@@ -46,18 +46,6 @@ New-MgBetaGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to columnLinks for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -311,4 +299,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistcontenttypecolumnlink)
+
 

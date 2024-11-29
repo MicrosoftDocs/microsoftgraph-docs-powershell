@@ -32,13 +32,17 @@ Only one object is returned in the collection because only one tokenLifetimePoli
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-tokenlifetimepolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationTokenLifetimePolicy -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgApplicationTokenLifetimePolicy Cmdlet.
+
 
 ## PARAMETERS
 

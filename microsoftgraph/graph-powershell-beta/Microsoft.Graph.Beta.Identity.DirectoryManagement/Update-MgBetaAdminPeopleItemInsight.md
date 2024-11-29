@@ -41,17 +41,21 @@ To learn more about customizing insights privacy for your organization, see:\n- 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/insightssettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Update settings for item insights
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	disabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 
 Update-MgBetaAdminPeopleItemInsight -BodyParameter $params
+
+```
+This example will update settings for item insights
+
 
 ## PARAMETERS
 

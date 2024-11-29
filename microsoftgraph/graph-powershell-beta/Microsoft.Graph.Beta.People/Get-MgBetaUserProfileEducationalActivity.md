@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileeducationalactivity
@@ -38,14 +38,18 @@ Get-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-Expand
 Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileEducationalActivity -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileEducationalActivity Cmdlet.
+
 
 ## PARAMETERS
 

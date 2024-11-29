@@ -36,18 +36,6 @@ Delete a federatedIdentityCredential object from an application.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -249,4 +237,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationfederatedidentitycredentialbyname)
 
 [https://learn.microsoft.com/graph/api/federatedidentitycredential-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedidentitycredential-delete?view=graph-rest-1.0)
+
 

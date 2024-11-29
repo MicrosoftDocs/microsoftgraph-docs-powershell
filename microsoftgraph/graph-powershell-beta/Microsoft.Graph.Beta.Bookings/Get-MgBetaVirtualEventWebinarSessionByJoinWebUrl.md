@@ -35,18 +35,6 @@ Currently, the following virtual event types are supported: virtualEventTownhall
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventsession-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -218,4 +206,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionbyjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionbyjoinweburl)
 
 [https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-beta)
+
 

@@ -47,18 +47,6 @@ New-MgTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to hostedContents for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,4 +320,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessagehostedcontent)
+
 

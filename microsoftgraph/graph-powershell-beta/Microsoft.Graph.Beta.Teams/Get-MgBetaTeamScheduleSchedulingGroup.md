@@ -49,13 +49,17 @@ Retrieve the properties and relationships of a schedulingGroup by ID.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedule-list-schedulinggroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId
+
+```
+This example shows how to use the Get-MgBetaTeamScheduleSchedulingGroup Cmdlet.
+
 
 ## PARAMETERS
 

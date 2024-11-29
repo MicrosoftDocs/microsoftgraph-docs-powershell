@@ -36,18 +36,6 @@ Read the properties and relationships of a federatedIdentityCredential object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -218,4 +206,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredentialbyname)
 
 [https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
+
 

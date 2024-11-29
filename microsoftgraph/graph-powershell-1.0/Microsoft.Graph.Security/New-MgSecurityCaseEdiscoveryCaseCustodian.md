@@ -61,17 +61,21 @@ Create a new ediscoveryCustodian object.\nAfter the custodian object is created,
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-post-custodians-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	email = "AdeleV@contoso.com"
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

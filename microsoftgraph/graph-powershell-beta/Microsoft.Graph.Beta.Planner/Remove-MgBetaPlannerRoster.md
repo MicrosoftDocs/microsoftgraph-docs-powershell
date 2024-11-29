@@ -34,13 +34,17 @@ Delete a plannerRoster object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Remove-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId
+
+```
+This example shows how to use the Remove-MgBetaPlannerRoster Cmdlet.
+
 
 ## PARAMETERS
 

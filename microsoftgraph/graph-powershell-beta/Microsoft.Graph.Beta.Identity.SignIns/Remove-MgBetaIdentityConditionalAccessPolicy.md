@@ -37,13 +37,15 @@ Delete a conditionalAccessPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccesspolicy-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Remove a conditional access policy
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
-```
 
 Remove-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId
+```
+
+This example deletes the conditional access policy specified by `$conditionalAccessPolicyId`.
 
 ## PARAMETERS
 

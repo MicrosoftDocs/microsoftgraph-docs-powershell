@@ -63,11 +63,11 @@ Alternatively, reply-all to a message in a single action.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createreplyall-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	message = @{
@@ -84,6 +84,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageReplyAll -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserMessageReplyAll Cmdlet.
+
 
 ## PARAMETERS
 

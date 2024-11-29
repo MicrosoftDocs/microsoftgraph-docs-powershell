@@ -55,11 +55,11 @@ Create a new externalItem object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-put-items-permissions.md)]
 
 ## EXAMPLES
+### Example: Create a custom item
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	acl = @(
@@ -86,6 +86,10 @@ $params = @{
 }
 
 Set-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
+
+```
+This example will### example: create a custom item
+
 
 ## PARAMETERS
 

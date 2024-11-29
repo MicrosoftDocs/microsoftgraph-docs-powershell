@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaddress
@@ -38,14 +38,18 @@ Get-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-ExpandProperty <St
 Represents details of addresses associated with the user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileAddress -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileAddress Cmdlet.
+
 
 ## PARAMETERS
 

@@ -45,13 +45,17 @@ Read the properties and relationships of a manifest object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-manifest-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportPartnerBillingManifest -ManifestId $manifestId
+
+```
+This example shows how to use the Get-MgReportPartnerBillingManifest Cmdlet.
+
 
 ## PARAMETERS
 

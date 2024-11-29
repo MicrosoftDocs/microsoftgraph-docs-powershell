@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceinstance
@@ -49,18 +49,6 @@ It doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -402,4 +390,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceinstance)
+
+
 

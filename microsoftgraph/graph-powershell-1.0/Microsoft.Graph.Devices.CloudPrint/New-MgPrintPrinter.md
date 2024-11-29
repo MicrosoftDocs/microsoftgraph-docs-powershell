@@ -44,11 +44,11 @@ For help creating the required Certificate Signing Request (CSR) for creating pr
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-create-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "Test Printer"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 New-MgPrintPrinter -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrintPrinter Cmdlet.
+
 
 ## PARAMETERS
 

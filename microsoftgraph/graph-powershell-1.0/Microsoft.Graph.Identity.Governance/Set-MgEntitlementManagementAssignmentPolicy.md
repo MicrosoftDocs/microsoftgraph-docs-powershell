@@ -68,11 +68,11 @@ Update an existing accessPackageAssignmentPolicy object to change one or more of
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Update the details of a policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	id = "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187"
@@ -132,10 +132,14 @@ $params = @{
 
 Set-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will update the details of a policy
+
+### Example 2: Remove the customExtensionStageSettings from a policy
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	id = "5540a08f-8ab5-43f6-a923-015275799197"
@@ -160,10 +164,14 @@ $params = @{
 
 Set-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will remove the customextensionstagesettings from a policy
+
+### Example 3: Update the customExtensionStageSettings for a policy
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "API Created policy with updated customExtensionStageSettings"
@@ -208,6 +216,10 @@ $params = @{
 }
 
 Set-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
+
+```
+This example will update the customextensionstagesettings for a policy
+
 
 ## PARAMETERS
 

@@ -54,18 +54,6 @@ Mark a chat as unread for a user.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-markchatunreadforuser-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,4 +360,5 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetamarkuserchatunreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetamarkuserchatunreadforuser)
 
 [https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-beta)
+
 

@@ -32,18 +32,6 @@ Remove-MgGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property columnLinks for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ColumnLinkId
@@ -273,4 +261,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistcontenttypecolumnlink)
+
 

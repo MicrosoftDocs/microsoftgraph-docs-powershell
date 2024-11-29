@@ -62,18 +62,6 @@ Note: you should only delete a folder locally if it's empty after syncing all th
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-delta-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -434,4 +422,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdriveitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdriveitemdelta)
 
 [https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-beta)
+
 

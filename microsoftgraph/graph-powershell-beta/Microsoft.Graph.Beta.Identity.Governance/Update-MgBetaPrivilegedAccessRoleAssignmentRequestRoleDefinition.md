@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessroleassignmentrequestroledefinition
@@ -47,18 +47,6 @@ Update-MgBetaPrivilegedAccessRoleAssignmentRequestRoleDefinition -InputObject <I
 
 ## DESCRIPTION
 Update the navigation property roleDefinition in privilegedAccess
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -871,4 +859,5 @@ The setting is not supported for now.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessroleassignmentrequestroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessroleassignmentrequestroledefinition)
+
 
