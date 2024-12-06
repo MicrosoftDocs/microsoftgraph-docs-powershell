@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootpermanent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action permanentDelete
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootPermanent](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootPermanent?view=graph-powershell-1.0)
 
 ## SYNTAX
 

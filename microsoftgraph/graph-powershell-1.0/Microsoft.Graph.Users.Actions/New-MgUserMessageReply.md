@@ -16,6 +16,9 @@ When using MIME format:\n- Provide the applicable Internet message headers and t
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

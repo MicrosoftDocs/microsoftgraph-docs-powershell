@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraininglanguagedetail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Language specific details on a training.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 

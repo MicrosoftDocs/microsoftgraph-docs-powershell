@@ -12,6 +12,9 @@ ms.subservice: sharepoint
 List sites across geographies in an organization.
 For more details, see Best practices for discovering files and detecting changes at scale.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllGroupSite](/powershell/module/Microsoft.Graph.Groups/Get-MgAllGroupSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

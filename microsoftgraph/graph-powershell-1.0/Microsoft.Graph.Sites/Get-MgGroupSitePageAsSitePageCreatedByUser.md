@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagecreatedbyuser
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Identity of the user who created the item.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageCreatedByUser?view=graph-powershell-beta)
 
 ## SYNTAX
 

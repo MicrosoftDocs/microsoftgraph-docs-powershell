@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresiteprotectionunit
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to siteProtectionUnits for solutions
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSiteProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSiteProtectionUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 

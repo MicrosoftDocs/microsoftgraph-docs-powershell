@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarpermission
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property calendarPermissions for groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupCalendarPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 

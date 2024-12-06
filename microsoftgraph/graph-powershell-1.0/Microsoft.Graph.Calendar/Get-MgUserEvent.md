@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserevent
@@ -12,6 +12,9 @@ The user's events.
 Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 

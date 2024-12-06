@@ -11,6 +11,9 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Update the properties of an attributeSet object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

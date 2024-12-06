@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostporthost
@@ -11,6 +11,9 @@ schema: 2.0.0
 The host related to this hostPort.
 This is a reverse navigation property.
 When you navigate to hostPorts from a host, assume that this is a return reference.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostPortHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPortHost?view=graph-powershell-1.0)
 
 ## SYNTAX
 

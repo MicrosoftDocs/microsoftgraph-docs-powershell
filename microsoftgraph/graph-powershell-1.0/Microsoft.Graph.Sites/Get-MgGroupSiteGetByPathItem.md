@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathitem
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Used to address any item contained in this site.
 This collection can't be enumerated.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathItem?view=graph-powershell-beta)
 
 ## SYNTAX
 

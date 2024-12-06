@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Retrieves the educationUser members of an educationClass.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

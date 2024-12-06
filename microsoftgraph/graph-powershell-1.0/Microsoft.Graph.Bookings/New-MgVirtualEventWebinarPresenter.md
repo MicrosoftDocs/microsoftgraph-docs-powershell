@@ -12,6 +12,9 @@ ms.subservice: cloud-communications
 Create a new virtualEventPresenter object on a virtual event.
 Currently, the following types of virtual events are supported: \n- virtualEventTownhall\n- virtualEventWebinar
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

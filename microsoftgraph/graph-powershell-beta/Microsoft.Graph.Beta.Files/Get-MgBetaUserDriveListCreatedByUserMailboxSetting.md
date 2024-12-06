@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistcreatedbyusermailboxsetting
@@ -12,6 +12,9 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListCreatedByUserMailboxSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 

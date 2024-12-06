@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Invoke action copyToDefaultContentLocation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgShareListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Files/Copy-MgShareListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

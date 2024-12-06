@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivityuserdetail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get details about Microsoft Teams user activity by user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamUserActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityUserDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 

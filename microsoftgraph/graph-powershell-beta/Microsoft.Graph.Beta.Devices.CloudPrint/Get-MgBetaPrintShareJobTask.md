@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejobtask
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A list of printTasks that were triggered by this print job.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 

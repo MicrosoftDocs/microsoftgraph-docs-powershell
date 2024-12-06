@@ -12,6 +12,9 @@ ms.subservice: m365-backup-storage
 Update an Exchange protection policy.
 This method adds a mailboxprotectionunit to or removes it from the protection policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

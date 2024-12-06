@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property storage in users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingStorage](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingStorage?view=graph-powershell-beta)
 
 ## SYNTAX
 

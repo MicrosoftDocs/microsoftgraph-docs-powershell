@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventwebinarregistration
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Cancel a registrant's registration record for a webinar.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/Stop-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
 
 ## SYNTAX
 

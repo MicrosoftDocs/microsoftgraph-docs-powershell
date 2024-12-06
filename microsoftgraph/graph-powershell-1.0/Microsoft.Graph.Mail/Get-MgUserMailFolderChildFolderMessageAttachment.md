@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessageattachment
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The fileAttachment and itemAttachment attachments for the message.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
