@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentcontent
 schema: 2.0.0
+ms.subservice: service-communications
 ---
 
 # Get-MgServiceAnnouncementMessageAttachmentContent
@@ -28,6 +29,9 @@ Get-MgServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceA
 
 ## DESCRIPTION
 Read the properties and relationships of a serviceAnnouncementAttachment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceannouncementattachment-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema
@@ -30,6 +31,9 @@ Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApp
 
 ## DESCRIPTION
 List all the functions currently supported in the attributeMappingSource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-functions-permissions.md)]
 
 ## EXAMPLES
 

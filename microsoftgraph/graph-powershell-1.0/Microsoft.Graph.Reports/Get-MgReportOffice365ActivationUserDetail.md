@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOffice365ActivationUserDetail
@@ -19,6 +20,9 @@ Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-ResponseHeadersVar
 
 ## DESCRIPTION
 Get details about users who have activated Microsoft 365.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365activationsuserdetail-permissions.md)]
 
 ## EXAMPLES
 

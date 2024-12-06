@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingcategory
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Update-MgEducationClassAssignmentSettingGradingCategory
@@ -47,6 +48,9 @@ Update-MgEducationClassAssignmentSettingGradingCategory -InputObject <IEducation
 ## DESCRIPTION
 Update a single gradingCategory on the educationAssignmentSettings.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationgradingcategory-update-permissions.md)]
 
 ## EXAMPLES
 

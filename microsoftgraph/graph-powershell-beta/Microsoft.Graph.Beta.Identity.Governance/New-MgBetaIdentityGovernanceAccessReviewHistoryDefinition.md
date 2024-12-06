@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
@@ -33,6 +34,9 @@ New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
 
 ## DESCRIPTION
 Create a new accessReviewHistoryDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewset-post-historydefinitions-permissions.md)]
 
 ## EXAMPLES
 

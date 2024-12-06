@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Update-MgBetaSecurityTiIndicatorMultiple
@@ -29,6 +30,9 @@ Update-MgBetaSecurityTiIndicatorMultiple
 
 ## DESCRIPTION
 Update multiple threat intelligence (TI) indicators in one request instead of multiple requests.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-updatetiindicators-permissions.md)]
 
 ## EXAMPLES
 

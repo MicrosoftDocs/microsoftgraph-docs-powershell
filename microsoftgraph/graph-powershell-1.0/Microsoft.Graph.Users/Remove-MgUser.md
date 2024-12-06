@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Remove-MgUser
@@ -35,6 +36,9 @@ Delete a user object.
 The user is also restored to any groups they were a member of.
 After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
 To manage the deleted user object, see deletedItems.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-permissions.md)]
 
 ## EXAMPLES
 

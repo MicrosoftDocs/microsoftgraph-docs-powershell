@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgworkflowidentitygovernancelifecycleworkflowinsightprocessedsummary
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
@@ -30,6 +31,9 @@ Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
 ## DESCRIPTION
 Provide a summary of all workflows processed within a tenant for a specified period.
 Because the amount of results for listed workflows as returned by the List workflows does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-insights-workflowsprocessedsummary-permissions.md)]
 
 ## EXAMPLES
 

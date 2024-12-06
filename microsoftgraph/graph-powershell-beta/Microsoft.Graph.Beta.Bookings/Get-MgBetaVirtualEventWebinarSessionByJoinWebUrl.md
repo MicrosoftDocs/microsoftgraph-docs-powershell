@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionbyjoinweburl
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarSessionByJoinWebUrl
@@ -30,6 +31,9 @@ Get-MgBetaVirtualEventWebinarSessionByJoinWebUrl -InputObject <IBookingsIdentity
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventSession object.
 Currently, the following virtual event types are supported: virtualEventTownhall and virtualEventWebinar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventsession-get-permissions.md)]
 
 ## EXAMPLES
 

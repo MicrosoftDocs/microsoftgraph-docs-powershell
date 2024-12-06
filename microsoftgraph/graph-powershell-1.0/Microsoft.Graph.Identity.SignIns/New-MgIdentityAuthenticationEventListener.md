@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityAuthenticationEventListener
@@ -31,6 +32,9 @@ New-MgIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAuthent
 ## DESCRIPTION
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-post-authenticationeventlisteners-permissions.md)]
 
 ## EXAMPLES
 

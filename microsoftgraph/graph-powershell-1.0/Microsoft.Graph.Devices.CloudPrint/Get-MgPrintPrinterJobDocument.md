@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjobdocument
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Get-MgPrintPrinterJobDocument
@@ -36,6 +37,9 @@ Get-MgPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity> [-Expand
 
 ## DESCRIPTION
 Get documents from print
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printdocument-get-file-permissions.md)]
 
 ## EXAMPLES
 

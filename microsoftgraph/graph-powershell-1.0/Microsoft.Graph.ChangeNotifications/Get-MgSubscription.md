@@ -1,8 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription
 schema: 2.0.0
+ms.subservice: change-notifications
+ms.subservice: change-notifications
 ---
 
 # Get-MgSubscription

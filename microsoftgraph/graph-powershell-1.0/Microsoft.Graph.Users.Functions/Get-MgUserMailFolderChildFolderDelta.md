@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermailfolderchildfolderdelta
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgUserMailFolderChildFolderDelta
@@ -34,6 +35,9 @@ Get-MgUserMailFolderChildFolderDelta -InputObject <IUsersFunctionsIdentity> [-Ex
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
 A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls,\nyou can query for incremental changes in the mail folders.
 This allows you to maintain and synchronize\na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-delta-permissions.md)]
 
 ## EXAMPLES
 

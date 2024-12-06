@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecordparticipantv2
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgCommunicationCallRecordParticipantV2
@@ -36,6 +37,9 @@ Get-MgCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunicationsIde
 
 ## DESCRIPTION
 List of distinct participants in the call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecords-callrecord-list-participants_v2-permissions.md)]
 
 ## EXAMPLES
 

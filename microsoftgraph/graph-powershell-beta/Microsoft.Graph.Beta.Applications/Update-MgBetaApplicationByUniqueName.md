@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyuniquename
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgBetaApplicationByUniqueName
@@ -96,6 +97,9 @@ Update-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-upsert-permissions.md)]
 
 ## EXAMPLES
 

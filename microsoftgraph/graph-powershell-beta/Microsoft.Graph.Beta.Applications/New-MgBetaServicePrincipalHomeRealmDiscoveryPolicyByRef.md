@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalhomerealmdiscoverypolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef
@@ -44,6 +45,9 @@ New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicati
 
 ## DESCRIPTION
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-post-homerealmdiscoverypolicies-permissions.md)]
 
 ## EXAMPLES
 

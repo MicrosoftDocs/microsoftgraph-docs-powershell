@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredentialbyname
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgApplicationFederatedIdentityCredentialByName
@@ -28,6 +29,9 @@ Get-MgApplicationFederatedIdentityCredentialByName -InputObject <IApplicationsId
 
 ## DESCRIPTION
 Read the properties and relationships of a federatedIdentityCredential object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-get-permissions.md)]
 
 ## EXAMPLES
 

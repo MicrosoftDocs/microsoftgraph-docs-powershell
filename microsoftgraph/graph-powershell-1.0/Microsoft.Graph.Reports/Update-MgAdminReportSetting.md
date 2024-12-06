@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgadminreportsetting
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Update-MgAdminReportSetting
@@ -28,6 +29,9 @@ Update-MgAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettings>
 
 ## DESCRIPTION
 Update tenant-level settings for Microsoft 365 reports.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminreportsettings-update-permissions.md)]
 
 ## EXAMPLES
 
