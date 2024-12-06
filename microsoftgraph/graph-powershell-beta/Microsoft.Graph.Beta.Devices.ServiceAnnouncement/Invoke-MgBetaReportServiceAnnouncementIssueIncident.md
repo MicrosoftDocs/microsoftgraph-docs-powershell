@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementissueincident
 schema: 2.0.0
-ms.subservice: service-communications
 ---
 
 # Invoke-MgBetaReportServiceAnnouncementIssueIncident
@@ -12,9 +11,6 @@ ms.subservice: service-communications
 Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
 The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgReportServiceAnnouncementIssueIncident?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,21 +33,14 @@ Provide the Post-Incident Review (PIR) document of a specified service issue for
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
 The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/servicehealthissue-incidentreport-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+```
 
 Invoke-MgBetaReportServiceAnnouncementIssueIncident -ServiceHealthIssueId $serviceHealthIssueId
-
-```
-This example shows how to use the Invoke-MgBetaReportServiceAnnouncementIssueIncident Cmdlet.
-
 
 ## PARAMETERS
 
@@ -177,36 +166,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
-  - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
-  - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
-  - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
-  - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
+INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
+  \[ServiceAnnouncementAttachmentId \<String\>\]: The unique identifier of serviceAnnouncementAttachment
+  \[ServiceHealthId \<String\>\]: The unique identifier of serviceHealth
+  \[ServiceHealthIssueId \<String\>\]: The unique identifier of serviceHealthIssue
+  \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementissueincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementissueincident)
 
 [https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
