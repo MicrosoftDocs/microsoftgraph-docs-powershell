@@ -34,18 +34,6 @@ Remove-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact
 ## DESCRIPTION
 Delete navigation property mailboxRestoreArtifacts for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExchangeRestoreSessionId
@@ -242,4 +230,5 @@ INPUTOBJECT \<IBackupRestoreIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreexchangerestoresessionmailboxrestoreartifact](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreexchangerestoresessionmailboxrestoreartifact)
+
 

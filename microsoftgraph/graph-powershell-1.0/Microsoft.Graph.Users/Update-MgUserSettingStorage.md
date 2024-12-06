@@ -46,18 +46,6 @@ Update-MgUserSettingStorage -InputObject <IUsersIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property storage in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,4 +297,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage)
+
 

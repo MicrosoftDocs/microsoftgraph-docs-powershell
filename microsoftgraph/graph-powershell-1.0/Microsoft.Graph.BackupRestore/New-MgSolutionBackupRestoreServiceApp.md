@@ -38,18 +38,6 @@ Create a new serviceApp.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-post-serviceapps-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -326,4 +314,5 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreserviceapp)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-post-serviceapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/backuprestoreroot-post-serviceapps?view=graph-rest-1.0)
+
 

@@ -34,18 +34,6 @@ Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsAppHealthOverview in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -259,4 +247,5 @@ Examples: none, percentage, count, seconds, score.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticapphealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticapphealthoverview)
+
 
