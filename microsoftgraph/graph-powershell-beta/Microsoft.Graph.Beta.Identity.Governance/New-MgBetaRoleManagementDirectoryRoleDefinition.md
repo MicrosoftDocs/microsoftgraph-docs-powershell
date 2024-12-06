@@ -44,11 +44,11 @@ The following RBAC providers are currently supported:\n- Cloud PC\n- device mana
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roledefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	description = "Update basic properties of application registrations"
@@ -64,6 +64,10 @@ isEnabled = "true"
 }
 
 New-MgBetaRoleManagementDirectoryRoleDefinition -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaRoleManagementDirectoryRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

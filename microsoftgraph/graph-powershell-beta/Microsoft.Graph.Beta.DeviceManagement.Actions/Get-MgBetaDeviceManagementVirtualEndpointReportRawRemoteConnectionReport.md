@@ -37,11 +37,11 @@ Get the raw real-time remote connection report for a Cloud PC without any calcul
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrawremoteconnectionreports-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	filter = "ActivityId eq 'cb6ad4c4-8a17-4245-a644-e4436b1ee204'"
@@ -55,6 +55,10 @@ top = 50
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportRawRemoteConnectionReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportRawRemoteConnectionReport Cmdlet.
+
 
 ## PARAMETERS
 

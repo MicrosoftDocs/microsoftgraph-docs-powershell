@@ -54,17 +54,21 @@ The resources in the access package must be present in the target catalog.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-movetocatalog-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	catalogId = "3301434b-99bd-46be-923b-d762c30c8e8b"
 }
 
 Move-MgBetaEntitlementManagementAccessPackageToCatalog -AccessPackageId $accessPackageId -BodyParameter $params
+
+```
+This example shows how to use the Move-MgBetaEntitlementManagementAccessPackageToCatalog Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,13 +46,17 @@ Read the properties and relationships of a securityScoreHistory object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-history-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityPartnerSecurityScoreHistory
+
+```
+This example shows how to use the Get-MgBetaSecurityPartnerSecurityScoreHistory Cmdlet.
+
 
 ## PARAMETERS
 

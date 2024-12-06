@@ -32,13 +32,17 @@ Get a list of capabilities for the printer.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-getcapabilities-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintPrinterCapability -PrinterId $printerId
+
+```
+This example shows how to use the Get-MgBetaPrintPrinterCapability Cmdlet.
+
 
 ## PARAMETERS
 

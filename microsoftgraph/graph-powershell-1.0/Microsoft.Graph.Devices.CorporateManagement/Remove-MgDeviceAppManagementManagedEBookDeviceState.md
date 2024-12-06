@@ -34,13 +34,17 @@ Remove-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorpor
 Deletes a deviceInstallState.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Remove-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId $managedEBookId -DeviceInstallStateId $deviceInstallStateId
+
+```
+This example shows how to use the Remove-MgDeviceAppManagementManagedEBookDeviceState Cmdlet.
+
 
 ## PARAMETERS
 

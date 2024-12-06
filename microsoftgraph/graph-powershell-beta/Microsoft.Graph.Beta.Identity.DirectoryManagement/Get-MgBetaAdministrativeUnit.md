@@ -48,20 +48,28 @@ Since the administrativeUnit resource supports extensions, you can also use the 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-administrativeunits-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get an administrative unit
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
 
-### EXAMPLE 2
 ```
+This example will get an administrative unit
+
+### Example 2: Get a restricted management administrative unit
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
+
+```
+This example will get a restricted management administrative unit
+
 
 ## PARAMETERS
 

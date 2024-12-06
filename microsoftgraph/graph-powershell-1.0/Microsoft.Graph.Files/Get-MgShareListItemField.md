@@ -46,18 +46,6 @@ Get-MgShareListItemField -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The values of the columns set on this list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -226,4 +214,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemfield)
+
 

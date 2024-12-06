@@ -49,13 +49,17 @@ Read the properties and relationships of a retentionEvent object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityTriggerRetentionEvent
+
+```
+This example shows how to use the Get-MgSecurityTriggerRetentionEvent Cmdlet.
+
 
 ## PARAMETERS
 

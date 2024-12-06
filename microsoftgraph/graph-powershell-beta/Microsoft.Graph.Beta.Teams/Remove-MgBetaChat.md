@@ -39,13 +39,17 @@ When invoked with delegated permissions, this operation only works for tenant ad
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaChat -ChatId $chatId
+
+```
+This example shows how to use the Remove-MgBetaChat Cmdlet.
+
 
 ## PARAMETERS
 

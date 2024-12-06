@@ -29,13 +29,17 @@ Get the tenant-level settings for SharePoint and OneDrive.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharepointsettings-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgAdminSharepointSetting
+
+```
+This example shows how to use the Get-MgAdminSharepointSetting Cmdlet.
+
 
 ## PARAMETERS
 

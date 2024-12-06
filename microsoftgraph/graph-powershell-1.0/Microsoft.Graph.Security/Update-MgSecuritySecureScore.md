@@ -54,18 +54,6 @@ Update-MgSecuritySecureScore -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property secureScores in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveUserCount
@@ -507,4 +495,5 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescore)
+
 

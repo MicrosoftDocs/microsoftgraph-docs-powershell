@@ -40,11 +40,11 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 Create a new windows10EnterpriseModernAppManagementConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windows10EnterpriseModernAppManagementConfiguration"
@@ -55,6 +55,10 @@ $params = @{
 }
 
 New-MgDeviceManagementDeviceConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

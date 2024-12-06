@@ -53,11 +53,11 @@ Update the role of a conversationMember in a team.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-update-members-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Update-MgBetaTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTeamMember Cmdlet.
+
 
 ## PARAMETERS
 

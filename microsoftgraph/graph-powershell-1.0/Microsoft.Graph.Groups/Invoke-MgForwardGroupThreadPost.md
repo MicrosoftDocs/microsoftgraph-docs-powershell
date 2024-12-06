@@ -57,11 +57,11 @@ You can specify both the parent conversation and thread in the request, \nor, yo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/post-forward-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	comment = "comment-value"
@@ -76,6 +76,10 @@ $params = @{
 }
 
 Invoke-MgForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgForwardGroupThreadPost Cmdlet.
+
 
 ## PARAMETERS
 

@@ -36,13 +36,17 @@ Get the number of unique, licensed users that performed file interactions agains
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveactivityfilecounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportOneDriveActivityFileCount -Period $periodId
+Get-MgReportOneDriveActivityFileCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOneDriveActivityFileCount Cmdlet.
+
 
 ## PARAMETERS
 
