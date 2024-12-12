@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationsoftwareoathmethod
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationSoftwareOathMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeeting
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 ## SYNTAX
 

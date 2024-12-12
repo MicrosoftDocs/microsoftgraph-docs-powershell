@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentrubricbyref
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 When set, the grading rubric attached to this assignment.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentRubricByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 

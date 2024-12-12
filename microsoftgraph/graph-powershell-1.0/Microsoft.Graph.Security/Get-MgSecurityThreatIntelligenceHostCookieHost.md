@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcookiehost
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Indicates that a cookie of this name and domain was found related to this host.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostCookieHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostCookieHost?view=graph-powershell-beta)
 
 ## SYNTAX
 

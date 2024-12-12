@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityuserdetail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get details about email activity users have performed.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 

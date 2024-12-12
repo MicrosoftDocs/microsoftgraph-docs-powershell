@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Delete a draft restoreSessionBase object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

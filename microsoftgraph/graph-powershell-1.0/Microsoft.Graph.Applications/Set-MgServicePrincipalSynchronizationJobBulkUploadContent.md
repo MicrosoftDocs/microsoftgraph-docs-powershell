@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationjobbulkuploadcontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The bulk upload operation for the job.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationJobBulkUploadContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

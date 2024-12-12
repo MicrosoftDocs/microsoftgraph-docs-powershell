@@ -11,6 +11,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Update the properties of a printConnector object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

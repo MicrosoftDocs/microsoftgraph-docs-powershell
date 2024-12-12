@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldescriptorfileplanreferencetemplate
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Specifies a unique alpha-numeric identifier for an organization's retention schedule.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 

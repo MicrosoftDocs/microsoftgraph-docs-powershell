@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresiteinclusionrule
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property siteInclusionRules for solutions
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreSiteInclusionRule](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreSiteInclusionRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 

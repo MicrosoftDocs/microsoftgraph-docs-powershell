@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserphotocontent
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The user's profile photo.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserPhotoContent](/powershell/module/Microsoft.Graph.Users/Remove-MgUserPhotoContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 

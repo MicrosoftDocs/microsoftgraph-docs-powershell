@@ -12,6 +12,9 @@ ms.subservice: reports
 List training coverage for tenant users in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

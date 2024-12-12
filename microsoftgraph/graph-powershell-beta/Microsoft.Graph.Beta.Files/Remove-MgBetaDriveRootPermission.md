@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootpermission
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property permissions for drives
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 

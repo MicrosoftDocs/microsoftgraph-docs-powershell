@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsight
@@ -11,6 +11,9 @@ schema: 2.0.0
 Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserInsight](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsight?view=graph-powershell-1.0)
 
 ## SYNTAX
 
