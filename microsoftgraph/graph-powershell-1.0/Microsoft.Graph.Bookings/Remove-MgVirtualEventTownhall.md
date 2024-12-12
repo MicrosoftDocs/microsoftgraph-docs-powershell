@@ -32,18 +32,6 @@ Remove-MgVirtualEventTownhall -InputObject <IBookingsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property townhalls for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -226,4 +214,5 @@ INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventtownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventtownhall)
+
 

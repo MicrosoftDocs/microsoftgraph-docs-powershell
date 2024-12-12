@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementmanageddeviceassignment
@@ -46,18 +46,6 @@ Rename-MgBetaDeviceManagementManagedDeviceAssignment -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Invoke action changeAssignments
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -337,4 +325,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementmanageddeviceassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementmanageddeviceassignment)
+
 

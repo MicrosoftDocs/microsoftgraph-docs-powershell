@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwin32catalogappupdatereport
@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementReportWin32CatalogAppUpdateReport -OutFile <String>
 
 ## DESCRIPTION
 Invoke action retrieveWin32CatalogAppsUpdateReport
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -349,4 +337,5 @@ BODY \<IPaths1617WkgDevicemanagementReportsMicrosoftGraphRetrievewin32Catalogapp
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwin32catalogappupdatereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportwin32catalogappupdatereport)
+
 

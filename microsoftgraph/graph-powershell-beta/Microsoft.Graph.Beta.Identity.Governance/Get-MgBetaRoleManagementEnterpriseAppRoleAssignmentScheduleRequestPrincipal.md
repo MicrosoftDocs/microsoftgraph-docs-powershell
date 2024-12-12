@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignmentschedulerequestprincipal
@@ -32,18 +32,6 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestPrincipal
 ## DESCRIPTION
 The principal that's getting a role assignment through the request.
 Supports $expand and $select nested in $expand for id only.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -289,4 +277,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignmentschedulerequestprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignmentschedulerequestprincipal)
+
 

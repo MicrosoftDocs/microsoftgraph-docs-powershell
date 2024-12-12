@@ -40,18 +40,6 @@ Get-MgSolutionBackupRestorePoint -InputObject <IBackupRestoreIdentity> [-ExpandP
 ## DESCRIPTION
 List of restore points in the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -323,4 +311,5 @@ INPUTOBJECT \<IBackupRestoreIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestorepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestorepoint)
+
 

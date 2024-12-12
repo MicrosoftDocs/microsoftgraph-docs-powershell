@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudienceapplicablecontentmatcheddevice
@@ -47,18 +47,6 @@ Update-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -InputOb
 
 ## DESCRIPTION
 Update the navigation property matchedDevices in admin
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -302,4 +290,5 @@ INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudienceapplicablecontentmatcheddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudienceapplicablecontentmatcheddevice)
+
 

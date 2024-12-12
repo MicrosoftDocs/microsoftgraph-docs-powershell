@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementexchangeonpremisepolicyconditionalaccesssetting
@@ -39,18 +39,6 @@ Get-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
 ## DESCRIPTION
 The Exchange on premises conditional access settings.
 On premises conditional access will require devices to be both enrolled and compliant for mail access
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -237,4 +225,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementexchangeonpremisepolicyconditionalaccesssetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementexchangeonpremisepolicyconditionalaccesssetting)
+
 

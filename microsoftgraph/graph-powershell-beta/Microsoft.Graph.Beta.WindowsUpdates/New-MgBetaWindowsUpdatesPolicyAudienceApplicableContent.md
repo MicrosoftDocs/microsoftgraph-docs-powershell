@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyaudienceapplicablecontent
@@ -46,18 +46,6 @@ New-MgBetaWindowsUpdatesPolicyAudienceApplicableContent -InputObject <IWindowsUp
 
 ## DESCRIPTION
 Create new navigation property to applicableContent for admin
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -323,4 +311,5 @@ MATCHEDDEVICES \<IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch\[\]\>
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyaudienceapplicablecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyaudienceapplicablecontent)
+
 

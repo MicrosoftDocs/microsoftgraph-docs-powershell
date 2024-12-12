@@ -46,18 +46,6 @@ A collection of restore points and destination details that can be used to resto
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangerestoresession-list-mailboxrestoreartifacts-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -346,4 +334,5 @@ INPUTOBJECT \<IBackupRestoreIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreexchangerestoresessionmailboxrestoreartifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreexchangerestoresessionmailboxrestoreartifact)
 
 [https://learn.microsoft.com/graph/api/exchangerestoresession-list-mailboxrestoreartifacts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/exchangerestoresession-list-mailboxrestoreartifacts?view=graph-rest-beta)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingbyjoinweburl
@@ -79,18 +79,6 @@ Update-MgBetaCommunicationOnlineMeetingByJoinWebUrl -InputObject <ICloudCommunic
 
 ## DESCRIPTION
 Update the navigation property onlineMeetings in communications
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -1574,4 +1562,5 @@ WATERMARKPROTECTION \<IMicrosoftGraphWatermarkProtectionValues\>: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingbyjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingbyjoinweburl)
+
 

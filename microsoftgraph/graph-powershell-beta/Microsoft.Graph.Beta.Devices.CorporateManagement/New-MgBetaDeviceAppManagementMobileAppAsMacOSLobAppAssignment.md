@@ -52,18 +52,6 @@ New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment
 ## DESCRIPTION
 Create new navigation property to assignments for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -391,4 +379,5 @@ TARGET \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>: Base type for 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappasmacoslobappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappasmacoslobappassignment)
+
 

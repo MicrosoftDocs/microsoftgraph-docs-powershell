@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauseractivitystatistics
@@ -28,18 +28,6 @@ Remove-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity> [-IfMatch <St
 
 ## DESCRIPTION
 Delete navigation property activityStatistics for users
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -238,4 +226,5 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauseractivitystatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauseractivitystatistics)
+
 

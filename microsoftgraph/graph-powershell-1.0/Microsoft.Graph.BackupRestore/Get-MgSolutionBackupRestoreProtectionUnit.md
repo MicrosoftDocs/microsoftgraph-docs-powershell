@@ -44,18 +44,6 @@ Read the properties and relationships of a protectionUnitBase object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/protectionunitbase-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -329,4 +317,5 @@ INPUTOBJECT \<IBackupRestoreIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreprotectionunit)
 
 [https://learn.microsoft.com/graph/api/protectionunitbase-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/protectionunitbase-get?view=graph-rest-1.0)
+
 

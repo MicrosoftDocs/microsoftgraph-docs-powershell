@@ -32,18 +32,6 @@ Remove-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property subcategories for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CategoryTemplateId
@@ -280,4 +268,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategorysubcategory)
+
 

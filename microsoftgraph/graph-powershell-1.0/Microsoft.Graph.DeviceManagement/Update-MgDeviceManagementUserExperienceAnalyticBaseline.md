@@ -60,18 +60,6 @@ Update-MgDeviceManagementUserExperienceAnalyticBaseline -InputObject <IDeviceMan
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsBaselines in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -638,4 +626,5 @@ Examples: none, percentage, count, seconds, score.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticbaseline](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticbaseline)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementdefenderresourcenamespace
@@ -28,18 +28,6 @@ Remove-MgBetaRoleManagementDefenderResourceNamespace -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Delete navigation property resourceNamespaces for roleManagement
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -228,4 +216,5 @@ INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementdefenderresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementdefenderresourcenamespace)
+
 

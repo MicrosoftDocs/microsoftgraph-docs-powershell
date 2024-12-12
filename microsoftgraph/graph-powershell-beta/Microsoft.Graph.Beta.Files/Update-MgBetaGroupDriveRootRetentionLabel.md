@@ -50,18 +50,6 @@ Update-MgBetaGroupDriveRootRetentionLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property retentionLabel in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -426,4 +414,5 @@ Read-write.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootretentionlabel)
+
 

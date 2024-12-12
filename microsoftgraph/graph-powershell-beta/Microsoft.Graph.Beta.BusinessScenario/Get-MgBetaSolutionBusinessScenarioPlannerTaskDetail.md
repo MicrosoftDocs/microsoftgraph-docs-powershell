@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskdetail
@@ -33,18 +33,6 @@ Get-MgBetaSolutionBusinessScenarioPlannerTaskDetail -InputObject <IBusinessScena
 Read-only.
 Nullable.
 More details about the task.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -194,4 +182,5 @@ INPUTOBJECT \<IBusinessScenarioIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskdetail)
+
 

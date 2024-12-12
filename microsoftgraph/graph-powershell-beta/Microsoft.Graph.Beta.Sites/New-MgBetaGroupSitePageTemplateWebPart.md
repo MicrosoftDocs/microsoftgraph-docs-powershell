@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepagetemplatewebpart
@@ -42,18 +42,6 @@ New-MgBetaGroupSitePageTemplateWebPart -InputObject <ISitesIdentity> -BodyParame
 
 ## DESCRIPTION
 Create new navigation property to webParts for groups
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -317,4 +305,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepagetemplatewebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepagetemplatewebpart)
+
 
