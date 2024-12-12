@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-Module Guid: ae8f44c8-0344-41a2-a20b-0df22fd30c95
+Module Guid: 215d910b-fcff-4fd5-ae58-adb60ae1dc7c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -98,23 +98,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgServiceAnnouncementMessage](Update-MgServiceAnnouncementMessage.md)
 
 ### [Update-MgServiceAnnouncementMessageAttachment](Update-MgServiceAnnouncementMessageAttachment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
