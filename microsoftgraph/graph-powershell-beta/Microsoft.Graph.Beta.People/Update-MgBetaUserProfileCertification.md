@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilecertification
 schema: 2.0.0
+ms.subservice: people
 ---
 
 # Update-MgBetaUserProfileCertification
@@ -55,6 +56,9 @@ Update-MgBetaUserProfileCertification -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Update the properties of a personCertification object from a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personcertification-update-permissions.md)]
 
 ## EXAMPLES
 

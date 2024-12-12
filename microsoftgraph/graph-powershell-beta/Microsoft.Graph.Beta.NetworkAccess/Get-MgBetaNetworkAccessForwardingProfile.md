@@ -1,8 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingprofile
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
+ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessForwardingProfile
@@ -36,6 +38,12 @@ Get-MgBetaNetworkAccessForwardingProfile -InputObject <INetworkAccessIdentity> [
 
 ## DESCRIPTION
 Retrieve information about a specific forwarding profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-networkaccessroot-list-forwardingprofiles-permissions.md)]
 
 ## EXAMPLES
 

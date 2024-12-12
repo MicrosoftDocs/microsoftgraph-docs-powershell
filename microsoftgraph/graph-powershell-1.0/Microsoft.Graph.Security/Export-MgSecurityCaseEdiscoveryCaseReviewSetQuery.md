@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery
@@ -50,6 +51,9 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewsetquery-export-permissions.md)]
 
 ## EXAMPLES
 

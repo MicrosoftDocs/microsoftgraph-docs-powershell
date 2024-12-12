@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenlifetimepolicytokenlifetimepolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef
@@ -29,6 +30,9 @@ Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -InputObject <IA
 
 ## DESCRIPTION
 Remove a tokenLifetimePolicy from an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-tokenlifetimepolicies-permissions.md)]
 
 ## EXAMPLES
 

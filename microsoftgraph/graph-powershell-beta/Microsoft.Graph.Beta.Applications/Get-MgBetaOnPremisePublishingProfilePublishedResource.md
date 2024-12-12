@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresource
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaOnPremisePublishingProfilePublishedResource
@@ -41,6 +42,9 @@ Get-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 List of existing publishedResource objects.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-list-permissions.md)]
 
 ## EXAMPLES
 

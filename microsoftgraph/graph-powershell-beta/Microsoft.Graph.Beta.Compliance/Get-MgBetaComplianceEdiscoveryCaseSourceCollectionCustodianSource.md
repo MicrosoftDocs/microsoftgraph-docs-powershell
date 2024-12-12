@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectioncustodiansource
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource
@@ -37,6 +38,9 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource -InputObject <
 
 ## DESCRIPTION
 Custodian sources that are included in the sourceCollection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-custodiansources-permissions.md)]
 
 ## EXAMPLES
 

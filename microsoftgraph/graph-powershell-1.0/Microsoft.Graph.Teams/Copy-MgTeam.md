@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Copy-MgTeam
@@ -60,6 +61,9 @@ Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-clone-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduser
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDeviceRegisteredUser
@@ -23,6 +24,9 @@ Get-MgBetaDeviceRegisteredUser -DeviceId <String> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-registeredusers-permissions.md)]
 
 ## EXAMPLES
 

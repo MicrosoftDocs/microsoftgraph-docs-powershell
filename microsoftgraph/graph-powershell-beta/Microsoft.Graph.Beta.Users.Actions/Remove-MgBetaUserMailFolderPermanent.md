@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausermailfolderpermanent
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Remove-MgBetaUserMailFolderPermanent
@@ -30,6 +31,9 @@ Remove-MgBetaUserMailFolderPermanent -InputObject <IUsersActionsIdentity> [-Resp
 ## DESCRIPTION
 Permanently delete a mail folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-permanentdelete-permissions.md)]
 
 ## EXAMPLES
 

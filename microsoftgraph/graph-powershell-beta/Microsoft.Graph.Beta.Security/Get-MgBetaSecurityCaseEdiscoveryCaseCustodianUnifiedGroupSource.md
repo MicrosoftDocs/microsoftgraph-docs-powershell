@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
@@ -38,6 +39,9 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <IS
 
 ## DESCRIPTION
 Data source entity for groups associated with the custodian.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-list-unifiedgroupsources-permissions.md)]
 
 ## EXAMPLES
 

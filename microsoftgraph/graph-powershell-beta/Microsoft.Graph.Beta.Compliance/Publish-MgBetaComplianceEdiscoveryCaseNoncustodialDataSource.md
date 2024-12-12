@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasenoncustodialdatasource
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource
@@ -28,6 +29,9 @@ Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComp
 
 ## DESCRIPTION
 Releases the non-custodial data source from the case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-noncustodialdatasource-release-permissions.md)]
 
 ## EXAMPLES
 

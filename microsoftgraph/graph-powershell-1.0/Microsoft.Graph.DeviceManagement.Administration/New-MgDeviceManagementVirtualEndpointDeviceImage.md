@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # New-MgDeviceManagementVirtualEndpointDeviceImage
@@ -32,6 +33,9 @@ New-MgDeviceManagementVirtualEndpointDeviceImage -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-deviceimages-permissions.md)]
 
 ## EXAMPLES
 

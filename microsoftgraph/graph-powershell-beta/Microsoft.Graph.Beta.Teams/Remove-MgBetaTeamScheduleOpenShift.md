@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleopenshift
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamScheduleOpenShift
@@ -28,6 +29,9 @@ Remove-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete an openShift object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/openshift-delete-permissions.md)]
 
 ## EXAMPLES
 

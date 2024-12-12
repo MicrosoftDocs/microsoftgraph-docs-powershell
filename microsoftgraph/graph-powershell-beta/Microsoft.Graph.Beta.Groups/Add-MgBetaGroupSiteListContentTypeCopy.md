@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitelistcontenttypecopy
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaGroupSiteListContentTypeCopy
@@ -44,6 +45,9 @@ Add-MgBetaGroupSiteListContentTypeCopy -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action addCopy
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 

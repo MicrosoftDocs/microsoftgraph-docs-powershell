@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupdrivelistcontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Unpublish-MgGroupDriveListContentType
@@ -28,6 +29,9 @@ Unpublish-MgGroupDriveListContentType -InputObject <IGroupsIdentity> [-ResponseH
 
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## EXAMPLES
 

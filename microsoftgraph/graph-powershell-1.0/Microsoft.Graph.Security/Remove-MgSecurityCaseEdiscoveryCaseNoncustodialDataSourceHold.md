@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasenoncustodialdatasourcehold
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold
@@ -66,6 +67,9 @@ Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISec
 Start the process of removing hold from eDiscovery non-custodial data sources.
 After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that returns an eDiscoveryHoldOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverynoncustodialdatasource-removehold-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationappmanagementpolicyappmanagementpolicybyref
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef
@@ -30,6 +31,9 @@ Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef -InputObject
 ## DESCRIPTION
 Remove an appManagementPolicy policy object from an application or service principal object.
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-delete-appliesto-permissions.md)]
 
 ## EXAMPLES
 

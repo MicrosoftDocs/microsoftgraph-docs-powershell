@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityAttackSimulationLoginPage
@@ -50,6 +51,9 @@ Get-MgSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> [-Expan
 
 ## DESCRIPTION
 Represents an attack simulation training login page.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-loginpage-permissions.md)]
 
 ## EXAMPLES
 

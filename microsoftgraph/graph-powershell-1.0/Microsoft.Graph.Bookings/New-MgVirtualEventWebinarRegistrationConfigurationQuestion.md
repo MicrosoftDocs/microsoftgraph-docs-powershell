@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistrationconfigurationquestion
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # New-MgVirtualEventWebinarRegistrationConfigurationQuestion
@@ -46,6 +47,9 @@ New-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBookin
 ## DESCRIPTION
 Create a registration question for a webinar.
 You can create either a predefined registration question or a custom registration question.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistrationconfiguration-post-questions-permissions.md)]
 
 ## EXAMPLES
 

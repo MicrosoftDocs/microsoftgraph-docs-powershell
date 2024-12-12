@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitedelta
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaGroupSiteDelta
@@ -38,6 +39,9 @@ A delta function call for sites is similar to a GET request, except that by appr
 It allows you to maintain and synchronize a local store of a user's sites without having to fetch all the sites from the server every time.\nThe application calls the API without specifying any parameters.\nThe service begins enumerating sites and returns pages of changes to these sites, accompanied by either an @odata.nextLink or an @odata.deltaLink.\nYour application should continue making calls using the @odata.nextLink until there's an @odata.deltaLink  in the response.
 After you receive all the changes, you can apply them to your local state.\nTo monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
 Any resources marked as deleted should be removed from your local state.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-delta-permissions.md)]
 
 ## EXAMPLES
 

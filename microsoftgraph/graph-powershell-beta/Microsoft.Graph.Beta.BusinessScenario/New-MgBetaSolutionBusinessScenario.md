@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenario
 schema: 2.0.0
+ms.subservice: business-scenarios
 ---
 
 # New-MgBetaSolutionBusinessScenario
@@ -30,6 +31,9 @@ New-MgBetaSolutionBusinessScenario -BodyParameter <IMicrosoftGraphBusinessScenar
 
 ## DESCRIPTION
 Create a new businessScenario object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/solutionsroot-post-businessscenarios-permissions.md)]
 
 ## EXAMPLES
 

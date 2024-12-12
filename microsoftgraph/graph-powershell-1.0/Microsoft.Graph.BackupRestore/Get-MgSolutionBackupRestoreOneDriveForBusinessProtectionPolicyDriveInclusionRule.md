@@ -1,8 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicydriveinclusionrule
 schema: 2.0.0
+ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule
@@ -47,6 +49,12 @@ You can use this operation to get mailbox, drive, and site protection rules.
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria.
 The initial status of a protection rule upon creation is active.
 After the rule is applied, the state is either completed or completedWithErrors.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/protectionrulebase-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onedriveforbusinessprotectionpolicy-list-driveinclusionrules-permissions.md)]
 
 ## EXAMPLES
 

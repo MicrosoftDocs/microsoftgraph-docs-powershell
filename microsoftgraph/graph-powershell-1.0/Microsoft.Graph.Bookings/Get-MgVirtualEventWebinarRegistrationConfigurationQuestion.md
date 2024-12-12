@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistrationconfigurationquestion
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinarRegistrationConfigurationQuestion
@@ -37,6 +38,9 @@ Get-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBookin
 
 ## DESCRIPTION
 Registration questions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistrationconfiguration-list-questions-permissions.md)]
 
 ## EXAMPLES
 

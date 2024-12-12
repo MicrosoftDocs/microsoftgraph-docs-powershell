@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertask
 schema: 2.0.0
+ms.subservice: business-scenarios
 ---
 
 # Remove-MgBetaSolutionBusinessScenarioPlannerTask
@@ -28,6 +29,9 @@ Remove-MgBetaSolutionBusinessScenarioPlannerTask -InputObject <IBusinessScenario
 
 ## DESCRIPTION
 Delete a businessScenarioTask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-delete-tasks-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresiteprotectionunit
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgSolutionBackupRestoreSiteProtectionUnit
@@ -36,6 +37,9 @@ Get-MgSolutionBackupRestoreSiteProtectionUnit -InputObject <IBackupRestoreIdenti
 
 ## DESCRIPTION
 The list of site protection units in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]
 
 ## EXAMPLES
 

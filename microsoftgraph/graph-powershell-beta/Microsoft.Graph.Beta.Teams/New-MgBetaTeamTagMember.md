@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamTagMember
@@ -44,6 +45,9 @@ New-MgBetaTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create a new teamworkTagMember object in a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktagmember-post-permissions.md)]
 
 ## EXAMPLES
 
