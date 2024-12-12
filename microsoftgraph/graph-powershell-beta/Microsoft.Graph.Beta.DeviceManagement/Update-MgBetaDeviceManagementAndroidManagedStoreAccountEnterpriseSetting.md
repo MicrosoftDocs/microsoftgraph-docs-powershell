@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting
@@ -33,18 +33,6 @@ Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 
 ## DESCRIPTION
 Update the navigation property androidManagedStoreAccountEnterpriseSettings in deviceManagement
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -402,4 +390,5 @@ COMPANYCODES \<IMicrosoftGraphAndroidEnrollmentCompanyCode\[\]\>: Company codes 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting)
+
 

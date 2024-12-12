@@ -41,11 +41,11 @@ Create a new bookmark object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	displayName = "Contoso Install Site"
@@ -77,6 +77,10 @@ state = "published"
 }
 
 New-MgSearchBookmark -BodyParameter $params
+
+```
+This example shows how to use the New-MgSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 

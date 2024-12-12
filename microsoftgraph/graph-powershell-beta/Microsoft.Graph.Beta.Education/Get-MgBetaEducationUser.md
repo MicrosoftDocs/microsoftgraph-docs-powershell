@@ -63,13 +63,17 @@ Retrieve the properties and relationships of a user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-list-users-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationUser
+
+```
+This example shows how to use the Get-MgBetaEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

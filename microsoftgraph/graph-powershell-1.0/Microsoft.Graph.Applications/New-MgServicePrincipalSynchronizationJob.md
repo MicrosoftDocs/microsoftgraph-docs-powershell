@@ -61,17 +61,21 @@ Call Start job to start synchronization.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-post-jobs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	templateId = "BoxOutDelta"
 }
 
 New-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

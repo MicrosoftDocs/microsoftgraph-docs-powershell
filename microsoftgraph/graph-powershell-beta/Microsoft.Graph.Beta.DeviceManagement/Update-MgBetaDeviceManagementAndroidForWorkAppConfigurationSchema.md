@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidforworkappconfigurationschema
@@ -46,18 +46,6 @@ Update-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <
 
 ## DESCRIPTION
 Update the navigation property androidForWorkAppConfigurationSchemas in deviceManagement
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -441,4 +429,5 @@ SCHEMAITEMS \<IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem\[\]\>: Col
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidforworkappconfigurationschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidforworkappconfigurationschema)
+
 

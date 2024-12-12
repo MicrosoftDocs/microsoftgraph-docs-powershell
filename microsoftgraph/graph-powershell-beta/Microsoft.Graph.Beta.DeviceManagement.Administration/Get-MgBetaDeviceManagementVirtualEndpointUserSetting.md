@@ -49,20 +49,28 @@ Read the properties and relationships of a cloudPcUserSetting object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-usersettings-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the properties of the specified user setting
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
+This example will get the properties of the specified user setting
 
-Get-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -ExpandProperty "assignments"
+### Example 2: Get the properties of the specified user setting and expand on the assignments
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -ExpandProperty "assignments" 
+
+```
+This example will get the properties of the specified user setting and expand on the assignments
+
 
 ## PARAMETERS
 

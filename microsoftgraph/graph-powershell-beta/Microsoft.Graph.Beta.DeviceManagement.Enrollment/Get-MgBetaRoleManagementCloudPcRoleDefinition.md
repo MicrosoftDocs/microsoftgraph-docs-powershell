@@ -42,13 +42,17 @@ Get the properties and relationships of a unifiedRoleDefinition object of an RBA
 The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- directory (Microsoft Entra directory roles)\n- entitlement management (Microsoft Entra entitlement management)\n- Exchange Online
 
 ## EXAMPLES
+### Example 1: Get the definition of a built-in role for a Cloud PC provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 Get-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a built-in role for a cloud pc provider
+
 
 ## PARAMETERS
 

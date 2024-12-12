@@ -32,18 +32,6 @@ Remove-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from subscribedSkus
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -230,4 +218,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgsubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgsubscribedsku)
+
 

@@ -40,13 +40,17 @@ The following RBAC providers are currently supported:\n- Cloud PC\n- device mana
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroledefinition-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 Remove-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example shows how to use the Remove-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

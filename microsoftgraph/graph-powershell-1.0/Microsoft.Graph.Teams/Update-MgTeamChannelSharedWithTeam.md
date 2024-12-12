@@ -49,18 +49,6 @@ Update-MgTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property sharedWithTeams in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9988,4 +9976,5 @@ This URL should be treated as an opaque blob, and not parsed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelsharedwithteam)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileanniversary
@@ -38,14 +38,18 @@ Get-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity> [-ExpandProperty
 Represents the details of meaningful dates associated with a person.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileAnniversary -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileAnniversary Cmdlet.
+
 
 ## PARAMETERS
 

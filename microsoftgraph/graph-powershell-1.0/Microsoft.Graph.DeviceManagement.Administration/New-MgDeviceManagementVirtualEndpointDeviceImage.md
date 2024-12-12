@@ -41,11 +41,11 @@ Upload a custom OS image that you can later provision on Cloud PCs.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-deviceimages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	displayName = "ImageForDev"
@@ -54,6 +54,10 @@ $params = @{
 }
 
 New-MgDeviceManagementVirtualEndpointDeviceImage -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementVirtualEndpointDeviceImage Cmdlet.
+
 
 ## PARAMETERS
 

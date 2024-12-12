@@ -48,18 +48,6 @@ Update-MgBetaUserLicenseDetail -InputObject <IUsersIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property licenseDetails in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -361,4 +349,5 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserlicensedetail)
+
 

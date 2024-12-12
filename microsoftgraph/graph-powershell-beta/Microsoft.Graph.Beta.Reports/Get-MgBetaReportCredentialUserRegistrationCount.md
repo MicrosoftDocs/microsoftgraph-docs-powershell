@@ -27,13 +27,17 @@ Report the current state of how many users in your organization are registered f
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getcredentialuserregistrationcount-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportCredentialUserRegistrationCount
+
+```
+This example shows how to use the Get-MgBetaReportCredentialUserRegistrationCount Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,18 +42,6 @@ Alternatively, send a new message in a single operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-send-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -276,4 +264,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-send?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-1.0)
+
 

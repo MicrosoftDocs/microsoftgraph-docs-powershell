@@ -53,11 +53,11 @@ Restore a driveItem that has been deleted and is currently in the recycle bin.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Restore-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgBetaDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

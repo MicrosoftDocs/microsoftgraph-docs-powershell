@@ -55,11 +55,11 @@ New-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMic
 Create new navigation property to notebooks for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Notes
-```
 
 $params = @{
 	displayName = "My Private notebook"
@@ -67,6 +67,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserOnenoteNotebook -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserOnenoteNotebook Cmdlet.
+
 
 ## PARAMETERS
 

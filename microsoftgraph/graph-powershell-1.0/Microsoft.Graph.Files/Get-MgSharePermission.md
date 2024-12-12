@@ -32,18 +32,6 @@ Get-MgSharePermission -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Used to access the permission representing the underlying sharing link
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -197,4 +185,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharepermission)
+
 

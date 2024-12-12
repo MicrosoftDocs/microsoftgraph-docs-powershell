@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementgrouppolicydefinitionnextversiondefinitionpreviouversiondefinition
@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVe
 
 ## DESCRIPTION
 Delete navigation property previousVersionDefinition for deviceManagement
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -259,4 +247,5 @@ INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementgrouppolicydefinitionnextversiondefinitionpreviouversiondefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementgrouppolicydefinitionnextversiondefinitionpreviouversiondefinition)
+
 

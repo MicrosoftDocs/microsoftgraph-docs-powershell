@@ -25,13 +25,17 @@ Get-MgReportDeviceConfigurationUserActivity -OutFile <String> [-ResponseHeadersV
 Metadata for the device configuration user activity report
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportDeviceConfigurationUserActivity
+
+```
+This example shows how to use the Get-MgReportDeviceConfigurationUserActivity Cmdlet.
+
 
 ## PARAMETERS
 

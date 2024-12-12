@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilelanguage
@@ -30,14 +30,18 @@ Remove-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-IfMatch <Strin
 Delete navigation property languages for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileLanguage -UserId $userId -LanguageProficiencyId $languageProficiencyId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileLanguage Cmdlet.
+
 
 ## PARAMETERS
 

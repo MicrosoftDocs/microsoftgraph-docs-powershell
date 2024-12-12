@@ -58,13 +58,17 @@ For details about how they compare, see Using the places API.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 Get-MgBetaPlaceAsRoom
+
+```
+This example shows how to use the Get-MgBetaPlaceAsRoom Cmdlet.
+
 
 ## PARAMETERS
 
