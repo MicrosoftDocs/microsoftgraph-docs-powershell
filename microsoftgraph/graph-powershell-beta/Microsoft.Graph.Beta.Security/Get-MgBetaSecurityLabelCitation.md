@@ -49,13 +49,17 @@ Read the properties and relationships of a citationTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-citations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityLabelCitation
+
+```
+This example shows how to use the Get-MgBetaSecurityLabelCitation Cmdlet.
+
 
 ## PARAMETERS
 

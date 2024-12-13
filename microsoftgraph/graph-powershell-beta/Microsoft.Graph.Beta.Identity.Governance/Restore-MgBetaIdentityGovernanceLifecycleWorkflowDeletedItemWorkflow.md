@@ -39,13 +39,17 @@ You can only restore a workflow that was deleted within the last 30 days before 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-restore-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Restore-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId
+
+```
+This example shows how to use the Restore-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow Cmdlet.
+
 
 ## PARAMETERS
 

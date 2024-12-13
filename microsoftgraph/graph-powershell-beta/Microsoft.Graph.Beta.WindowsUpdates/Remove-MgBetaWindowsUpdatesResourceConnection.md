@@ -34,13 +34,17 @@ Delete a resourceConnection object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-resourceconnection-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 Remove-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
+
+```
+This example shows how to use the Remove-MgBetaWindowsUpdatesResourceConnection Cmdlet.
+
 
 ## PARAMETERS
 

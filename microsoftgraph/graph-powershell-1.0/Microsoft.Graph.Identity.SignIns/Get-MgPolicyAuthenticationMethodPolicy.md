@@ -29,13 +29,17 @@ Read the properties and relationships of an authenticationMethodsPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationmethodspolicy-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyAuthenticationMethodPolicy
+
+```
+This example shows how to use the Get-MgPolicyAuthenticationMethodPolicy Cmdlet.
+
 
 ## PARAMETERS
 

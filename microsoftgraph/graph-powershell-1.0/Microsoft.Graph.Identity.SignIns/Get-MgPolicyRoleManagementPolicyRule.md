@@ -46,20 +46,28 @@ Retrieve a rule or settings defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:
 
 ## EXAMPLES
+### Example 1: Retrieve a rule defined for a policy in PIM for Microsoft Entra roles
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId
 
-### EXAMPLE 2
 ```
+This example will retrieve a rule defined for a policy in pim for microsoft entra roles
+
+### Example 2: Retrieve a rule defined for a policy in PIM for groups
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId
+
+```
+This example will retrieve a rule defined for a policy in pim for groups
+
 
 ## PARAMETERS
 

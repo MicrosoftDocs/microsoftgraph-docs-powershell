@@ -34,20 +34,28 @@ Get the most recent activity data for enabled users of Microsoft 365 Copilot app
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getmicrosoft365copilotusageuserdetail-permissions.md)]
 
 ## EXAMPLES
+### Example 1: CSV output
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
-Get-MgBetaReportMicrosoft365CopilotUsageUserDetail -Format "text/csv"  -Period $periodId
+Get-MgBetaReportMicrosoft365CopilotUsageUserDetail -Format "text/csv"  -Period $periodId 
 
-### EXAMPLE 2
 ```
+This example will csv output
+
+### Example 2: JSON output
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
-Get-MgBetaReportMicrosoft365CopilotUsageUserDetail -Format "application/json"  -Period $periodId
+Get-MgBetaReportMicrosoft365CopilotUsageUserDetail -Format "application/json"  -Period $periodId 
+
+```
+This example will json output
+
 
 ## PARAMETERS
 

@@ -40,11 +40,11 @@ Create a new connectedOrganization object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-connectedorganizations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a connected organization
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Connected organization name"
@@ -60,6 +60,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementConnectedOrganization -BodyParameter $params
+
+```
+This example will create a connected organization
+
 
 ## PARAMETERS
 

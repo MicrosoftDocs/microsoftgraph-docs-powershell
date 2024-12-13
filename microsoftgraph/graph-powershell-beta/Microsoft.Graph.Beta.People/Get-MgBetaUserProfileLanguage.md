@@ -38,14 +38,18 @@ Get-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-ExpandProperty <S
 Represents detailed information about languages that a user has added to their profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileLanguage -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileLanguage Cmdlet.
+
 
 ## PARAMETERS
 

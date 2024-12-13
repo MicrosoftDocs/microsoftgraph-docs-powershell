@@ -41,11 +41,11 @@ Create a new agreement object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termsofusecontainer-post-agreements-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Contoso ToU for guest users"
@@ -56,13 +56,17 @@ $params = @{
 			language = "en"
 			isDefault = $true
 			fileData = @{
-				data = \[System.Text.Encoding\]::ASCII.GetBytes("SGVsbG8gd29ybGQ=//truncated-binary")
+				data = [System.Text.Encoding]::ASCII.GetBytes("SGVsbG8gd29ybGQ=//truncated-binary")
 			}
 		}
 	)
 }
 
 New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
 
 ## PARAMETERS
 

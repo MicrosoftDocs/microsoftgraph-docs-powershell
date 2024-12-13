@@ -39,13 +39,17 @@ Get all messages from all chats that a user is a participant in, including one-o
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chats-getallmessages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Functions
-```
 
-Get-MgAllUserChatMessage -UserId $userId -Top 2
+Get-MgAllUserChatMessage -UserId $userId -Top 2 
+
+```
+This example shows how to use the Get-MgAllUserChatMessage Cmdlet.
+
 
 ## PARAMETERS
 

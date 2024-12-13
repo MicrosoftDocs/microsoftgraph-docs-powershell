@@ -53,13 +53,17 @@ If the definition is 30 days or older, a 404 Not Found error is returned.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewset-list-historydefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAccessReviewHistoryDefinition
+
+```
+This example shows how to use the Get-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
+
 
 ## PARAMETERS
 

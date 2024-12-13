@@ -45,13 +45,17 @@ For more information, see contentType: addCopyFromContentTypeHub and the blog po
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-getcompatiblehubcontenttypes-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteListContentTypeCompatibleHubContentType -SiteId $siteId -ListId $listId
+
+```
+This example shows how to use the Get-MgSiteListContentTypeCompatibleHubContentType Cmdlet.
+
 
 ## PARAMETERS
 

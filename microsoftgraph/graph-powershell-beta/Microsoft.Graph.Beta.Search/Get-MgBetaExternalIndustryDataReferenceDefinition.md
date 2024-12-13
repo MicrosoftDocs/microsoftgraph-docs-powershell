@@ -46,13 +46,17 @@ Read the properties and relationships of a referenceDefinition object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-referencedefinition-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalIndustryDataReferenceDefinition
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataReferenceDefinition Cmdlet.
+
 
 ## PARAMETERS
 

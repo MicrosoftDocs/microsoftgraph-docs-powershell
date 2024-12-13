@@ -31,18 +31,6 @@ Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript
 ## DESCRIPTION
 Invoke action validateComplianceScript
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -199,6 +187,7 @@ DEVICECOMPLIANCEPOLICYSCRIPT `<IMicrosoftGraphDeviceCompliancePolicyScript>`: de
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript)
+
 
 
 

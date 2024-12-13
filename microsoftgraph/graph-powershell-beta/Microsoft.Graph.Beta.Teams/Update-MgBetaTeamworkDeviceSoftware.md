@@ -54,11 +54,11 @@ This API triggers a long-running operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkdevice-updatesoftware-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	softwareType = "teamsClient"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Update-MgBetaTeamworkDeviceSoftware -TeamworkDeviceId $teamworkDeviceId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTeamworkDeviceSoftware Cmdlet.
+
 
 ## PARAMETERS
 

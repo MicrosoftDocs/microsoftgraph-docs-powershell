@@ -37,13 +37,17 @@ Discover the latest schema definition for provisioning to an application.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -DirectoryDefinitionId $directoryDefinitionId
+
+```
+This example shows how to use the Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory Cmdlet.
+
 
 ## PARAMETERS
 

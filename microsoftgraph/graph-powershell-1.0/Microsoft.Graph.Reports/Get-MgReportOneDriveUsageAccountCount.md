@@ -38,13 +38,17 @@ Any site on which users viewed, modified, uploaded, downloaded, shared, or synce
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveusageaccountcounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportOneDriveUsageAccountCount -Period $periodId
+Get-MgReportOneDriveUsageAccountCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOneDriveUsageAccountCount Cmdlet.
+
 
 ## PARAMETERS
 

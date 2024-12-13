@@ -46,11 +46,11 @@ Create an attack simulation campaign for a tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "Graph Simulation"
@@ -78,7 +78,7 @@ endUserNotificationSetting = @{
 	settingType = "noTraining"
 	positiveReinforcement = @{
 		deliveryPreference = "deliverAfterCampaignEnd"
-		endUserNotification = "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
+		"endUserNotification@odata.bind" = "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
 		defaultLanguage = "en"
 	}
 	simulationNotification = @{
@@ -90,6 +90,10 @@ endUserNotificationSetting = @{
 }
 
 New-MgSecurityAttackSimulation -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 

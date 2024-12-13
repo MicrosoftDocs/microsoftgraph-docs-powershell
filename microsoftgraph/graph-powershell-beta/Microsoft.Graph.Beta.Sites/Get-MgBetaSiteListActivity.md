@@ -22,18 +22,6 @@ Get-MgBetaSiteListActivity -ListId <String> -SiteId <String> [-ExpandProperty <S
 ## DESCRIPTION
 The recent activities that took place within this list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -276,6 +264,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistactivity)
+
 
 
 
