@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalpasswordsinglesignoncredential
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaServicePrincipalPasswordSingleSignOnCredential
@@ -46,6 +47,9 @@ New-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicat
 
 ## DESCRIPTION
 Create single sign-on credentials using a password for a user or group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-createpasswordsinglesignoncredentials-permissions.md)]
 
 ## EXAMPLES
 

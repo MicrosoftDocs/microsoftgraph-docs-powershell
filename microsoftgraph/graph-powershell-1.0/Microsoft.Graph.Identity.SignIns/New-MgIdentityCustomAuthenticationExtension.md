@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityCustomAuthenticationExtension
@@ -31,6 +32,9 @@ New-MgIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Respons
 ## DESCRIPTION
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-post-customauthenticationextensions-permissions.md)]
 
 ## EXAMPLES
 

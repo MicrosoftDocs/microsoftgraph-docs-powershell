@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailteamlicensingdetail
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail
@@ -28,6 +29,9 @@ Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail -InputObject <IApplic
 
 ## DESCRIPTION
 Get the license status of a user in Microsoft Teams.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/licensedetails-getteamslicensingdetails-permissions.md)]
 
 ## EXAMPLES
 

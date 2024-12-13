@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcremoteactionresult
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointCloudPcRemoteActionResult
@@ -29,6 +30,9 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcRemoteActionResult
 
 ## DESCRIPTION
 Retrieve remote action results and check the status of a specific remote action performed on the associated Cloud PC device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-retrievecloudpcremoteactionresults-permissions.md)]
 
 ## EXAMPLES
 

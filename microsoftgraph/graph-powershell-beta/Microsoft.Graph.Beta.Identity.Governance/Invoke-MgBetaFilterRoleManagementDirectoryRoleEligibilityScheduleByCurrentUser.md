@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagementdirectoryroleeligibilityschedulebycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser
@@ -31,6 +32,9 @@ Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser
 
 ## DESCRIPTION
 Get a list of the unifiedRoleEligibilitySchedule objects and their properties associated with a particular principal object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityschedule-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
 

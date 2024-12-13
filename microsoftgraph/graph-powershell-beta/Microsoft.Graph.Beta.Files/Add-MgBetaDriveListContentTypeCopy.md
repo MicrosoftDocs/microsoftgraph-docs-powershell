@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetadrivelistcontenttypecopy
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaDriveListContentTypeCopy
@@ -44,6 +45,9 @@ Add-MgBetaDriveListContentTypeCopy -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action addCopy
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 

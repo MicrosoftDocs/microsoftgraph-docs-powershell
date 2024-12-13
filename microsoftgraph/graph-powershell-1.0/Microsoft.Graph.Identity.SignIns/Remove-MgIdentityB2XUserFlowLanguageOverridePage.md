@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowlanguageoverridepage
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgIdentityB2XUserFlowLanguageOverridePage
@@ -31,6 +32,9 @@ Remove-MgIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Deletes the values in an userFlowLanguagePage object.
 You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguagepage-delete-permissions.md)]
 
 ## EXAMPLES
 

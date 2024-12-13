@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterapplicationsynchronizationjobschemaoperator
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator
@@ -30,6 +31,9 @@ Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator -InputObject <IAp
 
 ## DESCRIPTION
 List all operators supported in the scoping filters.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-filteroperators-permissions.md)]
 
 ## EXAMPLES
 

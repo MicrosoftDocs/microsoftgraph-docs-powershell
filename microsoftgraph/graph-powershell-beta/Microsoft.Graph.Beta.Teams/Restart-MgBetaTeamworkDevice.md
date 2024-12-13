@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/restart-mgbetateamworkdevice
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Restart-MgBetaTeamworkDevice
@@ -30,6 +31,9 @@ Restart-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> [-ResponseHeadersVari
 ## DESCRIPTION
 Restart the specified Microsoft Teams-enabled device asynchronously.
 A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkdevice-restart-permissions.md)]
 
 ## EXAMPLES
 

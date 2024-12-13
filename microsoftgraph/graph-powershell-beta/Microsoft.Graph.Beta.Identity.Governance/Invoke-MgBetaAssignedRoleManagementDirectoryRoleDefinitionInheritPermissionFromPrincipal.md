@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaassignedrolemanagementdirectoryroledefinitioninheritpermissionfromprincipal
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Invoke-MgBetaAssignedRoleManagementDirectoryRoleDefinitionInheritPermissionFromPrincipal
@@ -40,6 +41,9 @@ Get the list of security principals (users, groups, and service principals) that
 You can use the $count query parameter to also get the count.
 This API is supported for the directory (Microsoft Entra ID) provider only.
 To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroledefinition-assignedprincipals-permissions.md)]
 
 ## EXAMPLES
 

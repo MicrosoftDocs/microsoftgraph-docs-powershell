@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef
@@ -54,6 +55,9 @@ You can add both custom and built-in attributes to a user flow.
 The attribute is added to both the attributeCollection\> attributes and attributeCollection\> attributeCollectionPage \> views collections on the user flow.
 In the views collection, the attribute is assigned the default settings.
 You can PATCH the user flow to customize the settings of the attribute on the views object, for example, marking it as required or updating the allowed input types.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onattributecollectionexternalusersselfservicesignup-post-attributes-permissions.md)]
 
 ## EXAMPLES
 

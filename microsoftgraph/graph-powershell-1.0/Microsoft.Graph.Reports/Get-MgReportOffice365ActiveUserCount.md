@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOffice365ActiveUserCount
@@ -27,6 +28,9 @@ Get-MgReportOffice365ActiveUserCount -InputObject <IReportsIdentity> -OutFile <S
 
 ## DESCRIPTION
 Get the count of daily active users in the reporting period by product.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365activeusercounts-permissions.md)]
 
 ## EXAMPLES
 

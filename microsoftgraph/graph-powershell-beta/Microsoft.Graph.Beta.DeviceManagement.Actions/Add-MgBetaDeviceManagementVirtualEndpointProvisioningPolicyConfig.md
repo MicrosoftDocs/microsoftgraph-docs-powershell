@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementvirtualendpointprovisioningpolicyconfig
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyConfig
@@ -32,6 +33,9 @@ Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyConfig
 ## DESCRIPTION
 Update the provisioning policy configuration for a set of Cloud PC devices by their IDs.
 This method supports retry and allows you to apply the configuration to a subset of Cloud PCs initially to test.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-applyconfig-permissions.md)]
 
 ## EXAMPLES
 

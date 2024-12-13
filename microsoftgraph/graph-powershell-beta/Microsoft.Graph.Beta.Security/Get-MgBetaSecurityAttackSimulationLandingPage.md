@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationlandingpage
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityAttackSimulationLandingPage
@@ -50,6 +51,9 @@ Get-MgBetaSecurityAttackSimulationLandingPage -InputObject <ISecurityIdentity> [
 
 ## DESCRIPTION
 Represents an attack simulation training landing page.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-landingpage-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicy
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgApplicationTokenIssuancePolicy
@@ -21,6 +22,9 @@ Get-MgApplicationTokenIssuancePolicy -ApplicationId <String> [-ExpandProperty <S
 
 ## DESCRIPTION
 List the tokenIssuancePolicy objects that are assigned to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-tokenissuancepolicies-permissions.md)]
 
 ## EXAMPLES
 
