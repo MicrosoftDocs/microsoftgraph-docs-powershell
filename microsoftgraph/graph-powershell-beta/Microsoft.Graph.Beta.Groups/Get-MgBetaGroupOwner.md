@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner
 schema: 2.0.0
-ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupOwner
@@ -12,9 +11,6 @@ ms.subservice: entra-groups
 Retrieve a list of the group's owners.
 The owners are a set of users who are allowed to modify the group object.
 Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOwner](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,21 +26,16 @@ Retrieve a list of the group's owners.
 The owners are a set of users who are allowed to modify the group object.
 Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-owners-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get an owner of a group
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaGroupOwner -GroupId '4d5f57a1-85e0-41dd-8282-ff995ad5e1c3'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
-```
-
-This example gets the owner of the specified group.
 
 ## PARAMETERS
 
@@ -291,25 +282,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner)
 
 [https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

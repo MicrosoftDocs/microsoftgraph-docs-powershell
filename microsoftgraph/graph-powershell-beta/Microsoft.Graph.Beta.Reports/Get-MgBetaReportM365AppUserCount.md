@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Get-MgBetaReportM365AppUserCount
 
 ## SYNOPSIS
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,32 +28,21 @@ Get-MgBetaReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <Strin
 ## DESCRIPTION
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getm365appusercounts-permissions.md)]
-
 ## EXAMPLES
-### Example 1: CSV output
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportM365AppUserCount -Format "text/csv"  -Period $periodId 
-
+### EXAMPLE 1
 ```
-This example will csv output
-
-### Example 2: JSON output
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportM365AppUserCount -Format "application/json"  -Period $periodId 
-
 ```
-This example will json output
 
+Get-MgBetaReportM365AppUserCount -Format "text/csv"  -Period $periodId
+
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.Beta.Reports
+```
+
+Get-MgBetaReportM365AppUserCount -Format "application/json"  -Period $periodId
 
 ## PARAMETERS
 
@@ -183,75 +168,54 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
-  - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
-  - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
-  - `[AuthenticationsMetricId <String>]`: The unique identifier of authenticationsMetric
-  - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
-  - `[CustomSecurityAttributeAuditId <String>]`: The unique identifier of customSecurityAttributeAudit
-  - `[DailyInactiveUsersByApplicationMetricId <String>]`: The unique identifier of dailyInactiveUsersByApplicationMetric
-  - `[DailyInactiveUsersMetricId <String>]`: The unique identifier of dailyInactiveUsersMetric
-  - `[Date <DateTime?>]`: Usage: date={date}
-  - `[DeviceManagementCachedReportConfigurationId <String>]`: The unique identifier of deviceManagementCachedReportConfiguration
-  - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
-  - `[DirectoryAuditId <String>]`: The unique identifier of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[ExclusiveIntervalEndDateTime <DateTime?>]`: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
-  - `[Filter <String>]`: Usage: filter='{filter}'
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
-  - `[InclusiveIntervalStartDateTime <DateTime?>]`: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
-  - `[InsightSummaryId <String>]`: The unique identifier of insightSummary
-  - `[ManifestId <String>]`: The unique identifier of manifest
-  - `[MfaCompletionMetricId <String>]`: The unique identifier of mfaCompletionMetric
-  - `[MonthlyInactiveUsersByApplicationMetricId <String>]`: The unique identifier of monthlyInactiveUsersByApplicationMetric
-  - `[MonthlyInactiveUsersMetricId <String>]`: The unique identifier of monthlyInactiveUsersMetric
-  - `[OperationId <String>]`: The unique identifier of operation
-  - `[Period <String>]`: Usage: period='{period}'
-  - `[PrintUsageByPrinterId <String>]`: The unique identifier of printUsageByPrinter
-  - `[PrintUsageByUserId <String>]`: The unique identifier of printUsageByUser
-  - `[PrintUsageId <String>]`: The unique identifier of printUsage
-  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
-  - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
-  - `[ServicePrincipalSignInActivityId <String>]`: The unique identifier of servicePrincipalSignInActivity
-  - `[SignInId <String>]`: The unique identifier of signIn
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserCountMetricId <String>]`: The unique identifier of userCountMetric
-  - `[UserCredentialUsageDetailsId <String>]`: The unique identifier of userCredentialUsageDetails
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
-  - `[UserRequestsMetricId <String>]`: The unique identifier of userRequestsMetric
-  - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
+INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
+  \[ActiveUsersMetricId \<String\>\]: The unique identifier of activeUsersMetric
+  \[AppCredentialSignInActivityId \<String\>\]: The unique identifier of appCredentialSignInActivity
+  \[ApplicationSignInDetailedSummaryId \<String\>\]: The unique identifier of applicationSignInDetailedSummary
+  \[AuthenticationsMetricId \<String\>\]: The unique identifier of authenticationsMetric
+  \[CredentialUserRegistrationDetailsId \<String\>\]: The unique identifier of credentialUserRegistrationDetails
+  \[CustomSecurityAttributeAuditId \<String\>\]: The unique identifier of customSecurityAttributeAudit
+  \[DailyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of dailyInactiveUsersByApplicationMetric
+  \[DailyInactiveUsersMetricId \<String\>\]: The unique identifier of dailyInactiveUsersMetric
+  \[Date \<DateTime?\>\]: Usage: date={date}
+  \[DeviceManagementCachedReportConfigurationId \<String\>\]: The unique identifier of deviceManagementCachedReportConfiguration
+  \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
+  \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[ExclusiveIntervalEndDateTime \<DateTime?\>\]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
+  \[Filter \<String\>\]: Usage: filter='{filter}'
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
+  \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[InclusiveIntervalStartDateTime \<DateTime?\>\]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
+  \[InsightSummaryId \<String\>\]: The unique identifier of insightSummary
+  \[ManifestId \<String\>\]: The unique identifier of manifest
+  \[MfaCompletionMetricId \<String\>\]: The unique identifier of mfaCompletionMetric
+  \[MonthlyInactiveUsersByApplicationMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersByApplicationMetric
+  \[MonthlyInactiveUsersMetricId \<String\>\]: The unique identifier of monthlyInactiveUsersMetric
+  \[OperationId \<String\>\]: The unique identifier of operation
+  \[Period \<String\>\]: Usage: period='{period}'
+  \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
+  \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
+  \[PrintUsageId \<String\>\]: The unique identifier of printUsage
+  \[PrinterId \<String\>\]: Usage: printerId='{printerId}'
+  \[ProvisioningObjectSummaryId \<String\>\]: The unique identifier of provisioningObjectSummary
+  \[ServicePrincipalSignInActivityId \<String\>\]: The unique identifier of servicePrincipalSignInActivity
+  \[SignInId \<String\>\]: The unique identifier of signIn
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[SkipToken \<String\>\]: Usage: skipToken='{skipToken}'
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[UserCountMetricId \<String\>\]: The unique identifier of userCountMetric
+  \[UserCredentialUsageDetailsId \<String\>\]: The unique identifier of userCredentialUsageDetails
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
+  \[UserRequestsMetricId \<String\>\]: The unique identifier of userRequestsMetric
+  \[UserSignUpMetricId \<String\>\]: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
