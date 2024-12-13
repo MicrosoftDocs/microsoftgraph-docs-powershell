@@ -47,18 +47,6 @@ New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -InputObj
 ## DESCRIPTION
 Create new navigation property to localizations for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -301,6 +289,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization)
+
 
 
 
