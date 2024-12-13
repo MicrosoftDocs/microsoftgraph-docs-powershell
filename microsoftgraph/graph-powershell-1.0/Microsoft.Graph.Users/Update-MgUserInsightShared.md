@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property shared in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserInsightShared](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserInsightShared?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

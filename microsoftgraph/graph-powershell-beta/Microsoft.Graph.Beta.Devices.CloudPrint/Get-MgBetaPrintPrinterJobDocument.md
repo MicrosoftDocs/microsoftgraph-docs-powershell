@@ -11,6 +11,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Get documents from print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobDocument?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

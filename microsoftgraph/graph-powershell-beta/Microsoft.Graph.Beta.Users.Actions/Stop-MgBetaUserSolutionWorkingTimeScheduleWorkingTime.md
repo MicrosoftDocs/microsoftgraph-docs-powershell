@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Trigger the policies associated with the end of working hours for a specific user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgUserSolutionWorkingTimeScheduleWorkingTime](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserSolutionWorkingTimeScheduleWorkingTime?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### End (Default)

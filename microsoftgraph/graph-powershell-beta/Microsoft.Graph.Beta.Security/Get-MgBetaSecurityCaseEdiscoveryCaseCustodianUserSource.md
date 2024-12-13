@@ -12,6 +12,9 @@ ms.subservice: ediscovery
 Data source entity for a custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
