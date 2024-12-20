@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepagemicrosoftgraphsitepagewebpartpositionofwebpart
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action getPositionOfWebPart
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart?view=graph-powershell-beta)
 
 ## SYNTAX
 

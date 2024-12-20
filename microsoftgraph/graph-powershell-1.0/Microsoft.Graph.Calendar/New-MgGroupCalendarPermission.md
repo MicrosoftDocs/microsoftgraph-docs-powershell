@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarpermission
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to calendarPermissions for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 

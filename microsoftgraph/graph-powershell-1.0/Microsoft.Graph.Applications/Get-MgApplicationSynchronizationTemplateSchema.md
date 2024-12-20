@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationtemplateschema
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Default synchronization schema for the jobs based on this template.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
 
 ## SYNTAX
 

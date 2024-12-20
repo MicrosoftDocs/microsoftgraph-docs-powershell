@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsighttrending
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property trending in users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserInsightTrending](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserInsightTrending?view=graph-powershell-beta)
 
 ## SYNTAX
 

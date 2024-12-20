@@ -17,6 +17,9 @@ When using MIME format:\n- Provide the applicable Internet message headers and t
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderChildFolderMessageForward?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

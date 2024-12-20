@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteitemlastmodifiedbyusermailboxsetting
@@ -12,6 +12,9 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteItemLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 

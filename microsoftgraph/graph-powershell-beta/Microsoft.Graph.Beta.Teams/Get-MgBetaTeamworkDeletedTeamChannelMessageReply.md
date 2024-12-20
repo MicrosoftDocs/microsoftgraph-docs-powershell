@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagereply
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Replies for a specified message.
 Supports $expand for channel messages.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 

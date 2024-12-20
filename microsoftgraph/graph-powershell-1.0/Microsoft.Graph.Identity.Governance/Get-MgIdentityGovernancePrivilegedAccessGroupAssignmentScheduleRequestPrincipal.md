@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentschedulerequestprincipal
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM.
 Supports $expand and $select nested in $expand for id only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal?view=graph-powershell-beta)
 
 ## SYNTAX
 

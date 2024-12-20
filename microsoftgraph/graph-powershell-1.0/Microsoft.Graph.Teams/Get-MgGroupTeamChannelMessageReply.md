@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmessagereply
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Replies for a specified message.
 Supports $expand for channel messages.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelMessageReply?view=graph-powershell-beta)
 
 ## SYNTAX
 

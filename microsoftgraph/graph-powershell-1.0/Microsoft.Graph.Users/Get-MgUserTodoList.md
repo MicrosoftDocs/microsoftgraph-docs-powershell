@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolist
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The task lists in the users mailbox.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)
 
 ## SYNTAX
 

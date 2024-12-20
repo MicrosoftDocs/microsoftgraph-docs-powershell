@@ -11,6 +11,9 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Get the root domain of a subdomain.\nThe API returns a single object which is the root domain of the specified subdomain.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDomainRootDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainRootDomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitemlistitemdocumentsetversionfield
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property fields for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemListItemDocumentSetVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticdevicescore
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsDeviceScores in deviceManagement
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore?view=graph-powershell-beta)
 
 ## SYNTAX
 

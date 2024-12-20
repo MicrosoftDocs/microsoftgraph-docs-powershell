@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Create a standard tag for members in a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

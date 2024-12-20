@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecordorganizerv2
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Identity of the organizer of the call.
 This relationship is expanded by default in callRecord methods.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecordOrganizerV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecordOrganizerV2?view=graph-powershell-beta)
 
 ## SYNTAX
 

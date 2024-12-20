@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Update the properties of the specified tab.\nThis API can be used to configure the content of the tab.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

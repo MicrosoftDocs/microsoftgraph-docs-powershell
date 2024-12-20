@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundle
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveBundle?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicyassignment
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Navigation property to list of security groups targeted for policy.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 

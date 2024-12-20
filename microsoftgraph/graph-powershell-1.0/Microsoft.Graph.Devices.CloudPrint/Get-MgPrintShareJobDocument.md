@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejobdocument
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get documents from print
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareJobDocument?view=graph-powershell-beta)
 
 ## SYNTAX
 

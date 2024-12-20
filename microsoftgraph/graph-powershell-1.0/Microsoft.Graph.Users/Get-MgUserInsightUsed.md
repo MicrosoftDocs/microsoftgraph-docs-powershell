@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsightused
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Calculated relationship that identifies the latest documents viewed or modified by a user, including OneDrive for work or school and SharePoint documents, ranked by recency of use.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightUsed](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightUsed?view=graph-powershell-beta)
 
 ## SYNTAX
 

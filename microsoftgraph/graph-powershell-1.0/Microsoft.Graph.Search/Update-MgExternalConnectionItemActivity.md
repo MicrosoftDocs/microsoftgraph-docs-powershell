@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionitemactivity
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property activities in external
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 

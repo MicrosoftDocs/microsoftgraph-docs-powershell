@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasexternaluserselfservicesignupeventflowcondition
@@ -11,6 +11,9 @@ schema: 2.0.0
 The conditions representing the context of the authentication request that's used to decide whether the events policy is invoked.
 Supports $filter (eq).
 See support for filtering on user flows for syntax information.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition?view=graph-powershell-1.0)
 
 ## SYNTAX
 

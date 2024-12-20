@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharealloweduserserviceprovisioningerror
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUserServiceProvisioningError?view=graph-powershell-1.0)
 
 ## SYNTAX
 

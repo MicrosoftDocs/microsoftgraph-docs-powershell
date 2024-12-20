@@ -11,6 +11,9 @@ ms.subservice: service-communications
 ## SYNOPSIS
 Remove the favorite status of serviceUpdateMessages for the signed in user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnfavoriteServiceAnnouncementMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UnfavoriteExpanded (Default)
