@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupsettingtemplatememberobject
@@ -44,18 +44,6 @@ Confirm-MgGroupSettingTemplateMemberObject -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action checkMemberObjects
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -278,4 +266,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupsettingtemplatememberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupsettingtemplatememberobject)
+
 

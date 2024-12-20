@@ -32,18 +32,6 @@ Remove-MgDriveRootVersionContent -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 The content stream for this version of the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -243,4 +231,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootversioncontent)
+
 

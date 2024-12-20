@@ -37,18 +37,6 @@ New-MgServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrinci
 ## DESCRIPTION
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activity
@@ -577,4 +565,5 @@ This is calculated using latitude/longitude information from the sign-in activit
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgserviceprincipalriskdetection)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystemdatacollectioninfo
@@ -30,18 +30,6 @@ Get-MgBetaExternalAuthorizationSystemDataCollectionInfo -InputObject <ISearchIde
 ## DESCRIPTION
 Defines how and whether Permissions Management collects data from the onboarded authorization system.
 Supports $filter (eq) as follows:  $filter=dataCollectionInfo/entitlements/permissionsModificationCapability and $filter=dataCollectionInfo/entitlements/status.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -193,4 +181,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystemdatacollectioninfo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystemdatacollectioninfo)
+
 

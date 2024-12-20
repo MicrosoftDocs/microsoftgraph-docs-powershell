@@ -92,18 +92,6 @@ New-MgBetaDeviceAppManagementDefaultManagedAppProtection
 ## DESCRIPTION
 Create new navigation property to defaultManagedAppProtections for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -2159,4 +2147,5 @@ EXEMPTEDAPPPROTOCOLS \<IMicrosoftGraphKeyValuePair\[\]\>: iOS Apps in this list 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementdefaultmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementdefaultmanagedappprotection)
+
 

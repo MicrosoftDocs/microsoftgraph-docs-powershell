@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementassignmentrequestaccesspackageassignment
@@ -34,18 +34,6 @@ Get-MgBetaEntitlementManagementAssignmentRequestAccessPackageAssignment
 For a requestType of UserAdd or AdminAdd, an access package assignment requested to be created.
 For a requestType of UserRemove, AdminRemove, or SystemRemove, this property has the id property of an existing assignment to be removed.
 Supports $expand.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -276,4 +264,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementassignmentrequestaccesspackageassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementassignmentrequestaccesspackageassignment)
+
 

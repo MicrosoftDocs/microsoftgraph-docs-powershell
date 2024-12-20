@@ -32,18 +32,6 @@ Remove-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property quota for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -230,4 +218,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingstoragequota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingstoragequota)
+
 
