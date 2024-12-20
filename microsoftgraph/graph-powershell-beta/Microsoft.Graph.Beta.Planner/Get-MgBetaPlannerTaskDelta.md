@@ -29,13 +29,17 @@ For details, see Use delta query to track changes in Microsoft Graph data.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get delta on tasks in a plannerPlan
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Get-MgBetaPlannerTaskDelta
+
+```
+This example will get delta on tasks in a plannerplan
+
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaddress
@@ -52,11 +52,11 @@ New-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <IMic
 Create new navigation property to addresses for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	displayName = "Home"
@@ -73,6 +73,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAddress -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileAddress Cmdlet.
+
 
 ## PARAMETERS
 

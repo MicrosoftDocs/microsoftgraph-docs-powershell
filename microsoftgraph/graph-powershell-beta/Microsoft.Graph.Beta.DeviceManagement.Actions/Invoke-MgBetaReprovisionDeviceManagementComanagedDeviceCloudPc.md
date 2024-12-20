@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementcomanageddevicecloudpc
@@ -28,18 +28,6 @@ Invoke-MgBetaReprovisionDeviceManagementComanagedDeviceCloudPc -InputObject <IDe
 
 ## DESCRIPTION
 Reprovision a Cloud PC with an Intune managed device ID.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -243,4 +231,5 @@ INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementcomanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementcomanageddevicecloudpc)
 
 [https://learn.microsoft.com/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta)
+
 

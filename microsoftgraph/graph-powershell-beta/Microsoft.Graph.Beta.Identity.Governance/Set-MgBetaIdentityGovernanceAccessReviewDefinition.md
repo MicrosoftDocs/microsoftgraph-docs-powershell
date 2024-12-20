@@ -69,11 +69,11 @@ Update an existing accessReviewScheduleDefinition object to change one or more o
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewscheduledefinition-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	id = "60860cdd-fb4d-4054-91ba-f75e04444aa6"
@@ -115,6 +115,10 @@ $params = @{
 }
 
 Set-MgBetaIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
+
 
 ## PARAMETERS
 

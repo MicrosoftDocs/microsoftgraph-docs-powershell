@@ -34,13 +34,17 @@ Complete an impactedResource object and update its status to completedByUser.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-complete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Complete-MgBetaDirectoryRecommendationImpactedResource -RecommendationId $recommendationId -ImpactedResourceId $impactedResourceId
+
+```
+This example shows how to use the Complete-MgBetaDirectoryRecommendationImpactedResource Cmdlet.
+
 
 ## PARAMETERS
 

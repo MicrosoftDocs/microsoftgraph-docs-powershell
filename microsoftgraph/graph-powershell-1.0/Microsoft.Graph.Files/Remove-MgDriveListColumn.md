@@ -32,18 +32,6 @@ Remove-MgDriveListColumn -InputObject <IFilesIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property columns for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -243,4 +231,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistcolumn)
+
 

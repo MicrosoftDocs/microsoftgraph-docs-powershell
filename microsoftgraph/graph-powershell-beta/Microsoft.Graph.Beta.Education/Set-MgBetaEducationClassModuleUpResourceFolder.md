@@ -41,16 +41,20 @@ The teacher determines what resources to upload to the SharePoint folder for the
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-setupresourcesfolder-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 }
 
 Set-MgBetaEducationClassModuleUpResourceFolder -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaEducationClassModuleUpResourceFolder Cmdlet.
+
 
 ## PARAMETERS
 

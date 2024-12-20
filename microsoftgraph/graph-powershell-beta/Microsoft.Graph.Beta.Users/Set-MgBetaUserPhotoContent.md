@@ -48,18 +48,6 @@ Set-MgBetaUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] [-Resp
 The user's profile photo.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -295,4 +283,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetauserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetauserphotocontent)
+
 

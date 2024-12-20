@@ -34,13 +34,17 @@ Create a request to remove the personal data for an inboundSharedUserProfile.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-removepersonaldata-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData -InboundSharedUserProfileUserId $inboundSharedUserProfileUserId
+
+```
+This example shows how to use the Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData Cmdlet.
+
 
 ## PARAMETERS
 

@@ -37,18 +37,6 @@ You can only restore a workflow that was deleted within the last 30 days before 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-restore-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -281,4 +269,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/restore-mgbetaidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/restore-mgbetaidentitygovernancelifecycleworkflow)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-workflow-restore?view=graph-rest-beta)
+
 

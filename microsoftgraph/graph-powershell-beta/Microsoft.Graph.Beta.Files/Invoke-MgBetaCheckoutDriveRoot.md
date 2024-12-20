@@ -35,18 +35,6 @@ Check out a driveItem resource to prevent others from editing the document, and 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkout-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -218,4 +206,5 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckoutdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckoutdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-checkout?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-checkout?view=graph-rest-beta)
+
 

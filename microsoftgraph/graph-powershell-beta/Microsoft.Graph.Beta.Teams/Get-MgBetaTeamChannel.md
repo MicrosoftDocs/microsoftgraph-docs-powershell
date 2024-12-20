@@ -53,20 +53,28 @@ Only a user who is a member of the shared channel can retrieve channel informati
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List all channels
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannel -TeamId $teamId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Teams
-```
+This example will list all channels
 
-Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
+### Example 2: List all shared channels
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
+
+```
+This example will list all shared channels
+
 
 ## PARAMETERS
 

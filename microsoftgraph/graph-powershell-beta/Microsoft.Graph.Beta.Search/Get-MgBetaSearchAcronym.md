@@ -49,13 +49,17 @@ Read the properties and relationships of an acronym object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-list-acronyms-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaSearchAcronym
+
+```
+This example shows how to use the Get-MgBetaSearchAcronym Cmdlet.
+
 
 ## PARAMETERS
 

@@ -70,18 +70,6 @@ Update-MgSite -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphSite>
 ## DESCRIPTION
 Update entity in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -49850,4 +49838,5 @@ This relationship can only be used to load a specific term set.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsite)
+
 

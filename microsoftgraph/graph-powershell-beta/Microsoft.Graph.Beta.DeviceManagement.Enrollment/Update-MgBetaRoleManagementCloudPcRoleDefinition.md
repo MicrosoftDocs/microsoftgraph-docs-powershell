@@ -62,16 +62,33 @@ The following RBAC providers are currently supported:\n- Cloud PC\n- device mana
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroledefinition-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	description = "Update basic properties and permission of application registrations"
+### Example 2
+	rolePermissions = @(
+		@{
+			allowedResourceActions = @(
+			"Microsoft.CloudPC/CloudPCs/Read"
+		"Microsoft.CloudPC/CloudPCs/Reprovision"
+	)
+}
+)
+}
+
+Update-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
 
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
 
 ```
+This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

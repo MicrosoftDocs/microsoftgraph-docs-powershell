@@ -34,13 +34,17 @@ Request-MgDeviceManagementManagedDeviceRemoteAssistance -InputObject <IDeviceMan
 Request remote assistance
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 Request-MgDeviceManagementManagedDeviceRemoteAssistance -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Request-MgDeviceManagementManagedDeviceRemoteAssistance Cmdlet.
+
 
 ## PARAMETERS
 

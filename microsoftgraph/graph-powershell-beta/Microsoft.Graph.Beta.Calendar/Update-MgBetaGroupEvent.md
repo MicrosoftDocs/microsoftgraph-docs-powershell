@@ -82,18 +82,18 @@ Update-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 Update an event object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
 	originalEndTimeZone = "originalEndTimeZone-value"
 	responseStatus = @{
 		response = ""
-		time = \[System.DateTime\]::Parse("datetime-value")
+		time = [System.DateTime]::Parse("datetime-value")
 	}
 	uid = "iCalUId-value"
 	reminderMinutesBeforeStart = 99
@@ -101,6 +101,10 @@ $params = @{
 }
 
 Update-MgBetaGroupEvent -GroupId $groupId -EventId $eventId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaGroupEvent Cmdlet.
+
 
 ## PARAMETERS
 

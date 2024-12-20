@@ -52,17 +52,21 @@ On the date and time provided, Microsoft Entra ID will automatically update the 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-postpone-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
-	postponeUntilDateTime = \[System.DateTime\]::Parse("2023-02-01T02:53:00Z")
+	postponeUntilDateTime = [System.DateTime]::Parse("2023-02-01T02:53:00Z")
 }
 
 Invoke-MgBetaPostponeDirectoryRecommendation -RecommendationId $recommendationId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaPostponeDirectoryRecommendation Cmdlet.
+
 
 ## PARAMETERS
 

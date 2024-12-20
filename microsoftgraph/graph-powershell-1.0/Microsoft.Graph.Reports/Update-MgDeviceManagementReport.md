@@ -34,17 +34,21 @@ Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementR
 Update the properties of a deviceManagementReports object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceManagementReports"
 }
 
 Update-MgDeviceManagementReport -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementReport Cmdlet.
+
 
 ## PARAMETERS
 

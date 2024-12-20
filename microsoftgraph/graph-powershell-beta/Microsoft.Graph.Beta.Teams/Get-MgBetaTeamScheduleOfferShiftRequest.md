@@ -49,13 +49,17 @@ Retrieve the properties and relationships of an offerShiftRequest object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/offershiftrequest-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamScheduleOfferShiftRequest -TeamId $teamId
+
+```
+This example shows how to use the Get-MgBetaTeamScheduleOfferShiftRequest Cmdlet.
+
 
 ## PARAMETERS
 

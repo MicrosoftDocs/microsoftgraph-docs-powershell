@@ -43,13 +43,17 @@ For details, see Role template IDs.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the definition of a directory role using roleTemplateId
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryRoleByRoleTemplateId
+
+```
+This example will get the definition of a directory role using roletemplateid
+
 
 ## PARAMETERS
 

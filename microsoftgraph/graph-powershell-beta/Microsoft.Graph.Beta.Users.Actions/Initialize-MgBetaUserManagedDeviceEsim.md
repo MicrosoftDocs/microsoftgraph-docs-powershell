@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/initialize-mgbetausermanageddeviceesim
@@ -45,18 +45,6 @@ Initialize-MgBetaUserManagedDeviceEsim -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Activate eSIM on the device.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -313,4 +301,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/initialize-mgbetausermanageddeviceesim](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/initialize-mgbetausermanageddeviceesim)
+
 
