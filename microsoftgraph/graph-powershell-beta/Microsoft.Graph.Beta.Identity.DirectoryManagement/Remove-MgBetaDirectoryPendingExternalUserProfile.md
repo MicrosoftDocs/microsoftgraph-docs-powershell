@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorypendingexternaluserprofile
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgBetaDirectoryPendingExternalUserProfile
@@ -32,6 +33,9 @@ Remove-MgBetaDirectoryPendingExternalUserProfile -InputObject <IIdentityDirector
 Delete a pendingExternalUserProfile object.
 Note: To permanently delete the pendingExternalUserProfile, follow permanently delete an item.
 To restore a pendingExternalUserProfile, follow restore a deleted item.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-delete-pendingexternaluserprofiles-permissions.md)]
 
 ## EXAMPLES
 

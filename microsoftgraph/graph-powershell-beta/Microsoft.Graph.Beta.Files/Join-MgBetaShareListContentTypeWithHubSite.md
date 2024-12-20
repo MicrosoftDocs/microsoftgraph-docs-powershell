@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetasharelistcontenttypewithhubsite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Join-MgBetaShareListContentTypeWithHubSite
@@ -46,6 +47,9 @@ Join-MgBetaShareListContentTypeWithHubSite -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action associateWithHubSites
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaEntitlementManagementAccessPackageResourceRoleScope
@@ -52,6 +53,9 @@ New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIde
 Create a new accessPackageResourceRoleScope for adding a resource role to an access package.
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-post-accesspackageresourcerolescopes-permissions.md)]
 
 ## EXAMPLES
 

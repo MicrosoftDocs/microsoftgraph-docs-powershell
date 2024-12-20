@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpreapprovalpolicy
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy
@@ -28,6 +29,9 @@ Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Delete a permissionGrantPreApprovalPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpreapprovalpolicy-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalpasswordsinglesignoncredential
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgBetaServicePrincipalPasswordSingleSignOnCredential
@@ -46,6 +47,9 @@ Update-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IAppli
 
 ## DESCRIPTION
 Update single sign-on credentials using a password for a user or group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-updatepasswordsinglesignoncredentials-permissions.md)]
 
 ## EXAMPLES
 

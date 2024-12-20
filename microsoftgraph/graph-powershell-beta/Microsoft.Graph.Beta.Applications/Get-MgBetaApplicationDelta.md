@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationdelta
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplicationDelta
@@ -23,6 +24,9 @@ Get-MgBetaApplicationDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 ## DESCRIPTION
 Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection.
 See Using Delta Query for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delta-permissions.md)]
 
 ## EXAMPLES
 

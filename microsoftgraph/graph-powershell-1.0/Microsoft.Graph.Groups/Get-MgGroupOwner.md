@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupowner
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupOwner
@@ -25,6 +26,9 @@ Get-MgGroupOwner -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String
 Retrieve a list of the group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-owners-permissions.md)]
 
 ## EXAMPLES
 

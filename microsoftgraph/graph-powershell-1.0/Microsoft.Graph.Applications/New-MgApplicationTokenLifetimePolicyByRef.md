@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgApplicationTokenLifetimePolicyByRef
@@ -45,6 +46,9 @@ New-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Assign a tokenLifetimePolicy to an application.
 You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-tokenlifetimepolicies-permissions.md)]
 
 ## EXAMPLES
 

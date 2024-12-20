@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstenantstatus
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessTenantStatus
@@ -20,6 +21,9 @@ Get-MgBetaNetworkAccessTenantStatus [-ExpandProperty <String[]>] [-Property <Str
 
 ## DESCRIPTION
 Retrieve the onboarding status of a specific tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-tenantstatus-get-permissions.md)]
 
 ## EXAMPLES
 

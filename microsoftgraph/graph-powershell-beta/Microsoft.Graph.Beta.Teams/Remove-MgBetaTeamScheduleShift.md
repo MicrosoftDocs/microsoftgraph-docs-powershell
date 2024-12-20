@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleshift
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamScheduleShift
@@ -28,6 +29,9 @@ Remove-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a shift from the schedule.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shift-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Update-MgSearchQna
@@ -52,6 +53,9 @@ Update-MgSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Update the properties of a qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-update-permissions.md)]
 
 ## EXAMPLES
 

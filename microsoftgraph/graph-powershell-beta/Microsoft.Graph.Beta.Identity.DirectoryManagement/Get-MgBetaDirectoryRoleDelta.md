@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroledelta
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryRoleDelta
@@ -23,6 +24,9 @@ Get-MgBetaDirectoryRoleDelta [-ExpandProperty <String[]>] [-Filter <String>] [-P
 ## DESCRIPTION
 Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
 See Using Delta Query for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-delta-permissions.md)]
 
 ## EXAMPLES
 

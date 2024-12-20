@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationuserassignment
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Publish-MgEducationUserAssignment
@@ -41,6 +42,9 @@ When an assignment is in draft status, students will not see the assignment, nor
 Calling this API creates educationSubmission objects and displays the assignment in each student's list.
 The status of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-publish-permissions.md)]
 
 ## EXAMPLES
 

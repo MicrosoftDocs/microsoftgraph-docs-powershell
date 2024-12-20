@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementissueincident
 schema: 2.0.0
+ms.subservice: service-communications
 ---
 
 # Invoke-MgBetaReportServiceAnnouncementIssueIncident
@@ -32,6 +33,9 @@ Invoke-MgBetaReportServiceAnnouncementIssueIncident -InputObject <IDevicesServic
 Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
 The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/servicehealthissue-incidentreport-permissions.md)]
 
 ## EXAMPLES
 

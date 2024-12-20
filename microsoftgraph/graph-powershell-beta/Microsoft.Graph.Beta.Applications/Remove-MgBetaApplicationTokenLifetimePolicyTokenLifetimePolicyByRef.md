@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenlifetimepolicytokenlifetimepolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef
@@ -29,6 +30,9 @@ Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -InputObject
 
 ## DESCRIPTION
 Remove a tokenLifetimePolicy from an application or servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-tokenlifetimepolicies-permissions.md)]
 
 ## EXAMPLES
 
