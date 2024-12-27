@@ -25,18 +25,6 @@ Get-MgSiteGetByPathExternalColumn -Path <String> -SiteId <String> [-ExpandProper
 ## DESCRIPTION
 Get externalColumns from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -279,4 +267,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathexternalcolumn)
+
 

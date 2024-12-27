@@ -35,18 +35,6 @@ New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
 ## DESCRIPTION
 Create new navigation property to eligibilitySchedules for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessId
@@ -16573,4 +16561,5 @@ In PIM, when the  eligible or active assignment becomes active.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedule)
+
 

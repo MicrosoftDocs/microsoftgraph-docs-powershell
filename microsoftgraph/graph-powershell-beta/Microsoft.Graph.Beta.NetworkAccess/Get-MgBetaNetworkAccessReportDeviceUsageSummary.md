@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdeviceusagesummary
@@ -30,18 +30,6 @@ Get-MgBetaNetworkAccessReportDeviceUsageSummary -InputObject <INetworkAccessIden
 ## DESCRIPTION
 Get a summary of device onboarding and offboarding within a specified timeframe.
 This summary includes the total number of devices, active devices, and inactive devices.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -191,4 +179,5 @@ INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdeviceusagesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdeviceusagesummary)
+
 

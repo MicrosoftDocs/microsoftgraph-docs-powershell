@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailyinactiveuserbyapplication
@@ -36,18 +36,6 @@ Get-MgBetaReportUserInsightDailyInactiveUserByApplication -InputObject <IReports
 
 ## DESCRIPTION
 Get inactiveUsersByApplication from reports
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -342,4 +330,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailyinactiveuserbyapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailyinactiveuserbyapplication)
+
 

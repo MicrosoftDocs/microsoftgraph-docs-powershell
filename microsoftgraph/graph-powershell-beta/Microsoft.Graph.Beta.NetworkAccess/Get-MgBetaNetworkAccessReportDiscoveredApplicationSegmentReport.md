@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdiscoveredapplicationsegmentreport
@@ -30,18 +30,6 @@ Get-MgBetaNetworkAccessReportDiscoveredApplicationSegmentReport -InputObject <IN
 
 ## DESCRIPTION
 Invoke function getDiscoveredApplicationSegmentReport
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -266,4 +254,5 @@ INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdiscoveredapplicationsegmentreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportdiscoveredapplicationsegmentreport)
+
 

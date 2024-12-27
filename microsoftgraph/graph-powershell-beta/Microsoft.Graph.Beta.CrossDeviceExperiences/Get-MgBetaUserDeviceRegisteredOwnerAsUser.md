@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredownerasuser
@@ -38,18 +38,6 @@ Get-MgBetaUserDeviceRegisteredOwnerAsUser -InputObject <ICrossDeviceExperiencesI
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -355,4 +343,5 @@ INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredownerasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredownerasuser)
+
 

@@ -57,18 +57,6 @@ Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -InputObject 
 ## DESCRIPTION
 Update the navigation property assignmentSchedules in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessId
@@ -15064,4 +15052,5 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentschedule)
+
 

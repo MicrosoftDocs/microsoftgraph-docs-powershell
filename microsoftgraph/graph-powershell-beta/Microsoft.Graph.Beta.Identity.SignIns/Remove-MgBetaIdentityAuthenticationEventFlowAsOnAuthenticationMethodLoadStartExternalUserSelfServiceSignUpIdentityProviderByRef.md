@@ -34,18 +34,6 @@ Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExt
 ## DESCRIPTION
 Delete ref of navigation property identityProviders for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId
@@ -299,4 +287,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref)
+
 

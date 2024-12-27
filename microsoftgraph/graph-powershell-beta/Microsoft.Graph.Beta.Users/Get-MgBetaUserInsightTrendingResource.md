@@ -32,18 +32,6 @@ Get-MgBetaUserInsightTrendingResource -InputObject <IUsersIdentity> [-ExpandProp
 ## DESCRIPTION
 Used for navigating to the trending document.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -214,4 +202,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsighttrendingresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsighttrendingresource)
+
 

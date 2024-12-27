@@ -32,18 +32,6 @@ Invoke-MgExtractGroupDriveItemSensitivityLabel -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -244,4 +232,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgextractgroupdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgextractgroupdriveitemsensitivitylabel)
+
 

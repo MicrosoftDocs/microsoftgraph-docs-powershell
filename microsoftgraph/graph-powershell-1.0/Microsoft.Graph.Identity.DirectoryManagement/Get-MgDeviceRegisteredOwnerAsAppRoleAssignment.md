@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredownerasapproleassignment
@@ -38,18 +38,6 @@ Get-MgDeviceRegisteredOwnerAsAppRoleAssignment -InputObject <IIdentityDirectoryM
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -358,4 +346,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredownerasapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredownerasapproleassignment)
+
 

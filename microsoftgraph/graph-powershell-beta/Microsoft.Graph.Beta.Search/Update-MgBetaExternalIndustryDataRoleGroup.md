@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatarolegroup
@@ -44,18 +44,6 @@ Update-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the navigation property roleGroups in external
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -318,4 +306,5 @@ Must be unique within the referenceType.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatarolegroup)
+
 

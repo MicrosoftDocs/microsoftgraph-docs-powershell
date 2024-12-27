@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapproval
@@ -29,18 +29,6 @@ Remove-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval
 
 ## DESCRIPTION
 Delete navigation property scheduledPermissionsApprovals for identityGovernance
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -302,4 +290,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapproval)
+
 

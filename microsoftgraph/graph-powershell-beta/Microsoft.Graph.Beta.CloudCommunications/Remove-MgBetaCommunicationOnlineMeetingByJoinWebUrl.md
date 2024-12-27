@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingbyjoinweburl
@@ -28,18 +28,6 @@ Remove-MgBetaCommunicationOnlineMeetingByJoinWebUrl -InputObject <ICloudCommunic
 
 ## DESCRIPTION
 Delete navigation property onlineMeetings for communications
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -221,4 +209,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingbyjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingbyjoinweburl)
+
 

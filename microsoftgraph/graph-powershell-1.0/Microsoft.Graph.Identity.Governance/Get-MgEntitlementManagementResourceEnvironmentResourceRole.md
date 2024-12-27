@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourceenvironmentresourcerole
@@ -42,18 +42,6 @@ Get-MgEntitlementManagementResourceEnvironmentResourceRole -InputObject <IIdenti
 Read-only.
 Nullable.
 Supports $expand.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -402,4 +390,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourceenvironmentresourcerole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourceenvironmentresourcerole)
+
 

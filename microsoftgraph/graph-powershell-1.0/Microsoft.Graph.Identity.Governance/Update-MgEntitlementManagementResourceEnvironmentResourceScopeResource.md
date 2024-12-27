@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironmentresourcescoperesource
@@ -56,18 +56,6 @@ Update-MgEntitlementManagementResourceEnvironmentResourceScopeResource
 
 ## DESCRIPTION
 Update the navigation property resource in identityGovernance
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -796,4 +784,5 @@ Supports $expand.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironmentresourcescoperesource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironmentresourcescoperesource)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwindowsmanagedappprotectiondeploymentsummary
@@ -30,18 +30,6 @@ Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary
 
 ## DESCRIPTION
 Navigation property to deployment summary of the configuration.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -242,4 +230,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwindowsmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwindowsmanagedappprotectiondeploymentsummary)
+
 

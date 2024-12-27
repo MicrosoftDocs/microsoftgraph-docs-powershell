@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistitemactivitydriveitemcontent
@@ -35,18 +35,6 @@ The content stream, if the item represents a file.
 The content property will have a potentially breaking change in behavior in the future.
 It will stream content directly instead of redirecting.
 To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -323,4 +311,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistitemactivitydriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistitemactivitydriveitemcontent)
+
 

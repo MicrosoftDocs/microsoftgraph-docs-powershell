@@ -32,18 +32,6 @@ Get-MgPrivacySubjectRightsRequestNoteCount -InputObject <IComplianceIdentity> [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -176,4 +164,5 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnotecount](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnotecount)
+
 

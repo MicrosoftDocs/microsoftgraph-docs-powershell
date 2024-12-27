@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitempermission
@@ -90,18 +90,6 @@ Update-MgBetaShareListItemPermission -InputObject <IFilesIdentity> -BodyParamete
 
 ## DESCRIPTION
 Update the navigation property permissions in shares
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -746,4 +734,5 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitempermission)
+
 
