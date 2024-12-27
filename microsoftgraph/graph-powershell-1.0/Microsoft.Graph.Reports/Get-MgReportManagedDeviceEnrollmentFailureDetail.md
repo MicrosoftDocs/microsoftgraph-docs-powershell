@@ -38,18 +38,6 @@ Get-MgReportManagedDeviceEnrollmentFailureDetail -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Invoke function managedDeviceEnrollmentFailureDetails
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -246,4 +234,5 @@ INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuredetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuredetail)
+
 

@@ -56,18 +56,6 @@ Sends a sharing invitation for a driveItem.\nA sharing invitation provides permi
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-invite-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -448,4 +436,5 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainviteuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainviteuserdriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta)
+
 

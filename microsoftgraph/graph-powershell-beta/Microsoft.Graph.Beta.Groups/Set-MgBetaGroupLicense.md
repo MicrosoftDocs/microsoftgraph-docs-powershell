@@ -63,11 +63,11 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-assignlicense-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Add licenses to the group
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	addLicenses = @(
@@ -91,10 +91,14 @@ removeLicenses = @(
 
 Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will add licenses to the group
+
+### Example 2: Remove licenses from the group
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	addLicenses = @(
@@ -106,6 +110,10 @@ $params = @{
 }
 
 Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
+
+```
+This example will remove licenses from the group
+
 
 ## PARAMETERS
 

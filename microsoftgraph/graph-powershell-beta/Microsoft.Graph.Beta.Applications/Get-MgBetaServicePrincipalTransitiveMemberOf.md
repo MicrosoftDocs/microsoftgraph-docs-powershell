@@ -46,13 +46,17 @@ Get transitiveMemberOf from servicePrincipals
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaServicePrincipalTransitiveMemberOf -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalTransitiveMemberOf Cmdlet.
+
 
 ## PARAMETERS
 

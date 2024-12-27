@@ -37,18 +37,6 @@ Previous decisions are no longer recorded, but reviewers can continue to update 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-reset-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -311,4 +299,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaaccessreviewinstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaaccessreviewinstancedecision)
 
 [https://learn.microsoft.com/graph/api/accessreview-reset?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreview-reset?view=graph-rest-beta)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent
@@ -54,11 +54,11 @@ New-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 Create new navigation property to patents for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	description = "Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel."
@@ -70,6 +70,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePatent -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfilePatent Cmdlet.
+
 
 ## PARAMETERS
 

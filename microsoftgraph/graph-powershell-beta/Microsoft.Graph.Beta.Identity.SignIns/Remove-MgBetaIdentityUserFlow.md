@@ -34,13 +34,17 @@ Delete an existing userFlow object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflow-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaIdentityUserFlow -IdentityUserFlowId $identityUserFlowId
+
+```
+This example shows how to use the Remove-MgBetaIdentityUserFlow Cmdlet.
+
 
 ## PARAMETERS
 

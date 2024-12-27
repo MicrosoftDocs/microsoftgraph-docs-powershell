@@ -30,13 +30,17 @@ List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipa
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-homerealmdiscoverypolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalHomeRealmDiscoveryPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -45,11 +45,13 @@ To learn more, see deletedItems.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Remove a group
 
-### EXAMPLE 1
-```
+```powershell
 Remove-MgGroup -GroupId 'f6b9791b-dfc1-40d6-9ab6-7b29126c534a'
 ```
+
+This example deletes the specified group.
 
 ## PARAMETERS
 

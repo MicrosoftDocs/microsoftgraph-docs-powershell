@@ -37,13 +37,17 @@ Release the non-custodial data source from the case.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverynoncustodialdatasource-release-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+
+```
+This example shows how to use the Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
+
 
 ## PARAMETERS
 

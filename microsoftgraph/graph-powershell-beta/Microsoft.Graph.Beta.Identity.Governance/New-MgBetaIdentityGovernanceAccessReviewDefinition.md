@@ -45,11 +45,11 @@ Create a new accessReviewScheduleDefinition object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewset-post-definitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create an access review on a group
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Test create"
@@ -89,16 +89,19 @@ $params = @{
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an access review on a group
+
+### Example 2: Create an access review on all teams with inactive guest users
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Review inactive guests on teams"
 	descriptionForAdmins = "Control guest user access to our teams."
-	descriptionForReviewers = "Information security is everyone's responsibility.
-Review our access policy for more."
+	descriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more."
 	instanceEnumerationScope = @{
 		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
 		query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
@@ -147,10 +150,14 @@ Review our access policy for more."
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will create an access review on all teams with inactive guest users
+
+### Example 3: Create an access review of all users to an application
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Review employee access to LinkedIn"
@@ -217,10 +224,14 @@ $params = @{
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will create an access review of all users to an application
+
+### Example 4: Create an access review on a group with multiple stages
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Group Multi-stage Access Review"
@@ -287,10 +298,14 @@ decisionHistoriesForReviewersEnabled = $true
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will create an access review on a group with multiple stages
+
+### Example 5: Create an access review on a group with insights about user-to-group affiliation and user sign in for recommendations
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Test create"
@@ -333,6 +348,10 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+
+```
+This example will create an access review on a group with insights about user-to-group affiliation and user sign in for recommendations
+
 
 ## PARAMETERS
 

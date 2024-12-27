@@ -56,13 +56,17 @@ Defines an alert, its impact, and measures to mitigate or prevent it.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rolemanagementalert-list-alertdefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'"
+Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition Cmdlet.
+
 
 ## PARAMETERS
 

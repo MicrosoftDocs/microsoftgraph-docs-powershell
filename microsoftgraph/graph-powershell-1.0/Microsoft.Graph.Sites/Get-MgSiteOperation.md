@@ -49,13 +49,17 @@ Get the status of a rich long-running operation on a site or a list.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-operations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteOperation -SiteId $siteId
+
+```
+This example shows how to use the Get-MgSiteOperation Cmdlet.
+
 
 ## PARAMETERS
 

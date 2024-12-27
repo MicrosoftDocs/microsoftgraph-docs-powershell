@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilename
@@ -56,11 +56,11 @@ New-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 Create new navigation property to names for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	displayName = "Innocenty Popov"
@@ -73,6 +73,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileName -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileName Cmdlet.
+
 
 ## PARAMETERS
 

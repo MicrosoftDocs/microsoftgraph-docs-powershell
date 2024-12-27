@@ -64,18 +64,6 @@ For more details, see presence sessions and time-out and expiration.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setuserpreferredpresence-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activity
@@ -320,4 +308,5 @@ INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresenceuserpreferredpresence)
 
 [https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-1.0)
+
 

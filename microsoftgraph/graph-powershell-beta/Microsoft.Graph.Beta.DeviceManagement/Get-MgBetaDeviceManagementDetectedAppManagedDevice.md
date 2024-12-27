@@ -40,18 +40,6 @@ Get-MgBetaDeviceManagementDetectedAppManagedDevice -InputObject <IDeviceManageme
 ## DESCRIPTION
 The devices that have the discovered application installed
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -459,4 +447,6 @@ INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdetectedappmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdetectedappmanageddevice)
+
+
 

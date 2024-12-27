@@ -55,11 +55,11 @@ Provide credentials for establishing connectivity with the target system.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-serviceprincipal-put-synchronization-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	value = @(
@@ -83,6 +83,10 @@ $params = @{
 }
 
 Set-MgBetaServicePrincipalSynchronizationSecret -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaServicePrincipalSynchronizationSecret Cmdlet.
+
 
 ## PARAMETERS
 

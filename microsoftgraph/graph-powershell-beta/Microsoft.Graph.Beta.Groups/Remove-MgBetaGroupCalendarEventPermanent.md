@@ -39,18 +39,6 @@ For more information about item retention, see Configure Deleted Item retention 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-permanentdelete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EventId
@@ -261,4 +249,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupcalendareventpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupcalendareventpermanent)
 
 [https://learn.microsoft.com/graph/api/event-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-permanentdelete?view=graph-rest-beta)
+
 

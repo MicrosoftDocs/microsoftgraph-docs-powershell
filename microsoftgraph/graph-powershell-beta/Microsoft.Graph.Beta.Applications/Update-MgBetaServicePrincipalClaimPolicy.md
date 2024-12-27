@@ -50,18 +50,6 @@ Create a new customClaimsPolicy object if it doesn't exist, or replace an existi
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-put-claimspolicy-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -387,4 +375,5 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-put-claimspolicy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-put-claimspolicy?view=graph-rest-beta)
+
 

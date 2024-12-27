@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesdeploymentaudiencemember
@@ -38,12 +38,13 @@ Get-MgBetaWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesId
 Specifies the assets to include in the audience.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaWindowsUpdatesDeploymentAudienceMember Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesDeploymentAudienceMember -DeploymentId $deploymentId
 ```
+This example shows how to use the Get-MgBetaWindowsUpdatesDeploymentAudienceMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

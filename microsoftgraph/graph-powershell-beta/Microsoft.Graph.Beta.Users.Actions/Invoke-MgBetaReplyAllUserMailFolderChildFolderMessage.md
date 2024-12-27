@@ -65,18 +65,6 @@ Alternatively, create a draft to reply-all to a message, and send it later.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-replyall-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -641,4 +629,5 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta)
+
 

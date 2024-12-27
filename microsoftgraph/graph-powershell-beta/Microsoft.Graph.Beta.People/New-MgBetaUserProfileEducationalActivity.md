@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileeducationalactivity
@@ -54,11 +54,11 @@ New-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
 Create new navigation property to educationalActivities for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	completionMonthYear = "Date"
@@ -93,6 +93,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileEducationalActivity -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileEducationalActivity Cmdlet.
+
 
 ## PARAMETERS
 

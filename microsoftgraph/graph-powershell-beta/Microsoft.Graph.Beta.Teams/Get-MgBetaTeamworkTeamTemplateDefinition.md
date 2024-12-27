@@ -42,13 +42,17 @@ Read the properties and relationships of a teamTemplateDefinition object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamtemplatedefinition-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateId $teamTemplateId -TeamTemplateDefinitionId $teamTemplateDefinitionId
+
+```
+This example shows how to use the Get-MgBetaTeamworkTeamTemplateDefinition Cmdlet.
+
 
 ## PARAMETERS
 

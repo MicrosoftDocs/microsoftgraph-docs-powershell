@@ -62,18 +62,6 @@ Get-MgGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Collection of all groups available in the term store.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -412,4 +400,6 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroup)
+
+
 

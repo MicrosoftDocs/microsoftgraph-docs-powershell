@@ -37,20 +37,28 @@ Deactivate a protectionPolicyBase.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/protectionpolicybase-deactivate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Deactivate an active protection policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
-### EXAMPLE 2
 ```
+This example will deactivate an active protection policy
+
+### Example 2 : Deactivate a protection policy in updating state
+
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
+
+```
+This example will### example 2 : deactivate a protection policy in updating state
+
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent
@@ -29,18 +29,6 @@ Set-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeams
 
 ## DESCRIPTION
 The contents of the app icon if the icon is hosted within the Teams infrastructure.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -292,4 +280,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent)
+
 

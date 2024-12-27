@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepublication
@@ -30,14 +30,18 @@ Remove-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> [-IfMatch <St
 Delete navigation property publications for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfilePublication -UserId $userId -ItemPublicationId $itemPublicationId
+
+```
+This example shows how to use the Remove-MgBetaUserProfilePublication Cmdlet.
+
 
 ## PARAMETERS
 
