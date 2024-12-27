@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerrostermember
 schema: 2.0.0
-ms.subservice: planner
 ---
 
 # Remove-MgBetaPlannerRosterMember
@@ -30,21 +29,14 @@ Remove-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete a plannerRosterMember object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerrostermember-delete-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 Remove-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
-
-```
-This example shows how to use the Remove-MgBetaPlannerRosterMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -216,40 +208,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
-  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerDeltaId \<String\>\]: The unique identifier of plannerDelta
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[PlannerRosterId \<String\>\]: The unique identifier of plannerRoster
+  \[PlannerRosterMemberId \<String\>\]: The unique identifier of plannerRosterMember
+  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerrostermember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerrostermember)
 
 [https://learn.microsoft.com/graph/api/plannerrostermember-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerrostermember-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

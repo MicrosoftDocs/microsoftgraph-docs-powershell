@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
-Module Guid: f8a4ac99-9f96-4fef-ae5e-9332c2fa06bb
+Module Guid: aba35de6-6702-4d0d-9bb4-8113deac1aad
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement.functions/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -152,23 +152,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDeviceRemoteConnection](Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDeviceRemoteConnection.md)
 
 ### [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance](Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

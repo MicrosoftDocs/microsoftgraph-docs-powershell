@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Export-MgReportPartnerBillingUsageUnbilled
 
 ## SYNOPSIS
 Export unbilled Azure usage data for a specific billing period and currency.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingUsageUnbilled?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,15 +31,12 @@ Export-MgReportPartnerBillingUsageUnbilled
 ## DESCRIPTION
 Export unbilled Azure usage data for a specific billing period and currency.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-unbilledusage-export-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 $params = @{
 	currencyCode = "USD"
@@ -52,10 +45,6 @@ $params = @{
 }
 
 Export-MgReportPartnerBillingUsageUnbilled -BodyParameter $params
-
-```
-This example shows how to use the Export-MgReportPartnerBillingUsageUnbilled Cmdlet.
-
 
 ## PARAMETERS
 
@@ -227,36 +216,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ajo9DhReportsPartnersBillingUsageUnbilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttributeSet <String>]`: attributeSet
-  - `[BillingPeriod <String>]`: billingPeriod
-  - `[CurrencyCode <String>]`:
+BODYPARAMETER \<IPaths1Ajo9DhReportsPartnersBillingUsageUnbilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttributeSet \<String\>\]: attributeSet
+  \[BillingPeriod \<String\>\]: billingPeriod
+  \[CurrencyCode \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled)
 
 [https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

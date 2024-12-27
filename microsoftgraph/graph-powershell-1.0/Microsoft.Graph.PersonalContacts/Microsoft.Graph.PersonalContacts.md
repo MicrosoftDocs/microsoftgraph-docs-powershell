@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.PersonalContacts
-Module Guid: c493d9aa-956f-4891-bafc-2eab2b54d8b4
+Module Guid: c395eb55-4d21-4daf-84f7-3a5b4ef0dec2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -136,23 +136,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserContactFolderContactPhoto](Update-MgUserContactFolderContactPhoto.md)
 
 ### [Update-MgUserContactPhoto](Update-MgUserContactPhoto.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

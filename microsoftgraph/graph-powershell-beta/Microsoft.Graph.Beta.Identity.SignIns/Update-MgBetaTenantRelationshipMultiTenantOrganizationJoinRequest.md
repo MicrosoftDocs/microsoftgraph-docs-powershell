@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
@@ -13,9 +12,6 @@ Join a multi-tenant organization, after the owner of the multi-tenant organizati
 Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,15 +36,12 @@ Before a tenant added to a multi-tenant organization can participate in the mult
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationjoinrequestrecord-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Join a multi-tenant organization
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	addedByTenantId = "1fd6544e-e994-4de2-9f1b-787b51c7d325"
@@ -56,24 +49,16 @@ $params = @{
 
 Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will join a multi-tenant organization
-
-### Example 2: Reset a failed join request
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	addedByTenantId = "00000000-0000-0000-0000-000000000000"
 }
 
 Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest -BodyParameter $params
-
-```
-This example will reset a failed join request
-
 
 ## PARAMETERS
 
@@ -279,53 +264,32 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>`: multiTenantOrganizationJoinRequestRecord
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord\>: multiTenantOrganizationJoinRequestRecord
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AddedByTenantId <String>]`: Tenant ID of the Microsoft Entra tenant that added a tenant to the multi-tenant organization.
+  \[AddedByTenantId \<String\>\]: Tenant ID of the Microsoft Entra tenant that added a tenant to the multi-tenant organization.
 To reset a failed join request, set addedByTenantId to 00000000-0000-0000-0000-000000000000.
 Required.
-  - `[MemberState <String>]`: multiTenantOrganizationMemberState
-  - `[Role <String>]`: multiTenantOrganizationMemberRole
-  - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>]`: multiTenantOrganizationJoinRequestTransitionDetails
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DesiredMemberState <String>]`: multiTenantOrganizationMemberState
-    - `[Details <String>]`: Details that explain the processing status if any.
+  \[MemberState \<String\>\]: multiTenantOrganizationMemberState
+  \[Role \<String\>\]: multiTenantOrganizationMemberRole
+  \[TransitionDetails \<IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails\>\]: multiTenantOrganizationJoinRequestTransitionDetails
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DesiredMemberState \<String\>\]: multiTenantOrganizationMemberState
+    \[Details \<String\>\]: Details that explain the processing status if any.
 Read-only.
-    - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
+    \[Status \<String\>\]: multiTenantOrganizationMemberProcessingStatus
 
-TRANSITIONDETAILS `<IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>`: multiTenantOrganizationJoinRequestTransitionDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DesiredMemberState <String>]`: multiTenantOrganizationMemberState
-  - `[Details <String>]`: Details that explain the processing status if any.
+TRANSITIONDETAILS \<IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails\>: multiTenantOrganizationJoinRequestTransitionDetails
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DesiredMemberState \<String\>\]: multiTenantOrganizationMemberState
+  \[Details \<String\>\]: Details that explain the processing status if any.
 Read-only.
-  - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
+  \[Status \<String\>\]: multiTenantOrganizationMemberProcessingStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest)
 
 [https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

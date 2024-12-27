@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasgroup
 schema: 2.0.0
-ms.subservice: entra-users
-ms.subservice: entra-users
 ---
 
 # Get-MgUserMemberOfAsGroup
@@ -13,9 +11,6 @@ ms.subservice: entra-users
 Get groups, directory roles, and administrative units that the user is a direct member of.
 This operation isn't transitive.
 To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfAsGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,24 +41,14 @@ Get groups, directory roles, and administrative units that the user is a direct 
 This operation isn't transitive.
 To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-memberof-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-memberof-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Users
-
-Get-MgUserMemberOfAsGroup -UserId $userId -Filter "appRoleAssignments/`$count gt 0" -Property "id,displayName" 
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgUserMemberOfAsGroup Cmdlet.
+Import-Module Microsoft.Graph.Users
+```
 
+Get-MgUserMemberOfAsGroup -UserId $userId -Filter "appRoleAssignments/\`$count gt 0" -Property "id,displayName"
 
 ## PARAMETERS
 
@@ -341,51 +326,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
-  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ServiceStorageQuotaBreakdownId \<String\>\]: The unique identifier of serviceStorageQuotaBreakdown
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WindowsSettingId \<String\>\]: The unique identifier of windowsSetting
+  \[WindowsSettingInstanceId \<String\>\]: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasgroup)
 
 [https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

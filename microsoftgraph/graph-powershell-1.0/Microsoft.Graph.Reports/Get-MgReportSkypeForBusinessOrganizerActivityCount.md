@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivitycount
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Get-MgReportSkypeForBusinessOrganizerActivityCount
@@ -11,9 +10,6 @@ ms.subservice: reports
 ## SYNOPSIS
 Get usage trends on the number and type of conference sessions held and organized by users in your organization.
 Types of conference sessions include IM, audio/video, application sharing, web, dial-in/out - third party, and Dial-in/out Microsoft.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessOrganizerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessOrganizerActivityCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,21 +31,14 @@ Get-MgReportSkypeForBusinessOrganizerActivityCount -InputObject <IReportsIdentit
 Get usage trends on the number and type of conference sessions held and organized by users in your organization.
 Types of conference sessions include IM, audio/video, application sharing, web, dial-in/out - third party, and Dial-in/out Microsoft.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessorganizeractivitycounts-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Reports
-
-Get-MgReportSkypeForBusinessOrganizerActivityCount -Period $periodId 
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgReportSkypeForBusinessOrganizerActivityCount Cmdlet.
+Import-Module Microsoft.Graph.Reports
+```
 
+Get-MgReportSkypeForBusinessOrganizerActivityCount -Period $periodId
 
 ## PARAMETERS
 
@@ -175,54 +164,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[Date <DateTime?>]`: Usage: date={date}
-  - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
-  - `[DirectoryAuditId <String>]`: The unique identifier of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[Filter <String>]`: Usage: filter='{filter}'
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
-  - `[ManifestId <String>]`: The unique identifier of manifest
-  - `[OperationId <String>]`: The unique identifier of operation
-  - `[Period <String>]`: Usage: period='{period}'
-  - `[PrintUsageByPrinterId <String>]`: The unique identifier of printUsageByPrinter
-  - `[PrintUsageByUserId <String>]`: The unique identifier of printUsageByUser
-  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
-  - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
-  - `[SignInId <String>]`: The unique identifier of signIn
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
+INPUTOBJECT \<IReportsIdentity\>: Identity Parameter
+  \[Date \<DateTime?\>\]: Usage: date={date}
+  \[DeviceManagementExportJobId \<String\>\]: The unique identifier of deviceManagementExportJob
+  \[DirectoryAuditId \<String\>\]: The unique identifier of directoryAudit
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[Filter \<String\>\]: Usage: filter='{filter}'
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[IncludedUserRoles \<String\>\]: Usage: includedUserRoles='{includedUserRoles}'
+  \[IncludedUserTypes \<String\>\]: Usage: includedUserTypes='{includedUserTypes}'
+  \[ManifestId \<String\>\]: The unique identifier of manifest
+  \[OperationId \<String\>\]: The unique identifier of operation
+  \[Period \<String\>\]: Usage: period='{period}'
+  \[PrintUsageByPrinterId \<String\>\]: The unique identifier of printUsageByPrinter
+  \[PrintUsageByUserId \<String\>\]: The unique identifier of printUsageByUser
+  \[PrinterId \<String\>\]: Usage: printerId='{printerId}'
+  \[ProvisioningObjectSummaryId \<String\>\]: The unique identifier of provisioningObjectSummary
+  \[SignInId \<String\>\]: The unique identifier of signIn
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[SkipToken \<String\>\]: Usage: skipToken='{skipToken}'
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[UserRegistrationDetailsId \<String\>\]: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivitycount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

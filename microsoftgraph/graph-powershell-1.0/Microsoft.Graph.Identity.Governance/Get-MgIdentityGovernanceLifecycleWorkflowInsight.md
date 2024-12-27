@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowinsight
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The insight container holding workflow insight summaries for a tenant.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowInsight](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowInsight?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,18 @@ Get-MgIdentityGovernanceLifecycleWorkflowInsight [-ExpandProperty <String[]>] [-
 
 ## DESCRIPTION
 The insight container holding workflow insight summaries for a tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -115,26 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowinsight)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
