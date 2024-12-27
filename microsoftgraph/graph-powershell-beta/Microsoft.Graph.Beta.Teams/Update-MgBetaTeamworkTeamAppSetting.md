@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamworkTeamAppSetting
@@ -29,6 +30,9 @@ Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSetti
 
 ## DESCRIPTION
 Update the properties of a teamsAppSettings object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappsettings-update-permissions.md)]
 
 ## EXAMPLES
 

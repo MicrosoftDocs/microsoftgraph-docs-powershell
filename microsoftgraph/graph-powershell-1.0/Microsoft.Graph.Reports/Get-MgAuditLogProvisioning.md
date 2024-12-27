@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgAuditLogProvisioning
@@ -36,6 +37,9 @@ Get-MgAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get provisioning from auditLogs
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/provisioningobjectsummary-list-permissions.md)]
 
 ## EXAMPLES
 

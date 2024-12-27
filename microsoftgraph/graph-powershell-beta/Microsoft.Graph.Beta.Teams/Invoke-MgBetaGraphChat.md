@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphchat
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaGraphChat
@@ -45,6 +46,9 @@ Invoke-MgBetaGraphChat -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <
 
 ## DESCRIPTION
 Unhide a chat for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-unhideforuser-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachataccessforuser
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaChatAccessForUser
@@ -44,6 +45,9 @@ Remove-MgBetaChatAccessForUser -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Remove access to a chat for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-removeallaccessforuser-permissions.md)]
 
 ## EXAMPLES
 

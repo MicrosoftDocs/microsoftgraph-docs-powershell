@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent
 schema: 2.0.0
+ms.subservice: service-communications
 ---
 
 # Get-MgBetaServiceAnnouncementMessageAttachmentContent
@@ -28,6 +29,9 @@ Get-MgBetaServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServ
 
 ## DESCRIPTION
 Read the properties and relationships of a serviceAnnouncementAttachment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncementattachment-get-permissions.md)]
 
 ## EXAMPLES
 

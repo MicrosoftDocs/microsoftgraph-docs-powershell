@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaGroupPermissionGrant
@@ -38,6 +39,9 @@ Get-MgBetaGroupPermissionGrant -InputObject <IGroupsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The permissions granted for a group to a specific application.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-permissiongrants-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticawpermissioncreepindexdistribution
 schema: 2.0.0
+ms.subservice: entra-permissions-management
 ---
 
 # Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution
@@ -40,6 +41,9 @@ Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution
 ## DESCRIPTION
 Represents the Permissions Creep Index (PCI) for the authorization system.
 PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsanalytics-list-permissionscreepindexdistributions-permissions.md)]
 
 ## EXAMPLES
 

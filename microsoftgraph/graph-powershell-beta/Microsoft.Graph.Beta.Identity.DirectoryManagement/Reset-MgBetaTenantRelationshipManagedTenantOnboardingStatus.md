@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/reset-mgbetatenantrelationshipmanagedtenantonboardingstatus
 schema: 2.0.0
+ms.subservice: m365-lighthouse
 ---
 
 # Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus
@@ -30,6 +31,9 @@ Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus -InputObject <IIdent
 ## DESCRIPTION
 Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multitenant management platform using the offboardTenant action.
 By invoking this action the platform attempts to onboard the managed tenant for management.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenant-resettenantonboardingstatus-permissions.md)]
 
 ## EXAMPLES
 

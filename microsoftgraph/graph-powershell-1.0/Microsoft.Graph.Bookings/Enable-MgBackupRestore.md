@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/enable-mgbackuprestore
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Enable-MgBackupRestore
@@ -35,6 +36,9 @@ Enable the Microsoft 365 Backup Storage service for a tenant.
 Before you call this API, call List protection policies to initialize the data store in the tenant.
 Data store initialization takes about 5 minutes.
 If you call this API before the data store is initialized, the call results in an error.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-enable-permissions.md)]
 
 ## EXAMPLES
 

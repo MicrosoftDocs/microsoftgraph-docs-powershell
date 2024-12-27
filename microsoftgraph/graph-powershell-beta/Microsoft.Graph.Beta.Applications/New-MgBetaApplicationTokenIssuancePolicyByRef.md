@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationtokenissuancepolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaApplicationTokenIssuancePolicyByRef
@@ -43,6 +44,9 @@ New-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentit
 
 ## DESCRIPTION
 Assign a tokenIssuancePolicy to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-tokenissuancepolicies-permissions.md)]
 
 ## EXAMPLES
 

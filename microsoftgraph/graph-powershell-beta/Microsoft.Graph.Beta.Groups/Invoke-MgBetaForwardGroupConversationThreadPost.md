@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpost
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Invoke-MgBetaForwardGroupConversationThreadPost
@@ -49,6 +50,9 @@ Invoke-MgBetaForwardGroupConversationThreadPost -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-forward-permissions.md)]
 
 ## EXAMPLES
 

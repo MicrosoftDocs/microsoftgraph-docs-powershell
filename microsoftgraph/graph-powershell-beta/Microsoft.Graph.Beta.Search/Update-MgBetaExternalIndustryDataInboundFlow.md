@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow
 schema: 2.0.0
+ms.subservice: industry-data-etl
 ---
 
 # Update-MgBetaExternalIndustryDataInboundFlow
@@ -48,6 +49,9 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of an inboundApiFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundapiflow-update-permissions.md)]
 
 ## EXAMPLES
 

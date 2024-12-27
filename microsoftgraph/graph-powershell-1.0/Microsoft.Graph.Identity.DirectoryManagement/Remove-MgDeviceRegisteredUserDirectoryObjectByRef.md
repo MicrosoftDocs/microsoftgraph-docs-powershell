@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserdirectoryobjectbyref
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgDeviceRegisteredUserDirectoryObjectByRef
@@ -28,6 +29,9 @@ Remove-MgDeviceRegisteredUserDirectoryObjectByRef -InputObject <IIdentityDirecto
 
 ## DESCRIPTION
 Remove a user as a registered user of the device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-registeredusers-permissions.md)]
 
 ## EXAMPLES
 

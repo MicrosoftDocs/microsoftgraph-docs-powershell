@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appplatformusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgBetaReportM365AppPlatformUserCount
@@ -27,6 +28,9 @@ Get-MgBetaReportM365AppPlatformUserCount -InputObject <IReportsIdentity> -OutFil
 
 ## DESCRIPTION
 Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getm365appplatformusercounts-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagepage
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportSharePointSiteUsagePage
@@ -27,6 +28,9 @@ Get-MgReportSharePointSiteUsagePage -InputObject <IReportsIdentity> -OutFile <St
 
 ## DESCRIPTION
 Get the number of pages viewed across all sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagepages-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetauserdrivelistcontenttypepublished
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Test-MgBetaUserDriveListContentTypePublished
@@ -28,6 +29,9 @@ Test-MgBetaUserDriveListContentTypePublished -InputObject <IUsersFunctionsIdenti
 
 ## DESCRIPTION
 Invoke function isPublished
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]
 
 ## EXAMPLES
 

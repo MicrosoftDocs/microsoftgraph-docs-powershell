@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointprotectionpolicysiteprotectionunit
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit
@@ -39,6 +40,9 @@ Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit
 
 ## DESCRIPTION
 The protection units (sites) that are protected under the site protection policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroup
 schema: 2.0.0
+ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgSiteTermStoreGroup
@@ -58,6 +60,12 @@ Get-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Read the properties and relationships of a term store group object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-list-groups-permissions.md)]
 
 ## EXAMPLES
 

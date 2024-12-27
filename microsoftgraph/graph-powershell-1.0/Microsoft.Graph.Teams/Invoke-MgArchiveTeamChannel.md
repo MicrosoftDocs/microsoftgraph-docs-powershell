@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteamchannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgArchiveTeamChannel
@@ -58,6 +59,9 @@ Archiving is an asynchronous operation; a channel is archived after the asynchro
 A channel without an owner or that belongs to a group that has no owner, can't be archived.
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can't be archived or unarchived if its team is archived.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-archive-permissions.md)]
 
 ## EXAMPLES
 

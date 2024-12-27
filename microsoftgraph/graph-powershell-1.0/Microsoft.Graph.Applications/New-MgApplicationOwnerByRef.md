@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgApplicationOwnerByRef
@@ -44,6 +45,9 @@ New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter 
 ## DESCRIPTION
 Add an owner to an application.
 Currently, only individual users are supported as owners of applications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-owners-permissions.md)]
 
 ## EXAMPLES
 

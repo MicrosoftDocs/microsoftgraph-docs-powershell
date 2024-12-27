@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhallpresenter
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # New-MgBetaVirtualEventTownhallPresenter
@@ -48,6 +49,9 @@ New-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new virtualEventPresenter object on a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualevent-post-presenters-permissions.md)]
 
 ## EXAMPLES
 

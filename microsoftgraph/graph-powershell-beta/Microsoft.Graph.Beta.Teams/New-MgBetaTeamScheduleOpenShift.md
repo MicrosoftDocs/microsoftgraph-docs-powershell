@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamScheduleOpenShift
@@ -50,6 +51,9 @@ New-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create an instance of an openshift object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/openshift-post-permissions.md)]
 
 ## EXAMPLES
 

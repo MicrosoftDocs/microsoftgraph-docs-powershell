@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgBetaUserDriveRoot
@@ -52,6 +53,9 @@ Asynchronously create a copy of a driveItem (including any children) under a new
 After the request is acknowledged, it enters a queue.
 The actual copying, including any subitems, occurs at an undetermined time.
 Progress is reported until the operation is completed by monitoring the progress.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
 
 ## EXAMPLES
 

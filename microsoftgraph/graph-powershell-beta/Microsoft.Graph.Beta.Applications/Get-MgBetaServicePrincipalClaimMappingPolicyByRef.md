@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaServicePrincipalClaimMappingPolicyByRef
@@ -21,6 +22,9 @@ Get-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [
 
 ## DESCRIPTION
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-claimsmappingpolicies-permissions.md)]
 
 ## EXAMPLES
 

@@ -1,8 +1,9 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgCommunicationCallRecord
@@ -32,6 +33,9 @@ Get-MgCommunicationCallRecord -InputObject <ICloudCommunicationsIdentity> [-Expa
 Retrieve the properties and relationships of a callRecord object.
 You can get the id of a callRecord in two ways:\n* Subscribe to change notifications to the /communications/callRecords endpoint.\n* Use the callChainId property of a call.
 The call record is available only after the associated call is completed.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecords-callrecord-get-permissions.md)]
 
 ## EXAMPLES
 
