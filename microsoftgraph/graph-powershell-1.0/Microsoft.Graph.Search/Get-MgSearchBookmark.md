@@ -12,6 +12,9 @@ ms.subservice: search
 ## SYNOPSIS
 Read the properties and relationships of a bookmark object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchBookmark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

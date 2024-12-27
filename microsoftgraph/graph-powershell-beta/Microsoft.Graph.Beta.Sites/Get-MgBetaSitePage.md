@@ -12,6 +12,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Get the metadata for a baseSitePage in the site pages list in a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

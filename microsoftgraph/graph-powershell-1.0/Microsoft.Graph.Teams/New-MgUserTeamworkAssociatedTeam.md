@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkassociatedteam
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to associatedTeams for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 

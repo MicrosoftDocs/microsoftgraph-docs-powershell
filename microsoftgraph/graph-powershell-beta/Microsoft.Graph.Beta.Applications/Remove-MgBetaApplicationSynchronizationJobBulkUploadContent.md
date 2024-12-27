@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjobbulkuploadcontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The bulk upload operation for the job.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 

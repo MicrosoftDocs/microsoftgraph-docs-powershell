@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemthumbnail
@@ -12,6 +12,9 @@ Collection of thumbnailSet objects associated with the item.
 For more information, see getting thumbnails.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemThumbnail?view=graph-powershell-beta)
 
 ## SYNTAX
 

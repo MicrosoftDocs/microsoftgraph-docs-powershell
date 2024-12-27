@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventattachment
@@ -12,6 +12,9 @@ The collection of FileAttachment, ItemAttachment, and referenceAttachment attach
 Navigation property.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualevent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action cancel
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaVirtualEvent](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaVirtualEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 

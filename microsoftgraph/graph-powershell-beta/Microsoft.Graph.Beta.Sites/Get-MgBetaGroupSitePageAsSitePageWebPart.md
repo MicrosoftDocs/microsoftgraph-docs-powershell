@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagewebpart
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Collection of webparts on the SharePoint page.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageWebPart?view=graph-powershell-1.0)
 
 ## SYNTAX
 

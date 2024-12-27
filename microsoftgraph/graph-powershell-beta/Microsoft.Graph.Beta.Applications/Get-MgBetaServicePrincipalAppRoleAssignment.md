@@ -12,6 +12,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Read the properties and relationships of an appRoleAssignment object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathexternalcolumn
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get externalColumns from sites
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathExternalColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

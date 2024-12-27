@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolder
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property mailFolders for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 

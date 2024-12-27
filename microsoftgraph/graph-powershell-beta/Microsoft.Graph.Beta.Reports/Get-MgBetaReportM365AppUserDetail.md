@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appuserdetail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a report that provides the details about which apps and platforms users have used.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -13,6 +13,9 @@ ms.subservice: cloud-communications
 Read the properties and relationships of a virtualEventPresenter object.
 Currently the supported virtual event types are: \n- virtualEventTownhall\n- virtualEventWebinar
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

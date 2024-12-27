@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsighttrendingresource
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Used for navigating to the trending document.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightTrendingResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightTrendingResource?view=graph-powershell-beta)
 
 ## SYNTAX
 

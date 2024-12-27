@@ -11,6 +11,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Delete (unregister) a printConnector.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

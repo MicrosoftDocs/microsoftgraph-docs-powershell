@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingoperation
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for reports
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 

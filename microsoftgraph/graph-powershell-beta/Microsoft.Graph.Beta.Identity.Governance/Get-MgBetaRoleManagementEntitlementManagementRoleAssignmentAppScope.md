@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentappscope
@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 Supports $expand for the entitlement provider only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentAppScope?view=graph-powershell-1.0)
 
 ## SYNTAX
 

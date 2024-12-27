@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattabteamapp
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The application that is linked to the tab.
 This can't be changed after tab creation.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatTabTeamApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
