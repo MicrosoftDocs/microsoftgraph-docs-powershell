@@ -250,7 +250,7 @@ Read-only.
     - `[Name <String>]`: 
     - `[Uri <String>]`: The URI that can be used to access the service.
 
-ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint- `[]`>: Endpoints that can be used to access the service.
+ENDPOINTS `<IMicrosoftGraphPrintServiceEndpoint- `[]`>`: Endpoints that can be used to access the service.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -277,6 +277,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintservice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintservice)
+
 
 
 

@@ -9,7 +9,7 @@ ms.subservice: reports
 # Get-MgBetaReportMicrosoft365CopilotUsageUserDetail
 
 ## SYNOPSIS
-Get the most recent activity data for enabled users of Copilot for Microsoft 365 apps.
+Get the most recent activity data for enabled users of Microsoft 365 Copilot apps.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-MgBetaReportMicrosoft365CopilotUsageUserDetail -InputObject <IReportsIdentit
 ```
 
 ## DESCRIPTION
-Get the most recent activity data for enabled users of Copilot for Microsoft 365 apps.
+Get the most recent activity data for enabled users of Microsoft 365 Copilot apps.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getmicrosoft365copilotusageuserdetail-permissions.md)]
@@ -231,6 +231,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusageuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusageuserdetail)
 
 [https://learn.microsoft.com/graph/api/reportroot-getmicrosoft365copilotusageuserdetail?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getmicrosoft365copilotusageuserdetail?view=graph-rest-beta)
+
 
 
 

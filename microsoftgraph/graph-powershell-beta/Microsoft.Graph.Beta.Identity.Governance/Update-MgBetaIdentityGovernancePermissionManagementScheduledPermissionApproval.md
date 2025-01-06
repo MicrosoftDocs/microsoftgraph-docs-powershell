@@ -366,7 +366,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-STEPS <IMicrosoftGraphApprovalStep- `[]`>: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
+STEPS `<IMicrosoftGraphApprovalStep- `[]`>`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review.
@@ -394,6 +394,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapproval)
+
 
 
 

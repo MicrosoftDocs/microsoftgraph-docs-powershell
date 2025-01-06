@@ -377,7 +377,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
-QUERIES <IMicrosoftGraphEdiscoveryReviewSetQuery- `[]`>: .
+QUERIES `<IMicrosoftGraphEdiscoveryReviewSetQuery- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -409,6 +409,7 @@ You can refine searches by using fields listed in the searchable field name pair
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewset)
 
 [https://learn.microsoft.com/graph/api/ediscovery-case-post-reviewsets?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-case-post-reviewsets?view=graph-rest-beta)
+
 
 
 

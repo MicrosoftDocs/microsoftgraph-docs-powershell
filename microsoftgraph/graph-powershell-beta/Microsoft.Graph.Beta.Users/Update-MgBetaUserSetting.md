@@ -665,7 +665,7 @@ The possible values are: normal, nearing, critical, full, and overLimit.
     - `[Total <Int64?>]`: Total allowed storage space in bytes.
     - `[Used <Int64?>]`: Total space used in bytes.
 
-WINDOWS <IMicrosoftGraphWindowsSetting- `[]`>: The Windows settings of the user stored in the cloud.
+WINDOWS `<IMicrosoftGraphWindowsSetting- `[]`>`: The Windows settings of the user stored in the cloud.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
@@ -685,6 +685,7 @@ Refers to the user's Windows device that modified the object at the specified da
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting)
+
 
 
 

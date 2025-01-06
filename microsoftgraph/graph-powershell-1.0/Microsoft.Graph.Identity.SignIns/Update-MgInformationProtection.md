@@ -252,7 +252,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[ResultType <String>]`: threatAssessmentResultType
     - `[Status <String>]`: threatAssessmentStatus
 
-THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest- `[]`>: .
+THREATASSESSMENTREQUESTS `<IMicrosoftGraphThreatAssessmentRequest- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Category <String>]`: threatCategory
@@ -285,6 +285,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection)
+
 
 
 

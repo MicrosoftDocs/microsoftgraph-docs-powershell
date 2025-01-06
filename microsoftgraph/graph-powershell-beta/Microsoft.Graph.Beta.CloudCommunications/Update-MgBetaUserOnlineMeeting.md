@@ -1044,7 +1044,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AIINSIGHTS <IMicrosoftGraphCallAiInsight- `[]`>: .
+AIINSIGHTS `<IMicrosoftGraphCallAiInsight- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
@@ -1078,7 +1078,7 @@ For example, in the access reviews decisions API, this property might record the
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[TranscriptUtterance <String>]`: 
 
-ATTENDANCEREPORTS <IMicrosoftGraphMeetingAttendanceReport- `[]`>: The attendance reports of an online meeting.
+ATTENDANCEREPORTS `<IMicrosoftGraphMeetingAttendanceReport- `[]`>`: The attendance reports of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1497,7 +1497,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
   - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
 
-RECORDINGS <IMicrosoftGraphCallRecording- `[]`>: The recordings of an online meeting.
+RECORDINGS `<IMicrosoftGraphCallRecording- `[]`>`: The recordings of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1561,7 +1561,7 @@ Read-only.
   - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
   - `[Subject <String>]`: The subject of the meeting.
 
-TRANSCRIPTS <IMicrosoftGraphCallTranscript- `[]`>: The transcripts of an online meeting.
+TRANSCRIPTS `<IMicrosoftGraphCallTranscript- `[]`>`: The transcripts of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1605,6 +1605,7 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeeting)
+
 
 
 

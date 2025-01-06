@@ -409,7 +409,7 @@ Read-only when isBuiltIn is true.
   - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
 
-INHERITSPERMISSIONSFROM <IMicrosoftGraphUnifiedRoleDefinition- `[]`>: Read-only collection of role definitions that the given role definition inherits from.
+INHERITSPERMISSIONSFROM `<IMicrosoftGraphUnifiedRoleDefinition- `[]`>`: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -452,7 +452,7 @@ Read-only when isBuiltIn is true.
   - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
 
-ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission- `[]`>: List of permissions included in the role.
+ROLEPERMISSIONS `<IMicrosoftGraphUnifiedRolePermission- `[]`>`: List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
   - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
@@ -463,6 +463,7 @@ Not supported for custom roles.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroledefinition)
+
 
 
 

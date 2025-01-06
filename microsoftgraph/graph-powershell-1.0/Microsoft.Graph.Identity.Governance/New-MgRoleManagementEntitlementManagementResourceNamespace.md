@@ -220,7 +220,7 @@ Read-only.
     - `[Name <String>]`: 
     - `[ResourceScopeId <String>]`: 
 
-RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction- `[]`>: .
+RESOURCEACTIONS `<IMicrosoftGraphUnifiedRbacResourceAction- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActionVerb <String>]`: 
@@ -233,6 +233,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementresourcenamespace)
+
 
 
 

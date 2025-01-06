@@ -319,7 +319,7 @@ Read-only.
     - `[UpdatedDateTime <DateTime?>]`: The date the requirement properties were last updated.
   - `[UpdatedDateTime <DateTime?>]`: The last time the security score or related properties changed.
 
-CUSTOMERINSIGHTS <IMicrosoftGraphPartnerSecurityCustomerInsight- `[]`>: Contains customer-specific information for certain requirements.
+CUSTOMERINSIGHTS `<IMicrosoftGraphPartnerSecurityCustomerInsight- `[]`>`: Contains customer-specific information for certain requirements.
   - `[Mfa <IMicrosoftGraphPartnerSecurityCustomerMfaInsight>]`: customerMfaInsight
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CompliantAdminsCount <Int64?>]`: The number of admins that are compliant with the MFA requirements
@@ -330,7 +330,7 @@ CUSTOMERINSIGHTS <IMicrosoftGraphPartnerSecurityCustomerInsight- `[]`>: Contains
     - `[TotalUsersCount <Int64?>]`: The total number of users in the tenant
   - `[TenantId <String>]`: The unique identifier for the customer.
 
-HISTORY <IMicrosoftGraphPartnerSecurityScoreHistory- `[]`>: Contains a list of recent score changes.
+HISTORY `<IMicrosoftGraphPartnerSecurityScoreHistory- `[]`>`: Contains a list of recent score changes.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompliantRequirementsCount <Int64?>]`: The number of compliant security requirements at the time.
@@ -338,7 +338,7 @@ Read-only.
   - `[Score <Single?>]`: The score recorded at the time.
   - `[TotalRequirementsCount <Int64?>]`: The total number of requirements at the time.
 
-REQUIREMENTS <IMicrosoftGraphPartnerSecurityRequirement- `[]`>: Contains the list of security requirements that make up the score.
+REQUIREMENTS `<IMicrosoftGraphPartnerSecurityRequirement- `[]`>`: Contains the list of security requirements that make up the score.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActionUrl <String>]`: The link to the site where the admin can take action on the requirement.
@@ -353,6 +353,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscore)
+
 
 
 

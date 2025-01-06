@@ -361,7 +361,7 @@ Optional.
     - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-TENANTS <IMicrosoftGraphManagedTenantsTenantInfo- `[]`>: The collection of managed tenants associated with the tenant tag.
+TENANTS `<IMicrosoftGraphManagedTenantsTenantInfo- `[]`>`: The collection of managed tenants associated with the tenant tag.
 Optional.
   - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
@@ -371,6 +371,7 @@ Optional.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag)
 
 [https://learn.microsoft.com/graph/api/managedtenants-managedtenant-post-tenanttags?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-post-tenanttags?view=graph-rest-beta)
+
 
 
 

@@ -386,7 +386,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient- `[]`>: .
+RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
@@ -395,6 +395,7 @@ security groups).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlistitemlink)
+
 
 
 

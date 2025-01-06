@@ -5338,7 +5338,7 @@ Read-only.
 Nullable.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-BUNDLES <IMicrosoftGraphDriveItem- `[]`>: Collection of bundles (albums and multi-select-shared sets of items).
+BUNDLES `<IMicrosoftGraphDriveItem- `[]`>`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14945,7 +14945,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-FOLLOWING <IMicrosoftGraphDriveItem- `[]`>: The list of items the user is following.
+FOLLOWING `<IMicrosoftGraphDriveItem- `[]`>`: The list of items the user is following.
 Only in OneDrive for Business.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19743,7 +19743,7 @@ Read-only.
     - `[Worksheets <IMicrosoftGraphWorkbookWorksheet- `[]`>]`: Represents a collection of worksheets associated with the workbook.
 Read-only.
 
-ITEMS <IMicrosoftGraphDriveItem- `[]`>: All items contained in the drive.
+ITEMS `<IMicrosoftGraphDriveItem- `[]`>`: All items contained in the drive.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -39014,7 +39014,7 @@ SHAREPOINTIDS `<IMicrosoftGraphSharepointIds>`: sharepointIds
   - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
   - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
 
-SPECIAL <IMicrosoftGraphDriveItem- `[]`>: Collection of common folders available in OneDrive.
+SPECIAL `<IMicrosoftGraphDriveItem- `[]`>`: Collection of common folders available in OneDrive.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -43816,6 +43816,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrive)
+
 
 
 

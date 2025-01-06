@@ -65,6 +65,10 @@ This method registers the person for the webinar.
 Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
+	externalRegistrationInformation = @{
+		referrer = "Facebook"
+		registrationId = "myExternalRegistrationId"
+	}
 	preferredTimezone = "Pacific Standard Time"
 	preferredLanguage = "en-us"
 	registrationQuestionAnswers = @(
@@ -111,6 +115,10 @@ $params = @{
 	firstName = "Diane"
 	lastName = "Demoss"
 	email = "DianeDemoss@contoso.com"
+	externalRegistrationInformation = @{
+		referrer = "Facebook"
+		registrationId = "myExternalRegistrationId"
+	}
 	preferredTimezone = "Pacific Standard Time"
 	preferredLanguage = "en-us"
 	registrationQuestionAnswers = @(
@@ -671,7 +679,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-REGISTRATIONQUESTIONANSWERS <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>: The registrant's answer to the registration questions.
+REGISTRATIONQUESTIONANSWERS `<IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>`: The registrant's answer to the registration questions.
   - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
   - `[DisplayName <String>]`: Display name of the registration question.
@@ -681,7 +689,7 @@ Only appears when answerInputType is multiChoice.
   - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: .
+SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: .
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
@@ -836,6 +844,7 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration)
 
 [https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta)
+
 
 
 

@@ -540,7 +540,7 @@ CREATIONSOURCE `<IMicrosoftGraphPlannerBucketCreation>`: plannerBucketCreation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreationSourceKind <String>]`: plannerCreationSourceKind
 
-TASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+TASKS `<IMicrosoftGraphPlannerTask- `[]`>`: Read-only.
 Nullable.
 The collection of tasks in the bucket.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -738,6 +738,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerbucket)
 
 [https://learn.microsoft.com/graph/api/planner-post-buckets?view=graph-rest-beta](https://learn.microsoft.com/graph/api/planner-post-buckets?view=graph-rest-beta)
+
 
 
 

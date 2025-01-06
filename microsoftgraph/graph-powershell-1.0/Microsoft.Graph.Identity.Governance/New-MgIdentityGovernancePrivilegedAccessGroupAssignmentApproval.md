@@ -217,7 +217,7 @@ Read-only.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
-STAGES <IMicrosoftGraphApprovalStage- `[]`>: A collection of stages in the approval decision.
+STAGES `<IMicrosoftGraphApprovalStage- `[]`>`: A collection of stages in the approval decision.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review.
@@ -244,6 +244,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentapproval)
+
 
 
 

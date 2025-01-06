@@ -5139,7 +5139,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-SUBJECTS <IMicrosoftGraphUser- `[]`>: .
+SUBJECTS `<IMicrosoftGraphUser- `[]`>`: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -9941,6 +9941,7 @@ NOTE: For more information about the permissions for members and guests, see Wha
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflow)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activate?view=graph-rest-1.0)
+
 
 
 

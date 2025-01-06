@@ -5128,7 +5128,7 @@ Read-only
   - `[Version <String>]`: Version of the discovered application.
 Read-only
 
-MANAGEDDEVICES <IMicrosoftGraphManagedDevice- `[]`>: The devices that have the discovered application installed
+MANAGEDDEVICES `<IMicrosoftGraphManagedDevice- `[]`>`: The devices that have the discovered application installed
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceState <ComplianceState?>]`: Compliance state.
@@ -9930,6 +9930,7 @@ Defaults to setting on client device.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdetectedapp)
 
 [https://learn.microsoft.com/graph/api/intune-devices-detectedapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-detectedapp-create?view=graph-rest-1.0)
+
 
 
 

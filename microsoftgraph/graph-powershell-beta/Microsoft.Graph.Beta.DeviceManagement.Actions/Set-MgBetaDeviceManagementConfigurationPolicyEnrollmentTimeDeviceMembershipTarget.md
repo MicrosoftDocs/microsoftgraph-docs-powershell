@@ -231,7 +231,7 @@ BODYPARAMETER `<IPaths11S5F1SDevicemanagementConfigurationpoliciesDevicemanageme
     - `[TargetType <EnrollmentTimeDeviceMembershipTargetType?>]`: Represents the type of the targets that devices will become members of when enrolled with the associated profile.
 Possible values are staticSecurityGroup.
 
-ENROLLMENTTIMEDEVICEMEMBERSHIPTARGETS <IMicrosoftGraphEnrollmentTimeDeviceMembershipTarget- `[]`>: .
+ENROLLMENTTIMEDEVICEMEMBERSHIPTARGETS `<IMicrosoftGraphEnrollmentTimeDeviceMembershipTarget- `[]`>`: .
   - `[TargetId <String>]`: The unique identifiers of the targets that devices will become members of when enrolled with the asociated profile.
   - `[TargetType <EnrollmentTimeDeviceMembershipTargetType?>]`: Represents the type of the targets that devices will become members of when enrolled with the associated profile.
 Possible values are staticSecurityGroup.
@@ -296,6 +296,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementconfigurationpolicyenrollmenttimedevicemembershiptarget](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementconfigurationpolicyenrollmenttimedevicemembershiptarget)
+
 
 
 

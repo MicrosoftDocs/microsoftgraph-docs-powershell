@@ -231,7 +231,7 @@ It indicates that the 'user' who performed the activity was an application with 
     - `[Status <String>]`: auditLogQueryStatus
     - `[UserPrincipalNameFilters <String- `[]`>]`: The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, myname@mydomain_name.
 
-QUERIES <IMicrosoftGraphSecurityAuditLogQuery- `[]`>: .
+QUERIES `<IMicrosoftGraphSecurityAuditLogQuery- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdministrativeUnitIdFilters <String- `[]`>]`: The administrative units tagged to an audit log record.
@@ -275,6 +275,7 @@ It indicates that the 'user' who performed the activity was an application with 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog)
+
 
 
 

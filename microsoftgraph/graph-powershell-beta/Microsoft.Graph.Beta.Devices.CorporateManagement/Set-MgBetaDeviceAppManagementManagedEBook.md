@@ -321,7 +321,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-MANAGEDEBOOKASSIGNMENTS <IMicrosoftGraphManagedEBookAssignment- `[]`>: .
+MANAGEDEBOOKASSIGNMENTS `<IMicrosoftGraphManagedEBookAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[InstallIntent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
@@ -333,6 +333,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementmanagedebook)
+
 
 
 

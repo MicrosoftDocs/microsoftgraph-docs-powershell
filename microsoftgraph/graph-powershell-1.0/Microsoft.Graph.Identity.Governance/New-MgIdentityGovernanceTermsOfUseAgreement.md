@@ -344,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCEPTANCES <IMicrosoftGraphAgreementAcceptance- `[]`>: Read-only.
+ACCEPTANCES `<IMicrosoftGraphAgreementAcceptance- `[]`>`: Read-only.
 Information about acceptances of this agreement.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -556,7 +556,7 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-FILES <IMicrosoftGraphAgreementFileLocalization- `[]`>: PDFs linked to this agreement.
+FILES `<IMicrosoftGraphAgreementFileLocalization- `[]`>`: PDFs linked to this agreement.
 This property is in the process of being deprecated.
 Use the file property instead.
 Supports $expand.
@@ -620,6 +620,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreement)
 
 [https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0)
+
 
 
 

@@ -443,7 +443,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-ITEMS <IMicrosoftGraphDocumentSetVersionItem- `[]`>: Items within the document set that are captured as part of this version.
+ITEMS `<IMicrosoftGraphDocumentSetVersionItem- `[]`>`: Items within the document set that are captured as part of this version.
   - `[ItemId <String>]`: The unique identifier for the item.
   - `[Title <String>]`: The title of the item.
   - `[VersionId <String>]`: The version ID of the item.
@@ -480,6 +480,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemdocumentsetversion)
+
 
 
 

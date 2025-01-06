@@ -266,7 +266,7 @@ Max length is 40
 Device assignment item represents existing assigned Intune resource such as application or configuration.
 Currently supported device assignment item types are Application, DeviceConfiguration, DeviceManagementConfigurationPolicy and MobileAppConfiguration
 
-DEVICEASSIGNMENTITEMS <IMicrosoftGraphDeviceAssignmentItem- `[]`>: .
+DEVICEASSIGNMENTITEMS `<IMicrosoftGraphDeviceAssignmentItem- `[]`>`: .
   - `[AssignmentItemActionIntent <DeviceAssignmentItemIntent?>]`: A list of possible assignment item action intent values on the application or configuration when executing this action on the managed device.
 For example, if the application or configuration is intended to be removed on the managed device, then the intent value is remove, and if the application or configuration already under removal through previous actions and is now intended to be restored on the managed device, then the intent value is restore
   - `[AssignmentItemActionStatus <DeviceAssignmentItemStatus?>]`: A list of possible assignment item action status values for the application or configuration regarding their executed action on the managed device.
@@ -329,6 +329,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausermanageddeviceassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausermanageddeviceassignment)
+
 
 
 

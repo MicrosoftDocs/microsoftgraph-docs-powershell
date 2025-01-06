@@ -9,7 +9,7 @@ ms.subservice: search
 # Set-MgExternalConnectionItem
 
 ## SYNOPSIS
-Update the properties of an externalItem object.
+Create a new externalItem object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Set-MgBetaExternalConnectionItem?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ Set-MgExternalConnectionItem -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an externalItem object.
+Create a new externalItem object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-put-items-permissions.md)]
@@ -345,7 +345,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACL <IMicrosoftGraphExternalConnectorsAcl- `[]`>: An array of access control entries.
+ACL `<IMicrosoftGraphExternalConnectorsAcl- `[]`>`: An array of access control entries.
 Each entry specifies the access granted to a user or group.
 Required.
   - `[AccessType <String>]`: accessType
@@ -354,7 +354,7 @@ Required.
 For Microsoft Entra identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively.
 For external groups value is set to the ID of the externalGroup
 
-ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>: Returns a list of activities performed on the item.
+ACTIVITIES `<IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>`: Returns a list of activities performed on the item.
 Write-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -422,7 +422,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem)
 
-[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0)
+
 
 
 

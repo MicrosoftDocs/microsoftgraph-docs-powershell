@@ -420,7 +420,7 @@ Required.
 One of Directory, DirectoryRole, Group.
 Required.
 
-EFFECTIVERULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule- `[]`>: The list of effective rules like approval rules and expiration rules evaluated based on inherited referenced rules.
+EFFECTIVERULES `<IMicrosoftGraphUnifiedRoleManagementPolicyRule- `[]`>`: The list of effective rules like approval rules and expiration rules evaluated based on inherited referenced rules.
 For example, if there is a tenant-wide policy to enforce enabling an approval rule, the effective rule will be to enable approval even if the policy has a rule to disable approval.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -531,7 +531,7 @@ For example, if a user changes their display name the API might show the new val
   - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-RULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule- `[]`>: The collection of rules like approval rules and expiration rules.
+RULES `<IMicrosoftGraphUnifiedRoleManagementPolicyRule- `[]`>`: The collection of rules like approval rules and expiration rules.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -556,6 +556,7 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicy)
+
 
 
 

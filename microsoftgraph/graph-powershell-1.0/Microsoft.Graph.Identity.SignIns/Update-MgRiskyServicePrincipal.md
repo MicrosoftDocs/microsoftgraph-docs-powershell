@@ -421,7 +421,7 @@ Supports $filter (eq).
   - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp).
 This is set by Microsoft Entra ID internally and is inherited from servicePrincipal.
 
-HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem- `[]`>: Represents the risk history of Microsoft Entra service principals.
+HISTORY `<IMicrosoftGraphRiskyServicePrincipalHistoryItem- `[]`>`: Represents the risk history of Microsoft Entra service principals.
   - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
   - `[DisplayName <String>]`: The display name for the service principal.
   - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem- `[]`>]`: Represents the risk history of Microsoft Entra service principals.
@@ -509,6 +509,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyserviceprincipal)
+
 
 
 

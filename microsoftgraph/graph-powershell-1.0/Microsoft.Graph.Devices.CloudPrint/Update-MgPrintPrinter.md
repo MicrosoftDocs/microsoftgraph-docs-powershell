@@ -5326,7 +5326,7 @@ Valid values are described in the following table.
   - `[SupportsFitPdfToPage <Boolean?>]`: True if the printer supports scaling PDF pages to match the print media size; false otherwise.
   - `[TopMargins <Int32- `[]`>]`: A list of supported top margins(in microns) for the printer.
 
-CONNECTORS <IMicrosoftGraphPrintConnector- `[]`>: The connectors that are associated with the printer.
+CONNECTORS `<IMicrosoftGraphPrintConnector- `[]`>`: The connectors that are associated with the printer.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppVersion <String>]`: The connector's version.
@@ -5398,7 +5398,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: The unique identifier of printerShare
   - `[UserId <String>]`: The unique identifier of user
 
-JOBS <IMicrosoftGraphPrintJob- `[]`>: The list of jobs that are queued for printing by the printer/printerShare.
+JOBS `<IMicrosoftGraphPrintJob- `[]`>`: The list of jobs that are queued for printing by the printer/printerShare.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
@@ -5523,7 +5523,7 @@ Only numerical values are supported right now.
 The elements should be in hierarchical order.
   - `[Subunit <String- `[]`>]`: 
 
-SHARES <IMicrosoftGraphPrinterShare- `[]`>: The list of printerShares that are associated with the printer.
+SHARES `<IMicrosoftGraphPrinterShare- `[]`>`: The list of printerShares that are associated with the printer.
 Currently, only one printerShare can be associated with the printer.
 Read-only.
 Nullable.
@@ -10332,7 +10332,7 @@ Valid values are described in the following table.
 Read-only.
   - `[State <String>]`: printerProcessingState
 
-TASKTRIGGERS <IMicrosoftGraphPrintTaskTrigger- `[]`>: A list of task triggers that are associated with the printer.
+TASKTRIGGERS `<IMicrosoftGraphPrintTaskTrigger- `[]`>`: A list of task triggers that are associated with the printer.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
@@ -10367,6 +10367,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter)
 
 [https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-1.0)
+
 
 
 

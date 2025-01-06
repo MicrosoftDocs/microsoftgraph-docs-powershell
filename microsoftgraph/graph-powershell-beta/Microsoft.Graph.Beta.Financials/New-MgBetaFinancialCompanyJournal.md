@@ -406,7 +406,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
   - `[VendorId <String>]`: The unique identifier of vendor
 
-JOURNALLINES <IMicrosoftGraphJournalLine- `[]`>: .
+JOURNALLINES `<IMicrosoftGraphJournalLine- `[]`>`: .
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Blocked <Boolean?>]`: 
@@ -432,6 +432,7 @@ JOURNALLINES <IMicrosoftGraphJournalLine- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal)
+
 
 
 

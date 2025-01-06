@@ -699,7 +699,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphIntuneBrandingProfileAssignment- `[]`>: The list of group assignments for the branding profile
+ASSIGNMENTS `<IMicrosoftGraphIntuneBrandingProfileAssignment- `[]`>`: The list of group assignments for the branding profile
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -763,7 +763,7 @@ When disabled, all proactive troubleshooting and issue warnings within the clien
     - `[R <Int32?>]`: Red value
   - `[ThemeColorLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
 
-COMPANYPORTALBLOCKEDACTIONS <IMicrosoftGraphCompanyPortalBlockedAction- `[]`>: Collection of blocked actions on the company portal as per platform and device ownership types.
+COMPANYPORTALBLOCKEDACTIONS `<IMicrosoftGraphCompanyPortalBlockedAction- `[]`>`: Collection of blocked actions on the company portal as per platform and device ownership types.
   - `[Action <CompanyPortalAction?>]`: Action on a device that can be executed in the Company Portal
   - `[OwnerType <OwnerType?>]`: Owner type of device.
   - `[Platform <DevicePlatformType?>]`: Supported platform types.
@@ -792,6 +792,7 @@ THEMECOLORLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementintunebrandingprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementintunebrandingprofile)
+
 
 
 

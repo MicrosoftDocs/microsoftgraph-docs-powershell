@@ -1031,7 +1031,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId- `[]`>: For internal use only.
+ALTERNATIVESECURITYIDS `<IMicrosoftGraphAlternativeSecurityId- `[]`>`: For internal use only.
 Not nullable.
 Supports $filter (eq, not, ge, le).
   - `[IdentityProvider <String>]`: For internal use only.
@@ -1214,7 +1214,7 @@ Read-only.
     - `[ServiceIdentifier <String>]`: Identifier of the service corresponding to the usage right.
     - `[State <String>]`: usageRightState
 
-COMMANDS <IMicrosoftGraphCommand- `[]`>: Set of commands sent to this device.
+COMMANDS `<IMicrosoftGraphCommand- `[]`>`: Set of commands sent to this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppServiceName <String>]`: 
@@ -1249,7 +1249,7 @@ EXTENSIONATTRIBUTES `<IMicrosoftGraphOnPremisesExtensionAttributes>`: onPremises
   - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
   - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the device.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1304,7 +1304,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups and administrative units that this device is a member of.
+MEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: Groups and administrative units that this device is a member of.
 Read-only.
 Nullable.
 Supports $expand.
@@ -1313,7 +1313,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-REGISTEREDOWNERS <IMicrosoftGraphDirectoryObject- `[]`>: The user that cloud joined the device or registered their personal device.
+REGISTEREDOWNERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
 Read-only.
 Nullable.
@@ -1323,7 +1323,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-REGISTEREDUSERS <IMicrosoftGraphDirectoryObject- `[]`>: Collection of registered users of the device.
+REGISTEREDUSERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
@@ -1333,7 +1333,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups and administrative units that this device is a member of.
+TRANSITIVEMEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: Groups and administrative units that this device is a member of.
 This operation is transitive.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1341,7 +1341,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-USAGERIGHTS <IMicrosoftGraphUsageRight- `[]`>: Represents the usage rights a device has been granted.
+USAGERIGHTS `<IMicrosoftGraphUsageRight- `[]`>`: Represents the usage rights a device has been granted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CatalogId <String>]`: Product id corresponding to the usage right.
@@ -1353,6 +1353,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevicebydeviceid)
 
 [https://learn.microsoft.com/graph/api/device-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-beta)
+
 
 
 

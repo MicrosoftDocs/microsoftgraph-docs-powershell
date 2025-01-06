@@ -257,7 +257,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDUSERS <IMicrosoftGraphUser- `[]`>: The assignment targeted users for the provisioning policy.
+ASSIGNEDUSERS `<IMicrosoftGraphUser- `[]`>`: The assignment targeted users for the provisioning policy.
 This list of users is computed based on assignments, licenses, group memberships, and policies.
 Read-only.
 Supports$expand.
@@ -9893,6 +9893,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicyassignment)
+
 
 
 

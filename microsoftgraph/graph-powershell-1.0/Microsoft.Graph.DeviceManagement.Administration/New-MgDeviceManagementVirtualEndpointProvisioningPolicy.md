@@ -487,7 +487,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment- `[]`>: A defined collection of provisioning policy assignments.
+ASSIGNMENTS `<IMicrosoftGraphCloudPcProvisioningPolicyAssignment- `[]`>`: A defined collection of provisioning policy assignments.
 Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have provisioning policy assigned.
 Returned only on $expand.
 For an example about how to get the assignments relationship, see Get cloudPcProvisioningPolicy.
@@ -10156,7 +10156,7 @@ Supports $filter, $select, and $orderBy.
     - `[Locale <String>]`: The Windows language or region tag to use for language pack configuration and localization of the Cloud PC.
 The default value is en-US, which corresponds to English (United States).
 
-DOMAINJOINCONFIGURATIONS <IMicrosoftGraphCloudPcDomainJoinConfiguration- `[]`>: Specifies a list ordered by priority on how Cloud PCs join Microsoft Entra ID (Azure AD).
+DOMAINJOINCONFIGURATIONS `<IMicrosoftGraphCloudPcDomainJoinConfiguration- `[]`>`: Specifies a list ordered by priority on how Cloud PCs join Microsoft Entra ID (Azure AD).
 Supports $select.
   - `[DomainJoinType <String>]`: cloudPcDomainJoinType
   - `[OnPremisesConnectionId <String>]`: The Azure network connection ID that matches the virtual network IT admins want the provisioning policy to use when they create Cloud PCs.
@@ -10183,6 +10183,7 @@ The default value is en-US, which corresponds to English (United States).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-1.0)
+
 
 
 

@@ -299,7 +299,7 @@ Read-only.
   - `[LastBackupDateTime <DateTime?>]`: When the local administrator account credential was backed up to Azure Active Directory.
   - `[RefreshDateTime <DateTime?>]`: When the local administrator account credential will be refreshed and backed up to Azure Active Directory.
 
-CREDENTIALS <IMicrosoftGraphDeviceLocalCredential- `[]`>: The credentials of the device's local administrator account backed up to Azure Active Directory.
+CREDENTIALS `<IMicrosoftGraphDeviceLocalCredential- `[]`>`: The credentials of the device's local administrator account backed up to Azure Active Directory.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccountName <String>]`: The name of the local admin account for which LAPS is enabled.
@@ -338,6 +338,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorydevicelocalcredential)
+
 
 
 

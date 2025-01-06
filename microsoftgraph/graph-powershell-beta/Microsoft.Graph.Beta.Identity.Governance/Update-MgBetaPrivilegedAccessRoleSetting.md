@@ -439,14 +439,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADMINELIGIBLESETTINGS <IMicrosoftGraphGovernanceRuleSetting- `[]`>: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
+ADMINELIGIBLESETTINGS `<IMicrosoftGraphGovernanceRuleSetting- `[]`>`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
   - `[RuleIdentifier <String>]`: The id of the rule.
 For example, ExpirationRule and MfaRule.
   - `[Setting <String>]`: The settings of the rule.
 The value is a JSON string with a list of pairs in the format of ParameterName:ParameterValue.
 For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
-ADMINMEMBERSETTINGS <IMicrosoftGraphGovernanceRuleSetting- `[]`>: The rule settings that are evaluated when an administrator tries to add a direct member role assignment.
+ADMINMEMBERSETTINGS `<IMicrosoftGraphGovernanceRuleSetting- `[]`>`: The rule settings that are evaluated when an administrator tries to add a direct member role assignment.
   - `[RuleIdentifier <String>]`: The id of the rule.
 For example, ExpirationRule and MfaRule.
   - `[Setting <String>]`: The settings of the rule.
@@ -531,8 +531,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -783,8 +783,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
       - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
     - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -894,8 +894,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -980,7 +980,7 @@ The ID of the resource associated with the role definition.
   - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
   - `[TemplateId <String>]`: The unique identifier for the template.
 
-USERELIGIBLESETTINGS <IMicrosoftGraphGovernanceRuleSetting- `[]`>: The rule settings that are evaluated when a user tries to add an eligible role assignment.
+USERELIGIBLESETTINGS `<IMicrosoftGraphGovernanceRuleSetting- `[]`>`: The rule settings that are evaluated when a user tries to add an eligible role assignment.
 The setting is not supported for now.
   - `[RuleIdentifier <String>]`: The id of the rule.
 For example, ExpirationRule and MfaRule.
@@ -988,7 +988,7 @@ For example, ExpirationRule and MfaRule.
 The value is a JSON string with a list of pairs in the format of ParameterName:ParameterValue.
 For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
-USERMEMBERSETTINGS <IMicrosoftGraphGovernanceRuleSetting- `[]`>: The rule settings that are evaluated when a user tries to activate his role assignment.
+USERMEMBERSETTINGS `<IMicrosoftGraphGovernanceRuleSetting- `[]`>`: The rule settings that are evaluated when a user tries to activate his role assignment.
   - `[RuleIdentifier <String>]`: The id of the rule.
 For example, ExpirationRule and MfaRule.
   - `[Setting <String>]`: The settings of the rule.
@@ -998,6 +998,7 @@ For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting)
+
 
 
 

@@ -287,7 +287,7 @@ Read-only.
       - `[UpdatedDateTime <DateTime?>]`: The date the requirement properties were last updated.
     - `[UpdatedDateTime <DateTime?>]`: The last time the security score or related properties changed.
 
-SECURITYALERTS <IMicrosoftGraphPartnerSecurityAlert- `[]`>: The security alerts or a vulnerability of a Cloud Solution Provider (CSP) partner's customer that the partner must be made aware of for further action.
+SECURITYALERTS `<IMicrosoftGraphPartnerSecurityAlert- `[]`>`: The security alerts or a vulnerability of a Cloud Solution Provider (CSP) partner's customer that the partner must be made aware of for further action.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActivityLogs <IMicrosoftGraphPartnerSecurityActivityLog- `[]`>]`: Represents the activity by a partner and includes details of state transitions, who performed them, and when they occurred.
@@ -371,6 +371,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartner)
+
 
 
 

@@ -337,7 +337,7 @@ For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00
   - `[RoleScopeTags <String- `[]`>]`: Indicates role scope tags assigned for the assignment filter.
   - `[Rule <String>]`: Rule definition of the assignment filter.
 
-PAYLOADS <IMicrosoftGraphPayloadByFilter- `[]`>: Indicates associated assignments for a specific filter.
+PAYLOADS `<IMicrosoftGraphPayloadByFilter- `[]`>`: Indicates associated assignments for a specific filter.
   - `[AssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[GroupId <String>]`: The Azure AD security group ID
   - `[PayloadId <String>]`: The policy identifier
@@ -346,6 +346,7 @@ PAYLOADS <IMicrosoftGraphPayloadByFilter- `[]`>: Indicates associated assignment
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementassignmentfilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementassignmentfilter)
+
 
 
 

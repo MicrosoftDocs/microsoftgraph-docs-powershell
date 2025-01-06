@@ -273,7 +273,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORITIES <IMicrosoftGraphSecurityAuthorityTemplate- `[]`>: Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
+AUTHORITIES `<IMicrosoftGraphSecurityAuthorityTemplate- `[]`>`: Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -406,7 +406,7 @@ Read-only.
       - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
     - `[RetentionTrigger <String>]`: retentionTrigger
 
-CATEGORIES <IMicrosoftGraphSecurityCategoryTemplate- `[]`>: Specifies a group of similar types of content in a particular department.
+CATEGORIES `<IMicrosoftGraphSecurityCategoryTemplate- `[]`>`: Specifies a group of similar types of content in a particular department.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -428,7 +428,7 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-CITATIONS <IMicrosoftGraphSecurityCitationTemplate- `[]`>: The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
+CITATIONS `<IMicrosoftGraphSecurityCitationTemplate- `[]`>`: The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -446,7 +446,7 @@ Read-only.
   - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
   - `[CitationUrl <String>]`: Represents the URL to the published citation.
 
-DEPARTMENTS <IMicrosoftGraphSecurityDepartmentTemplate- `[]`>: Specifies the department or business unit of an organization to which a label belongs.
+DEPARTMENTS `<IMicrosoftGraphSecurityDepartmentTemplate- `[]`>`: Specifies the department or business unit of an organization to which a label belongs.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -462,7 +462,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-FILEPLANREFERENCES <IMicrosoftGraphSecurityFilePlanReferenceTemplate- `[]`>: Specifies a unique alpha-numeric identifier for an organization's retention schedule.
+FILEPLANREFERENCES `<IMicrosoftGraphSecurityFilePlanReferenceTemplate- `[]`>`: Specifies a unique alpha-numeric identifier for an organization's retention schedule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -478,7 +478,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-RETENTIONLABELS <IMicrosoftGraphSecurityRetentionLabel- `[]`>: Represents how customers can manage their data, whether and for how long to retain or delete it.
+RETENTIONLABELS `<IMicrosoftGraphSecurityRetentionLabel- `[]`>`: Represents how customers can manage their data, whether and for how long to retain or delete it.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActionAfterRetentionPeriod <String>]`: actionAfterRetentionPeriod
@@ -594,6 +594,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabel)
+
 
 
 

@@ -483,12 +483,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-PENDINGSCOPES <IMicrosoftGraphAppConsentRequestScope- `[]`>: A list of pending scopes waiting for approval.
+PENDINGSCOPES `<IMicrosoftGraphAppConsentRequestScope- `[]`>`: A list of pending scopes waiting for approval.
 This is empty if the consentType is Static.
 Required.
   - `[DisplayName <String>]`: The name of the scope.
 
-USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest- `[]`>: A list of pending user consent requests.
+USERCONSENTREQUESTS `<IMicrosoftGraphUserConsentRequest- `[]`>`: A list of pending user consent requests.
 Supports $filter (eq).
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
@@ -540,6 +540,7 @@ Supports $filter (eq only) and $orderby.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequest)
+
 
 
 

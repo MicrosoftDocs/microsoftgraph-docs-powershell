@@ -10333,7 +10333,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-EXECUTIONSCOPE <IMicrosoftGraphIdentityGovernanceUserProcessingResult- `[]`>: The unique identifier of the Microsoft Entra identity that last modified the workflow object.
+EXECUTIONSCOPE `<IMicrosoftGraphIdentityGovernanceUserProcessingResult- `[]`>`: The unique identifier of the Microsoft Entra identity that last modified the workflow object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: The date time that the workflow execution for a user completed.
@@ -19977,7 +19977,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-RUNS <IMicrosoftGraphIdentityGovernanceRun- `[]`>: Workflow runs.
+RUNS `<IMicrosoftGraphIdentityGovernanceRun- `[]`>`: Workflow runs.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: The date time that the run completed.
@@ -24840,7 +24840,7 @@ Value is null if the workflow execution has not started.Supports $filter(lt, le,
     - `[WorkflowVersion <Int32?>]`: The version of the workflow that was executed.
   - `[WorkflowExecutionType <String>]`: workflowExecutionType
 
-TASKREPORTS <IMicrosoftGraphIdentityGovernanceTaskReport- `[]`>: Represents the aggregation of task execution data for tasks within a workflow object.
+TASKREPORTS `<IMicrosoftGraphIdentityGovernanceTaskReport- `[]`>`: Represents the aggregation of task execution data for tasks within a workflow object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: The date time that the associated run completed.
@@ -29700,7 +29700,7 @@ New records are pushed when we add support for new parameters.Supports $filter(g
   - `[TotalUsersCount <Int32?>]`: The total number of users in the run execution for which the associated task was scheduled to execute.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
   - `[UnprocessedUsersCount <Int32?>]`: The number of users in the run execution for which the associated task is queued, in progress, or canceled.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
-TASKS <IMicrosoftGraphIdentityGovernanceTask- `[]`>: The tasks in the workflow.
+TASKS `<IMicrosoftGraphIdentityGovernanceTask- `[]`>`: The tasks in the workflow.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Arguments <IMicrosoftGraphKeyValuePair- `[]`>]`: Arguments included within the task. 
@@ -34530,7 +34530,7 @@ Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
     - `[Task <IMicrosoftGraphIdentityGovernanceTask>]`: task
 
-USERPROCESSINGRESULTS <IMicrosoftGraphIdentityGovernanceUserProcessingResult- `[]`>: Per-user workflow execution results.
+USERPROCESSINGRESULTS `<IMicrosoftGraphIdentityGovernanceUserProcessingResult- `[]`>`: Per-user workflow execution results.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: The date time that the workflow execution for a user completed.
@@ -39376,7 +39376,7 @@ Required.Supports $filter(eq, ne).
   - `[WorkflowExecutionType <String>]`: workflowExecutionType
   - `[WorkflowVersion <Int32?>]`: The version of the workflow that was executed.
 
-VERSIONS <IMicrosoftGraphIdentityGovernanceWorkflowVersion- `[]`>: The workflow versions that are available.
+VERSIONS `<IMicrosoftGraphIdentityGovernanceWorkflowVersion- `[]`>`: The workflow versions that are available.
   - `[Category <String>]`: lifecycleWorkflowCategory
   - `[CreatedBy <IMicrosoftGraphUser>]`: user
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -44226,6 +44226,7 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflow)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-1.0)
+
 
 
 

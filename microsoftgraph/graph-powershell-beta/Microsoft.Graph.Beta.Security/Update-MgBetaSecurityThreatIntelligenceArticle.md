@@ -401,7 +401,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Tags <String- `[]`>]`: Tags for this article, communicating keywords, or key concepts.
   - `[Title <String>]`: The title of this article.
 
-INDICATORS <IMicrosoftGraphSecurityArticleIndicator- `[]`>: Indicators related to this article.
+INDICATORS `<IMicrosoftGraphSecurityArticleIndicator- `[]`>`: Indicators related to this article.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -507,6 +507,7 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle)
+
 
 
 

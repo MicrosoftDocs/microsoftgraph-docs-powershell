@@ -339,7 +339,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHENTICATIONMETHODCONFIGURATIONS <IMicrosoftGraphAuthenticationMethodConfiguration- `[]`>: Represents the settings for each authentication method.
+AUTHENTICATIONMETHODCONFIGURATIONS `<IMicrosoftGraphAuthenticationMethodConfiguration- `[]`>`: Represents the settings for each authentication method.
 Automatically expanded on GET /policies/authenticationMethodsPolicy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -409,6 +409,7 @@ If the value is '0', the user is prompted during every MFA attempt.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy)
 
 [https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0)
+
 
 
 

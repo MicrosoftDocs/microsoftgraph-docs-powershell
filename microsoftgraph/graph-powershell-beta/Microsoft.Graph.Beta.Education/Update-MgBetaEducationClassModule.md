@@ -452,7 +452,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESOURCES <IMicrosoftGraphEducationModuleResource- `[]`>: Learning objects that are associated with this module.
+RESOURCES `<IMicrosoftGraphEducationModuleResource- `[]`>`: Learning objects that are associated with this module.
 Only teachers can modify this list.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -478,6 +478,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmodule)
 
 [https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-beta)
+
 
 
 

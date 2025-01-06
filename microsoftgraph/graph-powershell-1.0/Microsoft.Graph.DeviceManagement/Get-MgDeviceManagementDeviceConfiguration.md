@@ -10,7 +10,7 @@ ms.subservice: intune
 # Get-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Read properties and relationships of the iosCertificateProfile object.
+Read properties and relationships of the macOSCustomConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentit
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the iosCertificateProfile object.
+Read properties and relationships of the macOSCustomConfiguration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -360,9 +360,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscertificateprofile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscertificateprofile-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-macoscustomconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-macoscustomconfiguration-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81generalconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81generalconfiguration-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-list?view=graph-rest-1.0)
+
 
 
 

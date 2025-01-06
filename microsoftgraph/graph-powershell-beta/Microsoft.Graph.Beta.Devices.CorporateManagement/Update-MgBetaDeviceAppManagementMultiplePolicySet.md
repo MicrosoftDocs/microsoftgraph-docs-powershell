@@ -285,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDEDPOLICYSETITEMS <IMicrosoftGraphPolicySetItem- `[]`>: .
+ADDEDPOLICYSETITEMS `<IMicrosoftGraphPolicySetItem- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Creation time of the PolicySetItem.
@@ -297,7 +297,7 @@ Read-only.
   - `[PayloadId <String>]`: PayloadId of the PolicySetItem.
   - `[Status <PolicySetStatus?>]`: The enum to specify the status of PolicySet.
 
-ASSIGNMENTS <IMicrosoftGraphPolicySetAssignment- `[]`>: .
+ASSIGNMENTS `<IMicrosoftGraphPolicySetAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the PolicySetAssignment.
@@ -402,7 +402,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-UPDATEDPOLICYSETITEMS <IMicrosoftGraphPolicySetItem- `[]`>: .
+UPDATEDPOLICYSETITEMS `<IMicrosoftGraphPolicySetItem- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Creation time of the PolicySetItem.
@@ -417,6 +417,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmultiplepolicyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmultiplepolicyset)
+
 
 
 

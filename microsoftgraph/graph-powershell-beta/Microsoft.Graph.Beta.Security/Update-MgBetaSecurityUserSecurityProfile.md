@@ -374,7 +374,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNTS <IMicrosoftGraphUserAccount- `[]`>: .
+ACCOUNTS `<IMicrosoftGraphUserAccount- `[]`>`: .
   - `[DisplayName <String>]`: 
   - `[LastSeenDateTime <DateTime?>]`: 
   - `[RiskScore <String>]`: 
@@ -511,6 +511,7 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityusersecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityusersecurityprofile)
+
 
 
 

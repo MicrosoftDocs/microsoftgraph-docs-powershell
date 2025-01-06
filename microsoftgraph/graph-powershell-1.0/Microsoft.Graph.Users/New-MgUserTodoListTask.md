@@ -603,7 +603,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS <IMicrosoftGraphAttachmentBase- `[]`>: A collection of file attachments for the task.
+ATTACHMENTS `<IMicrosoftGraphAttachmentBase- `[]`>`: A collection of file attachments for the task.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ContentType <String>]`: The MIME type.
@@ -613,7 +613,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 This doesn't need to be the actual file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-ATTACHMENTSESSIONS <IMicrosoftGraphAttachmentSession- `[]`>: .
+ATTACHMENTSESSIONS `<IMicrosoftGraphAttachmentSession- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Content <Byte- `[]`>]`: The content streams that are uploaded.
@@ -731,7 +731,7 @@ Required.
   - `[Status <String>]`: taskStatus
   - `[Title <String>]`: A brief description of the task.
 
-CHECKLISTITEMS <IMicrosoftGraphChecklistItem- `[]`>: A collection of checklistItems linked to a task.
+CHECKLISTITEMS `<IMicrosoftGraphChecklistItem- `[]`>`: A collection of checklistItems linked to a task.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
@@ -751,7 +751,7 @@ DUEDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the task.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the task.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -777,7 +777,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-LINKEDRESOURCES <IMicrosoftGraphLinkedResource- `[]`>: A collection of resources linked to the task.
+LINKEDRESOURCES `<IMicrosoftGraphLinkedResource- `[]`>`: A collection of resources linked to the task.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ApplicationName <String>]`: The app name of the source that sends the linkedResource.
@@ -833,6 +833,7 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttask](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttask)
+
 
 
 

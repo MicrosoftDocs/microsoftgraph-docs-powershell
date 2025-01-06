@@ -390,7 +390,7 @@ DirectoryRole is the only currently supported scope type for Microsoft Entra rol
 For example, it could be information leaks or unauthorized access.
   - `[SeverityLevel <String>]`: alertSeverity
 
-ALERTINCIDENTS <IMicrosoftGraphUnifiedRoleManagementAlertIncident- `[]`>: Represents the incidents of this type of alert that have been triggered in Privileged Identity Management (PIM) for Microsoft Entra roles in the tenant.
+ALERTINCIDENTS `<IMicrosoftGraphUnifiedRoleManagementAlertIncident- `[]`>`: Represents the incidents of this type of alert that have been triggered in Privileged Identity Management (PIM) for Microsoft Entra roles in the tenant.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -454,6 +454,7 @@ DirectoryRole is the only currently supported scope type for Microsoft Entra rol
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalert)
+
 
 
 

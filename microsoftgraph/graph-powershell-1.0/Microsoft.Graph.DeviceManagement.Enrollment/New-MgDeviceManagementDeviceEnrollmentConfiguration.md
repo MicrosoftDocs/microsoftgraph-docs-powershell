@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+Create a new deviceEnrollmentPlatformRestrictionsConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration
 ```
 
 ## DESCRIPTION
-Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+Create a new deviceEnrollmentPlatformRestrictionsConfiguration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -315,7 +315,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>: The list of group assignments for the device configuration profile
+ASSIGNMENTS `<IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>`: The list of group assignments for the device configuration profile
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -342,7 +342,8 @@ Users are subject only to the configuration with the lowest priority value.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create?view=graph-rest-1.0)
+
 
 
 

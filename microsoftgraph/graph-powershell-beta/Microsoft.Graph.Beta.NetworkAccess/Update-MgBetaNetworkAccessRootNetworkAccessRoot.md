@@ -338,7 +338,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTS <IMicrosoftGraphNetworkaccessAlert- `[]`>: .
+ALERTS `<IMicrosoftGraphNetworkaccessAlert- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Actions <IMicrosoftGraphNetworkaccessAlertAction- `[]`>]`: 
@@ -496,8 +496,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -6685,7 +6685,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8836,8 +8836,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Contains the name of the field that a value is associated with.
-            - `[Value <String>]`: Contains the corresponding value for the specified key.
+            - `[Key <String>]`: Key.
+            - `[Value <String>]`: Value.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -9614,7 +9614,7 @@ Supports $expand and $select.
     - `[Group <String>]`: The group or category to which the web category belongs.
     - `[Name <String>]`: The unique name that is associated with the web category.
 
-FILTERINGPOLICIES <IMicrosoftGraphNetworkaccessFilteringPolicy- `[]`>: A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile.
+FILTERINGPOLICIES `<IMicrosoftGraphNetworkaccessFilteringPolicy- `[]`>`: A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile.
   - `[Description <String>]`: Description.
   - `[Name <String>]`: Policy name.
   - `[PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule- `[]`>]`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
@@ -9628,7 +9628,7 @@ Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the filtering Policy was originally created.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time when a particular profile was last modified or updated.
 
-FILTERINGPROFILES <IMicrosoftGraphNetworkaccessFilteringProfile- `[]`>: A filtering profile associates network access policies with Microsoft Entra ID Conditional Access policies, so that access policies can be applied to users and groups.
+FILTERINGPROFILES `<IMicrosoftGraphNetworkaccessFilteringProfile- `[]`>`: A filtering profile associates network access policies with Microsoft Entra ID Conditional Access policies, so that access policies can be applied to users and groups.
   - `[Description <String>]`: Description.
   - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time.
   - `[Name <String>]`: Profile name.
@@ -9663,7 +9663,7 @@ Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the filteringProfile was created.
   - `[Priority <Int64?>]`: The priority used to order the profile for processing within a list.
 
-FORWARDINGPOLICIES <IMicrosoftGraphNetworkaccessForwardingPolicy- `[]`>: A forwarding policy defines the specific traffic that is routed through the Global Secure Access Service.
+FORWARDINGPOLICIES `<IMicrosoftGraphNetworkaccessForwardingPolicy- `[]`>`: A forwarding policy defines the specific traffic that is routed through the Global Secure Access Service.
 It's then added to a forwarding profile.
   - `[Description <String>]`: Description.
   - `[Name <String>]`: Policy name.
@@ -9676,7 +9676,7 @@ Read-only.
 Read-only.
   - `[TrafficForwardingType <String>]`: trafficForwardingType
 
-FORWARDINGPROFILES <IMicrosoftGraphNetworkaccessForwardingProfile- `[]`>: A forwarding profile determines which types of traffic are routed through the Global Secure Access services and which ones are skipped.
+FORWARDINGPROFILES `<IMicrosoftGraphNetworkaccessForwardingProfile- `[]`>`: A forwarding profile determines which types of traffic are routed through the Global Secure Access services and which ones are skipped.
 The handling of specific traffic is determined by the forwarding policies that are added to the forwarding profile.
   - `[Description <String>]`: Description.
   - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time.
@@ -9719,8 +9719,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -10966,8 +10966,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Contains the name of the field that a value is associated with.
-            - `[Value <String>]`: Contains the corresponding value for the specified key.
+            - `[Key <String>]`: Key.
+            - `[Value <String>]`: Value.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -16622,7 +16622,7 @@ It is an Optional field
         - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -18674,6 +18674,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessrootnetworkaccessroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessrootnetworkaccessroot)
+
 
 
 

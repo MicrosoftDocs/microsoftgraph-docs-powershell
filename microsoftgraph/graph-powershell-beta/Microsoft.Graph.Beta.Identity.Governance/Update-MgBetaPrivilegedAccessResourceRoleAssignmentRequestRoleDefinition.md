@@ -402,8 +402,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -676,8 +676,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
       - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
     - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -810,8 +810,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -877,6 +877,7 @@ The setting is not supported for now.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignmentrequestroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignmentrequestroledefinition)
+
 
 
 

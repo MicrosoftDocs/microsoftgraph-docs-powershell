@@ -455,7 +455,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDPOLICIES <IMicrosoftGraphLabelPolicy- `[]`>: .
+ASSIGNEDPOLICIES `<IMicrosoftGraphLabelPolicy- `[]`>`: .
   - `[Id <String>]`: 
   - `[Name <String>]`: 
 
@@ -568,10 +568,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-LABELACTIONS <IMicrosoftGraphLabelActionBase- `[]`>: .
+LABELACTIONS `<IMicrosoftGraphLabelActionBase- `[]`>`: .
   - `[Name <String>]`: 
 
-SUBLABELS <IMicrosoftGraphSensitivityLabel- `[]`>: .
+SUBLABELS `<IMicrosoftGraphSensitivityLabel- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
@@ -597,6 +597,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionsensitivitylabelsublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionsensitivitylabelsublabel)
+
 
 
 

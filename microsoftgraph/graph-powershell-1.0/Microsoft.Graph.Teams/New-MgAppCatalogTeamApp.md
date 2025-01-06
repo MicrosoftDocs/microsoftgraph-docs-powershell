@@ -269,7 +269,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition- `[]`>: The details for each version of the app.
+APPDEFINITIONS `<IMicrosoftGraphTeamsAppDefinition- `[]`>`: The details for each version of the app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
@@ -345,6 +345,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp)
 
 [https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0)
+
 
 
 

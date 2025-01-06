@@ -187,7 +187,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTAINMENTS <IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>: SLA data for a Microsoft Entra tenant for a calendar month.
+ATTAINMENTS `<IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>`: SLA data for a Microsoft Entra tenant for a calendar month.
   - `[EndDate <DateTime?>]`: The end date for the calendar month for which SLA attainment is measured.
   - `[Score <Double?>]`: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
 Values are truncated, not rounded, so the actual value is always equal to or higher than the displayed value.
@@ -208,6 +208,7 @@ Values are expressed as a percentage of availability for the tenant.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication)
+
 
 
 

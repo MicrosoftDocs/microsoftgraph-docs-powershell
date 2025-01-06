@@ -9,7 +9,7 @@ ms.subservice: search
 # Update-MgBetaExternalConnectionSchema
 
 ## SYNOPSIS
-Update the properties of a schema for an externalConnection.
+Create a new or update an existing schema for a Microsoft Search connection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ Update-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a schema for an externalConnection.
+Create a new or update an existing schema for a Microsoft Search connection.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
@@ -366,7 +366,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
-PROPERTIES <IMicrosoftGraphExternalConnectorsProperty- `[]`>: The properties defined for the items in the connection.
+PROPERTIES `<IMicrosoftGraphExternalConnectorsProperty- `[]`>`: The properties defined for the items in the connection.
 The minimum number of properties is one, the maximum is 128.
   - `[Aliases <String- `[]`>]`: A set of aliases or friendly names for the property.
 Maximum 32 characters.
@@ -409,7 +409,8 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema)
 
-[https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-beta)
+
 
 
 

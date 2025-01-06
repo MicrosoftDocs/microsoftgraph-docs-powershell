@@ -536,7 +536,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-LOCALIZATIONS <IMicrosoftGraphAgreementFileLocalization- `[]`>: The localized version of the terms of use agreement files attached to the agreement.
+LOCALIZATIONS `<IMicrosoftGraphAgreementFileLocalization- `[]`>`: The localized version of the terms of use agreement files attached to the agreement.
   - `[CreatedDateTime <DateTime?>]`: The date time representing when the file was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -588,6 +588,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreementfile)
+
 
 
 

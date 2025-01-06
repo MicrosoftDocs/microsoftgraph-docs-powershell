@@ -352,7 +352,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
-TAGSTOADD <IMicrosoftGraphEdiscoveryTag- `[]`>: .
+TAGSTOADD `<IMicrosoftGraphEdiscoveryTag- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChildSelectability <String>]`: childSelectability
@@ -373,7 +373,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-TAGSTOREMOVE <IMicrosoftGraphEdiscoveryTag- `[]`>: .
+TAGSTOREMOVE `<IMicrosoftGraphEdiscoveryTag- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChildSelectability <String>]`: childSelectability
@@ -399,6 +399,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/add-mgbetacomplianceediscoverycasereviewsetquerytag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/add-mgbetacomplianceediscoverycasereviewsetquerytag)
 
 [https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-applytags?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-applytags?view=graph-rest-beta)
+
 
 
 

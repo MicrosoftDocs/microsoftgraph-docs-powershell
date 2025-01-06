@@ -358,13 +358,14 @@ Read-only.
   - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
   - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
 
-DEPENDENCIES <IMicrosoftGraphDeviceManagementSettingDependency- `[]`>: Collection of dependencies on other settings
+DEPENDENCIES `<IMicrosoftGraphDeviceManagementSettingDependency- `[]`>`: Collection of dependencies on other settings
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the dependency setting value
   - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition)
+
 
 
 

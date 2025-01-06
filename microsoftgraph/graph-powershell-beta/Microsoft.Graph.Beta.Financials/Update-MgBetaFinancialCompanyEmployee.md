@@ -590,7 +590,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
   - `[VendorId <String>]`: The unique identifier of vendor
 
-PICTURE <IMicrosoftGraphPicture- `[]`>: .
+PICTURE `<IMicrosoftGraphPicture- `[]`>`: .
   - `[Content <Byte- `[]`>]`: 
   - `[ContentType <String>]`: 
   - `[Height <Int32?>]`: 
@@ -600,6 +600,7 @@ PICTURE <IMicrosoftGraphPicture- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyemployee](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyemployee)
+
 
 
 

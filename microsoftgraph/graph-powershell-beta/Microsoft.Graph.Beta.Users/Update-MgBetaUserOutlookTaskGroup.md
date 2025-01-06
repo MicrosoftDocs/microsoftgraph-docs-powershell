@@ -470,7 +470,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-TASKFOLDERS <IMicrosoftGraphOutlookTaskFolder- `[]`>: The collection of task folders in the task group.
+TASKFOLDERS `<IMicrosoftGraphOutlookTaskFolder- `[]`>`: The collection of task folders in the task group.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -582,6 +582,7 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskgroup)
+
 
 
 

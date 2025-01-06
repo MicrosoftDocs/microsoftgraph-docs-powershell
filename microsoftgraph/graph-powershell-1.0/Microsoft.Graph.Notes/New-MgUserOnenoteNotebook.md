@@ -650,7 +650,7 @@ LINKS `<IMicrosoftGraphNotebookLinks>`: notebookLinks
     - `[Href <String>]`: The URL of the link.
   - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
 
-SECTIONGROUPS <IMicrosoftGraphSectionGroup- `[]`>: The section groups in the notebook.
+SECTIONGROUPS `<IMicrosoftGraphSectionGroup- `[]`>`: The section groups in the notebook.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -785,7 +785,7 @@ Nullable.
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
 Read-only.
 
-SECTIONS <IMicrosoftGraphOnenoteSection- `[]`>: The sections in the notebook.
+SECTIONS `<IMicrosoftGraphOnenoteSection- `[]`>`: The sections in the notebook.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -923,6 +923,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebook)
+
 
 
 

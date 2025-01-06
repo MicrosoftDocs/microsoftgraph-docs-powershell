@@ -332,7 +332,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-LABELS <IMicrosoftGraphInformationProtectionLabel- `[]`>: .
+LABELS `<IMicrosoftGraphInformationProtectionLabel- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
@@ -357,6 +357,7 @@ Active labels should be hidden or disabled in user interfaces.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionpolicy)
+
 
 
 

@@ -5341,7 +5341,7 @@ Nullable.
   - `[Schools <IMicrosoftGraphEducationSchool- `[]`>]`: 
   - `[Users <IMicrosoftGraphEducationUser- `[]`>]`: 
 
-CLASSES <IMicrosoftGraphEducationClass- `[]`>: .
+CLASSES `<IMicrosoftGraphEducationClass- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignmentCategories <IMicrosoftGraphEducationCategory- `[]`>]`: All categories associated with this class.
@@ -15573,7 +15573,7 @@ Supports $filter and $orderby.
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
 Supports $filter.
 
-SCHOOLS <IMicrosoftGraphEducationSchool- `[]`>: .
+SCHOOLS `<IMicrosoftGraphEducationSchool- `[]`>`: .
   - `[Description <String>]`: Organization description.
   - `[DisplayName <String>]`: Organization display name.
   - `[ExternalSource <String>]`: educationExternalSource
@@ -20688,7 +20688,7 @@ Nullable.
   - `[Users <IMicrosoftGraphEducationUser- `[]`>]`: Users in the school.
 Nullable.
 
-USERS <IMicrosoftGraphEducationUser- `[]`>: .
+USERS `<IMicrosoftGraphEducationUser- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccountEnabled <Boolean?>]`: True if the account is enabled; otherwise, false.
@@ -25807,6 +25807,7 @@ Supports $filter.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationroot](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationroot)
+
 
 
 

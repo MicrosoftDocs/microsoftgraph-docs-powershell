@@ -714,7 +714,7 @@ Use the email address specified in the email property of the bookingBusiness ent
 Default value is false.
   - `[StaffMemberIds <String- `[]`>]`: Represents those staff members who provide this service.
 
-CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment- `[]`>: Contains the set of custom questions associated with a particular service.
+CUSTOMQUESTIONS `<IMicrosoftGraphBookingQuestionAssignment- `[]`>`: Contains the set of custom questions associated with a particular service.
   - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
   - `[QuestionId <String>]`: The ID of the custom question.
 
@@ -743,7 +743,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-DEFAULTREMINDERS <IMicrosoftGraphBookingReminder- `[]`>: The default set of reminders for an appointment of this service.
+DEFAULTREMINDERS `<IMicrosoftGraphBookingReminder- `[]`>`: The default set of reminders for an appointment of this service.
 The value of this property is available only when reading this bookingService by its ID.
   - `[Message <String>]`: The message in the reminder.
   - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
@@ -809,6 +809,7 @@ Use the email address specified in the email property of the bookingBusiness ent
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessservice)
 
 [https://learn.microsoft.com/graph/api/bookingservice-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingservice-update?view=graph-rest-1.0)
+
 
 
 

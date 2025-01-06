@@ -681,7 +681,7 @@ Supports $filter (eq, ne).
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule- `[]`>]`: Schedules for role eligibility operations.
 
-RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace- `[]`>: .
+RESOURCENAMESPACES `<IMicrosoftGraphUnifiedRbacResourceNamespace- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: 
@@ -695,7 +695,7 @@ Read-only.
     - `[Name <String>]`: 
     - `[ResourceScopeId <String>]`: 
 
-ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment- `[]`>: Resource to grant access to users or groups.
+ROLEASSIGNMENTS `<IMicrosoftGraphUnifiedRoleAssignment- `[]`>`: Resource to grant access to users or groups.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
@@ -771,7 +771,7 @@ Read-only when isBuiltIn is true.
 Read-only.
 Supports $filter (eq, in).
 
-ROLEASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance- `[]`>: Instances for active role assignments.
+ROLEASSIGNMENTSCHEDULEINSTANCES `<IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance- `[]`>`: Instances for active role assignments.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -881,7 +881,7 @@ Supports $filter (eq, ne).
 Supports $filter (eq, ne).
   - `[StartDateTime <DateTime?>]`: When this instance starts.
 
-ROLEASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest- `[]`>: Requests for active role assignments to principals through PIM.
+ROLEASSIGNMENTSCHEDULEREQUESTS `<IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest- `[]`>`: Requests for active role assignments to principals through PIM.
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1089,7 +1089,7 @@ Supports $filter (eq, ne).
     - `[TicketNumber <String>]`: The ticket number.
     - `[TicketSystem <String>]`: The description of the ticket system.
 
-ROLEASSIGNMENTSCHEDULES <IMicrosoftGraphUnifiedRoleAssignmentSchedule- `[]`>: Schedules for active role assignment operations.
+ROLEASSIGNMENTSCHEDULES `<IMicrosoftGraphUnifiedRoleAssignmentSchedule- `[]`>`: Schedules for active role assignment operations.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1241,7 +1241,7 @@ It can further imply whether the unifiedRoleAssignmentSchedule can be managed by
 Supports $filter (eq, ne).
   - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
 
-ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition- `[]`>: Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
+ROLEDEFINITIONS `<IMicrosoftGraphUnifiedRoleDefinition- `[]`>`: Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: The description for the unifiedRoleDefinition.
@@ -1279,7 +1279,7 @@ This identifier is typically used if one needs an identifier to be the same acro
   - `[Version <String>]`: Indicates version of the role definition.
 Read-only when isBuiltIn is true.
 
-ROLEELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance- `[]`>: Instances for role eligibility requests.
+ROLEELIGIBILITYSCHEDULEINSTANCES `<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance- `[]`>`: Instances for role eligibility requests.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1357,7 +1357,7 @@ Supports $filter (eq, ne).
 Supports $filter (eq, ne).
   - `[StartDateTime <DateTime?>]`: When this instance starts.
 
-ROLEELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest- `[]`>: Requests for role eligibilities for principals through PIM.
+ROLEELIGIBILITYSCHEDULEREQUESTS `<IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest- `[]`>`: Requests for role eligibilities for principals through PIM.
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1533,7 +1533,7 @@ Supports $filter (eq, ne).
     - `[TicketNumber <String>]`: The ticket number.
     - `[TicketSystem <String>]`: The description of the ticket system.
 
-ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule- `[]`>: Schedules for role eligibility operations.
+ROLEELIGIBILITYSCHEDULES `<IMicrosoftGraphUnifiedRoleEligibilitySchedule- `[]`>`: Schedules for role eligibility operations.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1657,6 +1657,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectory)
+
 
 
 

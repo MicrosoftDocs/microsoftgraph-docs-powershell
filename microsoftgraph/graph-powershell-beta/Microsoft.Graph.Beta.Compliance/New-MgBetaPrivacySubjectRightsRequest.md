@@ -679,7 +679,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPROVERS <IMicrosoftGraphUser- `[]`>: .
+APPROVERS `<IMicrosoftGraphUser- `[]`>`: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -898,8 +898,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -6728,7 +6728,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8967,8 +8967,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -14797,7 +14797,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -16880,7 +16880,7 @@ This property is defined only for APIs accessed using the /security query path a
   - `[Team <IMicrosoftGraphTeam>]`: team
   - `[Type <String>]`: subjectRightsRequestType
 
-COLLABORATORS <IMicrosoftGraphUser- `[]`>: .
+COLLABORATORS `<IMicrosoftGraphUser- `[]`>`: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -17099,8 +17099,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -22929,7 +22929,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -24957,7 +24957,7 @@ DATASUBJECT `<IMicrosoftGraphDataSubject>`: dataSubject
   - `[Residency <String>]`: The country/region of residency.
 The residency information is uesed only for internal reporting but not for the content search.
 
-HISTORY <IMicrosoftGraphSubjectRightsRequestHistory- `[]`>: Collection of history change events.
+HISTORY `<IMicrosoftGraphSubjectRightsRequestHistory- `[]`>`: Collection of history change events.
   - `[ChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -24998,7 +24998,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NOTES <IMicrosoftGraphAuthoredNote- `[]`>: List of notes associated with the request.
+NOTES `<IMicrosoftGraphAuthoredNote- `[]`>`: List of notes associated with the request.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Author <IMicrosoftGraphIdentity>]`: identity
@@ -25016,7 +25016,7 @@ For example, in the access reviews decisions API, this property might record the
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-STAGES <IMicrosoftGraphSubjectRightsRequestStageDetail- `[]`>: Information about the different stages for the request.
+STAGES `<IMicrosoftGraphSubjectRightsRequestStageDetail- `[]`>`: Information about the different stages for the request.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Code <String>]`: Represents the error code.
@@ -25272,8 +25272,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -29996,7 +29996,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -33098,6 +33098,7 @@ This URL should be treated as an opaque blob, and not parsed.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequest)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subjectrightsrequest-post?view=graph-rest-beta)
+
 
 
 

@@ -413,7 +413,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-MEMBERS <IMicrosoftGraphTeamworkTagMember- `[]`>: Users assigned to the tag.
+MEMBERS `<IMicrosoftGraphTeamworkTagMember- `[]`>`: Users assigned to the tag.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The member's display name.
@@ -425,6 +425,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag)
 
 [https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-1.0)
+
 
 
 

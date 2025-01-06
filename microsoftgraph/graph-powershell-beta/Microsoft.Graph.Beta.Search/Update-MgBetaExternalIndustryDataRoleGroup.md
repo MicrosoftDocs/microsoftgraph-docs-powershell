@@ -290,7 +290,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
-ROLES <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>: The set of roles included in the role group.
+ROLES `<IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>`: The set of roles included in the role group.
   - `[Code <String>]`: The code of the desired referenceDefinition entry.
   - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -306,6 +306,7 @@ Must be unique within the referenceType.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatarolegroup)
+
 
 
 

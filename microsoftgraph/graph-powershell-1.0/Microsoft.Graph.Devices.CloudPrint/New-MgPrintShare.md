@@ -436,7 +436,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALLOWEDGROUPS <IMicrosoftGraphGroup- `[]`>: The groups whose users have access to print using the printer.
+ALLOWEDGROUPS `<IMicrosoftGraphGroup- `[]`>`: The groups whose users have access to print using the printer.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -5233,7 +5233,7 @@ To learn more, see group visibility options.
 Returned by default.
 Nullable.
 
-ALLOWEDUSERS <IMicrosoftGraphUser- `[]`>: The users who have access to print using the printer.
+ALLOWEDUSERS `<IMicrosoftGraphUser- `[]`>`: The users who have access to print using the printer.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -14892,7 +14892,7 @@ See the printer's capabilities for a list of supported output bins.
   - `[Quality <String>]`: printQuality
   - `[Scaling <String>]`: printScaling
 
-JOBS <IMicrosoftGraphPrintJob- `[]`>: The list of jobs that are queued for printing by the printer/printerShare.
+JOBS `<IMicrosoftGraphPrintJob- `[]`>`: The list of jobs that are queued for printing by the printer/printerShare.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
@@ -19834,6 +19834,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshare](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshare)
 
 [https://learn.microsoft.com/graph/api/print-post-shares?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-post-shares?view=graph-rest-1.0)
+
 
 
 

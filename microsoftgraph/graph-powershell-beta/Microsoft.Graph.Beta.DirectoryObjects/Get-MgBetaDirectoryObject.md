@@ -319,6 +319,8 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
+  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
+  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS
@@ -326,6 +328,7 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-get?view=graph-rest-beta)
+
 
 
 

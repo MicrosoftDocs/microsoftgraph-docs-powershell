@@ -559,7 +559,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-SEGMENTS <IMicrosoftGraphCallRecordsSegment- `[]`>: The list of segments involved in the session.
+SEGMENTS `<IMicrosoftGraphCallRecordsSegment- `[]`>`: The list of segments involved in the session.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -693,6 +693,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordsession)
+
 
 
 

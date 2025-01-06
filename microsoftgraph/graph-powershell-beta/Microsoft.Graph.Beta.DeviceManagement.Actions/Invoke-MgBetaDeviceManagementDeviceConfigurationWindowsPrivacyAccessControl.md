@@ -308,7 +308,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
-WINDOWSPRIVACYACCESSCONTROLS <IMicrosoftGraphWindowsPrivacyDataAccessControlItem- `[]`>: .
+WINDOWSPRIVACYACCESSCONTROLS `<IMicrosoftGraphWindowsPrivacyDataAccessControlItem- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccessLevel <WindowsPrivacyDataAccessLevel?>]`: Determine the access level to specific Windows privacy data category.
@@ -321,6 +321,7 @@ When set, the access level applies to the specified application.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationwindowsprivacyaccesscontrol](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationwindowsprivacyaccesscontrol)
+
 
 
 

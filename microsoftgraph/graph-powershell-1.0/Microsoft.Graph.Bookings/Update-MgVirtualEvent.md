@@ -550,7 +550,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: The virtual event presenters.
+PRESENTERS `<IMicrosoftGraphVirtualEventPresenter- `[]`>`: The virtual event presenters.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Email <String>]`: Email address of the presenter.
@@ -573,7 +573,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
     - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
+SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -674,6 +674,7 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualevent)
+
 
 
 

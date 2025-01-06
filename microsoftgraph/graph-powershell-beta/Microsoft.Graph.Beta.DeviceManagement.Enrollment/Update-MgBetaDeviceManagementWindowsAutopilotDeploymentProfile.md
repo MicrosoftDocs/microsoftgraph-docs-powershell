@@ -593,7 +593,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDDEVICES <IMicrosoftGraphWindowsAutopilotDeviceIdentity- `[]`>: The list of assigned devices for the profile.
+ASSIGNEDDEVICES `<IMicrosoftGraphWindowsAutopilotDeviceIdentity- `[]`>`: The list of assigned devices for the profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AddressableUserName <String>]`: Addressable user name.
@@ -750,7 +750,7 @@ The default is FALSE.
   - `[UserPrincipalName <String>]`: User Principal Name.
   - `[UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus?>]`: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
 
-ASSIGNMENTS <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment- `[]`>: The list of group assignments for the profile.
+ASSIGNMENTS `<IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment- `[]`>`: The list of group assignments for the profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
@@ -991,6 +991,7 @@ Use outOfBoxExperienceSetting instead.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofile)
+
 
 
 

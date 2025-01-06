@@ -410,11 +410,11 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retention setting details for the policy.
+RETENTIONSETTINGS `<IMicrosoftGraphRetentionSetting- `[]`>`: Contains the retention setting details for the policy.
   - `[Interval <String>]`: The frequency of the backup.
   - `[Period <TimeSpan?>]`: The period of time to retain the protected data for a single Microsoft 365 service.
 
-SITEINCLUSIONRULES <IMicrosoftGraphSiteProtectionRule- `[]`>: The rules associated with the SharePoint Protection policy.
+SITEINCLUSIONRULES `<IMicrosoftGraphSiteProtectionRule- `[]`>`: The rules associated with the SharePoint Protection policy.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -451,7 +451,7 @@ Read-only.
   - `[SiteExpression <String>]`: Contains a site expression.
 For examples, see siteExpression example.
 
-SITEPROTECTIONUNITS <IMicrosoftGraphSiteProtectionUnit- `[]`>: The protection units (sites) that are protected under the site protection policy.
+SITEPROTECTIONUNITS `<IMicrosoftGraphSiteProtectionUnit- `[]`>`: The protection units (sites) that are protected under the site protection policy.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -492,6 +492,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointprotectionpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointprotectionpolicies?view=graph-rest-beta)
+
 
 
 

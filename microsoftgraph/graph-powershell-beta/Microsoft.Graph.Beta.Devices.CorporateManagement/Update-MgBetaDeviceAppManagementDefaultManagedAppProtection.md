@@ -2055,7 +2055,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPS <IMicrosoftGraphManagedMobileApp- `[]`>: List of apps to which the policy is deployed.
+APPS `<IMicrosoftGraphManagedMobileApp- `[]`>`: List of apps to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
@@ -2225,7 +2225,7 @@ This setting is only allowed to be True when AllowedInboundDataTransferSources i
   - `[WarnAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning
   - `[WipeAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
 
-CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair- `[]`>: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
+CUSTOMSETTINGS `<IMicrosoftGraphKeyValuePair- `[]`>`: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
@@ -2242,12 +2242,12 @@ Read-only.
   - `[LastRefreshTime <DateTime?>]`: 
   - `[Version <String>]`: Version of the entity.
 
-EXEMPTEDAPPPACKAGES <IMicrosoftGraphKeyValuePair- `[]`>: Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
+EXEMPTEDAPPPACKAGES `<IMicrosoftGraphKeyValuePair- `[]`>`: Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
 (Android only)
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-EXEMPTEDAPPPROTOCOLS <IMicrosoftGraphKeyValuePair- `[]`>: iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
+EXEMPTEDAPPPROTOCOLS `<IMicrosoftGraphKeyValuePair- `[]`>`: iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
 (iOS Only)
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
@@ -2327,6 +2327,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementdefaultmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementdefaultmanagedappprotection)
+
 
 
 

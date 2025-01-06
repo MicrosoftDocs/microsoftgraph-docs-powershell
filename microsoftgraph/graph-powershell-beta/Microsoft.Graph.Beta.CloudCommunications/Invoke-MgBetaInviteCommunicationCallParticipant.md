@@ -450,7 +450,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-PARTICIPANTS <IMicrosoftGraphInvitationParticipantInfo- `[]`>: .
+PARTICIPANTS `<IMicrosoftGraphInvitationParticipantInfo- `[]`>`: .
   - `[EndpointType <String>]`: endpointType
   - `[Hidden <Boolean?>]`: Optional.
 Whether to hide the participant from the roster.
@@ -478,6 +478,7 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant)
 
 [https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-beta](https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-beta)
+
 
 
 

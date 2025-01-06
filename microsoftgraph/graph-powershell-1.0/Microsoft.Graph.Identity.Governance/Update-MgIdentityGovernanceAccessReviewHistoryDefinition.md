@@ -555,7 +555,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-INSTANCES <IMicrosoftGraphAccessReviewHistoryInstance- `[]`>: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
+INSTANCES `<IMicrosoftGraphAccessReviewHistoryInstance- `[]`>`: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
 A definition that doesn't recur will have exactly one instance.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -614,6 +614,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewhistorydefinition)
+
 
 
 

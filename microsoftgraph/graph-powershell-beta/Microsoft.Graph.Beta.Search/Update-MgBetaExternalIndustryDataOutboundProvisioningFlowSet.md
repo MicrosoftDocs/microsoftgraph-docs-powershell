@@ -299,7 +299,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
-PROVISIONINGFLOWS <IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
+PROVISIONINGFLOWS `<IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>`: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ReadinessStatus <String>]`: readinessStatus
@@ -307,6 +307,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoutboundprovisioningflowset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoutboundprovisioningflowset)
+
 
 
 

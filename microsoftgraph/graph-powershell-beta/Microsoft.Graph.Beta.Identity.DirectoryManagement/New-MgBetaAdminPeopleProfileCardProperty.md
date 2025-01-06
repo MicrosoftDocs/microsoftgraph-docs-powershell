@@ -244,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANNOTATIONS <IMicrosoftGraphProfileCardAnnotation- `[]`>: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
+ANNOTATIONS `<IMicrosoftGraphProfileCardAnnotation- `[]`>`: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
   - `[DisplayName <String>]`: If present, the value of this field is used by the profile card as the default property label in the experience (for example, 'Cost Center').
   - `[Localizations <IMicrosoftGraphDisplayNameLocalization- `[]`>]`: Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale.
 For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute label, rather than 'Cost Center.'
@@ -271,6 +271,7 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta)
+
 
 
 

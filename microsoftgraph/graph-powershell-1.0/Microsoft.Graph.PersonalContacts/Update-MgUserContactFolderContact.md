@@ -1011,11 +1011,11 @@ It's a free-format string value, for example, 'United States'.
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-EMAILADDRESSES <IMicrosoftGraphEmailAddress- `[]`>: The contact's email addresses.
+EMAILADDRESSES `<IMicrosoftGraphEmailAddress- `[]`>`: The contact's email addresses.
   - `[Address <String>]`: The email address of the person or entity.
   - `[Name <String>]`: The display name of the person or entity.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the contact.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the contact.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1037,7 +1037,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[UserId <String>]`: The unique identifier of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the contact.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1062,7 +1062,7 @@ Read-only.
   - `[Width <Int32?>]`: The width of the photo.
 Read-only.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the contact.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1072,6 +1072,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfoldercontact)
+
 
 
 

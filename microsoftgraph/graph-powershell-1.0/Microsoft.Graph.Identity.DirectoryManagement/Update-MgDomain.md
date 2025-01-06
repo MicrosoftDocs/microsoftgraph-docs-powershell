@@ -670,7 +670,7 @@ Not nullable.
 Read-only, Nullable.
 Supports $expand.
 
-DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject- `[]`>: The objects such as users and groups that reference the domain ID.
+DOMAINNAMEREFERENCES `<IMicrosoftGraphDirectoryObject- `[]`>`: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
@@ -679,7 +679,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation- `[]`>: Domain settings configured by a customer when federated with Microsoft Entra ID.
+FEDERATIONCONFIGURATION `<IMicrosoftGraphInternalDomainFederation- `[]`>`: Domain settings configured by a customer when federated with Microsoft Entra ID.
 Supports $expand.
   - `[IssuerUri <String>]`: Issuer URI of the federation server.
   - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
@@ -847,7 +847,7 @@ Not nullable.
 Read-only, Nullable.
 Supports $expand.
 
-SERVICECONFIGURATIONRECORDS <IMicrosoftGraphDomainDnsRecord- `[]`>: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
+SERVICECONFIGURATIONRECORDS `<IMicrosoftGraphDomainDnsRecord- `[]`>`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -872,7 +872,7 @@ Scheduled - Operation is scheduled but hasn't started.
 InProgress - Task is in progress. 
 Failed - The operation failed.
 
-VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord- `[]`>: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
+VERIFICATIONDNSRECORDS `<IMicrosoftGraphDomainDnsRecord- `[]`>`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -891,6 +891,7 @@ Not nullable.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain)
 
 [https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-1.0)
+
 
 
 

@@ -294,7 +294,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-TENANTS <IMicrosoftGraphTenantReference- `[]`>: The collection of external Microsoft Entra tenants that the user shared profile data with.
+TENANTS `<IMicrosoftGraphTenantReference- `[]`>`: The collection of external Microsoft Entra tenants that the user shared profile data with.
 Read-only.
   - `[TenantId <String>]`: The identifier of the Microsoft Entra tenant.
 Read-only.
@@ -303,6 +303,7 @@ Key.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryoutboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryoutboundshareduserprofile)
+
 
 
 

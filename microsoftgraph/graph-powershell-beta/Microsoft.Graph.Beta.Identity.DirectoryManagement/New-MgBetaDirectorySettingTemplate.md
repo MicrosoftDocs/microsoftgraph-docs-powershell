@@ -257,7 +257,7 @@ Read-only.
     - `[Type <String>]`: Type of the setting.
 Read-only.
 
-VALUES <IMicrosoftGraphSettingTemplateValue- `[]`>: Collection of settingTemplateValues that list the set of available settings, defaults, and types that make up this template.
+VALUES `<IMicrosoftGraphSettingTemplateValue- `[]`>`: Collection of settingTemplateValues that list the set of available settings, defaults, and types that make up this template.
 Read-only.
   - `[DefaultValue <String>]`: Default value for the setting.
 Read-only.
@@ -271,6 +271,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysettingtemplate)
+
 
 
 

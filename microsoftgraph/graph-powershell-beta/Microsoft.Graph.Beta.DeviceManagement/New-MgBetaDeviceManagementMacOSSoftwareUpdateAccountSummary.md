@@ -374,7 +374,7 @@ Read-only.
   - `[UserId <String>]`: The user ID.
   - `[UserPrincipalName <String>]`: The user principal name
 
-CATEGORYSUMMARIES <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary- `[]`>: Summary of the updates by category.
+CATEGORYSUMMARIES `<IMicrosoftGraphMacOSSoftwareUpdateCategorySummary- `[]`>`: Summary of the updates by category.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceId <String>]`: The device ID.
@@ -398,6 +398,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmacossoftwareupdateaccountsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmacossoftwareupdateaccountsummary)
+
 
 
 

@@ -2648,7 +2648,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITIES <IMicrosoftGraphUserActivity- `[]`>: The user's activities across devices.
+ACTIVITIES `<IMicrosoftGraphUserActivity- `[]`>`: The user's activities across devices.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2725,7 +2725,7 @@ Longer text description of the user's unique activity (example: document name, f
     - `[DisplayText <String>]`: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
 
-AGREEMENTACCEPTANCES <IMicrosoftGraphAgreementAcceptance- `[]`>: The user's terms of use acceptance statuses.
+AGREEMENTACCEPTANCES `<IMicrosoftGraphAgreementAcceptance- `[]`>`: The user's terms of use acceptance statuses.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2750,7 +2750,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq).
   - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
 
-APPROLEASSIGNMENTS <IMicrosoftGraphAppRoleAssignment- `[]`>: Represents the app roles a user is granted for an application.
+APPROLEASSIGNMENTS `<IMicrosoftGraphAppRoleAssignment- `[]`>`: Represents the app roles a user is granted for an application.
 Supports $expand.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -2778,7 +2778,7 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
 
-ASSIGNEDLICENSES <IMicrosoftGraphAssignedLicense- `[]`>: The licenses that are assigned to the user, including inherited (group-based) licenses.
+ASSIGNEDLICENSES `<IMicrosoftGraphAssignedLicense- `[]`>`: The licenses that are assigned to the user, including inherited (group-based) licenses.
 This property doesn't differentiate between directly assigned and inherited licenses.
 Use the licenseAssignmentStates property to identify the directly assigned and inherited licenses.
 Not nullable.
@@ -2789,7 +2789,7 @@ IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus
   - `[SkuId <String>]`: The unique identifier for the SKU.
 Corresponds to the skuId from subscribedSkus or companySubscription.
 
-ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan- `[]`>: The plans that are assigned to the user.
+ASSIGNEDPLANS `<IMicrosoftGraphAssignedPlan- `[]`>`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
 Returned only on $select.
@@ -8066,7 +8066,7 @@ Nullable.
 Read-only.
 Nullable.
 
-CALENDARGROUPS <IMicrosoftGraphCalendarGroup- `[]`>: The user's calendar groups.
+CALENDARGROUPS `<IMicrosoftGraphCalendarGroup- `[]`>`: The user's calendar groups.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -8330,7 +8330,7 @@ Read-only.
 Read-only.
   - `[Name <String>]`: The group name.
 
-CALENDARS <IMicrosoftGraphCalendar- `[]`>: The user's calendars.
+CALENDARS `<IMicrosoftGraphCalendar- `[]`>`: The user's calendars.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -8581,7 +8581,7 @@ Nullable.
 Read-only.
 Nullable.
 
-CALENDARVIEW <IMicrosoftGraphEvent- `[]`>: The calendar view for the calendar.
+CALENDARVIEW `<IMicrosoftGraphEvent- `[]`>`: The calendar view for the calendar.
 Read-only.
 Nullable.
   - `[Categories <String- `[]`>]`: The categories associated with the item
@@ -8833,7 +8833,7 @@ Optional.
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
 
-CHATS <IMicrosoftGraphChat- `[]`>: .
+CHATS `<IMicrosoftGraphChat- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChatType <String>]`: chatType
@@ -9102,7 +9102,7 @@ Each one represents the same information in a different clipboard format.
       - `[Content <String>]`: The formatName version of the value of a cloud clipboard encoded in base64.
       - `[FormatName <String>]`: For a list of possible values see formatName values.
 
-CONTACTFOLDERS <IMicrosoftGraphContactFolder- `[]`>: The user's contacts folders.
+CONTACTFOLDERS `<IMicrosoftGraphContactFolder- `[]`>`: The user's contacts folders.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -9207,7 +9207,7 @@ Nullable.
 Read-only.
 Nullable.
 
-CONTACTS <IMicrosoftGraphContact- `[]`>: The user's contacts.
+CONTACTS `<IMicrosoftGraphContact- `[]`>`: The user's contacts.
 Read-only.
 Nullable.
   - `[Categories <String- `[]`>]`: The categories associated with the item
@@ -9294,7 +9294,7 @@ Read-only.
   - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
   - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
 
-CREATEDOBJECTS <IMicrosoftGraphDirectoryObject- `[]`>: Directory objects that the user created.
+CREATEDOBJECTS `<IMicrosoftGraphDirectoryObject- `[]`>`: Directory objects that the user created.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -9302,13 +9302,13 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-DEVICEMANAGEMENTTROUBLESHOOTINGEVENTS <IMicrosoftGraphDeviceManagementTroubleshootingEvent- `[]`>: The list of troubleshooting events for this user.
+DEVICEMANAGEMENTTROUBLESHOOTINGEVENTS `<IMicrosoftGraphDeviceManagementTroubleshootingEvent- `[]`>`: The list of troubleshooting events for this user.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
 
-DIRECTREPORTS <IMicrosoftGraphDirectoryObject- `[]`>: The users and contacts that report to the user.
+DIRECTREPORTS `<IMicrosoftGraphDirectoryObject- `[]`>`: The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
 Supports $expand.
@@ -14115,7 +14115,7 @@ Read-only.
 Nullable.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-DRIVES <IMicrosoftGraphDrive- `[]`>: A collection of drives available for this user.
+DRIVES `<IMicrosoftGraphDrive- `[]`>`: A collection of drives available for this user.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18942,7 +18942,7 @@ Supports $filter.
 Returned only on $select.
 Supports $filter.
 
-EVENTS <IMicrosoftGraphEvent- `[]`>: The user's events.
+EVENTS `<IMicrosoftGraphEvent- `[]`>`: The user's events.
 Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
@@ -19195,14 +19195,14 @@ Optional.
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the user.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the user.
 Read-only.
 Supports $expand.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-FOLLOWEDSITES <IMicrosoftGraphSite- `[]`>: .
+FOLLOWEDSITES `<IMicrosoftGraphSite- `[]`>`: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -24000,7 +24000,7 @@ Read-only.
 This relationship can only be used to load a specific term set.
   - `[TermStores <IMicrosoftGraphTermStore- `[]`>]`: The collection of termStores under this site.
 
-IDENTITIES <IMicrosoftGraphObjectIdentity- `[]`>: Represents the identities that can be used to sign in to this user account.
+IDENTITIES `<IMicrosoftGraphObjectIdentity- `[]`>`: Represents the identities that can be used to sign in to this user account.
 Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account.
 It might contain multiple items with the same signInType value.
 Returned only on $select.
@@ -24058,7 +24058,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-JOINEDTEAMS <IMicrosoftGraphTeam- `[]`>: .
+JOINEDTEAMS `<IMicrosoftGraphTeam- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
@@ -28855,7 +28855,7 @@ Read-only.
 This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
 
-LICENSEASSIGNMENTSTATES <IMicrosoftGraphLicenseAssignmentState- `[]`>: State of license assignments for this user.
+LICENSEASSIGNMENTSTATES `<IMicrosoftGraphLicenseAssignmentState- `[]`>`: State of license assignments for this user.
 Also indicates licenses that are directly assigned or the user inherited through group memberships.
 Read-only.
 Returned only on $select.
@@ -28866,7 +28866,7 @@ Returned only on $select.
   - `[SkuId <String>]`: 
   - `[State <String>]`: 
 
-LICENSEDETAILS <IMicrosoftGraphLicenseDetails- `[]`>: A collection of this user's license details.
+LICENSEDETAILS `<IMicrosoftGraphLicenseDetails- `[]`>`: A collection of this user's license details.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -28922,7 +28922,7 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
       - `[Name <String>]`: The name of a time zone.
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-MAILFOLDERS <IMicrosoftGraphMailFolder- `[]`>: The user's mail folders.
+MAILFOLDERS `<IMicrosoftGraphMailFolder- `[]`>`: The user's mail folders.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -29095,7 +29095,7 @@ Nullable.
   - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
   - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
 
-MANAGEDAPPREGISTRATIONS <IMicrosoftGraphManagedAppRegistration- `[]`>: Zero or more managed app registrations that belong to the user.
+MANAGEDAPPREGISTRATIONS `<IMicrosoftGraphManagedAppRegistration- `[]`>`: Zero or more managed app registrations that belong to the user.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
@@ -29131,7 +29131,7 @@ Read-only.
   - `[UserId <String>]`: The user Id to who this app registration belongs.
   - `[Version <String>]`: Version of the entity.
 
-MANAGEDDEVICES <IMicrosoftGraphManagedDevice- `[]`>: The managed devices associated with the user.
+MANAGEDDEVICES `<IMicrosoftGraphManagedDevice- `[]`>`: The managed devices associated with the user.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceState <ComplianceState?>]`: Compliance state.
@@ -33935,7 +33935,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: The groups and directory roles that the user is a member of.
+MEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: The groups and directory roles that the user is a member of.
 Read-only.
 Nullable.
 Supports $expand.
@@ -33944,7 +33944,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MESSAGES <IMicrosoftGraphMessage- `[]`>: The messages in a mailbox or folder.
+MESSAGES `<IMicrosoftGraphMessage- `[]`>`: The messages in a mailbox or folder.
 Read-only.
 Nullable.
   - `[Categories <String- `[]`>]`: The categories associated with the item
@@ -34041,7 +34041,7 @@ If ispopout is not present or if it is set to 1, then the message is shown in a 
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
 
-OAUTH2PERMISSIONGRANTS <IMicrosoftGraphOAuth2PermissionGrant- `[]`>: .
+OAUTH2PERMISSIONGRANTS `<IMicrosoftGraphOAuth2PermissionGrant- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ClientId <String>]`: The object id (not appId) of the client service principal for the application that's authorized to act on behalf of a signed-in user when accessing an API.
@@ -34240,7 +34240,7 @@ Nullable.
 Read-only.
 Nullable.
 
-ONLINEMEETINGS <IMicrosoftGraphOnlineMeeting- `[]`>: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
+ONLINEMEETINGS `<IMicrosoftGraphOnlineMeeting- `[]`>`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -34424,7 +34424,7 @@ ONPREMISESEXTENSIONATTRIBUTES `<IMicrosoftGraphOnPremisesExtensionAttributes>`: 
   - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
   - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
 
-ONPREMISESPROVISIONINGERRORS <IMicrosoftGraphOnPremisesProvisioningError- `[]`>: Errors when using Microsoft synchronization product during provisioning.
+ONPREMISESPROVISIONINGERRORS `<IMicrosoftGraphOnPremisesProvisioningError- `[]`>`: Errors when using Microsoft synchronization product during provisioning.
 Returned only on $select.
 Supports $filter (eq, not, ge, le).
   - `[Category <String>]`: Category of the provisioning error.
@@ -34448,7 +34448,7 @@ Read-only.
 After a category is created, the name cannot be changed.
 Read-only.
 
-OWNEDDEVICES <IMicrosoftGraphDirectoryObject- `[]`>: Devices the user owns.
+OWNEDDEVICES `<IMicrosoftGraphDirectoryObject- `[]`>`: Devices the user owns.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -34457,7 +34457,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-OWNEDOBJECTS <IMicrosoftGraphDirectoryObject- `[]`>: Directory objects the user owns.
+OWNEDOBJECTS `<IMicrosoftGraphDirectoryObject- `[]`>`: Directory objects the user owns.
 Read-only.
 Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -34479,7 +34479,7 @@ It can be updated, but the user will be required to change the password on the n
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
 
-PEOPLE <IMicrosoftGraphPerson- `[]`>: People that are relevant to the user.
+PEOPLE `<IMicrosoftGraphPerson- `[]`>`: People that are relevant to the user.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -34547,7 +34547,7 @@ The general format is alias@domain.
     - `[Type <String>]`: websiteType
   - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
 
-PERMISSIONGRANTS <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>: List all resource-specific permission grants of a user.
+PERMISSIONGRANTS `<IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>`: List all resource-specific permission grants of a user.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -34573,7 +34573,7 @@ Read-only.
   - `[Width <Int32?>]`: The width of the photo.
 Read-only.
 
-PHOTOS <IMicrosoftGraphProfilePhoto- `[]`>: The collection of the user's profile photos in different sizes.
+PHOTOS `<IMicrosoftGraphProfilePhoto- `[]`>`: The collection of the user's profile photos in different sizes.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -39564,7 +39564,7 @@ Nullable.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan- `[]`>: The plans that are provisioned for the user.
+PROVISIONEDPLANS `<IMicrosoftGraphProvisionedPlan- `[]`>`: The plans that are provisioned for the user.
 Read-only.
 Not nullable.
 Returned only on $select.
@@ -39573,7 +39573,7 @@ Supports $filter (eq, not, ge, le).
   - `[ProvisioningStatus <String>]`: For example, 'Success'.
   - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
 
-REGISTEREDDEVICES <IMicrosoftGraphDirectoryObject- `[]`>: Devices that are registered for the user.
+REGISTEREDDEVICES `<IMicrosoftGraphDirectoryObject- `[]`>`: Devices that are registered for the user.
 Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
@@ -39582,7 +39582,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDROLEMEMBEROF <IMicrosoftGraphScopedRoleMembership- `[]`>: .
+SCOPEDROLEMEMBEROF `<IMicrosoftGraphScopedRoleMembership- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
@@ -39594,7 +39594,7 @@ For example, if a user changes their display name the API might show the new val
     - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-SERVICEPROVISIONINGERRORS <IMicrosoftGraphServiceProvisioningError- `[]`>: Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
+SERVICEPROVISIONINGERRORS `<IMicrosoftGraphServiceProvisioningError- `[]`>`: Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the error occurred.
   - `[IsResolved <Boolean?>]`: Indicates whether the error has been attended to.
@@ -39739,7 +39739,7 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-SPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
+SPONSORS `<IMicrosoftGraphDirectoryObject- `[]`>`: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -44664,7 +44664,7 @@ Required.
       - `[Title <String>]`: A brief description of the task.
     - `[WellknownListName <String>]`: wellknownListName
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: The groups, including nested groups, and directory roles that a user is a member of.
+TRANSITIVEMEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -44676,6 +44676,7 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-user-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-user-update?view=graph-rest-1.0)
+
 
 
 

@@ -406,7 +406,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTS <IMicrosoftGraphManagedTenantsManagedTenantAlert- `[]`>: .
+ALERTS `<IMicrosoftGraphManagedTenantsManagedTenantAlert- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AlertData <IMicrosoftGraphManagedTenantsAlertData>]`: alertData
@@ -678,16 +678,17 @@ Optional.
   - `[LastActionByUserId <String>]`: 
   - `[LastActionDateTime <DateTime?>]`: 
 
-TARGETS <IMicrosoftGraphManagedTenantsNotificationTarget- `[]`>: .
+TARGETS `<IMicrosoftGraphManagedTenantsNotificationTarget- `[]`>`: .
   - `[DisplayName <String>]`: 
 
-TENANTIDS <IMicrosoftGraphManagedTenantsTenantInfo- `[]`>: .
+TENANTIDS `<IMicrosoftGraphManagedTenantsTenantInfo- `[]`>`: .
   - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertrule)
+
 
 
 

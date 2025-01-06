@@ -718,7 +718,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: The unique identifier of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
-POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail- `[]`>: Policy and application status details for this device.
+POLICYSTATUSDETAILS `<IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail- `[]`>`: Policy and application status details for this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
@@ -732,6 +732,7 @@ Error code for enforcement status takes precedence if it exists.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementautopilotevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementautopilotevent)
+
 
 
 

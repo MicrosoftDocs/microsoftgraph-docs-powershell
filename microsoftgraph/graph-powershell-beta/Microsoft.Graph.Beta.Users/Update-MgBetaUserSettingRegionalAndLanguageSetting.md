@@ -362,7 +362,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORINGLANGUAGES <IMicrosoftGraphLocaleInfo- `[]`>: Prioritized list of languages the user reads and authors in.Returned by default.
+AUTHORINGLANGUAGES `<IMicrosoftGraphLocaleInfo- `[]`>`: Prioritized list of languages the user reads and authors in.Returned by default.
 Not nullable.
   - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
   - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
@@ -489,6 +489,7 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting)
+
 
 
 

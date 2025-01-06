@@ -185,7 +185,7 @@ Read-only.
     - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
     - `[Platform <Platform?>]`: platform
 
-IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity- `[]`>: .
+IMPORTEDDEVICEIDENTITIES `<IMicrosoftGraphImportedDeviceIdentity- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
@@ -200,6 +200,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity)
+
 
 
 

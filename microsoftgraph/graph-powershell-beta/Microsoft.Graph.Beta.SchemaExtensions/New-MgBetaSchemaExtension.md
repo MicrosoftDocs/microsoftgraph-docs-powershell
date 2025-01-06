@@ -403,7 +403,7 @@ Supports $filter (eq).
   - `[TargetTypes <String- `[]`>]`: Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.
 Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
 
-PROPERTIES <IMicrosoftGraphExtensionSchemaProperty- `[]`>: The collection of property names and types that make up the schema extension definition.
+PROPERTIES `<IMicrosoftGraphExtensionSchemaProperty- `[]`>`: The collection of property names and types that make up the schema extension definition.
   - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
   - `[Type <String>]`: The type of the property that is defined as part of a schema extension.
 Allowed values are Binary, Boolean, DateTime, Integer, or String.
@@ -414,6 +414,7 @@ For more information, see Supported property data types.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension)
 
 [https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-beta)
+
 
 
 

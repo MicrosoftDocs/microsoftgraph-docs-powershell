@@ -253,7 +253,7 @@ Read-only.
       - `[Type <String>]`: 
     - `[ResourceScopeId <String>]`: Not implemented.
 
-RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction- `[]`>: Operations that an authorized principal is allowed to perform.
+RESOURCEACTIONS `<IMicrosoftGraphUnifiedRbacResourceAction- `[]`>`: Operations that an authorized principal is allowed to perform.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
@@ -296,6 +296,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcresourcenamespace)
+
 
 
 

@@ -1024,7 +1024,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup- `[]`>: .
+AUDIOROUTINGGROUPS `<IMicrosoftGraphAudioRoutingGroup- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Receivers <String- `[]`>]`: List of receiving participant ids.
@@ -1170,7 +1170,7 @@ CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
   - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
   - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
 
-CALLROUTES <IMicrosoftGraphCallRoute- `[]`>: The routing information on how the call was retargeted.
+CALLROUTES `<IMicrosoftGraphCallRoute- `[]`>`: The routing information on how the call was retargeted.
 Read-only.
   - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1191,7 +1191,7 @@ CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession- `[]`>: .
+CONTENTSHARINGSESSIONS `<IMicrosoftGraphContentSharingSession- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
@@ -1217,7 +1217,7 @@ MEDIASTATE `<IMicrosoftGraphCallMediaState>`: callMediaState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Audio <String>]`: mediaState
 
-OPERATIONS <IMicrosoftGraphCommsOperation- `[]`>: .
+OPERATIONS `<IMicrosoftGraphCommsOperation- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ClientContext <String>]`: Unique Client Context string.
@@ -1229,7 +1229,7 @@ Max limit is 256 chars.
     - `[Subcode <Int32?>]`: The result subcode.
   - `[Status <String>]`: operationStatus
 
-PARTICIPANTS <IMicrosoftGraphParticipant- `[]`>: .
+PARTICIPANTS `<IMicrosoftGraphParticipant- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
@@ -1307,7 +1307,7 @@ This can be a country, a continent, or a larger geographic region.
 This doesn't change based on the participant's current physical location.
 Read-only.
 
-TARGETS <IMicrosoftGraphInvitationParticipantInfo- `[]`>: The targets of the call.
+TARGETS `<IMicrosoftGraphInvitationParticipantInfo- `[]`>`: The targets of the call.
 Required information for creating peer to peer call.
   - `[Hidden <Boolean?>]`: Optional.
 Whether to hide the participant from the roster.
@@ -1344,6 +1344,7 @@ TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall)
 
 [https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0)
+
 
 
 

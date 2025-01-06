@@ -388,7 +388,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-CHILDTAGS <IMicrosoftGraphEdiscoveryTag- `[]`>: Returns the tags that are a child of a tag.
+CHILDTAGS `<IMicrosoftGraphEdiscoveryTag- `[]`>`: Returns the tags that are a child of a tag.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChildSelectability <String>]`: childSelectability
@@ -467,6 +467,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasetag)
 
 [https://learn.microsoft.com/graph/api/ediscovery-tag-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-tag-update?view=graph-rest-beta)
+
 
 
 

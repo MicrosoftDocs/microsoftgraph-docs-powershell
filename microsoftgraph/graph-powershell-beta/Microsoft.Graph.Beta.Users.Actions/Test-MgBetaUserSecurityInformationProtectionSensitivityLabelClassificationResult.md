@@ -299,7 +299,7 @@ Possible values are: file, email.
       - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult- `[]`>: .
+CLASSIFICATIONRESULTS `<IMicrosoftGraphSecurityClassificationResult- `[]`>`: .
   - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
   - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
   - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
@@ -365,6 +365,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelclassificationresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelclassificationresult)
 
 [https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateclassificationresults?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateclassificationresults?view=graph-rest-beta)
+
 
 
 

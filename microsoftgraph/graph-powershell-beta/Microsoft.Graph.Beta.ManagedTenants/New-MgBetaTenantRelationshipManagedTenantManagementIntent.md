@@ -245,7 +245,7 @@ Required.
 Read-only.
     - `[Version <Int32?>]`: 
 
-MANAGEMENTTEMPLATES <IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo- `[]`>: The collection of management templates associated with the management intent.
+MANAGEMENTTEMPLATES `<IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo- `[]`>`: The collection of management templates associated with the management intent.
 Optional.
 Read-only.
   - `[Category <String>]`: managementCategory
@@ -260,6 +260,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementintent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementintent)
+
 
 
 

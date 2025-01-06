@@ -903,7 +903,7 @@ Nullable.
 Read-only.
 Nullable.
 
-CALENDARPERMISSIONS <IMicrosoftGraphCalendarPermission- `[]`>: The permissions of the users with whom the calendar is shared.
+CALENDARPERMISSIONS `<IMicrosoftGraphCalendarPermission- `[]`>`: The permissions of the users with whom the calendar is shared.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedRoles <String- `[]`>]`: List of allowed sharing or delegating permission levels for the calendar.
@@ -918,7 +918,7 @@ The 'My organization' user determines the permissions other people within your o
 You can't remove 'My organization' as a recipient to a calendar.
   - `[Role <String>]`: calendarRoleType
 
-CALENDARVIEW <IMicrosoftGraphEvent- `[]`>: The calendar view for the calendar.
+CALENDARVIEW `<IMicrosoftGraphEvent- `[]`>`: The calendar view for the calendar.
 Navigation property.
 Read-only.
   - `[Categories <String- `[]`>]`: The categories associated with the item.
@@ -1195,7 +1195,7 @@ For recurring events, the value is the same for the series master and all of its
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-EVENTS <IMicrosoftGraphEvent- `[]`>: The events in the calendar.
+EVENTS `<IMicrosoftGraphEvent- `[]`>`: The events in the calendar.
 Navigation property.
 Read-only.
   - `[Categories <String- `[]`>]`: The categories associated with the item.
@@ -1487,7 +1487,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the calendar.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the calendar.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1499,7 +1499,7 @@ OWNER `<IMicrosoftGraphEmailAddress>`: emailAddress
   - `[Address <String>]`: The email address of an entity instance.
   - `[Name <String>]`: The display name of an entity instance.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the calendar.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the calendar.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1509,6 +1509,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendargroupcalendar)
+
 
 
 

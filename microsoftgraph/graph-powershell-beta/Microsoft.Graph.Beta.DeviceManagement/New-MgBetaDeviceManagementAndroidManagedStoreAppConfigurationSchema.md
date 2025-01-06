@@ -244,7 +244,7 @@ It contains a flat list of all configuration.
   - `[SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem- `[]`>]`: Collection of items each representing a named configuration option in the schema.
 It only contains the root-level configuration.
 
-NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem- `[]`>: Collection of items each representing a named configuration option in the schema.
+NESTEDSCHEMAITEMS `<IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem- `[]`>`: Collection of items each representing a named configuration option in the schema.
 It contains a flat list of all configuration.
   - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
@@ -260,7 +260,7 @@ It contains a flat list of all configuration.
     - `[Name <String>]`: Name for this key-value pair
     - `[Value <String>]`: Value for this key-value pair
 
-SCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem- `[]`>: Collection of items each representing a named configuration option in the schema.
+SCHEMAITEMS `<IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem- `[]`>`: Collection of items each representing a named configuration option in the schema.
 It only contains the root-level configuration.
   - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
@@ -279,6 +279,7 @@ It only contains the root-level configuration.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreappconfigurationschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreappconfigurationschema)
+
 
 
 

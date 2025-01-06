@@ -595,7 +595,7 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String- `[]`>]`: 
 
-SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+SOURCES `<IMicrosoftGraphProfileSourceAnnotation- `[]`>`: Where the values within an entity originated if synced from another source.
   - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
   - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
   - `[SourceId <String>]`:
@@ -603,6 +603,7 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebaccount)
+
 
 
 

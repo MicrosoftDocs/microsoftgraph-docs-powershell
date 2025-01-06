@@ -464,7 +464,7 @@ Not all Media Mime Types are supported.
 Can be used for filtering for a specific file based on a specific type.
 See the Type property values section, for supported types.
 
-SHARINGHISTORY <IMicrosoftGraphSharingDetail- `[]`>: .
+SHARINGHISTORY `<IMicrosoftGraphSharingDetail- `[]`>`: .
   - `[SharedBy <IMicrosoftGraphInsightIdentity>]`: insightIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the user who shared the item.
@@ -485,6 +485,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightshared](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightshared)
+
 
 
 

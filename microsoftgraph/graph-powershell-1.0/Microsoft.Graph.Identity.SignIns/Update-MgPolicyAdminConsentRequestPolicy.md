@@ -298,7 +298,7 @@ Examples include MicrosoftGraph and ARM.
 When the policy is updated, this version is updated.
 Read-only.
 
-REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope- `[]`>: The list of reviewers for the admin consent.
+REVIEWERS `<IMicrosoftGraphAccessReviewReviewerScope- `[]`>`: The list of reviewers for the admin consent.
 Required.
   - `[Query <String>]`: The query specifying who will be the reviewer.
   - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query.
@@ -312,6 +312,7 @@ Examples include MicrosoftGraph and ARM.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy)
 
 [https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-1.0)
+
 
 
 

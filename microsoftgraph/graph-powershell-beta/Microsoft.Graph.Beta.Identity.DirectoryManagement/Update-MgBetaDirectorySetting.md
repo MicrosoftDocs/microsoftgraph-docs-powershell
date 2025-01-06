@@ -353,7 +353,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
+VALUES `<IMicrosoftGraphSettingValue- `[]`>`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
   - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
   - `[Value <String>]`: Value of the setting.
 
@@ -362,6 +362,7 @@ VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corre
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting)
 
 [https://learn.microsoft.com/graph/api/directorysetting-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directorysetting-update?view=graph-rest-beta)
+
 
 
 

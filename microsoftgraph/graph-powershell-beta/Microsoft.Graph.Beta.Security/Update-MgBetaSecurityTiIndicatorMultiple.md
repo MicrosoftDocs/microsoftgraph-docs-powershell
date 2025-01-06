@@ -292,7 +292,7 @@ Required.
     - `[Url <String>]`: 
     - `[UserAgent <String>]`: 
 
-VALUE <IMicrosoftGraphTiIndicator- `[]`>: .
+VALUE `<IMicrosoftGraphTiIndicator- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Action <String>]`: tiAction
@@ -386,6 +386,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple)
 
 [https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta](https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)
+
 
 
 

@@ -321,7 +321,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient- `[]`>: .
+RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
@@ -332,6 +332,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission)
 
 [https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
+
 
 
 

@@ -988,7 +988,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
   - `[UserId <String>]`: The unique identifier of user
 
-LOCALIZATIONS <IMicrosoftGraphOrganizationalBrandingLocalization- `[]`>: Add different branding based on a locale.
+LOCALIZATIONS `<IMicrosoftGraphOrganizationalBrandingLocalization- `[]`>`: Add different branding based on a locale.
   - `[BackgroundColor <String>]`: Color that appears in place of the background image in low-bandwidth connections.
 We recommend that you use the primary color of your banner logo or your organization color.
 Specify this in hexadecimal format, for example, white is #FFFFFF.
@@ -1098,6 +1098,7 @@ LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding)
 
 [https://learn.microsoft.com/graph/api/organizationalbranding-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-update?view=graph-rest-1.0)
+
 
 
 

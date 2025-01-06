@@ -341,7 +341,7 @@ Read-only.
   - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
   - `[UserName <String>]`: User name.
 
-DEVICESTATES <IMicrosoftGraphDeviceInstallState- `[]`>: The install state of the eBook.
+DEVICESTATES `<IMicrosoftGraphDeviceInstallState- `[]`>`: The install state of the eBook.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceId <String>]`: Device Id.
@@ -395,6 +395,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookuserstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookuserstatesummary)
 
 [https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-create?view=graph-rest-1.0)
+
 
 
 

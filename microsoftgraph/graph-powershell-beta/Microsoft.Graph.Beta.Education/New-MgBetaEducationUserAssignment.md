@@ -725,7 +725,7 @@ If the value is null, the student uploaded the resource.
     - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource- `[]`>]`: 
     - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-CATEGORIES <IMicrosoftGraphEducationCategory- `[]`>: When set, enables users to easily find assignments of a given type.
+CATEGORIES `<IMicrosoftGraphEducationCategory- `[]`>`: When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -800,7 +800,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESOURCES <IMicrosoftGraphEducationAssignmentResource- `[]`>: Learning objects that are associated with this assignment.
+RESOURCES `<IMicrosoftGraphEducationAssignmentResource- `[]`>`: Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -861,7 +861,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
 
-SUBMISSIONS <IMicrosoftGraphEducationSubmission- `[]`>: Once published, there is a submission object for each student representing their work and grade.
+SUBMISSIONS `<IMicrosoftGraphEducationSubmission- `[]`>`: Once published, there is a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -908,6 +908,7 @@ If the value is null, the student uploaded the resource.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignment)
+
 
 
 

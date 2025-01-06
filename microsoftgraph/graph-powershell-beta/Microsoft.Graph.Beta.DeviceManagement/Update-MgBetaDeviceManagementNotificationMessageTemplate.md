@@ -502,7 +502,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-LOCALIZEDNOTIFICATIONMESSAGES <IMicrosoftGraphLocalizedNotificationMessage- `[]`>: The list of localized messages for this Notification Message Template.
+LOCALIZEDNOTIFICATIONMESSAGES `<IMicrosoftGraphLocalizedNotificationMessage- `[]`>`: The list of localized messages for this Notification Message Template.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsDefault <Boolean?>]`: Flag to indicate whether or not this is the default locale for language fallback.
@@ -516,6 +516,7 @@ To unset, set this property to true on another Localized Notification Message.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementnotificationmessagetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementnotificationmessagetemplate)
+
 
 
 

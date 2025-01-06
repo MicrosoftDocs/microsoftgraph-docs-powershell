@@ -330,7 +330,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
-MEMBERS <IMicrosoftGraphExternalConnectorsIdentity- `[]`>: A member added to an externalGroup.
+MEMBERS `<IMicrosoftGraphExternalConnectorsIdentity- `[]`>`: A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or other externalGroups as members.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -341,6 +341,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup)
 
 [https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-beta)
+
 
 
 

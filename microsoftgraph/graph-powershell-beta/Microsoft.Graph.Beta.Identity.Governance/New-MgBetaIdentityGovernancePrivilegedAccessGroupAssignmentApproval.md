@@ -218,7 +218,7 @@ Read-only.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
-STEPS <IMicrosoftGraphApprovalStep- `[]`>: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
+STEPS `<IMicrosoftGraphApprovalStep- `[]`>`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review.
@@ -246,6 +246,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapproval)
+
 
 
 

@@ -375,7 +375,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient- `[]`>: .
+RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
@@ -386,6 +386,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
+
 
 
 

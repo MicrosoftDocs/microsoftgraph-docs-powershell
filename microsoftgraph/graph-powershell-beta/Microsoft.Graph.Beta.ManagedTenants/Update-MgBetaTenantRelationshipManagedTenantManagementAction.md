@@ -406,7 +406,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
   - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
-WORKLOADACTIONS <IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>: The collection of workload actions associated with the management action.
+WORKLOADACTIONS `<IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>`: The collection of workload actions associated with the management action.
 Required.
 Read-only.
   - `[ActionId <String>]`: The unique identifier for the workload action.
@@ -441,6 +441,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementaction)
+
 
 
 

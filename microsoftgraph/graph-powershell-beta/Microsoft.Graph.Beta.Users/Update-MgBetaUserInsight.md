@@ -295,7 +295,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-SHARED <IMicrosoftGraphSharedInsight- `[]`>: Access this property from the derived type itemInsights.
+SHARED `<IMicrosoftGraphSharedInsight- `[]`>`: Access this property from the derived type itemInsights.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[LastShared <IMicrosoftGraphSharingDetail>]`: sharingDetail
@@ -340,7 +340,7 @@ Can be used for filtering for a specific file based on a specific type.
 See the Type property values section, for supported types.
   - `[SharingHistory <IMicrosoftGraphSharingDetail- `[]`>]`: 
 
-TRENDING <IMicrosoftGraphTrending- `[]`>: Access this property from the derived type itemInsights.
+TRENDING `<IMicrosoftGraphTrending- `[]`>`: Access this property from the derived type itemInsights.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -374,7 +374,7 @@ See the Type property values section, for supported types.
 The larger the number, the more the document is currently trending around the user (the more relevant it is).
 Returned documents are sorted by this value.
 
-USED <IMicrosoftGraphUsedInsight- `[]`>: Access this property from the derived type itemInsights.
+USED `<IMicrosoftGraphUsedInsight- `[]`>`: Access this property from the derived type itemInsights.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
@@ -416,6 +416,7 @@ See the Type property values section, for supported types.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsight)
+
 
 
 

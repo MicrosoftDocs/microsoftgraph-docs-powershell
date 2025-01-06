@@ -229,7 +229,7 @@ Read-only.
 Read-only.
     - `[ReadinessStatus <String>]`: readinessStatus
 
-PROVISIONINGFLOWS <IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
+PROVISIONINGFLOWS `<IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>`: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ReadinessStatus <String>]`: readinessStatus
@@ -237,6 +237,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset)
+
 
 
 

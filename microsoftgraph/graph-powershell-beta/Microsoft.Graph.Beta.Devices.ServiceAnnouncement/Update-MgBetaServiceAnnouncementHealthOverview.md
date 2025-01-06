@@ -308,7 +308,7 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
-ISSUES <IMicrosoftGraphServiceHealthIssue- `[]`>: A collection of issues that happened on the service, with detailed information for each issue.
+ISSUES `<IMicrosoftGraphServiceHealthIssue- `[]`>`: A collection of issues that happened on the service, with detailed information for each issue.
   - `[Details <IMicrosoftGraphKeyValuePair- `[]`>]`: Extra details about service event.
 This property doesn't support filters.
     - `[Name <String>]`: Name for this key-value pair
@@ -338,6 +338,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementhealthoverview)
+
 
 
 

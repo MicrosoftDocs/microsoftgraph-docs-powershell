@@ -387,7 +387,7 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 Read-only.
     - `[DisplayName <String>]`: The display name of the identity provider.
 
-IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider- `[]`>: The identity providers included in the user flow.
+IDENTITYPROVIDERS `<IMicrosoftGraphIdentityProvider- `[]`>`: The identity providers included in the user flow.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider.
@@ -407,7 +407,7 @@ For B2B scenario: Google, Facebook.
 For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo,QQ, WeChat, OpenIDConnect.
 Not nullable.
 
-LANGUAGES <IMicrosoftGraphUserFlowLanguageConfiguration- `[]`>: The languages supported for customization within the user flow.
+LANGUAGES `<IMicrosoftGraphUserFlowLanguageConfiguration- `[]`>`: The languages supported for customization within the user flow.
 Language customization is enabled by default in self-service sign-up user flow.
 You can't create custom languages in self-service sign-up user flows.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -422,7 +422,7 @@ This property is read-only.
   - `[OverridesPages <IMicrosoftGraphUserFlowLanguagePage- `[]`>]`: Collection of pages with the overrides messages to display in a user flow for a specified language.
 This collection only allows to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
 
-USERATTRIBUTEASSIGNMENTS <IMicrosoftGraphIdentityUserFlowAttributeAssignment- `[]`>: The user attribute assignments included in the user flow.
+USERATTRIBUTEASSIGNMENTS `<IMicrosoftGraphIdentityUserFlowAttributeAssignment- `[]`>`: The user attribute assignments included in the user flow.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the identityUserFlowAttribute within a user flow.
@@ -447,7 +447,7 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
     - `[Value <String>]`: The value that is set when this item is selected.
   - `[UserInputType <String>]`: identityUserFlowAttributeInputType
 
-USERFLOWIDENTITYPROVIDERS <IMicrosoftGraphIdentityProviderBase- `[]`>: .
+USERFLOWIDENTITYPROVIDERS `<IMicrosoftGraphIdentityProviderBase- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
@@ -457,6 +457,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-beta)
+
 
 
 

@@ -644,7 +644,7 @@ If ispopout is not present or if it is set to 1, then the message is shown in a 
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
 
-TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
+TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
@@ -655,6 +655,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-beta)
+
 
 
 

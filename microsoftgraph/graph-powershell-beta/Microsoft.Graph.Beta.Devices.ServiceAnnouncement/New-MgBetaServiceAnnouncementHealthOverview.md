@@ -255,7 +255,7 @@ Read-only.
 Use the list healthOverviews operation to get exact string names for services subscribed by the tenant.
   - `[Status <String>]`: serviceHealthStatus
 
-ISSUES <IMicrosoftGraphServiceHealthIssue- `[]`>: A collection of issues that happened on the service, with detailed information for each issue.
+ISSUES `<IMicrosoftGraphServiceHealthIssue- `[]`>`: A collection of issues that happened on the service, with detailed information for each issue.
   - `[Details <IMicrosoftGraphKeyValuePair- `[]`>]`: Extra details about service event.
 This property doesn't support filters.
     - `[Name <String>]`: Name for this key-value pair
@@ -285,6 +285,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementhealthoverview)
+
 
 
 

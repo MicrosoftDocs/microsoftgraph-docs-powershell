@@ -450,8 +450,8 @@ Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
   - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-    - `[Key <String>]`: Contains the name of the field that a value is associated with.
-    - `[Value <String>]`: Contains the corresponding value for the specified key.
+    - `[Key <String>]`: Key.
+    - `[Value <String>]`: Value.
   - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -485,7 +485,7 @@ Read-only.
     - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
-CHILDREN <IMicrosoftGraphTermStoreTerm- `[]`>: Children of current term.
+CHILDREN `<IMicrosoftGraphTermStoreTerm- `[]`>`: Children of current term.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm- `[]`>]`: Children of current term.
@@ -501,8 +501,8 @@ Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
   - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-    - `[Key <String>]`: Contains the name of the field that a value is associated with.
-    - `[Value <String>]`: Contains the corresponding value for the specified key.
+    - `[Key <String>]`: Key.
+    - `[Value <String>]`: Value.
   - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -536,7 +536,7 @@ Read-only.
     - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
-DESCRIPTIONS <IMicrosoftGraphTermStoreLocalizedDescription- `[]`>: Description about term that is dependent on the languageTag.
+DESCRIPTIONS `<IMicrosoftGraphTermStoreLocalizedDescription- `[]`>`: Description about term that is dependent on the languageTag.
   - `[Description <String>]`: The description in the localized language.
   - `[LanguageTag <String>]`: The language tag for the label.
 
@@ -597,16 +597,16 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-LABELS <IMicrosoftGraphTermStoreLocalizedLabel- `[]`>: Label metadata for a term.
+LABELS `<IMicrosoftGraphTermStoreLocalizedLabel- `[]`>`: Label metadata for a term.
   - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
   - `[LanguageTag <String>]`: The language tag for the label.
   - `[Name <String>]`: The name of the label.
 
-PROPERTIES <IMicrosoftGraphKeyValue- `[]`>: Collection of properties on the term.
-  - `[Key <String>]`: Contains the name of the field that a value is associated with.
-  - `[Value <String>]`: Contains the corresponding value for the specified key.
+PROPERTIES `<IMicrosoftGraphKeyValue- `[]`>`: Collection of properties on the term.
+  - `[Key <String>]`: Key.
+  - `[Value <String>]`: Value.
 
-RELATIONS <IMicrosoftGraphTermStoreRelation- `[]`>: To indicate which terms are related to the current term as either pinned or reused.
+RELATIONS `<IMicrosoftGraphTermStoreRelation- `[]`>`: To indicate which terms are related to the current term as either pinned or reused.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -626,8 +626,8 @@ Read-only.
     - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
     - `[Set <IMicrosoftGraphTermStoreSet>]`: set
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -678,8 +678,8 @@ Read-only.
     - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -712,6 +712,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoregroupsettermchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoregroupsettermchild)
+
 
 
 

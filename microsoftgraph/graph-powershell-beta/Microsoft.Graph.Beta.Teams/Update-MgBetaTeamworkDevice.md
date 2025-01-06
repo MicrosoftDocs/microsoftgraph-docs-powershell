@@ -1031,7 +1031,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-OPERATIONS <IMicrosoftGraphTeamworkDeviceOperation- `[]`>: The async operations on the device.
+OPERATIONS `<IMicrosoftGraphTeamworkDeviceOperation- `[]`>`: The async operations on the device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: Time at which the operation reached a final state (for example, Successful, Failed, and Cancelled).
@@ -1060,6 +1060,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevice)
+
 
 
 

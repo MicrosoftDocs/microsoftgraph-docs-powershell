@@ -584,7 +584,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-NOTEBOOKS <IMicrosoftGraphNotebook- `[]`>: The collection of OneNote notebooks that are owned by the user or group.
+NOTEBOOKS `<IMicrosoftGraphNotebook- `[]`>`: The collection of OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -718,7 +718,7 @@ Nullable.
 Read-only.
   - `[UserRole <String>]`: onenoteUserRole
 
-OPERATIONS <IMicrosoftGraphOnenoteOperation- `[]`>: The status of OneNote operations.
+OPERATIONS `<IMicrosoftGraphOnenoteOperation- `[]`>`: The status of OneNote operations.
 Getting an operations collection isn't supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
 Read-only.
 Nullable.
@@ -736,7 +736,7 @@ Read-only.
   - `[ResourceLocation <String>]`: The resource URI for the object.
 For example, the resource URI for a copied page or section.
 
-PAGES <IMicrosoftGraphOnenotePage- `[]`>: The pages in all OneNote notebooks that are owned by the user or group.
+PAGES `<IMicrosoftGraphOnenotePage- `[]`>`: The pages in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
@@ -871,7 +871,7 @@ Read-only.
   - `[Title <String>]`: The title of the page.
   - `[UserTags <String- `[]`>]`: 
 
-RESOURCES <IMicrosoftGraphOnenoteResource- `[]`>: The image and other file resources in OneNote pages.
+RESOURCES `<IMicrosoftGraphOnenoteResource- `[]`>`: The image and other file resources in OneNote pages.
 Getting a resources collection isn't supported, but you can get the binary content of a specific resource.
 Read-only.
 Nullable.
@@ -882,7 +882,7 @@ Read-only.
   - `[Content <Byte- `[]`>]`: The content stream
   - `[ContentUrl <String>]`: The URL for downloading the content
 
-SECTIONGROUPS <IMicrosoftGraphSectionGroup- `[]`>: The section groups in all OneNote notebooks that are owned by the user or group.
+SECTIONGROUPS `<IMicrosoftGraphSectionGroup- `[]`>`: The section groups in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1017,7 +1017,7 @@ Nullable.
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
 Read-only.
 
-SECTIONS <IMicrosoftGraphOnenoteSection- `[]`>: The sections in all OneNote notebooks that are owned by the user or group.
+SECTIONS `<IMicrosoftGraphOnenoteSection- `[]`>`: The sections in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1155,6 +1155,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitegetbypathonenote)
+
 
 
 

@@ -262,7 +262,7 @@ security groups).
     - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
-GRANTEES <IMicrosoftGraphDriveRecipient- `[]`>: .
+GRANTEES `<IMicrosoftGraphDriveRecipient- `[]`>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
@@ -319,6 +319,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetauserdrivelistpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetauserdrivelistpermissiongrant)
 
 [https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
+
 
 
 

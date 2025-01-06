@@ -588,7 +588,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-WORKINGHOURS <IMicrosoftGraphBookingWorkHours- `[]`>: The range of hours each day of the week that the staff member is available for booking.
+WORKINGHOURS `<IMicrosoftGraphBookingWorkHours- `[]`>`: The range of hours each day of the week that the staff member is available for booking.
 By default, they're initialized to be the same as the businessHours property of the business.
   - `[Day <String>]`: dayOfWeek
   - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
@@ -600,6 +600,7 @@ For example, 08:00:00.0000000.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessstaffmember)
+
 
 
 

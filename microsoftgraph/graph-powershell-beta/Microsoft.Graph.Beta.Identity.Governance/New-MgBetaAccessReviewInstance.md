@@ -550,7 +550,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
-DECISIONS <IMicrosoftGraphAccessReviewDecision- `[]`>: The collection of decisions for this access review.
+DECISIONS `<IMicrosoftGraphAccessReviewDecision- `[]`>`: The collection of decisions for this access review.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of: Approve, Deny, NotAvailable.
@@ -673,7 +673,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-INSTANCES <IMicrosoftGraphAccessReview- `[]`>: The collection of access reviews instances past, present, and future, if this object is a recurring access review.
+INSTANCES `<IMicrosoftGraphAccessReview- `[]`>`: The collection of access reviews instances past, present, and future, if this object is a recurring access review.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[BusinessFlowTemplateId <String>]`: The business flow template identifier.
@@ -758,7 +758,7 @@ Required on create.
   - `[Status <String>]`: This read-only field specifies the status of an accessReview.
 The typical states include Initializing, NotStarted, Starting,InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
 
-MYDECISIONS <IMicrosoftGraphAccessReviewDecision- `[]`>: The collection of decisions for the caller, if the caller is a reviewer.
+MYDECISIONS `<IMicrosoftGraphAccessReviewDecision- `[]`>`: The collection of decisions for the caller, if the caller is a reviewer.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of: Approve, Deny, NotAvailable.
@@ -787,7 +787,7 @@ For example, if a user changes their display name the API might show the new val
   - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-REVIEWERS <IMicrosoftGraphAccessReviewReviewer- `[]`>: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
+REVIEWERS `<IMicrosoftGraphAccessReviewReviewer- `[]`>`: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
@@ -827,6 +827,7 @@ Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewinstance)
+
 
 
 

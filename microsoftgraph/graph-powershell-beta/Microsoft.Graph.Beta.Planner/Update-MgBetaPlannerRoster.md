@@ -583,7 +583,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-MEMBERS <IMicrosoftGraphPlannerRosterMember- `[]`>: Retrieves the members of the plannerRoster.
+MEMBERS `<IMicrosoftGraphPlannerRosterMember- `[]`>`: Retrieves the members of the plannerRoster.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Roles <String- `[]`>]`: Additional roles associated with the PlannerRosterMember, which determines permissions of the member in the plannerRoster.
@@ -592,7 +592,7 @@ Currently there are no available roles to assign, and every member has full cont
 Currently only the users from the same tenant can be added to a plannerRoster.
   - `[UserId <String>]`: Identifier of the user.
 
-PLANS <IMicrosoftGraphPlannerPlan- `[]`>: Retrieves the plans contained by the plannerRoster.
+PLANS `<IMicrosoftGraphPlannerPlan- `[]`>`: Retrieves the plans contained by the plannerRoster.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
@@ -879,6 +879,7 @@ Title of the plan.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerroster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerroster)
+
 
 
 

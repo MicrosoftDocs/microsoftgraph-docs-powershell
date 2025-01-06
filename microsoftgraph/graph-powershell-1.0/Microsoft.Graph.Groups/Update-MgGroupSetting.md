@@ -79,6 +79,9 @@ Update-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsetting-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -389,7 +392,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced groupSettingTemplates object.
+VALUES `<IMicrosoftGraphSettingValue- `[]`>`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced groupSettingTemplates object.
   - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
   - `[Value <String>]`: Value of the setting.
 
@@ -398,6 +401,7 @@ VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corre
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting)
 
 [https://learn.microsoft.com/graph/api/groupsetting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsetting-update?view=graph-rest-1.0)
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-Module Guid: bd4bf9de-b1ea-4235-ad59-d7254d83dff0
+Module Guid: 8cd9aa71-b4b0-4d26-a4ca-e14f855fcef6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.businessscenario/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

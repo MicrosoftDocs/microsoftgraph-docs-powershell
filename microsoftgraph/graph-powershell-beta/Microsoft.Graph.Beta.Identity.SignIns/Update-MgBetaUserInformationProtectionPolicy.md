@@ -339,7 +339,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-LABELS <IMicrosoftGraphInformationProtectionLabel- `[]`>: .
+LABELS `<IMicrosoftGraphInformationProtectionLabel- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
@@ -364,6 +364,7 @@ Active labels should be hidden or disabled in user interfaces.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionpolicy)
+
 
 
 

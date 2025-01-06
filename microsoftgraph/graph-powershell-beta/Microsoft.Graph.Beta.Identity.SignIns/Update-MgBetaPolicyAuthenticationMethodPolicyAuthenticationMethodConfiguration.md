@@ -294,7 +294,7 @@ Read-only.
     - `[TargetType <String>]`: authenticationMethodTargetType
   - `[State <String>]`: authenticationMethodState
 
-EXCLUDETARGETS <IMicrosoftGraphExcludeTarget- `[]`>: Groups of users that are excluded from a policy.
+EXCLUDETARGETS `<IMicrosoftGraphExcludeTarget- `[]`>`: Groups of users that are excluded from a policy.
   - `[Id <String>]`: The object identifier of a Microsoft Entra group.
   - `[TargetType <String>]`: authenticationMethodTargetType
 
@@ -383,6 +383,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
 
 [https://learn.microsoft.com/graph/api/externalauthenticationmethodconfiguration-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalauthenticationmethodconfiguration-update?view=graph-rest-beta)
+
 
 
 

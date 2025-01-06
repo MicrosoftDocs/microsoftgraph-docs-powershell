@@ -344,7 +344,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-RULES <IMicrosoftGraphSecurityHostReputationRule- `[]`>: A collection of rules that have been used to calculate the classification and score.
+RULES `<IMicrosoftGraphSecurityHostReputationRule- `[]`>`: A collection of rules that have been used to calculate the classification and score.
   - `[Description <String>]`: The description of the rule that gives more context.
   - `[Name <String>]`: The name of the rule.
   - `[RelatedDetailsUrl <String>]`: Link to a web page with details related to this rule.
@@ -353,6 +353,7 @@ RULES <IMicrosoftGraphSecurityHostReputationRule- `[]`>: A collection of rules t
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostreputation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostreputation)
+
 
 
 

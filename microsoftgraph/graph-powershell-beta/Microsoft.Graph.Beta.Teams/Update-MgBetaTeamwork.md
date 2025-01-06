@@ -546,8 +546,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -5607,7 +5607,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8631,11 +8631,11 @@ Start with 1.
     - `[Supports <String>]`: workforceIntegrationSupportedEntities
     - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
-DELETEDCHATS <IMicrosoftGraphDeletedChat- `[]`>: A collection of deleted chats.
+DELETEDCHATS `<IMicrosoftGraphDeletedChat- `[]`>`: A collection of deleted chats.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-DELETEDTEAMS <IMicrosoftGraphDeletedTeam- `[]`>: A collection of deleted teams.
+DELETEDTEAMS `<IMicrosoftGraphDeletedTeam- `[]`>`: A collection of deleted teams.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Channels <IMicrosoftGraphChannel- `[]`>]`: The channels those are either shared with this deleted team or created in this deleted team.
@@ -8871,8 +8871,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -13932,7 +13932,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -16696,7 +16696,7 @@ This URL is supplied when you right-click a channel in Microsoft Teams and selec
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-DEVICES <IMicrosoftGraphTeamworkDevice- `[]`>: The Teams devices provisioned for the tenant.
+DEVICES `<IMicrosoftGraphTeamworkDevice- `[]`>`: The Teams devices provisioned for the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Activity <IMicrosoftGraphTeamworkDeviceActivity>]`: teamworkDeviceActivity
@@ -16953,7 +16953,7 @@ False blocks the installation of any Teams app that requires resource-specific p
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope.
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
-TEAMTEMPLATES <IMicrosoftGraphTeamTemplate- `[]`>: The templates associated with a team.
+TEAMTEMPLATES `<IMicrosoftGraphTeamTemplate- `[]`>`: The templates associated with a team.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Definitions <IMicrosoftGraphTeamTemplateDefinition- `[]`>]`: A generic representation of a team template definition for a team with a specific structure and configuration.
@@ -17207,8 +17207,8 @@ This lets services like Microsoft 365 call the application in the context of a d
                 - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                  - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                  - `[Value <String>]`: Contains the corresponding value for the specified key.
+                  - `[Key <String>]`: Key.
+                  - `[Value <String>]`: Value.
                 - `[Type <String>]`: The unique name for the functionality exposed by the app.
               - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -21931,7 +21931,7 @@ It is an Optional field
               - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+              - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                 - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -25013,7 +25013,7 @@ Read-only.
 It is the URL you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
 
-WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration- `[]`>: A workforce integration with shifts.
+WORKFORCEINTEGRATIONS `<IMicrosoftGraphWorkforceIntegration- `[]`>`: A workforce integration with shifts.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -25044,6 +25044,7 @@ Start with 1.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamwork)
+
 
 
 

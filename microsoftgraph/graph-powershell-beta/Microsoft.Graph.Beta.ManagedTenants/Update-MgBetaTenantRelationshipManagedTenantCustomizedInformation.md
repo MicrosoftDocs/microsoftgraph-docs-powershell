@@ -465,7 +465,7 @@ Read-only.
   - `[Website <String>]`: The website for the managed tenant.
 Required.
 
-CONTACTS <IMicrosoftGraphManagedTenantsTenantContactInformation- `[]`>: The collection of contacts for the managed tenant.
+CONTACTS `<IMicrosoftGraphManagedTenantsTenantContactInformation- `[]`>`: The collection of contacts for the managed tenant.
 Optional.
   - `[Email <String>]`: The email address for the contact.
 Optional
@@ -523,6 +523,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
 
 [https://learn.microsoft.com/graph/api/managedtenants-tenantcustomizedinformation-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-tenantcustomizedinformation-update?view=graph-rest-beta)
+
 
 
 

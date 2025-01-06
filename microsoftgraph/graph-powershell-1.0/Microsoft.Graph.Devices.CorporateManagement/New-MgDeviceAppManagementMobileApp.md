@@ -446,7 +446,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphMobileAppAssignment- `[]`>: The list of group assignments for this mobile app.
+ASSIGNMENTS `<IMicrosoftGraphMobileAppAssignment- `[]`>`: The list of group assignments for this mobile app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
@@ -489,7 +489,7 @@ Read-only.
   - `[Publisher <String>]`: The publisher of the app.
   - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
 
-CATEGORIES <IMicrosoftGraphMobileAppCategory- `[]`>: The list of categories for this app.
+CATEGORIES `<IMicrosoftGraphMobileAppCategory- `[]`>`: The list of categories for this app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
@@ -504,6 +504,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
 
 [https://learn.microsoft.com/graph/api/intune-apps-macoslobapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-macoslobapp-create?view=graph-rest-1.0)
+
 
 
 

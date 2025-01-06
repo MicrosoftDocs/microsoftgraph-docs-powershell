@@ -251,7 +251,7 @@ Read-only.
   - `[Description <String>]`: The description of the trusted certificate authorities.
   - `[DisplayName <String>]`: The display name of the trusted certificate authorities.
 
-TRUSTEDCERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>: Collection of trusted certificate authorities.
+TRUSTEDCERTIFICATEAUTHORITIES `<IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>`: Collection of trusted certificate authorities.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Certificate <Byte- `[]`>]`: The trusted certificate.
@@ -263,6 +263,7 @@ In a certificateBasedApplicationConfiguration object, at least one object in the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
+
 
 
 

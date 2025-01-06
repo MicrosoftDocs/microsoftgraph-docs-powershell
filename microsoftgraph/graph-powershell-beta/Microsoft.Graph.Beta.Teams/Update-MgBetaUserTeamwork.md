@@ -289,7 +289,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSOCIATEDTEAMS <IMicrosoftGraphAssociatedTeamInfo- `[]`>: The list of associatedTeamInfo objects that a user is associated with.
+ASSOCIATEDTEAMS `<IMicrosoftGraphAssociatedTeamInfo- `[]`>`: The list of associatedTeamInfo objects that a user is associated with.
   - `[DisplayName <String>]`: The name of the team.
   - `[Team <IMicrosoftGraphTeam>]`: team
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -528,8 +528,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -5252,7 +5252,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8590,8 +8590,8 @@ This lets services like Microsoft 365 call the application in the context of a d
                 - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                  - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                  - `[Value <String>]`: Contains the corresponding value for the specified key.
+                  - `[Key <String>]`: Key.
+                  - `[Value <String>]`: Value.
                 - `[Type <String>]`: The unique name for the functionality exposed by the app.
               - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -13314,7 +13314,7 @@ It is an Optional field
               - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+              - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                 - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -16448,7 +16448,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-INSTALLEDAPPS <IMicrosoftGraphUserScopeTeamsAppInstallation- `[]`>: The apps installed in the personal scope of this user.
+INSTALLEDAPPS `<IMicrosoftGraphUserScopeTeamsAppInstallation- `[]`>`: The apps installed in the personal scope of this user.
   - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.
@@ -16789,6 +16789,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamwork)
+
 
 
 

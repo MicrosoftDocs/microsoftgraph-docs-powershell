@@ -441,7 +441,7 @@ Read-only.
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action.
 Read-only.
 
-ACTIVITIES <IMicrosoftGraphItemActivity- `[]`>: Exposes the itemActivities represented in this itemActivityStat resource.
+ACTIVITIES `<IMicrosoftGraphItemActivity- `[]`>`: Exposes the itemActivities represented in this itemActivityStat resource.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Access <IMicrosoftGraphAccessAction>]`: accessAction
@@ -10099,6 +10099,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemanalyticitemactivitystat)
+
 
 
 

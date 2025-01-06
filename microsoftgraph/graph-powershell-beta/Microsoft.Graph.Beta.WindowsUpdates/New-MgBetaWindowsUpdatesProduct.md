@@ -386,7 +386,7 @@ Read-only.
     - `[Version <String>]`: The version of the feature update.
 Read-only.
 
-EDITIONS <IMicrosoftGraphWindowsUpdatesEdition- `[]`>: Represents an edition of a particular Windows product.
+EDITIONS `<IMicrosoftGraphWindowsUpdatesEdition- `[]`>`: Represents an edition of a particular Windows product.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceFamily <String>]`: The device family targeted by the edition.
@@ -415,7 +415,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
-KNOWNISSUES <IMicrosoftGraphWindowsUpdatesKnownIssue- `[]`>: Represents a known issue related to a Windows product.
+KNOWNISSUES `<IMicrosoftGraphWindowsUpdatesKnownIssue- `[]`>`: Represents a known issue related to a Windows product.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: The description of the particular known issue.
@@ -450,7 +450,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Title <String>]`: The title of the known issue.
   - `[WebViewUrl <String>]`: The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.
 
-REVISIONS <IMicrosoftGraphWindowsUpdatesProductRevision- `[]`>: Represents a product revision.
+REVISIONS `<IMicrosoftGraphWindowsUpdatesProductRevision- `[]`>`: Represents a product revision.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>]`: catalogEntry
@@ -498,6 +498,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproduct](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproduct)
+
 
 
 

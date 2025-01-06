@@ -346,7 +346,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
-USERMATCHINGSETTINGS <IMicrosoftGraphIndustryDataUserMatchingSetting- `[]`>: A collection of user matching settings by roleGroup.
+USERMATCHINGSETTINGS `<IMicrosoftGraphIndustryDataUserMatchingSetting- `[]`>`: A collection of user matching settings by roleGroup.
   - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Code <String>]`: The code of the desired referenceDefinition entry.
@@ -379,6 +379,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem)
 
 [https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-beta)
+
 
 
 

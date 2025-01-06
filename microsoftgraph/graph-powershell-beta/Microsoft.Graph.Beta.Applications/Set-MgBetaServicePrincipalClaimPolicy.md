@@ -9,7 +9,7 @@ ms.subservice: entra-id
 # Set-MgBetaServicePrincipalClaimPolicy
 
 ## SYNOPSIS
-Update a customClaimsPolicy object.
+Create a new customClaimsPolicy object if it doesn't exist, or replace an existing one.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Set-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update a customClaimsPolicy object.
+Create a new customClaimsPolicy object if it doesn't exist, or replace an existing one.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-put-claimspolicy-permissions.md)]
@@ -344,7 +344,7 @@ Optional.
 If set to true, all claims in the basic claim set are emitted in tokens affected by the policy.
 By default the basic claim set isn't in the tokens unless they're explicitly configured in this policy.
 
-CLAIMS <IMicrosoftGraphCustomClaimBase- `[]`>: Defines which claims are present in the tokens affected by the policy, in addition to the basic claim and the core claim set.
+CLAIMS `<IMicrosoftGraphCustomClaimBase- `[]`>`: Defines which claims are present in the tokens affected by the policy, in addition to the basic claim and the core claim set.
 Inherited from customclaimbase.
   - `[Configurations <IMicrosoftGraphCustomClaimConfiguration- `[]`>]`: One or more configurations that describe how the claim is sourced and under what conditions.
     - `[Attribute <IMicrosoftGraphCustomClaimAttributeBase>]`: customClaimAttributeBase
@@ -398,7 +398,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalclaimpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalclaimpolicy)
 
-[https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/serviceprincipal-put-claimspolicy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-put-claimspolicy?view=graph-rest-beta)
+
 
 
 

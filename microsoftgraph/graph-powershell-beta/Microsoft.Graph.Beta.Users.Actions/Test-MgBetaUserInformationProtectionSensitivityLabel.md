@@ -256,7 +256,7 @@ CURRENTLABEL `<IMicrosoftGraphCurrentLabel>`: currentLabel
   - `[ApplicationMode <String>]`: applicationMode
   - `[Id <String>]`: 
 
-DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType- `[]`>: .
+DISCOVEREDSENSITIVETYPES `<IMicrosoftGraphDiscoveredSensitiveType- `[]`>`: .
   - `[ClassificationAttributes <IMicrosoftGraphClassificationAttribute- `[]`>]`: 
     - `[Confidence <Int32?>]`: 
     - `[Count <Int32?>]`: 
@@ -313,6 +313,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserinformationprotectionsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserinformationprotectionsensitivitylabel)
+
 
 
 

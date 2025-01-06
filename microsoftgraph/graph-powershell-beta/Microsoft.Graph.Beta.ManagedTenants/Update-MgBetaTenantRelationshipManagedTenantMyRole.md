@@ -235,7 +235,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphManagedTenantsRoleAssignment- `[]`>: A collection of role assignments for the managed tenant.
+ASSIGNMENTS `<IMicrosoftGraphManagedTenantsRoleAssignment- `[]`>`: A collection of role assignments for the managed tenant.
   - `[AssignmentType <String>]`: delegatedPrivilegeStatus
   - `[Roles <IMicrosoftGraphManagedTenantsRoleDefinition- `[]`>]`: The collection of roles assigned.
     - `[Description <String>]`: The description for the role.
@@ -297,6 +297,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmyrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmyrole)
+
 
 
 

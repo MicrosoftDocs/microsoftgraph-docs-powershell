@@ -266,7 +266,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment- `[]`>: .
+ASSIGNMENTS `<IMicrosoftGraphCloudPcProvisioningPolicyAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignedUsers <IMicrosoftGraphUser- `[]`>]`: The assignment targeted users for the provisioning policy.
@@ -9901,6 +9901,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementvirtualendpointprovisioningpolicy)
 
 [https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-1.0)
+
 
 
 

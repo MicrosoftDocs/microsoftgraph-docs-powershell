@@ -807,7 +807,7 @@ For OneDrive, this property is not populated.
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
 
-BASETYPES <IMicrosoftGraphContentType- `[]`>: The collection of content types that are ancestors of this content type.
+BASETYPES `<IMicrosoftGraphContentType- `[]`>`: The collection of content types that are ancestors of this content type.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
@@ -1270,12 +1270,12 @@ For OneDrive, this property is not populated.
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
 
-COLUMNLINKS <IMicrosoftGraphColumnLink- `[]`>: The collection of columns that are required by this content type.
+COLUMNLINKS `<IMicrosoftGraphColumnLink- `[]`>`: The collection of columns that are required by this content type.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: The name of the column  in this content type.
 
-COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition- `[]`>: Column order information in a content type.
+COLUMNPOSITIONS `<IMicrosoftGraphColumnDefinition- `[]`>`: Column order information in a content type.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -1437,7 +1437,7 @@ User will be prompted with this message if validation fails.
     - `[Formula <String>]`: The formula to validate column value.
 For examples, see Examples of common formulas in lists.
 
-COLUMNS <IMicrosoftGraphColumnDefinition- `[]`>: The collection of column definitions for this content type.
+COLUMNS `<IMicrosoftGraphColumnDefinition- `[]`>`: The collection of column definitions for this content type.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -1862,6 +1862,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcontenttype)
+
 
 
 

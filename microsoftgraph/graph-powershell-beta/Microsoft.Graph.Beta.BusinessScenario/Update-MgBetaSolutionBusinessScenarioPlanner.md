@@ -647,7 +647,7 @@ Accepted values are allow and block.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[RoleKind <String>]`: plannerUserRoleKind
 
-TASKS <IMicrosoftGraphBusinessScenarioTask- `[]`>: The Planner tasks for the scenario.
+TASKS `<IMicrosoftGraphBusinessScenarioTask- `[]`>`: The Planner tasks for the scenario.
   - `[ActiveChecklistItemCount <Int32?>]`: The number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -859,6 +859,7 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplanner)
+
 
 
 

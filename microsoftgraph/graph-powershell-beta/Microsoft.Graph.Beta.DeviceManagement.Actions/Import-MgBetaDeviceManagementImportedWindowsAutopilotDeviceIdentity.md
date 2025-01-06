@@ -193,7 +193,7 @@ Read-only.
       - `[DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]`: importedWindowsAutopilotDeviceIdentityImportStatus
       - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
-IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity- `[]`>: .
+IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
@@ -212,6 +212,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementimportedwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementimportedwindowsautopilotdeviceidentity)
+
 
 
 

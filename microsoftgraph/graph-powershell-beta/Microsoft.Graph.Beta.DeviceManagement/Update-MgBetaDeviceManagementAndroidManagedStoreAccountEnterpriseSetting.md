@@ -379,7 +379,7 @@ Read-only.
   - `[OwnerUserPrincipalName <String>]`: Owner UPN that created the enterprise
   - `[TargetGroupIds <String- `[]`>]`: Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
-COMPANYCODES <IMicrosoftGraphAndroidEnrollmentCompanyCode- `[]`>: Company codes for AndroidManagedStoreAccountEnterpriseSettings
+COMPANYCODES `<IMicrosoftGraphAndroidEnrollmentCompanyCode- `[]`>`: Company codes for AndroidManagedStoreAccountEnterpriseSettings
   - `[EnrollmentToken <String>]`: Enrollment Token used by the User to enroll their device.
   - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
   - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
@@ -390,6 +390,7 @@ COMPANYCODES <IMicrosoftGraphAndroidEnrollmentCompanyCode- `[]`>: Company codes 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting)
+
 
 
 

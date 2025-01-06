@@ -343,7 +343,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-INSTANCES <IMicrosoftGraphWindowsSettingInstance- `[]`>: A collection of setting values for a given windowsSetting.
+INSTANCES `<IMicrosoftGraphWindowsSettingInstance- `[]`>`: A collection of setting values for a given windowsSetting.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -357,6 +357,7 @@ Refers to the user's Windows device that modified the object at the specified da
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingwindows)
+
 
 
 

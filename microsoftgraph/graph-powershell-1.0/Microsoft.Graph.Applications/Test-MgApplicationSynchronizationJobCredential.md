@@ -313,7 +313,7 @@ BODYPARAMETER `<IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchron
   - `[TemplateId <String>]`: 
   - `[UseSavedCredentials <Boolean?>]`: 
 
-CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
+CREDENTIALS `<IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>`: .
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
@@ -348,6 +348,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationsynchronizationjobcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationsynchronizationjobcredential)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-1.0)
+
 
 
 

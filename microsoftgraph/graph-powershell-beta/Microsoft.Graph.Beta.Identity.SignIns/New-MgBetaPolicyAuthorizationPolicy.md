@@ -450,7 +450,7 @@ Currently following roles are supported:  User (a0b1b346-4d3e-4e8b-98f8-753987be
 Values should be in the format managePermissionGrantsForSelf.{id} for user consent policies or managePermissionGrantsForOwnedResource.{id} for resource-specific consent policies, where {id} is the id of a built-in or custom app consent policy.
 An empty list indicates user consent to apps is disabled.
 
-DEFAULTUSERROLEOVERRIDES <IMicrosoftGraphDefaultUserRoleOverride- `[]`>: .
+DEFAULTUSERROLEOVERRIDES `<IMicrosoftGraphDefaultUserRoleOverride- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsDefault <Boolean?>]`: 
@@ -477,6 +477,7 @@ DO NOT SET THIS VALUE TO false.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicy)
+
 
 
 

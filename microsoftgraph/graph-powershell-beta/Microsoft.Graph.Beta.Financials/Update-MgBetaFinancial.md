@@ -789,7 +789,7 @@ Read-only.
     - `[Vendors <IMicrosoftGraphVendor- `[]`>]`: 
   - `[Id <String>]`: 
 
-COMPANIES <IMicrosoftGraphCompany- `[]`>: .
+COMPANIES `<IMicrosoftGraphCompany- `[]`>`: .
   - `[Accounts <IMicrosoftGraphAccount- `[]`>]`: 
     - `[Blocked <Boolean?>]`: 
     - `[Category <String>]`: 
@@ -1394,6 +1394,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancial](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancial)
+
 
 
 

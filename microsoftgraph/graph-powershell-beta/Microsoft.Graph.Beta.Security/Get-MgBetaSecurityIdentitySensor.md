@@ -10,7 +10,7 @@ ms.subservice: security
 # Get-MgBetaSecurityIdentitySensor
 
 ## SYNOPSIS
-Get sensors from security
+Read the properties and relationships of a sensor object.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaSecurityIdentitySensor -InputObject <ISecurityIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get sensors from security
+Read the properties and relationships of a sensor object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-get-permissions.md)]
@@ -395,6 +395,11 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensor)
+
+[https://learn.microsoft.com/graph/api/security-sensor-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensor-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensors?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensors?view=graph-rest-beta)
+
 
 
 

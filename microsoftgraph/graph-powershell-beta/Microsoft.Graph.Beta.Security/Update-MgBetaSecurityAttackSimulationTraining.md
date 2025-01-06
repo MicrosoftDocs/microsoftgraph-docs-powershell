@@ -605,7 +605,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-LANGUAGEDETAILS <IMicrosoftGraphTrainingLanguageDetail- `[]`>: Details about the language used in the training.
+LANGUAGEDETAILS `<IMicrosoftGraphTrainingLanguageDetail- `[]`>`: Details about the language used in the training.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Content <String>]`: Language specific content for the training.
@@ -641,6 +641,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtraining)
+
 
 
 

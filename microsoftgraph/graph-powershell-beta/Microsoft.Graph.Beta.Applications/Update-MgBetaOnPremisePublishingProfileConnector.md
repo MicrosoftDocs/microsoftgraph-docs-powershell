@@ -1146,7 +1146,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-MEMBEROF <IMicrosoftGraphConnectorGroup- `[]`>: The connectorGroup that the connector is a member of.
+MEMBEROF `<IMicrosoftGraphConnectorGroup- `[]`>`: The connectorGroup that the connector is a member of.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1948,6 +1948,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnector)
+
 
 
 

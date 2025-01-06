@@ -407,7 +407,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SITERESTOREARTIFACTS <IMicrosoftGraphSiteRestoreArtifact- `[]`>: A collection of restore points and destination details that can be used to restore SharePoint sites.
+SITERESTOREARTIFACTS `<IMicrosoftGraphSiteRestoreArtifact- `[]`>`: A collection of restore points and destination details that can be used to restore SharePoint sites.
   - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
   - `[DestinationType <String>]`: destinationType
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -464,6 +464,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta)
+
 
 
 

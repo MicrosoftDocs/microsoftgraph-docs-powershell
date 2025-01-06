@@ -439,7 +439,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGES <IMicrosoftGraphAccessPackage- `[]`>: The access packages in this catalog.
+ACCESSPACKAGES `<IMicrosoftGraphAccessPackage- `[]`>`: The access packages in this catalog.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -10475,7 +10475,7 @@ Read-only.
   - `[Resources <IMicrosoftGraphAccessPackageResource- `[]`>]`: Access package resources in this catalog.
   - `[State <String>]`: accessPackageCatalogState
 
-CUSTOMWORKFLOWEXTENSIONS <IMicrosoftGraphCustomCalloutExtension- `[]`>: .
+CUSTOMWORKFLOWEXTENSIONS `<IMicrosoftGraphCustomCalloutExtension- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]`: customExtensionAuthenticationConfiguration
@@ -10562,7 +10562,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-RESOURCEROLES <IMicrosoftGraphAccessPackageResourceRole- `[]`>: .
+RESOURCEROLES `<IMicrosoftGraphAccessPackageResourceRole- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: A description for the resource role.
@@ -10631,7 +10631,7 @@ Read-only.
       - `[OriginSystem <String>]`: The origin system for the scope.
       - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
 
-RESOURCES <IMicrosoftGraphAccessPackageResource- `[]`>: Access package resources in this catalog.
+RESOURCES `<IMicrosoftGraphAccessPackageResource- `[]`>`: Access package resources in this catalog.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Attributes <IMicrosoftGraphAccessPackageResourceAttribute- `[]`>]`: Contains information about the attributes to be collected from the requestor and sent to the resource application.
@@ -10699,7 +10699,7 @@ Read-only.
     - `[OriginSystem <String>]`: The origin system for the scope.
     - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
 
-RESOURCESCOPES <IMicrosoftGraphAccessPackageResourceScope- `[]`>: .
+RESOURCESCOPES `<IMicrosoftGraphAccessPackageResourceScope- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: The description of the scope.
@@ -10773,6 +10773,7 @@ Supports $expand.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalog)
 
 [https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-1.0)
+
 
 
 

@@ -212,7 +212,7 @@ Active labels should be hidden or disabled in user interfaces.
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-LABELS <IMicrosoftGraphInformationProtectionLabel- `[]`>: .
+LABELS `<IMicrosoftGraphInformationProtectionLabel- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
@@ -237,6 +237,7 @@ Active labels should be hidden or disabled in user interfaces.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicy)
+
 
 
 

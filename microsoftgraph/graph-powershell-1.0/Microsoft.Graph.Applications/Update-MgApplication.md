@@ -1097,7 +1097,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDINS <IMicrosoftGraphAddIn- `[]`>: Defines custom behavior that a consuming service can use to call an app in specific contexts.
+ADDINS `<IMicrosoftGraphAddIn- `[]`>`: Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams can set the addIns property for its 'FileHandler' functionality.
 This lets services like Microsoft 365 call the application in the context of a document the user is working on.
   - `[Id <String>]`: The unique identifier for the addIn object.
@@ -1155,7 +1155,7 @@ Possible values for requestedAccessTokenVersion are 1, 2, or null.
 If the value is null, this defaults to 1, which corresponds to the v1.0 endpoint. 
 If signInAudience on the application is configured as AzureADandPersonalMicrosoftAccount or PersonalMicrosoftAccount, the value for this property must be 2.
 
-APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy- `[]`>: The appManagementPolicy applied to this application.
+APPMANAGEMENTPOLICIES `<IMicrosoftGraphAppManagementPolicy- `[]`>`: The appManagementPolicy applied to this application.
   - `[Description <String>]`: Description for this policy.
 Required.
   - `[DisplayName <String>]`: Display name for this policy.
@@ -1192,7 +1192,7 @@ For existing applications, the enforcement date would be back dated.
 To apply to all applications, enforcement datetime would be null.
       - `[RestrictionType <String>]`: appCredentialRestrictionType
 
-APPROLES <IMicrosoftGraphAppRole- `[]`>: The collection of roles defined for the application.
+APPROLES `<IMicrosoftGraphAppRole- `[]`>`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
   - `[AllowedMemberTypes <String- `[]`>]`: Specifies whether this app role can be assigned to users and groups (by setting to - `['User']`), to other application's (by setting to - `['Application']`, or both (by setting to - `['User', 'Application']`).
@@ -1911,7 +1911,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-EXTENSIONPROPERTIES <IMicrosoftGraphExtensionProperty- `[]`>: Read-only.
+EXTENSIONPROPERTIES `<IMicrosoftGraphExtensionProperty- `[]`>`: Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0).
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -1938,7 +1938,7 @@ Supports $filter (eq).
 Not nullable.
 UserGroupAdministrativeUnitApplicationDeviceOrganization
 
-FEDERATEDIDENTITYCREDENTIALS <IMicrosoftGraphFederatedIdentityCredential- `[]`>: Federated identities for applications.
+FEDERATEDIDENTITYCREDENTIALS `<IMicrosoftGraphFederatedIdentityCredential- `[]`>`: Federated identities for applications.
 Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1969,7 +1969,7 @@ The combination of issuer and subject must be unique within the app.
 It has a limit of 600 characters.
 Supports $filter (eq).
 
-HOMEREALMDISCOVERYPOLICIES <IMicrosoftGraphHomeRealmDiscoveryPolicy- `[]`>: .
+HOMEREALMDISCOVERYPOLICIES `<IMicrosoftGraphHomeRealmDiscoveryPolicy- `[]`>`: .
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2028,7 +2028,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-KEYCREDENTIALS <IMicrosoftGraphKeyCredential- `[]`>: The collection of key credentials associated with the application.
+KEYCREDENTIALS `<IMicrosoftGraphKeyCredential- `[]`>`: The collection of key credentials associated with the application.
 Not nullable.
 Supports $filter (eq, not, ge, le).
   - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
@@ -2064,7 +2064,7 @@ If the source value is user, the value in the name property is the extension pro
   - `[IdToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT ID token.
   - `[Saml2Token <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the SAML token.
 
-OWNERS <IMicrosoftGraphDirectoryObject- `[]`>: Directory objects that are owners of the application.
+OWNERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Directory objects that are owners of the application.
 Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
@@ -2083,7 +2083,7 @@ Enforces the legal minimum.
 This means parental consent is required for minors in the European Union and Korea.RequireConsentForPrivacyServicesEnforces the user to specify date of birth to comply with COPPA rules.
 RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country minor rules.BlockMinorsBlocks minors from using the app.
 
-PASSWORDCREDENTIALS <IMicrosoftGraphPasswordCredential- `[]`>: The collection of password credentials associated with the application.
+PASSWORDCREDENTIALS `<IMicrosoftGraphPasswordCredential- `[]`>`: The collection of password credentials associated with the application.
 Not nullable.
   - `[CustomKeyIdentifier <Byte- `[]`>]`: Do not use.
   - `[DisplayName <String>]`: Friendly name for the password.
@@ -2113,7 +2113,7 @@ REQUESTSIGNATUREVERIFICATION `<IMicrosoftGraphRequestSignatureVerification>`: re
   - `[AllowedWeakAlgorithms <String>]`: weakAlgorithms
   - `[IsSignedRequestRequired <Boolean?>]`: Specifies whether signed authentication requests for this application should be required.
 
-REQUIREDRESOURCEACCESS <IMicrosoftGraphRequiredResourceAccess- `[]`>: Specifies the resources that the application needs to access.
+REQUIREDRESOURCEACCESS `<IMicrosoftGraphRequiredResourceAccess- `[]`>`: Specifies the resources that the application needs to access.
 This property also specifies the set of delegated permissions and application roles that it needs for each of those resources.
 This configuration of access to the required resources drives the consent experience.
 No more than 50 resource services (APIs) can be configured.
@@ -2392,7 +2392,7 @@ Unless mentioned explicitly, metadata values should not be changed.
       - `[Value <String>]`: Value of the metadata property.
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
 
-TOKENISSUANCEPOLICIES <IMicrosoftGraphTokenIssuancePolicy- `[]`>: .
+TOKENISSUANCEPOLICIES `<IMicrosoftGraphTokenIssuancePolicy- `[]`>`: .
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2413,7 +2413,7 @@ Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-TOKENLIFETIMEPOLICIES <IMicrosoftGraphTokenLifetimePolicy- `[]`>: .
+TOKENLIFETIMEPOLICIES `<IMicrosoftGraphTokenLifetimePolicy- `[]`>`: .
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2458,6 +2458,7 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplication)
 
 [https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0)
+
 
 
 

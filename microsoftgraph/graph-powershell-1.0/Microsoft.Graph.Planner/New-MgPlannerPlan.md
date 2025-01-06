@@ -491,7 +491,7 @@ Collection of tasks in the plan.
   - `[Title <String>]`: Required.
 Title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerBucket- `[]`>: Read-only.
+BUCKETS `<IMicrosoftGraphPlannerBucket- `[]`>`: Read-only.
 Nullable.
 Collection of buckets in the plan.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -642,7 +642,7 @@ Read-only.
   - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-TASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+TASKS `<IMicrosoftGraphPlannerTask- `[]`>`: Read-only.
 Nullable.
 Collection of tasks in the plan.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -736,6 +736,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan)
 
 [https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-1.0)
+
 
 
 

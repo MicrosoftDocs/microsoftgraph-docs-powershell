@@ -101,39 +101,6 @@ Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId
 ```
 This example shows how to use the Update-MgBetaEducationClassAssignmentSetting Cmdlet.
 
-### Example 3: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Education
-
-$params = @{
-	"gradingCategories@delta" = @(
-		@{
-			id = "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e"
-			displayName = "Lab Test"
-		}
-		@{
-			"@odata.context" = "https://graph.microsoft.com/beta/$metadata#gradingCategories/$deletedEntity"
-			id = "e2a86277-24f9-4f29-8196-8c83fc69d00d"
-			reason = "deleted"
-		}
-		@{
-			displayName = "Lab Practice"
-			percentageWeight = 
-		}
-		@{
-			displayName = "Lab Theory"
-			percentageWeight = 
-		}
-	)
-}
-
-Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaEducationClassAssignmentSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -410,13 +377,13 @@ Read-only.
   - `[HidePointsDuringGrading <Boolean?>]`: The display setting for the UI.
 Indicates whether teachers can grade with points in addition to letter grades.
 
-GRADINGCATEGORIES <IMicrosoftGraphEducationGradingCategory- `[]`>: When set, enables users to weight assignments differently when computing a class average grade.
+GRADINGCATEGORIES `<IMicrosoftGraphEducationGradingCategory- `[]`>`: When set, enables users to weight assignments differently when computing a class average grade.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the grading category.
   - `[PercentageWeight <Int32?>]`: The weight of the category; an integer between 0 and 100.
 
-GRADINGSCHEMES <IMicrosoftGraphEducationGradingScheme- `[]`>: .
+GRADINGSCHEMES `<IMicrosoftGraphEducationGradingScheme- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the grading scheme.
@@ -452,6 +419,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting)
 
 [https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-beta)
+
 
 
 

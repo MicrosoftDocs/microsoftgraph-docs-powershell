@@ -373,7 +373,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DRIVERESTOREARTIFACTS <IMicrosoftGraphDriveRestoreArtifact- `[]`>: A collection of restore points and destination details that can be used to restore a OneDrive for Business drive.
+DRIVERESTOREARTIFACTS `<IMicrosoftGraphDriveRestoreArtifact- `[]`>`: A collection of restore points and destination details that can be used to restore a OneDrive for Business drive.
   - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
   - `[DestinationType <String>]`: destinationType
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -454,6 +454,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreonedriveforbusinessrestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreonedriveforbusinessrestoresession)
+
 
 
 

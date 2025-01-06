@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Update the properties of a windows10SecureAssessmentConfiguration object.
+Update the properties of a sharedPCConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -57,7 +57,7 @@ Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Update the properties of a windows10SecureAssessmentConfiguration object.
+Update the properties of a sharedPCConfiguration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -441,7 +441,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment- `[]`>: The list of assignments for the device configuration profile.
+ASSIGNMENTS `<IMicrosoftGraphDeviceConfigurationAssignment- `[]`>`: The list of assignments for the device configuration profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -514,7 +514,7 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary- `[]`>: Device Configuration Setting State Device Summary
+DEVICESETTINGSTATESUMMARIES `<IMicrosoftGraphSettingStateDeviceSummary- `[]`>`: Device Configuration Setting State Device Summary
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
@@ -527,7 +527,7 @@ Read-only.
   - `[SettingName <String>]`: Name of the setting
   - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
 
-DEVICESTATUSES <IMicrosoftGraphDeviceConfigurationDeviceStatus- `[]`>: Device configuration installation status by device.
+DEVICESTATUSES `<IMicrosoftGraphDeviceConfigurationDeviceStatus- `[]`>`: Device configuration installation status by device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
@@ -606,7 +606,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
-USERSTATUSES <IMicrosoftGraphDeviceConfigurationUserStatus- `[]`>: Device configuration installation status by user.
+USERSTATUSES `<IMicrosoftGraphDeviceConfigurationUserStatus- `[]`>`: Device configuration installation status by user.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DevicesCount <Int32?>]`: Devices count for that user.
@@ -631,7 +631,8 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10secureassessmentconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10secureassessmentconfiguration-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-sharedpcconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-sharedpcconfiguration-update?view=graph-rest-1.0)
+
 
 
 

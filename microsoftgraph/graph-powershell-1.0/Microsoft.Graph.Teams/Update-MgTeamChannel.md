@@ -10137,7 +10137,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-MEMBERS <IMicrosoftGraphConversationMember- `[]`>: A collection of membership records associated with the channel.
+MEMBERS `<IMicrosoftGraphConversationMember- `[]`>`: A collection of membership records associated with the channel.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the user.
@@ -10149,7 +10149,7 @@ An Out-of-tenant external member is assigned the owner role.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-MESSAGES <IMicrosoftGraphChatMessage- `[]`>: A collection of all the messages in the channel.
+MESSAGES `<IMicrosoftGraphChatMessage- `[]`>`: A collection of all the messages in the channel.
 A navigation property.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -10272,7 +10272,7 @@ Only applies to channel chat messages, not chat messages in a chat.
   - `[WebUrl <String>]`: Read-only.
 Link to the message in Microsoft Teams.
 
-SHAREDWITHTEAMS <IMicrosoftGraphSharedWithChannelTeamInfo- `[]`>: A collection of teams with which a channel is shared.
+SHAREDWITHTEAMS `<IMicrosoftGraphSharedWithChannelTeamInfo- `[]`>`: A collection of teams with which a channel is shared.
   - `[DisplayName <String>]`: The name of the team.
   - `[Team <IMicrosoftGraphTeam>]`: team
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15077,7 +15077,7 @@ SUMMARY `<IMicrosoftGraphChannelSummary>`: channelSummary
   - `[MembersCount <Int32?>]`: Count of members in a channel.
   - `[OwnersCount <Int32?>]`: Count of owners in a channel.
 
-TABS <IMicrosoftGraphTeamsTab- `[]`>: A collection of all the tabs in the channel.
+TABS `<IMicrosoftGraphTeamsTab- `[]`>`: A collection of all the tabs in the channel.
 A navigation property.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -15135,6 +15135,7 @@ Read only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel)
 
 [https://learn.microsoft.com/graph/api/channel-patch?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-patch?view=graph-rest-1.0)
+
 
 
 

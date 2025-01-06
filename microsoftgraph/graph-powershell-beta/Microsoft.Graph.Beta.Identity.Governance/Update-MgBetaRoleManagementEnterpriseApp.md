@@ -942,7 +942,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace- `[]`>: .
+RESOURCENAMESPACES `<IMicrosoftGraphUnifiedRbacResourceNamespace- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: Name of the resource namespace.
@@ -989,7 +989,7 @@ Read-only.
       - `[Type <String>]`: 
     - `[ResourceScopeId <String>]`: Not implemented.
 
-ROLEASSIGNMENTAPPROVALS <IMicrosoftGraphApproval- `[]`>: .
+ROLEASSIGNMENTAPPROVALS `<IMicrosoftGraphApproval- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Steps <IMicrosoftGraphApprovalStep- `[]`>]`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
@@ -1017,7 +1017,7 @@ Read-only.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
-ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment- `[]`>: .
+ROLEASSIGNMENTS `<IMicrosoftGraphUnifiedRoleAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
@@ -1103,7 +1103,7 @@ Read-only when isBuiltIn is true.
 Read-only.
 Supports $filter (eq, in).
 
-ROLEASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance- `[]`>: .
+ROLEASSIGNMENTSCHEDULEINSTANCES `<IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance- `[]`>`: .
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1213,7 +1213,7 @@ Supports $filter (eq, ne).
   - `[RoleAssignmentScheduleId <String>]`: The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created.
   - `[StartDateTime <DateTime?>]`: When this instance starts.
 
-ROLEASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest- `[]`>: .
+ROLEASSIGNMENTSCHEDULEREQUESTS `<IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest- `[]`>`: .
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1433,7 +1433,7 @@ Supports $filter (eq, ne).
     - `[TicketSubmitterIdentityId <String>]`: ID for the request submitter.
     - `[TicketSystem <String>]`: The description of the ticket system.
 
-ROLEASSIGNMENTSCHEDULES <IMicrosoftGraphUnifiedRoleAssignmentSchedule- `[]`>: .
+ROLEASSIGNMENTSCHEDULES `<IMicrosoftGraphUnifiedRoleAssignmentSchedule- `[]`>`: .
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1591,7 +1591,7 @@ It can further imply whether the unifiedRoleAssignmentSchedule can be managed by
 Supports $filter (eq, ne).
   - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
 
-ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition- `[]`>: .
+ROLEDEFINITIONS `<IMicrosoftGraphUnifiedRoleDefinition- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
@@ -1633,7 +1633,7 @@ Read-only when isBuiltIn is true.
   - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
 
-ROLEELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance- `[]`>: .
+ROLEELIGIBILITYSCHEDULEINSTANCES `<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance- `[]`>`: .
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1713,7 +1713,7 @@ It can either be Inherited, Direct, or Group.
   - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
   - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
 
-ROLEELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest- `[]`>: .
+ROLEELIGIBILITYSCHEDULEREQUESTS `<IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest- `[]`>`: .
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1901,7 +1901,7 @@ Supports $filter (eq, ne).
     - `[TicketSubmitterIdentityId <String>]`: ID for the request submitter.
     - `[TicketSystem <String>]`: The description of the ticket system.
 
-ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule- `[]`>: .
+ROLEELIGIBILITYSCHEDULES `<IMicrosoftGraphUnifiedRoleEligibilitySchedule- `[]`>`: .
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -2028,7 +2028,7 @@ Required.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 In PIM, when the  eligible or active assignment becomes active.
 
-TRANSITIVEROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment- `[]`>: .
+TRANSITIVEROLEASSIGNMENTS `<IMicrosoftGraphUnifiedRoleAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
@@ -2117,6 +2117,7 @@ Supports $filter (eq, in).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapp)
+
 
 
 

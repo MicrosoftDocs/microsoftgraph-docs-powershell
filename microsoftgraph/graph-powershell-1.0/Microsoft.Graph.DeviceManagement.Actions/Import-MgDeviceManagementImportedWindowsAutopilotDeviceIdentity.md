@@ -229,7 +229,7 @@ Read-only.
       - `[DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]`: importedWindowsAutopilotDeviceIdentityImportStatus
       - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
-IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity- `[]`>: .
+IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
@@ -250,6 +250,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity)
 
 [https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-import?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-import?view=graph-rest-1.0)
+
 
 
 

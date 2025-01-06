@@ -515,7 +515,7 @@ Read-only.
   - `[Status <GroupPolicyUploadedDefinitionFileStatus?>]`: Type of Group Policy uploaded definition file status.
   - `[UploadDateTime <DateTime?>]`: The uploaded time of the uploaded ADMX file.
 
-DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition- `[]`>: The group policy definitions associated with the file.
+DEFINITIONS `<IMicrosoftGraphGroupPolicyDefinition- `[]`>`: The group policy definitions associated with the file.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
@@ -573,7 +573,7 @@ The default value is empty.
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-GROUPPOLICYOPERATIONS <IMicrosoftGraphGroupPolicyOperation- `[]`>: The list of operations on the uploaded ADMX file.
+GROUPPOLICYOPERATIONS `<IMicrosoftGraphGroupPolicyOperation- `[]`>`: The list of operations on the uploaded ADMX file.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -581,7 +581,7 @@ Read-only.
   - `[OperationType <GroupPolicyOperationType?>]`: Type of Group Policy operation.
   - `[StatusDetails <String>]`: The group policy operation status detail.
 
-GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile- `[]`>: The list of ADML files associated with the uploaded ADMX file.
+GROUPPOLICYUPLOADEDLANGUAGEFILES `<IMicrosoftGraphGroupPolicyUploadedLanguageFile- `[]`>`: The list of ADML files associated with the uploaded ADMX file.
   - `[Content <Byte- `[]`>]`: The contents of the uploaded ADML file.
   - `[FileName <String>]`: The file name of the uploaded ADML file.
   - `[Id <String>]`: Key of the entity.
@@ -591,6 +591,7 @@ GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyuploadeddefinitionfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyuploadeddefinitionfile)
+
 
 
 

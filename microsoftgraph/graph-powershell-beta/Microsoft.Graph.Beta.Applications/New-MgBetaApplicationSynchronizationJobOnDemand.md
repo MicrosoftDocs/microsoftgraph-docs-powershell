@@ -299,7 +299,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-PARAMETERS <IMicrosoftGraphSynchronizationJobApplicationParameters- `[]`>: .
+PARAMETERS `<IMicrosoftGraphSynchronizationJobApplicationParameters- `[]`>`: .
   - `[RuleId <String>]`: The identifier of the synchronizationRule to be applied.
 This rule ID is defined in the schema for a given synchronization job or template.
   - `[Subjects <IMicrosoftGraphSynchronizationJobSubject- `[]`>]`: The identifiers of one or more objects to which a synchronizationJob is to be applied.
@@ -319,6 +319,7 @@ Worker for synchronization a user between Workday and either Active Directory or
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobondemand](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobondemand)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-beta)
+
 
 
 

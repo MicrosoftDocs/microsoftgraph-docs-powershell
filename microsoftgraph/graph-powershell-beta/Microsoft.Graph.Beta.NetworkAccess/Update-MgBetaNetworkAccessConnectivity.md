@@ -322,8 +322,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Contains the name of the field that a value is associated with.
-            - `[Value <String>]`: Contains the corresponding value for the specified key.
+            - `[Key <String>]`: Key.
+            - `[Value <String>]`: Value.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1100,7 +1100,7 @@ Supports $expand and $select.
     - `[Group <String>]`: The group or category to which the web category belongs.
     - `[Name <String>]`: The unique name that is associated with the web category.
 
-BRANCHES <IMicrosoftGraphNetworkaccessBranchSite- `[]`>: Branches represent locations for connectivity.
+BRANCHES `<IMicrosoftGraphNetworkaccessBranchSite- `[]`>`: Branches represent locations for connectivity.
 DEPRECATED AND TO BE RETIRED SOON.
 Use the remoteNetwork relationship and its associated APIs instead.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1196,8 +1196,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1953,7 +1953,7 @@ Read-only.
   - `[Region <String>]`: region
   - `[Version <String>]`: The branch version.
 
-REMOTENETWORKS <IMicrosoftGraphNetworkaccessRemoteNetwork- `[]`>: Represent locations, such as branches, that are connected to Global Secure Access services through an IPsec tunnel.
+REMOTENETWORKS `<IMicrosoftGraphNetworkaccessRemoteNetwork- `[]`>`: Represent locations, such as branches, that are connected to Global Secure Access services through an IPsec tunnel.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ConnectivityConfiguration <IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>]`: remoteNetworkConnectivityConfiguration
@@ -2042,8 +2042,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -2799,7 +2799,7 @@ Read-only.
   - `[Region <String>]`: region
   - `[Version <String>]`: Remote network version.
 
-WEBCATEGORIES <IMicrosoftGraphNetworkaccessWebCategory- `[]`>: .
+WEBCATEGORIES `<IMicrosoftGraphNetworkaccessWebCategory- `[]`>`: .
   - `[DisplayName <String>]`: The display name for the web category.
   - `[Group <String>]`: The group or category to which the web category belongs.
   - `[Name <String>]`: The unique name that is associated with the web category.
@@ -2807,6 +2807,7 @@ WEBCATEGORIES <IMicrosoftGraphNetworkaccessWebCategory- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivity)
+
 
 
 

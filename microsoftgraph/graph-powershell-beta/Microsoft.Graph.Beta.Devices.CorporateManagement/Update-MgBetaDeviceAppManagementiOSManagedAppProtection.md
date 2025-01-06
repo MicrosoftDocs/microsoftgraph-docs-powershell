@@ -465,7 +465,6 @@ Accept wildcard characters: False
 
 ### -CustomBrowserProtocol
 A custom browser protocol to open weblink on iOS.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
 
 ```yaml
 Type: String
@@ -1495,14 +1494,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPS <IMicrosoftGraphManagedMobileApp- `[]`>: List of apps to which the policy is deployed.
+APPS `<IMicrosoftGraphManagedMobileApp- `[]`>`: List of apps to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: Version of the entity.
 
-ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+ASSIGNMENTS `<IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
@@ -1596,7 +1595,6 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Version <String>]`: Version of the entity.
   - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
@@ -1641,7 +1639,7 @@ Read-only.
   - `[LastRefreshTime <DateTime?>]`: 
   - `[Version <String>]`: Version of the entity.
 
-EXEMPTEDAPPPROTOCOLS <IMicrosoftGraphKeyValuePair- `[]`>: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
+EXEMPTEDAPPPROTOCOLS `<IMicrosoftGraphKeyValuePair- `[]`>`: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
@@ -1720,6 +1718,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection)
+
 
 
 

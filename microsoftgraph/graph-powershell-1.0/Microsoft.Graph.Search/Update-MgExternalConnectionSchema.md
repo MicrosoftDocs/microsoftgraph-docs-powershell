@@ -348,7 +348,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IdentityId <String>]`: The unique identifier of identity
   - `[QnaId <String>]`: The unique identifier of qna
 
-PROPERTIES <IMicrosoftGraphExternalConnectorsProperty- `[]`>: The properties defined for the items in the connection.
+PROPERTIES `<IMicrosoftGraphExternalConnectorsProperty- `[]`>`: The properties defined for the items in the connection.
 The minimum number of properties is one, the maximum is 128.
   - `[Aliases <String- `[]`>]`: A set of aliases or a friendly name for the property.
 Maximum 32 characters.
@@ -386,6 +386,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema)
 
 [https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-1.0)
+
 
 
 

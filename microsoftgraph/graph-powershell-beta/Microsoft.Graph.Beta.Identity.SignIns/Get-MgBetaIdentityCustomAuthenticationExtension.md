@@ -10,7 +10,8 @@ ms.subservice: entra-sign-in
 # Get-MgBetaIdentityCustomAuthenticationExtension
 
 ## SYNOPSIS
-Read the properties and relationships of a customAuthenticationExtension object.
+Read the properties and relationships of an authenticationEventListener object.
+The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
@@ -40,7 +41,8 @@ Get-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a customAuthenticationExtension object.
+Read the properties and relationships of an authenticationEventListener object.
+The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventlistener-get-permissions.md)]
@@ -390,9 +392,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycustomauthenticationextension)
 
-[https://learn.microsoft.com/graph/api/customauthenticationextension-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customauthenticationextension-get?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-beta)
+
 
 
 

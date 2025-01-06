@@ -10591,7 +10591,7 @@ BUNDLE `<IMicrosoftGraphBundle>`: bundle
     - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
   - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
 
-CHILDREN <IMicrosoftGraphDriveItem- `[]`>: Collection containing Item objects for the immediate children of Item.
+CHILDREN `<IMicrosoftGraphDriveItem- `[]`>`: Collection containing Item objects for the immediate children of Item.
 Only items representing folders have children.
 Read-only.
 Nullable.
@@ -29937,7 +29937,7 @@ PENDINGOPERATIONS `<IMicrosoftGraphPendingOperations>`: pendingOperations
     - `[QueuedDateTime <DateTime?>]`: Date and time the pending binary operation was queued in UTC time.
 Read-only.
 
-PERMISSIONS <IMicrosoftGraphPermission- `[]`>: The set of permissions for the item.
+PERMISSIONS `<IMicrosoftGraphPermission- `[]`>`: The set of permissions for the item.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -30267,7 +30267,7 @@ SPECIALFOLDER `<IMicrosoftGraphSpecialFolder>`: specialFolder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Name <String>]`: The unique identifier for this item in the /drive/special collection
 
-SUBSCRIPTIONS <IMicrosoftGraphSubscription- `[]`>: The set of subscriptions on the item.
+SUBSCRIPTIONS `<IMicrosoftGraphSubscription- `[]`>`: The set of subscriptions on the item.
 Only supported on the root of a drive.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -30332,7 +30332,7 @@ Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
-THUMBNAILS <IMicrosoftGraphThumbnailSet- `[]`>: Collection of thumbnailSet objects associated with the item.
+THUMBNAILS `<IMicrosoftGraphThumbnailSet- `[]`>`: Collection of thumbnailSet objects associated with the item.
 For more information, see getting thumbnails.
 Read-only.
 Nullable.
@@ -30350,7 +30350,7 @@ This is only available when a folder thumbnail is requested.
   - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
   - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
 
-VERSIONS <IMicrosoftGraphDriveItemVersion- `[]`>: The list of previous versions of the item.
+VERSIONS `<IMicrosoftGraphDriveItemVersion- `[]`>`: The list of previous versions of the item.
 For more info, see getting previous versions.
 Read-only.
 Nullable.
@@ -30710,6 +30710,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveroot)
+
 
 
 

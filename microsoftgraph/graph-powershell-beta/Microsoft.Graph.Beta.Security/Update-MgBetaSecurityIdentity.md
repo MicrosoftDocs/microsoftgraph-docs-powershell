@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthIssues
-Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
+Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.
 To construct, see NOTES section for HEALTHISSUES properties and create a hash table.
 
 ```yaml
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sensors
-.
+Represents a customer's Microsoft Defender for Identity sensors.
 To construct, see NOTES section for SENSORS properties and create a hash table.
 
 ```yaml
@@ -210,7 +210,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityIdentityContainer>`: identityContainer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[HealthIssues <IMicrosoftGraphSecurityHealthIssue- `[]`>]`: Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
+  - `[HealthIssues <IMicrosoftGraphSecurityHealthIssue- `[]`>]`: Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AdditionalInformation <String- `[]`>]`: Contains additional information about the issue, such as a list of items to fix.
@@ -235,30 +235,30 @@ These commands run in sequence for the single recommended fix.
     - `[SensorDnsNames <String- `[]`>]`: A list of the DNS names of the sensors the health issue is related to.
     - `[Severity <String>]`: healthIssueSeverity
     - `[Status <String>]`: healthIssueStatus
-  - `[Sensors <IMicrosoftGraphSecuritySensor- `[]`>]`: 
+  - `[Sensors <IMicrosoftGraphSecuritySensor- `[]`>]`: Represents a customer's Microsoft Defender for Identity sensors.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the sensor was generated.
     - `[DeploymentStatus <String>]`: deploymentStatus
-    - `[DisplayName <String>]`: 
-    - `[DomainName <String>]`: 
-    - `[HealthIssues <IMicrosoftGraphSecurityHealthIssue- `[]`>]`: 
+    - `[DisplayName <String>]`: The display name of the sensor.
+    - `[DomainName <String>]`: The fully qualified domain name of the sensor.
+    - `[HealthIssues <IMicrosoftGraphSecurityHealthIssue- `[]`>]`: Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified related to the sensor.
     - `[HealthStatus <String>]`: sensorHealthStatus
-    - `[OpenHealthIssuesCount <Int64?>]`: 
+    - `[OpenHealthIssuesCount <Int64?>]`: This field displays the count of health issues related to this sensor.
     - `[SensorType <String>]`: sensorType
     - `[Settings <IMicrosoftGraphSecuritySensorSettings>]`: sensorSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Description <String>]`: 
-      - `[DomainControllerDnsNames <String- `[]`>]`: 
-      - `[IsDelayedDeploymentEnabled <Boolean?>]`: 
+      - `[Description <String>]`: Description of the sensor.
+      - `[DomainControllerDnsNames <String- `[]`>]`: DNS names for the domain controller
+      - `[IsDelayedDeploymentEnabled <Boolean?>]`: Indicates whether to delay updates for the sensor.
       - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[IsEnabled <Boolean?>]`: 
-        - `[Name <String>]`: 
-    - `[Version <String>]`: 
+        - `[IsEnabled <Boolean?>]`: Indicates whether the network adapter is selected for capturing and analyzing network traffic.
+        - `[Name <String>]`: The name of the network adapter.
+    - `[Version <String>]`: The version of the sensor.
 
-HEALTHISSUES <IMicrosoftGraphSecurityHealthIssue- `[]`>: Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
+HEALTHISSUES `<IMicrosoftGraphSecurityHealthIssue- `[]`>`: Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdditionalInformation <String- `[]`>]`: Contains additional information about the issue, such as a list of items to fix.
@@ -284,14 +284,14 @@ These commands run in sequence for the single recommended fix.
   - `[Severity <String>]`: healthIssueSeverity
   - `[Status <String>]`: healthIssueStatus
 
-SENSORS <IMicrosoftGraphSecuritySensor- `[]`>: .
+SENSORS `<IMicrosoftGraphSecuritySensor- `[]`>`: Represents a customer's Microsoft Defender for Identity sensors.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the sensor was generated.
   - `[DeploymentStatus <String>]`: deploymentStatus
-  - `[DisplayName <String>]`: 
-  - `[DomainName <String>]`: 
-  - `[HealthIssues <IMicrosoftGraphSecurityHealthIssue- `[]`>]`: 
+  - `[DisplayName <String>]`: The display name of the sensor.
+  - `[DomainName <String>]`: The fully qualified domain name of the sensor.
+  - `[HealthIssues <IMicrosoftGraphSecurityHealthIssue- `[]`>]`: Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified related to the sensor.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AdditionalInformation <String- `[]`>]`: Contains additional information about the issue, such as a list of items to fix.
@@ -317,23 +317,24 @@ These commands run in sequence for the single recommended fix.
     - `[Severity <String>]`: healthIssueSeverity
     - `[Status <String>]`: healthIssueStatus
   - `[HealthStatus <String>]`: sensorHealthStatus
-  - `[OpenHealthIssuesCount <Int64?>]`: 
+  - `[OpenHealthIssuesCount <Int64?>]`: This field displays the count of health issues related to this sensor.
   - `[SensorType <String>]`: sensorType
   - `[Settings <IMicrosoftGraphSecuritySensorSettings>]`: sensorSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Description <String>]`: 
-    - `[DomainControllerDnsNames <String- `[]`>]`: 
-    - `[IsDelayedDeploymentEnabled <Boolean?>]`: 
+    - `[Description <String>]`: Description of the sensor.
+    - `[DomainControllerDnsNames <String- `[]`>]`: DNS names for the domain controller
+    - `[IsDelayedDeploymentEnabled <Boolean?>]`: Indicates whether to delay updates for the sensor.
     - `[NetworkAdapters <IMicrosoftGraphSecurityNetworkAdapter- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[IsEnabled <Boolean?>]`: 
-      - `[Name <String>]`: 
-  - `[Version <String>]`:
+      - `[IsEnabled <Boolean?>]`: Indicates whether the network adapter is selected for capturing and analyzing network traffic.
+      - `[Name <String>]`: The name of the network adapter.
+  - `[Version <String>]`: The version of the sensor.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentity)
+
 
 
 

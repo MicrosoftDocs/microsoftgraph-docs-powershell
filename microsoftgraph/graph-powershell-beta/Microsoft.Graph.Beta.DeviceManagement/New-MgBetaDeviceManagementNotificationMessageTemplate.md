@@ -309,7 +309,7 @@ To unset, set this property to true on another Localized Notification Message.
     - `[Subject <String>]`: The Message Template Subject.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
 
-LOCALIZEDNOTIFICATIONMESSAGES <IMicrosoftGraphLocalizedNotificationMessage- `[]`>: The list of localized messages for this Notification Message Template.
+LOCALIZEDNOTIFICATIONMESSAGES `<IMicrosoftGraphLocalizedNotificationMessage- `[]`>`: The list of localized messages for this Notification Message Template.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsDefault <Boolean?>]`: Flag to indicate whether or not this is the default locale for language fallback.
@@ -323,6 +323,7 @@ To unset, set this property to true on another Localized Notification Message.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementnotificationmessagetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementnotificationmessagetemplate)
+
 
 
 

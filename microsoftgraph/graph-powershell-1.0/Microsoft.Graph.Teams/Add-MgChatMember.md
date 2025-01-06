@@ -276,7 +276,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-VALUES <IMicrosoftGraphConversationMember- `[]`>: .
+VALUES `<IMicrosoftGraphConversationMember- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the user.
@@ -293,6 +293,7 @@ This property is settable only for members of a chat.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgchatmember)
 
 [https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
+
 
 
 

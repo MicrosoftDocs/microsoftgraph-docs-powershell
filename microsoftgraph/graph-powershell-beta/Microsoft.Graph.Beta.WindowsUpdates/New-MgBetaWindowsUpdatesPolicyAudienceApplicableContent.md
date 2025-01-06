@@ -304,13 +304,14 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
-MATCHEDDEVICES <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch- `[]`>: Collection of devices and recommendations for applicable catalog content.
+MATCHEDDEVICES `<IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch- `[]`>`: Collection of devices and recommendations for applicable catalog content.
   - `[DeviceId <String>]`: Collection of vendors who recommend the content.
   - `[RecommendedBy <String- `[]`>]`: Collection of vendors who recommend the content.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyaudienceapplicablecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyaudienceapplicablecontent)
+
 
 
 

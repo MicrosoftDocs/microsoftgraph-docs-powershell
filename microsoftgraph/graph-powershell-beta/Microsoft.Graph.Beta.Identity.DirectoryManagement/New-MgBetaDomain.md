@@ -533,7 +533,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-    - `[PasswordResetUri <String>]`: 
+    - `[PasswordResetUri <String>]`: URI that clients are redirected to for resetting their password.
     - `[PromptLoginBehavior <String>]`: promptLoginBehavior
     - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
@@ -602,7 +602,7 @@ For more information about CustomUrlDomain, see Custom URL domains in external t
 Read-only, Nullable.
 Supports $expand.
 
-DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject- `[]`>: The objects such as users and groups that reference the domain ID.
+DOMAINNAMEREFERENCES `<IMicrosoftGraphDirectoryObject- `[]`>`: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
@@ -611,7 +611,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation- `[]`>: Domain settings configured by customer when federated with Microsoft Entra ID.
+FEDERATIONCONFIGURATION `<IMicrosoftGraphInternalDomainFederation- `[]`>`: Domain settings configured by customer when federated with Microsoft Entra ID.
 Supports $expand.
   - `[IssuerUri <String>]`: Issuer URI of the federation server.
   - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
@@ -634,7 +634,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-  - `[PasswordResetUri <String>]`: 
+  - `[PasswordResetUri <String>]`: URI that clients are redirected to for resetting their password.
   - `[PromptLoginBehavior <String>]`: promptLoginBehavior
   - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
@@ -690,7 +690,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-    - `[PasswordResetUri <String>]`: 
+    - `[PasswordResetUri <String>]`: URI that clients are redirected to for resetting their password.
     - `[PromptLoginBehavior <String>]`: promptLoginBehavior
     - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
@@ -759,7 +759,7 @@ For more information about CustomUrlDomain, see Custom URL domains in external t
 Read-only, Nullable.
 Supports $expand.
 
-SERVICECONFIGURATIONRECORDS <IMicrosoftGraphDomainDnsRecord- `[]`>: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
+SERVICECONFIGURATIONRECORDS `<IMicrosoftGraphDomainDnsRecord- `[]`>`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -773,7 +773,7 @@ Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayO
   - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host.
 Not nullable.
 
-SHAREDEMAILDOMAININVITATIONS <IMicrosoftGraphSharedEmailDomainInvitation- `[]`>: .
+SHAREDEMAILDOMAININVITATIONS `<IMicrosoftGraphSharedEmailDomainInvitation- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ExpiryTime <DateTime?>]`: 
@@ -791,7 +791,7 @@ Scheduled - Operation is scheduled but hasn't started.
 InProgress - Task is in progress. 
 Failed - The operation failed.
 
-VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord- `[]`>: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
+VERIFICATIONDNSRECORDS `<IMicrosoftGraphDomainDnsRecord- `[]`>`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -810,6 +810,7 @@ Not nullable.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain)
 
 [https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-beta](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-beta)
+
 
 
 

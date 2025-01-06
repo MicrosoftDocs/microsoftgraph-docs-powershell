@@ -1591,7 +1591,7 @@ Supports $filter (eq, ne).
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule- `[]`>]`: 
   - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment- `[]`>]`: 
 
-ENTERPRISEAPPS <IMicrosoftGraphRbacApplication- `[]`>: .
+ENTERPRISEAPPS `<IMicrosoftGraphRbacApplication- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace- `[]`>]`: 
@@ -2594,6 +2594,7 @@ Supports $filter (eq, in).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement)
+
 
 
 

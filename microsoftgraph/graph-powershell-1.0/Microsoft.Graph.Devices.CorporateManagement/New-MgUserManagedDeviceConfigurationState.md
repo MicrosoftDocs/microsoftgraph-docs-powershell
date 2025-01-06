@@ -392,7 +392,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
-SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>: .
+SETTINGSTATES `<IMicrosoftGraphDeviceConfigurationSettingState- `[]`>`: .
   - `[CurrentValue <String>]`: Current value of setting on device
   - `[ErrorCode <Int64?>]`: Error code for the setting
   - `[ErrorDescription <String>]`: Error description
@@ -412,6 +412,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddeviceconfigurationstate)
+
 
 
 

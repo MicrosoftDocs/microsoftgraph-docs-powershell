@@ -292,11 +292,11 @@ Defaults to FALSE.
     - `[SizeEncrypted <Int64?>]`: The size of the file after encryption.
     - `[UploadState <String>]`: Contains properties for upload request states.
 
-CONTAINEDAPPS <IMicrosoftGraphMobileContainedApp- `[]`>: The collection of contained apps in a MobileLobApp acting as a package.
+CONTAINEDAPPS `<IMicrosoftGraphMobileContainedApp- `[]`>`: The collection of contained apps in a MobileLobApp acting as a package.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-FILES <IMicrosoftGraphMobileAppContentFile- `[]`>: The list of files for this app content version.
+FILES `<IMicrosoftGraphMobileAppContentFile- `[]`>`: The list of files for this app content version.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsDependency <Boolean?>]`: Indicates whether this content file is a dependency for the main content file.
@@ -348,6 +348,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappasmacosdmgappcontentversion](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappasmacosdmgappcontentversion)
+
 
 
 

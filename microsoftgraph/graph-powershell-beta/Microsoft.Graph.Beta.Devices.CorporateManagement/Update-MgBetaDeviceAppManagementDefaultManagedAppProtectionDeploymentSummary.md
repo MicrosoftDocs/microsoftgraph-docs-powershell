@@ -316,7 +316,7 @@ Read-only.
   - `[LastRefreshTime <DateTime?>]`: 
   - `[Version <String>]`: Version of the entity.
 
-CONFIGURATIONDEPLOYMENTSUMMARYPERAPP <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp- `[]`>: .
+CONFIGURATIONDEPLOYMENTSUMMARYPERAPP `<IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp- `[]`>`: .
   - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -396,6 +396,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementdefaultmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementdefaultmanagedappprotectiondeploymentsummary)
+
 
 
 

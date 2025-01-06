@@ -454,7 +454,7 @@ The units can't be assigned but can still be reactivated before they're deleted.
   - `[Warning <Int32?>]`: The number of units that are in warning status.
 When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it's canceled (moved to a suspended state).
 
-SERVICEPLANS <IMicrosoftGraphServicePlanInfo- `[]`>: Information about the service plans that are available with the SKU.
+SERVICEPLANS `<IMicrosoftGraphServicePlanInfo- `[]`>`: Information about the service plans that are available with the SKU.
 Not nullable.
   - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
@@ -466,6 +466,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku)
+
 
 
 

@@ -294,7 +294,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
-SCHEDULEDACTIONS <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule- `[]`>: .
+SCHEDULEDACTIONS `<IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
@@ -312,6 +312,7 @@ This collection can contain a maximum of 100 elements.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementcompliancepolicyscheduledaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementcompliancepolicyscheduledaction)
+
 
 
 

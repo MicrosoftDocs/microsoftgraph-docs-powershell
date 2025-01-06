@@ -552,7 +552,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-PLANS <IMicrosoftGraphPlannerPlan- `[]`>: Read-only.
+PLANS `<IMicrosoftGraphPlannerPlan- `[]`>`: Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -841,6 +841,7 @@ Title of the plan.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplanner)
+
 
 
 

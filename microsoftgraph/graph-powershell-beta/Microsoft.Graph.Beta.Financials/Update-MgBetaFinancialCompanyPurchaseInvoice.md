@@ -899,7 +899,7 @@ PAYTOADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   - `[State <String>]`: 
   - `[Street <String>]`: 
 
-PURCHASEINVOICELINES <IMicrosoftGraphPurchaseInvoiceLine- `[]`>: .
+PURCHASEINVOICELINES `<IMicrosoftGraphPurchaseInvoiceLine- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
@@ -1030,6 +1030,7 @@ VENDOR `<IMicrosoftGraphVendor>`: vendor
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice)
+
 
 
 

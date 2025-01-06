@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-The collection property of AppLogUploadRequest.
+Indicates collection of App Log Upload Request.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-1.0)
@@ -41,7 +41,7 @@ Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-The collection property of AppLogUploadRequest.
+Indicates collection of App Log Upload Request.
 
 ## PARAMETERS
 
@@ -450,6 +450,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequest)
+
 
 
 

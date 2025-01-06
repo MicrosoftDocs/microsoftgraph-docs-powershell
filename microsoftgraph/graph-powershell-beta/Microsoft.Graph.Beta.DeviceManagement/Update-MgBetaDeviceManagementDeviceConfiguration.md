@@ -493,7 +493,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment- `[]`>: The list of assignments for the device configuration profile.
+ASSIGNMENTS `<IMicrosoftGraphDeviceConfigurationAssignment- `[]`>`: The list of assignments for the device configuration profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Intent <DeviceConfigAssignmentIntent?>]`: The administrator intent for the assignment of the profile.
@@ -621,7 +621,7 @@ DEVICEMANAGEMENTAPPLICABILITYRULEOSVERSION `<IMicrosoftGraphDeviceManagementAppl
   - `[Name <String>]`: Name for object.
   - `[RuleType <DeviceManagementApplicabilityRuleType?>]`: Supported Applicability rule types for Device Configuration
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary- `[]`>: Device Configuration Setting State Device Summary
+DEVICESETTINGSTATESUMMARIES `<IMicrosoftGraphSettingStateDeviceSummary- `[]`>`: Device Configuration Setting State Device Summary
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
@@ -634,7 +634,7 @@ Read-only.
   - `[SettingName <String>]`: Name of the setting
   - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
 
-DEVICESTATUSES <IMicrosoftGraphDeviceConfigurationDeviceStatus- `[]`>: Device configuration installation status by device.
+DEVICESTATUSES `<IMicrosoftGraphDeviceConfigurationDeviceStatus- `[]`>`: Device configuration installation status by device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
@@ -660,7 +660,7 @@ Read-only.
   - `[PendingCount <Int32?>]`: Number of pending devices
   - `[SuccessCount <Int32?>]`: Number of succeeded devices
 
-GROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssignment- `[]`>: The list of group assignments for the device configuration profile.
+GROUPASSIGNMENTS `<IMicrosoftGraphDeviceConfigurationGroupAssignment- `[]`>`: The list of group assignments for the device configuration profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>]`: Device Configuration.
@@ -903,7 +903,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-USERSTATUSES <IMicrosoftGraphDeviceConfigurationUserStatus- `[]`>: Device configuration installation status by user.
+USERSTATUSES `<IMicrosoftGraphDeviceConfigurationUserStatus- `[]`>`: Device configuration installation status by user.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DevicesCount <Int32?>]`: Devices count for that user.
@@ -928,6 +928,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfiguration)
+
 
 
 

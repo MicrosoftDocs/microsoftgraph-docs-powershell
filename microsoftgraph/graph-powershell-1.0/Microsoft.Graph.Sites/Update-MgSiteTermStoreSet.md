@@ -489,7 +489,7 @@ Read-only.
   - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: Indicates which terms have been pinned or reused directly under the set.
   - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
-CHILDREN <IMicrosoftGraphTermStoreTerm- `[]`>: Children terms of set in term - `[store]`.
+CHILDREN `<IMicrosoftGraphTermStoreTerm- `[]`>`: Children terms of set in term - `[store]`.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm- `[]`>]`: Children of current term.
@@ -585,7 +585,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-LOCALIZEDNAMES <IMicrosoftGraphTermStoreLocalizedName- `[]`>: Name of the set for each languageTag.
+LOCALIZEDNAMES `<IMicrosoftGraphTermStoreLocalizedName- `[]`>`: Name of the set for each languageTag.
   - `[LanguageTag <String>]`: The language tag for the label.
   - `[Name <String>]`: The name in the localized language.
 
@@ -639,11 +639,11 @@ Read-only.
     - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: Indicates which terms have been pinned or reused directly under the set.
     - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
-PROPERTIES <IMicrosoftGraphKeyValue- `[]`>: Custom properties for the set.
+PROPERTIES `<IMicrosoftGraphKeyValue- `[]`>`: Custom properties for the set.
   - `[Key <String>]`: Key for the key-value pair.
   - `[Value <String>]`: Value for the key-value pair.
 
-RELATIONS <IMicrosoftGraphTermStoreRelation- `[]`>: Indicates which terms have been pinned or reused directly under the set.
+RELATIONS `<IMicrosoftGraphTermStoreRelation- `[]`>`: Indicates which terms have been pinned or reused directly under the set.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -695,7 +695,7 @@ Read-only.
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
   - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
 
-TERMS <IMicrosoftGraphTermStoreTerm- `[]`>: All the terms under the set.
+TERMS `<IMicrosoftGraphTermStoreTerm- `[]`>`: All the terms under the set.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm- `[]`>]`: Children of current term.
@@ -751,6 +751,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset)
 
 [https://learn.microsoft.com/graph/api/termstore-set-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-set-update?view=graph-rest-1.0)
+
 
 
 

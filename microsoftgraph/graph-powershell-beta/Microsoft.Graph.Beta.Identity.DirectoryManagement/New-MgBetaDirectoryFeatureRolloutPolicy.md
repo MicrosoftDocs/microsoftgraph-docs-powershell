@@ -263,7 +263,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: Nullable.
+APPLIESTO `<IMicrosoftGraphDirectoryObject- `[]`>`: Nullable.
 Specifies a list of directoryObject resources that feature is enabled for.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -289,6 +289,7 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfeaturerolloutpolicy)
+
 
 
 

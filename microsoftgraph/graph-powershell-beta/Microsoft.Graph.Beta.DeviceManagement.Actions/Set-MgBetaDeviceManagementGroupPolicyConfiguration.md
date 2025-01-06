@@ -220,7 +220,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphGroupPolicyConfigurationAssignment- `[]`>: .
+ASSIGNMENTS `<IMicrosoftGraphGroupPolicyConfigurationAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -300,6 +300,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementgrouppolicyconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementgrouppolicyconfiguration)
+
 
 
 

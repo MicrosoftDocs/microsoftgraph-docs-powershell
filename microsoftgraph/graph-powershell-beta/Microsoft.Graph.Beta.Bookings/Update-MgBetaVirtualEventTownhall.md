@@ -652,7 +652,7 @@ The supported identities are: communicationsUserIdentity and communicationsGuest
   - `[IsInviteOnly <Boolean?>]`: Indicates whether the town hall is only open to invited people and groups within your organization.
 The isInviteOnly property can only be true if the value of the audience property is set to organization.
 
-COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity- `[]`>: Identity information of the coorganizers of the town hall.
+COORGANIZERS `<IMicrosoftGraphCommunicationsUserIdentity- `[]`>`: Identity information of the coorganizers of the town hall.
   - `[DisplayName <String>]`: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -719,7 +719,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-INVITEDATTENDEES <IMicrosoftGraphIdentity- `[]`>: The attendees invited to the town hall.
+INVITEDATTENDEES `<IMicrosoftGraphIdentity- `[]`>`: The attendees invited to the town hall.
 The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
   - `[DisplayName <String>]`: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -727,7 +727,7 @@ For example, if a user changes their display name the API might show the new val
   - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: The virtual event presenters.
+PRESENTERS `<IMicrosoftGraphVirtualEventPresenter- `[]`>`: The virtual event presenters.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Email <String>]`: Email address of the presenter.
@@ -877,7 +877,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
+SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
@@ -1043,6 +1043,7 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall)
 
 [https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-beta)
+
 
 
 

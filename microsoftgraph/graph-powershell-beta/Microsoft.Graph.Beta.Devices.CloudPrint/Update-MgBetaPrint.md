@@ -1252,8 +1252,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -6044,7 +6044,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8379,7 +8379,7 @@ If document conversion is enabled, Universal Print service converts documents in
   - `[Shares <IMicrosoftGraphPrinterShare- `[]`>]`: The list of printer shares registered in the tenant.
   - `[TaskDefinitions <IMicrosoftGraphPrintTaskDefinition- `[]`>]`: 
 
-CONNECTORS <IMicrosoftGraphPrintConnector- `[]`>: The list of available print connectors.
+CONNECTORS `<IMicrosoftGraphPrintConnector- `[]`>`: The list of available print connectors.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppVersion <String>]`: The connector's version.
@@ -8417,7 +8417,7 @@ The elements should be in hierarchical order.
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-OPERATIONS <IMicrosoftGraphPrintOperation- `[]`>: .
+OPERATIONS `<IMicrosoftGraphPrintOperation- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the operation was created.
@@ -8428,7 +8428,7 @@ Read-only.
 Read-only.
     - `[State <String>]`: printOperationProcessingState
 
-PRINTERS <IMicrosoftGraphPrinter- `[]`>: The list of printers registered in the tenant.
+PRINTERS `<IMicrosoftGraphPrinter- `[]`>`: The list of printers registered in the tenant.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[BottomMargins <Int32- `[]`>]`: A list of supported bottom margins(in microns) for the printer.
@@ -9404,8 +9404,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -14196,7 +14196,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -16484,7 +16484,7 @@ Read-only.
 Nullable.
   - `[TaskTriggers <IMicrosoftGraphPrintTaskTrigger- `[]`>]`: A list of task triggers that are associated with the printer.
 
-PRINTERSHARES <IMicrosoftGraphPrinterShare- `[]`>: .
+PRINTERSHARES `<IMicrosoftGraphPrinterShare- `[]`>`: .
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[BottomMargins <Int32- `[]`>]`: A list of supported bottom margins(in microns) for the printer.
@@ -17424,8 +17424,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -22216,7 +22216,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -24540,7 +24540,7 @@ Nullable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-SERVICES <IMicrosoftGraphPrintService- `[]`>: The list of available Universal Print service endpoints.
+SERVICES `<IMicrosoftGraphPrintService- `[]`>`: The list of available Universal Print service endpoints.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint- `[]`>]`: Endpoints that can be used to access the service.
@@ -24562,7 +24562,7 @@ If document conversion is enabled, Universal Print service converts documents in
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IncompatiblePrinters <String>]`: incompatiblePrinterSettings
 
-SHARES <IMicrosoftGraphPrinterShare- `[]`>: The list of printer shares registered in the tenant.
+SHARES `<IMicrosoftGraphPrinterShare- `[]`>`: The list of printer shares registered in the tenant.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[BottomMargins <Int32- `[]`>]`: A list of supported bottom margins(in microns) for the printer.
@@ -25502,8 +25502,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -30294,7 +30294,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -32618,7 +32618,7 @@ Nullable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-TASKDEFINITIONS <IMicrosoftGraphPrintTaskDefinition- `[]`>: .
+TASKDEFINITIONS `<IMicrosoftGraphPrintTaskDefinition- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
@@ -32651,6 +32651,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprint)
+
 
 
 

@@ -50,6 +50,9 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 $params = @{
 	displayName = "Seattle District Technical Schools"
 	description = "Seattle district technical schools administration"
+	membershipType = "Dynamic"
+	membershipRule = "(user.country -eq "United States")"
+	membershipRuleProcessingState = "On"
 	visibility = "HiddenMembership"
 }
 
@@ -416,19 +419,19 @@ Can be set to HiddenMembership.
 If not set (value is null), the default behavior is public.
 When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for this administrative unit.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for this administrative unit.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Users and groups that are members of this administrative unit.
+MEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Users and groups that are members of this administrative unit.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership- `[]`>: Scoped-role members of this administrative unit.
+SCOPEDROLEMEMBERS `<IMicrosoftGraphScopedRoleMembership- `[]`>`: Scoped-role members of this administrative unit.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
@@ -445,6 +448,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit)
 
 [https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0)
+
 
 
 

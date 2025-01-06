@@ -356,7 +356,7 @@ Required.
 Read-only.
     - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
 
-TENANTS <IMicrosoftGraphMultiTenantOrganizationMember- `[]`>: Defines tenants added to a multitenant organization.
+TENANTS `<IMicrosoftGraphMultiTenantOrganizationMember- `[]`>`: Defines tenants added to a multitenant organization.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -386,6 +386,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-beta)
+
 
 
 

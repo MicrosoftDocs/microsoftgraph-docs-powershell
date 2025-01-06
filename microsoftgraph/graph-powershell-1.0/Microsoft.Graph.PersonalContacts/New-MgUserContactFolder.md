@@ -452,7 +452,7 @@ Nullable.
 Read-only.
 Nullable.
 
-CHILDFOLDERS <IMicrosoftGraphContactFolder- `[]`>: The collection of child folders in the folder.
+CHILDFOLDERS `<IMicrosoftGraphContactFolder- `[]`>`: The collection of child folders in the folder.
 Navigation property.
 Read-only.
 Nullable.
@@ -558,7 +558,7 @@ Nullable.
 Read-only.
 Nullable.
 
-CONTACTS <IMicrosoftGraphContact- `[]`>: The contacts in the folder.
+CONTACTS `<IMicrosoftGraphContact- `[]`>`: The contacts in the folder.
 Navigation property.
 Read-only.
 Nullable.
@@ -653,14 +653,14 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[UserId <String>]`: The unique identifier of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the contactFolder.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String- `[]`>]`: A collection of property values.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the contactFolder.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the contactFolder.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -670,6 +670,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolder)
+
 
 
 

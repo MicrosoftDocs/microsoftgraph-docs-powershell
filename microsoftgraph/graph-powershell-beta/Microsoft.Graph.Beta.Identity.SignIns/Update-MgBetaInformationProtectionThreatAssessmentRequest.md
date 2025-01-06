@@ -474,7 +474,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-RESULTS <IMicrosoftGraphThreatAssessmentResult- `[]`>: A collection of threat assessment results.
+RESULTS `<IMicrosoftGraphThreatAssessmentResult- `[]`>`: A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -487,6 +487,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionthreatassessmentrequest)
+
 
 
 

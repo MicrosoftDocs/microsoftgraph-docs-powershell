@@ -402,7 +402,7 @@ Read-only.
         - `[SettingId <String>]`: 
         - `[ValueType <String>]`: managementParameterValueType
 
-MANAGEMENTTEMPLATES <IMicrosoftGraphManagedTenantsManagementTemplate- `[]`>: .
+MANAGEMENTTEMPLATES `<IMicrosoftGraphManagedTenantsManagementTemplate- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Category <String>]`: managementCategory
@@ -528,6 +528,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatecollection)
+
 
 
 

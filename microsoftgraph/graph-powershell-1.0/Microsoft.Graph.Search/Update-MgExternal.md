@@ -312,7 +312,7 @@ Required.
           - `[ValuesJoinedBy <String>]`: binaryOperator
     - `[State <String>]`: connectionState
 
-CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection- `[]`>: .
+CONNECTIONS `<IMicrosoftGraphExternalConnectorsExternalConnection- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
@@ -452,6 +452,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
+
 
 
 

@@ -303,7 +303,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDLICENSES <IMicrosoftGraphAssignedLicense- `[]`>: .
+ADDLICENSES `<IMicrosoftGraphAssignedLicense- `[]`>`: .
   - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
 IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
   - `[SkuId <String>]`: The unique identifier for the SKU.
@@ -373,6 +373,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense)
 
 [https://learn.microsoft.com/graph/api/group-assignlicense?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-assignlicense?view=graph-rest-beta)
+
 
 
 

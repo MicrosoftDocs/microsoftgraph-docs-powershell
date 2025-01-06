@@ -9,7 +9,7 @@ ms.subservice: intune
 # Remove-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Deletes a editionUpgradeConfiguration.
+Deletes a windows10SecureAssessmentConfiguration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Deletes a editionUpgradeConfiguration.
+Deletes a windows10SecureAssessmentConfiguration.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -261,7 +261,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-editionupgradeconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-editionupgradeconfiguration-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10secureassessmentconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10secureassessmentconfiguration-delete?view=graph-rest-1.0)
+
 
 
 

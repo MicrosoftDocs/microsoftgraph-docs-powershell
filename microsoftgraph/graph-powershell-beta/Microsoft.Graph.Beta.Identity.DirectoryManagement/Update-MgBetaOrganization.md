@@ -833,7 +833,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan- `[]`>: The collection of service plans associated with the tenant.
+ASSIGNEDPLANS `<IMicrosoftGraphAssignedPlan- `[]`>`: The collection of service plans associated with the tenant.
 Not nullable.
   - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -881,8 +881,8 @@ Read-only.
     - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
       - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
       - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
@@ -1166,8 +1166,8 @@ Read-only.
   - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
     - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
     - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
@@ -1307,7 +1307,7 @@ This text must be a Unicode, without links or code, and can't exceed 64 characte
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfiguration- `[]`>: Navigation property to manage certificate-based authentication configuration.
+CERTIFICATEBASEDAUTHCONFIGURATION `<IMicrosoftGraphCertificateBasedAuthConfiguration- `[]`>`: Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1337,7 +1337,7 @@ DIRECTORYSIZEQUOTA `<IMicrosoftGraphDirectorySizeQuota>`: directorySizeQuota
   - `[Total <Int32?>]`: Total amount of the directory quota.
   - `[Used <Int32?>]`: Used amount of the directory quota.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the organization resource.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the organization resource.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1411,7 +1411,7 @@ Maximum length is 255 characters.
 The URL that directs to the company's privacy statement.
 Not required.
 
-PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan- `[]`>: Not nullable.
+PROVISIONEDPLANS `<IMicrosoftGraphProvisionedPlan- `[]`>`: Not nullable.
   - `[CapabilityStatus <String>]`: For example, 'Enabled'.
   - `[ProvisioningStatus <String>]`: For example, 'Success'.
   - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
@@ -1444,7 +1444,7 @@ It is possible to disable this access for a subset of users in a Microsoft Entra
 When set to false, all users can access authorized Microsoft 365 data only in a Microsoft 365 app.
   - `[PeopleInsights <IMicrosoftGraphInsightsSettings>]`: insightsSettings
 
-VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain- `[]`>: The collection of domains associated with this tenant.
+VERIFIEDDOMAINS `<IMicrosoftGraphVerifiedDomain- `[]`>`: The collection of domains associated with this tenant.
 Not nullable.
   - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
   - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
@@ -1457,6 +1457,7 @@ Not nullable.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization)
 
 [https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-beta)
+
 
 
 

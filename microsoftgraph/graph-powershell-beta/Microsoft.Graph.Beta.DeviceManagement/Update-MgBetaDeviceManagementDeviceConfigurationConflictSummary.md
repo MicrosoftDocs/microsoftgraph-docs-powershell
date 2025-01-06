@@ -277,7 +277,7 @@ Read-only.
   - `[ContributingSettings <String- `[]`>]`: The set of settings in conflict with the given policies
   - `[DeviceCheckinsImpacted <Int32?>]`: The count of checkins impacted by the conflicting policies and settings
 
-CONFLICTINGDEVICECONFIGURATIONS <IMicrosoftGraphSettingSource- `[]`>: The set of policies in conflict with the given setting
+CONFLICTINGDEVICECONFIGURATIONS `<IMicrosoftGraphSettingSource- `[]`>`: The set of policies in conflict with the given setting
   - `[DisplayName <String>]`: 
   - `[Id <String>]`: 
   - `[SourceType <String>]`: settingSourceType
@@ -429,6 +429,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationconflictsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationconflictsummary)
+
 
 
 

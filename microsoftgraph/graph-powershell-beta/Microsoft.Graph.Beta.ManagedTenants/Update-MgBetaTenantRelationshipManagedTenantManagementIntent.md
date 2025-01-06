@@ -332,7 +332,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
   - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
-MANAGEMENTTEMPLATES <IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo- `[]`>: The collection of management templates associated with the management intent.
+MANAGEMENTTEMPLATES `<IMicrosoftGraphManagedTenantsManagementTemplateDetailedInfo- `[]`>`: The collection of management templates associated with the management intent.
 Optional.
 Read-only.
   - `[Category <String>]`: managementCategory
@@ -347,6 +347,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementintent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementintent)
+
 
 
 

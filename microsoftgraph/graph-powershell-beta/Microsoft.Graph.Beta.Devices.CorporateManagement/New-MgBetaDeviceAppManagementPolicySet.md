@@ -325,7 +325,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphPolicySetAssignment- `[]`>: Assignments of the PolicySet.
+ASSIGNMENTS `<IMicrosoftGraphPolicySetAssignment- `[]`>`: Assignments of the PolicySet.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the PolicySetAssignment.
@@ -366,7 +366,7 @@ Read-only.
   - `[RoleScopeTags <String- `[]`>]`: RoleScopeTags of the PolicySet
   - `[Status <PolicySetStatus?>]`: The enum to specify the status of PolicySet.
 
-ITEMS <IMicrosoftGraphPolicySetItem- `[]`>: Items of the PolicySet with maximum count 100.
+ITEMS `<IMicrosoftGraphPolicySetItem- `[]`>`: Items of the PolicySet with maximum count 100.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Creation time of the PolicySetItem.
@@ -381,6 +381,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementpolicyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementpolicyset)
+
 
 
 

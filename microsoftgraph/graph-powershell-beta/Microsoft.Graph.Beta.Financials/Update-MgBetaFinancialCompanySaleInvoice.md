@@ -1129,7 +1129,7 @@ PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-SALESINVOICELINES <IMicrosoftGraphSalesInvoiceLine- `[]`>: .
+SALESINVOICELINES `<IMicrosoftGraphSalesInvoiceLine- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
@@ -1220,6 +1220,7 @@ SHIPPINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoice)
+
 
 
 

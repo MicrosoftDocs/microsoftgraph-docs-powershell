@@ -65,6 +65,12 @@ Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [
 Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsetting-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-settings-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -387,6 +393,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0)
+
 
 
 

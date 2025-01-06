@@ -428,7 +428,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>: Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have cloudPCUserSetting assigned.
+ASSIGNMENTS `<IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>`: Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have cloudPCUserSetting assigned.
 Returned only on $expand.
 For an example, see Get cloudPcUserSettingample.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -587,6 +587,7 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting)
 
 [https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-beta)
+
 
 
 

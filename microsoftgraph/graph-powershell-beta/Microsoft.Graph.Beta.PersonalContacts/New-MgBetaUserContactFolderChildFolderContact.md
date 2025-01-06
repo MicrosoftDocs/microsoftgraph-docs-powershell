@@ -1019,7 +1019,7 @@ Read-only.
   - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
   - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
 
-EMAILADDRESSES <IMicrosoftGraphTypedEmailAddress- `[]`>: The contact's email addresses.
+EMAILADDRESSES `<IMicrosoftGraphTypedEmailAddress- `[]`>`: The contact's email addresses.
   - `[Address <String>]`: The email address of an entity instance.
   - `[Name <String>]`: The display name of an entity instance.
   - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string.
@@ -1027,7 +1027,7 @@ For example, you may use a specific email address for your volunteer activities.
 Set type to other, and set otherLabel to a custom string such as Volunteer work.
   - `[Type <String>]`: emailType
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the contact.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the contact.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1051,14 +1051,14 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[UserId <String>]`: The unique identifier of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the contact.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String- `[]`>]`: A collection of property values.
 
-PHONES <IMicrosoftGraphPhone- `[]`>: Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
+PHONES `<IMicrosoftGraphPhone- `[]`>`: Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 
@@ -1071,7 +1071,7 @@ Read-only.
   - `[Width <Int32?>]`: The width of the photo.
 Read-only.
 
-POSTALADDRESSES <IMicrosoftGraphPhysicalAddress- `[]`>: Addresses associated with the contact, for example, home address and business address.
+POSTALADDRESSES `<IMicrosoftGraphPhysicalAddress- `[]`>`: Addresses associated with the contact, for example, home address and business address.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
@@ -1081,14 +1081,14 @@ It's a free-format string value, for example, 'United States'.
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the contact.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String>]`: A property value.
 
-WEBSITES <IMicrosoftGraphWebsite- `[]`>: Web sites associated with the contact.
+WEBSITES `<IMicrosoftGraphWebsite- `[]`>`: Web sites associated with the contact.
   - `[Address <String>]`: The URL of the website.
   - `[DisplayName <String>]`: The display name of the web site.
   - `[Type <String>]`: websiteType
@@ -1096,6 +1096,7 @@ WEBSITES <IMicrosoftGraphWebsite- `[]`>: Web sites associated with the contact.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact)
+
 
 
 

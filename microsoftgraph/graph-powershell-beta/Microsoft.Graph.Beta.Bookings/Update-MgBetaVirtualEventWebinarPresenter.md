@@ -532,7 +532,7 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
   - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
   - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: .
+SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: .
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
@@ -687,6 +687,7 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarpresenter)
 
 [https://learn.microsoft.com/graph/api/virtualeventpresenter-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventpresenter-update?view=graph-rest-beta)
+
 
 
 

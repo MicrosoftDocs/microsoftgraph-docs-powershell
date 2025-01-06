@@ -220,7 +220,7 @@ Read-only.
       - `[Name <String>]`: Name for this key-value pair
       - `[Value <String>]`: Value for this key-value pair
 
-SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem- `[]`>: Collection of items each representing a named configuration option in the schema
+SCHEMAITEMS `<IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem- `[]`>`: Collection of items each representing a named configuration option in the schema
   - `[DataType <String>]`: Data type for a configuration item inside an Android for Work application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
@@ -236,6 +236,7 @@ SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem- `[]`>: Col
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema)
+
 
 
 

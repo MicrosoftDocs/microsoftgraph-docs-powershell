@@ -423,7 +423,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-OBJECTS <IMicrosoftGraphObjectDefinition- `[]`>: Collection of objects supported by the directory.
+OBJECTS `<IMicrosoftGraphObjectDefinition- `[]`>`: Collection of objects supported by the directory.
   - `[Attributes <IMicrosoftGraphAttributeDefinition- `[]`>]`: Defines attributes of the object.
     - `[Anchor <Boolean?>]`: true if the attribute should be used as the anchor for the object.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
@@ -466,6 +466,7 @@ Not nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjobschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjobschemadirectory)
+
 
 
 

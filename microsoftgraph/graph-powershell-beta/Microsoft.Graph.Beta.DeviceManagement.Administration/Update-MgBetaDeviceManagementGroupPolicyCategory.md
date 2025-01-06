@@ -410,7 +410,7 @@ For example: edge.admx
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
 
-CHILDREN <IMicrosoftGraphGroupPolicyCategory- `[]`>: The children categories
+CHILDREN `<IMicrosoftGraphGroupPolicyCategory- `[]`>`: The children categories
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Children <IMicrosoftGraphGroupPolicyCategory- `[]`>]`: The children categories
@@ -527,7 +527,7 @@ For example: edge.admx
   - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
   - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
 
-DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition- `[]`>: The immediate GroupPolicyDefinition children of the category
+DEFINITIONS `<IMicrosoftGraphGroupPolicyDefinition- `[]`>`: The immediate GroupPolicyDefinition children of the category
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
@@ -704,6 +704,7 @@ For example: edge.admx
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicycategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicycategory)
+
 
 
 

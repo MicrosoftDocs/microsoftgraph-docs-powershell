@@ -360,7 +360,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCEPTANCES <IMicrosoftGraphAgreementAcceptance- `[]`>: Read-only.
+ACCEPTANCES `<IMicrosoftGraphAgreementAcceptance- `[]`>`: Read-only.
 Information about acceptances of this agreement.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -576,7 +576,7 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-FILES <IMicrosoftGraphAgreementFileLocalization- `[]`>: PDFs linked to this agreement.
+FILES `<IMicrosoftGraphAgreementFileLocalization- `[]`>`: PDFs linked to this agreement.
 Note: This property is in the process of being deprecated.
 Use the file property instead.
   - `[CreatedDateTime <DateTime?>]`: The date time representing when the file was created.
@@ -741,6 +741,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreement)
+
 
 
 

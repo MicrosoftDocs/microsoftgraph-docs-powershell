@@ -5401,7 +5401,7 @@ Possible values include documentLibrary, genericList, task, survey, announcement
   - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the list.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-COLUMNS <IMicrosoftGraphColumnDefinition- `[]`>: The collection of field definitions for this list.
+COLUMNS `<IMicrosoftGraphColumnDefinition- `[]`>`: The collection of field definitions for this list.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -5563,7 +5563,7 @@ User will be prompted with this message if validation fails.
     - `[Formula <String>]`: The formula to validate column value.
 For examples, see Examples of common formulas in lists.
 
-CONTENTTYPES <IMicrosoftGraphContentType- `[]`>: The collection of content types present in this list.
+CONTENTTYPES `<IMicrosoftGraphContentType- `[]`>`: The collection of content types present in this list.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
@@ -15446,7 +15446,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-ITEMS <IMicrosoftGraphListItem- `[]`>: All items contained in the list.
+ITEMS `<IMicrosoftGraphListItem- `[]`>`: All items contained in the list.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -25059,7 +25059,7 @@ LIST `<IMicrosoftGraphListInfo>`: listInfo
   - `[Template <String>]`: An enumerated value that represents the base list template used in creating the list.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
 
-OPERATIONS <IMicrosoftGraphRichLongRunningOperation- `[]`>: The collection of long-running operations on the list.
+OPERATIONS `<IMicrosoftGraphRichLongRunningOperation- `[]`>`: The collection of long-running operations on the list.
   - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -25129,7 +25129,7 @@ SHAREPOINTIDS `<IMicrosoftGraphSharepointIds>`: sharepointIds
   - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
   - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
 
-SUBSCRIPTIONS <IMicrosoftGraphSubscription- `[]`>: The set of subscriptions on the list.
+SUBSCRIPTIONS `<IMicrosoftGraphSubscription- `[]`>`: The set of subscriptions on the list.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ApplicationId <String>]`: Optional.
@@ -25198,6 +25198,7 @@ See the possible resource path values for each supported resource.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist)
 
 [https://learn.microsoft.com/graph/api/list-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-create?view=graph-rest-1.0)
+
 
 
 

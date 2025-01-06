@@ -466,7 +466,7 @@ Read-only.
     - `[StartDateTime <DateTime?>]`: Time the action was initiated
   - `[VppTokenAccountType <VppTokenAccountType?>]`: Possible types of an Apple Volume Purchase Program token.
 
-TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult- `[]`>: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
+TOKENACTIONRESULTS `<IMicrosoftGraphVppTokenActionResult- `[]`>`: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
   - `[ActionName <String>]`: Action name
   - `[ActionState <String>]`: actionState
   - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
@@ -475,6 +475,7 @@ TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult- `[]`>: The collection o
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken)
+
 
 
 

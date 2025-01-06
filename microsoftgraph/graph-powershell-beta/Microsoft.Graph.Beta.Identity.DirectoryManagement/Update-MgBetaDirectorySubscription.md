@@ -508,7 +508,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-SERVICESTATUS <IMicrosoftGraphServicePlanInfo- `[]`>: The provisioning status of each service that's included in this subscription.
+SERVICESTATUS `<IMicrosoftGraphServicePlanInfo- `[]`>`: The provisioning status of each service that's included in this subscription.
   - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
   - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
@@ -519,6 +519,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysubscription)
+
 
 
 

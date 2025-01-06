@@ -553,7 +553,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: The unique identifier of session
   - `[UserId <String>]`: The unique identifier of user
 
-SEGMENTS <IMicrosoftGraphCallRecordsSegment- `[]`>: The list of segments involved in the session.
+SEGMENTS `<IMicrosoftGraphCallRecordsSegment- `[]`>`: The list of segments involved in the session.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -687,6 +687,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordsession](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordsession)
+
 
 
 

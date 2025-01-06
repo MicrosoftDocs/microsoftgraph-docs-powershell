@@ -440,7 +440,7 @@ Read-only.
   - `[State <String>]`: timeCardState
   - `[UserId <String>]`: User ID to which  the timeCard belongs.
 
-BREAKS <IMicrosoftGraphTimeCardBreak- `[]`>: The list of breaks associated with the timeCard.
+BREAKS `<IMicrosoftGraphTimeCardBreak- `[]`>`: The list of breaks associated with the timeCard.
   - `[BreakId <String>]`: ID of the timeCardBreak.
   - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -565,6 +565,7 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimecard)
 
 [https://learn.microsoft.com/graph/api/timecard-replace?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timecard-replace?view=graph-rest-beta)
+
 
 
 

@@ -9,7 +9,7 @@ ms.subservice: intune
 # Remove-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Deletes a windows81CompliancePolicy.
+Deletes a windows10CompliancePolicy.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Deletes a windows81CompliancePolicy.
+Deletes a windows10CompliancePolicy.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -261,7 +261,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81compliancepolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81compliancepolicy-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10compliancepolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10compliancepolicy-delete?view=graph-rest-1.0)
+
 
 
 

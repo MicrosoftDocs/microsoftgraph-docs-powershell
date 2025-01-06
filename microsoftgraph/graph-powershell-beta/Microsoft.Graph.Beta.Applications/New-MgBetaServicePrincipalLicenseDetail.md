@@ -326,7 +326,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-SERVICEPLANS <IMicrosoftGraphServicePlanInfo- `[]`>: Information about the service plans assigned with the license.
+SERVICEPLANS `<IMicrosoftGraphServicePlanInfo- `[]`>`: Information about the service plans assigned with the license.
 Read-only.
 Not nullable.
   - `[AppliesTo <String>]`: The object the service plan can be assigned to.
@@ -339,6 +339,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipallicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipallicensedetail)
+
 
 
 

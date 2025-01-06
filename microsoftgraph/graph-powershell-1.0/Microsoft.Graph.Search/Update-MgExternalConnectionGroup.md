@@ -332,7 +332,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IdentityId <String>]`: The unique identifier of identity
   - `[QnaId <String>]`: The unique identifier of qna
 
-MEMBERS <IMicrosoftGraphExternalConnectorsIdentity- `[]`>: A member added to an externalGroup.
+MEMBERS `<IMicrosoftGraphExternalConnectorsIdentity- `[]`>`: A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -343,6 +343,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup)
 
 [https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-update?view=graph-rest-1.0)
+
 
 
 

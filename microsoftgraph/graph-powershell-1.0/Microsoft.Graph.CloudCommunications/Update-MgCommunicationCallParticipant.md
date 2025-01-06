@@ -471,7 +471,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: The unique identifier of session
   - `[UserId <String>]`: The unique identifier of user
 
-MEDIASTREAMS <IMicrosoftGraphMediaStream- `[]`>: The list of media streams.
+MEDIASTREAMS `<IMicrosoftGraphMediaStream- `[]`>`: The list of media streams.
   - `[Direction <String>]`: mediaDirection
   - `[Label <String>]`: The media stream label.
   - `[MediaType <String>]`: modality
@@ -504,6 +504,7 @@ RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant)
+
 
 
 

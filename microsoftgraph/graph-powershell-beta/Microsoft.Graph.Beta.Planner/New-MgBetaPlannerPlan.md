@@ -721,7 +721,7 @@ Nullable.
   - `[Title <String>]`: Required.
 Title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerBucket- `[]`>: Collection of buckets in the plan.
+BUCKETS `<IMicrosoftGraphPlannerBucket- `[]`>`: Collection of buckets in the plan.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -990,7 +990,7 @@ Read-only.
   - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-SHAREDWITHCONTAINERS <IMicrosoftGraphPlannerSharedWithContainer- `[]`>: List of containers the plan is shared with.
+SHAREDWITHCONTAINERS `<IMicrosoftGraphPlannerSharedWithContainer- `[]`>`: List of containers the plan is shared with.
   - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
 Optional.
   - `[Type <String>]`: plannerContainerType
@@ -998,7 +998,7 @@ Optional.
 Optional.
   - `[AccessLevel <String>]`: plannerPlanAccessLevel
 
-TASKS <IMicrosoftGraphPlannerTask- `[]`>: Collection of tasks in the plan.
+TASKS `<IMicrosoftGraphPlannerTask- `[]`>`: Collection of tasks in the plan.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1196,6 +1196,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan)
 
 [https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-beta](https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-beta)
+
 
 
 

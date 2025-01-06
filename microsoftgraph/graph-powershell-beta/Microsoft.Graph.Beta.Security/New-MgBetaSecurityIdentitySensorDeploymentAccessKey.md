@@ -9,7 +9,7 @@ ms.subservice: security
 # New-MgBetaSecurityIdentitySensorDeploymentAccessKey
 
 ## SYNOPSIS
-Invoke action regenerateDeploymentAccessKey
+Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ New-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <S
 ```
 
 ## DESCRIPTION
-Invoke action regenerateDeploymentAccessKey
+Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-regeneratedeploymentaccesskey-permissions.md)]
@@ -129,6 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensordeploymentaccesskey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensordeploymentaccesskey)
+
+[https://learn.microsoft.com/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-beta)
+
 
 
 

@@ -545,12 +545,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-IPCATEGORIES <IMicrosoftGraphIPCategory- `[]`>: .
+IPCATEGORIES `<IMicrosoftGraphIPCategory- `[]`>`: .
   - `[Description <String>]`: 
   - `[Name <String>]`: 
   - `[Vendor <String>]`: 
 
-IPREFERENCEDATA <IMicrosoftGraphIPReferenceData- `[]`>: .
+IPREFERENCEDATA `<IMicrosoftGraphIPReferenceData- `[]`>`: .
   - `[Asn <Int64?>]`: 
   - `[City <String>]`: 
   - `[CountryOrRegionCode <String>]`: 
@@ -570,6 +570,7 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityipsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityipsecurityprofile)
+
 
 
 

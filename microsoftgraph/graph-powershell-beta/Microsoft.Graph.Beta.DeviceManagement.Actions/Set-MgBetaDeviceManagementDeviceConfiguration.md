@@ -241,7 +241,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment- `[]`>: .
+ASSIGNMENTS `<IMicrosoftGraphDeviceConfigurationAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Intent <DeviceConfigAssignmentIntent?>]`: The administrator intent for the assignment of the profile.
@@ -353,7 +353,7 @@ Read-only.
 Defaults that the group should be included
     - `[TargetGroupId <String>]`: The Id of the AAD group we are targeting the device configuration to.
 
-DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssignment- `[]`>: .
+DEVICECONFIGURATIONGROUPASSIGNMENTS `<IMicrosoftGraphDeviceConfigurationGroupAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>]`: Device Configuration.
@@ -512,6 +512,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeviceconfiguration)
+
 
 
 

@@ -1080,7 +1080,7 @@ PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-SALESORDERLINES <IMicrosoftGraphSalesOrderLine- `[]`>: .
+SALESORDERLINES `<IMicrosoftGraphSalesOrderLine- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
@@ -1168,6 +1168,7 @@ SHIPPINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorder)
+
 
 
 

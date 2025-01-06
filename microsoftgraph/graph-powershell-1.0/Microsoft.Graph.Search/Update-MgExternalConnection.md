@@ -576,7 +576,7 @@ CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthorizedAppIds <String- `[]`>]`: A collection of application IDs for registered Microsoft Entra apps that are allowed to manage the externalConnection and to index content in the externalConnection.
 
-GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup- `[]`>: .
+GROUPS `<IMicrosoftGraphExternalConnectorsExternalGroup- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: The description of the external group.
@@ -600,7 +600,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IdentityId <String>]`: The unique identifier of identity
   - `[QnaId <String>]`: The unique identifier of qna
 
-ITEMS <IMicrosoftGraphExternalConnectorsExternalItem- `[]`>: .
+ITEMS `<IMicrosoftGraphExternalConnectorsExternalItem- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Acl <IMicrosoftGraphExternalConnectorsAcl- `[]`>]`: An array of access control entries.
@@ -632,7 +632,7 @@ Required.
   - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation- `[]`>: .
+OPERATIONS `<IMicrosoftGraphExternalConnectorsConnectionOperation- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -719,6 +719,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection)
 
 [https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0)
+
 
 
 

@@ -425,7 +425,7 @@ Required
       - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
       - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-VALUE <IMicrosoftGraphAlert- `[]`>: .
+VALUE `<IMicrosoftGraphAlert- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActivityGroupName <String>]`: Name or alias of the activity group (attacker) this alert is attributed to.
@@ -639,6 +639,7 @@ Required
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple)
 
 [https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta)
+
 
 
 

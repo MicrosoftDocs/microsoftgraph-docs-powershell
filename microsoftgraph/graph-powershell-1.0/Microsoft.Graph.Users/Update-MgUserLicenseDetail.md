@@ -329,7 +329,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-SERVICEPLANS <IMicrosoftGraphServicePlanInfo- `[]`>: Information about the service plans assigned with the license.
+SERVICEPLANS `<IMicrosoftGraphServicePlanInfo- `[]`>`: Information about the service plans assigned with the license.
 Read-only.
 Not nullable.
   - `[AppliesTo <String>]`: The object the service plan can be assigned to.
@@ -342,6 +342,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail)
+
 
 
 

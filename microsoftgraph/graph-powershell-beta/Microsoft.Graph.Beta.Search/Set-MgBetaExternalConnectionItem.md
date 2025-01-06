@@ -9,9 +9,7 @@ ms.subservice: search
 # Set-MgBetaExternalConnectionItem
 
 ## SYNOPSIS
-Create a new externalItem.
-This API can be used to create a custom item.
-The containing externalConnection must have a schema registered of the corresponding type.
+Update the properties of an externalitem.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Set-MgExternalConnectionItem?view=graph-powershell-1.0)
@@ -51,9 +49,7 @@ Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create a new externalItem.
-This API can be used to create a custom item.
-The containing externalConnection must have a schema registered of the corresponding type.
+Update the properties of an externalitem.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-update-permissions.md)]
@@ -351,7 +347,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACL <IMicrosoftGraphExternalConnectorsAcl- `[]`>: An array of access control entries.
+ACL `<IMicrosoftGraphExternalConnectorsAcl- `[]`>`: An array of access control entries.
 Each entry specifies the access granted to a user or group.
 Required.
   - `[AccessType <String>]`: accessType
@@ -361,7 +357,7 @@ Required.
 For Microsoft Entra identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively.
 For external groups, value is set to the ID of the externalGroup.
 
-ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>: Returns a list of activities performed on the item.
+ACTIVITIES `<IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>`: Returns a list of activities performed on the item.
 Write-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -442,7 +438,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem)
 
-[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-beta)
+
 
 
 

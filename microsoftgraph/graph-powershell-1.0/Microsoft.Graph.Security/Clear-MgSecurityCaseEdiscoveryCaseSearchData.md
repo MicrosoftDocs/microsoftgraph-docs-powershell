@@ -70,6 +70,8 @@ For more information about purging Teams messages, see:- eDiscovery solution ser
 Import-Module Microsoft.Graph.Security
 
 $params = @{
+	purgeType = "recoverable"
+	purgeAreas = "teamsMessages"
 }
 
 Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
@@ -368,6 +370,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/clear-mgsecuritycaseediscoverycasesearchdata](https://learn.microsoft.com/powershell/module/microsoft.graph.security/clear-mgsecuritycaseediscoverycasesearchdata)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0)
+
 
 
 

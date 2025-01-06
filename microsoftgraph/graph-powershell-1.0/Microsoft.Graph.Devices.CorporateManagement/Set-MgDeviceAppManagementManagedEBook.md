@@ -311,7 +311,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
-MANAGEDEBOOKASSIGNMENTS <IMicrosoftGraphManagedEBookAssignment- `[]`>: .
+MANAGEDEBOOKASSIGNMENTS `<IMicrosoftGraphManagedEBookAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[InstallIntent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
@@ -323,6 +323,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook)
 
 [https://learn.microsoft.com/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0)
+
 
 
 

@@ -740,7 +740,7 @@ Read-only.
   - `[SiteInclusionRules <IMicrosoftGraphSiteProtectionRule- `[]`>]`: The list of site inclusion rules applied to the tenant.
   - `[SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit- `[]`>]`: The list of site protection units in the tenant.
 
-DRIVEINCLUSIONRULES <IMicrosoftGraphDriveProtectionRule- `[]`>: The list of drive inclusion rules applied to the tenant.
+DRIVEINCLUSIONRULES `<IMicrosoftGraphDriveProtectionRule- `[]`>`: The list of drive inclusion rules applied to the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -776,7 +776,7 @@ Read-only.
   - `[DriveExpression <String>]`: Contains a drive expression.
 For examples, see driveExpression examples.
 
-DRIVEPROTECTIONUNITS <IMicrosoftGraphDriveProtectionUnit- `[]`>: The list of drive protection units in the tenant.
+DRIVEPROTECTIONUNITS `<IMicrosoftGraphDriveProtectionUnit- `[]`>`: The list of drive protection units in the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -811,7 +811,7 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   - `[DirectoryObjectId <String>]`: ID of the directory object.
 
-EXCHANGEPROTECTIONPOLICIES <IMicrosoftGraphExchangeProtectionPolicy- `[]`>: The list of Exchange protection policies in the tenant.
+EXCHANGEPROTECTIONPOLICIES `<IMicrosoftGraphExchangeProtectionPolicy- `[]`>`: The list of Exchange protection policies in the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -870,7 +870,7 @@ For examples, see mailboxExpression examples.
 Read-only.
     - `[DirectoryObjectId <String>]`: The ID of the directory object.
 
-EXCHANGERESTORESESSIONS <IMicrosoftGraphExchangeRestoreSession- `[]`>: The list of Exchange restore sessions available in the tenant.
+EXCHANGERESTORESESSIONS `<IMicrosoftGraphExchangeRestoreSession- `[]`>`: The list of Exchange restore sessions available in the tenant.
   - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -943,7 +943,7 @@ Read-only.
 Read-only.
     - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
 
-MAILBOXINCLUSIONRULES <IMicrosoftGraphMailboxProtectionRule- `[]`>: The list of mailbox inclusion rules applied to the tenant.
+MAILBOXINCLUSIONRULES `<IMicrosoftGraphMailboxProtectionRule- `[]`>`: The list of mailbox inclusion rules applied to the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -979,7 +979,7 @@ Read-only.
   - `[MailboxExpression <String>]`: Contains a mailbox expression.
 For examples, see mailboxExpression examples.
 
-MAILBOXPROTECTIONUNITS <IMicrosoftGraphMailboxProtectionUnit- `[]`>: The list of mailbox protection units in the tenant.
+MAILBOXPROTECTIONUNITS `<IMicrosoftGraphMailboxProtectionUnit- `[]`>`: The list of mailbox protection units in the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1014,7 +1014,7 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   - `[DirectoryObjectId <String>]`: The ID of the directory object.
 
-ONEDRIVEFORBUSINESSPROTECTIONPOLICIES <IMicrosoftGraphOneDriveForBusinessProtectionPolicy- `[]`>: The list of OneDrive for Business protection policies in the tenant.
+ONEDRIVEFORBUSINESSPROTECTIONPOLICIES `<IMicrosoftGraphOneDriveForBusinessProtectionPolicy- `[]`>`: The list of OneDrive for Business protection policies in the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1073,7 +1073,7 @@ For examples, see driveExpression examples.
 Read-only.
     - `[DirectoryObjectId <String>]`: ID of the directory object.
 
-ONEDRIVEFORBUSINESSRESTORESESSIONS <IMicrosoftGraphOneDriveForBusinessRestoreSession- `[]`>: The list of OneDrive for Business restore sessions available in the tenant.
+ONEDRIVEFORBUSINESSRESTORESESSIONS `<IMicrosoftGraphOneDriveForBusinessRestoreSession- `[]`>`: The list of OneDrive for Business restore sessions available in the tenant.
   - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1134,7 +1134,7 @@ Read-only.
 Read-only.
     - `[RestoredSiteId <String>]`: The new site identifier if destinationType is new, and the input site ID if the destinationType is inPlace.
 
-PROTECTIONPOLICIES <IMicrosoftGraphProtectionPolicyBase- `[]`>: List of protection policies in the tenant.
+PROTECTIONPOLICIES `<IMicrosoftGraphProtectionPolicyBase- `[]`>`: List of protection policies in the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1156,7 +1156,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Period <TimeSpan?>]`: The period of time to retain the protected data for a single Microsoft 365 service.
   - `[Status <String>]`: protectionPolicyStatus
 
-PROTECTIONUNITS <IMicrosoftGraphProtectionUnitBase- `[]`>: List of protection units in the tenant.
+PROTECTIONUNITS `<IMicrosoftGraphProtectionUnitBase- `[]`>`: List of protection units in the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1190,7 +1190,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
   - `[Status <String>]`: protectionUnitStatus
 
-RESTOREPOINTS <IMicrosoftGraphRestorePoint- `[]`>: List of restore points in the tenant.
+RESTOREPOINTS `<IMicrosoftGraphRestorePoint- `[]`>`: List of restore points in the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Expiration date time of the restore point.
@@ -1231,7 +1231,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Status <String>]`: protectionUnitStatus
   - `[Tags <String>]`: restorePointTags
 
-RESTORESESSIONS <IMicrosoftGraphRestoreSessionBase- `[]`>: List of restore sessions in the tenant.
+RESTORESESSIONS `<IMicrosoftGraphRestoreSessionBase- `[]`>`: List of restore sessions in the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
@@ -1265,7 +1265,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of the restore session.
   - `[Status <String>]`: restoreSessionStatus
 
-SERVICEAPPS <IMicrosoftGraphServiceApp- `[]`>: List of Backup Storage apps in the tenant.
+SERVICEAPPS `<IMicrosoftGraphServiceApp- `[]`>`: List of Backup Storage apps in the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1303,7 +1303,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[RestoreAllowedTillDateTime <DateTime?>]`: The expiration time of the restoration allowed period.
   - `[Status <String>]`: backupServiceStatus
 
-SHAREPOINTPROTECTIONPOLICIES <IMicrosoftGraphSharePointProtectionPolicy- `[]`>: The list of SharePoint protection policies in the tenant.
+SHAREPOINTPROTECTIONPOLICIES `<IMicrosoftGraphSharePointProtectionPolicy- `[]`>`: The list of SharePoint protection policies in the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1362,7 +1362,7 @@ For examples, see siteExpression example.
 Read-only.
     - `[SiteId <String>]`: Unique identifier of the SharePoint site.
 
-SHAREPOINTRESTORESESSIONS <IMicrosoftGraphSharePointRestoreSession- `[]`>: The list of SharePoint restore sessions available in the tenant.
+SHAREPOINTRESTORESESSIONS `<IMicrosoftGraphSharePointRestoreSession- `[]`>`: The list of SharePoint restore sessions available in the tenant.
   - `[CompletedDateTime <DateTime?>]`: The time of completion of the restore session.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1423,7 +1423,7 @@ Read-only.
 Read-only.
     - `[RestoredSiteId <String>]`: The new site identifier if the value of the destinationType property is new, and the existing site ID if the value is inPlace.
 
-SITEINCLUSIONRULES <IMicrosoftGraphSiteProtectionRule- `[]`>: The list of site inclusion rules applied to the tenant.
+SITEINCLUSIONRULES `<IMicrosoftGraphSiteProtectionRule- `[]`>`: The list of site inclusion rules applied to the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1459,7 +1459,7 @@ Read-only.
   - `[SiteExpression <String>]`: Contains a site expression.
 For examples, see siteExpression example.
 
-SITEPROTECTIONUNITS <IMicrosoftGraphSiteProtectionUnit- `[]`>: The list of site protection units in the tenant.
+SITEPROTECTIONUNITS `<IMicrosoftGraphSiteProtectionUnit- `[]`>`: The list of site protection units in the tenant.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1497,6 +1497,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestore](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestore)
+
 
 
 

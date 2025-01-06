@@ -70,6 +70,8 @@ For more information about purging Teams messages, see:- eDiscovery solution ser
 Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
+	purgeType = "recoverable"
+	purgeAreas = "teamsMessages"
 }
 
 Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
@@ -394,6 +396,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/clear-mgbetasecuritycaseediscoverycasesearchdata](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/clear-mgbetasecuritycaseediscoverycasesearchdata)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta)
+
 
 
 

@@ -253,13 +253,14 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
+VALUE `<IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>`: .
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationsecret](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationsecret)
+
 
 
 

@@ -333,7 +333,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDANCEINTERVALS <IMicrosoftGraphAttendanceInterval- `[]`>: List of time periods between joining and leaving a meeting.
+ATTENDANCEINTERVALS `<IMicrosoftGraphAttendanceInterval- `[]`>`: List of time periods between joining and leaving a meeting.
   - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
   - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
   - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
@@ -391,6 +391,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsessionattendancereportattendancerecord](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsessionattendancereportattendancerecord)
+
 
 
 

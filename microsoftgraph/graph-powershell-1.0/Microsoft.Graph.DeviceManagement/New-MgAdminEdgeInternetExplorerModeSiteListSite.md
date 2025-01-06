@@ -474,7 +474,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[TargetEnvironment <BrowserSiteTargetEnvironment?>]`: browserSiteTargetEnvironment
   - `[WebUrl <String>]`: The URL of the site.
 
-HISTORY <IMicrosoftGraphBrowserSiteHistory- `[]`>: The history of modifications applied to the site.
+HISTORY `<IMicrosoftGraphBrowserSiteHistory- `[]`>`: The history of modifications applied to the site.
   - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites.
 If true, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.
   - `[Comment <String>]`: The comment for the site.
@@ -565,6 +565,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite)
 
 [https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0)
+
 
 
 

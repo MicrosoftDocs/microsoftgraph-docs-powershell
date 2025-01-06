@@ -427,7 +427,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALL <IMicrosoftGraphPlannerDelta- `[]`>: .
+ALL `<IMicrosoftGraphPlannerDelta- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
@@ -741,7 +741,7 @@ Returns the plannerPlans contained by the plannerRosters the user is a member.
 Nullable.
 Returns the plannerTasks assigned to the user.
 
-FAVORITEPLANS <IMicrosoftGraphPlannerPlan- `[]`>: Read-only.
+FAVORITEPLANS `<IMicrosoftGraphPlannerPlan- `[]`>`: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1037,7 +1037,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-MYDAYTASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+MYDAYTASKS `<IMicrosoftGraphPlannerTask- `[]`>`: Read-only.
 Nullable.
 Returns the plannerTasks to be shown in the My Day view of the user.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1230,7 +1230,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Title <String>]`: Title of the task.
 
-PLANS <IMicrosoftGraphPlannerPlan- `[]`>: .
+PLANS `<IMicrosoftGraphPlannerPlan- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
@@ -1514,7 +1514,7 @@ Nullable.
   - `[Title <String>]`: Required.
 Title of the plan.
 
-RECENTPLANS <IMicrosoftGraphPlannerPlan- `[]`>: Read-only.
+RECENTPLANS `<IMicrosoftGraphPlannerPlan- `[]`>`: Read-only.
 Nullable.
 Returns the plannerPlans that the user recently viewed in apps that support recent plans.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1800,7 +1800,7 @@ Nullable.
   - `[Title <String>]`: Required.
 Title of the plan.
 
-ROSTERPLANS <IMicrosoftGraphPlannerPlan- `[]`>: Read-only.
+ROSTERPLANS `<IMicrosoftGraphPlannerPlan- `[]`>`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2086,7 +2086,7 @@ Nullable.
   - `[Title <String>]`: Required.
 Title of the plan.
 
-TASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+TASKS `<IMicrosoftGraphPlannerTask- `[]`>`: Read-only.
 Nullable.
 Returns the plannerTasks assigned to the user.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2282,6 +2282,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner)
+
 
 
 

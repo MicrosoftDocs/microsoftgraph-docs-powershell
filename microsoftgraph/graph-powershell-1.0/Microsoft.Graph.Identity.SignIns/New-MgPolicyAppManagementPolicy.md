@@ -52,32 +52,41 @@ $params = @{
 		passwordCredentials = @(
 			@{
 				restrictionType = "passwordAddition"
+				state = "enabled"
 				maxLifetime = $null
 				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2019-10-19T10:37:00Z")
 			}
 			@{
 				restrictionType = "passwordLifetime"
-				maxLifetime = "P4DT12H30M5S"
+				state = "enabled"
+				maxLifetime = "P90D"
 				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2014-10-19T10:37:00Z")
 			}
 			@{
 				restrictionType = "symmetricKeyAddition"
+				state = "enabled"
 				maxLifetime = $null
 				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2019-10-19T10:37:00Z")
 			}
 			@{
 				restrictionType = "symmetricKeyLifetime"
-				maxLifetime = "P4D"
-				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2014-10-19T10:37:00Z")
-			}
-		)
-		keyCredentials = @(
-			@{
-				restrictionType = "asymmetricKeyLifetime"
+				state = "enabled"
 				maxLifetime = "P90D"
 				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2014-10-19T10:37:00Z")
 			}
 		)
+		keyCredentials = @(
+		)
+		applicationRestrictions = @{
+			identifierUris = @{
+				nonDefaultUriAddition = @{
+					state = "disabled"
+					restrictForAppsCreatedAfterDateTime = $null
+					excludeAppsReceivingV2Tokens = $true
+					excludeSaml = $true
+				}
+			}
+		}
 	}
 }
 
@@ -322,7 +331,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: Collection of applications and service principals to which the policy is applied.
+APPLIESTO `<IMicrosoftGraphDirectoryObject- `[]`>`: Collection of applications and service principals to which the policy is applied.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -371,6 +380,7 @@ To apply to all applications, enforcement datetime would be null.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy)
 
 [https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-1.0)
+
 
 
 

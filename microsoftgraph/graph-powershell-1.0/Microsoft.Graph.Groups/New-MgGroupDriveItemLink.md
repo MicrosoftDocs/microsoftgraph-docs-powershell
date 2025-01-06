@@ -425,7 +425,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient- `[]`>: .
+RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
@@ -436,6 +436,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlink)
 
 [https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
+
 
 
 

@@ -408,7 +408,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-KEYS <IMicrosoftGraphTrustFrameworkKey- `[]`>: A collection of the keys.
+KEYS `<IMicrosoftGraphTrustFrameworkKey- `[]`>`: A collection of the keys.
   - `[D <String>]`: RSA Key - private exponent.
 The field isn't readable.
   - `[Dp <String>]`: RSA Key - first exponent.
@@ -441,7 +441,7 @@ For more information, see RFC 5280.
   - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
 For more information, see RFC 5280.
 
-KEYSV2 <IMicrosoftGraphTrustFrameworkKeyV2- `[]`>: A collection of the keys.
+KEYSV2 `<IMicrosoftGraphTrustFrameworkKeyV2- `[]`>`: A collection of the keys.
   - `[D <String>]`: RSA Key - private exponent.
 The field isn't readable.
   - `[Dp <String>]`: RSA Key - first exponent.
@@ -480,6 +480,7 @@ For more information, see RFC 5280.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset)
 
 [https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta)
+
 
 
 

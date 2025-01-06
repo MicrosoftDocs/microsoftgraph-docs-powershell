@@ -214,13 +214,14 @@ Read-only.
     - `[TargetType <String>]`: authenticationMethodTargetType
   - `[State <String>]`: authenticationMethodState
 
-EXCLUDETARGETS <IMicrosoftGraphExcludeTarget- `[]`>: Groups of users that are excluded from a policy.
+EXCLUDETARGETS `<IMicrosoftGraphExcludeTarget- `[]`>`: Groups of users that are excluded from a policy.
   - `[Id <String>]`: The object identifier of a Microsoft Entra group.
   - `[TargetType <String>]`: authenticationMethodTargetType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
+
 
 
 

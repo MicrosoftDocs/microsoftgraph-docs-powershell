@@ -559,7 +559,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-JOBS <IMicrosoftGraphSynchronizationJob- `[]`>: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
+JOBS `<IMicrosoftGraphSynchronizationJob- `[]`>`: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[BulkUpload <IMicrosoftGraphBulkUpload>]`: bulkUpload
@@ -789,11 +789,11 @@ Some settings are inherited from the template.
     - `[Value <String>]`: Value for this key-value pair
   - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
 
-SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: Represents a collection of credentials to access provisioned cloud applications.
+SECRETS `<IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>`: Represents a collection of credentials to access provisioned cloud applications.
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-TEMPLATES <IMicrosoftGraphSynchronizationTemplate- `[]`>: Pre-configured synchronization settings for a particular application.
+TEMPLATES `<IMicrosoftGraphSynchronizationTemplate- `[]`>`: Pre-configured synchronization settings for a particular application.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ApplicationId <String>]`: Identifier of the application this template belongs to.
@@ -951,6 +951,7 @@ Must match one of the directory definitions in synchronizationSchema.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronization)
+
 
 
 

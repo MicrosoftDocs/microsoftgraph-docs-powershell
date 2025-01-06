@@ -356,7 +356,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Title <String>]`: Title of the task.
 
-TASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+TASKS `<IMicrosoftGraphPlannerTask- `[]`>`: Read-only.
 Nullable.
 The collection of tasks in the bucket.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -450,6 +450,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerbucket)
 
 [https://learn.microsoft.com/graph/api/planner-post-buckets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-post-buckets?view=graph-rest-1.0)
+
 
 
 

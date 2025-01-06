@@ -197,7 +197,7 @@ Key.
   - `[UserId <String>]`: The object id of the external user.
 Read-only.
 
-TENANTS <IMicrosoftGraphTenantReference- `[]`>: The collection of external Microsoft Entra tenants that the user shared profile data with.
+TENANTS `<IMicrosoftGraphTenantReference- `[]`>`: The collection of external Microsoft Entra tenants that the user shared profile data with.
 Read-only.
   - `[TenantId <String>]`: The identifier of the Microsoft Entra tenant.
 Read-only.
@@ -206,6 +206,7 @@ Key.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile)
+
 
 
 

@@ -411,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementIntentAssignment- `[]`>: Collection of assignments
+ASSIGNMENTS `<IMicrosoftGraphDeviceManagementIntentAssignment- `[]`>`: Collection of assignments
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -511,7 +511,7 @@ Read-only.
     - `[UserName <String>]`: The user name that is being reported on a device
     - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
 
-CATEGORIES <IMicrosoftGraphDeviceManagementIntentSettingCategory- `[]`>: Collection of setting categories within the intent
+CATEGORIES `<IMicrosoftGraphDeviceManagementIntentSettingCategory- `[]`>`: Collection of setting categories within the intent
   - `[DisplayName <String>]`: The category name
   - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>]`: The setting definitions this category contains
@@ -538,7 +538,7 @@ Read-only.
     - `[DefinitionId <String>]`: The ID of the setting definition for this instance
     - `[ValueJson <String>]`: JSON representation of the value
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary- `[]`>: Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
+DEVICESETTINGSTATESUMMARIES `<IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary- `[]`>`: Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompliantCount <Int32?>]`: Number of compliant devices
@@ -549,7 +549,7 @@ Read-only.
   - `[RemediatedCount <Int32?>]`: Number of remediated devices
   - `[SettingName <String>]`: Name of a setting
 
-DEVICESTATES <IMicrosoftGraphDeviceManagementIntentDeviceState- `[]`>: Collection of states of all devices that the intent is applied to
+DEVICESTATES `<IMicrosoftGraphDeviceManagementIntentDeviceState- `[]`>`: Collection of states of all devices that the intent is applied to
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceDisplayName <String>]`: Device name that is being reported
@@ -570,13 +570,13 @@ Read-only.
   - `[NotApplicablePlatformCount <Int32?>]`: Number of not applicable devices due to mismatch platform and policy
   - `[SuccessCount <Int32?>]`: Number of succeeded devices
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>: Collection of all settings to be applied
+SETTINGS `<IMicrosoftGraphDeviceManagementSettingInstance- `[]`>`: Collection of all settings to be applied
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
   - `[ValueJson <String>]`: JSON representation of the value
 
-USERSTATES <IMicrosoftGraphDeviceManagementIntentUserState- `[]`>: Collection of states of all users that the intent is applied to
+USERSTATES `<IMicrosoftGraphDeviceManagementIntentUserState- `[]`>`: Collection of states of all users that the intent is applied to
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceCount <Int32?>]`: Count of Devices that belongs to a user for an intent
@@ -598,6 +598,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementintent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementintent)
+
 
 
 

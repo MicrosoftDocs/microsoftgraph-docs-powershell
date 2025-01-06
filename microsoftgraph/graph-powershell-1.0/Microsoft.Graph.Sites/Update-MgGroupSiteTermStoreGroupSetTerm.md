@@ -521,7 +521,7 @@ Read-only.
     - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
-CHILDREN <IMicrosoftGraphTermStoreTerm- `[]`>: Children of current term.
+CHILDREN `<IMicrosoftGraphTermStoreTerm- `[]`>`: Children of current term.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm- `[]`>]`: Children of current term.
@@ -572,7 +572,7 @@ Read-only.
     - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
-DESCRIPTIONS <IMicrosoftGraphTermStoreLocalizedDescription- `[]`>: Description about term that is dependent on the languageTag.
+DESCRIPTIONS `<IMicrosoftGraphTermStoreLocalizedDescription- `[]`>`: Description about term that is dependent on the languageTag.
   - `[Description <String>]`: The description in the localized language.
   - `[LanguageTag <String>]`: The language tag for the label.
 
@@ -621,16 +621,16 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-LABELS <IMicrosoftGraphTermStoreLocalizedLabel- `[]`>: Label metadata for a term.
+LABELS `<IMicrosoftGraphTermStoreLocalizedLabel- `[]`>`: Label metadata for a term.
   - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
   - `[LanguageTag <String>]`: The language tag for the label.
   - `[Name <String>]`: The name of the label.
 
-PROPERTIES <IMicrosoftGraphKeyValue- `[]`>: Collection of properties on the term.
+PROPERTIES `<IMicrosoftGraphKeyValue- `[]`>`: Collection of properties on the term.
   - `[Key <String>]`: Key for the key-value pair.
   - `[Value <String>]`: Value for the key-value pair.
 
-RELATIONS <IMicrosoftGraphTermStoreRelation- `[]`>: To indicate which terms are related to the current term as either pinned or reused.
+RELATIONS `<IMicrosoftGraphTermStoreRelation- `[]`>`: To indicate which terms are related to the current term as either pinned or reused.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -736,6 +736,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetterm)
+
 
 
 

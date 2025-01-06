@@ -259,7 +259,7 @@ Valid values 0 to 8760
       - `[NotificationMessageCcList <String- `[]`>]`: A list of group IDs to speicify who to CC this notification message to.
       - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-DEVICECOMPLIANCESCHEDULEDACTIONFORRULES <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>: .
+DEVICECOMPLIANCESCHEDULEDACTIONFORRULES `<IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
@@ -334,6 +334,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetascheduledevicemanagementdevicecompliancepolicyactionforrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetascheduledevicemanagementdevicecompliancepolicyactionforrule)
+
 
 
 

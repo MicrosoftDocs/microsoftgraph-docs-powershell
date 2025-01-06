@@ -57,9 +57,6 @@ New-MgBetaSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a new permission object on a site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-permissions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -733,7 +730,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission)
 
 [https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-beta)
-
 
 
 

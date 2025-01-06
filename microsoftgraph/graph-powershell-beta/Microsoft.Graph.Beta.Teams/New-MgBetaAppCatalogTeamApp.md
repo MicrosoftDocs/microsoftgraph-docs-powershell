@@ -269,7 +269,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition- `[]`>: The details for each version of the app.
+APPDEFINITIONS `<IMicrosoftGraphTeamsAppDefinition- `[]`>`: The details for each version of the app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
@@ -429,6 +429,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp)
 
 [https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
+
 
 
 

@@ -829,7 +829,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-REMINDERS <IMicrosoftGraphBookingReminder- `[]`>: The collection of customer reminders sent for this appointment.
+REMINDERS `<IMicrosoftGraphBookingReminder- `[]`>`: The collection of customer reminders sent for this appointment.
 The value of this property is available only when reading this bookingAppointment by its ID.
   - `[Message <String>]`: The message in the reminder.
   - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
@@ -872,6 +872,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment)
 
 [https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0)
+
 
 
 

@@ -814,7 +814,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTFILTEREVALUATIONSTATUSDETAILS <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails- `[]`>: Managed device mobile app configuration states for this device.
+ASSIGNMENTFILTEREVALUATIONSTATUSDETAILS `<IMicrosoftGraphAssignmentFilterEvaluationStatusDetails- `[]`>`: Managed device mobile app configuration states for this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[PayloadId <String>]`: PayloadId on which filter has been applied.
@@ -1431,8 +1431,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -6822,7 +6822,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8876,7 +8876,7 @@ Defaults to setting on client device.
     - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled.
 Defaults to setting on client device.
 
-CHROMEOSDEVICEINFO <IMicrosoftGraphChromeOSDeviceProperty- `[]`>: List of properties of the ChromeOS Device.
+CHROMEOSDEVICEINFO `<IMicrosoftGraphChromeOSDeviceProperty- `[]`>`: List of properties of the ChromeOS Device.
 Default is an empty list.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
   - `[Name <String>]`: Name of the property
@@ -8884,7 +8884,7 @@ To retrieve actual values GET call needs to be made, with device id and included
   - `[Value <String>]`: Value of the property
   - `[ValueType <String>]`: Type of the value
 
-CLOUDPCREMOTEACTIONRESULTS <IMicrosoftGraphCloudPcRemoteActionResult- `[]`>: .
+CLOUDPCREMOTEACTIONRESULTS `<IMicrosoftGraphCloudPcRemoteActionResult- `[]`>`: .
   - `[ActionName <String>]`: The specified action.
 Supported values in the Microsoft Endpoint Manager portal are: Reprovision, Resize, Restore.
 Supported values in enterprise Cloud PC devices are: Reboot, Rename, Reprovision, Troubleshoot.
@@ -8939,7 +8939,7 @@ CONFIGURATIONMANAGERCLIENTINFORMATION `<IMicrosoftGraphConfigurationManagerClien
   - `[ClientVersion <String>]`: Configuration Manager Client version from SCCM
   - `[IsBlocked <Boolean?>]`: Configuration Manager Client blocked status from SCCM
 
-DETECTEDAPPS <IMicrosoftGraphDetectedApp- `[]`>: All applications currently installed on the device
+DETECTEDAPPS `<IMicrosoftGraphDetectedApp- `[]`>`: All applications currently installed on the device
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
@@ -9540,8 +9540,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Contains the name of the field that a value is associated with.
-            - `[Value <String>]`: Contains the corresponding value for the specified key.
+            - `[Key <String>]`: Key.
+            - `[Value <String>]`: Value.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -14931,7 +14931,7 @@ It is an Optional field
         - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -17005,7 +17005,7 @@ Read-only.
   - `[DisplayName <String>]`: Display name for the device category.
   - `[RoleScopeTagIds <String- `[]`>]`: Optional role scope tags for the device category.
 
-DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState- `[]`>: Device compliance policy states for this device.
+DEVICECOMPLIANCEPOLICYSTATES `<IMicrosoftGraphDeviceCompliancePolicyState- `[]`>`: Device compliance policy states for this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
@@ -17033,7 +17033,7 @@ Read-only.
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState- `[]`>: Device configuration states for this device.
+DEVICECONFIGURATIONSTATES `<IMicrosoftGraphDeviceConfigurationState- `[]`>`: Device configuration states for this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
@@ -17134,7 +17134,7 @@ Only Windows 11 devices will have values "enabled" or "disabled".
 Windows 10 devices will have value "notApplicable".
   - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
 
-DEVICEHEALTHSCRIPTSTATES <IMicrosoftGraphDeviceHealthScriptPolicyState- `[]`>: Results of device health scripts that ran for this device.
+DEVICEHEALTHSCRIPTSTATES `<IMicrosoftGraphDeviceHealthScriptPolicyState- `[]`>`: Results of device health scripts that ran for this device.
 Default is empty list.
 This property is read-only.
   - `[AssignmentFilterIds <String- `[]`>]`: A list of the assignment filter ids used for health script applicability evaluation
@@ -17224,7 +17224,7 @@ Valid values 0 to 2147483647
 The update frequency (the maximum delay for the change of property value to be synchronized from the device to the cloud storage) of this property is daily.
 Note this property is currently supported only on devices running on Windows.
 
-LOGCOLLECTIONREQUESTS <IMicrosoftGraphDeviceLogCollectionResponse- `[]`>: List of log collection requests
+LOGCOLLECTIONREQUESTS `<IMicrosoftGraphDeviceLogCollectionResponse- `[]`>`: List of log collection requests
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[EnrolledByUser <String>]`: The User Principal Name (UPN) of the user that enrolled the device.
@@ -17241,7 +17241,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-MANAGEDDEVICEMOBILEAPPCONFIGURATIONSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationState- `[]`>: Managed device mobile app configuration states for this device.
+MANAGEDDEVICEMOBILEAPPCONFIGURATIONSTATES `<IMicrosoftGraphManagedDeviceMobileAppConfigurationState- `[]`>`: Managed device mobile app configuration states for this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
@@ -17269,7 +17269,7 @@ Read-only.
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-SECURITYBASELINESTATES <IMicrosoftGraphSecurityBaselineState- `[]`>: Security baseline states for this device.
+SECURITYBASELINESTATES `<IMicrosoftGraphSecurityBaselineState- `[]`>`: Security baseline states for this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the security baseline
@@ -17294,7 +17294,7 @@ Read-only.
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
   - `[UserPrincipalName <String>]`: User Principal Name
 
-USERS <IMicrosoftGraphUser- `[]`>: The primary users associated with the managed device.
+USERS `<IMicrosoftGraphUser- `[]`>`: The primary users associated with the managed device.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -17513,8 +17513,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -23343,7 +23343,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -25401,6 +25401,7 @@ Defaults to setting on client device.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddevice)
+
 
 
 

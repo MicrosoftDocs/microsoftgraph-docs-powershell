@@ -271,7 +271,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICABLECONTENT <IMicrosoftGraphWindowsUpdatesApplicableContent- `[]`>: Content eligible to deploy to devices in the audience.
+APPLICABLECONTENT `<IMicrosoftGraphWindowsUpdatesApplicableContent- `[]`>`: Content eligible to deploy to devices in the audience.
 Not nullable.
 Read-only.
   - `[CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>]`: catalogEntry
@@ -323,7 +323,7 @@ Read-only.
 Read-only.
   - `[Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: Specifies the assets to include in the audience.
 
-EXCLUSIONS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: Specifies the assets to exclude from the audience.
+EXCLUSIONS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: Specifies the assets to exclude from the audience.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
@@ -344,13 +344,14 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
-MEMBERS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: Specifies the assets to include in the audience.
+MEMBERS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: Specifies the assets to include in the audience.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudience](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudience)
+
 
 
 

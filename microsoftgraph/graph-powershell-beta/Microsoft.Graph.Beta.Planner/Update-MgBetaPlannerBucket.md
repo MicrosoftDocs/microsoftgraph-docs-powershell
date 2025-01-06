@@ -614,7 +614,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-TASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+TASKS `<IMicrosoftGraphPlannerTask- `[]`>`: Read-only.
 Nullable.
 The collection of tasks in the bucket.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -812,6 +812,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerbucket)
 
 [https://learn.microsoft.com/graph/api/plannerbucket-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerbucket-update?view=graph-rest-beta)
+
 
 
 

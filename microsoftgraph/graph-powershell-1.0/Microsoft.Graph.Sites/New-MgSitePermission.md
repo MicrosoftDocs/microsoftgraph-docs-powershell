@@ -57,9 +57,6 @@ New-MgSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create a new permission object on a site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-permissions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -706,7 +703,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepermission)
 
 [https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-1.0)
-
 
 
 

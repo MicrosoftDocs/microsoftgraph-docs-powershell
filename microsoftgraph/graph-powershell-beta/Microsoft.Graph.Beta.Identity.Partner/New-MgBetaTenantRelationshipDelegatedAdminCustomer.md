@@ -240,7 +240,7 @@ Read-only.
   - `[TenantId <String>]`: The Microsoft Entra ID-assigned tenant ID of the customer.
 Read-only.
 
-SERVICEMANAGEMENTDETAILS <IMicrosoftGraphDelegatedAdminServiceManagementDetail- `[]`>: Contains the management details of a service in the customer tenant that's managed by delegated administration.
+SERVICEMANAGEMENTDETAILS `<IMicrosoftGraphDelegatedAdminServiceManagementDetail- `[]`>`: Contains the management details of a service in the customer tenant that's managed by delegated administration.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ServiceManagementUrl <String>]`: The URL of the management portal for the managed service.
@@ -251,6 +251,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadmincustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadmincustomer)
+
 
 
 

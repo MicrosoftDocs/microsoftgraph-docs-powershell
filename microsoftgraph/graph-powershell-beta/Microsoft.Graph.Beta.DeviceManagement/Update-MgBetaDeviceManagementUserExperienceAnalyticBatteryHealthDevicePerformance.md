@@ -514,7 +514,7 @@ Valid values 0 to 2147483647
   - `[Model <String>]`: The model name of the device.
 Deprecated in favor of DeviceModelName.
 
-DEVICEBATTERIESDETAILS <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail- `[]`>: Properties (maxCapacity and cycleCount) related to all batteries of the device.
+DEVICEBATTERIESDETAILS `<IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail- `[]`>`: Properties (maxCapacity and cycleCount) related to all batteries of the device.
   - `[BatteryId <String>]`: Uniquely identifies the batteries in a single device.
   - `[FullBatteryDrainCount <Int32?>]`: Number of times the battery has been discharged an amount that equals 100% of its capacity, but not necessarily by discharging it from 100% to 0%.
 Valid values 0 to 2147483647
@@ -669,6 +669,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance)
+
 
 
 

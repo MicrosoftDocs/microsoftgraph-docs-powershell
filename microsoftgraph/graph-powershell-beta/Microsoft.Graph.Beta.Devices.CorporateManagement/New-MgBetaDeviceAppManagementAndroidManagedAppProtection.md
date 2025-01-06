@@ -1774,19 +1774,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPROVEDKEYBOARDS <IMicrosoftGraphKeyValuePair- `[]`>: If Keyboard Restriction is enabled, only keyboards in this approved list will be allowed.
+APPROVEDKEYBOARDS `<IMicrosoftGraphKeyValuePair- `[]`>`: If Keyboard Restriction is enabled, only keyboards in this approved list will be allowed.
 A key should be Android package id for a keyboard and value should be a friendly name
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-APPS <IMicrosoftGraphManagedMobileApp- `[]`>: List of apps to which the policy is deployed.
+APPS `<IMicrosoftGraphManagedMobileApp- `[]`>`: List of apps to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: Version of the entity.
 
-ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+ASSIGNMENTS `<IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
@@ -1950,13 +1950,14 @@ Read-only.
   - `[LastRefreshTime <DateTime?>]`: 
   - `[Version <String>]`: Version of the entity.
 
-EXEMPTEDAPPPACKAGES <IMicrosoftGraphKeyValuePair- `[]`>: App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
+EXEMPTEDAPPPACKAGES `<IMicrosoftGraphKeyValuePair- `[]`>`: App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection)
+
 
 
 

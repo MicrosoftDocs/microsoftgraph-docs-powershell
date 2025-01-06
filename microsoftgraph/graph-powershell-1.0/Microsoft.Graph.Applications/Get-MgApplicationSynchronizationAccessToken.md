@@ -269,7 +269,7 @@ BODYPARAMETER `<IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGr
     - `[Key <String>]`: synchronizationSecret
     - `[Value <String>]`: The value of the secret.
 
-CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
+CREDENTIALS `<IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>`: .
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
@@ -304,6 +304,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationaccesstoken](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationaccesstoken)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronization-acquireaccesstoken?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-acquireaccesstoken?view=graph-rest-1.0)
+
 
 
 

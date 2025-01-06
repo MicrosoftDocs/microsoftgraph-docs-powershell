@@ -258,7 +258,7 @@ Read-only.
     - `[SerialNumber <String>]`: Device serial number
   - `[OverwriteImportedDeviceIdentities <Boolean?>]`: 
 
-IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity- `[]`>: .
+IMPORTEDAPPLEDEVICEIDENTITIES `<IMicrosoftGraphImportedAppleDeviceIdentity- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
@@ -333,6 +333,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentityappledeviceidentitylist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentityappledeviceidentitylist)
+
 
 
 

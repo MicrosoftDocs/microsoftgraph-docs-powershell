@@ -262,7 +262,7 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
       - `[WebUrl <String>]`: The URL of the site.
     - `[Status <BrowserSiteListStatus?>]`: browserSiteListStatus
 
-SITELISTS <IMicrosoftGraphBrowserSiteList- `[]`>: A collection of site lists to support Internet Explorer mode.
+SITELISTS `<IMicrosoftGraphBrowserSiteList- `[]`>`: A collection of site lists to support Internet Explorer mode.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: The description of the site list.
@@ -334,6 +334,7 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermode)
+
 
 
 

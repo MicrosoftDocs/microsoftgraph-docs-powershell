@@ -700,7 +700,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-CHILDHOSTPAIRS <IMicrosoftGraphSecurityHostPair- `[]`>: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
+CHILDHOSTPAIRS `<IMicrosoftGraphSecurityHostPair- `[]`>`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
@@ -976,7 +976,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LinkKind <String>]`: The reason that two hosts are identified as hostPair.
   - `[ParentHost <IMicrosoftGraphSecurityHost>]`: host
 
-COMPONENTS <IMicrosoftGraphSecurityHostComponent- `[]`>: The hostComponents that are associated with this host.
+COMPONENTS `<IMicrosoftGraphSecurityHostComponent- `[]`>`: The hostComponents that are associated with this host.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Category <String>]`: The type of component that was detected (for example, Operating System, Framework, Remote Access, or Server).
@@ -1252,7 +1252,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[Version <String>]`: The component version running on the artifact, for example, v8.5.
 This shouldn't be assumed to be strictly numerical.
 
-COOKIES <IMicrosoftGraphSecurityHostCookie- `[]`>: The hostCookies that are associated with this host.
+COOKIES `<IMicrosoftGraphSecurityHostCookie- `[]`>`: The hostCookies that are associated with this host.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Domain <String>]`: The URI for which the cookie is valid.
@@ -1528,7 +1528,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[Name <String>]`: The name of the cookie, for example, JSESSIONID or SEARCH_NAMESITE.
 
-HOSTPAIRS <IMicrosoftGraphSecurityHostPair- `[]`>: The hostPairs that are associated with this host, where this host is either the parentHost or childHost.
+HOSTPAIRS `<IMicrosoftGraphSecurityHostPair- `[]`>`: The hostPairs that are associated with this host, where this host is either the parentHost or childHost.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
@@ -1804,7 +1804,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LinkKind <String>]`: The reason that two hosts are identified as hostPair.
   - `[ParentHost <IMicrosoftGraphSecurityHost>]`: host
 
-PARENTHOSTPAIRS <IMicrosoftGraphSecurityHostPair- `[]`>: The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
+PARENTHOSTPAIRS `<IMicrosoftGraphSecurityHostPair- `[]`>`: The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
@@ -2080,7 +2080,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LinkKind <String>]`: The reason that two hosts are identified as hostPair.
   - `[ParentHost <IMicrosoftGraphSecurityHost>]`: host
 
-PASSIVEDNS <IMicrosoftGraphSecurityPassiveDnsRecord- `[]`>: Passive DNS retrieval about this host.
+PASSIVEDNS `<IMicrosoftGraphSecurityPassiveDnsRecord- `[]`>`: Passive DNS retrieval about this host.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
@@ -2356,7 +2356,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[RecordType <String>]`: The DNS record type for this passiveDnsRecord entry.
 
-PASSIVEDNSREVERSE <IMicrosoftGraphSecurityPassiveDnsRecord- `[]`>: Reverse passive DNS retrieval about this host.
+PASSIVEDNSREVERSE `<IMicrosoftGraphSecurityPassiveDnsRecord- `[]`>`: Reverse passive DNS retrieval about this host.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
@@ -2632,7 +2632,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[RecordType <String>]`: The DNS record type for this passiveDnsRecord entry.
 
-PORTS <IMicrosoftGraphSecurityHostPort- `[]`>: The hostPorts associated with a host.
+PORTS `<IMicrosoftGraphSecurityHostPort- `[]`>`: The hostPorts associated with a host.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Banners <IMicrosoftGraphSecurityHostPortBanner- `[]`>]`: The hostPortBanners retrieved from scanning the port.
@@ -2921,7 +2921,7 @@ Read-only.
   - `[Score <Int32?>]`: The calculated score (0-100) of the requested host.
 A higher value indicates that this host is more likely to be suspicious or malicious.
 
-SSLCERTIFICATES <IMicrosoftGraphSecurityHostSslCertificate- `[]`>: The hostSslCertificates that are associated with this host.
+SSLCERTIFICATES `<IMicrosoftGraphSecurityHostSslCertificate- `[]`>`: The hostSslCertificates that are associated with this host.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostSslCertificate was observed.
@@ -3197,7 +3197,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Port <Int32?>]`: The port number.
   - `[SslCertificate <IMicrosoftGraphSecuritySslCertificate>]`: sslCertificate
 
-SUBDOMAINS <IMicrosoftGraphSecuritySubdomain- `[]`>: The subdomains that are associated with this host.
+SUBDOMAINS `<IMicrosoftGraphSecuritySubdomain- `[]`>`: The subdomains that are associated with this host.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The date and time when Microsoft Defender Threat Intelligence first observed the subdomain.
@@ -3473,7 +3473,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-TRACKERS <IMicrosoftGraphSecurityHostTracker- `[]`>: The hostTrackers that are associated with this host.
+TRACKERS `<IMicrosoftGraphSecurityHostTracker- `[]`>`: The hostTrackers that are associated with this host.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence.
@@ -4028,6 +4028,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehost)
+
 
 
 

@@ -782,7 +782,7 @@ Read-only.
   - `[Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]`: accessReviewInstanceDecisionItemTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INSIGHTS <IMicrosoftGraphGovernanceInsight- `[]`>: Insights are recommendations to reviewers on whether to approve or deny a decision.
+INSIGHTS `<IMicrosoftGraphGovernanceInsight- `[]`>`: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1127,6 +1127,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdecision)
+
 
 
 

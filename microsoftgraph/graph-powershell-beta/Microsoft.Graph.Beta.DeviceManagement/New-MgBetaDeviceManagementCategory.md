@@ -240,7 +240,7 @@ Read-only.
     - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
     - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>: The setting definitions this category contains
+SETTINGDEFINITIONS `<IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>`: The setting definitions this category contains
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the setting value
@@ -260,6 +260,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcategory)
+
 
 
 

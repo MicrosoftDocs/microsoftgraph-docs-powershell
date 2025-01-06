@@ -495,7 +495,7 @@ Required
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-LOGONUSERS <IMicrosoftGraphLogonUser- `[]`>: .
+LOGONUSERS `<IMicrosoftGraphLogonUser- `[]`>`: .
   - `[AccountDomain <String>]`: Domain of user account used to logon.
   - `[AccountName <String>]`: Account name of user account used to logon.
   - `[AccountType <String>]`: userAccountSecurityType
@@ -509,7 +509,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LogonTypes <String- `[]`>]`: Collection of the logon types observed for the logged on user from when first to last seen.
 Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
 
-NETWORKINTERFACES <IMicrosoftGraphNetworkInterface- `[]`>: .
+NETWORKINTERFACES `<IMicrosoftGraphNetworkInterface- `[]`>`: .
   - `[Description <String>]`: Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
   - `[IPV4Address <String>]`: Last IPv4 address associated with this NIC.
   - `[IPV6Address <String>]`: Last Public (also known as global) IPv6 address associated with this NIC.
@@ -528,6 +528,7 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityhostsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityhostsecurityprofile)
+
 
 
 

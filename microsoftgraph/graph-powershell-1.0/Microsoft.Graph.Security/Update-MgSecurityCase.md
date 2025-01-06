@@ -5186,7 +5186,7 @@ Read-only.
       - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>]`: Returns the tags that are a child of a tag.
       - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
-EDISCOVERYCASES <IMicrosoftGraphSecurityEdiscoveryCase- `[]`>: .
+EDISCOVERYCASES `<IMicrosoftGraphSecurityEdiscoveryCase- `[]`>`: .
   - `[CreatedDateTime <DateTime?>]`: 
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
@@ -10183,6 +10183,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycase)
+
 
 
 

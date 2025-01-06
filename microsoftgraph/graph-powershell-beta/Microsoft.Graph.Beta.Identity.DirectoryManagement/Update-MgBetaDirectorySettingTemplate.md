@@ -354,7 +354,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-VALUES <IMicrosoftGraphSettingTemplateValue- `[]`>: Collection of settingTemplateValues that list the set of available settings, defaults, and types that make up this template.
+VALUES `<IMicrosoftGraphSettingTemplateValue- `[]`>`: Collection of settingTemplateValues that list the set of available settings, defaults, and types that make up this template.
 Read-only.
   - `[DefaultValue <String>]`: Default value for the setting.
 Read-only.
@@ -368,6 +368,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysettingtemplate)
+
 
 
 

@@ -433,7 +433,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALLOWEDVALUES <IMicrosoftGraphAllowedValue- `[]`>: Values that are predefined for this custom security attribute.
+ALLOWEDVALUES `<IMicrosoftGraphAllowedValue- `[]`>`: Values that are predefined for this custom security attribute.
 This navigation property is not returned by default and must be specified in an $expand query.
 For example, /directory/customSecurityAttributeDefinitions$expand=allowedValues.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -533,6 +533,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition)
 
 [https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-beta)
+
 
 
 

@@ -392,7 +392,7 @@ Read-only.
   - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>]`: Returns the tags that are a child of a tag.
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
-CHILDTAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>: Returns the tags that are a child of a tag.
+CHILDTAGS `<IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>`: Returns the tags that are a child of a tag.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -541,6 +541,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasetag)
 
 [https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-update?view=graph-rest-beta)
+
 
 
 

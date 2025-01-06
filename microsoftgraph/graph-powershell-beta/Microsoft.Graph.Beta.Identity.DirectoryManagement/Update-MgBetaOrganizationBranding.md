@@ -810,8 +810,8 @@ Read-only.
   - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
     - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
     - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
@@ -954,8 +954,8 @@ Read-only.
 CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-    - `[Key <String>]`: Contains the name of the field that a value is associated with.
-    - `[Value <String>]`: Contains the corresponding value for the specified key.
+    - `[Key <String>]`: Key.
+    - `[Value <String>]`: Value.
   - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
   - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
   - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
@@ -1009,7 +1009,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-LOCALIZATIONS <IMicrosoftGraphOrganizationalBrandingLocalization- `[]`>: Add different branding based on a locale.
+LOCALIZATIONS `<IMicrosoftGraphOrganizationalBrandingLocalization- `[]`>`: Add different branding based on a locale.
   - `[BackgroundColor <String>]`: Color that appears in place of the background image in low-bandwidth connections.
 We recommend that you use the primary color of your banner logo or your organization color.
 Specify this in hexadecimal format, for example, white is #FFFFFF.
@@ -1029,8 +1029,8 @@ Read-only.
   - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
     - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
     - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
@@ -1119,6 +1119,7 @@ LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbranding)
 
 [https://learn.microsoft.com/graph/api/organizationalbranding-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/organizationalbranding-update?view=graph-rest-beta)
+
 
 
 

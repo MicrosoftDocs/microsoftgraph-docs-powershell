@@ -40,7 +40,7 @@ Create a new connectedOrganization object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-connectedorganizations-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Create a connected organization
 
 ```powershell
 
@@ -62,7 +62,7 @@ $params = @{
 New-MgEntitlementManagementConnectedOrganization -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEntitlementManagementConnectedOrganization Cmdlet.
+This example will create a connected organization
 
 
 ## PARAMETERS
@@ -357,13 +357,13 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[State <String>]`: connectedOrganizationState
 
-EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: .
+EXTERNALSPONSORS `<IMicrosoftGraphDirectoryObject- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INTERNALSPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: .
+INTERNALSPONSORS `<IMicrosoftGraphDirectoryObject- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -374,6 +374,7 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization)
 
 [https://learn.microsoft.com/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-1.0)
+
 
 
 

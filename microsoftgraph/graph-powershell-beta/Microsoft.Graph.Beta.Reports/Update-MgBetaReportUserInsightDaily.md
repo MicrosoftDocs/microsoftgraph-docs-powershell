@@ -303,7 +303,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVEUSERS <IMicrosoftGraphActiveUsersMetric- `[]`>: Insights for active users on apps registered in the tenant for a specified period.
+ACTIVEUSERS `<IMicrosoftGraphActiveUsersMetric- `[]`>`: Insights for active users on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: 
@@ -314,7 +314,7 @@ Read-only.
   - `[Language <String>]`: 
   - `[OS <String>]`: 
 
-AUTHENTICATIONS <IMicrosoftGraphAuthenticationsMetric- `[]`>: Insights for authentications on apps registered in the tenant for a specified period.
+AUTHENTICATIONS `<IMicrosoftGraphAuthenticationsMetric- `[]`>`: Insights for authentications on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Appid <String>]`: The ID of the Microsoft Entra application.
@@ -435,7 +435,7 @@ Read-only.
     - `[FactDate <DateTime?>]`: The date of the insight.
     - `[Language <String>]`: 
 
-INACTIVEUSERS <IMicrosoftGraphDailyInactiveUsersMetric- `[]`>: .
+INACTIVEUSERS `<IMicrosoftGraphDailyInactiveUsersMetric- `[]`>`: .
   - `[AppId <String>]`: 
   - `[FactDate <DateTime?>]`: 
   - `[Inactive30DayCount <Int64?>]`: 
@@ -445,7 +445,7 @@ INACTIVEUSERS <IMicrosoftGraphDailyInactiveUsersMetric- `[]`>: .
 Read-only.
   - `[Inactive1DayCount <Int64?>]`: 
 
-INACTIVEUSERSBYAPPLICATION <IMicrosoftGraphDailyInactiveUsersByApplicationMetric- `[]`>: .
+INACTIVEUSERSBYAPPLICATION `<IMicrosoftGraphDailyInactiveUsersByApplicationMetric- `[]`>`: .
   - `[AppId <String>]`: 
   - `[FactDate <DateTime?>]`: 
   - `[Inactive30DayCount <Int64?>]`: 
@@ -455,7 +455,7 @@ INACTIVEUSERSBYAPPLICATION <IMicrosoftGraphDailyInactiveUsersByApplicationMetric
 Read-only.
   - `[Inactive1DayCount <Int64?>]`: 
 
-MFACOMPLETIONS <IMicrosoftGraphMfaCompletionMetric- `[]`>: Insights for MFA usage on apps registered in the tenant for a specified period.
+MFACOMPLETIONS `<IMicrosoftGraphMfaCompletionMetric- `[]`>`: Insights for MFA usage on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: The ID of the Microsoft Entra application.
@@ -479,7 +479,7 @@ Supports $filter (eq).
   - `[SuccessCount <Int64?>]`: Number of users who signed up successfully.
 Supports $filter (eq).
 
-SIGNUPS <IMicrosoftGraphUserSignUpMetric- `[]`>: Total sign-ups on apps registered in the tenant for a specified period.
+SIGNUPS `<IMicrosoftGraphUserSignUpMetric- `[]`>`: Total sign-ups on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: 
@@ -492,7 +492,7 @@ Supports $filter (eq).
   - `[OS <String>]`: The device plaform that the customers used.
 Supports $filter (eq).
 
-SUMMARY <IMicrosoftGraphInsightSummary- `[]`>: Summary of all usage insights on apps registered in the tenant for a specified period.
+SUMMARY `<IMicrosoftGraphInsightSummary- `[]`>`: Summary of all usage insights on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveUsers <Int64?>]`: Daily active users.
@@ -507,7 +507,7 @@ Supports $filter (eq).
   - `[SecurityVoiceCompletions <Int64?>]`: Daily MFA Voice completions.
   - `[SecurityVoiceRequests <Int64?>]`: Daily MFA Voice requests.
 
-USERCOUNT <IMicrosoftGraphUserCountMetric- `[]`>: Insights for total users on apps registered in the tenant for a specified period.
+USERCOUNT `<IMicrosoftGraphUserCountMetric- `[]`>`: Insights for total users on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Count <Int64?>]`: The total number of users in the tenant over time.
@@ -517,6 +517,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdaily](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdaily)
+
 
 
 

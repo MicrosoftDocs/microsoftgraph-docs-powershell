@@ -487,7 +487,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSASSIGNMENTS <IMicrosoftGraphDelegatedAdminAccessAssignment- `[]`>: The access assignments associated with the delegated admin relationship.
+ACCESSASSIGNMENTS `<IMicrosoftGraphDelegatedAdminAccessAssignment- `[]`>`: The access assignments associated with the delegated admin relationship.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccessContainer <IMicrosoftGraphDelegatedAdminAccessContainer>]`: delegatedAdminAccessContainer
@@ -595,7 +595,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
   - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
-OPERATIONS <IMicrosoftGraphDelegatedAdminRelationshipOperation- `[]`>: The long running operations associated with the delegated admin relationship.
+OPERATIONS `<IMicrosoftGraphDelegatedAdminRelationshipOperation- `[]`>`: The long running operations associated with the delegated admin relationship.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The time in ISO 8601 format and in UTC time when the long-running operation was created.
@@ -607,7 +607,7 @@ Read-only.
   - `[OperationType <String>]`: delegatedAdminRelationshipOperationType
   - `[Status <String>]`: longRunningOperationStatus
 
-REQUESTS <IMicrosoftGraphDelegatedAdminRelationshipRequest- `[]`>: The requests associated with the delegated admin relationship.
+REQUESTS `<IMicrosoftGraphDelegatedAdminRelationshipRequest- `[]`>`: The requests associated with the delegated admin relationship.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Action <String>]`: delegatedAdminRelationshipRequestAction
@@ -622,6 +622,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationship)
 
 [https://learn.microsoft.com/graph/api/delegatedadminrelationship-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-update?view=graph-rest-1.0)
+
 
 
 

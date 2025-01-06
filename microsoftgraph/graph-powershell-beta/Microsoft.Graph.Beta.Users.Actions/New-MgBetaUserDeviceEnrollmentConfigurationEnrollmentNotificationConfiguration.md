@@ -262,7 +262,7 @@ Users are subject only to the configuration with the lowest priority value.
     - `[RoleScopeTagIds <String- `[]`>]`: Optional role scope tags for the enrollment restrictions.
     - `[Version <Int32?>]`: The version of the device enrollment configuration
 
-DEVICEENROLLMENTNOTIFICATIONCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>: .
+DEVICEENROLLMENTNOTIFICATIONCONFIGURATIONS `<IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>]`: The list of group assignments for the device configuration profile
@@ -333,6 +333,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdeviceenrollmentconfigurationenrollmentnotificationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdeviceenrollmentconfigurationenrollmentnotificationconfiguration)
+
 
 
 

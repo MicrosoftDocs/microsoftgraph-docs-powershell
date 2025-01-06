@@ -397,7 +397,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-LOCALIZATIONS <IMicrosoftGraphAccessPackageLocalizedText- `[]`>: The text of the question represented in a format for a specific locale.
+LOCALIZATIONS `<IMicrosoftGraphAccessPackageLocalizedText- `[]`>`: The text of the question represented in a format for a specific locale.
   - `[LanguageCode <String>]`: The language code that text is in.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
@@ -408,6 +408,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentpolicyquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentpolicyquestion)
+
 
 
 

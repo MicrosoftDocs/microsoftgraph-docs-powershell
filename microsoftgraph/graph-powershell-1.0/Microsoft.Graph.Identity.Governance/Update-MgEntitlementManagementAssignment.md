@@ -15505,7 +15505,7 @@ null if the subject isn't yet a user in the tenant.
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectType <String>]`: accessPackageSubjectType
 
-CUSTOMEXTENSIONCALLOUTINSTANCES <IMicrosoftGraphCustomExtensionCalloutInstance- `[]`>: Information about all the custom extension calls that were made during the access package assignment workflow.
+CUSTOMEXTENSIONCALLOUTINSTANCES `<IMicrosoftGraphCustomExtensionCalloutInstance- `[]`>`: Information about all the custom extension calls that were made during the access package assignment workflow.
   - `[CustomExtensionId <String>]`: Identification of the custom extension that was triggered at this instance.
   - `[Detail <String>]`: Details provided by the logic app during the callback of the request instance.
   - `[ExternalCorrelationId <String>]`: The unique run identifier for the logic app.
@@ -15666,6 +15666,7 @@ null if the subject isn't yet a user in the tenant.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0)
+
 
 
 

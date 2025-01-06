@@ -425,7 +425,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-SETTINGSTATES <IMicrosoftGraphSecurityBaselineSettingState- `[]`>: The security baseline state for different settings for a device
+SETTINGSTATES `<IMicrosoftGraphSecurityBaselineSettingState- `[]`>`: The security baseline state for different settings for a device
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy- `[]`>]`: The policies that contribute to this setting instance
@@ -446,6 +446,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicesecuritybaselinestate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicesecuritybaselinestate)
+
 
 
 

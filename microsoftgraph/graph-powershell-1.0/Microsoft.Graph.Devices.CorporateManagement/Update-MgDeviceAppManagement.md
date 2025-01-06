@@ -494,7 +494,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANDROIDMANAGEDAPPPROTECTIONS <IMicrosoftGraphAndroidManagedAppProtection- `[]`>: Android managed app policies.
+ANDROIDMANAGEDAPPPROTECTIONS `<IMicrosoftGraphAndroidManagedAppProtection- `[]`>`: Android managed app policies.
   - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>]`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1095,7 +1095,7 @@ The largest number you can configure must be less than the number configured in 
     - `[RevokeOnMdmHandoffDisabled <Boolean?>]`: New property in RS2, pending documentation
     - `[WindowsHelloForBusinessBlocked <Boolean?>]`: Boolean value that sets Windows Hello for Business as a method for signing into Windows.
 
-DEFAULTMANAGEDAPPPROTECTIONS <IMicrosoftGraphDefaultManagedAppProtection- `[]`>: Default managed app policies.
+DEFAULTMANAGEDAPPPROTECTIONS `<IMicrosoftGraphDefaultManagedAppProtection- `[]`>`: Default managed app policies.
   - `[AllowedDataStorageLocations <ManagedAppDataStorageLocation- `[]`>]`: Data storage locations where a user may store managed data.
   - `[AllowedInboundDataTransferSources <ManagedAppDataTransferLevel?>]`: Data can be transferred from/to these classes of apps
   - `[AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel?>]`: Represents the level to which the device's clipboard may be shared between apps
@@ -1167,7 +1167,7 @@ Read-only.
   - `[ScreenCaptureBlocked <Boolean?>]`: Indicates whether screen capture is blocked.
 (Android only)
 
-IOSMANAGEDAPPPROTECTIONS <IMicrosoftGraphIosManagedAppProtection- `[]`>: iOS managed app policies.
+IOSMANAGEDAPPPROTECTIONS `<IMicrosoftGraphIosManagedAppProtection- `[]`>`: iOS managed app policies.
   - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>]`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1232,7 +1232,7 @@ Read-only.
   - `[FaceIdBlocked <Boolean?>]`: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
   - `[MinimumRequiredSdkVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
 
-MANAGEDAPPPOLICIES <IMicrosoftGraphManagedAppPolicy- `[]`>: Managed app policies.
+MANAGEDAPPPOLICIES `<IMicrosoftGraphManagedAppPolicy- `[]`>`: Managed app policies.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
@@ -1241,7 +1241,7 @@ Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
   - `[Version <String>]`: Version of the entity.
 
-MANAGEDAPPREGISTRATIONS <IMicrosoftGraphManagedAppRegistration- `[]`>: The managed app registrations.
+MANAGEDAPPREGISTRATIONS `<IMicrosoftGraphManagedAppRegistration- `[]`>`: The managed app registrations.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
@@ -1277,13 +1277,13 @@ Read-only.
   - `[UserId <String>]`: The user Id to who this app registration belongs.
   - `[Version <String>]`: Version of the entity.
 
-MANAGEDAPPSTATUSES <IMicrosoftGraphManagedAppStatus- `[]`>: The managed app statuses.
+MANAGEDAPPSTATUSES `<IMicrosoftGraphManagedAppStatus- `[]`>`: The managed app statuses.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Friendly name of the status report.
   - `[Version <String>]`: Version of the entity.
 
-MANAGEDEBOOKS <IMicrosoftGraphManagedEBook- `[]`>: The Managed eBook.
+MANAGEDEBOOKS `<IMicrosoftGraphManagedEBook- `[]`>`: The Managed eBook.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Assignments <IMicrosoftGraphManagedEBookAssignment- `[]`>]`: The list of assignments for this eBook.
@@ -1334,7 +1334,7 @@ Read-only.
     - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
     - `[UserName <String>]`: User name.
 
-MDMWINDOWSINFORMATIONPROTECTIONPOLICIES <IMicrosoftGraphMdmWindowsInformationProtectionPolicy- `[]`>: Windows information protection for apps running on devices which are MDM enrolled.
+MDMWINDOWSINFORMATIONPROTECTIONPOLICIES `<IMicrosoftGraphMdmWindowsInformationProtectionPolicy- `[]`>`: Windows information protection for apps running on devices which are MDM enrolled.
   - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>]`: Navigation property to list of security groups targeted for policy.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1414,12 +1414,12 @@ The RMS template allows the IT admin to configure the details about who has acce
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-MOBILEAPPCATEGORIES <IMicrosoftGraphMobileAppCategory- `[]`>: The mobile app categories.
+MOBILEAPPCATEGORIES `<IMicrosoftGraphMobileAppCategory- `[]`>`: The mobile app categories.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
 
-MOBILEAPPCONFIGURATIONS <IMicrosoftGraphManagedDeviceMobileAppConfiguration- `[]`>: The Managed Device Mobile Application Configurations.
+MOBILEAPPCONFIGURATIONS `<IMicrosoftGraphManagedDeviceMobileAppConfiguration- `[]`>`: The Managed Device Mobile Application Configurations.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Assignments <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment- `[]`>]`: The list of group assignemenets for app configration.
@@ -1474,7 +1474,7 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-MOBILEAPPS <IMicrosoftGraphMobileApp- `[]`>: The mobile apps.
+MOBILEAPPS `<IMicrosoftGraphMobileApp- `[]`>`: The mobile apps.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Assignments <IMicrosoftGraphMobileAppAssignment- `[]`>]`: The list of group assignments for this mobile app.
@@ -1504,7 +1504,7 @@ Read-only.
   - `[Publisher <String>]`: The publisher of the app.
   - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
 
-TARGETEDMANAGEDAPPCONFIGURATIONS <IMicrosoftGraphTargetedManagedAppConfiguration- `[]`>: Targeted managed app configurations.
+TARGETEDMANAGEDAPPCONFIGURATIONS `<IMicrosoftGraphTargetedManagedAppConfiguration- `[]`>`: Targeted managed app configurations.
   - `[CustomSettings <IMicrosoftGraphKeyValuePair- `[]`>]`: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
     - `[Name <String>]`: Name for this key-value pair
     - `[Value <String>]`: Value for this key-value pair
@@ -1540,7 +1540,7 @@ Read-only.
     - `[Version <String>]`: Version of the entity.
   - `[IsAssigned <Boolean?>]`: Indicates if the policy is deployed to any inclusion groups or not.
 
-VPPTOKENS <IMicrosoftGraphVppToken- `[]`>: List of Vpp tokens for this organization.
+VPPTOKENS `<IMicrosoftGraphVppToken- `[]`>`: List of Vpp tokens for this organization.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppleId <String>]`: The apple Id associated with the given Apple Volume Purchase Program Token.
@@ -1555,7 +1555,7 @@ Read-only.
   - `[Token <String>]`: The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
   - `[VppTokenAccountType <VppTokenAccountType?>]`: Possible types of an Apple Volume Purchase Program token.
 
-WINDOWSINFORMATIONPROTECTIONPOLICIES <IMicrosoftGraphWindowsInformationProtectionPolicy- `[]`>: Windows information protection for apps running on devices which are not MDM enrolled.
+WINDOWSINFORMATIONPROTECTIONPOLICIES `<IMicrosoftGraphWindowsInformationProtectionPolicy- `[]`>`: Windows information protection for apps running on devices which are not MDM enrolled.
   - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>]`: Navigation property to list of security groups targeted for policy.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1668,6 +1668,7 @@ The largest number you can configure must be less than the number configured in 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement)
 
 [https://learn.microsoft.com/graph/api/intune-unlock-deviceappmanagement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-unlock-deviceappmanagement-update?view=graph-rest-1.0)
+
 
 
 

@@ -410,7 +410,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient- `[]`>: .
+RECIPIENTS `<IMicrosoftGraphDriveRecipient- `[]`>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
@@ -421,6 +421,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainviteuserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainviteuserdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta)
+
 
 
 

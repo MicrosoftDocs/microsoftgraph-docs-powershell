@@ -516,7 +516,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-VERSIONS <IMicrosoftGraphAgreementFileVersion- `[]`>: Read-only.
+VERSIONS `<IMicrosoftGraphAgreementFileVersion- `[]`>`: Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
   - `[CreatedDateTime <DateTime?>]`: The date time representing when the file was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -547,6 +547,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfile)
+
 
 
 

@@ -10041,7 +10041,7 @@ If the customizedMessageBody is specified, this property is ignored, and the mes
 The language format should be in ISO 639.
 The default is en-US.
 
-INVITEDUSERSPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: The users or groups who are sponsors of the invited user.
+INVITEDUSERSPONSORS `<IMicrosoftGraphDirectoryObject- `[]`>`: The users or groups who are sponsors of the invited user.
 Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -10053,6 +10053,7 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation)
 
 [https://learn.microsoft.com/graph/api/invitation-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/invitation-post?view=graph-rest-1.0)
+
 
 
 

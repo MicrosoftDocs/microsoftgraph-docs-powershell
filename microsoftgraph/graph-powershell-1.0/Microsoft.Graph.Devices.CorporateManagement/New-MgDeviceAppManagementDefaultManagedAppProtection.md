@@ -926,7 +926,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPS <IMicrosoftGraphManagedMobileApp- `[]`>: List of apps to which the policy is deployed.
+APPS `<IMicrosoftGraphManagedMobileApp- `[]`>`: List of apps to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
@@ -1006,7 +1006,7 @@ Read-only.
   - `[ScreenCaptureBlocked <Boolean?>]`: Indicates whether screen capture is blocked.
 (Android only)
 
-CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair- `[]`>: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
+CUSTOMSETTINGS `<IMicrosoftGraphKeyValuePair- `[]`>`: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
@@ -1028,6 +1028,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementdefaultmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementdefaultmanagedappprotection)
 
 [https://learn.microsoft.com/graph/api/intune-mam-defaultmanagedappprotection-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-defaultmanagedappprotection-create?view=graph-rest-1.0)
+
 
 
 

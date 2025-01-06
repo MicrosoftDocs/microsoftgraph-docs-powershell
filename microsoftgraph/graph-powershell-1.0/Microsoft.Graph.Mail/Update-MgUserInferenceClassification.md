@@ -264,7 +264,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
   - `[UserId <String>]`: The unique identifier of user
 
-OVERRIDES <IMicrosoftGraphInferenceClassificationOverride- `[]`>: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+OVERRIDES `<IMicrosoftGraphInferenceClassificationOverride- `[]`>`: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -278,6 +278,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification)
+
 
 
 

@@ -340,7 +340,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[DisplayName <String>]`: Display name of resource.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-DEPENDENTRESOURCES <IMicrosoftGraphEducationSubmissionResource- `[]`>: .
+DEPENDENTRESOURCES `<IMicrosoftGraphEducationSubmissionResource- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied.
@@ -401,6 +401,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmissionresourcedependentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmissionresourcedependentresource)
+
 
 
 

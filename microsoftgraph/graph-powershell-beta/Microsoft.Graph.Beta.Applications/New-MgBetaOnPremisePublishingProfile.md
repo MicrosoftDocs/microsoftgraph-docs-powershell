@@ -326,7 +326,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup- `[]`>: List of existing onPremisesAgentGroup objects.
+AGENTGROUPS `<IMicrosoftGraphOnPremisesAgentGroup- `[]`>`: List of existing onPremisesAgentGroup objects.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -361,7 +361,7 @@ Nullable.
     - `[ResourceName <String>]`: Name of the publishedResource.
   - `[PublishingType <String>]`: onPremisesPublishingType
 
-AGENTS <IMicrosoftGraphOnPremisesAgent- `[]`>: List of existing onPremisesAgent objects.
+AGENTS `<IMicrosoftGraphOnPremisesAgent- `[]`>`: List of existing onPremisesAgent objects.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -396,7 +396,7 @@ Read-only
   - `[Status <String>]`: agentStatus
   - `[SupportedPublishingTypes <String- `[]`>]`: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
 
-APPLICATIONSEGMENTS <IMicrosoftGraphIPApplicationSegment- `[]`>: .
+APPLICATIONSEGMENTS `<IMicrosoftGraphIPApplicationSegment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Application <IMicrosoftGraphApplication>]`: application
@@ -2073,7 +2073,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
 Nullable.
 
-CONNECTORGROUPS <IMicrosoftGraphConnectorGroup- `[]`>: List of existing connectorGroup objects for applications published through Application Proxy.
+CONNECTORGROUPS `<IMicrosoftGraphConnectorGroup- `[]`>`: List of existing connectorGroup objects for applications published through Application Proxy.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2873,7 +2873,7 @@ Read-only.
   - `[Name <String>]`: The name associated with the connectorGroup.
   - `[Region <String>]`: connectorGroupRegion
 
-CONNECTORS <IMicrosoftGraphConnector- `[]`>: List of existing connector objects for applications published through Application Proxy.
+CONNECTORS `<IMicrosoftGraphConnector- `[]`>`: List of existing connector objects for applications published through Application Proxy.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -3683,7 +3683,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[UpdateWindowEndTime <String>]`: End of a time window during which agents can receive updates
     - `[UpdateWindowStartTime <String>]`: Start of a time window during which agents can receive updates
 
-PUBLISHEDRESOURCES <IMicrosoftGraphPublishedResource- `[]`>: List of existing publishedResource objects.
+PUBLISHEDRESOURCES `<IMicrosoftGraphPublishedResource- `[]`>`: List of existing publishedResource objects.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -3721,6 +3721,7 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofile)
+
 
 
 

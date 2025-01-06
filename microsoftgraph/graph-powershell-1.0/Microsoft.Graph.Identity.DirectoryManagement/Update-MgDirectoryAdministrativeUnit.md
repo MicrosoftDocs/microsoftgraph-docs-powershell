@@ -66,7 +66,10 @@ Update the properties of an administrativeUnit object.
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	displayName = "Greater Seattle District Technical Schools"
+	displayName = "Executive Division"
+	membershipType = "Dynamic"
+	membershipRule = "(user.country -eq "United States")"
+	membershipRuleProcessingState = "On"
 }
 
 Update-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
@@ -464,7 +467,7 @@ Can be set to HiddenMembership.
 If not set (value is null), the default behavior is public.
 When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for this administrative unit.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for this administrative unit.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -497,14 +500,14 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
   - `[UserId <String>]`: The unique identifier of user
 
-MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Users and groups that are members of this administrative unit.
+MEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Users and groups that are members of this administrative unit.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership- `[]`>: Scoped-role members of this administrative unit.
+SCOPEDROLEMEMBERS `<IMicrosoftGraphScopedRoleMembership- `[]`>`: Scoped-role members of this administrative unit.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
@@ -521,6 +524,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-1.0)
+
 
 
 

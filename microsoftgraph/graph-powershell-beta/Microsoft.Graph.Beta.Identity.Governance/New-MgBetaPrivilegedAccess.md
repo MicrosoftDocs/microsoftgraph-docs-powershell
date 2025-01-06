@@ -358,8 +358,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -418,7 +418,7 @@ For example, for Azure resources, the type could be 'Subscription', 'ResourceGro
   - `[RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition- `[]`>]`: A collection of role definitions for the provider.
   - `[RoleSettings <IMicrosoftGraphGovernanceRoleSetting- `[]`>]`: A collection of role settings for the provider.
 
-RESOURCES <IMicrosoftGraphGovernanceResource- `[]`>: A collection of resources for the provider.
+RESOURCES `<IMicrosoftGraphGovernanceResource- `[]`>`: A collection of resources for the provider.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the resource.
@@ -503,8 +503,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
       - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
     - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -559,7 +559,7 @@ Note: This property may be extended in the future to support more scenarios.
 Resource type.
 For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
 
-ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest- `[]`>: A collection of role assignment requests for the provider.
+ROLEASSIGNMENTREQUESTS `<IMicrosoftGraphGovernanceRoleAssignmentRequest- `[]`>`: A collection of role assignment requests for the provider.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignmentState <String>]`: Required.
@@ -689,8 +689,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
     - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
   - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -701,7 +701,7 @@ Principals can be users, groups, or service principals.
 Representing the type of the operation on the role assignment.
 The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
 
-ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment- `[]`>: A collection of role assignments for the provider.
+ROLEASSIGNMENTS `<IMicrosoftGraphGovernanceRoleAssignment- `[]`>`: A collection of role assignments for the provider.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignmentState <String>]`: The state of the assignment.
@@ -800,8 +800,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -843,7 +843,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[SubjectId <String>]`: Required.
 The ID of the subject that the role assignment is associated with.
 
-ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition- `[]`>: A collection of role definitions for the provider.
+ROLEDEFINITIONS `<IMicrosoftGraphGovernanceRoleDefinition- `[]`>`: A collection of role definitions for the provider.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the role definition.
@@ -897,8 +897,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -983,7 +983,7 @@ The ID of the resource associated with the role definition.
   - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
   - `[TemplateId <String>]`: The unique identifier for the template.
 
-ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting- `[]`>: A collection of role settings for the provider.
+ROLESETTINGS `<IMicrosoftGraphGovernanceRoleSetting- `[]`>`: A collection of role settings for the provider.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdminEligibleSettings <IMicrosoftGraphGovernanceRuleSetting- `[]`>]`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
@@ -1060,8 +1060,8 @@ Only Once is supported for now.
 The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue- `[]`>]`: The details of the status of the role assignment request.
 It represents the evaluation results of different rules.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[SubStatus <String>]`: The sub status of the role assignment request.
 The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
@@ -1127,6 +1127,7 @@ The setting is not supported for now.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccess)
+
 
 
 

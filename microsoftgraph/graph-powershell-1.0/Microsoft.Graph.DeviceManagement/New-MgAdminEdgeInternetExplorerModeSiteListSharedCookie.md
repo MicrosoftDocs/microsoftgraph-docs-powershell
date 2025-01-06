@@ -470,7 +470,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
   - `[Status <BrowserSharedCookieStatus?>]`: browserSharedCookieStatus
 
-HISTORY <IMicrosoftGraphBrowserSharedCookieHistory- `[]`>: The history of modifications applied to the cookie.
+HISTORY `<IMicrosoftGraphBrowserSharedCookieHistory- `[]`>`: The history of modifications applied to the cookie.
   - `[Comment <String>]`: The comment for the shared cookie.
   - `[DisplayName <String>]`: The name of the cookie.
   - `[HostOnly <Boolean?>]`: Controls whether a cookie is a host-only or domain cookie.
@@ -561,6 +561,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie)
 
 [https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-1.0)
+
 
 
 

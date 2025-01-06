@@ -454,7 +454,7 @@ Read-only.
     - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
     - `[PlanTitle <String>]`: Localized title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition- `[]`>: List the buckets that should be created in the plan.
+BUCKETS `<IMicrosoftGraphPlannerPlanConfigurationBucketDefinition- `[]`>`: List the buckets that should be created in the plan.
   - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
@@ -487,7 +487,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LOCALIZATIONS <IMicrosoftGraphPlannerPlanConfigurationLocalization- `[]`>: Localized names for the plan configuration.
+LOCALIZATIONS `<IMicrosoftGraphPlannerPlanConfigurationLocalization- `[]`>`: Localized names for the plan configuration.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>]`: Localized names for configured buckets in the plan configuration.
@@ -501,6 +501,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration)
 
 [https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-beta)
+
 
 
 

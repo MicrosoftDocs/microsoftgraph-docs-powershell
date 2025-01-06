@@ -9,11 +9,9 @@ ms.subservice: entra-groups
 # New-MgBetaGroup
 
 ## SYNOPSIS
-Create a new group as specified in the request body.
-You can create one of the following groups: This operation returns by default only a subset of the properties for each group.
-These default properties are noted in the Properties section.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.You can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
-Note: To create a team, first create a group then add a team to it, see create team.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroup](/powershell/module/Microsoft.Graph.Groups/New-MgGroup?view=graph-powershell-1.0)
@@ -66,11 +64,9 @@ New-MgBetaGroup -BodyParameter <IMicrosoftGraphGroup> [-ResponseHeadersVariable 
 ```
 
 ## DESCRIPTION
-Create a new group as specified in the request body.
-You can create one of the following groups: This operation returns by default only a subset of the properties for each group.
-These default properties are noted in the Properties section.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.You can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
-Note: To create a team, first create a group then add a team to it, see create team.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-upsert-permissions.md)]
@@ -1665,14 +1661,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCEPTEDSENDERS <IMicrosoftGraphDirectoryObject- `[]`>: The list of users or groups allowed to create posts or calendar events in this group.
+ACCEPTEDSENDERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The list of users or groups allowed to create posts or calendar events in this group.
 If this list is non-empty, then only users or groups listed here can post.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-APPROLEASSIGNMENTS <IMicrosoftGraphAppRoleAssignment- `[]`>: Represents the app roles a group has been granted for an application.
+APPROLEASSIGNMENTS `<IMicrosoftGraphAppRoleAssignment- `[]`>`: Represents the app roles a group has been granted for an application.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1698,14 +1694,14 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
 
-ASSIGNEDLABELS <IMicrosoftGraphAssignedLabel- `[]`>: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
+ASSIGNEDLABELS `<IMicrosoftGraphAssignedLabel- `[]`>`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
 This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
   - `[DisplayName <String>]`: The display name of the label.
 Read-only.
   - `[LabelId <String>]`: The unique identifier of the label.
 
-ASSIGNEDLICENSES <IMicrosoftGraphAssignedLicense- `[]`>: The licenses that are assigned to the group.
+ASSIGNEDLICENSES `<IMicrosoftGraphAssignedLicense- `[]`>`: The licenses that are assigned to the group.
 Returned only on $select.
 Supports $filter (eq).
 Read-only.
@@ -2395,8 +2391,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Contains the name of the field that a value is associated with.
-            - `[Value <String>]`: Contains the corresponding value for the specified key.
+            - `[Key <String>]`: Key.
+            - `[Value <String>]`: Value.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -7187,7 +7183,7 @@ It is an Optional field
         - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -10046,7 +10042,7 @@ Nullable.
 Read-only.
 Nullable.
 
-CALENDARVIEW <IMicrosoftGraphEvent- `[]`>: The calendar view for the calendar.
+CALENDARVIEW `<IMicrosoftGraphEvent- `[]`>`: The calendar view for the calendar.
 Read-only.
   - `[Categories <String- `[]`>]`: The categories associated with the item.
   - `[ChangeKey <String>]`: Identifies the version of the item.
@@ -10322,7 +10318,7 @@ For recurring events, the value is the same for the series master and all of its
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-CONVERSATIONS <IMicrosoftGraphConversation- `[]`>: The group's conversations.
+CONVERSATIONS `<IMicrosoftGraphConversation- `[]`>`: The group's conversations.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment.
@@ -10675,8 +10671,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -16448,7 +16444,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -18509,7 +18505,7 @@ Read-only.
 Nullable.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-DRIVES <IMicrosoftGraphDrive- `[]`>: The group's drives.
+DRIVES `<IMicrosoftGraphDrive- `[]`>`: The group's drives.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18732,8 +18728,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -24505,7 +24501,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -26566,7 +26562,7 @@ Read-only.
 Nullable.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-ENDPOINTS <IMicrosoftGraphEndpoint- `[]`>: Endpoints for the group.
+ENDPOINTS `<IMicrosoftGraphEndpoint- `[]`>`: Endpoints for the group.
 Read-only.
 Nullable.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -26588,7 +26584,7 @@ Read-only.
 Not nullable.
 Read-only.
 
-EVENTS <IMicrosoftGraphEvent- `[]`>: The group's events.
+EVENTS `<IMicrosoftGraphEvent- `[]`>`: The group's events.
   - `[Categories <String- `[]`>]`: The categories associated with the item.
   - `[ChangeKey <String>]`: Identifies the version of the item.
 Every time the item is changed, changeKey changes as well.
@@ -26863,13 +26859,13 @@ For recurring events, the value is the same for the series master and all of its
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the group.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the group.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-GROUPLIFECYCLEPOLICIES <IMicrosoftGraphGroupLifecyclePolicy- `[]`>: The collection of lifecycle policies for this group.
+GROUPLIFECYCLEPOLICIES `<IMicrosoftGraphGroupLifecyclePolicy- `[]`>`: The collection of lifecycle policies for this group.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -26885,7 +26881,7 @@ LICENSEPROCESSINGSTATE `<IMicrosoftGraphLicenseProcessingState>`: licenseProcess
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[State <String>]`: 
 
-MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups and administrative units that this group is a member of.
+MEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: Groups and administrative units that this group is a member of.
 HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
@@ -26895,7 +26891,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Direct group members, who can be users, devices, other groups, or service principals.
+MEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Direct group members, who can be users, devices, other groups, or service principals.
 Supports the List members, Add member, and Remove member operations.
 Nullable.
 Supports $expand including nested $select.
@@ -26915,7 +26911,7 @@ Optional.
 Read-only.
   - `[Status <String>]`: MembershipRuleProcessingStatusDetails
 
-MEMBERSWITHLICENSEERRORS <IMicrosoftGraphDirectoryObject- `[]`>: A list of group members with license errors from this group-based license assignment.
+MEMBERSWITHLICENSEERRORS `<IMicrosoftGraphDirectoryObject- `[]`>`: A list of group members with license errors from this group-based license assignment.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -27071,7 +27067,7 @@ Nullable.
 Read-only.
 Nullable.
 
-ONPREMISESPROVISIONINGERRORS <IMicrosoftGraphOnPremisesProvisioningError- `[]`>: Errors when using Microsoft synchronization product during provisioning.
+ONPREMISESPROVISIONINGERRORS `<IMicrosoftGraphOnPremisesProvisioningError- `[]`>`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
   - `[Category <String>]`: Category of the provisioning error.
@@ -27083,7 +27079,7 @@ Other objects contain the same value for the property.
 Current possible values: UserPrincipalName or ProxyAddress
   - `[Value <String>]`: Value of the property causing the error.
 
-OWNERS <IMicrosoftGraphDirectoryObject- `[]`>: The owners of the group who can be users or service principals.
+OWNERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
 If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
@@ -27098,7 +27094,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PERMISSIONGRANTS <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>: The permissions granted for a group to a specific application.
+PERMISSIONGRANTS `<IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>`: The permissions granted for a group to a specific application.
 Supports $expand.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -27125,7 +27121,7 @@ Read-only.
   - `[Width <Int32?>]`: The width of the photo.
 Read-only.
 
-PHOTOS <IMicrosoftGraphProfilePhoto- `[]`>: The profile photos owned by the group.
+PHOTOS `<IMicrosoftGraphProfilePhoto- `[]`>`: The profile photos owned by the group.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -27425,19 +27421,19 @@ Nullable.
     - `[Title <String>]`: Required.
 Title of the plan.
 
-REJECTEDSENDERS <IMicrosoftGraphDirectoryObject- `[]`>: The list of users or groups not allowed to create posts or calendar events in this group.
+REJECTEDSENDERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The list of users or groups not allowed to create posts or calendar events in this group.
 Nullable
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SERVICEPROVISIONINGERRORS <IMicrosoftGraphServiceProvisioningError- `[]`>: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object.
+SERVICEPROVISIONINGERRORS `<IMicrosoftGraphServiceProvisioningError- `[]`>`: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object.
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the error occurred.
   - `[IsResolved <Boolean?>]`: Indicates whether the Error has been attended to.
   - `[ServiceInstance <String>]`: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
 
-SETTINGS <IMicrosoftGraphDirectorySetting- `[]`>: Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+SETTINGS `<IMicrosoftGraphDirectorySetting- `[]`>`: Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -27449,7 +27445,7 @@ Read-only.
     - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
     - `[Value <String>]`: Value of the setting.
 
-SITES <IMicrosoftGraphSite- `[]`>: The list of SharePoint sites in this group.
+SITES `<IMicrosoftGraphSite- `[]`>`: The list of SharePoint sites in this group.
 Access the default site with /sites/root.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -27672,8 +27668,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -33261,7 +33257,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -35745,8 +35741,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -40469,7 +40465,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -43566,7 +43562,7 @@ Read-only.
 It is the URL you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
 
-THREADS <IMicrosoftGraphConversationThread- `[]`>: The group's conversation threads.
+THREADS `<IMicrosoftGraphConversationThread- `[]`>`: The group's conversation threads.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -43675,14 +43671,14 @@ Returned by default.
   - `[UniqueSenders <String- `[]`>]`: All the users that sent a message to this thread.
 Returned by default.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: The groups a group is a member of, either directly or through nested membership.
+TRANSITIVEMEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: The groups a group is a member of, either directly or through nested membership.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-TRANSITIVEMEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: The direct and transitive members of a group.
+TRANSITIVEMEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The direct and transitive members of a group.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -43703,7 +43699,8 @@ If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but th
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroup)
 
-[https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-beta)
+
 
 
 

@@ -303,7 +303,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVEUSERS <IMicrosoftGraphActiveUsersMetric- `[]`>: Insights for active users on apps registered in the tenant for a specified period.
+ACTIVEUSERS `<IMicrosoftGraphActiveUsersMetric- `[]`>`: Insights for active users on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: 
@@ -314,7 +314,7 @@ Read-only.
   - `[Language <String>]`: 
   - `[OS <String>]`: 
 
-AUTHENTICATIONS <IMicrosoftGraphAuthenticationsMetric- `[]`>: Insights for authentications on apps registered in the tenant for a specified period.
+AUTHENTICATIONS `<IMicrosoftGraphAuthenticationsMetric- `[]`>`: Insights for authentications on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Appid <String>]`: The ID of the Microsoft Entra application.
@@ -439,7 +439,7 @@ Supports $filter (eq).
     - `[SecurityVoiceCompletions <Int64?>]`: Daily MFA Voice completions.
     - `[SecurityVoiceRequests <Int64?>]`: Daily MFA Voice requests.
 
-INACTIVEUSERS <IMicrosoftGraphMonthlyInactiveUsersMetric- `[]`>: .
+INACTIVEUSERS `<IMicrosoftGraphMonthlyInactiveUsersMetric- `[]`>`: .
   - `[AppId <String>]`: 
   - `[FactDate <DateTime?>]`: 
   - `[Inactive30DayCount <Int64?>]`: 
@@ -449,7 +449,7 @@ INACTIVEUSERS <IMicrosoftGraphMonthlyInactiveUsersMetric- `[]`>: .
 Read-only.
   - `[InactiveCalendarMonthCount <Int64?>]`: 
 
-INACTIVEUSERSBYAPPLICATION <IMicrosoftGraphMonthlyInactiveUsersByApplicationMetric- `[]`>: .
+INACTIVEUSERSBYAPPLICATION `<IMicrosoftGraphMonthlyInactiveUsersByApplicationMetric- `[]`>`: .
   - `[AppId <String>]`: 
   - `[FactDate <DateTime?>]`: 
   - `[Inactive30DayCount <Int64?>]`: 
@@ -459,7 +459,7 @@ INACTIVEUSERSBYAPPLICATION <IMicrosoftGraphMonthlyInactiveUsersByApplicationMetr
 Read-only.
   - `[InactiveCalendarMonthCount <Int64?>]`: 
 
-MFACOMPLETIONS <IMicrosoftGraphMfaCompletionMetric- `[]`>: Insights for MFA usage on apps registered in the tenant for a specified period.
+MFACOMPLETIONS `<IMicrosoftGraphMfaCompletionMetric- `[]`>`: Insights for MFA usage on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: The ID of the Microsoft Entra application.
@@ -483,7 +483,7 @@ Supports $filter (eq).
   - `[SuccessCount <Int64?>]`: Number of users who signed up successfully.
 Supports $filter (eq).
 
-REQUESTS <IMicrosoftGraphUserRequestsMetric- `[]`>: Insights for all user requests on apps registered in the tenant for a specified period.
+REQUESTS `<IMicrosoftGraphUserRequestsMetric- `[]`>`: Insights for all user requests on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: 
@@ -494,7 +494,7 @@ Read-only.
   - `[RequestCount <Int64?>]`: Number of requests to the tenant.
 Supports $filter (eq).
 
-SIGNUPS <IMicrosoftGraphUserSignUpMetric- `[]`>: Total sign-ups on apps registered in the tenant for a specified period.
+SIGNUPS `<IMicrosoftGraphUserSignUpMetric- `[]`>`: Total sign-ups on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: 
@@ -507,7 +507,7 @@ Supports $filter (eq).
   - `[OS <String>]`: The device plaform that the customers used.
 Supports $filter (eq).
 
-SUMMARY <IMicrosoftGraphInsightSummary- `[]`>: Summary of all usage insights on apps registered in the tenant for a specified period.
+SUMMARY `<IMicrosoftGraphInsightSummary- `[]`>`: Summary of all usage insights on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveUsers <Int64?>]`: Daily active users.
@@ -525,6 +525,7 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthly](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthly)
+
 
 
 

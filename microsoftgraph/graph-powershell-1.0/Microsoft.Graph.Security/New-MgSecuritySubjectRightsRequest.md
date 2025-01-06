@@ -632,7 +632,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPROVERS <IMicrosoftGraphUser- `[]`>: Collection of users who can approve the request.
+APPROVERS `<IMicrosoftGraphUser- `[]`>`: Collection of users who can approve the request.
 Currently only supported for requests of type delete.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -10316,7 +10316,7 @@ This property is defined only for APIs accessed using the /security query path a
   - `[Team <IMicrosoftGraphTeam>]`: team
   - `[Type <String>]`: subjectRightsRequestType
 
-COLLABORATORS <IMicrosoftGraphUser- `[]`>: Collection of users who can collaborate on the request.
+COLLABORATORS `<IMicrosoftGraphUser- `[]`>`: Collection of users who can collaborate on the request.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -15132,7 +15132,7 @@ DATASUBJECT `<IMicrosoftGraphDataSubject>`: dataSubject
   - `[Residency <String>]`: The country/region of residency.
 The residency information is uesed only for internal reporting but not for the content search.
 
-HISTORY <IMicrosoftGraphSubjectRightsRequestHistory- `[]`>: Collection of history change events.
+HISTORY `<IMicrosoftGraphSubjectRightsRequestHistory- `[]`>`: Collection of history change events.
   - `[ChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -15171,7 +15171,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NOTES <IMicrosoftGraphAuthoredNote- `[]`>: List of notes associated with the request.
+NOTES `<IMicrosoftGraphAuthoredNote- `[]`>`: List of notes associated with the request.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Author <IMicrosoftGraphIdentity>]`: identity
@@ -15188,7 +15188,7 @@ For example, in the access reviews decisions API, this property might record the
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-STAGES <IMicrosoftGraphSubjectRightsRequestStageDetail- `[]`>: Information about the different stages for the request.
+STAGES `<IMicrosoftGraphSubjectRightsRequestStageDetail- `[]`>`: Information about the different stages for the request.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Code <String>]`: Represents the error code.
@@ -20008,6 +20008,7 @@ This URL should be treated as an opaque blob, and not parsed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequest)
+
 
 
 

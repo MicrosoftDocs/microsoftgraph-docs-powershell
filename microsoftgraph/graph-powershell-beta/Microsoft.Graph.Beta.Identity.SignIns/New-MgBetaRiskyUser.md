@@ -355,7 +355,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[UserDisplayName <String>]`: Risky user display name.
   - `[UserPrincipalName <String>]`: Risky user principal name.
 
-HISTORY <IMicrosoftGraphRiskyUserHistoryItem- `[]`>: .
+HISTORY `<IMicrosoftGraphRiskyUserHistoryItem- `[]`>`: .
   - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: 
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
 Possible values are: true, false.
@@ -385,6 +385,7 @@ For more information about each value, see Risk types and detection.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuser)
+
 
 
 

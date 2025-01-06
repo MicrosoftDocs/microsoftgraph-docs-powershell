@@ -445,8 +445,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1219,7 +1219,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
 
-POLICIES <IMicrosoftGraphNetworkaccessPolicyLink- `[]`>: Traffic forwarding policies associated with this profile.
+POLICIES `<IMicrosoftGraphNetworkaccessPolicyLink- `[]`>`: Traffic forwarding policies associated with this profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Policy <IMicrosoftGraphNetworkaccessPolicy>]`: policy
@@ -1252,8 +1252,8 @@ This lets services like Microsoft 365 call the application in the context of a d
     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[Type <String>]`: The unique name for the functionality exposed by the app.
   - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -2009,6 +2009,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofile)
 
 [https://learn.microsoft.com/graph/api/networkaccess-forwardingprofile-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-forwardingprofile-update?view=graph-rest-beta)
+
 
 
 

@@ -543,7 +543,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-UPDATESTATESUMMARIES <IMicrosoftGraphMacOSSoftwareUpdateStateSummary- `[]`>: Summary of the update states.
+UPDATESTATESUMMARIES `<IMicrosoftGraphMacOSSoftwareUpdateStateSummary- `[]`>`: Summary of the update states.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Human readable name of the software update
@@ -556,6 +556,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary)
+
 
 
 

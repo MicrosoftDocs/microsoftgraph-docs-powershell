@@ -281,7 +281,7 @@ Read-only.
   - `[HidePointsDuringGrading <Boolean?>]`: The display setting for the UI.
 Indicates whether teachers can grade with points in addition to letter grades.
 
-GRADES <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>: The grades that make up the scheme.
+GRADES `<IMicrosoftGraphEducationGradingSchemeGrade- `[]`>`: The grades that make up the scheme.
   - `[DefaultPercentage <Single?>]`: The midpoint of the grade range.
   - `[DisplayName <String>]`: The name of the grading scheme.
   - `[MinPercentage <Single?>]`: The minimum percentage of the total points needed to achieve this grade.
@@ -311,6 +311,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme)
 
 [https://learn.microsoft.com/graph/api/educationgradingscheme-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationgradingscheme-post?view=graph-rest-beta)
+
 
 
 

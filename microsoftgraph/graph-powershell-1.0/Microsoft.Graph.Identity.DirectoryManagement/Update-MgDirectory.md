@@ -308,7 +308,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit- `[]`>: Conceptual container for user and group directory objects.
+ADMINISTRATIVEUNITS `<IMicrosoftGraphAdministrativeUnit- `[]`>`: Conceptual container for user and group directory objects.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -347,7 +347,7 @@ Can be set to HiddenMembership.
 If not set (value is null), the default behavior is public.
 When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-ATTRIBUTESETS <IMicrosoftGraphAttributeSet- `[]`>: Group of related custom security attribute definitions.
+ATTRIBUTESETS `<IMicrosoftGraphAttributeSet- `[]`>`: Group of related custom security attribute definitions.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Description of the attribute set.
@@ -527,7 +527,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
     - `[TotalLicenses <Int32?>]`: The number of licenses included in this subscription.
 
-CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefinition- `[]`>: Schema of a custom security attributes (key-value pairs).
+CUSTOMSECURITYATTRIBUTEDEFINITIONS `<IMicrosoftGraphCustomSecurityAttributeDefinition- `[]`>`: Schema of a custom security attributes (key-value pairs).
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedValues <IMicrosoftGraphAllowedValue- `[]`>]`: Values that are predefined for this custom security attribute.
@@ -564,7 +564,7 @@ If set to false, free-form values are allowed.
 Can later be changed from true to false, but cannot be changed from false to true.
 If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
-DELETEDITEMS <IMicrosoftGraphDirectoryObject- `[]`>: Recently deleted items.
+DELETEDITEMS `<IMicrosoftGraphDirectoryObject- `[]`>`: Recently deleted items.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -572,7 +572,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-DEVICELOCALCREDENTIALS <IMicrosoftGraphDeviceLocalCredentialInfo- `[]`>: The credentials of the device's local administrator account backed up to Microsoft Entra ID.
+DEVICELOCALCREDENTIALS `<IMicrosoftGraphDeviceLocalCredentialInfo- `[]`>`: The credentials of the device's local administrator account backed up to Microsoft Entra ID.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Credentials <IMicrosoftGraphDeviceLocalCredential- `[]`>]`: The credentials of the device's local administrator account backed up to Azure Active Directory.
@@ -586,12 +586,12 @@ Read-only.
   - `[LastBackupDateTime <DateTime?>]`: When the local administrator account credential was backed up to Azure Active Directory.
   - `[RefreshDateTime <DateTime?>]`: When the local administrator account credential will be refreshed and backed up to Azure Active Directory.
 
-FEDERATIONCONFIGURATIONS <IMicrosoftGraphIdentityProviderBase- `[]`>: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
+FEDERATIONCONFIGURATIONS `<IMicrosoftGraphIdentityProviderBase- `[]`>`: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 
-ONPREMISESSYNCHRONIZATION <IMicrosoftGraphOnPremisesDirectorySynchronization- `[]`>: A container for on-premises directory synchronization functionalities that are available for the organization.
+ONPREMISESSYNCHRONIZATION `<IMicrosoftGraphOnPremisesDirectorySynchronization- `[]`>`: A container for on-premises directory synchronization functionalities that are available for the organization.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]`: onPremisesDirectorySynchronizationConfiguration
@@ -625,7 +625,7 @@ This flag should be enabled again after any soft matching has been completed and
     - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
-SUBSCRIPTIONS <IMicrosoftGraphCompanySubscription- `[]`>: List of commercial subscriptions that an organization acquired.
+SUBSCRIPTIONS `<IMicrosoftGraphCompanySubscription- `[]`>`: List of commercial subscriptions that an organization acquired.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CommerceSubscriptionId <String>]`: The ID of this subscription in the commerce system.
@@ -656,6 +656,7 @@ Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
+
 
 
 

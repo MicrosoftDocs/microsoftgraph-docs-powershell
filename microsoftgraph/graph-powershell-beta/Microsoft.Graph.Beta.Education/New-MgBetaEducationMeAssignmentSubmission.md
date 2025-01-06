@@ -492,7 +492,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-OUTCOMES <IMicrosoftGraphEducationOutcome- `[]`>: .
+OUTCOMES `<IMicrosoftGraphEducationOutcome- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -522,7 +522,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESOURCES <IMicrosoftGraphEducationSubmissionResource- `[]`>: .
+RESOURCES `<IMicrosoftGraphEducationSubmissionResource- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied.
@@ -568,7 +568,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SUBMITTEDRESOURCES <IMicrosoftGraphEducationSubmissionResource- `[]`>: .
+SUBMITTEDRESOURCES `<IMicrosoftGraphEducationSubmissionResource- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which the resource was copied.
@@ -605,6 +605,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentsubmission)
+
 
 
 

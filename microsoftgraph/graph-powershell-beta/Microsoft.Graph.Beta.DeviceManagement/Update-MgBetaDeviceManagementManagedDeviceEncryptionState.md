@@ -554,13 +554,14 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails- `[]`>: Policy Details
+POLICYDETAILS `<IMicrosoftGraphEncryptionReportPolicyDetails- `[]`>`: Policy Details
   - `[PolicyId <String>]`: Policy Id for Encryption Report
   - `[PolicyName <String>]`: Policy Name for Encryption Report
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddeviceencryptionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddeviceencryptionstate)
+
 
 
 

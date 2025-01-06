@@ -263,7 +263,7 @@ If the content contains binary data, the request must be sent using the multipar
     - `[Target <String>]`: The element to update.
 Must be the #`<data-id>` or the generated {id} of the element, or the body or title keyword.
 
-COMMANDS <IMicrosoftGraphOnenotePatchContentCommand- `[]`>: .
+COMMANDS `<IMicrosoftGraphOnenotePatchContentCommand- `[]`>`: .
   - `[Action <String>]`: onenotePatchActionType
   - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data.
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
@@ -324,6 +324,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponenotepagecontent)
+
 
 
 

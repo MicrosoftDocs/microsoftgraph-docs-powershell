@@ -299,7 +299,7 @@ For example, there can be two columns both have a width of 6 in a section.
   - `[Emphasis <String>]`: sectionEmphasisType
   - `[Layout <String>]`: horizontalSectionLayoutType
 
-COLUMNS <IMicrosoftGraphHorizontalSectionColumn- `[]`>: The set of vertical columns in this section.
+COLUMNS `<IMicrosoftGraphHorizontalSectionColumn- `[]`>`: The set of vertical columns in this section.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
@@ -370,6 +370,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepageassitepagecanvalayouthorizontalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepageassitepagecanvalayouthorizontalsection)
+
 
 
 

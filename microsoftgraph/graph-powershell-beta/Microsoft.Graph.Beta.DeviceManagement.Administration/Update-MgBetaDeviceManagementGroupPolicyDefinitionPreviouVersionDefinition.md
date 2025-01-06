@@ -790,7 +790,7 @@ The default value is empty.
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-PRESENTATIONS <IMicrosoftGraphGroupPolicyPresentation- `[]`>: The group policy presentations associated with the definition.
+PRESENTATIONS `<IMicrosoftGraphGroupPolicyPresentation- `[]`>`: The group policy presentations associated with the definition.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
@@ -911,6 +911,7 @@ The default value is empty.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicydefinitionpreviouversiondefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicydefinitionpreviouversiondefinition)
+
 
 
 

@@ -443,7 +443,7 @@ Read-only.
       - `[OldValue <String>]`: Old value.
     - `[ResourceId <String>]`: Audit resource's Id.
 
-RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
+RESOURCES `<IMicrosoftGraphAuditResource- `[]`>`: Resources being modified.
   - `[AuditResourceType <String>]`: Audit resource's type.
   - `[DisplayName <String>]`: Display name.
   - `[ModifiedProperties <IMicrosoftGraphAuditProperty- `[]`>]`: List of modified properties.
@@ -457,6 +457,7 @@ RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementauditevent)
 
 [https://learn.microsoft.com/graph/api/intune-auditing-auditevent-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-create?view=graph-rest-1.0)
+
 
 
 

@@ -234,7 +234,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHENTICATIONMETHODMODES <IMicrosoftGraphAuthenticationMethodModeDetail- `[]`>: Names and descriptions of all valid authentication method modes in the system.
+AUTHENTICATIONMETHODMODES `<IMicrosoftGraphAuthenticationMethodModeDetail- `[]`>`: Names and descriptions of all valid authentication method modes in the system.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AuthenticationMethod <String>]`: baseAuthenticationMethod
@@ -269,7 +269,7 @@ Supports $filter (eq, ne, not , and in).
     - `[PolicyType <String>]`: authenticationStrengthPolicyType
     - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
-POLICIES <IMicrosoftGraphAuthenticationStrengthPolicy- `[]`>: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
+POLICIES `<IMicrosoftGraphAuthenticationStrengthPolicy- `[]`>`: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedCombinations <String- `[]`>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
@@ -290,6 +290,7 @@ Supports $filter (eq, ne, not , and in).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength)
+
 
 
 

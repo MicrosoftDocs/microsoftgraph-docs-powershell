@@ -336,7 +336,7 @@ In PIM, when the  eligible or active assignment becomes active.
       - `[TicketSubmitterIdentityId <String>]`: ID for the request submitter.
       - `[TicketSystem <String>]`: The description of the ticket system.
 
-PERMISSIONSREQUESTCHANGES <IMicrosoftGraphPermissionsRequestChange- `[]`>: Represents a change event of the scheduledPermissionsRequest entity.
+PERMISSIONSREQUESTCHANGES `<IMicrosoftGraphPermissionsRequestChange- `[]`>`: Represents a change event of the scheduledPermissionsRequest entity.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveOccurrenceStatus <String>]`: permissionsRequestOccurrenceStatus
@@ -345,7 +345,7 @@ Read-only.
   - `[StatusDetail <String>]`: statusDetail
   - `[TicketId <String>]`: Represents the ticketing system identifier.
 
-SCHEDULEDPERMISSIONSAPPROVALS <IMicrosoftGraphApproval- `[]`>: .
+SCHEDULEDPERMISSIONSAPPROVALS `<IMicrosoftGraphApproval- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Steps <IMicrosoftGraphApprovalStep- `[]`>]`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
@@ -373,7 +373,7 @@ Read-only.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
-SCHEDULEDPERMISSIONSREQUESTS <IMicrosoftGraphScheduledPermissionsRequest- `[]`>: Represents a permissions request that Permissions Management uses to manage permissions for an identity on resources in the authorization system.
+SCHEDULEDPERMISSIONSREQUESTS `<IMicrosoftGraphScheduledPermissionsRequest- `[]`>`: Represents a permissions request that Permissions Management uses to manage permissions for an identity on resources in the authorization system.
 This request can be granted, rejected or canceled by identities in Permissions Management.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -451,6 +451,7 @@ In PIM, when the  eligible or active assignment becomes active.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagement)
+
 
 
 

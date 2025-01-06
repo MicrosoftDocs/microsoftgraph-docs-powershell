@@ -350,7 +350,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-STAGES <IMicrosoftGraphApprovalStage- `[]`>: A collection of stages in the approval decision.
+STAGES `<IMicrosoftGraphApprovalStage- `[]`>`: A collection of stages in the approval decision.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review.
@@ -377,6 +377,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequestapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequestapproval)
+
 
 
 

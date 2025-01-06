@@ -356,7 +356,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
+TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.
@@ -367,6 +367,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpostinreplyto)
 
 [https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-1.0)
+
 
 
 
