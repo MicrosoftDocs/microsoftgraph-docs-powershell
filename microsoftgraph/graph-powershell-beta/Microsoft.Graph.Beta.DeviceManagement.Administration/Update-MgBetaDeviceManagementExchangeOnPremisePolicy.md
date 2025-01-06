@@ -324,7 +324,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSRULES <IMicrosoftGraphDeviceManagementExchangeAccessRule- `[]`>: The list of device access rules in Exchange.
+ACCESSRULES `<IMicrosoftGraphDeviceManagementExchangeAccessRule- `[]`>`: The list of device access rules in Exchange.
 The access rules apply globally to the entire Exchange organization
   - `[AccessLevel <DeviceManagementExchangeAccessLevel?>]`: Access Level in Exchange.
   - `[DeviceClass <IMicrosoftGraphDeviceManagementExchangeDeviceClass>]`: Device Class in Exchange.
@@ -427,13 +427,32 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
-KNOWNDEVICECLASSES <IMicrosoftGraphDeviceManagementExchangeDeviceClass- `[]`>: The list of device classes known to Exchange
+KNOWNDEVICECLASSES `<IMicrosoftGraphDeviceManagementExchangeDeviceClass- `[]`>`: The list of device classes known to Exchange
   - `[Name <String>]`: Name of the device class which will be impacted by this rule.
   - `[Type <DeviceManagementExchangeAccessRuleType?>]`: Criteria which defines the type of device this access rule will apply to
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementexchangeonpremisepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementexchangeonpremisepolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

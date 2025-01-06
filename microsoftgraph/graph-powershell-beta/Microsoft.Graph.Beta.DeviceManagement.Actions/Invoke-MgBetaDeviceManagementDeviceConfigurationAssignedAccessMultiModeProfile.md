@@ -237,7 +237,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDACCESSMULTIMODEPROFILES <IMicrosoftGraphWindowsAssignedAccessProfile- `[]`>: .
+ASSIGNEDACCESSMULTIMODEPROFILES `<IMicrosoftGraphWindowsAssignedAccessProfile- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppUserModelIds <String- `[]`>]`: These are the only Windows Store Apps that will be available to launch from the Start menu.
@@ -321,6 +321,25 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationassignedaccessmultimodeprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationassignedaccessmultimodeprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

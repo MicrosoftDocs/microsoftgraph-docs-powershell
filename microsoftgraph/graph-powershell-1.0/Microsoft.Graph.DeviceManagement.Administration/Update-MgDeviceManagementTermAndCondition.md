@@ -408,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCEPTANCESTATUSES <IMicrosoftGraphTermsAndConditionsAcceptanceStatus- `[]`>: The list of acceptance statuses for this T&C policy.
+ACCEPTANCESTATUSES `<IMicrosoftGraphTermsAndConditionsAcceptanceStatus- `[]`>`: The list of acceptance statuses for this T&C policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
@@ -440,7 +440,7 @@ Incremented when an administrator makes a change to the terms and wishes to requ
   - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
   - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
 
-ASSIGNMENTS <IMicrosoftGraphTermsAndConditionsAssignment- `[]`>: The list of assignments for this T&C policy.
+ASSIGNMENTS `<IMicrosoftGraphTermsAndConditionsAssignment- `[]`>`: The list of assignments for this T&C policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -512,6 +512,25 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandcondition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandcondition)
 
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

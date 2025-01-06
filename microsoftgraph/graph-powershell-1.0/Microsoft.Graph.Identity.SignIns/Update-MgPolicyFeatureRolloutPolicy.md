@@ -337,7 +337,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: Nullable.
+APPLIESTO `<IMicrosoftGraphDirectoryObject- `[]`>`: Nullable.
 Specifies a list of directoryObject resources that feature is enabled for.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -426,6 +426,25 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyfeaturerolloutpolicy)
 
 [https://learn.microsoft.com/graph/api/featurerolloutpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/featurerolloutpolicy-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

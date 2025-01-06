@@ -241,12 +241,12 @@ Read-only.
     - `[LowRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
     - `[MediumRiskProfile <IMicrosoftGraphRiskProfile>]`: riskProfile
 
-FINDINGS <IMicrosoftGraphFinding- `[]`>: The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
+FINDINGS `<IMicrosoftGraphFinding- `[]`>`: The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Defines when the finding was created.
 
-PERMISSIONSCREEPINDEXDISTRIBUTIONS <IMicrosoftGraphPermissionsCreepIndexDistribution- `[]`>: Represents the Permissions Creep Index (PCI) for the authorization system.
+PERMISSIONSCREEPINDEXDISTRIBUTIONS `<IMicrosoftGraphPermissionsCreepIndexDistribution- `[]`>`: Represents the Permissions Creep Index (PCI) for the authorization system.
 PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -278,6 +278,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalyticgcp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalyticgcp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

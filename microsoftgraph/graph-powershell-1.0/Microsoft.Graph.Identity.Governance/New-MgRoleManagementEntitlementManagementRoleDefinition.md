@@ -371,7 +371,7 @@ This identifier is typically used if one needs an identifier to be the same acro
   - `[Version <String>]`: Indicates version of the role definition.
 Read-only when isBuiltIn is true.
 
-INHERITSPERMISSIONSFROM <IMicrosoftGraphUnifiedRoleDefinition- `[]`>: Read-only collection of role definitions that the given role definition inherits from.
+INHERITSPERMISSIONSFROM `<IMicrosoftGraphUnifiedRoleDefinition- `[]`>`: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles (isBuiltIn is true) support this attribute.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -411,7 +411,7 @@ This identifier is typically used if one needs an identifier to be the same acro
   - `[Version <String>]`: Indicates version of the role definition.
 Read-only when isBuiltIn is true.
 
-ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission- `[]`>: List of permissions included in the role.
+ROLEPERMISSIONS `<IMicrosoftGraphUnifiedRolePermission- `[]`>`: List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
   - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
@@ -424,6 +424,25 @@ Not yet supported.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroledefinition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

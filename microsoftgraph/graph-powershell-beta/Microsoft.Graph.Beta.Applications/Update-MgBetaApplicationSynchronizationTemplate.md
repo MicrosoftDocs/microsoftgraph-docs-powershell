@@ -555,7 +555,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-METADATA <IMicrosoftGraphSynchronizationMetadataEntry- `[]`>: Additional extension properties.
+METADATA `<IMicrosoftGraphSynchronizationMetadataEntry- `[]`>`: Additional extension properties.
 Unless mentioned explicitly, metadata values shouldn't be changed.
   - `[Key <String>]`: synchronizationMetadata
   - `[Value <String>]`: Value of the metadata property.
@@ -707,6 +707,25 @@ Must match one of the directory definitions in synchronizationSchema.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationtemplate)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationtemplate-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationtemplate-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -303,7 +303,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair- `[]`>: A set of string key and string value pairs which provides additional information on the Troubleshooting event
+ADDITIONALINFORMATION `<IMicrosoftGraphKeyValuePair- `[]`>`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
@@ -487,6 +487,25 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementtroubleshootingevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

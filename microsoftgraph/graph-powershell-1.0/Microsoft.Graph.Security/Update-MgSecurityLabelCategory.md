@@ -380,7 +380,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-SUBCATEGORIES <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>: Represents all subcategories under a particular category.
+SUBCATEGORIES `<IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>`: Represents all subcategories under a particular category.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -399,6 +399,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelcategory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

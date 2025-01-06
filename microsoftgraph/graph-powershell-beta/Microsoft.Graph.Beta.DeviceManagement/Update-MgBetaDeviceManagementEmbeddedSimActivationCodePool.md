@@ -335,13 +335,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVATIONCODES <IMicrosoftGraphEmbeddedSimActivationCode- `[]`>: The activation codes which belong to this pool.
+ACTIVATIONCODES `<IMicrosoftGraphEmbeddedSimActivationCode- `[]`>`: The activation codes which belong to this pool.
 This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.
   - `[IntegratedCircuitCardIdentifier <String>]`: The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.
   - `[MatchingIdentifier <String>]`: The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.
   - `[SmdpPlusServerAddress <String>]`: The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.
 
-ASSIGNMENTS <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment- `[]`>: Navigational property to a list of targets to which this pool is assigned.
+ASSIGNMENTS `<IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment- `[]`>`: Navigational property to a list of targets to which this pool is assigned.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -388,7 +388,7 @@ joe@contoso.com
   - `[ModifiedDateTime <DateTime?>]`: The time the embedded SIM activation code pool was last modified.
 Updated service side.
 
-DEVICESTATES <IMicrosoftGraphEmbeddedSimDeviceState- `[]`>: Navigational property to a list of device states for this pool.
+DEVICESTATES `<IMicrosoftGraphEmbeddedSimDeviceState- `[]`>`: Navigational property to a list of device states for this pool.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The time the embedded SIM device status was created.
@@ -552,6 +552,25 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementembeddedsimactivationcodepool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementembeddedsimactivationcodepool)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

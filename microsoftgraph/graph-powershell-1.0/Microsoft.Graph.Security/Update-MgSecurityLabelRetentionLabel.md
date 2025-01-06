@@ -703,7 +703,7 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-DISPOSITIONREVIEWSTAGES <IMicrosoftGraphSecurityDispositionReviewStage- `[]`>: When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.
+DISPOSITIONREVIEWSTAGES `<IMicrosoftGraphSecurityDispositionReviewStage- `[]`>`: When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: Name representing each stage within a collection.
@@ -809,6 +809,25 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabel)
 
 [https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

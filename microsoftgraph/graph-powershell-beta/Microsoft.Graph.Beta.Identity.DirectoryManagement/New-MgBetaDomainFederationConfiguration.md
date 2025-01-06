@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordResetUri
-.
+URI that clients are redirected to for resetting their password.
 
 ```yaml
 Type: String
@@ -503,7 +503,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-  - `[PasswordResetUri <String>]`: 
+  - `[PasswordResetUri <String>]`: URI that clients are redirected to for resetting their password.
   - `[PromptLoginBehavior <String>]`: promptLoginBehavior
   - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
@@ -577,6 +577,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration)
 
 [https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-beta](https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

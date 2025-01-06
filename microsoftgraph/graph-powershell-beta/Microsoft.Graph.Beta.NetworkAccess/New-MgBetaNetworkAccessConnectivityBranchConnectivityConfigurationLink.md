@@ -304,7 +304,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
 
-LOCALCONFIGURATIONS <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration- `[]`>: Specifies Microsoft's end of the tunnel configuration for a device link.
+LOCALCONFIGURATIONS `<IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration- `[]`>`: Specifies Microsoft's end of the tunnel configuration for a device link.
   - `[Asn <Int32?>]`: Specifies ASN of one end of IPSec tunnel (local or peer).
   - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
   - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
@@ -319,6 +319,25 @@ PEERCONFIGURATION `<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>`:
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchconnectivityconfigurationlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchconnectivityconfigurationlink)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

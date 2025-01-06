@@ -502,21 +502,21 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the task folder.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the task folder.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String- `[]`>]`: A collection of property values.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the task folder.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the task folder.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String>]`: A property value.
 
-TASKS <IMicrosoftGraphOutlookTask- `[]`>: The tasks in this task folder.
+TASKS `<IMicrosoftGraphOutlookTask- `[]`>`: The tasks in this task folder.
 Read-only.
 Nullable.
   - `[Categories <String- `[]`>]`: The categories associated with the item.
@@ -613,6 +613,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskfolder)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

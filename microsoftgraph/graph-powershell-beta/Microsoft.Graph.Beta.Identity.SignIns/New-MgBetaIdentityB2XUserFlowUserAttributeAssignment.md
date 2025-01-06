@@ -464,7 +464,7 @@ Read-only.
 Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
-USERATTRIBUTEVALUES <IMicrosoftGraphUserAttributeValuesItem- `[]`>: The input options for the user flow attribute.
+USERATTRIBUTEVALUES `<IMicrosoftGraphUserAttributeValuesItem- `[]`>`: The input options for the user flow attribute.
 Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
   - `[IsDefault <Boolean?>]`: Used to set the value as the default.
   - `[Name <String>]`: The display name of the property displayed to the end user in the user flow.
@@ -475,6 +475,25 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment)
 
 [https://learn.microsoft.com/graph/api/b2xidentityuserflow-post-userattributeassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2xidentityuserflow-post-userattributeassignments?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

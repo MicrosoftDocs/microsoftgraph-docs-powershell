@@ -472,7 +472,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   - `[Message <String>]`: A non-localized message for the developer.
   - `[Target <String>]`: The target of the error.
 
-GRANULARMAILBOXRESTOREARTIFACTS <IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>: .
+GRANULARMAILBOXRESTOREARTIFACTS `<IMicrosoftGraphGranularMailboxRestoreArtifact- `[]`>`: .
   - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
   - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
   - `[DestinationType <String>]`: destinationType
@@ -559,7 +559,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-MAILBOXRESTOREARTIFACTS <IMicrosoftGraphMailboxRestoreArtifact- `[]`>: A collection of restore points and destination details that can be used to restore Exchange mailboxes.
+MAILBOXRESTOREARTIFACTS `<IMicrosoftGraphMailboxRestoreArtifact- `[]`>`: A collection of restore points and destination details that can be used to restore Exchange mailboxes.
   - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
   - `[DestinationType <String>]`: destinationType
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -615,6 +615,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresession)
 
 [https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

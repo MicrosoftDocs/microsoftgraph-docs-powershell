@@ -282,7 +282,7 @@ e.g, mysuperhiddenpassword.
 Note the value for passwords is write-only, the value can never be read back.
   - `[Id <String>]`: 
 
-CREDENTIALS <IMicrosoftGraphCredential- `[]`>: .
+CREDENTIALS `<IMicrosoftGraphCredential- `[]`>`: .
   - `[FieldId <String>]`: The name of the field for this credential.
 e.g, username or password or phoneNumber.
 This is defined by the application.
@@ -334,6 +334,25 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalpasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalpasswordsinglesignoncredential)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-createpasswordsinglesignoncredentials?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-createpasswordsinglesignoncredentials?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

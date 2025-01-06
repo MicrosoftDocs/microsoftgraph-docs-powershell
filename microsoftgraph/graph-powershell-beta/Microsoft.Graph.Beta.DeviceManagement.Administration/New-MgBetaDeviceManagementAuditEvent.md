@@ -399,7 +399,7 @@ Read-only.
     - `[ResourceId <String>]`: Audit resource's Id.
     - `[Type <String>]`: Audit resource's type.
 
-RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
+RESOURCES `<IMicrosoftGraphAuditResource- `[]`>`: Resources being modified.
   - `[AuditResourceType <String>]`: Audit resource's type.
   - `[DisplayName <String>]`: Display name.
   - `[ModifiedProperties <IMicrosoftGraphAuditProperty- `[]`>]`: List of modified properties.
@@ -412,6 +412,25 @@ RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

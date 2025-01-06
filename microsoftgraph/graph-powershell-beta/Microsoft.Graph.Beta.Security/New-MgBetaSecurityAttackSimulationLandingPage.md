@@ -389,7 +389,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Email <String>]`: Email address of the user.
 
-DETAILS <IMicrosoftGraphLandingPageDetail- `[]`>: The detail information for a landing page associated with a simulation during its creation.
+DETAILS `<IMicrosoftGraphLandingPageDetail- `[]`>`: The detail information for a landing page associated with a simulation during its creation.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Content <String>]`: Landing page detail content.
@@ -408,6 +408,25 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

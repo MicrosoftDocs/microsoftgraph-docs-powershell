@@ -257,7 +257,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPPROVISIONINGCONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment- `[]`>: .
+APPPROVISIONINGCONFIGURATIONGROUPASSIGNMENTS `<IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[TargetGroupId <String>]`: The ID of the AAD group in which the app provisioning configuration is being targeted.
@@ -348,7 +348,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-IOSLOBAPPPROVISIONINGCONFIGASSIGNMENTS <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>: .
+IOSLOBAPPPROVISIONINGCONFIGASSIGNMENTS `<IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -359,6 +359,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementioslobappprovisioningconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementioslobappprovisioningconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

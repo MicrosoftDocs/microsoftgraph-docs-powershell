@@ -311,7 +311,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AVAILABILITY <IMicrosoftGraphShiftAvailability- `[]`>: Availability of the user to be scheduled for work and its recurrence pattern.
+AVAILABILITY `<IMicrosoftGraphShiftAvailability- `[]`>`: Availability of the user to be scheduled for work and its recurrence pattern.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -460,6 +460,25 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingshiftpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingshiftpreference)
 
 [https://learn.microsoft.com/graph/api/shiftpreferences-put?view=graph-rest-beta](https://learn.microsoft.com/graph/api/shiftpreferences-put?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

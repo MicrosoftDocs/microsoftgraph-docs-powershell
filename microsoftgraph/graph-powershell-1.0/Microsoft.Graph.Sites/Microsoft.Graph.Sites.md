@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: 9f9fa9b3-399c-49e1-a4eb-582a49623faf
+Module Guid: a148f1e5-d560-49a6-99ad-d1e67da1478b
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.sites/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -2328,5 +2328,23 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSiteTermStoreSetTermChildRelation](Update-MgSiteTermStoreSetTermChildRelation.md)
 
 ### [Update-MgSiteTermStoreSetTermRelation](Update-MgSiteTermStoreSetTermRelation.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

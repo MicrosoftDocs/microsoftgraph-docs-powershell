@@ -203,7 +203,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTRECORDS <IMicrosoftGraphDeviceManagementAlertRecord- `[]`>: The collection of records of alert events.
+ALERTRECORDS `<IMicrosoftGraphDeviceManagementAlertRecord- `[]`>`: The collection of records of alert events.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AlertImpact <IMicrosoftGraphDeviceManagementAlertImpact>]`: alertImpact
@@ -233,7 +233,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Severity <String>]`: ruleSeverityType
   - `[Status <String>]`: alertStatusType
 
-ALERTRULES <IMicrosoftGraphDeviceManagementAlertRule- `[]`>: The collection of alert rules.
+ALERTRULES `<IMicrosoftGraphDeviceManagementAlertRule- `[]`>`: The collection of alert rules.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AlertRuleTemplate <String>]`: alertRuleTemplate
@@ -341,6 +341,25 @@ Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

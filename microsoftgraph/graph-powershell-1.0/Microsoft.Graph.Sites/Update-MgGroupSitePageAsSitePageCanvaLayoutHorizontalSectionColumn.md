@@ -374,13 +374,32 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-WEBPARTS <IMicrosoftGraphWebPart- `[]`>: The collection of WebParts in this column.
+WEBPARTS `<IMicrosoftGraphWebPart- `[]`>`: The collection of WebParts in this column.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagecanvalayouthorizontalsectioncolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagecanvalayouthorizontalsectioncolumn)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

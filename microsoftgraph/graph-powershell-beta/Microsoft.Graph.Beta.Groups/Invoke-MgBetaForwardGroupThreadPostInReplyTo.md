@@ -348,7 +348,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
+TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
@@ -359,6 +359,25 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto)
 
 [https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -403,7 +403,7 @@ Supports $filter (eq, in).
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: The roles allowed by RBAC providers and the permissions assigned to the roles.
   - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment- `[]`>]`: Resource to grant access to users or groups that are transitive.
 
-CUSTOMAPPSCOPES <IMicrosoftGraphCustomAppScope- `[]`>: Workload-specific scope object that represents the resources for which the principal has been granted access.
+CUSTOMAPPSCOPES `<IMicrosoftGraphCustomAppScope- `[]`>`: Workload-specific scope object that represents the resources for which the principal has been granted access.
   - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
 Read only.
@@ -415,7 +415,7 @@ Read-only.
   - `[CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]`: customAppScopeAttributesDictionary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace- `[]`>: Resource that represents a collection of related actions.
+RESOURCENAMESPACES `<IMicrosoftGraphUnifiedRbacResourceNamespace- `[]`>`: Resource that represents a collection of related actions.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: Name of the resource namespace.
@@ -462,7 +462,7 @@ Read-only.
       - `[Type <String>]`: 
     - `[ResourceScopeId <String>]`: Not implemented.
 
-ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment- `[]`>: Resource to grant access to users or groups.
+ROLEASSIGNMENTS `<IMicrosoftGraphUnifiedRoleAssignment- `[]`>`: Resource to grant access to users or groups.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
@@ -548,7 +548,7 @@ Read-only when isBuiltIn is true.
 Read-only.
 Supports $filter (eq, in).
 
-ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition- `[]`>: The roles allowed by RBAC providers and the permissions assigned to the roles.
+ROLEDEFINITIONS `<IMicrosoftGraphUnifiedRoleDefinition- `[]`>`: The roles allowed by RBAC providers and the permissions assigned to the roles.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
@@ -590,7 +590,7 @@ Read-only when isBuiltIn is true.
   - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
 
-TRANSITIVEROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment- `[]`>: Resource to grant access to users or groups that are transitive.
+TRANSITIVEROLEASSIGNMENTS `<IMicrosoftGraphUnifiedRoleAssignment- `[]`>`: Resource to grant access to users or groups that are transitive.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
@@ -679,6 +679,25 @@ Supports $filter (eq, in).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchange)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

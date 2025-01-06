@@ -926,7 +926,7 @@ Nullable.
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
 Read-only.
 
-SECTIONGROUPS <IMicrosoftGraphSectionGroup- `[]`>: The section groups in the section.
+SECTIONGROUPS `<IMicrosoftGraphSectionGroup- `[]`>`: The section groups in the section.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1061,7 +1061,7 @@ Nullable.
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
 Read-only.
 
-SECTIONS <IMicrosoftGraphOnenoteSection- `[]`>: The sections in the section group.
+SECTIONS `<IMicrosoftGraphOnenoteSection- `[]`>`: The sections in the section group.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1199,6 +1199,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotesectiongroup)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

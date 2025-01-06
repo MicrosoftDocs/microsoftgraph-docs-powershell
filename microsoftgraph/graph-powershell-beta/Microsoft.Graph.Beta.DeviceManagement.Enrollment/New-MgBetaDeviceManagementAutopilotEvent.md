@@ -629,7 +629,7 @@ Error code for enforcement status takes precedence if it exists.
   - `[Windows10EnrollmentCompletionPageConfigurationId <String>]`: Enrollment Status Page profile ID
   - `[WindowsAutopilotDeploymentProfileDisplayName <String>]`: Autopilot profile name.
 
-POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail- `[]`>: Policy and application status details for this device.
+POLICYSTATUSDETAILS `<IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail- `[]`>`: Policy and application status details for this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
@@ -643,6 +643,25 @@ Error code for enforcement status takes precedence if it exists.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

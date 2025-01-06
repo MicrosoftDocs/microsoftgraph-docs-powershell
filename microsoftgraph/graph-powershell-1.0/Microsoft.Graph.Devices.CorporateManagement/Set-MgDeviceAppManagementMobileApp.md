@@ -286,7 +286,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
-MOBILEAPPASSIGNMENTS <IMicrosoftGraphMobileAppAssignment- `[]`>: .
+MOBILEAPPASSIGNMENTS `<IMicrosoftGraphMobileAppAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
@@ -298,6 +298,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmobileapp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

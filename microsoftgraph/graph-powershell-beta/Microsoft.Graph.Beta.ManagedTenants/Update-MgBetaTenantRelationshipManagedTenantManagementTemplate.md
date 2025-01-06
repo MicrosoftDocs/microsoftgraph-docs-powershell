@@ -607,7 +607,7 @@ Read-only.
       - `[SettingId <String>]`: 
       - `[ValueType <String>]`: managementParameterValueType
 
-INFORMATIONLINKS <IMicrosoftGraphActionUrl- `[]`>: .
+INFORMATIONLINKS `<IMicrosoftGraphActionUrl- `[]`>`: .
   - `[DisplayName <String>]`: Brief title for the page that the links directs to.
   - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
 
@@ -651,7 +651,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
   - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
-MANAGEMENTTEMPLATECOLLECTIONS <IMicrosoftGraphManagedTenantsManagementTemplateCollection- `[]`>: .
+MANAGEMENTTEMPLATECOLLECTIONS `<IMicrosoftGraphManagedTenantsManagementTemplateCollection- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedByUserId <String>]`: 
@@ -774,7 +774,7 @@ Read-only.
         - `[SettingId <String>]`: 
         - `[ValueType <String>]`: managementParameterValueType
 
-MANAGEMENTTEMPLATESTEPS <IMicrosoftGraphManagedTenantsManagementTemplateStep- `[]`>: .
+MANAGEMENTTEMPLATESTEPS `<IMicrosoftGraphManagedTenantsManagementTemplateStep- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AcceptedVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]`: managementTemplateStepVersion
@@ -898,7 +898,7 @@ Read-only.
   - `[UserImpact <String>]`: 
   - `[Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion- `[]`>]`: 
 
-PARAMETERS <IMicrosoftGraphManagedTenantsTemplateParameter- `[]`>: The collection of parameters used by the management template.
+PARAMETERS `<IMicrosoftGraphManagedTenantsTemplateParameter- `[]`>`: The collection of parameters used by the management template.
 Optional.
 Read-only.
   - `[Description <String>]`: The description for the template parameter.
@@ -915,7 +915,7 @@ Required.
 Read-only.
   - `[ValueType <String>]`: managementParameterValueType
 
-WORKLOADACTIONS <IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>: The collection of workload actions associated with the management template.
+WORKLOADACTIONS `<IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>`: The collection of workload actions associated with the management template.
 Optional.
 Read-only.
   - `[ActionId <String>]`: The unique identifier for the workload action.
@@ -950,6 +950,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

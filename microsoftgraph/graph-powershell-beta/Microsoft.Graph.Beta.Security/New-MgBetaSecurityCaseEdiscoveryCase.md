@@ -742,8 +742,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -6331,7 +6331,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8774,7 +8774,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian- `[]`>: Returns a list of case ediscoveryCustodian objects for this case.
+CUSTODIANS `<IMicrosoftGraphSecurityEdiscoveryCustodian- `[]`>`: Returns a list of case ediscoveryCustodian objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -9030,8 +9030,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -14619,7 +14619,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -16899,7 +16899,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LEGALHOLDS <IMicrosoftGraphSecurityEdiscoveryHoldPolicy- `[]`>: Returns a list of case eDiscoveryHoldPolicy objects for this case.
+LEGALHOLDS `<IMicrosoftGraphSecurityEdiscoveryHoldPolicy- `[]`>`: Returns a list of case eDiscoveryHoldPolicy objects for this case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -17144,8 +17144,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -22733,7 +22733,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -24991,7 +24991,7 @@ Read-only.
     - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site.
 Read-only.
 
-NONCUSTODIALDATASOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
+NONCUSTODIALDATASOURCES `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>`: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -25034,7 +25034,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-OPERATIONS <IMicrosoftGraphSecurityCaseOperation- `[]`>: Returns a list of case caseOperation objects for this case.
+OPERATIONS `<IMicrosoftGraphSecurityCaseOperation- `[]`>`: Returns a list of case caseOperation objects for this case.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Action <String>]`: caseAction
@@ -25059,7 +25059,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: caseOperationStatus
 
-REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet- `[]`>: Returns a list of eDiscoveryReviewSet objects in the case.
+REVIEWSETS `<IMicrosoftGraphSecurityEdiscoveryReviewSet- `[]`>`: Returns a list of eDiscoveryReviewSet objects in the case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -25338,8 +25338,8 @@ This lets services like Microsoft 365 call the application in the context of a d
                 - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                  - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                  - `[Value <String>]`: Contains the corresponding value for the specified key.
+                  - `[Key <String>]`: Key.
+                  - `[Value <String>]`: Value.
                 - `[Type <String>]`: The unique name for the functionality exposed by the app.
               - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -30927,7 +30927,7 @@ It is an Optional field
               - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+              - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                 - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -33215,7 +33215,7 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch- `[]`>: Returns a list of eDiscoverySearch objects associated with this case.
+SEARCHES `<IMicrosoftGraphSecurityEdiscoverySearch- `[]`>`: Returns a list of eDiscoverySearch objects associated with this case.
   - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -33516,8 +33516,8 @@ This lets services like Microsoft 365 call the application in the context of a d
                     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                      - `[Value <String>]`: Contains the corresponding value for the specified key.
+                      - `[Key <String>]`: Key.
+                      - `[Value <String>]`: Value.
                     - `[Type <String>]`: The unique name for the functionality exposed by the app.
                   - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -39105,7 +39105,7 @@ It is an Optional field
                   - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+                  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                     - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -41461,7 +41461,7 @@ To learn more, see Include numbers in themes.
     - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set.
 To learn more, see Maximum number of themes.
 
-TAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>: Returns a list of ediscoveryReviewTag objects associated to this case.
+TAGS `<IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>`: Returns a list of ediscoveryReviewTag objects associated to this case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -41487,6 +41487,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycase)
 
 [https://learn.microsoft.com/graph/api/security-casesroot-post-ediscoverycases?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-casesroot-post-ediscoverycases?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

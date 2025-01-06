@@ -289,7 +289,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACL <IMicrosoftGraphExternalConnectorsAcl- `[]`>: An array of access control entries.
+ACL `<IMicrosoftGraphExternalConnectorsAcl- `[]`>`: An array of access control entries.
 Each entry specifies the access granted to a user or group.
 Required.
   - `[AccessType <String>]`: accessType
@@ -298,7 +298,7 @@ Required.
 For Microsoft Entra identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively.
 For external groups value is set to the ID of the externalGroup
 
-ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>: Returns a list of activities performed on the item.
+ACTIVITIES `<IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>`: Returns a list of activities performed on the item.
 Write-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -365,6 +365,25 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitem)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

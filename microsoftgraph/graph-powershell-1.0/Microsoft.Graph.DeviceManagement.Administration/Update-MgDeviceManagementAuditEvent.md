@@ -521,7 +521,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
   - `[UserId <String>]`: The unique identifier of user
 
-RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
+RESOURCES `<IMicrosoftGraphAuditResource- `[]`>`: Resources being modified.
   - `[AuditResourceType <String>]`: Audit resource's type.
   - `[DisplayName <String>]`: Display name.
   - `[ModifiedProperties <IMicrosoftGraphAuditProperty- `[]`>]`: List of modified properties.
@@ -535,6 +535,25 @@ RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent)
 
 [https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

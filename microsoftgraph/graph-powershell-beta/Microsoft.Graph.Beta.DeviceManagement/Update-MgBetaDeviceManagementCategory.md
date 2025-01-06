@@ -433,7 +433,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>: The setting definitions this category contains
+SETTINGDEFINITIONS `<IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>`: The setting definitions this category contains
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the setting value
@@ -453,6 +453,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcategory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

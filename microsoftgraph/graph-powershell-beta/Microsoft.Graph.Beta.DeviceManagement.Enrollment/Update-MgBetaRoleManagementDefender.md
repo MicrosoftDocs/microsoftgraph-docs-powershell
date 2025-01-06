@@ -356,7 +356,7 @@ Read-only when isBuiltIn is true.
     - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: 
 
-RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace- `[]`>: .
+RESOURCENAMESPACES `<IMicrosoftGraphUnifiedRbacResourceNamespace- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: Name of the resource namespace.
@@ -403,7 +403,7 @@ Read-only.
       - `[Type <String>]`: 
     - `[ResourceScopeId <String>]`: Not implemented.
 
-ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignmentMultiple- `[]`>: .
+ROLEASSIGNMENTS `<IMicrosoftGraphUnifiedRoleAssignmentMultiple- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppScopeIds <String- `[]`>]`: Ids of the app specific scopes when the assignment scopes are app specific.
@@ -488,7 +488,7 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
   - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
 
-ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition- `[]`>: .
+ROLEDEFINITIONS `<IMicrosoftGraphUnifiedRoleDefinition- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
@@ -533,6 +533,25 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdefender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdefender)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

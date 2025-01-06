@@ -410,7 +410,7 @@ Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja
     - `[Operator <String>]`: operatorType
     - `[Target <Int32?>]`: The target threshold value.
 
-CONDITIONS <IMicrosoftGraphDeviceManagementRuleCondition- `[]`>: The conditions that determine when to send alerts.
+CONDITIONS `<IMicrosoftGraphDeviceManagementRuleCondition- `[]`>`: The conditions that determine when to send alerts.
 For example, you can configure a condition to send an alert when provisioning fails for six or more Cloud PCs.
   - `[Aggregation <String>]`: aggregationType
   - `[ConditionCategory <String>]`: conditionCategory
@@ -419,7 +419,7 @@ For example, you can configure a condition to send an alert when provisioning fa
   - `[ThresholdValue <String>]`: The threshold value of the alert condition.
 The threshold value can be a number in string form or string like 'WestUS'.
 
-NOTIFICATIONCHANNELS <IMicrosoftGraphDeviceManagementNotificationChannel- `[]`>: The notification channels of the rule selected by the user.
+NOTIFICATIONCHANNELS `<IMicrosoftGraphDeviceManagementNotificationChannel- `[]`>`: The notification channels of the rule selected by the user.
   - `[NotificationChannelType <String>]`: notificationChannelType
   - `[NotificationReceivers <IMicrosoftGraphDeviceManagementNotificationReceiver- `[]`>]`: Information about the notification receivers, such as locale and contact information.
 For example, en-us for locale and serena.davis@contoso.com for contact information.
@@ -441,6 +441,25 @@ THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule)
 
 [https://learn.microsoft.com/graph/api/devicemanagement-alertrule-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-post?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

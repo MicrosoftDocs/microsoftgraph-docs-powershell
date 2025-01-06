@@ -487,7 +487,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-SETS <IMicrosoftGraphTermStoreSet- `[]`>: All sets under the group in a term - `[store]`.
+SETS `<IMicrosoftGraphTermStoreSet- `[]`>`: All sets under the group in a term - `[store]`.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm- `[]`>]`: Children terms of set in term - `[store]`.
@@ -540,6 +540,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroupsetparentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroupsetparentgroup)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -443,7 +443,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[State <String>]`: connectedOrganizationState
 
-EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: .
+EXTERNALSPONSORS `<IMicrosoftGraphDirectoryObject- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -551,7 +551,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-INTERNALSPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: .
+INTERNALSPONSORS `<IMicrosoftGraphDirectoryObject- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -562,6 +562,25 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementconnectedorganization)
 
 [https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

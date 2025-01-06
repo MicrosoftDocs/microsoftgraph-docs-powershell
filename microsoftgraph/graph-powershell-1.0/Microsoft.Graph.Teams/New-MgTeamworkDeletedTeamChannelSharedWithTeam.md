@@ -315,7 +315,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALLOWEDMEMBERS <IMicrosoftGraphConversationMember- `[]`>: A collection of team members who have access to the shared channel.
+ALLOWEDMEMBERS `<IMicrosoftGraphConversationMember- `[]`>`: A collection of team members who have access to the shared channel.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the user.
@@ -9962,6 +9962,25 @@ This URL should be treated as an opaque blob, and not parsed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelsharedwithteam)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

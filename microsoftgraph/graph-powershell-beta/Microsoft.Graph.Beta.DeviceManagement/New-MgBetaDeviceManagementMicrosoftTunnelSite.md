@@ -451,7 +451,7 @@ This property is going to be deprecated with the option of using the new propert
 This property is going to be deprecated with the option of using the new property, 'RouteIncludes'.
   - `[SplitDns <String- `[]`>]`: The domains that will be resolved using the provided dns servers
 
-MICROSOFTTUNNELSERVERS <IMicrosoftGraphMicrosoftTunnelServer- `[]`>: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
+MICROSOFTTUNNELSERVERS `<IMicrosoftGraphMicrosoftTunnelServer- `[]`>`: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server.
@@ -479,6 +479,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelsite)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

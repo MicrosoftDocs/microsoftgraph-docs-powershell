@@ -179,3 +179,22 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

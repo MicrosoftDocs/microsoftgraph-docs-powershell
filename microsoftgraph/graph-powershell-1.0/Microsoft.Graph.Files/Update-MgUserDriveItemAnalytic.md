@@ -9922,7 +9922,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-ITEMACTIVITYSTATS <IMicrosoftGraphItemActivityStat- `[]`>: .
+ITEMACTIVITYSTATS `<IMicrosoftGraphItemActivityStat- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Access <IMicrosoftGraphItemActionStat>]`: itemActionStat
@@ -19520,6 +19520,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemanalytic)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

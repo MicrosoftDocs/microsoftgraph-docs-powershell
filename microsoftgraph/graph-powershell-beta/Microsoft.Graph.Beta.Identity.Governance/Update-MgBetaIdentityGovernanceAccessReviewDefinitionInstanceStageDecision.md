@@ -1029,7 +1029,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-INSIGHTS <IMicrosoftGraphGovernanceInsight- `[]`>: Insights are recommendations to reviewers on whether to approve or deny a decision.
+INSIGHTS `<IMicrosoftGraphGovernanceInsight- `[]`>`: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1376,6 +1376,25 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision)
 
 [https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

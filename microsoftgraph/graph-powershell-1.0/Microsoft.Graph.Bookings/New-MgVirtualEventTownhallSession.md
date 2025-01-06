@@ -562,7 +562,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDANCEREPORTS <IMicrosoftGraphMeetingAttendanceReport- `[]`>: The attendance reports of an online meeting.
+ATTENDANCEREPORTS `<IMicrosoftGraphMeetingAttendanceReport- `[]`>`: The attendance reports of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -761,6 +761,25 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhallsession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhallsession)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

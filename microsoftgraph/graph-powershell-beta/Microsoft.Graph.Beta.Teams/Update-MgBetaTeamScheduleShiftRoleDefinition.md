@@ -332,13 +332,32 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-SHIFTSROLEPERMISSIONS <IMicrosoftGraphShiftsRolePermission- `[]`>: The collection of role permissions within the role.
+SHIFTSROLEPERMISSIONS `<IMicrosoftGraphShiftsRolePermission- `[]`>`: The collection of role permissions within the role.
   - `[AllowedResourceActions <String- `[]`>]`: The permissions that are allowed for a role.
 Permissions that aren't in this collection are disabled.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshiftroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshiftroledefinition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

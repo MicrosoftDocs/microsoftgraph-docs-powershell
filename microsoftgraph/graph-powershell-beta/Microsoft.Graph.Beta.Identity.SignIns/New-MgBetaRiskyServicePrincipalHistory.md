@@ -477,7 +477,7 @@ The possible values are: investigationsThreatIntelligence, generic, adminConfirm
   - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
   - `[ServicePrincipalId <String>]`: The identifier of the service principal.
 
-HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem- `[]`>: Represents the risk history of Microsoft Entra service principals.
+HISTORY `<IMicrosoftGraphRiskyServicePrincipalHistoryItem- `[]`>`: Represents the risk history of Microsoft Entra service principals.
   - `[AccountEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
   - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
   - `[DisplayName <String>]`: The display name for the service principal.
@@ -586,6 +586,25 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyserviceprincipalhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyserviceprincipalhistory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

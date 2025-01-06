@@ -276,7 +276,7 @@ Read-only.
   - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
   - `[PlanTitle <String>]`: Localized title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>: Localized names for configured buckets in the plan configuration.
+BUCKETS `<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>`: Localized names for configured buckets in the plan configuration.
   - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
   - `[Name <String>]`: Name of the bucket.
 
@@ -289,6 +289,25 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

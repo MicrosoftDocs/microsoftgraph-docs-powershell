@@ -5104,11 +5104,11 @@ Start with 1.
     - `[SupportedEntities <String>]`: workforceIntegrationSupportedEntities
     - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
-DELETEDCHATS <IMicrosoftGraphDeletedChat- `[]`>: A collection of deleted chats.
+DELETEDCHATS `<IMicrosoftGraphDeletedChat- `[]`>`: A collection of deleted chats.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-DELETEDTEAMS <IMicrosoftGraphDeletedTeam- `[]`>: The deleted team.
+DELETEDTEAMS `<IMicrosoftGraphDeletedTeam- `[]`>`: The deleted team.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Channels <IMicrosoftGraphChannel- `[]`>]`: The channels that are either shared with this deleted team or created in this deleted team.
@@ -9918,7 +9918,7 @@ Read-only.
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope.
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
-WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration- `[]`>: .
+WORKFORCEINTEGRATIONS `<IMicrosoftGraphWorkforceIntegration- `[]`>`: .
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -9945,6 +9945,25 @@ Start with 1.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamwork)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

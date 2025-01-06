@@ -429,7 +429,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SCHEDULEDACTIONCONFIGURATIONS <IMicrosoftGraphDeviceManagementComplianceActionItem- `[]`>: The list of scheduled action configurations for this compliance policy.
+SCHEDULEDACTIONCONFIGURATIONS `<IMicrosoftGraphDeviceManagementComplianceActionItem- `[]`>`: The list of scheduled action configurations for this compliance policy.
 This collection can contain a maximum of 100 elements.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -443,6 +443,25 @@ This collection can contain a maximum of 100 elements.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcompliancepolicyscheduledactionforrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcompliancepolicyscheduledactionforrule)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

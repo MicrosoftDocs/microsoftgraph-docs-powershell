@@ -579,7 +579,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTS <IMicrosoftGraphSecurityAlert- `[]`>: The list of related alerts.
+ALERTS `<IMicrosoftGraphSecurityAlert- `[]`>`: The list of related alerts.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -712,7 +712,7 @@ When applicable, the summary contains details of what occurred, impacted assets,
   - `[SystemTags <String- `[]`>]`: The collection of system tags that are associated with the incident.
   - `[TenantId <String>]`: The Microsoft Entra tenant in which the alert was created.
 
-COMMENTS <IMicrosoftGraphSecurityAlertComment- `[]`>: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
+COMMENTS `<IMicrosoftGraphSecurityAlertComment- `[]`>`: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
   - `[Comment <String>]`: The comment text.
   - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
@@ -806,7 +806,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>: List of hunting Kusto Query Language (KQL) queries related to the incident.
+RECOMMENDEDHUNTINGQUERIES `<IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>`: List of hunting Kusto Query Language (KQL) queries related to the incident.
   - `[KqlText <String>]`: The query string.
 
 ## RELATED LINKS
@@ -814,6 +814,25 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident)
 
 [https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

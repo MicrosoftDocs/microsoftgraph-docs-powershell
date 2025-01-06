@@ -14998,7 +14998,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-ITEMS <IMicrosoftGraphDriveItem- `[]`>: All driveItems contained in the sharing root.
+ITEMS `<IMicrosoftGraphDriveItem- `[]`>`: All driveItems contained in the sharing root.
 This collection cannot be enumerated.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -43932,6 +43932,25 @@ This relationship can only be used to load a specific term set.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

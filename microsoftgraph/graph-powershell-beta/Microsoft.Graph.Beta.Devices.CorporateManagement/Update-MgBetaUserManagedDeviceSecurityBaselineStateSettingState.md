@@ -414,7 +414,7 @@ Read-only.
     - `[SourceType <String>]`: settingSourceType
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
 
-CONTRIBUTINGPOLICIES <IMicrosoftGraphSecurityBaselineContributingPolicy- `[]`>: The policies that contribute to this setting instance
+CONTRIBUTINGPOLICIES `<IMicrosoftGraphSecurityBaselineContributingPolicy- `[]`>`: The policies that contribute to this setting instance
   - `[DisplayName <String>]`: Name of the policy
   - `[SourceId <String>]`: Unique identifier of the policy
   - `[SourceType <String>]`: Authoring source of a policy
@@ -491,7 +491,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-SOURCEPOLICIES <IMicrosoftGraphSettingSource- `[]`>: The policies that contribute to this setting instance
+SOURCEPOLICIES `<IMicrosoftGraphSettingSource- `[]`>`: The policies that contribute to this setting instance
   - `[DisplayName <String>]`: 
   - `[Id <String>]`: 
   - `[SourceType <String>]`: settingSourceType
@@ -499,6 +499,25 @@ SOURCEPOLICIES <IMicrosoftGraphSettingSource- `[]`>: The policies that contribut
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicesecuritybaselinestatesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicesecuritybaselinestatesettingstate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

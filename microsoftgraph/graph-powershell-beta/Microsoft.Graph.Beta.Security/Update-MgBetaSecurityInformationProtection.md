@@ -241,7 +241,7 @@ Read-only.
   - `[IsMandatory <Boolean?>]`: Exposes whether mandatory labeling is enabled.
   - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
 
-SENSITIVITYLABELS <IMicrosoftGraphSecuritySensitivityLabel- `[]`>: Read the Microsoft Purview Information Protection labels for the user or organization.
+SENSITIVITYLABELS `<IMicrosoftGraphSecuritySensitivityLabel- `[]`>`: Read the Microsoft Purview Information Protection labels for the user or organization.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
@@ -260,6 +260,25 @@ False if the label is a parent with child labels.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

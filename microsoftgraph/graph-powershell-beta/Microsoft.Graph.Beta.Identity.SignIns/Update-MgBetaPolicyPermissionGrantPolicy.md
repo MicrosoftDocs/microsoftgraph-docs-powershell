@@ -401,7 +401,7 @@ The default is false.
 Automatically expanded on GET.
   - `[ResourceScopeType <String>]`: resourceScopeType
 
-EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are excluded in this permission grant policy.
+EXCLUDES `<IMicrosoftGraphPermissionGrantConditionSet- `[]`>`: Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -432,7 +432,7 @@ Default is any.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[LabelKind <String>]`: labelKind
 
-INCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are included in this permission grant policy.
+INCLUDES `<IMicrosoftGraphPermissionGrantConditionSet- `[]`>`: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -548,6 +548,25 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy)
 
 [https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

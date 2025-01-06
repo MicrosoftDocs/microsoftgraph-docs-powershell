@@ -321,7 +321,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-WDACPOLICYASSIGNMENTS <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment- `[]`>: .
+WDACPOLICYASSIGNMENTS `<IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -332,6 +332,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementwdacsupplementalpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementwdacsupplementalpolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

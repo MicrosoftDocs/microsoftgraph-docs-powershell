@@ -424,7 +424,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS <IMicrosoftGraphServiceAnnouncementAttachment- `[]`>: A collection of serviceAnnouncementAttachments.
+ATTACHMENTS `<IMicrosoftGraphServiceAnnouncementAttachment- `[]`>`: A collection of serviceAnnouncementAttachments.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Content <Byte- `[]`>]`: The attachment content.
@@ -477,7 +477,7 @@ Tags are provided by the service team/support team who post the message to tell 
     - `[IsFavorited <Boolean?>]`: Indicates whether the user marked the message as favorite.
     - `[IsRead <Boolean?>]`: Indicates whether the user read the message.
 
-DETAILS <IMicrosoftGraphKeyValuePair- `[]`>: More details about service event.
+DETAILS `<IMicrosoftGraphKeyValuePair- `[]`>`: More details about service event.
 This property doesn't support filters.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
@@ -491,6 +491,25 @@ VIEWPOINT `<IMicrosoftGraphServiceUpdateMessageViewpoint>`: serviceUpdateMessage
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

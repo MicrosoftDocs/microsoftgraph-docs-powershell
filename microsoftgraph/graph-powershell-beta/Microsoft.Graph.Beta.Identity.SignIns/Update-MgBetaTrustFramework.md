@@ -259,7 +259,7 @@ For more information, see RFC 5280.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-KEYSETS <IMicrosoftGraphTrustFrameworkKeySet- `[]`>: .
+KEYSETS `<IMicrosoftGraphTrustFrameworkKeySet- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Keys <IMicrosoftGraphTrustFrameworkKey- `[]`>]`: A collection of the keys.
@@ -328,13 +328,32 @@ For more information, see RFC 5280.
     - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
 For more information, see RFC 5280.
 
-POLICIES <IMicrosoftGraphTrustFrameworkPolicy- `[]`>: .
+POLICIES `<IMicrosoftGraphTrustFrameworkPolicy- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframework](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframework)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

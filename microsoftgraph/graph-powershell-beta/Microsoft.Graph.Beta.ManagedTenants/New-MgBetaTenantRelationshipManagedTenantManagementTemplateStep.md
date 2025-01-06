@@ -641,7 +641,7 @@ Read-only.
   - `[UserImpact <String>]`: 
   - `[Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion- `[]`>]`: 
 
-INFORMATIONLINKS <IMicrosoftGraphActionUrl- `[]`>: .
+INFORMATIONLINKS `<IMicrosoftGraphActionUrl- `[]`>`: .
   - `[DisplayName <String>]`: Brief title for the page that the links directs to.
   - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
 
@@ -774,7 +774,7 @@ PORTALLINK `<IMicrosoftGraphActionUrl>`: actionUrl
   - `[DisplayName <String>]`: Brief title for the page that the links directs to.
   - `[Url <String>]`: The URL to the documentation or Microsoft Entra admin center page.
 
-VERSIONS <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion- `[]`>: .
+VERSIONS `<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]`: managementTemplateStep
@@ -901,6 +901,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestep)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

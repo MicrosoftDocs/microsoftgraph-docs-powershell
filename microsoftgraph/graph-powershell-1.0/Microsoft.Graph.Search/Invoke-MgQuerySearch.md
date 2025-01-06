@@ -343,7 +343,7 @@ Optional.
       - `[Name <String>]`: The name of the property to sort on.
 Required.
 
-REQUESTS <IMicrosoftGraphSearchRequest- `[]`>: .
+REQUESTS `<IMicrosoftGraphSearchRequest- `[]`>`: .
   - `[AggregationFilters <String- `[]`>]`: Contains one or more filters to obtain search results aggregated and filtered to a specific value of a field.
 Optional.Build this filter based on a prior search that aggregates by the same field.
 From the response of the prior search, identify the searchBucket that filters results to the specific value of the field, use the string in its aggregationFilterToken property, and build an aggregation filter string in the format '{field}:/'{aggregationFilterToken}/''.
@@ -448,6 +448,25 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
 
 [https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

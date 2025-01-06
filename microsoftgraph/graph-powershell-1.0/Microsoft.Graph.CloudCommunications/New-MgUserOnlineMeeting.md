@@ -759,7 +759,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDANCEREPORTS <IMicrosoftGraphMeetingAttendanceReport- `[]`>: The attendance reports of an online meeting.
+ATTENDANCEREPORTS `<IMicrosoftGraphMeetingAttendanceReport- `[]`>`: The attendance reports of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1042,7 +1042,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Upn <String>]`: User principal name of the participant.
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
 
-RECORDINGS <IMicrosoftGraphCallRecording- `[]`>: The recordings of an online meeting.
+RECORDINGS `<IMicrosoftGraphCallRecording- `[]`>`: The recordings of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1075,7 +1075,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
 
-TRANSCRIPTS <IMicrosoftGraphCallTranscript- `[]`>: The transcripts of an online meeting.
+TRANSCRIPTS `<IMicrosoftGraphCallTranscript- `[]`>`: The transcripts of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1118,6 +1118,25 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

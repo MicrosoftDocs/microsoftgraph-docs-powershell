@@ -323,7 +323,7 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[LabelKind <String>]`: labelKind
 
-CONDITIONS <IMicrosoftGraphPreApprovalDetail- `[]`>: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
+CONDITIONS `<IMicrosoftGraphPreApprovalDetail- `[]`>`: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
   - `[Permissions <IMicrosoftGraphPreApprovedPermissions>]`: preApprovedPermissions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[PermissionKind <String>]`: permissionKind
@@ -418,6 +418,25 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpreapprovalpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpreapprovalpolicy)
 
 [https://learn.microsoft.com/graph/api/permissiongrantpreapprovalpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissiongrantpreapprovalpolicy-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -472,7 +472,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>: The setting definitions this category contains
+SETTINGDEFINITIONS `<IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>`: The setting definitions this category contains
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the setting value
@@ -489,7 +489,7 @@ Read-only.
   - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
   - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>: The settings this category contains
+SETTINGS `<IMicrosoftGraphDeviceManagementSettingInstance- `[]`>`: The settings this category contains
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
@@ -498,6 +498,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementintentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementintentcategory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

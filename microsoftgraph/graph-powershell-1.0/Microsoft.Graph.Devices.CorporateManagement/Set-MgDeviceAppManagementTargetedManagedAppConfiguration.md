@@ -264,7 +264,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>: .
+ASSIGNMENTS `<IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -320,6 +320,25 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementtargetedmanagedappconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-assign?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-assign?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

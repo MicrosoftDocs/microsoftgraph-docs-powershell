@@ -596,7 +596,7 @@ Nullable.
   - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
   - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
 
-CHILDFOLDERS <IMicrosoftGraphMailFolder- `[]`>: The collection of child folders in the mailFolder.
+CHILDFOLDERS `<IMicrosoftGraphMailFolder- `[]`>`: The collection of child folders in the mailFolder.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
@@ -777,7 +777,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
   - `[UserId <String>]`: The unique identifier of user
 
-MESSAGERULES <IMicrosoftGraphMessageRule- `[]`>: The collection of rules that apply to the user's Inbox folder.
+MESSAGERULES `<IMicrosoftGraphMessageRule- `[]`>`: The collection of rules that apply to the user's Inbox folder.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Actions <IMicrosoftGraphMessageRuleActions>]`: messageRuleActions
@@ -840,7 +840,7 @@ Read-only.
   - `[IsReadOnly <Boolean?>]`: Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
   - `[Sequence <Int32?>]`: Indicates the order in which the rule is executed, among other rules.
 
-MESSAGES <IMicrosoftGraphMessage- `[]`>: The collection of messages in the mailFolder.
+MESSAGES `<IMicrosoftGraphMessage- `[]`>`: The collection of messages in the mailFolder.
   - `[Categories <String- `[]`>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item.
 Every time the item is changed, changeKey changes as well.
@@ -935,14 +935,14 @@ If ispopout is not present or if it is set to 1, then the message is shown in a 
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the mailFolder.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String- `[]`>]`: A collection of property values.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the mailFolder.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -952,6 +952,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

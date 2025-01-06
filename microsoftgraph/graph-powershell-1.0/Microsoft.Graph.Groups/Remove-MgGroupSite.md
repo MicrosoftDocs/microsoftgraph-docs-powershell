@@ -5067,7 +5067,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-VALUE <IMicrosoftGraphSite- `[]`>: .
+VALUE `<IMicrosoftGraphSite- `[]`>`: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -9870,6 +9870,25 @@ This relationship can only be used to load a specific term set.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsite)
 
 [https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

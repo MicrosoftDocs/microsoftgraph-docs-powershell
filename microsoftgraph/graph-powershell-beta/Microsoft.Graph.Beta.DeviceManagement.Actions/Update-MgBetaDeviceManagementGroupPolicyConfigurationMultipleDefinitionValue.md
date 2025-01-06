@@ -270,7 +270,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDED <IMicrosoftGraphGroupPolicyDefinitionValue- `[]`>: .
+ADDED `<IMicrosoftGraphGroupPolicyDefinitionValue- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
@@ -477,7 +477,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
-UPDATED <IMicrosoftGraphGroupPolicyDefinitionValue- `[]`>: .
+UPDATED `<IMicrosoftGraphGroupPolicyDefinitionValue- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
@@ -553,6 +553,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementgrouppolicyconfigurationmultipledefinitionvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementgrouppolicyconfigurationmultipledefinitionvalue)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

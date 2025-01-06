@@ -292,7 +292,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SUBCATEGORIES <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>: Represents all subcategories under a particular category.
+SUBCATEGORIES `<IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>`: Represents all subcategories under a particular category.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -313,6 +313,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

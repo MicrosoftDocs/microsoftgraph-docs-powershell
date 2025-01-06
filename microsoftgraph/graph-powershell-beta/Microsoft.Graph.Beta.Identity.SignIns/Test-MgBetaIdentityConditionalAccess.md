@@ -323,3 +323,22 @@ CONDITIONALACCESSWHATIFCONDITIONS `<IMicrosoftGraphConditionalAccessWhatIfCondit
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -702,7 +702,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS <IMicrosoftGraphSecurityAnalyzedEmailAttachment- `[]`>: A collection of the attachments in the email.
+ATTACHMENTS `<IMicrosoftGraphSecurityAnalyzedEmailAttachment- `[]`>`: A collection of the attachments in the email.
   - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AnalysisDateTime <DateTime?>]`: The time of detonation.
@@ -813,7 +813,7 @@ The possible values are: unknown, spam, malware, phish, none, unknownFutureValue
 This is full URL string, including query parameters.
   - `[UrlsCount <Int32?>]`: The number of URLs in the email.
 
-EXCHANGETRANSPORTRULES <IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo- `[]`>: The name of the Exchange transport rules (ETRs) associated with the email.
+EXCHANGETRANSPORTRULES `<IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo- `[]`>`: The name of the Exchange transport rules (ETRs) associated with the email.
   - `[Name <String>]`: Name of the Exchange transport rules (ETRs) that are part of the email.
   - `[RuleId <String>]`: The ETR rule ID.
 
@@ -923,7 +923,7 @@ SENDERDETAIL `<IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>`: analyzedEmail
   - `[MailFromAddress <String>]`: The sender email address in the From header, which is visible to email recipients on their email clients.
 Also known as P2 sender.
 
-URLS <IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>: A collection of the URLs in the email.
+URLS `<IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>`: A collection of the URLs in the email.
   - `[DetectionMethod <String>]`: The method used to detect threats in the URL.
   - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -946,6 +946,25 @@ This is full URL string, including query parameters.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaborationanalyzedemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaborationanalyzedemail)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

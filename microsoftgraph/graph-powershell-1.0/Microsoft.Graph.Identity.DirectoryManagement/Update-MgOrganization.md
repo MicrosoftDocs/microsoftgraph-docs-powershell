@@ -724,7 +724,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan- `[]`>: The collection of service plans associated with the tenant.
+ASSIGNEDPLANS `<IMicrosoftGraphAssignedPlan- `[]`>`: The collection of service plans associated with the tenant.
 Not nullable.
   - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1150,7 +1150,7 @@ This text must be a Unicode, without links or code, and can't exceed 64 characte
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfiguration- `[]`>: Navigation property to manage certificate-based authentication configuration.
+CERTIFICATEBASEDAUTHCONFIGURATION `<IMicrosoftGraphCertificateBasedAuthConfiguration- `[]`>`: Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1166,7 +1166,7 @@ Read-only.
     - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the organization.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the organization.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1209,12 +1209,12 @@ Maximum length is 255 characters.
 The URL that directs to the company's privacy statement.
 Not required.
 
-PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan- `[]`>: Not nullable.
+PROVISIONEDPLANS `<IMicrosoftGraphProvisionedPlan- `[]`>`: Not nullable.
   - `[CapabilityStatus <String>]`: For example, 'Enabled'.
   - `[ProvisioningStatus <String>]`: For example, 'Success'.
   - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
 
-VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain- `[]`>: The collection of domains associated with this tenant.
+VERIFIEDDOMAINS `<IMicrosoftGraphVerifiedDomain- `[]`>`: The collection of domains associated with this tenant.
 Not nullable.
   - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
   - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
@@ -1227,6 +1227,25 @@ Not nullable.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -468,7 +468,7 @@ Read-only.
   - `[Service <String>]`: Indicates the service affected by the issue.
   - `[Status <String>]`: serviceHealthStatus
 
-DETAILS <IMicrosoftGraphKeyValuePair- `[]`>: Extra details about service event.
+DETAILS `<IMicrosoftGraphKeyValuePair- `[]`>`: Extra details about service event.
 This property doesn't support filters.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
@@ -479,7 +479,7 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
-POSTS <IMicrosoftGraphServiceHealthIssuePost- `[]`>: Collection of historical posts for the service issue.
+POSTS `<IMicrosoftGraphServiceHealthIssuePost- `[]`>`: Collection of historical posts for the service issue.
   - `[CreatedDateTime <DateTime?>]`: The published time of the post.
   - `[Description <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -490,6 +490,25 @@ POSTS <IMicrosoftGraphServiceHealthIssuePost- `[]`>: Collection of historical po
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementhealthoverviewissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementhealthoverviewissue)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

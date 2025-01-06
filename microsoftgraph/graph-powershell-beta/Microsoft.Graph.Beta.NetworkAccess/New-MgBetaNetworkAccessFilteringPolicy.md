@@ -293,7 +293,7 @@ Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the filtering Policy was originally created.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time when a particular profile was last modified or updated.
 
-POLICYRULES <IMicrosoftGraphNetworkaccessPolicyRule- `[]`>: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+POLICYRULES `<IMicrosoftGraphNetworkaccessPolicyRule- `[]`>`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: Name.
@@ -301,6 +301,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringpolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

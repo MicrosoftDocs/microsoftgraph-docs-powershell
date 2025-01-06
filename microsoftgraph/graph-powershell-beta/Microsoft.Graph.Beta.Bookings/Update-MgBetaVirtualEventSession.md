@@ -757,7 +757,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDANCEREPORTS <IMicrosoftGraphMeetingAttendanceReport- `[]`>: The attendance reports of an online meeting.
+ATTENDANCEREPORTS `<IMicrosoftGraphMeetingAttendanceReport- `[]`>`: The attendance reports of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1017,7 +1017,7 @@ LOBBYBYPASSSETTINGS `<IMicrosoftGraphLobbyBypassSettings>`: lobbyBypassSettings
 Optional.
   - `[Scope <String>]`: lobbyBypassScope
 
-PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: .
+PRESENTERS `<IMicrosoftGraphVirtualEventPresenter- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Email <String>]`: Email address of the presenter.
@@ -1167,7 +1167,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-REGISTRATIONS <IMicrosoftGraphVirtualEventRegistration- `[]`>: .
+REGISTRATIONS `<IMicrosoftGraphVirtualEventRegistration- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CancelationDateTime <DateTime?>]`: Date and time when the registrant cancels their registration for the virtual event.
@@ -1332,6 +1332,25 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsession)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

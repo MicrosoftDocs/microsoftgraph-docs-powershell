@@ -353,7 +353,7 @@ Read-only.
   - `[Sets <IMicrosoftGraphTermStoreSet- `[]`>]`: Collection of all sets available in the term store.
 This relationship can only be used to load a specific term set.
 
-GROUPS <IMicrosoftGraphTermStoreGroup- `[]`>: Collection of all groups available in the term store.
+GROUPS `<IMicrosoftGraphTermStoreGroup- `[]`>`: Collection of all groups available in the term store.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation.
@@ -447,7 +447,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-SETS <IMicrosoftGraphTermStoreSet- `[]`>: Collection of all sets available in the term store.
+SETS `<IMicrosoftGraphTermStoreSet- `[]`>`: Collection of all sets available in the term store.
 This relationship can only be used to load a specific term set.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -501,6 +501,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstore)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

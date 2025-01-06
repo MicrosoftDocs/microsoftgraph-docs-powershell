@@ -321,13 +321,32 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-WEBPARTS <IMicrosoftGraphWebPart- `[]`>: The set of web parts in this section.
+WEBPARTS `<IMicrosoftGraphWebPart- `[]`>`: The set of web parts in this section.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepageassitepagecanvalayoutverticalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepageassitepagecanvalayoutverticalsection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

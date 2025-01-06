@@ -356,7 +356,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission- `[]`>: .
+ROLEPERMISSIONS `<IMicrosoftGraphUnifiedRolePermission- `[]`>`: .
   - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
   - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
@@ -365,6 +365,25 @@ Not supported for custom roles.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthorizationpolicydefaultuserroleoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthorizationpolicydefaultuserroleoverride)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

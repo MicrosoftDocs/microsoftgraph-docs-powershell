@@ -170,3 +170,22 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

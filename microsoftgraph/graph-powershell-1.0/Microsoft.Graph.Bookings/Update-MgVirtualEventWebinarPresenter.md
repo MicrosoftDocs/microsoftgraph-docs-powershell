@@ -392,3 +392,22 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

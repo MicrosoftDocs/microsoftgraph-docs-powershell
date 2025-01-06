@@ -462,7 +462,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit- `[]`>: Conceptual container for user and group directory objects.
+ADMINISTRATIVEUNITS `<IMicrosoftGraphAdministrativeUnit- `[]`>`: Conceptual container for user and group directory objects.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -497,7 +497,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Visibility <String>]`: 
 
-ATTRIBUTESETS <IMicrosoftGraphAttributeSet- `[]`>: Group of related custom security attribute definitions.
+ATTRIBUTESETS `<IMicrosoftGraphAttributeSet- `[]`>`: Group of related custom security attribute definitions.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Description of the attribute set.
@@ -679,8 +679,8 @@ Read-only.
 Read-only.
     - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
     - `[AdditionalDetails <IMicrosoftGraphKeyValue- `[]`>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[ApiUrl <String>]`: The URL link to the corresponding Microsoft Entra resource.
     - `[DisplayName <String>]`: Friendly name of the Microsoft Entra resource.
     - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -883,7 +883,7 @@ Read-only.
     - `[Description <String>]`: The description of the trusted certificate authorities.
     - `[DisplayName <String>]`: The display name of the trusted certificate authorities.
 
-CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefinition- `[]`>: Schema of a custom security attributes (key-value pairs).
+CUSTOMSECURITYATTRIBUTEDEFINITIONS `<IMicrosoftGraphCustomSecurityAttributeDefinition- `[]`>`: Schema of a custom security attributes (key-value pairs).
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedValues <IMicrosoftGraphAllowedValue- `[]`>]`: Values that are predefined for this custom security attribute.
@@ -920,7 +920,7 @@ If set to false, free-form values are allowed.
 Can later be changed from true to false, but cannot be changed from false to true.
 If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
-DELETEDITEMS <IMicrosoftGraphDirectoryObject- `[]`>: Recently deleted items.
+DELETEDITEMS `<IMicrosoftGraphDirectoryObject- `[]`>`: Recently deleted items.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -928,7 +928,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-DEVICELOCALCREDENTIALS <IMicrosoftGraphDeviceLocalCredentialInfo- `[]`>: The credentials of the device's local administrator account backed up to Microsoft Entra ID.
+DEVICELOCALCREDENTIALS `<IMicrosoftGraphDeviceLocalCredentialInfo- `[]`>`: The credentials of the device's local administrator account backed up to Microsoft Entra ID.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Credentials <IMicrosoftGraphDeviceLocalCredential- `[]`>]`: The credentials of the device's local administrator account backed up to Azure Active Directory.
@@ -942,7 +942,7 @@ Read-only.
   - `[LastBackupDateTime <DateTime?>]`: When the local administrator account credential was backed up to Microsoft Entra ID.
   - `[RefreshDateTime <DateTime?>]`: When the local administrator account credential will be refreshed and backed up to Microsoft Entra ID.
 
-EXTERNALUSERPROFILES <IMicrosoftGraphExternalUserProfile- `[]`>: Collection of external user profiles that represent collaborators in the directory.
+EXTERNALUSERPROFILES `<IMicrosoftGraphExternalUserProfile- `[]`>`: Collection of external user profiles that represent collaborators in the directory.
   - `[Address <IMicrosoftGraphPhysicalOfficeAddress>]`: physicalOfficeAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -976,7 +976,7 @@ Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-FEATUREROLLOUTPOLICIES <IMicrosoftGraphFeatureRolloutPolicy- `[]`>: .
+FEATUREROLLOUTPOLICIES `<IMicrosoftGraphFeatureRolloutPolicy- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: Nullable.
@@ -991,18 +991,18 @@ Always null when the object hasn't been deleted.
   - `[IsAppliedToOrganization <Boolean?>]`: Indicates whether this feature rollout policy should be applied to the entire organization.
   - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
 
-FEDERATIONCONFIGURATIONS <IMicrosoftGraphIdentityProviderBase- `[]`>: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
+FEDERATIONCONFIGURATIONS `<IMicrosoftGraphIdentityProviderBase- `[]`>`: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 
-IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource- `[]`>: .
+IMPACTEDRESOURCES `<IMicrosoftGraphImpactedResource- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
   - `[AdditionalDetails <IMicrosoftGraphKeyValue- `[]`>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-    - `[Key <String>]`: Contains the name of the field that a value is associated with.
-    - `[Value <String>]`: Contains the corresponding value for the specified key.
+    - `[Key <String>]`: Key.
+    - `[Value <String>]`: Value.
   - `[ApiUrl <String>]`: The URL link to the corresponding Microsoft Entra resource.
   - `[DisplayName <String>]`: Friendly name of the Microsoft Entra resource.
   - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -1019,7 +1019,7 @@ Examples include user, application.
   - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
 
-INBOUNDSHAREDUSERPROFILES <IMicrosoftGraphInboundSharedUserProfile- `[]`>: A collection of external users whose profile data is shared with the Microsoft Entra tenant.
+INBOUNDSHAREDUSERPROFILES `<IMicrosoftGraphInboundSharedUserProfile- `[]`>`: A collection of external users whose profile data is shared with the Microsoft Entra tenant.
 Nullable.
   - `[DisplayName <String>]`: The name displayed in the address book for the user at the time when the sharing record was created.
 Read-only.
@@ -1030,7 +1030,7 @@ Read-only.
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the external user.
 Read-only.
 
-ONPREMISESSYNCHRONIZATION <IMicrosoftGraphOnPremisesDirectorySynchronization- `[]`>: A container for on-premises directory synchronization functionalities that are available for the organization.
+ONPREMISESSYNCHRONIZATION `<IMicrosoftGraphOnPremisesDirectorySynchronization- `[]`>`: A container for on-premises directory synchronization functionalities that are available for the organization.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]`: onPremisesDirectorySynchronizationConfiguration
@@ -1083,7 +1083,7 @@ This flag should be enabled again after any soft matching has been completed and
     - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
-OUTBOUNDSHAREDUSERPROFILES <IMicrosoftGraphOutboundSharedUserProfile- `[]`>: .
+OUTBOUNDSHAREDUSERPROFILES `<IMicrosoftGraphOutboundSharedUserProfile- `[]`>`: .
   - `[Tenants <IMicrosoftGraphTenantReference- `[]`>]`: The collection of external Microsoft Entra tenants that the user shared profile data with.
 Read-only.
     - `[TenantId <String>]`: The identifier of the Microsoft Entra tenant.
@@ -1092,7 +1092,7 @@ Key.
   - `[UserId <String>]`: The object id of the external user.
 Read-only.
 
-PENDINGEXTERNALUSERPROFILES <IMicrosoftGraphPendingExternalUserProfile- `[]`>: Collection of pending external user profiles representing collaborators in the directory that are unredeemed.
+PENDINGEXTERNALUSERPROFILES `<IMicrosoftGraphPendingExternalUserProfile- `[]`>`: Collection of pending external user profiles representing collaborators in the directory that are unredeemed.
   - `[Address <IMicrosoftGraphPhysicalOfficeAddress>]`: physicalOfficeAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -1126,7 +1126,7 @@ Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-RECOMMENDATIONS <IMicrosoftGraphRecommendation- `[]`>: List of recommended improvements to improve tenant posture.
+RECOMMENDATIONS `<IMicrosoftGraphRecommendation- `[]`>`: List of recommended improvements to improve tenant posture.
   - `[ActionSteps <IMicrosoftGraphActionStep- `[]`>]`: List of actions to take to complete a recommendation.
     - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1151,8 +1151,8 @@ Other possible values include users, applications.
 Read-only.
     - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
     - `[AdditionalDetails <IMicrosoftGraphKeyValue- `[]`>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[ApiUrl <String>]`: The URL link to the corresponding Microsoft Entra resource.
     - `[DisplayName <String>]`: Friendly name of the Microsoft Entra resource.
     - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -1187,12 +1187,12 @@ Only applies to recommendations with category set to identitySecureScore.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-SHAREDEMAILDOMAINS <IMicrosoftGraphSharedEmailDomain- `[]`>: .
+SHAREDEMAILDOMAINS `<IMicrosoftGraphSharedEmailDomain- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ProvisioningStatus <String>]`: 
 
-SUBSCRIPTIONS <IMicrosoftGraphCompanySubscription- `[]`>: List of commercial subscriptions that an organization has.
+SUBSCRIPTIONS `<IMicrosoftGraphCompanySubscription- `[]`>`: List of commercial subscriptions that an organization has.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CommerceSubscriptionId <String>]`: The ID of this subscription in the commerce system.
@@ -1224,6 +1224,25 @@ Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

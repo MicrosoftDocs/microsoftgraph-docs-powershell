@@ -528,7 +528,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-ITEMS <IMicrosoftGraphDocumentSetVersionItem- `[]`>: Items within the document set that are captured as part of this version.
+ITEMS `<IMicrosoftGraphDocumentSetVersionItem- `[]`>`: Items within the document set that are captured as part of this version.
   - `[ItemId <String>]`: The unique identifier for the item.
   - `[Title <String>]`: The title of the item.
   - `[VersionId <String>]`: The version ID of the item.
@@ -569,6 +569,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemdocumentsetversion)
 
 [https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

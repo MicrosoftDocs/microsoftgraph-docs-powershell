@@ -359,13 +359,32 @@ Read-only.
   - `[TpmSpecificationVersion <String>]`: Device TPM Version
   - `[UserPrincipalName <String>]`: User name
 
-POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails- `[]`>: Policy Details
+POLICYDETAILS `<IMicrosoftGraphEncryptionReportPolicyDetails- `[]`>`: Policy Details
   - `[PolicyId <String>]`: Policy Id for Encryption Report
   - `[PolicyName <String>]`: Policy Name for Encryption Report
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

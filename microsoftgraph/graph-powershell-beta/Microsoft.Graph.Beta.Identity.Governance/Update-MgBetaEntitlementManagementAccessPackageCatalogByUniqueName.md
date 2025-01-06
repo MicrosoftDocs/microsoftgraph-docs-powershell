@@ -507,7 +507,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGECUSTOMWORKFLOWEXTENSIONS <IMicrosoftGraphCustomCalloutExtension- `[]`>: The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
+ACCESSPACKAGECUSTOMWORKFLOWEXTENSIONS `<IMicrosoftGraphCustomCalloutExtension- `[]`>`: The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]`: customExtensionAuthenticationConfiguration
@@ -525,7 +525,7 @@ If null, the default for the service applies.
   - `[EndpointConfiguration <IMicrosoftGraphCustomExtensionEndpointConfiguration>]`: customExtensionEndpointConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-ACCESSPACKAGERESOURCEROLES <IMicrosoftGraphAccessPackageResourceRole- `[]`>: The roles in each resource in a catalog.
+ACCESSPACKAGERESOURCEROLES `<IMicrosoftGraphAccessPackageResourceRole- `[]`>`: The roles in each resource in a catalog.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -606,7 +606,7 @@ Supports $filter (eq).
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
   - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
 
-ACCESSPACKAGERESOURCES <IMicrosoftGraphAccessPackageResource- `[]`>: .
+ACCESSPACKAGERESOURCES `<IMicrosoftGraphAccessPackageResource- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccessPackageResourceEnvironment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
@@ -685,7 +685,7 @@ Supports $filter (eq).
   - `[ResourceType <String>]`: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
   - `[Url <String>]`: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-ACCESSPACKAGERESOURCESCOPES <IMicrosoftGraphAccessPackageResourceScope- `[]`>: .
+ACCESSPACKAGERESOURCESCOPES `<IMicrosoftGraphAccessPackageResourceScope- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
@@ -765,7 +765,7 @@ Supports $filter (eq).
   - `[RoleOriginId <String>]`: The origin system for the role, if different.
   - `[Url <String>]`: A resource locator for the scope.
 
-ACCESSPACKAGES <IMicrosoftGraphAccessPackage- `[]`>: The access packages in this catalog.
+ACCESSPACKAGES `<IMicrosoftGraphAccessPackage- `[]`>`: The access packages in this catalog.
 Read-only.
 Nullable.
 Supports $expand.
@@ -1002,7 +1002,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
         - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
   - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
   - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1708,8 +1708,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -6500,7 +6500,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -9309,7 +9309,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
           - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-          - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+          - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
     - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
     - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
@@ -10015,8 +10015,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -14807,7 +14807,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -17417,7 +17417,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[UniqueName <String>]`: 
 
-CUSTOMACCESSPACKAGEWORKFLOWEXTENSIONS <IMicrosoftGraphCustomAccessPackageWorkflowExtension- `[]`>: .
+CUSTOMACCESSPACKAGEWORKFLOWEXTENSIONS `<IMicrosoftGraphCustomAccessPackageWorkflowExtension- `[]`>`: .
   - `[AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]`: customExtensionAuthenticationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>]`: customExtensionClientConfiguration
@@ -17548,6 +17548,25 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogbyuniquename)
 
 [https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

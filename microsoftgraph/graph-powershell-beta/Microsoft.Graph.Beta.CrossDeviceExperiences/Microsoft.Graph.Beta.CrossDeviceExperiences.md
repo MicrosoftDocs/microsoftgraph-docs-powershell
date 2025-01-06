@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-Module Guid: 7e9c975a-fb8d-4568-84e3-14bf9d910603
+Module Guid: 495b1f87-1797-404e-abb0-10f1ff36be2b
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.crossdeviceexperiences/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -184,5 +184,23 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserDeviceExtension](Update-MgBetaUserDeviceExtension.md)
 
 ### [Update-MgBetaUserDeviceUsageRights](Update-MgBetaUserDeviceUsageRights.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

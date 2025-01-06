@@ -1093,7 +1093,7 @@ PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-SALESQUOTELINES <IMicrosoftGraphSalesQuoteLine- `[]`>: .
+SALESQUOTELINES `<IMicrosoftGraphSalesQuoteLine- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
@@ -1182,6 +1182,25 @@ SHIPPINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequote)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

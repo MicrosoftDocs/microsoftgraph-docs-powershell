@@ -646,3 +646,22 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

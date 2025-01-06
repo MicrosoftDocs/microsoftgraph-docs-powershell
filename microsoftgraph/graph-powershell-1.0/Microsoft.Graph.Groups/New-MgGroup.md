@@ -1458,14 +1458,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCEPTEDSENDERS <IMicrosoftGraphDirectoryObject- `[]`>: The list of users or groups allowed to create posts or calendar events in this group.
+ACCEPTEDSENDERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The list of users or groups allowed to create posts or calendar events in this group.
 If this list is nonempty, then only users or groups listed here are allowed to post.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-APPROLEASSIGNMENTS <IMicrosoftGraphAppRoleAssignment- `[]`>: Represents the app roles granted to a group for an application.
+APPROLEASSIGNMENTS `<IMicrosoftGraphAppRoleAssignment- `[]`>`: Represents the app roles granted to a group for an application.
 Supports $expand.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1493,14 +1493,14 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
 
-ASSIGNEDLABELS <IMicrosoftGraphAssignedLabel- `[]`>: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
+ASSIGNEDLABELS `<IMicrosoftGraphAssignedLabel- `[]`>`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
 This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
   - `[DisplayName <String>]`: The display name of the label.
 Read-only.
   - `[LabelId <String>]`: The unique identifier of the label.
 
-ASSIGNEDLICENSES <IMicrosoftGraphAssignedLicense- `[]`>: The licenses that are assigned to the group.
+ASSIGNEDLICENSES `<IMicrosoftGraphAssignedLicense- `[]`>`: The licenses that are assigned to the group.
 Returned only on $select.
 Supports $filter (eq).Read-only.
   - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
@@ -6556,7 +6556,7 @@ Nullable.
 Read-only.
 Nullable.
 
-CALENDARVIEW <IMicrosoftGraphEvent- `[]`>: The calendar view for the calendar.
+CALENDARVIEW `<IMicrosoftGraphEvent- `[]`>`: The calendar view for the calendar.
 Read-only.
   - `[Categories <String- `[]`>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item.
@@ -6807,7 +6807,7 @@ Optional.
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
 
-CONVERSATIONS <IMicrosoftGraphConversation- `[]`>: The group's conversations.
+CONVERSATIONS `<IMicrosoftGraphConversation- `[]`>`: The group's conversations.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment.
@@ -11710,7 +11710,7 @@ Read-only.
 Nullable.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-DRIVES <IMicrosoftGraphDrive- `[]`>: The group's drives.
+DRIVES `<IMicrosoftGraphDrive- `[]`>`: The group's drives.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16508,7 +16508,7 @@ Read-only.
 Nullable.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-EVENTS <IMicrosoftGraphEvent- `[]`>: The group's calendar events.
+EVENTS `<IMicrosoftGraphEvent- `[]`>`: The group's calendar events.
   - `[Categories <String- `[]`>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item.
 Every time the item is changed, changeKey changes as well.
@@ -16758,13 +16758,13 @@ Optional.
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the group.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the group.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-GROUPLIFECYCLEPOLICIES <IMicrosoftGraphGroupLifecyclePolicy- `[]`>: The collection of lifecycle policies for this group.
+GROUPLIFECYCLEPOLICIES `<IMicrosoftGraphGroupLifecyclePolicy- `[]`>`: The collection of lifecycle policies for this group.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -16780,7 +16780,7 @@ LICENSEPROCESSINGSTATE `<IMicrosoftGraphLicenseProcessingState>`: licenseProcess
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[State <String>]`: 
 
-MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups that this group is a member of.
+MEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: Groups that this group is a member of.
 HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
@@ -16790,7 +16790,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: The members of this group, who can be users, devices, other groups, or service principals.
+MEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The members of this group, who can be users, devices, other groups, or service principals.
 Supports the List members, Add member, and Remove member operations.
 Nullable.
 Supports $expand including nested $select.
@@ -16800,7 +16800,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MEMBERSWITHLICENSEERRORS <IMicrosoftGraphDirectoryObject- `[]`>: A list of group members with license errors from this group-based license assignment.
+MEMBERSWITHLICENSEERRORS `<IMicrosoftGraphDirectoryObject- `[]`>`: A list of group members with license errors from this group-based license assignment.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -16981,7 +16981,7 @@ Nullable.
 Read-only.
 Nullable.
 
-ONPREMISESPROVISIONINGERRORS <IMicrosoftGraphOnPremisesProvisioningError- `[]`>: Errors when using Microsoft synchronization product during provisioning.
+ONPREMISESPROVISIONINGERRORS `<IMicrosoftGraphOnPremisesProvisioningError- `[]`>`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
   - `[Category <String>]`: Category of the provisioning error.
@@ -16993,7 +16993,7 @@ Other objects contain the same value for the property.
 Current possible values: UserPrincipalName or ProxyAddress
   - `[Value <String>]`: Value of the property causing the error.
 
-OWNERS <IMicrosoftGraphDirectoryObject- `[]`>: The owners of the group who can be users or service principals.
+OWNERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
 If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
@@ -17008,7 +17008,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PERMISSIONGRANTS <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>: .
+PERMISSIONGRANTS `<IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>`: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -17034,7 +17034,7 @@ Read-only.
   - `[Width <Int32?>]`: The width of the photo.
 Read-only.
 
-PHOTOS <IMicrosoftGraphProfilePhoto- `[]`>: The profile photos owned by the group.
+PHOTOS `<IMicrosoftGraphProfilePhoto- `[]`>`: The profile photos owned by the group.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -17205,20 +17205,20 @@ Collection of tasks in the plan.
     - `[Title <String>]`: Required.
 Title of the plan.
 
-REJECTEDSENDERS <IMicrosoftGraphDirectoryObject- `[]`>: The list of users or groups not allowed to create posts or calendar events in this group.
+REJECTEDSENDERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The list of users or groups not allowed to create posts or calendar events in this group.
 Nullable
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SERVICEPROVISIONINGERRORS <IMicrosoftGraphServiceProvisioningError- `[]`>: Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
+SERVICEPROVISIONINGERRORS `<IMicrosoftGraphServiceProvisioningError- `[]`>`: Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the error occurred.
   - `[IsResolved <Boolean?>]`: Indicates whether the error has been attended to.
   - `[ServiceInstance <String>]`: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
 
-SETTINGS <IMicrosoftGraphGroupSetting- `[]`>: Settings that can govern this group's behavior, like whether members can invite guests to the group.
+SETTINGS `<IMicrosoftGraphGroupSetting- `[]`>`: Settings that can govern this group's behavior, like whether members can invite guests to the group.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17229,7 +17229,7 @@ Read-only.
     - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
     - `[Value <String>]`: Value of the setting.
 
-SITES <IMicrosoftGraphSite- `[]`>: The list of SharePoint sites in this group.
+SITES `<IMicrosoftGraphSite- `[]`>`: The list of SharePoint sites in this group.
 Access the default site with /sites/root.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -26826,7 +26826,7 @@ Read-only.
 This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
 
-THREADS <IMicrosoftGraphConversationThread- `[]`>: The group's conversation threads.
+THREADS `<IMicrosoftGraphConversationThread- `[]`>`: The group's conversation threads.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -26910,14 +26910,14 @@ Returned by default.
   - `[UniqueSenders <String- `[]`>]`: All the users that sent a message to this thread.
 Returned by default.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: The groups that a group is a member of, either directly or through nested membership.
+TRANSITIVEMEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: The groups that a group is a member of, either directly or through nested membership.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-TRANSITIVEMEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: The direct and transitive members of a group.
+TRANSITIVEMEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The direct and transitive members of a group.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -26929,6 +26929,25 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup)
 
 [https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

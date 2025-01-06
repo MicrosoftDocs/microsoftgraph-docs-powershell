@@ -244,7 +244,7 @@ BODYPARAMETER `<IPathsLeqqhcInformationprotectionPolicyLabelsMicrosoftGraphEvalu
       - `[Value <String>]`: Value for this key-value pair
     - `[State <String>]`: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult- `[]`>: .
+CLASSIFICATIONRESULTS `<IMicrosoftGraphClassificationResult- `[]`>`: .
   - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
   - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
   - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
@@ -263,6 +263,25 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult)
 
 [https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

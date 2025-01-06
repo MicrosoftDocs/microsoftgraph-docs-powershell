@@ -264,7 +264,7 @@ Optional.
 The default value is true.
 Optional.
 
-PROFILECARDPROPERTIES <IMicrosoftGraphProfileCardProperty- `[]`>: A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
+PROFILECARDPROPERTIES `<IMicrosoftGraphProfileCardProperty- `[]`>`: A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Annotations <IMicrosoftGraphProfileCardAnnotation- `[]`>]`: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
@@ -288,6 +288,25 @@ The default value is false, and pronouns are disabled.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

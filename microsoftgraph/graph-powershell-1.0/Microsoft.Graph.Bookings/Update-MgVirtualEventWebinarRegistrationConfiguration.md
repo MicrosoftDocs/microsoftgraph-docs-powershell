@@ -340,7 +340,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-QUESTIONS <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>: Registration questions.
+QUESTIONS `<IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>`: Registration questions.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Display name of the registration question.
@@ -350,6 +350,25 @@ The default value is false.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

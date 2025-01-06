@@ -403,7 +403,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BANNERS <IMicrosoftGraphSecurityHostPortBanner- `[]`>: The hostPortBanners retrieved from scanning the port.
+BANNERS `<IMicrosoftGraphSecurityHostPortBanner- `[]`>`: The hostPortBanners retrieved from scanning the port.
   - `[Banner <String>]`: The text response received from a web component when scanning a hostPort.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPortBanner.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
@@ -691,7 +691,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[Status <String>]`: hostPortStatus
   - `[TimesObserved <Int32?>]`: The total amount of times that Microsoft Defender Threat Intelligence has observed the hostPort in all its scans.
 
-HOST1 <IMicrosoftGraphSecurityHost>: host
+HOST1 `<IMicrosoftGraphSecurityHost>`: host
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1305,7 +1305,7 @@ Read-only.
 Note: This is not the signature.
   - `[Subject <IMicrosoftGraphSecuritySslCertificateEntity>]`: sslCertificateEntity
 
-SERVICES <IMicrosoftGraphSecurityHostPortComponent- `[]`>: The hostPortComponents retrieved from scanning the port.
+SERVICES `<IMicrosoftGraphSecurityHostPortComponent- `[]`>`: The hostPortComponents retrieved from scanning the port.
   - `[Component <IMicrosoftGraphSecurityHostComponent>]`: hostComponent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1585,6 +1585,25 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostport](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

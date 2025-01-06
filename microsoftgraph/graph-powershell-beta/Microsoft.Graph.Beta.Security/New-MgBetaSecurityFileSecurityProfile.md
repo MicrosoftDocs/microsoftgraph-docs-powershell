@@ -458,11 +458,11 @@ Required
     - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
     - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-HASHES <IMicrosoftGraphFileHash- `[]`>: .
+HASHES `<IMicrosoftGraphFileHash- `[]`>`: .
   - `[HashType <String>]`: fileHashType
   - `[HashValue <String>]`: Value of the file hash.
 
-MALWARESTATES <IMicrosoftGraphMalwareState- `[]`>: .
+MALWARESTATES `<IMicrosoftGraphMalwareState- `[]`>`: .
   - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
   - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
   - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
@@ -478,7 +478,7 @@ Required
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: .
+VULNERABILITYSTATES `<IMicrosoftGraphVulnerabilityState- `[]`>`: .
   - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
   - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
   - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
@@ -486,6 +486,25 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

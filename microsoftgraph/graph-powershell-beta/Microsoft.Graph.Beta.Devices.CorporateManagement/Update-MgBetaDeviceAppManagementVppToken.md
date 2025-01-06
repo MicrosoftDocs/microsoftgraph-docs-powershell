@@ -590,7 +590,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult- `[]`>: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
+TOKENACTIONRESULTS `<IMicrosoftGraphVppTokenActionResult- `[]`>`: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
   - `[ActionName <String>]`: Action name
   - `[ActionState <String>]`: actionState
   - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
@@ -599,6 +599,25 @@ TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult- `[]`>: The collection o
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementvpptoken)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -725,8 +725,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Contains the name of the field that a value is associated with.
-            - `[Value <String>]`: Contains the corresponding value for the specified key.
+            - `[Key <String>]`: Key.
+            - `[Value <String>]`: Value.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -5786,7 +5786,7 @@ It is an Optional field
         - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8773,8 +8773,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -13882,7 +13882,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -16651,7 +16651,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-MEMBERS <IMicrosoftGraphConversationMember- `[]`>: A collection of membership records associated with the channel.
+MEMBERS `<IMicrosoftGraphConversationMember- `[]`>`: A collection of membership records associated with the channel.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the user.
@@ -16663,7 +16663,7 @@ An Out-of-tenant external member is assigned the owner role.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-MESSAGES <IMicrosoftGraphChatMessage- `[]`>: A collection of all the messages in the channel.
+MESSAGES `<IMicrosoftGraphChatMessage- `[]`>`: A collection of all the messages in the channel.
 A navigation property.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -16805,7 +16805,7 @@ MODERATIONSETTINGS `<IMicrosoftGraphChannelModerationSettings>`: channelModerati
   - `[ReplyRestriction <String>]`: replyRestriction
   - `[UserNewMessageRestriction <String>]`: userNewMessageRestriction
 
-SHAREDWITHTEAMS <IMicrosoftGraphSharedWithChannelTeamInfo- `[]`>: A collection of teams with which a channel is shared.
+SHAREDWITHTEAMS `<IMicrosoftGraphSharedWithChannelTeamInfo- `[]`>`: A collection of teams with which a channel is shared.
   - `[DisplayName <String>]`: The name of the team.
   - `[Team <IMicrosoftGraphTeam>]`: team
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -17044,8 +17044,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -21768,7 +21768,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -24870,7 +24870,7 @@ SUMMARY `<IMicrosoftGraphChannelSummary>`: channelSummary
   - `[MembersCount <Int32?>]`: Count of members in a channel.
   - `[OwnersCount <Int32?>]`: Count of owners in a channel.
 
-TABS <IMicrosoftGraphTeamsTab- `[]`>: A collection of all the tabs in the channel.
+TABS `<IMicrosoftGraphTeamsTab- `[]`>`: A collection of all the tabs in the channel.
 A navigation property.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -24973,6 +24973,25 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychannel)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -388,7 +388,7 @@ For example: edge.admx
   - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
   - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
 
-DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition- `[]`>: The group policy definitions associated with the file.
+DEFINITIONS `<IMicrosoftGraphGroupPolicyDefinition- `[]`>`: The group policy definitions associated with the file.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
@@ -449,6 +449,25 @@ The default value is empty.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicydefinitionfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicydefinitionfile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

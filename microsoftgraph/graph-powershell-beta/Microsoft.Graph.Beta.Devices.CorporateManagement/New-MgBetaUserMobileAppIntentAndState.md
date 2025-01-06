@@ -367,7 +367,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-MOBILEAPPLIST <IMicrosoftGraphMobileAppIntentAndStateDetail- `[]`>: The list of payload intents and states for the tenant.
+MOBILEAPPLIST `<IMicrosoftGraphMobileAppIntentAndStateDetail- `[]`>`: The list of payload intents and states for the tenant.
   - `[ApplicationId <String>]`: MobieApp identifier.
   - `[DisplayName <String>]`: The admin provided or imported title of the app.
   - `[DisplayVersion <String>]`: Human readable version of the application
@@ -383,6 +383,25 @@ Since the application status is identified during device interaction with the In
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermobileappintentandstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermobileappintentandstate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -863,8 +863,8 @@ Read-only.
       - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1147,8 +1147,8 @@ Read-only.
       - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1229,8 +1229,8 @@ Read-only.
     - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1290,6 +1290,25 @@ For examples, see Examples of common formulas in lists
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistcolumn)
 
 [https://learn.microsoft.com/graph/api/list-post-columns?view=graph-rest-beta](https://learn.microsoft.com/graph/api/list-post-columns?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

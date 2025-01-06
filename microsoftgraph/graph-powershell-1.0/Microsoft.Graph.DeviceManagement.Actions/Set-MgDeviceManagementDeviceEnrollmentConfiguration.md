@@ -274,7 +274,7 @@ Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-ENROLLMENTCONFIGURATIONASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>: .
+ENROLLMENTCONFIGURATIONASSIGNMENTS `<IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -303,6 +303,25 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdeviceenrollmentconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-assign?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-assign?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

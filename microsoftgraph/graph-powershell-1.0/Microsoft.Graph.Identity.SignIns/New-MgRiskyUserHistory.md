@@ -438,7 +438,7 @@ Read-only.
   - `[InitiatedBy <String>]`: The ID of actor that does the operation.
   - `[UserId <String>]`: The ID of the user.
 
-HISTORY <IMicrosoftGraphRiskyUserHistoryItem- `[]`>: The activity related to user risk level change
+HISTORY `<IMicrosoftGraphRiskyUserHistoryItem- `[]`>`: The activity related to user risk level change
   - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: The activity related to user risk level change
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
 Possible values are: true, false.
@@ -524,6 +524,25 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuserhistory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -419,7 +419,7 @@ Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the filteringProfile was created.
   - `[Priority <Int64?>]`: The priority used to order the profile for processing within a list.
 
-CONDITIONALACCESSPOLICIES <IMicrosoftGraphNetworkaccessConditionalAccessPolicy- `[]`>: A set of associated policies defined to regulate access to resources or systems based on specific conditions.
+CONDITIONALACCESSPOLICIES `<IMicrosoftGraphNetworkaccessConditionalAccessPolicy- `[]`>`: A set of associated policies defined to regulate access to resources or systems based on specific conditions.
 Automatically expanded.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -449,7 +449,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
 
-POLICIES <IMicrosoftGraphNetworkaccessPolicyLink- `[]`>: Traffic forwarding policies associated with this profile.
+POLICIES `<IMicrosoftGraphNetworkaccessPolicyLink- `[]`>`: Traffic forwarding policies associated with this profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Policy <IMicrosoftGraphNetworkaccessPolicy>]`: policy
@@ -471,6 +471,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofile)
 
 [https://learn.microsoft.com/graph/api/networkaccess-filteringprofile-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-filteringprofile-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

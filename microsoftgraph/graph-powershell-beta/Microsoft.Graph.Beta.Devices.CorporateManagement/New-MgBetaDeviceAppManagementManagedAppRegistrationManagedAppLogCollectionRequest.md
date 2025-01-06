@@ -497,7 +497,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-UPLOADEDLOGS <IMicrosoftGraphManagedAppLogUpload- `[]`>: The collection of log upload results as reported by each component on the device.
+UPLOADEDLOGS `<IMicrosoftGraphManagedAppLogUpload- `[]`>`: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
 Read-only.
   - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
@@ -513,6 +513,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

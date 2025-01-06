@@ -299,7 +299,7 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-MANIFESTS <IMicrosoftGraphPartnersBillingManifest- `[]`>: Represents metadata for the exported data.
+MANIFESTS `<IMicrosoftGraphPartnersBillingManifest- `[]`>`: Represents metadata for the exported data.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[BlobCount <Int32?>]`: The total file count for this partner tenant ID.
@@ -324,7 +324,7 @@ By default, the data in the file is partitioned by the number of line items.
   - `[SasToken <String>]`: The SAS token for accessing the directory or an individual file in the directory.
   - `[SchemaVersion <String>]`: The version of the manifest schema.
 
-OPERATIONS <IMicrosoftGraphPartnersBillingOperation- `[]`>: Represents an operation to export the billing data of a partner.
+OPERATIONS `<IMicrosoftGraphPartnersBillingOperation- `[]`>`: Represents an operation to export the billing data of a partner.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -360,6 +360,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbilling](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbilling)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

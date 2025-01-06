@@ -893,7 +893,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>: Navigation property to list of security groups targeted for policy.
+ASSIGNMENTS `<IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>`: Navigation property to list of security groups targeted for policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
@@ -1024,7 +1024,7 @@ DATARECOVERYCERTIFICATE `<IMicrosoftGraphWindowsInformationProtectionDataRecover
   - `[ExpirationDateTime <DateTime?>]`: Data recovery Certificate expiration datetime
   - `[SubjectName <String>]`: Data recovery Certificate subject name
 
-ENTERPRISEINTERNALPROXYSERVERS <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: This is the comma-separated list of internal proxy servers.
+ENTERPRISEINTERNALPROXYSERVERS `<IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>`: This is the comma-separated list of internal proxy servers.
 For example, '157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59'.
 These proxies have been configured by the admin to connect to specific resources on the Internet.
 They are considered to be enterprise network locations.
@@ -1032,22 +1032,22 @@ The proxies are only leveraged in configuring the EnterpriseProxiedDomains polic
   - `[DisplayName <String>]`: Display name
   - `[Resources <String- `[]`>]`: Collection of resources
 
-ENTERPRISEIPRANGES <IMicrosoftGraphWindowsInformationProtectionIPRangeCollection- `[]`>: Sets the enterprise IP ranges that define the computers in the enterprise network.
+ENTERPRISEIPRANGES `<IMicrosoftGraphWindowsInformationProtectionIPRangeCollection- `[]`>`: Sets the enterprise IP ranges that define the computers in the enterprise network.
 Data that comes from those computers will be considered part of the enterprise and protected.
 These locations will be considered a safe destination for enterprise data to be shared to
   - `[DisplayName <String>]`: Display name
   - `[Ranges <IMicrosoftGraphIPRange- `[]`>]`: Collection of ip ranges
 
-ENTERPRISENETWORKDOMAINNAMES <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: This is the list of domains that comprise the boundaries of the enterprise.
+ENTERPRISENETWORKDOMAINNAMES `<IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>`: This is the list of domains that comprise the boundaries of the enterprise.
 Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to
   - `[DisplayName <String>]`: Display name
   - `[Resources <String- `[]`>]`: Collection of resources
 
-ENTERPRISEPROTECTEDDOMAINNAMES <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: List of enterprise domains to be protected
+ENTERPRISEPROTECTEDDOMAINNAMES `<IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>`: List of enterprise domains to be protected
   - `[DisplayName <String>]`: Display name
   - `[Resources <String- `[]`>]`: Collection of resources
 
-ENTERPRISEPROXIEDDOMAINS <IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection- `[]`>: Contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
+ENTERPRISEPROXIEDDOMAINS `<IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection- `[]`>`: Contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
 Connections to these resources are considered enterprise data.
 If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80).
 A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy
@@ -1056,12 +1056,12 @@ A proxy server used for this purpose must also be configured using the Enterpris
     - `[IPAddressOrFqdn <String>]`: The IP address or FQDN
     - `[Proxy <String>]`: Proxy IP or FQDN
 
-ENTERPRISEPROXYSERVERS <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: This is a list of proxy servers.
+ENTERPRISEPROXYSERVERS `<IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>`: This is a list of proxy servers.
 Any server not on this list is considered non-enterprise
   - `[DisplayName <String>]`: Display name
   - `[Resources <String- `[]`>]`: Collection of resources
 
-EXEMPTAPPLOCKERFILES <IMicrosoftGraphWindowsInformationProtectionAppLockerFile- `[]`>: Another way to input exempt apps through xml files
+EXEMPTAPPLOCKERFILES `<IMicrosoftGraphWindowsInformationProtectionAppLockerFile- `[]`>`: Another way to input exempt apps through xml files
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The friendly name
@@ -1069,7 +1069,7 @@ Read-only.
   - `[FileHash <String>]`: SHA256 hash of the file
   - `[Version <String>]`: Version of the entity.
 
-EXEMPTAPPS <IMicrosoftGraphWindowsInformationProtectionApp- `[]`>: Exempt applications can also access enterprise data, but the data handled by those applications are not protected.
+EXEMPTAPPS `<IMicrosoftGraphWindowsInformationProtectionApp- `[]`>`: Exempt applications can also access enterprise data, but the data handled by those applications are not protected.
 This is because some critical enterprise applications may have compatibility problems with encrypted data.
   - `[Denied <Boolean?>]`: If true, app is denied protection or exemption.
   - `[Description <String>]`: The app's description.
@@ -1077,11 +1077,11 @@ This is because some critical enterprise applications may have compatibility pro
   - `[ProductName <String>]`: The product name.
   - `[PublisherName <String>]`: The publisher name
 
-NEUTRALDOMAINRESOURCES <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: List of domain names that can used for work or personal resource
+NEUTRALDOMAINRESOURCES `<IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>`: List of domain names that can used for work or personal resource
   - `[DisplayName <String>]`: Display name
   - `[Resources <String- `[]`>]`: Collection of resources
 
-PROTECTEDAPPLOCKERFILES <IMicrosoftGraphWindowsInformationProtectionAppLockerFile- `[]`>: Another way to input protected apps through xml files
+PROTECTEDAPPLOCKERFILES `<IMicrosoftGraphWindowsInformationProtectionAppLockerFile- `[]`>`: Another way to input protected apps through xml files
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The friendly name
@@ -1089,20 +1089,39 @@ Read-only.
   - `[FileHash <String>]`: SHA256 hash of the file
   - `[Version <String>]`: Version of the entity.
 
-PROTECTEDAPPS <IMicrosoftGraphWindowsInformationProtectionApp- `[]`>: Protected applications can access enterprise data and the data handled by those applications are protected with encryption
+PROTECTEDAPPS `<IMicrosoftGraphWindowsInformationProtectionApp- `[]`>`: Protected applications can access enterprise data and the data handled by those applications are protected with encryption
   - `[Denied <Boolean?>]`: If true, app is denied protection or exemption.
   - `[Description <String>]`: The app's description.
   - `[DisplayName <String>]`: App display name.
   - `[ProductName <String>]`: The product name.
   - `[PublisherName <String>]`: The publisher name
 
-SMBAUTOENCRYPTEDFILEEXTENSIONS <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary
+SMBAUTOENCRYPTEDFILEEXTENSIONS `<IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>`: Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary
   - `[DisplayName <String>]`: Display name
   - `[Resources <String- `[]`>]`: Collection of resources
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionpolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

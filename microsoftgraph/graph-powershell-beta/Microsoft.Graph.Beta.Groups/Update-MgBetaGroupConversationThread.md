@@ -511,7 +511,7 @@ Returned by default.
   - `[UniqueSenders <String- `[]`>]`: All the users that sent a message to this thread.
 Returned by default.
 
-CCRECIPIENTS <IMicrosoftGraphRecipient- `[]`>: The Cc: recipients for the thread.
+CCRECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: The Cc: recipients for the thread.
 Returned only on $select.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -568,7 +568,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-POSTS <IMicrosoftGraphPost- `[]`>: .
+POSTS `<IMicrosoftGraphPost- `[]`>`: .
   - `[Categories <String- `[]`>]`: The categories associated with the item.
   - `[ChangeKey <String>]`: Identifies the version of the item.
 Every time the item is changed, changeKey changes as well.
@@ -656,7 +656,7 @@ Nullable.
 Read-only.
     - `[Value <String>]`: A property value.
 
-TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: The To: recipients for the thread.
+TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: The To: recipients for the thread.
 Returned only on $select.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -666,6 +666,25 @@ Returned only on $select.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -440,7 +440,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[ResultType <String>]`: threatAssessmentResultType
     - `[Status <String>]`: threatAssessmentStatus
 
-DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy- `[]`>: .
+DATALOSSPREVENTIONPOLICIES `<IMicrosoftGraphDataLossPreventionPolicy- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: 
@@ -551,7 +551,7 @@ Active labels should be hidden or disabled in user interfaces.
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel- `[]`>: .
+SENSITIVITYLABELS `<IMicrosoftGraphSensitivityLabel- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
@@ -583,7 +583,7 @@ Read-only.
   - `[HelpWebUrl <String>]`: 
   - `[IsMandatory <Boolean?>]`: 
 
-THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest- `[]`>: .
+THREATASSESSMENTREQUESTS `<IMicrosoftGraphThreatAssessmentRequest- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Category <String>]`: threatCategory
@@ -617,6 +617,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -Relationships
-List of relationships for this mobile app.
+The set of direct relationships for this app.
 To construct, see NOTES section for RELATIONSHIPS properties and create a hash table.
 
 ```yaml
@@ -410,7 +410,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphMobileAppAssignment- `[]`>: The list of group assignments for this mobile app.
+ASSIGNMENTS `<IMicrosoftGraphMobileAppAssignment- `[]`>`: The list of group assignments for this mobile app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
@@ -458,7 +458,7 @@ Read-only.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
   - `[Publisher <String>]`: The publisher of the app.
   - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
+  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: The set of direct relationships for this app.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
@@ -466,7 +466,7 @@ Read-Only
     - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
   - `[RoleScopeTagIds <String- `[]`>]`: List of scope tag ids for this mobile app.
 
-CATEGORIES <IMicrosoftGraphMobileAppCategory- `[]`>: The list of categories for this app.
+CATEGORIES `<IMicrosoftGraphMobileAppCategory- `[]`>`: The list of categories for this app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
@@ -476,7 +476,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
 
-RELATIONSHIPS <IMicrosoftGraphMobileAppRelationship- `[]`>: List of relationships for this mobile app.
+RELATIONSHIPS `<IMicrosoftGraphMobileAppRelationship- `[]`>`: The set of direct relationships for this app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
@@ -486,6 +486,25 @@ Read-Only
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileapp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

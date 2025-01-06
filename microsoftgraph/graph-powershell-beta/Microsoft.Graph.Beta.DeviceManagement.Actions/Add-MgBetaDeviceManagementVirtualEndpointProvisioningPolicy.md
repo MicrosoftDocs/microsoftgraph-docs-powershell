@@ -62,6 +62,7 @@ Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 
 $params = @{
 	policySettings = "region"
+	reservePercentage = 80
 }
 
 Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -BodyParameter $params
@@ -323,6 +324,25 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
 
 [https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

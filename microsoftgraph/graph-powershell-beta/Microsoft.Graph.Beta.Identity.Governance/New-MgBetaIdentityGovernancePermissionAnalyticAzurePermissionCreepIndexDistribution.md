@@ -322,3 +322,22 @@ MEDIUMRISKPROFILE `<IMicrosoftGraphRiskProfile>`: riskProfile
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -679,7 +679,7 @@ LINKS `<IMicrosoftGraphSectionLinks>`: sectionLinks
     - `[Href <String>]`: The URL of the link.
   - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
 
-PAGES <IMicrosoftGraphOnenotePage- `[]`>: The collection of pages in the section.
+PAGES `<IMicrosoftGraphOnenotePage- `[]`>`: The collection of pages in the section.
 Read-only.
 Nullable.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
@@ -1084,6 +1084,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotesectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotesectiongroupsection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

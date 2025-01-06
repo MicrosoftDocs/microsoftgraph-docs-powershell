@@ -366,7 +366,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[TotalDeviceCount <Int32?>]`: Indicates the total number of devices in the tenant.
 Valid values -2147483648 to 2147483647
 
-CORRELATIONGROUPFEATURES <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature- `[]`>: Describes the features of a device that are shared between all devices in a correlation group.
+CORRELATIONGROUPFEATURES `<IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature- `[]`>`: Describes the features of a device that are shared between all devices in a correlation group.
   - `[DeviceFeatureType <UserExperienceAnalyticsAnomalyDeviceFeatureType?>]`: Indicates the device's feature type.
 Possible values are: manufacturer, model, osVersion, application or driver.
   - `[Values <String- `[]`>]`: Specific metric values that describe the features of the given device feature type.
@@ -374,6 +374,25 @@ Possible values are: manufacturer, model, osVersion, application or driver.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalycorrelationgroupoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalycorrelationgroupoverview)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

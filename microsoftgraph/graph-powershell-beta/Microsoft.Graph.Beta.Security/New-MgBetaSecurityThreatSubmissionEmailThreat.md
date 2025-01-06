@@ -612,3 +612,22 @@ TENANTALLOWORBLOCKLISTACTION `<IMicrosoftGraphSecurityTenantAllowOrBlockListActi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

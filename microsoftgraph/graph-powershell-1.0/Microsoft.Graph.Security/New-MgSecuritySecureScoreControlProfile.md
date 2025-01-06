@@ -509,13 +509,13 @@ Required
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation- `[]`>: The collection of compliance information associated with secure score control
+COMPLIANCEINFORMATION `<IMicrosoftGraphComplianceInformation- `[]`>`: The collection of compliance information associated with secure score control
   - `[CertificationControls <IMicrosoftGraphCertificationControl- `[]`>]`: Collection of the certification controls associated with the certification.
     - `[Name <String>]`: Certification control name
     - `[Url <String>]`: URL for the Microsoft Service Trust Portal
   - `[CertificationName <String>]`: The name of the compliance certification, for example, ISO 27018:2014, GDPR, FedRAMP, and NIST 800-171.
 
-CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate- `[]`>: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
+CONTROLSTATEUPDATES `<IMicrosoftGraphSecureScoreControlStateUpdate- `[]`>`: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
   - `[AssignedTo <String>]`: Assigns the control to the user who will take the action.
   - `[Comment <String>]`: Provides optional comment about the control.
   - `[State <String>]`: State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
@@ -534,6 +534,25 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescorecontrolprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -381,6 +381,27 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-beta)
 
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

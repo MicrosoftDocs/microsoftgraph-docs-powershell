@@ -5695,7 +5695,7 @@ Nullable.
   - `[Users <IMicrosoftGraphEducationUser- `[]`>]`: Users in the school.
 Nullable.
 
-CLASSES <IMicrosoftGraphEducationClass- `[]`>: Classes taught at the school.
+CLASSES `<IMicrosoftGraphEducationClass- `[]`>`: Classes taught at the school.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -10837,7 +10837,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
-USERS <IMicrosoftGraphEducationUser- `[]`>: Users in the school.
+USERS `<IMicrosoftGraphEducationUser- `[]`>`: Users in the school.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -15959,6 +15959,25 @@ Supports $filter.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool)
 
 [https://learn.microsoft.com/graph/api/educationschool-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

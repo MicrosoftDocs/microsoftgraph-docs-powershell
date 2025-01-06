@@ -801,14 +801,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDLICENSES <IMicrosoftGraphAssignedLicense- `[]`>: The licenses that are assigned to the user.
+ASSIGNEDLICENSES `<IMicrosoftGraphAssignedLicense- `[]`>`: The licenses that are assigned to the user.
 Not nullable.
   - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
 IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
   - `[SkuId <String>]`: The unique identifier for the SKU.
 Corresponds to the skuId from subscribedSkus or companySubscription.
 
-ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan- `[]`>: The plans that are assigned to the user.
+ASSIGNEDPLANS `<IMicrosoftGraphAssignedPlan- `[]`>`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
   - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z.
@@ -820,7 +820,7 @@ The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
   - `[ServicePlanId <String>]`: A GUID that identifies the service plan.
 For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
 
-ASSIGNMENTS <IMicrosoftGraphEducationAssignment- `[]`>: List of assignments for the user.
+ASSIGNMENTS `<IMicrosoftGraphEducationAssignment- `[]`>`: List of assignments for the user.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1822,8 +1822,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -6606,7 +6606,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -9329,7 +9329,7 @@ For more details, see the standard - `[user]` resource.
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as 'Member' and 'Guest'.
 Supports /$filter.
 
-CLASSES <IMicrosoftGraphEducationClass- `[]`>: Classes to which the user belongs.
+CLASSES `<IMicrosoftGraphEducationClass- `[]`>`: Classes to which the user belongs.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -10173,8 +10173,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -14965,7 +14965,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -17745,14 +17745,14 @@ It can be updated, but the user will be required to change the password on the n
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
 
-PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan- `[]`>: The plans that are provisioned for the user.
+PROVISIONEDPLANS `<IMicrosoftGraphProvisionedPlan- `[]`>`: The plans that are provisioned for the user.
 Read-only.
 Not nullable.
   - `[CapabilityStatus <String>]`: For example, 'Enabled'.
   - `[ProvisioningStatus <String>]`: For example, 'Success'.
   - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
 
-RELATEDCONTACTS <IMicrosoftGraphRelatedContact- `[]`>: Related records related to the user.
+RELATEDCONTACTS `<IMicrosoftGraphRelatedContact- `[]`>`: Related records related to the user.
 Possible relationships are parent, relative, aide, doctor, guardian, child, other, unknownFutureValue
   - `[AccessConsent <Boolean?>]`: Indicates whether the user has been consented to access student data.
   - `[DisplayName <String>]`: Name of the contact.
@@ -17773,7 +17773,7 @@ It's a free-format string value, for example, 'United States'.
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-RUBRICS <IMicrosoftGraphEducationRubric- `[]`>: When set, the grading rubric attached to the assignment.
+RUBRICS `<IMicrosoftGraphEducationRubric- `[]`>`: When set, the grading rubric attached to the assignment.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -17809,7 +17809,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
 
-SCHOOLS <IMicrosoftGraphEducationSchool- `[]`>: Schools to which the user belongs.
+SCHOOLS `<IMicrosoftGraphEducationSchool- `[]`>`: Schools to which the user belongs.
 Nullable.
   - `[Description <String>]`: Organization description.
   - `[DisplayName <String>]`: Organization display name.
@@ -18685,8 +18685,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -23477,7 +23477,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -26193,7 +26193,7 @@ STUDENT `<IMicrosoftGraphEducationStudent>`: educationStudent
   - `[GraduationYear <String>]`: Year the student is graduating from the school.
   - `[StudentNumber <String>]`: Student Number.
 
-TAUGHTCLASSES <IMicrosoftGraphEducationClass- `[]`>: Classes for which the user is a teacher.
+TAUGHTCLASSES `<IMicrosoftGraphEducationClass- `[]`>`: Classes for which the user is a teacher.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignmentCategories <IMicrosoftGraphEducationCategory- `[]`>]`: All categories associated with this class.
@@ -27036,8 +27036,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -31828,7 +31828,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -34792,8 +34792,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -40622,7 +40622,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -42633,6 +42633,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

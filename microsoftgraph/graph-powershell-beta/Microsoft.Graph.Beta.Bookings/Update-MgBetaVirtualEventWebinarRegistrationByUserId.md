@@ -605,7 +605,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-REGISTRATIONQUESTIONANSWERS <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>: The registrant's answer to the registration questions.
+REGISTRATIONQUESTIONANSWERS `<IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>`: The registrant's answer to the registration questions.
   - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
   - `[DisplayName <String>]`: Display name of the registration question.
@@ -615,7 +615,7 @@ Only appears when answerInputType is multiChoice.
   - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: .
+SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: .
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
@@ -768,6 +768,25 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarregistrationbyuserid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarregistrationbyuserid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

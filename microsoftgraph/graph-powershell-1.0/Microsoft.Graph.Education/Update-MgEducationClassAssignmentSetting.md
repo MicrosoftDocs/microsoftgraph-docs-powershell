@@ -318,7 +318,7 @@ Read-only.
 If true, indicates to skip the animation.
 The default value is false.
 
-GRADINGCATEGORIES <IMicrosoftGraphEducationGradingCategory- `[]`>: When set, enables users to weight assignments differently when computing a class average grade.
+GRADINGCATEGORIES `<IMicrosoftGraphEducationGradingCategory- `[]`>`: When set, enables users to weight assignments differently when computing a class average grade.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the grading category.
@@ -344,6 +344,25 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting)
 
 [https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

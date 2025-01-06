@@ -464,7 +464,7 @@ For more information about each value, see Risk types and detection.
   - `[InitiatedBy <String>]`: The ID of actor that does the operation.
   - `[UserId <String>]`: The ID of the user.
 
-HISTORY <IMicrosoftGraphRiskyUserHistoryItem- `[]`>: .
+HISTORY `<IMicrosoftGraphRiskyUserHistoryItem- `[]`>`: .
   - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: 
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
 Possible values are: true, false.
@@ -574,6 +574,25 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyuserhistory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

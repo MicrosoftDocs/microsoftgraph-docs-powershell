@@ -417,7 +417,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphManagedEBookAssignment- `[]`>: The list of assignments for this eBook.
+ASSIGNMENTS `<IMicrosoftGraphManagedEBookAssignment- `[]`>`: The list of assignments for this eBook.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[InstallIntent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
@@ -476,7 +476,7 @@ Read-only.
     - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
     - `[UserName <String>]`: User name.
 
-DEVICESTATES <IMicrosoftGraphDeviceInstallState- `[]`>: The list of installation states for this eBook.
+DEVICESTATES `<IMicrosoftGraphDeviceInstallState- `[]`>`: The list of installation states for this eBook.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceId <String>]`: Device Id.
@@ -504,7 +504,7 @@ LARGECOVER `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mim
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
 
-USERSTATESUMMARY <IMicrosoftGraphUserInstallStateSummary- `[]`>: The list of installation states for this eBook.
+USERSTATESUMMARY `<IMicrosoftGraphUserInstallStateSummary- `[]`>`: The list of installation states for this eBook.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceStates <IMicrosoftGraphDeviceInstallState- `[]`>]`: The install state of the eBook.
@@ -528,6 +528,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebook)
 
 [https://learn.microsoft.com/graph/api/intune-books-iosvppebook-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebook-create?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

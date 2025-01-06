@@ -207,7 +207,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATIONSYSTEMS <IMicrosoftGraphAuthorizationSystem- `[]`>: Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.
+AUTHORIZATIONSYSTEMS `<IMicrosoftGraphAuthorizationSystem- `[]`>`: Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AuthorizationSystemId <String>]`: ID of the authorization system retrieved from the customer cloud environment.
@@ -515,7 +515,7 @@ Maximum supported length is 100 characters.
     - `[SourceSystems <IMicrosoftGraphIndustryDataSourceSystemDefinition- `[]`>]`: Set of source definitions that represents real-world external systems.
     - `[Years <IMicrosoftGraphIndustryDataYearTimePeriodDefinition- `[]`>]`: Set of years represented in the system.
 
-CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection- `[]`>: .
+CONNECTIONS `<IMicrosoftGraphExternalConnectorsExternalConnection- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
@@ -806,6 +806,25 @@ Maximum supported length is 100 characters.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

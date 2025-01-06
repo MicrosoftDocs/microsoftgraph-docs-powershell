@@ -229,7 +229,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AVAILABLEUPDATES <IMicrosoftGraphManagedDeviceWindowsOperatingSystemUpdate- `[]`>: Indicates the available Quality/Security updates for a specific Windows product version (example: Windows 11 22H1), for upto last 3 Patch Tuesdays .
+AVAILABLEUPDATES `<IMicrosoftGraphManagedDeviceWindowsOperatingSystemUpdate- `[]`>`: Indicates the available Quality/Security updates for a specific Windows product version (example: Windows 11 22H1), for upto last 3 Patch Tuesdays .
 This value in the API response would be updated 2-3 days after every Patch Tuesday.
 Supports: $filter, $select, $top, $skip.
 Read-only.
@@ -272,7 +272,7 @@ For example, 2014-01-01 would mean '2014-01-01T07:00:00Z' in UTC time.
 Returned by default.
 Read-only.
 
-SUPPORTEDEDITIONS <IMicrosoftGraphManagedDeviceWindowsOperatingSystemEdition- `[]`>: Indicates the list of editions supported by the image along with their support dates.
+SUPPORTEDEDITIONS `<IMicrosoftGraphManagedDeviceWindowsOperatingSystemEdition- `[]`>`: Indicates the list of editions supported by the image along with their support dates.
 Supports: $filter, $select, $top, $skip.
 Read-only.
   - `[EditionType <ManagedDeviceWindowsOperatingSystemEditionType?>]`: Windows Operating System is available in different editions, which have a specific set of features available.
@@ -286,6 +286,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicewindowsosimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicewindowsosimage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

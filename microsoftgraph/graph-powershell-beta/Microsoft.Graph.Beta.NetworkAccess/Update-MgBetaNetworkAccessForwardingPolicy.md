@@ -330,7 +330,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
 
-POLICYRULES <IMicrosoftGraphNetworkaccessPolicyRule- `[]`>: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+POLICYRULES `<IMicrosoftGraphNetworkaccessPolicyRule- `[]`>`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: Name.
@@ -338,6 +338,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingpolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

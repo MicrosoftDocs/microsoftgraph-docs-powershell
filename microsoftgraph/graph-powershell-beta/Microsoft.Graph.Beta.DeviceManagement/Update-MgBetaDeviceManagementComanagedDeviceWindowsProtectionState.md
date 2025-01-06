@@ -602,7 +602,7 @@ Defaults to setting on client device.
   - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled.
 Defaults to setting on client device.
 
-DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState- `[]`>: Device malware list
+DETECTEDMALWARESTATE `<IMicrosoftGraphWindowsDeviceMalwareState- `[]`>`: Device malware list
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
@@ -763,6 +763,25 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicewindowsprotectionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicewindowsprotectionstate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

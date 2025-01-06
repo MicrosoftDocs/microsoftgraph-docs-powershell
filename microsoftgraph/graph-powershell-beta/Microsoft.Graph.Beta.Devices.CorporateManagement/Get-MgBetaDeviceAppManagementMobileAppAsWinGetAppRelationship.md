@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship
 
 ## SYNOPSIS
-List of relationships for this mobile app.
+The set of direct relationships for this app.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship
 ```
 
 ## DESCRIPTION
-List of relationships for this mobile app.
+The set of direct relationships for this app.
 
 ## PARAMETERS
 
@@ -374,6 +374,25 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappaswingetapprelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappaswingetapprelationship)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

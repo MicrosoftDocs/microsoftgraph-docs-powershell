@@ -478,7 +478,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-SETS <IMicrosoftGraphTermStoreSet- `[]`>: All sets under the group in a term - `[store]`.
+SETS `<IMicrosoftGraphTermStoreSet- `[]`>`: All sets under the group in a term - `[store]`.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm- `[]`>]`: Children terms of set in term - `[store]`.
@@ -533,6 +533,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup)
 
 [https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

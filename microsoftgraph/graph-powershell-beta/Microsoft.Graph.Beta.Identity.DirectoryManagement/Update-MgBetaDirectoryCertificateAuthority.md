@@ -208,7 +208,7 @@ Read-only.
     - `[Description <String>]`: The description of the trusted certificate authorities.
     - `[DisplayName <String>]`: The display name of the trusted certificate authorities.
 
-CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS <IMicrosoftGraphCertificateBasedApplicationConfiguration- `[]`>: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
+CERTIFICATEBASEDAPPLICATIONCONFIGURATIONS `<IMicrosoftGraphCertificateBasedApplicationConfiguration- `[]`>`: Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
   - `[TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>]`: Collection of trusted certificate authorities.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -227,6 +227,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

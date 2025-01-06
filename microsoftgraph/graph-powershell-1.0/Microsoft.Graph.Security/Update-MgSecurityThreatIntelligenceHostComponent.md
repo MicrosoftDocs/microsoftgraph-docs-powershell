@@ -596,7 +596,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[Version <String>]`: The component version running on the artifact, for example, v8.5.
 This shouldn't be assumed to be strictly numerical.
 
-HOST1 <IMicrosoftGraphSecurityHost>: host
+HOST1 `<IMicrosoftGraphSecurityHost>`: host
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -938,6 +938,25 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostcomponent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostcomponent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

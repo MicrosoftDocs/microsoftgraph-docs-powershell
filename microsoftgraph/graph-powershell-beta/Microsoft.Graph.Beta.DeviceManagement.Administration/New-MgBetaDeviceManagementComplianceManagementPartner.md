@@ -317,7 +317,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>: User groups which enroll Android devices through partner.
+ANDROIDENROLLMENTASSIGNMENTS `<IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>`: User groups which enroll Android devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
@@ -341,13 +341,13 @@ Read-only.
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
   - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
 
-IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>: User groups which enroll ios devices through partner.
+IOSENROLLMENTASSIGNMENTS `<IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>`: User groups which enroll ios devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>: User groups which enroll Mac devices through partner.
+MACOSENROLLMENTASSIGNMENTS `<IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>`: User groups which enroll Mac devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
@@ -356,6 +356,25 @@ MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcompliancemanagementpartner)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

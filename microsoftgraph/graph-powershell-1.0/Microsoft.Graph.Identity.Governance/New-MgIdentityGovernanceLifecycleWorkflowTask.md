@@ -370,7 +370,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARGUMENTS <IMicrosoftGraphKeyValuePair- `[]`>: Arguments included within the task.
+ARGUMENTS `<IMicrosoftGraphKeyValuePair- `[]`>`: Arguments included within the task.
 For guidance to configure this property, see Configure the arguments for built-in Lifecycle Workflow tasks.
 Required.
   - `[Name <String>]`: Name for this key-value pair
@@ -5276,7 +5276,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-TASKPROCESSINGRESULTS <IMicrosoftGraphIdentityGovernanceTaskProcessingResult- `[]`>: The result of processing the task.
+TASKPROCESSINGRESULTS `<IMicrosoftGraphIdentityGovernanceTaskProcessingResult- `[]`>`: The result of processing the task.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: The date time when taskProcessingResult execution ended.
@@ -10110,6 +10110,25 @@ Required.Supports $filter(eq, ne).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowtask](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowtask)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

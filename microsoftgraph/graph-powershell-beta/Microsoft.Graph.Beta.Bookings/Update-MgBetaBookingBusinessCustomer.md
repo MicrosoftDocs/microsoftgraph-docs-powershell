@@ -375,7 +375,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESSES <IMicrosoftGraphPhysicalAddress- `[]`>: Addresses associated with the customer, including home, business and other addresses.
+ADDRESSES `<IMicrosoftGraphPhysicalAddress- `[]`>`: Addresses associated with the customer, including home, business and other addresses.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
@@ -433,13 +433,32 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-PHONES <IMicrosoftGraphPhone- `[]`>: Phone numbers associated with the customer, including home, business and mobile numbers.
+PHONES `<IMicrosoftGraphPhone- `[]`>`: Phone numbers associated with the customer, including home, business and mobile numbers.
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

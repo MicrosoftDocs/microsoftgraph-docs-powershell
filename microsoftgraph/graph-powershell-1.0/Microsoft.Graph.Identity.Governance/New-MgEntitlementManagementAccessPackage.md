@@ -386,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGESINCOMPATIBLEWITH <IMicrosoftGraphAccessPackage- `[]`>: The access packages that are incompatible with this package.
+ACCESSPACKAGESINCOMPATIBLEWITH `<IMicrosoftGraphAccessPackage- `[]`>`: The access packages that are incompatible with this package.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -5403,7 +5403,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Role <IMicrosoftGraphAccessPackageResourceRole>]`: accessPackageResourceRole
     - `[Scope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
 
-ASSIGNMENTPOLICIES <IMicrosoftGraphAccessPackageAssignmentPolicy- `[]`>: Read-only.
+ASSIGNMENTPOLICIES `<IMicrosoftGraphAccessPackageAssignmentPolicy- `[]`>`: Read-only.
 Nullable.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -20457,7 +20457,7 @@ Read-only.
   - `[Resources <IMicrosoftGraphAccessPackageResource- `[]`>]`: Access package resources in this catalog.
   - `[State <String>]`: accessPackageCatalogState
 
-INCOMPATIBLEACCESSPACKAGES <IMicrosoftGraphAccessPackage- `[]`>: The access packages whose assigned users are ineligible to be assigned this access package.
+INCOMPATIBLEACCESSPACKAGES `<IMicrosoftGraphAccessPackage- `[]`>`: The access packages whose assigned users are ineligible to be assigned this access package.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccessPackagesIncompatibleWith <IMicrosoftGraphAccessPackage- `[]`>]`: The access packages that are incompatible with this package.
@@ -25473,7 +25473,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Role <IMicrosoftGraphAccessPackageResourceRole>]`: accessPackageResourceRole
     - `[Scope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
 
-INCOMPATIBLEGROUPS <IMicrosoftGraphGroup- `[]`>: The groups whose members are ineligible to be assigned this access package.
+INCOMPATIBLEGROUPS `<IMicrosoftGraphGroup- `[]`>`: The groups whose members are ineligible to be assigned this access package.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -30270,7 +30270,7 @@ To learn more, see group visibility options.
 Returned by default.
 Nullable.
 
-RESOURCEROLESCOPES <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>: The resource roles and scopes in this access package.
+RESOURCEROLESCOPES `<IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>`: The resource roles and scopes in this access package.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -30351,6 +30351,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackage)
 
 [https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackages?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

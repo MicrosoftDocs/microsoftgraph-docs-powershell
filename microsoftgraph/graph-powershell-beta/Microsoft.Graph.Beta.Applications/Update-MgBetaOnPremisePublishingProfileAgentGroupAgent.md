@@ -332,7 +332,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup- `[]`>: List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
+AGENTGROUPS `<IMicrosoftGraphOnPremisesAgentGroup- `[]`>`: List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -440,6 +440,25 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroupagent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroupagent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

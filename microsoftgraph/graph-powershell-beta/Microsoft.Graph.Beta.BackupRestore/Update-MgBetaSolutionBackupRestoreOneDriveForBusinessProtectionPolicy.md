@@ -449,7 +449,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DRIVEINCLUSIONRULES <IMicrosoftGraphDriveProtectionRule- `[]`>: Contains the details of the Onedrive for Business protection rule.
+DRIVEINCLUSIONRULES `<IMicrosoftGraphDriveProtectionRule- `[]`>`: Contains the details of the Onedrive for Business protection rule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -486,7 +486,7 @@ Read-only.
   - `[DriveExpression <String>]`: Contains a drive expression.
 For examples, see driveExpression examples.
 
-DRIVEPROTECTIONUNITS <IMicrosoftGraphDriveProtectionUnit- `[]`>: Contains the protection units associated with a OneDrive for Business protection policy.
+DRIVEPROTECTIONUNITS `<IMicrosoftGraphDriveProtectionUnit- `[]`>`: Contains the protection units associated with a OneDrive for Business protection policy.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -557,7 +557,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retention setting details for the policy.
+RETENTIONSETTINGS `<IMicrosoftGraphRetentionSetting- `[]`>`: Contains the retention setting details for the policy.
   - `[Interval <String>]`: The frequency of the backup.
   - `[Period <TimeSpan?>]`: The period of time to retain the protected data for a single Microsoft 365 service.
 
@@ -566,6 +566,25 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retentio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

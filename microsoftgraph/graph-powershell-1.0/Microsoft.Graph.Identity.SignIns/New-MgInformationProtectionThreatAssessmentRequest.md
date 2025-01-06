@@ -426,7 +426,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESULTS <IMicrosoftGraphThreatAssessmentResult- `[]`>: A collection of threat assessment results.
+RESULTS `<IMicrosoftGraphThreatAssessmentResult- `[]`>`: A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -441,6 +441,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest)
 
 [https://learn.microsoft.com/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

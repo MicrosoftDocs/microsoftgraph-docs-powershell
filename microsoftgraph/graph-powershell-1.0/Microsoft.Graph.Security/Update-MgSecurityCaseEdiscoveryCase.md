@@ -5516,7 +5516,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian- `[]`>: Returns a list of case ediscoveryCustodian objects for this case.
+CUSTODIANS `<IMicrosoftGraphSecurityEdiscoveryCustodian- `[]`>`: Returns a list of case ediscoveryCustodian objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -10443,7 +10443,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NONCUSTODIALDATASOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
+NONCUSTODIALDATASOURCES `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>`: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -10485,7 +10485,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-OPERATIONS <IMicrosoftGraphSecurityCaseOperation- `[]`>: Returns a list of case caseOperation objects for this case.
+OPERATIONS `<IMicrosoftGraphSecurityCaseOperation- `[]`>`: Returns a list of case caseOperation objects for this case.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Action <String>]`: caseAction
@@ -10509,7 +10509,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Subcode <Int32?>]`: The result subcode.
   - `[Status <String>]`: caseOperationStatus
 
-REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet- `[]`>: Returns a list of eDiscoveryReviewSet objects in the case.
+REVIEWSETS `<IMicrosoftGraphSecurityEdiscoveryReviewSet- `[]`>`: Returns a list of eDiscoveryReviewSet objects in the case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -10535,7 +10535,7 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch- `[]`>: Returns a list of eDiscoverySearch objects associated with this case.
+SEARCHES `<IMicrosoftGraphSecurityEdiscoverySearch- `[]`>`: Returns a list of eDiscoverySearch objects associated with this case.
   - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10665,7 +10665,7 @@ To learn more, see Include numbers in themes.
     - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set.
 To learn more, see Maximum number of themes.
 
-TAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>: Returns a list of ediscoveryReviewTag objects associated to this case.
+TAGS `<IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>`: Returns a list of ediscoveryReviewTag objects associated to this case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -10690,6 +10690,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycase)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverycase-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

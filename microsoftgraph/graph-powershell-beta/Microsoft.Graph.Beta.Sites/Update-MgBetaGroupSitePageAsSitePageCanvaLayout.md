@@ -311,7 +311,7 @@ Read-only.
     - `[Emphasis <String>]`: sectionEmphasisType
     - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
 
-HORIZONTALSECTIONS <IMicrosoftGraphHorizontalSection- `[]`>: Collection of horizontal sections on the SharePoint page.
+HORIZONTALSECTIONS `<IMicrosoftGraphHorizontalSection- `[]`>`: Collection of horizontal sections on the SharePoint page.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
@@ -396,6 +396,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepageassitepagecanvalayout)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

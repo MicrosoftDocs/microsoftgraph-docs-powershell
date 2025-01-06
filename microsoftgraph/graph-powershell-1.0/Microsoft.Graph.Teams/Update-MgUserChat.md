@@ -778,7 +778,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation- `[]`>: A collection of all the apps in the chat.
+INSTALLEDAPPS `<IMicrosoftGraphTeamsAppInstallation- `[]`>`: A collection of all the apps in the chat.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -847,7 +847,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
   - `[MessageType <String>]`: chatMessageType
 
-MEMBERS <IMicrosoftGraphConversationMember- `[]`>: A collection of all the members in the chat.
+MEMBERS `<IMicrosoftGraphConversationMember- `[]`>`: A collection of all the members in the chat.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -860,7 +860,7 @@ An Out-of-tenant external member is assigned the owner role.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-MESSAGES <IMicrosoftGraphChatMessage- `[]`>: A collection of all the messages in the chat.
+MESSAGES `<IMicrosoftGraphChatMessage- `[]`>`: A collection of all the messages in the chat.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -994,7 +994,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
-PERMISSIONGRANTS <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>: A collection of permissions granted to apps for the chat.
+PERMISSIONGRANTS `<IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>`: A collection of permissions granted to apps for the chat.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1011,7 +1011,7 @@ Read-only.
   - `[ResourceAppId <String>]`: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
 
-PINNEDMESSAGES <IMicrosoftGraphPinnedChatMessageInfo- `[]`>: A collection of all the pinned messages in the chat.
+PINNEDMESSAGES `<IMicrosoftGraphPinnedChatMessageInfo- `[]`>`: A collection of all the pinned messages in the chat.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1137,7 +1137,7 @@ Only applies to channel chat messages, not chat messages in a chat.
     - `[WebUrl <String>]`: Read-only.
 Link to the message in Microsoft Teams.
 
-TABS <IMicrosoftGraphTeamsTab- `[]`>: A collection of all the tabs in the chat.
+TABS `<IMicrosoftGraphTeamsTab- `[]`>`: A collection of all the tabs in the chat.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1198,6 +1198,25 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

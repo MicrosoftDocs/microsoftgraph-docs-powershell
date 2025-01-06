@@ -304,7 +304,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDEES <IMicrosoftGraphAttendeeNotificationInfo- `[]`>: .
+ATTENDEES `<IMicrosoftGraphAttendeeNotificationInfo- `[]`>`: .
   - `[PhoneNumber <String>]`: The phone number of the external attendee.
 Required.
   - `[TimeZone <String>]`: The time zone of the external attendee.
@@ -372,6 +372,25 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauseronlinemeetingvirtualappointmentsm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauseronlinemeetingvirtualappointmentsm)
 
 [https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

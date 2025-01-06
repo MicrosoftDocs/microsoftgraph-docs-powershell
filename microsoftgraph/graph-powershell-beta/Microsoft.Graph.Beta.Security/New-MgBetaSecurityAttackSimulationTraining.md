@@ -465,7 +465,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Email <String>]`: Email address of the user.
 
-LANGUAGEDETAILS <IMicrosoftGraphTrainingLanguageDetail- `[]`>: Details about the language used in the training.
+LANGUAGEDETAILS `<IMicrosoftGraphTrainingLanguageDetail- `[]`>`: Details about the language used in the training.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Content <String>]`: Language specific content for the training.
@@ -501,6 +501,25 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraining)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

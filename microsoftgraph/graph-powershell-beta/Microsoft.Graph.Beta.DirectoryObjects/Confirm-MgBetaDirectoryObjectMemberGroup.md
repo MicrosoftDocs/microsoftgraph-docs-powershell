@@ -257,6 +257,8 @@ BODYPARAMETER `<IPaths1Ffes6MDirectoryobjectsDirectoryobjectIdMicrosoftGraphChec
   - `[GroupIds <String- `[]`>]`: 
 
 INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
+  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
+  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS
@@ -264,6 +266,25 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/confirm-mgbetadirectoryobjectmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/confirm-mgbetadirectoryobjectmembergroup)
 
 [https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

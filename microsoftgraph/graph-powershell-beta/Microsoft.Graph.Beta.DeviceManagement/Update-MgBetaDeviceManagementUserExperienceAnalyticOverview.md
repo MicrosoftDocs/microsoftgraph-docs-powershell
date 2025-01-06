@@ -203,7 +203,7 @@ Possible values are: None, Informational, Warning, Error.
     - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
     - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue- `[]`>]`: The value of the user experience analytics insight.
 
-INSIGHTS <IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>: The user experience analytics insights.
+INSIGHTS `<IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>`: The user experience analytics insights.
 Read-only.
   - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
   - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights.
@@ -214,6 +214,25 @@ Possible values are: None, Informational, Warning, Error.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticoverview)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

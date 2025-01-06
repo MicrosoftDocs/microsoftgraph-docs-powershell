@@ -303,7 +303,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
+VALUE `<IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>`: .
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
@@ -312,6 +312,25 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationsecret](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationsecret)
 
 [https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -400,7 +400,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-TAGSTOADD <IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>: .
+TAGSTOADD `<IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>`: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -420,7 +420,7 @@ Read-only.
   - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>]`: Returns the tags that are a child of a tag.
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
-TAGSTOREMOVE <IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>: .
+TAGSTOREMOVE `<IMicrosoftGraphSecurityEdiscoveryReviewTag- `[]`>`: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -445,6 +445,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasereviewsetquerytag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasereviewsetquerytag)
 
 [https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-applytags?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-applytags?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

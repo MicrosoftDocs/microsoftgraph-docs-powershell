@@ -395,7 +395,7 @@ Select from administrativeUnit, contact, device, event, group, message, organiza
 INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
   - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
-PROPERTIES <IMicrosoftGraphExtensionSchemaProperty- `[]`>: The collection of property names and types that make up the schema extension definition.
+PROPERTIES `<IMicrosoftGraphExtensionSchemaProperty- `[]`>`: The collection of property names and types that make up the schema extension definition.
   - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
   - `[Type <String>]`: The type of the property that is defined as part of a schema extension.
 Allowed values are Binary, Boolean, DateTime, Integer, or String.
@@ -406,6 +406,25 @@ For more information, see Supported property data types.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension)
 
 [https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

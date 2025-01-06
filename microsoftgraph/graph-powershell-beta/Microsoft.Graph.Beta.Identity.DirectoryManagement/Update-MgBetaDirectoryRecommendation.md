@@ -568,7 +568,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIONSTEPS <IMicrosoftGraphActionStep- `[]`>: List of actions to take to complete a recommendation.
+ACTIONSTEPS `<IMicrosoftGraphActionStep- `[]`>`: List of actions to take to complete a recommendation.
   - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: Brief title for the page that the links directs to.
@@ -576,13 +576,13 @@ ACTIONSTEPS <IMicrosoftGraphActionStep- `[]`>: List of actions to take to comple
   - `[StepNumber <Int64?>]`: Indicates the position for this action in the order of the collection of actions to be taken.
   - `[Text <String>]`: Friendly description of the action to take.
 
-IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource- `[]`>: The list of directory objects associated with the recommendation.
+IMPACTEDRESOURCES `<IMicrosoftGraphImpactedResource- `[]`>`: The list of directory objects associated with the recommendation.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
   - `[AdditionalDetails <IMicrosoftGraphKeyValue- `[]`>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-    - `[Key <String>]`: Contains the name of the field that a value is associated with.
-    - `[Value <String>]`: Contains the corresponding value for the specified key.
+    - `[Key <String>]`: Key.
+    - `[Value <String>]`: Value.
   - `[ApiUrl <String>]`: The URL link to the corresponding Microsoft Entra resource.
   - `[DisplayName <String>]`: Friendly name of the Microsoft Entra resource.
   - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -651,6 +651,25 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

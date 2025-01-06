@@ -418,7 +418,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADVANCEDSETTINGS <IMicrosoftGraphKeyValuePair- `[]`>: Additional settings that may be applied to the server
+ADVANCEDSETTINGS `<IMicrosoftGraphKeyValuePair- `[]`>`: Additional settings that may be applied to the server
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
@@ -451,6 +451,25 @@ This property is going to be deprecated with the option of using the new propert
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -322,7 +322,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-TARGETDEVICEGROUPS <IMicrosoftGraphTargetDeviceGroup- `[]`>: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
+TARGETDEVICEGROUPS `<IMicrosoftGraphTargetDeviceGroup- `[]`>`: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Display name for the target device group.
@@ -332,6 +332,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfiguration)
 
 [https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

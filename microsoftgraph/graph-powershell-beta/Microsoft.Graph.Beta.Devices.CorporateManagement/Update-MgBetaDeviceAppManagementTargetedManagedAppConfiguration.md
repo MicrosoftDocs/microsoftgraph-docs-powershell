@@ -465,14 +465,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPS <IMicrosoftGraphManagedMobileApp- `[]`>: List of apps to which the policy is deployed.
+APPS `<IMicrosoftGraphManagedMobileApp- `[]`>`: List of apps to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: Version of the entity.
 
-ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+ASSIGNMENTS `<IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
@@ -502,11 +502,14 @@ Read-only.
         - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
         - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
       - `[BaseUri <String>]`: Base CSP Path
-      - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-      - `[Description <String>]`: Description of the item
-      - `[DisplayName <String>]`: Display name of the item
-      - `[HelpText <String>]`: Help text of the item
-      - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at
+      - `[CategoryId <String>]`: Specify category in which the setting is under.
+Support $filters.
+      - `[Description <String>]`: Description of the setting.
+      - `[DisplayName <String>]`: Name of the setting.
+For example: Allow Toast.
+      - `[HelpText <String>]`: Help text of the setting.
+Give more details of the setting.
+      - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at.
       - `[Keywords <String- `[]`>]`: Tokens which to search settings on
       - `[Name <String>]`: Name of the item
       - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
@@ -517,8 +520,8 @@ A MinDeviceOccurrence of 0 means setting is optional
       - `[OffsetUri <String>]`: Offset CSP Path from Base
       - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
         - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
-      - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
+Applicable for reusable setting
+      - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
       - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
       - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
       - `[Version <String>]`: Item Version
@@ -568,7 +571,7 @@ Read-only.
   - `[IsAssigned <Boolean?>]`: Indicates if the policy is deployed to any inclusion groups or not.
   - `[TargetedAppManagementLevels <AppManagementLevel?>]`: Management levels for apps
 
-CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair- `[]`>: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
+CUSTOMSETTINGS `<IMicrosoftGraphKeyValuePair- `[]`>`: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
@@ -657,7 +660,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting- `[]`>: List of settings contained in this App Configuration policy
+SETTINGS `<IMicrosoftGraphDeviceManagementConfigurationSetting- `[]`>`: List of settings contained in this App Configuration policy
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition- `[]`>]`: List of related Setting Definitions.
@@ -672,11 +675,14 @@ Read-only.
       - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
       - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
     - `[BaseUri <String>]`: Base CSP Path
-    - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-    - `[Description <String>]`: Description of the item
-    - `[DisplayName <String>]`: Display name of the item
-    - `[HelpText <String>]`: Help text of the item
-    - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at
+    - `[CategoryId <String>]`: Specify category in which the setting is under.
+Support $filters.
+    - `[Description <String>]`: Description of the setting.
+    - `[DisplayName <String>]`: Name of the setting.
+For example: Allow Toast.
+    - `[HelpText <String>]`: Help text of the setting.
+Give more details of the setting.
+    - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at.
     - `[Keywords <String- `[]`>]`: Tokens which to search settings on
     - `[Name <String>]`: Name of the item
     - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
@@ -687,8 +693,8 @@ A MinDeviceOccurrence of 0 means setting is optional
     - `[OffsetUri <String>]`: Offset CSP Path from Base
     - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
       - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
-    - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
+Applicable for reusable setting
+    - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
     - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
     - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
     - `[Version <String>]`: Item Version
@@ -703,6 +709,25 @@ Applicable for reusable setting.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementtargetedmanagedappconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -334,7 +334,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BLOBS <IMicrosoftGraphPartnersBillingBlob- `[]`>: A collection of blob objects that contain details of all the files for the partner tenant ID.
+BLOBS `<IMicrosoftGraphPartnersBillingBlob- `[]`>`: A collection of blob objects that contain details of all the files for the partner tenant ID.
   - `[Name <String>]`: The blob name.
   - `[PartitionValue <String>]`: The partition that contains the file.
 A large partition is split into multiple files, each with the same partitionValue.
@@ -368,6 +368,25 @@ By default, the data in the file is partitioned by the number of line items.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingmanifest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

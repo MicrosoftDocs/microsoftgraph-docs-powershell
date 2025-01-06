@@ -345,3 +345,22 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

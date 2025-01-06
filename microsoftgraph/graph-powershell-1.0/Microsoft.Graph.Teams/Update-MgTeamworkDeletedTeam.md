@@ -5037,7 +5037,7 @@ This is the URL that you get when you right-click a channel in Microsoft Teams a
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-CHANNELS <IMicrosoftGraphChannel- `[]`>: The channels that are either shared with this deleted team or created in this deleted team.
+CHANNELS `<IMicrosoftGraphChannel- `[]`>`: The channels that are either shared with this deleted team or created in this deleted team.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Read only.
@@ -9873,6 +9873,25 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteam)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

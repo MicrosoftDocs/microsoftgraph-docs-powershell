@@ -270,3 +270,22 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5479,7 +5479,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Role <IMicrosoftGraphAccessPackageResourceRole>]`: accessPackageResourceRole
     - `[Scope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
 
-ANSWERS <IMicrosoftGraphAccessPackageAnswer- `[]`>: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
+ANSWERS `<IMicrosoftGraphAccessPackageAnswer- `[]`>`: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
   - `[AnsweredQuestion <IMicrosoftGraphAccessPackageQuestion>]`: accessPackageQuestion
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -15652,7 +15652,7 @@ Supports $filter.
   - `[Status <String>]`: More information on the request processing status.
 Read-only.
 
-CUSTOMEXTENSIONCALLOUTINSTANCES <IMicrosoftGraphCustomExtensionCalloutInstance- `[]`>: Information about all the custom extension calls that were made during the access package assignment workflow.
+CUSTOMEXTENSIONCALLOUTINSTANCES `<IMicrosoftGraphCustomExtensionCalloutInstance- `[]`>`: Information about all the custom extension calls that were made during the access package assignment workflow.
   - `[CustomExtensionId <String>]`: Identification of the custom extension that was triggered at this instance.
   - `[Detail <String>]`: Details provided by the logic app during the callback of the request instance.
   - `[ExternalCorrelationId <String>]`: The unique run identifier for the logic app.
@@ -15813,6 +15813,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentrequest)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-reprocess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-reprocess?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

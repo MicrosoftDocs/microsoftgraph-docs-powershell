@@ -1027,7 +1027,7 @@ PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-SALESCREDITMEMOLINES <IMicrosoftGraphSalesCreditMemoLine- `[]`>: .
+SALESCREDITMEMOLINES `<IMicrosoftGraphSalesCreditMemoLine- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
@@ -1103,6 +1103,25 @@ SELLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

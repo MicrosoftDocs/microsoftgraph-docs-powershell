@@ -14970,7 +14970,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-DOCUMENTSETVERSIONS <IMicrosoftGraphDocumentSetVersion- `[]`>: Version information for a document set version created by a user.
+DOCUMENTSETVERSIONS `<IMicrosoftGraphDocumentSetVersion- `[]`>`: Version information for a document set version created by a user.
   - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -24698,7 +24698,7 @@ SHAREPOINTIDS `<IMicrosoftGraphSharepointIds>`: sharepointIds
   - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
   - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
 
-VERSIONS <IMicrosoftGraphListItemVersion- `[]`>: The list of previous versions of the list item.
+VERSIONS `<IMicrosoftGraphListItemVersion- `[]`>`: The list of previous versions of the list item.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -24731,6 +24731,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitem)
 
 [https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

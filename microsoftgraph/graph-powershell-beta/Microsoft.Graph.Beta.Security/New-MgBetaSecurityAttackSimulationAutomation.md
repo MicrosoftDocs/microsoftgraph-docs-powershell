@@ -378,7 +378,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Email <String>]`: Email address of the user.
 
-RUNS <IMicrosoftGraphSimulationAutomationRun- `[]`>: A collection of simulation automation runs.
+RUNS `<IMicrosoftGraphSimulationAutomationRun- `[]`>`: A collection of simulation automation runs.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[EndDateTime <DateTime?>]`: Date and time when the run ends in an attack simulation automation.
@@ -389,6 +389,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationautomation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationautomation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

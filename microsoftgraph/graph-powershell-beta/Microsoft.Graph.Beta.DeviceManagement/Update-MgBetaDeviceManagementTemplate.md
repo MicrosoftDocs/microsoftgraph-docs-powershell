@@ -454,7 +454,7 @@ Intents cannot be created from a deprecated template.
   - `[TemplateType <DeviceManagementTemplateType?>]`: Template type
   - `[VersionInfo <String>]`: The template's version information
 
-CATEGORIES <IMicrosoftGraphDeviceManagementTemplateSettingCategory- `[]`>: Collection of setting categories within the template
+CATEGORIES `<IMicrosoftGraphDeviceManagementTemplateSettingCategory- `[]`>`: Collection of setting categories within the template
   - `[DisplayName <String>]`: The category name
   - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>]`: The setting definitions this category contains
@@ -625,7 +625,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-MIGRATABLETO <IMicrosoftGraphDeviceManagementTemplate- `[]`>: Collection of templates this template can migrate to
+MIGRATABLETO `<IMicrosoftGraphDeviceManagementTemplate- `[]`>`: Collection of templates this template can migrate to
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory- `[]`>]`: Collection of setting categories within the template
@@ -667,7 +667,7 @@ Intents cannot be created from a deprecated template.
   - `[TemplateType <DeviceManagementTemplateType?>]`: Template type
   - `[VersionInfo <String>]`: The template's version information
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>: Collection of all settings this template has
+SETTINGS `<IMicrosoftGraphDeviceManagementSettingInstance- `[]`>`: Collection of all settings this template has
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
@@ -676,6 +676,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementtemplate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

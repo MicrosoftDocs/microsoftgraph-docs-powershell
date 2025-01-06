@@ -221,7 +221,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACRONYMS <IMicrosoftGraphSearchAcronym- `[]`>: Administrative answer in Microsoft Search results to define common acronyms in an organization.
+ACRONYMS `<IMicrosoftGraphSearchAcronym- `[]`>`: Administrative answer in Microsoft Search results to define common acronyms in an organization.
   - `[Description <String>]`: The search answer description that is shown on the search results page.
   - `[DisplayName <String>]`: The search answer name that is displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -351,7 +351,7 @@ Possible values are: android, androidForWork, ios, macOS, windowsPhone81, window
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
 
-BOOKMARKS <IMicrosoftGraphSearchBookmark- `[]`>: Administrative answer in Microsoft Search results for common search queries in an organization.
+BOOKMARKS `<IMicrosoftGraphSearchBookmark- `[]`>`: Administrative answer in Microsoft Search results for common search queries in an organization.
   - `[Description <String>]`: The search answer description that is shown on the search results page.
   - `[DisplayName <String>]`: The search answer name that is displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -407,7 +407,7 @@ The date and group settings apply to all variations.
     - `[WebUrl <String>]`: The URL link for the answer variation.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
-QNAS <IMicrosoftGraphSearchQna- `[]`>: Administrative answer in Microsoft Search results that provide answers for specific search keywords in an organization.
+QNAS `<IMicrosoftGraphSearchQna- `[]`>`: Administrative answer in Microsoft Search results that provide answers for specific search keywords in an organization.
   - `[Description <String>]`: The search answer description that is shown on the search results page.
   - `[DisplayName <String>]`: The search answer name that is displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -462,6 +462,25 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchentity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchentity)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

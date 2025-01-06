@@ -389,7 +389,7 @@ CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Url <String>]`: The endpoint that is used by Entitlement Management to communicate with the access package resource.
 
-RESOURCES <IMicrosoftGraphAccessPackageResource- `[]`>: Read-only.
+RESOURCES `<IMicrosoftGraphAccessPackageResource- `[]`>`: Read-only.
 Required.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -461,6 +461,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

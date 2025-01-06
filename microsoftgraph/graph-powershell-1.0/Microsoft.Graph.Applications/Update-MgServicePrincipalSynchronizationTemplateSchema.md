@@ -424,7 +424,7 @@ Must match one of the directory definitions in synchronizationSchema.
 Must match one of the directory definitions in synchronizationSchema.
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
-DIRECTORIES <IMicrosoftGraphDirectoryDefinition- `[]`>: Contains the collection of directories and all of their objects.
+DIRECTORIES `<IMicrosoftGraphDirectoryDefinition- `[]`>`: Contains the collection of directories and all of their objects.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
@@ -502,7 +502,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-SYNCHRONIZATIONRULES <IMicrosoftGraphSynchronizationRule- `[]`>: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
+SYNCHRONIZATIONRULES `<IMicrosoftGraphSynchronizationRule- `[]`>`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
   - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IncludedContainers <String- `[]`>]`: 
@@ -589,6 +589,25 @@ Must match one of the directory definitions in synchronizationSchema.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationtemplateschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationtemplateschema)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

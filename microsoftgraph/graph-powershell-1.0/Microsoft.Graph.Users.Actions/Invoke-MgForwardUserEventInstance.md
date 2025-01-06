@@ -332,7 +332,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
+TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.
@@ -343,6 +343,25 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusereventinstance)
 
 [https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

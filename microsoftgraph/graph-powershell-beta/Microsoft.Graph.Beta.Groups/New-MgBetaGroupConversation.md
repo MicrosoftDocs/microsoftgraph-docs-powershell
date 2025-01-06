@@ -9,9 +9,8 @@ ms.subservice: entra-groups
 # New-MgBetaGroupConversation
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create a new conversation by including a thread and a post.
+Use reply thread or reply post to further post to that conversation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-1.0)
@@ -51,9 +50,8 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create a new conversation by including a thread and a post.
+Use reply thread or reply post to further post to that conversation.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -537,7 +535,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-THREADS <IMicrosoftGraphConversationThread- `[]`>: A collection of all the conversation threads in the conversation.
+THREADS `<IMicrosoftGraphConversationThread- `[]`>`: A collection of all the conversation threads in the conversation.
 A navigation property.
 Read-only.
 Nullable.
@@ -652,7 +650,26 @@ Returned by default.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation)
 
-[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

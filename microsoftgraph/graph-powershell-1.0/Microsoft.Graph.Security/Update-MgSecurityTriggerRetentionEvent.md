@@ -487,13 +487,13 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult- `[]`>: Represents the success status of a created event and additional information.
+EVENTPROPAGATIONRESULTS `<IMicrosoftGraphSecurityEventPropagationResult- `[]`>`: Represents the success status of a created event and additional information.
   - `[Location <String>]`: The name of the specific location in the workload associated with the event.
   - `[ServiceName <String>]`: The name of the workload associated with the event.
   - `[Status <String>]`: eventPropagationStatus
   - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
 
-EVENTQUERIES <IMicrosoftGraphSecurityEventQuery- `[]`>: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
+EVENTQUERIES `<IMicrosoftGraphSecurityEventQuery- `[]`>`: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
   - `[Query <String>]`: Represents unique identification for the  query.
 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
   - `[QueryType <String>]`: queryType
@@ -614,6 +614,25 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytriggerretentionevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

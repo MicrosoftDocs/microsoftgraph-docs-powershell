@@ -650,7 +650,7 @@ Read-only.
   - `[Version <Int32?>]`: 
   - `[VersionInformation <String>]`: 
 
-DEPLOYMENTS <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment- `[]`>: .
+DEPLOYMENTS `<IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedByUserId <String>]`: 
@@ -943,6 +943,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

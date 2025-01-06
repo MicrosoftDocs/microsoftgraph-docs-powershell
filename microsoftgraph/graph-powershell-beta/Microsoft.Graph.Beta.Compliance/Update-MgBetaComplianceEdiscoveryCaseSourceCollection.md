@@ -472,7 +472,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDITIONALSOURCES <IMicrosoftGraphEdiscoveryDataSource- `[]`>: Adds an additional source to the sourceCollection.
+ADDITIONALSOURCES `<IMicrosoftGraphEdiscoveryDataSource- `[]`>`: Adds an additional source to the sourceCollection.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -734,7 +734,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANSOURCES <IMicrosoftGraphEdiscoveryDataSource- `[]`>: Custodian sources that are included in the sourceCollection.
+CUSTODIANSOURCES `<IMicrosoftGraphEdiscoveryDataSource- `[]`>`: Custodian sources that are included in the sourceCollection.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -899,7 +899,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NONCUSTODIALSOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource- `[]`>: noncustodialDataSource sources that are included in the sourceCollection
+NONCUSTODIALSOURCES `<IMicrosoftGraphEdiscoveryNoncustodialDataSource- `[]`>`: noncustodialDataSource sources that are included in the sourceCollection
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -948,6 +948,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesourcecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesourcecollection)
 
 [https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -298,7 +298,7 @@ Read-only.
   - `[Vendor <String>]`: The name of the vendor who supplies the source system.
 Maximum supported length is 100 characters.
 
-USERMATCHINGSETTINGS <IMicrosoftGraphIndustryDataUserMatchingSetting- `[]`>: A collection of user matching settings by roleGroup.
+USERMATCHINGSETTINGS `<IMicrosoftGraphIndustryDataUserMatchingSetting- `[]`>`: A collection of user matching settings by roleGroup.
   - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Code <String>]`: The code of the desired referenceDefinition entry.
@@ -331,6 +331,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatasourcesystem)
 
 [https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-post?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

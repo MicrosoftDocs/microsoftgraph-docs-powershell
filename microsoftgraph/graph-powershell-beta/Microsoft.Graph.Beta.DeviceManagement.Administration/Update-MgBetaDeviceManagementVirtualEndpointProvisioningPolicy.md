@@ -630,7 +630,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment- `[]`>: A defined collection of provisioning policy assignments.
+ASSIGNMENTS `<IMicrosoftGraphCloudPcProvisioningPolicyAssignment- `[]`>`: A defined collection of provisioning policy assignments.
 Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have provisioning policy assigned.
 Returned only on $expand.
 For an example about how to get the assignments relationship, see Get cloudPcProvisioningPolicy.
@@ -858,8 +858,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -6688,7 +6688,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8945,8 +8945,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Contains the name of the field that a value is associated with.
-            - `[Value <String>]`: Contains the corresponding value for the specified key.
+            - `[Key <String>]`: Key.
+            - `[Value <String>]`: Value.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -14775,7 +14775,7 @@ It is an Optional field
         - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -16851,7 +16851,7 @@ The default value is en-US, which corresponds to English (United States).
     - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC.
 The default value is en-US, which corresponds to English (United States).
 
-DOMAINJOINCONFIGURATIONS <IMicrosoftGraphCloudPcDomainJoinConfiguration- `[]`>: Specifies a list ordered by priority on how Cloud PCs join Microsoft Entra ID (Azure AD).
+DOMAINJOINCONFIGURATIONS `<IMicrosoftGraphCloudPcDomainJoinConfiguration- `[]`>`: Specifies a list ordered by priority on how Cloud PCs join Microsoft Entra ID (Azure AD).
 Supports $select.
   - `[DomainJoinType <String>]`: cloudPcDomainJoinType
   - `[OnPremisesConnectionId <String>]`: The Azure network connection ID that matches the virtual network IT admins want the provisioning policy to use when they create Cloud PCs.
@@ -16943,6 +16943,25 @@ The default value is en-US, which corresponds to English (United States).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
 
 [https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

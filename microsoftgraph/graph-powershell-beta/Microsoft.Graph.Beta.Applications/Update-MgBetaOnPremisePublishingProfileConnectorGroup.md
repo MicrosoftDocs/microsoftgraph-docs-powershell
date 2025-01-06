@@ -344,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATIONS <IMicrosoftGraphApplication- `[]`>: .
+APPLICATIONS `<IMicrosoftGraphApplication- `[]`>`: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -588,7 +588,7 @@ Always null when the object hasn't been deleted.
 Read-only.
   - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://<appId>, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://`<appId>`, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -1371,7 +1371,7 @@ Always null when the object hasn't been deleted.
 Read-only.
     - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://<appId>, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://`<appId>`, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -1978,7 +1978,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-MEMBERS <IMicrosoftGraphConnector- `[]`>: .
+MEMBERS `<IMicrosoftGraphConnector- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ExternalIP <String>]`: The external IP address as detected by the connector server.
@@ -2212,7 +2212,7 @@ Always null when the object hasn't been deleted.
 Read-only.
       - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://<appId>, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://`<appId>`, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -2779,6 +2779,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnectorgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnectorgroup)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

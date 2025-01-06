@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Compliance
-Module Guid: 701741ba-4315-4e9b-aa29-530d60845930
+Module Guid: b5172f50-c041-4f66-aa5d-c66c11fc6710
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -68,5 +68,23 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting](Update-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting.md)
 
 ### [Update-MgPrivacySubjectRightsRequestNote](Update-MgPrivacySubjectRightsRequestNote.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

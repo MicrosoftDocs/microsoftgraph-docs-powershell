@@ -448,7 +448,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: The unique identifier of session
   - `[UserId <String>]`: The unique identifier of user
 
-PARTICIPANTS <IMicrosoftGraphInvitationParticipantInfo- `[]`>: .
+PARTICIPANTS `<IMicrosoftGraphInvitationParticipantInfo- `[]`>`: .
   - `[Hidden <Boolean?>]`: Optional.
 Whether to hide the participant from the roster.
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -474,6 +474,25 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant)
 
 [https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

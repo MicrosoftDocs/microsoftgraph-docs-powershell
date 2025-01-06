@@ -10370,7 +10370,7 @@ Read-only.
 This relationship can only be used to load a specific term set.
   - `[TermStores <IMicrosoftGraphTermStore- `[]`>]`: The collection of termStores under this site.
 
-COLUMNS <IMicrosoftGraphColumnDefinition- `[]`>: The collection of column definitions reusable across lists under this site.
+COLUMNS `<IMicrosoftGraphColumnDefinition- `[]`>`: The collection of column definitions reusable across lists under this site.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -10532,7 +10532,7 @@ User will be prompted with this message if validation fails.
     - `[Formula <String>]`: The formula to validate column value.
 For examples, see Examples of common formulas in lists.
 
-CONTENTTYPES <IMicrosoftGraphContentType- `[]`>: The collection of content types defined for this site.
+CONTENTTYPES `<IMicrosoftGraphContentType- `[]`>`: The collection of content types defined for this site.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
@@ -20370,7 +20370,7 @@ Read-only.
 Nullable.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-DRIVES <IMicrosoftGraphDrive- `[]`>: The collection of drives (document libraries) under this site.
+DRIVES `<IMicrosoftGraphDrive- `[]`>`: The collection of drives (document libraries) under this site.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -25183,7 +25183,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   - `[Message <String>]`: A non-localized message for the developer.
   - `[Target <String>]`: The target of the error.
 
-EXTERNALCOLUMNS <IMicrosoftGraphColumnDefinition- `[]`>: .
+EXTERNALCOLUMNS `<IMicrosoftGraphColumnDefinition- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -25390,7 +25390,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-ITEMS <IMicrosoftGraphBaseItem- `[]`>: Used to address any item contained in this site.
+ITEMS `<IMicrosoftGraphBaseItem- `[]`>`: Used to address any item contained in this site.
 This collection can't be enumerated.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -34998,7 +34998,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-LISTS <IMicrosoftGraphList- `[]`>: The collection of lists under this site.
+LISTS `<IMicrosoftGraphList- `[]`>`: The collection of lists under this site.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -39969,7 +39969,7 @@ Nullable.
 Read-only.
 Nullable.
 
-OPERATIONS <IMicrosoftGraphRichLongRunningOperation- `[]`>: The collection of long-running operations on the site.
+OPERATIONS `<IMicrosoftGraphRichLongRunningOperation- `[]`>`: The collection of long-running operations on the site.
   - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -40000,7 +40000,7 @@ Read-only.
   - `[ResourceId <String>]`: The unique identifier for the result.
   - `[Type <String>]`: The type of the operation.
 
-PAGES <IMicrosoftGraphBaseSitePage- `[]`>: The collection of pages in the baseSitePages list in this site.
+PAGES `<IMicrosoftGraphBaseSitePage- `[]`>`: The collection of pages in the baseSitePages list in this site.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -44827,7 +44827,7 @@ The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
-PERMISSIONS <IMicrosoftGraphPermission- `[]`>: The permissions associated with the site.
+PERMISSIONS `<IMicrosoftGraphPermission- `[]`>`: The permissions associated with the site.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -44941,7 +44941,7 @@ Read-only.
   - `[Root <IMicrosoftGraphRoot>]`: root
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-SITES <IMicrosoftGraphSite- `[]`>: The collection of the sub-sites under this site.
+SITES `<IMicrosoftGraphSite- `[]`>`: The collection of the sub-sites under this site.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -49796,7 +49796,7 @@ Read-only.
   - `[Sets <IMicrosoftGraphTermStoreSet- `[]`>]`: Collection of all sets available in the term store.
 This relationship can only be used to load a specific term set.
 
-TERMSTORES <IMicrosoftGraphTermStore- `[]`>: The collection of termStores under this site.
+TERMSTORES `<IMicrosoftGraphTermStore- `[]`>`: The collection of termStores under this site.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DefaultLanguageTag <String>]`: Default language of the term store.
@@ -49855,6 +49855,25 @@ This relationship can only be used to load a specific term set.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsite)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

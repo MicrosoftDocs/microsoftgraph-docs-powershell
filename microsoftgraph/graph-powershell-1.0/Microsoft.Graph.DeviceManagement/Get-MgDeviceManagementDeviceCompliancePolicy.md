@@ -10,7 +10,7 @@ ms.subservice: intune
 # Get-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Read properties and relationships of the androidWorkProfileCompliancePolicy object.
+Read properties and relationships of the iosCompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the androidWorkProfileCompliancePolicy object.
+Read properties and relationships of the iosCompliancePolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -360,9 +360,28 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilecompliancepolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilecompliancepolicy-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscompliancepolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscompliancepolicy-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicy-list?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

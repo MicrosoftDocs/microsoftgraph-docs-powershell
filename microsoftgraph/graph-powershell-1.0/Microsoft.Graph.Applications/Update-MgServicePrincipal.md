@@ -1194,7 +1194,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDINS <IMicrosoftGraphAddIn- `[]`>: Defines custom behavior that a consuming service can use to call an app in specific contexts.
+ADDINS `<IMicrosoftGraphAddIn- `[]`>`: Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
 This lets services like Microsoft 365 call the application in the context of a document the user is working on.
   - `[Id <String>]`: The unique identifier for the addIn object.
@@ -1205,7 +1205,7 @@ Required.
     - `[Value <String>]`: Value for the key-value pair.
   - `[Type <String>]`: The unique name for the functionality exposed by the app.
 
-APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy- `[]`>: The appManagementPolicy applied to this application.
+APPMANAGEMENTPOLICIES `<IMicrosoftGraphAppManagementPolicy- `[]`>`: The appManagementPolicy applied to this application.
   - `[Description <String>]`: Description for this policy.
 Required.
   - `[DisplayName <String>]`: Display name for this policy.
@@ -1242,7 +1242,7 @@ For existing applications, the enforcement date would be back dated.
 To apply to all applications, enforcement datetime would be null.
       - `[RestrictionType <String>]`: appCredentialRestrictionType
 
-APPROLEASSIGNEDTO <IMicrosoftGraphAppRoleAssignment- `[]`>: App role assignments for this app or service, granted to users, groups, and other service principals.
+APPROLEASSIGNEDTO `<IMicrosoftGraphAppRoleAssignment- `[]`>`: App role assignments for this app or service, granted to users, groups, and other service principals.
 Supports $expand.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1270,7 +1270,7 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
 
-APPROLEASSIGNMENTS <IMicrosoftGraphAppRoleAssignment- `[]`>: App role assignment for another app or service, granted to this service principal.
+APPROLEASSIGNMENTS `<IMicrosoftGraphAppRoleAssignment- `[]`>`: App role assignment for another app or service, granted to this service principal.
 Supports $expand.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1298,7 +1298,7 @@ Read-only.
 Required on create.
 Supports $filter (eq only).
 
-APPROLES <IMicrosoftGraphAppRole- `[]`>: The roles exposed by the application that's linked to this service principal.
+APPROLES `<IMicrosoftGraphAppRole- `[]`>`: The roles exposed by the application that's linked to this service principal.
 For more information, see the appRoles property definition on the application entity.
 Not nullable.
   - `[AllowedMemberTypes <String- `[]`>]`: Specifies whether this app role can be assigned to users and groups (by setting to - `['User']`), to other application's (by setting to - `['Application']`, or both (by setting to - `['User', 'Application']`).
@@ -2010,7 +2010,7 @@ Read-only.
     - `[DisplayName <String>]`: The verified publisher name from the app publisher's Partner Center account.
     - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
 
-CLAIMSMAPPINGPOLICIES <IMicrosoftGraphClaimsMappingPolicy- `[]`>: The claimsMappingPolicies assigned to this service principal.
+CLAIMSMAPPINGPOLICIES `<IMicrosoftGraphClaimsMappingPolicy- `[]`>`: The claimsMappingPolicies assigned to this service principal.
 Supports $expand.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
@@ -2032,7 +2032,7 @@ Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-CREATEDOBJECTS <IMicrosoftGraphDirectoryObject- `[]`>: Directory objects created by this service principal.
+CREATEDOBJECTS `<IMicrosoftGraphDirectoryObject- `[]`>`: Directory objects created by this service principal.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2040,7 +2040,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-DELEGATEDPERMISSIONCLASSIFICATIONS <IMicrosoftGraphDelegatedPermissionClassification- `[]`>: .
+DELEGATEDPERMISSIONCLASSIFICATIONS `<IMicrosoftGraphDelegatedPermissionClassification- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Classification <String>]`: permissionClassificationType
@@ -2050,7 +2050,7 @@ Doesn't support $filter.
   - `[PermissionName <String>]`: The claim value (value) for the delegated permission listed in the oauth2PermissionScopes collection of the servicePrincipal.
 Doesn't support $filter.
 
-ENDPOINTS <IMicrosoftGraphEndpoint- `[]`>: .
+ENDPOINTS `<IMicrosoftGraphEndpoint- `[]`>`: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2061,7 +2061,7 @@ Read-only.
   - `[ProviderResourceId <String>]`: 
   - `[Uri <String>]`: 
 
-FEDERATEDIDENTITYCREDENTIALS <IMicrosoftGraphFederatedIdentityCredential- `[]`>: Federated identities for a specific type of service principal - managed identity.
+FEDERATEDIDENTITYCREDENTIALS `<IMicrosoftGraphFederatedIdentityCredential- `[]`>`: Federated identities for a specific type of service principal - managed identity.
 Supports $expand and $filter (/$count eq 0, /$count ne 0).
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2092,7 +2092,7 @@ The combination of issuer and subject must be unique within the app.
 It has a limit of 600 characters.
 Supports $filter (eq).
 
-HOMEREALMDISCOVERYPOLICIES <IMicrosoftGraphHomeRealmDiscoveryPolicy- `[]`>: The homeRealmDiscoveryPolicies assigned to this service principal.
+HOMEREALMDISCOVERYPOLICIES `<IMicrosoftGraphHomeRealmDiscoveryPolicy- `[]`>`: The homeRealmDiscoveryPolicies assigned to this service principal.
 Supports $expand.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
@@ -2152,7 +2152,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
-KEYCREDENTIALS <IMicrosoftGraphKeyCredential- `[]`>: The collection of key credentials associated with the service principal.
+KEYCREDENTIALS `<IMicrosoftGraphKeyCredential- `[]`>`: The collection of key credentials associated with the service principal.
 Not nullable.
 Supports $filter (eq, not, ge, le).
   - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
@@ -2173,7 +2173,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
   - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
 
-MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Roles that this service principal is a member of.
+MEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: Roles that this service principal is a member of.
 HTTP Methods: GET Read-only.
 Nullable.
 Supports $expand.
@@ -2182,7 +2182,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-OAUTH2PERMISSIONGRANTS <IMicrosoftGraphOAuth2PermissionGrant- `[]`>: Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
+OAUTH2PERMISSIONGRANTS `<IMicrosoftGraphOAuth2PermissionGrant- `[]`>`: Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2209,7 +2209,7 @@ For example, openid User.Read GroupMember.Read.All.
 Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the oauth2PermissionScopes property of the resource service principal.
 Must not exceed 3,850 characters in length.
 
-OAUTH2PERMISSIONSCOPES <IMicrosoftGraphPermissionScope- `[]`>: The delegated permissions exposed by the application.
+OAUTH2PERMISSIONSCOPES `<IMicrosoftGraphPermissionScope- `[]`>`: The delegated permissions exposed by the application.
 For more information, see the oauth2PermissionScopes property on the application entity's api property.
 Not nullable.
   - `[AdminConsentDescription <String>]`: A description of the delegated permissions, intended to be read by an administrator granting the permission on behalf of all users.
@@ -2237,7 +2237,7 @@ Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  { 
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-OWNEDOBJECTS <IMicrosoftGraphDirectoryObject- `[]`>: Directory objects that this service principal owns.
+OWNEDOBJECTS `<IMicrosoftGraphDirectoryObject- `[]`>`: Directory objects that this service principal owns.
 Read-only.
 Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -2246,7 +2246,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-OWNERS <IMicrosoftGraphDirectoryObject- `[]`>: Directory objects that are owners of this servicePrincipal.
+OWNERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Directory objects that are owners of this servicePrincipal.
 The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
@@ -2256,7 +2256,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PASSWORDCREDENTIALS <IMicrosoftGraphPasswordCredential- `[]`>: The collection of password credentials associated with the application.
+PASSWORDCREDENTIALS `<IMicrosoftGraphPasswordCredential- `[]`>`: The collection of password credentials associated with the application.
 Not nullable.
   - `[CustomKeyIdentifier <Byte- `[]`>]`: Do not use.
   - `[DisplayName <String>]`: Friendly name for the password.
@@ -2285,7 +2285,7 @@ Read-only.
 Read-only.
     - `[DisplayName <String>]`: Display name for the target device group.
 
-RESOURCESPECIFICAPPLICATIONPERMISSIONS <IMicrosoftGraphResourceSpecificPermission- `[]`>: The resource-specific application permissions exposed by this application.
+RESOURCESPECIFICAPPLICATIONPERMISSIONS `<IMicrosoftGraphResourceSpecificPermission- `[]`>`: The resource-specific application permissions exposed by this application.
 Currently, resource-specific permissions are only supported for Teams apps accessing to specific chats and teams using Microsoft Graph.
 Read-only.
   - `[Description <String>]`: Describes the level of access that the resource-specific permission represents.
@@ -2545,7 +2545,7 @@ Unless mentioned explicitly, metadata values should not be changed.
       - `[Value <String>]`: Value of the metadata property.
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
 
-TOKENISSUANCEPOLICIES <IMicrosoftGraphTokenIssuancePolicy- `[]`>: The tokenIssuancePolicies assigned to this service principal.
+TOKENISSUANCEPOLICIES `<IMicrosoftGraphTokenIssuancePolicy- `[]`>`: The tokenIssuancePolicies assigned to this service principal.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2566,7 +2566,7 @@ Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-TOKENLIFETIMEPOLICIES <IMicrosoftGraphTokenLifetimePolicy- `[]`>: The tokenLifetimePolicies assigned to this service principal.
+TOKENLIFETIMEPOLICIES `<IMicrosoftGraphTokenLifetimePolicy- `[]`>`: The tokenLifetimePolicies assigned to this service principal.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2587,7 +2587,7 @@ Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: .
+TRANSITIVEMEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -2604,6 +2604,25 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipal)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -320,7 +320,7 @@ Default is any.
   - `[Includes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
 
-EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are excluded in this permission grant policy.
+EXCLUDES `<IMicrosoftGraphPermissionGrantConditionSet- `[]`>`: Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -344,7 +344,7 @@ Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (for example the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
 
-INCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are included in this permission grant policy.
+INCLUDES `<IMicrosoftGraphPermissionGrantConditionSet- `[]`>`: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -373,6 +373,25 @@ Default is any.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy)
 
 [https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-permissiongrantpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-permissiongrantpolicies?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

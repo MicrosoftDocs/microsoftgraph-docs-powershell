@@ -366,7 +366,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphAppleEnrollmentProfileAssignment- `[]`>: The list of assignments for this profile.
+ASSIGNMENTS `<IMicrosoftGraphAppleEnrollmentProfileAssignment- `[]`>`: The list of assignments for this profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -374,7 +374,7 @@ Read-only.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-AVAILABLEENROLLMENTTYPEOPTIONS <IMicrosoftGraphAppleOwnerTypeEnrollmentType- `[]`>: List of available enrollment type options
+AVAILABLEENROLLMENTTYPEOPTIONS `<IMicrosoftGraphAppleOwnerTypeEnrollmentType- `[]`>`: List of available enrollment type options
   - `[EnrollmentType <AppleUserInitiatedEnrollmentType?>]`: appleUserInitiatedEnrollmentType
   - `[OwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
 
@@ -433,6 +433,25 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementappleuserinitiatedenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementappleuserinitiatedenrollmentprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

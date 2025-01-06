@@ -450,8 +450,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1227,7 +1227,7 @@ Read-only.
       - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
       - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
 
-DEVICELINKS <IMicrosoftGraphNetworkaccessDeviceLink- `[]`>: Each unique CPE device associated with a branch is specified.
+DEVICELINKS `<IMicrosoftGraphNetworkaccessDeviceLink- `[]`>`: Each unique CPE device associated with a branch is specified.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1252,7 +1252,7 @@ Read-only.
     - `[ZoneRedundancyPreSharedKey <String>]`: Another key for zone redundant tunnel.
 Required only when you select zoneRedundancy redindancyTier when creating a deviceLink.
 
-FORWARDINGPROFILES <IMicrosoftGraphNetworkaccessForwardingProfile- `[]`>: Each forwarding profile associated with a branch site is specified.
+FORWARDINGPROFILES `<IMicrosoftGraphNetworkaccessForwardingProfile- `[]`>`: Each forwarding profile associated with a branch site is specified.
 Supports $expand.
   - `[Description <String>]`: Description.
   - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time.
@@ -1295,8 +1295,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -2053,6 +2053,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranch)
 
 [https://learn.microsoft.com/graph/api/networkaccess-connectivity-post-branches?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-connectivity-post-branches?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

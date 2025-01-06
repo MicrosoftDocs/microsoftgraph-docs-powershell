@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-Module Guid: 0281baa5-a038-493d-8fe9-1014949bb56f
+Module Guid: 5a86ebf8-0049-40d7-8027-ef735980f49e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.windowsupdates/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -320,5 +320,23 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaWindowsUpdatesResourceConnection](Update-MgBetaWindowsUpdatesResourceConnection.md)
 
 ### [Update-MgBetaWindowsUpdatesUpdatableAsset](Update-MgBetaWindowsUpdatesUpdatableAsset.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

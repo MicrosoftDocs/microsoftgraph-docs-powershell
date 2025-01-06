@@ -435,7 +435,7 @@ BODYPARAMETER `<IMicrosoftGraphCustomerPaymentJournal>`: customerPaymentJournal
   - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment- `[]`>: .
+CUSTOMERPAYMENTS `<IMicrosoftGraphCustomerPayment- `[]`>`: .
   - `[Amount <Decimal?>]`: 
   - `[AppliesToInvoiceId <String>]`: 
   - `[AppliesToInvoiceNumber <String>]`: 
@@ -557,6 +557,25 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

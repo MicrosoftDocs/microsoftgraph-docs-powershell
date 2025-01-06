@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+Update the properties of a deviceEnrollmentLimitConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ Update-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+Update the properties of a deviceEnrollmentLimitConfiguration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -388,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>: The list of group assignments for the device configuration profile
+ASSIGNMENTS `<IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>`: The list of group assignments for the device configuration profile
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -421,7 +421,26 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementdeviceenrollmentconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentlimitconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentlimitconfiguration-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5345,7 +5345,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-SITESOURCES <IMicrosoftGraphSecuritySiteSource- `[]`>: Data source entity for SharePoint sites associated with the custodian.
+SITESOURCES `<IMicrosoftGraphSecuritySiteSource- `[]`>`: Data source entity for SharePoint sites associated with the custodian.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -10151,7 +10151,7 @@ Read-only.
 This relationship can only be used to load a specific term set.
     - `[TermStores <IMicrosoftGraphTermStore- `[]`>]`: The collection of termStores under this site.
 
-UNIFIEDGROUPSOURCES <IMicrosoftGraphSecurityUnifiedGroupSource- `[]`>: Data source entity for groups associated with the custodian.
+UNIFIEDGROUPSOURCES `<IMicrosoftGraphSecurityUnifiedGroupSource- `[]`>`: Data source entity for groups associated with the custodian.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -14957,7 +14957,7 @@ Returned by default.
 Nullable.
   - `[IncludedSources <String>]`: sourceType
 
-USERSOURCES <IMicrosoftGraphSecurityUserSource- `[]`>: Data source entity for a the custodian.
+USERSOURCES `<IMicrosoftGraphSecurityUserSource- `[]`>`: Data source entity for a the custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14982,6 +14982,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodian)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -907,7 +907,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALLCHANNELS <IMicrosoftGraphChannel- `[]`>: List of channels either hosted in or shared with the team (incoming channels).
+ALLCHANNELS `<IMicrosoftGraphChannel- `[]`>`: List of channels either hosted in or shared with the team (incoming channels).
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Read only.
@@ -10503,7 +10503,7 @@ Read-only.
 This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
 
-CHANNELS <IMicrosoftGraphChannel- `[]`>: The collection of channels and messages associated with the team.
+CHANNELS `<IMicrosoftGraphChannel- `[]`>`: The collection of channels and messages associated with the team.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Read only.
@@ -20111,7 +20111,7 @@ GUESTSETTINGS `<IMicrosoftGraphTeamGuestSettings>`: teamGuestSettings
   - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, guests can add and update channels.
   - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
 
-INCOMINGCHANNELS <IMicrosoftGraphChannel- `[]`>: List of channels shared with the team.
+INCOMINGCHANNELS `<IMicrosoftGraphChannel- `[]`>`: List of channels shared with the team.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Read only.
@@ -24909,7 +24909,7 @@ This is the URL that you get when you right-click a channel in Microsoft Teams a
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation- `[]`>: The apps installed in this team.
+INSTALLEDAPPS `<IMicrosoftGraphTeamsAppInstallation- `[]`>`: The apps installed in this team.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
@@ -24953,7 +24953,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
 
-MEMBERS <IMicrosoftGraphConversationMember- `[]`>: Members and owners of the team.
+MEMBERS `<IMicrosoftGraphConversationMember- `[]`>`: Members and owners of the team.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the user.
@@ -24982,7 +24982,7 @@ MESSAGINGSETTINGS `<IMicrosoftGraphTeamMessagingSettings>`: teamMessagingSetting
   - `[AllowUserDeleteMessages <Boolean?>]`: If set to true, users can delete their messages.
   - `[AllowUserEditMessages <Boolean?>]`: If set to true, users can edit their messages.
 
-OPERATIONS <IMicrosoftGraphTeamsAsyncOperation- `[]`>: The async operations that ran or are running on this team.
+OPERATIONS `<IMicrosoftGraphTeamsAsyncOperation- `[]`>`: The async operations that ran or are running on this team.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AttemptsCount <Int32?>]`: Number of times the operation was attempted before being marked successful or failed.
@@ -24998,7 +24998,7 @@ Read-only.
   - `[TargetResourceLocation <String>]`: The location of the object that's created or modified as result of this async operation.
 This URL should be treated as an opaque value and not parsed into its component paths.
 
-PERMISSIONGRANTS <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>: A collection of permissions granted to apps to access the team.
+PERMISSIONGRANTS `<IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>`: A collection of permissions granted to apps to access the team.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -29981,7 +29981,7 @@ SUMMARY `<IMicrosoftGraphTeamSummary>`: teamSummary
   - `[MembersCount <Int32?>]`: Count of members in a team.
   - `[OwnersCount <Int32?>]`: Count of owners in a team.
 
-TAGS <IMicrosoftGraphTeamworkTag- `[]`>: The tags associated with the team.
+TAGS `<IMicrosoftGraphTeamworkTag- `[]`>`: The tags associated with the team.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: The description of the tag as it appears to the user in Microsoft Teams.
@@ -30002,6 +30002,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam)
 
 [https://learn.microsoft.com/graph/api/team-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-post?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

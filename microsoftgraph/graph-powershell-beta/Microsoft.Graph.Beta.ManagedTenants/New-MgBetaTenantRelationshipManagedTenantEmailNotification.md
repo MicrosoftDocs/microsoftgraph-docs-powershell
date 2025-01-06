@@ -481,12 +481,31 @@ Read-only.
   - `[LastActionDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
-EMAILADDRESSES <IMicrosoftGraphManagedTenantsEmail- `[]`>: .
+EMAILADDRESSES `<IMicrosoftGraphManagedTenantsEmail- `[]`>`: .
   - `[EmailAddress <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantemailnotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantemailnotification)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

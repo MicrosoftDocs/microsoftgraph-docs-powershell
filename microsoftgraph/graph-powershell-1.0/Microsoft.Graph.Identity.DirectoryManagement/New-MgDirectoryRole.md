@@ -346,7 +346,7 @@ For example, if a user changes their display name the API might show the new val
       - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Users that are members of this directory role.
+MEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
@@ -356,7 +356,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership- `[]`>: Members of this directory role that are scoped to administrative units.
+SCOPEDMEMBERS `<IMicrosoftGraphScopedRoleMembership- `[]`>`: Members of this directory role that are scoped to administrative units.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -375,6 +375,25 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole)
 
 [https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

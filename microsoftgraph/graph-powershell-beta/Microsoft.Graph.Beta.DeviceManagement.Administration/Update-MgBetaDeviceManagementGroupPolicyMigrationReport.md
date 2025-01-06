@@ -503,7 +503,7 @@ Read-only.
     - `[NodeName <String>]`: Node name of the unsupported extension.
     - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
 
-GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping- `[]`>: A list of group policy settings to MDM/Intune mappings.
+GROUPPOLICYSETTINGMAPPINGS `<IMicrosoftGraphGroupPolicySettingMapping- `[]`>`: A list of group policy settings to MDM/Intune mappings.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdmxSettingDefinitionId <String>]`: Admx Group Policy Id
@@ -585,7 +585,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
-UNSUPPORTEDGROUPPOLICYEXTENSIONS <IMicrosoftGraphUnsupportedGroupPolicyExtension- `[]`>: A list of unsupported group policy extensions inside the Group Policy Object.
+UNSUPPORTEDGROUPPOLICYEXTENSIONS `<IMicrosoftGraphUnsupportedGroupPolicyExtension- `[]`>`: A list of unsupported group policy extensions inside the Group Policy Object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
@@ -596,6 +596,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicymigrationreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicymigrationreport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

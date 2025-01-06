@@ -585,7 +585,7 @@ Read-only.
     - `[IsWaitlistEnabled <Boolean?>]`: 
   - `[Registrations <IMicrosoftGraphVirtualEventRegistration- `[]`>]`: Registration records of the webinar.
 
-COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity- `[]`>: Identity information of coorganizers of the webinar.
+COORGANIZERS `<IMicrosoftGraphCommunicationsUserIdentity- `[]`>`: Identity information of coorganizers of the webinar.
   - `[DisplayName <String>]`: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -625,7 +625,7 @@ For example, '2019-04-16T09:00:00'.
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: The virtual event presenters.
+PRESENTERS `<IMicrosoftGraphVirtualEventPresenter- `[]`>`: The virtual event presenters.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Email <String>]`: Email address of the presenter.
@@ -790,7 +790,7 @@ Read-only.
   - `[IsManualApprovalEnabled <Boolean?>]`: 
   - `[IsWaitlistEnabled <Boolean?>]`: 
 
-REGISTRATIONS <IMicrosoftGraphVirtualEventRegistration- `[]`>: Registration records of the webinar.
+REGISTRATIONS `<IMicrosoftGraphVirtualEventRegistration- `[]`>`: Registration records of the webinar.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CancelationDateTime <DateTime?>]`: Date and time when the registrant cancels their registration for the virtual event.
@@ -940,7 +940,7 @@ Read-only.
   - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
+SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
@@ -1106,6 +1106,25 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinar)
 
 [https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

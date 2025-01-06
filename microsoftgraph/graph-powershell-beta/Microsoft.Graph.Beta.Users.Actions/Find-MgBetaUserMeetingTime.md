@@ -394,7 +394,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDEES <IMicrosoftGraphAttendeeBase- `[]`>: .
+ATTENDEES `<IMicrosoftGraphAttendeeBase- `[]`>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
@@ -558,6 +558,25 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime)
 
 [https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

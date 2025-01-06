@@ -629,7 +629,7 @@ For information on how to set the value for the companyCode, see profileSourceAn
   - `[SecondaryDepartment <String>]`: Secondary Department Name within a company.
   - `[WebUrl <String>]`: Link to the company home page.
 
-COLLEAGUES <IMicrosoftGraphRelatedPerson- `[]`>: Lists people that also worked on the project.
+COLLEAGUES `<IMicrosoftGraphRelatedPerson- `[]`>`: Lists people that also worked on the project.
   - `[DisplayName <String>]`: Name of the person.
   - `[Relationship <String>]`: personRelationship
   - `[UserId <String>]`: The user's directory object ID (Microsoft Entra ID or CID).
@@ -725,12 +725,12 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String- `[]`>]`: 
 
-SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+SOURCES `<IMicrosoftGraphProfileSourceAnnotation- `[]`>`: Where the values within an entity originated if synced from another source.
   - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
   - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
   - `[SourceId <String>]`: 
 
-SPONSORS <IMicrosoftGraphRelatedPerson- `[]`>: The Person or people who sponsored the project.
+SPONSORS `<IMicrosoftGraphRelatedPerson- `[]`>`: The Person or people who sponsored the project.
   - `[DisplayName <String>]`: Name of the person.
   - `[Relationship <String>]`: personRelationship
   - `[UserId <String>]`: The user's directory object ID (Microsoft Entra ID or CID).
@@ -739,6 +739,25 @@ SPONSORS <IMicrosoftGraphRelatedPerson- `[]`>: The Person or people who sponsore
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileproject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileproject)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,7 +10,7 @@ ms.subservice: intune
 # Get-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Read properties and relationships of the deviceAndAppManagementRoleDefinition object.
+Read properties and relationships of the roleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministrati
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceAndAppManagementRoleDefinition object.
+Read properties and relationships of the roleDefinition object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -331,9 +331,28 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementroledefinition)
 
-[https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-list?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

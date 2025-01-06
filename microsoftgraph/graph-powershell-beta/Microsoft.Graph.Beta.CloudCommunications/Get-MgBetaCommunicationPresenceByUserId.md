@@ -210,3 +210,22 @@ BODYPARAMETER `<IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPos
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

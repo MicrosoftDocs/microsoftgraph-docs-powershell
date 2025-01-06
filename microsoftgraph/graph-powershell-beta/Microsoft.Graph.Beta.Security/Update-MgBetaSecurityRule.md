@@ -234,7 +234,7 @@ See the table below.
 The allowed values are: 0, 1H, 3H, 12H, or 24H.
 '0' signifies the rule is run continuously.
 
-DETECTIONRULES <IMicrosoftGraphSecurityDetectionRule- `[]`>: .
+DETECTIONRULES `<IMicrosoftGraphSecurityDetectionRule- `[]`>`: .
   - `[CreatedBy <String>]`: Name of the user or application that created the rule.
   - `[CreatedDateTime <DateTime?>]`: Timestamp of rule creation.
   - `[DisplayName <String>]`: Name of the rule.
@@ -282,6 +282,25 @@ The allowed values are: 0, 1H, 3H, 12H, or 24H.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityrule)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

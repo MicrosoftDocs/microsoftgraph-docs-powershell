@@ -303,7 +303,7 @@ Read-only.
 Optional.
 Read-only.
 
-MANAGEMENTACTIONS <IMicrosoftGraphManagedTenantsManagementActionInfo- `[]`>: The collection of management action associated with the tenant group.
+MANAGEMENTACTIONS `<IMicrosoftGraphManagedTenantsManagementActionInfo- `[]`>`: The collection of management action associated with the tenant group.
 Optional.
 Read-only.
   - `[ManagementActionId <String>]`: The identifier for the management action.
@@ -314,7 +314,7 @@ Required.
 Read-only.
   - `[ManagementTemplateVersion <Int32?>]`: 
 
-MANAGEMENTINTENTS <IMicrosoftGraphManagedTenantsManagementIntentInfo- `[]`>: The collection of management intents associated with the tenant group.
+MANAGEMENTINTENTS `<IMicrosoftGraphManagedTenantsManagementIntentInfo- `[]`>`: The collection of management intents associated with the tenant group.
 Optional.
 Read-only.
   - `[ManagementIntentDisplayName <String>]`: The display name for the management intent.
@@ -338,6 +338,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantgroup)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

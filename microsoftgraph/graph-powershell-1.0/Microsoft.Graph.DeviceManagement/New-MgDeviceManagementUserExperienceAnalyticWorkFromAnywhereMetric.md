@@ -330,7 +330,7 @@ Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-METRICDEVICES <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice- `[]`>: The work from anywhere metric devices.
+METRICDEVICES `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice- `[]`>`: The work from anywhere metric devices.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -467,6 +467,25 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticworkfromanywheremetric](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticworkfromanywheremetric)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

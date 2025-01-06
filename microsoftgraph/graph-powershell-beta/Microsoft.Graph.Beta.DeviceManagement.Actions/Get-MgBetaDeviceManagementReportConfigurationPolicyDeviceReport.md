@@ -342,3 +342,22 @@ BODYPARAMETER `<IPaths1Su2PgjDevicemanagementReportsMicrosoftGraphGetconfigurati
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,7 +9,7 @@ ms.subservice: entra-id-governance
 # Update-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
 
 ## SYNOPSIS
-Update the properties of an accessPackageAssignmentWorkflowExtension object.
+Update the properties of an accessPackageAssignmentRequestWorkflowExtension object.
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflo
 ```
 
 ## DESCRIPTION
-Update the properties of an accessPackageAssignmentWorkflowExtension object.
+Update the properties of an accessPackageAssignmentRequestWorkflowExtension object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequestworkflowextension-update-permissions.md)]
@@ -453,7 +453,26 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension)
 
-[https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

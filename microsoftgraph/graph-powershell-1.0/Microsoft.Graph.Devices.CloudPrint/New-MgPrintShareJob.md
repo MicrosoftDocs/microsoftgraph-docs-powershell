@@ -566,7 +566,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
-DOCUMENTS <IMicrosoftGraphPrintDocument- `[]`>: .
+DOCUMENTS `<IMicrosoftGraphPrintDocument- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ContentType <String>]`: The document's content (MIME) type.
@@ -602,7 +602,7 @@ Read-only.
 Read-only.
   - `[State <String>]`: printJobProcessingState
 
-TASKS <IMicrosoftGraphPrintTask- `[]`>: A list of printTasks that were triggered by this print job.
+TASKS `<IMicrosoftGraphPrintTask- `[]`>`: A list of printTasks that were triggered by this print job.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
@@ -638,6 +638,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob)
 
 [https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

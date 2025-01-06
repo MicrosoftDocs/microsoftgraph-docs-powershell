@@ -567,7 +567,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-REGISTRATIONQUESTIONANSWERS <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>: The registrant's answer to the registration questions.
+REGISTRATIONQUESTIONANSWERS `<IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>`: The registrant's answer to the registration questions.
   - `[BooleanValue <Boolean?>]`: Boolean answer of the virtual event registration question.
 Only appears when answerInputType is boolean.
   - `[DisplayName <String>]`: Display name of the registration question.
@@ -577,7 +577,7 @@ Only appears when answerInputType is multiChoice.
   - `[Value <String>]`: Text answer of the virtual event registration question.
 Appears when answerInputType is text, multilineText or singleChoice.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: Sessions for a registration.
+SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: Sessions for a registration.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -668,6 +668,25 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationbyuserid](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationbyuserid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

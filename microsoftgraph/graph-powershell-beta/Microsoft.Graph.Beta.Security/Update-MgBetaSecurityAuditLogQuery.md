@@ -554,7 +554,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-RECORDS <IMicrosoftGraphSecurityAuditLogRecord- `[]`>: An individual audit log record.
+RECORDS `<IMicrosoftGraphSecurityAuditLogRecord- `[]`>`: An individual audit log record.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdministrativeUnits <String- `[]`>]`: The administrative units tagged to an audit log record.
@@ -580,6 +580,25 @@ It indicates that the 'user' who performed the activity was an application with 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlogquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlogquery)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

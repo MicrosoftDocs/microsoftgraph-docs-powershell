@@ -5096,7 +5096,7 @@ If document conversion is enabled, Universal Print service will automatically co
   - `[Shares <IMicrosoftGraphPrinterShare- `[]`>]`: The list of printer shares registered in the tenant.
   - `[TaskDefinitions <IMicrosoftGraphPrintTaskDefinition- `[]`>]`: List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
-CONNECTORS <IMicrosoftGraphPrintConnector- `[]`>: The list of available print connectors.
+CONNECTORS `<IMicrosoftGraphPrintConnector- `[]`>`: The list of available print connectors.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppVersion <String>]`: The connector's version.
@@ -5128,7 +5128,7 @@ The elements should be in hierarchical order.
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-OPERATIONS <IMicrosoftGraphPrintOperation- `[]`>: The list of print long running operations.
+OPERATIONS `<IMicrosoftGraphPrintOperation- `[]`>`: The list of print long running operations.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the operation was created.
@@ -5139,7 +5139,7 @@ Read-only.
 Read-only.
     - `[State <String>]`: printOperationProcessingState
 
-PRINTERS <IMicrosoftGraphPrinter- `[]`>: The list of printers registered in the tenant.
+PRINTERS `<IMicrosoftGraphPrinter- `[]`>`: The list of printers registered in the tenant.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[BottomMargins <Int32- `[]`>]`: A list of supported bottom margins(in microns) for the printer.
@@ -9935,7 +9935,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[TaskTriggers <IMicrosoftGraphPrintTaskTrigger- `[]`>]`: A list of task triggers that are associated with the printer.
 
-SERVICES <IMicrosoftGraphPrintService- `[]`>: The list of available Universal Print service endpoints.
+SERVICES `<IMicrosoftGraphPrintService- `[]`>`: The list of available Universal Print service endpoints.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint- `[]`>]`: Endpoints that can be used to access the service.
@@ -9951,7 +9951,7 @@ SETTINGS `<IMicrosoftGraphPrintSettings>`: printSettings
   - `[DocumentConversionEnabled <Boolean?>]`: Specifies whether document conversion is enabled for the tenant.
 If document conversion is enabled, Universal Print service will automatically convert documents into a format compatible with the printer (xps to pdf) when needed.
 
-SHARES <IMicrosoftGraphPrinterShare- `[]`>: The list of printer shares registered in the tenant.
+SHARES `<IMicrosoftGraphPrinterShare- `[]`>`: The list of printer shares registered in the tenant.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[BottomMargins <Int32- `[]`>]`: A list of supported bottom margins(in microns) for the printer.
@@ -14748,7 +14748,7 @@ Nullable.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-TASKDEFINITIONS <IMicrosoftGraphPrintTaskDefinition- `[]`>: List of abstract definition for a task that can be triggered when various events occur within Universal Print.
+TASKDEFINITIONS `<IMicrosoftGraphPrintTaskDefinition- `[]`>`: List of abstract definition for a task that can be triggered when various events occur within Universal Print.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
@@ -14781,6 +14781,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -606,7 +606,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DASHBOARDCARDS <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>: Dashboard cards specified in the Teams app manifest.
+DASHBOARDCARDS `<IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>`: Dashboard cards specified in the Teams app manifest.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ContentSource <IMicrosoftGraphTeamsAppDashboardCardContentSource>]`: teamsAppDashboardCardContentSource
@@ -693,6 +693,25 @@ Content type, such as image/png, image/jpg.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
 
 [https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

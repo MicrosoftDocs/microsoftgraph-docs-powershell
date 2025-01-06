@@ -279,7 +279,7 @@ Read-only.
     - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
 
-CERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthority- `[]`>: Collection of certificate authorities which creates a trusted certificate chain.
+CERTIFICATEAUTHORITIES `<IMicrosoftGraphCertificateAuthority- `[]`>`: Collection of certificate authorities which creates a trusted certificate chain.
   - `[Certificate <Byte- `[]`>]`: Required.
 The base64 encoded string representing the public certificate.
   - `[CertificateRevocationListUrl <String>]`: The URL of the certificate revocation list.
@@ -376,6 +376,25 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaorganizationcertificatebasedauthconfiguration)
 
 [https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration?view=graph-rest-beta](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

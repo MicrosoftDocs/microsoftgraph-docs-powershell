@@ -318,7 +318,7 @@ Read-only.
       - `[SettingId <String>]`: 
       - `[ValueType <String>]`: managementParameterValueType
 
-WORKLOADACTIONS <IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>: The collection of workload actions associated with the management action.
+WORKLOADACTIONS `<IMicrosoftGraphManagedTenantsWorkloadAction- `[]`>`: The collection of workload actions associated with the management action.
 Required.
 Read-only.
   - `[ActionId <String>]`: The unique identifier for the workload action.
@@ -353,6 +353,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementaction)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

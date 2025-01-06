@@ -274,7 +274,7 @@ Read-only.
     - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
     - `[Value <String>]`: Value of the setting.
 
-VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
+VALUES `<IMicrosoftGraphSettingValue- `[]`>`: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
   - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
   - `[Value <String>]`: Value of the setting.
 
@@ -283,6 +283,25 @@ VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corre
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysetting)
 
 [https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

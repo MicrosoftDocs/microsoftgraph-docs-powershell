@@ -289,7 +289,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSOCIATEDTEAMS <IMicrosoftGraphAssociatedTeamInfo- `[]`>: The list of associatedTeamInfo objects that a user is associated with.
+ASSOCIATEDTEAMS `<IMicrosoftGraphAssociatedTeamInfo- `[]`>`: The list of associatedTeamInfo objects that a user is associated with.
   - `[DisplayName <String>]`: The name of the team.
   - `[Team <IMicrosoftGraphTeam>]`: team
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9920,7 +9920,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-INSTALLEDAPPS <IMicrosoftGraphUserScopeTeamsAppInstallation- `[]`>: The apps installed in the personal scope of this user.
+INSTALLEDAPPS `<IMicrosoftGraphUserScopeTeamsAppInstallation- `[]`>`: The apps installed in the personal scope of this user.
   - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.
@@ -10179,6 +10179,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

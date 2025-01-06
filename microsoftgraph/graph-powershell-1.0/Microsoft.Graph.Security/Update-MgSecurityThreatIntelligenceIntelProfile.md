@@ -417,7 +417,7 @@ Read-only.
   - `[Title <String>]`: The title of this intelligenceProfile.
   - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
 
-COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin- `[]`>: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+COUNTRIESORREGIONSOFORIGIN `<IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin- `[]`>`: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
   - `[Code <String>]`: A codified representation for this country/region of origin.
   - `[Label <String>]`: A display label for this ountry/region of origin.
 
@@ -426,7 +426,7 @@ DESCRIPTION `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[Content <String>]`: The content of this formattedContent.
   - `[Format <String>]`: contentFormat
 
-INDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator- `[]`>: Includes an assemblage of high-fidelity network indicators of compromise.
+INDICATORS `<IMicrosoftGraphSecurityIntelligenceProfileIndicator- `[]`>`: Includes an assemblage of high-fidelity network indicators of compromise.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -513,6 +513,25 @@ TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

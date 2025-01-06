@@ -532,7 +532,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-PAYLOADS <IMicrosoftGraphPayloadByFilter- `[]`>: Indicates associated assignments for a specific filter.
+PAYLOADS `<IMicrosoftGraphPayloadByFilter- `[]`>`: Indicates associated assignments for a specific filter.
   - `[AssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[GroupId <String>]`: The Azure AD security group ID
   - `[PayloadId <String>]`: The policy identifier
@@ -541,6 +541,25 @@ PAYLOADS <IMicrosoftGraphPayloadByFilter- `[]`>: Indicates associated assignment
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementassignmentfilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementassignmentfilter)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

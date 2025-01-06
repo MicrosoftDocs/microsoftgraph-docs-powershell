@@ -396,7 +396,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
-SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState- `[]`>: .
+SETTINGSTATES `<IMicrosoftGraphDeviceCompliancePolicySettingState- `[]`>`: .
   - `[CurrentValue <String>]`: Current value of setting on device
   - `[ErrorCode <Int64?>]`: Error code for the setting
   - `[ErrorDescription <String>]`: Error description
@@ -416,6 +416,25 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevicecompliancepolicystate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevicecompliancepolicystate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -404,13 +404,32 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retention setting details for the policy.
+RETENTIONSETTINGS `<IMicrosoftGraphRetentionSetting- `[]`>`: Contains the retention setting details for the policy.
   - `[Interval <String>]`: The frequency of the backup.
   - `[Period <TimeSpan?>]`: The period of time to retain the protected data for a single Microsoft 365 service.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreprotectionpolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

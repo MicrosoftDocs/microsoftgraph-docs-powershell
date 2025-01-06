@@ -228,7 +228,7 @@ Read-only.
 Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-INSIGHTS <IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>: The insights for the category.
+INSIGHTS `<IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>`: The insights for the category.
 Read-only.
   - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
   - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights.
@@ -236,7 +236,7 @@ Possible values are: None, Informational, Warning, Error.
   - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
   - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue- `[]`>]`: The value of the user experience analytics insight.
 
-METRICVALUES <IMicrosoftGraphUserExperienceAnalyticsMetric- `[]`>: The metric values for the user experience analytics category.
+METRICVALUES `<IMicrosoftGraphUserExperienceAnalyticsMetric- `[]`>`: The metric values for the user experience analytics category.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -247,6 +247,25 @@ Examples: none, percentage, count, seconds, score.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticapphealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticapphealthoverview)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

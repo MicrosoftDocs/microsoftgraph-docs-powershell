@@ -228,7 +228,7 @@ Filter, Select, and OrderBy cannot be specified together with a CachedReportConf
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
     - `[Url <String>]`: Temporary location of the exported report
 
-EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob- `[]`>: Entity representing a job to export a report
+EXPORTJOBS `<IMicrosoftGraphDeviceManagementExportJob- `[]`>`: Entity representing a job to export a report
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
@@ -250,6 +250,25 @@ Filter, Select, and OrderBy cannot be specified together with a CachedReportConf
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport)
 
 [https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

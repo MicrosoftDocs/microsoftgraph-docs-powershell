@@ -834,7 +834,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId- `[]`>: For internal use only.
+ALTERNATIVESECURITYIDS `<IMicrosoftGraphAlternativeSecurityId- `[]`>`: For internal use only.
 Not nullable.
 Supports $filter (eq, not, ge, le).
   - `[IdentityProvider <String>]`: For internal use only.
@@ -965,13 +965,13 @@ Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the device.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups and administrative units that this device is a member of.
+MEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: Groups and administrative units that this device is a member of.
 Read-only.
 Nullable.
 Supports $expand.
@@ -980,7 +980,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-REGISTEREDOWNERS <IMicrosoftGraphDirectoryObject- `[]`>: The user that cloud joined the device or registered their personal device.
+REGISTEREDOWNERS `<IMicrosoftGraphDirectoryObject- `[]`>`: The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
 Read-only.
 Nullable.
@@ -990,7 +990,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-REGISTEREDUSERS <IMicrosoftGraphDirectoryObject- `[]`>: Collection of registered users of the device.
+REGISTEREDUSERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
@@ -1000,7 +1000,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups and administrative units that the device is a member of.
+TRANSITIVEMEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: Groups and administrative units that the device is a member of.
 This operation is transitive.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1013,6 +1013,25 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice)
 
 [https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

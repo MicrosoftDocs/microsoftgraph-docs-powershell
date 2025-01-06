@@ -276,8 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduledActionsForRule
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
+The list of scheduled action for this rule
 To construct, see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
@@ -386,7 +385,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphDeviceCompliancePolicyAssignment- `[]`>: The collection of assignments for this compliance policy.
+ASSIGNMENTS `<IMicrosoftGraphDeviceCompliancePolicyAssignment- `[]`>`: The collection of assignments for this compliance policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
@@ -451,8 +450,7 @@ Read-only.
   - `[DisplayName <String>]`: Admin provided name of the device configuration.
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
-  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>]`: The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
+  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>]`: The list of scheduled action for this rule
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
@@ -488,7 +486,7 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary- `[]`>: Compliance Setting State Device Summary
+DEVICESETTINGSTATESUMMARIES `<IMicrosoftGraphSettingStateDeviceSummary- `[]`>`: Compliance Setting State Device Summary
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
@@ -501,7 +499,7 @@ Read-only.
   - `[SettingName <String>]`: Name of the setting
   - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
 
-DEVICESTATUSES <IMicrosoftGraphDeviceComplianceDeviceStatus- `[]`>: List of DeviceComplianceDeviceStatus.
+DEVICESTATUSES `<IMicrosoftGraphDeviceComplianceDeviceStatus- `[]`>`: List of DeviceComplianceDeviceStatus.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
@@ -527,8 +525,7 @@ Read-only.
   - `[PendingCount <Int32?>]`: Number of pending devices
   - `[SuccessCount <Int32?>]`: Number of succeeded devices
 
-SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>: The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
+SCHEDULEDACTIONSFORRULE `<IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>`: The list of scheduled action for this rule
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
@@ -543,7 +540,7 @@ Valid values 0 to 8760
     - `[NotificationMessageCcList <String- `[]`>]`: A list of group IDs to speicify who to CC this notification message to.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-USERSTATUSES <IMicrosoftGraphDeviceComplianceUserStatus- `[]`>: List of DeviceComplianceUserStatus.
+USERSTATUSES `<IMicrosoftGraphDeviceComplianceUserStatus- `[]`>`: List of DeviceComplianceUserStatus.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DevicesCount <Int32?>]`: Devices count for that user.
@@ -568,6 +565,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

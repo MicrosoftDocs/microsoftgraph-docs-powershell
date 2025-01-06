@@ -377,7 +377,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-TRUSTEDCERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>: Collection of trusted certificate authorities.
+TRUSTEDCERTIFICATEAUTHORITIES `<IMicrosoftGraphCertificateAuthorityAsEntity- `[]`>`: Collection of trusted certificate authorities.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Certificate <Byte- `[]`>]`: The trusted certificate.
@@ -391,6 +391,25 @@ In a certificateBasedApplicationConfiguration object, at least one object in the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
 
 [https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

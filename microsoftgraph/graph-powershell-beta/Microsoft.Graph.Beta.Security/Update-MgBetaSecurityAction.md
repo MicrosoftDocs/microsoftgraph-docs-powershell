@@ -595,12 +595,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-PARAMETERS <IMicrosoftGraphKeyValuePair- `[]`>: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
+PARAMETERS `<IMicrosoftGraphKeyValuePair- `[]`>`: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
 Required.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-STATES <IMicrosoftGraphSecurityActionState- `[]`>: Collection of securityActionState to keep the history of an action.
+STATES `<IMicrosoftGraphSecurityActionState- `[]`>`: Collection of securityActionState to keep the history of an action.
   - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the action.
 The appId should be extracted from the auth token and not entered manually by the calling application.
   - `[Status <String>]`: operationStatus
@@ -622,6 +622,25 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityaction)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

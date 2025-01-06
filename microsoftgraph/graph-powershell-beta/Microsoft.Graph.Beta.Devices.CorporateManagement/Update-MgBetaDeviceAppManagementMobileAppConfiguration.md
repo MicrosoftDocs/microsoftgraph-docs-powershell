@@ -420,7 +420,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment- `[]`>: The list of group assignemenets for app configration.
+ASSIGNMENTS `<IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment- `[]`>`: The list of group assignemenets for app configration.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -491,7 +491,7 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICESTATUSES <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus- `[]`>: List of ManagedDeviceMobileAppConfigurationDeviceStatus.
+DEVICESTATUSES `<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus- `[]`>`: List of ManagedDeviceMobileAppConfigurationDeviceStatus.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
@@ -589,7 +589,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-USERSTATUSES <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus- `[]`>: List of ManagedDeviceMobileAppConfigurationUserStatus.
+USERSTATUSES `<IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus- `[]`>`: List of ManagedDeviceMobileAppConfigurationUserStatus.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DevicesCount <Int32?>]`: Devices count for that user.
@@ -614,6 +614,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

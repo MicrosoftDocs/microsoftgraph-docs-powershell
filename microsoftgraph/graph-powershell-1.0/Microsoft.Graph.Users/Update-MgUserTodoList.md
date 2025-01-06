@@ -465,7 +465,7 @@ Required.
     - `[Title <String>]`: A brief description of the task.
   - `[WellknownListName <String>]`: wellknownListName
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the task list.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the task list.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -491,7 +491,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-TASKS <IMicrosoftGraphTodoTask- `[]`>: The tasks in this task list.
+TASKS `<IMicrosoftGraphTodoTask- `[]`>`: The tasks in this task list.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -600,6 +600,25 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolist)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

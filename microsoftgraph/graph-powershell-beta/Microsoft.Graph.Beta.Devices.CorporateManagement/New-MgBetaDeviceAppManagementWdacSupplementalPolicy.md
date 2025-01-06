@@ -346,7 +346,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment- `[]`>: The associated group assignments for the Windows Defender Application Control Supplemental Policy.
+ASSIGNMENTS `<IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment- `[]`>`: The associated group assignments for the Windows Defender Application Control Supplemental Policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -400,7 +400,7 @@ Read-only.
   - `[DeployedDeviceCount <Int32?>]`: Number of Devices that have successfully deployed this WindowsDefenderApplicationControl supplemental policy.
   - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to deploy this WindowsDefenderApplicationControl supplemental policy.
 
-DEVICESTATUSES <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus- `[]`>: The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
+DEVICESTATUSES `<IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus- `[]`>`: The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeploymentStatus <WindowsDefenderApplicationControlSupplementalPolicyStatuses?>]`: Enum values for the various WindowsDefenderApplicationControl supplemental policy deployment statuses.
@@ -442,6 +442,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwdacsupplementalpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwdacsupplementalpolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

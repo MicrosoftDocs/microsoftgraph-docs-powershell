@@ -202,7 +202,7 @@ Read-only.
     - `[Platform <Platform?>]`: platform
   - `[OverwriteImportedDeviceIdentities <Boolean?>]`: 
 
-IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity- `[]`>: .
+IMPORTEDDEVICEIDENTITIES `<IMicrosoftGraphImportedDeviceIdentity- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
@@ -217,6 +217,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementimporteddeviceidentitylist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementimporteddeviceidentitylist)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -345,7 +345,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
-SCHEDULEDACTIONCONFIGURATIONS <IMicrosoftGraphDeviceComplianceActionItem- `[]`>: The list of scheduled action configurations for this compliance policy.
+SCHEDULEDACTIONCONFIGURATIONS `<IMicrosoftGraphDeviceComplianceActionItem- `[]`>`: The list of scheduled action configurations for this compliance policy.
 Compliance policy must have one and only one block scheduled action.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -360,6 +360,25 @@ Valid values 0 to 8760
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrule](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrule)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancescheduledactionforrule-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancescheduledactionforrule-create?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

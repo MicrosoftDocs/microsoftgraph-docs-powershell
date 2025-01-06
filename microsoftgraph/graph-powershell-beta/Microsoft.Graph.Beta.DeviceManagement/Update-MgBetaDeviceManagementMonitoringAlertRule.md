@@ -455,7 +455,7 @@ Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja
     - `[Operator <String>]`: operatorType
     - `[Target <Int32?>]`: The target threshold value.
 
-CONDITIONS <IMicrosoftGraphDeviceManagementRuleCondition- `[]`>: The conditions that determine when to send alerts.
+CONDITIONS `<IMicrosoftGraphDeviceManagementRuleCondition- `[]`>`: The conditions that determine when to send alerts.
 For example, you can configure a condition to send an alert when provisioning fails for six or more Cloud PCs.
   - `[Aggregation <String>]`: aggregationType
   - `[ConditionCategory <String>]`: conditionCategory
@@ -608,7 +608,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-NOTIFICATIONCHANNELS <IMicrosoftGraphDeviceManagementNotificationChannel- `[]`>: The notification channels of the rule selected by the user.
+NOTIFICATIONCHANNELS `<IMicrosoftGraphDeviceManagementNotificationChannel- `[]`>`: The notification channels of the rule selected by the user.
   - `[NotificationChannelType <String>]`: notificationChannelType
   - `[NotificationReceivers <IMicrosoftGraphDeviceManagementNotificationReceiver- `[]`>]`: Information about the notification receivers, such as locale and contact information.
 For example, en-us for locale and serena.davis@contoso.com for contact information.
@@ -630,6 +630,25 @@ THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
 
 [https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

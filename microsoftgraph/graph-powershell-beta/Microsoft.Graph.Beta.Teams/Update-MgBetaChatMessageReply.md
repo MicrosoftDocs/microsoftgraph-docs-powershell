@@ -678,7 +678,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS <IMicrosoftGraphChatMessageAttachment- `[]`>: References to attached objects like files, tabs, meetings etc.
+ATTACHMENTS `<IMicrosoftGraphChatMessageAttachment- `[]`>`: References to attached objects like files, tabs, meetings etc.
   - `[Content <String>]`: The content of the attachment.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
@@ -841,7 +841,7 @@ CHANNELIDENTITY `<IMicrosoftGraphChannelIdentity>`: channelIdentity
   - `[ChannelId <String>]`: The identity of the channel in which the message was posted.
   - `[TeamId <String>]`: The identity of the team in which the message was posted.
 
-HOSTEDCONTENTS <IMicrosoftGraphChatMessageHostedContent- `[]`>: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+HOSTEDCONTENTS `<IMicrosoftGraphChatMessageHostedContent- `[]`>`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
   - `[ContentBytes <Byte- `[]`>]`: Write only.
 Bytes for the hosted content (such as images).
   - `[ContentType <String>]`: Write only.
@@ -892,7 +892,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-MENTIONS <IMicrosoftGraphChatMessageMention- `[]`>: List of entities mentioned in the chat message.
+MENTIONS `<IMicrosoftGraphChatMessageMention- `[]`>`: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
   - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
@@ -925,7 +925,7 @@ For example, if a user changes their display name the API might show the new val
       - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-MESSAGEHISTORY <IMicrosoftGraphChatMessageHistoryItem- `[]`>: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
+MESSAGEHISTORY `<IMicrosoftGraphChatMessageHistoryItem- `[]`>`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
   - `[Actions <String>]`: chatMessageActions
   - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
   - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
@@ -962,7 +962,7 @@ Each DLP app defines its own conditions, examples include 'Credit Card Number' a
   - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
   - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
 
-REACTIONS <IMicrosoftGraphChatMessageReaction- `[]`>: Reactions for this chat message (for example, Like).
+REACTIONS `<IMicrosoftGraphChatMessageReaction- `[]`>`: Reactions for this chat message (for example, Like).
   - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DisplayName <String>]`: The name of the reaction.
@@ -981,7 +981,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
 
-REPLIES <IMicrosoftGraphChatMessage- `[]`>: Replies for a specified message.
+REPLIES `<IMicrosoftGraphChatMessage- `[]`>`: Replies for a specified message.
 Supports $expand for channel messages.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1118,6 +1118,25 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatmessagereply)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -279,7 +279,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment- `[]`>: The list of assignments for the device configuration profile.
+ASSIGNMENTS `<IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment- `[]`>`: The list of assignments for the device configuration profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Intent <DeviceManagementResourceAccessProfileIntent?>]`: The administrator intent for the assignment of the profile.
@@ -312,6 +312,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementresourceaccessprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementresourceaccessprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

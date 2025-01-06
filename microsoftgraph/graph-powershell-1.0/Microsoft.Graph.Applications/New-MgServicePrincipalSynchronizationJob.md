@@ -814,7 +814,7 @@ For example:User to User - For Microsoft Entra ID to Microsoft Entra ID synchron
     - `[Value <Int64?>]`: Total number of synchronized objects.
   - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
 
-SYNCHRONIZATIONJOBSETTINGS <IMicrosoftGraphKeyValuePair- `[]`>: Settings associated with the job.
+SYNCHRONIZATIONJOBSETTINGS `<IMicrosoftGraphKeyValuePair- `[]`>`: Settings associated with the job.
 Some settings are inherited from the template.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
@@ -824,6 +824,25 @@ Some settings are inherited from the template.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjob)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronization-post-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-post-jobs?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

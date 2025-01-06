@@ -1123,7 +1123,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
         - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+        - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
   - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
   - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1829,8 +1829,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -6621,7 +6621,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -9430,7 +9430,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
           - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-          - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+          - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
     - `[AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]`: accessPackageCatalog
     - `[AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
@@ -10136,8 +10136,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -14928,7 +14928,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -18410,8 +18410,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -23202,7 +23202,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -25881,9 +25881,9 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
       - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-      - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+      - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
 
-CUSTOMEXTENSIONHANDLERS <IMicrosoftGraphCustomExtensionHandler- `[]`>: The collection of stages when to execute one or more custom access package workflow extensions.
+CUSTOMEXTENSIONHANDLERS `<IMicrosoftGraphCustomExtensionHandler- `[]`>`: The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -25913,7 +25913,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[Stage <String>]`: accessPackageCustomExtensionStage
 
-CUSTOMEXTENSIONSTAGESETTINGS <IMicrosoftGraphCustomExtensionStageSetting- `[]`>: The collection of stages when to execute one or more custom access package workflow extensions.
+CUSTOMEXTENSIONSTAGESETTINGS `<IMicrosoftGraphCustomExtensionStageSetting- `[]`>`: The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -25937,7 +25937,7 @@ If null, the default for the service applies.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Stage <String>]`: accessPackageCustomExtensionStage
 
-QUESTIONS <IMicrosoftGraphAccessPackageQuestion- `[]`>: Questions that are posed to the requestor.
+QUESTIONS `<IMicrosoftGraphAccessPackageQuestion- `[]`>`: Questions that are posed to the requestor.
   - `[Id <String>]`: ID of the question.
   - `[IsAnswerEditable <Boolean?>]`: Specifies whether the requestor is allowed to edit answers to questions.
   - `[IsRequired <Boolean?>]`: Whether the requestor is required to supply an answer or not.
@@ -25985,13 +25985,32 @@ VERIFIABLECREDENTIALSETTINGS `<IMicrosoftGraphVerifiableCredentialSettings>`: ve
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CredentialTypes <IMicrosoftGraphVerifiableCredentialType- `[]`>]`: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
     - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
-    - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
+    - `[Issuers <String- `[]`>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
 
 [https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageassignmentpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageassignmentpolicies?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

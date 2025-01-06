@@ -15690,7 +15690,7 @@ Read-only.
   - `[Resources <IMicrosoftGraphAccessPackageResource- `[]`>]`: Access package resources in this catalog.
   - `[State <String>]`: accessPackageCatalogState
 
-CUSTOMEXTENSIONSTAGESETTINGS <IMicrosoftGraphCustomExtensionStageSetting- `[]`>: The collection of stages when to execute one or more custom access package workflow extensions.
+CUSTOMEXTENSIONSTAGESETTINGS `<IMicrosoftGraphCustomExtensionStageSetting- `[]`>`: The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -15792,7 +15792,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-QUESTIONS <IMicrosoftGraphAccessPackageQuestion- `[]`>: Questions that are posed to the requestor.
+QUESTIONS `<IMicrosoftGraphAccessPackageQuestion- `[]`>`: Questions that are posed to the requestor.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsAnswerEditable <Boolean?>]`: Specifies whether the requestor is allowed to edit answers to questions for an assignment by posting an update to accessPackageAssignmentRequest.
@@ -15895,6 +15895,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgentitlementmanagementassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgentitlementmanagementassignmentpolicy)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

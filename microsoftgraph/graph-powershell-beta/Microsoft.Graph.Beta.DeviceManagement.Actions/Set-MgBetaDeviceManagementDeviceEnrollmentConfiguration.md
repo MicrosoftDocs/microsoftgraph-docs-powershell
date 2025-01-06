@@ -252,7 +252,7 @@ Read-only.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-ENROLLMENTCONFIGURATIONASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>: .
+ENROLLMENTCONFIGURATIONASSIGNMENTS `<IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
@@ -322,6 +322,25 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeviceenrollmentconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

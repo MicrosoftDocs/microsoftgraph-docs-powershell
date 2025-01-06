@@ -417,7 +417,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPSCOPES <IMicrosoftGraphAppScope- `[]`>: Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
+APPSCOPES `<IMicrosoftGraphAppScope- `[]`>`: Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
 Containment entity.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -515,7 +515,7 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
   - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
 
-DIRECTORYSCOPES <IMicrosoftGraphDirectoryObject- `[]`>: Read-only collection that references the directory objects that are scope of the assignment.
+DIRECTORYSCOPES `<IMicrosoftGraphDirectoryObject- `[]`>`: Read-only collection that references the directory objects that are scope of the assignment.
 Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
@@ -524,7 +524,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PRINCIPALS <IMicrosoftGraphDirectoryObject- `[]`>: Read-only collection that references the assigned principals.
+PRINCIPALS `<IMicrosoftGraphDirectoryObject- `[]`>`: Read-only collection that references the assigned principals.
 Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
@@ -581,6 +581,25 @@ Read-only when isBuiltIn is true.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroleassignment)
 
 [https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

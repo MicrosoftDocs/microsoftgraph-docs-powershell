@@ -560,7 +560,7 @@ Currently only the users from the same tenant can be added to a plannerRoster.
 Nullable.
 Returns a collection of the specified tasks
 
-BUCKETS <IMicrosoftGraphPlannerBucket- `[]`>: Read-only.
+BUCKETS `<IMicrosoftGraphPlannerBucket- `[]`>`: Read-only.
 Nullable.
 Returns a collection of the specified buckets
   - `[Id <String>]`: The unique identifier for an entity.
@@ -769,7 +769,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Title <String>]`: Title of the task.
 
-PLANS <IMicrosoftGraphPlannerPlan- `[]`>: Read-only.
+PLANS `<IMicrosoftGraphPlannerPlan- `[]`>`: Read-only.
 Nullable.
 Returns a collection of the specified plans
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1055,7 +1055,7 @@ Nullable.
   - `[Title <String>]`: Required.
 Title of the plan.
 
-ROSTERS <IMicrosoftGraphPlannerRoster- `[]`>: Read-only.
+ROSTERS `<IMicrosoftGraphPlannerRoster- `[]`>`: Read-only.
 Nullable.
 Returns a collection of the specified rosters
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1357,7 +1357,7 @@ Nullable.
     - `[Title <String>]`: Required.
 Title of the plan.
 
-TASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+TASKS `<IMicrosoftGraphPlannerTask- `[]`>`: Read-only.
 Nullable.
 Returns a collection of the specified tasks
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1553,6 +1553,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

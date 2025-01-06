@@ -507,7 +507,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-RESOURCES <IMicrosoftGraphAccessPackageResource- `[]`>: Read-only.
+RESOURCES `<IMicrosoftGraphAccessPackageResource- `[]`>`: Read-only.
 Required.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -579,6 +579,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

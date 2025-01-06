@@ -609,7 +609,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
-DOCUMENTS <IMicrosoftGraphPrintDocument- `[]`>: .
+DOCUMENTS `<IMicrosoftGraphPrintDocument- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -681,7 +681,7 @@ Read-only.
   - `[ProcessingStateDescription <String>]`: 
   - `[State <String>]`: printJobProcessingState
 
-TASKS <IMicrosoftGraphPrintTask- `[]`>: A list of printTasks that were triggered by this print job.
+TASKS `<IMicrosoftGraphPrintTask- `[]`>`: A list of printTasks that were triggered by this print job.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
@@ -715,6 +715,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejob)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

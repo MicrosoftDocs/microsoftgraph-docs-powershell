@@ -300,7 +300,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>: .
+SETTINGS `<IMicrosoftGraphDeviceManagementSettingInstance- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
@@ -309,6 +309,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementintentmultiplesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementintentmultiplesetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

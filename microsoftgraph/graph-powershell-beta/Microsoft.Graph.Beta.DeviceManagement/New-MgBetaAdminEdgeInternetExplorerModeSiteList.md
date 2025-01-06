@@ -447,7 +447,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SHAREDCOOKIES <IMicrosoftGraphBrowserSharedCookie- `[]`>: A collection of shared cookies defined for the site list.
+SHAREDCOOKIES `<IMicrosoftGraphBrowserSharedCookie- `[]`>`: A collection of shared cookies defined for the site list.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Comment <String>]`: The comment for the shared cookie.
@@ -481,7 +481,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
   - `[Status <BrowserSharedCookieStatus?>]`: browserSharedCookieStatus
 
-SITES <IMicrosoftGraphBrowserSite- `[]`>: A collection of sites defined for the site list.
+SITES `<IMicrosoftGraphBrowserSite- `[]`>`: A collection of sites defined for the site list.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites.
@@ -521,6 +521,25 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelist)
 
 [https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-beta](https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

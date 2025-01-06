@@ -548,7 +548,7 @@ Longer text description of the user's unique activity (example: document name, f
     - `[DisplayText <String>]`: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
 
-HISTORYITEMS <IMicrosoftGraphActivityHistoryItem- `[]`>: Optional.
+HISTORYITEMS `<IMicrosoftGraphActivityHistoryItem- `[]`>`: Optional.
 NavigationProperty/Containment; navigation property to the activity's activityHistoryItems.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -657,6 +657,25 @@ Short text description of the user's unique activity (for example, document name
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

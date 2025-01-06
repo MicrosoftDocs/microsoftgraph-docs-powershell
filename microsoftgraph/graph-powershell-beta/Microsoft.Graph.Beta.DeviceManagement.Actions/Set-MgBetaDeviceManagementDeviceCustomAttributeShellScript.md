@@ -269,7 +269,7 @@ Read-only.
 Read-only.
     - `[TargetGroupId <String>]`: The Id of the Azure Active Directory group we are targeting the script to.
 
-DEVICEMANAGEMENTSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptAssignment- `[]`>: .
+DEVICEMANAGEMENTSCRIPTASSIGNMENTS `<IMicrosoftGraphDeviceManagementScriptAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -277,7 +277,7 @@ Read-only.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-DEVICEMANAGEMENTSCRIPTGROUPASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptGroupAssignment- `[]`>: .
+DEVICEMANAGEMENTSCRIPTGROUPASSIGNMENTS `<IMicrosoftGraphDeviceManagementScriptGroupAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[TargetGroupId <String>]`: The Id of the Azure Active Directory group we are targeting the script to.
@@ -342,6 +342,25 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdevicecustomattributeshellscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdevicecustomattributeshellscript)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

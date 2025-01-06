@@ -607,7 +607,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-PRESENTATIONVALUES <IMicrosoftGraphGroupPolicyPresentationValue- `[]`>: The associated group policy presentation values with the definition value.
+PRESENTATIONVALUES `<IMicrosoftGraphGroupPolicyPresentationValue- `[]`>`: The associated group policy presentation values with the definition value.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
@@ -684,6 +684,25 @@ The default value is empty.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvalue)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

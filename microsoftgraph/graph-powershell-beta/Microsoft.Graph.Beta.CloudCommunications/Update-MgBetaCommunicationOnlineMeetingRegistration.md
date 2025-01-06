@@ -409,7 +409,7 @@ Read-only.
   - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
   - `[Subject <String>]`: The subject of the meeting.
 
-CUSTOMQUESTIONS <IMicrosoftGraphMeetingRegistrationQuestion- `[]`>: Custom registration questions.
+CUSTOMQUESTIONS `<IMicrosoftGraphMeetingRegistrationQuestion- `[]`>`: Custom registration questions.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AnswerInputType <String>]`: answerInputType
@@ -440,19 +440,38 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-REGISTRANTS <IMicrosoftGraphMeetingRegistrantBase- `[]`>: Registrants of the online meeting.
+REGISTRANTS `<IMicrosoftGraphMeetingRegistrantBase- `[]`>`: Registrants of the online meeting.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[JoinWebUrl <String>]`: A unique web URL for the registrant to join the meeting.
 Read-only.
 
-SPEAKERS <IMicrosoftGraphMeetingSpeaker- `[]`>: The meeting speaker's information.
+SPEAKERS `<IMicrosoftGraphMeetingSpeaker- `[]`>`: The meeting speaker's information.
   - `[Bio <String>]`: Bio of the speaker.
   - `[DisplayName <String>]`: Display name of the speaker.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingregistration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

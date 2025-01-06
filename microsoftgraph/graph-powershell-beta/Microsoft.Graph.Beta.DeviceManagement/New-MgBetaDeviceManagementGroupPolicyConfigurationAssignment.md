@@ -416,3 +416,22 @@ TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

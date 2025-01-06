@@ -526,7 +526,7 @@ For example, '2019-04-16T09:00:00'.
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: The virtual event presenters.
+PRESENTERS `<IMicrosoftGraphVirtualEventPresenter- `[]`>`: The virtual event presenters.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Email <String>]`: Email address of the presenter.
@@ -676,7 +676,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
+SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
@@ -840,6 +840,25 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

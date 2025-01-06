@@ -5410,7 +5410,7 @@ Read-only.
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
 
-DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState- `[]`>: Device compliance policy states for this device.
+DEVICECOMPLIANCEPOLICYSTATES `<IMicrosoftGraphDeviceCompliancePolicyState- `[]`>`: Device compliance policy states for this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
@@ -5435,7 +5435,7 @@ Read-only.
   - `[State <String>]`: complianceStatus
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState- `[]`>: Device configuration states for this device.
+DEVICECONFIGURATIONSTATES `<IMicrosoftGraphDeviceConfigurationState- `[]`>`: Device configuration states for this device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
@@ -5497,7 +5497,7 @@ DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: de
   - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
   - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
 
-LOGCOLLECTIONREQUESTS <IMicrosoftGraphDeviceLogCollectionResponse- `[]`>: List of log collection requests
+LOGCOLLECTIONREQUESTS `<IMicrosoftGraphDeviceLogCollectionResponse- `[]`>`: List of log collection requests
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[EnrolledByUser <String>]`: The User Principal Name (UPN) of the user that enrolled the device.
@@ -5510,7 +5510,7 @@ Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-USERS <IMicrosoftGraphUser- `[]`>: The primary users associated with the managed device.
+USERS `<IMicrosoftGraphUser- `[]`>`: The primary users associated with the managed device.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -10359,6 +10359,25 @@ Defaults to setting on client device.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-create?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

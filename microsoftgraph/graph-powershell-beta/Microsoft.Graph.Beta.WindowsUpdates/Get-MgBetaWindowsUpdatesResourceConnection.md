@@ -10,7 +10,7 @@ ms.subservice: autopatch
 # Get-MgBetaWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
-Read the properties and relationships of an operationalInsightsConnection object.
+Read the properties and relationships of a resourceConnection object.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an operationalInsightsConnection object.
+Read the properties and relationships of a resourceConnection object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-resourceconnection-get-permissions.md)]
@@ -324,9 +324,28 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection)
 
-[https://learn.microsoft.com/graph/api/windowsupdates-operationalinsightsconnection-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-operationalinsightsconnection-get?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/windowsupdates-resourceconnection-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-resourceconnection-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/adminwindowsupdates-list-resourceconnections?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminwindowsupdates-list-resourceconnections?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

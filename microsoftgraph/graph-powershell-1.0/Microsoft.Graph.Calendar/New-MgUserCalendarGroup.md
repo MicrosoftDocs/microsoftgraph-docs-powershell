@@ -570,7 +570,7 @@ Read-only.
 Read-only.
   - `[Name <String>]`: The group name.
 
-CALENDARS <IMicrosoftGraphCalendar- `[]`>: The calendars in the calendar group.
+CALENDARS `<IMicrosoftGraphCalendar- `[]`>`: The calendars in the calendar group.
 Navigation property.
 Read-only.
 Nullable.
@@ -838,6 +838,25 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

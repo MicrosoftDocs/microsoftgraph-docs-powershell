@@ -722,7 +722,7 @@ Read-only.
   - `[SkipPrimarySetupAccountCreation <Boolean?>]`: Indicates whether Setup Assistant will skip the user interface for primary account setup
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
 
-ENROLLMENTPROFILES <IMicrosoftGraphEnrollmentProfile- `[]`>: The enrollment profiles.
+ENROLLMENTPROFILES `<IMicrosoftGraphEnrollmentProfile- `[]`>`: The enrollment profiles.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ConfigurationEndpointUrl <String>]`: Configuration endpoint url to use for Enrollment
@@ -732,7 +732,7 @@ Read-only.
   - `[RequireCompanyPortalOnSetupAssistantEnrolledDevices <Boolean?>]`: Indicates that Company Portal is required on setup assistant enrolled devices
   - `[RequiresUserAuthentication <Boolean?>]`: Indicates if the profile requires user authentication
 
-IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity- `[]`>: The imported Apple device identities.
+IMPORTEDAPPLEDEVICEIDENTITIES `<IMicrosoftGraphImportedAppleDeviceIdentity- `[]`>`: The imported Apple device identities.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
@@ -750,6 +750,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeponboardingsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeponboardingsetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

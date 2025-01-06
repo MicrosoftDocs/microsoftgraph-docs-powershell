@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppLogCollectionRequests
-The collection property of AppLogUploadRequest.
+Indicates collection of App Log Upload Request.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
@@ -425,11 +425,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair- `[]`>: A set of string key and string value pairs which provides additional information on the Troubleshooting event
+ADDITIONALINFORMATION `<IMicrosoftGraphKeyValuePair- `[]`>`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest- `[]`>: The collection property of AppLogUploadRequest.
+APPLOGCOLLECTIONREQUESTS `<IMicrosoftGraphAppLogCollectionRequest- `[]`>`: Indicates collection of App Log Upload Request.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -458,7 +458,7 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
       - `[Text <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -473,7 +473,7 @@ Read-only.
   - `[ManagedDeviceIdentifier <String>]`: Device identifier created or collected by Intune.
   - `[UserId <String>]`: Identifier for the user that tried to enroll the device.
 
-HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem- `[]`>: Intune Mobile Application Troubleshooting History Item
+HISTORY `<IMicrosoftGraphMobileAppTroubleshootingHistoryItem- `[]`>`: Intune Mobile Application Troubleshooting History Item
   - `[OccurrenceDateTime <DateTime?>]`: Time when the history item occurred.
   - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -572,6 +572,25 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileapptroubleshootingevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

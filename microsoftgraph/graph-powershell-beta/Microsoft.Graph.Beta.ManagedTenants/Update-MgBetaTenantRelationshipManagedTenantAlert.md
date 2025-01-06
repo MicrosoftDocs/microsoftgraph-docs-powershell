@@ -531,10 +531,10 @@ ALERTDATA `<IMicrosoftGraphManagedTenantsAlertData>`: alertData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
 
-ALERTDATAREFERENCESTRINGS <IMicrosoftGraphManagedTenantsAlertDataReferenceString- `[]`>: .
+ALERTDATAREFERENCESTRINGS `<IMicrosoftGraphManagedTenantsAlertDataReferenceString- `[]`>`: .
   - `[DisplayName <String>]`: 
 
-ALERTLOGS <IMicrosoftGraphManagedTenantsManagedTenantAlertLog- `[]`>: .
+ALERTLOGS `<IMicrosoftGraphManagedTenantsManagedTenantAlertLog- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]`: managedTenantAlert
@@ -717,7 +717,7 @@ Read-only.
     - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-APINOTIFICATIONS <IMicrosoftGraphManagedTenantsManagedTenantApiNotification- `[]`>: .
+APINOTIFICATIONS `<IMicrosoftGraphManagedTenantsManagedTenantApiNotification- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]`: managedTenantAlert
@@ -901,7 +901,7 @@ Read-only.
   - `[TenantId <String>]`: 
   - `[Title <String>]`: 
 
-EMAILNOTIFICATIONS <IMicrosoftGraphManagedTenantsManagedTenantEmailNotification- `[]`>: .
+EMAILNOTIFICATIONS `<IMicrosoftGraphManagedTenantsManagedTenantEmailNotification- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]`: managedTenantAlert
@@ -1036,6 +1036,25 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalert)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

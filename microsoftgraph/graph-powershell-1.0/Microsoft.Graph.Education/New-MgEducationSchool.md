@@ -5659,7 +5659,7 @@ Nullable.
   - `[Users <IMicrosoftGraphEducationUser- `[]`>]`: Users in the school.
 Nullable.
 
-CLASSES <IMicrosoftGraphEducationClass- `[]`>: Classes taught at the school.
+CLASSES `<IMicrosoftGraphEducationClass- `[]`>`: Classes taught at the school.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -10786,7 +10786,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-USERS <IMicrosoftGraphEducationUser- `[]`>: Users in the school.
+USERS `<IMicrosoftGraphEducationUser- `[]`>`: Users in the school.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -15908,6 +15908,25 @@ Supports $filter.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool)
 
 [https://learn.microsoft.com/graph/api/educationschool-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-post?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

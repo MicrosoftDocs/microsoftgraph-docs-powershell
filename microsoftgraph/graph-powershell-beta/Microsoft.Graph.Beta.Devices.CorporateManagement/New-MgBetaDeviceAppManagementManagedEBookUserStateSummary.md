@@ -319,7 +319,7 @@ Read-only.
   - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
   - `[UserName <String>]`: User name.
 
-DEVICESTATES <IMicrosoftGraphDeviceInstallState- `[]`>: The install state of the eBook.
+DEVICESTATES `<IMicrosoftGraphDeviceInstallState- `[]`>`: The install state of the eBook.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceId <String>]`: Device Id.
@@ -406,6 +406,25 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedebookuserstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedebookuserstatesummary)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

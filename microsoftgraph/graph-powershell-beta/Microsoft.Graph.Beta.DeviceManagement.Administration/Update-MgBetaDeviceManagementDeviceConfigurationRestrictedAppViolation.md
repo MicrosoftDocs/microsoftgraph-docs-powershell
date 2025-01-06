@@ -433,12 +433,31 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
-RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp- `[]`>: List of violated restricted apps
+RESTRICTEDAPPS `<IMicrosoftGraphManagedDeviceReportedApp- `[]`>`: List of violated restricted apps
   - `[AppId <String>]`: The application or bundle identifier of the application
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

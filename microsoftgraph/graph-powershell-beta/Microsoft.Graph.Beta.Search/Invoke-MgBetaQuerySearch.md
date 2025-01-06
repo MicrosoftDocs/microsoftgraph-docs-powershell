@@ -322,7 +322,7 @@ Required.
 Default value is false.
 Optional.
 
-REQUESTS <IMicrosoftGraphSearchRequest- `[]`>: .
+REQUESTS `<IMicrosoftGraphSearchRequest- `[]`>`: .
   - `[AggregationFilters <String- `[]`>]`: Contains one or more filters to obtain search results aggregated and filtered to a specific value of a field.
 Optional.Build this filter based on a prior search that aggregates by the same field.
 From the response of the prior search, identify the searchBucket that filters results to the specific value of the field, use the string in its aggregationFilterToken property, and build an aggregation filter string in the format '{field}:/'{aggregationFilterToken}/''.
@@ -431,6 +431,25 @@ Optional.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch)
 
 [https://learn.microsoft.com/graph/api/search-query?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -206,3 +206,22 @@ BODYPARAMETER `<IPathsMsgcxjOrganizationMicrosoftGraphGetuserownedobjectsPostReq
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

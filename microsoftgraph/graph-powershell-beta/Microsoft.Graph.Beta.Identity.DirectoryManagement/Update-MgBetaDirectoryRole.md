@@ -418,7 +418,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Users that are members of this directory role.
+MEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
@@ -428,7 +428,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership- `[]`>: Members of this directory role that are scoped to administrative units.
+SCOPEDMEMBERS `<IMicrosoftGraphScopedRoleMembership- `[]`>`: Members of this directory role that are scoped to administrative units.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -446,6 +446,25 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrole)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

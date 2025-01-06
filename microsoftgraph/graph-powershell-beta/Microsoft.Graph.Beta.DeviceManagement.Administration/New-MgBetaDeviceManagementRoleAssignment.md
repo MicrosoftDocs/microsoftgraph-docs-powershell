@@ -424,7 +424,7 @@ These are IDs from Azure Active Directory.
 These must match the actionName that is defined as part of the rolePermission.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
 
-ROLESCOPETAGS <IMicrosoftGraphRoleScopeTag- `[]`>: The set of Role Scope Tags defined on the Role Assignment.
+ROLESCOPETAGS `<IMicrosoftGraphRoleScopeTag- `[]`>`: The set of Role Scope Tags defined on the Role Assignment.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment- `[]`>]`: The list of assignments for this Role Scope Tag.
@@ -440,6 +440,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroleassignment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

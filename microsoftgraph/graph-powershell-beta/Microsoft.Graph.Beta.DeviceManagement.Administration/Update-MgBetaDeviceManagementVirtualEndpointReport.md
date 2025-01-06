@@ -203,7 +203,7 @@ It can be used to download the file.
     - `[RequestDateTime <DateTime?>]`: The date and time when the export job was requested.
     - `[Select <String- `[]`>]`: The selected columns of the report.
 
-EXPORTJOBS <IMicrosoftGraphCloudPcExportJob- `[]`>: The export jobs created for downloading reports.
+EXPORTJOBS `<IMicrosoftGraphCloudPcExportJob- `[]`>`: The export jobs created for downloading reports.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.
@@ -219,6 +219,25 @@ It can be used to download the file.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointreport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

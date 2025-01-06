@@ -348,3 +348,22 @@ BODYPARAMETER `<IPathsXvswb4DevicemanagementVirtualendpointReportsMicrosoftGraph
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

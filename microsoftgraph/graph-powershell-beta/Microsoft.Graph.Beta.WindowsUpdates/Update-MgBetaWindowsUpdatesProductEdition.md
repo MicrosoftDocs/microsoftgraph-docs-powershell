@@ -396,7 +396,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
-SERVICINGPERIODS <IMicrosoftGraphWindowsUpdatesServicingPeriod- `[]`>: .
+SERVICINGPERIODS `<IMicrosoftGraphWindowsUpdatesServicingPeriod- `[]`>`: .
   - `[EndDateTime <DateTime?>]`: The date and time when the servicing period ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -411,6 +411,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductedition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductedition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

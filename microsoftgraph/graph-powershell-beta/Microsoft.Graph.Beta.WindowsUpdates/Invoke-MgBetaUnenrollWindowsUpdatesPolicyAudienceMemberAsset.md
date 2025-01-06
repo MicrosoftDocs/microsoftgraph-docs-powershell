@@ -267,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSETS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+ASSETS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
@@ -305,6 +305,25 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatespolicyaudiencememberasset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatespolicyaudiencememberasset)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment
 
 ## SYNOPSIS
-The associated group assignments for IosLobAppProvisioningConfiguration.
+The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment
 ```
 
 ## DESCRIPTION
-The associated group assignments for IosLobAppProvisioningConfiguration.
+The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
 
 ## PARAMETERS
 
@@ -375,6 +375,25 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementioslobappprovisioningconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementioslobappprovisioningconfigurationassignment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

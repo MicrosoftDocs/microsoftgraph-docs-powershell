@@ -251,7 +251,7 @@ Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
-RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent- `[]`>: .
+RETENTIONEVENTS `<IMicrosoftGraphSecurityRetentionEvent- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -312,6 +312,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytrigger)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

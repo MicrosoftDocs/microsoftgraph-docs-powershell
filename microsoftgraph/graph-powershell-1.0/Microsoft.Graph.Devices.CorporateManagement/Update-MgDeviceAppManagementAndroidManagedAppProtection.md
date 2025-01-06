@@ -982,14 +982,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPS <IMicrosoftGraphManagedMobileApp- `[]`>: List of apps to which the policy is deployed.
+APPS `<IMicrosoftGraphManagedMobileApp- `[]`>`: List of apps to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: Version of the entity.
 
-ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+ASSIGNMENTS `<IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -1120,6 +1120,25 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotection)
 
 [https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

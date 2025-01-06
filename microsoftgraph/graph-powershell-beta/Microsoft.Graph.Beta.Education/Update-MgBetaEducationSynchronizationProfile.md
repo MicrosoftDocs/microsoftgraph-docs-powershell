@@ -404,7 +404,7 @@ Read-only.
     - `[StatusMessage <String>]`: Status message for the synchronization stage of the current profile.
   - `[State <String>]`: educationSynchronizationProfileState
 
-ERRORS <IMicrosoftGraphEducationSynchronizationError- `[]`>: All errors associated with this synchronization profile.
+ERRORS `<IMicrosoftGraphEducationSynchronizationError- `[]`>`: All errors associated with this synchronization profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[EntryType <String>]`: Represents the sync entity (school, section, student, teacher).
@@ -434,7 +434,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
-LICENSESTOASSIGN <IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>: License setup configuration.
+LICENSESTOASSIGN `<IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>`: License setup configuration.
   - `[AppliesTo <String>]`: educationUserRole
   - `[SkuIds <String- `[]`>]`: Represents the SKU identifiers of the licenses to assign.
 
@@ -451,6 +451,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

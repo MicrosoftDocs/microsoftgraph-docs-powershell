@@ -562,7 +562,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
     - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity- `[]`>: Identity information of coorganizers of the webinar.
+COORGANIZERS `<IMicrosoftGraphCommunicationsUserIdentity- `[]`>`: Identity information of coorganizers of the webinar.
   - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity or actor.
@@ -599,7 +599,7 @@ ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: The virtual event presenters.
+PRESENTERS `<IMicrosoftGraphVirtualEventPresenter- `[]`>`: The virtual event presenters.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Email <String>]`: Email address of the presenter.
@@ -637,7 +637,7 @@ Read-only.
   - `[IsManualApprovalEnabled <Boolean?>]`: 
   - `[IsWaitlistEnabled <Boolean?>]`: 
 
-REGISTRATIONS <IMicrosoftGraphVirtualEventRegistration- `[]`>: Registration records of the webinar.
+REGISTRATIONS `<IMicrosoftGraphVirtualEventRegistration- `[]`>`: Registration records of the webinar.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CancelationDateTime <DateTime?>]`: Date and time when the registrant cancels their registration for the virtual event.
@@ -752,7 +752,7 @@ See below for more possible values.
   - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
+SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -855,6 +855,25 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinar)
 
 [https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

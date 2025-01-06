@@ -559,7 +559,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
-TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant- `[]`>: Variations of a QnA for different countries or devices.
+TARGETEDVARIATIONS `<IMicrosoftGraphSearchAnswerVariant- `[]`>`: Variations of a QnA for different countries or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
   - `[Description <String>]`: The answer variation description that is shown on the search results page.
@@ -574,6 +574,25 @@ When users select this answer variation from the search results, they're directe
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna)
 
 [https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

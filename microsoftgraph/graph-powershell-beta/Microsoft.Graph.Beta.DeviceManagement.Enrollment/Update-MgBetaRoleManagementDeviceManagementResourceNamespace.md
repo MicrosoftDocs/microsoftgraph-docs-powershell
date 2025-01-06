@@ -329,7 +329,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: The unique identifier of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
-RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction- `[]`>: Operations that an authorized principal is allowed to perform.
+RESOURCEACTIONS `<IMicrosoftGraphUnifiedRbacResourceAction- `[]`>`: Operations that an authorized principal is allowed to perform.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
@@ -372,6 +372,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementresourcenamespace)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1065,7 +1065,7 @@ For example, '2019-04-16T09:00:00'.
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-REMINDERS <IMicrosoftGraphBookingReminder- `[]`>: The collection of customer reminders sent for this appointment.
+REMINDERS `<IMicrosoftGraphBookingReminder- `[]`>`: The collection of customer reminders sent for this appointment.
 The value of this property is available only when reading this bookingAppointment by its ID.
   - `[Message <String>]`: The message in the reminder.
   - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
@@ -1109,6 +1109,25 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscalendarview)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

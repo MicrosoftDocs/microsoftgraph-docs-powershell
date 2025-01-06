@@ -439,7 +439,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTRIBUTES <IMicrosoftGraphAccessPackageResourceAttribute- `[]`>: Contains information about the attributes to be collected from the requestor and sent to the resource application.
+ATTRIBUTES `<IMicrosoftGraphAccessPackageResourceAttribute- `[]`>`: Contains information about the attributes to be collected from the requestor and sent to the resource application.
   - `[Destination <IMicrosoftGraphAccessPackageResourceAttributeDestination>]`: accessPackageResourceAttributeDestination
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsEditable <Boolean?>]`: 
@@ -655,7 +655,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-ROLES <IMicrosoftGraphAccessPackageResourceRole- `[]`>: Read-only.
+ROLES `<IMicrosoftGraphAccessPackageResourceRole- `[]`>`: Read-only.
 Nullable.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -726,7 +726,7 @@ Read-only.
       - `[OriginSystem <String>]`: The origin system for the scope.
       - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
 
-SCOPES <IMicrosoftGraphAccessPackageResourceScope- `[]`>: Read-only.
+SCOPES `<IMicrosoftGraphAccessPackageResourceScope- `[]`>`: Read-only.
 Nullable.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -800,6 +800,25 @@ Supports $expand.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironmentresourceroleresourcescoperesource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironmentresourceroleresourcescoperesource)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

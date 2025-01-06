@@ -552,7 +552,7 @@ Read-only.
     - `[Total <Int64?>]`: 
     - `[Used <Int64?>]`: 
 
-WINDOWS <IMicrosoftGraphWindowsSetting- `[]`>: .
+WINDOWS `<IMicrosoftGraphWindowsSetting- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
@@ -572,6 +572,25 @@ Refers to the user's Windows device that modified the object at the specified da
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

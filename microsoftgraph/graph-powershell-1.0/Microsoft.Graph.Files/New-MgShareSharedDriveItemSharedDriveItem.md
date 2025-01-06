@@ -14919,7 +14919,7 @@ Read-only.
     - `[Worksheets <IMicrosoftGraphWorkbookWorksheet- `[]`>]`: Represents a collection of worksheets associated with the workbook.
 Read-only.
 
-ITEMS <IMicrosoftGraphDriveItem- `[]`>: All driveItems contained in the sharing root.
+ITEMS `<IMicrosoftGraphDriveItem- `[]`>`: All driveItems contained in the sharing root.
 This collection cannot be enumerated.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -43853,6 +43853,25 @@ This relationship can only be used to load a specific term set.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgshareshareddriveitemshareddriveitem)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

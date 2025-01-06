@@ -237,7 +237,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>: .
+ACTIVITIES `<IMicrosoftGraphExternalConnectorsExternalActivity- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
@@ -291,6 +291,25 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/add-mgbetaexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/add-mgbetaexternalconnectionitemactivity)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

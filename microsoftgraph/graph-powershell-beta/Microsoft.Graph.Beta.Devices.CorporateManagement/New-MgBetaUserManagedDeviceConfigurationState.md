@@ -475,7 +475,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>: .
+SETTINGSTATES `<IMicrosoftGraphDeviceConfigurationSettingState- `[]`>`: .
   - `[CurrentValue <String>]`: Current value of setting on device
   - `[ErrorCode <Int64?>]`: Error code for the setting
   - `[ErrorDescription <String>]`: Error description
@@ -496,6 +496,25 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddeviceconfigurationstate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

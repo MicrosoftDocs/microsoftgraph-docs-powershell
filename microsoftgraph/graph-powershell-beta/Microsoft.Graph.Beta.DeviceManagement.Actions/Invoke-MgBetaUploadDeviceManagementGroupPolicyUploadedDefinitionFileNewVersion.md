@@ -266,7 +266,7 @@ BODYPARAMETER `<IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGr
     - `[LanguageCode <String>]`: The language code of the uploaded ADML file.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
-GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile- `[]`>: .
+GROUPPOLICYUPLOADEDLANGUAGEFILES `<IMicrosoftGraphGroupPolicyUploadedLanguageFile- `[]`>`: .
   - `[Content <Byte- `[]`>]`: The contents of the uploaded ADML file.
   - `[FileName <String>]`: The file name of the uploaded ADML file.
   - `[Id <String>]`: Key of the entity.
@@ -333,6 +333,25 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetauploaddevicemanagementgrouppolicyuploadeddefinitionfilenewversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetauploaddevicemanagementgrouppolicyuploadeddefinitionfilenewversion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

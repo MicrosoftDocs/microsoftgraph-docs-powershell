@@ -63,7 +63,7 @@ Import-Module Microsoft.Graph.Security
 
 $params = @{
 	email = "admin@contoso.com"
-	includedSources = "mailbox, site"
+	includedSources = "mailbox"
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
@@ -468,6 +468,25 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianusersource)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-usersources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-usersources?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

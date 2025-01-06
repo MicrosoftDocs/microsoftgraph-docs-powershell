@@ -588,7 +588,7 @@ It's a free-format string value, for example, 'United States'.
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-APPOINTMENTS <IMicrosoftGraphBookingAppointment- `[]`>: All the appointments of this business.
+APPOINTMENTS `<IMicrosoftGraphBookingAppointment- `[]`>`: All the appointments of this business.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -925,7 +925,7 @@ The default value is false.
 If a privacy policy isn't included, the following text appears on the booking page as default: 'The policies and practices of {bookingbusinessname} apply to the use of your data.'
   - `[TermsAndConditionsWebUrl <String>]`: URL of a webpage that provides the terms and conditions of the business.
 
-BUSINESSHOURS <IMicrosoftGraphBookingWorkHours- `[]`>: The hours of operation for the business.
+BUSINESSHOURS `<IMicrosoftGraphBookingWorkHours- `[]`>`: The hours of operation for the business.
   - `[Day <String>]`: dayOfWeek
   - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
     - `[EndTime <String>]`: The time of the day when work stops.
@@ -933,7 +933,7 @@ For example, 17:00:00.0000000.
     - `[StartTime <String>]`: The time of the day when work starts.
 For example, 08:00:00.0000000.
 
-CALENDARVIEW <IMicrosoftGraphBookingAppointment- `[]`>: The set of appointments of this business in a specified date range.
+CALENDARVIEW `<IMicrosoftGraphBookingAppointment- `[]`>`: The set of appointments of this business in a specified date range.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1019,13 +1019,13 @@ Default value is false.
   - `[StaffMemberIds <String- `[]`>]`: The ID of each bookingStaffMember who is scheduled in this appointment.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-CUSTOMERS <IMicrosoftGraphBookingCustomerBase- `[]`>: All the customers of this business.
+CUSTOMERS `<IMicrosoftGraphBookingCustomerBase- `[]`>`: All the customers of this business.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-CUSTOMQUESTIONS <IMicrosoftGraphBookingCustomQuestion- `[]`>: All the custom questions of this business.
+CUSTOMQUESTIONS `<IMicrosoftGraphBookingCustomQuestion- `[]`>`: All the custom questions of this business.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1094,7 +1094,7 @@ It follows the ISO 8601 format.
 Use the email address specified in the email property of the bookingBusiness entity for the business.
   - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
 
-SERVICES <IMicrosoftGraphBookingService- `[]`>: All the services offered by this business.
+SERVICES `<IMicrosoftGraphBookingService- `[]`>`: All the services offered by this business.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1192,7 +1192,7 @@ Use the email address specified in the email property of the bookingBusiness ent
 Default value is false.
   - `[StaffMemberIds <String- `[]`>]`: Represents those staff members who provide this service.
 
-STAFFMEMBERS <IMicrosoftGraphBookingStaffMemberBase- `[]`>: All the staff members that provide services in this business.
+STAFFMEMBERS `<IMicrosoftGraphBookingStaffMemberBase- `[]`>`: All the staff members that provide services in this business.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1203,6 +1203,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness)
 
 [https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

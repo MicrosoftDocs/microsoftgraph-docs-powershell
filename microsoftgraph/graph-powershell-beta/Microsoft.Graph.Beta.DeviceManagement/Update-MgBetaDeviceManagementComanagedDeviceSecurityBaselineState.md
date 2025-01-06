@@ -483,7 +483,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SETTINGSTATES <IMicrosoftGraphSecurityBaselineSettingState- `[]`>: The security baseline state for different settings for a device
+SETTINGSTATES `<IMicrosoftGraphSecurityBaselineSettingState- `[]`>`: The security baseline state for different settings for a device
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy- `[]`>]`: The policies that contribute to this setting instance
@@ -504,6 +504,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicesecuritybaselinestate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicesecuritybaselinestate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

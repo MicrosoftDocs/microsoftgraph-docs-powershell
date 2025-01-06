@@ -455,7 +455,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Visibility <String>]`: 
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for this administrative unit.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for this administrative unit.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -509,14 +509,14 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Users and groups that are members of this administrative unit.
+MEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Users and groups that are members of this administrative unit.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership- `[]`>: Scoped-role members of this administrative unit.
+SCOPEDROLEMEMBERS `<IMicrosoftGraphScopedRoleMembership- `[]`>`: Scoped-role members of this administrative unit.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
@@ -534,6 +534,25 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

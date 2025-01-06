@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Update the properties of a windows81CompliancePolicy object.
+Update the properties of a windowsPhone81CompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -61,7 +61,7 @@ Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Update the properties of a windows81CompliancePolicy object.
+Update the properties of a windowsPhone81CompliancePolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -457,7 +457,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphDeviceCompliancePolicyAssignment- `[]`>: The collection of assignments for this compliance policy.
+ASSIGNMENTS `<IMicrosoftGraphDeviceCompliancePolicyAssignment- `[]`>`: The collection of assignments for this compliance policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -546,7 +546,7 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary- `[]`>: Compliance Setting State Device Summary
+DEVICESETTINGSTATESUMMARIES `<IMicrosoftGraphSettingStateDeviceSummary- `[]`>`: Compliance Setting State Device Summary
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
@@ -559,7 +559,7 @@ Read-only.
   - `[SettingName <String>]`: Name of the setting
   - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
 
-DEVICESTATUSES <IMicrosoftGraphDeviceComplianceDeviceStatus- `[]`>: List of DeviceComplianceDeviceStatus.
+DEVICESTATUSES `<IMicrosoftGraphDeviceComplianceDeviceStatus- `[]`>`: List of DeviceComplianceDeviceStatus.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
@@ -638,7 +638,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
-SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>: The list of scheduled action per rule for this compliance policy.
+SCHEDULEDACTIONSFORRULE `<IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>`: The list of scheduled action per rule for this compliance policy.
 This is a required property when creating any individual per-platform compliance policies.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -654,7 +654,7 @@ Valid values 0 to 8760
     - `[NotificationMessageCcList <String- `[]`>]`: A list of group IDs to speicify who to CC this notification message to.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-USERSTATUSES <IMicrosoftGraphDeviceComplianceUserStatus- `[]`>: List of DeviceComplianceUserStatus.
+USERSTATUSES `<IMicrosoftGraphDeviceComplianceUserStatus- `[]`>`: List of DeviceComplianceUserStatus.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DevicesCount <Int32?>]`: Devices count for that user.
@@ -679,7 +679,26 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81compliancepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81compliancepolicy-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsphone81compliancepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsphone81compliancepolicy-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

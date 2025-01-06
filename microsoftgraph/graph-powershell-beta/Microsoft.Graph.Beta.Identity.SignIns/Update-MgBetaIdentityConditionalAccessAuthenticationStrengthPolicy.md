@@ -363,7 +363,7 @@ Supports $filter (eq, ne, not , and in).
   - `[PolicyType <String>]`: authenticationStrengthPolicyType
   - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
-COMBINATIONCONFIGURATIONS <IMicrosoftGraphAuthenticationCombinationConfiguration- `[]`>: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
+COMBINATIONCONFIGURATIONS `<IMicrosoftGraphAuthenticationCombinationConfiguration- `[]`>`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppliesToCombinations <String- `[]`>]`: Which authentication method combinations this configuration applies to.
@@ -453,6 +453,25 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthpolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -589,7 +589,7 @@ ITEMCATEGORY `<IMicrosoftGraphItemCategory>`: itemCategory
   - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PICTURE <IMicrosoftGraphPicture- `[]`>: .
+PICTURE `<IMicrosoftGraphPicture- `[]`>`: .
   - `[Content <Byte- `[]`>]`: 
   - `[ContentType <String>]`: 
   - `[Height <Int32?>]`: 
@@ -599,6 +599,25 @@ PICTURE <IMicrosoftGraphPicture- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemosalecreditmemolineitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemosalecreditmemolineitem)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

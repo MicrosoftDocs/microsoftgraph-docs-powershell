@@ -591,7 +591,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESSES <IMicrosoftGraphPhysicalOfficeAddress- `[]`>: Postal addresses for this organizational contact.
+ADDRESSES `<IMicrosoftGraphPhysicalOfficeAddress- `[]`>`: Postal addresses for this organizational contact.
 For now a contact can only have one physical address.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region.
@@ -679,7 +679,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values)
   - `[TransitiveReports <IMicrosoftGraphDirectoryObject- `[]`>]`: The transitive reports for a contact.
 Read-only.
 
-DIRECTREPORTS <IMicrosoftGraphDirectoryObject- `[]`>: The contact's direct reports.
+DIRECTREPORTS `<IMicrosoftGraphDirectoryObject- `[]`>`: The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
 Supports $expand.
@@ -744,7 +744,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups that this contact is a member of.
+MEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: Groups that this contact is a member of.
 Read-only.
 Nullable.
 Supports $expand.
@@ -753,7 +753,7 @@ Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ONPREMISESPROVISIONINGERRORS <IMicrosoftGraphOnPremisesProvisioningError- `[]`>: List of any synchronization provisioning errors for this organizational contact.
+ONPREMISESPROVISIONINGERRORS `<IMicrosoftGraphOnPremisesProvisioningError- `[]`>`: List of any synchronization provisioning errors for this organizational contact.
 Supports $filter (eq, not for category and propertyCausingError), /$count eq 0, /$count ne 0.
   - `[Category <String>]`: Category of the provisioning error.
 Note: Currently, there is only one possible value.
@@ -764,26 +764,26 @@ Other objects contain the same value for the property.
 Current possible values: UserPrincipalName or ProxyAddress
   - `[Value <String>]`: Value of the property causing the error.
 
-PHONES <IMicrosoftGraphPhone- `[]`>: List of phones for this organizational contact.
+PHONES `<IMicrosoftGraphPhone- `[]`>`: List of phones for this organizational contact.
 Phone types can be mobile, business, and businessFax.
 Only one of each type can ever be present in the collection.
 Supports $filter (eq, ne, not, in).
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 
-SERVICEPROVISIONINGERRORS <IMicrosoftGraphServiceProvisioningError- `[]`>: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object .
+SERVICEPROVISIONINGERRORS `<IMicrosoftGraphServiceProvisioningError- `[]`>`: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the error occurred.
   - `[IsResolved <Boolean?>]`: Indicates whether the Error has been attended to.
   - `[ServiceInstance <String>]`: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: .
+TRANSITIVEMEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-TRANSITIVEREPORTS <IMicrosoftGraphDirectoryObject- `[]`>: The transitive reports for a contact.
+TRANSITIVEREPORTS `<IMicrosoftGraphDirectoryObject- `[]`>`: The transitive reports for a contact.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -793,6 +793,25 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

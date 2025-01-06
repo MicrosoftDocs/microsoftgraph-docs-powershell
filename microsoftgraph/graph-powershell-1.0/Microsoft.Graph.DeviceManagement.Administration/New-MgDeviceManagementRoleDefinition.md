@@ -330,7 +330,7 @@ These must match the actionName that is defined as part of the rolePermission.
       - `[AllowedResourceActions <String- `[]`>]`: Allowed Actions
       - `[NotAllowedResourceActions <String- `[]`>]`: Not Allowed Actions.
 
-ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment- `[]`>: List of Role assignments for this role definition.
+ROLEASSIGNMENTS `<IMicrosoftGraphRoleAssignment- `[]`>`: List of Role assignments for this role definition.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Description of the Role Assignment.
@@ -358,7 +358,7 @@ These must match the actionName that is defined as part of the rolePermission.
         - `[AllowedResourceActions <String- `[]`>]`: Allowed Actions
         - `[NotAllowedResourceActions <String- `[]`>]`: Not Allowed Actions.
 
-ROLEPERMISSIONS <IMicrosoftGraphRolePermission- `[]`>: List of Role Permissions this role is allowed to perform.
+ROLEPERMISSIONS `<IMicrosoftGraphRolePermission- `[]`>`: List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
   - `[ResourceActions <IMicrosoftGraphResourceAction- `[]`>]`: Resource Actions each containing a set of allowed and not allowed permissions.
     - `[AllowedResourceActions <String- `[]`>]`: Allowed Actions
@@ -369,6 +369,25 @@ These must match the actionName that is defined as part of the rolePermission.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-create?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -250,7 +250,7 @@ Valid values 1 to 23
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-DEVICEHEALTHSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceHealthScriptAssignment- `[]`>: .
+DEVICEHEALTHSCRIPTASSIGNMENTS `<IMicrosoftGraphDeviceHealthScriptAssignment- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[RunRemediationScript <Boolean?>]`: Determine whether we want to run detection script only or run both detection script and remediation script
@@ -323,6 +323,25 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdevicehealthscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdevicehealthscript)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

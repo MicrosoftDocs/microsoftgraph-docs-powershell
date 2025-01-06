@@ -336,7 +336,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord- `[]`>: List of attendance records of an attendance report.
+ATTENDANCERECORDS `<IMicrosoftGraphAttendanceRecord- `[]`>`: List of attendance records of an attendance report.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -417,6 +417,25 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingattendancereport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

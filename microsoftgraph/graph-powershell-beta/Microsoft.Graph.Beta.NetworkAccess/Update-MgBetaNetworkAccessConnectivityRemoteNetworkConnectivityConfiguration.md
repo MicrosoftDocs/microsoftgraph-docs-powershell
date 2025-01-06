@@ -306,7 +306,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
 
-LINKS <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink- `[]`>: List of connectivity configurations for deviceLink objects.
+LINKS `<IMicrosoftGraphNetworkaccessConnectivityConfigurationLink- `[]`>`: List of connectivity configurations for deviceLink objects.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Specifies the name of the link.
@@ -324,6 +324,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

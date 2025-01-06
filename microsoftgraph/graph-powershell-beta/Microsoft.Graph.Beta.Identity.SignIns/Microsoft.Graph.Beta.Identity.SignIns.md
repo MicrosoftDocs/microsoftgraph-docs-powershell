@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-Module Guid: 8bb95fe1-406a-4fca-84fd-bad3c02c2594
+Module Guid: 34255728-3b3c-4099-a200-b8ef91d78bc0
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.signins/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1504,5 +1504,23 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserInformationProtectionThreatAssessmentRequest](Update-MgBetaUserInformationProtectionThreatAssessmentRequest.md)
 
 ### [Update-MgBetaUserInformationProtectionThreatAssessmentRequestResult](Update-MgBetaUserInformationProtectionThreatAssessmentRequestResult.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

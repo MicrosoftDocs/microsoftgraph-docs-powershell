@@ -473,7 +473,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
-KNOWNISSUEHISTORIES <IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem- `[]`>: .
+KNOWNISSUEHISTORIES `<IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem- `[]`>`: .
   - `[Body <IMicrosoftGraphWindowsUpdatesItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -500,6 +500,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductknownissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductknownissue)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

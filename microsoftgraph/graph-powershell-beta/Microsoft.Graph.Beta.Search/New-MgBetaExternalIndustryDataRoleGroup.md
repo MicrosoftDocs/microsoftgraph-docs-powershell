@@ -219,7 +219,7 @@ Read-only.
       - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
 Must be unique within the referenceType.
 
-ROLES <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>: The set of roles included in the role group.
+ROLES `<IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>`: The set of roles included in the role group.
   - `[Code <String>]`: The code of the desired referenceDefinition entry.
   - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -235,6 +235,25 @@ Must be unique within the referenceType.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatarolegroup)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

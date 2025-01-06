@@ -249,7 +249,7 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
     - `[Name <String>]`: Name of the setting.
     - `[Type <String>]`: Type of the setting.
 
-VALUES <IMicrosoftGraphSettingTemplateValue- `[]`>: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
+VALUES `<IMicrosoftGraphSettingTemplateValue- `[]`>`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
   - `[DefaultValue <String>]`: Default value for the setting.
   - `[Description <String>]`: Description of the setting.
   - `[Name <String>]`: Name of the setting.
@@ -258,6 +258,25 @@ VALUES <IMicrosoftGraphSettingTemplateValue- `[]`>: Collection of settingTemplat
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsettingtemplategroupsettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsettingtemplategroupsettingtemplate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

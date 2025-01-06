@@ -245,7 +245,7 @@ The maximum length allowed for this property is 128 characters.
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
     - `[Url <String>]`: Temporary location of the exported report.
 
-CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfiguration- `[]`>: Entity representing the configuration of a cached report.
+CACHEDREPORTCONFIGURATIONS `<IMicrosoftGraphDeviceManagementCachedReportConfiguration- `[]`>`: Entity representing the configuration of a cached report.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires.
@@ -257,7 +257,7 @@ Read-only.
   - `[Select <String- `[]`>]`: Columns selected from the report.
   - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
 
-EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob- `[]`>: Entity representing a job to export a report.
+EXPORTJOBS `<IMicrosoftGraphDeviceManagementExportJob- `[]`>`: Entity representing a job to export a report.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires.
@@ -284,6 +284,25 @@ The maximum length allowed for this property is 128 characters.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetadevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetadevicemanagementreport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

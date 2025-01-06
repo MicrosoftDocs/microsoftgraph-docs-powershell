@@ -40,7 +40,8 @@ Delete a businessScenarioTask object.
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
-Remove-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -BusinessScenarioTaskId $businessScenarioTaskId
+Remove-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -BusinessScenarioTaskId $businessScenarioTaskId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
 
 ```
 This example shows how to use the Remove-MgBetaSolutionBusinessScenarioPlannerTask Cmdlet.
@@ -227,6 +228,25 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertask)
 
 [https://learn.microsoft.com/graph/api/businessscenarioplanner-delete-tasks?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenarioplanner-delete-tasks?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

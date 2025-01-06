@@ -451,12 +451,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[IsHotpatchEnabled <Boolean?>]`: 
       - `[OfferAsOptional <Boolean?>]`: Specifies whether the update is offered as Optional rather than Required.
 
-COMPLIANCECHANGERULES <IMicrosoftGraphWindowsUpdatesComplianceChangeRule- `[]`>: Rules for governing the automatic creation of compliance changes.
+COMPLIANCECHANGERULES `<IMicrosoftGraphWindowsUpdatesComplianceChangeRule- `[]`>`: Rules for governing the automatic creation of compliance changes.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the rule was created.
   - `[LastEvaluatedDateTime <DateTime?>]`: The date and time when the rule was last evaluated.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time when the rule was last modified.
 
-COMPLIANCECHANGES <IMicrosoftGraphWindowsUpdatesComplianceChange- `[]`>: Compliance changes like content approvals which result in the automatic creation of deployments using the audience and deploymentSettings of the policy.
+COMPLIANCECHANGES `<IMicrosoftGraphWindowsUpdatesComplianceChange- `[]`>`: Compliance changes like content approvals which result in the automatic creation of deployments using the audience and deploymentSettings of the policy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time when a compliance change was created.
@@ -604,6 +604,25 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicy)
 
 [https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

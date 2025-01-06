@@ -348,7 +348,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[DisplayName <String>]`: The name of the program. 
 Required on create.
 
-CONTROLS <IMicrosoftGraphProgramControl- `[]`>: Controls associated with the program.
+CONTROLS `<IMicrosoftGraphProgramControl- `[]`>`: Controls associated with the program.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ControlId <String>]`: The controlId of the control, in particular the identifier of an access review.
@@ -491,6 +491,25 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogramcontrolprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogramcontrolprogram)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

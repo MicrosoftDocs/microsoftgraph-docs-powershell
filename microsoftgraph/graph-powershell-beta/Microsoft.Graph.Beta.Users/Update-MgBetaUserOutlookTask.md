@@ -616,7 +616,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS <IMicrosoftGraphAttachment- `[]`>: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+ATTACHMENTS `<IMicrosoftGraphAttachment- `[]`>`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -769,7 +769,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the task.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the task.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -816,7 +816,7 @@ For example, '2019-04-16T09:00:00'.
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the task.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the task.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -833,6 +833,25 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

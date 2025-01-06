@@ -308,7 +308,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANALYZEDEMAILS <IMicrosoftGraphSecurityAnalyzedEmail- `[]`>: .
+ANALYZEDEMAILS `<IMicrosoftGraphSecurityAnalyzedEmail- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AlertIds <String- `[]`>]`: A collection of values that contain the IDs of any alerts associated with the email.
@@ -478,6 +478,25 @@ This is full URL string, including query parameters.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail)
 
 [https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

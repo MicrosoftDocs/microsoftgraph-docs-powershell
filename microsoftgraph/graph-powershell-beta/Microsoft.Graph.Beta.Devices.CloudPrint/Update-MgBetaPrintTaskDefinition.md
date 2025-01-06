@@ -349,7 +349,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: The unique identifier of printerShare
   - `[UserId <String>]`: The unique identifier of user
 
-TASKS <IMicrosoftGraphPrintTask- `[]`>: A list of tasks that have been created based on this definition.
+TASKS `<IMicrosoftGraphPrintTask- `[]`>`: A list of tasks that have been created based on this definition.
 The list includes currently running tasks and recently completed tasks.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -387,6 +387,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinition)
 
 [https://learn.microsoft.com/graph/api/print-update-taskdefinition?view=graph-rest-beta](https://learn.microsoft.com/graph/api/print-update-taskdefinition?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -86,6 +86,7 @@ function Update-Files {
                 Remove-Item -Path $FilePath
             }
             Update-NoteSection -FilePath $FilePath
+            Cleanup-NoteSection -FilePath $FilePath
             Update-ParameterSection -FilePath $FilePath
             Update-SpecificStrings -FilePath $FilePath
             CleanupFile -File $FilePath
@@ -137,6 +138,58 @@ function Update-NoteSection {
     
 }
 
+function Cleanup-NoteSection {
+    param (
+        [ValidateNotNullOrEmpty()]
+        [string] $FilePath
+    )
+    try {
+        $CleanUpBlock = "## NOTES(?s).*## RELATED LINKS"
+        $CleanUpBlock2 = "\w+ <\w+- ```\[]```>:"
+        $CleanUpBlock3 = "\w+ <\w+>:"
+        $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
+        $CleanUpRe = [regex]::new($CleanUpBlock, $option)
+        $cleanUpRe2 = [regex]::new($CleanUpBlock2, $option)
+        $cleanUpRe3 = [regex]::new($CleanUpBlock3, $option)
+        $CleanUpDestinationContent = Get-Content -Raw $FilePath
+        $CleanUpText = $CleanUpDestinationContent.ToString()
+        if ($CleanUpDestinationContent -match $CleanUpRe) {
+            $Extracted = $Matches[0]
+            $FinalCleanUpText = $Extracted
+            if ($Extracted -match $cleanUpRe2) {
+                $MatchingLines = $cleanUpRe2.Matches($Extracted)
+                foreach ($Match in $MatchingLines) {
+                    
+                    $CT = $Match.Value
+                    $CR = $CT.Replace("<", "``<").Replace(">", ">``")
+                    $FinalCleanUpText = $FinalCleanUpText.Replace($CT, $CR)
+                }
+            }
+            if ($Extracted -match $cleanUpRe3) {
+                $MatchingLines = $cleanUpRe3.Matches($Extracted)
+                foreach ($Match in $MatchingLines) {
+                    
+                    $C_T = $Match.Value
+                    $C_R = $C_T.Replace("<", "``<").Replace(">", ">``")
+                    $FinalCleanUpText = $FinalCleanUpText.Replace($C_T, $C_R)
+                }
+            }
+            $CleanUpText = $CleanUpText.Replace($Extracted, $FinalCleanUpText)
+            
+            $CleanUpText | Out-File $FilePath -Encoding UTF8
+        }
+           
+             
+    }
+    catch {
+        Write-Host "`nError Message: " $_.Exception.Message
+        Write-Host "`nError in Line: " $_.InvocationInfo.Line
+        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+        Write-Host "`nError Item Name: "$_.Exception.ItemName
+
+    }
+}
+
 function Update-ParameterSection {
     param (
         [ValidateNotNullOrEmpty()]
@@ -175,7 +228,6 @@ function Update-SpecificStrings {
         [ValidateNotNullOrEmpty()]
         [string] $FilePath
     )
-    $tempFilePath = "$env:TEMP\$($FilePath | Split-Path -Leaf)"
     $s = @{}
     $s.Add("0", "<country code>")
     $s.Add("1", "<extension>")
@@ -189,13 +241,15 @@ function Update-SpecificStrings {
     try {
         $s.Values | ForEach-Object {  
             $string = $_
-            $escaped = IsEscaped -Val $string
-            if ($escaped -ne "NA") {
-                $a = $escaped.Replace('<', '`<').Replace('>', '>`')
-		   (Get-Content -Path $filePath) -replace $string, $a | Add-Content -Path $tempFilePath
-                Remove-Item -Path $filePath
-                Move-Item -Path $tempFilePath -Destination $filePath
-            }
+            $g = IsEscaped -Val $string
+            Write-Host $g
+            $TempContent = Get-Content -Encoding UTF8 -Raw $FilePath
+            $TempContent = $TempContent.Replace($g, $string)
+            $TempContent | Out-File $FilePath -Encoding UTF8
+
+            $Content = Get-Content -Encoding UTF8 -Raw $FilePath
+            $Content = $Content.Replace($string, $g)
+            $Content | Out-File $FilePath -Encoding UTF8
         }
     }
     catch {
@@ -211,26 +265,10 @@ function IsEscaped {
         [ValidateNotNullOrEmpty()]
         [string] $Val
     )
-    $text = Get-Content -Path $filePath
-    try {
 
-        $replacer = $Val.Replace('<', '`<').Replace('>', '>`')
+    $replacer = $Val.Replace('<', '`<').Replace('>', '>`')
 		  
-        $t = $text | Select-String $replacer
-		
-        if (-not $t) {
-            return $Val
-        }
- 	 
-
-    }
-    catch {
-        Write-Host "`nError Message: " $_.Exception.Message
-        Write-Host "`nError in Line: " $_.InvocationInfo.Line
-        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
-        Write-Host "`nError Item Name: "$_.Exception.ItemName
-    }	
-    return "NA"	
+    return $replacer	
 }
 function Remove-Invalid-NextLine-Characters {
     param (

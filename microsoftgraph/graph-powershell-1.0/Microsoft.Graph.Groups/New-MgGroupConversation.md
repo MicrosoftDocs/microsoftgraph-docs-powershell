@@ -9,9 +9,7 @@ ms.subservice: entra-groups
 # New-MgGroupConversation
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Use reply thread or reply post to further post to that conversation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
@@ -51,9 +49,7 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Use reply thread or reply post to further post to that conversation.
 
 ## EXAMPLES
 ### Example 1: Create an extension in a new group post using POST operation
@@ -509,7 +505,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-THREADS <IMicrosoftGraphConversationThread- `[]`>: A collection of all the conversation threads in the conversation.
+THREADS `<IMicrosoftGraphConversationThread- `[]`>`: A collection of all the conversation threads in the conversation.
 A navigation property.
 Read-only.
 Nullable.
@@ -599,7 +595,26 @@ Returned by default.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation)
 
-[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

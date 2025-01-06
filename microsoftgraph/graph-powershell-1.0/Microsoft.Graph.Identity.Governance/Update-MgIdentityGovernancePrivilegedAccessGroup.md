@@ -291,7 +291,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTAPPROVALS <IMicrosoftGraphApproval- `[]`>: .
+ASSIGNMENTAPPROVALS `<IMicrosoftGraphApproval- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Stages <IMicrosoftGraphApprovalStage- `[]`>]`: A collection of stages in the approval decision.
@@ -318,7 +318,7 @@ Read-only.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
-ASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance- `[]`>: The instances of assignment schedules to activate a just-in-time access.
+ASSIGNMENTSCHEDULEINSTANCES `<IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance- `[]`>`: The instances of assignment schedules to activate a just-in-time access.
   - `[EndDateTime <DateTime?>]`: When the schedule instance ends.
 Required.
   - `[StartDateTime <DateTime?>]`: When this instance starts.
@@ -5157,7 +5157,7 @@ Supports $filter (eq).
 Required.
 Supports $filter (eq).
 
-ASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleRequest- `[]`>: The schedule requests for operations to create, update, delete, extend, and renew an assignment.
+ASSIGNMENTSCHEDULEREQUESTS `<IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleRequest- `[]`>`: The schedule requests for operations to create, update, delete, extend, and renew an assignment.
   - `[Action <String>]`: scheduleRequestActions
   - `[IsValidationOnly <Boolean?>]`: Determines whether the call is a validation or an actual call.
 Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
@@ -10022,7 +10022,7 @@ Supports $filter (eq, ne).
   - `[TargetScheduleId <String>]`: The identifier of the schedule that's created from the membership or ownership assignment request.
 Supports $filter (eq, ne).
 
-ASSIGNMENTSCHEDULES <IMicrosoftGraphPrivilegedAccessGroupAssignmentSchedule- `[]`>: The assignment schedules to activate a just-in-time access.
+ASSIGNMENTSCHEDULES `<IMicrosoftGraphPrivilegedAccessGroupAssignmentSchedule- `[]`>`: The assignment schedules to activate a just-in-time access.
   - `[CreatedDateTime <DateTime?>]`: When the schedule was created.
 Optional.
   - `[CreatedUsing <String>]`: The identifier of the access assignment or eligibility request that created this schedule.
@@ -19869,7 +19869,7 @@ Required.
 Optional.
   - `[EligibilitySchedules <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule- `[]`>]`: The eligibility schedules to activate a just-in-time access.
 
-ELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleInstance- `[]`>: The instances of eligibility schedules to activate a just-in-time access.
+ELIGIBILITYSCHEDULEINSTANCES `<IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleInstance- `[]`>`: The instances of eligibility schedules to activate a just-in-time access.
   - `[EndDateTime <DateTime?>]`: When the schedule instance ends.
 Required.
   - `[StartDateTime <DateTime?>]`: When this instance starts.
@@ -24686,7 +24686,7 @@ Supports $filter (eq).
 Required.
 Supports $filter (eq).
 
-ELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest- `[]`>: The schedule requests for operations to create, update, delete, extend, and renew an eligibility.
+ELIGIBILITYSCHEDULEREQUESTS `<IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest- `[]`>`: The schedule requests for operations to create, update, delete, extend, and renew an eligibility.
   - `[Action <String>]`: scheduleRequestActions
   - `[IsValidationOnly <Boolean?>]`: Determines whether the call is a validation or an actual call.
 Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
@@ -29550,7 +29550,7 @@ Supports $filter (eq).
   - `[TargetScheduleId <String>]`: The identifier of the schedule that's created from the eligibility request.
 Optional.
 
-ELIGIBILITYSCHEDULES <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule- `[]`>: The eligibility schedules to activate a just-in-time access.
+ELIGIBILITYSCHEDULES `<IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule- `[]`>`: The eligibility schedules to activate a just-in-time access.
   - `[CreatedDateTime <DateTime?>]`: When the schedule was created.
 Optional.
   - `[CreatedUsing <String>]`: The identifier of the access assignment or eligibility request that created this schedule.
@@ -34385,6 +34385,25 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroup)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

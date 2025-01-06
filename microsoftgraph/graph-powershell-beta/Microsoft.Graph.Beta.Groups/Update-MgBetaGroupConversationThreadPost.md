@@ -617,7 +617,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS <IMicrosoftGraphAttachment- `[]`>: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+ATTACHMENTS `<IMicrosoftGraphAttachment- `[]`>`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
 Supports $expand.
@@ -725,7 +725,7 @@ Nullable.
 Read-only.
     - `[Value <String>]`: A property value.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the post.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the post.
 Read-only.
 Nullable.
 Supports $expand.
@@ -878,7 +878,7 @@ Nullable.
 Read-only.
     - `[Value <String>]`: A property value.
 
-MENTIONS <IMicrosoftGraphMention- `[]`>: .
+MENTIONS `<IMicrosoftGraphMention- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Application <String>]`: The name of the application where the mention is created.
@@ -903,14 +903,14 @@ To get the mentions in a message, see the bodyPreview property of the message in
 Optional.
 Not used and defaulted as null for message.
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the post.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the post.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String- `[]`>]`: A collection of property values.
 
-NEWPARTICIPANTS <IMicrosoftGraphRecipient- `[]`>: Conversation participants that were added to the thread as part of this post.
+NEWPARTICIPANTS `<IMicrosoftGraphRecipient- `[]`>`: Conversation participants that were added to the thread as part of this post.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
@@ -923,7 +923,7 @@ SENDER `<IMicrosoftGraphRecipient>`: recipient
     - `[Address <String>]`: The email address of an entity instance.
     - `[Name <String>]`: The display name of an entity instance.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the post.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the post.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -933,6 +933,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthreadpost)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

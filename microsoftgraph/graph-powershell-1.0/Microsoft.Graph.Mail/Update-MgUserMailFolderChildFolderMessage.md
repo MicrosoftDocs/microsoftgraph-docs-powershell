@@ -838,7 +838,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS <IMicrosoftGraphAttachment- `[]`>: The fileAttachment and itemAttachment attachments for the message.
+ATTACHMENTS `<IMicrosoftGraphAttachment- `[]`>`: The fileAttachment and itemAttachment attachments for the message.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ContentType <String>]`: The MIME type.
@@ -848,7 +848,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Name <String>]`: The attachment's file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-BCCRECIPIENTS <IMicrosoftGraphRecipient- `[]`>: The Bcc: recipients for the message.
+BCCRECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: The Bcc: recipients for the message.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.
@@ -955,13 +955,13 @@ If ispopout is not present or if it is set to 1, then the message is shown in a 
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
 
-CCRECIPIENTS <IMicrosoftGraphRecipient- `[]`>: The Cc: recipients for the message.
+CCRECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: The Cc: recipients for the message.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.
     - `[Name <String>]`: The display name of the person or entity.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the message.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the message.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -994,7 +994,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
   - `[UserId <String>]`: The unique identifier of user
 
-INTERNETMESSAGEHEADERS <IMicrosoftGraphInternetMessageHeader- `[]`>: A collection of message headers defined by RFC5322.
+INTERNETMESSAGEHEADERS `<IMicrosoftGraphInternetMessageHeader- `[]`>`: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
 Returned only on applying a $select query option.
@@ -1002,13 +1002,13 @@ Read-only.
   - `[Name <String>]`: Represents the key in a key-value pair.
   - `[Value <String>]`: The value in a key-value pair.
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the message.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the message.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String- `[]`>]`: A collection of property values.
 
-REPLYTO <IMicrosoftGraphRecipient- `[]`>: The email addresses to use when replying.
+REPLYTO `<IMicrosoftGraphRecipient- `[]`>`: The email addresses to use when replying.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.
@@ -1021,13 +1021,13 @@ SENDER `<IMicrosoftGraphRecipient>`: recipient
     - `[Address <String>]`: The email address of the person or entity.
     - `[Name <String>]`: The display name of the person or entity.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the message.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the message.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String>]`: A property value.
 
-TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: The To: recipients for the message.
+TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: The To: recipients for the message.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.
@@ -1041,6 +1041,25 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfoldermessage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -332,11 +332,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDEXCLUSIONS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+ADDEXCLUSIONS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-ADDMEMBERS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+ADDMEMBERS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
@@ -366,11 +366,11 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
-REMOVEEXCLUSIONS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+REMOVEEXCLUSIONS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-REMOVEMEMBERS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+REMOVEMEMBERS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
@@ -379,6 +379,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudience](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudience)
 
 [https://learn.microsoft.com/graph/api/windowsupdates-deploymentaudience-updateaudience?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-deploymentaudience-updateaudience?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

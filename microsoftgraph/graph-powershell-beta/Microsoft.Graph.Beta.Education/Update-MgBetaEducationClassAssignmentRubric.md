@@ -442,7 +442,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LEVELS <IMicrosoftGraphRubricLevel- `[]`>: The collection of levels making up this rubric.
+LEVELS `<IMicrosoftGraphRubricLevel- `[]`>`: The collection of levels making up this rubric.
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: 
@@ -452,7 +452,7 @@ LEVELS <IMicrosoftGraphRubricLevel- `[]`>: The collection of levels making up th
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LevelId <String>]`: The ID of this resource.
 
-QUALITIES <IMicrosoftGraphRubricQuality- `[]`>: The collection of qualities making up this rubric.
+QUALITIES `<IMicrosoftGraphRubricQuality- `[]`>`: The collection of qualities making up this rubric.
   - `[Criteria <IMicrosoftGraphRubricCriterion- `[]`>]`: The collection of criteria for this rubric quality.
     - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -469,6 +469,25 @@ Weights must add up to 100.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentrubric)
 
 [https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

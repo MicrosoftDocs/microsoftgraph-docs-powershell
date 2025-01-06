@@ -265,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphRoleScopeTagAutoAssignment- `[]`>: The list of assignments for this Role Scope Tag.
+ASSIGNMENTS `<IMicrosoftGraphRoleScopeTagAutoAssignment- `[]`>`: The list of assignments for this Role Scope Tag.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -348,6 +348,25 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementrolescopetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementrolescopetag)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

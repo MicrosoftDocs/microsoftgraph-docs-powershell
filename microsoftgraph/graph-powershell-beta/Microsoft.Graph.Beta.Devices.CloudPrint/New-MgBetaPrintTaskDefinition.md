@@ -287,7 +287,7 @@ CREATEDBY `<IMicrosoftGraphAppIdentity>`: appIdentity
   - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
   - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
 
-TASKS <IMicrosoftGraphPrintTask- `[]`>: A list of tasks that have been created based on this definition.
+TASKS `<IMicrosoftGraphPrintTask- `[]`>`: A list of tasks that have been created based on this definition.
 The list includes currently running tasks and recently completed tasks.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -325,6 +325,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition)
 
 [https://learn.microsoft.com/graph/api/print-post-taskdefinitions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/print-post-taskdefinitions?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

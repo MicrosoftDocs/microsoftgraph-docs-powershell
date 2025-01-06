@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: 8afdb68e-e3f6-4178-bc04-09770b155fe8
+Module Guid: 914ba1b9-5997-438d-a01f-6aafc7535386
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -246,5 +246,23 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserEventExtension](Update-MgUserEventExtension.md)
 
 ### [Update-MgUserEventInstanceExtension](Update-MgUserEventInstanceExtension.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

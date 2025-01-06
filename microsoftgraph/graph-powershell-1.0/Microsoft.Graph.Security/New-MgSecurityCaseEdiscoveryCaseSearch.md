@@ -466,7 +466,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDITIONALSOURCES <IMicrosoftGraphSecurityDataSource- `[]`>: Adds an additional source to the eDiscovery search.
+ADDITIONALSOURCES `<IMicrosoftGraphSecurityDataSource- `[]`>`: Adds an additional source to the eDiscovery search.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -698,7 +698,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANSOURCES <IMicrosoftGraphSecurityDataSource- `[]`>: Custodian sources that are included in the eDiscovery search.
+CUSTODIANSOURCES `<IMicrosoftGraphSecurityDataSource- `[]`>`: Custodian sources that are included in the eDiscovery search.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -891,7 +891,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NONCUSTODIALSOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>: noncustodialDataSource sources that are included in the eDiscovery search
+NONCUSTODIALSOURCES `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>`: noncustodialDataSource sources that are included in the eDiscovery search
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -938,6 +938,25 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasesearch)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverycase-post-searches?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-searches?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

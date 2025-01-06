@@ -1113,7 +1113,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS <IMicrosoftGraphAttachment- `[]`>: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+ATTACHMENTS `<IMicrosoftGraphAttachment- `[]`>`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
 Nullable.
@@ -1127,7 +1127,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 This does not need to be the actual file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-ATTENDEES <IMicrosoftGraphAttendee- `[]`>: The collection of attendees for the event.
+ATTENDEES `<IMicrosoftGraphAttendee- `[]`>`: The collection of attendees for the event.
   - `[Type <String>]`: attendeeType
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1712,7 +1712,7 @@ For example, '2019-04-16T09:00:00'.
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-EXCEPTIONOCCURRENCES <IMicrosoftGraphEvent- `[]`>: .
+EXCEPTIONOCCURRENCES `<IMicrosoftGraphEvent- `[]`>`: .
   - `[Categories <String- `[]`>]`: The categories associated with the item.
   - `[ChangeKey <String>]`: Identifies the version of the item.
 Every time the item is changed, changeKey changes as well.
@@ -1987,7 +1987,7 @@ For recurring events, the value is the same for the series master and all of its
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the event.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the event.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2007,7 +2007,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
-INSTANCES <IMicrosoftGraphEvent- `[]`>: The occurrences of a recurring series, if the event is a series master.
+INSTANCES `<IMicrosoftGraphEvent- `[]`>`: The occurrences of a recurring series, if the event is a series master.
 This property includes occurrences that are part of the recurrence pattern and exceptions that have been modified.
 It doesn't include occurrences that have been canceled from the series.
 Navigation property.
@@ -2314,7 +2314,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-LOCATIONS <IMicrosoftGraphLocation- `[]`>: The locations where the event is held or attended from.
+LOCATIONS `<IMicrosoftGraphLocation- `[]`>`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
 If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -2342,7 +2342,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the event.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2408,7 +2408,7 @@ RESPONSESTATUS `<IMicrosoftGraphResponseStatus>`: responseStatus
 It uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the event.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2427,6 +2427,25 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupevent)
 
 [https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

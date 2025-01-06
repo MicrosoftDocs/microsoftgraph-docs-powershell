@@ -1017,7 +1017,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTS <IMicrosoftGraphAttachment- `[]`>: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+ATTACHMENTS `<IMicrosoftGraphAttachment- `[]`>`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
 Nullable.
@@ -1030,7 +1030,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Name <String>]`: The attachment's file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-ATTENDEES <IMicrosoftGraphAttendee- `[]`>: The collection of attendees for the event.
+ATTENDEES `<IMicrosoftGraphAttendee- `[]`>`: The collection of attendees for the event.
   - `[Type <String>]`: attendeeType
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1563,7 +1563,7 @@ END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the event.
+EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the event.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1581,7 +1581,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[RoomId <String>]`: The unique identifier of room
   - `[UserId <String>]`: The unique identifier of user
 
-INSTANCES <IMicrosoftGraphEvent- `[]`>: The occurrences of a recurring series, if the event is a series master.
+INSTANCES `<IMicrosoftGraphEvent- `[]`>`: The occurrences of a recurring series, if the event is a series master.
 This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
 Navigation property.
 Read-only.
@@ -1860,7 +1860,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-LOCATIONS <IMicrosoftGraphLocation- `[]`>: The locations where the event is held or attended from.
+LOCATIONS `<IMicrosoftGraphLocation- `[]`>`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
 If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1886,7 +1886,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the event.
+MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1954,7 +1954,7 @@ RESPONSESTATUS `<IMicrosoftGraphResponseStatus>`: responseStatus
 It uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the event.
+SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1970,6 +1970,25 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

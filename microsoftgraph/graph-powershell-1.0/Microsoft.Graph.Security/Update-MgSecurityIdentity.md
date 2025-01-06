@@ -219,7 +219,7 @@ These commands run in sequence for the single recommended fix.
     - `[Severity <String>]`: healthIssueSeverity
     - `[Status <String>]`: healthIssueStatus
 
-HEALTHISSUES <IMicrosoftGraphSecurityHealthIssue- `[]`>: Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
+HEALTHISSUES `<IMicrosoftGraphSecurityHealthIssue- `[]`>`: Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdditionalInformation <String- `[]`>]`: Contains additional information about the issue, such as a list of items to fix.
@@ -248,6 +248,25 @@ These commands run in sequence for the single recommended fix.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

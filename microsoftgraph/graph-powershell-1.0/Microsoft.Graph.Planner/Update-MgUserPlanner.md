@@ -443,7 +443,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-PLANS <IMicrosoftGraphPlannerPlan- `[]`>: Read-only.
+PLANS `<IMicrosoftGraphPlannerPlan- `[]`>`: Read-only.
 Nullable.
 Returns the plannerTasks assigned to the user.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -600,7 +600,7 @@ Collection of tasks in the plan.
   - `[Title <String>]`: Required.
 Title of the plan.
 
-TASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+TASKS `<IMicrosoftGraphPlannerTask- `[]`>`: Read-only.
 Nullable.
 Returns the plannerPlans shared with the user.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -692,6 +692,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mguserplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mguserplanner)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

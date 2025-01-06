@@ -483,7 +483,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
   - `[UserId <String>]`: The unique identifier of user
 
-SERVICESTATUS <IMicrosoftGraphServicePlanInfo- `[]`>: The provisioning status of each service included in this subscription.
+SERVICESTATUS `<IMicrosoftGraphServicePlanInfo- `[]`>`: The provisioning status of each service included in this subscription.
   - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
   - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
@@ -494,6 +494,25 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorysubscriptionbycommercesubscriptionid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorysubscriptionbycommercesubscriptionid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

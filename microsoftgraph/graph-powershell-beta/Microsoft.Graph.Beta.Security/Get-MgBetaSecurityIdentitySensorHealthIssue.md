@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityIdentitySensorHealthIssue
 
 ## SYNOPSIS
-Get healthIssues from security
+Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified related to the sensor.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaSecurityIdentitySensorHealthIssue -InputObject <ISecurityIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get healthIssues from security
+Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified related to the sensor.
 
 ## PARAMETERS
 
@@ -389,6 +389,25 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensorhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensorhealthissue)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

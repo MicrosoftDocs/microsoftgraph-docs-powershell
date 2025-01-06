@@ -4977,7 +4977,7 @@ Read-only.
 This relationship can only be used to load a specific term set.
     - `[TermStores <IMicrosoftGraphTermStore- `[]`>]`: The collection of termStores under this site.
 
-VALUE <IMicrosoftGraphSite- `[]`>: .
+VALUE `<IMicrosoftGraphSite- `[]`>`: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -9780,6 +9780,25 @@ This relationship can only be used to load a specific term set.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite)
 
 [https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

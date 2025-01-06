@@ -373,7 +373,7 @@ Read-only.
   - `[SettingName <String>]`: Name of the setting.
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState- `[]`>: .
+DEVICECOMPLIANCESETTINGSTATES `<IMicrosoftGraphDeviceComplianceSettingState- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
@@ -392,6 +392,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicysettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicysettingstatesummary)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5232,7 +5232,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
-MANAGEDDEVICES <IMicrosoftGraphManagedDevice- `[]`>: The devices that have the discovered application installed
+MANAGEDDEVICES `<IMicrosoftGraphManagedDevice- `[]`>`: The devices that have the discovered application installed
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceState <ComplianceState?>]`: Compliance state.
@@ -10034,6 +10034,25 @@ Defaults to setting on client device.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdetectedapp)
 
 [https://learn.microsoft.com/graph/api/intune-devices-detectedapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-detectedapp-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

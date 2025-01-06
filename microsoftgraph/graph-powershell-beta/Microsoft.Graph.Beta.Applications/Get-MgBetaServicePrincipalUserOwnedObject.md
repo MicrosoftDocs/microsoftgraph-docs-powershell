@@ -206,3 +206,22 @@ BODYPARAMETER `<IPaths1Ob0K0NServiceprincipalsMicrosoftGraphGetuserownedobjectsP
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

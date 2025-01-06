@@ -751,7 +751,7 @@ PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PICTURE <IMicrosoftGraphPicture- `[]`>: .
+PICTURE `<IMicrosoftGraphPicture- `[]`>`: .
   - `[Content <Byte- `[]`>]`: 
   - `[ContentType <String>]`: 
   - `[Height <Int32?>]`: 
@@ -768,6 +768,25 @@ SHIPMENTMETHOD `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

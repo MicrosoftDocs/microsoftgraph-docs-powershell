@@ -546,7 +546,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIEDPOLICIES <IMicrosoftGraphManagedAppPolicy- `[]`>: Zero or more policys already applied on the registered app when it last synchronized with managment service.
+APPLIEDPOLICIES `<IMicrosoftGraphManagedAppPolicy- `[]`>`: Zero or more policys already applied on the registered app when it last synchronized with managment service.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
@@ -707,7 +707,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-INTENDEDPOLICIES <IMicrosoftGraphManagedAppPolicy- `[]`>: Zero or more policies admin intended for the app as of now.
+INTENDEDPOLICIES `<IMicrosoftGraphManagedAppPolicy- `[]`>`: Zero or more policies admin intended for the app as of now.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
@@ -717,7 +717,7 @@ Read-only.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
   - `[Version <String>]`: Version of the entity.
 
-MANAGEDAPPLOGCOLLECTIONREQUESTS <IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>: Zero or more log collection requests triggered for the app.
+MANAGEDAPPLOGCOLLECTIONREQUESTS `<IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>`: Zero or more log collection requests triggered for the app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: DateTime of when the log upload request was completed.
@@ -753,7 +753,7 @@ Read-only.
   - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
   - `[Version <String>]`: Version of the entity.
 
-OPERATIONS <IMicrosoftGraphManagedAppOperation- `[]`>: Zero or more long running operations triggered on the app registration.
+OPERATIONS `<IMicrosoftGraphManagedAppOperation- `[]`>`: Zero or more long running operations triggered on the app registration.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The operation name.
@@ -764,6 +764,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmanagedappregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmanagedappregistration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

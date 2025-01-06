@@ -378,3 +378,22 @@ BODYPARAMETER `<IPaths1QqqzoyDevicemanagementReportsMicrosoftGraphGetcompliances
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Notes
-Module Guid: c9a7e41d-d698-42e7-aa78-757aa8103d33
+Module Guid: f4eaa97c-10e1-427c-89cf-b0d76139e1f6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.notes/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -266,5 +266,23 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserOnenoteSection](Update-MgBetaUserOnenoteSection.md)
 
 ### [Update-MgBetaUserOnenoteSectionGroup](Update-MgBetaUserOnenoteSectionGroup.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

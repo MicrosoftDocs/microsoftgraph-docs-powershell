@@ -1297,7 +1297,7 @@ Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time for Apple push notification certificate.
   - `[TopicIdentifier <String>]`: Topic Id.
 
-AUDITEVENTS <IMicrosoftGraphAuditEvent- `[]`>: The Audit Events
+AUDITEVENTS `<IMicrosoftGraphAuditEvent- `[]`>`: The Audit Events
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Activity <String>]`: Friendly name of the activity.
@@ -7908,7 +7908,7 @@ Valid values -2147483648 to 2147483647
     - `[TotalMalwareCount <Int32?>]`: Count of all malware detections across all devices.
 Valid values -2147483648 to 2147483647
 
-COMPLIANCEMANAGEMENTPARTNERS <IMicrosoftGraphComplianceManagementPartner- `[]`>: The list of Compliance Management Partners configured by the tenant.
+COMPLIANCEMANAGEMENTPARTNERS `<IMicrosoftGraphComplianceManagementPartner- `[]`>`: The list of Compliance Management Partners configured by the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment- `[]`>]`: User groups which enroll Android devices through partner.
@@ -7934,7 +7934,7 @@ All users in these groups will be exempt from the conditional access policy.
 All users in these groups will be required to have mobile device managed and compliant for mail access.
   - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
 
-DETECTEDAPPS <IMicrosoftGraphDetectedApp- `[]`>: The list of detected apps associated with a device.
+DETECTEDAPPS `<IMicrosoftGraphDetectedApp- `[]`>`: The list of detected apps associated with a device.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
@@ -12747,13 +12747,13 @@ Read-only
   - `[Version <String>]`: Version of the discovered application.
 Read-only
 
-DEVICECATEGORIES <IMicrosoftGraphDeviceCategory- `[]`>: The list of device categories with the tenant.
+DEVICECATEGORIES `<IMicrosoftGraphDeviceCategory- `[]`>`: The list of device categories with the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
 
-DEVICECOMPLIANCEPOLICIES <IMicrosoftGraphDeviceCompliancePolicy- `[]`>: The device compliance policies.
+DEVICECOMPLIANCEPOLICIES `<IMicrosoftGraphDeviceCompliancePolicy- `[]`>`: The device compliance policies.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment- `[]`>]`: The collection of assignments for this compliance policy.
@@ -12848,7 +12848,7 @@ Read-only.
   - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary- `[]`>: The summary states of compliance policy settings for this account.
+DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES `<IMicrosoftGraphDeviceCompliancePolicySettingStateSummary- `[]`>`: The summary states of compliance policy settings for this account.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
@@ -12888,7 +12888,7 @@ Read-only.
   - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECONFIGURATIONS <IMicrosoftGraphDeviceConfiguration- `[]`>: The device configurations.
+DEVICECONFIGURATIONS `<IMicrosoftGraphDeviceConfiguration- `[]`>`: The device configurations.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment- `[]`>]`: The list of assignments for the device configuration profile.
@@ -12954,7 +12954,7 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICEENROLLMENTCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>: The list of device enrollment configurations
+DEVICEENROLLMENTCONFIGURATIONS `<IMicrosoftGraphDeviceEnrollmentConfiguration- `[]`>`: The list of device enrollment configurations
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>]`: The list of group assignments for the device configuration profile
@@ -12970,7 +12970,7 @@ Read-only.
 Users are subject only to the configuration with the lowest priority value.
   - `[Version <Int32?>]`: The version of the device enrollment configuration
 
-DEVICEMANAGEMENTPARTNERS <IMicrosoftGraphDeviceManagementPartner- `[]`>: The list of Device Management Partners configured by the tenant.
+DEVICEMANAGEMENTPARTNERS `<IMicrosoftGraphDeviceManagementPartner- `[]`>`: The list of Device Management Partners configured by the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Partner display name
@@ -13000,7 +13000,7 @@ Valid values -2147483648 to 2147483647
   - `[TotalReportedDeviceCount <Int32?>]`: Total device count.
   - `[UnknownStateThreatAgentDeviceCount <Int32?>]`: Indicates number of devices with threat agent state as unknown
 
-EXCHANGECONNECTORS <IMicrosoftGraphDeviceManagementExchangeConnector- `[]`>: The list of Exchange Connectors configured by the tenant.
+EXCHANGECONNECTORS `<IMicrosoftGraphDeviceManagementExchangeConnector- `[]`>`: The list of Exchange Connectors configured by the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
@@ -13013,7 +13013,7 @@ Read-only.
   - `[Status <DeviceManagementExchangeConnectorStatus?>]`: The current status of the Exchange Connector.
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
-IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity- `[]`>: Collection of imported Windows autopilot devices.
+IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity- `[]`>`: Collection of imported Windows autopilot devices.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
@@ -13053,7 +13053,7 @@ INTUNEBRAND `<IMicrosoftGraphIntuneBrand>`: intuneBrand contains data which is u
     - `[G <Int32?>]`: Green value
     - `[R <Int32?>]`: Red value
 
-IOSUPDATESTATUSES <IMicrosoftGraphIosUpdateDeviceStatus- `[]`>: The IOS software update installation statuses for this account.
+IOSUPDATESTATUSES `<IMicrosoftGraphIosUpdateDeviceStatus- `[]`>`: The IOS software update installation statuses for this account.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
@@ -13100,7 +13100,7 @@ Valid values -1 to 2147483647
 Does not include PC devices managed via Intune PC Agent
   - `[MdmEnrolledCount <Int32?>]`: The number of devices enrolled in MDM
 
-MANAGEDDEVICES <IMicrosoftGraphManagedDevice- `[]`>: The list of managed devices.
+MANAGEDDEVICES `<IMicrosoftGraphManagedDevice- `[]`>`: The list of managed devices.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ComplianceState <ComplianceState?>]`: Compliance state.
@@ -17897,7 +17897,7 @@ Defaults to setting on client device.
     - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled.
 Defaults to setting on client device.
 
-MOBILEAPPTROUBLESHOOTINGEVENTS <IMicrosoftGraphMobileAppTroubleshootingEvent- `[]`>: The collection property of MobileAppTroubleshootingEvent.
+MOBILEAPPTROUBLESHOOTINGEVENTS `<IMicrosoftGraphMobileAppTroubleshootingEvent- `[]`>`: The collection property of MobileAppTroubleshootingEvent.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
@@ -17908,7 +17908,7 @@ Read-only.
     - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
     - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-MOBILETHREATDEFENSECONNECTORS <IMicrosoftGraphMobileThreatDefenseConnector- `[]`>: The list of Mobile threat Defense connectors configured by the tenant.
+MOBILETHREATDEFENSECONNECTORS `<IMicrosoftGraphMobileThreatDefenseConnector- `[]`>`: The list of Mobile threat Defense connectors configured by the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowPartnerToCollectIosApplicationMetadata <Boolean?>]`: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for IOS devices.
@@ -17943,7 +17943,7 @@ Default value is FALSE.
 When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during compliance evaluations for Windows.
 Default value is FALSE.
 
-NOTIFICATIONMESSAGETEMPLATES <IMicrosoftGraphNotificationMessageTemplate- `[]`>: The Notification Message Templates.
+NOTIFICATIONMESSAGETEMPLATES `<IMicrosoftGraphNotificationMessageTemplate- `[]`>`: The Notification Message Templates.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[BrandingOptions <NotificationTemplateBrandingOptions?>]`: Branding Options for the Message Template.
@@ -17963,7 +17963,7 @@ To unset, set this property to true on another Localized Notification Message.
     - `[Subject <String>]`: The Message Template Subject.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
 
-REMOTEASSISTANCEPARTNERS <IMicrosoftGraphRemoteAssistancePartner- `[]`>: The remote assist partners.
+REMOTEASSISTANCEPARTNERS `<IMicrosoftGraphRemoteAssistancePartner- `[]`>`: The remote assist partners.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Display name of the partner.
@@ -17992,7 +17992,7 @@ Filter, Select, and OrderBy cannot be specified together with a CachedReportConf
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
     - `[Url <String>]`: Temporary location of the exported report
 
-RESOURCEOPERATIONS <IMicrosoftGraphResourceOperation- `[]`>: The Resource Operations.
+RESOURCEOPERATIONS `<IMicrosoftGraphResourceOperation- `[]`>`: The Resource Operations.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActionName <String>]`: Type of action this operation is going to perform.
@@ -18001,7 +18001,7 @@ The actionName should be concise and limited to as few words as possible.
 The description is used in mouse-over text for the operation when shown in the Azure Portal.
   - `[ResourceName <String>]`: Name of the Resource this operation is performed on.
 
-ROLEASSIGNMENTS <IMicrosoftGraphDeviceAndAppManagementRoleAssignment- `[]`>: The Role Assignments.
+ROLEASSIGNMENTS `<IMicrosoftGraphDeviceAndAppManagementRoleAssignment- `[]`>`: The Role Assignments.
   - `[Description <String>]`: Description of the Role Assignment.
   - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
   - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups. 
@@ -18044,7 +18044,7 @@ Read-only.
   - `[Members <String- `[]`>]`: The list of ids of role member security groups.
 These are IDs from Azure Active Directory.
 
-ROLEDEFINITIONS <IMicrosoftGraphRoleDefinition- `[]`>: The Role Definitions.
+ROLEDEFINITIONS `<IMicrosoftGraphRoleDefinition- `[]`>`: The Role Definitions.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Description of the Role definition.
@@ -18097,7 +18097,7 @@ Read-only.
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices.
   - `[UnknownUserCount <Int32?>]`: Number of unknown users.
 
-TELECOMEXPENSEMANAGEMENTPARTNERS <IMicrosoftGraphTelecomExpenseManagementPartner- `[]`>: The telecom expense management partners.
+TELECOMEXPENSEMANAGEMENTPARTNERS `<IMicrosoftGraphTelecomExpenseManagementPartner- `[]`>`: The telecom expense management partners.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppAuthorized <Boolean?>]`: Whether the partner's AAD app has been authorized to access Intune.
@@ -18106,7 +18106,7 @@ Read-only.
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
   - `[Url <String>]`: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
 
-TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions- `[]`>: The terms and conditions associated with device management of the company.
+TERMSANDCONDITIONS `<IMicrosoftGraphTermsAndConditions- `[]`>`: The terms and conditions associated with device management of the company.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.
@@ -18137,13 +18137,13 @@ This is shown to the user on prompts to accept the T&C policy.
   - `[Version <Int32?>]`: Integer indicating the current version of the terms.
 Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
-TROUBLESHOOTINGEVENTS <IMicrosoftGraphDeviceManagementTroubleshootingEvent- `[]`>: The list of troubleshooting events for the tenant.
+TROUBLESHOOTINGEVENTS `<IMicrosoftGraphDeviceManagementTroubleshootingEvent- `[]`>`: The list of troubleshooting events for the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
 
-USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCE <IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance- `[]`>: User experience analytics appHealth Application Performance
+USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCE `<IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance- `[]`>`: User experience analytics appHealth Application Performance
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveDeviceCount <Int32?>]`: The health score of the application.
@@ -18187,7 +18187,7 @@ Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
 
-USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCEBYAPPVERSIONDETAILS <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails- `[]`>: User experience analytics appHealth Application Performance by App Version details
+USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCEBYAPPVERSIONDETAILS `<IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails- `[]`>`: User experience analytics appHealth Application Performance by App Version details
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppCrashCount <Int32?>]`: The number of crashes for the app.
@@ -18211,7 +18211,7 @@ FALSE by default.
 Supports: $select, $OrderBy.
 Read-only.
 
-USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCEBYAPPVERSIONDEVICEID <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId- `[]`>: User experience analytics appHealth Application Performance by App Version Device Id
+USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCEBYAPPVERSIONDEVICEID `<IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId- `[]`>`: User experience analytics appHealth Application Performance by App Version Device Id
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppCrashCount <Int32?>]`: The number of crashes for the app.
@@ -18233,7 +18233,7 @@ For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00
 Returned by default.
 Read-only.
 
-USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCEBYOSVERSION <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion- `[]`>: User experience analytics appHealth Application Performance by OS Version
+USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCEBYOSVERSION `<IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion- `[]`>`: User experience analytics appHealth Application Performance by OS Version
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveDeviceCount <Int32?>]`: The number of devices where the application has been active.
@@ -18274,7 +18274,7 @@ Read-only.
 Supports: $select, $OrderBy.
 Read-only.
 
-USEREXPERIENCEANALYTICSAPPHEALTHDEVICEMODELPERFORMANCE <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance- `[]`>: User experience analytics appHealth Model Performance
+USEREXPERIENCEANALYTICSAPPHEALTHDEVICEMODELPERFORMANCE `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance- `[]`>`: User experience analytics appHealth Model Performance
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveDeviceCount <Int32?>]`: The number of active devices for the model.
@@ -18300,7 +18300,7 @@ Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-USEREXPERIENCEANALYTICSAPPHEALTHDEVICEPERFORMANCE <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance- `[]`>: User experience analytics appHealth Device Performance
+USEREXPERIENCEANALYTICSAPPHEALTHDEVICEPERFORMANCE `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance- `[]`>`: User experience analytics appHealth Device Performance
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppCrashCount <Int32?>]`: The number of application crashes for the device.
@@ -18348,7 +18348,7 @@ For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00
 Returned by default.
 Read-only.
 
-USEREXPERIENCEANALYTICSAPPHEALTHDEVICEPERFORMANCEDETAILS <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails- `[]`>: User experience analytics device performance details
+USEREXPERIENCEANALYTICSAPPHEALTHDEVICEPERFORMANCEDETAILS `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails- `[]`>`: User experience analytics device performance details
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppDisplayName <String>]`: The friendly name of the application for which the event occurred.
@@ -18378,7 +18378,7 @@ Read-only.
 Supports: $select, $OrderBy.
 Read-only.
 
-USEREXPERIENCEANALYTICSAPPHEALTHOSVERSIONPERFORMANCE <IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance- `[]`>: User experience analytics appHealth OS version Performance
+USEREXPERIENCEANALYTICSAPPHEALTHOSVERSIONPERFORMANCE `<IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance- `[]`>`: User experience analytics appHealth OS version Performance
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveDeviceCount <Int32?>]`: The number of active devices for the OS version.
@@ -18422,7 +18422,7 @@ Read-only.
 Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-USEREXPERIENCEANALYTICSBASELINES <IMicrosoftGraphUserExperienceAnalyticsBaseline- `[]`>: User experience analytics baselines
+USEREXPERIENCEANALYTICSBASELINES `<IMicrosoftGraphUserExperienceAnalyticsBaseline- `[]`>`: User experience analytics baselines
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
@@ -18459,7 +18459,7 @@ FALSE by default.
   - `[ResourcePerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
 
-USEREXPERIENCEANALYTICSCATEGORIES <IMicrosoftGraphUserExperienceAnalyticsCategory- `[]`>: User experience analytics categories
+USEREXPERIENCEANALYTICSCATEGORIES `<IMicrosoftGraphUserExperienceAnalyticsCategory- `[]`>`: User experience analytics categories
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>]`: The insights for the category.
@@ -18477,7 +18477,7 @@ Read-only.
 Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
-USEREXPERIENCEANALYTICSDEVICEPERFORMANCE <IMicrosoftGraphUserExperienceAnalyticsDevicePerformance- `[]`>: User experience analytics device performance
+USEREXPERIENCEANALYTICSDEVICEPERFORMANCE `<IMicrosoftGraphUserExperienceAnalyticsDevicePerformance- `[]`>`: User experience analytics device performance
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AverageBlueScreens <Double?>]`: Average (mean) number of Blue Screens per device in the last 30 days.
@@ -18507,7 +18507,7 @@ Valid values 0 to 9999999
   - `[StartupPerformanceScore <Double?>]`: The user experience analytics device startup performance score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-USEREXPERIENCEANALYTICSDEVICESCORES <IMicrosoftGraphUserExperienceAnalyticsDeviceScores- `[]`>: User experience analytics device scores
+USEREXPERIENCEANALYTICSDEVICESCORES `<IMicrosoftGraphUserExperienceAnalyticsDeviceScores- `[]`>`: User experience analytics device scores
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppReliabilityScore <Double?>]`: Indicates a score calculated from application health data to indicate when a device is having problems running one or more applications.
@@ -18552,7 +18552,7 @@ A higher score indicates a healthier device.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-USEREXPERIENCEANALYTICSDEVICESTARTUPHISTORY <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory- `[]`>: User experience analytics device Startup History
+USEREXPERIENCEANALYTICSDEVICESTARTUPHISTORY `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory- `[]`>`: User experience analytics device Startup History
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CoreBootTimeInMS <Int32?>]`: The device core boot time in milliseconds.
@@ -18609,7 +18609,7 @@ Read-only.
 Supports: $select, $OrderBy.
 Read-only.
 
-USEREXPERIENCEANALYTICSDEVICESTARTUPPROCESSES <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess- `[]`>: User experience analytics device Startup Processes
+USEREXPERIENCEANALYTICSDEVICESTARTUPPROCESSES `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess- `[]`>`: User experience analytics device Startup Processes
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ManagedDeviceId <String>]`: The Intune device id of the device.
@@ -18631,7 +18631,7 @@ Read-only.
 Supports: $select, $OrderBy.
 Read-only.
 
-USEREXPERIENCEANALYTICSDEVICESTARTUPPROCESSPERFORMANCE <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance- `[]`>: User experience analytics device Startup Process Performance
+USEREXPERIENCEANALYTICSDEVICESTARTUPPROCESSPERFORMANCE `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance- `[]`>`: User experience analytics device Startup Process Performance
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceCount <Int64?>]`: The count of devices which initiated this process on startup.
@@ -18656,7 +18656,7 @@ Read-only.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 
-USEREXPERIENCEANALYTICSMETRICHISTORY <IMicrosoftGraphUserExperienceAnalyticsMetricHistory- `[]`>: User experience analytics metric history
+USEREXPERIENCEANALYTICSMETRICHISTORY `<IMicrosoftGraphUserExperienceAnalyticsMetricHistory- `[]`>`: User experience analytics metric history
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceId <String>]`: The Intune device id of the device.
@@ -18667,7 +18667,7 @@ For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00
 Returned by default.
   - `[MetricType <String>]`: The user experience analytics metric type.
 
-USEREXPERIENCEANALYTICSMODELSCORES <IMicrosoftGraphUserExperienceAnalyticsModelScores- `[]`>: User experience analytics model scores
+USEREXPERIENCEANALYTICSMODELSCORES `<IMicrosoftGraphUserExperienceAnalyticsModelScores- `[]`>`: User experience analytics model scores
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppReliabilityScore <Double?>]`: Indicates a score calculated from application health data to indicate when a device is having problems running one or more applications.
@@ -18725,7 +18725,7 @@ Possible values are: None, Informational, Warning, Error.
     - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
     - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue- `[]`>]`: The value of the user experience analytics insight.
 
-USEREXPERIENCEANALYTICSSCOREHISTORY <IMicrosoftGraphUserExperienceAnalyticsScoreHistory- `[]`>: User experience analytics device Startup Score History
+USEREXPERIENCEANALYTICSSCOREHISTORY `<IMicrosoftGraphUserExperienceAnalyticsScoreHistory- `[]`>`: User experience analytics device Startup Score History
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[StartupDateTime <DateTime?>]`: The device startup date time.
@@ -18800,7 +18800,7 @@ Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
 
-USEREXPERIENCEANALYTICSWORKFROMANYWHEREMETRICS <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric- `[]`>: User experience analytics work from anywhere metrics.
+USEREXPERIENCEANALYTICSWORKFROMANYWHEREMETRICS `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric- `[]`>`: User experience analytics work from anywhere metrics.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[MetricDevices <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice- `[]`>]`: The work from anywhere metric devices.
@@ -18937,7 +18937,7 @@ Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-USEREXPERIENCEANALYTICSWORKFROMANYWHEREMODELPERFORMANCE <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance- `[]`>: The user experience analytics work from anywhere model performance
+USEREXPERIENCEANALYTICSWORKFROMANYWHEREMODELPERFORMANCE `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance- `[]`>`: The user experience analytics work from anywhere model performance
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CloudIdentityScore <Double?>]`: The cloud identity score of the device model.
@@ -24082,7 +24082,7 @@ The default value is false.
       - `[UserRestoreEnabled <Boolean?>]`: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
 
-WINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphWindowsAutopilotDeviceIdentity- `[]`>: The Windows autopilot device identities contained collection.
+WINDOWSAUTOPILOTDEVICEIDENTITIES `<IMicrosoftGraphWindowsAutopilotDeviceIdentity- `[]`>`: The Windows autopilot device identities contained collection.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AddressableUserName <String>]`: Addressable user name.
@@ -24102,20 +24102,20 @@ Read-only.
   - `[SystemFamily <String>]`: System Family
   - `[UserPrincipalName <String>]`: User Principal Name.
 
-WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary- `[]`>: The windows information protection app learning summaries.
+WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES `<IMicrosoftGraphWindowsInformationProtectionAppLearningSummary- `[]`>`: The windows information protection app learning summaries.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ApplicationName <String>]`: Application Name
   - `[ApplicationType <ApplicationType?>]`: Possible types of Application
   - `[DeviceCount <Int32?>]`: Device Count
 
-WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary- `[]`>: The windows information protection network learning summaries.
+WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES `<IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary- `[]`>`: The windows information protection network learning summaries.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeviceCount <Int32?>]`: Device Count
   - `[Url <String>]`: Website url
 
-WINDOWSMALWAREINFORMATION <IMicrosoftGraphWindowsMalwareInformation- `[]`>: The list of affected malware in the tenant.
+WINDOWSMALWAREINFORMATION `<IMicrosoftGraphWindowsMalwareInformation- `[]`>`: The list of affected malware in the tenant.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdditionalInformationUrl <String>]`: Indicates an informational URL to learn more about the malware
@@ -24182,7 +24182,26 @@ Valid values -2147483648 to 2147483647
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement)
 
-[https://learn.microsoft.com/graph/api/intune-devices-devicemanagement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-devicemanagement-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-policyset-devicemanagement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-policyset-devicemanagement-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

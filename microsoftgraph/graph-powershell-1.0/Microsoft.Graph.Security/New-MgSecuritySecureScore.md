@@ -328,7 +328,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore- `[]`>: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
+AVERAGECOMPARATIVESCORES `<IMicrosoftGraphAverageComparativeScore- `[]`>`: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
   - `[AverageScore <Double?>]`: Average score within specified basis.
   - `[Basis <String>]`: Scope type.
 The possible values are: AllTenants, TotalSeats, IndustryTypes.
@@ -362,7 +362,7 @@ Required
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-CONTROLSCORES <IMicrosoftGraphControlScore- `[]`>: Contains tenant scores for a set of controls.
+CONTROLSCORES `<IMicrosoftGraphControlScore- `[]`>`: Contains tenant scores for a set of controls.
   - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
   - `[ControlName <String>]`: Control unique name.
   - `[Description <String>]`: Description of the control.
@@ -380,6 +380,25 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

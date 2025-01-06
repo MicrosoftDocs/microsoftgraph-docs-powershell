@@ -295,7 +295,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
   - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
-SERVICEMANAGEMENTDETAILS <IMicrosoftGraphDelegatedAdminServiceManagementDetail- `[]`>: Contains the management details of a service in the customer tenant that's managed by delegated administration.
+SERVICEMANAGEMENTDETAILS `<IMicrosoftGraphDelegatedAdminServiceManagementDetail- `[]`>`: Contains the management details of a service in the customer tenant that's managed by delegated administration.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ServiceManagementUrl <String>]`: The URL of the management portal for the managed service.
@@ -306,6 +306,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadmincustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadmincustomer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

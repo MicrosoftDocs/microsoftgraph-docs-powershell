@@ -79,7 +79,7 @@ endUserNotificationSetting = @{
 	settingType = "noTraining"
 	positiveReinforcement = @{
 		deliveryPreference = "deliverAfterCampaignEnd"
-		endUserNotification = "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
+		"endUserNotification@odata.bind" = "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
 		defaultLanguage = "en"
 	}
 	simulationNotification = @{
@@ -1085,6 +1085,25 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation)
 
 [https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-beta](https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

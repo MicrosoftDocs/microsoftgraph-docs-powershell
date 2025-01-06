@@ -479,7 +479,7 @@ If false, the default settings are customized.
       - `[Rule <String>]`: Defines the rule to filter the devices.
 For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
-PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner- `[]`>: Defines partner-specific configurations for external Microsoft Entra organizations.
+PARTNERS `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner- `[]`>`: Defines partner-specific configurations for external Microsoft Entra organizations.
   - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[InboundAllowed <Boolean?>]`: Defines whether external users coming inbound are allowed.
@@ -576,6 +576,25 @@ Office365 - Includes the applications mentioned as part of the Office 365 suite.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy)
 
 [https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

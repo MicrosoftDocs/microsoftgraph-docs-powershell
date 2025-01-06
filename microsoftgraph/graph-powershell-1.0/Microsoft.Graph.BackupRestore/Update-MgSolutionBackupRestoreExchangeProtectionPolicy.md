@@ -480,7 +480,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-MAILBOXINCLUSIONRULES <IMicrosoftGraphMailboxProtectionRule- `[]`>: The rules associated with the Exchange protection policy.
+MAILBOXINCLUSIONRULES `<IMicrosoftGraphMailboxProtectionRule- `[]`>`: The rules associated with the Exchange protection policy.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -516,7 +516,7 @@ Read-only.
   - `[MailboxExpression <String>]`: Contains a mailbox expression.
 For examples, see mailboxExpression examples.
 
-MAILBOXPROTECTIONUNITS <IMicrosoftGraphMailboxProtectionUnit- `[]`>: The protection units (mailboxes) that are protected under the Exchange protection policy.
+MAILBOXPROTECTIONUNITS `<IMicrosoftGraphMailboxProtectionUnit- `[]`>`: The protection units (mailboxes) that are protected under the Exchange protection policy.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -551,7 +551,7 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   - `[DirectoryObjectId <String>]`: The ID of the directory object.
 
-RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retention setting details for the policy.
+RETENTIONSETTINGS `<IMicrosoftGraphRetentionSetting- `[]`>`: Contains the retention setting details for the policy.
   - `[Interval <String>]`: The frequency of the backup.
   - `[Period <TimeSpan?>]`: The period of time to retain the protected data for a single Microsoft 365 service.
 
@@ -560,6 +560,25 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retentio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangeprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangeprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

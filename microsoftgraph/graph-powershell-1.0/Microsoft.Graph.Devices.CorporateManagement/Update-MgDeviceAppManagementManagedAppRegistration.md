@@ -462,7 +462,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIEDPOLICIES <IMicrosoftGraphManagedAppPolicy- `[]`>: Zero or more policys already applied on the registered app when it last synchronized with managment service.
+APPLIEDPOLICIES `<IMicrosoftGraphManagedAppPolicy- `[]`>`: Zero or more policys already applied on the registered app when it last synchronized with managment service.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
@@ -545,7 +545,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
-INTENDEDPOLICIES <IMicrosoftGraphManagedAppPolicy- `[]`>: Zero or more policies admin intended for the app as of now.
+INTENDEDPOLICIES `<IMicrosoftGraphManagedAppPolicy- `[]`>`: Zero or more policies admin intended for the app as of now.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
@@ -554,7 +554,7 @@ Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
   - `[Version <String>]`: Version of the entity.
 
-OPERATIONS <IMicrosoftGraphManagedAppOperation- `[]`>: Zero or more long running operations triggered on the app registration.
+OPERATIONS `<IMicrosoftGraphManagedAppOperation- `[]`>`: Zero or more long running operations triggered on the app registration.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The operation name.
@@ -565,6 +565,25 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
