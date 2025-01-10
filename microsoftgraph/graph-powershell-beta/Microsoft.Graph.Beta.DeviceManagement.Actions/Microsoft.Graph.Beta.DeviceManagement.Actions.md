@@ -711,3 +711,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
