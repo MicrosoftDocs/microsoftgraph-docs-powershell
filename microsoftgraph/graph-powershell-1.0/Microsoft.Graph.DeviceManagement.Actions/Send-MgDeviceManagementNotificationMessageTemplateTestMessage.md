@@ -34,13 +34,17 @@ Send-MgDeviceManagementNotificationMessageTemplateTestMessage -InputObject <IDev
 Sends test message using the specified notificationMessageTemplate in the default locale
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 Send-MgDeviceManagementNotificationMessageTemplateTestMessage -NotificationMessageTemplateId $notificationMessageTemplateId
+
+```
+This example shows how to use the Send-MgDeviceManagementNotificationMessageTemplateTestMessage Cmdlet.
+
 
 ## PARAMETERS
 

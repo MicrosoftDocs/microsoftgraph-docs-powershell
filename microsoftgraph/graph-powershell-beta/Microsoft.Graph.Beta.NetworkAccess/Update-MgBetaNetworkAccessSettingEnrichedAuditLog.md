@@ -36,11 +36,11 @@ Update the settings for the enriched audit logs workloads to control the enrichm
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-enrichedauditlogs-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.networkaccess.enrichedAuditLogs"
@@ -56,6 +56,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessSettingEnrichedAuditLog -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessSettingEnrichedAuditLog Cmdlet.
+
 
 ## PARAMETERS
 

@@ -55,11 +55,11 @@ You must specify the @odata.type property and the value of the authenticationEve
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventlistener-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartListener"
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityAuthenticationEventListener -AuthenticationEventListenerId $authenticationEventListenerId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityAuthenticationEventListener Cmdlet.
+
 
 ## PARAMETERS
 

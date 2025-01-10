@@ -39,11 +39,11 @@ An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getinaccessiblecloudpcreports-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	filter = "region eq 'westus2'"
@@ -69,6 +69,10 @@ skip = 0
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport Cmdlet.
+
 
 ## PARAMETERS
 

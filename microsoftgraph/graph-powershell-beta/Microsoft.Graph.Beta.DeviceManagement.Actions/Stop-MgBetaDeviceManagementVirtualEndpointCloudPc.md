@@ -54,13 +54,17 @@ Only IT admin users can perform this action.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweroff-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 Stop-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Stop-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

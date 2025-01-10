@@ -39,11 +39,11 @@ Update the properties of a lifecycleManagementSettings object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecyclemanagementsettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	"@odata.context" = "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity"
@@ -55,6 +55,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
+
 
 ## PARAMETERS
 

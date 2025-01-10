@@ -35,18 +35,6 @@ Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDevi
 The report will be retired on December 31, 2024.
 You can start using the Cloud PC connection quality report now via https://go.microsoft.com/fwlink/?linkid=2283835.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -298,6 +286,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetasummarizedevicemanagementuserexperienceanalyticremoteconnectiondeviceremoteconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetasummarizedevicemanagementuserexperienceanalyticremoteconnectiondeviceremoteconnection)
+
 
 
 

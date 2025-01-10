@@ -37,13 +37,17 @@ Deletes an externalConnection object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 Remove-MgExternalConnection -ExternalConnectionId $externalConnectionId
+
+```
+This example shows how to use the Remove-MgExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 

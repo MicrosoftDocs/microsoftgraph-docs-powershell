@@ -36,18 +36,6 @@ Remove a user or group from the rejected-senders list of the specified group.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-rejectedsenders-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -273,6 +261,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouprejectedsenderdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouprejectedsenderdirectoryobjectbyref)
 
 [https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-beta)
+
 
 
 

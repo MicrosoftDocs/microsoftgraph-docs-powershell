@@ -61,11 +61,11 @@ Update the properties of a browserSite object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersite-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement
-```
 
 $params = @{
 	webUrl = "www.microsoft.com"
@@ -77,6 +77,10 @@ $params = @{
 }
 
 Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
+
 
 ## PARAMETERS
 

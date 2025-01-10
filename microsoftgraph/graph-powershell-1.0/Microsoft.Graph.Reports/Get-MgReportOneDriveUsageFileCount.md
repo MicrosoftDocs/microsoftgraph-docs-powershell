@@ -38,13 +38,17 @@ A file is considered active if it has been saved, synced, modified, or shared wi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveusagefilecounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportOneDriveUsageFileCount -Period $periodId
+Get-MgReportOneDriveUsageFileCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOneDriveUsageFileCount Cmdlet.
+
 
 ## PARAMETERS
 

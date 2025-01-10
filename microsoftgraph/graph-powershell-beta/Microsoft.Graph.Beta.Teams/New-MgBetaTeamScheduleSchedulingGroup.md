@@ -53,11 +53,11 @@ Create a new schedulingGroup.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedule-post-schedulinggroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "Cashiers"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTeamScheduleSchedulingGroup Cmdlet.
+
 
 ## PARAMETERS
 

@@ -31,27 +31,39 @@ See change tracking for details.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Default properties
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Functions
-```
 
 Get-MgUserDelta
 
-### EXAMPLE 2
 ```
+This example will default properties
+
+### Example 2: Selecting three properties
+
+```powershell
+
 Import-Module Microsoft.Graph.Users.Functions
-```
 
-Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone"
+Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone" 
 
-### EXAMPLE 3
 ```
+This example shows selecting three properties
+
+### Example 3: Alternative minimal response behavior
+
+```powershell
+
 Import-Module Microsoft.Graph.Users.Functions
-```
 
-Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone"
+Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone" 
+
+```
+This example will alternative minimal response behavior
+
 
 ## PARAMETERS
 

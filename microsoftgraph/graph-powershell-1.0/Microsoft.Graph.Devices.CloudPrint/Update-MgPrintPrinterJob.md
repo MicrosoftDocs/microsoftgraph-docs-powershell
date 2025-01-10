@@ -63,11 +63,11 @@ For details about how to register a task trigger, see Extending Universal Print 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	configuration = @{
@@ -104,6 +104,10 @@ $params = @{
 }
 
 Update-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 

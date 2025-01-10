@@ -45,27 +45,39 @@ To retrieve Stream types of the default branding, for example, bannerLogo and ba
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
-### EXAMPLE 2
 ```
+This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
-### EXAMPLE 3
 ```
+This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
+
+```
+This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
+
 
 ## PARAMETERS
 

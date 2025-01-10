@@ -65,17 +65,21 @@ Update an editable secureScoreControlProfiles property within any integrated sol
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securescorecontrolprofiles-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	controlStateUpdates = "controlStateUpdates-value"
 }
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecuritySecureScoreControlProfile Cmdlet.
+
 
 ## PARAMETERS
 

@@ -32,18 +32,6 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsBatteryHealthRuntimeDetails in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveDevices
@@ -281,6 +269,7 @@ Valid values 0 to 2147483647
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthruntimedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthruntimedetail)
+
 
 
 

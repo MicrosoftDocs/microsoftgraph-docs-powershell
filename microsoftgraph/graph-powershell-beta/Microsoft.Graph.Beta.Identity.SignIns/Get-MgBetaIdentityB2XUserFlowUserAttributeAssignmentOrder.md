@@ -36,18 +36,6 @@ Get the order of identityUserFlowAttributeAssignments being collected within a u
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-getorder-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -227,6 +215,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowuserattributeassignmentorder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowuserattributeassignmentorder)
 
 [https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-beta)
+
 
 
 

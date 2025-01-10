@@ -111,11 +111,11 @@ To get properties that are not returned by default, do a GET operation and speci
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-upsert-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a Microsoft 365 group if it doesn't exist
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	description = "Self help community for golf"
@@ -128,12 +128,16 @@ mailNickname = "golfassist"
 securityEnabled = $false
 }
 
-Update-MgGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId
+Update-MgGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId 
 
-### EXAMPLE 2
 ```
+This example will create a microsoft 365 group if it doesn't exist
+
+### Example 2: Create a security group with an owner and members if it doesn't exist
+
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	description = "Group with designated owner and members"
@@ -152,7 +156,11 @@ $params = @{
 )
 }
 
-Update-MgGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId
+Update-MgGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId 
+
+```
+This example will create a security group with an owner and members if it doesn't exist
+
 
 ## PARAMETERS
 
