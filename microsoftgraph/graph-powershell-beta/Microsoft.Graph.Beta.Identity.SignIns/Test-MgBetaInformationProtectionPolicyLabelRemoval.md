@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelremoval
 schema: 2.0.0
-ms.subservice: security
 ---
 
 # Test-MgBetaInformationProtectionPolicyLabelRemoval
@@ -34,15 +33,12 @@ Test-MgBetaInformationProtectionPolicyLabelRemoval
 Indicate to the consuming application what actions it should take to remove the label information.
 Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-evaluateremoval-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	contentInfo = @{
@@ -98,10 +94,6 @@ $params = @{
 }
 
 Test-MgBetaInformationProtectionPolicyLabelRemoval -BodyParameter $params
-
-```
-This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelRemoval Cmdlet.
-
 
 ## PARAMETERS
 
@@ -260,35 +252,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZ22GcjInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentInfo <IMicrosoftGraphContentInfo>]`: contentInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Format <String>]`: contentFormat
-    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-    - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
-    - `[State <String>]`: contentState
-  - `[DowngradeJustification <IMicrosoftGraphDowngradeJustification>]`: downgradeJustification
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or isn't justified.
-    - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified.
+BODYPARAMETER \<IPathsZ22GcjInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContentInfo \<IMicrosoftGraphContentInfo\>\]: contentInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Format \<String\>\]: contentFormat
+    \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+    \[Metadata \<IMicrosoftGraphKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
+      \[Name \<String\>\]: Name for this key-value pair
+      \[Value \<String\>\]: Value for this key-value pair
+    \[State \<String\>\]: contentState
+  \[DowngradeJustification \<IMicrosoftGraphDowngradeJustification\>\]: downgradeJustification
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsDowngradeJustified \<Boolean?\>\]: Indicates whether the downgrade is or isn't justified.
+    \[JustificationMessage \<String\>\]: Message that indicates why a downgrade is justified.
 The message appears in administrative logs.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Format <String>]`: contentFormat
-  - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-  - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[State <String>]`: contentState
+CONTENTINFO \<IMicrosoftGraphContentInfo\>: contentInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Format \<String\>\]: contentFormat
+  \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+  \[Metadata \<IMicrosoftGraphKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[State \<String\>\]: contentState
 
-DOWNGRADEJUSTIFICATION `<IMicrosoftGraphDowngradeJustification>`: downgradeJustification
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or isn't justified.
-  - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified.
+DOWNGRADEJUSTIFICATION \<IMicrosoftGraphDowngradeJustification\>: downgradeJustification
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsDowngradeJustified \<Boolean?\>\]: Indicates whether the downgrade is or isn't justified.
+  \[JustificationMessage \<String\>\]: Message that indicates why a downgrade is justified.
 The message appears in administrative logs.
 
 ## RELATED LINKS
@@ -296,26 +288,4 @@ The message appears in administrative logs.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelremoval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelremoval)
 
 [https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
