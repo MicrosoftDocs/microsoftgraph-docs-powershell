@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalclaimmappingpolicyclaimmappingpolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef
@@ -28,6 +29,9 @@ Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef -InputObj
 
 ## DESCRIPTION
 Remove a claimsMappingPolicy from a servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-claimsmappingpolicies-permissions.md)]
 
 ## EXAMPLES
 

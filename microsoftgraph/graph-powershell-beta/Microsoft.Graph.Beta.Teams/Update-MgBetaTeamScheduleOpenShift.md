@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleopenshift
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamScheduleOpenShift
@@ -50,6 +51,9 @@ Update-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Update the properties of an openShift object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/openshift-update-permissions.md)]
 
 ## EXAMPLES
 

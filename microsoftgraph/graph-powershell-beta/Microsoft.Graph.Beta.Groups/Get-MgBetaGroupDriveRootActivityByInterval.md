@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdriverootactivitybyinterval
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Get-MgBetaGroupDriveRootActivityByInterval
@@ -33,6 +34,9 @@ Get-MgBetaGroupDriveRootActivityByInterval -InputObject <IGroupsIdentity> [-Coun
 ## DESCRIPTION
 Get itemActivityStats for the activities that took place under this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemactivity-getbyinterval-permissions.md)]
 
 ## EXAMPLES
 

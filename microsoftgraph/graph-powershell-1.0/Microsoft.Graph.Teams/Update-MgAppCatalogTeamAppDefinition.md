@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinition
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Update-MgAppCatalogTeamAppDefinition
@@ -54,6 +55,9 @@ Update-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsapp-publish-permissions.md)]
 
 ## EXAMPLES
 

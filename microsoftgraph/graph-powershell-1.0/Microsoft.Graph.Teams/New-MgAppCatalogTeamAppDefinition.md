@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamappdefinition
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgAppCatalogTeamAppDefinition
@@ -53,6 +54,9 @@ New-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 Update an app previously published to the Microsoft Teams app catalog.
 To update an app, the distributionMethod property for the app must be set to organization.
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsapp-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasgroup
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDeviceTransitiveMemberOfAsGroup
@@ -40,6 +42,12 @@ Get-MgDeviceTransitiveMemberOfAsGroup -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 Get the groups and administrative units that the device is a member of.
 This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-list-transitivememberof-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
 

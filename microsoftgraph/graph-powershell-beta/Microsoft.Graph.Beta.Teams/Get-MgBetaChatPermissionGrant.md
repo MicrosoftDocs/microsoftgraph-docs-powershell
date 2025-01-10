@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpermissiongrant
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaChatPermissionGrant
@@ -36,6 +37,9 @@ Get-MgBetaChatPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 A collection of permissions granted to apps for the chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-permissiongrants-permissions.md)]
 
 ## EXAMPLES
 

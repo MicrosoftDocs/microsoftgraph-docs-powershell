@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalhomerealmdiscoverypolicy
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalHomeRealmDiscoveryPolicy
@@ -21,6 +22,9 @@ Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId <String> [-Ex
 
 ## DESCRIPTION
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-homerealmdiscoverypolicies-permissions.md)]
 
 ## EXAMPLES
 

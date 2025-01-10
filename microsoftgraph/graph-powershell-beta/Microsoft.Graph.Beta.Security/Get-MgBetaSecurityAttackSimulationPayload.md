@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationpayload
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityAttackSimulationPayload
@@ -50,6 +51,9 @@ Get-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-Exp
 
 ## DESCRIPTION
 Represents an attack simulation training campaign payload in a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-payloads-permissions.md)]
 
 ## EXAMPLES
 

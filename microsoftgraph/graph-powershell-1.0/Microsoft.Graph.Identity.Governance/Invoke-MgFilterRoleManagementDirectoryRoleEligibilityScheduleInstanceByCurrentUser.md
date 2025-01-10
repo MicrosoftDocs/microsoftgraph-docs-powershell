@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagementdirectoryroleeligibilityscheduleinstancebycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser
@@ -31,6 +32,9 @@ Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUs
 
 ## DESCRIPTION
 Get the instances of eligible roles for the calling principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauseroutlooktaskfolderpermanent
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Remove-MgBetaUserOutlookTaskFolderPermanent
@@ -30,6 +31,9 @@ Remove-MgBetaUserOutlookTaskFolderPermanent -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Permanently delete an outlook task folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-permanentdelete-permissions.md)]
 
 ## EXAMPLES
 
