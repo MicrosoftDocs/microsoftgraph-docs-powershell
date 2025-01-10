@@ -11,6 +11,9 @@ ms.subservice: change-notifications
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReauthorizeUserDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reauthorize (Default)

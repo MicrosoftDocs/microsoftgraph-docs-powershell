@@ -11,6 +11,9 @@ ms.subservice: cloud-pc
 ## SYNOPSIS
 Assign a cloudPcProvisioningPolicy to user groups.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

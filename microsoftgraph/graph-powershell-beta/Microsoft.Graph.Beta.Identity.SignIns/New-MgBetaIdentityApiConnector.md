@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Create a new identityApiConnector object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

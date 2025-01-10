@@ -12,6 +12,9 @@ ms.subservice: security
 ## SYNOPSIS
 Get the properties and relationships of an sslCertificate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Create a new featureRolloutPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyFeatureRolloutPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

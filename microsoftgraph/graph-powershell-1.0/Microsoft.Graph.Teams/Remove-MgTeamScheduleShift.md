@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Delete a shift from the schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleShift?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

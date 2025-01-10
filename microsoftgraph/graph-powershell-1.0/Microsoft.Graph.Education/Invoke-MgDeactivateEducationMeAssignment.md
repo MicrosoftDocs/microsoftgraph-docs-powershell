@@ -12,6 +12,9 @@ ms.subservice: education
 Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
 This action can only be performed by a teacher on assigned assignments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDeactivateEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaDeactivateEducationMeAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Deactivate (Default)

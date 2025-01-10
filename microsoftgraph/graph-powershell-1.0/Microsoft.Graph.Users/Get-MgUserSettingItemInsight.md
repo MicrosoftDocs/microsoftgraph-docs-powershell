@@ -11,6 +11,9 @@ schema: 2.0.0
 The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
 Get userInsightsSettings through this navigation property.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingItemInsight](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingItemInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

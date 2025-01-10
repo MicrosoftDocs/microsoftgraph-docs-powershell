@@ -11,6 +11,9 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Add a user as a registered owner of the device.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

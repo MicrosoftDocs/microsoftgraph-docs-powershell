@@ -11,6 +11,9 @@ ms.subservice: ediscovery
 ## SYNOPSIS
 Adds an additional source to the eDiscovery search.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

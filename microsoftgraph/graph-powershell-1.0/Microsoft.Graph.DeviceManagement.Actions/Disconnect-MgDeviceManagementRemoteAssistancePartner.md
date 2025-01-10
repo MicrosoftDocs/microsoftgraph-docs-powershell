@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 A request to remove the active TeamViewer connector
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Disconnect-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disconnect-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Disconnect (Default)

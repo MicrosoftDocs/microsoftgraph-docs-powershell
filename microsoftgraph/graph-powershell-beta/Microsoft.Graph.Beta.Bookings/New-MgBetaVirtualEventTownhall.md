@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Create a new virtualEventTownhall object in draft mode.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventTownhall](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventTownhall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

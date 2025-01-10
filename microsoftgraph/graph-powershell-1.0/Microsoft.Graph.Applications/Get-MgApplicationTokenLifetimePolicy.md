@@ -12,6 +12,9 @@ ms.subservice: entra-applications
 List the tokenLifetimePolicy objects that are assigned to an application.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

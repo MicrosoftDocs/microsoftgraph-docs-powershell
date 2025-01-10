@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Analytics about the view activities that took place on this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

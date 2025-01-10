@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Get the presence information for multiple users.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationPresenceByUserId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
