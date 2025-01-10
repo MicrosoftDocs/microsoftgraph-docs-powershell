@@ -47,18 +47,6 @@ New-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLink -InputObj
 ## DESCRIPTION
 Create new navigation property to links for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -331,6 +319,7 @@ PEERCONFIGURATION `<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>`:
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchconnectivityconfigurationlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchconnectivityconfigurationlink)
+
 
 
 

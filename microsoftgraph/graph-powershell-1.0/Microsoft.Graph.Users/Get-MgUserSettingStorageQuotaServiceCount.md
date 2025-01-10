@@ -32,18 +32,6 @@ Get-MgUserSettingStorageQuotaServiceCount -InputObject <IUsersIdentity> [-Filter
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -192,6 +180,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingstoragequotaservicecount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingstoragequotaservicecount)
+
 
 
 
