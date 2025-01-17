@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Update-MgSecurityIdentityHealthIssue
@@ -48,6 +49,9 @@ Update-MgSecurityIdentityHealthIssue -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the properties of a healthIssue object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-healthissue-update-permissions.md)]
 
 ## EXAMPLES
 

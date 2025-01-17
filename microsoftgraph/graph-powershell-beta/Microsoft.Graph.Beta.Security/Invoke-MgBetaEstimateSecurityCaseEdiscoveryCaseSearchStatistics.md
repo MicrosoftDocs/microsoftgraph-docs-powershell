@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaestimatesecuritycaseediscoverycasesearchstatistics
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics
@@ -30,6 +31,9 @@ Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics -InputObject <IS
 ## DESCRIPTION
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-estimatestatistics-permissions.md)]
 
 ## EXAMPLES
 

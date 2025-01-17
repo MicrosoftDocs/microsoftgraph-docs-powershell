@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOffice365ActivationUserCount
@@ -19,6 +20,9 @@ Get-MgReportOffice365ActivationUserCount -OutFile <String> [-ResponseHeadersVari
 
 ## DESCRIPTION
 Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365activationsusercounts-permissions.md)]
 
 ## EXAMPLES
 

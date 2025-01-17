@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivitybranchdevicelink
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # Remove-MgBetaNetworkAccessConnectivityBranchDeviceLink
@@ -28,6 +29,9 @@ Remove-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAcc
 
 ## DESCRIPTION
 Removes the link between the branch or remote network and the CPE device, effectively removing the connection and associated configuration between them.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-delete-devicelinks-permissions.md)]
 
 ## EXAMPLES
 

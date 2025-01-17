@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelremoval
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval
@@ -50,6 +51,9 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval -InputObject
 ## DESCRIPTION
 Indicate to the consuming application what actions it should take to remove the label information.
 Given contentInfo as an input, which includes existing content metadata key-value pairs, the API returns an informationProtectionAction that contains some combination of one or more of the following:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-evaluateremoval-permissions.md)]
 
 ## EXAMPLES
 
