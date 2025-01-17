@@ -37,18 +37,6 @@ Get-MgBetaNetworkAccessFilteringPolicyRule -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Represents the definition of the policy ruleset that makes up the core definition of a policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -333,6 +321,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringpolicyrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringpolicyrule)
+
 
 
 

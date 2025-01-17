@@ -58,18 +58,6 @@ Update the properties of an exchangeRestoreSession.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/exchangerestoresession-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -627,6 +615,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresession)
 
 [https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-1.0)
+
 
 
 
