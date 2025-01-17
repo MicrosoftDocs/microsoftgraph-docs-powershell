@@ -12,6 +12,9 @@ ms.subservice: cloud-communications
 Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the id of a callRecord:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

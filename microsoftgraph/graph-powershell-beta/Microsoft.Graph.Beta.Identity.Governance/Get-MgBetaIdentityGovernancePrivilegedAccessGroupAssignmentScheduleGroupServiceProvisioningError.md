@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

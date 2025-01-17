@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Delete a filePlanReferenceTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

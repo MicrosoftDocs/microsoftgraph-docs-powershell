@@ -11,6 +11,9 @@ ms.subservice: ediscovery
 ## SYNOPSIS
 Create a new userSource object associated with an eDiscovery custodian.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

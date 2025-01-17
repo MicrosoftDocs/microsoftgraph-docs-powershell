@@ -11,6 +11,9 @@ ms.subservice: service-communications
 ## SYNOPSIS
 Read the properties and relationships of a serviceAnnouncementAttachment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachmentContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

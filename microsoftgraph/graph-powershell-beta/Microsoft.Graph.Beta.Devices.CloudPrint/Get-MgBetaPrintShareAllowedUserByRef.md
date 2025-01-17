@@ -11,6 +11,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUserByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

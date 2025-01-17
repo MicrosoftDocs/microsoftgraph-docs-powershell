@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The zip file of all attachments for a message.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Unpublish a contentType from a content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Unpublish-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Unpublish-MgBetaUserDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unpublish (Default)
