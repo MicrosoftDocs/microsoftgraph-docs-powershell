@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Functions
-Module Guid: 69f8835d-f8ff-4741-bc09-e1305b3ce2b8
+Module Guid: d7b9c9ef-7dd8-4eb4-bd0c-2f3118671d66
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -114,23 +114,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Search-MgUserDriveRoot](Search-MgUserDriveRoot.md)
 
 ### [Test-MgUserDriveListContentTypePublished](Test-MgUserDriveListContentTypePublished.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

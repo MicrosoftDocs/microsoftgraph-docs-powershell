@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta
 schema: 2.0.0
-ms.subservice: entra-users
 ---
 
 # Get-MgUserDelta
@@ -11,9 +10,6 @@ ms.subservice: entra-users
 ## SYNOPSIS
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 See change tracking for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,43 +23,28 @@ Get-MgUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Stri
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 See change tracking for details.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delta-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Default properties
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Functions
+```
 
 Get-MgUserDelta
 
+### EXAMPLE 2
 ```
-This example will default properties
-
-### Example 2: Selecting three properties
-
-```powershell
-
 Import-Module Microsoft.Graph.Users.Functions
-
-Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone" 
-
 ```
-This example shows selecting three properties
 
-### Example 3: Alternative minimal response behavior
+Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Users.Functions
-
-Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone" 
-
 ```
-This example will alternative minimal response behavior
 
+Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone"
 
 ## PARAMETERS
 
@@ -279,26 +260,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta)
 
 [https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

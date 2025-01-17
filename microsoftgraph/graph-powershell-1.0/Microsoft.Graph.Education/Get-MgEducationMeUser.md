@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Get-MgEducationMeUser
 
 ## SYNOPSIS
 Retrieve the simple directory user that corresponds to this educationUser.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,21 +20,14 @@ Get-MgEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Resp
 ## DESCRIPTION
 Retrieve the simple directory user that corresponds to this educationUser.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-get-user-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationMeUser
-
-```
-This example shows how to use the Get-MgEducationMeUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -133,26 +122,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser)
 
 [https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

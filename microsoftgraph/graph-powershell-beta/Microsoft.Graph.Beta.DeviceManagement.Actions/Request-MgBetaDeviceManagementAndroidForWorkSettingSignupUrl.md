@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidforworksettingsignupurl
@@ -29,6 +29,18 @@ Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl
 
 ## DESCRIPTION
 Invoke action requestSignupUrl
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -170,34 +182,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HostName <String>]`:
+BODYPARAMETER \<IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[HostName \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidforworksettingsignupurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidforworksettingsignupurl)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
