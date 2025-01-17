@@ -49,20 +49,28 @@ Returns the metadata for a sitePage in the site pages list in a site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sitepage-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Sites
-```
+This example shows how to use the Get-MgSitePageAsSitePage Cmdlet.
 
-Get-MgSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId -Property "id,name"
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId -Property "id,name" 
+
+```
+This example shows how to use the Get-MgSitePageAsSitePage Cmdlet.
+
 
 ## PARAMETERS
 

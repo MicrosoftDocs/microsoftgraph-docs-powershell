@@ -42,18 +42,6 @@ Get-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IAppli
 ## DESCRIPTION
 Contains the collection of directories and all of their objects.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -368,6 +356,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationtemplateschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationtemplateschemadirectory)
+
+
 
 
 

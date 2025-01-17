@@ -34,11 +34,11 @@ Create a new operationalInsightsConnection object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.operationalInsightsConnection"
@@ -48,6 +48,10 @@ $params = @{
 }
 
 New-MgBetaWindowsUpdatesResourceConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaWindowsUpdatesResourceConnection Cmdlet.
+
 
 ## PARAMETERS
 

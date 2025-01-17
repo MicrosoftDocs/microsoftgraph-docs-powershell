@@ -56,17 +56,21 @@ This API is supported when the type of the cloudPcOnPremisesConnection object is
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-updateaddomainpassword-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	adDomainPassword = "AdDomainPassword value"
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword Cmdlet.
+
 
 ## PARAMETERS
 

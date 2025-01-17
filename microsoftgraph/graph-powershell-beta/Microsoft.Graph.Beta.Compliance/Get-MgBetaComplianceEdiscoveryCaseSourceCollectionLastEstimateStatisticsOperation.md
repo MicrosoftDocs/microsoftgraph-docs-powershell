@@ -36,13 +36,17 @@ Get the last estimateStatisticsOperation object associated with a source collect
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-lastestimatestatisticsoperation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation -CaseId $caseId -SourceCollectionId $sourceCollectionId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation Cmdlet.
+
 
 ## PARAMETERS
 

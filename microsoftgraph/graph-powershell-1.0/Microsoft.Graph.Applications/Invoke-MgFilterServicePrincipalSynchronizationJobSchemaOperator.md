@@ -39,13 +39,17 @@ List all operators supported in the scoping filters.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-filteroperators-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
+```
+This example shows how to use the Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator Cmdlet.
+
 
 ## PARAMETERS
 

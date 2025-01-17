@@ -34,13 +34,17 @@ Delete an updatePolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 Remove-MgBetaWindowsUpdatesPolicy -UpdatePolicyId $updatePolicyId
+
+```
+This example shows how to use the Remove-MgBetaWindowsUpdatesPolicy Cmdlet.
+
 
 ## PARAMETERS
 

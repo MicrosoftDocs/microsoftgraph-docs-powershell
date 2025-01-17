@@ -32,18 +32,6 @@ New-MgPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-ResponseHe
 ## DESCRIPTION
 Create new navigation property to connectors for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -336,6 +324,7 @@ The elements should be in hierarchical order.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector)
+
 
 
 

@@ -39,13 +39,17 @@ List all the functions currently supported in the attributeMappingSource.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-functions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
+```
+This example shows how to use the Invoke-MgFunctionServicePrincipalSynchronizationJobSchema Cmdlet.
+
 
 ## PARAMETERS
 

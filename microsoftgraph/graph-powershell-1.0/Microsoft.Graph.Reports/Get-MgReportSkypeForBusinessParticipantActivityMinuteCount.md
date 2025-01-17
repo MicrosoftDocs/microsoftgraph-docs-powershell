@@ -39,13 +39,17 @@ Types of conference sessions include audio/video.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessparticipantactivityminutecounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSkypeForBusinessParticipantActivityMinuteCount -Period $periodId
+Get-MgReportSkypeForBusinessParticipantActivityMinuteCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessParticipantActivityMinuteCount Cmdlet.
+
 
 ## PARAMETERS
 

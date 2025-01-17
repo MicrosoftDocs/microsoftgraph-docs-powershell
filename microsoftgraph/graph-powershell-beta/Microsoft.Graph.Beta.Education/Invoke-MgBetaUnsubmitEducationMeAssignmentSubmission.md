@@ -46,18 +46,6 @@ A teacher can also unsubmit a student's assignment on their behalf.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-unsubmit-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -223,6 +211,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunsubmiteducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunsubmiteducationmeassignmentsubmission)
 
 [https://learn.microsoft.com/graph/api/educationsubmission-unsubmit?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsubmission-unsubmit?view=graph-rest-beta)
+
 
 
 

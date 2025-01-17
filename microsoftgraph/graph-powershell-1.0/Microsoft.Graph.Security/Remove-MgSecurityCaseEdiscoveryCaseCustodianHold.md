@@ -73,13 +73,17 @@ The location provides a URL that will return an eDiscoveryHoldOperation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-removehold-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Remove-MgSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseCustodianHold Cmdlet.
+
 
 ## PARAMETERS
 

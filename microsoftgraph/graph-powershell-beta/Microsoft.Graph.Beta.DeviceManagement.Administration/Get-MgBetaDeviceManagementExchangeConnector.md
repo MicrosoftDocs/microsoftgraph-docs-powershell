@@ -40,18 +40,6 @@ Get-MgBetaDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdmin
 ## DESCRIPTION
 The list of Exchange Connectors configured by the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -358,6 +346,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementexchangeconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementexchangeconnector)
+
+
 
 
 

@@ -50,17 +50,21 @@ Add identity providers in a b2cIdentityUserFlow object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-post-identityproviders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/identityProviders/{id}"
 }
 
 New-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityB2CUserFlowIdentityProviderByRef Cmdlet.
+
 
 ## PARAMETERS
 

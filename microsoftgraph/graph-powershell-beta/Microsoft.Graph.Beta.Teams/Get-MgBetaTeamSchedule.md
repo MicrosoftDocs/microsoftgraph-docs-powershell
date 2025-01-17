@@ -45,13 +45,17 @@ Clients can also inspect the configuration of the schedule.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedule-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamSchedule -TeamId $teamId
+
+```
+This example shows how to use the Get-MgBetaTeamSchedule Cmdlet.
+
 
 ## PARAMETERS
 

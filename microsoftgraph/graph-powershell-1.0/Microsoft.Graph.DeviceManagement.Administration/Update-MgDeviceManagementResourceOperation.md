@@ -50,11 +50,11 @@ Update-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmini
 Update the properties of a resourceOperation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.resourceOperation"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementResourceOperation -ResourceOperationId $resourceOperationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementResourceOperation Cmdlet.
+
 
 ## PARAMETERS
 

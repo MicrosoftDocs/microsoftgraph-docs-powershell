@@ -39,20 +39,28 @@ You can add or remove artifacts (sites or user accounts) to or from each active 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/protectionpolicybase-activate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Activate an inactive protection policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Initialize-MgBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
-### EXAMPLE 2
 ```
+This example will activate an inactive protection policy
+
+### Example 2: Activate an active protection policy
+
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Initialize-MgBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
+
+```
+This example will activate an active protection policy
+
 
 ## PARAMETERS
 

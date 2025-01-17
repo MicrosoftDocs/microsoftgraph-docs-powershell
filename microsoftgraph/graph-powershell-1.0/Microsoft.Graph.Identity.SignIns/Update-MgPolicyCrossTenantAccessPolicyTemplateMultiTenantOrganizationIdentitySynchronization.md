@@ -39,11 +39,11 @@ Update the cross-tenant access policy template with user synchronization setting
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationidentitysyncpolicytemplate-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	templateApplicationLevel = "newPartners,existingPartners"
@@ -53,6 +53,10 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization Cmdlet.
+
 
 ## PARAMETERS
 

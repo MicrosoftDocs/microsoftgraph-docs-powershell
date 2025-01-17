@@ -45,13 +45,17 @@ The collection of column definitions reusable across lists under this site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-columns-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteColumn -SiteId $siteId
+
+```
+This example shows how to use the Get-MgSiteColumn Cmdlet.
+
 
 ## PARAMETERS
 

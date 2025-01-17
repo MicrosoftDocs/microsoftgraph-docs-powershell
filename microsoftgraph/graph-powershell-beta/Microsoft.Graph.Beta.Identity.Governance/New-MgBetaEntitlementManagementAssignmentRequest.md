@@ -47,11 +47,11 @@ This operation is used to assign a user to an access package, update the assignm
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-assignmentrequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Admin requests a direct assignment for a user already in the directory
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminAdd"
@@ -64,10 +64,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will admin requests a direct assignment for a user already in the directory
+
+### Example 2: Remove an assignment
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminRemove"
@@ -78,10 +82,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will remove an assignment
+
+### Example 3: Request an assignment by providing answers to questions
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -113,10 +121,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will request an assignment by providing answers to questions
+
+### Example 4: Request a package and provide a justification
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	requestType = "UserAdd"
@@ -128,10 +140,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will request a package and provide a justification
+
+### Example 5: Admin requests a direct assignment for a user not yet in the directory
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	requestType = "AdminAdd"
@@ -146,10 +162,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 6
 ```
+This example will admin requests a direct assignment for a user not yet in the directory
+
+### Example 6: Request an update to answers for an assignment
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -181,19 +201,23 @@ $params = @{
 
 New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 7
 ```
+This example will request an update to answers for an assignment
+
+### Example 7: Update the expiration date for an access package assignment
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
 	requestType = "adminUpdate"
 	schedule = @{
-		startDateTime = \[System.DateTime\]::Parse("2023-05-23T20:04:02.39Z")
+		startDateTime = [System.DateTime]::Parse("2023-05-23T20:04:02.39Z")
 		recurrence = $null
 		expiration = @{
-			endDateTime = \[System.DateTime\]::Parse("2024-07-01T00:00:00.00Z")
+			endDateTime = [System.DateTime]::Parse("2024-07-01T00:00:00.00Z")
 			duration = $null
 			type = "afterDateTime"
 		}
@@ -204,6 +228,10 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter $params
+
+```
+This example will update the expiration date for an access package assignment
+
 
 ## PARAMETERS
 

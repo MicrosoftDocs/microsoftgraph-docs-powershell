@@ -38,13 +38,17 @@ The activity types are number of teams chat messages, private chat messages, cal
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsuseractivityusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportTeamUserActivityUserCount -Period $periodId
+Get-MgReportTeamUserActivityUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportTeamUserActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 

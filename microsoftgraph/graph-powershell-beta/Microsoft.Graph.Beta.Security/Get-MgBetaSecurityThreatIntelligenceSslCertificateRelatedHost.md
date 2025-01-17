@@ -45,13 +45,17 @@ The host resources related with this sslCertificate.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sslcertificate-list-relatedhosts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost -SslCertificateId $sslCertificateId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost Cmdlet.
+
 
 ## PARAMETERS
 

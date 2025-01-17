@@ -53,11 +53,11 @@ Unhide a chat for a user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-unhideforuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	user = @{
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Invoke-MgGraphChat -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgGraphChat Cmdlet.
+
 
 ## PARAMETERS
 

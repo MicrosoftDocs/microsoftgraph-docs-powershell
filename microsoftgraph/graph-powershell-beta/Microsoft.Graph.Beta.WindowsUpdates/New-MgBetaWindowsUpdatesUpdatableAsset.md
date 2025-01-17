@@ -35,17 +35,21 @@ The updatableAssetGroup resource inherits from updatableAsset.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-post-updatableassets-updatableassetgroup-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.updatableAssetGroup"
 }
 
 New-MgBetaWindowsUpdatesUpdatableAsset -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
+
 
 ## PARAMETERS
 

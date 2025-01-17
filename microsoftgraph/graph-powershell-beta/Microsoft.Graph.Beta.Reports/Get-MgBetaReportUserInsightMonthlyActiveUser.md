@@ -42,13 +42,17 @@ Insights for active users on apps registered in the tenant for a specified perio
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-activeusers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportUserInsightMonthlyActiveUser
+
+```
+This example shows how to use the Get-MgBetaReportUserInsightMonthlyActiveUser Cmdlet.
+
 
 ## PARAMETERS
 

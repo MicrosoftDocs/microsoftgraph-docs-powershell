@@ -43,13 +43,17 @@ Get-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceManag
 Read properties and relationships of the telecomExpenseManagementPartner object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementTelecomExpenseManagementPartner
+
+```
+This example shows how to use the Get-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 

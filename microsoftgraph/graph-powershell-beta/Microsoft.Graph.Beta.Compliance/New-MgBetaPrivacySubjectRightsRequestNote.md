@@ -53,11 +53,11 @@ Create a new authoredNote object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-post-notes-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 $params = @{
 	content = @{
@@ -67,6 +67,10 @@ $params = @{
 }
 
 New-MgBetaPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrivacySubjectRightsRequestNote Cmdlet.
+
 
 ## PARAMETERS
 

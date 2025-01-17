@@ -43,11 +43,11 @@ Create a new externalConnection object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-external-post-connections-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	id = "contosohr"
@@ -56,6 +56,10 @@ $params = @{
 }
 
 New-MgExternalConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,18 +33,6 @@ New-MgBetaDeviceManagementSettingDefinition -BodyParameter <IMicrosoftGraphDevic
 ## DESCRIPTION
 Create new navigation property to settingDefinitions for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -377,6 +365,7 @@ DEPENDENCIES `<IMicrosoftGraphDeviceManagementSettingDependency- `[]`>`: Collect
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition)
+
 
 
 

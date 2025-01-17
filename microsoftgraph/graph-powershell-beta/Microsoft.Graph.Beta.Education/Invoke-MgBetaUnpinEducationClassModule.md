@@ -40,13 +40,17 @@ Only teachers in the class can perform this operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-unpin-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Invoke-MgBetaUnpinEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
+```
+This example shows how to use the Invoke-MgBetaUnpinEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

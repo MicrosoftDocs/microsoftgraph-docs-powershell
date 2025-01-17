@@ -48,18 +48,6 @@ Update-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipme
 ## DESCRIPTION
 Update the navigation property shipmentMethod in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -355,6 +343,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomershipmentmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomershipmentmethod)
+
 
 
 

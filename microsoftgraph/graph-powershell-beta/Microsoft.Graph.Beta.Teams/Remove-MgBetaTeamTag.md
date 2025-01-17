@@ -37,13 +37,17 @@ Delete a tag object permanently.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId
+
+```
+This example shows how to use the Remove-MgBetaTeamTag Cmdlet.
+
 
 ## PARAMETERS
 

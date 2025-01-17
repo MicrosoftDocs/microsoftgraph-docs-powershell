@@ -38,11 +38,11 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 Create a new macOSLobApp object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.macOSLobApp"
@@ -52,7 +52,7 @@ $params = @{
 	largeIcon = @{
 		"@odata.type" = "microsoft.graph.mimeContent"
 		type = "Type value"
-		value = \[System.Text.Encoding\]::ASCII.GetBytes("dmFsdWU=")
+		value = [System.Text.Encoding]::ASCII.GetBytes("dmFsdWU=")
 	}
 	isFeatured = $true
 	privacyInformationUrl = "https://example.com/privacyInformationUrl/"
@@ -99,6 +99,10 @@ installAsManaged = $true
 }
 
 New-MgDeviceAppManagementMobileApp -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementMobileApp Cmdlet.
+
 
 ## PARAMETERS
 

@@ -30,13 +30,17 @@ Get the educationClass resources owned by an educationSchool.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-list-classes-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationSchoolClass -EducationSchoolId $educationSchoolId
+
+```
+This example shows how to use the Get-MgEducationSchoolClass Cmdlet.
+
 
 ## PARAMETERS
 

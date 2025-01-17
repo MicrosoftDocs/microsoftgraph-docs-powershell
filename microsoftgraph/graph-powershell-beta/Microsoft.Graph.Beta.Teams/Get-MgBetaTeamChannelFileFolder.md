@@ -37,13 +37,17 @@ Get the metadata for the location where the files of a channel are stored.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-get-filesfolder-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Get-MgBetaTeamChannelFileFolder Cmdlet.
+
 
 ## PARAMETERS
 

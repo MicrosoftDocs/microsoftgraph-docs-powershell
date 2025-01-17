@@ -80,11 +80,11 @@ Update the properties of a tiIndicator object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Request without Prefer header
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	description = "description-updated"
@@ -92,10 +92,14 @@ $params = @{
 
 Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will request without prefer header
+
+### Example 2: Request with Prefer header
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	additionalInformation = "additionalInformation-after-update"
@@ -104,6 +108,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
+
+```
+This example will request with prefer header
+
 
 ## PARAMETERS
 

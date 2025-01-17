@@ -40,13 +40,17 @@ Retrieve the schedules for active role assignment operations for which the signe
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentschedule-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser -On $onId
+Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

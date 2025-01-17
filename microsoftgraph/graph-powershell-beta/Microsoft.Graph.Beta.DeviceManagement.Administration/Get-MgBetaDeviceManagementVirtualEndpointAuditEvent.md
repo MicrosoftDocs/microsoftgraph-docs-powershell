@@ -49,13 +49,17 @@ Read the properties and relationships of a cloudPcAuditEvent object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-auditevents-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointAuditEvent
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 
