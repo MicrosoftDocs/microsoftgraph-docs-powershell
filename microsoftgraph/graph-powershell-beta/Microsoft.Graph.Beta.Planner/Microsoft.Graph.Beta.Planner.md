@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Planner
-Module Guid: 5a57e191-aa8e-42fe-b24e-4553e13a1b68
+Module Guid: d6f87729-3b36-442b-a528-b3a588096ffd
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.planner/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -182,23 +182,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPlannerTaskProgressTaskBoardFormat](Update-MgBetaPlannerTaskProgressTaskBoardFormat.md)
 
 ### [Update-MgBetaUserPlanner](Update-MgBetaUserPlanner.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

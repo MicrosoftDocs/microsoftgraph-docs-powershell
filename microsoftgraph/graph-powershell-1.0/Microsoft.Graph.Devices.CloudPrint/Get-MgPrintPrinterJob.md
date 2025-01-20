@@ -1,19 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjob
 schema: 2.0.0
-ms.subservice: universal-print
-ms.subservice: universal-print
 ---
 
 # Get-MgPrintPrinterJob
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a print job.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,46 +37,28 @@ Get-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties and relationships of a print job.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-list-jobs-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get print job
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId
 
+### EXAMPLE 2
 ```
-This example will get print job
-
-### Example 2: Get print job with task list
-
-```powershell
-
 Import-Module Microsoft.Graph.Devices.CloudPrint
-
-Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "tasks" 
-
 ```
-This example will get print job with task list
 
-### Example 3: Get a print job and its associated document data
+Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "tasks"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
-
-Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "documents" 
-
 ```
-This example will get a print job and its associated document data
 
+Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "documents"
 
 ## PARAMETERS
 
@@ -343,20 +320,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
@@ -365,26 +342,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

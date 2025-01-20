@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Education
-Module Guid: b4f2db09-b27c-44b0-ba0f-64ec0fe90b4f
+Module Guid: f2c58ffd-854d-4874-8d25-e46950c755b2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.education/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -800,23 +800,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaEducationUserMailboxSetting](Update-MgBetaEducationUserMailboxSetting.md)
 
 ### [Update-MgBetaEducationUserRubric](Update-MgBetaEducationUserRubric.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

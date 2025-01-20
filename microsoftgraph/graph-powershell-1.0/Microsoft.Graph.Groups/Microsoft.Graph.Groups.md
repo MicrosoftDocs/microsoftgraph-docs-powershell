@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Groups
-Module Guid: 7f0a516b-8cb8-4fce-92f8-af4867752a92
+Module Guid: 3291ef3c-601c-4d51-8f3e-59ecb9c30d55
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.groups/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -802,23 +802,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgGroupThreadPostExtension](Update-MgGroupThreadPostExtension.md)
 
 ### [Update-MgGroupThreadPostInReplyToExtension](Update-MgGroupThreadPostInReplyToExtension.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

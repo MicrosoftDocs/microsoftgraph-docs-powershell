@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowsetting
 schema: 2.0.0
-ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflowSetting
 
 ## SYNOPSIS
 Read the properties and relationships of a lifecycleManagementSettings object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,21 +21,14 @@ Get-MgIdentityGovernanceLifecycleWorkflowSetting [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Read the properties and relationships of a lifecycleManagementSettings object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecyclemanagementsettings-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Get-MgIdentityGovernanceLifecycleWorkflowSetting
-
-```
-This example shows how to use the Get-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -134,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowsetting)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

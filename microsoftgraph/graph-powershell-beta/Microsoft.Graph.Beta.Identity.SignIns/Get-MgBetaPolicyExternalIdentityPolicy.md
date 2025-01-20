@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyexternalidentitypolicy
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyExternalIdentityPolicy
@@ -22,21 +21,14 @@ Get-MgBetaPolicyExternalIdentityPolicy [-ExpandProperty <String[]>] [-Property <
 ## DESCRIPTION
 Read the properties and relationships of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave a Microsoft Entra tenant via self-service controls.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalidentitiespolicy-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyExternalIdentityPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyExternalIdentityPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -131,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyexternalidentitypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyexternalidentitypolicy)
 
 [https://learn.microsoft.com/graph/api/externalidentitiespolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalidentitiespolicy-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

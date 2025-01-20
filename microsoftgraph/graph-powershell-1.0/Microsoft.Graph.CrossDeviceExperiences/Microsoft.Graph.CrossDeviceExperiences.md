@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-Module Guid: df6c6fa9-122b-4911-9178-f7375762a31a
+Module Guid: 032e6b43-1302-4788-ac8e-efea47cfe7ee
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -36,23 +36,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserActivity](Update-MgUserActivity.md)
 
 ### [Update-MgUserActivityHistoryItem](Update-MgUserActivityHistoryItem.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Search
-Module Guid: f12c3184-ff27-43d3-89ca-03769466797c
+Module Guid: 17ee3d16-db2b-49c5-89a5-969874dc70bf
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.search/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -136,23 +136,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSearchEntity](Update-MgSearchEntity.md)
 
 ### [Update-MgSearchQna](Update-MgSearchQna.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

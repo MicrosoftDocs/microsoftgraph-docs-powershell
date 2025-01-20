@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscore
@@ -32,6 +32,18 @@ Update-MgBetaSecurityPartnerSecurityScore -BodyParameter <IMicrosoftGraphPartner
 
 ## DESCRIPTION
 Update the navigation property securityScore in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -282,98 +294,75 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPartnerSecurityScore>`: partnerSecurityScore
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPartnerSecurityScore\>: partnerSecurityScore
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CurrentScore <Single?>]`: The current security score for the partner.
-  - `[CustomerInsights <IMicrosoftGraphPartnerSecurityCustomerInsight- `[]`>]`: Contains customer-specific information for certain requirements.
-    - `[Mfa <IMicrosoftGraphPartnerSecurityCustomerMfaInsight>]`: customerMfaInsight
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CompliantAdminsCount <Int64?>]`: The number of admins that are compliant with the MFA requirements
-      - `[CompliantNonAdminsCount <Int64?>]`: The number of users that are compliant with the MFA requirements
-      - `[LegacyPerUserMfaStatus <String>]`: policyStatus
-      - `[MfaConditionalAccessPolicyStatus <String>]`: policyStatus
-      - `[SecurityDefaultsStatus <String>]`: policyStatus
-      - `[TotalUsersCount <Int64?>]`: The total number of users in the tenant
-    - `[TenantId <String>]`: The unique identifier for the customer.
-  - `[History <IMicrosoftGraphPartnerSecurityScoreHistory- `[]`>]`: Contains a list of recent score changes.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[CurrentScore \<Single?\>\]: The current security score for the partner.
+  \[CustomerInsights \<IMicrosoftGraphPartnerSecurityCustomerInsight\[\]\>\]: Contains customer-specific information for certain requirements.
+    \[Mfa \<IMicrosoftGraphPartnerSecurityCustomerMfaInsight\>\]: customerMfaInsight
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[CompliantAdminsCount \<Int64?\>\]: The number of admins that are compliant with the MFA requirements
+      \[CompliantNonAdminsCount \<Int64?\>\]: The number of users that are compliant with the MFA requirements
+      \[LegacyPerUserMfaStatus \<String\>\]: policyStatus
+      \[MfaConditionalAccessPolicyStatus \<String\>\]: policyStatus
+      \[SecurityDefaultsStatus \<String\>\]: policyStatus
+      \[TotalUsersCount \<Int64?\>\]: The total number of users in the tenant
+    \[TenantId \<String\>\]: The unique identifier for the customer.
+  \[History \<IMicrosoftGraphPartnerSecurityScoreHistory\[\]\>\]: Contains a list of recent score changes.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CompliantRequirementsCount <Int64?>]`: The number of compliant security requirements at the time.
-    - `[CreatedDateTime <DateTime?>]`: The date the history entry was created.
-    - `[Score <Single?>]`: The score recorded at the time.
-    - `[TotalRequirementsCount <Int64?>]`: The total number of requirements at the time.
-  - `[LastRefreshDateTime <DateTime?>]`: The last time the data was checked.
-  - `[MaxScore <Single?>]`: The maximum score possible.
-  - `[Requirements <IMicrosoftGraphPartnerSecurityRequirement- `[]`>]`: Contains the list of security requirements that make up the score.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[CompliantRequirementsCount \<Int64?\>\]: The number of compliant security requirements at the time.
+    \[CreatedDateTime \<DateTime?\>\]: The date the history entry was created.
+    \[Score \<Single?\>\]: The score recorded at the time.
+    \[TotalRequirementsCount \<Int64?\>\]: The total number of requirements at the time.
+  \[LastRefreshDateTime \<DateTime?\>\]: The last time the data was checked.
+  \[MaxScore \<Single?\>\]: The maximum score possible.
+  \[Requirements \<IMicrosoftGraphPartnerSecurityRequirement\[\]\>\]: Contains the list of security requirements that make up the score.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ActionUrl <String>]`: The link to the site where the admin can take action on the requirement.
-    - `[ComplianceStatus <String>]`: complianceStatus
-    - `[HelpUrl <String>]`: The link to documentation for the requirement.
-    - `[MaxScore <Int64?>]`: The maximum score possible for the requirement.
-    - `[RequirementType <String>]`: securityRequirementType
-    - `[Score <Int64?>]`: The score received for this requirement.
-    - `[State <String>]`: securityRequirementState
-    - `[UpdatedDateTime <DateTime?>]`: The date the requirement properties were last updated.
-  - `[UpdatedDateTime <DateTime?>]`: The last time the security score or related properties changed.
+    \[ActionUrl \<String\>\]: The link to the site where the admin can take action on the requirement.
+    \[ComplianceStatus \<String\>\]: complianceStatus
+    \[HelpUrl \<String\>\]: The link to documentation for the requirement.
+    \[MaxScore \<Int64?\>\]: The maximum score possible for the requirement.
+    \[RequirementType \<String\>\]: securityRequirementType
+    \[Score \<Int64?\>\]: The score received for this requirement.
+    \[State \<String\>\]: securityRequirementState
+    \[UpdatedDateTime \<DateTime?\>\]: The date the requirement properties were last updated.
+  \[UpdatedDateTime \<DateTime?\>\]: The last time the security score or related properties changed.
 
-CUSTOMERINSIGHTS `<IMicrosoftGraphPartnerSecurityCustomerInsight- `[]`>`: Contains customer-specific information for certain requirements.
-  - `[Mfa <IMicrosoftGraphPartnerSecurityCustomerMfaInsight>]`: customerMfaInsight
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CompliantAdminsCount <Int64?>]`: The number of admins that are compliant with the MFA requirements
-    - `[CompliantNonAdminsCount <Int64?>]`: The number of users that are compliant with the MFA requirements
-    - `[LegacyPerUserMfaStatus <String>]`: policyStatus
-    - `[MfaConditionalAccessPolicyStatus <String>]`: policyStatus
-    - `[SecurityDefaultsStatus <String>]`: policyStatus
-    - `[TotalUsersCount <Int64?>]`: The total number of users in the tenant
-  - `[TenantId <String>]`: The unique identifier for the customer.
+CUSTOMERINSIGHTS \<IMicrosoftGraphPartnerSecurityCustomerInsight\[\]\>: Contains customer-specific information for certain requirements.
+  \[Mfa \<IMicrosoftGraphPartnerSecurityCustomerMfaInsight\>\]: customerMfaInsight
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CompliantAdminsCount \<Int64?\>\]: The number of admins that are compliant with the MFA requirements
+    \[CompliantNonAdminsCount \<Int64?\>\]: The number of users that are compliant with the MFA requirements
+    \[LegacyPerUserMfaStatus \<String\>\]: policyStatus
+    \[MfaConditionalAccessPolicyStatus \<String\>\]: policyStatus
+    \[SecurityDefaultsStatus \<String\>\]: policyStatus
+    \[TotalUsersCount \<Int64?\>\]: The total number of users in the tenant
+  \[TenantId \<String\>\]: The unique identifier for the customer.
 
-HISTORY `<IMicrosoftGraphPartnerSecurityScoreHistory- `[]`>`: Contains a list of recent score changes.
-  - `[Id <String>]`: The unique identifier for an entity.
+HISTORY \<IMicrosoftGraphPartnerSecurityScoreHistory\[\]\>: Contains a list of recent score changes.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompliantRequirementsCount <Int64?>]`: The number of compliant security requirements at the time.
-  - `[CreatedDateTime <DateTime?>]`: The date the history entry was created.
-  - `[Score <Single?>]`: The score recorded at the time.
-  - `[TotalRequirementsCount <Int64?>]`: The total number of requirements at the time.
+  \[CompliantRequirementsCount \<Int64?\>\]: The number of compliant security requirements at the time.
+  \[CreatedDateTime \<DateTime?\>\]: The date the history entry was created.
+  \[Score \<Single?\>\]: The score recorded at the time.
+  \[TotalRequirementsCount \<Int64?\>\]: The total number of requirements at the time.
 
-REQUIREMENTS `<IMicrosoftGraphPartnerSecurityRequirement- `[]`>`: Contains the list of security requirements that make up the score.
-  - `[Id <String>]`: The unique identifier for an entity.
+REQUIREMENTS \<IMicrosoftGraphPartnerSecurityRequirement\[\]\>: Contains the list of security requirements that make up the score.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActionUrl <String>]`: The link to the site where the admin can take action on the requirement.
-  - `[ComplianceStatus <String>]`: complianceStatus
-  - `[HelpUrl <String>]`: The link to documentation for the requirement.
-  - `[MaxScore <Int64?>]`: The maximum score possible for the requirement.
-  - `[RequirementType <String>]`: securityRequirementType
-  - `[Score <Int64?>]`: The score received for this requirement.
-  - `[State <String>]`: securityRequirementState
-  - `[UpdatedDateTime <DateTime?>]`: The date the requirement properties were last updated.
+  \[ActionUrl \<String\>\]: The link to the site where the admin can take action on the requirement.
+  \[ComplianceStatus \<String\>\]: complianceStatus
+  \[HelpUrl \<String\>\]: The link to documentation for the requirement.
+  \[MaxScore \<Int64?\>\]: The maximum score possible for the requirement.
+  \[RequirementType \<String\>\]: securityRequirementType
+  \[Score \<Int64?\>\]: The score received for this requirement.
+  \[State \<String\>\]: securityRequirementState
+  \[UpdatedDateTime \<DateTime?\>\]: The date the requirement properties were last updated.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

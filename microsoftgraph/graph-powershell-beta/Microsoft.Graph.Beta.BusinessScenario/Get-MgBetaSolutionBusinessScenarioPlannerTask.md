@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertask
 schema: 2.0.0
-ms.subservice: business-scenarios
-ms.subservice: business-scenarios
 ---
 
 # Get-MgBetaSolutionBusinessScenarioPlannerTask
@@ -39,46 +37,28 @@ Get-MgBetaSolutionBusinessScenarioPlannerTask -InputObject <IBusinessScenarioIde
 ## DESCRIPTION
 Read the properties and relationships of a businessScenarioTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenariotask-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-list-tasks-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get all tasks for a scenario
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.BusinessScenario
+```
 
 Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId
 
+### EXAMPLE 2
 ```
-This example will get all tasks for a scenario
-
-### Example 2: Get tasks associated with a specific externalContextId
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.BusinessScenario
-
-Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "businessScenarioProperties/externalContextId eq 'Warehouse-CA-36'" 
-
 ```
-This example will get tasks associated with a specific externalcontextid
 
-### Example 3: Get scenario tasks created in a specific group
+Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "businessScenarioProperties/externalContextId eq 'Warehouse-CA-36'"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.BusinessScenario
-
-Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'" 
-
 ```
-This example will get scenario tasks created in a specific group
 
+Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'"
 
 ## PARAMETERS
 
@@ -340,11 +320,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[UniqueName <String>]`: Alternate key of businessScenario
+INPUTOBJECT \<IBusinessScenarioIdentity\>: Identity Parameter
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
 
 ## RELATED LINKS
 
@@ -353,26 +333,4 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/businessscenariotask-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenariotask-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/businessscenarioplanner-list-tasks?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenarioplanner-list-tasks?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

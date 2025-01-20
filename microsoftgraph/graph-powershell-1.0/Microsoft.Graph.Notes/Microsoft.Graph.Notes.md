@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Notes
-Module Guid: 7cb32239-b601-427a-a2f9-ce32467f332d
+Module Guid: 0356f992-5f69-4ea5-ba8f-80d6d0cfd3f5
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.notes/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -266,23 +266,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserOnenoteSection](Update-MgUserOnenoteSection.md)
 
 ### [Update-MgUserOnenoteSectionGroup](Update-MgUserOnenoteSectionGroup.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
