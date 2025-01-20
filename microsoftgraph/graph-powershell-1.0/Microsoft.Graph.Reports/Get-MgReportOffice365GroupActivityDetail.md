@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get details about Microsoft 365 groups activity by group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

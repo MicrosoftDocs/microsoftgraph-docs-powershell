@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Update the properties of a virtualEventWebinar object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

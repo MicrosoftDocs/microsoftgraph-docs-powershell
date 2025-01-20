@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Create a new contentType for a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/New-MgSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

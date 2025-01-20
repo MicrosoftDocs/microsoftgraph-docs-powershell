@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The site, drive, or mailbox units that are protected under a protection policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestorePointProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestorePointProtectionUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

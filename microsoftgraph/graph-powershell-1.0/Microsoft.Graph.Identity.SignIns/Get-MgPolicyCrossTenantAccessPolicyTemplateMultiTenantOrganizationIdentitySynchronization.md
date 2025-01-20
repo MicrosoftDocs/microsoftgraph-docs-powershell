@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Get the cross-tenant access policy template with user synchronization settings for a multitenant organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

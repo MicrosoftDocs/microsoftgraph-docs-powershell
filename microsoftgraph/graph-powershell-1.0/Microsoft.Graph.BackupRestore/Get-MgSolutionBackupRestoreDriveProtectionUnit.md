@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 The list of drive protection units in the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreDriveProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreDriveProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

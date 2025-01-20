@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Create a new externalGroup object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

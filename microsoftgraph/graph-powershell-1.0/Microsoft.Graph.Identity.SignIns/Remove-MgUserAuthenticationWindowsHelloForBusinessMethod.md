@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Deletes a windowsHelloForBusinessAuthenticationMethod object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ ms.subservice: entra-groups
 ## SYNOPSIS
 Update a thread object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

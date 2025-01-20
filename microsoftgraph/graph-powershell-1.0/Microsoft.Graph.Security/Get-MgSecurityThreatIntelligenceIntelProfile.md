@@ -12,6 +12,9 @@ ms.subservice: security
 ## SYNOPSIS
 Read the properties and relationships of a intelligenceProfile object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceIntelProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Update the properties of a customTaskExtension object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

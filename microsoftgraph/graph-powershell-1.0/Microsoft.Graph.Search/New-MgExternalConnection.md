@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Create a new externalConnection object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
