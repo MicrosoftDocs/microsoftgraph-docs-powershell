@@ -5,5 +5,15 @@
             "redirect_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0",
             "redirect_document_id": false
         }
+        {
+            "source_path": "/microsoftgraph/docs-conceptual/tutorial-grant-delegated-api-permissions.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        }
+        {
+            "source_path": "/microsoftgraph/docs-conceptual/tutorial-grant-app-only-api-permissions.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        }
     ]
 }
