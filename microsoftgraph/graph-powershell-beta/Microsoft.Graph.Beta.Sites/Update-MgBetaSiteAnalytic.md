@@ -48,18 +48,6 @@ Update-MgBetaSiteAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property analytics in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -32572,6 +32560,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteanalytic)
+
 
 
 

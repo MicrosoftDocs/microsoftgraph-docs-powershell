@@ -34,18 +34,6 @@ New-MgSolutionBackupRestoreDriveInclusionRule -BodyParameter <IMicrosoftGraphDri
 ## DESCRIPTION
 Create new navigation property to driveInclusionRules for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -389,6 +377,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoredriveinclusionrule](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoredriveinclusionrule)
+
 
 
 

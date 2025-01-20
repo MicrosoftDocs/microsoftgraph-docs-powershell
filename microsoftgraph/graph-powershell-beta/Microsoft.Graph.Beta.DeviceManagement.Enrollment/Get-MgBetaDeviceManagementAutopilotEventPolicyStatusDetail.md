@@ -38,18 +38,6 @@ Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDevice
 ## DESCRIPTION
 Policy and application status details for this device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -342,6 +330,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementautopiloteventpolicystatusdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementautopiloteventpolicystatusdetail)
+
 
 
 

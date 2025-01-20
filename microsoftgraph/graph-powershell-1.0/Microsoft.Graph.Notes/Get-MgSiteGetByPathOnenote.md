@@ -32,18 +32,6 @@ Get-MgSiteGetByPathOnenote -InputObject <INotesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Calls the OneNote service for notebook related operations.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -198,6 +186,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsitegetbypathonenote)
+
 
 
 
