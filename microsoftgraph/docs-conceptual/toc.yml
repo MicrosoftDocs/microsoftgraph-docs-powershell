@@ -29,7 +29,7 @@
         - name: Manage PIM policies
           href: how-to-manage-pim-policies.md
     - name: Grant API permissions
-      href: how-to-grant-api-permissions.md    
+      href: how-to-grant-revoke-api-permissions.md    
     - name: Query parameters
       items:
         - name: Use query parameters

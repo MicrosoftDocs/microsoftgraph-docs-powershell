@@ -65,10 +65,8 @@ landingContent:
             url: tutorial-pim.md
           - text: Manage PIM policies  
             url: how-to-manage-pim-policies.md 
-          - text: Grant and revoke delegated permissions
-            url: tutorial-grant-delegated-api-permissions.md 
-          - text: Grant and revoke app roles
-            url: tutorial-grant-app-only-api-permissions.md  
+          - text: Grant and revoke API permissions
+            url: how-to-grant-revoke-api-permissions.md 
 
   
   # Card

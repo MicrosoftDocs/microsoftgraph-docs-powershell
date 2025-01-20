@@ -13,12 +13,9 @@ zone_pivot_group_filename: graph-powershell/zone-pivot-groups.json
 #customer intent: As an IT admin managing permissions in Microsoft Entra ID, I want to learn how to grant and revoke API permissions for an app using Microsoft Graph PowerShell, to automate permission management tasks and ensure efficient and secure access control in my organization.
 ---
 
-# Tutorial: Grant and revoke delegated permissions in Microsoft Entra ID
+# Grant and revoke API permissions in Microsoft Entra ID
 
 When you grant API permissions to a client app in Microsoft Entra ID, the permission grants are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
-
->[!Caution]
->Be Careful! Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
 
 <!-- start the grant-delegated-permissions zone -->
 ::: zone pivot="grant-delegated-permissions"
@@ -27,11 +24,11 @@ In this article, you grant and revoke delegated permissions that are exposed by 
 
 ## Prerequisites
 
-To successfully complete this tutorial, make sure you have the required prerequisites:
+To successfully complete this guide, make sure you have the required prerequisites:
 
 1. A working Microsoft Entra tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a Privileged Role Administrator, Application Administrator, or a Cloud Application Administrator in the tenant and the appropriate permissions. For this tutorial, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
+1. Microsoft Graph PowerShell using a Privileged Role Administrator, Application Administrator, or a Cloud Application Administrator in the tenant and the appropriate permissions. For this guide, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "DelegatedPermissionGrant.ReadWrite.All"
@@ -206,15 +203,15 @@ When a delegated permission grant is deleted, the access it granted is revoked. 
 <!-- start the grant-application-permissions zone -->
 ::: zone pivot="grant-application-permissions"
 
-In this article, you'll grant app roles that are exposed by an API to an app. App roles, also called application permissions, or direct access permissions, allow an app to call an API with its own identity.
+In this article, you grant app roles that are exposed by an API to an app. App roles, also called application permissions, or direct access permissions, allow an app to call an API with its own identity.
 
 ## Prerequisites
 
-To successfully complete this tutorial, make sure you have the required prerequisites:
+To successfully complete this guide, make sure you have the required prerequisites:
 
 1. A working Microsoft Entra tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a Privileged Role Administrator in the tenant and the appropriate permissions. For this tutorial, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
+1. Microsoft Graph PowerShell using a Privileged Role Administrator in the tenant and the appropriate permissions. For this guide, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
