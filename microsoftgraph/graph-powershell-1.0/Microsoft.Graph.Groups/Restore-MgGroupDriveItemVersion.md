@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriveitemversion
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Restore-MgGroupDriveItemVersion
@@ -30,6 +31,9 @@ Restore-MgGroupDriveItemVersion -InputObject <IGroupsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitemversion-restore-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplicationFederatedIdentityCredentialByName
@@ -28,6 +29,9 @@ Get-MgBetaApplicationFederatedIdentityCredentialByName -InputObject <IApplicatio
 
 ## DESCRIPTION
 Read the properties and relationships of a federatedIdentityCredential object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-get-permissions.md)]
 
 ## EXAMPLES
 

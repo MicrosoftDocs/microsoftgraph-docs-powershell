@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Update-MgBetaPlannerTask
@@ -70,6 +71,9 @@ Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
 
 ## DESCRIPTION
 Update the properties of plannertask object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-update-permissions.md)]
 
 ## EXAMPLES
 

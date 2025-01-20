@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchdevicelink
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # New-MgBetaNetworkAccessConnectivityBranchDeviceLink
@@ -50,6 +51,9 @@ New-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAccess
 
 ## DESCRIPTION
 Create a branch site with associated device links.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-post-devicelinks-permissions.md)]
 
 ## EXAMPLES
 

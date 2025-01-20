@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityConditionalAccessPolicy
@@ -31,6 +32,9 @@ New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditi
 
 ## DESCRIPTION
 Create a new conditionalAccessPolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-post-policies-permissions.md)]
 
 ## EXAMPLES
 

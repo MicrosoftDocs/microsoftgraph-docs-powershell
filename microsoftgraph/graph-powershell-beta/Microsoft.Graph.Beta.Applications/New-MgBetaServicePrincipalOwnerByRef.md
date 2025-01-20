@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalownerbyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaServicePrincipalOwnerByRef
@@ -44,6 +45,9 @@ New-MgBetaServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> -BodyP
 ## DESCRIPTION
 Add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-post-owners-permissions.md)]
 
 ## EXAMPLES
 

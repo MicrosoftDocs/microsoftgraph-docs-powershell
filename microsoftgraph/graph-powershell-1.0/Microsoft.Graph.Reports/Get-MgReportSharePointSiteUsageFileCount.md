@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagefilecount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportSharePointSiteUsageFileCount
@@ -29,6 +30,9 @@ Get-MgReportSharePointSiteUsageFileCount -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Get the total number of files across all sites and the number of active files.
 A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagefilecounts-permissions.md)]
 
 ## EXAMPLES
 

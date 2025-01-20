@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewreviewer
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaAccessReviewReviewer
@@ -36,6 +37,9 @@ Get-MgBetaAccessReviewReviewer -InputObject <IIdentityGovernanceIdentity> [-Expa
 
 ## DESCRIPTION
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-listreviewers-permissions.md)]
 
 ## EXAMPLES
 

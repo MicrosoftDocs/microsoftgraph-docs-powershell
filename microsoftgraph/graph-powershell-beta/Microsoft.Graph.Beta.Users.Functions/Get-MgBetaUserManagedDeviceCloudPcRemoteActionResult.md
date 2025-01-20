@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicecloudpcremoteactionresult
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult
@@ -30,6 +31,9 @@ Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult -InputObject <IUsersFunctio
 ## DESCRIPTION
 Check the Cloud PC-specified remote action results for a Cloud PC device.
 Cloud PC supports reprovision and resize remote actions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcremoteactionresults-permissions.md)]
 
 ## EXAMPLES
 

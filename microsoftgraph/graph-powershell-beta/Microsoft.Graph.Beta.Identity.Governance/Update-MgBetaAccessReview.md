@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreview
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgBetaAccessReview
@@ -62,6 +63,9 @@ This API is not intended to change the reviewers or decisions of a review.
 To change the reviewers, use the addReviewer or removeReviewer APIs.
 To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the stop API.
 To apply the decisions to the target group or app access rights, use the apply API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-update-permissions.md)]
 
 ## EXAMPLES
 

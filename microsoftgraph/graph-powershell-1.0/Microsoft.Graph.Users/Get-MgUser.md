@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser
 schema: 2.0.0
+ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Get-MgUser
@@ -36,6 +38,9 @@ Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property
 
 ## DESCRIPTION
 Read properties and relationships of the user object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-get-permissions.md)]
 
 ## EXAMPLES
 

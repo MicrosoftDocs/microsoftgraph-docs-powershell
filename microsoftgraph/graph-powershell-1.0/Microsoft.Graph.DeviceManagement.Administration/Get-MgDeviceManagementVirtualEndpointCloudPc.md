@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointCloudPc
@@ -36,6 +38,12 @@ Get-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementAdmi
 
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPC object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-list-cloudpcs-permissions.md)]
 
 ## EXAMPLES
 

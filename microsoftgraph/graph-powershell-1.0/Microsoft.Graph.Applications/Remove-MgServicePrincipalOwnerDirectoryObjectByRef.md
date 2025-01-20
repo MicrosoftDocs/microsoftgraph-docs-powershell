@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalownerdirectoryobjectbyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgServicePrincipalOwnerDirectoryObjectByRef
@@ -30,6 +31,9 @@ Remove-MgServicePrincipalOwnerDirectoryObjectByRef -InputObject <IApplicationsId
 ## DESCRIPTION
 Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-owners-permissions.md)]
 
 ## EXAMPLES
 

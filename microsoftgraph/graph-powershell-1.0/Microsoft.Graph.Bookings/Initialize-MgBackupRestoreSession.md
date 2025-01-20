@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Initialize-MgBackupRestoreSession
@@ -28,6 +29,9 @@ Initialize-MgBackupRestoreSession -InputObject <IBookingsIdentity> [-ResponseHea
 ## DESCRIPTION
 Activate a draft restoreSessionBase object.
 The following points apply to restoring a protection unit:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/restoresessionbase-activate-permissions.md)]
 
 ## EXAMPLES
 

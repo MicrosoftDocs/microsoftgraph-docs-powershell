@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection
 schema: 2.0.0
+ms.subservice: windows-autopatch
+ms.subservice: autopatch
 ---
 
 # Get-MgBetaWindowsUpdatesResourceConnection
@@ -36,6 +38,12 @@ Get-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity
 
 ## DESCRIPTION
 Read the properties and relationships of a resourceConnection object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-resourceconnection-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-list-resourceconnections-permissions.md)]
 
 ## EXAMPLES
 

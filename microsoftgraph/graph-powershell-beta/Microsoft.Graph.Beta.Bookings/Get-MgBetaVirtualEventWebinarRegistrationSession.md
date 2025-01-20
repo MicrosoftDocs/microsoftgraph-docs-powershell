@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationsession
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarRegistrationSession
@@ -38,6 +39,9 @@ Get-MgBetaVirtualEventWebinarRegistrationSession -InputObject <IBookingsIdentity
 
 ## DESCRIPTION
 Get sessions from solutions
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistration-list-sessions-permissions.md)]
 
 ## EXAMPLES
 

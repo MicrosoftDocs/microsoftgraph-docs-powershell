@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessactivityuserdetail
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportSkypeForBusinessActivityUserDetail
@@ -42,6 +43,9 @@ Get-MgReportSkypeForBusinessActivityUserDetail -InputObject <IReportsIdentity> -
 
 ## DESCRIPTION
 Get details about Skype for Business activity by user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessactivityuserdetail-permissions.md)]
 
 ## EXAMPLES
 
