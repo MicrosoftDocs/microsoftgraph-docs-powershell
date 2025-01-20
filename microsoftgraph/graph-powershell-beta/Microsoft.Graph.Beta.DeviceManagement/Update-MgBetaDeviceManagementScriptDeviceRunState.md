@@ -48,18 +48,6 @@ Update-MgBetaDeviceManagementScriptDeviceRunState -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Update the navigation property deviceRunStates in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -16609,6 +16597,7 @@ Defaults to setting on client device.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementscriptdevicerunstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementscriptdevicerunstate)
+
 
 
 

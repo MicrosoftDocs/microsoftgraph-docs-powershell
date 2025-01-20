@@ -37,13 +37,17 @@ Delete the profileCardProperty object specified by its directoryPropertyName fro
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profilecardproperty-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+
+```
+This example shows how to use the Remove-MgBetaAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 

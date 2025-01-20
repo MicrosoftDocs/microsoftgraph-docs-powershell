@@ -51,17 +51,21 @@ Delete the password-based single sign-on credentials for a given group to a give
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-deletepasswordsinglesignoncredentials-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	id = "314ac440-129f-4cb3-ad61-24ef4a7de1d9"
 }
 
 Remove-MgBetaGroupPasswordSingleSignOnCredential -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgBetaGroupPasswordSingleSignOnCredential Cmdlet.
+
 
 ## PARAMETERS
 

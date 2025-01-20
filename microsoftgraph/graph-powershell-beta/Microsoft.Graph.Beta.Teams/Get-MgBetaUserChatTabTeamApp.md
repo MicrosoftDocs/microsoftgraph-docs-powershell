@@ -32,18 +32,6 @@ Get-MgBetaUserChatTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The application that is linked to the tab.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -244,6 +232,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattabteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattabteamapp)
+
 
 
 

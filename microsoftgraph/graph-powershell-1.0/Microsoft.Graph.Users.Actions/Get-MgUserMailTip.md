@@ -57,11 +57,11 @@ The requested MailTips are returned in a mailTips collection.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-getmailtips-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	EmailAddresses = @(
@@ -73,6 +73,10 @@ MailTipsOptions = "automaticReplies, mailboxFullStatus"
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailTip -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgUserMailTip Cmdlet.
+
 
 ## PARAMETERS
 

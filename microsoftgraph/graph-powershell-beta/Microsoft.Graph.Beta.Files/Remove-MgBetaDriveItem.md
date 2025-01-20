@@ -33,13 +33,17 @@ Remove-MgBetaDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 Delete navigation property items for drives
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Remove-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId
+```
+This example shows how to use the Remove-MgBetaDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -40,13 +40,17 @@ These values are shown to a user during a user journey defined by a user flow.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguagepage-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityB2XUserFlowLanguageDefaultPageContent -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId -UserFlowLanguagePageId $userFlowLanguagePageId -OutFile $outFileId
+
+```
+This example shows how to use the Get-MgIdentityB2XUserFlowLanguageDefaultPageContent Cmdlet.
+
 
 ## PARAMETERS
 

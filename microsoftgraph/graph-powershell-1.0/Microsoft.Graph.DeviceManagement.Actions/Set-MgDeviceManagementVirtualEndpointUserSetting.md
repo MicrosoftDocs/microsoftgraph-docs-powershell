@@ -55,11 +55,11 @@ Assign a cloudPcUserSetting to user groups.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-assign-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 $params = @{
 	assignments = @(
@@ -74,6 +74,10 @@ $params = @{
 }
 
 Set-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 

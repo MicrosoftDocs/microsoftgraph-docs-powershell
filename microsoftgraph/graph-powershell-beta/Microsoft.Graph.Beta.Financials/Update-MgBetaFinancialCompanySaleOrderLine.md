@@ -103,18 +103,6 @@ Update-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property salesOrderLines in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Account
@@ -892,6 +880,7 @@ ITEM `<IMicrosoftGraphItem>`: item
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorderline](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorderline)
+
 
 
 

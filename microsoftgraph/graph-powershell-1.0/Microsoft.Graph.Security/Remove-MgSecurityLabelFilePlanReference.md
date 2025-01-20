@@ -37,13 +37,17 @@ Delete a filePlanReferenceTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-fileplanreferences-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Remove-MgSecurityLabelFilePlanReference -FilePlanReferenceTemplateId $filePlanReferenceTemplateId
+
+```
+This example shows how to use the Remove-MgSecurityLabelFilePlanReference Cmdlet.
+
 
 ## PARAMETERS
 

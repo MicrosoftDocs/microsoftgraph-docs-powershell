@@ -34,13 +34,17 @@ Remove-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity> 
 Deletes a managedDevice.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Remove-MgDeviceManagementManagedDevice Cmdlet.
+
 
 ## PARAMETERS
 

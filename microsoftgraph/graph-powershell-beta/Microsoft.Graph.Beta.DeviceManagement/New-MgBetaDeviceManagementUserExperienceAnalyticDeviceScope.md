@@ -32,18 +32,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDeviceScopes for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -395,6 +383,7 @@ Default value is none.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicescope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicescope)
+
 
 
 

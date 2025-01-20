@@ -33,18 +33,6 @@ Invoke-MgBetaSoftUserChatMessageReplyDelete -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -281,6 +269,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasoftuserchatmessagereplydelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasoftuserchatmessagereplydelete)
 
 [https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-beta)
+
 
 
 

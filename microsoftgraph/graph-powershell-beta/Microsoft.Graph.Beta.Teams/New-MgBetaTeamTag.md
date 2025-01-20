@@ -53,11 +53,11 @@ Create a standard tag for members in the team.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "Finance"
@@ -72,6 +72,10 @@ $params = @{
 }
 
 New-MgBetaTeamTag -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTeamTag Cmdlet.
+
 
 ## PARAMETERS
 

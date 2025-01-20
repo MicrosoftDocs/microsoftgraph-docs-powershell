@@ -52,11 +52,11 @@ Planner plans can only be moved from a user container to a group container.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-movetocontainer-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	container = @{
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Move-MgBetaPlannerPlanToContainer -PlannerPlanId $plannerPlanId -BodyParameter $params
+
+```
+This example shows how to use the Move-MgBetaPlannerPlanToContainer Cmdlet.
+
 
 ## PARAMETERS
 

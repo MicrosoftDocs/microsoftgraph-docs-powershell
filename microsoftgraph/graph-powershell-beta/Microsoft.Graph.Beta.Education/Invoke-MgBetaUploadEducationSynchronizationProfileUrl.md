@@ -34,13 +34,17 @@ The SAS token has a validity of one hour.
 The upload URL is provided only for the CSV data provider.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Invoke-MgBetaUploadEducationSynchronizationProfileUrl -EducationSynchronizationProfileId $educationSynchronizationProfileId
+
+```
+This example shows how to use the Invoke-MgBetaUploadEducationSynchronizationProfileUrl Cmdlet.
+
 
 ## PARAMETERS
 

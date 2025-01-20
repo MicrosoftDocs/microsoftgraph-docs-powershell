@@ -30,18 +30,6 @@ Remove-MgBetaGroupThreadPostInReplyToMention -InputObject <IGroupsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property mentions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConversationThreadId
@@ -295,6 +283,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostinreplytomention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostinreplytomention)
+
 
 
 

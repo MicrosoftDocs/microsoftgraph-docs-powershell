@@ -45,13 +45,17 @@ List of distinct participants in the call.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/callrecords-callrecord-list-participants_v2-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallRecordParticipantV2 -CallRecordId $callRecordId
+
+```
+This example shows how to use the Get-MgBetaCommunicationCallRecordParticipantV2 Cmdlet.
+
 
 ## PARAMETERS
 

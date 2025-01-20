@@ -53,11 +53,11 @@ Update the properties and relationships of a shiftPreferences object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shiftpreferences-put-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 $params = @{
 	id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
@@ -85,6 +85,10 @@ timeSlots = $null
 }
 
 Update-MgUserSettingShiftPreference -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgUserSettingShiftPreference Cmdlet.
+
 
 ## PARAMETERS
 

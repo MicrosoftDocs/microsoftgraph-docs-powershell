@@ -40,13 +40,17 @@ You can't delete a policy that's in use.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId
+
+```
+This example shows how to use the Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+
 
 ## PARAMETERS
 

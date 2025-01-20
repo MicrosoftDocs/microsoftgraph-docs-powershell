@@ -52,11 +52,11 @@ This operation allows for linking or unlinking them as needed.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingpolicylink-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.networkaccess.forwardingPolicyLink"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessForwardingProfilePolicy -ForwardingProfileId $forwardingProfileId -PolicyLinkId $policyLinkId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessForwardingProfilePolicy Cmdlet.
+
 
 ## PARAMETERS
 

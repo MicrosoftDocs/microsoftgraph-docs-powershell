@@ -39,13 +39,17 @@ Use this API to check the health status of the Cloud PC and the session host.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-troubleshoot-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

@@ -53,11 +53,11 @@ Translate identifiers of Outlook-related resources between formats.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-translateexchangeids-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	inputIds = @(
@@ -70,6 +70,10 @@ targetIdType = "restImmutableEntryId"
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaTranslateUserExchangeId -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaTranslateUserExchangeId Cmdlet.
+
 
 ## PARAMETERS
 
