@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaforcedomaindelete
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Invoke-MgBetaForceDomainDelete
@@ -53,6 +54,9 @@ Before performing this operation, you must update or remove any references to Ex
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain return a 404 HTTP response code.
 To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code is returned in the response.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-forcedelete-permissions.md)]
 
 ## EXAMPLES
 

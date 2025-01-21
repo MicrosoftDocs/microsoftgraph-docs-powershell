@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowincludeapplication
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityAuthenticationEventFlowIncludeApplication
@@ -48,6 +49,9 @@ Add or link an application to a user flow, or authenticationEventsFlow.
 This enables the authentication experience defined by the user flow to be enabled for the application.
 An application can only be linked to one user flow.
 The app must have an associated service principal in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationconditionsapplications-post-includeapplications-permissions.md)]
 
 ## EXAMPLES
 

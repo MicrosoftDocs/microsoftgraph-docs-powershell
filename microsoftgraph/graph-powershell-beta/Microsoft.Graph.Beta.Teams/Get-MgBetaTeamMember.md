@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateammember
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamMember
@@ -36,6 +38,12 @@ Get-MgBetaTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 Get a conversationMember from a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-get-members-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-list-members-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofile
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessForwardingProfile
@@ -50,6 +51,9 @@ Update-MgBetaNetworkAccessForwardingProfile -InputObject <INetworkAccessIdentity
 
 ## DESCRIPTION
 Update an existing forwarding profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingprofile-update-permissions.md)]
 
 ## EXAMPLES
 

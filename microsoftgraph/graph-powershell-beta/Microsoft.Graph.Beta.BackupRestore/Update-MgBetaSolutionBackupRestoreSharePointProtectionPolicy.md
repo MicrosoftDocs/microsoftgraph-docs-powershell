@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy
@@ -54,6 +55,9 @@ Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBack
 ## DESCRIPTION
 Update a SharePoint protection policy.
 This method adds a siteprotectionunit to or removes it from the protection policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointprotectionpolicy-update-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionapplicationsynchronizationjobschema
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Invoke-MgFunctionApplicationSynchronizationJobSchema
@@ -30,6 +31,9 @@ Invoke-MgFunctionApplicationSynchronizationJobSchema -InputObject <IApplications
 
 ## DESCRIPTION
 List all the functions currently supported in the attributeMappingSource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-functions-permissions.md)]
 
 ## EXAMPLES
 

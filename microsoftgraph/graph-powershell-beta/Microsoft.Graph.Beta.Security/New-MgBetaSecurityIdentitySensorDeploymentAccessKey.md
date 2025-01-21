@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensordeploymentaccesskey
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # New-MgBetaSecurityIdentitySensorDeploymentAccessKey
@@ -19,6 +20,9 @@ New-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <S
 
 ## DESCRIPTION
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-regeneratedeploymentaccesskey-permissions.md)]
 
 ## EXAMPLES
 

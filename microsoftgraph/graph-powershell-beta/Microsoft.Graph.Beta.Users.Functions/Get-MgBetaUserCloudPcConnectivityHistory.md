@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcconnectivityhistory
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaUserCloudPcConnectivityHistory
@@ -28,6 +29,9 @@ Get-MgBetaUserCloudPcConnectivityHistory -InputObject <IUsersFunctionsIdentity> 
 
 ## DESCRIPTION
 Get the connectivity history of a specific Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpcconnectivityhistory-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatinstalledapp
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaChatInstalledApp
@@ -28,6 +29,9 @@ Remove-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Uninstall an app installed within a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-delete-installedapps-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Invoke-MgBetaReopenComplianceEdiscoveryCase
@@ -30,6 +31,9 @@ Invoke-MgBetaReopenComplianceEdiscoveryCase -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-reopen-permissions.md)]
 
 ## EXAMPLES
 
