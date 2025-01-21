@@ -36,13 +36,17 @@ For details, see Reopen a closed case.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-reopen-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Invoke-MgBetaReopenComplianceEdiscoveryCase -CaseId $caseId
+
+```
+This example shows how to use the Invoke-MgBetaReopenComplianceEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

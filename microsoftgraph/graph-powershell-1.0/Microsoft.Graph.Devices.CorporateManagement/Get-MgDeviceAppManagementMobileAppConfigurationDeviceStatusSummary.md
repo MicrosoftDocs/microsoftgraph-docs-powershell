@@ -36,13 +36,17 @@ Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary
 Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary Cmdlet.
+
 
 ## PARAMETERS
 

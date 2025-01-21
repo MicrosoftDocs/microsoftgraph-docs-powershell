@@ -34,13 +34,17 @@ Read the properties and relationships of a plannerTaskConfiguration object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskconfiguration-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.BusinessScenario
-```
 
 Get-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId $businessScenarioId
+
+```
+This example shows how to use the Get-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

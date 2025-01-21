@@ -58,18 +58,6 @@ Update-MgBetaDeviceManagementComplianceManagementPartner -InputObject <IDeviceMa
 ## DESCRIPTION
 Update the navigation property complianceManagementPartners in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -478,6 +466,7 @@ MACOSENROLLMENTASSIGNMENTS `<IMicrosoftGraphComplianceManagementPartnerAssignmen
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementcompliancemanagementpartner)
+
 
 
 

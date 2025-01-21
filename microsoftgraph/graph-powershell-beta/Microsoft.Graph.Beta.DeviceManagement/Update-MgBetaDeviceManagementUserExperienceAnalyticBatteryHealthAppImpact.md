@@ -51,18 +51,6 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsBatteryHealthAppImpact in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveDevices
@@ -496,6 +484,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthappimpact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthappimpact)
+
 
 
 

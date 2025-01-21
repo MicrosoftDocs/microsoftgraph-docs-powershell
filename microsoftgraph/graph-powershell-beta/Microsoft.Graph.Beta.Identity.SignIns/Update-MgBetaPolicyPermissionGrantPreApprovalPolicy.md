@@ -50,11 +50,11 @@ Update the properties of a permissionGrantPreApprovalPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpreapprovalpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.context" = "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity"
@@ -97,6 +97,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyPermissionGrantPreApprovalPolicy -PermissionGrantPreApprovalPolicyId $permissionGrantPreApprovalPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyPermissionGrantPreApprovalPolicy Cmdlet.
+
 
 ## PARAMETERS
 

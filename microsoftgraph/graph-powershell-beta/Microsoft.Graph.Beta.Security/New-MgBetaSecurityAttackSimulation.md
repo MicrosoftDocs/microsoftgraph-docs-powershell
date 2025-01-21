@@ -47,11 +47,11 @@ Create an attack simulation campaign for a tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	displayName = "Graph Simulation"
@@ -79,7 +79,7 @@ endUserNotificationSetting = @{
 	settingType = "noTraining"
 	positiveReinforcement = @{
 		deliveryPreference = "deliverAfterCampaignEnd"
-		endUserNotification = "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
+		"endUserNotification@odata.bind" = "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
 		defaultLanguage = "en"
 	}
 	simulationNotification = @{
@@ -91,6 +91,10 @@ endUserNotificationSetting = @{
 }
 
 New-MgBetaSecurityAttackSimulation -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 

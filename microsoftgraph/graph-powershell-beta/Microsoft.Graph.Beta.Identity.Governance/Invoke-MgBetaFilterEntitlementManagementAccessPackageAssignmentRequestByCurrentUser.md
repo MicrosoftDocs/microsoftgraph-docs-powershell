@@ -37,13 +37,17 @@ In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssig
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequest-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentRequestByCurrentUser -On $onId
+Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentRequestByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

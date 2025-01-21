@@ -58,13 +58,17 @@ In Microsoft Entra entitlement management, retrieve the properties and relations
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-list-assignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1cenario1 for u1ing query parameter1
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignment
+
+```
+This example shows scenarios for using query parameters
+
 
 ## PARAMETERS
 

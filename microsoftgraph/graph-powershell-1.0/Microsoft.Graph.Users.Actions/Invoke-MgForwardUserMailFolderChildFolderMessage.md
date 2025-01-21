@@ -68,18 +68,6 @@ Alternatively, create a draft to forward a message, and send it later.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-forward-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -583,6 +571,7 @@ TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-1.0)
+
 
 
 

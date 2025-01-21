@@ -43,20 +43,28 @@ Get-MgRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernanceIde
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
 ## EXAMPLES
+### Example 1 : Get the details of a role assignment
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.Governance
-```
+This example will get the details of a role assignment
 
-Get-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId -ExpandProperty "roleDefinition"
+### Example 2: Get the details of a role assignment and expand the relationships
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId -ExpandProperty "roleDefinition" 
+
+```
+This example will get the details of a role assignment and expand the relationships
+
 
 ## PARAMETERS
 

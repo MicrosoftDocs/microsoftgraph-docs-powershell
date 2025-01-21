@@ -34,13 +34,17 @@ List all the contentModelUsage information related to a contentModel applied to 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getapplieddrives-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteContentModelAppliedDrive -SiteId $siteId -ContentModelId $contentModelId
+
+```
+This example shows how to use the Get-MgBetaSiteContentModelAppliedDrive Cmdlet.
+
 
 ## PARAMETERS
 

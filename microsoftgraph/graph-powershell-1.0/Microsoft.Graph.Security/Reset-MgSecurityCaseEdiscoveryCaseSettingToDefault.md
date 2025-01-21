@@ -37,13 +37,17 @@ Reset a caseSettings object to the default values.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycasesettings-resettodefault-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet.
+
 
 ## PARAMETERS
 

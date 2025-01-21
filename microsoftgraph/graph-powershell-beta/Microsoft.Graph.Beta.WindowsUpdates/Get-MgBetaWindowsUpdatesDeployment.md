@@ -46,13 +46,17 @@ Read the properties and relationships of a deployment object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-list-deployments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 Get-MgBetaWindowsUpdatesDeployment
+
+```
+This example shows how to use the Get-MgBetaWindowsUpdatesDeployment Cmdlet.
+
 
 ## PARAMETERS
 

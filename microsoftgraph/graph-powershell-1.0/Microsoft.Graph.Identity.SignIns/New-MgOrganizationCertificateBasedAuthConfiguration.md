@@ -53,22 +53,26 @@ Create a new certificateBasedAuthConfiguration object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	certificateAuthorities = @(
 		@{
 			isRootAuthority = $true
-			certificate = \[System.Text.Encoding\]::ASCII.GetBytes("Binary")
+			certificate = [System.Text.Encoding]::ASCII.GetBytes("Binary")
 		}
 	)
 }
 
 New-MgOrganizationCertificateBasedAuthConfiguration -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgOrganizationCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

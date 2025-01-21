@@ -54,11 +54,11 @@ Update the properties of a businessScenario object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.BusinessScenario
-```
 
 $params = @{
 	ownerAppIds = @(
@@ -68,6 +68,10 @@ $params = @{
 }
 
 Update-MgBetaSolutionBusinessScenario -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSolutionBusinessScenario Cmdlet.
+
 
 ## PARAMETERS
 

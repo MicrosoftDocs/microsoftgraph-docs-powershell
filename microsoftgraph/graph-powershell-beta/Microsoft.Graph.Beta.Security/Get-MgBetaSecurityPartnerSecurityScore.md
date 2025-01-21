@@ -26,13 +26,17 @@ Read the properties and relationships of a partnerSecurityScore object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityPartnerSecurityScore
+
+```
+This example shows how to use the Get-MgBetaSecurityPartnerSecurityScore Cmdlet.
+
 
 ## PARAMETERS
 

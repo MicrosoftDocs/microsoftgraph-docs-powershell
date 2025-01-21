@@ -30,18 +30,6 @@ Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl
 ## DESCRIPTION
 Invoke action requestSignupUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -189,6 +177,7 @@ BODYPARAMETER `<IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraph
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidforworksettingsignupurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidforworksettingsignupurl)
+
 
 
 

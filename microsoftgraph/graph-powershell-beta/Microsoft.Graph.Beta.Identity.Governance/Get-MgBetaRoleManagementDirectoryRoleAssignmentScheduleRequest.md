@@ -49,13 +49,17 @@ In PIM, read the details of a request for an active and persistent role assignme
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignmentschedulerequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
+
+```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

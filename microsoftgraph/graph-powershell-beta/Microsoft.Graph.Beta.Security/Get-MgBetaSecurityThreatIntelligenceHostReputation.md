@@ -37,13 +37,17 @@ Get the properties and relationships of a hostReputation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-get-reputation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatIntelligenceHostReputation -HostId $hostId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostReputation Cmdlet.
+
 
 ## PARAMETERS
 

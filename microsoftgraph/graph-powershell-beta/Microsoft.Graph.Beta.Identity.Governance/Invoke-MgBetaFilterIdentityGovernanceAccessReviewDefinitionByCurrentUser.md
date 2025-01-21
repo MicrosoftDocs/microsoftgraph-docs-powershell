@@ -40,13 +40,17 @@ Returns accessReviewScheduleDefinition objects where the calling user is a revie
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewscheduledefinition-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser -On $onId
+Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

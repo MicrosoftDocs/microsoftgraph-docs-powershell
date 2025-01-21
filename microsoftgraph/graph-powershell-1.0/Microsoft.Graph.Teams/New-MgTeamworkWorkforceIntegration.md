@@ -39,25 +39,30 @@ Create a new workforceIntegration object.You can set up which entities you want 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
-	displayName = "displayName-value"
-	apiVersion = 99
-	encryption = @{
-		protocol = "protocol-value"
-		secret = "secret-value"
-	}
+	displayName = "ABCWorkforceIntegration"
+	apiVersion = 1
 	isActive = $true
-	url = "url-value"
-	supportedEntities = "supportedEntities-value"
+	encryption = @{
+		protocol = "sharedSecret"
+		secret = "My Secret"
+	}
+	url = "https://ABCWorkforceIntegration.com/Contoso/"
+	supportedEntities = "Shift,SwapRequest"
+	eligibilityFilteringEnabledEntities = "SwapRequest"
 }
 
 New-MgTeamworkWorkforceIntegration -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 

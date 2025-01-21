@@ -41,13 +41,17 @@ Get entity from programs by key
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaProgram
+
+```
+This example shows how to use the Get-MgBetaProgram Cmdlet.
+
 
 ## PARAMETERS
 

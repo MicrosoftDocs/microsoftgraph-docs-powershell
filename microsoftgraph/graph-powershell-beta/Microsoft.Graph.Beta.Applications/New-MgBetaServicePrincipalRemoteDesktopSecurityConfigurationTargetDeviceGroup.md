@@ -55,11 +55,11 @@ You can configure a maximum of 10 target device groups for the remoteDesktopSecu
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/remotedesktopsecurityconfiguration-post-targetdevicegroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.targetDeviceGroup"
@@ -68,6 +68,10 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup Cmdlet.
+
 
 ## PARAMETERS
 

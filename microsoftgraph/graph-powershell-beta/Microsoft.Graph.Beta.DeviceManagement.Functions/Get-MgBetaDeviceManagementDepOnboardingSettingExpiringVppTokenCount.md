@@ -29,18 +29,6 @@ Get-MgBetaDeviceManagementDepOnboardingSettingExpiringVppTokenCount
 ## DESCRIPTION
 Invoke function getExpiringVppTokenCount
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpiringBeforeDateTime
@@ -172,6 +160,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdeponboardingsettingexpiringvpptokencount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdeponboardingsettingexpiringvpptokencount)
+
 
 
 

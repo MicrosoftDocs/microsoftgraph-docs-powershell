@@ -49,13 +49,17 @@ Supports $expand.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-sponsors-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 Get-MgBetaUserSponsor -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserSponsor Cmdlet.
+
 
 ## PARAMETERS
 

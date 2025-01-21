@@ -42,17 +42,27 @@ Create a new cloudPcUserSetting object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-usersettings-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
 	displayName = "Example"
 	selfServiceEnabled = $false
 	localAdminEnabled = $true
+	crossRegionDisasterRecoverySetting = @{
+		crossRegionDisasterRecoveryEnabled = $false
+		maintainCrossRegionRestorePointEnabled = $true
+		disasterRecoveryNetworkSetting = @{
+			regionName = "westus"
+			regionGroup = "usEast"
+		}
+		disasterRecoveryType = "premium"
+		userInitiatedDisasterRecoveryAllowed = $true
+	}
 	restorePointSetting = @{
 		frequencyInHours = 16
 		frequencyType = "sixteenHours"
@@ -61,6 +71,10 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 

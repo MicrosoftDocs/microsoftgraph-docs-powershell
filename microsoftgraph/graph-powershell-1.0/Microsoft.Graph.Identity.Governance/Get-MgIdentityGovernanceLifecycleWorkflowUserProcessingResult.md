@@ -45,20 +45,28 @@ Per-user workflow execution results.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-list-userprocessingresults-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List the user processing results for a workflow
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.Governance
-```
+This example will list the user processing results for a workflow
 
-Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,workflowExecutionType,subject"
+### Example 2: List specific properties of user processing results for a workflow
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,workflowExecutionType,subject" 
+
+```
+This example will list specific properties of user processing results for a workflow
+
 
 ## PARAMETERS
 

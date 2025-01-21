@@ -32,13 +32,17 @@ Delegated tokens must be members of the class to get the teacher list.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-teachers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassTeacher -EducationClassId $educationClassId
+
+```
+This example shows how to use the Get-MgEducationClassTeacher Cmdlet.
+
 
 ## PARAMETERS
 

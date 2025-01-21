@@ -44,13 +44,17 @@ This is the container for a mailbox and OneDrive for Business site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-list-usersources-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -CaseId $caseId -LegalHoldId $legalHoldId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet.
+
 
 ## PARAMETERS
 
