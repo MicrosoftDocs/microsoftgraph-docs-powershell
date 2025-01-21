@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgadminreportsetting
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Update-MgAdminReportSetting
 
 ## SYNOPSIS
 Update tenant-level settings for Microsoft 365 reports.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminReportSetting](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaAdminReportSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,25 +29,18 @@ Update-MgAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettings>
 ## DESCRIPTION
 Update tenant-level settings for Microsoft 365 reports.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminreportsettings-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 $params = @{
 	displayConcealedNames = $true
 }
 
 Update-MgAdminReportSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgAdminReportSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -212,11 +201,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdminReportSettings>`: adminReportSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAdminReportSettings\>: adminReportSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayConcealedNames <Boolean?>]`: If set to true, all reports conceal user information such as usernames, groups, and sites.
+  \[DisplayConcealedNames \<Boolean?\>\]: If set to true, all reports conceal user information such as usernames, groups, and sites.
 If false, all reports show identifiable information.
 This property represents a setting in the Microsoft 365 admin center.
 Required.
@@ -226,26 +215,4 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgadminreportsetting)
 
 [https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: abf5c360-2264-43a6-a552-36d7543d2286
+Module Guid: be19666d-21a1-4c6f-9c0d-cfa352bd16c6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -352,23 +352,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserOnlineMeetingTranscript](Update-MgUserOnlineMeetingTranscript.md)
 
 ### [Update-MgUserPresence](Update-MgUserPresence.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

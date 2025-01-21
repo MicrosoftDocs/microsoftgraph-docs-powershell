@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingreconciliationbilled
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Export-MgBetaReportPartnerBillingReconciliationBilled
 
 ## SYNOPSIS
 Export the billed invoice reconciliation data.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Export-MgReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingReconciliationBilled?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,15 +30,12 @@ Export-MgBetaReportPartnerBillingReconciliationBilled
 ## DESCRIPTION
 Export the billed invoice reconciliation data.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
+```
 
 $params = @{
 	invoiceId = "G016907411"
@@ -50,10 +43,6 @@ $params = @{
 }
 
 Export-MgBetaReportPartnerBillingReconciliationBilled -BodyParameter $params
-
-```
-This example shows how to use the Export-MgBetaReportPartnerBillingReconciliationBilled Cmdlet.
-
 
 ## PARAMETERS
 
@@ -210,36 +199,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsYgrmj4ReportsPartnersBillingReconciliationBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttributeSet <String>]`: attributeSet
-  - `[InvoiceId <String>]`:
+BODYPARAMETER \<IPathsYgrmj4ReportsPartnersBillingReconciliationBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttributeSet \<String\>\]: attributeSet
+  \[InvoiceId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingreconciliationbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingreconciliationbilled)
 
 [https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
