@@ -12,6 +12,9 @@ ms.subservice: extensions
 Delete a directory extension definition represented by an extensionProperty object.
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

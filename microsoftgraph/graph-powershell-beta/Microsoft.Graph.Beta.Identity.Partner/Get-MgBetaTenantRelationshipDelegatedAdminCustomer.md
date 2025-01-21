@@ -12,6 +12,9 @@ ms.subservice: partner-customer-administration
 ## SYNOPSIS
 Read the properties of a delegatedAdminCustomer object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get details about OneDrive usage by account.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageAccountDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageAccountDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

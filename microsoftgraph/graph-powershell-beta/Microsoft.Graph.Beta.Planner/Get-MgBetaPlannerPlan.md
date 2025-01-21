@@ -12,6 +12,9 @@ ms.subservice: planner
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerplan object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlan?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

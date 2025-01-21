@@ -12,6 +12,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Read the properties and relationships of a virtualEventWebinar object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

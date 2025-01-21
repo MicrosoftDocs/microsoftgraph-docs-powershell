@@ -12,6 +12,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Get a conversationMember from a channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

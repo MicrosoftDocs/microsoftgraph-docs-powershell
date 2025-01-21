@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the date and time when an artifact is protected by a protectionPolicy and can be restored.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
