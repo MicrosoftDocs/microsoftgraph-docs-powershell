@@ -1,210 +1,106 @@
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License.
-Param(
-    $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
-    [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
-    [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell"),
-    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $MissingMsProdHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl")
+param(
+    [string]$MgCommandMetadatJsonFile = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
+    [string]$File =  (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md")
 )
-function Get-GraphMapping {
-    $graphMapping = @{}
-    $graphMapping.Add("beta", "beta")
-    $graphMapping.Add("v1.0", "v1.0")
-    return $graphMapping
-}
+
 function Start-Generator {
-    Param(
-        $ModulesToGenerate = @()
-    )
-    $ModulePrefix = "Microsoft.Graph"
-    $GraphMapping = Get-GraphMapping 
-    $GraphMapping.Keys | ForEach-Object {
-        $GraphProfile = $_
-        $ProfilePath = "graph-powershell-1.0"
-        if ($GraphProfile -eq "beta") {
-            $ProfilePath = "graph-powershell-beta"
-        }
-        Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
-    } 
-}
-function Get-FilesByProfile {
-    Param(
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $GraphProfilePath = "graph-powershell-1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $ModulePrefix = "Microsoft.Graph",
-        [ValidateNotNullOrEmpty()]
-        $ModulesToGenerate = @()
-    )
-    if ($GraphProfile -eq "beta") {
-        $ModulePrefix = "Microsoft.Graph.Beta"
-    }
-    try {
-        $ModulesToGenerate | ForEach-Object {
-            $ModuleName = $_
-            $FullModuleName = "$ModulePrefix.$ModuleName"
-            $ModulePath = Join-Path $WorkLoadDocsPath $GraphProfilePath $FullModuleName
-            Get-Files -GraphProfile $GraphProfile -GraphProfilePath $ModulePath -Module $ModuleName -ModulePrefix $ModulePrefix
-            
-        }
-    }
-    catch {
+# Load the JSON file
+$MgCommandMetadatJson = Get-Content $MgCommandMetadatJsonFile | ConvertFrom-Json;
 
-        Write-Host "`nError Message: " $_.Exception.Message
-        Write-Host "`nError in Line: " $_.InvocationInfo.Line
-        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
-        Write-Host "`nError Item Name: "$_.Exception.ItemName
-    }
-
-}
-function Get-Files {
-    param(
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $GraphProfilePath = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users"),
-        [ValidateNotNullOrEmpty()]
-        [string] $Module = "Users",
-        [ValidateNotNullOrEmpty()]
-        [string] $ModulePrefix = "Microsoft.Graph"
-    )
-
-
-    try {
-        if (Test-Path $GraphProfilePath) {
-            $ModuleMetaData = $GraphProfile -eq "v1.0" ? "Microsoft.Graph.$Module" : "Microsoft.Graph.Beta.$Module"
-            foreach ($File in Get-ChildItem $GraphProfilePath) {
-               
-                #Extract command over here
-                $Command = [System.IO.Path]::GetFileNameWithoutExtension($File)
-                $ExternalDocUrl = ""
-                if ($Command -ne $ModuleMetaData) {
-                    #Extract URI path
-                    $ApiRefLinks = (Find-MgGraphCommand -Command $Command).ApiReferenceLink
-                    if ($ApiRefLinks) {
-                        if($ApiRefLinks.Count -gt 1) {
-                            $ExternalDocUrl = $ApiRefLinks[0] + "&tabs=powershell"
-                        }else{
-                            $ExternalDocUrl = $ApiRefLinks + "&tabs=powershell"
-                        }
-                        WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $File
-                    }
-                }
-
+$MgCommandMetadatJson | ForEach-Object {
+    $CommandName = $_.Command;
+    $Variant = $_.Variants;
+    $ListVariant = $Variant | Where-Object { $_ -eq "List" };
+    #Array for DelegatedWork Permissions
+    $DelegatedWorkPermissions = @();
+    #Array for Application Permissions
+    $ApplicationPermissions = @();
+    #Array for DelegatedPersonal Permissions
+    $DelegatedPersonalPermissions = @();
+    if($CommandName -eq "Get-MgUser" -and $ListVariant -eq "List"){
+        #Get Permissions
+        $Permissions = $_.Permissions;
+        $Permissions | ForEach-Object {
+            $Permission = $_;
+            $PermissionName = $Permission.Name;
+            $PermissionType = $Permission.PermissionType;
+            $IsLeastPrivilege = $Permission.IsLeastPrivilege;
+            #Write-Host "Command: $CommandName, Permission: $PermissionName, Type: $PermissionType, IsLeastPrivilege: $IsLeastPrivilege";
+            if($PermissionType -eq "DelegatedWork"){
+                $DelegatedWorkPermissions += $PermissionName;
+            }
+            elseif($PermissionType -eq "Application"){
+                $ApplicationPermissions += $PermissionName;
+            }
+            elseif($PermissionType -eq "DelegatedPersonal"){
+                $DelegatedPersonalPermissions += $PermissionName;
             }
         }
-    }
-    catch {
-
-        Write-Host "`nError Message: " $_.Exception.Message
-        Write-Host "`nError in Line: " $_.InvocationInfo.Line
-        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
-        Write-Host "`nError Item Name: "$_.Exception.ItemName
+        New-ReferenceTable -CommandName $CommandName -DelegatedWorkPermissions $DelegatedWorkPermissions -ApplicationPermissions $ApplicationPermissions -DelegatedPersonalPermissions $DelegatedPersonalPermissions;    
     }
     
 }
-
-function Append-GraphPrefix {
-    param(
-        [string] $UriPath
-    )
-    $UriPathSegments = $UriPath.Split("/")
-    $LastUriPathSegment = $UriPathSegments[$UriPathSegments.Length - 1]
-    $UriPath = $UriPath.Replace($LastUriPathSegment, "microsoft.graph." + $LastUriPathSegment)
-    return $UriPath
 }
-function WebScrapping {
-    param(
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $ExternalDocUrl = "https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=powershell",
-        [ValidateNotNullOrEmpty()]
-        [string] $Command = "Get-MgUser",
-        [string] $File = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md")
-    ) 
 
+function New-ReferenceTable {
+    param(
+        [string]$CommandName,
+        [string[]]$DelegatedWorkPermissions,
+        [string[]]$ApplicationPermissions,
+        [string[]]$DelegatedPersonalPermissions
+    )
+
+    # Initialize the table with headers
+$DWPerms = ""
+$AppPerms = ""
+$DPPerms = ""
+if ($DelegatedWorkPermissions.Count -gt 0) {
+    $DelegatedWorkPermissions | ForEach-Object {
+        $DWPerms += $_ + ", ";
+    }
+}else{
+    $DWPerms = "Not supported";
+}
     
-
-    $ExternalDocUrlPaths = $ExternalDocUrl.Split("://")[1].Split("/")
-    $LastExternalDocUrlPathSegmentWithQueryParam = $ExternalDocUrlPaths[$ExternalDocUrlPaths.Length - 1]
-    $LastExternalDocUrlPathSegmentWithoutQueryParam = $LastExternalDocUrlPathSegmentWithQueryParam.Split("?")[0]
-
-    $PermissionsUrl = "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/main/api-reference/$GraphProfile/includes/permissions/$LastExternalDocUrlPathSegmentWithoutQueryParam-permissions.md"
-    $PermissionsLink = "[!INCLUDE [permissions-table](~/../graphref/api-reference/$GraphProfile/includes/permissions/$LastExternalDocUrlPathSegmentWithoutQueryParam-permissions.md)]"
-   
-    Write-Host "`n$PermissionsUrl"
-    try {
-        #We need to check if the permissions url exists
-        $HttpStatus = ConfirmHttpStatus -PermissionsUrl $PermissionsUrl
-        if ($HttpStatus -eq 200) {
-            if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## PARAMETERS') {
-                if ((Get-Content -Raw -Path $File) -match $PermissionsLink) {
-                    Write-Host "`n$PermissionsLink already exists in $File"
-                }
-                else {
-                    if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
-                        $Link = "**Permissions**`r`n$PermissionsLink`r`n`n## EXAMPLES"
-                        (Get-Content $File) | 
-                        Foreach-Object { $_ -replace '## EXAMPLES', $Link }  | 
-                        Out-File $File
-                    }
-                    else {
-                        $Link = "**Permissions**`r`n$PermissionsLink`r`n`n## PARAMETERS"
-                        (Get-Content $File) | 
-                        Foreach-Object { $_ -replace '## PARAMETERS', $Link }  | 
-                        Out-File $File
-                    }
-                }
-            } 
-        }
+    if($ApplicationPermissions.Count -gt 0){
+    $ApplicationPermissions | ForEach-Object {
+        $AppPerms += $_ + ", "; 
     }
-    catch {
-
-        Write-Host "`nError Message: " $_.Exception.Message
-        Write-Host "`nError in Line: " $_.InvocationInfo.Line
-        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
-        Write-Host "`nError Item Name: "$_.Exception.ItemName
+}else{
+    $AppPerms = "Not supported";
+}
+    if($DelegatedPersonalPermissions.Count -gt 0){
+        $DelegatedPersonalPermissions | ForEach-Object {
+            $DPPerms += $_ + ", ";  
+          }
+    }else{
+        $DPPerms = "Not supported";
     }
-}
-function ConfirmHttpStatus {
-    param(
-        [string]$PermissionsUrl
-    )
-    try {
-        $HTTP_Request = [System.Net.WebRequest]::Create($PermissionsUrl)
-        $HTTP_Response = $HTTP_Request.GetResponse()
-        $HTTP_Status = [int]$HTTP_Response.StatusCode
-        If (-not($HTTP_Response -eq $null)) { $HTTP_Response.Close() } 
-        return $HTTP_Status
-    }
-    catch {
 
-        # Write-Host "`nError Message: " $_.Exception.Message
-        # Write-Host "`nError in Line: " $_.InvocationInfo.Line
-        # Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
-        # Write-Host "`nError Item Name: "$_.Exception.ItemName
-    }
-}
+#Generate a markdown table
+$markdownTable = @"
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | $DWPerms |
+| Delegated (personal Microsoft account) | $DPPerms |
+| Application | $AppPerms |
+"@;
 
 
-if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
-    Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
+if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
+    $Link = "**Permissions**`r`n$markdownTable`r`n`n## EXAMPLES"
+    (Get-Content $File) | 
+    Foreach-Object { $_ -replace '## EXAMPLES', $Link }  | 
+    Out-File $File
 }
-If (-not (Get-Module -ErrorAction Ignore -ListAvailable PowerHTML)) {
-    Write-Verbose "Installing PowerHTML module for the current user..."
-    Install-Module PowerHTML -ErrorAction Stop -Scope CurrentUser -Force
+else {
+    $Link = "**Permissions**`r`n$markdownTable`r`n`n## PARAMETERS"
+    (Get-Content $File) | 
+    Foreach-Object { $_ -replace '## PARAMETERS', $Link }  | 
+    Out-File $File
 }
-Import-Module -ErrorAction Stop PowerHTML
-if (-not (Test-Path $ModuleMappingConfigPath)) {
-    Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
+
+#$markdownTable | Out-File -FilePath "PermissionReferenceTable.md" -Encoding utf8;
 }
-if ($ModulesToGenerate.Count -eq 0) {
-    [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
-    $ModulesToGenerate = $ModuleMapping.Keys
-}
-Start-Generator -ModulesToGenerate $ModulesToGenerate
+
+Start-Generator;
