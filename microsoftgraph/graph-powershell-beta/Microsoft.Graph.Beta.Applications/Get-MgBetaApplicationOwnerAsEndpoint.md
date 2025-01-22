@@ -48,18 +48,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -375,6 +363,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerasendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerasendpoint)
+
 
 
 

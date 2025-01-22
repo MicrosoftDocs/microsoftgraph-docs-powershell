@@ -36,18 +36,6 @@ Delete navigation property permissions for sites
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -308,6 +296,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitempermission)
+
 
 
 

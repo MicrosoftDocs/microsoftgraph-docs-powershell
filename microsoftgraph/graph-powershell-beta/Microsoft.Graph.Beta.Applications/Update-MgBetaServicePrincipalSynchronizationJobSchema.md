@@ -65,22 +65,6 @@ You must be the owner of the application.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -639,6 +623,7 @@ Must match one of the directory definitions in synchronizationSchema.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjobschema)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-update?view=graph-rest-beta)
+
 
 
 

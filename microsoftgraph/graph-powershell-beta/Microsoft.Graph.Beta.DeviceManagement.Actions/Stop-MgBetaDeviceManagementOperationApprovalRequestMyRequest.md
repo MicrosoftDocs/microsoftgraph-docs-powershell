@@ -37,18 +37,6 @@ Invoke action cancelMyRequest
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -211,6 +199,7 @@ BODYPARAMETER `<IPathsN1ActbDevicemanagementOperationapprovalrequestsMicrosoftGr
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementoperationapprovalrequestmyrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementoperationapprovalrequestmyrequest)
+
 
 
 

@@ -48,18 +48,6 @@ Returns the plannerTasks to be shown in the My Day view of the user.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -333,6 +321,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannermydaytask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannermydaytask)
+
 
 
 

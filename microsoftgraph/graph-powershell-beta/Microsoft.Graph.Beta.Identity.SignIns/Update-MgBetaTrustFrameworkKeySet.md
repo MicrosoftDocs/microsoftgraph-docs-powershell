@@ -57,22 +57,6 @@ Specifying the ID in the request payload is optional.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -500,6 +484,7 @@ For more information, see RFC 5280.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset)
 
 [https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta)
+
 
 
 

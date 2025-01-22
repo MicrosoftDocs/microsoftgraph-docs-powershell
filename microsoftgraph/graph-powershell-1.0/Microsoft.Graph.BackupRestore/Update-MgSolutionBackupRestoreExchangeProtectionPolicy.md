@@ -66,18 +66,6 @@ This method adds a mailboxprotectionunit to or removes it from the protection po
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -576,6 +564,7 @@ RETENTIONSETTINGS `<IMicrosoftGraphRetentionSetting- `[]`>`: Contains the retent
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangeprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangeprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-1.0)
+
 
 
 

@@ -60,22 +60,6 @@ For more information, see Update b2cIdentityUserFlow.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -438,6 +422,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage)
 
 [https://learn.microsoft.com/graph/api/b2cidentityuserflow-put-languages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2cidentityuserflow-put-languages?view=graph-rest-beta)
+
 
 
 

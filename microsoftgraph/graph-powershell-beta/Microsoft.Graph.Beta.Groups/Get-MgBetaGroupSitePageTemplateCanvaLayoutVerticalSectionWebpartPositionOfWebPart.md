@@ -36,18 +36,6 @@ Invoke action getPositionOfWebPart
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -271,6 +259,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitepagetemplatecanvalayoutverticalsectionwebpartpositionofwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitepagetemplatecanvalayoutverticalsectionwebpartpositionofwebpart)
+
 
 
 

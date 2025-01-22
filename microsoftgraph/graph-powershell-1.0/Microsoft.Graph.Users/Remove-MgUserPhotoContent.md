@@ -55,18 +55,6 @@ Read-only.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.ReadWrite.All, User.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -261,6 +249,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserphotocontent)
+
 
 
 

@@ -40,22 +40,6 @@ Invoke function reminderView
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -288,6 +272,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder)
 
 [https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-1.0)
+
 
 
 
