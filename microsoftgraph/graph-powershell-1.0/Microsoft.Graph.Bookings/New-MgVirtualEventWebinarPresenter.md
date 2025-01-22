@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarpresenter
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # New-MgVirtualEventWebinarPresenter

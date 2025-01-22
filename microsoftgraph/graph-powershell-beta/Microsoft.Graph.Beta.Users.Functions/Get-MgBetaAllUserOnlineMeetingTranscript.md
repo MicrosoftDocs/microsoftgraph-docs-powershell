@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingtranscript
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaAllUserOnlineMeetingTranscript
