@@ -37,6 +37,13 @@ Get-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity> [-Expand
 ## DESCRIPTION
 The definitions of the roles in the schedule.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Schedule.Read.All, SchedulePermissions.ReadWrite.All, Schedule.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

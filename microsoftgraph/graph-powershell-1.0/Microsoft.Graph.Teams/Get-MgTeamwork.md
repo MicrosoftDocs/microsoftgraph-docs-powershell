@@ -21,6 +21,13 @@ Get-MgTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHea
 ## DESCRIPTION
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

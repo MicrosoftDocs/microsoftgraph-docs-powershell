@@ -30,6 +30,13 @@ Update-MgAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettings>
 ## DESCRIPTION
 Update tenant-level settings for Microsoft 365 reports.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

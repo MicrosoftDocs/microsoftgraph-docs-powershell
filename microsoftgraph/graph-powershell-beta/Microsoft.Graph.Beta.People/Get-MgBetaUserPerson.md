@@ -43,6 +43,13 @@ The most relevant people to the user.
 The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration, and business relationships.
 A person aggregates information from mail, contacts, and social networks.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

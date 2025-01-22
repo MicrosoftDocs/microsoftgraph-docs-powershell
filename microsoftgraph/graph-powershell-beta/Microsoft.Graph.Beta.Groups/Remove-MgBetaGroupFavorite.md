@@ -31,6 +31,13 @@ Remove-MgBetaGroupFavorite -InputObject <IGroupsIdentity> [-ResponseHeadersVaria
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

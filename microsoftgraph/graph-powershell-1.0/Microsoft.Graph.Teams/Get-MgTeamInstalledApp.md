@@ -39,6 +39,13 @@ Get-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve the app installed in the specified team.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteAndConsentForTeam,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsAppInstallation.Read.Group, Group.ReadWrite.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ManageSelectedForTeam.All, Group.Read.All, Directory.ReadWrite.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

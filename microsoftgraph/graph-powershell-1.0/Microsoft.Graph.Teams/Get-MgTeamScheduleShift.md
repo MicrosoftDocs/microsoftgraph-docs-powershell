@@ -39,6 +39,13 @@ Get-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Retrieve the properties and relationships of a shift object by ID.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.Read.All, Schedule.ReadWrite.All, Schedule.Read.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

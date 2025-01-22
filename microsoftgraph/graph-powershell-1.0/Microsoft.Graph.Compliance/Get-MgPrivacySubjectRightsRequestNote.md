@@ -38,6 +38,13 @@ Get-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-Expan
 ## DESCRIPTION
 List of notes associated with the request.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -40,6 +40,13 @@ Get-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandProper
 Represents the app roles granted to a group for an application.
 Supports $expand.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

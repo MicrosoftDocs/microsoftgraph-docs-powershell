@@ -40,6 +40,13 @@ Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -Input
 ## DESCRIPTION
 A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

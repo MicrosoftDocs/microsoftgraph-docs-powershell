@@ -61,6 +61,13 @@ When set during creation through the displayName property, the subject of the ce
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

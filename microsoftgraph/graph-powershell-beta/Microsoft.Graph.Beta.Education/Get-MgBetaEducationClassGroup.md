@@ -30,6 +30,13 @@ Get-MgBetaEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the Microsoft 365 group that corresponds to this educationClass.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Write, EduRoster.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

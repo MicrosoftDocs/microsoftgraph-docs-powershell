@@ -31,6 +31,13 @@ Get-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <ISec
 The parent label associated with a child label.
 Null if the label has no parent.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

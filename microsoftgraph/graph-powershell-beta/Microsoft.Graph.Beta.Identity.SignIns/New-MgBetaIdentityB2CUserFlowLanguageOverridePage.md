@@ -44,6 +44,13 @@ New-MgBetaIdentityB2CUserFlowLanguageOverridePage -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Create new navigation property to overridesPages for identity
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

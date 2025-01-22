@@ -55,6 +55,13 @@ The following actions are performed as part of this operation: After the domain 
 To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code is returned in the response.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

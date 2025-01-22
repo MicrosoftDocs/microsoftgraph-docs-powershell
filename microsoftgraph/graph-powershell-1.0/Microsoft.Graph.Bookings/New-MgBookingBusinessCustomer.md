@@ -44,6 +44,13 @@ New-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> -BodyParameter <H
 ## DESCRIPTION
 Create a new bookingCustomer object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

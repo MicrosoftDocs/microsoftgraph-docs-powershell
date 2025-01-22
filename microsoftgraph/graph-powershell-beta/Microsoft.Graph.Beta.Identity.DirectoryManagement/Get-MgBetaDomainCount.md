@@ -20,6 +20,13 @@ Get-MgBetaDomainCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVar
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

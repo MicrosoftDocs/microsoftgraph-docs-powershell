@@ -43,6 +43,13 @@ The default is to show events under the Default Calendar.
 Read-only.
 Nullable.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calendars.ReadBasic, Calendars.Read,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

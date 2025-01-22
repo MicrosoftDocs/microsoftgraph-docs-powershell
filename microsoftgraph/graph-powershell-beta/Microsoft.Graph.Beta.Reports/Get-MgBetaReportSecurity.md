@@ -21,6 +21,13 @@ Get-MgBetaReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Provides the ability to launch a simulated phishing attack that organizations can learn from.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

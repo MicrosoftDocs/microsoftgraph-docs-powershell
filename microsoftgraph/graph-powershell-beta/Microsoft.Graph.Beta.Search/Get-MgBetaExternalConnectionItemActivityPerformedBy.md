@@ -30,6 +30,13 @@ Get-MgBetaExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentit
 ## DESCRIPTION
 Represents an identity used to identify who is responsible for the activity.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -38,6 +38,13 @@ Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

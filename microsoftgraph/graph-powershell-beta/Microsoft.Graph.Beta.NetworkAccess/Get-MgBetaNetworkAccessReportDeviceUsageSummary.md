@@ -31,6 +31,13 @@ Get-MgBetaNetworkAccessReportDeviceUsageSummary -InputObject <INetworkAccessIden
 Get a summary of device onboarding and offboarding within a specified timeframe.
 This summary includes the total number of devices, active devices, and inactive devices.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

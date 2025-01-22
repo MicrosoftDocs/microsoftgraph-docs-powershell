@@ -32,6 +32,13 @@ Invoke-MgBetaRecentUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-E
 ## DESCRIPTION
 List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

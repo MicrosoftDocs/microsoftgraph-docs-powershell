@@ -25,6 +25,13 @@ Get-MgBetaPlannerPlanDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 Get newly created, updated, or deleted Planner plans in either a group or a Planner roster without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

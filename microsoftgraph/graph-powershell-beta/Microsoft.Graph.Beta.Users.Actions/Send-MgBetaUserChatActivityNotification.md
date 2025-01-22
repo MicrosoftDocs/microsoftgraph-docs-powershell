@@ -54,6 +54,13 @@ Send-MgBetaUserChatActivityNotification -InputObject <IUsersActionsIdentity>
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

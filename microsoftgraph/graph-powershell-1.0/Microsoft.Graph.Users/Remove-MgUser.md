@@ -37,6 +37,13 @@ The user is also restored to any groups they were a member of.
 After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
 To manage the deleted user object, see deletedItems.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.DeleteRestore.All, User.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,13 @@ Get-MgBetaPrintPrinterJobDocumentContent -InputObject <IDevicesCloudPrintIdentit
 Download the binary file associated with a printDocument.
 Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.Read, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

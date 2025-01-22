@@ -33,6 +33,13 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGrou
 References the group that is the scope of the membership or ownership eligibility through PIM for groups.
 Supports $expand.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

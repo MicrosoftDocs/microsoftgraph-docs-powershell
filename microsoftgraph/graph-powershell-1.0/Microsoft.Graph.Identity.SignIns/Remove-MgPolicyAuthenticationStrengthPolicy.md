@@ -30,6 +30,13 @@ Remove-MgPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Delete a custom authenticationStrengthPolicy object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

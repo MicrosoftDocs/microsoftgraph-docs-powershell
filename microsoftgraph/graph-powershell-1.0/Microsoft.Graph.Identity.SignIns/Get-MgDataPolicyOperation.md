@@ -38,6 +38,13 @@ Get-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the properties of a dataPolicyOperation object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Export.All, User.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -48,6 +48,13 @@ Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus -InputObject <IUsersAct
 ## DESCRIPTION
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -43,6 +43,13 @@ New-MgBetaUserDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to columnLinks for users
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

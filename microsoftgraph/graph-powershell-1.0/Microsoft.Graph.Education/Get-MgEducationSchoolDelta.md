@@ -25,6 +25,13 @@ Get-MgEducationSchoolDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 Get newly created or updated schools without having to perform a full read of the entire school collection.
 See Use delta query for details.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.ReadBasic.All, EduRoster.WriteWrite.All, EduRoster.ReadWrite.All, EduRoster.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

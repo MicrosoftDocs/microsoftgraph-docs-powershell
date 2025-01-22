@@ -38,6 +38,13 @@ Get-MgBetaSecurityThreatIntelligenceHostParentHostPair -InputObject <ISecurityId
 ## DESCRIPTION
 The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

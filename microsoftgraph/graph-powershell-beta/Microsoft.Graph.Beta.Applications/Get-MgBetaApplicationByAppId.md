@@ -30,6 +30,13 @@ Get-MgBetaApplicationByAppId -InputObject <IApplicationsIdentity> [-ExpandProper
 ## DESCRIPTION
 Get the properties and relationships of an application object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.Read,  |
+| Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

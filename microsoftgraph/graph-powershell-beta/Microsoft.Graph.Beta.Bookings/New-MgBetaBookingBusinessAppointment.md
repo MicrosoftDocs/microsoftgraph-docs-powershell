@@ -119,6 +119,13 @@ New-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to appointments for bookingBusinesses
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

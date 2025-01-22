@@ -38,6 +38,13 @@ Get-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Preconfigured synchronization settings for a particular application.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

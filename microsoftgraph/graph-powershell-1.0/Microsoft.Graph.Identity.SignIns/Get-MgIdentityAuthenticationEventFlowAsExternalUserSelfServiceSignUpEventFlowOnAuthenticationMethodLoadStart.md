@@ -39,6 +39,13 @@ Must have at least one identity provider linked.
 Supports $filter (eq).
 See support for filtering on user flows for syntax information.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

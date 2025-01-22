@@ -29,6 +29,13 @@ Sync-MgBetaDeviceManagementWindowsDriverUpdateProfileInventory -InputObject <IDe
 ## DESCRIPTION
 Sync the driver inventory of a WindowsDriverUpdateProfile.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

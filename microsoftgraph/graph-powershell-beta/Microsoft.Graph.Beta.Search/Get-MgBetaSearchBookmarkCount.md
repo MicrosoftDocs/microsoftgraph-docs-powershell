@@ -20,6 +20,13 @@ Get-MgBetaSearchBookmarkCount [-Filter <String>] [-Search <String>] [-ResponseHe
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

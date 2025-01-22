@@ -41,6 +41,13 @@ Get-MgReportTeamDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get details about Microsoft Teams device usage by user.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

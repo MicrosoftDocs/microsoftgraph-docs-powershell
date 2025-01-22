@@ -41,6 +41,13 @@ Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Read the properties and relationships of an allowedValue object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

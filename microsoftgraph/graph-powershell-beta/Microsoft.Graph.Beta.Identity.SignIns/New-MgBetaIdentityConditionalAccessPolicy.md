@@ -33,6 +33,13 @@ New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditi
 ## DESCRIPTION
 Create a new conditionalAccessPolicy.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

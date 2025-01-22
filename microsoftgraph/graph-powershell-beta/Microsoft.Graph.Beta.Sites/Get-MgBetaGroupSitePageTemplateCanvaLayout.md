@@ -29,6 +29,13 @@ Get-MgBetaGroupSitePageTemplateCanvaLayout -InputObject <ISitesIdentity> [-Expan
 ## DESCRIPTION
 The layout of the content in a given SharePoint page template, including horizontal sections and vertical sections.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

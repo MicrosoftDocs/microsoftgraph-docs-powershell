@@ -48,6 +48,13 @@ Invoke-MgBetaPostponeDirectoryImpactedResource -InputObject <IIdentityDirectoryM
 Postpone action on an impactedResource object to a specified future date and time by marking its status as postponed.
 On the specified date and time, Microsoft Entra ID will automatically mark the status of the impactedResource object to active.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -50,6 +50,13 @@ Clear the application's presence session for a user.
 If it is the user's only presence session, the user's presence will change to Offline/Offline.
 For details about presences sessions, see presence: setPresence.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,13 @@ Stop-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseH
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

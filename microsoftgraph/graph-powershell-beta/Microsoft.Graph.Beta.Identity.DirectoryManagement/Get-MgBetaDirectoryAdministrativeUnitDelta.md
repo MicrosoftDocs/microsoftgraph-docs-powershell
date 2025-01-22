@@ -25,6 +25,13 @@ Get-MgBetaDirectoryAdministrativeUnitDelta [-ExpandProperty <String[]>] [-Filter
 Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
 For details, see Using delta query.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AdministrativeUnit.Read.All, Directory.ReadWrite.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

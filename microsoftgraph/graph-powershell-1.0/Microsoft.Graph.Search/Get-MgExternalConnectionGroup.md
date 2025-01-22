@@ -38,6 +38,13 @@ Get-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get an externalGroup object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalItem.Read.All, ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

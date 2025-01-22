@@ -53,6 +53,13 @@ New-MgSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphBase
 ## DESCRIPTION
 Create a new sitePage in the site pages list in a site.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,13 @@ Get-MgBetaPrintPrinterShareJobTask -InputObject <IDevicesCloudPrintIdentity> [-E
 ## DESCRIPTION
 A list of printTasks that were triggered by this print job.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

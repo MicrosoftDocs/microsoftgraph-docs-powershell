@@ -33,6 +33,13 @@ New-MgIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthenticat
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
 The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow object type.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

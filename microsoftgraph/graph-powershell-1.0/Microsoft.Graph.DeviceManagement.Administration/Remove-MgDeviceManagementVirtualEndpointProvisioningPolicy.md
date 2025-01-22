@@ -33,6 +33,13 @@ Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy
 Delete a cloudPcProvisioningPolicy object.
 You can't delete a policy that's in use.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

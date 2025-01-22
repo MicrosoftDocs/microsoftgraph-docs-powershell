@@ -32,6 +32,13 @@ Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfiguration -InputObject 
 Retrieve the IPSec tunnel configuration required to establish a bidirectional communication link between your organization's router and the Microsoft gateway.
 This information is vital for configuring your router (customer premise equipment) after creating a deviceLink.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

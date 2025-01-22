@@ -37,6 +37,13 @@ Get-MgBetaEducationUserRubric -InputObject <IEducationIdentity> [-ExpandProperty
 ## DESCRIPTION
 When set, the grading rubric attached to the assignment.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

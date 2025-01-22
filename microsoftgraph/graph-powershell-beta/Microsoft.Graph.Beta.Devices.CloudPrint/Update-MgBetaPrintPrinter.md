@@ -58,6 +58,13 @@ Update-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParamet
 ## DESCRIPTION
 Update the properties of a printer object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Printer.ReadWrite.All, Printer.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

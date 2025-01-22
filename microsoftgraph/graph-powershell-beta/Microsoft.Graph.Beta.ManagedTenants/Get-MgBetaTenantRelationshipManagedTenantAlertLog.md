@@ -60,6 +60,13 @@ Get-MgBetaTenantRelationshipManagedTenantAlertLog -InputObject <IManagedTenantsI
 ## DESCRIPTION
 Get managedTenantAlertLogs from tenantRelationships
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

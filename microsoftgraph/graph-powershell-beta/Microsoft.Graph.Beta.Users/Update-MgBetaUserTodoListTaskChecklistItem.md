@@ -47,6 +47,13 @@ Update-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the navigation property checklistItems in users
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
+| Application | Tasks.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

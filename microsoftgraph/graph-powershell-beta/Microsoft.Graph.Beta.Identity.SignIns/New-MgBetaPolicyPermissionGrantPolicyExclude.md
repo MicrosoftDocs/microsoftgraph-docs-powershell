@@ -54,6 +54,13 @@ New-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdent
 Add conditions under which a permission grant event is *excluded* in a permission grant policy.
 You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

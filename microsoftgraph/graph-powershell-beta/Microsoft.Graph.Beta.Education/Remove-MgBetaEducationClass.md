@@ -32,6 +32,13 @@ Remove-MgBetaEducationClass -InputObject <IEducationIdentity> [-IfMatch <String>
 Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

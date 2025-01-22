@@ -39,6 +39,13 @@ Get-MgIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Read the properties of an identityApiConnector object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

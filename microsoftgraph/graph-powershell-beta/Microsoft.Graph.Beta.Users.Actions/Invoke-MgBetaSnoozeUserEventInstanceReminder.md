@@ -48,6 +48,13 @@ Invoke-MgBetaSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

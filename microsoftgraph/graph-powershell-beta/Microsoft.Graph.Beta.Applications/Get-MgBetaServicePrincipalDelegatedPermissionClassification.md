@@ -41,6 +41,13 @@ Get-MgBetaServicePrincipalDelegatedPermissionClassification -InputObject <IAppli
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
 Supports $expand.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,13 @@ Invoke-MgFilterEntitlementManagementAssignmentByCurrentUser -InputObject <IIdent
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssignment objects filtered on the signed-in user.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

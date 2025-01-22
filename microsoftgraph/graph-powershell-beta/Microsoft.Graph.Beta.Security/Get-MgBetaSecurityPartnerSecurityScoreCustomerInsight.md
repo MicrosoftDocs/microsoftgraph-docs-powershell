@@ -38,6 +38,13 @@ Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight -InputObject <ISecurityIde
 ## DESCRIPTION
 Contains customer-specific information for certain requirements.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

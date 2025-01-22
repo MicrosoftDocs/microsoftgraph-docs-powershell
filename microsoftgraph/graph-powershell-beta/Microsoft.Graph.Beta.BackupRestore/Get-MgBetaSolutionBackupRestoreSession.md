@@ -39,6 +39,13 @@ Get-MgBetaSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> [-E
 ## DESCRIPTION
 Get the properties of a restoreSession object by ID.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

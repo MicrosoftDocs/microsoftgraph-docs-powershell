@@ -54,6 +54,13 @@ Update-MgBetaRoleManagementDeviceManagementRoleAssignment -InputObject <IDeviceM
 Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune) In contrast, unifiedRoleAssignment does not support update.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,13 @@ Get-MgEducationMeAssignmentGradingCategory -InputObject <IEducationIdentity> [-E
 ## DESCRIPTION
 When set, enables users to weight assignments differently when computing a class average grade.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

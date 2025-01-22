@@ -30,6 +30,13 @@ Remove-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IAp
 ## DESCRIPTION
 Delete navigation property directories for servicePrincipals
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

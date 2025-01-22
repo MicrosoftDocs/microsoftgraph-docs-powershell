@@ -23,6 +23,13 @@ Get-MgPlannerPlanBucket -PlannerPlanId <String> [-ExpandProperty <String[]>] [-F
 ## DESCRIPTION
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

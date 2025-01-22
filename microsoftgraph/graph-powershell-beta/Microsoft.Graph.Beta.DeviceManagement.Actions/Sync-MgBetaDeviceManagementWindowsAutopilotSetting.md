@@ -26,6 +26,13 @@ If the sync successful, this action returns a 204 No Content response code.
 If a sync is already in progress, the action returns a 409 Conflict response code.
 If this sync action is called within 10 minutes of the previous sync, the action returns a 429 Too Many Requests response code.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

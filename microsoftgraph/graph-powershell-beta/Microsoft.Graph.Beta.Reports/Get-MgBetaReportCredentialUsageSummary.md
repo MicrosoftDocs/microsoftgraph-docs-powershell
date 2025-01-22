@@ -32,6 +32,13 @@ Get-MgBetaReportCredentialUsageSummary -InputObject <IReportsIdentity> [-Count] 
 ## DESCRIPTION
 Report the current state of how many users in your organization used the self-service password reset capabilities.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

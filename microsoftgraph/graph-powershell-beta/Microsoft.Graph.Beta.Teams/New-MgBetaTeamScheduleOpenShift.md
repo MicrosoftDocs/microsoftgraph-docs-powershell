@@ -52,6 +52,13 @@ New-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create an instance of an openshift object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

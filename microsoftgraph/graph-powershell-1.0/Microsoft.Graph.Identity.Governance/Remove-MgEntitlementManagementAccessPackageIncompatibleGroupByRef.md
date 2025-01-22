@@ -30,6 +30,13 @@ Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <
 ## DESCRIPTION
 Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

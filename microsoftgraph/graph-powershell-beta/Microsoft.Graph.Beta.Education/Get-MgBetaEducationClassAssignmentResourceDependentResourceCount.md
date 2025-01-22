@@ -30,6 +30,13 @@ Get-MgBetaEducationClassAssignmentResourceDependentResourceCount -InputObject <I
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All, EduAssignments.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

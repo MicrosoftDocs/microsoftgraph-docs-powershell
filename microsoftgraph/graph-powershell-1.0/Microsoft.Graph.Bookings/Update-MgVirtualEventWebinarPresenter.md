@@ -48,6 +48,13 @@ Update-MgVirtualEventWebinarPresenter -InputObject <IBookingsIdentity>
 Update the properties of a virtualEventPresenter object.
 Currently the supported virtual event types are:- virtualEventWebinar.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -20,6 +20,13 @@ Get-MgExternalConnectionCount [-Filter <String>] [-Search <String>] [-ResponseHe
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All, ExternalConnection.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

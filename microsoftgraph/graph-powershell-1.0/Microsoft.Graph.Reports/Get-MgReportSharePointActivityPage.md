@@ -29,6 +29,13 @@ Get-MgReportSharePointActivityPage -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Get the number of unique pages visited by users.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

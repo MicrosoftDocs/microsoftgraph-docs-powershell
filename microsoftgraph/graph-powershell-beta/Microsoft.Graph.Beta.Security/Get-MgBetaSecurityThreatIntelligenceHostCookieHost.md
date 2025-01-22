@@ -29,6 +29,13 @@ Get-MgBetaSecurityThreatIntelligenceHostCookieHost -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Indicates that a cookie of this name and domain was found related to this host.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

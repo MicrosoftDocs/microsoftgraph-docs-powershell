@@ -32,6 +32,13 @@ Get-MgBetaSecuritySubjectRightsRequestFinalReport -InputObject <ISecurityIdentit
 Get the final report for a subject rights request.
 The report is a text file that contains information about the files that were included by the privacy administrator.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

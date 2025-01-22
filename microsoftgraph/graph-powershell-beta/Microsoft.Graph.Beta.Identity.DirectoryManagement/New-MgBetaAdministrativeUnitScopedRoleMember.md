@@ -49,6 +49,13 @@ New-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryMan
 Assign a Microsoft Entra role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

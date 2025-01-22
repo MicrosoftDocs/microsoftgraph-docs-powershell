@@ -51,6 +51,13 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -InputObject <INet
 ## DESCRIPTION
 Update the navigation property deviceLinks in networkAccess
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,13 @@ Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -InputObject <IReports
 Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization.
 Types of sessions include audio and video.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

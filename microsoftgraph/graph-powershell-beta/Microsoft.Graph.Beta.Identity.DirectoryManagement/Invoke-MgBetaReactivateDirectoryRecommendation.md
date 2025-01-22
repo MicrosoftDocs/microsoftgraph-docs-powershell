@@ -33,6 +33,13 @@ Reactivate a completed, dismissed, or postponed recommendation object.
 This action updates the status of the recommendation to active.
 This method only works when the status of the recommendation is completedByUser, dismissed, or postponed.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

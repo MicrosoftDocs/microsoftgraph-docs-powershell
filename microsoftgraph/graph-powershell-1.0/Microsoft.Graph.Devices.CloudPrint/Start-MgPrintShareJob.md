@@ -30,6 +30,13 @@ Start-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeader
 Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.Create, PrintJob.ReadWriteBasic.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite.All, PrintJob.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

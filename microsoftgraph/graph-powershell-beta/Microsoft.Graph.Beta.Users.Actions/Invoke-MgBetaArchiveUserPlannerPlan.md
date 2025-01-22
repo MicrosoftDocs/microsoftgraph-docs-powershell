@@ -59,6 +59,13 @@ An archived plan can be unarchived.
 All archived entities can be deleted.
 Archived tasks are not included in the response for list of tasks assigned to a user.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

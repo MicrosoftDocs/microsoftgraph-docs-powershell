@@ -39,6 +39,13 @@ Get-MgBetaPolicyPermissionGrantPreApprovalPolicy -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Read the properties and relationships of a permissionGrantPreApprovalPolicy object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

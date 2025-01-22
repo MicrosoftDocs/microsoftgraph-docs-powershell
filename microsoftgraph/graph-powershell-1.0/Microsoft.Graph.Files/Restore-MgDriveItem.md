@@ -48,6 +48,13 @@ Restore-MgDriveItem -InputObject <IFilesIdentity>
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

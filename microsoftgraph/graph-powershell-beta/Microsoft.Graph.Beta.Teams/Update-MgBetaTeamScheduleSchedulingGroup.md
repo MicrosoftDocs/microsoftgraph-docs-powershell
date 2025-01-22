@@ -49,6 +49,13 @@ Update-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 Replace an existing schedulingGroup.
 If the specified schedulingGroup doesn't exist, this method returns 404 Not found.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

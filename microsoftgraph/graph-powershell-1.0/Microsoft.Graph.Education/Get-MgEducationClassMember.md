@@ -23,6 +23,13 @@ Get-MgEducationClassMember -EducationClassId <String> [-ExpandProperty <String[]
 ## DESCRIPTION
 Retrieves the educationUser members of an educationClass.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.Read.All, Member.Read.Hidden, EduRoster.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

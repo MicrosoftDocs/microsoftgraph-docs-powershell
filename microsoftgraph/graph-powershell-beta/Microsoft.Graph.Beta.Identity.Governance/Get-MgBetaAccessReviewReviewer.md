@@ -38,6 +38,13 @@ Get-MgBetaAccessReviewReviewer -InputObject <IIdentityGovernanceIdentity> [-Expa
 ## DESCRIPTION
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

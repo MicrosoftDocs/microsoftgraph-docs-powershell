@@ -34,6 +34,13 @@ Retrieve an access package with a list of accessPackageResourceRoleScope objects
 These objects represent the resource roles that an access package assigns to each subject.
 Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

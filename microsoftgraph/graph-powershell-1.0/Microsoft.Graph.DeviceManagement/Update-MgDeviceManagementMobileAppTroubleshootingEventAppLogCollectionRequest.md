@@ -50,6 +50,13 @@ Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 Update the properties of a appLogCollectionRequest object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

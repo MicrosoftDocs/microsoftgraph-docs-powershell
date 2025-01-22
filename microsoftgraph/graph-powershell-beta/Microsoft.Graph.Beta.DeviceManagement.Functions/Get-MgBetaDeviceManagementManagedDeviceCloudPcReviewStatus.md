@@ -30,6 +30,13 @@ Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus -InputObject <IDevice
 ## DESCRIPTION
 Get the review status of a specific Cloud PC device.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

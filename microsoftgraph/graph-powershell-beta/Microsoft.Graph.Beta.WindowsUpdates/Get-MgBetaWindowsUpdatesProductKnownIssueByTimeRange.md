@@ -32,6 +32,13 @@ Get-MgBetaWindowsUpdatesProductKnownIssueByTimeRange -InputObject <IWindowsUpdat
 ## DESCRIPTION
 Get known issues related to a particular product based on a specified timeframe in the past.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

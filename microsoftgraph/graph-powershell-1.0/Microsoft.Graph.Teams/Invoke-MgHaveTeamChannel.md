@@ -30,6 +30,13 @@ Invoke-MgHaveTeamChannel -InputObject <ITeamsIdentity> [-TenantId <String>] [-Us
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

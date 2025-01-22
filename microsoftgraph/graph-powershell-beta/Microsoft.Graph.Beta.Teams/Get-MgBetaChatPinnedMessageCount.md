@@ -29,6 +29,13 @@ Get-MgBetaChatPinnedMessageCount -InputObject <ITeamsIdentity> [-Filter <String>
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.Read, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMessage.Read.All, Chat.ReadWrite.All, Chat.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

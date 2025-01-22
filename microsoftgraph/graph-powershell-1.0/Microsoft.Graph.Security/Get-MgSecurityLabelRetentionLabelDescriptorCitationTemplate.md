@@ -29,6 +29,13 @@ Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate -InputObject <ISecur
 ## DESCRIPTION
 The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

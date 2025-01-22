@@ -49,6 +49,13 @@ Update-MgBetaPlaceByPlaceId -InputObject <ICalendarIdentity> -BodyParameter <IMi
 Update the properties of place object, which can be a room, workspace, or roomList.
 You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

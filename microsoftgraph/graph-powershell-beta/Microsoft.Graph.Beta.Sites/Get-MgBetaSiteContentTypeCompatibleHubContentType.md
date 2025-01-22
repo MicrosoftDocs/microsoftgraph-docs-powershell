@@ -38,6 +38,13 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see addCopyFromContentTypeHub and the blog post Syntex Product Updates - August 2021.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Manage.All, Sites.FullControl.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

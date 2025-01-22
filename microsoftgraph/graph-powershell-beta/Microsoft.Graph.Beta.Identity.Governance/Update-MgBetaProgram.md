@@ -46,6 +46,13 @@ Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> -BodyParameter <
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, update an existing program object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

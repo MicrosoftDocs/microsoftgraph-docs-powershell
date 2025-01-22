@@ -24,6 +24,13 @@ Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentity
 Reset the cross-tenant access policy template with user synchronization settings for a multitenant organization to the default values.
 In its reset state, the template has no impact on user synchronization settings, other than that unconfigured user synchronization settings are created if needed, for every multitenant organization tenant.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -46,6 +46,13 @@ New-MgBetaServicePrincipalDelegatedPermissionClassification -InputObject <IAppli
 ## DESCRIPTION
 Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

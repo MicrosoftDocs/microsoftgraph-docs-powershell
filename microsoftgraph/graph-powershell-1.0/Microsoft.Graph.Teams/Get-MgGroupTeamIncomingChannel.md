@@ -37,6 +37,13 @@ Get-MgGroupTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 List of channels shared with the team.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

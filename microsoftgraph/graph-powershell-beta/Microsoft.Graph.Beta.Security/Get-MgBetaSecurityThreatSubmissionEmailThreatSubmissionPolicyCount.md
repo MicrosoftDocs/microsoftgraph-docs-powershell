@@ -21,6 +21,13 @@ Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicyCount [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatSubmission.Read, ThreatSubmissionPolicy.ReadWrite.All, ThreatSubmission.ReadWrite.All, ThreatSubmission.ReadWrite, ThreatSubmission.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

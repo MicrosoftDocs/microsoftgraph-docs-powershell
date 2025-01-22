@@ -48,6 +48,13 @@ Rename-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
 Rename a specific Cloud PC.
 Use this API to update the displayName for the Cloud PC entity.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

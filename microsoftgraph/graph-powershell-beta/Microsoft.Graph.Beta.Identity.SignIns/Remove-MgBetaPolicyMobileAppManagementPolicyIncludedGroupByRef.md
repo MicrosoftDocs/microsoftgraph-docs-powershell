@@ -44,6 +44,13 @@ Remove-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -InputObject <IId
 ## DESCRIPTION
 Delete a group from the list of groups included in a mobile app management policy.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

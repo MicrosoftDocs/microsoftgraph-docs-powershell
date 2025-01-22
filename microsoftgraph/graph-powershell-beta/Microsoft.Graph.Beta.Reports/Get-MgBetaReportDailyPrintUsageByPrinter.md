@@ -41,6 +41,13 @@ Get-MgBetaReportDailyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Expan
 Retrieve a printer's usage summary for a particular time period.
 For descriptions of each of the endpoints, see printUsageByPrinter.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

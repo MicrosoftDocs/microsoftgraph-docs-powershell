@@ -40,6 +40,13 @@ Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit -InputObject <IApplicatio
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

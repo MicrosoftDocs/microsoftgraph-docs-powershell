@@ -31,6 +31,13 @@ Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef
 ## DESCRIPTION
 Use this API to remove a member (user, group, or device) from an administrative unit.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

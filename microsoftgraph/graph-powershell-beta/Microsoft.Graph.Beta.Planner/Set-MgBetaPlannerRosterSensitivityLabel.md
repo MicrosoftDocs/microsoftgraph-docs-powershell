@@ -46,6 +46,13 @@ Set-MgBetaPlannerRosterSensitivityLabel -InputObject <IPlannerIdentity>
 ## DESCRIPTION
 Assign a sensitivity label to a plannerRoster object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Tasks.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

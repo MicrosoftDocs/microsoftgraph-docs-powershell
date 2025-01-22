@@ -36,6 +36,13 @@ The grace period is triggered when the Cloud PC license is removed or the provis
 It allows users to access Cloud PCs for up to seven days before deprovisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,13 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentit
 Delete a delegatedAdminRelationship object.
 A relationship can only be deleted if it's in the 'created' status.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

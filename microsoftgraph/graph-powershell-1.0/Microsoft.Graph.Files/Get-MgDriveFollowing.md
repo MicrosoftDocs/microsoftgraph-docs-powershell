@@ -39,6 +39,13 @@ Get-MgDriveFollowing -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 The list of items the user is following.
 Only in OneDrive for Business.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -51,6 +51,13 @@ Copy-MgGroupDriveListContentTypeToDefaultContentLocation -InputObject <IGroupsId
 Copy a file to a default content location in a content type.
 The file can then be added as a default file or template via a POST operation.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

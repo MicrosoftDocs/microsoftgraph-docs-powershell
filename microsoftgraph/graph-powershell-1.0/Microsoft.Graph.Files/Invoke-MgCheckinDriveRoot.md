@@ -46,6 +46,13 @@ Invoke-MgCheckinDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

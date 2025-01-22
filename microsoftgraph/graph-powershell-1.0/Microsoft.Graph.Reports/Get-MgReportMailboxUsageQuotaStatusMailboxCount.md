@@ -30,6 +30,13 @@ Get-MgReportMailboxUsageQuotaStatusMailboxCount -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Get the count of user mailboxes in each quota category.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,13 @@ Invoke-MgGraphGroup -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <St
 Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

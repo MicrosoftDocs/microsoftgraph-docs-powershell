@@ -38,6 +38,13 @@ Get-MgBetaPlannerTask -InputObject <IPlannerIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerTask object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

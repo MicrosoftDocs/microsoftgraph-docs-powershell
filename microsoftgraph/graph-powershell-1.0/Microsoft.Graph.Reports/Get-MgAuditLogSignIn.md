@@ -40,6 +40,13 @@ Get-MgAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <String[]>
 Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AuditLog.Read.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

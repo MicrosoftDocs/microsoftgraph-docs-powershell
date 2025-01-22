@@ -39,6 +39,13 @@ Get-MgEducationUserSchool -InputObject <IEducationIdentity> [-ExpandProperty <St
 Schools to which the user belongs.
 Nullable.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

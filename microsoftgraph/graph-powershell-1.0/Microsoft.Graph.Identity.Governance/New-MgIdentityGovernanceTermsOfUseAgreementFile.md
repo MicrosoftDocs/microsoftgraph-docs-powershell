@@ -48,6 +48,13 @@ New-MgIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Create a new localized agreement file.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

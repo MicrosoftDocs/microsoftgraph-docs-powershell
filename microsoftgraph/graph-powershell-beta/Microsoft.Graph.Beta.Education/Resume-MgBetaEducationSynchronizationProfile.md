@@ -29,6 +29,13 @@ Resume-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Resume the sync of a specific school data synchronization profile in the tenant.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAdministration.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAdministration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

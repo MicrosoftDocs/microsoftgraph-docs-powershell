@@ -47,6 +47,13 @@ New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 ## DESCRIPTION
 Add an accessPackage to the list of access packages that have been marked as incompatible on an accessPackage.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -39,6 +39,13 @@ Get-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Expand
 ## DESCRIPTION
 Read a directory extension definition represented by an extensionProperty object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

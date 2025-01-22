@@ -41,6 +41,13 @@ Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <IIde
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
 A definition that doesn't recur will have exactly one instance.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

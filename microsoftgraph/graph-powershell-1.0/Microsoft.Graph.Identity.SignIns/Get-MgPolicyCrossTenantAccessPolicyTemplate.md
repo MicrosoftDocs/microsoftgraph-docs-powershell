@@ -21,6 +21,13 @@ Get-MgPolicyCrossTenantAccessPolicyTemplate [-ExpandProperty <String[]>] [-Prope
 ## DESCRIPTION
 Represents the base policy in the directory for multitenant organization settings.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

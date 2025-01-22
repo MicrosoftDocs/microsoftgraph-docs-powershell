@@ -39,6 +39,13 @@ Get-MgIdentityGovernanceLifecycleWorkflowTemplate -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Read the properties and relationships of a workflowTemplate object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -39,6 +39,13 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ## DESCRIPTION
 Get a list of rich long-running operations associated with a list.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Read.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

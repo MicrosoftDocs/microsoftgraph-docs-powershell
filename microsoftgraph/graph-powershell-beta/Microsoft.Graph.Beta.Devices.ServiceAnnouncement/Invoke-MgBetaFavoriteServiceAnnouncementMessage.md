@@ -31,6 +31,13 @@ Invoke-MgBetaFavoriteServiceAnnouncementMessage
 ## DESCRIPTION
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

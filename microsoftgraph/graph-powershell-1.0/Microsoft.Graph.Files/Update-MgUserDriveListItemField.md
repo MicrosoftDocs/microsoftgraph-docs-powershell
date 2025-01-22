@@ -43,6 +43,13 @@ Update-MgUserDriveListItemField -InputObject <IFilesIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Update the navigation property fields in users
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

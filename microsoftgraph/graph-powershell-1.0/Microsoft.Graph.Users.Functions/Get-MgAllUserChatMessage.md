@@ -32,6 +32,13 @@ Get-MgAllUserChatMessage -InputObject <IUsersFunctionsIdentity> [-Count] [-Expan
 ## DESCRIPTION
 Get all messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.Read.All, Chat.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

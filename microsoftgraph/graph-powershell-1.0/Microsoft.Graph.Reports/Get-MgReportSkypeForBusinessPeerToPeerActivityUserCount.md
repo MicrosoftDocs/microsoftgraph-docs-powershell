@@ -32,6 +32,13 @@ Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -InputObject <IReportsId
 Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization.
 Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -41,6 +41,13 @@ Get-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom
 Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

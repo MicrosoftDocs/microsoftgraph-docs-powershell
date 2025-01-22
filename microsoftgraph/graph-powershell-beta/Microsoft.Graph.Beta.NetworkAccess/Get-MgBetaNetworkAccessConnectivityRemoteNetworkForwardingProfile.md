@@ -40,6 +40,13 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -InputObject <
 Each forwarding profile associated with a remote network is specified.
 Supports $expand and $select.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
