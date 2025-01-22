@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetbypathapplicablecontenttypeforlist
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgGroupSiteGetByPathApplicableContentTypeForList

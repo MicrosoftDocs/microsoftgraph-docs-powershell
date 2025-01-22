@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoreprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Initialize-MgBackupRestoreProtectionPolicy
