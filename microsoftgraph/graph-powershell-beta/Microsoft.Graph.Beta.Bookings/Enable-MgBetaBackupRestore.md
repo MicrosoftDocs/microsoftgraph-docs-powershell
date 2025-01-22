@@ -14,6 +14,9 @@ Before you call this API, call List protection policies to initialize the data s
 Data store initialization takes about 5 minutes.
 If you call this API before the data store is initialized, the call results in an error.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Enable-MgBackupRestore](/powershell/module/Microsoft.Graph.Bookings/Enable-MgBackupRestore?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### EnableExpanded (Default)

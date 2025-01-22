@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Export the billed invoice reconciliation data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingReconciliationBilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

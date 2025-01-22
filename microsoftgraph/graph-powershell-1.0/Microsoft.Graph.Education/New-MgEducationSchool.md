@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Create a new educationSchool object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

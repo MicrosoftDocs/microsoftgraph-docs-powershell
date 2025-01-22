@@ -12,6 +12,9 @@ ms.subservice: teams
 A collection of all the pinned messages in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPinnedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

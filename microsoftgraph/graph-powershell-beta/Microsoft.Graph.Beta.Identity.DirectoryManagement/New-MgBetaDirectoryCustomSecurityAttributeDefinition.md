@@ -11,6 +11,9 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Create a new customSecurityAttributeDefinition object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

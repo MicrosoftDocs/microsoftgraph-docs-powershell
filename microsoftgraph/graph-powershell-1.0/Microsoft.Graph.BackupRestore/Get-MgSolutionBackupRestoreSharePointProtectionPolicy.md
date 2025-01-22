@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of SharePoint protection policies in the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

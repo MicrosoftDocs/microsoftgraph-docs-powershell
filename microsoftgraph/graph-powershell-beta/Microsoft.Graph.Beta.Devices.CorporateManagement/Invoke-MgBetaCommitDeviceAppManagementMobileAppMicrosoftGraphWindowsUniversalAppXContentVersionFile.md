@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Commits a file of a given app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CommitExpanded (Default)

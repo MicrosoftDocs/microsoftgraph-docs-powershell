@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Get oauth2PermissionGrants from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Users/Get-MgUserOauth2PermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

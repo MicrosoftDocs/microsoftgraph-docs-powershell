@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of restore points in the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestorePoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

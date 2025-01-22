@@ -12,6 +12,9 @@ ms.subservice: entra-users
 Assign an app role to a user, creating an appRoleAssignment object.
 To grant an app role assignment to a user, you need three identifiers:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

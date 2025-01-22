@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of associatedTeamInfo objects that a user is associated with.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

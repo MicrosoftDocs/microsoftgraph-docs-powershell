@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Update the properties and relationships of a shiftPreferences object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

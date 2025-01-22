@@ -11,6 +11,9 @@ ms.subservice: entra-groups
 ## SYNOPSIS
 Delete an event object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

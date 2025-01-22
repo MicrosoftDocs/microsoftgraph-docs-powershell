@@ -11,6 +11,9 @@ schema: 2.0.0
 An abstract definition that is used to create a printTask when triggered by a print event.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterTaskTriggerDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterTaskTriggerDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

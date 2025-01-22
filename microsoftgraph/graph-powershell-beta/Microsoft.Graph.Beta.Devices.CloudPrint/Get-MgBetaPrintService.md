@@ -12,6 +12,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Retrieve the properties and relationships of a print service.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintService?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

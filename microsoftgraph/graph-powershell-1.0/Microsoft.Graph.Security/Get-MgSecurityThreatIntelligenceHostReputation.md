@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Get the properties and relationships of a hostReputation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostReputation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

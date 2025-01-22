@@ -12,6 +12,9 @@ ms.subservice: entra-users
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 See change tracking for details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

@@ -11,6 +11,9 @@ ms.subservice: planner
 ## SYNOPSIS
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlanTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

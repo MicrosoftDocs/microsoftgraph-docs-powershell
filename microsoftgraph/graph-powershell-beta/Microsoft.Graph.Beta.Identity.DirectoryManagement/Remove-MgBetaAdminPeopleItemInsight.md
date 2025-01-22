@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property itemInsights for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminPeopleItemInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdminPeopleItemInsight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

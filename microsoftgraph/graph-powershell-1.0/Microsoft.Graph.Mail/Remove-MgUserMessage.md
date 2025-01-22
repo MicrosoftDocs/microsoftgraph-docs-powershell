@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property messages for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

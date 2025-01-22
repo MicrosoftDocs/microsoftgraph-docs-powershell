@@ -11,6 +11,9 @@ ms.subservice: cloud-pc
 ## SYNOPSIS
 Reboot a specific Cloud PC.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restart-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restart-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reboot (Default)

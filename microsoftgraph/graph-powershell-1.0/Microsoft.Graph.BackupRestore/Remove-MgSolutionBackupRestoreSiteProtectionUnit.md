@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property siteProtectionUnits for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreSiteProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreSiteProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Retire a device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetireUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Retire (Default)

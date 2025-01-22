@@ -13,6 +13,9 @@ List sites across geographies in an organization.
 This API can also be used to enumerate all sites in a non-multi-geo tenant.
 For more information, see Best practices for discovering files and detecting changes at scale.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAllGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaAllGroupSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

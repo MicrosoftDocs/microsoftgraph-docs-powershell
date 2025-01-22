@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Create a new retentionEvent object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property siteRestoreArtifacts for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

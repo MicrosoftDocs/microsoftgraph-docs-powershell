@@ -11,6 +11,9 @@ ms.subservice: edge-browser-management
 ## SYNOPSIS
 Create a new browserSite object in a browserSiteList.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

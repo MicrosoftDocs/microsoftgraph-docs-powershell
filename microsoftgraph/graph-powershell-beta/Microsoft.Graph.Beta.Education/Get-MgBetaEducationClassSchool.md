@@ -12,6 +12,9 @@ ms.subservice: education
 All schools that this class is associated with.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassSchool](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassSchool?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

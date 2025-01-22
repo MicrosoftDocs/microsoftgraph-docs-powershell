@@ -11,6 +11,9 @@ ms.subservice: planner
 ## SYNOPSIS
 Create a new plannerPlan object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

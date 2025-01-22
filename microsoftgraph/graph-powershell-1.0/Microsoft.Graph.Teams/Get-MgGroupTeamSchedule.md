@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The schedule of shifts for this team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
