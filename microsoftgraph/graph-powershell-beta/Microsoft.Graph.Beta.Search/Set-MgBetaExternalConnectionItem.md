@@ -90,7 +90,7 @@ $params = @{
 Set-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
 
 ```
-This example will### example: create a custom item
+This example will create a custom item
 
 
 ## PARAMETERS

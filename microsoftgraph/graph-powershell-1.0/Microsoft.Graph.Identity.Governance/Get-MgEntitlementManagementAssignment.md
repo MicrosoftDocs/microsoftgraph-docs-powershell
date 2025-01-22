@@ -67,7 +67,7 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgEntitlementManagementAssignment
 
 ```
-This example will### example scenarios for using query parameters
+This example shows scenarios for using query parameters
 
 
 ## PARAMETERS

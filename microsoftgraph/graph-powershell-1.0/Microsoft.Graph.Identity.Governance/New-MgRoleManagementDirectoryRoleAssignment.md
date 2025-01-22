@@ -71,7 +71,7 @@ $params = @{
 New-MgRoleManagementDirectoryRoleAssignment -BodyParameter $params
 
 ```
-This example will### Example 2: create a role assignment with administrative unit scope
+This example will create a role assignment with administrative unit scope
 
 ### Example 3: Create a role assignment with application scope
 
@@ -89,7 +89,7 @@ $params = @{
 New-MgRoleManagementDirectoryRoleAssignment -BodyParameter $params
 
 ```
-This example will### Example 3: create a role assignment with application scope
+This example will create a role assignment with application scope
 
 
 ## PARAMETERS
