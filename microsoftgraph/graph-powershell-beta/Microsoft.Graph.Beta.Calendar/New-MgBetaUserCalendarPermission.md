@@ -87,11 +87,11 @@ Create a calendarPermission resource to specify the identity and role of the use
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	emailAddress = @{
@@ -104,6 +104,10 @@ $params = @{
 }
 
 New-MgBetaUserCalendarPermission -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserCalendarPermission Cmdlet.
+
 
 ## PARAMETERS
 

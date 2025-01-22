@@ -52,20 +52,28 @@ This includes the default file and all localized files.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Retrieve an agreement
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
+This example will retrieve an agreement
 
-Get-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -ExpandProperty "files"
+### Example 2: Retrieve an agreement and its related files
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -ExpandProperty "files" 
+
+```
+This example will retrieve an agreement and its related files
+
 
 ## PARAMETERS
 

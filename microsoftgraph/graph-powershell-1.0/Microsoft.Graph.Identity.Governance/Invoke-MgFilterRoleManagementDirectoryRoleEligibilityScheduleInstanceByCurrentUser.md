@@ -44,13 +44,17 @@ Get the instances of eligible roles for the calling principal.
 | Application | RoleEligibilitySchedule.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
-Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser -On $onId
+Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

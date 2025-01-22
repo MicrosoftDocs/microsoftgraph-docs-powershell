@@ -45,14 +45,18 @@ Provides detailed information about interests the user has associated with thems
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileInterest -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileInterest Cmdlet.
+
 
 ## PARAMETERS
 

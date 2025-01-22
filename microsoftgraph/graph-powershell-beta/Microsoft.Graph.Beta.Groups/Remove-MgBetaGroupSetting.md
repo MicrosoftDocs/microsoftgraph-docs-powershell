@@ -39,18 +39,6 @@ Delete navigation property settings for groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectorySettingId
@@ -274,6 +262,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsetting)
+
 
 
 

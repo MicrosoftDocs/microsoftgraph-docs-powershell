@@ -43,13 +43,17 @@ Types of sessions include IM, audio, video, application sharing, and file transf
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSkypeForBusinessPeerToPeerActivityCount -Period $periodId
+Get-MgReportSkypeForBusinessPeerToPeerActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessPeerToPeerActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

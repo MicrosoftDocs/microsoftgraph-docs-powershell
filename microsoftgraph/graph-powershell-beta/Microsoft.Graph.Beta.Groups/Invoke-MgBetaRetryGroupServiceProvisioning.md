@@ -41,13 +41,17 @@ Retry the group service provisioning.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Invoke-MgBetaRetryGroupServiceProvisioning -GroupId $groupId
+
+```
+This example shows how to use the Invoke-MgBetaRetryGroupServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 

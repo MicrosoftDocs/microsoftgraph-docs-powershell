@@ -45,13 +45,17 @@ If the response contains only warnings, synchronization starts.
 | Application | EduAdministration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Start-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
+
+```
+This example shows how to use the Start-MgBetaEducationSynchronizationProfile Cmdlet.
+
 
 ## PARAMETERS
 

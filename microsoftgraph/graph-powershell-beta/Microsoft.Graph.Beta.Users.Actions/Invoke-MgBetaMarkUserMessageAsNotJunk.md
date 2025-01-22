@@ -56,11 +56,11 @@ This API removes the sender from the list of blocked senders and moves the messa
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	moveToInbox = $true
@@ -68,6 +68,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaMarkUserMessageAsNotJunk -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaMarkUserMessageAsNotJunk Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,17 +41,21 @@ When a group is renewed, the group expiration is extended by the number of days 
 | Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	groupId = "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 
 Invoke-MgBetaRenewGroupLifecyclePolicy -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaRenewGroupLifecyclePolicy Cmdlet.
+
 
 ## PARAMETERS
 

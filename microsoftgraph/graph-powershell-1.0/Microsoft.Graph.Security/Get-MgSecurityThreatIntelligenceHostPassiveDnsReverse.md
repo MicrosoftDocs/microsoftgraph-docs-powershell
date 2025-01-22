@@ -49,13 +49,17 @@ Reverse passive DNS retrieval about this host.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse -HostId $hostId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse Cmdlet.
+
 
 ## PARAMETERS
 

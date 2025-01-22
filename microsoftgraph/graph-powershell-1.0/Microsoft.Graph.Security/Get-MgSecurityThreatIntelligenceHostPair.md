@@ -71,13 +71,17 @@ Read the properties and relationships of a hostPair object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityThreatIntelligenceHostPair -HostPairId $hostPairId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostPair Cmdlet.
+
 
 ## PARAMETERS
 

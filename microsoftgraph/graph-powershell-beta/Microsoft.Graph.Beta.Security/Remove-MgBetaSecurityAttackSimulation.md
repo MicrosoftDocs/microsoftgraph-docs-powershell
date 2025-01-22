@@ -46,18 +46,6 @@ Delete navigation property attackSimulation for security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -307,6 +295,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulation)
 
 [https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-beta)
+
 
 
 

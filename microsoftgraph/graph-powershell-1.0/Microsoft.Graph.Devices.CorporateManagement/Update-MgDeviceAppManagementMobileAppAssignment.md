@@ -57,11 +57,11 @@ Update the properties of a mobileAppAssignment object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mobileAppAssignment"
@@ -76,6 +76,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementMobileAppAssignment -MobileAppId $mobileAppId -MobileAppAssignmentId $mobileAppAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileAppAssignment Cmdlet.
+
 
 ## PARAMETERS
 

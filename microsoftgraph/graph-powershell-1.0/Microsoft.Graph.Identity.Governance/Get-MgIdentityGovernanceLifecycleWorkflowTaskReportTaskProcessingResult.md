@@ -51,20 +51,28 @@ The related lifecycle workflow taskProcessingResults.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: List the task processing results that are included in a task report for a workflow
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.Governance
-```
+This example will list the task processing results that are included in a task report for a workflow
 
-Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId -Property "id,failureReason,processingStatus,subject,task"
+### Example 2: List the task processing results that are included in a task report for a workflow, and retrieve specific properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId -Property "id,failureReason,processingStatus,subject,task" 
+
+```
+This example will list the task processing results that are included in a task report for a workflow, and retrieve specific properties
+
 
 ## PARAMETERS
 

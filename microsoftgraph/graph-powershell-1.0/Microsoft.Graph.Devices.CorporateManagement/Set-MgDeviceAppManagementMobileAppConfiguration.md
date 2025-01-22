@@ -59,11 +59,11 @@ Not yet documented
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	assignments = @(
@@ -78,6 +78,10 @@ $params = @{
 }
 
 Set-MgDeviceAppManagementMobileAppConfiguration -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceAppManagementMobileAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

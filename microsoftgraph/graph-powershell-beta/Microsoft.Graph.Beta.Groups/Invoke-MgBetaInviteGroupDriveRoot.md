@@ -60,18 +60,6 @@ Sends a sharing invitation for a driveItem.A sharing invitation provides permiss
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -441,6 +429,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetainvitegroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetainvitegroupdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta)
+
 
 
 

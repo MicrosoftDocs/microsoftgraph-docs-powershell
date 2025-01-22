@@ -54,17 +54,21 @@ Get a list of single sign-on credentials using a password for a user or group.
 | Application | Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	id = "5793aa3b-cca9-4794-679a240f8b58"
 }
 
 Get-MgBetaServicePrincipalPasswordSingleSignOnCredential -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalPasswordSingleSignOnCredential Cmdlet.
+
 
 ## PARAMETERS
 

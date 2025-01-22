@@ -59,11 +59,11 @@ The app must be preinstalled in the team and have the configurableTabs property 
 | Application | TeamsTab.Create.Group, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, TeamsTab.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "My Contoso Tab"
@@ -77,6 +77,10 @@ $params = @{
 }
 
 New-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamChannelTab Cmdlet.
+
 
 ## PARAMETERS
 

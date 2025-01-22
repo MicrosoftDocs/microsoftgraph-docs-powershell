@@ -40,18 +40,6 @@ It will be printed after any existing pending jobs are completed, aborted, or ca
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -212,6 +200,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintprinterjob)
 
 [https://learn.microsoft.com/graph/api/printjob-start?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-start?view=graph-rest-1.0)
+
 
 
 

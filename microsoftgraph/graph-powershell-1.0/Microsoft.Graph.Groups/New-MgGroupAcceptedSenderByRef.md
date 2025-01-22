@@ -59,17 +59,21 @@ Make sure you don't specify the same user or group in the accepted senders and r
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 
 New-MgGroupAcceptedSenderByRef -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgGroupAcceptedSenderByRef Cmdlet.
+
 
 ## PARAMETERS
 

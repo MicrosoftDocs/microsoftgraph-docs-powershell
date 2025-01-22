@@ -50,13 +50,17 @@ Read properties and relationships of the mobileAppAssignment object.
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementMobileAppAssignment -MobileAppId $mobileAppId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppAssignment Cmdlet.
+
 
 ## PARAMETERS
 

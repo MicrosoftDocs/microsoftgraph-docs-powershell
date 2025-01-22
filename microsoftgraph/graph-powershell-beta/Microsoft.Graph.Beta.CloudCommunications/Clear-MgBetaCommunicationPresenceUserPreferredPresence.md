@@ -40,18 +40,6 @@ Clear the preferred availability and activity status for a user.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -219,6 +207,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetacommunicationpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetacommunicationpresenceuserpreferredpresence)
 
 [https://learn.microsoft.com/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta)
+
 
 
 

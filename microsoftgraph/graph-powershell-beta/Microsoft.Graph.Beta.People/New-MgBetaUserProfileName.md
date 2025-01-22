@@ -63,11 +63,11 @@ Create new navigation property to names for users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	displayName = "Innocenty Popov"
@@ -80,6 +80,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileName -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileName Cmdlet.
+
 
 ## PARAMETERS
 

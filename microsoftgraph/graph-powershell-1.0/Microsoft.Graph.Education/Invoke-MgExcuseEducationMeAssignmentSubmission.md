@@ -52,18 +52,6 @@ For more information about how to use this header, see the Examples section.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -224,6 +212,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgexcuseeducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgexcuseeducationmeassignmentsubmission)
 
 [https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-1.0)
+
 
 
 

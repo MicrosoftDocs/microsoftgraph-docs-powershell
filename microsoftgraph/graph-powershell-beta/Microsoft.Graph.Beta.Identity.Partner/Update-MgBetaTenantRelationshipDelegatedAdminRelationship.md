@@ -69,11 +69,11 @@ The following restrictions apply:- You can update this relationship when its sta
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Partner
-```
 
 $params = @{
 	displayName = "Updated Contoso admin relationship"
@@ -101,6 +101,10 @@ $params = @{
 }
 
 Update-MgBetaTenantRelationshipDelegatedAdminRelationship -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTenantRelationshipDelegatedAdminRelationship Cmdlet.
+
 
 ## PARAMETERS
 

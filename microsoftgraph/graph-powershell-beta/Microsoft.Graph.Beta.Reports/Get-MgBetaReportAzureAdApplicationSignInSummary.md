@@ -40,13 +40,17 @@ Retrieve applicationSigninSummary objects within either the last seven or 30 day
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
-Get-MgBetaReportAzureAdApplicationSignInSummary -Period $periodId
+Get-MgBetaReportAzureAdApplicationSignInSummary -Period $periodId 
+
+```
+This example shows how to use the Get-MgBetaReportAzureAdApplicationSignInSummary Cmdlet.
+
 
 ## PARAMETERS
 

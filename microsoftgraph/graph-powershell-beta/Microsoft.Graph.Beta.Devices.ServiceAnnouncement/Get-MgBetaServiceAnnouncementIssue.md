@@ -54,13 +54,17 @@ The operation returns an error if the issue does not exist for the tenant.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementIssue
+
+```
+This example shows how to use the Get-MgBetaServiceAnnouncementIssue Cmdlet.
+
 
 ## PARAMETERS
 

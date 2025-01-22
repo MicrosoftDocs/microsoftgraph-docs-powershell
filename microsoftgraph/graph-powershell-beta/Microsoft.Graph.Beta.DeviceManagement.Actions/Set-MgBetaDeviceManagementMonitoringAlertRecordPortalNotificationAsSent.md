@@ -38,13 +38,17 @@ Set the status of the notification associated with the specified alertRecord on 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent -AlertRecordId $alertRecordId
+
+```
+This example shows how to use the Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent Cmdlet.
+
 
 ## PARAMETERS
 

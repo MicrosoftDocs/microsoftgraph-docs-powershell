@@ -46,11 +46,11 @@ Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	displayName = "test-canary-02"
@@ -65,6 +65,10 @@ $params = @{
 }
 
 New-MgDeviceManagementVirtualEndpointOnPremiseConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
+
 
 ## PARAMETERS
 

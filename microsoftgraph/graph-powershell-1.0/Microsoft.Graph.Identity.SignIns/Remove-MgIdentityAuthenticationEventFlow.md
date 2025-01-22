@@ -45,13 +45,17 @@ The following derived subtypes are supported:- externalUsersSelfServiceSignupEve
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId
+
+```
+This example shows how to use the Remove-MgIdentityAuthenticationEventFlow Cmdlet.
+
 
 ## PARAMETERS
 

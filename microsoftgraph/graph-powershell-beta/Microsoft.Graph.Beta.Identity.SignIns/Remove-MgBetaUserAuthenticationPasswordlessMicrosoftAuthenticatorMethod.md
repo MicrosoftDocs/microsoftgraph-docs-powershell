@@ -39,13 +39,17 @@ Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method objec
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -UserId $userId -PasswordlessMicrosoftAuthenticatorAuthenticationMethodId $passwordlessMicrosoftAuthenticatorAuthenticationMethodId
+
+```
+This example shows how to use the Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod Cmdlet.
+
 
 ## PARAMETERS
 

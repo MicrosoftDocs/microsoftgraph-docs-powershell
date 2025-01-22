@@ -41,13 +41,17 @@ Delete a directory object, for example, a group, user, application, or service p
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 Remove-MgDirectoryObject -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgDirectoryObject Cmdlet.
+
 
 ## PARAMETERS
 

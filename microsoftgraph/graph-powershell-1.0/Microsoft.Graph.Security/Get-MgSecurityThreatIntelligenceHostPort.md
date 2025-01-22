@@ -71,13 +71,17 @@ Read the properties and relationships of a hostPort object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityThreatIntelligenceHostPort -HostPortId $hostPortId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostPort Cmdlet.
+
 
 ## PARAMETERS
 

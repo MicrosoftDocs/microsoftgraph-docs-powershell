@@ -42,13 +42,17 @@ Remove a Microsoft Entra role assignment with administrative unit scope.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
+
+```
+This example shows how to use the Remove-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
+
 
 ## PARAMETERS
 

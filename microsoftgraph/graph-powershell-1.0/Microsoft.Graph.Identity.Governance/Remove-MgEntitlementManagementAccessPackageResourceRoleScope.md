@@ -42,13 +42,17 @@ Remove a accessPackageResourceRoleScope from an accessPackage list of resource r
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId $accessPackageId -AccessPackageResourceRoleScopeId $accessPackageResourceRoleScopeId
+
+```
+This example shows how to use the Remove-MgEntitlementManagementAccessPackageResourceRoleScope Cmdlet.
+
 
 ## PARAMETERS
 

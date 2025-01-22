@@ -41,13 +41,17 @@ Delete a custom identityUserFlowAttribute.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgIdentityUserFlowAttribute -IdentityUserFlowAttributeId $identityUserFlowAttributeId
+
+```
+This example shows how to use the Remove-MgIdentityUserFlowAttribute Cmdlet.
+
 
 ## PARAMETERS
 

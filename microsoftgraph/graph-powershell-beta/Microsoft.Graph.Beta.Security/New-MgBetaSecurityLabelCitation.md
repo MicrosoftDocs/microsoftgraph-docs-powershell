@@ -42,11 +42,11 @@ Create a new citationTemplate object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.citationTemplate"
@@ -56,6 +56,10 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelCitation -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelCitation Cmdlet.
+
 
 ## PARAMETERS
 

@@ -73,11 +73,11 @@ The following are the steps to attach a file to an Outlook item using an upload 
 | Application | Calendars.ReadWrite, Mail.ReadWrite,  |
 
 ## EXAMPLES
+### Example 1: Create an upload session to add a large attachment to a draft message
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	AttachmentItem = @{
@@ -90,10 +90,14 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an upload session to add a large attachment to a draft message
+
+### Example 2: Create an upload session to add a large in-line attachment to a draft message
+
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	AttachmentItem = @{
@@ -107,6 +111,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example will create an upload session to add a large in-line attachment to a draft message
+
 
 ## PARAMETERS
 

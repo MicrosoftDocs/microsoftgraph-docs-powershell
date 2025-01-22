@@ -43,18 +43,6 @@ To prevent a recurring access review from starting future instances, update the 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -261,6 +249,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetauserpendingaccessreviewinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetauserpendingaccessreviewinstance)
 
 [https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-beta)
+
 
 
 

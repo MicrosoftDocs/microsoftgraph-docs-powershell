@@ -61,18 +61,6 @@ Create new navigation property to sections for groups
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1038,6 +1026,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebooksection)
+
 
 
 

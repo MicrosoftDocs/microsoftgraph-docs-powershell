@@ -46,13 +46,17 @@ Retrieve the properties and relationships of an itemEmail object in a user's pro
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 Get-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId
+
+```
+This example shows how to use the Get-MgBetaUserProfileEmail Cmdlet.
+
 
 ## PARAMETERS
 

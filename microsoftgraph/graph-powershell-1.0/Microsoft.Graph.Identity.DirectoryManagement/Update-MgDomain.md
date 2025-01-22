@@ -70,11 +70,11 @@ Only verified domains can be updated.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	isDefault = $true
@@ -85,6 +85,10 @@ $params = @{
 }
 
 Update-MgDomain -DomainId $domainId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDomain Cmdlet.
+
 
 ## PARAMETERS
 

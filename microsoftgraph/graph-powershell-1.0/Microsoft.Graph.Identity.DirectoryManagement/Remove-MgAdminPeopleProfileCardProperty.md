@@ -41,13 +41,17 @@ Delete the profileCardProperty object specified by its directoryPropertyName fro
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+
+```
+This example shows how to use the Remove-MgAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 

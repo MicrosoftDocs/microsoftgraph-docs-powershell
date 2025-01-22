@@ -49,13 +49,17 @@ Assignments belonging to the user.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get the assignments of the logged in user
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationMeAssignment
+
+```
+This example will get the assignments of the logged in user
+
 
 ## PARAMETERS
 

@@ -53,13 +53,17 @@ The following table lists the three scenarios where you can get an open extensio
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId
+
+```
+This example shows how to use the Get-MgGroupThreadPostExtension Cmdlet.
+
 
 ## PARAMETERS
 

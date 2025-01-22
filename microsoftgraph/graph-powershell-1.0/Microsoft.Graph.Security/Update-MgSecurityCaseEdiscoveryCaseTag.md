@@ -61,11 +61,11 @@ Update the properties of an ediscoveryReviewTag object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "My tag API 2"
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Update-MgSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewTagId $ediscoveryReviewTagId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSecurityCaseEdiscoveryCaseTag Cmdlet.
+
 
 ## PARAMETERS
 

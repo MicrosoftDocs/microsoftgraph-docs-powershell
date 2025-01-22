@@ -45,11 +45,11 @@ Upload a custom OS image that you can later provision on Cloud PCs.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	displayName = "ImageForDev"
@@ -58,6 +58,10 @@ $params = @{
 }
 
 New-MgDeviceManagementVirtualEndpointDeviceImage -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementVirtualEndpointDeviceImage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,13 +41,17 @@ Deletes a mobileAppAssignment.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppId $mobileAppId -MobileAppAssignmentId $mobileAppAssignmentId
+
+```
+This example shows how to use the Remove-MgDeviceAppManagementMobileAppAssignment Cmdlet.
+
 
 ## PARAMETERS
 

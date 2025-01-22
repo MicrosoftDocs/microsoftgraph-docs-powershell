@@ -61,11 +61,11 @@ Create new navigation property to educationalActivities for users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	completionMonthYear = "Date"
@@ -100,6 +100,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileEducationalActivity -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileEducationalActivity Cmdlet.
+
 
 ## PARAMETERS
 

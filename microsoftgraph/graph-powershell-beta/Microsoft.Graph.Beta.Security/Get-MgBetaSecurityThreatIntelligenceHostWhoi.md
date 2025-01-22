@@ -45,13 +45,17 @@ Specify the desired whoisRecord in one of the following two ways:- Identify a ho
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get the whoisRecord resource for the specified host
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatIntelligenceHostWhoi -HostId $hostId
+
+```
+This example will get the whoisrecord resource for the specified host
+
 
 ## PARAMETERS
 

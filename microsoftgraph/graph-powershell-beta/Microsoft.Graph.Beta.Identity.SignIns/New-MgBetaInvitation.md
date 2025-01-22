@@ -48,11 +48,11 @@ The following options are available for creating an invitation:
 | Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Invite a guest user
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	invitedUserEmailAddress = "admin@fabrikam.com"
@@ -61,10 +61,14 @@ $params = @{
 
 New-MgBetaInvitation -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will invite a guest user
+
+### Example 2: Reset the redemption status of a guest user
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	invitedUserEmailAddress = "AdeleV@fabrikam.com"
@@ -76,6 +80,10 @@ $params = @{
 }
 
 New-MgBetaInvitation -BodyParameter $params
+
+```
+This example will reset the redemption status of a guest user
+
 
 ## PARAMETERS
 

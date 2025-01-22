@@ -43,13 +43,17 @@ Types of sessions include audio and video.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -Period $periodId
+Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount Cmdlet.
+
 
 ## PARAMETERS
 

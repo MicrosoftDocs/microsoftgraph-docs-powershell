@@ -37,13 +37,17 @@ Delete a sensor object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Remove-MgBetaSecurityIdentitySensor -SensorId $sensorId
+
+```
+This example shows how to use the Remove-MgBetaSecurityIdentitySensor Cmdlet.
+
 
 ## PARAMETERS
 

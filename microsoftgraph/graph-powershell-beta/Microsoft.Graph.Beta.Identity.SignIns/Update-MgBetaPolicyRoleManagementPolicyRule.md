@@ -61,11 +61,11 @@ The rule can be one of the following types that are derived from the unifiedRole
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Update a rule defined for a policy in PIM for Microsoft Entra roles
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
@@ -88,10 +88,14 @@ $params = @{
 
 Update-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will update a rule defined for a policy in pim for microsoft entra roles
+
+### Example 2: Update a rule defined for a policy in PIM for groups
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
@@ -112,6 +116,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
+
+```
+This example will update a rule defined for a policy in pim for groups
+
 
 ## PARAMETERS
 

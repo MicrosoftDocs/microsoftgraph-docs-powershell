@@ -70,17 +70,17 @@ This API supports the following PSTN scenarios:
 | Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All,  |
 
 ## EXAMPLES
+### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	callbackUri = "callbackUri-value"
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration Blob\>"
+		blob = "<Media Session Configuration Blob>"
 	}
 	acceptedModalities = @(
 		"audio"
@@ -94,10 +94,14 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will answer a peer-to-peer voip call with service hosted media
+
+### Example 2: Answer VOIP call with application hosted media
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -113,10 +117,14 @@ $params = @{
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will answer voip call with application hosted media
+
+### Example 3: Answer a policy-based recording call
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -125,11 +133,15 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration Blob\>"
+		blob = "<Media Session Configuration Blob>"
 	}
 }
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example will answer a policy-based recording call
+
 
 ## PARAMETERS
 

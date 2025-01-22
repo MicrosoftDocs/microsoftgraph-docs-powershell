@@ -54,11 +54,11 @@ Create a new user.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	displayName = "Dion Matheson"
@@ -92,6 +92,10 @@ $params = @{
 }
 
 New-MgBetaEducationUser -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

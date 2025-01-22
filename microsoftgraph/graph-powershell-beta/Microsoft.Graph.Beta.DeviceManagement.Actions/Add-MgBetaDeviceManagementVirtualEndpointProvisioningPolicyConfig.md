@@ -42,11 +42,11 @@ This method supports retry and allows you to apply the configuration to a subset
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	cloudPcIds = @(
@@ -57,6 +57,10 @@ policySettings = "region"
 }
 
 Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyConfig -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyConfig Cmdlet.
+
 
 ## PARAMETERS
 

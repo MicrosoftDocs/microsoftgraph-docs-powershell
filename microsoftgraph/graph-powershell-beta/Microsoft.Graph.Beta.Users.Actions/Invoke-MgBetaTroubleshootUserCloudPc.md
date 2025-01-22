@@ -40,14 +40,18 @@ Use this API to check the health status of the Cloud PC and the session host.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaTroubleshootUserCloudPc -UserId $userId -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Invoke-MgBetaTroubleshootUserCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

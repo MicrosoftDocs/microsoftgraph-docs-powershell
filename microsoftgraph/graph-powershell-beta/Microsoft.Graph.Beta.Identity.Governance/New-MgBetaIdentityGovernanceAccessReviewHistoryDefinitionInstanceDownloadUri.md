@@ -46,13 +46,17 @@ Each URI is valid for 24 hours and can be retrieved by fetching the downloadUri 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId -AccessReviewHistoryInstanceId $accessReviewHistoryInstanceId
+
+```
+This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet.
+
 
 ## PARAMETERS
 

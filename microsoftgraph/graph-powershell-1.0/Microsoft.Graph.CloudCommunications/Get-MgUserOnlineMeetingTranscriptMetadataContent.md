@@ -47,13 +47,17 @@ Retrieving the content of the transcript returns the stream of text associated w
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get a callTranscript metadataContent
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgUserOnlineMeetingTranscriptMetadataContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
+
+```
+This example will get a calltranscript metadatacontent
+
 
 ## PARAMETERS
 

@@ -59,11 +59,11 @@ Update the properties of a deviceAndAppManagementRoleDefinition object.
 | Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleDefinition"
@@ -89,6 +89,10 @@ isBuiltIn = $true
 }
 
 Update-MgDeviceManagementRoleDefinition -RoleDefinitionId $roleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

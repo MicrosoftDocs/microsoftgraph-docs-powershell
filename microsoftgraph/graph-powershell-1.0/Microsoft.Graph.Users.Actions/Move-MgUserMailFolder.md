@@ -57,11 +57,11 @@ Move a mailfolder and its contents to another mailfolder.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	destinationId = "destinationId-value"
@@ -69,6 +69,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Move-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+
+```
+This example shows how to use the Move-MgUserMailFolder Cmdlet.
+
 
 ## PARAMETERS
 

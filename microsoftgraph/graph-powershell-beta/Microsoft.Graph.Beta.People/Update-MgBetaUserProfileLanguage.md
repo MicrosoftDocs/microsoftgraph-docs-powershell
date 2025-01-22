@@ -61,11 +61,11 @@ Update the navigation property languages in users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	allowedAudiences = "organization"
@@ -73,6 +73,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileLanguage -UserId $userId -LanguageProficiencyId $languageProficiencyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileLanguage Cmdlet.
+
 
 ## PARAMETERS
 

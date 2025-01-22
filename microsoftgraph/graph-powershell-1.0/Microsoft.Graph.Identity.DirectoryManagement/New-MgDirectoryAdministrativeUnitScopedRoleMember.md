@@ -60,11 +60,11 @@ For a list of roles that can be assigned with administrative unit scope, see Ass
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	roleId = "roleId-value"
@@ -74,6 +74,10 @@ $params = @{
 }
 
 New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
+
 
 ## PARAMETERS
 

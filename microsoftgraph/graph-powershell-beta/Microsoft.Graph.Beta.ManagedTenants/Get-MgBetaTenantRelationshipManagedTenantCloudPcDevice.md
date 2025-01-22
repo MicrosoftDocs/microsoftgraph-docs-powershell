@@ -47,13 +47,17 @@ Read the properties and relationships of a cloudPcDevice object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice Cmdlet.
+
 
 ## PARAMETERS
 

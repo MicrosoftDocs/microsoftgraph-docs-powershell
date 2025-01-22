@@ -32,13 +32,17 @@ Metadata for the device configuration device activity report
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportDeviceConfigurationDeviceActivity
+
+```
+This example shows how to use the Get-MgReportDeviceConfigurationDeviceActivity Cmdlet.
+
 
 ## PARAMETERS
 

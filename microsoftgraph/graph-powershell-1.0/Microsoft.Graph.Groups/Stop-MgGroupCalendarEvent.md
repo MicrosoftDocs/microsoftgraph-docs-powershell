@@ -64,18 +64,6 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,6 +317,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/stop-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/stop-mggroupcalendarevent)
 
 [https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-1.0)
+
 
 
 

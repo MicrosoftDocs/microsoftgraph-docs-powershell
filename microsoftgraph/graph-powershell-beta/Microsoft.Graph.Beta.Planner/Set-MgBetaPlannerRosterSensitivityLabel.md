@@ -54,11 +54,11 @@ Assign a sensitivity label to a plannerRoster object.
 | Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	assignmentMethod = "standard"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Set-MgBetaPlannerRosterSensitivityLabel -PlannerRosterId $plannerRosterId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaPlannerRosterSensitivityLabel Cmdlet.
+
 
 ## PARAMETERS
 

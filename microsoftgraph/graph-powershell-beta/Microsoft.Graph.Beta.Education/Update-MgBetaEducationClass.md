@@ -73,11 +73,11 @@ Update the properties of a class.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	description = "History - World History 1"
@@ -85,6 +85,10 @@ $params = @{
 }
 
 Update-MgBetaEducationClass -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

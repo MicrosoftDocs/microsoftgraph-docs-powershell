@@ -59,11 +59,11 @@ Currently, the following types of virtual events are supported: - virtualEventTo
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Create an in-tenant presenter on a **virtualEventWebinar**
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	identity = @{
@@ -74,10 +74,14 @@ $params = @{
 
 New-MgVirtualEventWebinarPresenter -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an in-tenant presenter on a **virtualeventwebinar**
+
+### Example 2: Create an out-of-tenant presenter on a **virtualEventWebinar**
+
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	identity = @{
@@ -88,6 +92,10 @@ $params = @{
 }
 
 New-MgVirtualEventWebinarPresenter -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
+
+```
+This example will create an out-of-tenant presenter on a **virtualeventwebinar**
+
 
 ## PARAMETERS
 

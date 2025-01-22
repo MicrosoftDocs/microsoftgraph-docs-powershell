@@ -59,17 +59,21 @@ The following table shows the types of members that can be added to either secur
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 
 New-MgBetaGroupMemberByRef -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaGroupMemberByRef Cmdlet.
+
 
 ## PARAMETERS
 

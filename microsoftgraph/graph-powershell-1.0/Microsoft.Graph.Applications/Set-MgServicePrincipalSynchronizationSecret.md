@@ -58,11 +58,11 @@ Provide credentials for establishing connectivity with the target system.
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	value = @(
@@ -86,6 +86,10 @@ $params = @{
 }
 
 Set-MgServicePrincipalSynchronizationSecret -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgServicePrincipalSynchronizationSecret Cmdlet.
+
 
 ## PARAMETERS
 

@@ -57,11 +57,11 @@ Microsoft Teams provides a user interface for teachers to create teams for their
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	description = "Health Level 1"
@@ -74,6 +74,10 @@ $params = @{
 }
 
 New-MgBetaEducationClass -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

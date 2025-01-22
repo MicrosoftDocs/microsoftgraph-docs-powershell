@@ -69,11 +69,11 @@ For more details, see presence sessions and time-out and expiration.
 | Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	availability = "DoNotDisturb"
@@ -82,6 +82,10 @@ $params = @{
 }
 
 Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgUserPresenceUserPreferredPresence Cmdlet.
+
 
 ## PARAMETERS
 

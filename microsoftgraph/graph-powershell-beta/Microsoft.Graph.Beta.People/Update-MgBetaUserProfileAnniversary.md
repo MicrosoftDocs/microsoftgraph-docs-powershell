@@ -60,11 +60,11 @@ Update the navigation property anniversaries in users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	allowedAudiences = "contacts"
@@ -72,6 +72,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileAnniversary -UserId $userId -PersonAnnualEventId $personAnnualEventId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileAnniversary Cmdlet.
+
 
 ## PARAMETERS
 

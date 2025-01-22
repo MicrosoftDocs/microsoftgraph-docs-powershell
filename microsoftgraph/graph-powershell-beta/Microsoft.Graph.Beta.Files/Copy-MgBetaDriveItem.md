@@ -65,11 +65,11 @@ Progress is reported until the operation is completed by monitoring the progress
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -81,10 +81,14 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -96,10 +100,14 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -110,10 +118,14 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -124,10 +136,14 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -@microsoft.graph.conflictbehavior "replace"  -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -138,6 +154,10 @@ $params = @{
 }
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

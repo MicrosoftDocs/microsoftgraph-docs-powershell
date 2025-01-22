@@ -60,18 +60,6 @@ If the specified timeOff object doesn't exist, this method returns 404 Not found
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -416,6 +404,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoff)
 
 [https://learn.microsoft.com/graph/api/timeoff-put?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoff-put?view=graph-rest-1.0)
+
 
 
 

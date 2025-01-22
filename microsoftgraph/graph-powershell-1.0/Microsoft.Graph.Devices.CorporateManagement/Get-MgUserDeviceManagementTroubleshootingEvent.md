@@ -47,18 +47,6 @@ The list of troubleshooting events for this user.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -359,6 +347,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mguserdevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mguserdevicemanagementtroubleshootingevent)
+
+
 
 
 

@@ -40,13 +40,17 @@ Deletes a targetedManagedAppConfiguration.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Remove-MgDeviceAppManagementTargetedManagedAppConfiguration -TargetedManagedAppConfigurationId $targetedManagedAppConfigurationId
+
+```
+This example shows how to use the Remove-MgDeviceAppManagementTargetedManagedAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

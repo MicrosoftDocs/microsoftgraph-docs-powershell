@@ -67,11 +67,11 @@ For details about how to register a task trigger, see Extending Universal Print 
 | Application | PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	configuration = @{
@@ -108,6 +108,10 @@ $params = @{
 }
 
 Update-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 

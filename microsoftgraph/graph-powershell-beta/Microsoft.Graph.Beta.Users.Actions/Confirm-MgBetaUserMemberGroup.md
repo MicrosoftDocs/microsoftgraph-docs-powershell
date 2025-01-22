@@ -65,11 +65,11 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 | Application | Application.Read.All, User.ReadWrite.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Check group memberships for the signed-in user
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	groupIds = @(
@@ -80,6 +80,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Confirm-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
+
+```
+This example will check group memberships for the signed-in user
+
 
 ## PARAMETERS
 

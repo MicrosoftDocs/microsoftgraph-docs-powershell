@@ -47,14 +47,18 @@ Alternatively, send a new message in a single operation.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Send an existing draft message
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 # A UPN can also be used as -UserId.
 Send-MgUserMessage -UserId $userId -MessageId $messageId
+
+```
+This example will send an existing draft message
+
 
 ## PARAMETERS
 

@@ -59,11 +59,11 @@ Set the order of identityUserFlowAttributeAssignments being collected within a u
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	newAssignmentOrder = @{
@@ -75,6 +75,10 @@ $params = @{
 }
 
 Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder Cmdlet.
+
 
 ## PARAMETERS
 

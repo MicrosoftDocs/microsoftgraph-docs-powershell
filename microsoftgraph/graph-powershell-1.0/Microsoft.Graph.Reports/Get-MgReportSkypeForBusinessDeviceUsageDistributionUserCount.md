@@ -43,13 +43,17 @@ The report will show you the number of users per device including Windows, Windo
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -Period $periodId
+Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount Cmdlet.
+
 
 ## PARAMETERS
 

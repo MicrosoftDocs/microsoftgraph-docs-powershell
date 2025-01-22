@@ -48,13 +48,17 @@ This is the container for a mailbox and OneDrive for Business site.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -CaseId $caseId -LegalHoldId $legalHoldId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet.
+
 
 ## PARAMETERS
 

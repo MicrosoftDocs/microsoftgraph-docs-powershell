@@ -41,18 +41,6 @@ Get a list of the authenticationStrengthPolicy objects and their properties filt
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationMethodModes
@@ -352,6 +340,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetaidentityconditionalaccessauthenticationstrengthpolicybymethodmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetaidentityconditionalaccessauthenticationstrengthpolicybymethodmode)
 
 [https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-findbymethodmode?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-findbymethodmode?view=graph-rest-beta)
+
 
 
 

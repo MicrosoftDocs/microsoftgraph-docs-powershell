@@ -54,18 +54,6 @@ Update the navigation property notifications in users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -444,6 +432,7 @@ By default, all push endpoint types (Windows, iOS, Android and WebPush) are enab
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification)
+
 
 
 

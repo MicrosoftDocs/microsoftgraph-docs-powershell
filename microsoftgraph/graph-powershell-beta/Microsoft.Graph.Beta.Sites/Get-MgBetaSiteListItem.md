@@ -50,13 +50,17 @@ Returns the metadata for an item in a list.
 | Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
-Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)"
+Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)" 
+
+```
+This example shows how to use the Get-MgBetaSiteListItem Cmdlet.
+
 
 ## PARAMETERS
 

@@ -100,11 +100,11 @@ Update the properties of a mdmWindowsInformationProtectionPolicy object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mdmWindowsInformationProtectionPolicy"
@@ -127,8 +127,8 @@ dataRecoveryCertificate = @{
 	"@odata.type" = "microsoft.graph.windowsInformationProtectionDataRecoveryCertificate"
 	subjectName = "Subject Name value"
 	description = "Description value"
-	expirationDateTime = \[System.DateTime\]::Parse("2016-12-31T23:57:57.2481234-08:00")
-	certificate = \[System.Text.Encoding\]::ASCII.GetBytes("Y2VydGlmaWNhdGU=")
+	expirationDateTime = [System.DateTime]::Parse("2016-12-31T23:57:57.2481234-08:00")
+	certificate = [System.Text.Encoding]::ASCII.GetBytes("Y2VydGlmaWNhdGU=")
 }
 revokeOnUnenrollDisabled = $true
 rightsManagementServicesTemplateId = "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab"
@@ -232,6 +232,10 @@ isAssigned = $true
 }
 
 Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy -MdmWindowsInformationProtectionPolicyId $mdmWindowsInformationProtectionPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

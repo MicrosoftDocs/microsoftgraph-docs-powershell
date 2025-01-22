@@ -42,13 +42,17 @@ Get a list of archived print jobs for a particular user.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportUserArchivedPrintJob
+
+```
+This example shows how to use the Get-MgBetaReportUserArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 

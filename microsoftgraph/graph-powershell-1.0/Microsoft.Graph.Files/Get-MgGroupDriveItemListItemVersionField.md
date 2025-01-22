@@ -40,18 +40,6 @@ A collection of the fields and values for this version of the list item.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -250,6 +238,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemlistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemlistitemversionfield)
+
 
 
 

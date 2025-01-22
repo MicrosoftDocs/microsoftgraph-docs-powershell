@@ -48,14 +48,18 @@ Get followedSites from users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserFollowedSite -UserId $userId
+
+```
+This example shows how to use the Get-MgUserFollowedSite Cmdlet.
+
 
 ## PARAMETERS
 

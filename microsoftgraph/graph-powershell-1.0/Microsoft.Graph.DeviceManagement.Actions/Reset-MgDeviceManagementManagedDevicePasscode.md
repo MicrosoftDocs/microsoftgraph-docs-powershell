@@ -41,13 +41,17 @@ Reset passcode
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 Reset-MgDeviceManagementManagedDevicePasscode -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Reset-MgDeviceManagementManagedDevicePasscode Cmdlet.
+
 
 ## PARAMETERS
 

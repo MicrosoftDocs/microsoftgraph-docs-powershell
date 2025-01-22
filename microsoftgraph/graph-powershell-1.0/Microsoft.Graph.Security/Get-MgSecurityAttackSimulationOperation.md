@@ -49,13 +49,17 @@ Get an attack simulation operation to track a long-running operation request for
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityAttackSimulationOperation -AttackSimulationOperationId $attackSimulationOperationId
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationOperation Cmdlet.
+
 
 ## PARAMETERS
 

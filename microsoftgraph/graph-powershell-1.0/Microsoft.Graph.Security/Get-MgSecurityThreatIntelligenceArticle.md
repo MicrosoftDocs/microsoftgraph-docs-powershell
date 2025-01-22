@@ -50,13 +50,17 @@ Read the properties and relationships of an article object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityThreatIntelligenceArticle
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceArticle Cmdlet.
+
 
 ## PARAMETERS
 

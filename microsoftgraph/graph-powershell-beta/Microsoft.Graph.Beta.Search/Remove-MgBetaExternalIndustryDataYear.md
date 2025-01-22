@@ -38,13 +38,17 @@ Delete a yearTimePeriodDefinition object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Remove-MgBetaExternalIndustryDataYear -YearTimePeriodDefinitionId $yearTimePeriodDefinitionId
+
+```
+This example shows how to use the Remove-MgBetaExternalIndustryDataYear Cmdlet.
+
 
 ## PARAMETERS
 

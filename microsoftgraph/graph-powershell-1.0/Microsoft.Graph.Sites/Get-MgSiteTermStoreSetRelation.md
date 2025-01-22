@@ -71,13 +71,17 @@ Indicates which terms have been pinned or reused directly under the set.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreSetRelation -SiteId $siteId -SetId $setId
+
+```
+This example shows how to use the Get-MgSiteTermStoreSetRelation Cmdlet.
+
 
 ## PARAMETERS
 

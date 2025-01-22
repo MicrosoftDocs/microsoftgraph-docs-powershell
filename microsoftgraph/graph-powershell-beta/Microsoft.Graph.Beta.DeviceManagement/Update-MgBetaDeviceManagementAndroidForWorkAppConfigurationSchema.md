@@ -54,18 +54,6 @@ Update the navigation property androidForWorkAppConfigurationSchemas in deviceMa
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -448,6 +436,7 @@ SCHEMAITEMS `<IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem- `[]`>`: C
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidforworkappconfigurationschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidforworkappconfigurationschema)
+
 
 
 

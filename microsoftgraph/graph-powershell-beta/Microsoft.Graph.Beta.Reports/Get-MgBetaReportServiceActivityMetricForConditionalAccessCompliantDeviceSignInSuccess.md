@@ -43,13 +43,17 @@ Microsoft Intune manages compliant devices, including mobile iOS/Android devices
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,11 +60,11 @@ The corresponding app must already be installed in the chat.
 | Application | TeamsTab.Create, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWrite.All, TeamsTab.Create.Chat,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "My Contoso Tab"
@@ -78,6 +78,10 @@ $params = @{
 }
 
 New-MgBetaChatTab -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaChatTab Cmdlet.
+
 
 ## PARAMETERS
 

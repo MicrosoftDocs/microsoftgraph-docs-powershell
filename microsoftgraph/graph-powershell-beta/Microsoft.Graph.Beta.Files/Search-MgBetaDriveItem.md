@@ -43,13 +43,17 @@ Search the hierarchy of items for items matching a query.You can search within a
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Search-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Search-MgBetaDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

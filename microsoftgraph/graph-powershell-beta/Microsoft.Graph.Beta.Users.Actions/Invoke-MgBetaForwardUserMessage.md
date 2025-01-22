@@ -71,11 +71,11 @@ Alternatively, create a draft to forward a message, and send it later.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	message = @{
@@ -94,6 +94,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaForwardUserMessage Cmdlet.
+
 
 ## PARAMETERS
 

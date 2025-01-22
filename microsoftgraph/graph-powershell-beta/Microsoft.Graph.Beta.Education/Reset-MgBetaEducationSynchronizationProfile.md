@@ -37,13 +37,17 @@ Reset the sync of a specific school data synchronization profile in the tenant.
 | Application | EduAdministration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Reset-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
+
+```
+This example shows how to use the Reset-MgBetaEducationSynchronizationProfile Cmdlet.
+
 
 ## PARAMETERS
 

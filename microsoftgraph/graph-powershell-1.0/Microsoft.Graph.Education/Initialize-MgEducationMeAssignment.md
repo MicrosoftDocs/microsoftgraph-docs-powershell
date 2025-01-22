@@ -40,18 +40,6 @@ This action can only be performed by a teacher on currently inactive assignments
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -197,6 +185,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/initialize-mgeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/initialize-mgeducationmeassignment)
 
 [https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0)
+
 
 
 

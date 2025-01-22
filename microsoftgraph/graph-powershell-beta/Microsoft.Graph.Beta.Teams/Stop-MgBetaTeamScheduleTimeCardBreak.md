@@ -54,11 +54,11 @@ End the open break in a specific timeCard.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	atAprovedLocation = $true
@@ -69,6 +69,10 @@ $params = @{
 }
 
 Stop-MgBetaTeamScheduleTimeCardBreak -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgBetaTeamScheduleTimeCardBreak Cmdlet.
+
 
 ## PARAMETERS
 

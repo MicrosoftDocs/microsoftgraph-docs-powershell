@@ -70,17 +70,21 @@ Update the properties of a chat object.
 | Application | ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = "Group chat title update"
 }
 
 Update-MgBetaChat -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaChat Cmdlet.
+
 
 ## PARAMETERS
 

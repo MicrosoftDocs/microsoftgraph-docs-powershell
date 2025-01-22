@@ -49,20 +49,28 @@ Represents an action performed by the Microsoft Entra provisioning service and i
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Successful request
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaAuditLogProvisioning
 
-### EXAMPLE 2
 ```
+This example will successful request
+
+### Example 2: Error reponse
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaAuditLogProvisioning
+
+```
+This example will error reponse
+
 
 ## PARAMETERS
 

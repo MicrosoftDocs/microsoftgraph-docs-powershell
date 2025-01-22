@@ -54,13 +54,18 @@ This API request is transitive, and will also return all groups and administrati
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
-Get-MgBetaDeviceTransitiveMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual
+Get-MgBetaDeviceTransitiveMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgBetaDeviceTransitiveMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 

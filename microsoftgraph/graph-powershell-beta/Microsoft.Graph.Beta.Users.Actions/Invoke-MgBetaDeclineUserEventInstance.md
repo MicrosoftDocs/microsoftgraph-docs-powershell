@@ -62,18 +62,6 @@ For more information on how to propose a time, and how to receive and accept a n
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -397,6 +385,7 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineusereventinstance)
 
 [https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta)
+
 
 
 

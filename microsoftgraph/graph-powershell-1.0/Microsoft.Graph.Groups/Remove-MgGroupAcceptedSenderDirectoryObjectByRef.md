@@ -40,18 +40,6 @@ Remove acceptedSender
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -269,6 +257,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupacceptedsenderdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupacceptedsenderdirectoryobjectbyref)
 
 [https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-1.0)
+
 
 
 

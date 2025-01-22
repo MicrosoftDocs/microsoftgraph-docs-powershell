@@ -39,13 +39,17 @@ Create a request to remove the personal data for an outboundSharedUserProfile.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData -OutboundSharedUserProfileUserId $outboundSharedUserProfileUserId -TenantReferenceTenantId $tenantReferenceTenantId
+
+```
+This example shows how to use the Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData Cmdlet.
+
 
 ## PARAMETERS
 

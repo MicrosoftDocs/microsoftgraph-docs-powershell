@@ -42,13 +42,17 @@ The activities are performed by Microsoft Teams licensed users.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportTeamUserActivityCount -Period $periodId
+Get-MgReportTeamUserActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportTeamUserActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

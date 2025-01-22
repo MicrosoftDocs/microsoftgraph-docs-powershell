@@ -64,18 +64,6 @@ DriveItem resources inherit sharing permissions from their ancestors.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -427,6 +415,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriverootlink](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriverootlink)
 
 [https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
+
 
 
 

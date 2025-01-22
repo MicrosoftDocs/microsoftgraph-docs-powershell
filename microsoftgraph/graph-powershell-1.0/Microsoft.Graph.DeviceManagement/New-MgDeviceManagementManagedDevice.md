@@ -54,11 +54,11 @@ Create a new managedDevice object.
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedDevice"
@@ -70,12 +70,12 @@ $params = @{
 			"@odata.type" = "microsoft.graph.deviceActionResult"
 			actionName = "Action Name value"
 			actionState = "pending"
-			startDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:46.7156189-08:00")
-			lastUpdatedDateTime = \[System.DateTime\]::Parse("2017-01-01T00:00:56.8321556-08:00")
+			startDateTime = [System.DateTime]::Parse("2016-12-31T23:58:46.7156189-08:00")
+			lastUpdatedDateTime = [System.DateTime]::Parse("2017-01-01T00:00:56.8321556-08:00")
 		}
 	)
-	enrolledDateTime = \[System.DateTime\]::Parse("2016-12-31T23:59:43.797191-08:00")
-	lastSyncDateTime = \[System.DateTime\]::Parse("2017-01-01T00:02:49.3205976-08:00")
+	enrolledDateTime = [System.DateTime]::Parse("2016-12-31T23:59:43.797191-08:00")
+	lastSyncDateTime = [System.DateTime]::Parse("2017-01-01T00:02:49.3205976-08:00")
 	operatingSystem = "Operating System value"
 	complianceState = "compliant"
 	jailBroken = "Jail Broken value"
@@ -83,7 +83,7 @@ $params = @{
 	osVersion = "Os Version value"
 	easActivated = $true
 	easDeviceId = "Eas Device Id value"
-	easActivationDateTime = \[System.DateTime\]::Parse("2016-12-31T23:59:43.4878784-08:00")
+	easActivationDateTime = [System.DateTime]::Parse("2016-12-31T23:59:43.4878784-08:00")
 	azureADRegistered = $true
 	deviceEnrollmentType = "userEnrollment"
 	activationLockBypassCode = "Activation Lock Bypass Code value"
@@ -92,7 +92,7 @@ $params = @{
 	deviceRegistrationState = "registered"
 	deviceCategoryDisplayName = "Device Category Display Name value"
 	isSupervised = $true
-	exchangeLastSuccessfulSyncDateTime = \[System.DateTime\]::Parse("2017-01-01T00:00:45.8803083-08:00")
+	exchangeLastSuccessfulSyncDateTime = [System.DateTime]::Parse("2017-01-01T00:00:45.8803083-08:00")
 	exchangeAccessState = "unknown"
 	exchangeAccessStateReason = "unknown"
 	remoteAssistanceSessionUrl = "https://example.com/remoteAssistanceSessionUrl/"
@@ -102,7 +102,7 @@ $params = @{
 	model = "Model value"
 	manufacturer = "Manufacturer value"
 	imei = "Imei value"
-	complianceGracePeriodExpirationDateTime = \[System.DateTime\]::Parse("2016-12-31T23:56:44.951111-08:00")
+	complianceGracePeriodExpirationDateTime = [System.DateTime]::Parse("2016-12-31T23:56:44.951111-08:00")
 	serialNumber = "Serial Number value"
 	phoneNumber = "Phone Number value"
 	androidSecurityPatchLevel = "Android Security Patch Level value"
@@ -123,7 +123,7 @@ $params = @{
 		contentNamespaceUrl = "https://example.com/contentNamespaceUrl/"
 		deviceHealthAttestationStatus = "Device Health Attestation Status value"
 		contentVersion = "Content Version value"
-		issuedDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:22.1231038-08:00")
+		issuedDateTime = [System.DateTime]::Parse("2016-12-31T23:58:22.1231038-08:00")
 		attestationIdentityKey = "Attestation Identity Key value"
 		resetCount = 10
 		restartCount = 12
@@ -159,7 +159,7 @@ $params = @{
 	managedDeviceName = "Managed Device Name value"
 	partnerReportedThreatState = "activated"
 	requireUserEnrollmentApproval = $true
-	managementCertificateExpirationDate = \[System.DateTime\]::Parse("2016-12-31T23:57:59.9789653-08:00")
+	managementCertificateExpirationDate = [System.DateTime]::Parse("2016-12-31T23:57:59.9789653-08:00")
 	iccid = "Iccid value"
 	udid = "Udid value"
 	notes = "Notes value"
@@ -169,6 +169,10 @@ $params = @{
 }
 
 New-MgDeviceManagementManagedDevice -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementManagedDevice Cmdlet.
+
 
 ## PARAMETERS
 

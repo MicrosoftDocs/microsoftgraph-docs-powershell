@@ -51,27 +51,39 @@ Read the properties and relationships of an unifiedRbacResourceAction object.
 | Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All,  |
 
 ## EXAMPLES
+### Example 1: List microsoft.directory actions
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
 
-### EXAMPLE 2
 ```
+This example will list microsoft.directory actions
+
+### Example 2: List microsoft.insights actions
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
 
-### EXAMPLE 3
 ```
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
+This example will list microsoft.insights actions
 
-Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId -Filter "isPrivileged eq true"
+### Example 3: List privileged actions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId -Filter "isPrivileged eq true" 
+
+```
+This example will list privileged actions
+
 
 ## PARAMETERS
 

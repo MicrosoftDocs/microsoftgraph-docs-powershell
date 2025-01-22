@@ -46,13 +46,17 @@ Insights for authentications on apps registered in the tenant for a specified pe
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportUserInsightDailyAuthentication
+
+```
+This example shows how to use the Get-MgBetaReportUserInsightDailyAuthentication Cmdlet.
+
 
 ## PARAMETERS
 

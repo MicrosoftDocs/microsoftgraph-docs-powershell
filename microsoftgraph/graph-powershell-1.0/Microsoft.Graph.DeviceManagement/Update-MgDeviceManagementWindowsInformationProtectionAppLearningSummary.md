@@ -63,11 +63,11 @@ Update the properties of a windowsInformationProtectionAppLearningSummary object
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsInformationProtectionAppLearningSummary"
@@ -77,6 +77,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary -WindowsInformationProtectionAppLearningSummaryId $windowsInformationProtectionAppLearningSummaryId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary Cmdlet.
+
 
 ## PARAMETERS
 

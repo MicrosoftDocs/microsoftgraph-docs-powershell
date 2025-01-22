@@ -48,13 +48,17 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 | Application | CloudPC.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get a roleAssignmentMultiple in a Cloud PC provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 Get-MgBetaRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
+
+```
+This example will get a roleassignmentmultiple in a cloud pc provider
+
 
 ## PARAMETERS
 

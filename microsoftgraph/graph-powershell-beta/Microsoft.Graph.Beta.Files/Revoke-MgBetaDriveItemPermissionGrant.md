@@ -55,11 +55,11 @@ Revoke access to a listItem or driveItem granted via a sharing link by removing 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	grantees = @(
@@ -70,6 +70,10 @@ $params = @{
 }
 
 Revoke-MgBetaDriveItemPermissionGrant -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId -BodyParameter $params
+
+```
+This example shows how to use the Revoke-MgBetaDriveItemPermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

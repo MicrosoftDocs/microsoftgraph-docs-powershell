@@ -46,20 +46,28 @@ Represents an onboarded AWS account, Azure subscription, or GCP project that Mic
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: List authorization systems onboarded to Permissions Management
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalAuthorizationSystem
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Search
-```
+This example will list authorization systems onboarded to permissions management
 
-Get-MgBetaExternalAuthorizationSystem -Filter "dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'"
+### Example 2: Identify all the authorization systems that are online and have permissions modification capability enabled
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalAuthorizationSystem -Filter "dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'" 
+
+```
+This example will identify all the authorization systems that are online and have permissions modification capability enabled
+
 
 ## PARAMETERS
 

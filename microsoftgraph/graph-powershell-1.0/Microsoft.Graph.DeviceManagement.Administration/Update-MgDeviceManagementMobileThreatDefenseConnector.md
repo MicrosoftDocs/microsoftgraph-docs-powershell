@@ -66,15 +66,15 @@ Update the properties of a mobileThreatDefenseConnector object.
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mobileThreatDefenseConnector"
-	lastHeartbeatDateTime = \[System.DateTime\]::Parse("2016-12-31T23:59:37.9174975-08:00")
+	lastHeartbeatDateTime = [System.DateTime]::Parse("2016-12-31T23:59:37.9174975-08:00")
 	partnerState = "available"
 	androidMobileApplicationManagementEnabled = $true
 	iosMobileApplicationManagementEnabled = $true
@@ -92,6 +92,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementMobileThreatDefenseConnector -MobileThreatDefenseConnectorId $mobileThreatDefenseConnectorId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementMobileThreatDefenseConnector Cmdlet.
+
 
 ## PARAMETERS
 

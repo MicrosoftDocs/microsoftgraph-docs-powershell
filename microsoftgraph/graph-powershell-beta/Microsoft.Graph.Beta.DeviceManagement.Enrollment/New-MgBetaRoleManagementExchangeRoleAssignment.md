@@ -42,11 +42,11 @@ Create a new unifiedRoleAssignment object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Create a role assignment for Exchange Online provider with administrative unit scope
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 $params = @{
 	principalId = "/ServicePrincipals/0451dbb9-6336-42ea-b58f-5953dc053ece"
@@ -56,6 +56,10 @@ $params = @{
 }
 
 New-MgBetaRoleManagementExchangeRoleAssignment -BodyParameter $params
+
+```
+This example will create a role assignment for exchange online provider with administrative unit scope
+
 
 ## PARAMETERS
 

@@ -49,13 +49,17 @@ The hostPairs that are associated with a host, where that host is the childHost 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatIntelligenceHostParentHostPair -HostId $hostId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostParentHostPair Cmdlet.
+
 
 ## PARAMETERS
 

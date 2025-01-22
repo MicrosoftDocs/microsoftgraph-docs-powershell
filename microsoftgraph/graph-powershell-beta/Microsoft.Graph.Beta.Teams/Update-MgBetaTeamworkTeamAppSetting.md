@@ -42,11 +42,11 @@ Update the properties of a teamsAppSettings object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
@@ -55,10 +55,14 @@ $params = @{
 
 Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will enable installation of apps that require resource-specific consent in chats/meetings.
+
+### Example 2: Allow Teams users to request admins for access to certain Teams Apps.
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
@@ -66,6 +70,10 @@ $params = @{
 }
 
 Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
+
+```
+This example will allow teams users to request admins for access to certain teams apps.
+
 
 ## PARAMETERS
 

@@ -43,13 +43,17 @@ For details, see Reopen a closed case.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Invoke-MgReopenSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Invoke-MgReopenSecurityCaseEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

@@ -43,11 +43,11 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Create a directory or tenant-level setting
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
@@ -66,12 +66,16 @@ $params = @{
 		}
 		@{
 			name = "PrefixSuffixNamingRequirement"
-			value = "\[Contoso-\]\[GroupName\]"
+			value = "[Contoso-][GroupName]"
 		}
 	)
 }
 
 New-MgBetaDirectorySetting -BodyParameter $params
+
+```
+This example will create a directory or tenant-level setting
+
 
 ## PARAMETERS
 

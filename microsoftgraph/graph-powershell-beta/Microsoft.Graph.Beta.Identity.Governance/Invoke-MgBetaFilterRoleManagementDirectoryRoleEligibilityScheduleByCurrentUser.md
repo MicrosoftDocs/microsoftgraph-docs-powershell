@@ -44,13 +44,17 @@ Get a list of the unifiedRoleEligibilitySchedule objects and their properties as
 | Application | RoleEligibilitySchedule.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser -On $onId
+Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

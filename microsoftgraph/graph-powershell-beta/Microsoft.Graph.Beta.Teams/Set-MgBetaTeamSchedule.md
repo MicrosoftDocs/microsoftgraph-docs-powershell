@@ -87,11 +87,11 @@ Clients can also inspect the configuration of the schedule.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	enabled = $true
@@ -99,6 +99,10 @@ $params = @{
 }
 
 Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaTeamSchedule Cmdlet.
+
 
 ## PARAMETERS
 

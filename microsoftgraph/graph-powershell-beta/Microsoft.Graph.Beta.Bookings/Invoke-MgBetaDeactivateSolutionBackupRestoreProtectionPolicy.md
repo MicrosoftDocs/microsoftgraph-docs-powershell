@@ -41,20 +41,28 @@ Deactivate a protectionPolicyBase.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Deactivate an active protection policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
-### EXAMPLE 2
 ```
+This example will deactivate an active protection policy
+
+### Example 2 : Deactivate a protection policy in updating state
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
+
+```
+This example will deactivate a protection policy in updating state
+
 
 ## PARAMETERS
 

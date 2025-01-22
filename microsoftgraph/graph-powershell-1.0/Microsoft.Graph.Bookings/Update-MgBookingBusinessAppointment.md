@@ -73,18 +73,6 @@ Update the properties of a bookingAppointment object in the specified bookingBus
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -904,6 +892,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
 
 [https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
+
 
 
 

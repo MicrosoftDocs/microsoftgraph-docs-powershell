@@ -55,11 +55,11 @@ Update the properties on a listItem.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	Color = "Fuchsia"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Update-MgSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSiteListItemField Cmdlet.
+
 
 ## PARAMETERS
 

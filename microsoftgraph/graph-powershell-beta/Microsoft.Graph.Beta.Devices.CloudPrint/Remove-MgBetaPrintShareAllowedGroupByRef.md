@@ -55,13 +55,17 @@ Revoke the specified group's access to submit print jobs to the associated print
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Remove-MgBetaPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -GroupId $groupId
+
+```
+This example shows how to use the Remove-MgBetaPrintShareAllowedGroupByRef Cmdlet.
+
 
 ## PARAMETERS
 

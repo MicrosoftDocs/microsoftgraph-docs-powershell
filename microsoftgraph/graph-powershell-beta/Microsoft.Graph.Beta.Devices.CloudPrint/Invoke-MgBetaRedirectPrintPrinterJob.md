@@ -63,11 +63,11 @@ For details about how to use this API to add pull printing support to Universal 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	destinationPrinterId = "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
@@ -105,6 +105,10 @@ $params = @{
 }
 
 Invoke-MgBetaRedirectPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaRedirectPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 

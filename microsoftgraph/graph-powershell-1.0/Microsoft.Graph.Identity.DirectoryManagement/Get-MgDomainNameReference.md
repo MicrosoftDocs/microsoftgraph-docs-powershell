@@ -55,13 +55,17 @@ For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDomainNameReference -DomainId $domainId
+
+```
+This example shows how to use the Get-MgDomainNameReference Cmdlet.
+
 
 ## PARAMETERS
 

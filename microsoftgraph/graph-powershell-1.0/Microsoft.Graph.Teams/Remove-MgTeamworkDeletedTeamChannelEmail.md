@@ -42,18 +42,6 @@ You can remove an email address only if it was provisioned using the provisionEm
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -249,6 +237,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchannelemail](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchannelemail)
 
 [https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-1.0)
+
 
 
 

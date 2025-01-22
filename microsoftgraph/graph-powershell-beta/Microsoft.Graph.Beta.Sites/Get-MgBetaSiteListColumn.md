@@ -49,13 +49,17 @@ The collection of field definitions for this list.
 | Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteListColumn -SiteId $siteId -ListId $listId
+
+```
+This example shows how to use the Get-MgBetaSiteListColumn Cmdlet.
+
 
 ## PARAMETERS
 

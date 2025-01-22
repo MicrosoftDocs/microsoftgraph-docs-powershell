@@ -45,13 +45,17 @@ If the printer is shared again in the future, any Windows users who had previous
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Remove-MgBetaPrintShare -PrinterShareId $printerShareId
+
+```
+This example shows how to use the Remove-MgBetaPrintShare Cmdlet.
+
 
 ## PARAMETERS
 

@@ -40,18 +40,6 @@ Trigger the policies associated with the end of working hours for a specific use
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -229,6 +217,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/stop-mgusersolutionworkingtimescheduleworkingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/stop-mgusersolutionworkingtimescheduleworkingtime)
 
 [https://learn.microsoft.com/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-1.0)
+
 
 
 

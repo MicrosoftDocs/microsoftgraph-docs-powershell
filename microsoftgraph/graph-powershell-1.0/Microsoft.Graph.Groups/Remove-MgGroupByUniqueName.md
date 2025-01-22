@@ -48,18 +48,6 @@ To learn more, see deletedItems.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -262,6 +250,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename)
 
 [https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0)
+
 
 
 

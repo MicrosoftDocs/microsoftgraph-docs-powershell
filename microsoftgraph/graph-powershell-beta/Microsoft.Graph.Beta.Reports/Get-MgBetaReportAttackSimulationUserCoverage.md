@@ -32,13 +32,17 @@ This function supports @odata.nextLink for pagination.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportAttackSimulationUserCoverage
+
+```
+This example shows how to use the Get-MgBetaReportAttackSimulationUserCoverage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -56,18 +56,6 @@ Check in a checked out driveItem resource, which makes the version of the docume
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,6 +354,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckingroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckingroupdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-beta)
+
 
 
 

@@ -40,18 +40,6 @@ Dismiss a reminder that has been triggered for an event in a user calendar.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EventId
@@ -254,6 +242,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgdismissgroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgdismissgroupcalendareventreminder)
 
 [https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0)
+
 
 
 

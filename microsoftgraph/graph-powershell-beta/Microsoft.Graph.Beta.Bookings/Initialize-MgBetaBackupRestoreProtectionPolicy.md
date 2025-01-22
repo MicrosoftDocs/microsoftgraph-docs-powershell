@@ -45,20 +45,28 @@ You can add or remove artifacts (sites or user accounts) to or from each active 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1 : Activate an inactive protection policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Initialize-MgBetaBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
-### EXAMPLE 2
 ```
+This example will activate an inactive protection policy
+
+### Example 2 : Activate an active protection policy
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Initialize-MgBetaBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
+
+```
+This example will activate an active protection policy
+
 
 ## PARAMETERS
 

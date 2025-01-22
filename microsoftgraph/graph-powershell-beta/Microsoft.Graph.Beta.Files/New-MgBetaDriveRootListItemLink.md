@@ -64,18 +64,6 @@ listItem resources inherit sharing permissions from the list the item resides in
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -406,6 +394,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemlink)
 
 [https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta)
+
 
 
 

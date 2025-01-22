@@ -37,20 +37,28 @@ For more information, see Best practices for discovering files and detecting cha
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Initial request
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgAllSite
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Sites
-```
+This example will initial request
 
-Get-MgAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
+### Example 2: Subsequent request
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ" 
+
+```
+This example will subsequent request
+
 
 ## PARAMETERS
 

@@ -44,11 +44,11 @@ Create a new custom authenticationStrengthPolicy object.
 | Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Example"
@@ -73,6 +73,10 @@ combinationConfigurations = @(
 }
 
 New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPolicyAuthenticationStrengthPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,18 +46,6 @@ Unarchiving is an asynchronous operation; a channel is unarchived when the async
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -261,6 +249,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamworkdeletedteamchannel)
 
 [https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-beta)
+
 
 
 

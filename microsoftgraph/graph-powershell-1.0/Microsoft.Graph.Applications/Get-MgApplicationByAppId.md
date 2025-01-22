@@ -41,13 +41,17 @@ Get the properties and relationships of an application object.
 | Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Retrieve an application by its appId and only specific properties
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
-Get-MgApplicationByAppId -Property "id,appId,displayName,requiredResourceAccess"
+Get-MgApplicationByAppId -Property "id,appId,displayName,requiredResourceAccess" 
+
+```
+This example will retrieve an application by its appid and only specific properties
+
 
 ## PARAMETERS
 

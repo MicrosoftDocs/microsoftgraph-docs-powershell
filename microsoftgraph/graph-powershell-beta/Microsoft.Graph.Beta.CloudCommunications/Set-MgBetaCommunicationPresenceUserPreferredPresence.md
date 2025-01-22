@@ -68,18 +68,6 @@ Read more about presence sessions and their time-out and expiration.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activity
@@ -330,6 +318,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresenceuserpreferredpresence)
 
 [https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta)
+
 
 
 

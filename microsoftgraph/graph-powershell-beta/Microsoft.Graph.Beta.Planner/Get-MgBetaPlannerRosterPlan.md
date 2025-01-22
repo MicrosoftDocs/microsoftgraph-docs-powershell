@@ -46,13 +46,17 @@ Retrieves the plans contained by the plannerRoster.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Get-MgBetaPlannerRosterPlan -PlannerRosterId $plannerRosterId
+
+```
+This example shows how to use the Get-MgBetaPlannerRosterPlan Cmdlet.
+
 
 ## PARAMETERS
 

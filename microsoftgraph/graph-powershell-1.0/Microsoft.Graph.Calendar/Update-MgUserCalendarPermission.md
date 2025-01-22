@@ -89,17 +89,21 @@ Update the permissions assigned to an existing share recipient or delegate, thro
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	role = "write"
 }
 
 Update-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgUserCalendarPermission Cmdlet.
+
 
 ## PARAMETERS
 

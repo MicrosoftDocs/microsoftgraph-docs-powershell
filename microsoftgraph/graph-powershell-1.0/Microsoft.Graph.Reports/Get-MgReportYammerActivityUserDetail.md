@@ -53,13 +53,17 @@ Get details about Yammer activity by user.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportYammerActivityUserDetail
+
+```
+This example shows how to use the Get-MgReportYammerActivityUserDetail Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,13 +46,17 @@ Analytics aggregates might not be available for all action types.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaDriveItemActivityByInterval -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Get-MgBetaDriveItemActivityByInterval Cmdlet.
+
 
 ## PARAMETERS
 

@@ -32,18 +32,6 @@ Retrieve a list of users who have been granted access to submit print jobs to th
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -243,6 +231,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharealloweduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharealloweduserbyref)
 
 [https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-beta)
+
 
 
 

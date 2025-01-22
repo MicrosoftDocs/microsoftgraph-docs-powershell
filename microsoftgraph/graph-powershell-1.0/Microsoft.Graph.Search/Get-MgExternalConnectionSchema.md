@@ -41,13 +41,17 @@ Read the properties and relationships of a schema object.
 | Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All, ExternalConnection.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
+
+```
+This example shows how to use the Get-MgExternalConnectionSchema Cmdlet.
+
 
 ## PARAMETERS
 

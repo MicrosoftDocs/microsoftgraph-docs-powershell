@@ -45,13 +45,17 @@ The driveItems returned from the sharedWithMe method always include the remoteIt
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get driveItems shared with me
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 Invoke-MgGraphDrive -DriveId $driveId
+
+```
+This example will get driveitems shared with me
+
 
 ## PARAMETERS
 
