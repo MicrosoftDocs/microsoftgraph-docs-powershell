@@ -11,6 +11,9 @@ ms.subservice: planner
 ## SYNOPSIS
 Update the properties of plannerProgressTaskBoardTaskFormat object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskProgressTaskBoardFormat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

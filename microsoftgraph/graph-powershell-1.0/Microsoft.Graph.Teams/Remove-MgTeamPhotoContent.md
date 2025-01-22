@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The profile photo for the team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPhotoContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

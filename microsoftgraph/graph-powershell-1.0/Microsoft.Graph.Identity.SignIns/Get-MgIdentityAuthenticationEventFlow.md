@@ -13,6 +13,9 @@ ms.subservice: entra-sign-in
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
 The @odata.type property in the response object indicates the type of the object, which can be one of the following derived subtypes:- externalUsersSelfServiceSignupEventsFlow
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

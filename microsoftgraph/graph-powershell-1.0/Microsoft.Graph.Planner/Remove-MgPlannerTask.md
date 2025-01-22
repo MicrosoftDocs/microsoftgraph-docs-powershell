@@ -11,6 +11,9 @@ ms.subservice: planner
 ## SYNOPSIS
 Delete a plannerTask object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

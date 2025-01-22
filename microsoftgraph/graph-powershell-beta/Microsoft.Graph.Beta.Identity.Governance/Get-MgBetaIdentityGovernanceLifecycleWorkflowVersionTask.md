@@ -12,6 +12,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Get a specific task from a workflow or workflowVersion.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

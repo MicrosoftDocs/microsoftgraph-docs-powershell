@@ -12,6 +12,9 @@ ms.subservice: cloud-pc
 Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs.
 View a list of all the managed image resources from your Microsoft Entra subscriptions.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

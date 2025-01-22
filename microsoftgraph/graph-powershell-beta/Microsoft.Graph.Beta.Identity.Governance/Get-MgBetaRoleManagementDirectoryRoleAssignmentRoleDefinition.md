@@ -11,6 +11,9 @@ schema: 2.0.0
 The roleDefinition the assignment is for.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

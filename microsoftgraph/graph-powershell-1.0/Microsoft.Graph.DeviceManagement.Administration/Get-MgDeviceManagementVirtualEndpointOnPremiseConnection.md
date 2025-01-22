@@ -12,6 +12,9 @@ ms.subservice: cloud-pc
 ## SYNOPSIS
 Read the properties and relationships of the cloudPcOnPremisesConnection object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

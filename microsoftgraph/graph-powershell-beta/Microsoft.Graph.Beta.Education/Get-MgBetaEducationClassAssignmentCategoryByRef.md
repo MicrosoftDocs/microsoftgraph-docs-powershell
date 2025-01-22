@@ -12,6 +12,9 @@ ms.subservice: education
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategoryByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

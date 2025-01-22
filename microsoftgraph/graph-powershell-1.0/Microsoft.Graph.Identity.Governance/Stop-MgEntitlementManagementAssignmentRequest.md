@@ -11,6 +11,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Cancel (Default)

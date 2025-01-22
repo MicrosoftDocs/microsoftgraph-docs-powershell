@@ -12,6 +12,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

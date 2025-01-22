@@ -12,6 +12,9 @@ ms.subservice: entra-id-governance
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
 A definition that doesn't recur will have exactly one instance.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

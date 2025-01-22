@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to contacts for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

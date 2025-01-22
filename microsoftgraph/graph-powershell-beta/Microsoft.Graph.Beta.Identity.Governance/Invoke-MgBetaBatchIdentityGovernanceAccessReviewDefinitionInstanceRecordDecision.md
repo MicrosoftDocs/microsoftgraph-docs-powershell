@@ -11,6 +11,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using principalId, resourceId, or neither.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### BatchExpanded (Default)

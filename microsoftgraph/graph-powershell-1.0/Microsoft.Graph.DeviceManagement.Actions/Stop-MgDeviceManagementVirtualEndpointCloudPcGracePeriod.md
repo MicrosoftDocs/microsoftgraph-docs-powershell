@@ -14,6 +14,9 @@ The grace period is triggered when the Cloud PC license is removed or the provis
 It allows users to access Cloud PCs for up to seven days before deprovisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### End (Default)

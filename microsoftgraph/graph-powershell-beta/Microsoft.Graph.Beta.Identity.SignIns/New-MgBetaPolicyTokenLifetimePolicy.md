@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Create a new tokenLifetimePolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

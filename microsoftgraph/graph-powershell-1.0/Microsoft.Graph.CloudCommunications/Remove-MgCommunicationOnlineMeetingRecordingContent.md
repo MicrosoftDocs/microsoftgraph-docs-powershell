@@ -11,6 +11,9 @@ schema: 2.0.0
 The content of the recording.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationOnlineMeetingRecordingContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

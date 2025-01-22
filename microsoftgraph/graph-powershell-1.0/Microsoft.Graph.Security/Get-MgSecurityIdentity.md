@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A container for security identities APIs.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentity](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

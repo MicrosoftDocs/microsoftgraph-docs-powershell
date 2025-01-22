@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Update the properties of an externalConnection object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

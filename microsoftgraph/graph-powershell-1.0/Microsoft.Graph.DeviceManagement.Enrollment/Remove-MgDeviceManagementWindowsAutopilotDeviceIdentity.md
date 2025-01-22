@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Deletes a windowsAutopilotDeviceIdentity.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

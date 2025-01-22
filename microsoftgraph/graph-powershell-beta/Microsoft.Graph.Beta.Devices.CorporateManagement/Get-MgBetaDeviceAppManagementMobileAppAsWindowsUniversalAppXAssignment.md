@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of group assignments for this mobile app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

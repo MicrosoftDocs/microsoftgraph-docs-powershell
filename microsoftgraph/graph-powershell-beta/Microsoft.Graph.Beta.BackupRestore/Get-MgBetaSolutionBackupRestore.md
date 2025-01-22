@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestore](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestore?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

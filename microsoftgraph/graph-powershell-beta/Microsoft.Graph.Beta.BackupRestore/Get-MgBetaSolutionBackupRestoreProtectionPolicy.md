@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of protection policies in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

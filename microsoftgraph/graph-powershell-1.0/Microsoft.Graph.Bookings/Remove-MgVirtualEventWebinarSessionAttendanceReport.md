@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property attendanceReports for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

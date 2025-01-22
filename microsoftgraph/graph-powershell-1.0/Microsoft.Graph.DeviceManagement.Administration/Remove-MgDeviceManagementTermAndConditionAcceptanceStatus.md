@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Deletes a termsAndConditionsAcceptanceStatus.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

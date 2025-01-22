@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Invoke action associateWithHubSites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgGroupSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupSiteListContentTypeWithHubSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)

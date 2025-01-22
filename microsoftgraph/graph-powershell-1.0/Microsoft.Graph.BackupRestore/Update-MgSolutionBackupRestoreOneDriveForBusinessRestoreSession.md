@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Update the properties of a oneDriveForBusinessRestoreSession object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

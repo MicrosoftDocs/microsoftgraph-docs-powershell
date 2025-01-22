@@ -11,6 +11,9 @@ schema: 2.0.0
 The content of the recording.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingRecordingContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

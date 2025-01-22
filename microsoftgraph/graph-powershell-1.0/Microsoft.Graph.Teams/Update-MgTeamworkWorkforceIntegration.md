@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Update the properties of a workforceIntegration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

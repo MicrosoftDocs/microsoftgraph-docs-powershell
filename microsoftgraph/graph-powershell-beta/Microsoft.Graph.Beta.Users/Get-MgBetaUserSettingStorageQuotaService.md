@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The breakdown of services contributing to the user's quota usage.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingStorageQuotaService](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingStorageQuotaService?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
