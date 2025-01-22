@@ -36,18 +36,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduAdministration.Read.All, EduAdministration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationSynchronizationProfileId
@@ -195,6 +183,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofileerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofileerrorcount)
+
 
 
 

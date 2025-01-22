@@ -39,18 +39,6 @@ Sets a new value for the collection of alertComment.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertId
@@ -320,6 +308,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityincidentalertcomment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityincidentalertcomment)
+
 
 
 

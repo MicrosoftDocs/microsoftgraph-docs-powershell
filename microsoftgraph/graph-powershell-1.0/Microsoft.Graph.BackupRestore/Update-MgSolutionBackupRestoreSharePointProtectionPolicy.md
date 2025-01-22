@@ -66,18 +66,6 @@ This method adds a siteprotectionunit to or removes it from the protection polic
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -576,6 +564,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-1.0)
+
 
 
 

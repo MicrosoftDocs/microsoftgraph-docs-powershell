@@ -53,18 +53,6 @@ The content stream, if the item represents a file.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -264,6 +252,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitemdriveitemcontent)
+
 
 
 

@@ -40,18 +40,6 @@ Create new navigation property to managedTenantAlertRuleDefinitions for tenantRe
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -487,6 +475,7 @@ DEFINITIONTEMPLATE `<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>`:
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertruledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertruledefinition)
+
 
 
 

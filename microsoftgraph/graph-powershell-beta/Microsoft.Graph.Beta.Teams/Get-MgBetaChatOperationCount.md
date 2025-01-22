@@ -36,18 +36,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -218,6 +206,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatoperationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatoperationcount)
+
 
 
 

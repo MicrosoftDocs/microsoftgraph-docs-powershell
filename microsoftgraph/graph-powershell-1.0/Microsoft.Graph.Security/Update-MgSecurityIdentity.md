@@ -39,18 +39,6 @@ Update the navigation property identities in security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -267,6 +255,7 @@ These commands run in sequence for the single recommended fix.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity)
+
 
 
 

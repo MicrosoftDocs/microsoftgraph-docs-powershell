@@ -43,18 +43,6 @@ Currently, only the list chats operation supports this property.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -232,6 +220,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatlastmessagepreview](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatlastmessagepreview)
+
 
 
 

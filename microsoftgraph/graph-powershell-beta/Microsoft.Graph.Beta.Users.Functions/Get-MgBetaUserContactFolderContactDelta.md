@@ -46,22 +46,6 @@ This allows you to maintain and synchronize a local store of a user's contacts w
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Contacts.Read, Contacts.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -382,6 +366,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfoldercontactdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfoldercontactdelta)
 
 [https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-beta)
+
 
 
 
