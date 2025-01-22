@@ -52,9 +52,6 @@ To get properties that are not returned by default, do a GET operation for the u
 Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
 Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the list of all the users
 
