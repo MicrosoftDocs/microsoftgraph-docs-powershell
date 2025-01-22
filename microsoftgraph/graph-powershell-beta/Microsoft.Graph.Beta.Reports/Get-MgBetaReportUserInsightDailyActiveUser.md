@@ -38,6 +38,13 @@ Get-MgBetaReportUserInsightDailyActiveUser -InputObject <IReportsIdentity> [-Exp
 ## DESCRIPTION
 Insights for active users on apps registered in the tenant for a specified period.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -50,6 +50,13 @@ Get the MailTips of one or more recipients as available to the signed-in user.
 Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Read.Shared,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Mail.Read,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

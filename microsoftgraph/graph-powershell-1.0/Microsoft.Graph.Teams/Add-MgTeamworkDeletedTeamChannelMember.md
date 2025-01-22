@@ -49,6 +49,13 @@ Add-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

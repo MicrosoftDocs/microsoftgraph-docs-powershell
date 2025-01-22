@@ -29,6 +29,13 @@ Get-MgBetaGroupTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ExpandProp
 ## DESCRIPTION
 Generic representation of a team template definition for a team with a specific structure and configuration.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

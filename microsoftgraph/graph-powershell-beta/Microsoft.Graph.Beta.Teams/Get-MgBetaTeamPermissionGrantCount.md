@@ -29,6 +29,13 @@ Get-MgBetaTeamPermissionGrantCount -InputObject <ITeamsIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ManageSelectedForTeam,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsAppInstallation.Read.Group, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsApp.Read.Group,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

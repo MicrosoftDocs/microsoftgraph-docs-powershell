@@ -25,6 +25,13 @@ Get-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalU
 Get an identityUserFlowAttribute collection associated with an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

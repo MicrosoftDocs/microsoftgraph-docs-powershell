@@ -31,6 +31,13 @@ Get-MgBetaVirtualEventTownhallByUserRole -InputObject <IBookingsIdentity> [-Coun
 ## DESCRIPTION
 Invoke function getByUserRole
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

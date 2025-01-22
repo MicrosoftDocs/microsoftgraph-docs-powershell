@@ -38,6 +38,13 @@ Get-MgBetaPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties and relationships of a printOperation object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

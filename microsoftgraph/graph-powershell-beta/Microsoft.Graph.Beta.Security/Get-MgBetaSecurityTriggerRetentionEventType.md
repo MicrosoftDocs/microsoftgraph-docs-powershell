@@ -29,6 +29,13 @@ Get-MgBetaSecurityTriggerRetentionEventType -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Specifies the event that will start the retention period for labels that use this event type when an event is created.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

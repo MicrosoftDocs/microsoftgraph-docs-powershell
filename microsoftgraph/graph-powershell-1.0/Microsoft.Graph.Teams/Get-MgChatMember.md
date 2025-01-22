@@ -39,6 +39,13 @@ Get-MgChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Retrieve a conversationMember from a chat.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadBasic, ChatMember.ReadWrite, ChatMember.Read, Chat.ReadWrite, Chat.Read, ChannelMember.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMember.Read.All, TeamMember.Read.Group, ChatMember.ReadWrite.All, ChatMember.Read.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

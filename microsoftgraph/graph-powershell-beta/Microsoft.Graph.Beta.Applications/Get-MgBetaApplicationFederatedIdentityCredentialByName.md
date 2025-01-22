@@ -30,6 +30,13 @@ Get-MgBetaApplicationFederatedIdentityCredentialByName -InputObject <IApplicatio
 ## DESCRIPTION
 Read the properties and relationships of a federatedIdentityCredential object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

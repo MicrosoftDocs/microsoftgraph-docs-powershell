@@ -35,6 +35,13 @@ Create a new referenceDefinition object.
 referenceDefinition objects associate incoming data with standardized reference types values for validation.
 You can extend the following reference types with other codes that better align with your source data.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

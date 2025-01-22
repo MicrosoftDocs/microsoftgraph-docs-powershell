@@ -60,6 +60,13 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ## DESCRIPTION
 Send a new chatMessage in the specified channel or a chat.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMessage.Send, Group.ReadWrite.All, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

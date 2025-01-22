@@ -37,6 +37,13 @@ Get-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The permissions of the users with whom the calendar is shared.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

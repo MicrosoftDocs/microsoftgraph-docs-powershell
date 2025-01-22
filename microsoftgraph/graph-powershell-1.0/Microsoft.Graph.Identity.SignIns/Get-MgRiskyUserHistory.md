@@ -38,6 +38,13 @@ Get-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The activity related to user risk level change
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

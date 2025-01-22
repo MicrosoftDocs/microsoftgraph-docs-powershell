@@ -44,6 +44,13 @@ You can download a report by first creating a new cloudPcExportJob resource to i
 Use this GET operation to verify the exportJobStatus property of the cloudPcExportJob resource.
 The property becomes completed when the report finishes downloading in the location specified by the exportUrl property.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

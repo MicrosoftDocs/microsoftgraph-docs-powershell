@@ -32,6 +32,13 @@ Get-MgUserContactFolderChildFolderContactPhoto -InputObject <IPersonalContactsId
 Optional contact picture.
 You can get or set a photo for a contact.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

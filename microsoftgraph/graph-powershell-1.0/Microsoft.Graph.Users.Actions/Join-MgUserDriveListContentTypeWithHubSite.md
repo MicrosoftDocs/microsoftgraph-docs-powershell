@@ -48,6 +48,13 @@ Join-MgUserDriveListContentTypeWithHubSite -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Associate a published content type present in a content type hub with a list of hub sites.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

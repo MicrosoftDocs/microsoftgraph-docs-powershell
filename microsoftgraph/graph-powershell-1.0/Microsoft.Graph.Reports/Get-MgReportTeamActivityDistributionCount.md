@@ -30,6 +30,13 @@ Get-MgReportTeamActivityDistributionCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Get the number of team activities across Microsoft Teams over a selected period.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -41,6 +41,13 @@ New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter <IMicrosoftGraphIdentit
 Create a new workflow object.
 You can create up to 100 workflows in a tenant.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

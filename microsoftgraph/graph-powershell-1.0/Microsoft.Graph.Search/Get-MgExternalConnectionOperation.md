@@ -38,6 +38,13 @@ Get-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-ExpandPropert
 ## DESCRIPTION
 Read the properties and relationships of a connectionOperation object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All, ExternalConnection.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,13 @@ Start-MgBetaTeamworkDeviceDiagnostic -InputObject <ITeamsIdentity> [-ResponseHea
 Run and generate diagnostic logs for the specified Microsoft Teams-enabled device.
 This API triggers a long-running operation used to generate logs for a device.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

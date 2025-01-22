@@ -32,6 +32,13 @@ Remove-MgApplicationOwnerDirectoryObjectByRef -InputObject <IApplicationsIdentit
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

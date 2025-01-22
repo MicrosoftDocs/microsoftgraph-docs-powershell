@@ -56,6 +56,13 @@ Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBack
 Update a SharePoint protection policy.
 This method adds a siteprotectionunit to or removes it from the protection policy.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

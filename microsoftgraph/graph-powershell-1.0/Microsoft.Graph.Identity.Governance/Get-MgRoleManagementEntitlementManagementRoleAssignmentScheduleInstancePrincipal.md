@@ -31,6 +31,13 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal
 ## DESCRIPTION
 The principal that's getting a role assignment or role eligibility through the request.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -43,6 +43,13 @@ Get-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIden
 Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
 When an online meeting ends, an attendance report is generated for that session.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

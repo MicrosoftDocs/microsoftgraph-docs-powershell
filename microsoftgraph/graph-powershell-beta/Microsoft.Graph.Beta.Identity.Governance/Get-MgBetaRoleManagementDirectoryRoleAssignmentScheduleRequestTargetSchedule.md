@@ -33,6 +33,13 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand and $select nested in $expand.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

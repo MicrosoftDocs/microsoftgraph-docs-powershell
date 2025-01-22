@@ -44,6 +44,13 @@ Update-MgBetaUserContactFolderContactExtension -InputObject <IPersonalContactsId
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

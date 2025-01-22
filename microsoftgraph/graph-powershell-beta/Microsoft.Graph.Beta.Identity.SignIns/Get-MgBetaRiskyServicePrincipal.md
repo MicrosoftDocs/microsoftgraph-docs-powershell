@@ -39,6 +39,13 @@ Get-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 Read the properties and relationships of a riskyServicePrincipal object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

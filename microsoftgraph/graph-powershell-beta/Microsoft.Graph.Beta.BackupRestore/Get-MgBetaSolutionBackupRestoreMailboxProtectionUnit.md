@@ -38,6 +38,13 @@ Get-MgBetaSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRestor
 ## DESCRIPTION
 The list of mailbox protection units in the tenant.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

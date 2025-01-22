@@ -39,6 +39,13 @@ Get-MgChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prope
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWriteForChat,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsTab.Read.All, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWrite.All, TeamsTab.Read.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

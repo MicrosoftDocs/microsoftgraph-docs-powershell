@@ -32,6 +32,13 @@ Get-MgBetaPrintPrinterShareJobTaskDefinition -InputObject <IDevicesCloudPrintIde
 The printTaskDefinition that was used to create this task.
 Read-only.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

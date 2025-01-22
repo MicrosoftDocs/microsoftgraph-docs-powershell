@@ -39,6 +39,13 @@ Get-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcUserSetting object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

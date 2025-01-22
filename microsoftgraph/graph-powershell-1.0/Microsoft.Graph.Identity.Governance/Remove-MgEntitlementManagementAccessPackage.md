@@ -32,6 +32,13 @@ Remove-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIde
 Delete an accessPackage object.
 You cannot delete an access package if it has any accessPackageAssignment.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

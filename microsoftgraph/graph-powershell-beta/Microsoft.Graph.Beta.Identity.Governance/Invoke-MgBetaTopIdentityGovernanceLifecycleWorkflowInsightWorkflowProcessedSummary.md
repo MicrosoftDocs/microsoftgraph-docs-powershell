@@ -36,6 +36,13 @@ Provide a summary of the workflows processed the most, known as top workflows, f
 Workflow basic details are given, along with run information.
 For information about tasks processed, see insights: topTasksProcessedSummary.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

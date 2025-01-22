@@ -38,6 +38,13 @@ Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance -InputObject <IDev
 ## DESCRIPTION
 User experience analytics device performance
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,13 @@ Get-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-
 ## DESCRIPTION
 The user's preferences for languages, regional locale and date/time formatting.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

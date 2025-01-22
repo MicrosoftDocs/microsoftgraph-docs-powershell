@@ -39,6 +39,13 @@ Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurityIde
 ## DESCRIPTION
 Custodian sources that are included in the eDiscovery search.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

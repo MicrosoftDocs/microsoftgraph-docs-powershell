@@ -39,6 +39,13 @@ Get-MgBetaUserChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 A collection of all the tabs in the chat.
 Nullable.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

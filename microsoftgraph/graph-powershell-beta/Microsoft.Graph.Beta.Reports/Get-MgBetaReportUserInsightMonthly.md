@@ -21,6 +21,13 @@ Get-MgBetaReportUserInsightMonthly [-ExpandProperty <String[]>] [-Property <Stri
 ## DESCRIPTION
 Summaries of monthly user activities on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

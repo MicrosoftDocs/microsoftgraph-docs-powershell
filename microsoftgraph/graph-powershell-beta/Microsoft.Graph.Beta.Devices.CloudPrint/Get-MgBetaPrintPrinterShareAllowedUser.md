@@ -22,6 +22,13 @@ Get-MgBetaPrintPrinterShareAllowedUser -PrinterShareId <String> [-ExpandProperty
 ## DESCRIPTION
 The users who have access to print using the printer.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

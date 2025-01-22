@@ -34,6 +34,13 @@ Deletes an appRoleAssignment that a service principal has been granted.
 App roles that are assigned to service principals are also known as application permissions.
 Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

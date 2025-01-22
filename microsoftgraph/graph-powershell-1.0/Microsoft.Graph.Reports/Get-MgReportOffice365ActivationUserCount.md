@@ -21,6 +21,13 @@ Get-MgReportOffice365ActivationUserCount -OutFile <String> [-ResponseHeadersVari
 ## DESCRIPTION
 Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

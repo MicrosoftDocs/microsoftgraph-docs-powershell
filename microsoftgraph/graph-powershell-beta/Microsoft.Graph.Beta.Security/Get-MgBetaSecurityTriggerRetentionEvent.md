@@ -39,6 +39,13 @@ Get-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Read the properties and relationships of a retentionEvent object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

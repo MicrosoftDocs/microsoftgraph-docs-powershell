@@ -30,6 +30,13 @@ Remove-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete a retentionEventType object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

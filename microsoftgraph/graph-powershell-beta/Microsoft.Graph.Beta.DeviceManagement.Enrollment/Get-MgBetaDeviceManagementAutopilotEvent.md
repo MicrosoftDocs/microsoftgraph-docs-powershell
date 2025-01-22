@@ -37,6 +37,13 @@ Get-MgBetaDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrollme
 ## DESCRIPTION
 The list of autopilot events for the tenant.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

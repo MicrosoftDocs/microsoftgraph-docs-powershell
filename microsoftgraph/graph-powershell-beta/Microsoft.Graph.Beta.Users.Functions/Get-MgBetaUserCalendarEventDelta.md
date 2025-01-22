@@ -65,6 +65,13 @@ The initial call is a full synchronization, and every subsequent delta call in t
 This allows you to maintain and synchronize a local store of events in the specified calendar, without having to fetch all the events of that calendar from the server every time.
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

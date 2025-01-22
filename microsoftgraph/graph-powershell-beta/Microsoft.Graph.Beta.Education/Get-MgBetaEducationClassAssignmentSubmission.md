@@ -60,6 +60,13 @@ Students will not see the grade or feedback until the assignment has been releas
 Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
 For details, see the examples section.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All, EduAssignments.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

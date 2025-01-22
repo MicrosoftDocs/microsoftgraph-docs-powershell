@@ -45,6 +45,13 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPicture -InputObject <IFinanci
 ## DESCRIPTION
 Update the navigation property picture in financials
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

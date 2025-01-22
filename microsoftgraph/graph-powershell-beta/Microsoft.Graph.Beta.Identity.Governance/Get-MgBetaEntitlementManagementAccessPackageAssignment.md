@@ -51,6 +51,13 @@ Get-MgBetaEntitlementManagementAccessPackageAssignment [-ExpandProperty <String[
 ## DESCRIPTION
 The assignment of an access package to a subject for a period of time.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,13 @@ Get-MgReportYammerDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Get the number of daily users by device type.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

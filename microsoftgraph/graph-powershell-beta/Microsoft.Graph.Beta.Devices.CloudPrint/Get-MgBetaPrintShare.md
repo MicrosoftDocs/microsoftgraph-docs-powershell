@@ -38,6 +38,13 @@ Get-MgBetaPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of a printer share.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All, PrinterShare.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

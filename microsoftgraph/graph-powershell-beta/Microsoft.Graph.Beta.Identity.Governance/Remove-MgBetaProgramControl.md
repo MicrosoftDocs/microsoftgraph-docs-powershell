@@ -60,6 +60,13 @@ Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch
 In the Microsoft Entra access reviews feature, delete a programControl object.
 This unlinks an access review from a program.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

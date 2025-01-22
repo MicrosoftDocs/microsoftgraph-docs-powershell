@@ -30,6 +30,13 @@ Remove-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <
 ## DESCRIPTION
 Deletes an appRoleAssignment that a group has been granted.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -31,6 +31,13 @@ Get-MgBetaTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 The template this team was created from.
 See available templates.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

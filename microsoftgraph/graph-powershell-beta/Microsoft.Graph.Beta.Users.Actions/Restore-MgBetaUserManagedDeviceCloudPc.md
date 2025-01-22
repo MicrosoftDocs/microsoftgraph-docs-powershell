@@ -46,6 +46,13 @@ Restore-MgBetaUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

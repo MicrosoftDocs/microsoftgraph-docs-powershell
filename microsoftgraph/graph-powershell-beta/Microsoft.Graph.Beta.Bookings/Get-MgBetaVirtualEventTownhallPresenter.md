@@ -41,6 +41,13 @@ Get-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-Expan
 Read the properties and relationships of a virtualEventPresenter object.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

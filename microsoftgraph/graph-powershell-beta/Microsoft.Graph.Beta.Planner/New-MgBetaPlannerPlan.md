@@ -35,6 +35,13 @@ New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-ResponseHead
 ## DESCRIPTION
 Create a new plannerPlan object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Tasks.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

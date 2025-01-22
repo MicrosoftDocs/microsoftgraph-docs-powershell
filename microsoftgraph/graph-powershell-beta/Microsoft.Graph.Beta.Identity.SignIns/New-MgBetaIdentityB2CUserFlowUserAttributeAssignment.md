@@ -48,6 +48,13 @@ New-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 ## DESCRIPTION
 Create a new identityUserFlowAttributeAssignment object in a b2cIdentityUserFlow.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

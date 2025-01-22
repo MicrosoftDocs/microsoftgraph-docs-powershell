@@ -32,6 +32,13 @@ Remove-MgBetaEducationClassModule -InputObject <IEducationIdentity> [-IfMatch <S
 Delete an existing module in a class.
 Only teachers within a class can delete modules.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduCurricula.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduCurricula.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

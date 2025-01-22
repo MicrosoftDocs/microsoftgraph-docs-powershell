@@ -41,6 +41,13 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
 The metric values for the user experience analytics category.
 Read-only.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

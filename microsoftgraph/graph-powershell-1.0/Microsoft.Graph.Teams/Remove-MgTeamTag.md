@@ -30,6 +30,13 @@ Remove-MgTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHea
 ## DESCRIPTION
 Delete a tag object permanently.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkTag.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkTag.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

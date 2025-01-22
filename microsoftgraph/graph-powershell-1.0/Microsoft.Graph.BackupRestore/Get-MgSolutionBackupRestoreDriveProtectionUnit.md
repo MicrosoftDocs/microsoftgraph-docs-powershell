@@ -38,6 +38,13 @@ Get-MgSolutionBackupRestoreDriveProtectionUnit -InputObject <IBackupRestoreIdent
 ## DESCRIPTION
 The list of drive protection units in the tenant.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

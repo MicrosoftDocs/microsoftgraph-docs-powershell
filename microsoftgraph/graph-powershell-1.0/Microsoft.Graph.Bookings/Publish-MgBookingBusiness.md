@@ -32,6 +32,13 @@ Publish-MgBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeadersVari
 Make the scheduling page of a business available to external customers.
 Set the isPublished property to true, and the publicUrl property to the URL of the scheduling page.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

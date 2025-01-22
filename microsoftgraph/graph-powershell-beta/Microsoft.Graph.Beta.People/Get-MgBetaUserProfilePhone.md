@@ -37,6 +37,13 @@ Get-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Represents detailed information about phone numbers associated with a user in various services.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

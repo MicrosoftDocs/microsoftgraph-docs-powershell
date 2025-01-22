@@ -21,6 +21,13 @@ Get-MgDeviceCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <Strin
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -21,6 +21,13 @@ Get-MgBetaPrivilegedRoleAssignmentRequestCount [-Filter <String>] [-Search <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.Read.All, PrivilegedAccess.ReadWrite.AzureAD,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

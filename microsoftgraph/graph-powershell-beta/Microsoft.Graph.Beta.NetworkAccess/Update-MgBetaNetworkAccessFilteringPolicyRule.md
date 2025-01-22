@@ -43,6 +43,13 @@ Update-MgBetaNetworkAccessFilteringPolicyRule -InputObject <INetworkAccessIdenti
 ## DESCRIPTION
 Update the navigation property policyRules in networkAccess
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

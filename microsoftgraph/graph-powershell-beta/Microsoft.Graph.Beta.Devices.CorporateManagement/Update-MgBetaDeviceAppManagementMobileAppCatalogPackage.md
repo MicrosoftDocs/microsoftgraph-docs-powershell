@@ -43,6 +43,13 @@ Update-MgBetaDeviceAppManagementMobileAppCatalogPackage -InputObject <IDevicesCo
 ## DESCRIPTION
 Update the navigation property mobileAppCatalogPackages in deviceAppManagement
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

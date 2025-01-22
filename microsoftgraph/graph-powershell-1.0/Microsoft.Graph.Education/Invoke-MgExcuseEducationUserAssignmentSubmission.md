@@ -42,6 +42,13 @@ If the Prefer: include-unknown-enum-members request header is provided, the excu
 Otherwise, the submission status retains the returned status.
 For more information about how to use this header, see the Examples section.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

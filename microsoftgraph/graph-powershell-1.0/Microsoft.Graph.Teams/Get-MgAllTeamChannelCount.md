@@ -29,6 +29,13 @@ Get-MgAllTeamChannelCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Channel.ReadBasic.All, ChannelSettings.ReadWrite.All, ChannelSettings.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -53,6 +53,13 @@ Update-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property legalHolds in security
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

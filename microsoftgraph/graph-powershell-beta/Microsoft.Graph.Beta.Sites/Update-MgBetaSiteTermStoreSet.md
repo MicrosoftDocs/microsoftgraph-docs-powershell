@@ -49,6 +49,13 @@ Update-MgBetaSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property sets in sites
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

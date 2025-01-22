@@ -22,6 +22,13 @@ Get-MgGroupSiteGetByPathSite -GroupId <String> -Path <String> -SiteId <String> [
 ## DESCRIPTION
 The collection of the sub-sites under this site.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

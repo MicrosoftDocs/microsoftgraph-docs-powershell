@@ -40,6 +40,13 @@ Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <II
 ## DESCRIPTION
 Read the properties and relationships of a userConsentRequest object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

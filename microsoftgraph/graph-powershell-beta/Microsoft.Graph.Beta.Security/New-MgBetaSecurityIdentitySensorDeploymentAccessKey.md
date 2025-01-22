@@ -21,6 +21,13 @@ New-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

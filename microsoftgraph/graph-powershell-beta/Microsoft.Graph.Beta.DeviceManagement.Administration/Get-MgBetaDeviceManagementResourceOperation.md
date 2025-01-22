@@ -37,6 +37,13 @@ Get-MgBetaDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmin
 ## DESCRIPTION
 The Resource Operations.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

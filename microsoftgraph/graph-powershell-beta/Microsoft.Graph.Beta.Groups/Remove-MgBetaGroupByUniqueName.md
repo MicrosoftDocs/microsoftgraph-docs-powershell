@@ -38,6 +38,13 @@ After that time, they are permanently deleted.
 This isn't applicable to Security groups and Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

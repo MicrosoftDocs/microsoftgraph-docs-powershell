@@ -67,6 +67,13 @@ New-MgIdentityGovernanceTermsOfUseAgreementAcceptance -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to agreementAcceptances for identityGovernance
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

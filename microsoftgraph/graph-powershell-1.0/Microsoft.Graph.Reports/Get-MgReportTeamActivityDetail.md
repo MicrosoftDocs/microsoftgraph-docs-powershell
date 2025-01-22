@@ -43,6 +43,13 @@ Get-MgReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String>
 Get details about Microsoft Teams activity by team.
 The numbers include activities for both licensed and nonlicensed users.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

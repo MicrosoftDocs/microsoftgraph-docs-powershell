@@ -40,6 +40,13 @@ New-MgTeam -BodyParameter <IMicrosoftGraphTeam> [-ResponseHeadersVariable <Strin
 ## DESCRIPTION
 Create a new team.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

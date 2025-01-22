@@ -52,6 +52,13 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentit
 ## DESCRIPTION
 Defines an alert, its impact, and measures to mitigate or prevent it.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

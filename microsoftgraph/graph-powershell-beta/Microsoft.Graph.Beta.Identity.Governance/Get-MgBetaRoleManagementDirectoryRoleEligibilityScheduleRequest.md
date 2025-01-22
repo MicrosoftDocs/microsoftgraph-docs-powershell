@@ -40,6 +40,13 @@ Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest -InputObject <II
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRoleEligibilityScheduleRequest object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.Read.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

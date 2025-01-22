@@ -50,6 +50,13 @@ The data in an extension can be primitive types or arrays of primitive types.
 The operation behaves differently for resources that are directory objects vs other resources.
 See the table in the Permissions section for the list of resources that support open extensions.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

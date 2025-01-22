@@ -30,6 +30,13 @@ Get-MgBetaUserCloudPcConnectivityHistory -InputObject <IUsersFunctionsIdentity> 
 ## DESCRIPTION
 Get the connectivity history of a specific Cloud PC.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

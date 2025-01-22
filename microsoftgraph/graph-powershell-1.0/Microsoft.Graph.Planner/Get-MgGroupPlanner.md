@@ -29,6 +29,13 @@ Get-MgGroupPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Entry-point to Planner resource that might exist for a Unified Group.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

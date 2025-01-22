@@ -29,6 +29,13 @@ Remove-MgTeamworkDeletedTeamChannelFileFolderContent -InputObject <ITeamsIdentit
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

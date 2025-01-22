@@ -37,6 +37,13 @@ Get-MgPrivacySubjectRightsRequestCollaborator -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Collection of users who can collaborate on the request.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

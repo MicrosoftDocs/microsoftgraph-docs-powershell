@@ -40,6 +40,13 @@ Get-MgBetaGroupTransitiveMemberOf -InputObject <IGroupsIdentity> [-ExpandPropert
 The groups a group is a member of, either directly or through nested membership.
 Nullable.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

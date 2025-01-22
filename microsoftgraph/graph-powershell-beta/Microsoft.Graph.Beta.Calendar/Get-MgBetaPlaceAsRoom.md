@@ -48,6 +48,13 @@ By default, this operation returns up to 100 places per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 For details about how they compare, see Using the places API.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,13 @@ Invoke-MgBetaSoftTeamPrimaryChannelMessageReplyDelete -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

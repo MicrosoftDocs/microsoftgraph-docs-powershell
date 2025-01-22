@@ -37,6 +37,13 @@ Get-MgBetaEducationMeTaughtClass -InputObject <IEducationIdentity> [-ExpandPrope
 ## DESCRIPTION
 Classes for which the user is a teacher.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

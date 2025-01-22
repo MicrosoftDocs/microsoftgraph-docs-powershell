@@ -29,6 +29,13 @@ Get-MgBetaSolutionBackupRestorePointProtectionUnit -InputObject <IBackupRestoreI
 ## DESCRIPTION
 The site, drive, or mailbox units that are protected under a protection policy.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

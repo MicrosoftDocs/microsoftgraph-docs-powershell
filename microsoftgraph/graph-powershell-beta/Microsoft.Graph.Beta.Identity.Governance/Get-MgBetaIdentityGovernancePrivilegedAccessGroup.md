@@ -21,6 +21,13 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroup [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 A group that's governed through Privileged Identity Management (PIM).
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

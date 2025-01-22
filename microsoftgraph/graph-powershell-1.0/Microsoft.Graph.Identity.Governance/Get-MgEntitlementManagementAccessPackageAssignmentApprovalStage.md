@@ -41,6 +41,13 @@ Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject <II
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

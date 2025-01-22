@@ -31,6 +31,13 @@ Get-MgSecurityThreatIntelligenceHostTrackerHost -InputObject <ISecurityIdentity>
 The host related to this hostTracker.
 When navigating to a hostTracker from a host, this should be assumed to be a return reference.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

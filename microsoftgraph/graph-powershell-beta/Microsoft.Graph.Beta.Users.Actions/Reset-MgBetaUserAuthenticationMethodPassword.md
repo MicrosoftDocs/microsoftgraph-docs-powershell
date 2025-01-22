@@ -58,6 +58,13 @@ The admin can either provide a new password or have the system generate one.
 The user is prompted to change their password on their next sign in.
 This reset is a long-running operation and will return a Location header with a link where the caller can periodically check for the status of the reset operation.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

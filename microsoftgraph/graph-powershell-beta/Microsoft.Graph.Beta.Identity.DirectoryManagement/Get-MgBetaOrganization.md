@@ -41,6 +41,13 @@ Get-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-Exp
 Get the properties and relationships of the currently authenticated organization.
 Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

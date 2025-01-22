@@ -37,6 +37,13 @@ Get-MgUserSettingWindowsInstance -InputObject <IUsersIdentity> [-ExpandProperty 
 ## DESCRIPTION
 A collection of setting values for a given windowsSetting.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

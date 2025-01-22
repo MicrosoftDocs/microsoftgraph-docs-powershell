@@ -46,6 +46,13 @@ Copy-MgDriveItem -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

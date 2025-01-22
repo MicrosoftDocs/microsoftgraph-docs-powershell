@@ -29,6 +29,13 @@ Get-MgPolicyClaimMappingPolicyApplyToCount -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration, Policy.Read.ApplicationConfiguration, Directory.Read.All, Application.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

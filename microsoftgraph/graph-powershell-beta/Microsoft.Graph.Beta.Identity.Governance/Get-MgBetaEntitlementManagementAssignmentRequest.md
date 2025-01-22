@@ -38,6 +38,13 @@ Get-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernan
 ## DESCRIPTION
 Represents access package assignment requests created by or on behalf of a user.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
