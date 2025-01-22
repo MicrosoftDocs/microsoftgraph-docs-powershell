@@ -41,7 +41,7 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectoryRoleDelta
 
 ```
-This example will### example
+This example shows how to use the Get-MgBetaDirectoryRoleDelta Cmdlet.
 
 
 ## PARAMETERS

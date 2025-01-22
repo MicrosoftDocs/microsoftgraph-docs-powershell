@@ -58,7 +58,7 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgServicePrincipalRiskDetection -ServicePrincipalRiskDetectionId $servicePrincipalRiskDetectionId
 
 ```
-This example will### example: get a specific risk detection object
+This example will get a specific risk detection object
 
 
 ## PARAMETERS

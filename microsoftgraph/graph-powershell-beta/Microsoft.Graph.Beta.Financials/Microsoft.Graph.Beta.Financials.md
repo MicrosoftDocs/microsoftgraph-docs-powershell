@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Financials
-Module Guid: 499ed67e-c7a9-43f1-89ac-a2eb778ee96c
+Module Guid: 02ca9949-16a0-4ddd-8718-b83cffeb26b9
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.financials/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

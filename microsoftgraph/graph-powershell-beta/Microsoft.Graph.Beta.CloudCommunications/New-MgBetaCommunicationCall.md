@@ -502,7 +502,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-This example will### example 10: join channel meeting as a guest with service hosted media
+This example will join channel meeting as a guest with service hosted media
 
 ### Example 11: Create peer-to-peer PSTN call with service hosted media
 
@@ -552,7 +552,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-This example will### example 11: create peer-to-peer pstn call with service hosted media
+This example will create peer-to-peer pstn call with service hosted media
 
 ### Example 12: Create peer-to-peer PSTN call with application hosted media
 
@@ -603,7 +603,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-This example will### example 12: create peer-to-peer pstn call with application hosted media
+This example will create peer-to-peer pstn call with application hosted media
 
 
 ## PARAMETERS

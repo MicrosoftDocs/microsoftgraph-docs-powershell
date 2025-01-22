@@ -50,7 +50,7 @@ Import-Module Microsoft.Graph.Beta.Bookings
 Initialize-MgBetaBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
 ```
-This example will### example 1 : activate an inactive protection policy
+This example will activate an inactive protection policy
 
 ### Example 2 : Activate an active protection policy
 
@@ -61,7 +61,7 @@ Import-Module Microsoft.Graph.Beta.Bookings
 Initialize-MgBetaBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
 ```
-This example will### example 2 : activate an active protection policy
+This example will activate an active protection policy
 
 
 ## PARAMETERS
