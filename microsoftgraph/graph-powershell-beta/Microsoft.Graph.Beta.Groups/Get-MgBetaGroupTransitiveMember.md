@@ -51,13 +51,17 @@ Nullable.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupTransitiveMember -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupTransitiveMember Cmdlet.
+
 
 ## PARAMETERS
 

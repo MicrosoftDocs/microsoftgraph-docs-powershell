@@ -56,11 +56,11 @@ Update the properties of a contentApproval object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.contentApproval"
@@ -68,6 +68,10 @@ $params = @{
 }
 
 Update-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId $updatePolicyId -ComplianceChangeId $complianceChangeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaWindowsUpdatesPolicyComplianceChange Cmdlet.
+
 
 ## PARAMETERS
 

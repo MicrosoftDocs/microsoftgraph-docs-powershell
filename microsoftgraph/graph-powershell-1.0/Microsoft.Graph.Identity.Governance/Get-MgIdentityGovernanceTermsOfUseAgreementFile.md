@@ -51,13 +51,17 @@ The default file can have multiple versions, each with its own language, that ca
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get the default agreement file
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceTermsOfUseAgreementFile -AgreementId $agreementId
+
+```
+This example will get the default agreement file
+
 
 ## PARAMETERS
 

@@ -43,13 +43,17 @@ When you remove the appManagementPolicy, the application or service principal ad
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef -ApplicationId $applicationId -AppManagementPolicyId $appManagementPolicyId
+
+```
+This example shows how to use the Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 

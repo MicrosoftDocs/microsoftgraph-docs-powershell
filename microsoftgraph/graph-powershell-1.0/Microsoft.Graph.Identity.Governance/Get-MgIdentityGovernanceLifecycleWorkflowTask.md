@@ -50,13 +50,17 @@ Get a specific task from a workflow or workflowVersion.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get a task from a workflow
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceLifecycleWorkflowTask -WorkflowId $workflowId -TaskId $taskId
+
+```
+This example will get a task from a workflow
+
 
 ## PARAMETERS
 

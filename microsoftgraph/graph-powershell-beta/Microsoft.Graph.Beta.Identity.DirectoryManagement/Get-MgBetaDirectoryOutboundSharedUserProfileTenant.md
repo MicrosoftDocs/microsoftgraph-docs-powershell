@@ -49,13 +49,17 @@ Read-only.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryOutboundSharedUserProfileTenant -OutboundSharedUserProfileUserId $outboundSharedUserProfileUserId
+
+```
+This example shows how to use the Get-MgBetaDirectoryOutboundSharedUserProfileTenant Cmdlet.
+
 
 ## PARAMETERS
 

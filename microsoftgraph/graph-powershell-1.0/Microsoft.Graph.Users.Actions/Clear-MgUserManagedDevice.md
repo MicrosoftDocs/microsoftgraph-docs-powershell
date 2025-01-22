@@ -58,18 +58,6 @@ Wipe a device
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -361,6 +349,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mgusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mgusermanageddevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-1.0)
+
 
 
 

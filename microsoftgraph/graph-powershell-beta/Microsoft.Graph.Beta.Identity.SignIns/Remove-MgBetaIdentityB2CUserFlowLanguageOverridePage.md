@@ -40,18 +40,6 @@ You may only delete the values in an overridesPage, which is used to customize t
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId
@@ -322,6 +310,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguageoverridepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguageoverridepage)
 
 [https://learn.microsoft.com/graph/api/userflowlanguagepage-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userflowlanguagepage-delete?view=graph-rest-beta)
+
 
 
 

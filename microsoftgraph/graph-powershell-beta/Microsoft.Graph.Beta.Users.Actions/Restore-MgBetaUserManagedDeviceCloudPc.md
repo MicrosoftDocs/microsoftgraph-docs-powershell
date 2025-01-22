@@ -53,18 +53,6 @@ Restore a Cloud PC device to a previous state with an Intune managed device ID.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -322,6 +310,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausermanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausermanageddevicecloudpc)
 
 [https://learn.microsoft.com/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta)
+
 
 
 

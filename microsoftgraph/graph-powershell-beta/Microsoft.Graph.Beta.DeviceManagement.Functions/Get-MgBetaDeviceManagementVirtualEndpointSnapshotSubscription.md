@@ -30,13 +30,17 @@ List all subscriptions cloudPcSubscription that can be used to store a snapshot 
 | Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription Cmdlet.
+
 
 ## PARAMETERS
 

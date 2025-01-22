@@ -73,11 +73,11 @@ Update the properties of an alert object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = "secAdmin@contoso.com"
@@ -87,6 +87,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlertV2 -AlertId $alertId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityAlertV2 Cmdlet.
+
 
 ## PARAMETERS
 

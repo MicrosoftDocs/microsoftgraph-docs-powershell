@@ -41,13 +41,17 @@ The only change made by invoking this action is the tenant will be deprovisioned
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Invoke-MgBetaTenantRelationshipManagedTenantOffboard -TenantId $tenantId
+
+```
+This example shows how to use the Invoke-MgBetaTenantRelationshipManagedTenantOffboard Cmdlet.
+
 
 ## PARAMETERS
 

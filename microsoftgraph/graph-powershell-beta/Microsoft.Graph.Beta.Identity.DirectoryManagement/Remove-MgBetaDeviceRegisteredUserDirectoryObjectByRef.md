@@ -41,13 +41,17 @@ Remove a user as a registered user of the device.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

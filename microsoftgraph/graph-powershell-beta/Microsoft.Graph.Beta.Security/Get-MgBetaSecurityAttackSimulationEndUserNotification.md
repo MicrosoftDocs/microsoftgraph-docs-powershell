@@ -49,13 +49,17 @@ Represents an end user's notification for an attack simulation training.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
-Get-MgBetaSecurityAttackSimulationEndUserNotification -Filter "source eq 'global'"
+Get-MgBetaSecurityAttackSimulationEndUserNotification -Filter "source eq 'global'" 
+
+```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationEndUserNotification Cmdlet.
+
 
 ## PARAMETERS
 

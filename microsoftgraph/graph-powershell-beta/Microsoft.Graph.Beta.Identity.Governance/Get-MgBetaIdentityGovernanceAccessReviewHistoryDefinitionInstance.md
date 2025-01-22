@@ -52,13 +52,17 @@ A definition that doesn't recur will have exactly one instance.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance Cmdlet.
+
 
 ## PARAMETERS
 

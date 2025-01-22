@@ -40,13 +40,17 @@ Get the trend of storage allocated and consumed during the reporting period.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSharePointSiteUsageStorage -Period $periodId
+Get-MgReportSharePointSiteUsageStorage -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSharePointSiteUsageStorage Cmdlet.
+
 
 ## PARAMETERS
 

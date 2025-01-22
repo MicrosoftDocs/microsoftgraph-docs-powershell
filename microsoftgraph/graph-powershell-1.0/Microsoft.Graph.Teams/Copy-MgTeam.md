@@ -73,11 +73,11 @@ The recommended delay between GETs is 5 seconds.
 | Application | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "Library Assist"
@@ -88,6 +88,10 @@ $params = @{
 }
 
 Copy-MgTeam -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgTeam Cmdlet.
+
 
 ## PARAMETERS
 

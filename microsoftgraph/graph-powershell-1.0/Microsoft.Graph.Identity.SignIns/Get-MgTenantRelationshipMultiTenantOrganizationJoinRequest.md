@@ -33,13 +33,17 @@ Get the status of a tenant joining a multitenant organization.
 | Application | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest
+
+```
+This example shows how to use the Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest Cmdlet.
+
 
 ## PARAMETERS
 

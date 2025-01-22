@@ -46,11 +46,11 @@ This is a long-running operation and as such, it returns a printerCreateOperatio
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "Test Printer"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 New-MgBetaPrintPrinter -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintPrinter Cmdlet.
+
 
 ## PARAMETERS
 

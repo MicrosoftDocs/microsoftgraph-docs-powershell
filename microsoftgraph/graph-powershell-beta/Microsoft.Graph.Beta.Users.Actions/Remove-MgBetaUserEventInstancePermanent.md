@@ -43,18 +43,6 @@ For more information about item retention, see Configure Deleted Item retention 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EventId
@@ -276,6 +264,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausereventinstancepermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausereventinstancepermanent)
 
 [https://learn.microsoft.com/graph/api/event-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-permanentdelete?view=graph-rest-beta)
+
 
 
 

@@ -67,11 +67,11 @@ Update the properties of an externalConnection object.
 | Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	name = "Contoso HR Service Tickets"
@@ -79,6 +79,10 @@ $params = @{
 }
 
 Update-MgExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 

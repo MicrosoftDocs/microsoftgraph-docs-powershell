@@ -59,11 +59,11 @@ However, you can validate both the mail nickname and the display name and receiv
 | Application | Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
 
 $params = @{
 	entityType = "Group"
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaDirectoryObjectProperty Cmdlet.
+
 
 ## PARAMETERS
 

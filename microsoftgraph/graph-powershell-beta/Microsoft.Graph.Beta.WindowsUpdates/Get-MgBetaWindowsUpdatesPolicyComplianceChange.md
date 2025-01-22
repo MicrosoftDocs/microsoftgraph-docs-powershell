@@ -47,13 +47,17 @@ Read the properties and relationships of a complianceChange object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 Get-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId $updatePolicyId
+
+```
+This example shows how to use the Get-MgBetaWindowsUpdatesPolicyComplianceChange Cmdlet.
+
 
 ## PARAMETERS
 

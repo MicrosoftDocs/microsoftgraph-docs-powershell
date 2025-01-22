@@ -33,13 +33,17 @@ Get audit activity types by tenant ID.
 | Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Functions
-```
 
 Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType
+
+```
+This example shows how to use the Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType Cmdlet.
+
 
 ## PARAMETERS
 

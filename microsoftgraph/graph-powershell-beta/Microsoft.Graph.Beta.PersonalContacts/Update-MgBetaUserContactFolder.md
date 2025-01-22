@@ -62,11 +62,10 @@ Update the navigation property contactFolders in users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.PersonalContacts
-```
 
 $params = @{
 	parentFolderId = "parentFolderId-value"
@@ -75,6 +74,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserContactFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserContactFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

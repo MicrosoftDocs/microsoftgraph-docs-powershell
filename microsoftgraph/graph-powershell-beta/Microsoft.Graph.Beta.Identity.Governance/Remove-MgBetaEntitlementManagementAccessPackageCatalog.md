@@ -38,13 +38,17 @@ Delete an accessPackageCatalog.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Remove-MgBetaEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId $accessPackageCatalogId
+
+```
+This example shows how to use the Remove-MgBetaEntitlementManagementAccessPackageCatalog Cmdlet.
+
 
 ## PARAMETERS
 

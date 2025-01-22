@@ -47,13 +47,17 @@ Read the properties and relationships of an urlThreatSubmission object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatSubmissionUrlThreat
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet.
+
 
 ## PARAMETERS
 

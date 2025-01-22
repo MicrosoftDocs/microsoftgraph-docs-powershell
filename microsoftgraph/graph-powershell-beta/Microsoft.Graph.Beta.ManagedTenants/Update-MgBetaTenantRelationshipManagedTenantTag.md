@@ -58,11 +58,11 @@ Update the properties of a tenantTag object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 $params = @{
 	displayName = "Onboarding"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 Update-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
+
 
 ## PARAMETERS
 

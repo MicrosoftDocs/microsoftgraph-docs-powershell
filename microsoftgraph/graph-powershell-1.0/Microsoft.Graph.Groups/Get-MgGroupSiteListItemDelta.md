@@ -70,18 +70,6 @@ Items with this property should be removed from your local state.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -434,6 +422,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitelistitemdelta)
 
 [https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
+
 
 
 

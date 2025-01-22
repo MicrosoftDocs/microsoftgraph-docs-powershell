@@ -41,13 +41,17 @@ Delete a school.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationSchool -EducationSchoolId $educationSchoolId
+
+```
+This example shows how to use the Remove-MgEducationSchool Cmdlet.
+
 
 ## PARAMETERS
 

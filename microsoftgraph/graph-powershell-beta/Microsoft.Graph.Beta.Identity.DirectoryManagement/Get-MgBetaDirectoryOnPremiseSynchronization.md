@@ -49,13 +49,17 @@ Read the properties and relationships of an onPremisesDirectorySynchronization o
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId
+
+```
+This example shows how to use the Get-MgBetaDirectoryOnPremiseSynchronization Cmdlet.
+
 
 ## PARAMETERS
 

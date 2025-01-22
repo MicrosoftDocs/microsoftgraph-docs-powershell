@@ -59,11 +59,11 @@ Create new navigation property to anniversaries for users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	type = "birthday"
@@ -72,6 +72,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAnniversary -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileAnniversary Cmdlet.
+
 
 ## PARAMETERS
 

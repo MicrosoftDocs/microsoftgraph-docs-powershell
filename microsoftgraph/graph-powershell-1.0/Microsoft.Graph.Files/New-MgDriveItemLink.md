@@ -65,11 +65,11 @@ DriveItem resources inherit sharing permissions from their ancestors.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	type = "view"
@@ -80,10 +80,14 @@ $params = @{
 
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the New-MgDriveItemLink Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	type = "edit"
@@ -92,16 +96,24 @@ $params = @{
 
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows how to use the New-MgDriveItemLink Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	type = "embed"
 }
 
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDriveItemLink Cmdlet.
+
 
 ## PARAMETERS
 

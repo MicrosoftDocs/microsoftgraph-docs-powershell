@@ -41,13 +41,17 @@ Read the properties and relationships of a virtualEventWebinarRegistrationConfig
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Get-MgBetaVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example shows how to use the Get-MgBetaVirtualEventWebinarRegistrationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,13 +41,17 @@ Delete a retentionLabel object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Remove-MgSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId
+
+```
+This example shows how to use the Remove-MgSecurityLabelRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 

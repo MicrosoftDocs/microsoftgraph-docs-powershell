@@ -63,13 +63,17 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get all transcripts
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Functions
-```
 
 Get-MgBetaAllUserOnlineMeetingTranscript -UserId $userId
+
+```
+This example will get all transcripts
+
 
 ## PARAMETERS
 

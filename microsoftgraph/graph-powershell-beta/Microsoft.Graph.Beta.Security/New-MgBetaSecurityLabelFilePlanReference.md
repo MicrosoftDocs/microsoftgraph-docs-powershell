@@ -41,11 +41,11 @@ Create a new filePlanReferenceTemplate object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.filePlanReferenceTemplate"
@@ -53,6 +53,10 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelFilePlanReference -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelFilePlanReference Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,18 +42,6 @@ Print jobs can be canceled only on behalf of a user, using delegated permissions
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -229,6 +217,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintsharejob)
 
 [https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-beta)
+
 
 
 

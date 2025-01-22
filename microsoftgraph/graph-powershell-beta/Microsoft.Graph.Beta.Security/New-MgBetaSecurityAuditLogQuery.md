@@ -42,17 +42,17 @@ Create a new auditLogQuery object.
 | Application | AuditLogsQuery-Entra.Read.All, AuditLogsQuery.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-CRM.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.auditLogQuery"
 	displayName = "String"
-	filterStartDateTime = \[System.DateTime\]::Parse("String (timestamp)")
-	filterEndDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	filterStartDateTime = [System.DateTime]::Parse("String (timestamp)")
+	filterEndDateTime = [System.DateTime]::Parse("String (timestamp)")
 	recordTypeFilters = @(
 	"String"
 )
@@ -77,6 +77,10 @@ status = "String"
 }
 
 New-MgBetaSecurityAuditLogQuery -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityAuditLogQuery Cmdlet.
+
 
 ## PARAMETERS
 

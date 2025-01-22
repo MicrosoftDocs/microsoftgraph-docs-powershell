@@ -36,13 +36,17 @@ For details, see Using delta query.
 | Application | Directory.Read.All, Directory.ReadWrite.All, DelegatedPermissionGrant.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaOauth2PermissionGrantDelta
+
+```
+This example shows how to use the Get-MgBetaOauth2PermissionGrantDelta Cmdlet.
+
 
 ## PARAMETERS
 

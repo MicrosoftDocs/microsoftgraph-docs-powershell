@@ -54,13 +54,17 @@ To retrieve groups, directory roles, and administrative units that the user is a
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
-Get-MgUserMemberOfAsGroup -UserId $userId -Filter "appRoleAssignments/\`$count gt 0" -Property "id,displayName"
+Get-MgUserMemberOfAsGroup -UserId $userId -Filter "appRoleAssignments/`$count gt 0" -Property "id,displayName" 
+
+```
+This example shows how to use the Get-MgUserMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 

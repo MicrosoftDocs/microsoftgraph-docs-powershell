@@ -54,13 +54,17 @@ When an online meeting ends, an attendance report is generated for that session.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: List attendance reports for a webinar session
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Get-MgBetaVirtualEventWebinarSessionAttendanceReport -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventSessionId $virtualEventSessionId
+
+```
+This example will list attendance reports for a webinar session
+
 
 ## PARAMETERS
 

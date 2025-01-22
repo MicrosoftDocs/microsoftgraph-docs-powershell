@@ -41,13 +41,17 @@ Read the properties and relationships of a serviceAnnouncementAttachment object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Return a file stream of an attachment content for a message
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementMessageAttachmentContent -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
+
+```
+This example will return a file stream of an attachment content for a message
+
 
 ## PARAMETERS
 

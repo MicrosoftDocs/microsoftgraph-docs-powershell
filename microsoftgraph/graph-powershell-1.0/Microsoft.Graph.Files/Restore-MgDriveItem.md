@@ -59,11 +59,11 @@ NOTE: This functionality is currently only available for OneDrive Personal.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Restore-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

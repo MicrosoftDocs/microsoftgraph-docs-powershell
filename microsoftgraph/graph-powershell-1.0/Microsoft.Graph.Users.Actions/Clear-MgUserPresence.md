@@ -61,17 +61,21 @@ For details about presences sessions, see presence: setPresence.
 | Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87"
 }
 
 Clear-MgUserPresence -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgUserPresence Cmdlet.
+
 
 ## PARAMETERS
 

@@ -92,11 +92,11 @@ Update the properties of a defaultManagedAppProtection object.
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.defaultManagedAppProtection"
@@ -151,6 +151,10 @@ faceIdBlocked = $true
 }
 
 Update-MgDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppProtectionId $defaultManagedAppProtectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementDefaultManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 

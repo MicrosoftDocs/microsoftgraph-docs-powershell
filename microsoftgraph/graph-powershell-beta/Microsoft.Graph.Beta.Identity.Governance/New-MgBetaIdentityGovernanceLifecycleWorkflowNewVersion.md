@@ -59,11 +59,11 @@ Create a new version of the workflow object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Create a new version of a joiner workflow with time based trigger
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	workflow = @{
@@ -109,10 +109,14 @@ $params = @{
 
 New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a new version of a joiner workflow with time based trigger
+
+### Example 2: Create a new version of a task with customized email
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	category = "joiner"
@@ -171,6 +175,10 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
+
+```
+This example will create a new version of a task with customized email
+
 
 ## PARAMETERS
 

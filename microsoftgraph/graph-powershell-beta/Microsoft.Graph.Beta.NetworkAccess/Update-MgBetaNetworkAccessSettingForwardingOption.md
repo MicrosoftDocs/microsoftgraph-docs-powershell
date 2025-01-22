@@ -40,17 +40,21 @@ This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	skipDnsLookupState = "disabled"
 }
 
 Update-MgBetaNetworkAccessSettingForwardingOption -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessSettingForwardingOption Cmdlet.
+
 
 ## PARAMETERS
 

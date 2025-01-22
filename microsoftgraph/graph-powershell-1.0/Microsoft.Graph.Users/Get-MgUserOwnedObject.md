@@ -54,14 +54,18 @@ Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOwnedObject -UserId $userId
+
+```
+This example shows how to use the Get-MgUserOwnedObject Cmdlet.
+
 
 ## PARAMETERS
 

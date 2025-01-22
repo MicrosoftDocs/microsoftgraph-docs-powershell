@@ -54,11 +54,11 @@ Remove access to a chat for a user.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	user = @{
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Remove-MgBetaChatAccessForUser -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgBetaChatAccessForUser Cmdlet.
+
 
 ## PARAMETERS
 

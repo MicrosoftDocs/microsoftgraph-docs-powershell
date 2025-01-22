@@ -56,11 +56,11 @@ See Enable per-user Microsoft Entra multifactor authentication to secure sign-in
 | Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleEligibilitySchedule.Remove.Directory, RoleAssignmentSchedule.Remove.Directory,  |
 
 ## EXAMPLES
+### Example 1: Admin assigning a directory role to a principal
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	action = "AdminAssign"
@@ -69,7 +69,7 @@ $params = @{
 	directoryScopeId = "/"
 	principalId = "07706ff1-46c7-4847-ae33-3003830675a1"
 	scheduleInfo = @{
-		startDateTime = \[System.DateTime\]::Parse("2021-07-01T00:00:00Z")
+		startDateTime = [System.DateTime]::Parse("2021-07-01T00:00:00Z")
 		expiration = @{
 			type = "NoExpiration"
 		}
@@ -78,10 +78,14 @@ $params = @{
 
 New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will admin assigning a directory role to a principal
+
+### Example 2: User activating their eligible role
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	action = "SelfActivate"
@@ -90,7 +94,7 @@ $params = @{
 	directoryScopeId = "/"
 	justification = "Need to update app roles for selected apps."
 	scheduleInfo = @{
-		startDateTime = \[System.DateTime\]::Parse("2021-08-17T17:40:00.000Z")
+		startDateTime = [System.DateTime]::Parse("2021-08-17T17:40:00.000Z")
 		expiration = @{
 			type = "AfterDuration"
 			duration = "PT5H"
@@ -103,6 +107,10 @@ $params = @{
 }
 
 New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
+
+```
+This example will user activating their eligible role
+
 
 ## PARAMETERS
 

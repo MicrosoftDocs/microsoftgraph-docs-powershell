@@ -42,11 +42,11 @@ A resource must be included in an access package catalog before a role of that r
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Create an accessPackageResourceRequest for adding a group as a resource
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminAdd"
@@ -62,10 +62,14 @@ $params = @{
 
 New-MgEntitlementManagementResourceRequest -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an accesspackageresourcerequest for adding a group as a resource
+
+### Example 2: Create an accessPackageResourceRequest for adding an application as a resource
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminAdd"
@@ -80,10 +84,14 @@ $params = @{
 
 New-MgEntitlementManagementResourceRequest -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will create an accesspackageresourcerequest for adding an application as a resource
+
+### Example 3: Create an accessPackageResourceRequest for adding a SharePoint Online site as a resource
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminAdd"
@@ -98,10 +106,14 @@ $params = @{
 
 New-MgEntitlementManagementResourceRequest -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will create an accesspackageresourcerequest for adding a sharepoint online site as a resource
+
+### Example 4: Create an accessPackageResourceRequest for removing a resource
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminRemove"
@@ -115,10 +127,14 @@ $params = @{
 
 New-MgEntitlementManagementResourceRequest -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will create an accesspackageresourcerequest for removing a resource
+
+### Example 5: Create an accessPackageResourceRequest for updating an application as a resource with attributes
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminUpdate"
@@ -140,7 +156,7 @@ $params = @{
 						isAnswerEditable = $true
 						text = "What office do you work at?"
 						isSingleLineQuestion = $true
-						regexPattern = "\[a-zA-Z\]+\[a-zA-Z\s\]*"
+						regexPattern = "[a-zA-Z]+[a-zA-Z\s]*"
 					}
 				}
 			}
@@ -157,7 +173,7 @@ $params = @{
 						text = "What is your cost center number?"
 						sequence = 
 						isSingleLineQuestion = $true
-						regexPattern = "\[0-9\]*"
+						regexPattern = "[0-9]*"
 					}
 				}
 			}
@@ -169,6 +185,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementResourceRequest -BodyParameter $params
+
+```
+This example will create an accesspackageresourcerequest for updating an application as a resource with attributes
+
 
 ## PARAMETERS
 

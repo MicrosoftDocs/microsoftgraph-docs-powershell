@@ -54,13 +54,17 @@ To access a chat, at least one chat member must belong to the tenant the request
 | Application | Chat.ReadBasic.WhereInstalled, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
 
 ## EXAMPLES
+### Example 1: Get a user's one on one chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaUserChat -UserId $userId -ChatId $chatId
+
+```
+This example will get a user's one on one chat
+
 
 ## PARAMETERS
 

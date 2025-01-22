@@ -62,18 +62,6 @@ For details about how to register a task trigger, see Extending Universal Print 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -300,6 +288,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgabortprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgabortprintsharejob)
 
 [https://learn.microsoft.com/graph/api/printjob-abort?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-abort?view=graph-rest-1.0)
+
 
 
 

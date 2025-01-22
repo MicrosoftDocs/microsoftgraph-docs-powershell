@@ -44,18 +44,6 @@ The driveItems returned from the sharedWithMe method always include the remoteIt
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -332,6 +320,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroupdrive)
 
 [https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0)
+
 
 
 

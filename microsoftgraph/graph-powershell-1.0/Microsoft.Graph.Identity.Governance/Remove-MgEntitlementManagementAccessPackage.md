@@ -43,13 +43,17 @@ You cannot delete an access package if it has any accessPackageAssignment.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgEntitlementManagementAccessPackage -AccessPackageId $accessPackageId
+
+```
+This example shows how to use the Remove-MgEntitlementManagementAccessPackage Cmdlet.
+
 
 ## PARAMETERS
 

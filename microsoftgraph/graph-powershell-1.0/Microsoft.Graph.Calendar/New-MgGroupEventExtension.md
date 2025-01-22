@@ -59,11 +59,11 @@ The table in the Permissions section lists the resources that support open exten
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Create an extension in the specified group event
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.openTypeExtension"
@@ -74,6 +74,10 @@ $params = @{
 }
 
 New-MgGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
+
+```
+This example will create an extension in the specified group event
+
 
 ## PARAMETERS
 

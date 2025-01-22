@@ -47,13 +47,17 @@ Read the properties and relationships of a siteSource object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -CaseId $caseId -CustodianId $custodianId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource Cmdlet.
+
 
 ## PARAMETERS
 

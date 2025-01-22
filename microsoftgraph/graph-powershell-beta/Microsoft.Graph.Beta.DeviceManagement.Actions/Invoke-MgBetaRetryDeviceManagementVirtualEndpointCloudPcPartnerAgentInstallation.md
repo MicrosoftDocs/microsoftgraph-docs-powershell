@@ -40,13 +40,17 @@ Service side checks which agent installation failed firstly and retry.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 Invoke-MgBetaRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Invoke-MgBetaRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation Cmdlet.
+
 
 ## PARAMETERS
 

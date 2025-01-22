@@ -67,11 +67,11 @@ Alternatively, reply to a message in a single operation.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	message = @{
@@ -95,6 +95,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageReply -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserMessageReply Cmdlet.
+
 
 ## PARAMETERS
 

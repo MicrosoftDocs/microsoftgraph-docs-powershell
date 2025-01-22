@@ -52,13 +52,17 @@ For descriptions of each of the endpoints, see printUsageByPrinter.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportDailyPrintUsageByPrinter
+
+```
+This example shows how to use the Get-MgReportDailyPrintUsageByPrinter Cmdlet.
+
 
 ## PARAMETERS
 

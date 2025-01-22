@@ -44,11 +44,11 @@ Given contentInfo, which includes existing content metadata key/value pairs, and
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	contentInfo = @{
@@ -111,6 +111,10 @@ $params = @{
 }
 
 Test-MgBetaInformationProtectionPolicyLabelApplication -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelApplication Cmdlet.
+
 
 ## PARAMETERS
 

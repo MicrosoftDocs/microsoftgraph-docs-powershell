@@ -69,11 +69,11 @@ The bot must download the recording promptly after the recording operation finis
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	bargeInAllowed = $true
@@ -99,6 +99,10 @@ $params = @{
 }
 
 Invoke-MgRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgRecordCommunicationCallResponse Cmdlet.
+
 
 ## PARAMETERS
 

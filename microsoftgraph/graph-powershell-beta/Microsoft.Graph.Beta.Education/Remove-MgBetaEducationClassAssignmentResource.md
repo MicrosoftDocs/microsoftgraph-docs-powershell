@@ -46,13 +46,17 @@ After an assignment has been published to students, teachers can't remove resour
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Remove-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassAssignmentResource Cmdlet.
+
 
 ## PARAMETERS
 

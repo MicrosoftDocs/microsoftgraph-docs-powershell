@@ -67,11 +67,11 @@ Update the properties of a sharedPCConfiguration object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.sharedPCConfiguration"
@@ -99,6 +99,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

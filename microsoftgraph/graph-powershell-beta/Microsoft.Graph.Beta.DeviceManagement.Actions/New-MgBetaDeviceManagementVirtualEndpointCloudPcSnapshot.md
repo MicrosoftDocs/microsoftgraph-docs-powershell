@@ -38,13 +38,17 @@ Create a snapshot for a specific Cloud PC device.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot -CloudPCId $cloudPCId
+
+```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot Cmdlet.
+
 
 ## PARAMETERS
 

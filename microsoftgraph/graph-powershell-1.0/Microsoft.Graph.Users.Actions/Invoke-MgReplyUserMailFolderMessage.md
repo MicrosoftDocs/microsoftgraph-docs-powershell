@@ -68,18 +68,6 @@ Alternatively, create a draft to reply to an existing message and send it later.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -545,6 +533,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermailfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0)
+
 
 
 

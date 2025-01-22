@@ -59,17 +59,21 @@ An oAuth2PermissionGrant can be updated to change which delegated permissions ar
 | Application | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	scope = "User.ReadBasic.All Group.ReadWrite.All"
 }
 
 Update-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaOauth2PermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

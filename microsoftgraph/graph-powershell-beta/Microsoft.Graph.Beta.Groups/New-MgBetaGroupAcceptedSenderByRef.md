@@ -61,17 +61,21 @@ Make sure you don't specify the same user or group in the accepted senders and r
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 
 New-MgBetaGroupAcceptedSenderByRef -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaGroupAcceptedSenderByRef Cmdlet.
+
 
 ## PARAMETERS
 

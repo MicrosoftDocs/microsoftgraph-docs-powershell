@@ -44,18 +44,6 @@ This action can only be done by the teacher.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -216,6 +204,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreturneducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreturneducationmeassignmentsubmission)
 
 [https://learn.microsoft.com/graph/api/educationsubmission-return?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-return?view=graph-rest-1.0)
+
 
 
 

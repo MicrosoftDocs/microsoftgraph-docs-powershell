@@ -40,13 +40,17 @@ Deletes a mobileThreatDefenseConnector.
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Remove-MgDeviceManagementMobileThreatDefenseConnector -MobileThreatDefenseConnectorId $mobileThreatDefenseConnectorId
+
+```
+This example shows how to use the Remove-MgDeviceManagementMobileThreatDefenseConnector Cmdlet.
+
 
 ## PARAMETERS
 

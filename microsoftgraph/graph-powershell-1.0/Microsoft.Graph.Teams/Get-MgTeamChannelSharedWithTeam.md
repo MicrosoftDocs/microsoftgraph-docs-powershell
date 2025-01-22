@@ -66,13 +66,17 @@ This operation is allowed only for channels with a membershipType value of share
 | Application | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Get-MgTeamChannelSharedWithTeam Cmdlet.
+
 
 ## PARAMETERS
 

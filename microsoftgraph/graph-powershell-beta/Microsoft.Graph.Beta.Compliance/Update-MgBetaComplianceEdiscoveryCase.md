@@ -68,11 +68,11 @@ Update the properties of a case object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 $params = @{
 	displayName = "My Case 1 - Renamed"
@@ -81,6 +81,10 @@ $params = @{
 }
 
 Update-MgBetaComplianceEdiscoveryCase -CaseId $caseId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaComplianceEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

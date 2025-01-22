@@ -59,11 +59,11 @@ Create a new userInstallStateSummary object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.userInstallStateSummary"
@@ -74,6 +74,10 @@ $params = @{
 }
 
 New-MgDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId $managedEBookId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementManagedEBookUserStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

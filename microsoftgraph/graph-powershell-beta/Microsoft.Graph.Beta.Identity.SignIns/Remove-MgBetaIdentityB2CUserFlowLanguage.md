@@ -41,13 +41,17 @@ Note: You cannot delete languages from an Microsoft Entra user flow.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
+
+```
+This example shows how to use the Remove-MgBetaIdentityB2CUserFlowLanguage Cmdlet.
+
 
 ## PARAMETERS
 

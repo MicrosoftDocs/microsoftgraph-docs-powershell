@@ -41,13 +41,17 @@ Remove an educationUser from an educationClass.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Remove-MgBetaEducationClassMemberEducationUserByRef -EducationClassId $educationClassId -EducationUserId $educationUserId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassMemberEducationUserByRef Cmdlet.
+
 
 ## PARAMETERS
 

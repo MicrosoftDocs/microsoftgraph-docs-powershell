@@ -66,18 +66,6 @@ Note: you should only delete a folder locally if it's empty after syncing all th
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -428,6 +416,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdriveitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdriveitemdelta)
 
 [https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-beta)
+
 
 
 

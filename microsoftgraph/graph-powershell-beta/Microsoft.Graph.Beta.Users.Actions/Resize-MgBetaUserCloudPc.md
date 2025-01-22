@@ -53,18 +53,6 @@ Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -322,6 +310,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausercloudpc)
 
 [https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-beta)
+
 
 
 

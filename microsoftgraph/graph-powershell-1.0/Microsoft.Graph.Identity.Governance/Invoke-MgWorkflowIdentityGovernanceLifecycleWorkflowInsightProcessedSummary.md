@@ -43,13 +43,17 @@ Because the amount of results for listed workflows as returned by the List workf
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
+
+```
+This example shows how to use the Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary Cmdlet.
+
 
 ## PARAMETERS
 

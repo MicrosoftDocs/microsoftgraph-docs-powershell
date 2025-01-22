@@ -49,13 +49,17 @@ Get appliesTo from policies
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyTokenIssuancePolicyApplyTo -TokenIssuancePolicyId $tokenIssuancePolicyId
+
+```
+This example shows how to use the Get-MgBetaPolicyTokenIssuancePolicyApplyTo Cmdlet.
+
 
 ## PARAMETERS
 

@@ -40,13 +40,17 @@ Get the trend in the number of active OneDrive users.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportOneDriveActivityUserCount -Period $periodId
+Get-MgReportOneDriveActivityUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOneDriveActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 

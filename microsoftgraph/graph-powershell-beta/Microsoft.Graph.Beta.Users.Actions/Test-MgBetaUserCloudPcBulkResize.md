@@ -53,18 +53,6 @@ Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,6 +296,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausercloudpcbulkresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausercloudpcbulkresize)
 
 [https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-beta)
+
 
 
 

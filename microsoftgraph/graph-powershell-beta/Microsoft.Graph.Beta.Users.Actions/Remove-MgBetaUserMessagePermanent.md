@@ -44,13 +44,17 @@ For more information about item retention, see Configure Deleted Item retention 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 Remove-MgBetaUserMessagePermanent -UserId $userId -MessageId $messageId
+
+```
+This example shows how to use the Remove-MgBetaUserMessagePermanent Cmdlet.
+
 
 ## PARAMETERS
 

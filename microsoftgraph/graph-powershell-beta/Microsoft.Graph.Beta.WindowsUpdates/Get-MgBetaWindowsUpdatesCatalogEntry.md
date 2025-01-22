@@ -48,13 +48,17 @@ Read-only.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 Get-MgBetaWindowsUpdatesCatalogEntry
+
+```
+This example shows how to use the Get-MgBetaWindowsUpdatesCatalogEntry Cmdlet.
+
 
 ## PARAMETERS
 

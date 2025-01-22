@@ -85,11 +85,10 @@ Create new navigation property to events for users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -123,11 +122,15 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserEvent Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -174,11 +177,15 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserEvent Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -213,6 +220,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserEvent -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

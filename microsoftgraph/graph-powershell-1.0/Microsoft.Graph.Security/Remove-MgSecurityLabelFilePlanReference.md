@@ -41,13 +41,17 @@ Delete a filePlanReferenceTemplate object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Remove-MgSecurityLabelFilePlanReference -FilePlanReferenceTemplateId $filePlanReferenceTemplateId
+
+```
+This example shows how to use the Remove-MgSecurityLabelFilePlanReference Cmdlet.
+
 
 ## PARAMETERS
 

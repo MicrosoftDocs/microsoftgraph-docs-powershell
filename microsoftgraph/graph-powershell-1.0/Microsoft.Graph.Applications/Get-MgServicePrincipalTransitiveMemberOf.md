@@ -50,13 +50,17 @@ Get transitiveMemberOf from servicePrincipals
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalTransitiveMemberOf -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalTransitiveMemberOf Cmdlet.
+
 
 ## PARAMETERS
 

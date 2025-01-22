@@ -70,18 +70,6 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -709,6 +697,7 @@ Content type, such as image/png, image/jpg.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
 
 [https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
+
 
 
 

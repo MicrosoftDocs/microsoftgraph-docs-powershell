@@ -60,11 +60,11 @@ Create a branch site with associated device links.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	name = "device link 1"
@@ -87,6 +87,10 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessConnectivityBranchDeviceLink -BranchSiteId $branchSiteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaNetworkAccessConnectivityBranchDeviceLink Cmdlet.
+
 
 ## PARAMETERS
 

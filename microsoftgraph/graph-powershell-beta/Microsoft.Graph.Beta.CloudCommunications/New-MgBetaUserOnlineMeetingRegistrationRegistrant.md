@@ -54,11 +54,11 @@ This operation has two scenarios: In either scenario, the registrant will receiv
 | Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Enroll a signed-in registrant
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.meetingRegistrant"
@@ -79,10 +79,14 @@ $params = @{
 
 New-MgBetaUserOnlineMeetingRegistrationRegistrant -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will enroll a signed-in registrant
+
+### Example 2: Enroll an anonymous registrant
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.meetingRegistrant"
@@ -102,6 +106,10 @@ $params = @{
 }
 
 New-MgBetaUserOnlineMeetingRegistrationRegistrant -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+```
+This example will enroll an anonymous registrant
+
 
 ## PARAMETERS
 

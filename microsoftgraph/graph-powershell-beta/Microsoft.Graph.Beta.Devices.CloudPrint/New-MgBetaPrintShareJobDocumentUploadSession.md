@@ -66,11 +66,11 @@ This allows transfer to be resumed, in case the network connection is dropped du
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	properties = @{
@@ -81,6 +81,10 @@ $params = @{
 }
 
 New-MgBetaPrintShareJobDocumentUploadSession -PrinterShareId $printerShareId -PrintJobId $printJobId -PrintDocumentId $printDocumentId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintShareJobDocumentUploadSession Cmdlet.
+
 
 ## PARAMETERS
 

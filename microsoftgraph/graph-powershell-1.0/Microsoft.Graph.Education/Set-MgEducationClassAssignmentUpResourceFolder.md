@@ -45,16 +45,20 @@ The teacher determines the resources to upload in the assignment's folder.
 | Application | EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 }
 
 Set-MgEducationClassAssignmentUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgEducationClassAssignmentUpResourceFolder Cmdlet.
+
 
 ## PARAMETERS
 

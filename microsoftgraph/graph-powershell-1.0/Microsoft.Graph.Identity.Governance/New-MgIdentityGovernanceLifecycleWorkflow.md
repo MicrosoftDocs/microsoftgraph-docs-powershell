@@ -52,11 +52,11 @@ You can create up to 100 workflows in a tenant.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Create a new workflow
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	category = "joiner"
@@ -100,10 +100,14 @@ $params = @{
 
 New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a new workflow
+
+### Example 2: Create a new version of a task with customized email
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	category = "joiner"
@@ -162,6 +166,10 @@ $params = @{
 }
 
 New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter $params
+
+```
+This example will create a new version of a task with customized email
+
 
 ## PARAMETERS
 

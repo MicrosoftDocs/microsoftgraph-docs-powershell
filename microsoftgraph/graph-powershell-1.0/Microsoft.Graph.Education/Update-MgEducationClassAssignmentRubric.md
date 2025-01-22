@@ -62,18 +62,6 @@ Only teachers can perform this operation.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -477,6 +465,7 @@ Weights must add up to 100.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentrubric)
 
 [https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0)
+
 
 
 

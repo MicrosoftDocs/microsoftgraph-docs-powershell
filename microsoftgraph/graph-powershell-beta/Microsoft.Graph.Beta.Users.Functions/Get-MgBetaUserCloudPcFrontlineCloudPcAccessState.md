@@ -50,14 +50,18 @@ If sharedCloudPcAccessState isn't active/activating/standbyMode, the web client 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get the frontline Cloud PC access state for the signed-in user
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Functions
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserCloudPcFrontlineCloudPcAccessState -UserId $userId -CloudPCId $cloudPCId
+
+```
+This example will get the frontline cloud pc access state for the signed-in user
+
 
 ## PARAMETERS
 

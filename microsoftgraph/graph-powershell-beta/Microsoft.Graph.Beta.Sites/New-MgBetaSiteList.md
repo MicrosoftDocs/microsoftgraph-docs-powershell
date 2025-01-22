@@ -72,11 +72,11 @@ Create a new list in a site.
 | Application | Sites.Manage.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	displayName = "Books"
@@ -98,6 +98,10 @@ $params = @{
 }
 
 New-MgBetaSiteList -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSiteList Cmdlet.
+
 
 ## PARAMETERS
 

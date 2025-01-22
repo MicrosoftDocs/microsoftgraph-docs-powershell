@@ -56,18 +56,6 @@ Invoke action assign
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -342,6 +330,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserdeviceenrollmentconfiguration)
+
 
 
 

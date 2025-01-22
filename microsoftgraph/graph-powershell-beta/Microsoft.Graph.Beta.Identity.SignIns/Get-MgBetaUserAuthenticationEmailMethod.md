@@ -48,14 +48,18 @@ Represents the email addresses registered to a user for authentication.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationEmailMethod -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserAuthenticationEmailMethod Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,18 +46,6 @@ This allows you to maintain and synchronize a local store of a user's messages w
 | Delegated (personal Microsoft account) | Mail.ReadBasic,  |
 | Application | Mail.Read, Mail.ReadBasic.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -367,6 +355,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermessagedelta)
 
 [https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
+
 
 
 

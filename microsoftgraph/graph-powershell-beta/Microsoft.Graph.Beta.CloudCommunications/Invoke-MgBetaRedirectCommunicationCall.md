@@ -67,11 +67,11 @@ The current timeout value is 15 seconds.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	targets = @(
@@ -90,6 +90,10 @@ $params = @{
 }
 
 Invoke-MgBetaRedirectCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaRedirectCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

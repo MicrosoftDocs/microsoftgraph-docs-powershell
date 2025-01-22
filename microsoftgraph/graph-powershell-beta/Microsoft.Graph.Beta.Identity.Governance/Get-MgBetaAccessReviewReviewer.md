@@ -46,13 +46,17 @@ The collection of reviewers for an access review, if access review reviewerType 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId
+
+```
+This example shows how to use the Get-MgBetaAccessReviewReviewer Cmdlet.
+
 
 ## PARAMETERS
 

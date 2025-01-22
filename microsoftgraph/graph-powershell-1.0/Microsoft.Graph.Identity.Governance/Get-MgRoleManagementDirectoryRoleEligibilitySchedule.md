@@ -50,13 +50,17 @@ Retrieve the schedule for a role eligibility operation.
 | Application | RoleEligibilitySchedule.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgRoleManagementDirectoryRoleEligibilitySchedule
+
+```
+This example shows how to use the Get-MgRoleManagementDirectoryRoleEligibilitySchedule Cmdlet.
+
 
 ## PARAMETERS
 

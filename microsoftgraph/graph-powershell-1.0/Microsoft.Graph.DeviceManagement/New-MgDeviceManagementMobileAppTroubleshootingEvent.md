@@ -42,17 +42,21 @@ Create a new mobileAppTroubleshootingEvent object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mobileAppTroubleshootingEvent"
 }
 
 New-MgDeviceManagementMobileAppTroubleshootingEvent -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementMobileAppTroubleshootingEvent Cmdlet.
+
 
 ## PARAMETERS
 

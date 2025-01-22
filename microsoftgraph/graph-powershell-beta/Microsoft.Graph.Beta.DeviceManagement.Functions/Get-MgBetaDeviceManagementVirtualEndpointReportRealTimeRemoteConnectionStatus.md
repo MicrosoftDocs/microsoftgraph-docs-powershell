@@ -38,13 +38,17 @@ Get the real-time connection status information, such as signInStatus or daysSin
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus Cmdlet.
+
 
 ## PARAMETERS
 

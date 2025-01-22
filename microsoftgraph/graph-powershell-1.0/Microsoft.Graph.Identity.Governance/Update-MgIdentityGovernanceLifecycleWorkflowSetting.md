@@ -43,11 +43,11 @@ Update the properties of a lifecycleManagementSettings object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	"@odata.context" = "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity"
@@ -59,6 +59,10 @@ $params = @{
 }
 
 Update-MgIdentityGovernanceLifecycleWorkflowSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
+
 
 ## PARAMETERS
 

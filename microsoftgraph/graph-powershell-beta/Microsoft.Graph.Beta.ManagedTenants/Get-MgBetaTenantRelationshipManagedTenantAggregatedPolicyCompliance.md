@@ -46,13 +46,17 @@ Aggregate view of device compliance policies across managed tenants.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance Cmdlet.
+
 
 ## PARAMETERS
 

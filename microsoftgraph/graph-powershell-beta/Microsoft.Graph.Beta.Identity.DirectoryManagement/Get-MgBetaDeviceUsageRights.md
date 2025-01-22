@@ -46,20 +46,28 @@ Represents the usage rights a device has been granted.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get all usage rights for a device
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDeviceUsageRights -DeviceId $deviceId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
+This example will get all usage rights for a device
 
-Get-MgBetaDeviceUsageRights -DeviceId $deviceId -Filter "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')"
+### Example 2: Get usage rights for a device with specific service identifiers and states
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDeviceUsageRights -DeviceId $deviceId -Filter "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')" 
+
+```
+This example will get usage rights for a device with specific service identifiers and states
+
 
 ## PARAMETERS
 

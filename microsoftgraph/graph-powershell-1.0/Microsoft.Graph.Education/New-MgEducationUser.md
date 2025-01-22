@@ -53,11 +53,11 @@ Create a new educationUser object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationUser"
@@ -111,7 +111,7 @@ provisionedPlans = @(
 		"@odata.type" = "microsoft.graph.provisionedPlan"
 	}
 )
-refreshTokensValidFromDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+refreshTokensValidFromDateTime = [System.DateTime]::Parse("String (timestamp)")
 showInAddressList = "Boolean"
 surname = "String"
 usageLocation = "String"
@@ -123,6 +123,10 @@ onPremisesInfo = @{
 }
 
 New-MgEducationUser -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

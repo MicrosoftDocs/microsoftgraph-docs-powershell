@@ -108,18 +108,6 @@ Create a new application object if it doesn't exist, or update the properties of
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -3564,6 +3552,7 @@ Only available for applications that support the PersonalMicrosoftAccount signIn
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyappid)
 
 [https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-beta)
+
 
 
 

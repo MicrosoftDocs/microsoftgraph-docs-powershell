@@ -44,11 +44,11 @@ Update the properties of a cross-tenant access policy.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	allowedCloudEndpoints = @(
@@ -57,6 +57,10 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyCrossTenantAccessPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,11 +41,11 @@ Retrieve the Windows 365 cross-region disaster recovery report, including CloudP
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	filter = "DisasterRecoveryStatus eq 'Active outage'"
@@ -69,6 +69,10 @@ top = 50
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport Cmdlet.
+
 
 ## PARAMETERS
 

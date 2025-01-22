@@ -44,11 +44,11 @@ The properties id, type, and description cannot be modified.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	selfServiceSignUp = @{
@@ -57,6 +57,10 @@ $params = @{
 }
 
 Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyAuthenticationFlowPolicy Cmdlet.
+
 
 ## PARAMETERS
 

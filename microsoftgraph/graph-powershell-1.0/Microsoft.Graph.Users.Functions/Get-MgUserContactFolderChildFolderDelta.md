@@ -46,18 +46,6 @@ This allows you to maintain and synchronize a local store of a user's contact fo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -366,6 +354,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactfolderchildfolderdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactfolderchildfolderdelta)
 
 [https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-1.0)
+
 
 
 

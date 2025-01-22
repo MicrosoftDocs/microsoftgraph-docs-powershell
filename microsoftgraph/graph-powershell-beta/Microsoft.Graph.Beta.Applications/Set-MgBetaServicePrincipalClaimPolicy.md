@@ -54,11 +54,11 @@ Create a new customClaimsPolicy object if it doesn't exist, or replace an existi
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.customClaimsPolicy"
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Set-MgBetaServicePrincipalClaimPolicy -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaServicePrincipalClaimPolicy Cmdlet.
+
 
 ## PARAMETERS
 

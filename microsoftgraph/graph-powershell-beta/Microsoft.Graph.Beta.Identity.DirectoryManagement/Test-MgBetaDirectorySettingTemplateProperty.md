@@ -55,18 +55,6 @@ However, you can validate both the mail nickname and the display name and receiv
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,6 +267,7 @@ BODYPARAMETER `<IPathsO8B6ApDirectorysettingtemplatesMicrosoftGraphValidateprope
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadirectorysettingtemplateproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadirectorysettingtemplateproperty)
 
 [https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+
 
 
 

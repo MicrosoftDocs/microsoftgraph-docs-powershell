@@ -43,18 +43,6 @@ For more information on how to remove assignments that are still in the delivere
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -317,6 +305,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagebyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagebyuniquename)
 
 [https://learn.microsoft.com/graph/api/accesspackage-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-delete?view=graph-rest-beta)
+
 
 
 

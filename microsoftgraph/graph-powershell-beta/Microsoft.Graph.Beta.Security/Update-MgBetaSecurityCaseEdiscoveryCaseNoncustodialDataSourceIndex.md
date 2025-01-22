@@ -75,13 +75,17 @@ Trigger an indexOperation
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+
+```
+This example shows how to use the Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex Cmdlet.
+
 
 ## PARAMETERS
 

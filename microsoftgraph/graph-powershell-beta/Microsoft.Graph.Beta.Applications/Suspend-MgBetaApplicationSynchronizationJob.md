@@ -42,18 +42,6 @@ All the progress, including job state, is persisted, and the job continues from 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -250,6 +238,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-beta)
+
 
 
 

@@ -50,18 +50,6 @@ For details, see the examples section.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -222,6 +210,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreassigneducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreassigneducationmeassignmentsubmission)
 
 [https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-1.0)
+
 
 
 

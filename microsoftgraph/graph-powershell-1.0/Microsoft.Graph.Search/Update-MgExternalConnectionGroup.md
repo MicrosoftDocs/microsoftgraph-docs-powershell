@@ -57,11 +57,11 @@ Update the properties of an externalGroup object.
 | Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	displayName = "Contoso Marketing"
@@ -69,6 +69,10 @@ $params = @{
 }
 
 Update-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgExternalConnectionGroup Cmdlet.
+
 
 ## PARAMETERS
 

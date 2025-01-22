@@ -48,18 +48,6 @@ Use the start job only when the job is currently paused or in quarantine.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -256,6 +244,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/start-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/start-mgbetaapplicationsynchronizationjob)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-beta)
+
 
 
 

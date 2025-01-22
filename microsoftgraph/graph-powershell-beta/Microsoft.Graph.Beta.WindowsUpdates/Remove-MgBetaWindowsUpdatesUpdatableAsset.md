@@ -40,13 +40,17 @@ When an updatableAssetGroup object, its member updatableAsset objects are not de
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+
+```
+This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
+
 
 ## PARAMETERS
 

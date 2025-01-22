@@ -41,13 +41,17 @@ Delete a webPart object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSitePageAsSitePageWebPart -SiteId $siteId -BaseSitePageId $baseSitePageId -WebPartId $webPartId
+
+```
+This example shows how to use the Remove-MgSitePageAsSitePageWebPart Cmdlet.
+
 
 ## PARAMETERS
 

@@ -45,14 +45,18 @@ Represents patents that a user has added to their profile.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePatent -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfilePatent Cmdlet.
+
 
 ## PARAMETERS
 

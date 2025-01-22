@@ -41,13 +41,17 @@ Delete a citationTemplate object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Remove-MgSecurityLabelCitation -CitationTemplateId $citationTemplateId
+
+```
+This example shows how to use the Remove-MgSecurityLabelCitation Cmdlet.
+
 
 ## PARAMETERS
 

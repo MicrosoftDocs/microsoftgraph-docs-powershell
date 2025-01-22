@@ -73,11 +73,11 @@ Update the properties of an ediscoveryCase object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "My Case 1 - Renamed"
@@ -85,6 +85,10 @@ $params = @{
 }
 
 Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSecurityCaseEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

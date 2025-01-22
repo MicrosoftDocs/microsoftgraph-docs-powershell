@@ -47,13 +47,17 @@ For information about workflows processed, see insights: topWorkflowsProcessedSu
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary
+
+```
+This example shows how to use the Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary Cmdlet.
+
 
 ## PARAMETERS
 

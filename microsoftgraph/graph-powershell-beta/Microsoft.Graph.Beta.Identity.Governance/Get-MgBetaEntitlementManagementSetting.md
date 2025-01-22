@@ -33,16 +33,18 @@ Retrieve the properties of an entitlementManagementSettings object.
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get the identity governance settings
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementSetting
-```
 
 Id        DaysUntilExternalUserDeletedAfterBlocked ExternalUserLifecycleAction
 --        ---------------------------------------- ---------------------------
 singleton 30                                       BlockSignInAndDelete
+```
+
+This example returns the identity governance settings.
 
 ## PARAMETERS
 
