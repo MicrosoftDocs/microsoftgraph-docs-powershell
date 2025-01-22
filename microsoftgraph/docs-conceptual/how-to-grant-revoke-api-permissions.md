@@ -2,13 +2,13 @@
 title: "Grant and revoke API permissions programmatically in Microsoft Entra ID"
 description: "Learn how to programmatically grant and revoke delegated and application API permissions for an app using Microsoft Graph PowerShell."
 ms.topic: how-to
-ms.date: 01/20/2025
+ms.date: 01/22/2025
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: jawoods, phsignor
 zone_pivot_groups: graph-powershell-grant-api-permissions
-zone_pivot_group_filename: graph-powershell/zone-pivot-groups.json
+zone_pivot_group_filename: microsoftgraph/zone-pivot-groups.json
 
 #customer intent: As an IT admin managing permissions in Microsoft Entra ID, I want to learn how to grant and revoke API permissions for an app using Microsoft Graph PowerShell, to automate permission management tasks and ensure efficient and secure access control in my organization.
 ---
