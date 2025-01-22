@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointscopedpermission
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointScopedPermission
@@ -22,43 +21,28 @@ Get-MgBetaDeviceManagementVirtualEndpointScopedPermission [-Count] [-Filter <Str
 ## DESCRIPTION
 Get the permissions and corresponding scope IDs for which the authenticated user has access.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-retrievescopedpermissions-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get all the permissions and scope IDs of the authenticated user
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+```
 
 Get-MgBetaDeviceManagementVirtualEndpointScopedPermission
 
+### EXAMPLE 2
 ```
-This example will get all the permissions and scope ids of the authenticated user
-
-### Example 2: Get a filtered list of permissions and scope IDs of the authenticated user
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-
-Get-MgBetaDeviceManagementVirtualEndpointScopedPermission -Filter "permission in ('Microsoft.CloudPC/ProvisioningPolicies/Update','Microsoft.CloudPC/ProvisioningPolicies/Create')" 
-
 ```
-This example will get a filtered list of permissions and scope ids of the authenticated user
 
-### Example 3: No scope IDs are returned
+Get-MgBetaDeviceManagementVirtualEndpointScopedPermission -Filter "permission in ('Microsoft.CloudPC/ProvisioningPolicies/Update','Microsoft.CloudPC/ProvisioningPolicies/Create')"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+```
 
 Get-MgBetaDeviceManagementVirtualEndpointScopedPermission
-
-```
-This example will no scope ids are returned
-
 
 ## PARAMETERS
 
@@ -198,26 +182,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointscopedpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointscopedpermission)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-retrievescopedpermissions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-retrievescopedpermissions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationdelta
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplicationDelta
@@ -11,9 +10,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection.
 See Using Delta Query for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,21 +24,14 @@ Get-MgBetaApplicationDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection.
 See Using Delta Query for details.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delta-permissions.md)]
-
 ## EXAMPLES
-### Example
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Get-MgBetaApplicationDelta
-
-```
-This example shows how to use the Get-MgBetaApplicationDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -258,26 +247,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationdelta)
 
 [https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
