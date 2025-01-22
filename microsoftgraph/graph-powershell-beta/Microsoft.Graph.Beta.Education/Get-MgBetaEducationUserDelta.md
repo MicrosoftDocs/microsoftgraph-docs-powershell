@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserdelta
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Get-MgBetaEducationUserDelta
@@ -11,9 +10,6 @@ ms.subservice: education
 ## SYNOPSIS
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,21 +24,14 @@ Get-MgBetaEducationUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-P
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-delta-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationUserDelta
-
-```
-This example shows how to use the Get-MgBetaEducationUserDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -258,26 +247,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserdelta)
 
 [https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
