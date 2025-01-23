@@ -35,7 +35,12 @@ function Start-Generator {
         }
         #If its already in the list, skip it
         if ($CmdList -notcontains $CommandName) {
-            New-ReferenceTable -CommandName $CommandName -DelegatedWorkPermissions $DelegatedWorkPermissions -ApplicationPermissions $ApplicationPermissions -DelegatedPersonalPermissions $DelegatedPersonalPermissions -ApiVersion $ApiVersion -Module $Module; 
+            #Check if all types of permissions in the their respective arrays are empty. If empty just skip the command
+            if ($DelegatedWorkPermissions.Count -eq 0 -and $ApplicationPermissions.Count -eq 0 -and $DelegatedPersonalPermissions.Count -eq 0) {
+                Write-Host "Skipping $CommandName as it does not have any permissions";
+            }else{
+                New-ReferenceTable -CommandName $CommandName -DelegatedWorkPermissions $DelegatedWorkPermissions -ApplicationPermissions $ApplicationPermissions -DelegatedPersonalPermissions $DelegatedPersonalPermissions -ApiVersion $ApiVersion -Module $Module; 
+            }
         } 
         $CmdList += $CommandName;  
         
