@@ -9,10 +9,8 @@ function Start-Generator {
 
     $MgCommandMetadatJson | ForEach-Object {
         $CommandName = $_.Command;
-        $Variant = $_.Variants;
         $ApiVersion = $_.ApiVersion
         $Module = $_.Module;
-        $FirstVariant = $Variant | Where-Object { $_ -eq "List" };
         #Array for DelegatedWork Permissions
         $DelegatedWorkPermissions = @();
         #Array for Application Permissions
@@ -40,13 +38,15 @@ function Start-Generator {
             New-ReferenceTable -CommandName $CommandName -DelegatedWorkPermissions $DelegatedWorkPermissions -ApplicationPermissions $ApplicationPermissions -DelegatedPersonalPermissions $DelegatedPersonalPermissions -ApiVersion $ApiVersion -Module $Module; 
         } 
         $CmdList += $CommandName;  
+        
+    
+    
+        git config --global user.email "GraphTooling@service.microsoft.com"
+        git config --global user.name "Microsoft Graph DevX Tooling"
+        git add .
+        git commit -m "Inserted permissions Table"
     }
-    
-    
-    git config --global user.email "GraphTooling@service.microsoft.com"
-    git config --global user.name "Microsoft Graph DevX Tooling"
-    git add .
-    git commit -m "Inserted permissions Table"
+        
 }
 
 function New-ReferenceTable {
@@ -61,6 +61,7 @@ function New-ReferenceTable {
     if ($CmdList -notcontains $CommandName) {
 
         $MdFile = "Microsoft.Graph.$Module/$CommandName.md";
+        
         $File = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/$MdFile");
         if ($ApiVersion -eq "beta") {
             $File = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-beta/$MdFile");
@@ -104,9 +105,37 @@ function New-ReferenceTable {
 | Application | $AppPerms |
 "@;
 
+            $V1_PermissionsFolder = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/permissions/$CommandName.md")
+            $Beta_PermissionsFolder = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-beta/permissions/$CommandName.md")
+
+            $IncludeLink = "[!INCLUDE [permissions-table](../permissions/$CommandName.md)]"
+            if ($ApiVersion -eq "v1.0") {
+                if (-not (Test-Path $V1_PermissionsFolder)) {
+                    New-Item -ItemType file -Path $V1_PermissionsFolder -Force
+                }
+                else {
+                    #Clear content first before writing
+                    Clear-Content $V1_PermissionsFolder
+                }
+                #Write the content
+                Set-Content -Path $V1_PermissionsFolder -Value $markdownTable
+
+            }
+            else {
+                if (-not (Test-Path $Beta_PermissionsFolder)) {
+                    New-Item -ItemType file -Path $Beta_PermissionsFolder -Force
+                }
+                else {
+                    #Clear content first before writing
+                    Clear-Content $Beta_PermissionsFolder
+                    #Write the content
+                } 
+                Set-Content -Path $Beta_PermissionsFolder -Value $markdownTable
+            }
+
 
             if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
-                $Link = "**Permissions**`r`n$markdownTable`r`n`n## EXAMPLES"
+                $Link = "**Permissions**`r`n$IncludeLink`r`n`n## EXAMPLES"
     (Get-Content $File) | 
                 Foreach-Object { $_ -replace '## EXAMPLES', $Link }  | 
                 Out-File $File
