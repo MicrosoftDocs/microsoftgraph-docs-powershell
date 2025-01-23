@@ -41,7 +41,11 @@ Get-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <St
 Users that are flagged as at-risk by Microsoft Entra ID Protection.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-get-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: List all risky users

@@ -32,6 +32,13 @@ Get-MgUserDirectReportCount -InputObject <IUsersIdentity> [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

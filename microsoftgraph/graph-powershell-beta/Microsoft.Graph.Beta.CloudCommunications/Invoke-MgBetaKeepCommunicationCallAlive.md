@@ -46,7 +46,11 @@ Attempting to send a request to a call that ended results in a 404 Not Found err
 The resources related to the call should be cleaned up on the application side.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-keepalive-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

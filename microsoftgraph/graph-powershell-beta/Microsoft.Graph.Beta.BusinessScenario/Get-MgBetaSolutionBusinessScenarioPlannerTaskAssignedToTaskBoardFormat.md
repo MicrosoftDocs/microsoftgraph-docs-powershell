@@ -34,6 +34,13 @@ Read-only.
 Nullable.
 Used to render the task correctly in the task board view when grouped by assignedTo.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -BusinessScenarioId

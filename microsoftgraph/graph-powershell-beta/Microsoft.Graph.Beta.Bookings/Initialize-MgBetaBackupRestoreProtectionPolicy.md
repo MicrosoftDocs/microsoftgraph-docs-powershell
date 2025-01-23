@@ -38,7 +38,11 @@ Currently, only one active backup policy per underlying service is supported (th
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-activate-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1 : Activate an inactive protection policy

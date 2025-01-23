@@ -66,7 +66,11 @@ The maximum length of recording is 2 minutes.The Cloud Communications Platform d
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value provided in the completed notification.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-record-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

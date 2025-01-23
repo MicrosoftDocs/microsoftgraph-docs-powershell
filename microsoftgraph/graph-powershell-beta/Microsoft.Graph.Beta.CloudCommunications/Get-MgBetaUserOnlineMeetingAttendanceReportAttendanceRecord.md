@@ -67,6 +67,13 @@ Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloud
 List of attendance records of an attendance report.
 Read-only.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: List attendance records
 

@@ -49,7 +49,11 @@ Revoke-MgBetaUserDriveListPermissionGrant -InputObject <IUsersActionsIdentity>
 Revoke access to a listItem or driveItem granted via a sharing link by removing the specified recipient from the link.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-revokegrants-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

@@ -52,7 +52,11 @@ Update-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdent
 Update (override) the synchronization template associated with a given application.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## PARAMETERS
 

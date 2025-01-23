@@ -40,6 +40,13 @@ Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState
 ## DESCRIPTION
 The security baseline state for different settings for a device
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

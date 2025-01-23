@@ -34,7 +34,11 @@ Get-MgBetaUserTeamwork -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userteamwork-get-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserTeamwork.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserTeamwork.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

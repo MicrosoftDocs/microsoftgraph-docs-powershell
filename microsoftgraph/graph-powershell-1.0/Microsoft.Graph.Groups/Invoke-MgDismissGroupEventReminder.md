@@ -34,7 +34,11 @@ Invoke-MgDismissGroupEventReminder -InputObject <IGroupsIdentity> [-ResponseHead
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-dismissreminder-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

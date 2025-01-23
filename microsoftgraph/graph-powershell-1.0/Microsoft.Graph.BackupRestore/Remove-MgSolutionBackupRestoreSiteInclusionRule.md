@@ -32,6 +32,13 @@ Remove-MgSolutionBackupRestoreSiteInclusionRule -InputObject <IBackupRestoreIden
 ## DESCRIPTION
 Delete navigation property siteInclusionRules for solutions
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Headers

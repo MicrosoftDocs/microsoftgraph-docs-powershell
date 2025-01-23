@@ -38,7 +38,11 @@ Admins can confirm that events flagged as risky by Microsoft Entra ID Protection
 For details about investigating Identity Protection risks, see How to investigate risk.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/signin-confirmcompromised-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskEvent.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

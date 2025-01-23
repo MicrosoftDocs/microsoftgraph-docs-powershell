@@ -32,6 +32,13 @@ Get-MgGroupDriveRootListItemDocumentSetVersionField -InputObject <IFilesIdentity
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

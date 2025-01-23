@@ -43,7 +43,11 @@ Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 The user attribute assignments included in the user flow.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-list-userattributeassignments-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: List userAttributeAssignments in a b2xIdentityUserFlow

@@ -57,7 +57,11 @@ New-MgSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphBase
 Create a new sitePage in the site pages list in a site.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sitepage-create-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

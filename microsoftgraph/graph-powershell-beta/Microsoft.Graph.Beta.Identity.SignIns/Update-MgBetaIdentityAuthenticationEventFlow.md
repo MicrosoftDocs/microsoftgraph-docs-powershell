@@ -56,7 +56,11 @@ You must specify the @odata.type property and the value of the authenticationEve
 The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Update the display name and priority of an authenticationEventsFlow

@@ -32,6 +32,13 @@ Get-MgSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate -InputObjec
 ## DESCRIPTION
 Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -ExpandProperty

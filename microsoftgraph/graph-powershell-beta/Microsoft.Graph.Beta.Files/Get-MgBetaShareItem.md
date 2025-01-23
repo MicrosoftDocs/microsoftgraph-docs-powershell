@@ -42,6 +42,13 @@ Get-MgBetaShareItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 All driveItems contained in the sharing root.
 This collection cannot be enumerated.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

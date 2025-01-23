@@ -31,6 +31,13 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDefinition -InputObject 
 There's exactly one accessReviewScheduleDefinition associated with each instance.
 It's the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

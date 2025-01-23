@@ -31,6 +31,13 @@ Get-MgBetaExternalAuthorizationSystemDataCollectionInfo -InputObject <ISearchIde
 Defines how and whether Permissions Management collects data from the onboarded authorization system.
 Supports $filter (eq) as follows:  $filter=dataCollectionInfo/entitlements/permissionsModificationCapability and $filter=dataCollectionInfo/entitlements/status.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -AuthorizationSystemId

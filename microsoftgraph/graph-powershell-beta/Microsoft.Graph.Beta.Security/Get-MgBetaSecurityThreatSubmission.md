@@ -21,6 +21,13 @@ Get-MgBetaSecurityThreatSubmission [-ExpandProperty <String[]>] [-Property <Stri
 ## DESCRIPTION
 A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -ExpandProperty

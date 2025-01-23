@@ -48,7 +48,11 @@ New-MgExternalConnectionGroupMember -InputObject <ISearchIdentity>
 Create an identity resource for a new member in an externalGroup.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-post-members-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Add an Azure Active Directory user as a member

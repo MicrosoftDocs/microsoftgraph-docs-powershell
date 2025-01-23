@@ -34,7 +34,11 @@ Get-MgSiteRecentNotebook -InputObject <ISitesIdentity> [-Count] [-Filter <String
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
+| Application | Not supported |
 
 ## PARAMETERS
 

@@ -58,7 +58,11 @@ Add conditions under which a permission grant event is *excluded* in a permissio
 You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-post-excludes-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Create a permission grant policy exclude

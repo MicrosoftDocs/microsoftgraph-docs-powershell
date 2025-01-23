@@ -52,6 +52,13 @@ New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment
 ## DESCRIPTION
 Create new navigation property to assignments for deviceAppManagement
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

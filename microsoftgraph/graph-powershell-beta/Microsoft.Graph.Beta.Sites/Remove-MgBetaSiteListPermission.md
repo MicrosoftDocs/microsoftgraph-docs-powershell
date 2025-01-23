@@ -29,6 +29,13 @@ Remove-MgBetaSiteListPermission -InputObject <ISitesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property permissions for sites
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+
 ## PARAMETERS
 
 ### -Headers

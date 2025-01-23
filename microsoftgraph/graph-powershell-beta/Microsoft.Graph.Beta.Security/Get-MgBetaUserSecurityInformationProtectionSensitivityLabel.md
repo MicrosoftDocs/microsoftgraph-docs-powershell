@@ -39,7 +39,11 @@ Get-MgBetaUserSecurityInformationProtectionSensitivityLabel -InputObject <ISecur
 Read the Microsoft Purview Information Protection labels for the user or organization.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-informationprotection-list-sensitivitylabels-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | InformationProtectionPolicy.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | InformationProtectionPolicy.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

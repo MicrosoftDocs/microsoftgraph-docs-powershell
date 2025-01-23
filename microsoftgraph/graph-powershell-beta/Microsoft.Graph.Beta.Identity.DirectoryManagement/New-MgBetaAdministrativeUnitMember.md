@@ -49,6 +49,13 @@ Use this API to add a member (user, group, or device) to an administrative unit 
 All group types can be created within an administrative unit.
 Note: Currently, it's only possible to add one member at a time to an administrative unit.\`
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Create a new group
 

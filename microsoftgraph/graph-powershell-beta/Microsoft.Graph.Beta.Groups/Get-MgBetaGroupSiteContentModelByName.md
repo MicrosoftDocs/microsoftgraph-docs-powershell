@@ -32,7 +32,11 @@ Read the properties and relationships of a contentModel object by its model name
 The name should be the full model filename, including the file extension; for example, exampleModel.classifier.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getbyname-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

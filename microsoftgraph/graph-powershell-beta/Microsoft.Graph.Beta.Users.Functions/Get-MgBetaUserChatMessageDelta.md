@@ -54,7 +54,11 @@ You can save and use the @odata.deltaLink URL when you begin the to retrieve add
 For more information, see the delta query documentation.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-delta-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMessage.Read.Chat, Chat.ReadWrite.All, Chat.Read.All,  |
 
 ## PARAMETERS
 

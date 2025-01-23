@@ -46,10 +46,11 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -InputObject
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstancedecisionitem-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewstage-list-decisions-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Retrieve a decision from a stage of a multi-stage access review

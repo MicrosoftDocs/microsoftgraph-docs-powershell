@@ -65,7 +65,11 @@ This display name appears to the user in Microsoft Teams.
 You can add a maximum of 200 members when you create a private channel.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-post-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Channel.Create.Group, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All, Channel.Create,  |
 
 ## EXAMPLES
 ### Example 1: Create a standard channel

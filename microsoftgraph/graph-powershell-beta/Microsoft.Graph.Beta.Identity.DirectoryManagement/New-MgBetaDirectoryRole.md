@@ -41,7 +41,11 @@ The Company Administrators and the implicit user directory roles (User, Guest Us
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-post-directoryroles-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

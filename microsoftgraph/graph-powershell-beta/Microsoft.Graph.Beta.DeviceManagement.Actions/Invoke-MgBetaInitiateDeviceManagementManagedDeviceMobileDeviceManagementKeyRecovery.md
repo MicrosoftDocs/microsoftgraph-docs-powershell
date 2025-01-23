@@ -29,6 +29,13 @@ Invoke-MgBetaInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecov
 ## DESCRIPTION
 Perform MDM key recovery and TPM attestation
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+
 ## PARAMETERS
 
 ### -Headers

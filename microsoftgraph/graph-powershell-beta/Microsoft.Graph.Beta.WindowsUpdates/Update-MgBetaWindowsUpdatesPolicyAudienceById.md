@@ -57,7 +57,11 @@ If the same updatableAsset gets included in the exclusions and members collectio
 You can also use the method updateAudience to update the deploymentAudience.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-deploymentaudience-updateaudiencebyid-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

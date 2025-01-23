@@ -49,7 +49,11 @@ Postpone action on a recommendation object to a specified future date and time b
 On the date and time provided, Microsoft Entra ID will automatically update the status of the recommendation object to active again.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-postpone-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

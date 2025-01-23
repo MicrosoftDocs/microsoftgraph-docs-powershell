@@ -38,7 +38,11 @@ This web URL includes enhanced business-to-customer experiences such as mobile b
 With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-getvirtualappointmentjoinweburl-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualAppointment.Read, VirtualAppointment.ReadWrite, OnlineMeetings.ReadWrite, OnlineMeetings.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

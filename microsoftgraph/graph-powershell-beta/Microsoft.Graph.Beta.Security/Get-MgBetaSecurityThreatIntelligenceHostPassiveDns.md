@@ -42,7 +42,11 @@ Get-MgBetaSecurityThreatIntelligenceHostPassiveDns -InputObject <ISecurityIdenti
 Passive DNS retrieval about this host.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-list-passivedns-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -32,6 +32,13 @@ Get-MgBetaUserOnenotePageContent -InputObject <INotesIdentity> -OutFile <String>
 ## DESCRIPTION
 The page's HTML content.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
+| Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite,  |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Headers

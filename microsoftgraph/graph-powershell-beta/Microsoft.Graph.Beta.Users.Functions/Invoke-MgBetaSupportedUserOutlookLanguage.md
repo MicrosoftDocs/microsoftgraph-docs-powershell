@@ -38,7 +38,11 @@ When setting up an Outlook client, the user selects the preferred language from 
 You can subsequently get the preferred language bygetting the user's mailbox settings.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-supportedlanguages-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadBasic.All,  |
+| Delegated (personal Microsoft account) | User.Read,  |
+| Application | User.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

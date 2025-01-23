@@ -42,7 +42,11 @@ Get-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-E
 Get secureScoreControlProfiles from security
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securescorecontrolprofiles-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

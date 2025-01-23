@@ -43,7 +43,11 @@ Get-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIde
 Pre-configured synchronization settings for a particular application.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
 
 ## EXAMPLES
 ### Example

@@ -50,6 +50,13 @@ Evaluate whether a user or device is or would be a member of a dynamic group.
 The membership rule is returned along with other details that were used in the evaluation.
 You can complete this operation in the following ways:
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Evaluate if a user or device is a member of an existing group
 

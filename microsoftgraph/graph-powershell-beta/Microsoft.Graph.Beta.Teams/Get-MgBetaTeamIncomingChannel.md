@@ -42,7 +42,11 @@ Get-MgBetaTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 List of channels shared with the team.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-list-incomingchannels-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

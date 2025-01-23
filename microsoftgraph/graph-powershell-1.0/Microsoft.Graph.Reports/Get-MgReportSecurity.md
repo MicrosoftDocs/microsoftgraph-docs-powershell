@@ -23,6 +23,13 @@ Get-MgReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [-Respo
 ## DESCRIPTION
 Represents an abstract type that contains resources for attack simulation and training reports.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -ExpandProperty

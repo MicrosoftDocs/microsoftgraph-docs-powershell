@@ -34,6 +34,13 @@ Get-MgBetaReportOffice365ServiceUserCount -InputObject <IReportsIdentity> [-Coun
 ## DESCRIPTION
 Invoke function getOffice365ServicesUserCounts
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Count

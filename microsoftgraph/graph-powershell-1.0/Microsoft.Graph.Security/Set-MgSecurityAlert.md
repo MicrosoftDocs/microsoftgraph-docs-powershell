@@ -34,7 +34,11 @@ Set-MgSecurityAlert -InputObject <ISecurityIdentity> [-IfMatch <String>]
 Create a comment for an existing alert based on the specified alert id property.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-post-comments-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

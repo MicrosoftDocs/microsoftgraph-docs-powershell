@@ -62,7 +62,11 @@ Updating a print job will only succeed if a printTask in a processing state, sta
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printjob-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

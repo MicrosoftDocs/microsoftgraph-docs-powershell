@@ -29,6 +29,13 @@ Get-MgBetaPrivilegedRoleAssignmentRoleInfoSetting -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Get settings from privilegedRoleAssignments
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -ExpandProperty

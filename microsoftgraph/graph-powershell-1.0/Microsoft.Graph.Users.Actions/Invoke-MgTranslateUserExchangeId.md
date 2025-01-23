@@ -50,7 +50,11 @@ Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
 Translate identifiers of Outlook-related resources between formats.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-translateexchangeids-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadBasic.All, User.ReadWrite.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -58,7 +58,11 @@ For example, this API can be used to clean up the IVR operation queue for a new 
 However, it will not cancel a ubscribeToTone operation because it operates independent of any operation queue.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-cancelmediaprocessing-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -163,7 +163,11 @@ Update-MgUser -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUser>
 Update the properties of a user object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite, User-PasswordProfile.ReadWrite.All, User-Mail.ReadWrite.All, Directory.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.ReadWrite.All, User.ManageIdentities.All, User.EnableDisableAccount.All, User-Phone.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Update a user's display name

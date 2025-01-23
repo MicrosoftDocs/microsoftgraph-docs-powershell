@@ -35,7 +35,11 @@ Note: To permanently delete the pendingExternalUserProfile, follow permanently d
 To restore a pendingExternalUserProfile, follow restore a deleted item.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-delete-pendingexternaluserprofiles-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

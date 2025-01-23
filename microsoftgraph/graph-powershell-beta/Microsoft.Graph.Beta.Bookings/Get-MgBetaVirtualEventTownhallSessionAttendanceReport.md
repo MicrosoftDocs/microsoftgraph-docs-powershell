@@ -44,6 +44,13 @@ Get-MgBetaVirtualEventTownhallSessionAttendanceReport -InputObject <IBookingsIde
 The attendance reports of an online meeting.
 Read-only.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

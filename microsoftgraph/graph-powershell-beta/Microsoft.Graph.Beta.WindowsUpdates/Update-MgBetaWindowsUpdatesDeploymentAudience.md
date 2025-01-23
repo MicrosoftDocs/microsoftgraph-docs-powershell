@@ -59,7 +59,11 @@ If the same updatableAsset gets included in the exclusions and members collectio
 If all updatableAsset objects are the same type, you can also use the method updateAudienceById to update the deploymentAudience.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-deploymentaudience-updateaudience-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaWindowsUpdatesDeploymentAudience Cmdlet

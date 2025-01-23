@@ -36,7 +36,11 @@ Invoke-MgBetaRecentDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty
 List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-recent-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

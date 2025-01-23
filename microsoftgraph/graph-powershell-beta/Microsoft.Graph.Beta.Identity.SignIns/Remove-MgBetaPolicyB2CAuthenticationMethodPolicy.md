@@ -21,6 +21,13 @@ Remove-MgBetaPolicyB2CAuthenticationMethodPolicy [-IfMatch <String>] [-ResponseH
 ## DESCRIPTION
 Delete navigation property b2cAuthenticationMethodsPolicy for policies
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Headers

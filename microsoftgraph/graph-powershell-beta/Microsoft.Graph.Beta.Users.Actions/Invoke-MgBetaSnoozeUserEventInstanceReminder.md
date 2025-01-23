@@ -52,7 +52,11 @@ Invoke-MgBetaSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity
 Postpone a reminder for an event in a user calendar until a new time.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-snoozereminder-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

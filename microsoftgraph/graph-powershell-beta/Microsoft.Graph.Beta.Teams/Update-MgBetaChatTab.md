@@ -54,7 +54,11 @@ Update the properties of the specified tab in a chat.
 This API can be used to configure the content of the tab.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-patch-tabs-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsTab.ReadWriteSelfForChat,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Update the name of a tab in a chat

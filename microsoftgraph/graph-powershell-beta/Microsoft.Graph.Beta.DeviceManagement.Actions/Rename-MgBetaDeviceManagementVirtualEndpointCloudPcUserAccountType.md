@@ -50,7 +50,11 @@ Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType
 Change the account type of the user on a specific Cloud PC.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-changeuseraccounttype-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -48,7 +48,11 @@ Nullable.
 Supports $expand.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-memberof-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

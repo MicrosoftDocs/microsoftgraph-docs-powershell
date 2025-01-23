@@ -24,6 +24,13 @@ Get-MgChatRetainedMessage [-Count] [-ExpandProperty <String[]>] [-Filter <String
 ## DESCRIPTION
 Invoke function getAllRetainedMessages
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ReadBasic.All, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.Read.All, Chat.Manage.Chat,  |
+
 ## PARAMETERS
 
 ### -Count

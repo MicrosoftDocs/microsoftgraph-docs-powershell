@@ -43,10 +43,11 @@ Get-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-Expan
 Retrieve the properties and relationships of an securescorecontrolprofile object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/securescorecontrolprofile-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-list-securescorecontrolprofiles-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -23,7 +23,11 @@ Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission [-Count] [-Filter <
 Get the effective permissions of the currently authenticated user, helping UX hide or disable content that the current user doesn't have access to.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-geteffectivepermissions-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -64,7 +64,11 @@ Get-MgSiteTermStoreSetRelation -InputObject <ISitesIdentity> [-ExpandProperty <S
 Indicates which terms have been pinned or reused directly under the set.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-list-relations-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

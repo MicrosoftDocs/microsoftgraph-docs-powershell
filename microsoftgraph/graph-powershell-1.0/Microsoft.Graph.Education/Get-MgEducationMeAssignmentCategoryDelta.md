@@ -36,7 +36,11 @@ Get-MgEducationMeAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Exp
 Get a list of newly created or updated educationCategory objects without having to perform a full read of the collection.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationcategory-delta-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

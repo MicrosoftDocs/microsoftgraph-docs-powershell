@@ -42,7 +42,11 @@ Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult -InputObject <IIde
 Per-user workflow execution results.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-list-userprocessingresults-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: List the user processing results for a workflow

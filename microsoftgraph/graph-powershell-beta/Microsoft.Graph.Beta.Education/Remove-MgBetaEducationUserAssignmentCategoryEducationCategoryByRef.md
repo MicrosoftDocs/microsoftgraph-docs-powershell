@@ -33,6 +33,13 @@ Remove-MgBetaEducationUserAssignmentCategoryEducationCategoryByRef -InputObject 
 ## DESCRIPTION
 Delete ref of navigation property categories for education
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

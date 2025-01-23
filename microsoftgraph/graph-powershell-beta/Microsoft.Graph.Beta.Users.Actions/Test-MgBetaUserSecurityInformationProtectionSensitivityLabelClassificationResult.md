@@ -58,7 +58,11 @@ To evaluate based on classification results, provide the contentInfo, which incl
 The API returns an informationProtectionAction that contains one of more of the following:
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-evaluateclassificationresults-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | InformationProtectionPolicy.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | InformationProtectionPolicy.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

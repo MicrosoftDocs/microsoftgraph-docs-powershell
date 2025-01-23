@@ -47,10 +47,11 @@ Only teachers, students, and applications with application permissions can perfo
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-modules-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduCurricula.Read, EduCurricula.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduCurricula.Read.All, EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

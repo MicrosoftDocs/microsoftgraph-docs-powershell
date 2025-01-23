@@ -36,7 +36,11 @@ Runs the query specified in the request body.
 Search results are provided in the response.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-query-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Read, Sites.Read.All, QnA.Read.All, Files.Read.All, ExternalItem.Read.All, Chat.Read, Calendars.Read, Bookmark.Read.All, Acronym.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Basic call to perform a search request

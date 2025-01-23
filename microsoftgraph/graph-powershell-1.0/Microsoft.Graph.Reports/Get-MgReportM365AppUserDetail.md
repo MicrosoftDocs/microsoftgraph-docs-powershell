@@ -44,6 +44,13 @@ Get-MgReportM365AppUserDetail -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Get a report that provides the details about which apps and platforms users have used.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Date

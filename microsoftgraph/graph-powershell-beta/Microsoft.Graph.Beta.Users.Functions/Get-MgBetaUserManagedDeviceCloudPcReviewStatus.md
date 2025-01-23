@@ -31,7 +31,11 @@ Get-MgBetaUserManagedDeviceCloudPcReviewStatus -InputObject <IUsersFunctionsIden
 Get the review status of a specific Cloud PC device.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcreviewstatus-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

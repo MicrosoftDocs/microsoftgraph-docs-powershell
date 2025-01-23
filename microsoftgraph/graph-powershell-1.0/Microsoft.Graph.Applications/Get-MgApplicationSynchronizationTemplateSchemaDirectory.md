@@ -42,6 +42,13 @@ Get-MgApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplicati
 ## DESCRIPTION
 Contains the collection of directories and all of their objects.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

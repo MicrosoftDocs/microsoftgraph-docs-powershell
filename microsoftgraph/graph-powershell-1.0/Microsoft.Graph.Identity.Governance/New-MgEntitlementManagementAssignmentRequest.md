@@ -41,7 +41,11 @@ In Microsoft Entra Entitlement Management, create a new accessPackageAssignmentR
 This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-assignmentrequests-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Admin requests a direct assignment for a user already in the directory

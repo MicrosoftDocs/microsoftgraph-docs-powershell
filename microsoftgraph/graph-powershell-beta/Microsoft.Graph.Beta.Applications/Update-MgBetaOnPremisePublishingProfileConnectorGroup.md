@@ -49,6 +49,13 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplication
 ## DESCRIPTION
 Update the navigation property connectorGroups in onPremisesPublishingProfiles
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell

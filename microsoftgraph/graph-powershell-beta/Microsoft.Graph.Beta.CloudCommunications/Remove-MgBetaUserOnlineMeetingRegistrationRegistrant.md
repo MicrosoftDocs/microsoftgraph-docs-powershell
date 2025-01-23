@@ -36,7 +36,11 @@ Only use this method when the allowedRegistrant property of the meetingRegistrat
 When the allowedRegistrant value is everyone, registrants can only use the link in the email they receive to cancel their registration.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrant-delete-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetings.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

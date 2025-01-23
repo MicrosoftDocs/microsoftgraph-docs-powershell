@@ -78,6 +78,13 @@ Update-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property events in groups
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calendars.ReadWrite,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

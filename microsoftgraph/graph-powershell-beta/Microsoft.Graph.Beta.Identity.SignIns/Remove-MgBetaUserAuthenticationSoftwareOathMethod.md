@@ -33,6 +33,13 @@ Remove-MgBetaUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Delete a user's Software OATH token authentication method object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

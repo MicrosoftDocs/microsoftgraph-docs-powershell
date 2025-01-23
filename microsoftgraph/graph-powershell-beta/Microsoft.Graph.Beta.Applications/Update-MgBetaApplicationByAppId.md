@@ -102,7 +102,11 @@ Update-MgBetaApplicationByAppId -InputObject <IApplicationsIdentity>
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-upsert-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

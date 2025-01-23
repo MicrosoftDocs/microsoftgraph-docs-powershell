@@ -25,6 +25,13 @@ Get-MgGroupSiteGetByPathPage -GroupId <String> -Path <String> -SiteId <String> [
 ## DESCRIPTION
 The collection of pages in the baseSitePages list in this site.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

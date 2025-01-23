@@ -45,7 +45,11 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessi
 The associated individual task execution.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-userprocessingresult-list-taskprocessingresults-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Get the task processing results for a user processing result in a run report for a workflow

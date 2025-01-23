@@ -37,6 +37,13 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetwork -InputObject <INetworkAccessIde
 ## DESCRIPTION
 Represent locations, such as branches, that are connected to Global Secure Access services through an IPsec tunnel.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

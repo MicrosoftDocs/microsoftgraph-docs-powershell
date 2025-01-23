@@ -32,6 +32,13 @@ Get-MgDriveItemContent -InputObject <IFilesIdentity> [-Format <String>] -OutFile
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.Read.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -DriveId

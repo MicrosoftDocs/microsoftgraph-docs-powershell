@@ -54,7 +54,11 @@ Only teachers can perform this operation.
 The only one property that can be updated is displayName, for all resource types.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduCurricula.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

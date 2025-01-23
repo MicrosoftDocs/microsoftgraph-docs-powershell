@@ -50,7 +50,11 @@ Invoke-MgBetaCheckinDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVar
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

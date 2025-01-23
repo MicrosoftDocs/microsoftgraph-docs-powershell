@@ -54,7 +54,11 @@ Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-copytosectiongroup-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
+| Application | Not supported |
 
 ## PARAMETERS
 

@@ -31,6 +31,13 @@ Get-MgBetaEducationSynchronizationProfileStatus -InputObject <IEducationIdentity
 Get the status of a specific school data synchronization profile in the tenant.
 The response will indicate the status of the sync.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAdministration.Read.All, EduAdministration.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

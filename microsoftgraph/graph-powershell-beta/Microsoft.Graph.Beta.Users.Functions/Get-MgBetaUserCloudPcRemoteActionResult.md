@@ -31,7 +31,11 @@ Get-MgBetaUserCloudPcRemoteActionResult -InputObject <IUsersFunctionsIdentity> [
 Retrieve remote action results and check the status of a specific remote action performed on the associated Cloud PC device.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-retrievecloudpcremoteactionresults-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

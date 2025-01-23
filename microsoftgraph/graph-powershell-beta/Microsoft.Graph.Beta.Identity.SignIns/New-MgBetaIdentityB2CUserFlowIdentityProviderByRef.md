@@ -47,7 +47,11 @@ New-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySignIn
 Add identity providers in a b2cIdentityUserFlow object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-post-identityproviders-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

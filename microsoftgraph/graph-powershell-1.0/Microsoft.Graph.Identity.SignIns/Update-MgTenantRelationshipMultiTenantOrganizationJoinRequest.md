@@ -39,7 +39,11 @@ Before a tenant added to a multitenant organization can participate in the multi
 To allow for asynchronous processing, you must wait up to 2 hours before joining a multitenant organization is completed.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationjoinrequestrecord-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Join a multitenant organization

@@ -32,7 +32,11 @@ Get-MgBetaGroupSiteContentModelAppliedDrive -InputObject <IGroupsIdentity> [-Cou
 List all the contentModelUsage information related to a contentModel applied to a SharePoint document library.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getapplieddrives-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

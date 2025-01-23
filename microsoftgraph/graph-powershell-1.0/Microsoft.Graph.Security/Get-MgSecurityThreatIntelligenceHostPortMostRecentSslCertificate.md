@@ -32,6 +32,13 @@ Get-MgSecurityThreatIntelligenceHostPortMostRecentSslCertificate -InputObject <I
 ## DESCRIPTION
 The most recent sslCertificate used to communicate on the port.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -ExpandProperty

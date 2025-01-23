@@ -33,6 +33,13 @@ Remove-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplications
 ## DESCRIPTION
 Delete navigation property templates for servicePrincipals
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Headers

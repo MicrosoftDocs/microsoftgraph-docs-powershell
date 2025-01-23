@@ -44,7 +44,11 @@ Get-MgBetaContactTransitiveMemberOf -InputObject <IIdentityDirectoryManagementId
 Get transitiveMemberOf from contacts
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-list-transitivememberof-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

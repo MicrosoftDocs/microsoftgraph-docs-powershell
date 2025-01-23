@@ -48,6 +48,13 @@ Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject 
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

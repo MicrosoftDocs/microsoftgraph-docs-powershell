@@ -32,6 +32,13 @@ Get-MgUserPersonCount -InputObject <IPeopleIdentity> [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | People.Read.All,  |
+| Delegated (personal Microsoft account) | People.Read,  |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Filter

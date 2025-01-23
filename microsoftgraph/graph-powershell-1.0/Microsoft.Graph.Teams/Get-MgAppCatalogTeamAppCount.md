@@ -23,6 +23,13 @@ Get-MgAppCatalogTeamAppCount [-Filter <String>] [-Search <String>] [-ResponseHea
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppCatalog.Submit, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppCatalog.Read.All, AppCatalog.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Filter

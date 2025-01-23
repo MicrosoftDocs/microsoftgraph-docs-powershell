@@ -23,6 +23,13 @@ Get-MgEducationMe [-ExpandProperty <String[]>] [-Property <String[]>] [-Response
 ## DESCRIPTION
 Get me from education
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -ExpandProperty

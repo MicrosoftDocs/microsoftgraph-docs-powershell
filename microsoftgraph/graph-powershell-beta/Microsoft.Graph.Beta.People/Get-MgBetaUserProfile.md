@@ -29,6 +29,13 @@ Get-MgBetaUserProfile -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Represents properties that are descriptive of a user in a tenant.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: GET a user's profile
 

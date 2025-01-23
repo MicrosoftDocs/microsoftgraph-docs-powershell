@@ -63,7 +63,11 @@ Update-MgBetaEntitlementManagementAccessPackage -InputObject <IIdentityGovernanc
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

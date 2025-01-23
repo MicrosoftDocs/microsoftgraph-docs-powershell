@@ -39,6 +39,13 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
 ## DESCRIPTION
 The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

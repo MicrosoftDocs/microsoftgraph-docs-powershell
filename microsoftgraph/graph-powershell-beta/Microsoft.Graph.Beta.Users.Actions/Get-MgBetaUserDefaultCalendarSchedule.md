@@ -52,7 +52,11 @@ Get-MgBetaUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-getschedule-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

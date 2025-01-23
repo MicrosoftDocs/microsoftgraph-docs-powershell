@@ -23,6 +23,13 @@ Get-MgIdentityProviderCount [-Filter <String>] [-Search <String>] [-ResponseHead
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Filter

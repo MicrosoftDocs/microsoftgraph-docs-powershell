@@ -37,7 +37,11 @@ Create a new authenticationEventsFlow object that is of the type specified in th
 You can create only an externalUsersSelfServiceSignupEventsFlow object type.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-authenticationeventsflows-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Create a basic External Identities sign-up and sign-in user flow in an external tenant

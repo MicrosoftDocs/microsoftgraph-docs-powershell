@@ -37,6 +37,13 @@ Get-MgBetaWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesId
 ## DESCRIPTION
 Specifies the assets to include in the audience.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaWindowsUpdatesDeploymentAudienceMember Cmdlet
 ```powershell

@@ -47,7 +47,11 @@ Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity>
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-validatebulkresize-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

@@ -34,7 +34,11 @@ New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector>
 Create a new identityApiConnector object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityapiconnector-create-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Create an API connector with basic authentication

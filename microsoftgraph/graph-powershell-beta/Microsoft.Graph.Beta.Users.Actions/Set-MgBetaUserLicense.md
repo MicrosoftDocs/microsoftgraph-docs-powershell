@@ -60,7 +60,11 @@ Direct user licensing is an alternative to group-based licensing.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-assignlicense-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LicenseAssignment.ReadWrite.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Assign a license to a user

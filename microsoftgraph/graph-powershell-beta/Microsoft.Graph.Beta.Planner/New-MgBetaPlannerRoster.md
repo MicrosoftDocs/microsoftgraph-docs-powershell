@@ -31,7 +31,11 @@ New-MgBetaPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-Response
 Create a new plannerRoster object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-rosters-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

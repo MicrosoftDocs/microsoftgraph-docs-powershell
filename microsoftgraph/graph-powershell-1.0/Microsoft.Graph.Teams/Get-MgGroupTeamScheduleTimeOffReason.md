@@ -40,6 +40,13 @@ Get-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-ExpandPrope
 ## DESCRIPTION
 The set of reasons for a time off in the schedule.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

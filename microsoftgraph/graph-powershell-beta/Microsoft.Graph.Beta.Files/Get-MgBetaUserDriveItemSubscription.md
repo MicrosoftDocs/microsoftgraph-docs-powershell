@@ -42,6 +42,13 @@ Get-MgBetaUserDriveItemSubscription -InputObject <IFilesIdentity> [-ExpandProper
 The set of subscriptions on the item.
 Only supported on the root of a drive.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

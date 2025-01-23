@@ -32,6 +32,13 @@ New-MgBetaPrivilegedRoleAssignmentRequest -BodyParameter <IMicrosoftGraphPrivile
 ## DESCRIPTION
 Add new entity to privilegedRoleAssignmentRequests
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaPrivilegedRoleAssignmentRequest Cmdlet
 ```powershell

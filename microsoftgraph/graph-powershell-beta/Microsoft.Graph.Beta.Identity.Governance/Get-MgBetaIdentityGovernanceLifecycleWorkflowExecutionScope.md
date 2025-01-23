@@ -40,6 +40,13 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope -InputObject <IIdent
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra identity that last modified the workflow object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

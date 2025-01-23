@@ -40,10 +40,11 @@ Get-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDirecto
 Read the properties and relationships of an impactedResource object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-list-impactedresources-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

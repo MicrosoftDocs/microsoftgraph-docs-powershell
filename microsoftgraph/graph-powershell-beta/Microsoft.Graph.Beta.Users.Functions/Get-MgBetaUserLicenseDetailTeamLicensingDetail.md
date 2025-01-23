@@ -33,7 +33,11 @@ Get-MgBetaUserLicenseDetailTeamLicensingDetail -InputObject <IUsersFunctionsIden
 Get the license status of a user in Microsoft Teams.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/licensedetails-getteamslicensingdetails-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

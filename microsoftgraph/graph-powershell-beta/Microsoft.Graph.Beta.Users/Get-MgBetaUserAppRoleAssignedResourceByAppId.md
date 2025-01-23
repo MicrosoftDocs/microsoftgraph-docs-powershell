@@ -29,6 +29,13 @@ Get-MgBetaUserAppRoleAssignedResourceByAppId -InputObject <IUsersIdentity> [-Exp
 ## DESCRIPTION
 Get appRoleAssignedResources from users
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AppId

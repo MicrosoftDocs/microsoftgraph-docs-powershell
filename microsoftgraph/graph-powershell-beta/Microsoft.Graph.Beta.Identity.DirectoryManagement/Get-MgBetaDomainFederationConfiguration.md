@@ -43,10 +43,11 @@ Get-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 Read the properties and relationships of an internalDomainFederation object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internaldomainfederation-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-list-federationconfiguration-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.Read.All, Domain.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get the federation settings for a federated domain

@@ -25,7 +25,11 @@ Read the properties and relationships of the cloudPcOrganizationSettings from th
 A tenant has only one cloudPcOrganizationSettings object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcorganizationsettings-get-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

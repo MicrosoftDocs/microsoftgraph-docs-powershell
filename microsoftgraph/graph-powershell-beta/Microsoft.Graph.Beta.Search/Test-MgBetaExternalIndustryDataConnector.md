@@ -31,7 +31,11 @@ Test-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-Respon
 Perform validations applicable for the specific instance of the data connector.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-validate-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IndustryData-DataConnector.ReadWrite.All, IndustryData-DataConnector.Upload,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -42,7 +42,11 @@ Get-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandProperty 
 The activity related to user risk level change
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyuser-list-history-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

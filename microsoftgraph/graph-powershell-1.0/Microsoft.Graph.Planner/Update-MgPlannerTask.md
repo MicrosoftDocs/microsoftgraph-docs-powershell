@@ -66,7 +66,11 @@ Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
 Update the properties of plannerTask object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertask-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

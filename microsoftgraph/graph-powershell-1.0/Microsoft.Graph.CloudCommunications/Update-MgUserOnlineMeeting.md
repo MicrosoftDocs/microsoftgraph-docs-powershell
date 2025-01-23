@@ -70,6 +70,13 @@ Update-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Update the navigation property onlineMeetings in users
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetings.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetings.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

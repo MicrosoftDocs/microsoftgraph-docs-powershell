@@ -32,7 +32,11 @@ Get the currently active trustFrameworkKey in a trustFrameworkKeySet.
 Only one key is active in the keyset at a time.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-getactivekey-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

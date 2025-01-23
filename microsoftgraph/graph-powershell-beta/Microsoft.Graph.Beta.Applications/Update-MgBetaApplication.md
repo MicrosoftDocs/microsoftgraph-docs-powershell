@@ -102,7 +102,11 @@ Update-MgBetaApplication -InputObject <IApplicationsIdentity> -BodyParameter <IM
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-upsert-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Update an application

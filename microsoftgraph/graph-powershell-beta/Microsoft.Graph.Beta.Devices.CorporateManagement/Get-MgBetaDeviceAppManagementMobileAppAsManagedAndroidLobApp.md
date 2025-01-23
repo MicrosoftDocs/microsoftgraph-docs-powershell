@@ -40,6 +40,13 @@ Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobApp -InputObject <IDevi
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedAndroidLobApp
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

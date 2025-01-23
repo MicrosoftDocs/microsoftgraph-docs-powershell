@@ -31,7 +31,11 @@ Get-MgBetaReportMicrosoft365CopilotUsageUserDetail -InputObject <IReportsIdentit
 Get the most recent activity data for enabled users of Microsoft 365 Copilot apps.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getmicrosoft365copilotusageuserdetail-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: CSV output

@@ -31,7 +31,11 @@ Remove-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -InputObject <INet
 Removes the link between the branch or remote network and the CPE device, effectively removing the connection and associated configuration between them.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-delete-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

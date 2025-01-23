@@ -32,6 +32,13 @@ Remove-MgBetaAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property appDefinitions for appCatalogs
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppCatalog.Submit, Directory.ReadWrite.All, AppCatalog.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Headers

@@ -40,6 +40,13 @@ Get-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
 The Exchange on premises conditional access settings.
 On premises conditional access will require devices to be both enrolled and compliant for mail access
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -DeviceManagementExchangeOnPremisesPolicyId

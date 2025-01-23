@@ -42,6 +42,13 @@ Get-MgDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdministra
 ## DESCRIPTION
 Read properties and relationships of the termsAndConditions object.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

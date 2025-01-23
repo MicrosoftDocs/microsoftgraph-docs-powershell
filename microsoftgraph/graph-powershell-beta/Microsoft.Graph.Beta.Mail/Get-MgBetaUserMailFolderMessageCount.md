@@ -32,6 +32,13 @@ Get-MgBetaUserMailFolderMessageCount -InputObject <IMailIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Mail.ReadBasic,  |
+| Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
+
 ## PARAMETERS
 
 ### -Filter

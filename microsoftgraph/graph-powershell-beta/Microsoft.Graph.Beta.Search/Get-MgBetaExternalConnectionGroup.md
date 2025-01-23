@@ -40,6 +40,13 @@ Get-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get groups from external
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalItem.Read.All, ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

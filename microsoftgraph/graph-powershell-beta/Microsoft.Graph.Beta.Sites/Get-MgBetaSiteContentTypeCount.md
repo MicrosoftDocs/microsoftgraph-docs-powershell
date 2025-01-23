@@ -32,6 +32,13 @@ Get-MgBetaSiteContentTypeCount -InputObject <ISitesIdentity> [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+
 ## PARAMETERS
 
 ### -Filter

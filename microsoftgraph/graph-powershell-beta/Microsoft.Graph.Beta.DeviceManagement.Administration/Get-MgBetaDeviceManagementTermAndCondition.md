@@ -40,6 +40,13 @@ Get-MgBetaDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdmini
 ## DESCRIPTION
 The terms and conditions associated with device management of the company.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -All

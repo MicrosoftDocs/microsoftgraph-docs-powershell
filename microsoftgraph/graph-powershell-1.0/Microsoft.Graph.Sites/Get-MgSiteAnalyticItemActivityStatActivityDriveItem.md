@@ -32,6 +32,13 @@ Get-MgSiteAnalyticItemActivityStatActivityDriveItem -InputObject <ISitesIdentity
 ## DESCRIPTION
 Exposes the driveItem that was the target of this activity.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -43,6 +43,13 @@ Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFil
 ## DESCRIPTION
 Another way to input exempt apps through xml files
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementApps.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -All

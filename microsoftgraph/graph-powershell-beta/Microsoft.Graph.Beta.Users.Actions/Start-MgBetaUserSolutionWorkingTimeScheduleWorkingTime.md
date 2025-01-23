@@ -34,7 +34,11 @@ Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersActio
 Trigger the policies associated with the start of working hours for a specific user.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workingtimeschedule-startworkingtime-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

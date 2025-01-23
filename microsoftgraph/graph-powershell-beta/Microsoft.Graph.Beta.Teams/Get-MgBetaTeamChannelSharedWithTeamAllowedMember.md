@@ -43,7 +43,11 @@ Get-MgBetaTeamChannelSharedWithTeamAllowedMember -InputObject <ITeamsIdentity> [
 A collection of team members who have access to the shared channel.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharedwithchannelteaminfo-list-allowedmembers-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

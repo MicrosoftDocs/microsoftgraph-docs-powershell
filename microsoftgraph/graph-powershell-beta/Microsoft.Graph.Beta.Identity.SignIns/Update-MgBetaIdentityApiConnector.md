@@ -50,7 +50,11 @@ Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity>
 Update the properties of an identityApiConnector object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Changing display name, targetUrl, and username & password used for basic authentication

@@ -54,7 +54,11 @@ This data includes the user's data stored in OneDrive and their activity reports
 For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-exportpersonaldata-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

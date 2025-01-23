@@ -45,7 +45,11 @@ Use this GET operation to verify the exportJobStatus property of the cloudPcExpo
 The property becomes completed when the report finishes downloading in the location specified by the exportUrl property.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexportjob-get-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Get an export job for the TotalAggregatedRemoteConnectionReports report

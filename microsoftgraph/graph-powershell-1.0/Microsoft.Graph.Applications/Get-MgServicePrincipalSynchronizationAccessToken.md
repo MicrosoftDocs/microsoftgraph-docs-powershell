@@ -52,7 +52,11 @@ Get-MgServicePrincipalSynchronizationAccessToken -InputObject <IApplicationsIden
 Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## PARAMETERS
 

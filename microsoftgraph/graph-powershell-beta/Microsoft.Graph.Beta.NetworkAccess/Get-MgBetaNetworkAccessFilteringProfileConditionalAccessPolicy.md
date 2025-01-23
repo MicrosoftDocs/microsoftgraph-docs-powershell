@@ -40,6 +40,13 @@ Get-MgBetaNetworkAccessFilteringProfileConditionalAccessPolicy -InputObject <INe
 A set of associated policies defined to regulate access to resources or systems based on specific conditions.
 Automatically expanded.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -All

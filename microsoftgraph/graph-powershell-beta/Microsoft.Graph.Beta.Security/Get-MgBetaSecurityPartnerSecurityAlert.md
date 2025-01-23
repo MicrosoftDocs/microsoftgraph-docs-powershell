@@ -40,10 +40,11 @@ Get-MgBetaSecurityPartnerSecurityAlert -InputObject <ISecurityIdentity> [-Expand
 Read the properties and relationships of a partnerSecurityAlert object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityalert-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityalert-list-securityalerts-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PartnerSecurity.Read.All, PartnerSecurity.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

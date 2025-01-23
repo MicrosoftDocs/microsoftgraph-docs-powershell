@@ -35,7 +35,11 @@ Recommendations are generated if recommendationsEnabled is true on the accessRev
 If there isn't a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-acceptrecommendations-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

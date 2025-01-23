@@ -37,7 +37,11 @@ Unless there's a hold set on the mailbox, the items are permanently deleted afte
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-permanentdelete-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

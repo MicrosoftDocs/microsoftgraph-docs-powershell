@@ -52,7 +52,11 @@ Set-MgBetaServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdent
 Provide credentials for establishing connectivity with the target system.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-serviceprincipal-put-synchronization-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

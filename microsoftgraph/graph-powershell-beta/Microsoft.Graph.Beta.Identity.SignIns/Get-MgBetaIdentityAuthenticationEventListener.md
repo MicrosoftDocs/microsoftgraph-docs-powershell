@@ -42,7 +42,11 @@ Get-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIden
 Get authenticationEventListeners from identity
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-list-authenticationeventlisteners-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.Read.All, EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

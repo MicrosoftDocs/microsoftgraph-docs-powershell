@@ -24,7 +24,11 @@ Get-MgBetaReportCredentialUserRegistrationCount [-Count] [-ExpandProperty <Strin
 Report the current state of how many users in your organization are registered for self-service password reset and multifactor authentication (MFA) capabilities.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getcredentialuserregistrationcount-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

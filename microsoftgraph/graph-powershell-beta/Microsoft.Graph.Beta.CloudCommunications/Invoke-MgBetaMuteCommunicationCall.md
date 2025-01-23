@@ -54,7 +54,11 @@ This is a server mute, meaning that the server drops all audio packets for this 
 For more information about how to handle mute operations, see muteParticipantOperation.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-mute-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

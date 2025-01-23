@@ -54,7 +54,11 @@ Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationoutcome-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Update a feedback outcome

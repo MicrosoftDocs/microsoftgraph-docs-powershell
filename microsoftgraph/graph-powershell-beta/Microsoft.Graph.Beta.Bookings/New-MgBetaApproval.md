@@ -22,7 +22,11 @@ New-MgBetaApproval [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] 
 Provision an approvalSolution on behalf of a tenant.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalsolution-provision-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ApprovalSolution.Read, ApprovalSolutionResponse.ReadWrite, ApprovalSolution.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

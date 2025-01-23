@@ -58,7 +58,11 @@ You cannot update built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroledefinition-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

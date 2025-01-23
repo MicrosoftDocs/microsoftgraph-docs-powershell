@@ -46,6 +46,13 @@ Remove-MgBetaBookingCurrency -InputObject <IBookingsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete entity from bookingCurrencies
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -BookingCurrencyId

@@ -32,6 +32,13 @@ Remove-MgUserOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property pages for users
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Notes.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

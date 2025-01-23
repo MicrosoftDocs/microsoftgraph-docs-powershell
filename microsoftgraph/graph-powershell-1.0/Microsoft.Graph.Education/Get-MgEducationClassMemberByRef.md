@@ -26,7 +26,11 @@ Get-MgEducationClassMemberByRef -EducationClassId <String> [-Filter <String>] [-
 Retrieves the educationUser members of an educationClass.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-members-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.Read.All, Member.Read.Hidden, EduRoster.ReadWrite.All,  |
 
 ## PARAMETERS
 

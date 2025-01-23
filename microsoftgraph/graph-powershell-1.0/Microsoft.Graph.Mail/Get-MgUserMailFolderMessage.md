@@ -40,6 +40,13 @@ Get-MgUserMailFolderMessage -InputObject <IMailIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 The collection of messages in the mailFolder.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Mail.ReadBasic,  |
+| Application | Mail.Read, Mail.ReadBasic.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

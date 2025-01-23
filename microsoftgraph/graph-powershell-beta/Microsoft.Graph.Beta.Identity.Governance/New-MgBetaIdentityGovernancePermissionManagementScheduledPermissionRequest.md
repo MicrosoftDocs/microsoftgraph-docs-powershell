@@ -34,7 +34,11 @@ New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
 Create a new scheduledPermissionsRequest object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsmanagement-post-scheduledpermissionsrequests-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: AWS policy request

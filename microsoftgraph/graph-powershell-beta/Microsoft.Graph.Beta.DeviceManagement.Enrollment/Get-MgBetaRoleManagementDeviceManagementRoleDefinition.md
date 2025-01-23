@@ -37,6 +37,13 @@ Get-MgBetaRoleManagementDeviceManagementRoleDefinition -InputObject <IDeviceMana
 ## DESCRIPTION
 Get roleDefinitions from roleManagement
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.CloudPC, RoleManagement.Read.Directory, RoleManagement.Read.CloudPC, RoleManagement.Read.All, EntitlementManagement.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementRBAC.Read.All, RoleManagement.ReadWrite.Directory, EntitlementManagement.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, CloudPC.Read.All,  |
+
 ## PARAMETERS
 
 ### -All

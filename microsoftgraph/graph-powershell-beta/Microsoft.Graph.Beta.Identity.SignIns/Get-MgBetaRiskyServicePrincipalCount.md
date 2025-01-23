@@ -23,6 +23,13 @@ Get-MgBetaRiskyServicePrincipalCount [-Filter <String>] [-Search <String>] [-Res
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Filter

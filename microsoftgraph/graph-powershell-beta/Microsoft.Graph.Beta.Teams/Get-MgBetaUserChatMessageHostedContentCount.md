@@ -32,6 +32,13 @@ Get-MgBetaUserChatMessageHostedContentCount -InputObject <ITeamsIdentity> [-Filt
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMessage.Read.Chat, Chat.ReadWrite.All, Chat.Read.All,  |
+
 ## PARAMETERS
 
 ### -ChatId

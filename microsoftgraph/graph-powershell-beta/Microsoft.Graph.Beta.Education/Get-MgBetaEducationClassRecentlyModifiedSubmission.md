@@ -47,7 +47,11 @@ Only teachers or applications with application permissions can add or change gra
 Students can't see the grade or feedback until the assignment is released.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-getrecentlymodifiedsubmissions-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.Read, EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.Read.All, EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get recently modified submissions

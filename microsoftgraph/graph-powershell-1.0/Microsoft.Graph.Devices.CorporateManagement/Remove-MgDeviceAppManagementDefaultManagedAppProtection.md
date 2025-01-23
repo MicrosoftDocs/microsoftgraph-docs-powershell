@@ -32,6 +32,13 @@ Remove-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCo
 ## DESCRIPTION
 Deletes a defaultManagedAppProtection.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

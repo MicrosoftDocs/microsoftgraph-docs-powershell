@@ -46,7 +46,11 @@ Collection of pages with the overrides messages to display in a user flow for a 
 This collection only allows you to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-list-overridespages-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

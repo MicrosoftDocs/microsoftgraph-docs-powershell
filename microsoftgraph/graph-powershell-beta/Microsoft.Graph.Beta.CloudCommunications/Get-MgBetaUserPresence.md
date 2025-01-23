@@ -36,7 +36,11 @@ Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Presence.Read, Presence.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get your own presence information

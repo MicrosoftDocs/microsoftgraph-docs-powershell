@@ -51,6 +51,13 @@ Update the photo for the specified contact, group, team, or user in a tenant.
 The size of the photo you can update to is limited to 4 MB.
 You can use either PATCH or PUT for this operation.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -42,7 +42,11 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskReport -InputObject <IIdentityGover
 Represents the aggregation of task execution data for tasks within a workflow object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-list-taskreports-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: List the task reports for a workflow

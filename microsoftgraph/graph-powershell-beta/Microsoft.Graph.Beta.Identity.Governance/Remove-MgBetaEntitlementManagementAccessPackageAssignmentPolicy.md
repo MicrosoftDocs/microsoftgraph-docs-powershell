@@ -34,7 +34,11 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -InputObject <II
 In Microsoft Entra entitlement management, delete an accessPackageAssignmentPolicy.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentpolicy-delete-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Remove an access package assignment policy

@@ -32,6 +32,13 @@ Remove-MgBetaSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRe
 ## DESCRIPTION
 Delete navigation property exchangeRestoreSessions for solutions
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -ExchangeRestoreSessionId

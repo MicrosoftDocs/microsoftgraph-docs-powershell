@@ -40,6 +40,13 @@ Get-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 The email address registered to a user for authentication.
 
+**Permissions**
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

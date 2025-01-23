@@ -38,7 +38,11 @@ An issue only with status of PostIncidentReviewPublished indicates that the PIR 
 The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/servicehealthissue-incidentreport-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -51,7 +51,11 @@ Unarchiving a plan, also unarchives the plannerTasks and plannerBuckets in the p
 Only a plan that is archived can be unarchived.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-unarchive-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

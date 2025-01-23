@@ -53,7 +53,11 @@ Update the Active Directory domain password for a cloudPcOnPremisesConnection ob
 This API is supported when the type of the cloudPcOnPremisesConnection object is hybridAzureADJoin.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-updateaddomainpassword-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

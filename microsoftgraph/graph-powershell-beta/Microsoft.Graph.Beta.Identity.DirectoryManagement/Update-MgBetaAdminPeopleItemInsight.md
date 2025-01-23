@@ -38,7 +38,11 @@ The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/insightssettings-update-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Update settings for item insights

@@ -44,7 +44,11 @@ If the header Prefer: include-unknown-enum-members is provided, a reassigned sub
 For details, see the examples section.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-reassign-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWrite.All, Notes.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Request without optional Prefer header

@@ -44,7 +44,11 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult
 The related lifecycle workflow taskProcessingResults.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-taskreport-list-taskprocessingresults-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: List the task processing results that are included in a task report for a workflow
