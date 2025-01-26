@@ -122,6 +122,7 @@ extends:
             targetType: 'filePath'
             pwsh: true
             filePath: scripts/UpdateLinks.ps1
+            errorActionPreference: 'stop'
         - task: PowerShell@2
           displayName: 'Repair Examples and Descriptions and Title'
           continueOnError: false
