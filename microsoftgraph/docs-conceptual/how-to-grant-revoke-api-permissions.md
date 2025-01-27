@@ -44,7 +44,7 @@ Before you can grant delegated permissions, you must first identify the delegate
 In this article, you use the `Microsoft Graph` service principal in the tenant as your resource service principal.
 
 ```powershell
-Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property Oauth2PermissionScopes | Select -ExpandProperty Oauth2PermissionScopes | fl 
+Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property Oauth2PermissionScopes | Select -ExpandProperty Oauth2PermissionScopes | Format-List 
 ```
 
 ```Output
