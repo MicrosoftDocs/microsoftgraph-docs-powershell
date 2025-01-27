@@ -6,57 +6,59 @@ param(
 function Start-Generator {
     # Load the JSON file
     $MgCommandMetadatJson = Get-Content $MgCommandMetadatJsonFile | ConvertFrom-Json;
-
-    $MgCommandMetadatJson | ForEach-Object {
-        $CommandName = $_.Command;
-        $ApiVersion = $_.ApiVersion
-        $Module = $_.Module;
-        #Array for DelegatedWork Permissions
-        $DelegatedWorkPermissions = @();
-        #Array for Application Permissions
-        $ApplicationPermissions = @();
-        #Array for DelegatedPersonal Permissions
-        $DelegatedPersonalPermissions = @();
-        #Get Permissions
-        $Permissions = $_.Permissions;
-        $Permissions | ForEach-Object {
-            $Permission = $_;
-            $PermissionName = $Permission.Name;
-            $PermissionType = $Permission.PermissionType;
-            if ($PermissionType -eq "DelegatedWork") {
-                $DelegatedWorkPermissions += $PermissionName;
-            }
-            elseif ($PermissionType -eq "Application") {
-                $ApplicationPermissions += $PermissionName;
-            }
-            elseif ($PermissionType -eq "DelegatedPersonal") {
-                $DelegatedPersonalPermissions += $PermissionName;
-            }
-        }
-        #If its already in the list, skip it
-        if ($CmdList -notcontains $CommandName) {
-            #Check if all types of permissions in the their respective arrays are empty. If empty just skip the command
-            if ($DelegatedWorkPermissions.Count -eq 0 -and $ApplicationPermissions.Count -eq 0 -and $DelegatedPersonalPermissions.Count -eq 0) {
-                Write-Host "Skipping $CommandName as it does not have any permissions";
-            }
-            else {
-                try {
-                    New-ReferenceTable -CommandName $CommandName -DelegatedWorkPermissions $DelegatedWorkPermissions -ApplicationPermissions $ApplicationPermissions -DelegatedPersonalPermissions $DelegatedPersonalPermissions -ApiVersion $ApiVersion -Module $Module; 
+    try {
+        $MgCommandMetadatJson | ForEach-Object {
+            $CommandName = $_.Command;
+            $ApiVersion = $_.ApiVersion
+            $Module = $_.Module;
+            #Array for DelegatedWork Permissions
+            $DelegatedWorkPermissions = @();
+            #Array for Application Permissions
+            $ApplicationPermissions = @();
+            #Array for DelegatedPersonal Permissions
+            $DelegatedPersonalPermissions = @();
+            #Get Permissions
+            $Permissions = $_.Permissions;
+            $Permissions | ForEach-Object {
+                $Permission = $_;
+                $PermissionName = $Permission.Name;
+                $PermissionType = $Permission.PermissionType;
+                if ($PermissionType -eq "DelegatedWork") {
+                    $DelegatedWorkPermissions += $PermissionName;
                 }
-                catch {
-                    Write-Host "Error in $CommandName";
+                elseif ($PermissionType -eq "Application") {
+                    $ApplicationPermissions += $PermissionName;
                 }
+                elseif ($PermissionType -eq "DelegatedPersonal") {
+                    $DelegatedPersonalPermissions += $PermissionName;
+                }
+            }
+            #If its already in the list, skip it
+            if ($CmdList -notcontains $CommandName) {
+                #Check if all types of permissions in the their respective arrays are empty. If empty just skip the command
+                if ($DelegatedWorkPermissions.Count -eq 0 -and $ApplicationPermissions.Count -eq 0 -and $DelegatedPersonalPermissions.Count -eq 0) {
+                    Write-Host "Skipping $CommandName as it does not have any permissions";
+                }
+                else {
                 
-            }
-        } 
-        $CmdList += $CommandName;  
+                    New-ReferenceTable -CommandName $CommandName -DelegatedWorkPermissions $DelegatedWorkPermissions -ApplicationPermissions $ApplicationPermissions -DelegatedPersonalPermissions $DelegatedPersonalPermissions -ApiVersion $ApiVersion -Module $Module; 
+                
+                
+                }
+            } 
+            $CmdList += $CommandName;  
         
     
     
-        git config --global user.email "GraphTooling@service.microsoft.com"
-        git config --global user.name "Microsoft Graph DevX Tooling"
-        git add .
-        git commit -m "Inserted permissions Table"
+            git config --global user.email "GraphTooling@service.microsoft.com"
+            git config --global user.name "Microsoft Graph DevX Tooling"
+            git add .
+            git commit -m "Inserted permissions Table"
+        }
+
+    }
+    catch {
+        Write-Host "Error in $_";
     }
         
 }
@@ -164,7 +166,7 @@ function New-ReferenceTable {
         }
     }
     catch {
-        Write-Host "Error in $CommandName";
+        Write-Host "Error in $_";
 
     }
 }
