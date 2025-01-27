@@ -123,13 +123,14 @@ To create a delegated permission grant, you need the following information:
 1. **ResourceId** - object ID of the service principal representing the resource app in the tenant.
 1. **Scope** - space-delimited list of permission claim values, for example `User.Read.All`.
 
-In this example, the object ID of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You grant the `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
+In this example, you grant the `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
 
 ```powershell
+$resource = Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'"
 $params = @{
   "ClientId" = "11112222-bbbb-3333-cccc-4444dddd5555"
   "ConsentType" = "AllPrincipals"
-  "ResourceId" = "2cab1707-656d-40cc-8522-3178a184e03d"
+  "ResourceId" = $resource.Id
   "Scope" = "Group.Read.All"
 }
 
@@ -142,7 +143,7 @@ Id          : DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw
 ClientId    : 11112222-bbbb-3333-cccc-4444dddd5555
 ConsentType : AllPrincipals
 PrincipalId :
-ResourceId  : a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c
+ResourceId  : 11112222-bbbb-3333-cccc-4444dddd5555
 Scope       : Group.Read.All
 ```
 
@@ -157,7 +158,7 @@ ClientId             : 11112222-bbbb-3333-cccc-4444dddd5555
 ConsentType          : AllPrincipals
 Id                   : DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw
 PrincipalId          :
-ResourceId           : 2cab1707-656d-40cc-8522-3178a184e03d
+ResourceId           : 11112222-bbbb-3333-cccc-4444dddd5555
 Scope                : Group.Read.All User.Read.All
 AdditionalProperties : {}
 ```
@@ -299,14 +300,18 @@ In this step, you assign an app role exposed by your resource app to the service
 1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
 1. **AppRoleId** - Id of the app role to be assigned, defined on the service principal representing the resource.
 
+
+
 ```powershell
+$resource = Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'"
+$roleId = $resource.AppRoles | Where-Object { $_.Value -eq 'User.Read.All' } | Select-Object -ExpandProperty Id
 $params = @{
   "PrincipalId" ="11112222-bbbb-3333-cccc-4444dddd5555"
-  "ResourceId" = "2cab1707-656d-40cc-8522-3178a184e03d"
-  "AppRoleId" = "df021288-bdef-4463-88db-98f22de89214"
+  "ResourceId" = $resource.Id
+  "AppRoleId" = $roleId
 }
 
-New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId '2cab1707-656d-40cc-8522-3178a184e03d' -BodyParameter $params | 
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $resource.Id -BodyParameter $params | 
   Format-List Id, AppRoleId, CreatedDateTime, PrincipalDisplayName, PrincipalId, PrincipalType, ResourceDisplayName
 ```
 
