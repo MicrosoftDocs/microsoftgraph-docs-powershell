@@ -28,7 +28,7 @@ To successfully complete this guide, make sure you have the required prerequisit
 
 1. A working Microsoft Entra tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a Privileged Role Administrator, Application Administrator, or a Cloud Application Administrator in the tenant and the appropriate permissions. For this guide, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
+1. Microsoft Graph PowerShell using a [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator), [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator), or a [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator) in the tenant and the appropriate permissions. For this guide, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "DelegatedPermissionGrant.ReadWrite.All"
@@ -211,7 +211,7 @@ To successfully complete this guide, make sure you have the required prerequisit
 
 1. A working Microsoft Entra tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a Privileged Role Administrator in the tenant and the appropriate permissions. For this guide, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
+1. Microsoft Graph PowerShell using a [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator) in the tenant and the appropriate permissions. For this guide, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
@@ -227,7 +227,7 @@ Before you can grant app roles, you must first identify the app roles to grant a
 In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
 
 ```powershell
-Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property AppRoles | Select -ExpandProperty appRoles |fl
+Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property AppRoles | Select-Object -ExpandProperty appRoles | Format-List
 ```
 
 ```Output
@@ -255,7 +255,7 @@ AdditionalProperties : {}
 
 ## Step 2: Create a client service principal
 
-The first step in granting consent is to [create the service principal for the app that you'll grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
+The first step in granting consent is to [create the service principal for the app that you'll grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal). To do so, you'll need the `App Id` of your application.
 
 <a name='register-an-application-with-azure-ad'></a>
 
