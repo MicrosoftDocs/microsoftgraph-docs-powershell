@@ -7,7 +7,7 @@
         },
         {
             "source_path": "microsoftgraph/docs-conceptual/tutorial-pim.md",
-            "redirect_url": "microsoftgraph/docs-conceptual/how-to-assign-microsoft-entra-roles-in-pim.md",
+            "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/how-to-assign-microsoft-entra-roles-in-pim",
             "redirect_document_id": false
         }
     ]
