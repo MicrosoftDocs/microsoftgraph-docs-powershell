@@ -3,7 +3,7 @@ title: "Assign Microsoft Entra roles in Privileged Identity Management using Mic
 description: "Learn how to create eligible and active role assignments in Microsoft Entra Privileged Identity Management using Microsoft Graph PowerShell"
 
 ms.topic: how-to
-ms.date: 01/20/2025
+ms.date: 01/28/2025
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -26,7 +26,7 @@ To successfully complete this guide, make sure you have the required prerequisit
 1. To use the Microsoft Entra Privileged Identity Management, you must have one of the following licenses:
     - Microsoft Entra ID P2
     - Enterprise Mobility + Security (EMS) E5 license
-1. Microsoft Graph PowerShell using a Privileged Role Administrator role and the appropriate permissions. For this guide, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator) role and the appropriate permissions. For this guide, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
     Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"
