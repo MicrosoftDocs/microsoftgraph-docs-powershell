@@ -2,7 +2,7 @@
 title: "Grant and revoke API permissions programmatically in Microsoft Entra ID"
 description: "Learn how to programmatically grant and revoke delegated and application API permissions for an app using Microsoft Graph PowerShell."
 ms.topic: how-to
-ms.date: 01/22/2025
+ms.date: 01/27/2025
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -41,7 +41,7 @@ To successfully complete this guide, make sure you have the required prerequisit
 
 Before you can grant delegated permissions, you must first identify the delegated permissions to grant and the resource service principal that exposes the delegated permissions. Delegated permissions are defined in the `oauth2PermissionScopes` object of a service principal.
 
-In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
+In this article, you use the `Microsoft Graph` service principal in the tenant as your resource service principal.
 
 ```powershell
 Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property Oauth2PermissionScopes | Select -ExpandProperty Oauth2PermissionScopes | fl 
@@ -78,7 +78,7 @@ AdditionalProperties    : {}
 
 ## Step 2: Create a client service principal
 
-The first step in granting consent is to [create the service principal for the app that you'll grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
+The first step in granting consent is to [create the service principal for the app that you grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you need the `App Id` of your application.
 
 <a name='register-an-application-with-azure-ad'></a>
 
@@ -94,7 +94,7 @@ New-MgApplication -DisplayName 'My application' |
 ```Output
 Id              : 40cbfad6-f138-4fb4-9e7f-5a44044efbd6
 DisplayName     : My application
-AppId           : 05210c44-437f-4a40-bd38-b5b4eaf251ef
+AppId           : 00001111-aaaa-2222-bbbb-3333cccc4444
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : Contoso.com
 ```
@@ -102,20 +102,20 @@ PublisherDomain : Contoso.com
 ### Create a service principal for the application
 
 ```powershell
-New-MgServicePrincipal -AppId '05210c44-437f-4a40-bd38-b5b4eaf251ef' | 
+New-MgServicePrincipal -AppId '00001111-aaaa-2222-bbbb-3333cccc4444' | 
   Format-List Id, DisplayName, AppId, SignInAudience
 ```
 
 ```Output
-Id             : 22c1770d-30df-49e7-a763-f39d2ef9b369
+Id             : 11112222-bbbb-3333-cccc-4444dddd5555
 DisplayName    : My application
-AppId          : 05210c44-437f-4a40-bd38-b5b4eaf251ef
+AppId          : 00001111-aaaa-2222-bbbb-3333cccc4444
 SignInAudience : AzureADandPersonalMicrosoftAccount
 ```
 
 ## Step 3: Grant delegated permissions to the client enterprise application
 
-To create a delegated permission grant, you'll need the following information:
+To create a delegated permission grant, you need the following information:
 
 1. **ClientId** - object ID of the client service principal to be authorized to act on behalf of the user. In this case, the service principal we created in step 2.
 1. **ConsentType** - `AllPrincipals` to authorize all users in the tenant or `Principal` for a single user.
@@ -123,11 +123,11 @@ To create a delegated permission grant, you'll need the following information:
 1. **ResourceId** - object ID of the service principal representing the resource app in the tenant.
 1. **Scope** - space-delimited list of permission claim values, for example `User.Read.All`.
 
-In this example, the object ID of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You'll grant the `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
+In this example, the object ID of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You grant the `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
 
 ```powershell
 $params = @{
-  "ClientId" = "22c1770d-30df-49e7-a763-f39d2ef9b369"
+  "ClientId" = "11112222-bbbb-3333-cccc-4444dddd5555"
   "ConsentType" = "AllPrincipals"
   "ResourceId" = "2cab1707-656d-40cc-8522-3178a184e03d"
   "Scope" = "Group.Read.All"
@@ -139,20 +139,21 @@ New-MgOauth2PermissionGrant -BodyParameter $params |
 
 ```Output
 Id          : DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw
-ClientId    : 22c1770d-30df-49e7-a763-f39d2ef9b369
+ClientId    : 11112222-bbbb-3333-cccc-4444dddd5555
 ConsentType : AllPrincipals
 PrincipalId :
 ResourceId  : a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c
 Scope       : Group.Read.All
 ```
+
 To confirm the delegated permissions assigned to the service principal on behalf of the user, you run the following command.
 
 ```powershell
-Get-MgOauth2PermissionGrant -Filter "clientId eq '22c1770d-30df-49e7-a763-f39d2ef9b369' and consentType eq 'AllPrincipals'"
+Get-MgOauth2PermissionGrant -Filter "clientId eq '11112222-bbbb-3333-cccc-4444dddd5555' and consentType eq 'AllPrincipals'"
 ```
 
 ```Output
-ClientId             : 22c1770d-30df-49e7-a763-f39d2ef9b369
+ClientId             : 11112222-bbbb-3333-cccc-4444dddd5555
 ConsentType          : AllPrincipals
 Id                   : DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw
 PrincipalId          :
@@ -224,7 +225,7 @@ To successfully complete this guide, make sure you have the required prerequisit
 
 Before you can grant app roles, you must first identify the app roles to grant and the resource service principal that exposes the app roles. App roles are defined in the `appRoles` object of a service principal.
 
-In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
+In this article, you use the `Microsoft Graph` service principal in the tenant as your resource service principal.
 
 ```powershell
 Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property AppRoles | Select-Object -ExpandProperty appRoles | Format-List
@@ -255,7 +256,7 @@ AdditionalProperties : {}
 
 ## Step 2: Create a client service principal
 
-The first step in granting consent is to [create the service principal for the app that you'll grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal). To do so, you'll need the `App Id` of your application.
+The first step in granting consent is to [create the service principal for the app that you grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal). To do so, you need the `App Id` of your application.
 
 <a name='register-an-application-with-azure-ad'></a>
 
@@ -271,7 +272,7 @@ New-MgApplication -DisplayName 'My application' |
 ```Output
 Id              : 40cbfad6-f138-4fb4-9e7f-5a44044efbd6
 DisplayName     : My application
-AppId           : 05210c44-437f-4a40-bd38-b5b4eaf251ef
+AppId           : 00001111-aaaa-2222-bbbb-3333cccc4444
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : Contoso.com
 ```
@@ -279,20 +280,20 @@ PublisherDomain : Contoso.com
 ### Create a service principal for the application
 
 ```powershell
-New-MgServicePrincipal -AppId '05210c44-437f-4a40-bd38-b5b4eaf251ef' | 
+New-MgServicePrincipal -AppId '00001111-aaaa-2222-bbbb-3333cccc4444' | 
   Format-List Id, DisplayName, AppId, SignInAudience
 ```
 
 ```Output
-Id             : 22c1770d-30df-49e7-a763-f39d2ef9b369
+Id             : 11112222-bbbb-3333-cccc-4444dddd5555
 DisplayName    : My application
-AppId          : 05210c44-437f-4a40-bd38-b5b4eaf251ef
+AppId          : 00001111-aaaa-2222-bbbb-3333cccc4444
 SignInAudience : AzureADandPersonalMicrosoftAccount
 ```
 
 ## Step 3: Assign an app role to the client enterprise application
 
-In this step, you'll assign an app role exposed by your resource app to the service principal we created in step 2. To create an app role assignment, you'll need the following information:
+In this step, you assign an app role exposed by your resource app to the service principal we created in step 2. To create an app role assignment, you need the following information:
 
 1. **PrincipalId** - object Id of the service principal to be authorized for direct access.
 1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
@@ -300,7 +301,7 @@ In this step, you'll assign an app role exposed by your resource app to the serv
 
 ```powershell
 $params = @{
-  "PrincipalId" ="22c1770d-30df-49e7-a763-f39d2ef9b369"
+  "PrincipalId" ="11112222-bbbb-3333-cccc-4444dddd5555"
   "ResourceId" = "2cab1707-656d-40cc-8522-3178a184e03d"
   "AppRoleId" = "df021288-bdef-4463-88db-98f22de89214"
 }
@@ -316,7 +317,7 @@ Id                   : DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0
 AppRoleId            : df021288-bdef-4463-88db-98f22de89214
 CreatedDateTime      : 10/31/2022 11:00:47 AM
 PrincipalDisplayName : My application
-PrincipalId          : 22c1770d-30df-49e7-a763-f39d2ef9b369
+PrincipalId          : 11112222-bbbb-3333-cccc-4444dddd5555
 PrincipalType        : ServicePrincipal
 ResourceDisplayName  : Microsoft Graph
 ```
@@ -326,7 +327,7 @@ ResourceDisplayName  : Microsoft Graph
 To revoke the app roles assigned in step 3, run:
 
 ```powershell
-Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId '22c1770d-30df-49e7-a763-f39d2ef9b369' -AppRoleAssignmentId 'DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0'
+Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId '11112222-bbbb-3333-cccc-4444dddd5555' -AppRoleAssignmentId 'DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0'
 ```
 
 ::: zone-end

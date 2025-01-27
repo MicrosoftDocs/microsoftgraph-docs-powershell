@@ -2,17 +2,17 @@
     "redirections": [
         {
             "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Calendar/Get-MgPlace.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0",
+            "redirect_url": "https://learn.microsoft.com//powershell/microsoftgraph/",
             "redirect_document_id": false
         },
         {
             "source_path": "microsoftgraph/docs-conceptual/tutorial-grant-delegated-api-permissions.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0",
+            "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/how-to-grant-revoke-api-permissions&pivots=grant-delegated-permissions",
             "redirect_document_id": false
         },
         {
             "source_path": "microsoftgraph/docs-conceptual/tutorial-grant-app-only-api-permissions.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0",
+            "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/how-to-grant-revoke-api-permissions&pivots=grant-application-permissions",
             "redirect_document_id": false
         }
     ]
