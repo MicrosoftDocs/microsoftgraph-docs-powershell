@@ -41,6 +41,14 @@ Get-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-ExpandProp
 Retrieve the properties of a single delegated permission grant represented by an oAuth2PermissionGrant object.
 An oAuth2PermissionGrant represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All, Directory.ReadWrite.All, DelegatedPermissionGrant.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

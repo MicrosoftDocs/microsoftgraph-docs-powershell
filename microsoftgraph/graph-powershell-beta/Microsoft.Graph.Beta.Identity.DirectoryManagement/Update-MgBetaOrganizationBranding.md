@@ -71,6 +71,14 @@ Update-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Update the properties of the default branding object specified by the organizationalBranding resource.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

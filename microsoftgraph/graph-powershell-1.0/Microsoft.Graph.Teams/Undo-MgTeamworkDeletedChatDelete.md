@@ -30,6 +30,14 @@ Undo-MgTeamworkDeletedChatDelete -InputObject <ITeamsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Restore a  deletedChat to an active chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ManageDeletion.All, Chat.ManageDeletion.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

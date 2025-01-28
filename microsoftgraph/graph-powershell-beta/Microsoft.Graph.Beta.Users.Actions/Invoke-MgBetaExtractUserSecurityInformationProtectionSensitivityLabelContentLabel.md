@@ -51,6 +51,14 @@ Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabe
 Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | InformationProtectionPolicy.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | InformationProtectionPolicy.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

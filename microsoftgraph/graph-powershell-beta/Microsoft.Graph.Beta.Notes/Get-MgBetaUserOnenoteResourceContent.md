@@ -29,6 +29,14 @@ Get-MgBetaUserOnenoteResourceContent -InputObject <INotesIdentity> -OutFile <Str
 ## DESCRIPTION
 The content of the resource.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
+| Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

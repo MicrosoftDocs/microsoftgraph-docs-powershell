@@ -30,6 +30,14 @@ Remove-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Delete a directory setting.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

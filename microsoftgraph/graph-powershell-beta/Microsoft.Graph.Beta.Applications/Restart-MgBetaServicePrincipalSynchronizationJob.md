@@ -50,6 +50,14 @@ Restart-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIden
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
