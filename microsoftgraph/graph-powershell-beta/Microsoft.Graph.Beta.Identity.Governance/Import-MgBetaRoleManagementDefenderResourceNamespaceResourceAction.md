@@ -47,18 +47,6 @@ Import-MgBetaRoleManagementDefenderResourceNamespaceResourceAction -InputObject 
 ## DESCRIPTION
 Invoke action importResourceActions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,6 +360,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/import-mgbetarolemanagementdefenderresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/import-mgbetarolemanagementdefenderresourcenamespaceresourceaction)
+
 
 
 

@@ -59,18 +59,6 @@ Update-MgSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackupRest
 Update an Exchange protection policy.
 This method adds a mailboxprotectionunit to or removes it from the protection policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -569,6 +557,7 @@ RETENTIONSETTINGS `<IMicrosoftGraphRetentionSetting- `[]`>`: Contains the retent
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangeprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangeprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-1.0)
+
 
 
 

@@ -54,18 +54,6 @@ Update-MgUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property shared in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -493,6 +481,7 @@ Can be by a 1Link1, 1Attachment1, 1Group1, 1Site1.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsightshared](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsightshared)
+
 
 
 

@@ -31,18 +31,6 @@ Find-MgBetaWindowsUpdatesProductByKbNumber -InputObject <IWindowsUpdatesIdentity
 ## DESCRIPTION
 Invoke function findByKbNumber
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -277,6 +265,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/find-mgbetawindowsupdatesproductbykbnumber](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/find-mgbetawindowsupdatesproductbykbnumber)
+
 
 
 

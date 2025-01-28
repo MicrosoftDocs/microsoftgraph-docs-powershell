@@ -33,18 +33,6 @@ Remove-MgSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> [-If
 ## DESCRIPTION
 Delete a draft restoreSessionBase object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -228,6 +216,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresession)
 
 [https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-1.0)
+
 
 
 
