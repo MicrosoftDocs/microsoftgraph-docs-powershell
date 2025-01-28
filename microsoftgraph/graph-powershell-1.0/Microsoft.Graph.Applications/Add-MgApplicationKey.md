@@ -61,7 +61,7 @@ You can use the Update application operation to perform an update instead.
 
 **Permissions**
 ```yaml
- Permission type: Permissions-From least to most privileged
+ Permission type: Permissions
  Delegated (work or school account): Not supported 
  Delegated (personal Microsoft account): Not supported
  Application: Application.ReadWrite.OwnedBy,Directory.ReadWrite.All,Application.ReadWrite.All  
