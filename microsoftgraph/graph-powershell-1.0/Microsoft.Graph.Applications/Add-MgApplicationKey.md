@@ -61,11 +61,11 @@ You can use the Update application operation to perform an update instead.
 
 **Permissions**
 ```yaml
-| Permission type | Permissions (from least to most privileged) |
-| :--------------- | :------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All  |
+ Permission type: Permissions (from least to most privileged) 
+  
+ Delegated (work or school account): Not supported 
+ Delegated (personal Microsoft account): Not supported
+ Application: Application.ReadWrite.OwnedBy,Directory.ReadWrite.All,Application.ReadWrite.All  
 ```
 
 ## EXAMPLES
