@@ -50,11 +50,11 @@ Invoke-MgAcceptUserEvent -InputObject <IUsersActionsIdentity>
 Accept the specified event in a user calendar.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	comment = "comment-value"
@@ -63,6 +63,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgAcceptUserEvent Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,13 +51,17 @@ Retrieve the properties and relationships of an openshift object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleOpenShift -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamScheduleOpenShift Cmdlet.
+
 
 ## PARAMETERS
 

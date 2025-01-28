@@ -35,18 +35,6 @@ Restore-MgBetaUserDriveRootVersion -InputObject <IUsersActionsIdentity> [-Respon
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -268,6 +256,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriverootversion)
 
 [https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-beta)
+
 
 
 

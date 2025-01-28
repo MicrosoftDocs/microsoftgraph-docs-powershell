@@ -70,24 +70,47 @@ After 30 days, the item is permanently deleted.
 | Application | User.DeleteRestore.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
 
-### EXAMPLE 2
 ```
+This example shows how to use the Restore-MgBetaDirectoryDeletedItem Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	autoReconcileProxyConflict = $true
 }
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgBetaDirectoryDeletedItem Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	newUserPrincipalName = "johndoe@contoso.com"
+}
+
+Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgBetaDirectoryDeletedItem Cmdlet.
+
 
 ## PARAMETERS
 

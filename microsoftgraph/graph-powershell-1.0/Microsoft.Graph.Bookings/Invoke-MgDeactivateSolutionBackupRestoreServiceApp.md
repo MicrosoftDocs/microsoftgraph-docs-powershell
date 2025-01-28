@@ -33,13 +33,17 @@ Invoke-MgDeactivateSolutionBackupRestoreServiceApp -InputObject <IBookingsIdenti
 Deactivate a serviceApp.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Invoke-MgDeactivateSolutionBackupRestoreServiceApp -ServiceAppId $serviceAppId
+
+```
+This example shows how to use the Invoke-MgDeactivateSolutionBackupRestoreServiceApp Cmdlet.
+
 
 ## PARAMETERS
 

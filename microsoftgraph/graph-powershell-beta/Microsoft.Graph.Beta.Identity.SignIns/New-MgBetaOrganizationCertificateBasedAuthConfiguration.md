@@ -50,22 +50,26 @@ New-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentityS
 Create a new certificateBasedAuthConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	certificateAuthorities = @(
 		@{
 			isRootAuthority = $true
-			certificate = \[System.Text.Encoding\]::ASCII.GetBytes("Binary")
+			certificate = [System.Text.Encoding]::ASCII.GetBytes("Binary")
 		}
 	)
 }
 
 New-MgBetaOrganizationCertificateBasedAuthConfiguration -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaOrganizationCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

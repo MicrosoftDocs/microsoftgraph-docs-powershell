@@ -66,11 +66,11 @@ The API returns an informationProtectionAction that contains one of more of the 
 | Application | InformationProtectionPolicy.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	contentInfo = @{
@@ -78,7 +78,7 @@ $params = @{
 		"format@odata.type" = "#microsoft.graph.security.contentFormat"
 		format = "default"
 		contentFormat = "File"
-		identifier = "c:\userew.docx"
+		identifier = "c:\user\new.docx"
 		"state@odata.type" = "#microsoft.graph.security.contentState"
 		state = "rest"
 		metadata = @(
@@ -94,6 +94,10 @@ $params = @{
 }
 
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult Cmdlet.
+
 
 ## PARAMETERS
 

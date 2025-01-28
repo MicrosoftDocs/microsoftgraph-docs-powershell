@@ -37,13 +37,17 @@ Delete a registration question from a webinar.
 The question can either be a predefined registration question or a custom registration question.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventRegistrationQuestionBaseId $virtualEventRegistrationQuestionBaseId
+
+```
+This example shows how to use the Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion Cmdlet.
+
 
 ## PARAMETERS
 

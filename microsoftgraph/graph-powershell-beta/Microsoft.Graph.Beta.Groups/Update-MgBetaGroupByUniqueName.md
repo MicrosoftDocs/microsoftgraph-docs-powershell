@@ -118,11 +118,11 @@ For a list of properties that are returned by default, see the Properties sectio
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
 ## EXAMPLES
+### Example 1: Create a Microsoft 365 group if it doesn't exist
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	description = "Self help community for golf"
@@ -135,12 +135,16 @@ mailNickname = "golfassist"
 securityEnabled = $false
 }
 
-Update-MgBetaGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId
+Update-MgBetaGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId 
 
-### EXAMPLE 2
 ```
+This example will create a microsoft 365 group if it doesn't exist
+
+### Example 2: Create a security group with an owner and members if it doesn't exist
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	description = "Group with designated owner and members"
@@ -159,7 +163,11 @@ $params = @{
 )
 }
 
-Update-MgBetaGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId
+Update-MgBetaGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId 
+
+```
+This example will create a security group with an owner and members if it doesn't exist
+
 
 ## PARAMETERS
 

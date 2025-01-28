@@ -54,11 +54,11 @@ Update-MgIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsIde
 Update the properties of a customAuthenticationExtension object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
@@ -83,6 +83,10 @@ $params = @{
 }
 
 Update-MgIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityCustomAuthenticationExtension Cmdlet.
+
 
 ## PARAMETERS
 

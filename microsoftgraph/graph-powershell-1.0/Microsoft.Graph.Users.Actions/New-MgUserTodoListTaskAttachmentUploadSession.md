@@ -68,11 +68,11 @@ The following are the steps to attach a file to a Microsoft To Do task using an 
 | Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	attachmentInfo = @{
@@ -84,6 +84,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserTodoListTaskAttachmentUploadSession -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserTodoListTaskAttachmentUploadSession Cmdlet.
+
 
 ## PARAMETERS
 

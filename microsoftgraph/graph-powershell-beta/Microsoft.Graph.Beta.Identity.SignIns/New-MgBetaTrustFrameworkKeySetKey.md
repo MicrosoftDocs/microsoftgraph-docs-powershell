@@ -49,11 +49,11 @@ Generate a trustFrameworkKey and a secret automatically in the trustFrameworkKey
 The caller doesn't have to provide a secret.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	use = "sig"
@@ -63,6 +63,10 @@ $params = @{
 }
 
 New-MgBetaTrustFrameworkKeySetKey -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTrustFrameworkKeySetKey Cmdlet.
+
 
 ## PARAMETERS
 

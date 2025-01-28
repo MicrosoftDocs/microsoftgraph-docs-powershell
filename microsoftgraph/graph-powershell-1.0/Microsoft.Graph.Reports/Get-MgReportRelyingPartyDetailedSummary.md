@@ -36,13 +36,17 @@ Get-MgReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Count]
 Get a summary of AD FS relying parties information.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportRelyingPartyDetailedSummary -Period $periodId
+Get-MgReportRelyingPartyDetailedSummary -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportRelyingPartyDetailedSummary Cmdlet.
+
 
 ## PARAMETERS
 

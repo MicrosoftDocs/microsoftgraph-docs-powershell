@@ -41,17 +41,21 @@ Data store initialization takes about 5 minutes.
 If you call this API before the data store is initialized, the call results in an error.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	appOwnerTenantId = "23014d8c-71fe-4d00-a01a-31850bc5b42a"
 }
 
 Enable-MgBackupRestore -BodyParameter $params
+
+```
+This example shows how to use the Enable-MgBackupRestore Cmdlet.
+
 
 ## PARAMETERS
 

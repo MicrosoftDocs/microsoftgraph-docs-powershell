@@ -48,20 +48,28 @@ Localized names for the plan configuration.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get all localizations
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.BusinessScenario
-```
 
 Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.BusinessScenario
-```
+This example will get all localizations
 
-Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -Filter "languageTag eq 'en-us'"
+### Example 2: Get localization for a specific language tag
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.BusinessScenario
+
+Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -Filter "languageTag eq 'en-us'" 
+
+```
+This example will get localization for a specific language tag
+
 
 ## PARAMETERS
 

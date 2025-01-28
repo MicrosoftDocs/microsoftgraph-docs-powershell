@@ -60,11 +60,11 @@ Get the availability information of staff members of a Microsoft Bookings calend
 | Application | Bookings.Read.All, Calendars.ReadWrite, Calendars.Read, Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	staffIds = @(
@@ -81,6 +81,10 @@ endDateTime = @{
 }
 
 Get-MgBookingBusinessStaffAvailability -BookingBusinessId $bookingBusinessId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBookingBusinessStaffAvailability Cmdlet.
+
 
 ## PARAMETERS
 

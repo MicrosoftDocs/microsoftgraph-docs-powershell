@@ -30,18 +30,6 @@ Reset-MgBetaUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsI
 ## DESCRIPTION
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -248,6 +236,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserpendingaccessreviewinstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserpendingaccessreviewinstancedecision)
 
 [https://learn.microsoft.com/graph/api/accessreviewinstance-resetdecisions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-resetdecisions?view=graph-rest-beta)
+
 
 
 

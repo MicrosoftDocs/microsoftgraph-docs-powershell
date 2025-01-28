@@ -33,18 +33,6 @@ Invoke-MgBetaCheckoutUserDriveItem -InputObject <IUsersActionsIdentity> [-Respon
 ## DESCRIPTION
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -266,6 +254,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckoutuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckoutuserdriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-checkout?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-checkout?view=graph-rest-beta)
+
 
 
 

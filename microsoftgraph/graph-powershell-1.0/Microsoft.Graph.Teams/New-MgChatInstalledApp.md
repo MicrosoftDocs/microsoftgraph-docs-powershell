@@ -58,11 +58,11 @@ Install a teamsApp to the specified chat.
 | Application | TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.ManageSelectedForChat.All, Chat.Manage.Chat,  |
 
 ## EXAMPLES
+### Example 1: Install app in a chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
@@ -70,10 +70,14 @@ $params = @{
 
 New-MgChatInstalledApp -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will install app in a chat
+
+### Example 2: Install app in a chat and consent to the resource-specific permissions required by the app
+
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/2b524e28-95ce-4c9b-9773-4a5bd6ec1770"
@@ -100,6 +104,10 @@ $params = @{
 }
 
 New-MgChatInstalledApp -ChatId $chatId -BodyParameter $params
+
+```
+This example will install app in a chat and consent to the resource-specific permissions required by the app
+
 
 ## PARAMETERS
 

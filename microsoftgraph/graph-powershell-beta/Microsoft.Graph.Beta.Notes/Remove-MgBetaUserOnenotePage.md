@@ -41,14 +41,18 @@ Delete navigation property pages for users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Notes
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserOnenotePage -UserId $userId -OnenotePageId $onenotePageId
+
+```
+This example shows how to use the Remove-MgBetaUserOnenotePage Cmdlet.
+
 
 ## PARAMETERS
 

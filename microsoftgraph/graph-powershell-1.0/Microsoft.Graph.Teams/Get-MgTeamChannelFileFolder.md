@@ -42,13 +42,17 @@ Get the metadata for the location where the files of a channel are stored.
 | Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Group.ReadWrite.All, Group.Read.All, File.Read.Group,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Get-MgTeamChannelFileFolder Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,18 +33,6 @@ Start-MgUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersActionsId
 ## DESCRIPTION
 Trigger the policies associated with the start of working hours for a specific user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -222,6 +210,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/start-mgusersolutionworkingtimescheduleworkingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/start-mgusersolutionworkingtimescheduleworkingtime)
 
 [https://learn.microsoft.com/graph/api/workingtimeschedule-startworkingtime?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workingtimeschedule-startworkingtime?view=graph-rest-1.0)
+
 
 
 

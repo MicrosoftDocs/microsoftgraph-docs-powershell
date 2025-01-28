@@ -53,11 +53,11 @@ Examples of secrets are application secrets in Microsoft Entra ID, Google, Faceb
 his method returns trustFrameworkKey.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	use = "use-value"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Invoke-MgBetaUploadTrustFrameworkKeySetSecret -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaUploadTrustFrameworkKeySetSecret Cmdlet.
+
 
 ## PARAMETERS
 

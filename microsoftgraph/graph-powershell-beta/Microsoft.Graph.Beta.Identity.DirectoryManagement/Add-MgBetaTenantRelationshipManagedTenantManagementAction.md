@@ -55,11 +55,11 @@ By performing this operation the appropriate configurations will be made and pol
 As example when applying the require multifactor authentication for admins management action creates a Microsoft Entra Conditional Access policy that requires multifactor authentication for all users that have been assigned an administrative directory role.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	tenantId = "String"
@@ -68,6 +68,10 @@ $params = @{
 }
 
 Add-MgBetaTenantRelationshipManagedTenantManagementAction -ManagementActionId $managementActionId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaTenantRelationshipManagedTenantManagementAction Cmdlet.
+
 
 ## PARAMETERS
 

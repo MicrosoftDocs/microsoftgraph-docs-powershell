@@ -44,13 +44,17 @@ List eDiscovery review tags with the tag hierarchy shown.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy Cmdlet.
+
 
 ## PARAMETERS
 

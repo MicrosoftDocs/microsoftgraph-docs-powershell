@@ -51,13 +51,17 @@ Read properties and relationships of the telecomExpenseManagementPartner object.
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementTelecomExpenseManagementPartner
+
+```
+This example shows how to use the Get-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 

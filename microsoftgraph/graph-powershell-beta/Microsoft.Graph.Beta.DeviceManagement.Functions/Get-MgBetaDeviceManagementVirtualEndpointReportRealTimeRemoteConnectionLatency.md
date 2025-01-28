@@ -31,13 +31,17 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
 Get the real-time connection latency information for a Cloud PC.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency Cmdlet.
+
 
 ## PARAMETERS
 

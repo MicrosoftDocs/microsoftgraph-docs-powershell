@@ -44,13 +44,17 @@ Get all messages from all chats that a user is a participant in, including one-o
 | Application | Chat.Read.All, Chat.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Functions
-```
 
-Get-MgAllUserChatMessage -UserId $userId -Top 2
+Get-MgAllUserChatMessage -UserId $userId -Top 2 
+
+```
+This example shows how to use the Get-MgAllUserChatMessage Cmdlet.
+
 
 ## PARAMETERS
 

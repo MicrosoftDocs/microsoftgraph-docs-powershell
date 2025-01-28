@@ -42,13 +42,17 @@ Get the default channel, General, of a team.
 | Application | ChannelSettings.Read.Group, ChannelSettings.ReadWrite.Group, ChannelSettings.ReadWrite.All, ChannelSettings.Read.All, Channel.ReadBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamPrimaryChannel -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamPrimaryChannel Cmdlet.
+
 
 ## PARAMETERS
 

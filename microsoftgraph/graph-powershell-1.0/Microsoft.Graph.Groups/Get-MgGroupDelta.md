@@ -36,27 +36,39 @@ See Using Delta Query for details.
 | Application | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupDelta
 
-### EXAMPLE 2
 ```
+This example shows how to use the Get-MgGroupDelta Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
-Get-MgGroupDelta -Property "displayName,description,mailNickname"
+Get-MgGroupDelta -Property "displayName,description,mailNickname" 
 
-### EXAMPLE 3
 ```
+This example shows how to use the Get-MgGroupDelta Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
-Get-MgGroupDelta -Property "displayName,description,mailNickname"
+Get-MgGroupDelta -Property "displayName,description,mailNickname" 
+
+```
+This example shows how to use the Get-MgGroupDelta Cmdlet.
+
 
 ## PARAMETERS
 

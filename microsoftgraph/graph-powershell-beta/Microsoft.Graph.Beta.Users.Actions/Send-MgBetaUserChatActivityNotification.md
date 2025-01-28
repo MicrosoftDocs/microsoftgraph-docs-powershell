@@ -57,18 +57,6 @@ Send-MgBetaUserChatActivityNotification -InputObject <IUsersActionsIdentity>
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivityType
@@ -456,6 +444,7 @@ Optional when source is entityUrl; required when source is text.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification)
 
 [https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta)
+
 
 
 
