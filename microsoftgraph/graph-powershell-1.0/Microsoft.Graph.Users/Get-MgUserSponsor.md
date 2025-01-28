@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Get-MgUserSponsor
