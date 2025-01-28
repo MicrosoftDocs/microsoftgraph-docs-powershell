@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Users assigned to the tag.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamTagMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

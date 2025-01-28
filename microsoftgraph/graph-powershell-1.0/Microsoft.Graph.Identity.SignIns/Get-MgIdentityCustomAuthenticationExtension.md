@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Read the properties and relationships of a customAuthenticationExtension object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

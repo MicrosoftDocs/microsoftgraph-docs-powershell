@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Deactivate a protectionPolicyBase.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Bookings/Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Deactivate (Default)

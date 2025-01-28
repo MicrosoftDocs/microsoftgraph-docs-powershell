@@ -12,6 +12,9 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Retrieve the properties and relationships of an administrativeUnit object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

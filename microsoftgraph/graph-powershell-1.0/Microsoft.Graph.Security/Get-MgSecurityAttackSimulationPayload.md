@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Represents an attack simulation training campaign payload in a tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationPayload?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

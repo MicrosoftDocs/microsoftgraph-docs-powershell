@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property townhalls for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventTownhall](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventTownhall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

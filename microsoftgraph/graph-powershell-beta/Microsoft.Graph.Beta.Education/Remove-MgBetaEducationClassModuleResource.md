@@ -12,6 +12,9 @@ ms.subservice: education
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassModuleResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassModuleResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

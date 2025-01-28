@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

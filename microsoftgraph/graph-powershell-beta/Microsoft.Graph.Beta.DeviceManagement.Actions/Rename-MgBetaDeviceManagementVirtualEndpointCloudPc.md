@@ -12,6 +12,9 @@ ms.subservice: cloud-pc
 Rename a specific Cloud PC.
 Use this API to update the displayName for the Cloud PC entity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Rename-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Rename-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RenameExpanded (Default)

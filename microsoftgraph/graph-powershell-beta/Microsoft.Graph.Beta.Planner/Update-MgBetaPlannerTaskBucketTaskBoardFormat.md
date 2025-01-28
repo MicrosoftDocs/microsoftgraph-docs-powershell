@@ -11,6 +11,9 @@ ms.subservice: planner
 ## SYNOPSIS
 Update the properties of a plannerBucketTaskBoardTaskFormat object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskBucketTaskBoardFormat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

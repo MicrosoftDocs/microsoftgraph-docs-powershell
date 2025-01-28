@@ -12,6 +12,9 @@ ms.subservice: extensions
 ## SYNOPSIS
 Read a directory extension definition represented by an extensionProperty object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
