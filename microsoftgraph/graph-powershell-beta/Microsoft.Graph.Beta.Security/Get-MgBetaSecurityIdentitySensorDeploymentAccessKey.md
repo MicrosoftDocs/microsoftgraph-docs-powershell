@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentaccesskey
 schema: 2.0.0
-ms.subservice: security
 ---
 
 # Get-MgBetaSecurityIdentitySensorDeploymentAccessKey
@@ -21,25 +20,14 @@ Get-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Get the deployment access key associated with a Microsoft Defender for Identity, needed to install sensors associated with the workspace.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecurityIdentitySensorDeploymentAccessKey
-
-```
-This example shows how to use the Get-MgBetaSecurityIdentitySensorDeploymentAccessKey Cmdlet.
-
 
 ## PARAMETERS
 
@@ -104,26 +92,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentaccesskey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentaccesskey)
 
 [https://learn.microsoft.com/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

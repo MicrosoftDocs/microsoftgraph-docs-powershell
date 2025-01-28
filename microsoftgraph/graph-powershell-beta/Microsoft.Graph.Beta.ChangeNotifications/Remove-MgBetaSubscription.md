@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription
 schema: 2.0.0
-ms.subservice: change-notifications
 ---
 
 # Remove-MgBetaSubscription
@@ -11,9 +10,6 @@ ms.subservice: change-notifications
 ## SYNOPSIS
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Remove-MgSubscription?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,25 +31,14 @@ Remove-MgBetaSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch 
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
+```
 
 Remove-MgBetaSubscription -SubscriptionId $subscriptionId
-
-```
-This example shows how to use the Remove-MgBetaSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -210,34 +195,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
+INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription)
 
 [https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

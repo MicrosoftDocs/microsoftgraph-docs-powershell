@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenariobyuniquename
 schema: 2.0.0
-ms.subservice: business-scenarios
 ---
 
 # Remove-MgBetaSolutionBusinessScenarioByUniqueName
@@ -32,12 +31,17 @@ Remove-MgBetaSolutionBusinessScenarioByUniqueName -InputObject <IBusinessScenari
 Delete a businessScenario object.
 The deletion of a scenario causes all data associated with the scenario to be deleted.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -194,38 +198,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[UniqueName <String>]`: Alternate key of businessScenario
+INPUTOBJECT \<IBusinessScenarioIdentity\>: Identity Parameter
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenariobyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenariobyuniquename)
 
 [https://learn.microsoft.com/graph/api/businessscenario-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenario-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoreprotectionpolicy
 schema: 2.0.0
-ms.subservice: m365-backup-storage
 ---
 
 # Initialize-MgBackupRestoreProtectionPolicy
@@ -12,9 +11,6 @@ ms.subservice: m365-backup-storage
 Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Initialize-MgBetaBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Bookings/Initialize-MgBetaBackupRestoreProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,36 +31,21 @@ Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Activate an inactive protection policy
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Bookings
+```
 
 Initialize-MgBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
+### EXAMPLE 2
 ```
-This example will activate an inactive protection policy
-
-### Example 2: Activate an active protection policy
-
-```powershell
-
 Import-Module Microsoft.Graph.Bookings
+```
 
 Initialize-MgBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
-
-```
-This example will activate an active protection policy
-
 
 ## PARAMETERS
 
@@ -191,55 +172,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[Email \<String\>\]: Alternate key of virtualEventRegistration
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[ProtectionPolicyBaseId \<String\>\]: The unique identifier of protectionPolicyBase
+  \[RestoreSessionBaseId \<String\>\]: The unique identifier of restoreSessionBase
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[ServiceAppId \<String\>\]: The unique identifier of serviceApp
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventRegistrationQuestionBaseId \<String\>\]: The unique identifier of virtualEventRegistrationQuestionBase
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoreprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoreprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

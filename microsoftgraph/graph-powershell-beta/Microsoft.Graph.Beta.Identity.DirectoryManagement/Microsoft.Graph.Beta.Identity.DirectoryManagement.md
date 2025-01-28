@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-Module Guid: e1d7bfcf-9059-441c-9b66-31f1adf36aeb
+Module Guid: eacdf91a-a37b-4d21-ab48-af5895d624b2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.directorymanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1316,23 +1316,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaSubscribedSku](Update-MgBetaSubscribedSku.md)
 
 ### [Update-MgBetaUserScopedRoleMemberOf](Update-MgBetaUserScopedRoleMemberOf.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroupsection
@@ -11,9 +11,6 @@ schema: 2.0.0
 The sections in the section group.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteSectionGroupSection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,12 +26,17 @@ The sections in the section group.
 Read-only.
 Nullable.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -278,27 +280,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroupsection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

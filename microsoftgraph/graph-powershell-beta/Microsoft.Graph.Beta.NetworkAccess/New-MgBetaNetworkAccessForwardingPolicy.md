@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessforwardingpolicy
@@ -31,12 +31,17 @@ New-MgBetaNetworkAccessForwardingPolicy -BodyParameter <IMicrosoftGraphNetworkac
 ## DESCRIPTION
 Create new navigation property to forwardingPolicies for networkAccess
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -255,48 +260,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessForwardingPolicy>`: forwardingPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description.
-  - `[Name <String>]`: Policy name.
-  - `[PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule- `[]`>]`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-    - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessForwardingPolicy\>: forwardingPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: Description.
+  \[Name \<String\>\]: Policy name.
+  \[PolicyRules \<IMicrosoftGraphNetworkaccessPolicyRule\[\]\>\]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Name <String>]`: Name.
-  - `[Version <String>]`: Version.
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Name \<String\>\]: Name.
+  \[Version \<String\>\]: Version.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[TrafficForwardingType <String>]`: trafficForwardingType
+  \[TrafficForwardingType \<String\>\]: trafficForwardingType
 
-POLICYRULES `<IMicrosoftGraphNetworkaccessPolicyRule- `[]`>`: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-  - `[Id <String>]`: The unique identifier for an entity.
+POLICYRULES \<IMicrosoftGraphNetworkaccessPolicyRule\[\]\>: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Name <String>]`: Name.
+  \[Name \<String\>\]: Name.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessforwardingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessforwardingpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption
 schema: 2.0.0
-ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessSettingForwardingOption
@@ -24,25 +23,14 @@ Get-MgBetaNetworkAccessSettingForwardingOption [-ExpandProperty <String[]>] [-Pr
 Retrieve the forwarding options for the tenant, with a specific focus on the 'skipDnsLookupState' flag.
 This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.NetworkAccess
+```
 
 Get-MgBetaNetworkAccessSettingForwardingOption
-
-```
-This example shows how to use the Get-MgBetaNetworkAccessSettingForwardingOption Cmdlet.
-
 
 ## PARAMETERS
 
@@ -137,26 +125,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption)
 
 [https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

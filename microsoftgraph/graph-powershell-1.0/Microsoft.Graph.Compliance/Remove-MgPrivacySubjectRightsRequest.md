@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property subjectRightsRequests for privacy
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Remove-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,12 +29,17 @@ Remove-MgPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property subjectRightsRequests for privacy
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -194,35 +196,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

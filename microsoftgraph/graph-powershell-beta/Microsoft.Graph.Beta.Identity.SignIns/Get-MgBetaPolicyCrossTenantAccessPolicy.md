@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicy
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of a crossTenantAccessPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,25 +21,14 @@ Get-MgBetaPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property 
 ## DESCRIPTION
 Read the properties and relationships of a crossTenantAccessPolicy object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.CrossTenantAccess,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyCrossTenantAccessPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -138,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicy)
 
 [https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

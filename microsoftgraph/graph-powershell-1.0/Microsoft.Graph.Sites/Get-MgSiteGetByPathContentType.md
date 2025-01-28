@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathcontenttype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of content types defined for this site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,12 +22,17 @@ Get-MgSiteGetByPathContentType -Path <String> -SiteId <String> [-ExpandProperty 
 ## DESCRIPTION
 The collection of content types defined for this site.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -274,27 +276,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathcontenttype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesslogremotenetwork
@@ -49,12 +49,17 @@ Update-MgBetaNetworkAccessLogRemoteNetwork -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Update the navigation property remoteNetworks in networkAccess
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -366,67 +371,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessRemoteNetworkHealthEvent>`: remoteNetworkHealthEvent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessRemoteNetworkHealthEvent\>: remoteNetworkHealthEvent
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[BgpRoutesAdvertisedCount <Int32?>]`: The number of BGP routes advertised through tunnel.
-  - `[CreatedDateTime <DateTime?>]`: The time of the original event generation in UTC.
+  \[BgpRoutesAdvertisedCount \<Int32?\>\]: The number of BGP routes advertised through tunnel.
+  \[CreatedDateTime \<DateTime?\>\]: The time of the original event generation in UTC.
 Supports $filter (ge, le) and $orderby.
-  - `[Description <String>]`: The description of the event.
-  - `[DestinationIP <String>]`: The IP address of the destination.
-  - `[ReceivedBytes <Int64?>]`: The number of bytes sent from the destination to the source.
-  - `[RemoteNetworkId <String>]`: A unique identifier for each remoteNetwork site.
+  \[Description \<String\>\]: The description of the event.
+  \[DestinationIP \<String\>\]: The IP address of the destination.
+  \[ReceivedBytes \<Int64?\>\]: The number of bytes sent from the destination to the source.
+  \[RemoteNetworkId \<String\>\]: A unique identifier for each remoteNetwork site.
 Supports $filter (eq).
-  - `[SentBytes <Int64?>]`: The number of bytes sent from the source to the destination for the connection or session.
-  - `[SourceIP <String>]`: The public IP address.
-  - `[Status <String>]`: remoteNetworkStatus
+  \[SentBytes \<Int64?\>\]: The number of bytes sent from the source to the destination for the connection or session.
+  \[SourceIP \<String\>\]: The public IP address.
+  \[Status \<String\>\]: remoteNetworkStatus
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
-  - `[ActivityPivotDateTime <DateTime?>]`: Usage: activityPivotDateTime={activityPivotDateTime}
-  - `[AggregatedBy <String>]`: Usage: aggregatedBy='{aggregatedBy}'
-  - `[AlertId <String>]`: The unique identifier of alert
-  - `[BranchSiteId <String>]`: The unique identifier of branchSite
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
-  - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
-  - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
-  - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[FilteringPolicyId <String>]`: The unique identifier of filteringPolicy
-  - `[FilteringProfileId <String>]`: The unique identifier of filteringProfile
-  - `[ForwardingPolicyId <String>]`: The unique identifier of forwardingPolicy
-  - `[ForwardingProfileId <String>]`: The unique identifier of forwardingProfile
-  - `[NetworkAccessTrafficTransactionId <String>]`: The unique identifier of networkAccessTraffic
-  - `[PolicyLinkId <String>]`: The unique identifier of policyLink
-  - `[PolicyRuleId <String>]`: The unique identifier of policyRule
-  - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
-  - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
+  \[ActivityPivotDateTime \<DateTime?\>\]: Usage: activityPivotDateTime={activityPivotDateTime}
+  \[AggregatedBy \<String\>\]: Usage: aggregatedBy='{aggregatedBy}'
+  \[AlertId \<String\>\]: The unique identifier of alert
+  \[BranchSiteId \<String\>\]: The unique identifier of branchSite
+  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
+  \[ConnectivityConfigurationLinkId \<String\>\]: The unique identifier of connectivityConfigurationLink
+  \[DeviceLinkId \<String\>\]: The unique identifier of deviceLink
+  \[DiscoveryPivotDateTime \<DateTime?\>\]: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FilteringPolicyId \<String\>\]: The unique identifier of filteringPolicy
+  \[FilteringProfileId \<String\>\]: The unique identifier of filteringProfile
+  \[ForwardingPolicyId \<String\>\]: The unique identifier of forwardingPolicy
+  \[ForwardingProfileId \<String\>\]: The unique identifier of forwardingProfile
+  \[NetworkAccessTrafficTransactionId \<String\>\]: The unique identifier of networkAccessTraffic
+  \[PolicyLinkId \<String\>\]: The unique identifier of policyLink
+  \[PolicyRuleId \<String\>\]: The unique identifier of policyRule
+  \[RemoteNetworkHealthEventId \<String\>\]: The unique identifier of remoteNetworkHealthEvent
+  \[RemoteNetworkId \<String\>\]: The unique identifier of remoteNetwork
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesslogremotenetwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesslogremotenetwork)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # New-MgDeviceAppManagementMobileAppCategory
 
 ## SYNOPSIS
 Create a new mobileAppCategory object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,19 +29,12 @@ New-MgDeviceAppManagementMobileAppCategory -BodyParameter <IMicrosoftGraphMobile
 ## DESCRIPTION
 Create a new mobileAppCategory object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CorporateManagement
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.mobileAppCategory"
@@ -53,10 +42,6 @@ $params = @{
 }
 
 New-MgDeviceAppManagementMobileAppCategory -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceAppManagementMobileAppCategory Cmdlet.
-
 
 ## PARAMETERS
 
@@ -214,37 +199,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppCategory>`: Contains properties for a single Intune app category.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMobileAppCategory\>: Contains properties for a single Intune app category.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The name of the app category.
+  \[DisplayName \<String\>\]: The name of the app category.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory)
 
 [https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

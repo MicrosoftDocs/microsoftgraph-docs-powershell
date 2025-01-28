@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview
@@ -11,9 +11,6 @@ schema: 2.0.0
 The calendar view for the calendar.
 Navigation property.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarView?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,12 +26,17 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -295,27 +297,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

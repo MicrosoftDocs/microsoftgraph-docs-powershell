@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentpackageuri
 schema: 2.0.0
-ms.subservice: security
 ---
 
 # Get-MgBetaSecurityIdentitySensorDeploymentPackageUri
@@ -23,25 +22,14 @@ Get-MgBetaSecurityIdentitySensorDeploymentPackageUri [-ResponseHeadersVariable <
 Get the sensor deployment package URL and version.
 You can use this URL to download the installer to install the sensor on a server.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecurityIdentitySensorDeploymentPackageUri
-
-```
-This example shows how to use the Get-MgBetaSecurityIdentitySensorDeploymentPackageUri Cmdlet.
-
 
 ## PARAMETERS
 
@@ -106,26 +94,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentpackageuri](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentpackageuri)
 
 [https://learn.microsoft.com/graph/api/security-sensor-getdeploymentpackageuri?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensor-getdeploymentpackageuri?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Get-MgEducationMeAssignmentDelta
@@ -12,9 +11,6 @@ ms.subservice: education
 Get a list of newly-created or updated assignments without reading the whole collection.
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,12 +26,17 @@ Get a list of newly-created or updated assignments without reading the whole col
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -251,27 +252,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta)
 
 [https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamessagechat
@@ -21,12 +21,17 @@ Invoke-MgBetaMessageChat [-Count] [-ExpandProperty <String[]>] [-Filter <String>
 ## DESCRIPTION
 Invoke function allMessages
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadBasic.All, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.Read.All, Chat.Manage.Chat,  |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -209,27 +214,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamessagechat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamessagechat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

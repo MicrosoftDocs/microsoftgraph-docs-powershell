@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodolistdelta
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # Get-MgUserTodoListDelta
 
 ## SYNOPSIS
 Get a set of todoTaskList resources that have been added, deleted, or removed in Microsoft To Do.
-A delta function call for todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the todoTaskList.
+A delta function call for todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, \nyou can query for incremental changes in the todoTaskList.
 This allows you to maintain and synchronize a local store of a user's todoTaskList without having to fetch all the todoTaskList from the server every time.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoListDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserTodoListDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,29 +32,18 @@ Get-MgUserTodoListDelta -InputObject <IUsersFunctionsIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Get a set of todoTaskList resources that have been added, deleted, or removed in Microsoft To Do.
-A delta function call for todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the todoTaskList.
+A delta function call for todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, \nyou can query for incremental changes in the todoTaskList.
 This allows you to maintain and synchronize a local store of a user's todoTaskList without having to fetch all the todoTaskList from the server every time.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Functions
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserTodoListDelta -UserId $userId
-
-```
-This example shows how to use the Get-MgUserTodoListDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -320,59 +305,37 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EventId <String>]`: The unique identifier of event
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EventId \<String\>\]: The unique identifier of event
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodolistdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodolistdelta)
 
 [https://learn.microsoft.com/graph/api/todotasklist-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotasklist-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
-Module Guid: a2b71988-0e23-4b83-ac91-babe979c28de
+Module Guid: 8ef1bc43-baf4-4c17-884d-21d3c3947a34
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement.actions/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -710,23 +710,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword](Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword.md)
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

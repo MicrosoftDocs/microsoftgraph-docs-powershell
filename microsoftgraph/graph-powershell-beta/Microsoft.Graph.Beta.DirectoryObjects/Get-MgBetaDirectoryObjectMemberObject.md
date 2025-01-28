@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectmemberobject
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action getMemberObjects
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectMemberObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,12 +45,17 @@ Get-MgBetaDirectoryObjectMemberObject -InputObject <IDirectoryObjectsIdentity>
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, User.Read, GroupMember.Read.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, User.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All,  |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -227,39 +229,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths16Hhl7EDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`: 
+BODYPARAMETER \<IPaths16Hhl7EDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[SecurityEnabledOnly \<Boolean?\>\]: 
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
-  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
-  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+INPUTOBJECT \<IDirectoryObjectsIdentity\>: Identity Parameter
+  \[CertificateAuthorityDetailId \<String\>\]: The unique identifier of certificateAuthorityDetail
+  \[CertificateBasedAuthPkiId \<String\>\]: The unique identifier of certificateBasedAuthPki
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectmemberobject)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationusercoverage
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Get-MgBetaReportAttackSimulationUserCoverage
@@ -24,25 +23,14 @@ Get-MgBetaReportAttackSimulationUserCoverage [-Count] [-Filter <String>] [-Searc
 Get simulation coverage for users of a tenant in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
+```
 
 Get-MgBetaReportAttackSimulationUserCoverage
-
-```
-This example shows how to use the Get-MgBetaReportAttackSimulationUserCoverage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -182,26 +170,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationusercoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationusercoverage)
 
 [https://learn.microsoft.com/graph/api/reportroot-getattacksimulationsimulationusercoverage?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getattacksimulationsimulationusercoverage?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

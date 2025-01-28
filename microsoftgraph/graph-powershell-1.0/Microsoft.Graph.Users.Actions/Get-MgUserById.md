@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguserbyid
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgUserById
@@ -12,9 +11,6 @@ ms.subservice: entra-directory-management
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserById](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,12 +34,17 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -200,37 +201,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String- `[]`>]`: 
-  - `[Types <String- `[]`>]`:
+BODYPARAMETER \<IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Ids \<String\[\]\>\]: 
+  \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguserbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguserbyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

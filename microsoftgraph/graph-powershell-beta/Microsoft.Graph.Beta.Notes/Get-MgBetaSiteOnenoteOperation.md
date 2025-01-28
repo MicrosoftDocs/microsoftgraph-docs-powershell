@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteoperation
@@ -12,9 +12,6 @@ The status of OneNote operations.
 Getting an operations collection isn't supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,12 +35,17 @@ Getting an operations collection isn't supported, but you can get the status of 
 Read-only.
 Nullable.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -184,42 +186,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<INotesIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

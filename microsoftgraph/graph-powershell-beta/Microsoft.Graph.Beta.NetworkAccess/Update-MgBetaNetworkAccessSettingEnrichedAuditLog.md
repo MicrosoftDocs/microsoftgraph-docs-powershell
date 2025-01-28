@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingenrichedauditlog
 schema: 2.0.0
-ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessSettingEnrichedAuditLog
@@ -32,19 +31,12 @@ Update-MgBetaNetworkAccessSettingEnrichedAuditLog
 ## DESCRIPTION
 Update the settings for the enriched audit logs workloads to control the enrichment feature for each partner workload, such as SharePoint, Teams, and Exchange.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.NetworkAccess
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.networkaccess.enrichedAuditLogs"
@@ -60,10 +52,6 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessSettingEnrichedAuditLog -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaNetworkAccessSettingEnrichedAuditLog Cmdlet.
-
 
 ## PARAMETERS
 
@@ -254,53 +242,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessEnrichedAuditLogs>`: enrichedAuditLogs
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessEnrichedAuditLogs\>: enrichedAuditLogs
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Exchange <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]`: enrichedAuditLogsSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Status <String>]`: status
-  - `[Sharepoint <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]`: enrichedAuditLogsSettings
-  - `[Teams <IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>]`: enrichedAuditLogsSettings
+  \[Exchange \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>\]: enrichedAuditLogsSettings
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Status \<String\>\]: status
+  \[Sharepoint \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>\]: enrichedAuditLogsSettings
+  \[Teams \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>\]: enrichedAuditLogsSettings
 
-EXCHANGE `<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>`: enrichedAuditLogsSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Status <String>]`: status
+EXCHANGE \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>: enrichedAuditLogsSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Status \<String\>\]: status
 
-SHAREPOINT `<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>`: enrichedAuditLogsSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Status <String>]`: status
+SHAREPOINT \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>: enrichedAuditLogsSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Status \<String\>\]: status
 
-TEAMS `<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings>`: enrichedAuditLogsSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Status <String>]`: status
+TEAMS \<IMicrosoftGraphNetworkaccessEnrichedAuditLogsSettings\>: enrichedAuditLogsSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Status \<String\>\]: status
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingenrichedauditlog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingenrichedauditlog)
 
 [https://learn.microsoft.com/graph/api/networkaccess-enrichedauditlogs-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-enrichedauditlogs-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

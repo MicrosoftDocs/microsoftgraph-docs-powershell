@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementwindowsautopilotsetting
@@ -26,12 +26,17 @@ If the sync successful, this action returns a 204 No Content response code.
 If a sync is already in progress, the action returns a 409 Conflict response code.
 If this sync action is called within 10 minutes of the previous sync, the action returns a 429 Too Many Requests response code.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -140,27 +145,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementwindowsautopilotsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementwindowsautopilotsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

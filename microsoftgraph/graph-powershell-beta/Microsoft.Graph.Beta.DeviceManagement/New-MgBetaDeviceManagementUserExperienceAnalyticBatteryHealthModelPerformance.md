@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthmodelperformance
@@ -36,12 +36,17 @@ New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsBatteryHealthModelPerformance for deviceManagement
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -413,68 +418,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance>`: The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance\>: The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActiveDevices <Int32?>]`: Number of active devices for that model.
+  \[ActiveDevices \<Int32?\>\]: Number of active devices for that model.
 Valid values 0 to 2147483647
-  - `[AverageBatteryAgeInDays <Int32?>]`: The mean of the battery age for all devices of a given model in a tenant.
+  \[AverageBatteryAgeInDays \<Int32?\>\]: The mean of the battery age for all devices of a given model in a tenant.
 Unit in days.
 Valid values 0 to 2147483647
-  - `[AverageEstimatedRuntimeInMinutes <Int32?>]`: The mean of the estimated runtimes on full charge for all devices of a given model.
+  \[AverageEstimatedRuntimeInMinutes \<Int32?\>\]: The mean of the estimated runtimes on full charge for all devices of a given model.
 Unit in minutes.
 Valid values 0 to 2147483647
-  - `[AverageMaxCapacityPercentage <Int32?>]`: The mean of the maximum capacity for all devices of a given model.
+  \[AverageMaxCapacityPercentage \<Int32?\>\]: The mean of the maximum capacity for all devices of a given model.
 Maximum capacity measures the full charge vs.
 design capacity for a device's batteries..
 Valid values 0 to 2147483647
-  - `[DeviceManufacturerName <String>]`: The manufacturer name of the device.
-  - `[DeviceModelName <String>]`: The model name of the device.
-  - `[Manufacturer <String>]`: Name of the device manufacturer.
+  \[DeviceManufacturerName \<String\>\]: The manufacturer name of the device.
+  \[DeviceModelName \<String\>\]: The model name of the device.
+  \[Manufacturer \<String\>\]: Name of the device manufacturer.
 Deprecated in favor of DeviceManufacturerName.
-  - `[MeanFullBatteryDrainCount <Int32?>]`: The mean of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices of a given model in a tenant.
+  \[MeanFullBatteryDrainCount \<Int32?\>\]: The mean of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices of a given model in a tenant.
 Valid values 0 to 2147483647
-  - `[MedianEstimatedRuntimeInMinutes <Int32?>]`: The median of the estimated runtimes on full charge for all devices of a given model.
+  \[MedianEstimatedRuntimeInMinutes \<Int32?\>\]: The median of the estimated runtimes on full charge for all devices of a given model.
 Unit in minutes.
 Valid values 0 to 2147483647
-  - `[MedianFullBatteryDrainCount <Int32?>]`: The median of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices of a given model in a tenant.
+  \[MedianFullBatteryDrainCount \<Int32?\>\]: The median of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices of a given model in a tenant.
 Valid values 0 to 2147483647
-  - `[MedianMaxCapacityPercentage <Int32?>]`: The median of the maximum capacity for all devices of a given model.
+  \[MedianMaxCapacityPercentage \<Int32?\>\]: The median of the maximum capacity for all devices of a given model.
 Maximum capacity measures the full charge vs.
 design capacity for a device's batteries..
 Valid values 0 to 2147483647
-  - `[Model <String>]`: The model name of the device.
+  \[Model \<String\>\]: The model name of the device.
 Deprecated in favor of DeviceModelName.
-  - `[ModelBatteryHealthScore <Int32?>]`: A weighted average of a model's maximum capacity score and runtime estimate score.
+  \[ModelBatteryHealthScore \<Int32?\>\]: A weighted average of a model's maximum capacity score and runtime estimate score.
 Values range from 0-100.
 Valid values 0 to 2147483647
-  - `[ModelHealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
+  \[ModelHealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthmodelperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthmodelperformance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

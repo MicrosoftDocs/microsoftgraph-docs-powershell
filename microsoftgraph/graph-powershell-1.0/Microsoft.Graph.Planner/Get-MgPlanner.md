@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get planner
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,12 +20,17 @@ Get-MgPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHead
 ## DESCRIPTION
 Get planner
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -121,27 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

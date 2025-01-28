@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscore
 schema: 2.0.0
-ms.subservice: partner-customer-administration
 ---
 
 # Get-MgBetaSecurityPartnerSecurityScore
@@ -22,25 +21,14 @@ Get-MgBetaSecurityPartnerSecurityScore [-ExpandProperty <String[]>] [-Property <
 ## DESCRIPTION
 Read the properties and relationships of a partnerSecurityScore object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecurityPartnerSecurityScore
-
-```
-This example shows how to use the Get-MgBetaSecurityPartnerSecurityScore Cmdlet.
-
 
 ## PARAMETERS
 
@@ -135,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscore)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

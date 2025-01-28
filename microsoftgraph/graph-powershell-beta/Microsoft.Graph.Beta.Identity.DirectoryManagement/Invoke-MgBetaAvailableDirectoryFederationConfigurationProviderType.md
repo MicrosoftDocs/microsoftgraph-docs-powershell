@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaavailabledirectoryfederationconfigurationprovidertype
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType
 
 ## SYNOPSIS
 Get all identity providers supported in a directory.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,12 +21,17 @@ Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType [-Count] [-Fi
 ## DESCRIPTION
 Get all identity providers supported in a directory.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -170,27 +171,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaavailabledirectoryfederationconfigurationprovidertype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaavailabledirectoryfederationconfigurationprovidertype)
 
 [https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

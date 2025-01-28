@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareallowedgroupserviceprovisioningerror
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareAllowedGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedGroupServiceProvisioningError?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,12 +24,17 @@ Get-MgPrintShareAllowedGroupServiceProvisioningError -GroupId <String> -PrinterS
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -276,27 +278,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareallowedgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareallowedgroupserviceprovisioningerror)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

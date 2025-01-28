@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmembergroup
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Confirm-MgBetaGroupMemberGroup
@@ -14,9 +13,6 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupMemberGroup](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupMemberGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,12 +53,17 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, GroupMember.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, User.ReadWrite.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All,  |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -236,86 +237,63 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1ObknsuGroupsGroupIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupIds <String- `[]`>]`: 
+BODYPARAMETER \<IPaths1ObknsuGroupsGroupIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[GroupIds \<String\[\]\>\]: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
-  - `[ContentModelId <String>]`: The unique identifier of contentModel
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[EventId <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: The unique identifier of list
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[ModelName <String>]`: Usage: modelName='{modelName}'
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UniqueName <String>]`: Alternate key of group
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebPartId <String>]`: The unique identifier of webPart
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
+  \[ContentModelId \<String\>\]: The unique identifier of contentModel
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[EventId \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: The unique identifier of list
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[ModelName \<String\>\]: Usage: modelName='{modelName}'
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[PageTemplateId \<String\>\]: The unique identifier of pageTemplate
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UniqueName \<String\>\]: Alternate key of group
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmembergroup)
 
 [https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

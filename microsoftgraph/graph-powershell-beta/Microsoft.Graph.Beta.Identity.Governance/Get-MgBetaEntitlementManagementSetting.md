@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsetting
 schema: 2.0.0
-ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaEntitlementManagementSetting
 
 ## SYNOPSIS
 Retrieve the properties of an entitlementManagementSettings object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,26 +21,17 @@ Get-MgBetaEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <
 ## DESCRIPTION
 Retrieve the properties of an entitlementManagementSettings object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get the identity governance settings
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementSetting
+```
 
 Id        DaysUntilExternalUserDeletedAfterBlocked ExternalUserLifecycleAction
 --        ---------------------------------------- ---------------------------
 singleton 30                                       BlockSignInAndDelete
-```
-
-This example returns the identity governance settings.
 
 ## PARAMETERS
 
@@ -139,26 +126,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsetting)
 
 [https://learn.microsoft.com/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

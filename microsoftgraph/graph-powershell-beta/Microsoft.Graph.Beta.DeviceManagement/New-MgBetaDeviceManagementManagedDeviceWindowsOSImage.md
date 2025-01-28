@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicewindowsosimage
@@ -32,12 +32,17 @@ New-MgBetaDeviceManagementManagedDeviceWindowsOSImage
 ## DESCRIPTION
 Create new navigation property to managedDeviceWindowsOSImages for deviceManagement
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -236,55 +241,55 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AVAILABLEUPDATES `<IMicrosoftGraphManagedDeviceWindowsOperatingSystemUpdate- `[]`>`: Indicates the available Quality/Security updates for a specific Windows product version (example: Windows 11 22H1), for upto last 3 Patch Tuesdays .
+AVAILABLEUPDATES \<IMicrosoftGraphManagedDeviceWindowsOperatingSystemUpdate\[\]\>: Indicates the available Quality/Security updates for a specific Windows product version (example: Windows 11 22H1), for upto last 3 Patch Tuesdays .
 This value in the API response would be updated 2-3 days after every Patch Tuesday.
 Supports: $filter, $select, $top, $skip.
 Read-only.
-  - `[BuildVersion <String>]`: Indicates the build version for associated windows update.
+  \[BuildVersion \<String\>\]: Indicates the build version for associated windows update.
 Windows Operating System updates are usually released on the Patch Tuesday or B-week of each month.
 Read-only.
-  - `[ReleaseMonth <Int32?>]`: Indicates the Month in which this B-week update was released.
+  \[ReleaseMonth \<Int32?\>\]: Indicates the Month in which this B-week update was released.
 Read-only.
-  - `[ReleaseYear <Int32?>]`: Indicates the Year in which this B-week update was released.
+  \[ReleaseYear \<Int32?\>\]: Indicates the Year in which this B-week update was released.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceWindowsOperatingSystemImage>`: This entity defines different Windows Operating System products, like 'Windows 11 22H1', 'Windows 11 22H2' etc., along with their available configurations.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedDeviceWindowsOperatingSystemImage\>: This entity defines different Windows Operating System products, like 'Windows 11 22H1', 'Windows 11 22H2' etc., along with their available configurations.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AvailableUpdates <IMicrosoftGraphManagedDeviceWindowsOperatingSystemUpdate- `[]`>]`: Indicates the available Quality/Security updates for a specific Windows product version (example: Windows 11 22H1), for upto last 3 Patch Tuesdays .
+  \[AvailableUpdates \<IMicrosoftGraphManagedDeviceWindowsOperatingSystemUpdate\[\]\>\]: Indicates the available Quality/Security updates for a specific Windows product version (example: Windows 11 22H1), for upto last 3 Patch Tuesdays .
 This value in the API response would be updated 2-3 days after every Patch Tuesday.
 Supports: $filter, $select, $top, $skip.
 Read-only.
-    - `[BuildVersion <String>]`: Indicates the build version for associated windows update.
+    \[BuildVersion \<String\>\]: Indicates the build version for associated windows update.
 Windows Operating System updates are usually released on the Patch Tuesday or B-week of each month.
 Read-only.
-    - `[ReleaseMonth <Int32?>]`: Indicates the Month in which this B-week update was released.
+    \[ReleaseMonth \<Int32?\>\]: Indicates the Month in which this B-week update was released.
 Read-only.
-    - `[ReleaseYear <Int32?>]`: Indicates the Year in which this B-week update was released.
+    \[ReleaseYear \<Int32?\>\]: Indicates the Year in which this B-week update was released.
 Read-only.
-  - `[SupportedArchitectures <ManagedDeviceArchitecture- `[]`>]`: Indicates the list of architectures supported by the image.
+  \[SupportedArchitectures \<ManagedDeviceArchitecture\[\]\>\]: Indicates the list of architectures supported by the image.
 E.g.
-- `['ARM64','X86']`.
+\['ARM64','X86'\].
 Supports: $filter, $select, $top, $skip.
 Read-only.
-  - `[SupportedEditions <IMicrosoftGraphManagedDeviceWindowsOperatingSystemEdition- `[]`>]`: Indicates the list of editions supported by the image along with their support dates.
+  \[SupportedEditions \<IMicrosoftGraphManagedDeviceWindowsOperatingSystemEdition\[\]\>\]: Indicates the list of editions supported by the image along with their support dates.
 Supports: $filter, $select, $top, $skip.
 Read-only.
-    - `[EditionType <ManagedDeviceWindowsOperatingSystemEditionType?>]`: Windows Operating System is available in different editions, which have a specific set of features available.
+    \[EditionType \<ManagedDeviceWindowsOperatingSystemEditionType?\>\]: Windows Operating System is available in different editions, which have a specific set of features available.
 This enum type defines the corresponding edition.
-    - `[SupportEndDate <DateTime?>]`: Indicates the Date until which this Operating System edition type is officially supported.
+    \[SupportEndDate \<DateTime?\>\]: Indicates the Date until which this Operating System edition type is officially supported.
 The Timestamp type represents date and time information using ISO 8601 format and is always in Pacific Time Zone (PT).
 For example, 2014-01-01 would mean '2014-01-01T07:00:00Z' in UTC time.
 Returned by default.
 Read-only.
 
-SUPPORTEDEDITIONS `<IMicrosoftGraphManagedDeviceWindowsOperatingSystemEdition- `[]`>`: Indicates the list of editions supported by the image along with their support dates.
+SUPPORTEDEDITIONS \<IMicrosoftGraphManagedDeviceWindowsOperatingSystemEdition\[\]\>: Indicates the list of editions supported by the image along with their support dates.
 Supports: $filter, $select, $top, $skip.
 Read-only.
-  - `[EditionType <ManagedDeviceWindowsOperatingSystemEditionType?>]`: Windows Operating System is available in different editions, which have a specific set of features available.
+  \[EditionType \<ManagedDeviceWindowsOperatingSystemEditionType?\>\]: Windows Operating System is available in different editions, which have a specific set of features available.
 This enum type defines the corresponding edition.
-  - `[SupportEndDate <DateTime?>]`: Indicates the Date until which this Operating System edition type is officially supported.
+  \[SupportEndDate \<DateTime?\>\]: Indicates the Date until which this Operating System edition type is officially supported.
 The Timestamp type represents date and time information using ISO 8601 format and is always in Pacific Time Zone (PT).
 For example, 2014-01-01 would mean '2014-01-01T07:00:00Z' in UTC time.
 Returned by default.
@@ -293,27 +298,4 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicewindowsosimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicewindowsosimage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

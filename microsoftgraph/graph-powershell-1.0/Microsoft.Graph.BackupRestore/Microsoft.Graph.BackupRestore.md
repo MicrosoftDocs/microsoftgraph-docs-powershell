@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.BackupRestore
-Module Guid: d1d25872-b3bf-46fd-924d-5fe7b8dfcb72
+Module Guid: 8e3c05d8-3c59-4810-b8f0-6e2a43dd508c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.backuprestore/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -308,23 +308,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSolutionBackupRestoreSiteInclusionRule](Update-MgSolutionBackupRestoreSiteInclusionRule.md)
 
 ### [Update-MgSolutionBackupRestoreSiteProtectionUnit](Update-MgSolutionBackupRestoreSiteProtectionUnit.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatcount
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaChatCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,12 +20,17 @@ Get-MgChatCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable 
 ## DESCRIPTION
 Get the number of the resource
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadBasic.All, Chat.ReadWrite.All, Chat.Read.All,  |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -121,27 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

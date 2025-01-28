@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
-Module Guid: 92ed1335-fd59-4c93-a076-61386be390e3
+Module Guid: f978b3c0-ba5c-4bfa-8131-4d9eb818ee89
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrollment/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -66,23 +66,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
 
 ### [Update-MgRoleManagement](Update-MgRoleManagement.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointdeviceimagesourceimage
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage
@@ -11,9 +10,6 @@ ms.subservice: cloud-pc
 ## SYNOPSIS
 Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs.
 View a list of all the managed image resources from your Microsoft Entra subscriptions.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,25 +23,14 @@ Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage [-Count] [-Filte
 Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs.
 View a list of all the managed image resources from your Microsoft Entra subscriptions.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+```
 
 Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage
-
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -185,26 +170,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointdeviceimagesourceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointdeviceimagesourceimage)
 
 [https://learn.microsoft.com/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

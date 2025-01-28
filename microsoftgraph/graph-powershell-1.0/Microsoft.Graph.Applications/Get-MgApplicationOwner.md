@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationowner
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # Get-MgApplicationOwner
 
 ## SYNOPSIS
 Retrieve a list of owners for an application that are directoryObject types.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,25 +22,14 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 ## DESCRIPTION
 Retrieve a list of owners for an application that are directoryObject types.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 Get-MgApplicationOwner -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgApplicationOwner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -291,26 +276,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationowner](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationowner)
 
 [https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofasgroup
 schema: 2.0.0
-ms.subservice: entra-users
-ms.subservice: entra-users
 ---
 
 # Get-MgBetaUserMemberOfAsGroup
@@ -13,9 +11,6 @@ ms.subservice: entra-users
 Get groups, directory roles, and administrative units that the user is a direct member of.
 This operation isn't transitive.
 To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMemberOfAsGroup](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOfAsGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,25 +41,14 @@ Get groups, directory roles, and administrative units that the user is a direct 
 This operation isn't transitive.
 To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Users
-
-Get-MgBetaUserMemberOfAsGroup -UserId $userId -Filter "appRoleAssignments/`$count gt 0" -Property "id,displayName" 
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaUserMemberOfAsGroup Cmdlet.
+Import-Module Microsoft.Graph.Beta.Users
+```
 
+Get-MgBetaUserMemberOfAsGroup -UserId $userId -Filter "appRoleAssignments/\`$count gt 0" -Property "id,displayName"
 
 ## PARAMETERS
 
@@ -342,59 +326,37 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of servicePrincipal
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[NotificationId <String>]`: The unique identifier of notification
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
-  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of servicePrincipal
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[NotificationId \<String\>\]: The unique identifier of notification
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
+  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
+  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[ServiceStorageQuotaBreakdownId \<String\>\]: The unique identifier of serviceStorageQuotaBreakdown
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WindowsSettingId \<String\>\]: The unique identifier of windowsSetting
+  \[WindowsSettingInstanceId \<String\>\]: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofasgroup)
 
 [https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

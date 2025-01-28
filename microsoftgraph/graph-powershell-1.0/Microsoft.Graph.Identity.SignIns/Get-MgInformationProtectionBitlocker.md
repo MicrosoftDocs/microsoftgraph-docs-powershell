@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlocker
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get bitlocker from informationProtection
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionBitlocker](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlocker?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,12 +21,17 @@ Get-MgInformationProtectionBitlocker [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get bitlocker from informationProtection
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -122,27 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlocker](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlocker)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

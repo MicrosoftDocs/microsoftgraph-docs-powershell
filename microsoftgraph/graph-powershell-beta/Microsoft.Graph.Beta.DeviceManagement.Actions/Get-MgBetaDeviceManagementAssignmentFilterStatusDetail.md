@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementassignmentfilterstatusdetail
@@ -31,12 +31,17 @@ Get-MgBetaDeviceManagementAssignmentFilterStatusDetail
 ## DESCRIPTION
 Invoke action getAssignmentFiltersStatusDetails
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -253,39 +258,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Dv3M96DevicemanagementMicrosoftGraphGetassignmentfiltersstatusdetailsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AssignmentFilterIds <String- `[]`>]`: 
-  - `[ManagedDeviceId <String>]`: 
-  - `[PayloadId <String>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`: 
-  - `[UserId <String>]`:
+BODYPARAMETER \<IPaths1Dv3M96DevicemanagementMicrosoftGraphGetassignmentfiltersstatusdetailsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AssignmentFilterIds \<String\[\]\>\]: 
+  \[ManagedDeviceId \<String\>\]: 
+  \[PayloadId \<String\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]: 
+  \[UserId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementassignmentfilterstatusdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementassignmentfilterstatusdetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

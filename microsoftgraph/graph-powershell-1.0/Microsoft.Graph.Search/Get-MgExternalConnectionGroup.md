@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroup
 schema: 2.0.0
-ms.subservice: search
 ---
 
 # Get-MgExternalConnectionGroup
 
 ## SYNOPSIS
 Get an externalGroup object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,25 +37,14 @@ Get-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get an externalGroup object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalItem.Read.All, ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Search
+```
 
 Get-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId
-
-```
-This example shows how to use the Get-MgExternalConnectionGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -321,42 +306,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[QnaId <String>]`: The unique identifier of qna
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[QnaId \<String\>\]: The unique identifier of qna
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroup)
 
 [https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

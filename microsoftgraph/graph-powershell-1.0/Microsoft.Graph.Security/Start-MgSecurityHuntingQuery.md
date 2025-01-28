@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery
@@ -15,9 +15,6 @@ It specifies a data table in the advanced hunting schema and a piped sequence of
 Find out more about hunting for threats across devices, emails, apps, and identities.
 Learn about KQL.
 For information on using advanced hunting in the Microsoft 365 Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft 365 Defender.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Start-MgBetaSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Beta.Security/Start-MgBetaSecurityHuntingQuery?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,12 +42,17 @@ Find out more about hunting for threats across devices, emails, apps, and identi
 Learn about KQL.
 For information on using advanced hunting in the Microsoft 365 Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft 365 Defender.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -207,35 +209,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Query <String>]`: 
-  - `[Timespan <String>]`:
+BODYPARAMETER \<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Query \<String\>\]: 
+  \[Timespan \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

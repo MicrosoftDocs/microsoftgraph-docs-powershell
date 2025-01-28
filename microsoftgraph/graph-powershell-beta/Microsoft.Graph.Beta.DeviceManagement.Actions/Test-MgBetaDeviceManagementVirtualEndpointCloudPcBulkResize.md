@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize
@@ -31,19 +30,12 @@ Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize
 ## DESCRIPTION
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+```
 
 $params = @{
 	cloudPcIds = @(
@@ -54,10 +46,6 @@ targetServicePlanId = "662009bc-7732-4f6f-8726-25883518b33e"
 }
 
 Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize -BodyParameter $params
-
-```
-This example shows how to use the Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize Cmdlet.
-
 
 ## PARAMETERS
 
@@ -214,36 +202,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsLvwgawDevicemanagementVirtualendpointCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CloudPcIds <String- `[]`>]`: 
-  - `[TargetServicePlanId <String>]`:
+BODYPARAMETER \<IPathsLvwgawDevicemanagementVirtualendpointCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CloudPcIds \<String\[\]\>\]: 
+  \[TargetServicePlanId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize)
 
 [https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

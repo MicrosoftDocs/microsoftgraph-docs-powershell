@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Get-MgEducationUserDelta
@@ -11,9 +10,6 @@ ms.subservice: education
 ## SYNOPSIS
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,25 +24,14 @@ Get-MgEducationUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Prope
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.ReadBasic.All, EduRoster.WriteWrite.All, EduRoster.ReadWrite.All, EduRoster.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationUserDelta
-
-```
-This example shows how to use the Get-MgEducationUserDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -262,26 +247,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta)
 
 [https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

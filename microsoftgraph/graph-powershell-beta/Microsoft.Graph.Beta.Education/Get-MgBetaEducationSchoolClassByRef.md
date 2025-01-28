@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschoolclassbyref
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Get-MgBetaEducationSchoolClassByRef
 
 ## SYNOPSIS
 Retrieve a list of classes owned by a school.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolClassByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,12 +21,17 @@ Get-MgBetaEducationSchoolClassByRef -EducationSchoolId <String> [-Filter <String
 ## DESCRIPTION
 Retrieve a list of classes owned by a school.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -231,27 +232,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschoolclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschoolclassbyref)
 
 [https://learn.microsoft.com/graph/api/educationschool-list-classes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationschool-list-classes?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

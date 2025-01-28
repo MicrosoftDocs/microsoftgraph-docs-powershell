@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgdownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
 
 ## SYNOPSIS
 Download Apple push notification certificate signing request
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,25 +21,14 @@ Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotifi
 ## DESCRIPTION
 Download Apple push notification certificate signing request
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement.Functions
+```
 
 Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
-
-```
-This example shows how to use the Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest Cmdlet.
-
 
 ## PARAMETERS
 
@@ -108,26 +93,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgdownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgdownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest)
 
 [https://learn.microsoft.com/graph/api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

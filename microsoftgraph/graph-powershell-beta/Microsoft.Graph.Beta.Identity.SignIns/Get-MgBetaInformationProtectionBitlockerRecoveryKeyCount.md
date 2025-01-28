@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykeycount
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionBitlockerRecoveryKeyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKeyCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,12 +21,17 @@ Get-MgBetaInformationProtectionBitlockerRecoveryKeyCount [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -122,27 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykeycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykeycount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

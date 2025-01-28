@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicetimelineevent
@@ -30,12 +30,17 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for deviceManagement
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -271,44 +276,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent>`: The user experience analytics device event entity contains NRT device event details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent\>: The user experience analytics device event entity contains NRT device event details.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeviceId <String>]`: The id of the device where the event occurred.
-  - `[EventDateTime <DateTime?>]`: The time the event occured.
-  - `[EventDetails <String>]`: The details provided by the event, format depends on event type.
-  - `[EventLevel <DeviceEventLevel?>]`: Indicates device event level.
+  \[DeviceId \<String\>\]: The id of the device where the event occurred.
+  \[EventDateTime \<DateTime?\>\]: The time the event occured.
+  \[EventDetails \<String\>\]: The details provided by the event, format depends on event type.
+  \[EventLevel \<DeviceEventLevel?\>\]: Indicates device event level.
 Possible values are: None, Verbose, Information, Warning, Error, Critical
-  - `[EventName <String>]`: The name of the event.
+  \[EventName \<String\>\]: The name of the event.
 Examples include: BootEvent, LogonEvent, AppCrashEvent, AppHangEvent.
-  - `[EventSource <String>]`: The source of the event.
+  \[EventSource \<String\>\]: The source of the event.
 Examples include: Intune, Sccm.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicetimelineevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicetimelineevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

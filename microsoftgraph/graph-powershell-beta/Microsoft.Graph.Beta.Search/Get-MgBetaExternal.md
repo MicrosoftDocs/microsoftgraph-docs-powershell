@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternal
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get external
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgExternal](/powershell/module/Microsoft.Graph.Search/Get-MgExternal?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -23,12 +20,17 @@ Get-MgBetaExternal [-ExpandProperty <String[]>] [-Property <String[]>] [-Respons
 ## DESCRIPTION
 Get external
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -121,27 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveactivity
@@ -22,25 +22,14 @@ Get-MgBetaDriveActivity -DriveId <String> [-ExpandProperty <String[]>] [-Filter 
 ## DESCRIPTION
 The list of recent activities that took place under this drive.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaDriveActivity -DriveId $driveId
-
-```
-This example shows how to use the Get-MgBetaDriveActivity Cmdlet.
-
 
 ## PARAMETERS
 
@@ -269,26 +258,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveactivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

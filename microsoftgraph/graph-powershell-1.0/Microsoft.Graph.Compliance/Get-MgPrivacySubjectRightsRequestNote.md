@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote
 schema: 2.0.0
-ms.subservice: compliance
 ---
 
 # Get-MgPrivacySubjectRightsRequestNote
 
 ## SYNOPSIS
 List of notes associated with the request.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,25 +37,14 @@ Get-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-Expan
 ## DESCRIPTION
 List of notes associated with the request.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Compliance
+```
 
 Get-MgPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId
-
-```
-This example shows how to use the Get-MgPrivacySubjectRightsRequestNote Cmdlet.
-
 
 ## PARAMETERS
 
@@ -321,36 +306,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

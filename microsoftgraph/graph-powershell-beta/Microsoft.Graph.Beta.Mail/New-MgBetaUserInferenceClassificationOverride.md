@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetauserinferenceclassificationoverride
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to overrides for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/New-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,18 +45,12 @@ New-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
 ## DESCRIPTION
 Create new navigation property to overrides for users
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 $params = @{
 	classifyAs = "focused"
@@ -71,11 +62,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserInferenceClassificationOverride -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserInferenceClassificationOverride Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -281,56 +267,34 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInferenceClassificationOverride>`: inferenceClassificationOverride
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphInferenceClassificationOverride\>: inferenceClassificationOverride
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ClassifyAs <String>]`: inferenceClassificationType
-  - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of an entity instance.
-    - `[Name <String>]`: The display name of an entity instance.
+  \[ClassifyAs \<String\>\]: inferenceClassificationType
+  \[SenderEmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Address \<String\>\]: The email address of an entity instance.
+    \[Name \<String\>\]: The display name of an entity instance.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserConfigurationId \<String\>\]: The unique identifier of userConfiguration
+  \[UserId \<String\>\]: The unique identifier of user
 
-SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of an entity instance.
-  - `[Name <String>]`: The display name of an entity instance.
+SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Address \<String\>\]: The email address of an entity instance.
+  \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetauserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetauserinferenceclassificationoverride)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

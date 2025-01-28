@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatesupdatableasset
@@ -33,12 +33,17 @@ Invoke-MgBetaUnenrollWindowsUpdatesUpdatableAsset
 Unenroll updatableAsset resources from update management by Windows Autopatch.
 You can also use the method unenrollAssetsById to unenroll assets.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -211,41 +216,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSETS `<IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSETS \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
-BODY `<IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+BODY \<IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Assets \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[UpdateCategory <String>]`: updateCategory
+  \[UpdateCategory \<String\>\]: updateCategory
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatesupdatableasset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatesupdatableasset)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
