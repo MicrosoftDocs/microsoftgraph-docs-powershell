@@ -62,10 +62,10 @@ You can use the Update application operation to perform an update instead.
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
-| :--------------- | :------------------------------------------  |
+| --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All  |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Add a new key credential to an application

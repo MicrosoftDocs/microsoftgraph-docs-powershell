@@ -55,7 +55,6 @@ function Start-Generator {
             git add .
             git commit -m "Inserted permissions Table"
         }
-
     }
     catch {
         Write-Host "Error in $_";
@@ -120,43 +119,15 @@ function New-ReferenceTable {
 | Application | $AppPerms |
 "@;
 
-                $V1_PermissionsFolder = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/permissions/$CommandName.md")
-                $Beta_PermissionsFolder = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-beta/permissions/$CommandName.md")
-
-                $IncludeLink = "[!INCLUDE [permissions-table](../permissions/$CommandName.md)]"
-                if ($ApiVersion -eq "v1.0") {
-                    if (-not (Test-Path $V1_PermissionsFolder)) {
-                        New-Item -ItemType file -Path $V1_PermissionsFolder -Force
-                    }
-                    else {
-                        #Clear content first before writing
-                        Clear-Content $V1_PermissionsFolder
-                    }
-                    #Write the content
-                    Set-Content -Path $V1_PermissionsFolder -Value $markdownTable
-
-                }
-                else {
-                    if (-not (Test-Path $Beta_PermissionsFolder)) {
-                        New-Item -ItemType file -Path $Beta_PermissionsFolder -Force
-                    }
-                    else {
-                        #Clear content first before writing
-                        Clear-Content $Beta_PermissionsFolder
-                        #Write the content
-                    } 
-                    Set-Content -Path $Beta_PermissionsFolder -Value $markdownTable
-                }
-
 
                 if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
-                    $Link = "**Permissions**`r`n$IncludeLink`r`n`n## EXAMPLES"
+                    $Link = "**Permissions**`r`n`n$markdownTable`r`n`n## EXAMPLES"
     (Get-Content $File) | 
                     Foreach-Object { $_ -replace '## EXAMPLES', $Link }  | 
                     Out-File $File
                 }
                 else {
-                    $Link = "**Permissions**`r`n$markdownTable`r`n`n## PARAMETERS"
+                    $Link = "**Permissions**`r`n`n$markdownTable`r`n`n## PARAMETERS"
     (Get-Content $File) | 
                     Foreach-Object { $_ -replace '## PARAMETERS', $Link }  | 
                     Out-File $File
