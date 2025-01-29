@@ -78,7 +78,7 @@ AdditionalProperties    : {}
 
 ## Step 2: Create a client service principal
 
-The first step in granting consent is to [create the service principal for the app that you grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you need the `App Id` of your application.
+The first step in granting consent is to [create the service principal for the app that you grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal). To do so, you need the `App Id` of your application.
 
 <a name='register-an-application-with-azure-ad'></a>
 
@@ -191,7 +191,7 @@ $params = @{
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw' -BodyParameter $params
 ```
 
-- To revoke all grants, use `Remove-MgOauth2PermissionGrant`.
+- Use [Remove-MgOauth2PermissionGrant](/powershell/module/microsoft.graph.identity.signins/remove-mgoauth2permissiongrant) to revoke all grants.
 
 ```powershell
 Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw'
