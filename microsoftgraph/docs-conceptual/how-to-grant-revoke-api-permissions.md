@@ -150,7 +150,7 @@ Scope       : Group.Read.All
 To confirm the delegated permissions assigned to the service principal on behalf of the user, you run the following command.
 
 ```powershell
-Get-MgOauth2PermissionGrant -Filter "clientId eq '11112222-bbbb-3333-cccc-4444dddd5555' and consentType eq 'AllPrincipals'"
+Get-MgOauth2PermissionGrant -Filter "clientId eq '11112222-bbbb-3333-cccc-4444dddd5555' and consentType eq 'AllPrincipals'" | Format-List
 ```
 
 ```Output
@@ -171,7 +171,7 @@ To add the `User.Read.All` scope to the oauthPermissionGrant object, run:
 
 ```powershell
 $params = @{
-  Scope = "Group.Read.All User.Read.All "
+  Scope = "Group.Read.All User.Read.All"
   }
 
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw' -BodyParameter $params
