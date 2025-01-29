@@ -4,6 +4,11 @@
             "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Calendar/Get-MgPlace.md",
             "redirect_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/docs-conceptual/tutorial-pim.md",
+            "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/how-to-assign-microsoft-entra-roles-in-pim",
+            "redirect_document_id": false
         }
     ]
 }

@@ -2,8 +2,8 @@
 title: "Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell"
 description: "Learn how to create eligible and active role assignments in Microsoft Entra Privileged Identity Management using Microsoft Graph PowerShell"
 
-ms.topic: tutorial
-ms.date: 01/31/2024
+ms.topic: how-to
+ms.date: 01/28/2025
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -12,21 +12,21 @@ ms.reviewer: mandardalvi
 #customer intent: As an IT administrator using Microsoft Entra ID, I want to assign and manage admin roles in Privileged Identity Management using Microsoft Graph PowerShell, so that I can control and monitor access to privileged roles in my organization.
 ---
 
-# Tutorial: Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell
+# Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell
 
 The Microsoft Entra Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Additionally, privileged role administrators can make users eligible for Microsoft Entra admin roles. An eligible administrator can activate the role when they need the role, and the permissions expire once the eligible administrator is done.
 
-In this tutorial, you'll create, extend, activate, deactivate, and remove eligible role assignments.
+In this article, you create, extend, activate, deactivate, and remove eligible role assignments.
 
 ## Prerequisites
 
-To successfully complete this tutorial, make sure you have the required prerequisites:
+To successfully complete this guide, make sure you have the required prerequisites:
 
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.  
 1. To use the Microsoft Entra Privileged Identity Management, you must have one of the following licenses:
     - Microsoft Entra ID P2
     - Enterprise Mobility + Security (EMS) E5 license
-1. Microsoft Graph PowerShell using a Privileged Role Administrator role and the appropriate permissions. For this tutorial, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator) role and the appropriate permissions. For this guide, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
     Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"
@@ -36,7 +36,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 ## Step 1: Create a user account
 
-In this step, you'll create a user who will be the target of the admin assignments. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page.
+In this step, you create a user who is the target of the admin assignments. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page.
 
 ```powershell
 $passwordProfile =@{
@@ -176,7 +176,7 @@ There are two ways to create active role assignments:
 - An admin can directly create an active role assignment for a user without first creating an eligible role assignment.
 - A user can activate an existing eligible role assignment.
 
-In this step, you'll activate the eligible role assignment created in step 2. To complete this step, sign in to the terminal as the user we created in step 1.
+In this step, you activate the eligible role assignment created in step 2. To complete this step, sign in to the terminal as the user we created in step 1.
 
 ```powershell
 $params = @{
