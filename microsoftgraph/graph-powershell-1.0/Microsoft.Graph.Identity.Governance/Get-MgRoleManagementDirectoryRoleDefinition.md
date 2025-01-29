@@ -45,6 +45,7 @@ Read the properties and relationships of a unifiedRoleDefinition object.
 The following role-based access control (RBAC) providers are currently supported:
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

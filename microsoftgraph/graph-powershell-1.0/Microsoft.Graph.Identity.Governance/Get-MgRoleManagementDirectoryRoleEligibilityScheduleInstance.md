@@ -43,6 +43,7 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject <IIden
 Get the instance of a role eligibility.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

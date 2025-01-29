@@ -50,13 +50,6 @@ Get-MgSiteTermStoreGroupSetTermChildRelationToTerm -InputObject <ISitesIdentity>
 The to \[term\] of the relation.
 The term to which the relationship is defined.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

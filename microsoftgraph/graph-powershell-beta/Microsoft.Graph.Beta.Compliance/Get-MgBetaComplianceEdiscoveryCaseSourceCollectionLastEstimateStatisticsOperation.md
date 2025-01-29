@@ -33,6 +33,7 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperatio
 Get the last estimateStatisticsOperation object associated with a source collection.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

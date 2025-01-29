@@ -34,13 +34,6 @@ Get-MgBetaReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count]
 ## DESCRIPTION
 Get a list of archived print jobs that were queued for particular printer.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -26,6 +26,7 @@ Get-MgPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property <Str
 Read the properties and relationships of a crossTenantAccessPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

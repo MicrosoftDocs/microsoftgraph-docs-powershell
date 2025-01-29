@@ -43,6 +43,7 @@ Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property
 Read properties and relationships of the user object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite, User.Read, Directory.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementApps.ReadWrite.All,  |

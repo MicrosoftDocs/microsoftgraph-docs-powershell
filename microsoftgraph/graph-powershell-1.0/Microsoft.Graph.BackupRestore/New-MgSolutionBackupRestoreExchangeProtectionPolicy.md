@@ -41,13 +41,6 @@ Create a protection policy for the Exchange service in a Microsoft 365 tenant.
 The policy is set to inactive when it is created.
 Users can also provide a list of protection units under the policy.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

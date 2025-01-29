@@ -28,13 +28,6 @@ Get-MgBetaDirectoryObjectDelta [-ExpandProperty <String[]>] [-Filter <String>] [
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Retrieve changes for a collection of users and groups
 

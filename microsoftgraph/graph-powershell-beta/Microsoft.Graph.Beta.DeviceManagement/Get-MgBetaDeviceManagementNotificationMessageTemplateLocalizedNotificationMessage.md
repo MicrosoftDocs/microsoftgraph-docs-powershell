@@ -44,6 +44,7 @@ Get-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessag
 The list of localized messages for this Notification Message Template.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

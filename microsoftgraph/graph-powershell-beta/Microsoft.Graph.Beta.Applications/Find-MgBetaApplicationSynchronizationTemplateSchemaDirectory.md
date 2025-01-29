@@ -33,13 +33,6 @@ Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IAppl
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ApplicationId

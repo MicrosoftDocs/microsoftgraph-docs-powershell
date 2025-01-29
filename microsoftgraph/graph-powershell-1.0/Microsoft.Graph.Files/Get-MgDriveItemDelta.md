@@ -57,13 +57,6 @@ Your app begins by calling delta without any parameters.The service starts enume
 After you have finished receiving all the changes, you may apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 Deleted items are returned with the deleted facet.Items with this property set should be removed from your local state.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

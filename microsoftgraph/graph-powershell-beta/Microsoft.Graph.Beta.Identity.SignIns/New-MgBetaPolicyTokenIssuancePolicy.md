@@ -34,6 +34,7 @@ New-MgBetaPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-ResponseHeaders
 Create a new tokenIssuancePolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -33,13 +33,6 @@ Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation -InputO
 ## DESCRIPTION
 Operation entity that represents the latest indexing for the noncustodial data source.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

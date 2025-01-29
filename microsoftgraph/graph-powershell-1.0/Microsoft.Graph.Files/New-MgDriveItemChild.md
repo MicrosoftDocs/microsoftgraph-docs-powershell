@@ -83,6 +83,7 @@ New-MgDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGra
 Create new navigation property to children for drives
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

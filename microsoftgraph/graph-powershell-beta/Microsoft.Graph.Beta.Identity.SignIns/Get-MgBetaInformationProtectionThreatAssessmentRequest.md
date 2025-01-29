@@ -45,6 +45,7 @@ Retrieve the properties and relationships of a specified threatAssessmentRequest
 A threat assessment request can be one of the following types:
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ThreatAssessment.ReadWrite.All,  |

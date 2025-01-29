@@ -31,13 +31,6 @@ Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceRoleDefiniti
 ## DESCRIPTION
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

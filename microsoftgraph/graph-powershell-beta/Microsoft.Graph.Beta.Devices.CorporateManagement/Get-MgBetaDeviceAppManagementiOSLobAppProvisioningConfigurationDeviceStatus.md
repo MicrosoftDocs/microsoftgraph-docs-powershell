@@ -41,6 +41,7 @@ Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus
 The list of device installation states for this mobile app configuration.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

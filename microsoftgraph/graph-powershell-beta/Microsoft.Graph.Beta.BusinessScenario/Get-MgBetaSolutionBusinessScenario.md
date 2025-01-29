@@ -40,6 +40,7 @@ Get-MgBetaSolutionBusinessScenario -InputObject <IBusinessScenarioIdentity> [-Ex
 Read the properties and relationships of a businessScenario object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All, BusinessScenarioConfig.Read.All,  |

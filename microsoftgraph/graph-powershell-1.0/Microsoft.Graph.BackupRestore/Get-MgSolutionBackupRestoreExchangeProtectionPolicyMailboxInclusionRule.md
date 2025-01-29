@@ -51,13 +51,6 @@ An inclusion rule indicates that a protection policy should contain protection u
 The initial status of a protection rule upon creation is active.
 After the rule is applied, the state is either completed or completedWithErrors.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

@@ -74,6 +74,7 @@ These objects represent the resource roles that an access package assigns to eac
 Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

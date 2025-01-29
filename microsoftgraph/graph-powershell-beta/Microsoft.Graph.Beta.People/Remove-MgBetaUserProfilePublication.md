@@ -30,6 +30,7 @@ Remove-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> [-IfMatch <St
 Delete navigation property publications for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

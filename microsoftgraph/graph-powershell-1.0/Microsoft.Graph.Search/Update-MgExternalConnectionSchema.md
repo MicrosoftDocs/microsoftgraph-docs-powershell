@@ -50,6 +50,7 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 Create a new or update an existing schema for a Microsoft Search connection.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -32,13 +32,6 @@ Remove-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property alerts_v2 for security
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AlertId

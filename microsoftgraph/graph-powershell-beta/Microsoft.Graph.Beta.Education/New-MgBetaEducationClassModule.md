@@ -56,6 +56,7 @@ Only teachers in a class can create a module.
 Modules start in the draft state, which means that students won't see the modules until publication.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduCurricula.ReadWrite,  |

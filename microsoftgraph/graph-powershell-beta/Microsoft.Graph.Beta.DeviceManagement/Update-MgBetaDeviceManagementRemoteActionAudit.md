@@ -52,6 +52,7 @@ Update-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementId
 Update the navigation property remoteActionAudits in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

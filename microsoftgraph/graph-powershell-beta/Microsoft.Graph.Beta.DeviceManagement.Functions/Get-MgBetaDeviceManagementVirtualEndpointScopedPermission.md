@@ -22,13 +22,6 @@ Get-MgBetaDeviceManagementVirtualEndpointScopedPermission [-Count] [-Filter <Str
 ## DESCRIPTION
 Get the permissions and corresponding scope IDs for which the authenticated user has access.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get all the permissions and scope IDs of the authenticated user
 

@@ -33,6 +33,7 @@ Get-MgDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String>
 The content stream for this version of the item.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All, Sites.Read.All,  |

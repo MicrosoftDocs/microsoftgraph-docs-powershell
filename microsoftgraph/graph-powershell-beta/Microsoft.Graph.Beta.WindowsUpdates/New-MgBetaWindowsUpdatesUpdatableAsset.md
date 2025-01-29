@@ -31,13 +31,6 @@ New-MgBetaWindowsUpdatesUpdatableAsset -BodyParameter <Hashtable> [-ResponseHead
 Create a new updatableAssetGroup object.
 The updatableAssetGroup resource inherits from updatableAsset.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

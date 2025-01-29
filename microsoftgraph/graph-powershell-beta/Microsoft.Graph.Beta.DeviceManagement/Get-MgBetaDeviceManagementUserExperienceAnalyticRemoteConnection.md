@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection -InputObject <I
 User experience analytics remote connection
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

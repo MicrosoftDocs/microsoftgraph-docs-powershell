@@ -34,6 +34,7 @@ Get-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProperty <
 Read the properties and relationships of a schema object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -33,6 +33,7 @@ Remove-MgBetaGroupCalendarEvent -InputObject <ICalendarIdentity> [-IfMatch <Stri
 Delete navigation property events for groups
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group.ReadWrite.All,  |

@@ -48,6 +48,7 @@ Update-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> -IfM
 Update the properties of plannerProgressTaskBoardTaskFormat object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |

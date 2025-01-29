@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementUserPfxCertificate -InputObject <IDeviceManagementAdmi
 Collection of PFX certificates associated with a user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

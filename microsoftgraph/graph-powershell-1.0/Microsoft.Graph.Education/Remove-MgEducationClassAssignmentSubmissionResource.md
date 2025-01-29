@@ -43,6 +43,7 @@ This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

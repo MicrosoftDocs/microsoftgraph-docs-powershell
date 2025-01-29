@@ -36,13 +36,6 @@ New-MgBetaIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthent
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
 You can create only an externalUsersSelfServiceSignupEventsFlow object type.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Create a basic External Identities sign-up and sign-in user flow in an external tenant
 

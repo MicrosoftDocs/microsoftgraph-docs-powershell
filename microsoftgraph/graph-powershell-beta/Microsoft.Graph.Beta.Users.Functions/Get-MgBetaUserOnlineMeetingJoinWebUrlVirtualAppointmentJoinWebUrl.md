@@ -35,6 +35,7 @@ This web URL includes enhanced business-to-customer experiences such as mobile b
 With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetings.Read, OnlineMeetings.ReadWrite,  |

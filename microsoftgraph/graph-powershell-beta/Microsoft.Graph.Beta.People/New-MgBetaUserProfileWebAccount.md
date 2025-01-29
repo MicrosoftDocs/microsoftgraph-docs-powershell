@@ -54,6 +54,7 @@ New-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <I
 Create new navigation property to webAccounts for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

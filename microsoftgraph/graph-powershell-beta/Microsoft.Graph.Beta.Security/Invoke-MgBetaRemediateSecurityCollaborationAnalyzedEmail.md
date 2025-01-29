@@ -43,13 +43,6 @@ This API enables scenarios and use cases such as SOAR integration, playbooks, an
 For more information read email remediation, trigger action and track actions.
 If there is false positives admins can take move to inbox action.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

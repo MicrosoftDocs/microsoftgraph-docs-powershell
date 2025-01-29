@@ -81,6 +81,7 @@ It's loaded when a localized branding isn't configured for the user's browser la
 To retrieve the default branding, see Get branding.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

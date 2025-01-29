@@ -41,13 +41,6 @@ After that time, they're permanently deleted.
 This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Remove a group
 

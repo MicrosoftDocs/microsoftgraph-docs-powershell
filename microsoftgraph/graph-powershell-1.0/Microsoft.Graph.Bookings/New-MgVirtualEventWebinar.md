@@ -40,13 +40,6 @@ New-MgVirtualEventWebinar -BodyParameter <IMicrosoftGraphVirtualEventWebinar>
 ## DESCRIPTION
 Create a new virtualEventWebinar object in draft mode.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

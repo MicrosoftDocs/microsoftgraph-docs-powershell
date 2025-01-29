@@ -35,6 +35,7 @@ This method makes the custodian part of the case again.
 For details, see Manage custodians in an Advanced eDiscovery case.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

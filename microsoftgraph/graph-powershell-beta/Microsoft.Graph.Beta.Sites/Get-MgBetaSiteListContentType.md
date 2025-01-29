@@ -42,6 +42,7 @@ Get-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <St
 The collection of content types present in this list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

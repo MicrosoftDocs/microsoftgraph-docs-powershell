@@ -25,6 +25,7 @@ Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp [-ResponseHeadersVari
 Syncs Intune account with Microsoft Store For Business
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

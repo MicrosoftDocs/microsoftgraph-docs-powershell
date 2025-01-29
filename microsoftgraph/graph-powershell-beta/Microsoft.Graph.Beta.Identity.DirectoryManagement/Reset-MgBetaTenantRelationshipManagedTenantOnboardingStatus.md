@@ -32,13 +32,6 @@ Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus -InputObject <IIdent
 Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multitenant management platform using the offboardTenant action.
 By invoking this action the platform attempts to onboard the managed tenant for management.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

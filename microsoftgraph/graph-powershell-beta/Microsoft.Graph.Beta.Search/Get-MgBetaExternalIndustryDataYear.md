@@ -40,6 +40,7 @@ Get-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-ExpandProper
 Read the properties and relationships of a yearTimePeriodDefinition object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

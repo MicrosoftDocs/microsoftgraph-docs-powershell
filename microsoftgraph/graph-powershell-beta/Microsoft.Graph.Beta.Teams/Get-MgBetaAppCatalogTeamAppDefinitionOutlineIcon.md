@@ -31,6 +31,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity> [
 Retrieve a Teams app icon associated with a specific definition of an app.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AppCatalog.Submit,  |

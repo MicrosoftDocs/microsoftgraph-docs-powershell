@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementGroupPolicyCategory -InputObject <IDeviceManagementAdm
 The available group policy categories for this account.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

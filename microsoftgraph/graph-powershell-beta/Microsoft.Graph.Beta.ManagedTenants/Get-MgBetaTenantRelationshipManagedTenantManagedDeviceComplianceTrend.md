@@ -40,6 +40,7 @@ Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend -InputObje
 Read the properties and relationships of a managedDeviceComplianceTrend object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |

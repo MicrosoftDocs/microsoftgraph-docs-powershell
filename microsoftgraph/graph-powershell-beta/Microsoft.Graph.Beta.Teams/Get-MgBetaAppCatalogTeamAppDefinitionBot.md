@@ -34,6 +34,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandP
 Get the bot associated with a specific definition of the  TeamsApp.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AppCatalog.Submit,  |

@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementIntentDeviceState -InputObject <IDeviceManagementIdent
 Collection of states of all devices that the intent is applied to
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -43,6 +43,7 @@ Get-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 Get a conversationMember from a channel.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChannelMember.ReadWrite,  |

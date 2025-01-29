@@ -53,6 +53,7 @@ Update-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMi
 Update the properties of an itemPhone object in a user's profile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

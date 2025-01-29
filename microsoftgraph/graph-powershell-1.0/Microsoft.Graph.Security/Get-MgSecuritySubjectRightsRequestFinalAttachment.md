@@ -36,6 +36,7 @@ Get the final attachment for a subject rights request.
 The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All,  |

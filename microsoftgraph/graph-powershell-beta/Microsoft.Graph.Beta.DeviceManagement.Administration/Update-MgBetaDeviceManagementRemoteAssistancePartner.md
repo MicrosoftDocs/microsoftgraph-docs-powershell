@@ -51,6 +51,7 @@ Update-MgBetaDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManage
 Update the navigation property remoteAssistancePartners in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

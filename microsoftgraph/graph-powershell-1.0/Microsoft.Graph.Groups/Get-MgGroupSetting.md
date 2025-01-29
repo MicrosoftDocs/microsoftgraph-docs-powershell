@@ -66,6 +66,7 @@ Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

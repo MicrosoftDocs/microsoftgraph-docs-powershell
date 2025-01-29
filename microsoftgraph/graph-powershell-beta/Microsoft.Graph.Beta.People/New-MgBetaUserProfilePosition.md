@@ -56,6 +56,7 @@ New-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <IMi
 Create new navigation property to positions for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

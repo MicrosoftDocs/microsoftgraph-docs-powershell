@@ -43,6 +43,7 @@ Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy
 Zero or more policies admin intended for the app as of now.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

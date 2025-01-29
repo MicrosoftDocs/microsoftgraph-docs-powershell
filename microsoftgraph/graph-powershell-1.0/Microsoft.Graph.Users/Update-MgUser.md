@@ -163,6 +163,7 @@ Update-MgUser -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUser>
 Update the properties of a user object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite, User-PasswordProfile.ReadWrite.All, User-Mail.ReadWrite.All, Directory.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |

@@ -42,6 +42,7 @@ Get-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty 
 Measurements of tenants' security posture to help protect them from threats.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -36,6 +36,7 @@ Read the properties and relationships of an organizationalBrandingLocalization o
 To retrieve a localization branding object, specify the value of id in the URL.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

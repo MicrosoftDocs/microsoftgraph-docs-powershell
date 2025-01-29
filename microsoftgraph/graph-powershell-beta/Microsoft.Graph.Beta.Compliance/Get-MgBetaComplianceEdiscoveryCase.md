@@ -40,6 +40,7 @@ Get-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-ExpandPr
 Retrieve the properties and relationships of a case object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

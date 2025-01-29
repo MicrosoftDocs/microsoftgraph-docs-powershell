@@ -32,6 +32,7 @@ Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData
 Create a request to remove the personal data for an outboundSharedUserProfile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | CrossTenantUserProfileSharing.ReadWrite, CrossTenantUserProfileSharing.ReadWrite.All,  |

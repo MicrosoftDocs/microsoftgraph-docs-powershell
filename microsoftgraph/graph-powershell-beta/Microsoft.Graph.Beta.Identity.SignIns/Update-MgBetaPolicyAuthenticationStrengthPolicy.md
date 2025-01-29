@@ -58,6 +58,7 @@ You cannot update the allowed auth method combinations using this request.
 To do so, use the Update allowed combinations action.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

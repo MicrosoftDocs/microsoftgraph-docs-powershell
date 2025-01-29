@@ -28,6 +28,7 @@ Read the properties and relationships of a deviceRegistrationPolicy object.
 Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration, Policy.Read.All,  |

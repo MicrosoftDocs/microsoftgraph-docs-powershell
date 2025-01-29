@@ -41,13 +41,6 @@ Get-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity> [-E
 ## DESCRIPTION
 Get the status of an operation that adds the large gallery view to a call.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

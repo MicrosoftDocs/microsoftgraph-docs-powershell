@@ -67,13 +67,6 @@ Get-MgEntitlementManagementResourceEnvironment -InputObject <IIdentityGovernance
 ## DESCRIPTION
 A reference to the geolocation environments in which a resource is located.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

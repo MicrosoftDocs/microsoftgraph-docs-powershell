@@ -41,6 +41,7 @@ Get-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-Expand
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetings.Read, OnlineMeetings.ReadWrite,  |

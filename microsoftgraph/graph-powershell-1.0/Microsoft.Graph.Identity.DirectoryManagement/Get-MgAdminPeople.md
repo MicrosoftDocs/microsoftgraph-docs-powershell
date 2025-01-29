@@ -25,6 +25,7 @@ Get-MgAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [-Response
 Retrieve the properties and relationships of a peopleAdminSettings object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

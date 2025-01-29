@@ -34,6 +34,7 @@ The SAS token has a validity of one hour.
 The upload URL is provided only for the CSV data provider.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAdministration.ReadWrite,  |

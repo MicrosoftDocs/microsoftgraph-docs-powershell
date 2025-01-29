@@ -51,6 +51,7 @@ Including the $select query parameter triggers a Microsoft Entra audit of the op
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

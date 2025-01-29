@@ -27,6 +27,7 @@ Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <Str
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

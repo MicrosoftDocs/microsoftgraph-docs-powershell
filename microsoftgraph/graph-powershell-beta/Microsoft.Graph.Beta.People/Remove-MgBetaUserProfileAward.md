@@ -31,6 +31,7 @@ Remove-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-IfMatch <String>]
 Deletes a personAward object from a user's profile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

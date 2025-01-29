@@ -35,6 +35,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -InputObject <IS
 Get a list of the ediscoveryIndexOperation associated with an ediscoveryCustodian.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

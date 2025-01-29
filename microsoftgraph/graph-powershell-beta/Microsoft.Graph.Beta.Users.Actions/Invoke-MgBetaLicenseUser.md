@@ -36,6 +36,7 @@ To learn more about group-based licensing, see What is group-based licensing in 
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

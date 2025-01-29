@@ -33,6 +33,7 @@ The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

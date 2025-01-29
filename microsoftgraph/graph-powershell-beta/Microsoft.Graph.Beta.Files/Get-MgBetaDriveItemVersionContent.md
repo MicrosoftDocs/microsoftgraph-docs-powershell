@@ -33,6 +33,7 @@ Get-MgBetaDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String
 Get content for the navigation property versions from drives
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All, Sites.Read.All,  |

@@ -33,6 +33,7 @@ Retrieve creation options required to generate and register a Microsoft Entra ID
 Self-service operations aren't supported.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |

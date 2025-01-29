@@ -42,13 +42,6 @@ The administrator of an owner tenant has the permissions to add tenants to the m
 The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request.
 A tenant can be part of only one multitenant organization.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -52,13 +52,6 @@ Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -InputObject 
 Send an SMS reminder to external attendees for a Teams Virtual Appointment.
 This feature requires Teams Premium and attendees must have a valid United States phone number to receive SMS notifications.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

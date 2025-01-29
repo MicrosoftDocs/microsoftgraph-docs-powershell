@@ -34,6 +34,7 @@ Remove-MgBetaTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respons
 Delete a tag object permanently.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamworkTag.ReadWrite,  |

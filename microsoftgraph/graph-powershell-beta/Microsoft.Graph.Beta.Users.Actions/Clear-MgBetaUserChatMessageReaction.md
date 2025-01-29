@@ -50,6 +50,7 @@ Clear-MgBetaUserChatMessageReaction -InputObject <IUsersActionsIdentity>
 Invoke action unsetReaction
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChatMessage.Send, Chat.ReadWrite,  |

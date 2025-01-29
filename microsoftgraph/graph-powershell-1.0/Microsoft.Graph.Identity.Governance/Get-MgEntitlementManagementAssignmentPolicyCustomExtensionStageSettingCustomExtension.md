@@ -35,13 +35,6 @@ Indicates the custom workflow extension that will be executed at this stage.
 Nullable.
 Supports $expand.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

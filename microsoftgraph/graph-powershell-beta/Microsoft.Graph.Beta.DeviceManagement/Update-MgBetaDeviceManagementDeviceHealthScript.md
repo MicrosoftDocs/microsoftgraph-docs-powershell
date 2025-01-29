@@ -64,6 +64,7 @@ Update-MgBetaDeviceManagementDeviceHealthScript -InputObject <IDeviceManagementI
 Update the navigation property deviceHealthScripts in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

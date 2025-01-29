@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementA
 Intune branding profiles targeted to AAD groups
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

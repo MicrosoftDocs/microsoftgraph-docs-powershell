@@ -53,6 +53,7 @@ Create a new tag for the specified case.
 The tags are used in review sets while reviewing content.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

@@ -37,6 +37,7 @@ Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanc
 Return instances of membership and ownership eligibility schedules for the calling principal.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

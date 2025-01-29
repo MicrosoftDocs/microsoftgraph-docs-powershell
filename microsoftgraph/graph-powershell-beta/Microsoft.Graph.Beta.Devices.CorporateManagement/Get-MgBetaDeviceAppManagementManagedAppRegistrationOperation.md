@@ -42,6 +42,7 @@ Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevi
 Zero or more long running operations triggered on the app registration.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

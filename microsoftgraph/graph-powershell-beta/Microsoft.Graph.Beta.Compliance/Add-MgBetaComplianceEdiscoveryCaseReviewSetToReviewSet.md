@@ -53,6 +53,7 @@ After the operation is created, you can get the status of the operation by retri
 The location provides a URL that will return a caseExportOperation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

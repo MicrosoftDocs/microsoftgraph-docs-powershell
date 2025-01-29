@@ -42,6 +42,7 @@ Get-MgBetaPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-E
 Represents the role management policies.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RoleManagementPolicy.Read.Directory, RoleManagementPolicy.ReadWrite.Directory,  |

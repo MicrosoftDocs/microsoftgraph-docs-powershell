@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <I
 The list of scheduled action for this rule
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

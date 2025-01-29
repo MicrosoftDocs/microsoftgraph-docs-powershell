@@ -53,6 +53,7 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityI
 Create a new siteSource object associated with an eDiscovery custodian.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

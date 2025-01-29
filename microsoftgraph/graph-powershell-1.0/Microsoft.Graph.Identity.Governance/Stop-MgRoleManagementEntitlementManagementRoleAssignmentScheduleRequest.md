@@ -35,13 +35,6 @@ Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
 Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a Granted status, and have the system automatically delete the canceled request after 30 days.
 After calling this action, the status of the canceled unifiedRoleAssignmentScheduleRequest changes to Canceled.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

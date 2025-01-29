@@ -33,6 +33,7 @@ Remove-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIde
 Delete navigation property schema for applications
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

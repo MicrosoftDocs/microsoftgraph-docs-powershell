@@ -62,6 +62,7 @@ A presence session is created as a result of a successful setPresence operation,
 For more details, see presence sessions and time-out and expiration.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Presence.ReadWrite,  |

@@ -51,6 +51,7 @@ Update-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 Update the properties of a bookingCustomQuestion object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BookingsAppointment.ReadWrite.All,  |

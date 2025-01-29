@@ -31,6 +31,7 @@ Get-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity> [-ExpandProperty 
 Get the activity status of a Microsoft Teams-enabled device.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

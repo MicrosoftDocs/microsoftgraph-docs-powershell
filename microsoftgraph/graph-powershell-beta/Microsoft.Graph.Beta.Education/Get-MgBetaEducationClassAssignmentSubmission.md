@@ -64,6 +64,7 @@ Provide the header Prefer: include-unknown-enum-members to properly list submiss
 For details, see the examples section.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |

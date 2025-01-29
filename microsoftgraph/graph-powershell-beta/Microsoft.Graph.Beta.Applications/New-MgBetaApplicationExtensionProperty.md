@@ -52,6 +52,7 @@ New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 Create a new directory extension definition, represented by an extensionProperty object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

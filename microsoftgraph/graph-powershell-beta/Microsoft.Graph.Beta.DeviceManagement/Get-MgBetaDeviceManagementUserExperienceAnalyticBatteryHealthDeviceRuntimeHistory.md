@@ -40,6 +40,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistor
 User Experience Analytics Battery Health Device Runtime History
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

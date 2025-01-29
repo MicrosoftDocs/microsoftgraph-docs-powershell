@@ -30,6 +30,7 @@ Remove-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-IfMatch <Strin
 Delete navigation property languages for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

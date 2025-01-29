@@ -54,6 +54,7 @@ Create an authenticationContextClassReference object, if the ID has not been use
 If ID has been used, this call updates the authenticationContextClassReference object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

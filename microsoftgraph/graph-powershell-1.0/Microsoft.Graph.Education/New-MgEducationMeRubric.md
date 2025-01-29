@@ -35,6 +35,7 @@ New-MgEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-Respon
 Create a new educationRubric object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

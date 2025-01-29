@@ -53,6 +53,7 @@ New-MgSiteListItemLink -InputObject <ISitesIdentity>
 Invoke action createLink
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

@@ -53,13 +53,6 @@ This method is used to create or update a custom language in an Azure AD B2C use
 Note: You must enable language customization in the Azure AD B2C user flow before you can create a custom language.
 For more information, see Update b2cIdentityUserFlow.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -34,6 +34,7 @@ Remove-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete a shift from the schedule.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |

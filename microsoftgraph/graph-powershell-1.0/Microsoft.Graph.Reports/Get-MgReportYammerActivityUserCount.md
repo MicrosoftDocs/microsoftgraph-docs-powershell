@@ -32,13 +32,6 @@ Get-MgReportYammerActivityUserCount -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Get the trends on the number of unique users who posted, read, and liked Yammer messages.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

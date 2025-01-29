@@ -53,6 +53,7 @@ Retrieve an educationCategory object.
 Only teachers, students, and applications with application permissions can perform this operation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |

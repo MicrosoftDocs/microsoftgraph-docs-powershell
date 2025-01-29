@@ -40,6 +40,7 @@ A delta function call for todoTask resources in a todoTaskList is similar to a G
 This allows you to maintain and synchronize a local store of a user's todoTask resources without having to fetch the entire set from the server every time.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

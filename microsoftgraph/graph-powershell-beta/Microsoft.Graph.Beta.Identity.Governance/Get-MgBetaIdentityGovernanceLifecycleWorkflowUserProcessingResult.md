@@ -41,13 +41,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -InputObject <
 ## DESCRIPTION
 Per-user workflow execution results.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: List the user processing results for a workflow
 

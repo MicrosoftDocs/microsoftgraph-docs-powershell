@@ -58,6 +58,7 @@ Update-MgBetaUserProfileCertification -InputObject <IPeopleIdentity>
 Update the properties of a personCertification object from a user's profile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

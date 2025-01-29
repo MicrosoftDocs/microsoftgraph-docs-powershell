@@ -29,13 +29,6 @@ New-MgBetaProgram -BodyParameter <IMicrosoftGraphProgram> [-ResponseHeadersVaria
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, create a new program object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

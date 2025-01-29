@@ -49,6 +49,7 @@ Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-Respon
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

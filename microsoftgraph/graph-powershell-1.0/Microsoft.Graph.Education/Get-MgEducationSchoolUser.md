@@ -27,6 +27,7 @@ Get-MgEducationSchoolUser -EducationSchoolId <String> [-ExpandProperty <String[]
 Get the educationUser resources associated with an educationSchool.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

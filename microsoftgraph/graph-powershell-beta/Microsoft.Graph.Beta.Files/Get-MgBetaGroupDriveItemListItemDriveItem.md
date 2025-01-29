@@ -32,13 +32,6 @@ Get-MgBetaGroupDriveItemListItemDriveItem -InputObject <IFilesIdentity> [-Expand
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -DriveId

@@ -24,6 +24,7 @@ Get-MgSearchQnaCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVari
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

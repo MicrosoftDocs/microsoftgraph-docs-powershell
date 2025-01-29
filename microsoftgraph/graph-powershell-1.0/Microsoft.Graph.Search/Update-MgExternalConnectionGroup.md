@@ -50,6 +50,7 @@ Update-MgExternalConnectionGroup -InputObject <ISearchIdentity>
 Update the properties of an externalGroup object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

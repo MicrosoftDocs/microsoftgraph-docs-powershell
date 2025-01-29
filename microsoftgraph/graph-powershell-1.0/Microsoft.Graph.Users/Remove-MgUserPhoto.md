@@ -33,6 +33,7 @@ Remove-MgUserPhoto -InputObject <IUsersIdentity> [-IfMatch <String>] [-ResponseH
 Delete navigation property photo for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite,  |

@@ -44,6 +44,7 @@ Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup -Input
 Read the properties and relationships of a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

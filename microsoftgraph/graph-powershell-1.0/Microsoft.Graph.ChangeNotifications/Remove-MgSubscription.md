@@ -35,13 +35,6 @@ Remove-MgSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <Str
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -47,6 +47,7 @@ Attacks are typically inflicted on different types of entities, such as devices,
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

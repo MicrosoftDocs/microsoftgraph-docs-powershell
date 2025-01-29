@@ -28,6 +28,7 @@ Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs.
 View a list of all the managed image resources from your Microsoft Entra subscriptions.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

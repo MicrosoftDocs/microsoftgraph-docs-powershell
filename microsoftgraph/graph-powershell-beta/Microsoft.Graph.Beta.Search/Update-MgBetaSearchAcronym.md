@@ -52,6 +52,7 @@ Update-MgBetaSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicro
 Update the properties of an acronym object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

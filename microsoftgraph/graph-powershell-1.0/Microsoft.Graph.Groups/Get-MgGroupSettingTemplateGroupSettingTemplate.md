@@ -42,6 +42,7 @@ A group setting template represents a template of settings from which settings m
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

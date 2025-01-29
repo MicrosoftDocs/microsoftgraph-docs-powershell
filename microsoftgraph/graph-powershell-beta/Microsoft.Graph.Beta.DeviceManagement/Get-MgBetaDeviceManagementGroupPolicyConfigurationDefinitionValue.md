@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -InputObject <
 The list of enabled or disabled group policy definition values for the configuration.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

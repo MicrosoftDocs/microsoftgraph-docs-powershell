@@ -33,13 +33,6 @@ Invoke-MgDeactivateEducationMeAssignment -InputObject <IEducationIdentity> [-Res
 Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
 This action can only be performed by a teacher on assigned assignments.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

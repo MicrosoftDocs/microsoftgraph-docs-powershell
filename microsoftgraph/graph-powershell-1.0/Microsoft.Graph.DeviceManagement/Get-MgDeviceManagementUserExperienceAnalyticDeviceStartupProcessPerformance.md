@@ -43,6 +43,7 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
 User experience analytics device Startup Process Performance
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

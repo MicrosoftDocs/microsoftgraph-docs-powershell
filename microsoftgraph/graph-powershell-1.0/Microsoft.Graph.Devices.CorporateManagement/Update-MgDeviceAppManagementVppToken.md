@@ -54,6 +54,7 @@ Update-MgDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementId
 Update the properties of a vppToken object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

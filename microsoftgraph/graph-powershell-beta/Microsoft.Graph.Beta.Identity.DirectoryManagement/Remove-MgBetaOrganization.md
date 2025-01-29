@@ -32,13 +32,6 @@ Remove-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-
 ## DESCRIPTION
 Delete entity from organization
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

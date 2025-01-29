@@ -40,6 +40,7 @@ Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
 Windows information protection wipe actions.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

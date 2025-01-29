@@ -34,6 +34,7 @@ Remove-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete an openShift object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |

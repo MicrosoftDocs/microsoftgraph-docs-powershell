@@ -35,13 +35,6 @@ For a requestType of UserAdd or AdminAdd, an access package assignment requested
 For a requestType of UserRemove, AdminRemove, or SystemRemove, this property has the id property of an existing assignment to be removed.
 Supports $expand.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId

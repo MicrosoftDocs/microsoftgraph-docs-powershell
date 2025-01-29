@@ -43,6 +43,7 @@ Get-MgBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProperty <
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

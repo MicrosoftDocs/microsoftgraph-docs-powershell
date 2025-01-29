@@ -43,6 +43,7 @@ Get-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentit
 Read properties and relationships of the macOSCustomConfiguration object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

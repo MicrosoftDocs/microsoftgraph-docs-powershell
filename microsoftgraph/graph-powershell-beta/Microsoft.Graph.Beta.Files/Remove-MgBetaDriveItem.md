@@ -33,6 +33,7 @@ Remove-MgBetaDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 Delete navigation property items for drives
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

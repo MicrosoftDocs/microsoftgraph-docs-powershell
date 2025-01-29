@@ -52,6 +52,7 @@ Update the role of a conversationMember in a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

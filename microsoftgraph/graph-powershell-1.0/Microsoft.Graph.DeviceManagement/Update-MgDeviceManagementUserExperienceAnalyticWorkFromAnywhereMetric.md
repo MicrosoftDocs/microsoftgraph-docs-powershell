@@ -53,6 +53,7 @@ Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric -InputObje
 Update the navigation property userExperienceAnalyticsWorkFromAnywhereMetrics in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

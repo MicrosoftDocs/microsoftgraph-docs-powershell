@@ -34,6 +34,7 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory -InputObject <I
 Delete navigation property userExperienceAnalyticsMetricHistory for deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -50,6 +50,7 @@ Add an owner to an application.
 Currently, only individual users are supported as owners of applications.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -45,6 +45,7 @@ Retrieve the properties and relationships of a specific authenticationEventsFlow
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

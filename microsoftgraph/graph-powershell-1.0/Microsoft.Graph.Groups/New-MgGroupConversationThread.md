@@ -60,6 +60,7 @@ Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |

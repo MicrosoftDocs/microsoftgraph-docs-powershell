@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObject
 Android Enterprise app configuration schema entities.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

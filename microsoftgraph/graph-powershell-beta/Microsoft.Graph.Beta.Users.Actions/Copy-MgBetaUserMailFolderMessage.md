@@ -49,13 +49,6 @@ Copy-MgBetaUserMailFolderMessage -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

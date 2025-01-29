@@ -34,13 +34,6 @@ Get-MgBetaUserDeviceDelta -InputObject <IUsersFunctionsIdentity> [-ExpandPropert
 Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
 For more information, see Using delta query.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

@@ -26,6 +26,7 @@ Get-MgAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 Get the tenant-level settings for Microsoft 365 reports.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

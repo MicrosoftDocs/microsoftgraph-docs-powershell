@@ -60,6 +60,7 @@ To learn more about group-based licensing, see What is group-based licensing in 
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

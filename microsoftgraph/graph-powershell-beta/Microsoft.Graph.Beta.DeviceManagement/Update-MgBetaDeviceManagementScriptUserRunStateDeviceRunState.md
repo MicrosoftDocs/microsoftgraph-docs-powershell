@@ -50,6 +50,7 @@ Update-MgBetaDeviceManagementScriptUserRunStateDeviceRunState -InputObject <IDev
 Update the navigation property deviceRunStates in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

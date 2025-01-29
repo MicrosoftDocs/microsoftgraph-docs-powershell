@@ -61,13 +61,6 @@ Otherwise, the user's presence stays as Offline.
 A presence session can be created as a result of a successful setPresence operation, or if the user is signed in on a Teams client.
 Read more about presence sessions and their time-out and expiration.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Activity

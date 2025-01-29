@@ -30,6 +30,7 @@ New-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey
 Generate a public key to use to encrypt the Apple device enrollment program token
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

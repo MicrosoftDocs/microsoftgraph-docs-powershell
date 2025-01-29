@@ -42,6 +42,7 @@ The template ID of a built-in role is immutable and can be seen in the role desc
 For details, see Role template IDs.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

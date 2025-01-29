@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementWindowsQualityUpdateProfile -InputObject <IDeviceManag
 A collection of windows quality update profiles
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

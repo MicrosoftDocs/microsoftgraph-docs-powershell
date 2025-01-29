@@ -36,6 +36,7 @@ Get-MgBetaDeviceManagementReportPolicyNonComplianceMetadata -OutFile <String>
 Invoke action getPolicyNonComplianceMetadata
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

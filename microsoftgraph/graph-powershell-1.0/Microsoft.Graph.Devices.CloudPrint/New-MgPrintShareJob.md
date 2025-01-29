@@ -56,6 +56,7 @@ Create a new printJob for a printerShare.
 Also creates a new printDocument associated with the printJob.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.ReadWrite,  |

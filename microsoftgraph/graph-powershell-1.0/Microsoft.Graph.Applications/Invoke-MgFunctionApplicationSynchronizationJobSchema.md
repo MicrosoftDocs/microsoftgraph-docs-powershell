@@ -35,13 +35,6 @@ Invoke-MgFunctionApplicationSynchronizationJobSchema -InputObject <IApplications
 ## DESCRIPTION
 List all the functions currently supported in the attributeMappingSource.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ApplicationId

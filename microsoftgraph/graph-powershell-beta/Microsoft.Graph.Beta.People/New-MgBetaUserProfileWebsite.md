@@ -54,6 +54,7 @@ New-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> -BodyParameter <IMic
 Create new navigation property to websites for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

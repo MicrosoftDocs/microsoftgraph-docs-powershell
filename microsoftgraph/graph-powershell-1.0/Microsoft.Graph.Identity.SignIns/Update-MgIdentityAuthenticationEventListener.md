@@ -51,13 +51,6 @@ Update-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdent
 Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -30,13 +30,6 @@ Get-MgBetaSiteByPath -InputObject <ISitesIdentity> [-ResponseHeadersVariable <St
 ## DESCRIPTION
 Invoke function getByPath
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

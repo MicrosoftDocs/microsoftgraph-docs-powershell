@@ -36,6 +36,7 @@ Runs the query specified in the request body.
 Search results are provided in the response.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Mail.Read, Sites.Read.All, QnA.Read.All, Files.Read.All, ExternalItem.Read.All, Chat.Read, Calendars.Read, Bookmark.Read.All, Acronym.Read.All,  |

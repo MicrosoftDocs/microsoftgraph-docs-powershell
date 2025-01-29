@@ -51,6 +51,7 @@ Resources are available to a teacher or an application with application permissi
 Teachers can leave notes in some resources.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |

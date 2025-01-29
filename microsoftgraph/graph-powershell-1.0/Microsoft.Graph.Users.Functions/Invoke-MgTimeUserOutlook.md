@@ -47,6 +47,7 @@ Invoke-MgTimeUserOutlook -InputObject <IUsersFunctionsIdentity> [-Count] [-Filte
 Invoke function supportedTimeZones
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadBasic.All,  |

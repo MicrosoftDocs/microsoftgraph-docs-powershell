@@ -33,6 +33,7 @@ Get-MgUserAuthenticationFido2MethodCount -InputObject <IIdentitySignInsIdentity>
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |

@@ -28,6 +28,7 @@ Get the properties of an insightsSettings object for displaying or returning ite
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy in Microsoft Graph.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

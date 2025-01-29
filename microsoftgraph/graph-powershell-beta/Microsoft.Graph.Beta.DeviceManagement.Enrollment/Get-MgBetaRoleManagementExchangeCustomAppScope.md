@@ -42,6 +42,7 @@ Get the properties of a customAppScope object for an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

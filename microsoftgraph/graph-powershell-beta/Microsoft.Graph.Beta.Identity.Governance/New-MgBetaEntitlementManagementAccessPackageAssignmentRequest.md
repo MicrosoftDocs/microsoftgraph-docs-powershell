@@ -63,13 +63,6 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-Justification <S
 In Microsoft Entra Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, or to remove an access package assignment.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Create an assignment request
 

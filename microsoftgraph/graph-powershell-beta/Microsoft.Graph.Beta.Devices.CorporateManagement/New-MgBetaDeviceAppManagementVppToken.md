@@ -38,6 +38,7 @@ New-MgBetaDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken>
 Create new navigation property to vppTokens for deviceAppManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -39,6 +39,7 @@ Get-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanc
 Represents the alert entity.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

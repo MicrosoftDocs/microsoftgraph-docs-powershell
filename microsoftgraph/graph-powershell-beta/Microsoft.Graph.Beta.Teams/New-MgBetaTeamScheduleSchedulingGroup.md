@@ -50,6 +50,7 @@ New-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 Create a new schedulingGroup.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |

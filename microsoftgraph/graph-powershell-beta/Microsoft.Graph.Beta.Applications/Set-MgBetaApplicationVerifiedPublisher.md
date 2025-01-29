@@ -51,13 +51,6 @@ Set-MgBetaApplicationVerifiedPublisher -InputObject <IApplicationsIdentity>
 Set the the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

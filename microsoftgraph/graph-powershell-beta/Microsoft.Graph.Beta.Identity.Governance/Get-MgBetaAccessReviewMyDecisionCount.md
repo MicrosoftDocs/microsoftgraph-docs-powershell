@@ -30,6 +30,7 @@ Get-MgBetaAccessReviewMyDecisionCount -InputObject <IIdentityGovernanceIdentity>
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All,  |

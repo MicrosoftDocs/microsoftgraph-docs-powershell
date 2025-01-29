@@ -43,6 +43,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceB
 User experience analytics appHealth Application Performance by App Version details
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

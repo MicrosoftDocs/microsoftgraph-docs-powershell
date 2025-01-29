@@ -33,6 +33,7 @@ Get-MgSiteListItemDriveItem -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All, Sites.Read.All,  |

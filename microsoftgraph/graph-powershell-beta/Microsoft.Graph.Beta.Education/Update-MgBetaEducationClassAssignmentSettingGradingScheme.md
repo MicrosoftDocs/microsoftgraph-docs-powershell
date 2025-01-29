@@ -48,6 +48,7 @@ Update-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducati
 Update the navigation property gradingSchemes in education
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

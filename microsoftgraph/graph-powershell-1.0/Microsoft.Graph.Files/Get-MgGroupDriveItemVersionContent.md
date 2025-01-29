@@ -32,13 +32,6 @@ Get-MgGroupDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <Strin
 ## DESCRIPTION
 The content stream for this version of the item.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -DriveId

@@ -39,13 +39,6 @@ Migration mode is a special state that prevents certain operations, like sending
 After a completeMigration request is made, you can't import more messages into the team.
 You can add members to the team after the request returns a successful response.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

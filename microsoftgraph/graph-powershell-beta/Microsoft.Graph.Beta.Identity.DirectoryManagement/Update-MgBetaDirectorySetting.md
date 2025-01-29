@@ -47,6 +47,7 @@ Update-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
 Update the properties of a specific directory setting object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

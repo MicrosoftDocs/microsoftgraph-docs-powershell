@@ -42,6 +42,7 @@ Get-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdentityG
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EntitlementManagement.Read.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.Read.Directory, RoleManagement.Read.CloudPC, RoleManagement.Read.All,  |

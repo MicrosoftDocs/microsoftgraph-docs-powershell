@@ -41,6 +41,7 @@ Get-MgBetaSiteListOperation -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 The collection of long-running operations on the list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

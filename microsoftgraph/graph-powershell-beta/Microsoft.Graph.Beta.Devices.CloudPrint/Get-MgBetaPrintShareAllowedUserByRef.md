@@ -26,6 +26,7 @@ Get-MgBetaPrintShareAllowedUserByRef -PrinterShareId <String> [-Filter <String>]
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrinterShare.Read.All, PrinterShare.ReadWrite.All,  |

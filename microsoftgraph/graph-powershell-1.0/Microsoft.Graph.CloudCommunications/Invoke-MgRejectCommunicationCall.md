@@ -62,13 +62,6 @@ The current timeout value is 15 seconds.
 This API does not end existing calls that have already been answered.
 Use delete call to end a call.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Reject an incoming call with 'Busy' reason
 

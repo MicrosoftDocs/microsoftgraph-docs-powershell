@@ -25,6 +25,7 @@ Get-MgDeviceManagementUserExperienceAnalyticOverview [-ExpandProperty <String[]>
 User experience analytics overview
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

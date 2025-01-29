@@ -40,6 +40,7 @@ Get-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity> [-E
 Read the properties and relationships of an urlThreatSubmission object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ThreatSubmission.Read, ThreatSubmission.ReadWrite.All, ThreatSubmission.ReadWrite, ThreatSubmission.Read.All,  |

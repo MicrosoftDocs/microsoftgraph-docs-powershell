@@ -43,13 +43,6 @@ Read-only collection with details of the app specific scopes when the assignment
 Containment entity.
 Read-only.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

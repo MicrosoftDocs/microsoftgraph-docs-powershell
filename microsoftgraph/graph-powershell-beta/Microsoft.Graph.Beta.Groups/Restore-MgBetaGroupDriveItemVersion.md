@@ -35,13 +35,6 @@ Restore-MgBetaGroupDriveItemVersion -InputObject <IGroupsIdentity> [-ResponseHea
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -DriveId

@@ -38,6 +38,7 @@ Get-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Ex
 Retrieve a school data synchronization profile in the tenant based on the identifier.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite,  |

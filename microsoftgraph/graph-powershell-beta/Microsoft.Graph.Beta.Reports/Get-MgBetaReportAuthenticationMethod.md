@@ -24,13 +24,6 @@ Get-MgBetaReportAuthenticationMethod [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Container for navigation properties for Microsoft Entra authentication methods resources.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

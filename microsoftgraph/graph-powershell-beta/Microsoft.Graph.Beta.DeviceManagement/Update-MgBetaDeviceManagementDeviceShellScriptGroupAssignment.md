@@ -47,6 +47,7 @@ Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment -InputObject <IDev
 Update the navigation property groupAssignments in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

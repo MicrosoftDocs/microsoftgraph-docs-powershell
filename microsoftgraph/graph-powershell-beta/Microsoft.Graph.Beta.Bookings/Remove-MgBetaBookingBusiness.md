@@ -47,6 +47,7 @@ Remove-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>
 Delete entity from bookingBusinesses
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Bookings.Manage.All,  |

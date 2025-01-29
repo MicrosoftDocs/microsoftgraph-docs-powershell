@@ -36,6 +36,7 @@ Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -42,6 +42,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecuri
 Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

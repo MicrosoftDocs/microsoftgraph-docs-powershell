@@ -33,6 +33,7 @@ Get-MgBetaUserMemberOfCount -InputObject <IUsersIdentity> [-Filter <String>] [-S
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.Read, GroupMember.Read.All,  |

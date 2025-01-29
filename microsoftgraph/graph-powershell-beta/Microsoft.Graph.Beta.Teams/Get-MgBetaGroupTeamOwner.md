@@ -43,13 +43,6 @@ Currently, when creating a team using application permissions, exactly one owner
 When using user-delegated permissions, no owner can be specified (the current user is the owner).
 The owner must be specified as an object ID (GUID), not a UPN.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

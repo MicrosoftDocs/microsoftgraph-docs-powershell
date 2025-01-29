@@ -33,6 +33,7 @@ Get-MgUserOnenoteResourceContent -InputObject <INotesIdentity> -OutFile <String>
 The content stream
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |

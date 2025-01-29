@@ -45,6 +45,7 @@ In PIM, carry out the following operations through the unifiedRoleAssignmentSche
 See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

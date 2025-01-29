@@ -42,6 +42,7 @@ Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDir
 Scoped-role members of this administrative unit.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

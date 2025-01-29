@@ -55,6 +55,7 @@ New-MgGroupOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosoftG
 Create new navigation property to pages for groups
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Notes.ReadWrite.All,  |

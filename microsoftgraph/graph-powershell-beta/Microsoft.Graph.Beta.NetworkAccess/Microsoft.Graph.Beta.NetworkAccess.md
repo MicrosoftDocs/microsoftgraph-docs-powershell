@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-Module Guid: 35c8d7b7-da11-4c93-874f-b9d35230f4d9
+Module Guid: c96b3bb9-188f-48fa-ab30-bb0496bc26a2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.networkaccess/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

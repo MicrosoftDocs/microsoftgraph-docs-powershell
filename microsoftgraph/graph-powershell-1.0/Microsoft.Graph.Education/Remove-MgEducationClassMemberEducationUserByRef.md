@@ -33,13 +33,6 @@ Remove-MgEducationClassMemberEducationUserByRef -InputObject <IEducationIdentity
 ## DESCRIPTION
 Remove an educationUser from an educationClass.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

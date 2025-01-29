@@ -49,6 +49,7 @@ New-MgDriveItemUploadSession -InputObject <IFilesIdentity>
 Invoke action createUploadSession
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

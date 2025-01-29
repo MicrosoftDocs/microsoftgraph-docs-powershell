@@ -34,6 +34,7 @@ Remove-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-IfMatch 
 Delete an identity resource to remove the corresponding member from an externalGroup.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

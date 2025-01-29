@@ -33,6 +33,7 @@ Get-MgSecurityTriggerRetentionEventType -InputObject <ISecurityIdentity> [-Expan
 Specifies the event that will start the retention period for labels that use this event type when an event is created.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -70,6 +70,7 @@ New-MgSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 Create a column for a list with a request that specifies a columnDefinition.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

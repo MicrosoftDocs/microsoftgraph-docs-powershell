@@ -40,6 +40,7 @@ Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment
 Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

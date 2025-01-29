@@ -49,6 +49,7 @@ New-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentit
 Assign a tokenIssuancePolicy to an application.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

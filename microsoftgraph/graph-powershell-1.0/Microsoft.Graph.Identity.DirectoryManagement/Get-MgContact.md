@@ -43,6 +43,7 @@ Get-MgContact -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProper
 Get the properties and relationships of an organizational contact.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

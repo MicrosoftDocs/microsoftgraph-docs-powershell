@@ -22,6 +22,7 @@ Get-MgBetaSecurityInformationProtectionLabelPolicySetting [-ExpandProperty <Stri
 Read the Microsoft Purview Information Protection policy settings for the user or organization.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | InformationProtectionPolicy.Read,  |

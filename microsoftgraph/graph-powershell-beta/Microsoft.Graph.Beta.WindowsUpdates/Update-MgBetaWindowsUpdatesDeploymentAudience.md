@@ -58,13 +58,6 @@ Adding an azureADDevice to the members or exclusions collections of a deployment
 If the same updatableAsset gets included in the exclusions and members collections of a deploymentAudience, the deployment doesn't apply to that asset.
 If all updatableAsset objects are the same type, you can also use the method updateAudienceById to update the deploymentAudience.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaWindowsUpdatesDeploymentAudience Cmdlet
 ```powershell

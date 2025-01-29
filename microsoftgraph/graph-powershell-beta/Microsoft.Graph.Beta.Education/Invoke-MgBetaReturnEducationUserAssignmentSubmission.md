@@ -37,13 +37,6 @@ Make the grade and feedback associated with this submission available to the stu
 This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

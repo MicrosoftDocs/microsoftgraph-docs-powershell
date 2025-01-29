@@ -51,6 +51,7 @@ New-MgBetaTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Create new navigation property to tabs for teams
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsTab.ReadWriteSelfForTeam, TeamsTab.ReadWriteForTeam,  |

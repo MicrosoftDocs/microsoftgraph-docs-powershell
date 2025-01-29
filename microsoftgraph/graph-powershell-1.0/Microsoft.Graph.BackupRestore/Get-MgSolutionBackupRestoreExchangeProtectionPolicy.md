@@ -40,13 +40,6 @@ Get-MgSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackupRestore
 ## DESCRIPTION
 The list of Exchange protection policies in the tenant.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

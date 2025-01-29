@@ -21,13 +21,6 @@ Get-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Get the deployment access key associated with a Microsoft Defender for Identity, needed to install sensors associated with the workspace.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment -InputObject <ID
 The list of group assignments of the profile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

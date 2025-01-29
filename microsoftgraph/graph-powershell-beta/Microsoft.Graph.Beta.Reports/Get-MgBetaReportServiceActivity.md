@@ -21,13 +21,6 @@ Get-MgBetaReportServiceActivity [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Reports that relate to tenant-level authentication activities in Microsoft Entra.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

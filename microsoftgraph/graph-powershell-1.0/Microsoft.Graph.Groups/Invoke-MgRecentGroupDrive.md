@@ -35,13 +35,6 @@ Invoke-MgRecentGroupDrive -InputObject <IGroupsIdentity> [-Count] [-ExpandProper
 ## DESCRIPTION
 List a set of items that have been recently used by the signed in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Count

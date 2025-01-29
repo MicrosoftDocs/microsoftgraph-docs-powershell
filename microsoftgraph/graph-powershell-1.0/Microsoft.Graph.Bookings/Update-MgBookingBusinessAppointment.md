@@ -67,6 +67,7 @@ Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

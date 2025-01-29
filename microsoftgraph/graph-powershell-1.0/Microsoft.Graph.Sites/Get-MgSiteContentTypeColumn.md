@@ -43,6 +43,7 @@ Get-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 Retrieve the metadata for a site, a list, or a contentType column.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

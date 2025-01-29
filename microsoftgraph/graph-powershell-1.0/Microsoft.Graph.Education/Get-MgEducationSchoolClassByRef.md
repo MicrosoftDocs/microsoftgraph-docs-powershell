@@ -26,6 +26,7 @@ Get-MgEducationSchoolClassByRef -EducationSchoolId <String> [-Filter <String>] [
 Get the educationClass resources owned by an educationSchool.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic,  |

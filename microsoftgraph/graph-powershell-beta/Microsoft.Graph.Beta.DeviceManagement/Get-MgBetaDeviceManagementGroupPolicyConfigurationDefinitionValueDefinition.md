@@ -32,6 +32,7 @@ Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValueDefinition
 The associated group policy definition with the value.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

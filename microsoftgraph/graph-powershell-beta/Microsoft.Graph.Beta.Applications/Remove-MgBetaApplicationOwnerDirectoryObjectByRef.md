@@ -36,6 +36,7 @@ Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -44,6 +44,7 @@ Get the properties of a bookingCurrency object that is available to a Microsoft 
 Use the id property, which is the currency code, to specify the currency.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |

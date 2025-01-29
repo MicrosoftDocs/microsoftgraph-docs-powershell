@@ -26,6 +26,7 @@ Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest [-ExpandProperty <Str
 Get the status of a tenant joining a multitenant organization.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

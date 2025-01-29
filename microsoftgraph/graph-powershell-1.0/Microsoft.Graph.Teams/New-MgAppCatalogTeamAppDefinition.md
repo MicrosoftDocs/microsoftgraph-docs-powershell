@@ -59,6 +59,7 @@ To update an app, the distributionMethod property for the app must be set to org
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AppCatalog.Submit, Directory.ReadWrite.All, AppCatalog.ReadWrite.All,  |

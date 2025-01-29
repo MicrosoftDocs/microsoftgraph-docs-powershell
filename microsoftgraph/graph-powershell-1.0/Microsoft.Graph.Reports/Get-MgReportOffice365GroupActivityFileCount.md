@@ -33,13 +33,6 @@ Get-MgReportOffice365GroupActivityFileCount -InputObject <IReportsIdentity> -Out
 ## DESCRIPTION
 Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

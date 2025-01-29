@@ -38,13 +38,6 @@ Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 The maximum count of users to dismiss in one call is 60.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaDismissRiskyUser Cmdlet
 ```powershell

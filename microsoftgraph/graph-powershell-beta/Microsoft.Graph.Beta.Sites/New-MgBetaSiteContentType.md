@@ -60,6 +60,7 @@ New-MgBetaSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 Create a new contentType for a site.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

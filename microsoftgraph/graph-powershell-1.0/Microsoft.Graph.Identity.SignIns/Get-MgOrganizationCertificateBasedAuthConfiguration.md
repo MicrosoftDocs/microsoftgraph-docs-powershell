@@ -44,6 +44,7 @@ Get-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySignI
 Get the properties of a certificateBasedAuthConfiguration object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

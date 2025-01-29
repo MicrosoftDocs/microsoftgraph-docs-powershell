@@ -40,6 +40,7 @@ Get-MgBetaExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
 Read the properties and relationships of a referenceDefinition object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -38,13 +38,6 @@ Get-MgBetaTrustFrameworkKeySetKeyV2 -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a trustFrameworkKeyv2 object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

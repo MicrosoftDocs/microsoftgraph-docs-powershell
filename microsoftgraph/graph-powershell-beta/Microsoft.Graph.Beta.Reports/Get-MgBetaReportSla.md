@@ -20,13 +20,6 @@ Get-MgBetaReportSla [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ## DESCRIPTION
 Reports that relate to tenant-level Microsoft Entra SLA attainment.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

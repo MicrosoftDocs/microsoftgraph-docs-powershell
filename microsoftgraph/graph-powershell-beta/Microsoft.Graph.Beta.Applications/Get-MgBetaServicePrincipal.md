@@ -43,6 +43,7 @@ Get-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-ExpandProperty
 Retrieve the properties and relationships of a servicePrincipal object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

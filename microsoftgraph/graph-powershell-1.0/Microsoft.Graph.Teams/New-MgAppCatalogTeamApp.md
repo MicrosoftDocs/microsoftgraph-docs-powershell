@@ -38,6 +38,7 @@ The requiresReview property allows any user to submit an app for review by an ad
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AppCatalog.Submit, Directory.ReadWrite.All, AppCatalog.ReadWrite.All,  |

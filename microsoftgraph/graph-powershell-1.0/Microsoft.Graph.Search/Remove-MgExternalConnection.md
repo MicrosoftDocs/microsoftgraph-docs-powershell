@@ -34,6 +34,7 @@ Remove-MgExternalConnection -InputObject <ISearchIdentity> [-IfMatch <String>]
 Deletes an externalConnection object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

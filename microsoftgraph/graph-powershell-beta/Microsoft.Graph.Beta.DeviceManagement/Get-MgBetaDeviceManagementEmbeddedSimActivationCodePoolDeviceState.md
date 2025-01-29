@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -InputObject 
 Navigational property to a list of device states for this pool.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

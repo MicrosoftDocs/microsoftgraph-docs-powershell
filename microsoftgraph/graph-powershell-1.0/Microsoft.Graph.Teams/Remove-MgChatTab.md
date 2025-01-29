@@ -34,6 +34,7 @@ Remove-MgChatTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHea
 Remove (unpin) a tab from the specified chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsTab.ReadWriteSelfForChat,  |

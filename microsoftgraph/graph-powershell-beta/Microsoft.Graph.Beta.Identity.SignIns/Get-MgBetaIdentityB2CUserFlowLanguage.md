@@ -48,6 +48,7 @@ For more information, see Update b2cIdentityUserFlow.
 Language customization is enabled by default in Microsoft Entra user flows.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

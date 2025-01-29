@@ -42,6 +42,7 @@ Get-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdentityG
 Resource to grant access to users or groups.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RoleManagement.Read.All,  |

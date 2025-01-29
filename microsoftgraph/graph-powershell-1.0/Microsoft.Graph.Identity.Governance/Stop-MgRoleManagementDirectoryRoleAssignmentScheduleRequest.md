@@ -36,6 +36,7 @@ Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a Gr
 After calling this action, the status of the canceled unifiedRoleAssignmentScheduleRequest changes to Canceled.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

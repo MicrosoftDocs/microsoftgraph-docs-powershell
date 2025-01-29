@@ -30,6 +30,7 @@ Invoke-MgBetaInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecov
 Perform MDM key recovery and TPM attestation
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -31,6 +31,7 @@ Remove-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-IfMatch <Stri
 Delete a plannerRosterMember object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.ReadWrite,  |

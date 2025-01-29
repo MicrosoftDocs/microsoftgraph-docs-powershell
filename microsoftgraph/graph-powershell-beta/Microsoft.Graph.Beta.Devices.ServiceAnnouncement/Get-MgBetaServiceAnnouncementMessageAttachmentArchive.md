@@ -33,13 +33,6 @@ Get-MgBetaServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServ
 ## DESCRIPTION
 Get a list of attachments associated with a service message.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get a zip file of all attachments in stream for a message
 

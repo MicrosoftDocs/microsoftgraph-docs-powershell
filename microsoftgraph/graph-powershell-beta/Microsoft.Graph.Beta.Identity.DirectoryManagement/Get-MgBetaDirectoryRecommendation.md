@@ -40,6 +40,7 @@ Get-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIden
 Read the properties and relationships of a recommendation object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

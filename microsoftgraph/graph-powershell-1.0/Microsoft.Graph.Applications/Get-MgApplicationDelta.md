@@ -29,6 +29,7 @@ Get newly created, updated, or deleted applications without performing a full re
 For details, see Using delta query.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

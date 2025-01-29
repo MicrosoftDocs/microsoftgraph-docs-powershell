@@ -81,6 +81,7 @@ Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 Update the navigation property customQuestions in bookingBusinesses
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BookingsAppointment.ReadWrite.All,  |

@@ -50,6 +50,7 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 Create a new bookingCustomQuestion object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BookingsAppointment.ReadWrite.All,  |

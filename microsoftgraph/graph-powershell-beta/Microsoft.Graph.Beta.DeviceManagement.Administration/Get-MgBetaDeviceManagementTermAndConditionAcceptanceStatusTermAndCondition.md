@@ -35,6 +35,7 @@ Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition
 Navigation link to the terms and conditions that are assigned.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

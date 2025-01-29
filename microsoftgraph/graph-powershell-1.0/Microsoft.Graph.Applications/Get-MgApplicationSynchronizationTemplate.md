@@ -41,6 +41,7 @@ Get-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity> [-
 Preconfigured synchronization settings for a particular application.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

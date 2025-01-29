@@ -31,6 +31,7 @@ Test-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-Respon
 Perform validations applicable for the specific instance of the data connector.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

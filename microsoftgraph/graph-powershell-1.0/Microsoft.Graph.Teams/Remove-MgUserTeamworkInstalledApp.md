@@ -34,6 +34,7 @@ Remove-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 Uninstall an app from the personal scope of the specified user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteSelectedForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWriteAndConsentSelfForUser, TeamsAppInstallation.ReadWriteAndConsentForUser, TeamsAppInstallation.ManageSelectedForUser,  |

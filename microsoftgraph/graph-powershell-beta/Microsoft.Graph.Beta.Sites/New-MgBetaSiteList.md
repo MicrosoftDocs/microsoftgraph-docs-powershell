@@ -65,6 +65,7 @@ New-MgBetaSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraph
 Create a new list in a site.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

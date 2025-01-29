@@ -70,6 +70,7 @@ Update-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMi
 Update a site, a list, or a content type column.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

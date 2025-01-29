@@ -52,6 +52,7 @@ Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

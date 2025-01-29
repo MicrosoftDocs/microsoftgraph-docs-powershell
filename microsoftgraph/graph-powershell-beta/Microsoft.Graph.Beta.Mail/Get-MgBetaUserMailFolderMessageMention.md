@@ -39,13 +39,6 @@ Get-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> [-ExpandProp
 A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
 By default, a GET /messages does not return this property unless you apply $expand on the property.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

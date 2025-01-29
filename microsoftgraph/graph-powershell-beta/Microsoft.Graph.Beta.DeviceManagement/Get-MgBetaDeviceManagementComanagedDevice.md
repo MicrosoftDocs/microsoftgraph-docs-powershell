@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementComanagedDevice -InputObject <IDeviceManagementIdentit
 The list of co-managed devices report
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

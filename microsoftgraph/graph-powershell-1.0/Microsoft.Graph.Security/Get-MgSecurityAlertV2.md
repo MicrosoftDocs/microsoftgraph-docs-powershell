@@ -42,6 +42,7 @@ Get-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <String[
 Get the properties and relationships of an alert object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

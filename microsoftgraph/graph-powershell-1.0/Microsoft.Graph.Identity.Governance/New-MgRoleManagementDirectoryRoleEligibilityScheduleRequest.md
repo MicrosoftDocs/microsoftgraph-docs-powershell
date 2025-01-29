@@ -44,6 +44,7 @@ In PIM, request for a role eligibility for a principal through the unifiedRoleEl
 This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

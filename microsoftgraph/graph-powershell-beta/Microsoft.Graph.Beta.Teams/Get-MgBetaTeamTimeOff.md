@@ -23,6 +23,7 @@ Get-MgBetaTeamTimeOff [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [
 Get all time off objects across all teams to which a user is a direct member.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

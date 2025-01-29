@@ -37,6 +37,7 @@ Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

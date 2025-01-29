@@ -27,6 +27,7 @@ Get-MgBetaServicePrincipalDelta [-ExpandProperty <String[]>] [-Filter <String>] 
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -34,6 +34,7 @@ Remove-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Res
 Delete the channel.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

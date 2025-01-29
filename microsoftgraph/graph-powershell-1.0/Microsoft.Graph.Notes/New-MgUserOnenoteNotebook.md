@@ -55,6 +55,7 @@ New-MgUserOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicroso
 Create new navigation property to notebooks for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Notes.ReadWrite.All,  |

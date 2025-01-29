@@ -46,13 +46,6 @@ Clear-MgBetaUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIde
 ## DESCRIPTION
 Issues a wipe operation on an app registration with specified device tag.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

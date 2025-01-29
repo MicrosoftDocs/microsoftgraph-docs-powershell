@@ -37,13 +37,6 @@ Get-MgBetaIdentityGovernanceAccessReviewDecision -InputObject <IIdentityGovernan
 ## DESCRIPTION
 Represents a Microsoft Entra access review decision on an instance of a review.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityGovernanceAccessReviewDecision Cmdlet
 ```powershell

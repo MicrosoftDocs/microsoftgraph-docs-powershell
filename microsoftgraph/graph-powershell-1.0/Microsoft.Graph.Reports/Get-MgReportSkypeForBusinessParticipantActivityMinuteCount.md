@@ -35,13 +35,6 @@ Get-MgReportSkypeForBusinessParticipantActivityMinuteCount -InputObject <IReport
 Get usage trends on the length in minutes and type of conference sessions that users from your organization participated in.
 Types of conference sessions include audio/video.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -32,6 +32,7 @@ Sync-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateMan
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

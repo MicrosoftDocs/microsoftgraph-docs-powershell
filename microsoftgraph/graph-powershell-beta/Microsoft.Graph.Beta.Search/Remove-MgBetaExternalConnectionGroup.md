@@ -34,6 +34,7 @@ Remove-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity> [-IfMatch <S
 Delete an externalGroup object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

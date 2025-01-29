@@ -34,6 +34,7 @@ Remove-MgPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-IfMa
 Delete a claimsMappingPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

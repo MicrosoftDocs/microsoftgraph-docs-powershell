@@ -56,6 +56,7 @@ Get-MgEntitlementManagementAssignmentRequest [-ExpandProperty <String[]>] [-Prop
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

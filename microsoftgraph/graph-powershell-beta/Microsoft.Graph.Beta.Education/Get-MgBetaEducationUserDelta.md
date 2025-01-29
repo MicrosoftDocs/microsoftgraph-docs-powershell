@@ -29,6 +29,7 @@ Get newly created or updated educationUser without having to perform a full read
 See Use delta query for details.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |

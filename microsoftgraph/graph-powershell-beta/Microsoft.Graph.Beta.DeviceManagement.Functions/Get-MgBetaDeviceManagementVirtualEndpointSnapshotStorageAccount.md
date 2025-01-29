@@ -32,6 +32,7 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount
 List all storage accounts cloudPcForensicStorageAccount that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

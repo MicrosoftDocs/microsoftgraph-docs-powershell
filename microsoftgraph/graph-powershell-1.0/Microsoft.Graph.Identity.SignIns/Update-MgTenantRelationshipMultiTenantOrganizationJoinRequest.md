@@ -38,13 +38,6 @@ Join a multitenant organization, after the owner of the multitenant organization
 Before a tenant added to a multitenant organization can participate in the multitenant organization, the administrator of the joining tenant must submit a join request.
 To allow for asynchronous processing, you must wait up to 2 hours before joining a multitenant organization is completed.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Join a multitenant organization
 

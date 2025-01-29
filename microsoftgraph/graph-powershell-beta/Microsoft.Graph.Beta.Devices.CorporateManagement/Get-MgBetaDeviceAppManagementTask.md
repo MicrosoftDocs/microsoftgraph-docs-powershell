@@ -38,6 +38,7 @@ Get-MgBetaDeviceAppManagementTask -InputObject <IDevicesCorporateManagementIdent
 Device app management tasks.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -49,6 +49,7 @@ New-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicat
 Create single sign-on credentials using a password for a user or group.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

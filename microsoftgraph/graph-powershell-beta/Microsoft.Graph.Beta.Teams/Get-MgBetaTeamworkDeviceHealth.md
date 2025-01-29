@@ -33,6 +33,7 @@ Get the health details of a Microsoft Teams-enabled device.
 Device health is calculated based on the device configuration and other device parameters.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

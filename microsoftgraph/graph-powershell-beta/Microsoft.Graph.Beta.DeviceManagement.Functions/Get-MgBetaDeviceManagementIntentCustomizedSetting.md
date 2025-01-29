@@ -30,6 +30,7 @@ Get-MgBetaDeviceManagementIntentCustomizedSetting -InputObject <IDeviceManagemen
 Invoke function getCustomizedSettings
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

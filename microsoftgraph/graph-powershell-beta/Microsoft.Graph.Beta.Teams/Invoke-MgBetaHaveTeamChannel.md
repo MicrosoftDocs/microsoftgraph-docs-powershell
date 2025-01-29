@@ -34,6 +34,7 @@ Invoke-MgBetaHaveTeamChannel -InputObject <ITeamsIdentity> [-TenantId <String>] 
 Determine whether a user has access to a shared channel.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

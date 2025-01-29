@@ -50,6 +50,7 @@ Update-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 Update the properties of a tag object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamworkTag.ReadWrite,  |

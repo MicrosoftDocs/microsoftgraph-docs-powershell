@@ -38,6 +38,7 @@ Get-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity> [-ExpandProperty
 Represents the details of meaningful dates associated with a person.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |

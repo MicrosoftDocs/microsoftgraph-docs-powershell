@@ -65,6 +65,7 @@ The startDateTime is set to the same time the certificate is created using the a
 The endDateTime can be up to three years after the certificate is created.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -46,13 +46,6 @@ Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySig
 Delete an identity provider from a b2cIdentityUserFlow object.
 For more information about identity providers available for user flows, see the identityProviders API reference.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef Cmdlet
 ```powershell

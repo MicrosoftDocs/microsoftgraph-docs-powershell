@@ -23,6 +23,7 @@ Get-MgBetaTeamOpenShift [-Count] [-ExpandProperty <String[]>] [-Filter <String>]
 Get all openShift objects across all teams a user is a direct member of.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

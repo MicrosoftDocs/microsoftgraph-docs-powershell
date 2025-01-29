@@ -35,13 +35,6 @@ Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck
 Run health checks on the cloudPcOnPremisesConnection object.
 It triggers a new health check for the cloudPcOnPremisesConnection (../resources/cloudpconpremisesconnection.md) object and changes the healthCheckStatus and \[healthCheckStatusDetail properties when check finished.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

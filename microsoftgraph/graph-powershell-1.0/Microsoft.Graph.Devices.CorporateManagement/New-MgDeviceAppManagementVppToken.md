@@ -35,6 +35,7 @@ New-MgDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-Res
 Create a new vppToken object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

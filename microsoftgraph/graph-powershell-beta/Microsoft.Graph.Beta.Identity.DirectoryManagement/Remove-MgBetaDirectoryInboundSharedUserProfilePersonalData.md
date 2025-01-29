@@ -31,6 +31,7 @@ Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdenti
 Create a request to remove the personal data for an inboundSharedUserProfile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | CrossTenantUserProfileSharing.ReadWrite, CrossTenantUserProfileSharing.ReadWrite.All,  |

@@ -37,6 +37,7 @@ Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator -InputObject <IA
 List all operators supported in the scoping filters.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

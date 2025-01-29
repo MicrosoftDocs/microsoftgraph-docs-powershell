@@ -34,6 +34,7 @@ Remove-MgBetaExternalConnection -InputObject <ISearchIdentity> [-IfMatch <String
 Delete an externalConnection.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

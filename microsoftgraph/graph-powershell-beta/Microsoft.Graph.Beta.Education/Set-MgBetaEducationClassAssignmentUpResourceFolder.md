@@ -38,6 +38,7 @@ Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWrite,  |

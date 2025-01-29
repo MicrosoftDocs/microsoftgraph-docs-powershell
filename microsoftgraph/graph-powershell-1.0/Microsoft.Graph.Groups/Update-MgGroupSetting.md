@@ -80,6 +80,7 @@ Update-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftG
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

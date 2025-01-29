@@ -25,6 +25,7 @@ Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionCount [-Filter <Strin
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EntitlementManagement.Read.All, RoleManagement.Read.All, EntitlementManagement.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All, CloudPC.ReadWrite.All,  |

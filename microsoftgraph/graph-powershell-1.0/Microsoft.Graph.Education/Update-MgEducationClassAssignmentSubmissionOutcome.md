@@ -54,6 +54,7 @@ Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWrite,  |

@@ -52,6 +52,7 @@ Update-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagement
 Update the properties of a remoteAssistancePartner object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

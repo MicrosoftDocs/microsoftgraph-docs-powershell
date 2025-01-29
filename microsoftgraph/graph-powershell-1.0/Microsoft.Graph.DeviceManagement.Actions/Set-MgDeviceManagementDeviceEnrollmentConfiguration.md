@@ -53,6 +53,7 @@ Set-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceManagem
 Not yet documented
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

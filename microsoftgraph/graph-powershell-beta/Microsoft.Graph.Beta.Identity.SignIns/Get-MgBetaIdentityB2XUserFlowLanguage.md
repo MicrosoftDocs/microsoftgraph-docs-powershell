@@ -46,6 +46,7 @@ Language customization is enabled by default in self-service sign-up user flow.
 You can't create custom languages in self-service sign-up user flows.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

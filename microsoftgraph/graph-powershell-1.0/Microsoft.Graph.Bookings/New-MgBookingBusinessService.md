@@ -64,6 +64,7 @@ New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IM
 Create a new bookingService for the specified bookingBusiness.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

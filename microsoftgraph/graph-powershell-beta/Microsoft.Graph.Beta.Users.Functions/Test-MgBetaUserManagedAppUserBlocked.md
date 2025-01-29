@@ -28,6 +28,7 @@ Test-MgBetaUserManagedAppUserBlocked -InputObject <IUsersFunctionsIdentity> [-Re
 Gets the blocked state of a managed app user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -38,6 +38,7 @@ Get-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-ExpandProperty <St
 Represents details of addresses associated with the user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |

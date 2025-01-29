@@ -33,6 +33,7 @@ Remove-MgBetaTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete navigation property tabs for teams
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsTab.ReadWriteSelfForTeam, TeamsTab.ReadWriteForTeam,  |

@@ -31,13 +31,6 @@ Confirm-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseH
 ## DESCRIPTION
 Validates the ownership of the domain.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

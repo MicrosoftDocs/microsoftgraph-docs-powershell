@@ -43,6 +43,7 @@ Get-MgSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 Returns the metadata for an item in a list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

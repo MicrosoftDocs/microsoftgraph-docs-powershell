@@ -47,6 +47,7 @@ New-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducationI
 Create a new educationGradingScheme object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

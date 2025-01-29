@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtens
 A list of unsupported group policy extensions inside the Group Policy Object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

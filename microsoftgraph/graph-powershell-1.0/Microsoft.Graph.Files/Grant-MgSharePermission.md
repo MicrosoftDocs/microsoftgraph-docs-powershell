@@ -50,6 +50,7 @@ Grant-MgSharePermission -InputObject <IFilesIdentity>
 Grant users access to a link represented by a permission.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |

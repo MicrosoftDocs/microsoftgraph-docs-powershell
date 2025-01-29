@@ -43,6 +43,7 @@ Get-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandPrope
 Get the properties of the specified schemaExtension definition.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.Read,  |

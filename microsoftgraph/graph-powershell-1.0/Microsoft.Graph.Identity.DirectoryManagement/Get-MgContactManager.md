@@ -34,6 +34,7 @@ Get-MgContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-Expan
 Get this organizational contact's manager.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

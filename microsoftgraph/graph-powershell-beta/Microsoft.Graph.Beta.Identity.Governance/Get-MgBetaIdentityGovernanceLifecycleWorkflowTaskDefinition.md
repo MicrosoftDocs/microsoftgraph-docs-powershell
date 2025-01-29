@@ -43,6 +43,7 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -InputObject <IIdent
 Read the details of a built-in workflow task in Lifecycle Workflows.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

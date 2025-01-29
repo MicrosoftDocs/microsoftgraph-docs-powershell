@@ -35,6 +35,7 @@ New-MgBetaDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGrap
 Create new navigation property to remoteAssistancePartners for deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

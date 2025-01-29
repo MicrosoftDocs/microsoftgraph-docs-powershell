@@ -38,6 +38,7 @@ This action changes the status of the submission from 'submitted' to 'returned' 
 This action can only be done by the teacher.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWrite,  |

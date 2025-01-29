@@ -35,13 +35,6 @@ Get-MgReportSkypeForBusinessParticipantActivityCount -InputObject <IReportsIdent
 Get usage trends on the number and type of conference sessions that users from your organization participated in.
 Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - third party.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

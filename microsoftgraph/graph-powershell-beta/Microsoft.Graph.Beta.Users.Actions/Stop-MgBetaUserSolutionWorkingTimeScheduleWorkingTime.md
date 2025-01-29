@@ -33,13 +33,6 @@ Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersAction
 ## DESCRIPTION
 Trigger the policies associated with the end of working hours for a specific user.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -43,6 +43,7 @@ Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy
 Zero or more policys already applied on the registered app when it last synchronized with managment service.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

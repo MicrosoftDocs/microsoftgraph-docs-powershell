@@ -43,6 +43,7 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagem
 Get a browserSite that resides on a browserSiteList.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -54,6 +54,7 @@ New-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 Create new navigation property to patents for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

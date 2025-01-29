@@ -38,6 +38,7 @@ Get-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> [-ExpandProperty <Str
 Represents patents that a user has added to their profile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |

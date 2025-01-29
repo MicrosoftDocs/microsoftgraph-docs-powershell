@@ -50,6 +50,7 @@ New-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsI
 Create a new audioRoutingGroup.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

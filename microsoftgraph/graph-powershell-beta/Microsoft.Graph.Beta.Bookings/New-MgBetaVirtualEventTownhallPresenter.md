@@ -53,13 +53,6 @@ New-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity>
 Create a new virtualEventPresenter object on a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Create an in-tenant presenter
 

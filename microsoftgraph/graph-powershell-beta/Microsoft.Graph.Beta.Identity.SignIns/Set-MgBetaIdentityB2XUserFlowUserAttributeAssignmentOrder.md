@@ -51,13 +51,6 @@ Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentit
 ## DESCRIPTION
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

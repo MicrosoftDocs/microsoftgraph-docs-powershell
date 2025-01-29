@@ -51,6 +51,7 @@ Update-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevic
 Update the properties of a managedAppOperation object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

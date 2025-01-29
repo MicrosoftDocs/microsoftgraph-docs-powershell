@@ -28,6 +28,7 @@ Get newly created, updated, or deleted organizational contacts without having to
 See change tracking for details.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

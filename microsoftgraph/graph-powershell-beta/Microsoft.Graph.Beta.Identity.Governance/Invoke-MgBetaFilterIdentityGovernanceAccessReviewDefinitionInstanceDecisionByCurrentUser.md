@@ -40,6 +40,7 @@ Retrieve the accessReviewInstanceDecisionItem objects for a specific accessRevie
 A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -31,6 +31,7 @@ Get-MgBetaDeviceManagementScriptDeviceRunStateManagedDevice -InputObject <IDevic
 The managed devices that executes the device management script.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

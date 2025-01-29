@@ -46,6 +46,7 @@ New-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 Create new navigation property to linkedResources for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

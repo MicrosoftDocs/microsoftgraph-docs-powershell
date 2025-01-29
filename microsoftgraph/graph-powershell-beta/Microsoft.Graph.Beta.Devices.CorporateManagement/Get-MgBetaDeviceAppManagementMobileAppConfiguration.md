@@ -41,6 +41,7 @@ Get-MgBetaDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorpor
 The Managed Device Mobile Application Configurations.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

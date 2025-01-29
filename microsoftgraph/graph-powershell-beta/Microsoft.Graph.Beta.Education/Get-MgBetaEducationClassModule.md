@@ -47,6 +47,7 @@ Only teachers, students, and applications with application permissions can perfo
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduCurricula.Read, EduCurricula.ReadWrite,  |

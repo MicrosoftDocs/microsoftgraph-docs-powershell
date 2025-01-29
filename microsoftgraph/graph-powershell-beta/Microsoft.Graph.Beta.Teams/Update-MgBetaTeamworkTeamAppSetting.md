@@ -34,13 +34,6 @@ Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSetti
 ## DESCRIPTION
 Update the properties of a teamsAppSettings object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
 

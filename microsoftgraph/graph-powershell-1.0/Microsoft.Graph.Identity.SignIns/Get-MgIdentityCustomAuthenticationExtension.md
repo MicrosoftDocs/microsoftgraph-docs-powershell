@@ -43,6 +43,7 @@ Get-MgIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsIdenti
 Read the properties and relationships of a customAuthenticationExtension object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

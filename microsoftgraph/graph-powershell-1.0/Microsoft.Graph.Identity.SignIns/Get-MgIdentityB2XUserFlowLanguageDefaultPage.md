@@ -46,6 +46,7 @@ Collection of pages with the default content to display in a user flow for a spe
 This collection doesn't allow any kind of modification.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

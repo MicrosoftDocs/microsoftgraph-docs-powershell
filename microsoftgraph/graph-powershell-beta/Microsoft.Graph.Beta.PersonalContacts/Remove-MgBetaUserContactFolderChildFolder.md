@@ -32,13 +32,6 @@ Remove-MgBetaUserContactFolderChildFolder -InputObject <IPersonalContactsIdentit
 ## DESCRIPTION
 Delete navigation property childFolders for users
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ContactFolderId

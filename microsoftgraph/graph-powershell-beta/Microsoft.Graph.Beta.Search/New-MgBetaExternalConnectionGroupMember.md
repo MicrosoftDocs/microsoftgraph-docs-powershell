@@ -48,6 +48,7 @@ New-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity>
 Create a new externalGroupMember object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

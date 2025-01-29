@@ -50,6 +50,7 @@ Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsId
 Modify sources and receivers of an audioRoutingGroup.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

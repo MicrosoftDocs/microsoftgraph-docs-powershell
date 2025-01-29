@@ -40,6 +40,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
 User Experience Analytics Battery Health Device Performance
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

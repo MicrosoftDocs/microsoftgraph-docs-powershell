@@ -40,6 +40,7 @@ Get-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity> [-
 Read the properties and relationships of a fileThreatSubmission object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ThreatSubmission.Read, ThreatSubmission.ReadWrite.All, ThreatSubmission.ReadWrite, ThreatSubmission.Read.All,  |

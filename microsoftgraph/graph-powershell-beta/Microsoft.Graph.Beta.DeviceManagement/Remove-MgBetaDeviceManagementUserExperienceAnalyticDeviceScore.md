@@ -33,6 +33,7 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore -InputObject <IDe
 Delete navigation property userExperienceAnalyticsDeviceScores for deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

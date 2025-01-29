@@ -50,6 +50,7 @@ Update-MgBetaTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 Update the role of a conversationMember in a team.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

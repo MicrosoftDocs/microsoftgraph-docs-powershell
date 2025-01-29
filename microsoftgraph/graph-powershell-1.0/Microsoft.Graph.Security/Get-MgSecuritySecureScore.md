@@ -43,6 +43,7 @@ Get-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 Retrieve the properties and relationships of a secureScore object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

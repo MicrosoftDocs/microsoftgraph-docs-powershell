@@ -34,6 +34,7 @@ Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentRequestByCurrentU
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssignmentRequest objects filtered on the signed-in user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -33,13 +33,6 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition
 The definition of the alert that contains its description, impact, and measures to mitigate or prevent it.
 Supports $expand.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

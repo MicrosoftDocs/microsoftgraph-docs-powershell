@@ -38,6 +38,7 @@ Get-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-Expand
 Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |

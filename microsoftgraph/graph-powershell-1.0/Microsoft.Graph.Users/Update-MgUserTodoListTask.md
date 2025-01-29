@@ -63,6 +63,7 @@ Update-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 Update the navigation property tasks in users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

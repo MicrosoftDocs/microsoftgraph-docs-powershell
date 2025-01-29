@@ -97,13 +97,6 @@ Update-MgApplicationByAppId -InputObject <IApplicationsIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AddIns

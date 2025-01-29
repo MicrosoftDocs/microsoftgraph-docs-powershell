@@ -38,13 +38,6 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleRequestB
 In PIM, retrieve the requests for active role assignments for a particular principal.
 The principal can be the creator or approver of the unifiedRoleAssignmentScheduleRequest object, or they can be the target of the assignment.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Count

@@ -34,6 +34,7 @@ Remove-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentit
 Deletes a user's email Authentication Method object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |

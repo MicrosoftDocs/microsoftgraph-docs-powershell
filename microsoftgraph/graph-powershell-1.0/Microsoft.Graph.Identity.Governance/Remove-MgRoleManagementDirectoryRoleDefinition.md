@@ -38,6 +38,7 @@ You can't delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

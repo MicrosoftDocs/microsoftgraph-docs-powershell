@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -InputObject <IDevic
 Windows auto pilot deployment profiles
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

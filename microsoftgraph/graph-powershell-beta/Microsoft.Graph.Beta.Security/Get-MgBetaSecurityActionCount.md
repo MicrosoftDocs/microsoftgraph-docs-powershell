@@ -21,6 +21,7 @@ Get-MgBetaSecurityActionCount [-Filter <String>] [-Search <String>] [-ResponseHe
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

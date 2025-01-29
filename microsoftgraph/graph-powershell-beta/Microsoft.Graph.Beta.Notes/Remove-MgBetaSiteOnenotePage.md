@@ -33,6 +33,7 @@ Remove-MgBetaSiteOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>]
 Delete navigation property pages for sites
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Notes.ReadWrite.All,  |

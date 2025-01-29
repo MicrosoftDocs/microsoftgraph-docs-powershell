@@ -43,6 +43,7 @@ Get-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 Get a riskyUserHistoryItem object of a riskyUser.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

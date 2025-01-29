@@ -40,6 +40,7 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice -InputObject <IManagedTen
 Read the properties and relationships of a cloudPcDevice object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | CloudPC.Read.All, CloudPC.ReadWrite.All,  |

@@ -43,6 +43,7 @@ Settings that can govern this group's behavior, like whether members can invite 
 Nullable.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

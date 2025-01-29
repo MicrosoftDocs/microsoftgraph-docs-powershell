@@ -33,6 +33,7 @@ New-MgDeviceManagementUserExperienceAnalyticScoreHistory
 Create new navigation property to userExperienceAnalyticsScoreHistory for deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

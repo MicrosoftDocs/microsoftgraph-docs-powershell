@@ -33,6 +33,7 @@ Remove-MgUserTodoListTask -InputObject <IUsersIdentity> [-IfMatch <String>] [-Re
 Delete navigation property tasks for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

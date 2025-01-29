@@ -36,6 +36,7 @@ In Microsoft Entra entitlement management, this action retrieves a list of acces
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |

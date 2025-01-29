@@ -43,6 +43,7 @@ Get-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 Retrieve the app installed in the specified team.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteAndConsentForTeam,  |

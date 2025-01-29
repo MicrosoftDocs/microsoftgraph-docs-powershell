@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment -InputObject <
 Navigational property to a list of targets to which this pool is assigned.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

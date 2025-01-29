@@ -38,6 +38,7 @@ This report contains data such as signInDateTime, signOutDateTime, usageInHour, 
 This data is aggregated hourly for a specified time period, such as the last seven days.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

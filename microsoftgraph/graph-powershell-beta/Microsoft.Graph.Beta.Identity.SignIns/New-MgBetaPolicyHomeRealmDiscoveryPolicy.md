@@ -35,6 +35,7 @@ New-MgBetaPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-ResponseHe
 Create a new homeRealmDiscoveryPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

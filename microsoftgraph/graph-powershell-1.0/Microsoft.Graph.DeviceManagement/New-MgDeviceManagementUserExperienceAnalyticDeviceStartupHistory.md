@@ -39,6 +39,7 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
 Create new navigation property to userExperienceAnalyticsDeviceStartupHistory for deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -28,6 +28,7 @@ Get newly created, updated, or deleted groups, including group membership change
 See Using Delta Query for details.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

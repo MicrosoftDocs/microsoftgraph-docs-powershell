@@ -48,13 +48,6 @@ Get-MgBetaSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <Stri
 ## DESCRIPTION
 Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

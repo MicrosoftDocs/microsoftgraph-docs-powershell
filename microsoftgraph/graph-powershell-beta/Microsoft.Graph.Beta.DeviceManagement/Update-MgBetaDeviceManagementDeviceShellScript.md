@@ -58,6 +58,7 @@ Update-MgBetaDeviceManagementDeviceShellScript -InputObject <IDeviceManagementId
 Update the navigation property deviceShellScripts in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

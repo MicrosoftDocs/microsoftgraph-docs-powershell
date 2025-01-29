@@ -42,13 +42,6 @@ Get-MgDriveBundle -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-P
 Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get a bundle
 

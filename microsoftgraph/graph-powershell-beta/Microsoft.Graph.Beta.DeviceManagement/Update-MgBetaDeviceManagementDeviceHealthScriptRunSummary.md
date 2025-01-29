@@ -56,6 +56,7 @@ Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceM
 Update the navigation property runSummary in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

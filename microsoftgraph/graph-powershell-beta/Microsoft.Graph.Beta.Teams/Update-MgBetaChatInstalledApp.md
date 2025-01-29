@@ -52,6 +52,7 @@ Update-MgBetaChatInstalledApp -InputObject <ITeamsIdentity>
 Upgrade an app installation within a chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteAndConsentSelfForChat, TeamsAppInstallation.ReadWriteAndConsentForChat, TeamsAppInstallation.ManageSelectedForChat,  |

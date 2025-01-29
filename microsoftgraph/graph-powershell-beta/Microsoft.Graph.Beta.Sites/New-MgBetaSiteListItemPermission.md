@@ -54,6 +54,7 @@ New-MgBetaSiteListItemPermission -InputObject <ISitesIdentity> -BodyParameter <I
 Create new navigation property to permissions for sites
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

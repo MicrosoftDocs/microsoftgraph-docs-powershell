@@ -35,13 +35,6 @@ New-MgBetaSolutionBackupRestoreServiceApp -BodyParameter <IMicrosoftGraphService
 ## DESCRIPTION
 Create a new serviceApp.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

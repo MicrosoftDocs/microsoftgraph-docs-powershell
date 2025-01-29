@@ -34,6 +34,7 @@ Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric -InputObj
 The scores and insights for the best practices metrics.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -58,6 +58,7 @@ The createLink action will create a new sharing link if the specified link type 
 DriveItem resources inherit sharing permissions from their ancestors.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

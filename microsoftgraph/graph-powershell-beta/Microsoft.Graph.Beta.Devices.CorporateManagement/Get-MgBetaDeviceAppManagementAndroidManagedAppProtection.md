@@ -41,6 +41,7 @@ Get-MgBetaDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesC
 Android managed app policies.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

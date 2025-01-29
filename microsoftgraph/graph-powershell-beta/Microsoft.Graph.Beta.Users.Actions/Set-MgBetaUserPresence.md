@@ -52,6 +52,7 @@ Set-MgBetaUserPresence -InputObject <IUsersActionsIdentity>
 Set the availability and activity status in a presence session of an application for a user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Presence.ReadWrite,  |

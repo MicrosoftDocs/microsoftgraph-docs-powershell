@@ -34,6 +34,7 @@ Check a user's password against the organization's password validation policy an
 Use this action to provide real-time feedback on password strength while the user types their password.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |

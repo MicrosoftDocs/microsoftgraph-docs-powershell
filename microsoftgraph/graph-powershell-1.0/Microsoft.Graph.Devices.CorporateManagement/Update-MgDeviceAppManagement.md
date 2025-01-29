@@ -49,6 +49,7 @@ Update-MgDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement>
 Update the properties of a deviceAppManagement object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

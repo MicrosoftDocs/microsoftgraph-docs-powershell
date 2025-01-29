@@ -36,6 +36,7 @@ Access a shared DriveItem or a collection of shared items by using a shareId or 
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

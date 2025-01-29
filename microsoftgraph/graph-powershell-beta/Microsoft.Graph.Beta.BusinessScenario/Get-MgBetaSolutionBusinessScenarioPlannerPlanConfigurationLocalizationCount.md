@@ -31,6 +31,7 @@ Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalizationCount
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All, BusinessScenarioConfig.Read.All,  |

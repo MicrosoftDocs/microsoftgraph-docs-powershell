@@ -48,6 +48,7 @@ Update-MgBetaDeviceAppManagementTaskStatus -InputObject <IDevicesCorporateManage
 Set the task's status and attach a note.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

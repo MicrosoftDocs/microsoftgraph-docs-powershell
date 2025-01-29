@@ -33,6 +33,7 @@ Get-MgBetaDeviceManagementReportGroupPolicySettingDeviceSettingReport -OutFile <
 Invoke action getGroupPolicySettingsDeviceSettingsReport
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

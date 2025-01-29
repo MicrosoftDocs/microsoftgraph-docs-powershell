@@ -48,6 +48,7 @@ New-MgBetaDirectoryAdministrativeUnitMember -InputObject <IIdentityDirectoryMana
 Create new navigation property to members for directory
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Directory.AccessAsUser.All,  |

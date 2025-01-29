@@ -33,6 +33,7 @@ Get-MgEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty <St
 The underlying Microsoft 365 group object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Write, EduRoster.Read,  |

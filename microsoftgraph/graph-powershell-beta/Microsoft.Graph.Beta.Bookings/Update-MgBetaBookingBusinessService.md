@@ -107,6 +107,7 @@ Update-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
 Update the navigation property services in bookingBusinesses
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

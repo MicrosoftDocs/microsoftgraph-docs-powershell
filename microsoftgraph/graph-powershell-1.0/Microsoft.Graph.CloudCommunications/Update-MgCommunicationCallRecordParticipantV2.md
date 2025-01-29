@@ -48,13 +48,6 @@ Update-MgCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunications
 ## DESCRIPTION
 Update the navigation property participants_v2 in communications
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

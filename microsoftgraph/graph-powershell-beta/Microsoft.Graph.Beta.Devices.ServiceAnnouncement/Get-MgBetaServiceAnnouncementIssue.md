@@ -46,13 +46,6 @@ Retrieve the properties and relationships of a serviceHealthIssue object.
 This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue does not exist for the tenant.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

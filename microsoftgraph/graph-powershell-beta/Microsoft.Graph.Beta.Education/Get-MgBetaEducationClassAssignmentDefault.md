@@ -40,6 +40,7 @@ Callers can continue to specify custom values on each assignment creation if the
 Only teachers can perform this operation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |

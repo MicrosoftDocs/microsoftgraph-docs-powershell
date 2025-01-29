@@ -44,6 +44,7 @@ Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-Respo
 The group's profile photo
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementDeviceConfigurationConflictSummary -InputObject <IDevi
 Summary of policies in conflict state for this account.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

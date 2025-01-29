@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState -InputObject <IDevice
 List of run states for the device health script across all devices
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

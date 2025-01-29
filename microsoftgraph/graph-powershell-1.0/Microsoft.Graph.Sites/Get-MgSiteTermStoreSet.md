@@ -64,6 +64,7 @@ Get-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 Read the properties and relationships of a set object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TermStore.Read.All, TermStore.ReadWrite.All,  |

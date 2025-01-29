@@ -43,6 +43,7 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowRun -InputObject <IIdentityGovernan
 Read the properties and relationships of a run object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

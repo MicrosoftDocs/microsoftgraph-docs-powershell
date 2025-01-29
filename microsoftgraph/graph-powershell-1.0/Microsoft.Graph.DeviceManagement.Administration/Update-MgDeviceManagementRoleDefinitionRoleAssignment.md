@@ -52,6 +52,7 @@ Update-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManag
 Update the properties of a roleAssignment object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

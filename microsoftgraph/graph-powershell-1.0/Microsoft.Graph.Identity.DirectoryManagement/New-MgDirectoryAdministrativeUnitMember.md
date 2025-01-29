@@ -51,6 +51,7 @@ Use this API to add a member (user, group, or device) to an administrative unit.
 Currently it's only possible to add one member at a time to an administrative unit.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Directory.AccessAsUser.All,  |

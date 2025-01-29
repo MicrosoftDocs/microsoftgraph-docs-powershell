@@ -31,6 +31,7 @@ Remove-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-IfMatch <String
 Deletes an itemAddress object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

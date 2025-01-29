@@ -40,6 +40,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
 User experience analytics devices without cloud identity.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

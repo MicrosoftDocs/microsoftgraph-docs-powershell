@@ -33,13 +33,6 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 ## DESCRIPTION
 Delete a browserSite from a browserSiteList.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Delete a site that was not previously published
 

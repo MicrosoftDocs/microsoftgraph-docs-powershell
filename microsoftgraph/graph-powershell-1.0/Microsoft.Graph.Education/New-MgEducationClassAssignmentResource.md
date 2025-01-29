@@ -54,6 +54,7 @@ Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

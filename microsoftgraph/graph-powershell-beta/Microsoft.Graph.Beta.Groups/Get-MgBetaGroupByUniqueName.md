@@ -42,6 +42,7 @@ The hasMembersWithLicenseErrors and isArchived properties are an exception and a
 Because the group resource supports extensions, you can also use the GET operation to get custom properties and extension data in a group instance.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

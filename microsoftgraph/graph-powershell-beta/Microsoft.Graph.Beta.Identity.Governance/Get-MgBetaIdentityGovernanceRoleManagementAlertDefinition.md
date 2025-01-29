@@ -53,6 +53,7 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentit
 Defines an alert, its impact, and measures to mitigate or prevent it.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

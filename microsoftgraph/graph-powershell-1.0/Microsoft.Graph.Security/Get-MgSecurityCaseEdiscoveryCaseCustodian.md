@@ -43,6 +43,7 @@ Get-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-Exp
 Read the properties and relationships of an ediscoveryCustodian object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticAnomaly -InputObject <IDeviceMan
 The user experience analytics anomaly entity contains anomaly details.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

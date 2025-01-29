@@ -53,6 +53,7 @@ Update-MgUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGra
 Update the navigation property settings in users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |

@@ -34,6 +34,7 @@ Get-MgBetaUserOnenoteRecentNotebook -InputObject <IUsersFunctionsIdentity> [-Cou
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |

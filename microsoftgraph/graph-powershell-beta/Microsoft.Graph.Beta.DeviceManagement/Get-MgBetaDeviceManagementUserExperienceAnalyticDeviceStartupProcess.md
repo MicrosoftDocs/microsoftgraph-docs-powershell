@@ -42,6 +42,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess -InputObjec
 User experience analytics device Startup Processes
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -36,6 +36,7 @@ Stop the synchronization job, and permanently delete all the state associated wi
 Synchronized accounts are left as-is.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

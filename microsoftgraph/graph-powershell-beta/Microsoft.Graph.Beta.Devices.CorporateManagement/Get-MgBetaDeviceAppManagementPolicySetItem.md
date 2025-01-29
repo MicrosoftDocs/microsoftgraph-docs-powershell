@@ -38,6 +38,7 @@ Get-MgBetaDeviceAppManagementPolicySetItem -InputObject <IDevicesCorporateManage
 Items of the PolicySet with maximum count 100.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

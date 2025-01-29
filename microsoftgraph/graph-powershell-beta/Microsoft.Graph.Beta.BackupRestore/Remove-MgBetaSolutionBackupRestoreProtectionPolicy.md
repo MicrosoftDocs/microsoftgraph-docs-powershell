@@ -35,13 +35,6 @@ Remove-MgBetaSolutionBackupRestoreProtectionPolicy -InputObject <IBackupRestoreI
 Delete a protection policy.
 Read the properties and relationships of a protectionPolicyBase object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

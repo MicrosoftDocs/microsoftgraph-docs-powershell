@@ -33,13 +33,6 @@ New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter <IMicrosoftGraphCu
 Create a new customAppScope object for an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

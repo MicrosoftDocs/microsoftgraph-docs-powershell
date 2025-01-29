@@ -34,6 +34,7 @@ Get-MgBetaDomainRootDomain -InputObject <IIdentityDirectoryManagementIdentity> [
 Get the root domain of a subdomain.The API returns a single object which is the root domain of the specified subdomain.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

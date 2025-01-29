@@ -42,13 +42,6 @@ Get-MgSubscription -InputObject <IChangeNotificationsIdentity> [-Property <Strin
 Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

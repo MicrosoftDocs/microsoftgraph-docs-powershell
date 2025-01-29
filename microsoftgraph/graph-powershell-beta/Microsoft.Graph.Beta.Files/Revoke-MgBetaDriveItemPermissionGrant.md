@@ -48,6 +48,7 @@ Revoke-MgBetaDriveItemPermissionGrant -InputObject <IFilesIdentity>
 Revoke access to a listItem or driveItem granted via a sharing link by removing the specified recipient from the link.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |

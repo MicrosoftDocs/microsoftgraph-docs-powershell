@@ -43,6 +43,7 @@ Get-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 The windows information protection network learning summaries.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

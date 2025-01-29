@@ -33,6 +33,7 @@ Remove-MgGroupCalendarEvent -InputObject <ICalendarIdentity> [-IfMatch <String>]
 Delete navigation property events for groups
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group.ReadWrite.All,  |

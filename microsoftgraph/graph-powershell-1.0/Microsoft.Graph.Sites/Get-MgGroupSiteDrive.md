@@ -40,13 +40,6 @@ Get-MgGroupSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 The collection of drives (document libraries) under this site.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

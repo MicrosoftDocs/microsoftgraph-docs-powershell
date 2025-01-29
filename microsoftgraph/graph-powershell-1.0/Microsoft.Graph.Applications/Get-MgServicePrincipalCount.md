@@ -25,6 +25,7 @@ Get-MgServicePrincipalCount [-Filter <String>] [-Search <String>] -ConsistencyLe
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Directory.ReadWrite.All,  |

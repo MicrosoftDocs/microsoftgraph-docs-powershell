@@ -41,6 +41,7 @@ Get-MgBetaUserTodoTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandPrope
 A collection of resources linked to the task.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

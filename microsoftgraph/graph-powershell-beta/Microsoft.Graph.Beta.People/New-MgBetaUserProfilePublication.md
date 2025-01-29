@@ -54,6 +54,7 @@ New-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> -BodyParameter <
 Create new navigation property to publications for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

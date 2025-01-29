@@ -60,6 +60,7 @@ Deleted items are returned with the deleted facet.Items with this property set s
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All, Sites.Read.All,  |

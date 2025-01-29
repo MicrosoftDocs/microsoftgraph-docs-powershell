@@ -47,6 +47,7 @@ The list of scheduled action configurations for this compliance policy.
 Compliance policy must have one and only one block scheduled action.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

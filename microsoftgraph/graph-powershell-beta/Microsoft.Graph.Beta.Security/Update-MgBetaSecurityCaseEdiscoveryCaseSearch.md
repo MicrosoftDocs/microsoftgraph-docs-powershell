@@ -64,6 +64,7 @@ Update-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 Update the properties of an ediscoverySearch object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

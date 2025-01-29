@@ -58,6 +58,7 @@ Application permissions can be granted directly with app role assignments, or th
 To grant an app role assignment, you need three identifiers:
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

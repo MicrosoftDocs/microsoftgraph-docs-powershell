@@ -24,6 +24,7 @@ Invoke-MgExperienceDeviceManagement [-ResponseHeadersVariable <String>] [-Header
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

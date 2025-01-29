@@ -35,13 +35,6 @@ Get-MgVirtualEventWebinarByUserIdAndRole -InputObject <IBookingsIdentity> [-Coun
 ## DESCRIPTION
 Get a virtualEventWebinar collection where the specified user is either the organizer or a coorganizer.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Count

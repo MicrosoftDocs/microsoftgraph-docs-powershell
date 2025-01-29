@@ -50,6 +50,7 @@ Update-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 Update the role of a conversationMember in a team or channel.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

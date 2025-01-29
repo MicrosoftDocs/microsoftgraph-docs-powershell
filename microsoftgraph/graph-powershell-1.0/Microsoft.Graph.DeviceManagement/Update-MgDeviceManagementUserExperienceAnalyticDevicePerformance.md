@@ -62,6 +62,7 @@ Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance -InputObject <I
 Update the navigation property userExperienceAnalyticsDevicePerformance in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

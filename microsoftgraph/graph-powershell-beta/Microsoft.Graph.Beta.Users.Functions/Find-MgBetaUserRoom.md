@@ -44,6 +44,7 @@ Find-MgBetaUserRoom -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <St
 Invoke function findRooms
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

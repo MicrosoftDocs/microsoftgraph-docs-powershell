@@ -40,6 +40,7 @@ For developers, if the application attempts to redeem a delegated access token f
 If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.RevokeSessions.All, User.ReadWrite, Directory.ReadWrite.All,  |

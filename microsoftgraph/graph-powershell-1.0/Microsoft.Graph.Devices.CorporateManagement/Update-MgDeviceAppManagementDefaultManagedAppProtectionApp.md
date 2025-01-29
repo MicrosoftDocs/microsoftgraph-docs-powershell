@@ -50,6 +50,7 @@ Update-MgDeviceAppManagementDefaultManagedAppProtectionApp -InputObject <IDevice
 Update the navigation property apps in deviceAppManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

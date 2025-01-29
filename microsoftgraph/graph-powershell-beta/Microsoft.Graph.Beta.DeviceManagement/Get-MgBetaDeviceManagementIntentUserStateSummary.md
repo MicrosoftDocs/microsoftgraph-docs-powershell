@@ -30,6 +30,7 @@ Get-MgBetaDeviceManagementIntentUserStateSummary -InputObject <IDeviceManagement
 A summary of user states and counts of users that belong to corresponding state for all users that the intent is applied to
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

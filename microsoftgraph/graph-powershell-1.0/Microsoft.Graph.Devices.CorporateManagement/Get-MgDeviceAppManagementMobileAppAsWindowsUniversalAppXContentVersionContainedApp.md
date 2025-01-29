@@ -43,13 +43,6 @@ Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedA
 ## DESCRIPTION
 The collection of contained apps in a MobileLobApp acting as a package.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementTemplateSetting -InputObject <IDeviceManagementIdentit
 Collection of all settings this template has
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -32,6 +32,7 @@ Invoke-MgBetaExtractDriveItemSensitivityLabel -InputObject <IFilesIdentity> [-Re
 Invoke action extractSensitivityLabels
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

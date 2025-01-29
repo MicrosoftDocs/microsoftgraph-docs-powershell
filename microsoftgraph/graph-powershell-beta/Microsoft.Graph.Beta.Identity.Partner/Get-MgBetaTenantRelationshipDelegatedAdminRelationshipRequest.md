@@ -44,6 +44,7 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIde
 Read the properties and relationships of a delegatedAdminRelationshipRequest object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

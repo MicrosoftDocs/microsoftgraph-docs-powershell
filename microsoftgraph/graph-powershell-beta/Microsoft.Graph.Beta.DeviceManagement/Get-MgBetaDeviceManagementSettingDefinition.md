@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementSettingDefinition -InputObject <IDeviceManagementIdent
 The device management intent setting definitions
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

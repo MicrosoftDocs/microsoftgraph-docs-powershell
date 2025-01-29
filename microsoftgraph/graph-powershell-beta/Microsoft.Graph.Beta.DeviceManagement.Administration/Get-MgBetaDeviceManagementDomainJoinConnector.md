@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementDomainJoinConnector -InputObject <IDeviceManagementAdm
 A list of connector objects.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

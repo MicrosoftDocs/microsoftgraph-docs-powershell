@@ -40,6 +40,7 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshot -InputObject <IDeviceManagemen
 Read the properties and relationships of a cloudPcSnapshot object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

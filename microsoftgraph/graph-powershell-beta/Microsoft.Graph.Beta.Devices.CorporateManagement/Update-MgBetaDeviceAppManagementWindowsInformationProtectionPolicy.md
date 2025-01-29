@@ -105,6 +105,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy
 Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

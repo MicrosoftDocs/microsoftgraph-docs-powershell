@@ -72,6 +72,7 @@ You can't use a PATCH request to change the status of an assignment.
 Use the publish action to change the assignment status.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

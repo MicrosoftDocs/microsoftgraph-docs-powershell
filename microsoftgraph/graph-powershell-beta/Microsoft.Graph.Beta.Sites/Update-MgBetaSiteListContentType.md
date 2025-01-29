@@ -60,6 +60,7 @@ Update-MgBetaSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <I
 Update the navigation property contentTypes in sites
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

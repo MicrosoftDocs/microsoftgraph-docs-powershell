@@ -32,6 +32,7 @@ Remove-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducati
 Delete an educationGradingScheme object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

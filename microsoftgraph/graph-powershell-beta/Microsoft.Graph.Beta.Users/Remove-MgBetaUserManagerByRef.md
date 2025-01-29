@@ -34,6 +34,7 @@ Remove-MgBetaUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>]
 Remove a user's manager.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

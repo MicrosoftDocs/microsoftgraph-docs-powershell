@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrollme
 The list of autopilot events for the tenant.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

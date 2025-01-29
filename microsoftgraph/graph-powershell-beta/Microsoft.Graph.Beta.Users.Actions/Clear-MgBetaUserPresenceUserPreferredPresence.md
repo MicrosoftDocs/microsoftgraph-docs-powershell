@@ -34,6 +34,7 @@ Clear-MgBetaUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentit
 Clear the preferred availability and activity status for a user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Presence.ReadWrite,  |

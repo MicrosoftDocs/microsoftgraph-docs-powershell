@@ -34,6 +34,7 @@ Get-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsId
 Retrieve the schema for a given synchronization job or template.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -42,6 +42,7 @@ Deleting a schema extension definition before deleting the data associated with 
 To recover the data, you can recreate the schema extension definition with the same configuration, but only if you used the verified domain for the schema extension id.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

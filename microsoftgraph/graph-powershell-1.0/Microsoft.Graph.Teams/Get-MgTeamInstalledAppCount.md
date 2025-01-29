@@ -33,6 +33,7 @@ Get-MgTeamInstalledAppCount -InputObject <ITeamsIdentity> [-Filter <String>] [-S
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadWriteAndConsentForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam,  |

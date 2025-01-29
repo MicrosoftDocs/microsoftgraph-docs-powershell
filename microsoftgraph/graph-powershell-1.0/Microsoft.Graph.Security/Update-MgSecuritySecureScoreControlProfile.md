@@ -60,13 +60,6 @@ Update-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Request without Prefer header
 

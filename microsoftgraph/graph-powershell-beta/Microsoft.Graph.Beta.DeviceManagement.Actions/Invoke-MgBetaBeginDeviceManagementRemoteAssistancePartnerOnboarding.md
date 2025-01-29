@@ -35,6 +35,7 @@ A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

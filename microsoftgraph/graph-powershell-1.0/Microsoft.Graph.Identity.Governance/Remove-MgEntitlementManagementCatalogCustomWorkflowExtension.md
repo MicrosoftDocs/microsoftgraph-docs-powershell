@@ -35,13 +35,6 @@ Delete an accessPackageAssignmentWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

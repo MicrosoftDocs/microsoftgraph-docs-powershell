@@ -51,6 +51,7 @@ An instance represents a review for a specific resource (such as a particular gr
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

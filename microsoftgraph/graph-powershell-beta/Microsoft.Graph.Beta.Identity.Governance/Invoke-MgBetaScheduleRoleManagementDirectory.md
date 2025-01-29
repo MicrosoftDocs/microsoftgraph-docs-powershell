@@ -25,6 +25,7 @@ Invoke-MgBetaScheduleRoleManagementDirectory [-AppScopeId <String>] [-Count] [-D
 Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD,  |

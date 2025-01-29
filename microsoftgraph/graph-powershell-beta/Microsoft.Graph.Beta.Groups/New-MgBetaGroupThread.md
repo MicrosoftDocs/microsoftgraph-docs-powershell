@@ -58,6 +58,7 @@ Use reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |

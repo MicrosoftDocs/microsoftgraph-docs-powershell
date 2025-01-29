@@ -43,6 +43,7 @@ Get-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySig
 Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |

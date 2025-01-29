@@ -48,6 +48,7 @@ New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -InputObj
 Create new navigation property to localizations for solutions
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |

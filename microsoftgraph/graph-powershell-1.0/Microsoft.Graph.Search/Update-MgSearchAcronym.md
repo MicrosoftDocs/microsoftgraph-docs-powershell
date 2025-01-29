@@ -52,6 +52,7 @@ Update-MgSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 Update the properties of an acronym object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

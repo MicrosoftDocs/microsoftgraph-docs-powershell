@@ -47,6 +47,7 @@ Only teachers or applications with application permissions can add or change gra
 Students can't see the grade or feedback until the assignment is released.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.Read, EduAssignments.ReadWrite,  |

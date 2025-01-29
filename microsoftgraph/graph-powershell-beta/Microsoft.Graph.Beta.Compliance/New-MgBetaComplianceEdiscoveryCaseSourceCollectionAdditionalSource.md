@@ -49,6 +49,7 @@ New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject 
 Create new navigation property to additionalSources for compliance
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

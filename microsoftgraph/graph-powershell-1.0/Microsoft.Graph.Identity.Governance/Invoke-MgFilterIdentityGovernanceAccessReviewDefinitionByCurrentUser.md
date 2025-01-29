@@ -36,6 +36,7 @@ Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser -InputObjec
 Returns accessReviewScheduleDefinition objects where the calling user is a reviewer on one or more accessReviewInstance objects.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -49,6 +49,7 @@ Update-MgBetaDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdent
 Update the navigation property deviceCategories in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

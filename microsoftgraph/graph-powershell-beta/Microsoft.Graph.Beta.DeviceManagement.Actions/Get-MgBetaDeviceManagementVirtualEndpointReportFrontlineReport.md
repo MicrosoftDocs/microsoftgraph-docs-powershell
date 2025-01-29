@@ -33,13 +33,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport -OutFile <String>
 ## DESCRIPTION
 Get the Windows 365 Frontline reports, such as real-time or historical data reports.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

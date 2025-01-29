@@ -42,13 +42,6 @@ Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution
 Represents the Permissions Creep Index (PCI) for the authorization system.
 PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

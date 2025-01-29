@@ -40,6 +40,7 @@ Get-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-ExpandProperty <Stri
 Retrieve the properties and relationships of a securityAction object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

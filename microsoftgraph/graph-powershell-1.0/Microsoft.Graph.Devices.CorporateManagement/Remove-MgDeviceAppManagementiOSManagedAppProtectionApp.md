@@ -33,6 +33,7 @@ Remove-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCor
 Deletes a managedMobileApp.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

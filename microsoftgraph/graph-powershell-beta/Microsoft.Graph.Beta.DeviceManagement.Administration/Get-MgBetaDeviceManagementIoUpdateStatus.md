@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdminist
 The IOS software update installation statuses for this account.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

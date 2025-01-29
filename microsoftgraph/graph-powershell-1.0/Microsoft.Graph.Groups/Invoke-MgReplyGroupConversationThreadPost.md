@@ -51,6 +51,7 @@ Invoke-MgReplyGroupConversationThreadPost -InputObject <IGroupsIdentity>
 Invoke action reply
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

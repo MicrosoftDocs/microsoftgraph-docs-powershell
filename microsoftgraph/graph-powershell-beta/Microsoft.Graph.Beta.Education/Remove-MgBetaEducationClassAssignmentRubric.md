@@ -36,6 +36,7 @@ Delete an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

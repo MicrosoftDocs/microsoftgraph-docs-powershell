@@ -43,6 +43,7 @@ Get-MgIdentityGovernanceLifecycleWorkflowVersion -InputObject <IIdentityGovernan
 Read the properties and relationships of a workflowVersion object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -39,6 +39,7 @@ Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All,  |

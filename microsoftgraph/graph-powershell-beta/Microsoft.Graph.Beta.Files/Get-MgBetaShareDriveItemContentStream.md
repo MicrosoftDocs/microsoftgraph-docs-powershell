@@ -30,6 +30,7 @@ Get-MgBetaShareDriveItemContentStream -InputObject <IFilesIdentity> -OutFile <St
 The content stream, if the item represents a file.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All, Sites.Read.All,  |

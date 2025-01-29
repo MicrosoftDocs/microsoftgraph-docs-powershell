@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementPartner -InputObject <IDeviceManagementAdministrationI
 The list of Device Management Partners configured by the tenant.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

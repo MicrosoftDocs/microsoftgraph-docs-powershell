@@ -50,6 +50,7 @@ Update-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmini
 Update the properties of a resourceOperation object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -54,6 +54,7 @@ New-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMic
 Create a new timeOff instance in a schedule.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |

@@ -52,6 +52,7 @@ Set-MgExternalConnectionItem -InputObject <ISearchIdentity>
 Create a new externalItem object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

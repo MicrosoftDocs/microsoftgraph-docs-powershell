@@ -22,6 +22,7 @@ Get-MgBetaDeviceManagementDeviceConfigurationUserStateSummary [-ExpandProperty <
 The device configuration user state summary for this account.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

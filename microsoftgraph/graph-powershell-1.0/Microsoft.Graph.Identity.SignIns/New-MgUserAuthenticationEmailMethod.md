@@ -52,6 +52,7 @@ Email authentication is a self-service password reset method.
 A user may only have one email authentication method.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |

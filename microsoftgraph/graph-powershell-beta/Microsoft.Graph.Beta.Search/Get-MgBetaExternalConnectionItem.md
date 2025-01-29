@@ -48,6 +48,7 @@ It isn't intended to be used for any other purpose.
 Repeated requests to this API might result in 429 HTTP errors.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

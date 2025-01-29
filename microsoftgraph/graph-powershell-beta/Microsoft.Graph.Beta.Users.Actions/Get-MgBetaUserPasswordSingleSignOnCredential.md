@@ -32,6 +32,7 @@ Get the list of password-based single sign-on credentials for a given user.
 This API returns the encrypted passwords as null or empty strings.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Directory.AccessAsUser.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |

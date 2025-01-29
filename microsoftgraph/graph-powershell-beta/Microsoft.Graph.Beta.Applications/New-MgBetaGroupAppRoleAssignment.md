@@ -57,13 +57,6 @@ All direct members of the group will be considered assigned.
 Security groups with dynamic memberships are supported.
 To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Assign an app role to a group
 

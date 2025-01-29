@@ -43,6 +43,7 @@ Get-MgBetaEducationSchool -InputObject <IEducationIdentity> [-ExpandProperty <St
 Retrieve the properties and relationships of the school object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic,  |

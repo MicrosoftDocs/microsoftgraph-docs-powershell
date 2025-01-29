@@ -51,13 +51,6 @@ By default, this operation returns 100 places per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 See details for how they compare.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: List all the rooms defined in the tenant
 

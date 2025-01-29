@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagemen
 The remote assist partners.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

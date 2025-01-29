@@ -63,6 +63,7 @@ New-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftG
 Create new navigation property to tasks for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

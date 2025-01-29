@@ -35,13 +35,6 @@ Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -InputObject <IRepo
 Get the number of users using unique devices in your organization.
 The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

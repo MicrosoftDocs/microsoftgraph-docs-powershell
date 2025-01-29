@@ -35,13 +35,6 @@ Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight -InputObject <IIdentity
 Provide a summary of workflows processed, by category, in a tenant.
 This allows you to quickly get category information, by numerical value, bypassing other information found in the WorkflowsProcessedSummary call.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

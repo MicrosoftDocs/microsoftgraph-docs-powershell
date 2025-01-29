@@ -47,6 +47,7 @@ This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

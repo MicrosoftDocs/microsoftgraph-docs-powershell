@@ -30,6 +30,7 @@ Invoke-MgBetaRotateDeviceManagementManagedDeviceLocalAdminPassword
 Initiates a manual rotation for the local admin password on the device
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

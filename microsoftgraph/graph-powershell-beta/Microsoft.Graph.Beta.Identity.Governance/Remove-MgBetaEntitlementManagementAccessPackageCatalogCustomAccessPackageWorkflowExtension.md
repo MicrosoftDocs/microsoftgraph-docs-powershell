@@ -46,13 +46,6 @@ Use the access package catalog ID and retrieve the ID of the accessPackageCustom
 Call the Update accessPackageAssignmentPolicy operation to remove the custom workflow extension object from the policy.
 For an example, see Example 3: Remove the customExtensionStageSettings from a policy.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

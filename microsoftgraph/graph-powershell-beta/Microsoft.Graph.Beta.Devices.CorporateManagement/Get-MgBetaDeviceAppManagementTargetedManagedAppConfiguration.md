@@ -41,6 +41,7 @@ Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevi
 Targeted managed app configurations.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -45,6 +45,7 @@ Get the properties and relationships of a bookingAppointment object in the speci
 The start and end properties are always returned in UTC.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

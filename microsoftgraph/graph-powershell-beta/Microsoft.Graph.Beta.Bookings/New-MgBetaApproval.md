@@ -22,6 +22,7 @@ New-MgBetaApproval [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] 
 Provision an approvalSolution on behalf of a tenant.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ApprovalSolution.Read, ApprovalSolutionResponse.ReadWrite, ApprovalSolution.ReadWrite,  |

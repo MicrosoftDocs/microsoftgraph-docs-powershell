@@ -45,13 +45,6 @@ New-MgUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> -BodyPara
 ## DESCRIPTION
 Create new navigation property to methods for users
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

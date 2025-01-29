@@ -55,6 +55,7 @@ New-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity>
 Create new navigation property to legalHolds for compliance
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

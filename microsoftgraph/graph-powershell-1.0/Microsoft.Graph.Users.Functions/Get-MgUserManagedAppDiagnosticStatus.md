@@ -33,6 +33,7 @@ Get-MgUserManagedAppDiagnosticStatus -InputObject <IUsersFunctionsIdentity> [-Co
 Gets diagnostics validation status for a given user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

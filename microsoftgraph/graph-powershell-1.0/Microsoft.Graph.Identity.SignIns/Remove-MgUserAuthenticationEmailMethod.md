@@ -34,6 +34,7 @@ Remove-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity> [
 Deletes a user's emailAuthenticationMethod object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |

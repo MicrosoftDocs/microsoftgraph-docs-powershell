@@ -29,6 +29,7 @@ Get-MgBetaUserCloudPcLaunchInfo -InputObject <IUsersFunctionsIdentity> [-Respons
 Get the cloudPCLaunchInfo for the signed-in user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | CloudPC.Read.All, CloudPC.ReadWrite.All,  |

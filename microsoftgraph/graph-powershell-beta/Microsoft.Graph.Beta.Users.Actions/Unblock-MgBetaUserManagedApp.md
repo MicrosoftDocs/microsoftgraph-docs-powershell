@@ -29,6 +29,7 @@ Unblock-MgBetaUserManagedApp -InputObject <IUsersActionsIdentity> [-ResponseHead
 Unblocks the managed app user from app check-in.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

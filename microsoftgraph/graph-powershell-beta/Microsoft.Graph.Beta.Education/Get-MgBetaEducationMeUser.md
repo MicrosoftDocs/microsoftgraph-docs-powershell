@@ -26,6 +26,7 @@ Get-MgBetaEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>]
 Retrieve the simple directory user that corresponds to this educationUser.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic, User.Read, EduRoster.Write, EduRoster.Read,  |

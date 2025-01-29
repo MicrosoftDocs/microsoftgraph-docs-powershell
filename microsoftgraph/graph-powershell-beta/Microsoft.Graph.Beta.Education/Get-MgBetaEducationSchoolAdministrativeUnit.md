@@ -34,6 +34,7 @@ Get-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Write, EduRoster.Read,  |

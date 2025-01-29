@@ -37,13 +37,6 @@ Get-MgBetaGroupSitePageTemplateWebPart -InputObject <ISitesIdentity> [-ExpandPro
 ## DESCRIPTION
 The collection of web parts on the SharePoint page.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

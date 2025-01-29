@@ -43,6 +43,7 @@ Get-MgDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity> [-Exp
 Read properties and relationships of the detectedApp object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

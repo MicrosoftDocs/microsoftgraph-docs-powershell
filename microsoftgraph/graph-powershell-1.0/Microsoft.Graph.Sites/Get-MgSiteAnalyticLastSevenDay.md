@@ -33,6 +33,7 @@ Get-MgSiteAnalyticLastSevenDay -InputObject <ISitesIdentity> [-ExpandProperty <S
 Get lastSevenDays from sites
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |

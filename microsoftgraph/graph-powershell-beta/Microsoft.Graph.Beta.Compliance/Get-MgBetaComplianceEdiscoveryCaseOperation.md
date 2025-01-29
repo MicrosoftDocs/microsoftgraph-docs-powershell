@@ -39,13 +39,6 @@ Get-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity> [
 Returns a list of case operation objects for this case.
 Nullable.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseOperation Cmdlet
 ```powershell

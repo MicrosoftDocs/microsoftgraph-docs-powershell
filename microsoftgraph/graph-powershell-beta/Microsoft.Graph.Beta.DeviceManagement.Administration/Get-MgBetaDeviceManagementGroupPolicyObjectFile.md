@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementGroupPolicyObjectFile -InputObject <IDeviceManagementA
 A list of Group Policy Object files uploaded.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

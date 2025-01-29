@@ -53,6 +53,7 @@ The application or service principal adopts this policy over the tenant-wide ten
 Only one policy object can be assigned to an application or service principal.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -42,6 +42,7 @@ New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHeadersV
 Create a new plannerTask.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |

@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementManagedDeviceEncryptionState -InputObject <IDeviceMana
 Encryption report for devices in this account
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

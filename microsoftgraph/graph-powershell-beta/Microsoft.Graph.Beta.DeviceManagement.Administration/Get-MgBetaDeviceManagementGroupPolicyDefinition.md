@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementGroupPolicyDefinition -InputObject <IDeviceManagementA
 The available group policy definitions for this account.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

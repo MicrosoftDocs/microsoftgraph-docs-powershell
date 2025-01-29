@@ -40,13 +40,6 @@ Get-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 The apps installed in this team.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

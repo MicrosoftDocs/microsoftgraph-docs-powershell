@@ -41,6 +41,7 @@ Get-MgDeviceManagementDetectedAppManagedDevice -InputObject <IDeviceManagementId
 The devices that have the discovered application installed
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

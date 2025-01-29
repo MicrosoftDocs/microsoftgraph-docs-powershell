@@ -71,6 +71,7 @@ Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Directory.AccessAsUser.All,  |

@@ -43,6 +43,7 @@ Get-MgBetaTeamChannelMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty
 Retrieve a single message or a message reply in a channel or a chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

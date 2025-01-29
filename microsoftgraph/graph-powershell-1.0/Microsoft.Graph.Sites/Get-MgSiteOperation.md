@@ -43,6 +43,7 @@ Get-MgSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 Get the status of a rich long-running operation on a site or a list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

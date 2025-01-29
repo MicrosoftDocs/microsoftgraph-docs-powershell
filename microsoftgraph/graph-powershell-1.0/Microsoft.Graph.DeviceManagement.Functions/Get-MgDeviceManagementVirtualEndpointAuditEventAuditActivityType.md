@@ -26,6 +26,7 @@ Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType [-Count] [-Filt
 Get audit activity types by tenant ID.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

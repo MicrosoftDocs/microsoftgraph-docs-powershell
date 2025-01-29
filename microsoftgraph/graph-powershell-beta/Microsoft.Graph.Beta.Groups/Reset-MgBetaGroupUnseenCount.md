@@ -34,13 +34,6 @@ Reset-MgBetaGroupUnseenCount -InputObject <IGroupsIdentity> [-ResponseHeadersVar
 Reset the unseenCount of all the posts that the current user hasn't seen since their last visit.
 Supported for Microsoft 365 groups only.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

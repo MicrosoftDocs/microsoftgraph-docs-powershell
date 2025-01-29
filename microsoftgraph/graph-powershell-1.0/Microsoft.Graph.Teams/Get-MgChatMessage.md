@@ -51,6 +51,7 @@ Get-MgChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 Retrieve a single message or a message reply in a channel or a chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |

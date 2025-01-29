@@ -46,6 +46,7 @@ The user's profile photo.
 Read-only.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.Read,  |

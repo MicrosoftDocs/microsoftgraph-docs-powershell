@@ -37,6 +37,7 @@ This API is useful when a label should be set manually or explicitly by a user o
 Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | InformationProtectionPolicy.Read,  |

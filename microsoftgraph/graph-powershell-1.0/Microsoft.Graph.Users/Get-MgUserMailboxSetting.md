@@ -37,6 +37,7 @@ You can get or update settings for sending automatic replies to incoming message
 Returned only on $select.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

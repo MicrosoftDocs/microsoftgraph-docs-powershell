@@ -22,6 +22,7 @@ Get-MgBetaDeviceManagementWindowsAutopilotSetting [-ExpandProperty <String[]>] [
 The Windows autopilot account settings.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

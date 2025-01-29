@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementReportExportJob -InputObject <IReportsIdentity> [-Expa
 Entity representing a job to export a report.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

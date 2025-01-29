@@ -48,6 +48,7 @@ Read-only.
 Nullable.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All, PrinterShare.Read.All,  |

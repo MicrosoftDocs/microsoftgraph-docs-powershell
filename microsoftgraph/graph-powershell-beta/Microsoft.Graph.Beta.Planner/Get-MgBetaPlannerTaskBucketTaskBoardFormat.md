@@ -34,6 +34,7 @@ Get-MgBetaPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-Exp
 Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |

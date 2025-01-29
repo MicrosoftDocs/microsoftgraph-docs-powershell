@@ -50,6 +50,7 @@ New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicationsI
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

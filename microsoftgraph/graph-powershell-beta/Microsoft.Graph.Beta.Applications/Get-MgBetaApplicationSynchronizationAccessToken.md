@@ -52,6 +52,7 @@ Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdent
 Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

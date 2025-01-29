@@ -41,13 +41,6 @@ Get-MgAllTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: List all channels
 

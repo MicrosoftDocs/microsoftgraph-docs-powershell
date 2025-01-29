@@ -38,6 +38,7 @@ Only the app that created the schema extension (owner app) can delete the schema
 Deleting a schema extension definition does not affect accessing custom data that has been added to resource instances based on that definition.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

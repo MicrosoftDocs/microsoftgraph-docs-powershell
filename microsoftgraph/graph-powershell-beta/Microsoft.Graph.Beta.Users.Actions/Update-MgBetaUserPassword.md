@@ -53,13 +53,6 @@ Update-MgBetaUserPassword -InputObject <IUsersActionsIdentity>
 Update the signed-in user's password.
 Any user can update their password without belonging to any administrator role.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

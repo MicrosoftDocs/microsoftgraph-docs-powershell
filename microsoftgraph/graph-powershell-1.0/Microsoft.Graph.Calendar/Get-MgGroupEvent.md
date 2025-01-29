@@ -43,6 +43,7 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [
 Get an event object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All,  |

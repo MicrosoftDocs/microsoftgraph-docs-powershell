@@ -41,6 +41,7 @@ Get-MgBetaDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagem
 The Managed eBook.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

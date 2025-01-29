@@ -36,6 +36,7 @@ Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 Delete an authenticationContextClassReference object that's not published or used by a conditional access policy.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -39,6 +39,7 @@ In general, only teachers in the class can remove a resource.
 However, teachers can't remove resources marked as 'distributeToStudents', after the assignment has been published to students.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

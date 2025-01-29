@@ -59,6 +59,7 @@ Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

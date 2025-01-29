@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementResourceAccessProfile -InputObject <IDeviceManagementI
 Collection of resource access settings associated with account.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

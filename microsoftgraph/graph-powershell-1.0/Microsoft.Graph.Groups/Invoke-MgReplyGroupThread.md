@@ -52,6 +52,7 @@ Reply to a post and add a new post to the specified thread in a group conversati
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |

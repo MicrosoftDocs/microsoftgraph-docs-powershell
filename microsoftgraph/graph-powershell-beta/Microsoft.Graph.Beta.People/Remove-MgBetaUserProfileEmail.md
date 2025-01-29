@@ -30,6 +30,7 @@ Remove-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-IfMatch <String>]
 Delete navigation property emails for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

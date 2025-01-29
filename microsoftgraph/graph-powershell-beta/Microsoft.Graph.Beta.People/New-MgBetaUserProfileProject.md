@@ -58,6 +58,7 @@ New-MgBetaUserProfileProject -InputObject <IPeopleIdentity>
 Create new navigation property to projects for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

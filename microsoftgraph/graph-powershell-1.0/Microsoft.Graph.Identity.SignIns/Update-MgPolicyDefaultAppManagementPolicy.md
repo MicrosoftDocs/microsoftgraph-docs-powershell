@@ -36,6 +36,7 @@ Update-MgPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantA
 Update the properties of a tenantAppManagementPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

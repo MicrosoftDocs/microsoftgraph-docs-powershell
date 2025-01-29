@@ -50,6 +50,7 @@ The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Organization.ReadWrite.All, User.ReadWrite.All,  |

@@ -48,6 +48,7 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicati
 Mute all participants in the call.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

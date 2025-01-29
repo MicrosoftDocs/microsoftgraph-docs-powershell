@@ -80,6 +80,7 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 Update an event object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group.ReadWrite.All,  |

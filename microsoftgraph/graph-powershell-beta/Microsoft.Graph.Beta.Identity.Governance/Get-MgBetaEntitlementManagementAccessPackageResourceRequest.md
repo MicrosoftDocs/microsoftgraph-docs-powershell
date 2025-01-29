@@ -38,13 +38,6 @@ Get-MgBetaEntitlementManagementAccessPackageResourceRequest -InputObject <IIdent
 ## DESCRIPTION
 Represents a request to add or remove a resource to or from a catalog respectively.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get all access package resource requests
 

@@ -41,6 +41,7 @@ Get-MgUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProperty <
 A collection of checklistItems linked to a task.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

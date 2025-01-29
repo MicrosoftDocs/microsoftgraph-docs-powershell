@@ -56,6 +56,7 @@ Get-MgUserChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandPropert
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |

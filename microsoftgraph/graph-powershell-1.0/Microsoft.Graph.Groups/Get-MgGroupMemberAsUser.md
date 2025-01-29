@@ -46,13 +46,6 @@ Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Use $searchand OData cast to get user membership in groups with display names that contain the letters 'Pr' including a count of returned objects
 

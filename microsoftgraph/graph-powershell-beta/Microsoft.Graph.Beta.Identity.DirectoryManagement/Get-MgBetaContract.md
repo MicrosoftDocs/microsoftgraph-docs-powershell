@@ -42,6 +42,7 @@ Get-MgBetaContract -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandP
 Retrieve the properties and relationships of contract object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

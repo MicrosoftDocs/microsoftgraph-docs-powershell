@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile
 The available group policy uploaded definition files for this account.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

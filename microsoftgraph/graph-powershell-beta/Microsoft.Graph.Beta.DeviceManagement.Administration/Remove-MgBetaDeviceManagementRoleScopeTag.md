@@ -30,6 +30,7 @@ Remove-MgBetaDeviceManagementRoleScopeTag -InputObject <IDeviceManagementAdminis
 Delete navigation property roleScopeTags for deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

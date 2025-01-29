@@ -32,13 +32,6 @@ Add-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject <I
 Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is false in the review's accessReviewScheduleSettings.
 The status of the accessReviewInstance must be Completed to call this method.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

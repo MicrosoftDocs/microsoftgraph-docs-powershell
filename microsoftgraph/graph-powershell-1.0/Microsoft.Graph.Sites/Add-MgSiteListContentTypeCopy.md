@@ -50,6 +50,7 @@ Add-MgSiteListContentTypeCopy -InputObject <ISitesIdentity>
 Add a copy of a content type from a site to a list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

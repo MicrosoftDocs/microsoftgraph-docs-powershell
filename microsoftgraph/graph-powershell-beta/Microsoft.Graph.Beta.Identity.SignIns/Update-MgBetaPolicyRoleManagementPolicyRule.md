@@ -54,6 +54,7 @@ Update a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:+ Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph+ Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |

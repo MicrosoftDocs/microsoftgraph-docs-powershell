@@ -54,6 +54,7 @@ Update-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity>
 Update the navigation property languages in users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

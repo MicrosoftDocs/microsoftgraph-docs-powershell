@@ -51,6 +51,7 @@ Set-MgServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdentity>
 Provide credentials for establishing connectivity with the target system.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

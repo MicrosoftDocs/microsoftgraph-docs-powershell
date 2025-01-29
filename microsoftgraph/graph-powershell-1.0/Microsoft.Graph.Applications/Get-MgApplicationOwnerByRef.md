@@ -27,6 +27,7 @@ Get-MgApplicationOwnerByRef -ApplicationId <String> [-Filter <String>] [-Search 
 Retrieve a list of owners for an application that are directoryObject types.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

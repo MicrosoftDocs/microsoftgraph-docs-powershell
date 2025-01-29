@@ -41,6 +41,7 @@ Get-MgBetaUserTodoTaskAttachment -InputObject <IUsersIdentity> [-ExpandProperty 
 A collection of file attachments for the task.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

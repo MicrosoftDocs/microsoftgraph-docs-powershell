@@ -57,13 +57,6 @@ New-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Create a new internalDomainFederation object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Configure federation settings for a federated domain
 

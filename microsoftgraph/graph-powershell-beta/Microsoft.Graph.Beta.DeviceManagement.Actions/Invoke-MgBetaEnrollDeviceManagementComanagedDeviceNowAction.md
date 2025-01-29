@@ -30,6 +30,7 @@ Invoke-MgBetaEnrollDeviceManagementComanagedDeviceNowAction -InputObject <IDevic
 Trigger comanagement enrollment action on ConfigurationManager client
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

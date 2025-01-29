@@ -43,6 +43,7 @@ Get-MgTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 Retrieve the properties and relationships of the specified tab in a channel within a team.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsTab.ReadWriteSelfForTeam, TeamsTab.ReadWriteForTeam,  |

@@ -49,6 +49,7 @@ Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdenti
 Create a request to export the personal data for an inboundSharedUserProfile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

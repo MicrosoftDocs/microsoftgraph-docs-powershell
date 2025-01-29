@@ -35,6 +35,7 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly
 Create new navigation property to userExperienceAnalyticsAnomaly for deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

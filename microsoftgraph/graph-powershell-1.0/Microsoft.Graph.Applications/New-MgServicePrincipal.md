@@ -61,6 +61,7 @@ New-MgServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal> [-Respon
 Create a new servicePrincipal object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

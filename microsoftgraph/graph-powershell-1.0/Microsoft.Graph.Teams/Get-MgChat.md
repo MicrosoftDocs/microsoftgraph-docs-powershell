@@ -46,6 +46,7 @@ This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |

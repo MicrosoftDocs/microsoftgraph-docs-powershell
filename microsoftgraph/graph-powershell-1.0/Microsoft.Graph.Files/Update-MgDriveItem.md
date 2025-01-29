@@ -83,6 +83,7 @@ Update-MgDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 Update the navigation property items in drives
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

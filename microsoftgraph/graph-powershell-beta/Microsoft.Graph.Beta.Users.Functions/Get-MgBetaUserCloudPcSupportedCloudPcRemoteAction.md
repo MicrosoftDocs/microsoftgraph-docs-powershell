@@ -30,13 +30,6 @@ Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction -InputObject <IUsersFunctionsI
 ## DESCRIPTION
 Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -CloudPcId

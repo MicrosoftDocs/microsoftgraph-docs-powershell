@@ -33,13 +33,6 @@ New-MgTenantRelationshipDelegatedAdminCustomer -BodyParameter <IMicrosoftGraphDe
 ## DESCRIPTION
 Create new navigation property to delegatedAdminCustomers for tenantRelationships
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

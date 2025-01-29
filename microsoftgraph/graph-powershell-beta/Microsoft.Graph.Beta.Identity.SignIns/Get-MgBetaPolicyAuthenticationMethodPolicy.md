@@ -25,13 +25,6 @@ Get-MgBetaPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Proper
 ## DESCRIPTION
 Read the properties and relationships of an authenticationMethodsPolicy object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

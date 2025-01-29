@@ -59,6 +59,7 @@ Read-only.
 Nullable.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.Read.All,  |

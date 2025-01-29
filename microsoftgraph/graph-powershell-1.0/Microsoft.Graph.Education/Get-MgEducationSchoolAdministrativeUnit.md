@@ -33,6 +33,7 @@ Get-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-Expa
 The underlying administrativeUnit for this school.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Write, EduRoster.Read,  |

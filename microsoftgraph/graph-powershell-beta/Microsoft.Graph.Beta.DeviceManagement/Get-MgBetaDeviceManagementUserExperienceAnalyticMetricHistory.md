@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory -InputObject <IDev
 User experience analytics metric history
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

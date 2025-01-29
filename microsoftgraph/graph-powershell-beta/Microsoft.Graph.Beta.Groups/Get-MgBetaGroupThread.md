@@ -43,6 +43,7 @@ Get-MgBetaGroupThread -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>
 Get a thread object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

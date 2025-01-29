@@ -36,6 +36,7 @@ The report will be retired on December 31, 2024.
 You can start using the Cloud PC connection quality report now via https://go.microsoft.com/fwlink/?linkid=2283835.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

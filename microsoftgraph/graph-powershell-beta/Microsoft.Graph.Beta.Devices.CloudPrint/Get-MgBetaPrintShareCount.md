@@ -24,6 +24,7 @@ Get-MgBetaPrintShareCount [-Filter <String>] [-Search <String>] [-ResponseHeader
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All, PrinterShare.Read.All,  |

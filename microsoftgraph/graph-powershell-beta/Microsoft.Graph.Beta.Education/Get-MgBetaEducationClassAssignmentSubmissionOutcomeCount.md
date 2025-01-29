@@ -34,6 +34,7 @@ Get-MgBetaEducationClassAssignmentSubmissionOutcomeCount -InputObject <IEducatio
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.Read, EduAssignments.ReadWrite,  |

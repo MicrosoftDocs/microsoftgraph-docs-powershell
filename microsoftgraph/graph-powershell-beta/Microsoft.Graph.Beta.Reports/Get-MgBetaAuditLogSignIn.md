@@ -43,6 +43,7 @@ Get-MgBetaAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <Strin
 Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

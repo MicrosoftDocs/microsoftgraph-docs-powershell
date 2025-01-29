@@ -22,6 +22,7 @@ Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate [-ExpandProperty <St
 The WinPhone Symantec Code Signing Certificate.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

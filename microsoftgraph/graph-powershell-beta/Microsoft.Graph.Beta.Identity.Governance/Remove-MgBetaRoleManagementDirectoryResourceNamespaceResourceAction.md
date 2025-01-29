@@ -33,13 +33,6 @@ Remove-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject
 ## DESCRIPTION
 Delete navigation property resourceActions for roleManagement
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

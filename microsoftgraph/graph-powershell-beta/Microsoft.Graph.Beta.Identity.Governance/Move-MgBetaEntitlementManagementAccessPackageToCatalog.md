@@ -50,13 +50,6 @@ Move-MgBetaEntitlementManagementAccessPackageToCatalog -InputObject <IIdentityGo
 In Microsoft Entra entitlement management, this action moves the accessPackage to a specified target accessPackageCatalog.
 The resources in the access package must be present in the target catalog.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

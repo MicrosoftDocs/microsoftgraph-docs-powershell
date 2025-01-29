@@ -43,6 +43,7 @@ A collection of all the members in the chat.
 Nullable.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadWrite, Chat.ReadBasic, Chat.Read,  |

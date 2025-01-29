@@ -38,6 +38,7 @@ Get-MgBetaTeamScheduleDayNote -InputObject <ITeamsIdentity> [-ExpandProperty <St
 The day notes in the schedule.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -33,13 +33,6 @@ Start-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHead
 Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

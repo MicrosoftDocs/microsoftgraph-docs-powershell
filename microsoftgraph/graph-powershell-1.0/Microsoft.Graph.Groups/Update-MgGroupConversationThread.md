@@ -52,6 +52,7 @@ Update-MgGroupConversationThread -InputObject <IGroupsIdentity>
 Update the navigation property threads in groups
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

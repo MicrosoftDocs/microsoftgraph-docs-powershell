@@ -41,13 +41,6 @@ Get-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-Expand
 ## DESCRIPTION
 Get a user's presence information.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get the presence information of another user
 

@@ -56,6 +56,7 @@ New-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity>
 Create a new version of a document set item in a list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -30,6 +30,7 @@ Remove-MgBetaUserProfile -InputObject <IPeopleIdentity> [-IfMatch <String>] [-Re
 Delete navigation property profile for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

@@ -58,6 +58,7 @@ The createLink action creates a new sharing link if the specified link type does
 listItem resources inherit sharing permissions from the list the item resides in.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

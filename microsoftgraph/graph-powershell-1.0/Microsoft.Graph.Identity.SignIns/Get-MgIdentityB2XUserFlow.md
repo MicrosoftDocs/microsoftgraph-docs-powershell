@@ -43,6 +43,7 @@ Get-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandProper
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

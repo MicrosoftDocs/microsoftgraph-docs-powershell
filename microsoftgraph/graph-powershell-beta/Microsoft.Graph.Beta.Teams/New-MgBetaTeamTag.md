@@ -50,6 +50,7 @@ New-MgBetaTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 Create a standard tag for members in the team.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamworkTag.ReadWrite,  |

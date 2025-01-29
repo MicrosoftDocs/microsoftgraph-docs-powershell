@@ -26,6 +26,7 @@ Get newly created, updated, or deleted tasks in either a Planner plan or assigne
 For details, see Use delta query to track changes in Microsoft Graph data.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.Read,  |

@@ -42,13 +42,6 @@ Get-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> [-E
 ## DESCRIPTION
 Retrieve the properties and relationships of a featureRolloutPolicy object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get a feature rollout policy
 

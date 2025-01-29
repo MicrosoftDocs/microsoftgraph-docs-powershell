@@ -32,13 +32,6 @@ Get-MgIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuthenti
 ## DESCRIPTION
 Get the item of type microsoft.graph.onAuthenticationMethodLoadStartHandler as microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId

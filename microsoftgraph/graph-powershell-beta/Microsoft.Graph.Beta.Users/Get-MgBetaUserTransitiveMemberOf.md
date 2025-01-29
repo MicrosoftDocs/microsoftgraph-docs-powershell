@@ -43,13 +43,6 @@ Get-MgBetaUserTransitiveMemberOf -InputObject <IUsersIdentity> [-ExpandProperty 
 The groups, including nested groups and directory roles that a user is a member of.
 Nullable.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

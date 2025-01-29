@@ -41,6 +41,7 @@ Get-MgBetaDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagement
 Conceptual container for user and group directory objects.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

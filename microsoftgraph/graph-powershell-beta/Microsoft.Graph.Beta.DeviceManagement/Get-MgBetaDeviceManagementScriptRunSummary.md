@@ -30,6 +30,7 @@ Get-MgBetaDeviceManagementScriptRunSummary -InputObject <IDeviceManagementIdenti
 Run summary for device management script.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

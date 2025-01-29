@@ -27,6 +27,7 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackage
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

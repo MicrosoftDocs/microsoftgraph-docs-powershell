@@ -38,6 +38,7 @@ Use this configuration to view the Microsoft Entra ID Remote Desktop Services (R
 Additionally you can view any targetDeviceGroups that have been configured for SSO.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

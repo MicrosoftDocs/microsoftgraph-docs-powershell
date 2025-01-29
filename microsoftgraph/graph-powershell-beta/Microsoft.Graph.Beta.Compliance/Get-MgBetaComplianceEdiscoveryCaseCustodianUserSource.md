@@ -40,6 +40,7 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceI
 Read the properties and relationships of a userSource object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

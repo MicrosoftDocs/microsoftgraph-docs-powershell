@@ -51,13 +51,6 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion -InputObject <IIdentityG
 ## DESCRIPTION
 Create a new version of the workflow object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Create a new version of a joiner workflow with time based trigger
 

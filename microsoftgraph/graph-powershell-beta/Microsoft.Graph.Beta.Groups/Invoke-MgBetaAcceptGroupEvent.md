@@ -49,13 +49,6 @@ Invoke-MgBetaAcceptGroupEvent -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Accept the specified event in a user calendar.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

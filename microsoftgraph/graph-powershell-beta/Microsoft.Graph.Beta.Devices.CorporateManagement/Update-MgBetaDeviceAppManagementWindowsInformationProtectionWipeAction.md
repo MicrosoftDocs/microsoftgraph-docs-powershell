@@ -52,6 +52,7 @@ Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
 Update the navigation property windowsInformationProtectionWipeActions in deviceAppManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

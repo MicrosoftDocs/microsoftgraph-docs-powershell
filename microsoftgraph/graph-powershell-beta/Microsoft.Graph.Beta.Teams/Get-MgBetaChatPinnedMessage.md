@@ -57,13 +57,6 @@ Get-MgBetaChatPinnedMessage -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 A collection of all the pinned messages in the chat.
 Nullable.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: List all the pinned messages in a chat
 

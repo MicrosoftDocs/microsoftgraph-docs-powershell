@@ -50,6 +50,7 @@ Update-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentit
 Update a user's email address associated with an email Authentication Method object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |

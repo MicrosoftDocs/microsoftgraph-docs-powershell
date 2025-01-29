@@ -41,6 +41,7 @@ Get-MgDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDeviceMana
 User experience analytics model scores
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

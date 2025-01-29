@@ -49,6 +49,7 @@ Update-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGr
 Update the navigation property lists in users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -40,6 +40,7 @@ Get-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIde
 Read the properties and relationships of an alertRule object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

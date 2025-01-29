@@ -40,13 +40,6 @@ Get-MgTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The channels that are either shared with this deleted team or created in this deleted team.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

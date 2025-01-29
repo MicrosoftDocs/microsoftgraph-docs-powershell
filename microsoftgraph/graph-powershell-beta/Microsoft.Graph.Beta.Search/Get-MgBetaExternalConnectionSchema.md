@@ -34,6 +34,7 @@ Get-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProper
 Retrieve the properties of a schema for an externalConnection.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

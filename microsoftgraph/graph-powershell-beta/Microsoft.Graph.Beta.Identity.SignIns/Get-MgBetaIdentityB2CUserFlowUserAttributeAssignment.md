@@ -41,6 +41,7 @@ Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 Read the properties and relationships of an identityUserFlowAttributeAssignment object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

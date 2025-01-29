@@ -34,6 +34,7 @@ Remove-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMatch 
 Delete navigation property linkedResources for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

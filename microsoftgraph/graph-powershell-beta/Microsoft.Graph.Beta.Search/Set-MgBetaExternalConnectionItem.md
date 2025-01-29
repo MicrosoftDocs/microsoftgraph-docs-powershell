@@ -52,6 +52,7 @@ Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
 Update the properties of an externalitem.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

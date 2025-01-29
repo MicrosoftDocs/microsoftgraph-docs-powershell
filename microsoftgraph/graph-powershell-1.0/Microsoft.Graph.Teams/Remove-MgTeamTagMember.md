@@ -34,6 +34,7 @@ Remove-MgTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respo
 Delete a member from a standard tag in a team.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamworkTag.ReadWrite,  |

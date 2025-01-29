@@ -34,6 +34,7 @@ Remove-MgBookingBusinessService -InputObject <IBookingsIdentity> [-IfMatch <Stri
 Delete a bookingService object in the specified bookingBusiness.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

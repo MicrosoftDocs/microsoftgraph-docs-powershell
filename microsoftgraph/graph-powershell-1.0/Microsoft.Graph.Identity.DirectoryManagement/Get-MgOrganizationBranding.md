@@ -42,6 +42,7 @@ This method retrieves only non-Stream properties, for example, usernameHintText 
 To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.Read, User.Read.All,  |

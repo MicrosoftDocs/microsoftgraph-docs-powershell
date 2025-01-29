@@ -41,6 +41,7 @@ Get-MgBetaUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProper
 A collection of smaller subtasks linked to the more complex parent task.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

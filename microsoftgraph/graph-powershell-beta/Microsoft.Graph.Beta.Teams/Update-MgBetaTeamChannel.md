@@ -60,6 +60,7 @@ Update-MgBetaTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Update the properties of the specified channel.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

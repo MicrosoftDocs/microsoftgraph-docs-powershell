@@ -29,13 +29,6 @@ Invoke-MgBetaRotateUserManagedDeviceLocalAdminPassword -InputObject <IUsersActio
 ## DESCRIPTION
 Initiates a manual rotation for the local admin password on the device
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

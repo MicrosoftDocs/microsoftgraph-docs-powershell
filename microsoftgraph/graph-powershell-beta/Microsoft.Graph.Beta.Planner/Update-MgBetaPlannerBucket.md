@@ -53,6 +53,7 @@ Update-MgBetaPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
 Update the properties of plannerbucket object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |

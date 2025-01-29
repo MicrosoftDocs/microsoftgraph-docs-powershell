@@ -67,6 +67,7 @@ These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

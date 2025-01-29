@@ -38,6 +38,7 @@ Get-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> [-ExpandProperty <St
 Represents detailed information about websites associated with a user in various services.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |

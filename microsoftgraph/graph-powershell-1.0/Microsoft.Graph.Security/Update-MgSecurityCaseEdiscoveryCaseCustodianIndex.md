@@ -34,6 +34,7 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentit
 Trigger an indexOperation to make a custodian and associated sources searchable.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

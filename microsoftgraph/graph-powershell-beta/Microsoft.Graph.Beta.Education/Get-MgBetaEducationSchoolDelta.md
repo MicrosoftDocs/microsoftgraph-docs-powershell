@@ -29,6 +29,7 @@ Get newly created or updated schools without having to perform a full read of th
 See Use delta query for details.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |

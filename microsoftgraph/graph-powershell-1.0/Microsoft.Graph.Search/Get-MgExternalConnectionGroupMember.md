@@ -42,13 +42,6 @@ Get-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-ExpandPrope
 A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

@@ -34,6 +34,7 @@ Get-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-Expan
 Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |

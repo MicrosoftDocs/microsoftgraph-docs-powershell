@@ -40,6 +40,7 @@ Get-MgBetaDirectoryOutboundSharedUserProfile -InputObject <IIdentityDirectoryMan
 Get the details of an outboundSharedUserProfile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | CrossTenantUserProfileSharing.Read, CrossTenantUserProfileSharing.ReadWrite.All, CrossTenantUserProfileSharing.ReadWrite, CrossTenantUserProfileSharing.Read.All,  |

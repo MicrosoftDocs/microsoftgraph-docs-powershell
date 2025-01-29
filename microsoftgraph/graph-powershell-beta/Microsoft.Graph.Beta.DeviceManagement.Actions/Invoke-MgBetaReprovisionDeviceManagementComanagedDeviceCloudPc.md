@@ -29,13 +29,6 @@ Invoke-MgBetaReprovisionDeviceManagementComanagedDeviceCloudPc -InputObject <IDe
 ## DESCRIPTION
 Reprovision a Cloud PC with an Intune managed device ID.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

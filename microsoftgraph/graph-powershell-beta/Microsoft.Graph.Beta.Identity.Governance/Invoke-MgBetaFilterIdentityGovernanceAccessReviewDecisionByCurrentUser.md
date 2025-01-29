@@ -35,13 +35,6 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser
 Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
 A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Retrieve all decision items for which you're a reviewer and expand the definitions
 

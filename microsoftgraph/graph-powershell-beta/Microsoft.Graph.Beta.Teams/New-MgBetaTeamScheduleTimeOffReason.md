@@ -52,6 +52,7 @@ New-MgBetaTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> -BodyParameter
 Create a new timeOffReason.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |

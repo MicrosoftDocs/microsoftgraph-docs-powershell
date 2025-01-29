@@ -21,6 +21,7 @@ Get-MgBetaDeviceManagementAssignedRoleDetail [-ResponseHeadersVariable <String>]
 Retrieves the assigned role definitions and role assignments of the currently authenticated user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

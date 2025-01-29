@@ -30,6 +30,7 @@ Get-MgBetaDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion
 Update the Proprietary Device Health Script
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

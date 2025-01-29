@@ -43,6 +43,7 @@ Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
 The user experience analytics work from anywhere model performance
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

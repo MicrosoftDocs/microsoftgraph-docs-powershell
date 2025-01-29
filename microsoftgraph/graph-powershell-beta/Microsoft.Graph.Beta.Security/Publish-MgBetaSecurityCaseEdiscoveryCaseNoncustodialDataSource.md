@@ -34,6 +34,7 @@ Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISe
 Release the non-custodial data source from the case.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

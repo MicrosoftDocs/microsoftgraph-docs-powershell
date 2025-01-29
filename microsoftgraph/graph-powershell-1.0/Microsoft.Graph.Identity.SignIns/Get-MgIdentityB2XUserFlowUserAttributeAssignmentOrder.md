@@ -34,6 +34,7 @@ Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySig
 Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

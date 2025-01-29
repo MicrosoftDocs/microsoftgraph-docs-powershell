@@ -53,6 +53,7 @@ Update-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <I
 Update the properties of an itemAddress object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

@@ -43,6 +43,7 @@ Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByApp
 User experience analytics appHealth Application Performance by App Version Device Id
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

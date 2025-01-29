@@ -34,6 +34,7 @@ Get-MgBetaTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 Get the default channel, General, of a team.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

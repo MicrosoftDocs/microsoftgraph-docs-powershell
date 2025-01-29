@@ -53,6 +53,7 @@ Update-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity>
 Update the navigation property anniversaries in users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

@@ -41,6 +41,7 @@ Get-MgDeviceAppManagementManagedAppStatus -InputObject <IDevicesCorporateManagem
 Read properties and relationships of the managedAppStatus object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -33,6 +33,7 @@ Remove-MgBetaGroupSetting -InputObject <IGroupsIdentity> [-IfMatch <String>]
 Delete navigation property settings for groups
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

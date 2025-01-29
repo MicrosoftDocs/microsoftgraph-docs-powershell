@@ -32,6 +32,7 @@ The registration that is enabled for an online meeting.
 One online meeting can only have one registration enabled.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetings.Read, OnlineMeetings.ReadWrite,  |

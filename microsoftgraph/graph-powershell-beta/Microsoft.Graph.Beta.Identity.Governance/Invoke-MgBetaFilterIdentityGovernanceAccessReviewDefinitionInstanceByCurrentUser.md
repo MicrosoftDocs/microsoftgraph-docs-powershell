@@ -38,6 +38,7 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser
 Returns all accessReviewInstance objects on a given accessReviewScheduleDefinition where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

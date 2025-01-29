@@ -44,6 +44,7 @@ Represents the settings for each authentication method.
 Automatically expanded on GET /policies/authenticationMethodsPolicy.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -57,6 +57,7 @@ New-MgGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
 Create new navigation property to sectionGroups for groups
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Notes.ReadWrite.All,  |

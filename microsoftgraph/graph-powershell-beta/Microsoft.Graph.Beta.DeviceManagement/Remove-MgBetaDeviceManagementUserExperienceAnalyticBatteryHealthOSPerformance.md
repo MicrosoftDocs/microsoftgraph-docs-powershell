@@ -32,6 +32,7 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
 Delete navigation property userExperienceAnalyticsBatteryHealthOsPerformance for deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

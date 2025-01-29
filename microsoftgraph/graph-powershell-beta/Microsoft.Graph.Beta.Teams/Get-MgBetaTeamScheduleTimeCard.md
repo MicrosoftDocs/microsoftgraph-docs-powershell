@@ -40,6 +40,7 @@ Get-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ExpandProperty <S
 Get the properties and relationships of a timeCard object by ID.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

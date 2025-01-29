@@ -41,6 +41,7 @@ Get-MgUserTodoList -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-
 The task lists in the users mailbox.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

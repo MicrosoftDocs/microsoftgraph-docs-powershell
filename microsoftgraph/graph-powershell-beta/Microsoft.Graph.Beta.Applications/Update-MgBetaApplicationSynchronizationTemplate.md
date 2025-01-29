@@ -52,6 +52,7 @@ Update-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdent
 Update (override) the synchronization template associated with a given application.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

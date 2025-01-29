@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementEmbeddedSimActivationCodePool -InputObject <IDeviceMan
 The embedded SIM activation code pools created by this account.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

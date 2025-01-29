@@ -29,13 +29,6 @@ Get-MgBetaCommunicationCallRecordSmLog -InputObject <ICloudCommunicationsIdentit
 ## DESCRIPTION
 Get the log of a sent/received SMS as a collection of smsLogRow entries.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Count

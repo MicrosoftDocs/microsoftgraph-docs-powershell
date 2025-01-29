@@ -35,13 +35,6 @@ Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice -InputObject <IId
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device isn't registered for passwordless Phone Sign-In.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

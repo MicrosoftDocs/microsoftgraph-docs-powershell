@@ -35,6 +35,7 @@ Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -InputObject
 Remove a tokenLifetimePolicy from an application or servicePrincipal.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

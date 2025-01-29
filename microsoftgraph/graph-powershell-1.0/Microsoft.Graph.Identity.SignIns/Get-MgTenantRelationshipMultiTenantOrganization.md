@@ -26,6 +26,7 @@ Get-MgTenantRelationshipMultiTenantOrganization [-ExpandProperty <String[]>] [-P
 Get properties of the multitenant organization.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | MultiTenantOrganization.ReadBasic.All,  |

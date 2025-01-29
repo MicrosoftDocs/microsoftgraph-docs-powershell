@@ -26,6 +26,7 @@ Get-MgPolicyAuthorizationPolicy [-ExpandProperty <String[]>] [-Property <String[
 Retrieve the properties of an authorizationPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

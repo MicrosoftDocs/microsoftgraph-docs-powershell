@@ -33,13 +33,6 @@ Get-MgReportEmailAppUsageVersionUserCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Get the count of unique users by Outlook desktop version.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

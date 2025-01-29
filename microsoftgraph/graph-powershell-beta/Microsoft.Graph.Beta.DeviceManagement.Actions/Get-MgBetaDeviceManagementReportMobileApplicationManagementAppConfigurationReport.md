@@ -33,6 +33,7 @@ Get-MgBetaDeviceManagementReportMobileApplicationManagementAppConfigurationRepor
 Invoke action getMobileApplicationManagementAppConfigurationReport
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

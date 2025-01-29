@@ -47,6 +47,7 @@ Remove-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-IfMat
 Delete navigation property staffMembers for bookingBusinesses
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

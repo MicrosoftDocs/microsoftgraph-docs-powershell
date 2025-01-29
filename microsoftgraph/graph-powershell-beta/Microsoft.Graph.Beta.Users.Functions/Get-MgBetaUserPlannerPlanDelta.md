@@ -34,13 +34,6 @@ Get-MgBetaUserPlannerPlanDelta -InputObject <IUsersFunctionsIdentity> [-ExpandPr
 Get newly created, updated, or deleted Planner plans in either a group or a Planner roster without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

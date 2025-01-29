@@ -55,6 +55,7 @@ Get-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ExpandPropert
 Get posts from groups
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

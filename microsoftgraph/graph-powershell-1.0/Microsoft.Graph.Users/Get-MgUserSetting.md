@@ -33,6 +33,7 @@ Get-MgUserSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 Get settings from users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

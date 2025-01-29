@@ -43,6 +43,7 @@ Get-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorporateM
 Read properties and relationships of the managedEBookAssignment object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

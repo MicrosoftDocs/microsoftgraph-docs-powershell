@@ -34,6 +34,7 @@ Remove-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-IfMatch <
 Delete a bookingAppointment in the specified bookingBusiness.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

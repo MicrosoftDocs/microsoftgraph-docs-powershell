@@ -55,6 +55,7 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerforman
 Update the navigation property userExperienceAnalyticsDeviceStartupProcessPerformance in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -43,6 +43,7 @@ Get-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-ExpandProperty <String
 Retrieve the properties and relationships of a timeOff object by ID.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |

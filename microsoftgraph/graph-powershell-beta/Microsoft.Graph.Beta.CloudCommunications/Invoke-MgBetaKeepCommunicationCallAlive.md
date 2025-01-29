@@ -46,6 +46,7 @@ Attempting to send a request to a call that ended results in a 404 Not Found err
 The resources related to the call should be cleaned up on the application side.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

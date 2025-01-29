@@ -47,13 +47,6 @@ The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
 ```powershell

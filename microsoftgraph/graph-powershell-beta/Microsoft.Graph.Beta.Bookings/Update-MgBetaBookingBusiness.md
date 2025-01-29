@@ -111,6 +111,7 @@ Update-MgBetaBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IM
 Update entity in bookingBusinesses
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

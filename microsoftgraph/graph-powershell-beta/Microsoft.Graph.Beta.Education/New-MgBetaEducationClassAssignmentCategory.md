@@ -78,6 +78,7 @@ Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

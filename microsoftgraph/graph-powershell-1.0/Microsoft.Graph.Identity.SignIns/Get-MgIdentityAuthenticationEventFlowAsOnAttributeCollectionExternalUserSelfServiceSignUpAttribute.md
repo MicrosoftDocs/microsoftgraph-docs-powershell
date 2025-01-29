@@ -29,13 +29,6 @@ Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServ
 Get an identityUserFlowAttribute collection associated with an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object.
 These attributes are collected from the user during the authentication experience defined by the user flow.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

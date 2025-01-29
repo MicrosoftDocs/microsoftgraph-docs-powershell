@@ -34,6 +34,7 @@ New-MgPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-ResponseHeadersVaria
 Create a new claimsMappingPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

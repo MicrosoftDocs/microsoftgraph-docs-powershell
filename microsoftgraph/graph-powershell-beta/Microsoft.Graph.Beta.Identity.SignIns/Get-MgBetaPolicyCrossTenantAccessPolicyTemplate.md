@@ -25,6 +25,7 @@ Get-MgBetaPolicyCrossTenantAccessPolicyTemplate [-ExpandProperty <String[]>] [-P
 Represents the base policy in the directory for multi-tenant organization settings.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

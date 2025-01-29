@@ -64,6 +64,7 @@ New-MgTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Send a new chatMessage in the specified channel or a chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All,  |

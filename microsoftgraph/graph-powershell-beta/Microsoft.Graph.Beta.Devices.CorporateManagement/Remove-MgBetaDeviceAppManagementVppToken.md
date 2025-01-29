@@ -33,6 +33,7 @@ Remove-MgBetaDeviceAppManagementVppToken -InputObject <IDevicesCorporateManageme
 Delete navigation property vppTokens for deviceAppManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

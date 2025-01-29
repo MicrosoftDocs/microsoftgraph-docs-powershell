@@ -31,6 +31,7 @@ Get-MgBetaSiteContentModelAppliedDrive -InputObject <ISitesIdentity> [-Count] [-
 List all the contentModelUsage information related to a contentModel applied to a SharePoint document library.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

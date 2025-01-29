@@ -71,6 +71,7 @@ If the provisioning failed, clients can get additional information from the prov
 Clients can also inspect the configuration of the schedule.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |

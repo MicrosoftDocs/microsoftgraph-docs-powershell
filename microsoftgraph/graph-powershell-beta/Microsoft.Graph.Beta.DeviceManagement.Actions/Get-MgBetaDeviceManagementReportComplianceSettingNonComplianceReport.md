@@ -36,6 +36,7 @@ Get-MgBetaDeviceManagementReportComplianceSettingNonComplianceReport -OutFile <S
 Invoke action getComplianceSettingNonComplianceReport
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

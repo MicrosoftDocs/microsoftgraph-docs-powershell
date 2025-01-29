@@ -32,13 +32,6 @@ Get-MgSecurityCaseEdiscoveryCaseTagParent -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Returns the parent tag of the specified tag.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

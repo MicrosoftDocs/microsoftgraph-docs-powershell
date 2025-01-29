@@ -39,6 +39,7 @@ The return value of this method might contain heterogeneous types of objects fro
 For more information about tracking changes in Microsoft Graph data, see Use delta query to track changes in Microsoft Graph data.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |

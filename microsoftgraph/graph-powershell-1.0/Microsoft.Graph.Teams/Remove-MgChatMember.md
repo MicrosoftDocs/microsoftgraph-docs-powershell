@@ -34,6 +34,7 @@ Remove-MgChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Response
 Remove a conversationMember from a chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChatMember.ReadWrite,  |

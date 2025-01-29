@@ -52,6 +52,7 @@ Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
 Get the availability information of staff members of a Microsoft Bookings calendar.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

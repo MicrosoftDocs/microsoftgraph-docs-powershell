@@ -26,6 +26,7 @@ Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-ExpandProperty 
 Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

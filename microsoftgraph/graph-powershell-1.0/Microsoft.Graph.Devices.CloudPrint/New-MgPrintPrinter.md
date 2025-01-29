@@ -41,6 +41,7 @@ This is a long-running operation and as such, it returns a printerCreateOperatio
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All,  |

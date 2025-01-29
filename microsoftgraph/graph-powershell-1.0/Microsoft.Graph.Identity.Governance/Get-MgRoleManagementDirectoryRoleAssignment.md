@@ -43,6 +43,7 @@ Get-MgRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernanceIde
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RoleManagement.Read.All,  |

@@ -41,6 +41,7 @@ Get-MgBetaUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIde
 The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |

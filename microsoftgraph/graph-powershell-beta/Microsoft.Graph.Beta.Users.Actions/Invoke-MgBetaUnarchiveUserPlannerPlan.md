@@ -51,13 +51,6 @@ Unarchive a plannerPlan object.
 Unarchiving a plan, also unarchives the plannerTasks and plannerBuckets in the plan.
 Only a plan that is archived can be unarchived.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

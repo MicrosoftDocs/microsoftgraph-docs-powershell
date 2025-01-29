@@ -36,6 +36,7 @@ Use this API to remove an owner from a Microsoft 365 group or a security group t
 When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

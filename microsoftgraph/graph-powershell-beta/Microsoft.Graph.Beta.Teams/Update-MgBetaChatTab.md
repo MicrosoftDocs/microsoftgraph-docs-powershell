@@ -54,6 +54,7 @@ Update the properties of the specified tab in a chat.
 This API can be used to configure the content of the tab.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsTab.ReadWriteSelfForChat,  |

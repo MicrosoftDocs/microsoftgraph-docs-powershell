@@ -34,13 +34,6 @@ Get-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoi
 ## DESCRIPTION
 Represents the date and time when an artifact is protected by a protectionPolicy and can be restored.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

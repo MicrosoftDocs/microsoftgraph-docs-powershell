@@ -43,6 +43,7 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <IIdenti
 In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.Read.All,  |

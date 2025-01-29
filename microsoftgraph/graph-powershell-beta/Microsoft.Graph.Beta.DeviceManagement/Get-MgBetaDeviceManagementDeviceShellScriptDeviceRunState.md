@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementDeviceShellScriptDeviceRunState -InputObject <IDeviceM
 List of run states for this script across all devices.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

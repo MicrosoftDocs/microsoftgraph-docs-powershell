@@ -63,6 +63,7 @@ Get-MgBetaBookingCurrency [-ExpandProperty <String[]>] [-Property <String[]>] [-
 Get entity from bookingCurrencies by key
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |

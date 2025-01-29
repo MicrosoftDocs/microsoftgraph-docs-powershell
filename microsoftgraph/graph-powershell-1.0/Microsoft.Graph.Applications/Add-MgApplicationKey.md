@@ -60,6 +60,7 @@ Applications that don't have any existing valid certificates (no certificates ha
 You can use the Update application operation to perform an update instead.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

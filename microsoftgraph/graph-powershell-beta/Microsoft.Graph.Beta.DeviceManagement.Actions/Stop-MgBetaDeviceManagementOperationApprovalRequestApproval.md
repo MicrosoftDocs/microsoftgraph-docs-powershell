@@ -48,6 +48,7 @@ Stop-MgBetaDeviceManagementOperationApprovalRequestApproval -InputObject <IDevic
 Cancels an already approved instance of an operationApprovalRequest.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -64,6 +64,7 @@ To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

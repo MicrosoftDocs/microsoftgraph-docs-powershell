@@ -36,13 +36,6 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleByCurre
 ## DESCRIPTION
 Retrieve the schedules for role eligibilities for which the signed-in user is the principal.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Count

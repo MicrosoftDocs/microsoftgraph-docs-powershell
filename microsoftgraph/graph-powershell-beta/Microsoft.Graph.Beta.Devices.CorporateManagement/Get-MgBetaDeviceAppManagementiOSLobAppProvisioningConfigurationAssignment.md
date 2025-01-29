@@ -41,6 +41,7 @@ Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment
 The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

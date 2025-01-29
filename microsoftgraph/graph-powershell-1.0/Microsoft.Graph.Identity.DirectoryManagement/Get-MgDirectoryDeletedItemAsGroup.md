@@ -44,13 +44,6 @@ Get-MgDirectoryDeletedItemAsGroup -InputObject <IIdentityDirectoryManagementIden
 Retrieve a list of recently deleted directory objects.
 Currently, deleted items functionality is only supported for the application, servicePrincipal, group, administrative unit, and user resources.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Retrieve deleted groups
 

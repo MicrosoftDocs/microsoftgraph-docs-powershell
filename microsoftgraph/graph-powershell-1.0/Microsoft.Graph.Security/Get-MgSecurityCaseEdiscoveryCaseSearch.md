@@ -43,6 +43,7 @@ Get-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity> [-Expand
 Read the properties and relationships of an ediscoverySearch object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

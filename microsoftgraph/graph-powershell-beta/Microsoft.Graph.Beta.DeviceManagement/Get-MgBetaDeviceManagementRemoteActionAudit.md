@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementIdent
 The list of device remote action audits with the tenant.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

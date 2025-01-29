@@ -65,13 +65,6 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of an alert object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

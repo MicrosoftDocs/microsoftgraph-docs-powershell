@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementConfigurationSetting -InputObject <IDeviceManagementId
 List of all ConfigurationSettings
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

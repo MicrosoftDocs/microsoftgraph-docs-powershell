@@ -35,6 +35,7 @@ Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

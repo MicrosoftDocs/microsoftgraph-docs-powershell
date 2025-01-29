@@ -32,13 +32,6 @@ Get-MgBetaReportM365AppPlatformUserCount -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: CSV output
 

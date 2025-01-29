@@ -40,6 +40,7 @@ A delta function call for todoTaskList is similar to a GET request, except that 
 This allows you to maintain and synchronize a local store of a user's todoTaskList without having to fetch all the todoTaskList from the server every time.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

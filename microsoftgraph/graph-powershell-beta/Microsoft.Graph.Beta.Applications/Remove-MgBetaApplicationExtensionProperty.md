@@ -36,6 +36,7 @@ Delete a directory extension definition represented by an extensionProperty obje
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

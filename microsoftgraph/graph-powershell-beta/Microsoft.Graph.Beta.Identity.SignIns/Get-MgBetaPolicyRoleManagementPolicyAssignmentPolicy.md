@@ -34,13 +34,6 @@ Get-MgBetaPolicyRoleManagementPolicyAssignmentPolicy -InputObject <IIdentitySign
 The policy that's associated with a policy assignment.
 Supports $expand and a nested $expand of the rules and effectiveRules relationships for the policy.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

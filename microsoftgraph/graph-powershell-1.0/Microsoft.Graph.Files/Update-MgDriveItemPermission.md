@@ -57,6 +57,7 @@ Update-MgDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <IMicr
 Update the navigation property permissions in drives
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

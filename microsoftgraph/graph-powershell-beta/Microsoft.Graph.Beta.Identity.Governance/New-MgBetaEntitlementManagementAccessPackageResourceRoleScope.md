@@ -57,13 +57,6 @@ Create a new accessPackageResourceRoleScope for adding a resource role to an acc
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Create a new access package resource role scope
 

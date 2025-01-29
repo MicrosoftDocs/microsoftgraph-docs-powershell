@@ -85,6 +85,7 @@ In this case, organization is defined as a collection of exactly one record, and
 The ID is also known as the tenantId of the organization.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

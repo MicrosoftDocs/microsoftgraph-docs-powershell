@@ -47,6 +47,7 @@ Enroll a meeting registrant in an online meeting that has meeting registration e
 This operation has two scenarios: In either scenario, the registrant will receive an email notification that contains their registration information.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetings.ReadWrite,  |

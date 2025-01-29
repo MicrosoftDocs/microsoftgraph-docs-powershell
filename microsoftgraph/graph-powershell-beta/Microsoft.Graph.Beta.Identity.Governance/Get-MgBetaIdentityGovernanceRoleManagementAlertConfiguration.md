@@ -56,6 +56,7 @@ The various configurations of an alert for Microsoft Entra roles.
 The configurations are predefined and can't be created or deleted, but some of the configurations can be modified.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

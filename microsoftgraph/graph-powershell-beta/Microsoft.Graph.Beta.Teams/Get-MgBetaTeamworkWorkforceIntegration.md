@@ -43,6 +43,7 @@ Get-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPro
 Retrieve the properties and relationships of a workforceintegration object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All,  |

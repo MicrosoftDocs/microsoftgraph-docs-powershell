@@ -44,6 +44,7 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask -InputObject <IIdentity
 Get a specific task from a workflow or workflowVersion.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

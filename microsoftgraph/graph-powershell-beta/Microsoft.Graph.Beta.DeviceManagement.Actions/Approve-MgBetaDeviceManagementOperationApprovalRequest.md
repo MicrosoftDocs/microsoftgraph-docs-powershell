@@ -48,6 +48,7 @@ Approve-MgBetaDeviceManagementOperationApprovalRequest -InputObject <IDeviceMana
 Approves the requested instance of an operationApprovalRequest.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

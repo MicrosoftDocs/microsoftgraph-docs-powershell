@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementMobileThreatDefenseConnector -InputObject <IDeviceMana
 The list of Mobile threat Defense connectors configured by the tenant.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

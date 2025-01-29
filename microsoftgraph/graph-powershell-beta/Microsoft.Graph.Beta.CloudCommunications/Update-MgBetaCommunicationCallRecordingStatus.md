@@ -53,6 +53,7 @@ Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

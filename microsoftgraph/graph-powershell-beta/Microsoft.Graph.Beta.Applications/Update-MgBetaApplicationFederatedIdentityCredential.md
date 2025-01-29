@@ -56,6 +56,7 @@ By configuring a trust relationship between your Microsoft Entra application reg
 Maximum of 20 objects can be added to an application.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

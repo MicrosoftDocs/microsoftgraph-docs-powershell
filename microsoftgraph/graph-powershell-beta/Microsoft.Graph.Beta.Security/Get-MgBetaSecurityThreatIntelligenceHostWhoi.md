@@ -37,13 +37,6 @@ Get the specified whoisRecord resource.
 Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
 - Specify an id value to get the corresponding whoisRecord.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get the whoisRecord resource for the specified host
 

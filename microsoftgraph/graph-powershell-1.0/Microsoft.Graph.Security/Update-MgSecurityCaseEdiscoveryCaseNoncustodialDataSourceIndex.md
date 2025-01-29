@@ -34,6 +34,7 @@ Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <ISe
 Trigger an indexOperation to make a non-custodial data source and its associated data source searchable.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

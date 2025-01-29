@@ -47,6 +47,7 @@ To update the properties of a published assignment, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

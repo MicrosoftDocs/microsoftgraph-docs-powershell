@@ -44,6 +44,7 @@ If the header Prefer: include-unknown-enum-members is provided, a reassigned sub
 For details, see the examples section.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWrite,  |

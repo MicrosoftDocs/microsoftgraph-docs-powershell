@@ -39,13 +39,6 @@ Get-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Retrieve the properties of a specific externalUserProfile.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -35,13 +35,6 @@ Remove-MgDriveItemRetentionLabel -InputObject <IFilesIdentity> [-IfMatch <String
 Remove a retention label from a driveItem.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

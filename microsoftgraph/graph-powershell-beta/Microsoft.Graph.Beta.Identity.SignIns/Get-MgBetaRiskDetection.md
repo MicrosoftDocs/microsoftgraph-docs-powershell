@@ -42,13 +42,6 @@ Get-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties of a collection of riskDetection objects.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get all riskDetections
 ```powershell

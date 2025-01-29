@@ -52,6 +52,7 @@ Start-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicat
 Put a participant on hold and play music in the background.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

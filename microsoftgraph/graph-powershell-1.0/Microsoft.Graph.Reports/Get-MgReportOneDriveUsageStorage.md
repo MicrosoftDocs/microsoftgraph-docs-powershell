@@ -32,13 +32,6 @@ Get-MgReportOneDriveUsageStorage -InputObject <IReportsIdentity> -OutFile <Strin
 ## DESCRIPTION
 Get the trend on the amount of storage you're using in OneDrive for Business.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

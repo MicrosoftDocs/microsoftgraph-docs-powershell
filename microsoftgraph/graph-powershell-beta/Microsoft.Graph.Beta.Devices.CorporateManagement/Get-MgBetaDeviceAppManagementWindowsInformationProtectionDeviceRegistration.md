@@ -40,6 +40,7 @@ Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
 Windows information protection device registrations that are not MDM enrolled.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

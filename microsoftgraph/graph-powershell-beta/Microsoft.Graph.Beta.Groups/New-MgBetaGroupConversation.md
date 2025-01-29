@@ -54,6 +54,7 @@ Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |

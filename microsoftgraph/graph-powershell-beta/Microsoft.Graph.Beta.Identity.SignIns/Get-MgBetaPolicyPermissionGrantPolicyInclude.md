@@ -44,13 +44,6 @@ Get-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdent
 Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get a permission grant policy include by ID 
 

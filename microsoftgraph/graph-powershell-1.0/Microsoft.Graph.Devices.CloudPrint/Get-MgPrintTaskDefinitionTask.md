@@ -44,13 +44,6 @@ Get-MgPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity> [-Expand
 Get details about a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

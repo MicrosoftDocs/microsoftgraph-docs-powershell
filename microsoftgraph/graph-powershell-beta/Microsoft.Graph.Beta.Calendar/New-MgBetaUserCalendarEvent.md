@@ -80,13 +80,6 @@ New-MgBetaUserCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to events for users
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Create an event in a specific calendar
 

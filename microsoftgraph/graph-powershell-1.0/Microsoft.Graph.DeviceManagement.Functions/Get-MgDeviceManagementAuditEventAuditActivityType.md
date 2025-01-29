@@ -33,6 +33,7 @@ Get-MgDeviceManagementAuditEventAuditActivityType -InputObject <IDeviceManagemen
 Invoke function getAuditActivityTypes
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

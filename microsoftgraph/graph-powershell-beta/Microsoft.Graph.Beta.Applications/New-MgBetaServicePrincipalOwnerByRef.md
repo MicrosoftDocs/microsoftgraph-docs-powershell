@@ -50,6 +50,7 @@ Add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

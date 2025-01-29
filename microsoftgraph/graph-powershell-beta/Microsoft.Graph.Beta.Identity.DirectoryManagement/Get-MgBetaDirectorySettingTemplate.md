@@ -42,6 +42,7 @@ A directory setting template represents a template of settings from which settin
 This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

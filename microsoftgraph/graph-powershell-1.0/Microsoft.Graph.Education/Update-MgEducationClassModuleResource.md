@@ -54,6 +54,7 @@ Only teachers can perform this operation.
 The only one property that can be updated is displayName, for all resource types.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduCurricula.ReadWrite,  |

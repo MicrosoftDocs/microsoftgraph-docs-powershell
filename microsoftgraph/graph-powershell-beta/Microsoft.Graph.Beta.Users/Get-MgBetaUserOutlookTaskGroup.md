@@ -41,13 +41,6 @@ The user's Outlook task groups.
 Read-only.
 Nullable.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTaskGroup Cmdlet
 ```powershell

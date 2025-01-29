@@ -45,6 +45,7 @@ New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 Add a member to the plannerRoster object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.ReadWrite,  |

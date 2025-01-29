@@ -42,6 +42,7 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdent
 Get roleAssignments from roleManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RoleManagement.Read.All,  |

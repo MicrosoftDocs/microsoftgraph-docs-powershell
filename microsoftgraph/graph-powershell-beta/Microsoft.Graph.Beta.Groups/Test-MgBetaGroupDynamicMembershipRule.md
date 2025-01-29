@@ -31,13 +31,6 @@ Test-MgBetaGroupDynamicMembershipRule
 ## DESCRIPTION
 Invoke action evaluateDynamicMembership
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Evaluate if a user or device would be a member of a group based on a membership rule
 

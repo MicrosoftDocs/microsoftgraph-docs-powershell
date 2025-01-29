@@ -74,6 +74,7 @@ Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManage
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

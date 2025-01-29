@@ -42,6 +42,7 @@ Get-MgDeviceAppManagementDefaultManagedAppProtectionApp -InputObject <IDevicesCo
 List of apps to which the policy is deployed.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

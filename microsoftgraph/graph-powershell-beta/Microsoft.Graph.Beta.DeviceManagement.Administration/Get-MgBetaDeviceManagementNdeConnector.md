@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementNdeConnector -InputObject <IDeviceManagementAdministra
 The collection of Ndes connectors for this account.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -34,6 +34,7 @@ Remove-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsId
 Delete a custom authenticationStrengthPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

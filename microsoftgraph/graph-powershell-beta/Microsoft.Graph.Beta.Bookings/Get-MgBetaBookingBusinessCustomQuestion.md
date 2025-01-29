@@ -63,6 +63,7 @@ Get-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-Expan
 All custom questions of this business.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

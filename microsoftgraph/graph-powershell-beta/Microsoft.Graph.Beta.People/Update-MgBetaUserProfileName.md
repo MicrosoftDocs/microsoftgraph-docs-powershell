@@ -56,6 +56,7 @@ Update-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMic
 Update the navigation property names in users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

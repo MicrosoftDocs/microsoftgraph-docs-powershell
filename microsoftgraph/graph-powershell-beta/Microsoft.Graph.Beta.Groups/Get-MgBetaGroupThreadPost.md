@@ -61,6 +61,7 @@ You can specify both the parentconversation and the thread, or, you can specify 
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -43,6 +43,7 @@ Get-MgSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 Retrieve the metadata for a content type in a site or a list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

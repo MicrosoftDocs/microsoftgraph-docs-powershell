@@ -47,6 +47,7 @@ Remove-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-If
 Delete navigation property customQuestions for bookingBusinesses
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BookingsAppointment.ReadWrite.All,  |

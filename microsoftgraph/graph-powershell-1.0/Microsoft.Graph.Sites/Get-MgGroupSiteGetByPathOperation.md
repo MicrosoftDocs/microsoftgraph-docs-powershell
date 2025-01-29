@@ -25,13 +25,6 @@ Get-MgGroupSiteGetByPathOperation -GroupId <String> -Path <String> -SiteId <Stri
 ## DESCRIPTION
 The collection of long-running operations on the site.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

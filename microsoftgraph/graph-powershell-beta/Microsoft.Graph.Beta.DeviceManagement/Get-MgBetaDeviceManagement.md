@@ -25,6 +25,7 @@ Get-MgBetaDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>]
 Get deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | DeviceManagementServiceConfig.Read.All, DeviceManagementRBAC.ReadWrite.All,  |

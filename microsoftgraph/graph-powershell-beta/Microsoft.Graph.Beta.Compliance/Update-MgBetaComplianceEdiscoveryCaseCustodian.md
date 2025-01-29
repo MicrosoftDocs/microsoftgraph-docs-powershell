@@ -55,6 +55,7 @@ Update-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity
 Update the properties of a custodian object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

@@ -51,13 +51,6 @@ New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBo
 Create a registration question for a webinar.
 You can create either a predefined registration question or a custom registration question.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Add a custom registration question to a webinar registration
 

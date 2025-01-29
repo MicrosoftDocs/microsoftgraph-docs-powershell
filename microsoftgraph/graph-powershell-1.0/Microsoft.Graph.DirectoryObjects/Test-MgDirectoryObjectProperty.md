@@ -54,6 +54,7 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

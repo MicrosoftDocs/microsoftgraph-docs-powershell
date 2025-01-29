@@ -40,6 +40,7 @@ Get-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryMan
 Get a Microsoft Entra role assignment with administrative unit scope.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -33,13 +33,6 @@ Invoke-MgBetaEnrollWindowsUpdatesUpdatableAssetById
 Enroll updatableAsset resources of the same type in update management by Windows Autopatch.
 You can also use the method enrollAssets to enroll assets.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

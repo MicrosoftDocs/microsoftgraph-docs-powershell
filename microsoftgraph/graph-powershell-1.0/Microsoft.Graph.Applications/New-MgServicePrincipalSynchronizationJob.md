@@ -58,6 +58,7 @@ The job is created in a disabled state.
 Call Start job to start synchronization.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

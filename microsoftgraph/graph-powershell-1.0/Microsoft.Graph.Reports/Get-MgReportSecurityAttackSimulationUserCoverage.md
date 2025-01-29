@@ -27,13 +27,6 @@ Get-MgReportSecurityAttackSimulationUserCoverage [-Count] [-Filter <String>] [-S
 List training coverage for each tenant user in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -63,6 +63,7 @@ Get-MgBetaBookingBusiness [-ExpandProperty <String[]>] [-Property <String[]>] [-
 Represents a Microsoft Bookings Business.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

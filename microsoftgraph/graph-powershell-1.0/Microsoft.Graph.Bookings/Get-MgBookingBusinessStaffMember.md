@@ -43,6 +43,7 @@ Get-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-ExpandProper
 Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

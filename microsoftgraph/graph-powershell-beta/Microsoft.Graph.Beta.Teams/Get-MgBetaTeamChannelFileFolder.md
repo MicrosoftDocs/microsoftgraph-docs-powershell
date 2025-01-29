@@ -34,6 +34,7 @@ Get-MgBetaTeamChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandProperty <
 Get the metadata for the location where the files of a channel are stored.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Files.ReadWrite, Files.Read,  |

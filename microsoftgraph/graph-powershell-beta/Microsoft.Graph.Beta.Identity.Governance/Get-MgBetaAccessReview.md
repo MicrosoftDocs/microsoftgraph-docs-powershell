@@ -50,6 +50,7 @@ Instead, use the instances relationship of that series to retrieve an accessRevi
 Each past and current instance will have decisions.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AccessReview.ReadWrite.All,  |

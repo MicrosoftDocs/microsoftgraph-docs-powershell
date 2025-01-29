@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact -InputObj
 User Experience Analytics Battery Health App Impact
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -33,13 +33,6 @@ Remove-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Delete an internalDomainFederation object.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Remove federation settigs for a federated domain
 

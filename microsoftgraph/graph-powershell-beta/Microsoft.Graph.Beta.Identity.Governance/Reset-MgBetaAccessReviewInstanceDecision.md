@@ -34,13 +34,6 @@ In the Microsoft Entra access reviews feature, reset the decisions of a currentl
 The target object can be either a one-time access review, or an instance of a recurring access review.
 Previous decisions are no longer recorded, but reviewers can continue to update decisions.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AccessReviewId

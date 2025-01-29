@@ -36,6 +36,7 @@ Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status i
 After calling this action, the status of the cancelled unifiedRoleEligibilityScheduleRequest changes to Revoked.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

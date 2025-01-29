@@ -33,13 +33,6 @@ Carries out the appropriate procedures to remove a managed tenant from the multi
 No relationships, such as commerce and delegate administrative privileges, will be impacted.
 The only change made by invoking this action is the tenant will be deprovisioned from the multitenant management platform.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -30,6 +30,7 @@ Get-MgBetaExternalIndustryDataInboundFlowDataConnector -InputObject <ISearchIden
 The data connector to the source system from where this flow gets its data.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

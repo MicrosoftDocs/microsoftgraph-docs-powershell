@@ -34,6 +34,7 @@ Remove-MgChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 Uninstall an app installed within a chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ManageSelectedForChat,  |

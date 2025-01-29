@@ -31,6 +31,7 @@ Get-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity> -O
 Retrieve a list of trustFrameworkPolicies in the tenant/directory.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

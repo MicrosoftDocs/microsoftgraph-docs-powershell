@@ -43,6 +43,7 @@ Get-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManageme
 Read properties and relationships of the roleAssignment object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

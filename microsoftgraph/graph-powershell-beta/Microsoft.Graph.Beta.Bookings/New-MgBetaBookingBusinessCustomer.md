@@ -83,6 +83,7 @@ New-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
 Create new navigation property to customers for bookingBusinesses
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

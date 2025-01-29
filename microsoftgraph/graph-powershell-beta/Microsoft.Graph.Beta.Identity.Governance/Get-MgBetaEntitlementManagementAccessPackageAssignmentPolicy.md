@@ -63,6 +63,7 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy [-ExpandProperty <S
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

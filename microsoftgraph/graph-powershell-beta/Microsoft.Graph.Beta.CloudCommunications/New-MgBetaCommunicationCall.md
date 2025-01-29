@@ -49,6 +49,7 @@ You need to register the calling bot and go through the list of permissions need
 This API supports the following PSTN scenarios:
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

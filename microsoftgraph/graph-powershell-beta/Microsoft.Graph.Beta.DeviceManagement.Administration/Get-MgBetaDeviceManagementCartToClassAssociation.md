@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementCartToClassAssociation -InputObject <IDeviceManagement
 The Cart To Class Associations.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

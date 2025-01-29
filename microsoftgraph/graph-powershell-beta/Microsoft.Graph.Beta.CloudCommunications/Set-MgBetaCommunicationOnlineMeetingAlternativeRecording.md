@@ -32,13 +32,6 @@ Set-MgBetaCommunicationOnlineMeetingAlternativeRecording -InputObject <ICloudCom
 The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ContentType

@@ -30,6 +30,7 @@ Suspend-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 Pause the sync of a specific school data synchronization profile in the tenant.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAdministration.ReadWrite,  |

@@ -31,6 +31,7 @@ A group can have users, organizational contacts, devices, service principals and
 This operation is not transitive.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

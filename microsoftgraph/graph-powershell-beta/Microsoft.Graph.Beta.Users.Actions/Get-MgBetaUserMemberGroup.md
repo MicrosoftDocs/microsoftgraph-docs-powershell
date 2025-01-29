@@ -58,6 +58,7 @@ If more than 11,000 results are available, it returns a 400 Bad Request error wi
 If you get the DirectoryResultSizeLimitExceeded error code, use the List group transitive memberOf API instead.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | GroupMember.Read.All, Group.ReadWrite.All,  |

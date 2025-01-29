@@ -22,6 +22,7 @@ Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-ExpandPr
 The singleton Android managed store account enterprise settings entity.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

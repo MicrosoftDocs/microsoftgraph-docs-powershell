@@ -53,6 +53,7 @@ The user is able to sign into the host tenant as an internal user and access res
 For more information about this conversion, see Convert external users to internal users.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

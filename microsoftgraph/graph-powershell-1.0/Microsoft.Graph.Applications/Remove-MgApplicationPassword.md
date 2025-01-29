@@ -50,6 +50,7 @@ Remove-MgApplicationPassword -InputObject <IApplicationsIdentity>
 Remove a password from an application.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

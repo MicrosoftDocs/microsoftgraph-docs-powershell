@@ -41,6 +41,7 @@ Invitation adds an external user to the organization.
 When creating a new invitation, you have several options available:
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

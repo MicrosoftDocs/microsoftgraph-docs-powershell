@@ -58,6 +58,7 @@ To evaluate based on classification results, provide the contentInfo, which incl
 The API returns an informationProtectionAction that contains one of more of the following:
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | InformationProtectionPolicy.Read,  |

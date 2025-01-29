@@ -57,6 +57,7 @@ ServicePrincipals that don't have any existing valid certificates (i.e.: no cert
 Update servicePrincipal can be used to perform an update instead.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

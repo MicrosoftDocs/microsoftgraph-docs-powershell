@@ -43,6 +43,7 @@ Get-MgBetaSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 Get the list of richLongRunningOperations associated with a list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

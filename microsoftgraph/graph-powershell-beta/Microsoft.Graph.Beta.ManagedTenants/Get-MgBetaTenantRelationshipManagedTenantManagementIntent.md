@@ -40,6 +40,7 @@ Get-MgBetaTenantRelationshipManagedTenantManagementIntent -InputObject <IManaged
 Read the properties and relationships of a managementIntent object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ManagedTenants.Read.All, ManagedTenants.ReadWrite.All,  |

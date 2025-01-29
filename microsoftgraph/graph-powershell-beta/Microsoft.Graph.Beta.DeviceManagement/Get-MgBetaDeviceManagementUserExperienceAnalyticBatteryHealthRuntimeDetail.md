@@ -22,6 +22,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail [-Exp
 User Experience Analytics Battery Health Runtime Details
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

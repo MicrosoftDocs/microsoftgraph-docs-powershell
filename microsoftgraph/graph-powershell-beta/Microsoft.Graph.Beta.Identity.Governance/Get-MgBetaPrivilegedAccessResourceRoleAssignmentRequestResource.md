@@ -32,13 +32,6 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentRequestResource -InputObject <II
 Read-only.
 The resource that the request aims to.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

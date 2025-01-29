@@ -38,6 +38,7 @@ Get-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 Represents the details of awards or honors associated with a person.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |

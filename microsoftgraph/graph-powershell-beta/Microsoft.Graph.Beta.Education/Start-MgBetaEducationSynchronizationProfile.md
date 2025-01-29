@@ -38,6 +38,7 @@ If the response contains errors, the synchronization won't start.
 If the response contains only warnings, synchronization starts.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAdministration.ReadWrite,  |

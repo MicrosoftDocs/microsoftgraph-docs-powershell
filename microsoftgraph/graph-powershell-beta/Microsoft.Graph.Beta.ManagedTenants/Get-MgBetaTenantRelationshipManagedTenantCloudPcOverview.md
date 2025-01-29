@@ -40,6 +40,7 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview -InputObject <IManagedT
 Read the properties and relationships of a cloudPcOverview object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | CloudPC.Read.All, CloudPC.ReadWrite.All,  |

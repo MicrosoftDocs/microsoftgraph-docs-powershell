@@ -36,6 +36,7 @@ Get-MgBetaSiteApplicableContentTypeForList -InputObject <ISitesIdentity> [-Count
 Get site contentTypes that can be added to a list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

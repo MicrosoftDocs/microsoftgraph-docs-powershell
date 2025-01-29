@@ -53,6 +53,7 @@ Update-MgBetaDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdmin
 Update the navigation property roleAssignments in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

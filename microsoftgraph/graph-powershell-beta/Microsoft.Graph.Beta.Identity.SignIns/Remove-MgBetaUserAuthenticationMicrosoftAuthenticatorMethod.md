@@ -35,6 +35,7 @@ Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdent
 Deletes a microsoftAuthenticatorAuthenticationMethod object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |

@@ -34,13 +34,6 @@ Invoke-MgSubscribeGroupByMail -InputObject <IGroupsIdentity> [-ResponseHeadersVa
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

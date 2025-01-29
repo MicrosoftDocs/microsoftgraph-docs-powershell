@@ -71,6 +71,7 @@ New-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 Create new navigation property to onlineMeetings for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetings.ReadWrite,  |

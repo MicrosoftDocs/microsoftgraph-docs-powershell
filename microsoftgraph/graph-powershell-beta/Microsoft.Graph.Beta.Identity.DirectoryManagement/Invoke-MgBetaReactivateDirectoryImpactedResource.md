@@ -34,13 +34,6 @@ Reactivate an accidentally dismissed, completed, or postponed impactedResource o
 This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

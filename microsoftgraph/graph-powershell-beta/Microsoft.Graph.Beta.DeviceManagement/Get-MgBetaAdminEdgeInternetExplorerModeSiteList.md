@@ -43,6 +43,7 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementI
 Get a browserSiteList that contains browserSite and browserSharedCookie resources.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

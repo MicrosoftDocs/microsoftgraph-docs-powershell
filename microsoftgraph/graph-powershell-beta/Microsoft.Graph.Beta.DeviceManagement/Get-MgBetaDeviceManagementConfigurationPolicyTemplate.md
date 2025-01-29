@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementConfigurationPolicyTemplate -InputObject <IDeviceManag
 List of all templates
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

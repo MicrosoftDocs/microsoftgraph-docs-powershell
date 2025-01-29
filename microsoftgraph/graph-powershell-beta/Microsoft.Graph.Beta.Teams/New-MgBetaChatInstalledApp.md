@@ -52,6 +52,7 @@ New-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 Install a teamsApp to the specified chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteAndConsentSelfForChat, TeamsAppInstallation.ReadWriteAndConsentForChat, TeamsAppInstallation.ManageSelectedForChat,  |

@@ -21,13 +21,6 @@ Get-MgBetaReportUserInsightDaily [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Summaries of daily user activities on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

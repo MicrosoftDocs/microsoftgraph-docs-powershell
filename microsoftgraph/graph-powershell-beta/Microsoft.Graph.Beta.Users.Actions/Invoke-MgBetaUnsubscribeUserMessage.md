@@ -46,13 +46,6 @@ If the unsubscribeEnabled property of a message is true, you can use the unsubsc
 A successful unsubscribe action moves the message to the Deleted Items folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

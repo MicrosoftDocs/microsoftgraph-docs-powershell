@@ -58,6 +58,7 @@ Request headers for each PUT operation can be used to specify the exact range of
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrintJob.Create, PrintJob.ReadWrite.All, PrintJob.ReadWrite,  |

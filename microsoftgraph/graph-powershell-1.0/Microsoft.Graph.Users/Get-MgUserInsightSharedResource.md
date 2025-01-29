@@ -36,13 +36,6 @@ Used for navigating to the item that was shared.
 For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

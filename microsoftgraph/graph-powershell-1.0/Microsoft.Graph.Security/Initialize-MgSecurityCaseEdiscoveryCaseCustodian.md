@@ -36,6 +36,7 @@ Activate a custodian that has been released from a case to make them part of the
 For details, see Manage custodians in an eDiscovery (Premium) case.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

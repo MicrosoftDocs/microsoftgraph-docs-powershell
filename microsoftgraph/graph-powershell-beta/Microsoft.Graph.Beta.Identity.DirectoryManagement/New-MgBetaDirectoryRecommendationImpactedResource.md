@@ -52,13 +52,6 @@ New-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDirecto
 ## DESCRIPTION
 Create new navigation property to impactedResources for directory
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AddedDateTime

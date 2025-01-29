@@ -33,6 +33,7 @@ Remove-MgBetaUserTodoList -InputObject <IUsersIdentity> [-IfMatch <String>] [-Re
 Delete navigation property lists for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

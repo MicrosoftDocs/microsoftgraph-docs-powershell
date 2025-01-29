@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementCompliancePolicySetting -InputObject <IDeviceManagemen
 Policy settings
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

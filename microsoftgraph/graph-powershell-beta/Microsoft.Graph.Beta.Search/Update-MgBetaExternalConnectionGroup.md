@@ -49,6 +49,7 @@ Update-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity>
 Update the navigation property groups in external
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

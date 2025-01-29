@@ -54,6 +54,7 @@ Note that by making a POST call to the getMailTips action, you can request speci
 The requested MailTips are returned in a mailTips collection.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Mail.Read.Shared,  |

@@ -34,6 +34,7 @@ Restore-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Res
 Restore a document set version.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

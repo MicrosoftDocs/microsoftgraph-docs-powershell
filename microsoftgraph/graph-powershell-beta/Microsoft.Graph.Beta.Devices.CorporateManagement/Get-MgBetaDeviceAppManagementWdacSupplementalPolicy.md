@@ -39,6 +39,7 @@ Get-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorpor
 The collection of Windows Defender Application Control Supplemental Policies.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

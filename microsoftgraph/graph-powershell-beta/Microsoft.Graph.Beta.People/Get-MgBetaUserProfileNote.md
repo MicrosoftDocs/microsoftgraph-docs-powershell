@@ -38,6 +38,7 @@ Get-MgBetaUserProfileNote -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 Represents notes that a user has added to their profile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |

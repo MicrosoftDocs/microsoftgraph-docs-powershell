@@ -44,6 +44,7 @@ Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLo
 Another way to input protected apps through xml files
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

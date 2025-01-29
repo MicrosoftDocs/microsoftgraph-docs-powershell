@@ -50,6 +50,7 @@ Create a new reviewSet object.
 The request body contains the display name of the review set, which is the only writable property.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

@@ -39,6 +39,7 @@ It will stream content directly instead of redirecting.
 To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Sites.ReadWrite.All,  |

@@ -41,13 +41,6 @@ Get-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity> [-Exp
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

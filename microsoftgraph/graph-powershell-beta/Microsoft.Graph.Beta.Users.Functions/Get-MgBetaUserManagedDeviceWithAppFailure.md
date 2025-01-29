@@ -33,6 +33,7 @@ Get-MgBetaUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity>
 Retrieves the list of devices with failed apps
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -38,6 +38,7 @@ Get-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> [-ExpandProperty <S
 Represents detailed information about work positions associated with a user's profile.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |

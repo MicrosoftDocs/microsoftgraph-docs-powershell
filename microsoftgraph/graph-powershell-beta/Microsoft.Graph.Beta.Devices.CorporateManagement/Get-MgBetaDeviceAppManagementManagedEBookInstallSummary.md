@@ -33,6 +33,7 @@ Get-MgBetaDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCo
 Mobile App Install Summary.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

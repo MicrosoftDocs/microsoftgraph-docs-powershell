@@ -42,13 +42,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTask -InputObject <IIdentit
 Represents the configured tasks to execute and their execution sequence within a workflow.
 This relationship is expanded by default.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

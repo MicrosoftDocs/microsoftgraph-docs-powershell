@@ -43,6 +43,7 @@ Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment
 The list of group assignments for the device configuration profile
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

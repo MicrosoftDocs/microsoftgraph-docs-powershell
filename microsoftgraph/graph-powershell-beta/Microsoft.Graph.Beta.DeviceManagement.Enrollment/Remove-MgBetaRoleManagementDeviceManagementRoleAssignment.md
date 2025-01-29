@@ -35,6 +35,7 @@ This is applicable for a RBAC application that supports multiple principals and 
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

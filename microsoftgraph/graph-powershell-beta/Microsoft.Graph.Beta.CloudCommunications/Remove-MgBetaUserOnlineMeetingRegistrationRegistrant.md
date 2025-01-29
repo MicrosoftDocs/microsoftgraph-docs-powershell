@@ -36,6 +36,7 @@ Only use this method when the allowedRegistrant property of the meetingRegistrat
 When the allowedRegistrant value is everyone, registrants can only use the link in the email they receive to cancel their registration.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetings.ReadWrite,  |

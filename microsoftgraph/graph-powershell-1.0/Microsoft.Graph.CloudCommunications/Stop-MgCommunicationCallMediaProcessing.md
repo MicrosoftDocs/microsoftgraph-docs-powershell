@@ -58,6 +58,7 @@ For example, this method can be used to clean up the IVR operation queue for a n
 However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

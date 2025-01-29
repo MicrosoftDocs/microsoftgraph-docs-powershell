@@ -49,6 +49,7 @@ New-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> -BodyParameter
 Create new navigation property to checklistItems for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

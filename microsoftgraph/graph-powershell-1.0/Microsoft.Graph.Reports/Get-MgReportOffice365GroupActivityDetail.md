@@ -45,13 +45,6 @@ Get-MgReportOffice365GroupActivityDetail -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Get details about Microsoft 365 groups activity by group.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Date

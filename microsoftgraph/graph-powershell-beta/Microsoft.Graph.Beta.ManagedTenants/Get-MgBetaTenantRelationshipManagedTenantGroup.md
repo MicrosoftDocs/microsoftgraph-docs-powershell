@@ -40,6 +40,7 @@ Get-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsIden
 Read the properties and relationships of a tenantGroup object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ManagedTenants.Read.All, ManagedTenants.ReadWrite.All,  |

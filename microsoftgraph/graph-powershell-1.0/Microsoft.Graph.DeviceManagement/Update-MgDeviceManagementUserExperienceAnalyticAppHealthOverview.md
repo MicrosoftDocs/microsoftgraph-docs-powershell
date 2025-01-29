@@ -35,6 +35,7 @@ Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview
 Update the navigation property userExperienceAnalyticsAppHealthOverview in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

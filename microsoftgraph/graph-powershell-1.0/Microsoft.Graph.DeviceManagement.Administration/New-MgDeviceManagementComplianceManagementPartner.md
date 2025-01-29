@@ -39,6 +39,7 @@ New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGrap
 Create a new complianceManagementPartner object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

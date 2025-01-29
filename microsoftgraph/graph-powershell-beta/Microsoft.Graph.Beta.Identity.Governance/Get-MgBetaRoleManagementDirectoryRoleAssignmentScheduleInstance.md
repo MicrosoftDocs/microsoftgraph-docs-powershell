@@ -44,6 +44,7 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject <II
 Get the instance of an active role assignment.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

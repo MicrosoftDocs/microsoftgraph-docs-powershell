@@ -43,6 +43,7 @@ Get-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 Retrieve the properties and relationships of a tokenIssuancePolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

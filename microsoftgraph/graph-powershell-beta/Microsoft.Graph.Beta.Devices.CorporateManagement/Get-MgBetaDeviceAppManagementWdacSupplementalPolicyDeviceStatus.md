@@ -42,6 +42,7 @@ Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
 The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

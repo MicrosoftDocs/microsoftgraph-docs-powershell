@@ -54,6 +54,7 @@ Update-MgBetaSiteListPermission -InputObject <ISitesIdentity> -BodyParameter <IM
 Update the navigation property permissions in sites
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

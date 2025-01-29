@@ -62,6 +62,7 @@ For each shift, openshift and timeOff instance in the specified time range, the 
 The notifyTeam parameter further specifies which employees can view the item.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |

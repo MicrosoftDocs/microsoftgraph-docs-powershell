@@ -39,13 +39,6 @@ Get-MgPlaceAsRoomList -InputObject <ICalendarIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the item of type microsoft.graph.place as microsoft.graph.roomList
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

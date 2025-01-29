@@ -60,6 +60,7 @@ Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicros
 Update the properties of a plannerPlan object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |

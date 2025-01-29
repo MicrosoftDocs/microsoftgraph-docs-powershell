@@ -52,6 +52,7 @@ Retrieve the properties and relationships of a notebook object by using its URL 
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All, Notes.Read,  |

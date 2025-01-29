@@ -34,6 +34,7 @@ Remove-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevic
 Deletes a managedAppOperation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

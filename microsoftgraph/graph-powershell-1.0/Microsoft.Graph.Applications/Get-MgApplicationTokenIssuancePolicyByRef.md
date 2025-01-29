@@ -26,6 +26,7 @@ Get-MgApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-Filter <Stri
 List the tokenIssuancePolicy objects that are assigned to an application.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

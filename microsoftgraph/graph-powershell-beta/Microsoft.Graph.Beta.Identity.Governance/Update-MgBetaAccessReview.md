@@ -65,6 +65,7 @@ To stop an already-started one-time review, or an already-started instance of a 
 To apply the decisions to the target group or app access rights, use the apply API.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All,  |

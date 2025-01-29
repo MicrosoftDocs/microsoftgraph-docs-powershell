@@ -43,6 +43,7 @@ In Microsoft Entra Entitlement Management, retrieve a collection of accessPackag
 This can be used to prepare to configure the incompatible access packages for a specific access package.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

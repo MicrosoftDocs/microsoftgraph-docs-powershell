@@ -54,6 +54,7 @@ You can save and use the @odata.deltaLink URL when you begin to retrieve more ch
 For more information, see the delta query documentation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

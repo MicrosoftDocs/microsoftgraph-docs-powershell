@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
 Summary of the updates by category.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

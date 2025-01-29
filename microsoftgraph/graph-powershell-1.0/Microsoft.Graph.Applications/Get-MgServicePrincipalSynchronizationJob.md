@@ -43,6 +43,7 @@ Get-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity> [-
 Retrieve the existing synchronization job and its properties.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

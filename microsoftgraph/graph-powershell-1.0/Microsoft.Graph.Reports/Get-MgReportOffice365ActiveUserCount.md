@@ -32,13 +32,6 @@ Get-MgReportOffice365ActiveUserCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Get the count of daily active users in the reporting period by product.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

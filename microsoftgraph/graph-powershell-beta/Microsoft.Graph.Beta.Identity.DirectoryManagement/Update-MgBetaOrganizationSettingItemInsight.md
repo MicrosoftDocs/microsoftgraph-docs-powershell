@@ -45,6 +45,7 @@ Update-MgBetaOrganizationSettingItemInsight -InputObject <IIdentityDirectoryMana
 Update the navigation property itemInsights in organization
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Organization.ReadWrite.All, User.ReadWrite.All,  |

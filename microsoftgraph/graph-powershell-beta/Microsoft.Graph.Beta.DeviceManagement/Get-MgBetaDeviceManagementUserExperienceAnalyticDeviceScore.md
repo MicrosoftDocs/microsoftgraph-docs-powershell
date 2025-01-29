@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore -InputObject <IDevic
 User experience analytics device scores
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

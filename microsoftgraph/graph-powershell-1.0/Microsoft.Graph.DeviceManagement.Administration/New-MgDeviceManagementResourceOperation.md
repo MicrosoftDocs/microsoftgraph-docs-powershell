@@ -34,6 +34,7 @@ New-MgDeviceManagementResourceOperation -BodyParameter <IMicrosoftGraphResourceO
 Create a new resourceOperation object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

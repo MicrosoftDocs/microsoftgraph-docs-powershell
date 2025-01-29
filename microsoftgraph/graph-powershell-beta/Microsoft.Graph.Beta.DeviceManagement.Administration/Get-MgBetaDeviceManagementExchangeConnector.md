@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdmin
 The list of Exchange Connectors configured by the tenant.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

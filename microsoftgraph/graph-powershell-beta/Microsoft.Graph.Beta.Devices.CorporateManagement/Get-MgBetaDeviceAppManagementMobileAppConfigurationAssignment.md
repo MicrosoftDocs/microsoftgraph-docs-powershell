@@ -43,6 +43,7 @@ Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment
 The list of group assignemenets for app configration.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

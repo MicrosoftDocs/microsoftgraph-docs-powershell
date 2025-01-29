@@ -50,6 +50,7 @@ New-MgTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 Install an app to the specified team.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ManageSelectedForTeam,  |

@@ -33,13 +33,6 @@ Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -Inp
 Reset a provisioningFlow.
 This action reprovisions all current data as if it were the initial run, and clears out the existing errors associated with the flow.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

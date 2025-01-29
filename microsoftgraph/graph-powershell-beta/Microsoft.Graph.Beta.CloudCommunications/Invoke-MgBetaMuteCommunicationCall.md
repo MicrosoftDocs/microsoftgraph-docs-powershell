@@ -54,6 +54,7 @@ This is a server mute, meaning that the server drops all audio packets for this 
 For more information about how to handle mute operations, see muteParticipantOperation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

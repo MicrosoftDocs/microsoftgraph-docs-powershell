@@ -34,13 +34,6 @@ Get-MgReportOneDriveUsageFileCount -InputObject <IReportsIdentity> -OutFile <Str
 Get the total number of files across all sites and how many are active files.
 A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

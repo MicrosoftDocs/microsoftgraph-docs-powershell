@@ -33,6 +33,7 @@ Get-MgBetaSiteTermStoreSetRelationCount -InputObject <ISitesIdentity> [-Filter <
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TermStore.Read.All, TermStore.ReadWrite.All,  |

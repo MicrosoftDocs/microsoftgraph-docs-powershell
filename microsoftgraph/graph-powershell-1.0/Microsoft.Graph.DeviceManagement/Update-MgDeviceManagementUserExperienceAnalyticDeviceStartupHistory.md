@@ -61,6 +61,7 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject
 Update the navigation property userExperienceAnalyticsDeviceStartupHistory in deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

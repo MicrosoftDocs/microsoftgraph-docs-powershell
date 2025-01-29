@@ -38,6 +38,7 @@ New-MgBetaSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-Respon
 Create a new bookmark object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

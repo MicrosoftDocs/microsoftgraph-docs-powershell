@@ -69,6 +69,7 @@ New-MgBetaSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 Create columnDefinition for a site
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

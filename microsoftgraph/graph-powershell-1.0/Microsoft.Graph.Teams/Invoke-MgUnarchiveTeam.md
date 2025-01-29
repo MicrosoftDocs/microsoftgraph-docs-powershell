@@ -41,6 +41,7 @@ Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

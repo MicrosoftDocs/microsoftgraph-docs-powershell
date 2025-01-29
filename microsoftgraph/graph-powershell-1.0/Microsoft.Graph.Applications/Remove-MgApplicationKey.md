@@ -54,6 +54,7 @@ This method along with addKey can be used by an application to automate rolling 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

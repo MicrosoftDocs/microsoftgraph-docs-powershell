@@ -43,6 +43,7 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 Get a group's conversation object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -42,6 +42,7 @@ Get-MgBetaPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIde
 Represents the role management policy assignments.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RoleManagementPolicy.Read.Directory, RoleManagementPolicy.ReadWrite.Directory,  |

@@ -52,13 +52,6 @@ Rename-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementA
 Rename a specific cloudPC object.
 Use this API to update the displayName of a Cloud PC entity.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

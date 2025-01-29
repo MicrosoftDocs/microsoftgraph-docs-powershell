@@ -45,6 +45,7 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope [-ExpandProperty <St
 The user experience analytics device scope entity endpoint to trigger on the service to either START or STOP computing metrics data based on a device scope configuration.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

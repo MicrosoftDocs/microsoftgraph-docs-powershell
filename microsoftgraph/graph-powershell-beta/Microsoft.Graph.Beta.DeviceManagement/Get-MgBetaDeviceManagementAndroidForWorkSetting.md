@@ -22,6 +22,7 @@ Get-MgBetaDeviceManagementAndroidForWorkSetting [-ExpandProperty <String[]>] [-P
 The singleton Android for Work settings entity.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

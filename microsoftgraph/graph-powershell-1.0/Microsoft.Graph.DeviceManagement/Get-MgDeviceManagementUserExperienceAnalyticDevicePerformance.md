@@ -42,6 +42,7 @@ Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance -InputObject <IDev
 User experience analytics device performance
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementIntentSetting -InputObject <IDeviceManagementIdentity>
 Collection of all settings to be applied
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

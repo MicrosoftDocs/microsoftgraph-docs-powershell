@@ -42,6 +42,7 @@ After 30 days and if not restored, the user object is permanently deleted and th
 To manage the deleted user object, see deletedItems.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

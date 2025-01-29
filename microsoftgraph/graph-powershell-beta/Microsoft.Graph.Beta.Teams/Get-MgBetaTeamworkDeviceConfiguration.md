@@ -31,6 +31,7 @@ Get-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-ExpandProp
 Get the configuration details of a Microsoft Teams-enabled device, including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

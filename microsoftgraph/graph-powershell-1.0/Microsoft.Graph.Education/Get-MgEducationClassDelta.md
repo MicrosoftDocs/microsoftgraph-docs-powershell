@@ -29,6 +29,7 @@ Get newly created or updated classes, including membership changes, without havi
 See Use delta query for details.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |

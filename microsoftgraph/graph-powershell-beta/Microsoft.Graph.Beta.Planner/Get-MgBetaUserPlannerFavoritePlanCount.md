@@ -30,6 +30,7 @@ Get-MgBetaUserPlannerFavoritePlanCount -InputObject <IPlannerIdentity> [-Filter 
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.Read.All,  |

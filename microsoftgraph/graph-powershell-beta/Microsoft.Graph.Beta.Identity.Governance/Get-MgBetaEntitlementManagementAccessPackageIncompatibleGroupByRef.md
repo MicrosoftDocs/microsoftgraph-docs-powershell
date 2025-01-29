@@ -27,6 +27,7 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackag
 Retrieve a list of the group objects marked as incompatible on an accessPackage.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

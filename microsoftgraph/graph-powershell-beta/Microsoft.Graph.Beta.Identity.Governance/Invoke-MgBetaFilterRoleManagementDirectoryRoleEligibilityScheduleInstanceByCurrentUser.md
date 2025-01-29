@@ -37,6 +37,7 @@ Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurre
 Get a list of the unifiedRoleEligibilityScheduleInstance objects and their properties associated with a particular principal object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

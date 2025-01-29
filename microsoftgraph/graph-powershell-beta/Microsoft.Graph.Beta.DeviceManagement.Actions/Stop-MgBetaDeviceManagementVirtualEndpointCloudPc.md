@@ -50,13 +50,6 @@ This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered off, it's deallocated, and licenses are revoked immediately.
 Only IT admin users can perform this action.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

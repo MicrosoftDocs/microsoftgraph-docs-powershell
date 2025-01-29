@@ -42,6 +42,7 @@ Get-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 Get jobs from print
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrintJob.ReadBasic, PrintJob.ReadWriteBasic.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.Read,  |

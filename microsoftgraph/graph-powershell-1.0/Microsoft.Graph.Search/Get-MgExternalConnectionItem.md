@@ -42,6 +42,7 @@ Get-MgExternalConnectionItem -InputObject <ISearchIdentity> [-ExpandProperty <St
 Read the properties and relationships of an externalItem object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

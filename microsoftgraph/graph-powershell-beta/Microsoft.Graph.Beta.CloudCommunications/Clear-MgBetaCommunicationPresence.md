@@ -54,13 +54,6 @@ Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
 Read more about presence sessions and their time-out and expiration.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

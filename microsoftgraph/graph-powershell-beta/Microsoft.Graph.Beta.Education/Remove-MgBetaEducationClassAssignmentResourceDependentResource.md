@@ -31,6 +31,7 @@ Remove-MgBetaEducationClassAssignmentResourceDependentResource -InputObject <IEd
 Delete navigation property dependentResources for education
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |

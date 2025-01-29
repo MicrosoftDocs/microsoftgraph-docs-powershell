@@ -42,6 +42,7 @@ Get-MgBetaSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <Str
 Read the properties and relationships of a term store group object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TermStore.Read.All, TermStore.ReadWrite.All,  |

@@ -65,6 +65,7 @@ Update-MgBetaChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Update the navigation property messages in chats
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.ReadWrite, Group.ReadWrite.All,  |

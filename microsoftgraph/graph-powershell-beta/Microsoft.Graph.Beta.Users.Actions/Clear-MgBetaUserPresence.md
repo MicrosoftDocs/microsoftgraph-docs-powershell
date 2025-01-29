@@ -54,6 +54,7 @@ If it is the user's only presence session, a successful clearPresence changes th
 Read more about presence sessions and their time-out and expiration.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Presence.ReadWrite,  |

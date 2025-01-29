@@ -34,6 +34,7 @@ Remove-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 Uninstalls an app from the specified team.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ManageSelectedForTeam,  |

@@ -52,6 +52,7 @@ Add (pin) a tab to the specified channel within a team.
 The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsTab.ReadWriteSelfForTeam, TeamsTab.ReadWriteForTeam,  |

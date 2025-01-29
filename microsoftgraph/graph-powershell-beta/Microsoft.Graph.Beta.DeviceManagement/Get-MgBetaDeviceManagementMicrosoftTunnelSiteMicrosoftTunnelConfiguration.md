@@ -31,6 +31,7 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration
 The MicrosoftTunnelConfiguration that has been applied to this MicrosoftTunnelSite
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

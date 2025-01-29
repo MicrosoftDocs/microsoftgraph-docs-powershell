@@ -54,6 +54,7 @@ If it is the user's only presence session, the user's presence will change to Of
 For details about presences sessions, see presence: setPresence.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Presence.ReadWrite,  |

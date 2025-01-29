@@ -33,13 +33,6 @@ Get-MgReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Fil
 ## DESCRIPTION
 Get a list of archived print jobs for a particular group.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

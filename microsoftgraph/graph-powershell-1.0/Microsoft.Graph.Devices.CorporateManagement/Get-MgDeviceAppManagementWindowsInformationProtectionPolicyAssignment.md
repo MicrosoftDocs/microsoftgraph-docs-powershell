@@ -44,6 +44,7 @@ Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment
 Navigation property to list of security groups targeted for policy.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

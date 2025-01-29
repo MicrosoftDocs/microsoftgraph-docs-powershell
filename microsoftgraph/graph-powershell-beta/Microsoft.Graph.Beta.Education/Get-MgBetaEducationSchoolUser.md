@@ -27,6 +27,7 @@ Get-MgBetaEducationSchoolUser -EducationSchoolId <String> [-ExpandProperty <Stri
 Retrieve a list of users at a school.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

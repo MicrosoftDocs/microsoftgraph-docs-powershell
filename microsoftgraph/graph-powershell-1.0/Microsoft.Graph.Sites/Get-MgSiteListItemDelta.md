@@ -64,6 +64,7 @@ You should use the last occurrence you see.
 Items with this property should be removed from your local state.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

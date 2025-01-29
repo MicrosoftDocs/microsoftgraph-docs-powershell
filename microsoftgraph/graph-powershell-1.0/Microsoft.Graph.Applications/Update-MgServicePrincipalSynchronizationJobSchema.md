@@ -57,13 +57,6 @@ This method fully replaces the current schema with the one provided in the reque
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

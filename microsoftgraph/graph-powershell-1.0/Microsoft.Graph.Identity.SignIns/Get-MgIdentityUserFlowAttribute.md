@@ -43,6 +43,7 @@ Get-MgIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity> [-Expand
 Retrieve the properties and relationships of a identityUserFlowAttribute object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

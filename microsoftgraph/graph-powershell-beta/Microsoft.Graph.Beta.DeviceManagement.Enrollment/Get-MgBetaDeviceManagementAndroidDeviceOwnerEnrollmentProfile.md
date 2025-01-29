@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 Android device owner enrollment profile entities.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

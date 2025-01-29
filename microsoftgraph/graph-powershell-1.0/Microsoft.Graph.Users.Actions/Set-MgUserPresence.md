@@ -52,6 +52,7 @@ Set-MgUserPresence -InputObject <IUsersActionsIdentity>
 Set the state of a user's presence session as an application.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Presence.ReadWrite,  |

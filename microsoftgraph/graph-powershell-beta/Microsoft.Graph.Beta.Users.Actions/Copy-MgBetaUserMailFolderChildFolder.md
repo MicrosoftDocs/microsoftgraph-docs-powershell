@@ -49,13 +49,6 @@ Copy-MgBetaUserMailFolderChildFolder -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copy a mail folder and its contents to another mail folder.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

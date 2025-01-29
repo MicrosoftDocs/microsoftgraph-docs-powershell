@@ -35,6 +35,7 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
 Delete navigation property userExperienceAnalyticsDeviceStartupHistory for deviceManagement
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

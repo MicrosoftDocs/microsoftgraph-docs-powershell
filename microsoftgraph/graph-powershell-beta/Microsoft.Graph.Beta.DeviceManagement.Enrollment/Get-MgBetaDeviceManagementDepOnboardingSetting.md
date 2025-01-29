@@ -38,6 +38,7 @@ Get-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagementEn
 This collections of multiple DEP tokens per-tenant.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

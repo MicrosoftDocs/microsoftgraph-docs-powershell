@@ -33,13 +33,6 @@ Get-MgReportYammerGroupActivityGroupCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Get the total number of groups that existed and how many included group conversation activities.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

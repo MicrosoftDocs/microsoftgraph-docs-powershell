@@ -65,6 +65,7 @@ This display name appears to the user in Microsoft Teams.
 You can add a maximum of 200 members when you create a private channel.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

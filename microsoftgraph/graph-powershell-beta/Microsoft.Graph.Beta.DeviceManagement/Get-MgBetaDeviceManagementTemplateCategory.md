@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementTemplateCategory -InputObject <IDeviceManagementIdenti
 Collection of setting categories within the template
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

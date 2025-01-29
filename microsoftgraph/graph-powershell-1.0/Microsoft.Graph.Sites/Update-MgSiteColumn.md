@@ -69,6 +69,7 @@ Update-MgSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 Update the navigation property columns in sites
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -32,6 +32,7 @@ Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy -InputObject <IComplianceIde
 Return a list of tag objects in hierarchial form
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |

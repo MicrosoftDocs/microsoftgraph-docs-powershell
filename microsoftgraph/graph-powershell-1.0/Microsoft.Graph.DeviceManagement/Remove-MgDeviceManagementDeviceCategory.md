@@ -33,6 +33,7 @@ Remove-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
 Deletes a deviceCategory.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

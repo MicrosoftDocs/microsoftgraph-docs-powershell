@@ -51,6 +51,7 @@ This resource is in the 'working' resource list and should be considered work in
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |

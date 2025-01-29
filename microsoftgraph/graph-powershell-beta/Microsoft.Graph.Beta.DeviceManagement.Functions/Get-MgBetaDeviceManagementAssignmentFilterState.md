@@ -21,6 +21,7 @@ Get-MgBetaDeviceManagementAssignmentFilterState [-ResponseHeadersVariable <Strin
 Invoke function getState
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

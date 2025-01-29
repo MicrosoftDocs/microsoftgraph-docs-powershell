@@ -37,13 +37,6 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject <II
 ## DESCRIPTION
 A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

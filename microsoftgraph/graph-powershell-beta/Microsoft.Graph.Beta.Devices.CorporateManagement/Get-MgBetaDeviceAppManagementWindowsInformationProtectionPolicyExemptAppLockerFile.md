@@ -44,6 +44,7 @@ Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFi
 Another way to input exempt apps through xml files
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

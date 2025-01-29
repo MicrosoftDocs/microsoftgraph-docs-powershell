@@ -49,6 +49,7 @@ To get properties that aren't_ returned by default, specify them in a $select OD
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

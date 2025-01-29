@@ -35,6 +35,7 @@ The user's settings for the visibility of meeting hour insights, and insights de
 Get userInsightsSettings through this navigation property.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.Read, User.ReadWrite,  |

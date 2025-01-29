@@ -22,6 +22,7 @@ Invoke-MgBetaMessageChat [-Count] [-ExpandProperty <String[]>] [-Filter <String>
 Invoke function allMessages
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |

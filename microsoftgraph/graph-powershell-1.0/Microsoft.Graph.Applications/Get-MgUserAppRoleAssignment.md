@@ -43,13 +43,6 @@ Get-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandPropert
 Represents the app roles a user is granted for an application.
 Supports $expand.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get assigned app roles
 

@@ -38,6 +38,7 @@ Get-MgBetaUserProfileProject -InputObject <IPeopleIdentity> [-ExpandProperty <St
 Represents detailed information about projects associated with a user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |

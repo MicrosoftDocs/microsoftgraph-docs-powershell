@@ -43,6 +43,7 @@ Get-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandPrope
 Retrieve the properties and relationships of a printConnector object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrintConnector.Read.All, PrintConnector.ReadWrite.All,  |

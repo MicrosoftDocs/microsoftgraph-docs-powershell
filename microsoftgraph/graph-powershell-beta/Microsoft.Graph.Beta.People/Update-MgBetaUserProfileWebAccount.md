@@ -54,6 +54,7 @@ Update-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter
 Update the navigation property webAccounts in users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

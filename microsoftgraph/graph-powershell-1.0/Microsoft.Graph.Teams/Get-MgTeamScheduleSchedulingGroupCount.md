@@ -33,6 +33,7 @@ Get-MgTeamScheduleSchedulingGroupCount -InputObject <ITeamsIdentity> [-Filter <S
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |

@@ -35,6 +35,7 @@ Get-MgBetaUserManagedAppPolicy -InputObject <IUsersFunctionsIdentity> [-Count] [
 Gets app restrictions for a given user.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

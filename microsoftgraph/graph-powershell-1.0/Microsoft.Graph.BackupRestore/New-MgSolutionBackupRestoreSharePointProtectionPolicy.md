@@ -41,13 +41,6 @@ Create a protection policy for a M365 service SharePoint.
 Policy will be created in inactive state.
 User can also provide a list of protection units under the policy.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AdditionalProperties

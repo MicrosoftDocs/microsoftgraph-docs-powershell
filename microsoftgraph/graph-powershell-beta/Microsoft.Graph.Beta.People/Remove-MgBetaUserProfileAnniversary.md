@@ -30,6 +30,7 @@ Remove-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity> [-IfMatch <St
 Delete navigation property anniversaries for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

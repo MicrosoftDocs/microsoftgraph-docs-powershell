@@ -34,6 +34,7 @@ Get-MgUserTeamworkInstalledAppChat -InputObject <ITeamsIdentity> [-ExpandPropert
 Retrieve the chat of the specified user and Teams app.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteSelectedForUser, TeamsAppInstallation.ReadWriteForUser,  |

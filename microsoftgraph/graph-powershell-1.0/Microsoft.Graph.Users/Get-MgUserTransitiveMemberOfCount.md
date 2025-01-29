@@ -33,6 +33,7 @@ Get-MgUserTransitiveMemberOfCount -InputObject <IUsersIdentity> [-Filter <String
 Get the number of the resource
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.Read,  |

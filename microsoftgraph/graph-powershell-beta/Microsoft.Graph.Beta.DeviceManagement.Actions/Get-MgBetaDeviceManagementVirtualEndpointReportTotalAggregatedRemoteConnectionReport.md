@@ -34,6 +34,7 @@ Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionRe
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

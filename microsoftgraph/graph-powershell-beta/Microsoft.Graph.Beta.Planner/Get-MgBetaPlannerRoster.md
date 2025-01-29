@@ -39,6 +39,7 @@ Get-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-ExpandProperty <String
 Read the properties and relationships of a plannerRoster object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite,  |

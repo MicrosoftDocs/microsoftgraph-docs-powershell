@@ -95,6 +95,7 @@ At a minimum, you must specify the required properties for the user.
 You can optionally specify any other writable properties.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

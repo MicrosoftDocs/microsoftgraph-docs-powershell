@@ -43,6 +43,7 @@ Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 The user attribute assignments included in the user flow.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

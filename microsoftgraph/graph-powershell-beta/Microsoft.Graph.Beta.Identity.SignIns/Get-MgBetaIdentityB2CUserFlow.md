@@ -40,6 +40,7 @@ Get-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 Retrieve the properties and relationships of a b2cUserFlow object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

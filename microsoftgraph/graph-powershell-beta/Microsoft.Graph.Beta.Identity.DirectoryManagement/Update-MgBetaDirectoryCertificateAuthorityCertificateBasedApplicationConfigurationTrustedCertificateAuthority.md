@@ -51,6 +51,7 @@ Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 Update the properties of a certificateAuthorityAsEntity object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -43,6 +43,7 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 Get a list of rich long-running operations associated with a list.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

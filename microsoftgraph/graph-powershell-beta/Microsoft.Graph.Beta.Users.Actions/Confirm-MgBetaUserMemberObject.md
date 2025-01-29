@@ -49,6 +49,7 @@ Confirm-MgBetaUserMemberObject -InputObject <IUsersActionsIdentity>
 Invoke action checkMemberObjects
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.Read.All, User.Read, GroupMember.Read.All, Group.Read.All,  |

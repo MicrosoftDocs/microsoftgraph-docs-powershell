@@ -39,6 +39,7 @@ Get-MgBetaDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity
 Collection of setting categories within the intent
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

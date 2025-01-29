@@ -33,6 +33,7 @@ Get-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview -InputObject <ID
 Device Configuration users status overview
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

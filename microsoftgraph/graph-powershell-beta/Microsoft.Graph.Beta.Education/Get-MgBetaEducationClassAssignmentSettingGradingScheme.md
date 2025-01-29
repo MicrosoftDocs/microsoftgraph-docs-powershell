@@ -40,6 +40,7 @@ Get-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducationI
 Read the properties and relationships of an educationGradingScheme object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |

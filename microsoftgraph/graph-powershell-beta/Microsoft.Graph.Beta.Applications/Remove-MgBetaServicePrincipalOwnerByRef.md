@@ -36,6 +36,7 @@ Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

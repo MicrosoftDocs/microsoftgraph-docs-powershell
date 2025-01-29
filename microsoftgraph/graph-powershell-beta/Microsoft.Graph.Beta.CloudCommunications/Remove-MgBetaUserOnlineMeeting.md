@@ -33,6 +33,7 @@ Remove-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfM
 Delete navigation property onlineMeetings for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetings.ReadWrite,  |

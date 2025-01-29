@@ -53,13 +53,6 @@ New-MgEntitlementManagementResourceRequestCatalogResource -InputObject <IIdentit
 ## DESCRIPTION
 Create new navigation property to resources for identityGovernance
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

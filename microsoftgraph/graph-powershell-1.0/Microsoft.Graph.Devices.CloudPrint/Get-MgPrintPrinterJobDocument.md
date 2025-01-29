@@ -42,6 +42,7 @@ Get-MgPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity> [-Expand
 Get documents from print
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrintJob.Read, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.Read.All,  |

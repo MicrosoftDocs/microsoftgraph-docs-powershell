@@ -39,13 +39,6 @@ After an item is permanently deleted, it cannot be restored.
 Administrative units cannot be permanently deleted by using the deletedItems API.
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

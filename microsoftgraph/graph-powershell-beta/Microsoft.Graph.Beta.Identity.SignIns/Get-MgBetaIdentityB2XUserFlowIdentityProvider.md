@@ -49,13 +49,6 @@ Get-MgBetaIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 The identity providers included in the user flow.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

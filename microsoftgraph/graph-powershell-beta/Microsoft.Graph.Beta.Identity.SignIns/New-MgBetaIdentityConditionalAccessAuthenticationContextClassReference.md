@@ -35,6 +35,7 @@ New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 Create a new authenticationContextClassReference.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

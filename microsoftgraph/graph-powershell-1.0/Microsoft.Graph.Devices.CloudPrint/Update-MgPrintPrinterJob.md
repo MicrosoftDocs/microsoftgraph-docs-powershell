@@ -60,6 +60,7 @@ Updating a print job will only succeed if there is a printTask in a processing s
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

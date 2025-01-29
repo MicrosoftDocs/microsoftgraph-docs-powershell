@@ -22,13 +22,6 @@ Get-MgBetaGroupSiteGetByPathPageTemplate -GroupId <String> -Path <String> -SiteI
 ## DESCRIPTION
 The collection of page templates on this site.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

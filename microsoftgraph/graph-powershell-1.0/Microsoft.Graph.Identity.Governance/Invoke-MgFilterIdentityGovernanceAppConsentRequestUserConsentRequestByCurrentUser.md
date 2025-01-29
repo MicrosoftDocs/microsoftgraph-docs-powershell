@@ -37,6 +37,7 @@ Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUse
 Retrieve a collection of userConsentRequest objects for accessing a specified app, for which the current user is the reviewer.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

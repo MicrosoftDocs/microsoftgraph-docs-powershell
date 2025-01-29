@@ -55,13 +55,6 @@ Find more information in the delta query documentation.
 For more examples, see callRecording: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get all recordings
 

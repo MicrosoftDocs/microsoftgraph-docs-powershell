@@ -66,6 +66,7 @@ This criteria for the owner property allows a signed-in user to make updates thr
 When using Graph Explorer to update a schemaExtension resource, include the owner property in the PATCH request body.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

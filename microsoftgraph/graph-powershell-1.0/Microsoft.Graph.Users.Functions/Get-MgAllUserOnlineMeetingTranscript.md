@@ -55,13 +55,6 @@ For more information, see delta query.
 For more examples, see callTranscript: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Count

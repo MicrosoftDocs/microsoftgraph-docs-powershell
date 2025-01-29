@@ -36,13 +36,6 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancePrincipal
 References the principal that's in the scope of the membership or ownership assignment request through the group that's governed by PIM.
 Supports $expand.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -ExpandProperty

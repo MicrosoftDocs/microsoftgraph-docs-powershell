@@ -54,6 +54,7 @@ This is a server unmute, meaning that the server will start sending audio packet
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

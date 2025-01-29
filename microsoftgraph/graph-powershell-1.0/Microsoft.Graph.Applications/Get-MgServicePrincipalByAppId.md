@@ -34,6 +34,7 @@ Get-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-ExpandPrope
 Retrieve the properties and relationships of a servicePrincipal object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Directory.ReadWrite.All,  |

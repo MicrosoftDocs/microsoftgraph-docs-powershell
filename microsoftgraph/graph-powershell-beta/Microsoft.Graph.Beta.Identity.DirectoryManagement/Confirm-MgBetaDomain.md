@@ -49,13 +49,6 @@ Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Validate the ownership of a domain.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Verify a domain
 

@@ -41,6 +41,7 @@ This API is supported for the directory (Microsoft Entra ID) provider only.
 To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

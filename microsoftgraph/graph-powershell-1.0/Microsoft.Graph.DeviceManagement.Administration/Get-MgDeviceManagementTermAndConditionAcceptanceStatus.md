@@ -44,6 +44,7 @@ Get-MgDeviceManagementTermAndConditionAcceptanceStatus -InputObject <IDeviceMana
 Read properties and relationships of the termsAndConditionsAcceptanceStatus object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

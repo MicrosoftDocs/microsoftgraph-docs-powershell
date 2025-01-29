@@ -34,6 +34,7 @@ Remove-MgBetaChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Unpin a message from a chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.ReadWrite,  |

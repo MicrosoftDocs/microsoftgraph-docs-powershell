@@ -26,6 +26,7 @@ Get-MgDeviceAppManagement [-ExpandProperty <String[]>] [-Property <String[]>]
 Read properties and relationships of the deviceAppManagement object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

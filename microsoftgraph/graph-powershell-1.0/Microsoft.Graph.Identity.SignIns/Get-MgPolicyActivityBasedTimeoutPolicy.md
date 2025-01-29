@@ -43,6 +43,7 @@ Get-MgPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIdentity> [
 Get the properties of an activityBasedTimeoutPolicy object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

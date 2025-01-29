@@ -29,13 +29,6 @@ Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement -InputObj
 ## DESCRIPTION
 Remove device from Device Firmware Configuration Interface management
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -Headers

@@ -52,6 +52,7 @@ New-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 Create new navigation property to notes for users
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite.All,  |

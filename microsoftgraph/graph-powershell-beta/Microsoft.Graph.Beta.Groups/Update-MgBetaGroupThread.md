@@ -52,6 +52,7 @@ Update-MgBetaGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicroso
 Update a thread object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

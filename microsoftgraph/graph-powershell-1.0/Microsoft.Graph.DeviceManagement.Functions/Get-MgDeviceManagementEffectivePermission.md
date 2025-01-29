@@ -34,6 +34,7 @@ Get-MgDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctio
 Retrieves the effective permissions of the currently authenticated user
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -33,6 +33,7 @@ Remove-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-IfMatch <String
 Delete navigation property contentTypes for sites
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

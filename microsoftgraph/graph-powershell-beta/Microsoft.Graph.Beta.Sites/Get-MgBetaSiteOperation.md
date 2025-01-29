@@ -43,6 +43,7 @@ Get-MgBetaSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 Read the properties of a richLongRunningOperation object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

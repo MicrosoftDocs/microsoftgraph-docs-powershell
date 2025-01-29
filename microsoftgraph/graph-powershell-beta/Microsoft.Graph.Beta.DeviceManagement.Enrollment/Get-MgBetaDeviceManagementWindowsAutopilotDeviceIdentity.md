@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity -InputObject <IDeviceMa
 The Windows autopilot device identities contained collection.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

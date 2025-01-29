@@ -43,6 +43,7 @@ Get-MgTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 Get a conversationMember from a team.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

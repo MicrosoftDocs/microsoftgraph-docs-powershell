@@ -30,6 +30,7 @@ This API can also be used to enumerate all sites in a non-multi-geo tenant.
 For more information, see Best practices for discovering files and detecting changes at scale.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

@@ -24,6 +24,7 @@ Invoke-MgBetaExperienceDeviceManagement [-ResponseHeadersVariable <String>] [-He
 Invoke function userExperienceAnalyticsSummarizedDeviceScopes
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

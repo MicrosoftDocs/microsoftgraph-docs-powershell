@@ -53,6 +53,7 @@ Because the user resource supports extensions, you can also use the GET operatio
 Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite, User.Read, Directory.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementApps.ReadWrite.All,  |

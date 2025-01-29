@@ -35,13 +35,6 @@ Get-MgReportSkypeForBusinessActivityUserCount -InputObject <IReportsIdentity> -O
 Get the trends on how many unique users organized and participated in conference sessions held in your organization through Skype for Business.
 The report also includes the number of peer-to-peer sessions.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

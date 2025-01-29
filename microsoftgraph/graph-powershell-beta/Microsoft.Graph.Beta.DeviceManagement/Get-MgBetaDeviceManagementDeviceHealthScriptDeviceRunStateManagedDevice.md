@@ -32,6 +32,7 @@ Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice
 The managed device on which the device health script executed
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

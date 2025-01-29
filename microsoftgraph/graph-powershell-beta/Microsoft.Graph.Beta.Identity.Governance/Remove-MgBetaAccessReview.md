@@ -31,6 +31,7 @@ Remove-MgBetaAccessReview -InputObject <IIdentityGovernanceIdentity> [-IfMatch <
 In the Microsoft Entra access reviews feature, delete an accessReview object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All,  |

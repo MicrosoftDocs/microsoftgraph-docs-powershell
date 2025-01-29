@@ -43,6 +43,7 @@ Get-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 Get an app installed in a chat.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ManageSelectedForChat,  |

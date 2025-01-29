@@ -36,6 +36,7 @@ Mark a schedulingGroup as inactive by setting its isActive property.This method 
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |

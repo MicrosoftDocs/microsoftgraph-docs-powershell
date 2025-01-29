@@ -43,13 +43,6 @@ Get-MgIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGovernanc
 Retrieve the details of an agreement file, including the language and version information.
 The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Get the default agreement file
 

@@ -41,13 +41,6 @@ Get-MgBetaAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Represents an action performed by the Microsoft Entra provisioning service and its associated properties.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Successful request
 

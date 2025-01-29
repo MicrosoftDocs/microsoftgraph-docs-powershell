@@ -48,6 +48,7 @@ Set-MgBetaDeviceAppManagementWindowsManagedAppProtection -InputObject <IDevicesC
 Invoke action assign
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

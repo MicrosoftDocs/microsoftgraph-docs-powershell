@@ -67,6 +67,7 @@ New-MgBetaTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter <
 Send a new reply to a chatMessage in a specified channel.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All,  |

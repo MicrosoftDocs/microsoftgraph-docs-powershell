@@ -37,13 +37,6 @@ Create a SharePoint folder to upload feedback files for a given educationSubmiss
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

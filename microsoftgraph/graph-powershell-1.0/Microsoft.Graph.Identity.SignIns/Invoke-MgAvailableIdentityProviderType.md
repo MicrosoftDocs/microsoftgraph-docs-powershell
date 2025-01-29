@@ -26,6 +26,7 @@ Invoke-MgAvailableIdentityProviderType [-Count] [-Filter <String>] [-Search <Str
 Get all identity providers supported in a directory.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

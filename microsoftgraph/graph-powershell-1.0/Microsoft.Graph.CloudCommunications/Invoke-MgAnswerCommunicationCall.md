@@ -63,6 +63,7 @@ The current timeout value is 15 seconds for regular scenarios, and 5 seconds for
 This API supports the following PSTN scenarios:
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

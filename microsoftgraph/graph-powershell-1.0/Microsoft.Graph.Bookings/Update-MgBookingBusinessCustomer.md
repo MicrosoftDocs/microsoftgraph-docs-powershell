@@ -48,6 +48,7 @@ Update-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> -BodyParameter
 Update the properties of a bookingCustomer object.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

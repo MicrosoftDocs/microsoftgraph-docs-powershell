@@ -64,13 +64,6 @@ Get-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 Collection of all sets available in the term store.
 This relationship can only be used to load a specific term set.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -All

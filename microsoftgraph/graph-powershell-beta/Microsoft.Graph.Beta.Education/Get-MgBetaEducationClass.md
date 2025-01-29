@@ -49,6 +49,7 @@ Group members represent the students; group admins represent the teachers in the
 If you're using the delegated token, the user will only see classes in which they are members.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic,  |

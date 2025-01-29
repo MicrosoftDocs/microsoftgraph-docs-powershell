@@ -66,6 +66,7 @@ Deleted items are returned with the deleted facet.
 Deleted indicates that the item is deleted and can't be restored.Items with this property should be removed from your local state.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |

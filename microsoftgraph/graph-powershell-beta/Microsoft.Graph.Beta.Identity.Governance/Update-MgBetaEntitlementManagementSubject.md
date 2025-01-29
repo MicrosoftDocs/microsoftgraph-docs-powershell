@@ -52,13 +52,6 @@ Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdent
 ## DESCRIPTION
 Update an existing accessPackageSubject object to change the subject lifecycle.
 
-**Permissions**
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## PARAMETERS
 
 ### -AccessPackageSubjectId

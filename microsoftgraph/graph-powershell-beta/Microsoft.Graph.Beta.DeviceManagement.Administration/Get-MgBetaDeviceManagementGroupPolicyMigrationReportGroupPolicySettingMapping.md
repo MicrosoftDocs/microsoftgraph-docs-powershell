@@ -41,6 +41,7 @@ Get-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 A list of group policy settings to MDM/Intune mappings.
 
 **Permissions**
+
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
