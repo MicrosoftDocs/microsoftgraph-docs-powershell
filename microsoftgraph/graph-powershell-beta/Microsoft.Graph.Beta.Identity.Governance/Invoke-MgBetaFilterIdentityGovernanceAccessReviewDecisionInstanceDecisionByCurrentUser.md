@@ -36,9 +36,6 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionInstanceDecisionByCurre
 Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
 A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-decisions-permissions.md)]
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

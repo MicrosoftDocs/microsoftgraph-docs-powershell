@@ -35,9 +35,6 @@ Get-MgBetaGroupSiteApplicableContentTypeForList -InputObject <IGroupsIdentity> [
 ## DESCRIPTION
 Get site contentTypes that can be added to a list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getapplicablecontenttypesforlist-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

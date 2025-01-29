@@ -43,9 +43,6 @@ Get-MgBetaGroupTransitiveMemberOf -InputObject <IGroupsIdentity> [-ExpandPropert
 The groups a group is a member of, either directly or through nested membership.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-transitivememberof-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

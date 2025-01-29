@@ -53,9 +53,6 @@ New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUs
 Add an identity provider to an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object type.
 The identity provider must first be configured in the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

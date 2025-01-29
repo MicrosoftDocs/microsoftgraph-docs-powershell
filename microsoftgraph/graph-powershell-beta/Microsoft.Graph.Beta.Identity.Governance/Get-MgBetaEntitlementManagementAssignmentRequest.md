@@ -42,7 +42,12 @@ Get-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernan
 Represents access package assignment requests created by or on behalf of a user.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-assignmentrequests-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1cenario1 for u1ing query parameter1
@@ -54,7 +59,7 @@ Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAssignmentRequest
 
 ```
-This example will### example scenarios for using query parameters
+This example shows scenarios for using query parameters
 
 
 ## PARAMETERS

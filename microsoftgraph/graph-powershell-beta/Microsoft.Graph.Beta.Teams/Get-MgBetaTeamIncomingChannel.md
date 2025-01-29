@@ -41,9 +41,6 @@ Get-MgBetaTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 List of channels shared with the team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-list-incomingchannels-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

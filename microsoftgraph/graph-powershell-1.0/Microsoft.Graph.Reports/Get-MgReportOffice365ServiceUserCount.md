@@ -32,9 +32,6 @@ Get-MgReportOffice365ServiceUserCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get the count of users by activity type and service.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365servicesusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

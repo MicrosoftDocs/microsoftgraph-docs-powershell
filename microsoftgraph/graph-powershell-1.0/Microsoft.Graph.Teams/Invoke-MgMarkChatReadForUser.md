@@ -49,9 +49,6 @@ Invoke-MgMarkChatReadForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Mark a chat as read for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-markchatreadforuser-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

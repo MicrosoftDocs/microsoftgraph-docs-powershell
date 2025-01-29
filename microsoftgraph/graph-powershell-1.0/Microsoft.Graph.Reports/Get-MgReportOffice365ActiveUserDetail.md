@@ -45,9 +45,6 @@ Get-MgReportOffice365ActiveUserDetail -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get details about Microsoft 365 active users.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365activeuserdetail-permissions.md)]
-
 ## PARAMETERS
 
 ### -Date

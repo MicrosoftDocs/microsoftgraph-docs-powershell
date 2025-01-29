@@ -41,9 +41,6 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see addCopyFromContentTypeHub and the blog post Syntex Product Updates - August 2021.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-getcompatiblehubcontenttypes-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

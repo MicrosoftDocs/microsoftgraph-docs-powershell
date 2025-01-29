@@ -38,9 +38,6 @@ Get-MgBetaReportCredentialUserRegistrationDetail -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Details of the usage of self-service password reset and multifactor authentication (MFA) for all registered users.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-credentialuserregistrationdetails-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

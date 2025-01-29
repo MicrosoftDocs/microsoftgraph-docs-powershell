@@ -42,7 +42,12 @@ Get-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <
 The list of jobs that are queued for printing by the printer/printerShare.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-list-jobs-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.ReadBasic, PrintJob.ReadWriteBasic.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

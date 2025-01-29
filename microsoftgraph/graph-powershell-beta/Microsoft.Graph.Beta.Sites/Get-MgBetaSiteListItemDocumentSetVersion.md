@@ -43,10 +43,12 @@ Get-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-ExpandP
 Read the properties and relationships of a documentSetVersion object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-list-documentsetversions-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Read.All, Sites.Selected, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

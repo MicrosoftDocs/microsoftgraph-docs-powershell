@@ -35,9 +35,6 @@ Get-MgReportSkypeForBusinessParticipantActivityMinuteCount -InputObject <IReport
 Get usage trends on the length in minutes and type of conference sessions that users from your organization participated in.
 Types of conference sessions include audio/video.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessparticipantactivityminutecounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

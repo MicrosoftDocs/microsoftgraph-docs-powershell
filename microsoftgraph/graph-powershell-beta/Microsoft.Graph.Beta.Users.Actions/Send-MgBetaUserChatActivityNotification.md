@@ -57,9 +57,6 @@ Send-MgBetaUserChatActivityNotification -InputObject <IUsersActionsIdentity>
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-sendactivitynotification-permissions.md)]
-
 ## PARAMETERS
 
 ### -ActivityType

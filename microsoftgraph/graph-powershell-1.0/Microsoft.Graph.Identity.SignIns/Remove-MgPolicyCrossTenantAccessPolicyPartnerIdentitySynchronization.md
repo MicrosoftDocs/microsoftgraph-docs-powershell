@@ -34,9 +34,6 @@ Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObjec
 ## DESCRIPTION
 Delete the user synchronization policy for a partner-specific configuration.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantidentitysyncpolicypartner-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

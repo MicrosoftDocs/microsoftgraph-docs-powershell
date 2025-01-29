@@ -36,9 +36,6 @@ Set-MgIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentitySign
 Update the values in an userFlowLanguagePage object.
 You may only update the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguagepage-put-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

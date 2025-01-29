@@ -51,9 +51,6 @@ Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObject <
 ## DESCRIPTION
 Update the user synchronization policy of a partner-specific configuration.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantidentitysyncpolicypartner-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

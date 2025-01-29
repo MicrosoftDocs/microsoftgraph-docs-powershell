@@ -40,9 +40,6 @@ Get-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAccess
 Each unique CPE device associated with a branch is specified.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-list-devicelinks-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

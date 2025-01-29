@@ -36,9 +36,6 @@ Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 Delete a cloudPcProvisioningPolicy object.
 You can't delete a policy that's in use.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

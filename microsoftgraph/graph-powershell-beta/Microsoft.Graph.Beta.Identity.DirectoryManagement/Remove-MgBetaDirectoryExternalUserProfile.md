@@ -34,9 +34,6 @@ Delete an externalUserProfile object.
 Note: To permanently delete the externalUserProfile, follow permanently delete an item.
 To restore an externalUserProfile, follow restore a deleted item.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-delete-externaluserprofiles-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

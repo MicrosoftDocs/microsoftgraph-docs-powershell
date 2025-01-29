@@ -59,9 +59,6 @@ An archived plan can be unarchived.
 All archived entities can be deleted.
 Archived tasks are not included in the response for list of tasks assigned to a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-archive-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

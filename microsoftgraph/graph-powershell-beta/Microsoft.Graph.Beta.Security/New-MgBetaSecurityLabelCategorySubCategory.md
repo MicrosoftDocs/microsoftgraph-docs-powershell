@@ -49,9 +49,6 @@ New-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -Bod
 ## DESCRIPTION
 Create a new subcategoryTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-categorytemplate-post-subcategories-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

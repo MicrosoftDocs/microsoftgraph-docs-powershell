@@ -52,9 +52,6 @@ Update-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <
 ## DESCRIPTION
 Replace an existing timeCard with updated values.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-replace-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

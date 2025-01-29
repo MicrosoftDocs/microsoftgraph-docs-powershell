@@ -34,9 +34,6 @@ Invoke-MgFavoriteServiceAnnouncementMessage
 ## DESCRIPTION
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-favorite-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -25,9 +25,6 @@ Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySy
 ## DESCRIPTION
 Get the cross-tenant access policy template with user synchronization settings for a multitenant organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationidentitysyncpolicytemplate-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

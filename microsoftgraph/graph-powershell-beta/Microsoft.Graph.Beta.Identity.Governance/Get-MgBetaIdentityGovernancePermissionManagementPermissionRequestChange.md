@@ -40,12 +40,6 @@ Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 ## DESCRIPTION
 Read the properties and relationships of a permissionsRequestChange object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsrequestchange-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsmanagement-list-permissionsrequestchanges-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

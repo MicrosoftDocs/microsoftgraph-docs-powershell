@@ -33,9 +33,6 @@ Get-MgReportUserArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Filt
 ## DESCRIPTION
 Get a list of archived print jobs for a particular user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reports-getuserarchivedprintjobs-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -23,7 +23,12 @@ Get-MgBetaPolicyExternalIdentityPolicy [-ExpandProperty <String[]>] [-Property <
 Read the properties and relationships of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave a Microsoft Entra tenant via self-service controls.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalidentitiespolicy-get-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.ExternalIdentities,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

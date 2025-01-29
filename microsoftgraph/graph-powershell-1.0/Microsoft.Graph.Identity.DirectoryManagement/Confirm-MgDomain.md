@@ -31,9 +31,6 @@ Confirm-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseH
 ## DESCRIPTION
 Validates the ownership of the domain.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-verify-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

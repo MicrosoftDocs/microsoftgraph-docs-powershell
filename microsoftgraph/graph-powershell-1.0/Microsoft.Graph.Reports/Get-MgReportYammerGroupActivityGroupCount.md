@@ -33,9 +33,6 @@ Get-MgReportYammerGroupActivityGroupCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Get the total number of groups that existed and how many included group conversation activities.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammergroupsactivitygroupcounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

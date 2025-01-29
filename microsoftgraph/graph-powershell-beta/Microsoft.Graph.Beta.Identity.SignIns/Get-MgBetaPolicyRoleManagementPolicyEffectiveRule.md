@@ -46,9 +46,6 @@ The list of effective rules like approval rules and expiration rules evaluated b
 For example, if there is a tenant-wide policy to enforce enabling an approval rule, the effective rule will be to enable approval even if the policy has a rule to disable approval.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrolemanagementpolicy-list-effectiverules-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

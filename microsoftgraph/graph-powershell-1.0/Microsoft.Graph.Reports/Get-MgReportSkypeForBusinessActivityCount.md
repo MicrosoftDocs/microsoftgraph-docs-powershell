@@ -35,9 +35,6 @@ Get-MgReportSkypeForBusinessActivityCount -InputObject <IReportsIdentity> -OutFi
 Get the trends on how many users organized and participated in conference sessions held in your organization through Skype for Business.
 The report also includes the number of peer-to-peer sessions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessactivitycounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -29,7 +29,12 @@ Get newly created or updated schools without having to perform a full read of th
 See Use delta query for details.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-delta-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.ReadBasic.All, EduRoster.WriteWrite.All, EduRoster.ReadWrite.All, EduRoster.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

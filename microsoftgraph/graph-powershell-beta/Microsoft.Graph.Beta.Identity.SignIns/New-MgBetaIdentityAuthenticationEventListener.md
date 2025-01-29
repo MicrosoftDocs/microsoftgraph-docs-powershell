@@ -36,9 +36,6 @@ New-MgBetaIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAut
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-authenticationeventlisteners-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create an onTokenIssuanceStartListener object
 

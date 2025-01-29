@@ -43,10 +43,12 @@ Get-MgAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementIdent
 Get a browserSiteList that contains browserSite and browserSharedCookie resources.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internetexplorermode-list-sitelists-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BrowserSiteLists.Read.All, BrowserSiteLists.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

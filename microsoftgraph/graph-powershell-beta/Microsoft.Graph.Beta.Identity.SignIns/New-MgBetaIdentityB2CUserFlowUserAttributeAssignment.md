@@ -48,9 +48,6 @@ New-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 ## DESCRIPTION
 Create a new identityUserFlowAttributeAssignment object in a b2cIdentityUserFlow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-post-userattributeassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

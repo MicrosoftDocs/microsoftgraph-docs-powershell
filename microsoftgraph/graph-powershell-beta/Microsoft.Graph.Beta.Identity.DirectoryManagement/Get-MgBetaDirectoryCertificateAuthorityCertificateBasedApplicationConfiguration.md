@@ -42,10 +42,12 @@ Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 Read the properties and relationships of a certificateBasedApplicationConfiguration object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificateauthoritypath-list-certificatebasedapplicationconfigurations-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

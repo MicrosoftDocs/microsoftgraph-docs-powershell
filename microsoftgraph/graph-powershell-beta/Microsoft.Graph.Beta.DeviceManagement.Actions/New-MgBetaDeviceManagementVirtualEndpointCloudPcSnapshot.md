@@ -30,9 +30,6 @@ New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot -InputObject <IDeviceMa
 ## DESCRIPTION
 Create a snapshot for a specific Cloud PC device.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-createsnapshot-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -1,14 +1,14 @@
 # YamlMime:ZonePivotGroups
 groups:
-# Zone pivot with delegated and app-only authentication
-- id: grant-api-permissions
-  title: Grant either app-only or delegated API permissions
+## Zone pivot with App roles and delegated permission options
+- id: graph-powershell-grant-api-permissions
+  title: Grant API permissions
   prompt: Choose the permission type to grant to your app
   pivots:
-  - id: grant-application-permissions
-    title: Application permissions
   - id: grant-delegated-permissions
-    title: Delegated permissions
+    title: Delegated permissions 
+  - id: grant-application-permissions
+    title: Application permissions 
 ## Zone pivot with Azure AD, MSonline, and Azure AD Preview module options
 - id: powershell-legacy-modules
   title: Legacy PowerShell modules

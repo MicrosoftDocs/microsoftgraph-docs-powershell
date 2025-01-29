@@ -30,9 +30,6 @@ Remove-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIde
 ## DESCRIPTION
 Delete a trainingCampaign object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-delete-trainingcampaigns-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

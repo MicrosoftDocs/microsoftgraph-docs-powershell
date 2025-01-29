@@ -55,7 +55,12 @@ This API is useful when a label should be set manually or explicitly by a user o
 Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-evaluateapplication-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | InformationProtectionPolicy.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | InformationProtectionPolicy.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

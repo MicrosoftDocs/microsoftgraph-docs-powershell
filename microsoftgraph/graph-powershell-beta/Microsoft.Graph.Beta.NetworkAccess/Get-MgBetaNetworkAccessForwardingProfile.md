@@ -39,12 +39,6 @@ Get-MgBetaNetworkAccessForwardingProfile -InputObject <INetworkAccessIdentity> [
 ## DESCRIPTION
 Retrieve information about a specific forwarding profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingprofile-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-networkaccessroot-list-forwardingprofiles-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

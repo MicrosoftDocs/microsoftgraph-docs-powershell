@@ -32,7 +32,7 @@ variables:
 extends:
   template: v1/1ES.Official.PipelineTemplate.yml@1ESPipelineTemplates
   parameters:
-    pool:
+    pool: 
       name: Azure-Pipelines-1ESPT-ExDShared
       image: windows-2022
       os: windows
@@ -109,12 +109,20 @@ extends:
             pwsh: true
             filePath: scripts/MsSubserviceUpdate.ps1
         - task: PowerShell@2
+          displayName: 'Generate permissions table'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/GeneratePermissionsTable.ps1
+        - task: PowerShell@2
           displayName: 'Update Links'
           continueOnError: false
           inputs:
             targetType: 'filePath'
             pwsh: true
             filePath: scripts/UpdateLinks.ps1
+            errorActionPreference: 'stop'
         - task: PowerShell@2
           displayName: 'Repair Examples and Descriptions and Title'
           continueOnError: false

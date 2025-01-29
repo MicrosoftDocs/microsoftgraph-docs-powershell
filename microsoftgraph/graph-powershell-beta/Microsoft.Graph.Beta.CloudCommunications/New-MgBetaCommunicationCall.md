@@ -49,7 +49,12 @@ You need to register the calling bot and go through the list of permissions need
 This API supports the following PSTN scenarios:
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-calls-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.JoinGroupCalls.Chat, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All, Calls.Initiate.All,  |
 
 ## EXAMPLES
 ### Example 1: Create peer-to-peer VoIP call with service hosted media
@@ -502,7 +507,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-This example will### example 10: join channel meeting as a guest with service hosted media
+This example will join channel meeting as a guest with service hosted media
 
 ### Example 11: Create peer-to-peer PSTN call with service hosted media
 
@@ -552,7 +557,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-This example will### example 11: create peer-to-peer pstn call with service hosted media
+This example will create peer-to-peer pstn call with service hosted media
 
 ### Example 12: Create peer-to-peer PSTN call with application hosted media
 
@@ -603,7 +608,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-This example will### example 12: create peer-to-peer pstn call with application hosted media
+This example will create peer-to-peer pstn call with application hosted media
 
 
 ## PARAMETERS

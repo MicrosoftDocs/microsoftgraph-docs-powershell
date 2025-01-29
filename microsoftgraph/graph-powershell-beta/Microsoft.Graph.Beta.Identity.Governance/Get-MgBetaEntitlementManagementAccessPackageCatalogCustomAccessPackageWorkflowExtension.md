@@ -43,10 +43,12 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowEx
 Read the properties and relationships of a customAccessPackageWorkflowExtension object for an accessPackageCatalog object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customaccesspackageworkflowextension-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-list-customaccesspackageworkflowextensions-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

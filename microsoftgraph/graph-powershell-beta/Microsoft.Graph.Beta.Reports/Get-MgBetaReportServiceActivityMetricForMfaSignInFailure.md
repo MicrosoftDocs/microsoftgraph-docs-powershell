@@ -34,9 +34,6 @@ Get-MgBetaReportServiceActivityMetricForMfaSignInFailure -InputObject <IReportsI
 Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
 Sign-in failures happen, for example, when users abandon or cancel MFA requests, or refresh MFA sessions without doing interactive MFA.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceactivity-getmetricsformfasigninfailure-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

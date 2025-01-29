@@ -48,9 +48,6 @@ Get-MgSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <String[]
 ## DESCRIPTION
 Get attackSimulation from security
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-simulations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

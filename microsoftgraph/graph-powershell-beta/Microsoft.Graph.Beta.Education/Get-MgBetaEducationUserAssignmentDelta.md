@@ -39,9 +39,6 @@ Get a list of newly-created or updated assignments without reading the entire co
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-delta-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

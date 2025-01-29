@@ -39,9 +39,6 @@ Provide a summary of the most processed tasks, known as top tasks, for a specifi
 The task definition is provided, along with numerical counts of total, successful, and failed runs.
 For information about workflows processed, see insights: topWorkflowsProcessedSummary.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-insights-toptasksprocessedsummary-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

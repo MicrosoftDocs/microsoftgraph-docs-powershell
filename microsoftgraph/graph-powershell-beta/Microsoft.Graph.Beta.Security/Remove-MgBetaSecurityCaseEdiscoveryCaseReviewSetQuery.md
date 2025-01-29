@@ -34,9 +34,6 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 ## DESCRIPTION
 Delete an ediscoveryReviewSetQuery object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-delete-queries-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

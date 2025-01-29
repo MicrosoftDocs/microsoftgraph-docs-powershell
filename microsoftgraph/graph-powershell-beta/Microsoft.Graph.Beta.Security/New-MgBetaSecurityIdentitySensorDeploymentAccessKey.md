@@ -21,9 +21,6 @@ New-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-regeneratedeploymentaccesskey-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,9 +33,6 @@ Invoke-MgBetaHaveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <St
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-doesuserhaveaccess-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

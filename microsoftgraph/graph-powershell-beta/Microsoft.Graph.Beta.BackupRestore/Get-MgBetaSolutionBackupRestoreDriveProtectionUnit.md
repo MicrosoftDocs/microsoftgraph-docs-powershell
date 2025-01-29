@@ -41,9 +41,6 @@ Get-MgBetaSolutionBackupRestoreDriveProtectionUnit -InputObject <IBackupRestoreI
 ## DESCRIPTION
 The list of drive protection units in the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-driveprotectionunits-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

@@ -79,9 +79,6 @@ Update-MgSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the properties of a store object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-store-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

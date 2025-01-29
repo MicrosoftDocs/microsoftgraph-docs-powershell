@@ -32,9 +32,6 @@ Get-MgReportOffice365GroupActivityCount -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Get the number of group activities across group workloads.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365groupsactivitycounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

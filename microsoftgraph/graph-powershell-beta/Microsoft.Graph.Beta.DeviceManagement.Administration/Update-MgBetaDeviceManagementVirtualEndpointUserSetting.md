@@ -57,9 +57,6 @@ Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceMan
 ## DESCRIPTION
 Update the properties of a cloudPcUserSetting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -75,6 +72,16 @@ $params = @{
 		frequencyInHours = 16
 		frequencyType = "sixteenHours"
 		userRestoreEnabled = $true
+	}
+	crossRegionDisasterRecoverySetting = @{
+		crossRegionDisasterRecoveryEnabled = $false
+		maintainCrossRegionRestorePointEnabled = $true
+		disasterRecoveryNetworkSetting = @{
+			regionName = "westus"
+			regionGroup = "usEast"
+		}
+		disasterRecoveryType = "premium"
+		userInitiatedDisasterRecoveryAllowed = $true
 	}
 	localAdminEnabled = $false
 	resetEnabled = $true

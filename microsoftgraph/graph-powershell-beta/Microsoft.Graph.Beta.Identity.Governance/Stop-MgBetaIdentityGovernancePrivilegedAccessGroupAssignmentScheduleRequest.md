@@ -34,9 +34,6 @@ Stop-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 ## DESCRIPTION
 Cancel an access assignment request to a group whose membership and ownership are governed by PIM.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupassignmentschedulerequest-cancel-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

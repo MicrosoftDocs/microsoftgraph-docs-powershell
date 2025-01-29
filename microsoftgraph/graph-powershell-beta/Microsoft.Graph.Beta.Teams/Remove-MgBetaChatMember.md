@@ -34,7 +34,12 @@ Remove-MgBetaChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Resp
 Remove a conversationMember from a chat.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-delete-members-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMember.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMember.ReadWrite.All, Chat.Manage.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

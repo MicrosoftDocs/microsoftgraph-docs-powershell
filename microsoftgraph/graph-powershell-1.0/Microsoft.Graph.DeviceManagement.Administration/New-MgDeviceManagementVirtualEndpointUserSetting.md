@@ -35,9 +35,6 @@ New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create a new cloudPcUserSetting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-usersettings-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

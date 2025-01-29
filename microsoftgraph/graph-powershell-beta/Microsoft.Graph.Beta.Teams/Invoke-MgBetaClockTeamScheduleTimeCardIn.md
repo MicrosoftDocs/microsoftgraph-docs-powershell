@@ -48,9 +48,6 @@ Invoke-MgBetaClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Clock in to start a timeCard.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-clockin-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

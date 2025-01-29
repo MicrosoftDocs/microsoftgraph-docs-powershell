@@ -58,7 +58,12 @@ Send an activity feed notification in the scope of a team.
 For more information, see sending Teams activity notifications.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-sendactivitynotification-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsActivity.Send.Group, TeamsActivity.Send,  |
 
 ## EXAMPLES
 ### Example 1: Notify a user about pending finance approval requests

@@ -32,7 +32,12 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcSupportedCloudPcRemoteAction
 Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getsupportedcloudpcremoteactions-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CloudPC.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

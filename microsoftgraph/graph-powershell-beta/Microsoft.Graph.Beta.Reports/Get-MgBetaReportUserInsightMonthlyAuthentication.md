@@ -38,9 +38,6 @@ Get-MgBetaReportUserInsightMonthlyAuthentication -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Insights for authentications on apps registered in the tenant for a specified period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-authentications-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -29,9 +29,6 @@ New-MgBetaIdentityUserFlow -BodyParameter <IMicrosoftGraphIdentityUserFlow> [-Re
 ## DESCRIPTION
 Create a new userFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflow-post-userflows-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaIdentityUserFlow Cmdlet
 ```powershell

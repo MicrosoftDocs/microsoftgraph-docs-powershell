@@ -48,9 +48,6 @@ Update-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesI
 ## DESCRIPTION
 Update the properties of a contentApproval object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-contentapproval-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

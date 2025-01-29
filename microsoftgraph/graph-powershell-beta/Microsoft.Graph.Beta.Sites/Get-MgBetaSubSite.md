@@ -41,9 +41,6 @@ Get-MgBetaSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 The collection of the sub-sites under this site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-subsites-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

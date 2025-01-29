@@ -43,9 +43,6 @@ Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore Exchange mailboxes.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangerestoresession-list-mailboxrestoreartifacts-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

@@ -44,10 +44,12 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdenti
 Read the properties and relationships of an ediscoveryReviewSetQuery object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewsetquery-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-list-queries-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

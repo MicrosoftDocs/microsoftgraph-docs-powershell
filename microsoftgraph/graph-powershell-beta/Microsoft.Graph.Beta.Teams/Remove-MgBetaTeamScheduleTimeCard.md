@@ -30,9 +30,6 @@ Remove-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete a timeCard instance in a schedule.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

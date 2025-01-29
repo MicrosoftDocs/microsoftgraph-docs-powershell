@@ -41,9 +41,6 @@ Get-MgBetaReportPartnerBillingOperation -InputObject <IReportsIdentity> [-Expand
 ## DESCRIPTION
 Read the properties and relationships of an operation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-operation-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get operation succeeded
 

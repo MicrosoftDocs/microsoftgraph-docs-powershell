@@ -32,9 +32,6 @@ Get-MgReportEmailAppUsageUserCount -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Get the count of unique users that connected to Exchange Online using any email app.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailappusageusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

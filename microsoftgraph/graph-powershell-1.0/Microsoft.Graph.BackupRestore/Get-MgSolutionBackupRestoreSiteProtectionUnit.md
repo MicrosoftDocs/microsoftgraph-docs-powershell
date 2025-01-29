@@ -41,9 +41,6 @@ Get-MgSolutionBackupRestoreSiteProtectionUnit -InputObject <IBackupRestoreIdenti
 ## DESCRIPTION
 The list of site protection units in the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

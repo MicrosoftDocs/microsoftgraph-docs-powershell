@@ -34,9 +34,6 @@ New-MgSecurityLabelCategory -BodyParameter <IMicrosoftGraphSecurityCategoryTempl
 ## DESCRIPTION
 Create a new categoryTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-post-categories-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

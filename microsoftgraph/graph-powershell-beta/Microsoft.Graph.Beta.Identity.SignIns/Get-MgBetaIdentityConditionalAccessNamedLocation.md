@@ -42,12 +42,6 @@ Get-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Retrieve the properties and relationships of a namedLocation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/namedlocation-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-list-namedlocations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a list of all named locations
 

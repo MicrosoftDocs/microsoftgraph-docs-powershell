@@ -33,9 +33,6 @@ Remove-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignIn
 ## DESCRIPTION
 Delete a customAuthenticationExtension object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customauthenticationextension-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

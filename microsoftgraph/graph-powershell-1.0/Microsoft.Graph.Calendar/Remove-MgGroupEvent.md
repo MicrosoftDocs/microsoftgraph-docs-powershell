@@ -33,6 +33,14 @@ Remove-MgGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete an event object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calendars.ReadWrite,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

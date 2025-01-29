@@ -51,9 +51,6 @@ Get-MgBetaEntitlementManagementAccessPackageAssignment [-ExpandProperty <String[
 ## DESCRIPTION
 The assignment of an access package to a subject for a period of time.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1cenario1 for u1ing query parameter1
 
@@ -64,7 +61,7 @@ Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageAssignment
 
 ```
-This example will### example scenarios for using query parameters
+This example shows scenarios for using query parameters
 
 
 ## PARAMETERS

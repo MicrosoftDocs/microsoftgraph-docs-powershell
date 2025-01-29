@@ -49,9 +49,6 @@ Invoke-MgBetaSnoozeUserEventReminder -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-snoozereminder-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

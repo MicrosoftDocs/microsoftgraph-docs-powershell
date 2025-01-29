@@ -40,10 +40,12 @@ Get-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity> [-
 Read the properties and relationships of a fileThreatSubmission object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-filethreatsubmission-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-filethreatsubmission-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatSubmission.Read, ThreatSubmission.ReadWrite.All, ThreatSubmission.ReadWrite, ThreatSubmission.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

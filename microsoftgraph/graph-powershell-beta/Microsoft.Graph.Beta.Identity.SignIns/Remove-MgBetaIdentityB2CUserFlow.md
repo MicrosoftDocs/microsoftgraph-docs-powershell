@@ -30,9 +30,6 @@ Remove-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMat
 ## DESCRIPTION
 Delete a b2cIdentityUserFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

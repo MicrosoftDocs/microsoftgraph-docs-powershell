@@ -33,9 +33,6 @@ Publish-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-ResponseHeade
 ## DESCRIPTION
 Invoke action publish
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
-
 ## PARAMETERS
 
 ### -ContentTypeId

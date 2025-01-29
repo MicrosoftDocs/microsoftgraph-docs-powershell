@@ -50,9 +50,6 @@ Update-MgBetaTeamworkDeviceSoftware -InputObject <ITeamsIdentity>
 Update the software for a Microsoft Teams-enabled device.
 This API triggers a long-running operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkdevice-updatesoftware-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

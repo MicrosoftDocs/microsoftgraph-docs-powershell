@@ -50,9 +50,6 @@ Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStep
 ## DESCRIPTION
 Apply approve or deny decision on an approvalStep object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalstep-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -50,9 +50,6 @@ Invoke-MgCheckinUserDriveItem -InputObject <IUsersActionsIdentity> [-ResponseHea
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-checkin-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

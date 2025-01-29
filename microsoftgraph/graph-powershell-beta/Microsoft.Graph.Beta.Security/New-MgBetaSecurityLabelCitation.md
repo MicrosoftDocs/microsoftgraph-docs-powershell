@@ -34,9 +34,6 @@ New-MgBetaSecurityLabelCitation -BodyParameter <IMicrosoftGraphSecurityCitationT
 ## DESCRIPTION
 Create a new citationTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-citations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

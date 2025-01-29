@@ -24,6 +24,14 @@ Get-MgApplicationCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.Read,  |
+| Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

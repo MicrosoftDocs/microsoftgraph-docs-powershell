@@ -42,7 +42,12 @@ Deleting a schema extension definition before deleting the data associated with 
 To recover the data, you can recreate the schema extension definition with the same configuration, but only if you used the verified domain for the schema extension id.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-delete-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

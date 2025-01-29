@@ -31,7 +31,12 @@ Remove-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-IfMatch <String>]
 Delete an itemPhone object from the user's profile.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemphone-delete-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.ReadWrite,  |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

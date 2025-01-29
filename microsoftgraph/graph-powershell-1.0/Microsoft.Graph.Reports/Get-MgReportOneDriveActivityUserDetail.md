@@ -45,9 +45,6 @@ Get-MgReportOneDriveActivityUserDetail -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Get details about OneDrive activity by user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveactivityuserdetail-permissions.md)]
-
 ## PARAMETERS
 
 ### -Date

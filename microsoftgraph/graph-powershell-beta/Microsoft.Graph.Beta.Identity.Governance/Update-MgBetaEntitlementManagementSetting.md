@@ -34,9 +34,6 @@ Update-MgBetaEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitle
 ## DESCRIPTION
 Update an existing entitlementManagementSettings object to change one or more of its properties.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagementsettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

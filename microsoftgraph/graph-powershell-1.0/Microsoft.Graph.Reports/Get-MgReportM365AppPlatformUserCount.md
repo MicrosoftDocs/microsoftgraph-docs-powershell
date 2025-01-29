@@ -32,9 +32,6 @@ Get-MgReportM365AppPlatformUserCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getm365appplatformusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: CSV output
 

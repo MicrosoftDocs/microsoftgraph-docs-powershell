@@ -41,10 +41,12 @@ Get-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-Proper
 Get a specific commercial subscription that an organization has acquired.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscribedsku-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscribedsku-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Organization.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Get subscribed SKUs

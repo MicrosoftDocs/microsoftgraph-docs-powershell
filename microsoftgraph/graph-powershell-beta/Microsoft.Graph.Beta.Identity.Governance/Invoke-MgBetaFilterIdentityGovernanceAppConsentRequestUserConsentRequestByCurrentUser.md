@@ -38,7 +38,12 @@ Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurren
 Retrieve a collection of userConsentRequest objects for accessing a specified app, for which the current user is the reviewer.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userconsentrequest-filterbycurrentuser-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

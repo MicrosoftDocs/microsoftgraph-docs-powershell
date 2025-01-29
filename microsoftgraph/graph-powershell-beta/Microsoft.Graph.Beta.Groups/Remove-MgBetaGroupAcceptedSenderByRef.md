@@ -33,9 +33,6 @@ Remove-MgBetaGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <
 ## DESCRIPTION
 Remove a user or group from the accepted-senders list of the specified group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-acceptedsenders-permissions.md)]
-
 ## PARAMETERS
 
 ### -DirectoryObjectId

@@ -43,9 +43,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <IS
 ## DESCRIPTION
 Data source entity for groups associated with the custodian.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-list-unifiedgroupsources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

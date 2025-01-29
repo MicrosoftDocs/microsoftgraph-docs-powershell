@@ -41,9 +41,6 @@ Get-MgBetaChatPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 A collection of permissions granted to apps for the chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-permissiongrants-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

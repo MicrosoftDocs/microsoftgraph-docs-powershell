@@ -33,9 +33,6 @@ Remove-MgSecurityLabelAuthority -InputObject <ISecurityIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete a authorityTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-authorities-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

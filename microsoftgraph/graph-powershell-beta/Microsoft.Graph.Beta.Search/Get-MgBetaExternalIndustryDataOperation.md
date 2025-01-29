@@ -39,12 +39,6 @@ Get-MgBetaExternalIndustryDataOperation -InputObject <ISearchIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a fileValidateOperation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-filevalidateoperation-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-filevalidateoperation-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

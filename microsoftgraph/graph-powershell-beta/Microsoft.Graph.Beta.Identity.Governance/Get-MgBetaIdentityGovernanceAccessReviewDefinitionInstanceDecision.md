@@ -45,10 +45,12 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject 
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-decisions-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Retrieve a decision on an accessReviewInstance

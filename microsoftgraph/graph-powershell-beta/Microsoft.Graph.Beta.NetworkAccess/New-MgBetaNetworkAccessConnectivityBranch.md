@@ -34,9 +34,6 @@ New-MgBetaNetworkAccessConnectivityBranch -BodyParameter <IMicrosoftGraphNetwork
 ## DESCRIPTION
 Create a new branch.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-connectivity-post-branches-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

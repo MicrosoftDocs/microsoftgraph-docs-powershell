@@ -33,9 +33,6 @@ Find-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
-
 ## PARAMETERS
 
 ### -DirectoryDefinitionId

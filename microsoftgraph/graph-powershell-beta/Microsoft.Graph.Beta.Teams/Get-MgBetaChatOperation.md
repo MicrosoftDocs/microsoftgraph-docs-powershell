@@ -40,10 +40,12 @@ Get-MgBetaChatOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 Get the specified Teams async operation that ran or is running on a specific resource.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsasyncoperation-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-operations-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

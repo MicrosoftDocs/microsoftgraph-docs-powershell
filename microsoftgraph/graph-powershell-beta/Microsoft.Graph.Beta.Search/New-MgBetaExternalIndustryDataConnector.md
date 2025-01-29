@@ -30,9 +30,6 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ## DESCRIPTION
 Create a new azureDataLakeConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-azuredatalakeconnector-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

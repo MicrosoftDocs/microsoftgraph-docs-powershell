@@ -33,9 +33,6 @@ Remove-MgBetaIdentityB2CUserFlowLanguageOverridePage -InputObject <IIdentitySign
 Deletes the values in an userFlowLanguagePage object.
 You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguagepage-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId

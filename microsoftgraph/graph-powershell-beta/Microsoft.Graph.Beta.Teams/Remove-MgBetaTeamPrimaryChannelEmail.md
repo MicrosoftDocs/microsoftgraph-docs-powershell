@@ -35,9 +35,6 @@ Remove-MgBetaTeamPrimaryChannelEmail -InputObject <ITeamsIdentity> [-ResponseHea
 Remove the email address of a channel.
 You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-removeemail-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

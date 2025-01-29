@@ -41,9 +41,6 @@ New-MgBetaIdentityGovernanceAccessReviewDefinition
 ## DESCRIPTION
 Create a new accessReviewScheduleDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewset-post-definitions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create an access review on a group
 

@@ -40,7 +40,12 @@ A delta function call for mail folders in a mailbox is similar to a GET request,
 This allows you to maintain and synchronizea local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-delta-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Mail.ReadBasic,  |
+| Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
 
 ## PARAMETERS
 

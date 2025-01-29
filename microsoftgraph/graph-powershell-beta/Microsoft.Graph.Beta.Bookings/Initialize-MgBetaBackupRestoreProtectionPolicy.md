@@ -37,9 +37,6 @@ Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-activate-permissions.md)]
-
 ## EXAMPLES
 ### Example 1 : Activate an inactive protection policy
 
@@ -50,7 +47,7 @@ Import-Module Microsoft.Graph.Beta.Bookings
 Initialize-MgBetaBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
 ```
-This example will### example 1 : activate an inactive protection policy
+This example will activate an inactive protection policy
 
 ### Example 2 : Activate an active protection policy
 
@@ -61,7 +58,7 @@ Import-Module Microsoft.Graph.Beta.Bookings
 Initialize-MgBetaBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
 ```
-This example will### example 2 : activate an active protection policy
+This example will activate an active protection policy
 
 
 ## PARAMETERS

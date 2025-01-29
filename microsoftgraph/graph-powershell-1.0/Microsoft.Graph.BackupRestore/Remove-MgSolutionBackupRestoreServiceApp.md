@@ -33,9 +33,6 @@ Remove-MgSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity> [
 ## DESCRIPTION
 Delete a serviceApp.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-delete-serviceapps-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

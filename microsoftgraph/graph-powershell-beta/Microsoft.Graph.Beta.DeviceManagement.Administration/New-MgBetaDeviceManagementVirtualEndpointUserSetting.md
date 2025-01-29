@@ -38,9 +38,6 @@ New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create a new cloudPcUserSetting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-usersettings-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -53,6 +50,16 @@ $params = @{
 	displayName = "Example"
 	selfServiceEnabled = $false
 	localAdminEnabled = $true
+	crossRegionDisasterRecoverySetting = @{
+		crossRegionDisasterRecoveryEnabled = $false
+		maintainCrossRegionRestorePointEnabled = $true
+		disasterRecoveryNetworkSetting = @{
+			regionName = "westus"
+			regionGroup = "usEast"
+		}
+		disasterRecoveryType = "premium"
+		userInitiatedDisasterRecoveryAllowed = $true
+	}
 	restorePointSetting = @{
 		frequencyInHours = 16
 		frequencyType = "sixteenHours"

@@ -41,9 +41,6 @@ Get-MgBetaSecurityThreatIntelligenceHostChildHostPair -InputObject <ISecurityIde
 ## DESCRIPTION
 The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-list-childhostpairs-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

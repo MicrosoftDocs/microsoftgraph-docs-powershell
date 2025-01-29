@@ -42,12 +42,6 @@ Get-MgBetaTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-Exp
 ## DESCRIPTION
 Retrieve the properties and relationships of a swapShiftsChangeRequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/swapshiftschangerequest-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/swapshiftschangerequest-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

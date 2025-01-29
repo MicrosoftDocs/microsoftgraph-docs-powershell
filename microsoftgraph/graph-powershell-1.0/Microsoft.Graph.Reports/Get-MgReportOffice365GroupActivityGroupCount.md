@@ -33,9 +33,6 @@ Get-MgReportOffice365GroupActivityGroupCount -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365groupsactivitygroupcounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

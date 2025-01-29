@@ -39,12 +39,6 @@ Get-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Read the properties and relationships of a trainingCampaign object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trainingcampaign-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-trainingcampaigns-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

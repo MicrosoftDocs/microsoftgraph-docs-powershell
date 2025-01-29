@@ -37,9 +37,6 @@ New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeU
 ## DESCRIPTION
 Use this API to create a new administrativeUnit.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-post-administrativeunits-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

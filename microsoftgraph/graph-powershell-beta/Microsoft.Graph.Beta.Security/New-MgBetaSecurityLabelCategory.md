@@ -34,9 +34,6 @@ New-MgBetaSecurityLabelCategory -BodyParameter <IMicrosoftGraphSecurityCategoryT
 ## DESCRIPTION
 Create a new categoryTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-categories-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

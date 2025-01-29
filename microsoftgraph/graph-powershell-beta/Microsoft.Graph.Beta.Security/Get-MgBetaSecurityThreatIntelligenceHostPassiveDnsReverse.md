@@ -41,9 +41,6 @@ Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse -InputObject <ISecurit
 ## DESCRIPTION
 Reverse passive DNS retrieval about this host.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-list-passivednsreverse-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainvitation
 schema: 2.0.0
-ms.subservice: entra-sign-in
+ms.subservice: entra-users
 ---
 
 # New-MgBetaInvitation
@@ -41,7 +41,12 @@ The invitation adds an external user to the organization.
 The following options are available for creating an invitation:
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/invitation-post-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Invite a guest user

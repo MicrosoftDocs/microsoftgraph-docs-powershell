@@ -52,9 +52,6 @@ Restore-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 Restore a specific cloudPC object to a previous state from a snapshot.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-restore-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

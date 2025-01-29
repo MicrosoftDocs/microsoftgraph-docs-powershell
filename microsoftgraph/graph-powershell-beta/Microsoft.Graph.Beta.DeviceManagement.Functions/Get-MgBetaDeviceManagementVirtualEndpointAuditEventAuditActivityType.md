@@ -26,7 +26,12 @@ Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType [-Count] [-
 Get audit activity types by tenant ID.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcauditevent-getauditactivitytypes-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

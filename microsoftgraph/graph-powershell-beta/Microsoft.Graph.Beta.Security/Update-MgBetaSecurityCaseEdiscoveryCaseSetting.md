@@ -52,9 +52,6 @@ Update-MgBetaSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the properties of an ediscoveryCaseSettings object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycasesettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -30,9 +30,6 @@ Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -InputObject <IComplianceId
 ## DESCRIPTION
 Reset a caseSettings object to the default values.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-casesettings-resettodefault-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

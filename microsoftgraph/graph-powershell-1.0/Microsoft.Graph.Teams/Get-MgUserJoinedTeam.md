@@ -25,6 +25,14 @@ Get-MgUserJoinedTeam -UserId <String> [-ExpandProperty <String[]>] [-Filter <Str
 ## DESCRIPTION
 Get joinedTeams from users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Team.ReadBasic.All, User.ReadWrite.All, User.Read.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -42,9 +42,6 @@ Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-rosterplans-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

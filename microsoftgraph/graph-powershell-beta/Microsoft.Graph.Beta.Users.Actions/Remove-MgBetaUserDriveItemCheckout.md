@@ -38,9 +38,6 @@ Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-discardcheckout-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId

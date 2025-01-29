@@ -32,9 +32,6 @@ Remove-MgBetaUserMailFolderPermanent -InputObject <IUsersActionsIdentity> [-Resp
 Permanently delete a mail folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-permanentdelete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

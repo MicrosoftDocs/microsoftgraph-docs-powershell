@@ -39,9 +39,6 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource -InputObject <
 ## DESCRIPTION
 Custodian sources that are included in the sourceCollection.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-custodiansources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

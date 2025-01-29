@@ -31,9 +31,6 @@ Stop-MgBetaApprovalItem -InputObject <IBookingsIdentity> [-ResponseHeadersVariab
 Cancel the approval item.
 The owner of the approval can trigger this endpoint.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalitem-cancel-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

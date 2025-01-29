@@ -39,7 +39,12 @@ Get-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ExpandP
 Read the properties and relationships of a teamTemplateDefinition object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamtemplatedefinition-get-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamTemplates.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamTemplates.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

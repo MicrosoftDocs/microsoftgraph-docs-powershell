@@ -22,9 +22,6 @@ Get-MgBetaNetworkAccessTenantStatus [-ExpandProperty <String[]>] [-Property <Str
 ## DESCRIPTION
 Retrieve the onboarding status of a specific tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-tenantstatus-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

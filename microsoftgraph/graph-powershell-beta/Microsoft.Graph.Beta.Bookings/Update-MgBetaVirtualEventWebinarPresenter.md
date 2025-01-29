@@ -53,9 +53,6 @@ Update-MgBetaVirtualEventWebinarPresenter -InputObject <IBookingsIdentity>
 Update the properties of a virtualEventPresenter object.
 Currently the supported virtual event type is virtualEventWebinar.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventpresenter-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

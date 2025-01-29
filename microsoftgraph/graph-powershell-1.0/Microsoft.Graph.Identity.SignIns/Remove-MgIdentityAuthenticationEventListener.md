@@ -33,9 +33,6 @@ Remove-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Delete an authenticationEventListener object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventlistener-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

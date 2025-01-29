@@ -49,9 +49,6 @@ Initialize-MgBetaBackupRestoreServiceApp -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Activate a serviceApp.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceapp-activate-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

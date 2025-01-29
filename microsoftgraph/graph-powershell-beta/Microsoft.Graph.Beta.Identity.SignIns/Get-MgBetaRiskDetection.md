@@ -42,12 +42,6 @@ Get-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties of a collection of riskDetection objects.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskdetection-list-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskdetection-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get all riskDetections
 ```powershell

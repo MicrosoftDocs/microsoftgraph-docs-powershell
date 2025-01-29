@@ -29,6 +29,14 @@ The section groups in the notebook.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -42,12 +42,6 @@ Get-MgSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a serviceApp object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceapp-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-list-serviceapps-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

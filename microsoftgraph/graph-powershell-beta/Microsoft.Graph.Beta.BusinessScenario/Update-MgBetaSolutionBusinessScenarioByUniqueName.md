@@ -51,9 +51,6 @@ Update-MgBetaSolutionBusinessScenarioByUniqueName -InputObject <IBusinessScenari
 ## DESCRIPTION
 Update the properties of a businessScenario object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

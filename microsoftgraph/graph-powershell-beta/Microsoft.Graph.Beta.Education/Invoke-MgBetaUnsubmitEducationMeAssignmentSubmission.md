@@ -43,9 +43,6 @@ During the submit process, all the resources are copied from submittedResources 
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-unsubmit-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

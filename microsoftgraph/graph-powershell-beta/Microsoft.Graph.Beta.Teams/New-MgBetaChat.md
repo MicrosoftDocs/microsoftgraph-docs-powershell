@@ -41,7 +41,12 @@ New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-ResponseHeadersVariable <S
 Create a new chat object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-post-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.Create,  |
 
 ## EXAMPLES
 ### Example 1: Create a one-on-one chat

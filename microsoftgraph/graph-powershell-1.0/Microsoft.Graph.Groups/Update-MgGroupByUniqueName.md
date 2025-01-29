@@ -107,9 +107,6 @@ Create a new group object if it doesn't exist, or update the properties of an ex
 For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-upsert-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a Microsoft 365 group if it doesn't exist
 

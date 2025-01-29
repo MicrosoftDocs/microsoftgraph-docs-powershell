@@ -25,9 +25,6 @@ Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault [-ResponseHeader
 ## DESCRIPTION
 Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

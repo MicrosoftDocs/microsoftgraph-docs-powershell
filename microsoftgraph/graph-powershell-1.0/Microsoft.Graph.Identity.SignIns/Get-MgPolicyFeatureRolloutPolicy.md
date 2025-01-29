@@ -42,12 +42,6 @@ Get-MgPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> [-Expan
 ## DESCRIPTION
 Retrieve the properties and relationships of a featureRolloutPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicy-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicies-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a feature rollout policy
 

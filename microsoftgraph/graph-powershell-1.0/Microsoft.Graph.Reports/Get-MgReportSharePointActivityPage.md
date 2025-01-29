@@ -32,9 +32,6 @@ Get-MgReportSharePointActivityPage -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Get the number of unique pages visited by users.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivitypages-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

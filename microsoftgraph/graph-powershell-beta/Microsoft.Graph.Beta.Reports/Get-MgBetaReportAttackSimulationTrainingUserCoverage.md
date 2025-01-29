@@ -24,9 +24,6 @@ Get-MgBetaReportAttackSimulationTrainingUserCoverage [-Count] [-Filter <String>]
 List training coverage for each user of a tenant in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getattacksimulationtrainingusercoverage-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

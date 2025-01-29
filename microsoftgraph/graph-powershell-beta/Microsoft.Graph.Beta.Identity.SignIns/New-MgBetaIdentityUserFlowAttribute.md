@@ -34,9 +34,6 @@ New-MgBetaIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserF
 ## DESCRIPTION
 Create a new custom identityUserFlowAttribute object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattribute-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

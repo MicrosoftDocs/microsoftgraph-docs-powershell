@@ -35,9 +35,6 @@ New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceInteg
 ## DESCRIPTION
 Create a new workforceIntegration object.You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -46,15 +43,16 @@ Create a new workforceIntegration object.You can set up which entities you want 
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	displayName = "displayName-value"
-	apiVersion = 99
-	encryption = @{
-		protocol = "protocol-value"
-		secret = "secret-value"
-	}
+	displayName = "ABCWorkforceIntegration"
+	apiVersion = 1
 	isActive = $true
-	url = "url-value"
-	supportedEntities = "supportedEntities-value"
+	encryption = @{
+		protocol = "sharedSecret"
+		secret = "My Secret"
+	}
+	url = "https://ABCWorkforceIntegration.com/Contoso/"
+	supportedEntities = "Shift,SwapRequest"
+	eligibilityFilteringEnabledEntities = "SwapRequest"
 }
 
 New-MgTeamworkWorkforceIntegration -BodyParameter $params

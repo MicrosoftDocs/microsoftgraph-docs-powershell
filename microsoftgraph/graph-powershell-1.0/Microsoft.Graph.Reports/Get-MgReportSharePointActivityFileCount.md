@@ -32,9 +32,6 @@ Get-MgReportSharePointActivityFileCount -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Get the number of unique, licensed users who interacted with files stored on SharePoint sites.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivityfilecounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

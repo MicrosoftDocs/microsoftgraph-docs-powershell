@@ -36,9 +36,6 @@ New-MgIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Respons
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-post-customauthenticationextensions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,9 +33,6 @@ Get-MgReportOffice365GroupActivityStorage -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Get the total storage used across all group mailboxes and group sites.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365groupsactivitystorage-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

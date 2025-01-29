@@ -43,9 +43,6 @@ New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Create and register a new device in the organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-devices-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

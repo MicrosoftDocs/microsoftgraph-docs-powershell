@@ -32,9 +32,6 @@ Get-MgReportOneDriveActivityUserCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get the trend in the number of active OneDrive users.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveactivityusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

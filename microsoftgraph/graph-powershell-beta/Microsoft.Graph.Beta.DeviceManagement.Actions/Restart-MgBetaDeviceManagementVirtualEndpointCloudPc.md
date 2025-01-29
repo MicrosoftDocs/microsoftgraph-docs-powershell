@@ -33,9 +33,6 @@ Restart-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManage
 ## DESCRIPTION
 Reboot a specific Cloud PC.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Reboot the cloudPC for the administrator
 

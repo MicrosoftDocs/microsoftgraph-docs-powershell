@@ -44,6 +44,14 @@ The user's mail folders.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Mail.ReadBasic,  |
+| Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
+
 ## EXAMPLES
 ### Example 1: Get a mail folder
 

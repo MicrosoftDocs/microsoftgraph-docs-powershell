@@ -51,9 +51,6 @@ Invoke-MgBetaMarkUserChatReadForUser -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Mark a chat as read for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-markchatreadforuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

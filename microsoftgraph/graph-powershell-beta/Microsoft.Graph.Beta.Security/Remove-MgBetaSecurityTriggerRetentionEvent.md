@@ -33,9 +33,6 @@ Remove-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete a retentionEvent object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionevent-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

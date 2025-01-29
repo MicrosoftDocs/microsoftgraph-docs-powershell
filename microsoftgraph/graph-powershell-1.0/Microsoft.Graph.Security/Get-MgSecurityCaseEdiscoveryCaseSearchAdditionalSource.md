@@ -42,9 +42,6 @@ Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityId
 ## DESCRIPTION
 Adds an additional source to the eDiscovery search.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-list-additionalsources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

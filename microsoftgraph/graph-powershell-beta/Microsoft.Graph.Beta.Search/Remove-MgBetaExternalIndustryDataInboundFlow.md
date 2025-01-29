@@ -30,9 +30,6 @@ Remove-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-If
 ## DESCRIPTION
 Delete an inboundFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

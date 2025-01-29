@@ -36,9 +36,6 @@ Confirm-MgBetaRiskyUserCompromised
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-confirmcompromised-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Confirm User sign in compormised 
 ```powershell

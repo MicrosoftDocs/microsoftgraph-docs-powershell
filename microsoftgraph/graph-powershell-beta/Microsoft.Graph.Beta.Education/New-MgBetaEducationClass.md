@@ -49,9 +49,6 @@ When you use this API to create a class, it will add special properties to the g
 Please note that this API only creates the universal group and does not create a team.
 Microsoft Teams provides a user interface for teachers to create teams for their own classes using the groups created by this API.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-post-classes-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

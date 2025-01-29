@@ -43,10 +43,12 @@ Get-MgBetaSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <Strin
 Retrieve the properties and relationships of an alert object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/alert-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/alert-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

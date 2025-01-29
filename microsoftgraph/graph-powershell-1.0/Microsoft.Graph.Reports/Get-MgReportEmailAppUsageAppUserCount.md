@@ -32,9 +32,6 @@ Get-MgReportEmailAppUsageAppUserCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get the count of unique users per email app.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailappusageappsusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

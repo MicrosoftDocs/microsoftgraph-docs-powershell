@@ -45,9 +45,6 @@ Get-MgReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Get details about SharePoint activity by user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivityuserdetail-permissions.md)]
-
 ## PARAMETERS
 
 ### -Date

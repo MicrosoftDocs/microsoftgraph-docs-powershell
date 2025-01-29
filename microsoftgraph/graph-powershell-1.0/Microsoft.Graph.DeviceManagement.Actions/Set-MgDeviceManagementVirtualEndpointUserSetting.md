@@ -51,9 +51,6 @@ Set-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 ## DESCRIPTION
 Assign a cloudPcUserSetting to user groups.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-assign-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

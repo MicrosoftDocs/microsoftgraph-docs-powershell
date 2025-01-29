@@ -33,9 +33,6 @@ Get-MgBetaVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsId
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinarRegistrationConfiguration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinarregistrationconfiguration-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

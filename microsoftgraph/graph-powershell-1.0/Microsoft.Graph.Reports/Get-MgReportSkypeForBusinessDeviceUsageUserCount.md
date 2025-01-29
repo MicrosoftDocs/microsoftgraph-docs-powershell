@@ -35,9 +35,6 @@ Get-MgReportSkypeForBusinessDeviceUsageUserCount -InputObject <IReportsIdentity>
 Get the usage trends on how many users in your organization have connected using the Skype for Business app.
 You'll also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessdeviceusageusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

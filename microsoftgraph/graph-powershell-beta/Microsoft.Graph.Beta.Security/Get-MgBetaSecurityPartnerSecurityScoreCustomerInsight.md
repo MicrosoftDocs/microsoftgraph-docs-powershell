@@ -38,9 +38,6 @@ Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight -InputObject <ISecurityIde
 ## DESCRIPTION
 Contains customer-specific information for certain requirements.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-customerinsights-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

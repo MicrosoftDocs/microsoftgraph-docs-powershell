@@ -47,9 +47,6 @@ Remove-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete a groupLifecyclePolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -57,9 +57,6 @@ Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Update the properties of an internalDomainFederation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internaldomainfederation-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update the federation settings for a federated domain
 

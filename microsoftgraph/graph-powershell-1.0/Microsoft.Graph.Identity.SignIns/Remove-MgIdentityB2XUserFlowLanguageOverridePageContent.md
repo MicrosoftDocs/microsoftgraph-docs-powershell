@@ -36,9 +36,6 @@ Remove-MgIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentityS
 Deletes the values in an userFlowLanguagePage object.
 You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguagepage-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

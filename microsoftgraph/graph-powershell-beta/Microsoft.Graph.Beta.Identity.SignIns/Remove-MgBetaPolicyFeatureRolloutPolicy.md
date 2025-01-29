@@ -33,9 +33,6 @@ Remove-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Delete a featureRolloutPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

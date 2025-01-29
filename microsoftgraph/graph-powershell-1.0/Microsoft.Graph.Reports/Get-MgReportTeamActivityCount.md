@@ -34,9 +34,6 @@ Get-MgReportTeamActivityCount -InputObject <IReportsIdentity> -OutFile <String>
 Get the number of team activities across Microsoft Teams.
 The activity types are related to meetings and messages.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsteamactivitycounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

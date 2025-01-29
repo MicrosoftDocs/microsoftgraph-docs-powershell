@@ -33,7 +33,12 @@ Read the properties and relationships of an informationProtectionPolicySetting o
 The settings exposed by this API should be used in applications to populate the moreInfoUrl property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-informationprotectionpolicysetting-get-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | InformationProtectionPolicy.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | InformationProtectionPolicy.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

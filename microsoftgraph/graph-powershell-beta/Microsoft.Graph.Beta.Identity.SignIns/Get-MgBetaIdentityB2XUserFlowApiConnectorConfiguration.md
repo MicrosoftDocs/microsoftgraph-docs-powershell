@@ -33,9 +33,6 @@ Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration -InputObject <IIdentitySi
 ## DESCRIPTION
 Get the apiConnectorConfiguration property in a b2xIdentityUserFlow to detail the API connectors enabled for the user flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-get-apiconnectorconfiguration-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

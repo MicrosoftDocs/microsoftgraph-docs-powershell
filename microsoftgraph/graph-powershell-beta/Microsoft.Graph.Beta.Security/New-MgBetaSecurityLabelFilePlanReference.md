@@ -33,9 +33,6 @@ New-MgBetaSecurityLabelFilePlanReference -BodyParameter <Hashtable> [-ResponseHe
 ## DESCRIPTION
 Create a new filePlanReferenceTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-fileplanreferences-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

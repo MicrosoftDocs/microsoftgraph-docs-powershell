@@ -32,9 +32,6 @@ Remove-MgBetaWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity>
 Delete an updatableAssetGroup object.
 When an updatableAssetGroup object, its member updatableAsset objects are not deleted.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

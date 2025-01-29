@@ -40,9 +40,6 @@ Get-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Users that are flagged as at-risk by Microsoft Entra ID Protection.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyusers-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List all risky users
 ```powershell

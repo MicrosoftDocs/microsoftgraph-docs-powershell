@@ -34,9 +34,6 @@ Get-MgReportOneDriveUsageFileCount -InputObject <IReportsIdentity> -OutFile <Str
 Get the total number of files across all sites and how many are active files.
 A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveusagefilecounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

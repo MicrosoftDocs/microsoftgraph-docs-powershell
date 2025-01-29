@@ -39,12 +39,6 @@ Get-MgBetaNetworkAccessConnectivityBranch -InputObject <INetworkAccessIdentity> 
 ## DESCRIPTION
 Retrieve information about a specific branch.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-connectivity-list-branches-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

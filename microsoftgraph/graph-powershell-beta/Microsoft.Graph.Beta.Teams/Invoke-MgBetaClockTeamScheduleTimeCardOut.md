@@ -47,9 +47,6 @@ Invoke-MgBetaClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Clock out to end an open timeCard.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-clockout-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -36,9 +36,6 @@ Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication -InputObject <IId
 Remove or unlink an application from an external identities self-service sign-up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 This disables the authentication experience that's defined by the user flow for the application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationconditionapplication-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -40,12 +40,6 @@ Get-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
 ## DESCRIPTION
 Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentworkflowextension-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-list-accesspackagecustomworkflowextensions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

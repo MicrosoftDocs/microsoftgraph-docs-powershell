@@ -35,7 +35,12 @@ This is applicable for a RBAC application that supports multiple principals and 
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-delete-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Delete a unifiedRoleAssignmentMultiple in an Intune provider

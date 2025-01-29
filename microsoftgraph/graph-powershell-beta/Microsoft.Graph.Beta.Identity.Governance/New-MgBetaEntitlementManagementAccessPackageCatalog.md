@@ -38,9 +38,6 @@ New-MgBetaEntitlementManagementAccessPackageCatalog -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create a new accessPackageCatalog object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-accesspackagecatalogs-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

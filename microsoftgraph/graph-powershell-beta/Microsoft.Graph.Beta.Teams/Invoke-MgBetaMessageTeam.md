@@ -21,6 +21,14 @@ Invoke-MgBetaMessageTeam [-Count] [-ExpandProperty <String[]>] [-Filter <String>
 ## DESCRIPTION
 Invoke function allMessages
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamSettings.Read.Group, TeamSettings.ReadWrite.Group, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Team.ReadBasic.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+
 ## PARAMETERS
 
 ### -Count

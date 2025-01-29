@@ -30,9 +30,6 @@ Remove-MgBetaEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete an accessPackageCatalog.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

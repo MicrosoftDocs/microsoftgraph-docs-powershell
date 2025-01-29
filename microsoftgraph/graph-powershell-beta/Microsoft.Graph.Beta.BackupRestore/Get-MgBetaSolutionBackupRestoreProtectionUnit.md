@@ -41,9 +41,6 @@ Get-MgBetaSolutionBackupRestoreProtectionUnit -InputObject <IBackupRestoreIdenti
 ## DESCRIPTION
 Read the properties and relationships of a protectionUnitBase object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionunitbase-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

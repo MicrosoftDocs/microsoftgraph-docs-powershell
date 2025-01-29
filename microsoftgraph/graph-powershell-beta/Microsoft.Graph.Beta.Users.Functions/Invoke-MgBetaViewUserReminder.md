@@ -33,9 +33,6 @@ Invoke-MgBetaViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-
 ## DESCRIPTION
 Return a list of event reminders in a user calendar within the specified start and end times.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-reminderview-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

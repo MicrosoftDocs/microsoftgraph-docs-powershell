@@ -55,9 +55,6 @@ Update-MgBetaEntitlementManagementConnectedOrganization -InputObject <IIdentityG
 ## DESCRIPTION
 Update a connectedOrganization object to change one or more of its properties.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

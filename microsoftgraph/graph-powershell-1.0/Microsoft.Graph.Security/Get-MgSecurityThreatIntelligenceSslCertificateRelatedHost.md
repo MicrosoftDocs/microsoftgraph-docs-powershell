@@ -41,9 +41,6 @@ Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost -InputObject <ISecurit
 ## DESCRIPTION
 The host resources related with this sslCertificate.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-sslcertificate-list-relatedhosts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

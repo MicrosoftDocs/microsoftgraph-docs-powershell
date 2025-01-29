@@ -49,9 +49,6 @@ Unpublish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeade
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and publicUrl property to null.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-unpublish-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Unpublish-MgBetaBookingBusiness Cmdlet
 ```powershell

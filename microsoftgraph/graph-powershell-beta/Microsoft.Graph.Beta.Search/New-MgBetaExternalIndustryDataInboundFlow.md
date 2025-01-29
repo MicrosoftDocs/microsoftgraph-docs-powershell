@@ -33,9 +33,6 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 ## DESCRIPTION
 Create a new inboundFileFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

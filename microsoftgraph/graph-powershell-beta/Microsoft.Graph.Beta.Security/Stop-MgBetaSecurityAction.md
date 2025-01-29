@@ -30,9 +30,6 @@ Stop-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-ResponseHeadersVari
 ## DESCRIPTION
 Cancel a security operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityaction-cancelsecurityaction-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

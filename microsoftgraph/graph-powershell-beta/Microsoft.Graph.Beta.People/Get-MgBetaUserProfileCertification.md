@@ -37,6 +37,14 @@ Get-MgBetaUserProfileCertification -InputObject <IPeopleIdentity> [-ExpandProper
 ## DESCRIPTION
 Represents the details of certifications associated with a person.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

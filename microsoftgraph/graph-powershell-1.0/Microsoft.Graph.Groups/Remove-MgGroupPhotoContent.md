@@ -46,6 +46,14 @@ Remove-MgGroupPhotoContent -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 The group's profile photo
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ProfilePhoto.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -GroupId

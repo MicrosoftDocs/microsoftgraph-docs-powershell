@@ -41,9 +41,6 @@ Get-MgBetaSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIde
 ## DESCRIPTION
 Represents an end user's notification for an attack simulation training.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-endusernotifications-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

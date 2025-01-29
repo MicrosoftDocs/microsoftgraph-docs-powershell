@@ -34,9 +34,6 @@ Invoke-MgBetaUnfavoriteServiceAnnouncementMessage
 ## DESCRIPTION
 Remove the favorite status of serviceUpdateMessages for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-unfavorite-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

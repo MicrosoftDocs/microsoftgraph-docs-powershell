@@ -56,9 +56,6 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession -InputObject
 ## DESCRIPTION
 Update the properties of a oneDriveForBusinessRestoreSession object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onedriveforbusinessrestoresession-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

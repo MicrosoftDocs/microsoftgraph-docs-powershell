@@ -48,9 +48,6 @@ New-MgBetaTrustFrameworkKeySetKey -InputObject <IIdentitySignInsIdentity>
 Generate a trustFrameworkKey and a secret automatically in the trustFrameworkKeyset.
 The caller doesn't have to provide a secret.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-generatekey-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -42,12 +42,6 @@ Get-MgBetaSecurityLabelCitation -InputObject <ISecurityIdentity> [-ExpandPropert
 ## DESCRIPTION
 Read the properties and relationships of a citationTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-citationtemplate-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-citations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -45,9 +45,6 @@ Get-MgReportYammerGroupActivityDetail -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get details about Yammer groups activity by group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammergroupsactivitydetail-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,9 +33,6 @@ Invoke-MgRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity> [-Res
 ## DESCRIPTION
 Retry the user service provisioning.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-retryserviceprovisioning-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

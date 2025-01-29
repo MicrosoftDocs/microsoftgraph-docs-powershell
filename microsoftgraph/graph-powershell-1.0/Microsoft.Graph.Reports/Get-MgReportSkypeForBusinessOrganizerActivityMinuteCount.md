@@ -35,9 +35,6 @@ Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount -InputObject <IReportsI
 Get usage trends on the length in minutes and type of conference sessions held and organized by users in your organization.
 Types of conference sessions include audio/video, and dial-in and dial-out - Microsoft.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessorganizeractivityminutecounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

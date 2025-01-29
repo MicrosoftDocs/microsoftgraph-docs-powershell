@@ -35,9 +35,6 @@ Get-MgGroupSiteGetByPathApplicableContentTypeForList -InputObject <IGroupsIdenti
 ## DESCRIPTION
 Get site contentTypes that can be added to a list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-getapplicablecontenttypesforlist-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

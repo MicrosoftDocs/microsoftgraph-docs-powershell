@@ -51,7 +51,12 @@ Update-MgTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 Update the properties of the specified tab.This API can be used to configure the content of the tab.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-patch-tabs-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsTab.ReadWriteSelfForTeam, TeamsTab.ReadWriteForTeam,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsTab.ReadWrite.Group, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

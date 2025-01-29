@@ -34,9 +34,6 @@ Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObje
 ## DESCRIPTION
 Delete a delegatedAdminAccessAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminaccessassignment-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

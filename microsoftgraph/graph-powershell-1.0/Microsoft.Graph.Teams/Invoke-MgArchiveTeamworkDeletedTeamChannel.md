@@ -64,9 +64,6 @@ A channel without an owner or that belongs to a group that has no owner, can't b
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can't be archived or unarchived if its team is archived.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-archive-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

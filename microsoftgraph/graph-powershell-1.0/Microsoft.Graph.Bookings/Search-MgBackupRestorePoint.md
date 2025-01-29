@@ -35,9 +35,6 @@ Search-MgBackupRestorePoint
 ## DESCRIPTION
 Search for the restorePoint objects associated with a protectionUnit.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/restorepoint-search-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Search request
 

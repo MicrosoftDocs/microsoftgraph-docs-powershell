@@ -58,12 +58,6 @@ Get-MgBetaPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-Expand
 Get details about a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printtaskdefinition-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-list-taskdefinitions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

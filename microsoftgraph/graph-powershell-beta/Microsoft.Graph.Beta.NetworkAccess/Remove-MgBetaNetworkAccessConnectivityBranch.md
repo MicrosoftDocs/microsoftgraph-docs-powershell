@@ -30,9 +30,6 @@ Remove-MgBetaNetworkAccessConnectivityBranch -InputObject <INetworkAccessIdentit
 ## DESCRIPTION
 Delete a specific branch.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

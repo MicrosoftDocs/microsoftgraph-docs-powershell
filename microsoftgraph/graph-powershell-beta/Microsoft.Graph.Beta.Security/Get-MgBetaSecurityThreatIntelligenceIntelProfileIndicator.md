@@ -42,9 +42,6 @@ Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator -InputObject <ISecurit
 ## DESCRIPTION
 Includes an assemblage of high-fidelity network indicators of compromise.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-intelligenceprofile-list-indicators-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -50,9 +50,6 @@ Update-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of featureRolloutPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -50,9 +50,6 @@ Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -InputObject <IGro
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-extractlabel-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

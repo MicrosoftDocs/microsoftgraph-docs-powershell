@@ -46,9 +46,6 @@ Set-MgBetaTenantRelationshipManagedTenantTag -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Assign the tenant tag to the specified managed tenants.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-assigntag-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

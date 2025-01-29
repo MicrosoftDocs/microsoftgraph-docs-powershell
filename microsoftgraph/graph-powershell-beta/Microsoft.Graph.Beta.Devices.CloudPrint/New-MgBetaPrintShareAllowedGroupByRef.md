@@ -48,9 +48,6 @@ New-MgBetaPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Grant the specified group access to submit print jobs to the associated printerShare.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-post-allowedgroups-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

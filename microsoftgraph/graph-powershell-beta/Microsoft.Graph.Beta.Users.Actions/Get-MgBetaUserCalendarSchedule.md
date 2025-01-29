@@ -51,9 +51,6 @@ Get-MgBetaUserCalendarSchedule -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-getschedule-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

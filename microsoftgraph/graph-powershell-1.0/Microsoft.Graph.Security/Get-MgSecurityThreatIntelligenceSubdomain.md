@@ -41,9 +41,6 @@ Get-MgSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Read the properties and relationships of a subdomain object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-subdomain-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

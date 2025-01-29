@@ -34,9 +34,6 @@ Export-MgReportPartnerBillingUsageBilled
 ## DESCRIPTION
 Export the billed Azure usage data.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-billedusage-export-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

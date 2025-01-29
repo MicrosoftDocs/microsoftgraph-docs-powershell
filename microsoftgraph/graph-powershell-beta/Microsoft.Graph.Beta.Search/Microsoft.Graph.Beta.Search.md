@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Search
-Module Guid: 3c5fa991-fa05-4f82-bd21-1a8f2fae47f7
+Module Guid: 75974075-b582-421e-9be4-109e97b7a3db
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.search/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

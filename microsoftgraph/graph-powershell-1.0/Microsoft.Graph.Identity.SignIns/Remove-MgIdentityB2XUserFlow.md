@@ -33,9 +33,6 @@ Remove-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a b2xIdentityUserFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/b2xidentityuserflow-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

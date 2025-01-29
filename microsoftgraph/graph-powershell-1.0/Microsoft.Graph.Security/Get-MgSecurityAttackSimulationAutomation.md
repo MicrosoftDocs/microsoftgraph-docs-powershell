@@ -42,12 +42,6 @@ Get-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-Expa
 ## DESCRIPTION
 Get an attack simulation automation for a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/simulationautomation-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-simulationautomations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

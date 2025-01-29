@@ -33,9 +33,6 @@ Remove-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-IfMa
 ## DESCRIPTION
 Deletes an identityApiConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

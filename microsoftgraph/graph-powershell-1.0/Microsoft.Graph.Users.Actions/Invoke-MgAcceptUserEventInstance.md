@@ -50,9 +50,6 @@ Invoke-MgAcceptUserEventInstance -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Accept the specified event in a user calendar.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-accept-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

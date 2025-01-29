@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetauploadeducationsynchronizationprofileurl
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Invoke-MgBetaUploadEducationSynchronizationProfileUrl
@@ -35,7 +34,12 @@ The SAS token has a validity of one hour.
 The upload URL is provided only for the CSV data provider.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-uploadurl-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAdministration.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAdministration.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -32,9 +32,6 @@ Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess -InputObject <IReportsI
 ## DESCRIPTION
 Get the number of times users successfully completed interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceactivity-getmetricsformfasigninsuccess-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

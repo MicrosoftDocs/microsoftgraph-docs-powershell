@@ -63,9 +63,6 @@ If an item was renamed twice, it only shows up once, with its latest name.The sa
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delta-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

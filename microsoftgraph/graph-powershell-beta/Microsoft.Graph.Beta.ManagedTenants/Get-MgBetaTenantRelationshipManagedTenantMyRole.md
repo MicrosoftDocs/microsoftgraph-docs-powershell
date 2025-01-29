@@ -38,9 +38,6 @@ Get-MgBetaTenantRelationshipManagedTenantMyRole -InputObject <IManagedTenantsIde
 ## DESCRIPTION
 The collection of role assignments to a signed-in user for a managed tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-myroles-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

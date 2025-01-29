@@ -41,9 +41,6 @@ After that time, they're permanently deleted.
 This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Remove a group
 

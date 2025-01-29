@@ -33,9 +33,6 @@ Get-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceA
 ## DESCRIPTION
 Get the list of attachments associated with a service message.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-list-attachments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a zip file of all attachments in stream for a message
 

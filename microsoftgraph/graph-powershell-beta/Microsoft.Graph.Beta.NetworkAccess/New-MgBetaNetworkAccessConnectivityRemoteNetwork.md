@@ -34,9 +34,6 @@ New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create a new remote network.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-connectivity-post-remotenetworks-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

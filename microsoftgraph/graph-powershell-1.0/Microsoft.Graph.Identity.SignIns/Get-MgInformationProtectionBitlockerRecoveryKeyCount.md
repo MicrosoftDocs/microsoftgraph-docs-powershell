@@ -24,6 +24,14 @@ Get-MgInformationProtectionBitlockerRecoveryKeyCount [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
+
 ## PARAMETERS
 
 ### -Filter

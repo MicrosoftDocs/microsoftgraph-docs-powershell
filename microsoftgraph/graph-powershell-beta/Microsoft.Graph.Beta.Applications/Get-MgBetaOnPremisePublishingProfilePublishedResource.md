@@ -43,9 +43,6 @@ List of existing publishedResource objects.
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

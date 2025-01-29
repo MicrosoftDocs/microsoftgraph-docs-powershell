@@ -39,12 +39,6 @@ Get-MgBetaReportApplicationSignInDetailedSummary -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationsignindetailedsummary-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-applicationsignindetailedsummary-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

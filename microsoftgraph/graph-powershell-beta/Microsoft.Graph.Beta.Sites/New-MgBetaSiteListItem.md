@@ -65,9 +65,6 @@ New-MgBetaSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create a new listItem in a list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-create-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

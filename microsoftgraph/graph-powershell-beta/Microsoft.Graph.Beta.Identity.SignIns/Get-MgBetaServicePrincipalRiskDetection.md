@@ -42,12 +42,6 @@ Get-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Read the properties and relationships of a servicePrincipalRiskDetection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalriskdetection-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityprotectionroot-list-serviceprincipalriskdetections-permissions.md)]
-
 ## EXAMPLES
 ### Example: Get a specific risk detection object
 
@@ -58,7 +52,7 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaServicePrincipalRiskDetection -ServicePrincipalRiskDetectionId $servicePrincipalRiskDetectionId
 
 ```
-This example will### example: get a specific risk detection object
+This example will get a specific risk detection object
 
 
 ## PARAMETERS

@@ -33,9 +33,6 @@ Remove-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-I
 ## DESCRIPTION
 Delete a permissionGrantPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Remove a permission grant policy
 

@@ -48,7 +48,12 @@ Update-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity>
 Create a new customClaimsPolicy object if it doesn't exist, or replace an existing one.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-put-claimspolicy-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## PARAMETERS
 

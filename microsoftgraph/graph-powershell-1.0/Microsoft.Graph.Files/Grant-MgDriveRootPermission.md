@@ -49,9 +49,6 @@ Grant-MgDriveRootPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-grant-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

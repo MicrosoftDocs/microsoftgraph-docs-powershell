@@ -63,9 +63,6 @@ Get-MgSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a hostCookie object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-hostcookie-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

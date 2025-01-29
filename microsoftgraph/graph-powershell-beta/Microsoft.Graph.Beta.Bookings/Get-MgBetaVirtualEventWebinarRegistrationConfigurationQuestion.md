@@ -42,9 +42,6 @@ Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBo
 ## DESCRIPTION
 Registration questions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistrationconfiguration-list-questions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

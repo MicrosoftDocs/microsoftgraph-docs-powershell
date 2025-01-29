@@ -34,9 +34,6 @@ Invoke-MgUnarchiveServiceAnnouncementMessage
 ## DESCRIPTION
 Unarchive a list of serviceUpdateMessages for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-unarchive-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

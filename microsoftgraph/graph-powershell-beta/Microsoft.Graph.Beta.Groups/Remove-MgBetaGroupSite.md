@@ -49,9 +49,6 @@ Remove-MgBetaGroupSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Unfollow a user's site or multiple sites.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-unfollow-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

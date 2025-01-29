@@ -35,9 +35,6 @@ Export-MgBetaReportPartnerBillingUsageUnbilled
 ## DESCRIPTION
 Export unbilled Azure usage data for a specific billing period and currency.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-unbilledusage-export-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

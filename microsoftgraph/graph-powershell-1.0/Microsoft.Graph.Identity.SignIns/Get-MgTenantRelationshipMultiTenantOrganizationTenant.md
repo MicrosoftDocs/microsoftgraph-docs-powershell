@@ -42,12 +42,6 @@ Get-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentitySig
 ## DESCRIPTION
 Get a tenant and its properties in the multitenant organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationmember-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-list-tenants-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

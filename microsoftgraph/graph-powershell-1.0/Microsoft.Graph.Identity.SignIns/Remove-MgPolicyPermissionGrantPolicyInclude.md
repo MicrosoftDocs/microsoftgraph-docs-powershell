@@ -34,9 +34,6 @@ Remove-MgPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Deletes a permissionGrantConditionSet from the includes collection of a permissionGrantPolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-delete-includes-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Remove a permission grant policy include
 

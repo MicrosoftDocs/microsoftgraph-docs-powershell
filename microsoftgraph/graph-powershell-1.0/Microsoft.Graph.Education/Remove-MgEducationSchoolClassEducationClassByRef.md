@@ -33,9 +33,6 @@ Remove-MgEducationSchoolClassEducationClassByRef -InputObject <IEducationIdentit
 ## DESCRIPTION
 Delete a class from a school.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delete-classes-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationClassId

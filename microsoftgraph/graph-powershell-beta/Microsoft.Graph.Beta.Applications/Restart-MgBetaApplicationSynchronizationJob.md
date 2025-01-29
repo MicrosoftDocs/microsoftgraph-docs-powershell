@@ -53,9 +53,6 @@ Restart-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-restart-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

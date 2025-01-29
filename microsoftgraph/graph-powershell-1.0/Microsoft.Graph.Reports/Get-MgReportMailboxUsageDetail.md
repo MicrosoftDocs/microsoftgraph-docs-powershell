@@ -32,9 +32,6 @@ Get-MgReportMailboxUsageDetail -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Get details about mailbox usage.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getmailboxusagedetail-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

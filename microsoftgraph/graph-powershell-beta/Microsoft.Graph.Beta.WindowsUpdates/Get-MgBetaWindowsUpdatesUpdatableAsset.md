@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesupdatableasset
 schema: 2.0.0
-ms.subservice: autopatch
+ms.subservice: windows-autopatch
 ms.subservice: autopatch
 ---
 
@@ -38,12 +38,6 @@ Get-MgBetaWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-
 
 ## DESCRIPTION
 Read the properties and relationships of an updatableAsset object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableasset-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-list-updatableassets-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -42,7 +42,12 @@ Get-MgBetaSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 The collection of column definitions reusable across lists under this site.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-columns-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

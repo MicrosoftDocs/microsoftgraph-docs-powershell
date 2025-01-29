@@ -35,9 +35,6 @@ Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator -InputObject <IAp
 ## DESCRIPTION
 List all operators supported in the scoping filters.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-filteroperators-permissions.md)]
-
 ## PARAMETERS
 
 ### -ApplicationId

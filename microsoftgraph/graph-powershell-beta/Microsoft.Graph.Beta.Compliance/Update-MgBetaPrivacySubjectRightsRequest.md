@@ -69,9 +69,6 @@ Update-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Update the properties of a subjectRightsRequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

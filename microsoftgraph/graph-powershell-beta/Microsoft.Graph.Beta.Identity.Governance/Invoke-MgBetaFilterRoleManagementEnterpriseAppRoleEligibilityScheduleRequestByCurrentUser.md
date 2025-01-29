@@ -33,9 +33,6 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleEligibilityScheduleRequestByCu
 ## DESCRIPTION
 Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties associated with the currently signed in principal object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityschedulerequest-filterbycurrentuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

@@ -55,9 +55,6 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflo
 ## DESCRIPTION
 Update the properties of an existing customAccessPackageWorkflowExtension object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customaccesspackageworkflowextension-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

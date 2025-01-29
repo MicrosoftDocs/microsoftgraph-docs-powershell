@@ -35,9 +35,6 @@ Remove-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentity
 Remove a tenant from a multitenant organization.
 A tenant can be removed in the following scenarios:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-delete-tenants-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -38,9 +38,6 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 ## DESCRIPTION
 Create a new customTaskExtension object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

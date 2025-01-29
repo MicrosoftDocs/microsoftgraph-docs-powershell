@@ -76,9 +76,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerTask -InputObject <IBusinessScenario
 ## DESCRIPTION
 Update the properties of a businessScenarioTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenariotask-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

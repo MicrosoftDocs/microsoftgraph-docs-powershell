@@ -41,9 +41,6 @@ Get-MgAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get provisioning from auditLogs
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/provisioningobjectsummary-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Successful request
 

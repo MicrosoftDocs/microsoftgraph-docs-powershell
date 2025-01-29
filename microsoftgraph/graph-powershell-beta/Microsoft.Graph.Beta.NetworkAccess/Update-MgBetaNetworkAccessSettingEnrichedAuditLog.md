@@ -32,9 +32,6 @@ Update-MgBetaNetworkAccessSettingEnrichedAuditLog
 ## DESCRIPTION
 Update the settings for the enriched audit logs workloads to control the enrichment feature for each partner workload, such as SharePoint, Teams, and Exchange.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-enrichedauditlogs-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

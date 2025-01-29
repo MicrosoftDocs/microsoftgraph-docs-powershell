@@ -42,7 +42,12 @@ Get-MgBetaPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity> [-Ex
 Get documents from print
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printdocument-get-file-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.Read, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

@@ -33,9 +33,6 @@ Remove-MgBetaSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentit
 ## DESCRIPTION
 Delete a serviceApp.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-delete-serviceapps-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

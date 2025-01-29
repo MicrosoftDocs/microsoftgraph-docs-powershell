@@ -39,9 +39,6 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationship
 ## DESCRIPTION
 Create a new delegatedAdminRelationship object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

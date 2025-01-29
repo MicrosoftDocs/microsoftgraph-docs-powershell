@@ -33,9 +33,6 @@ Remove-MgSecurityLabelCitation -InputObject <ISecurityIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete a citationTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-citations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

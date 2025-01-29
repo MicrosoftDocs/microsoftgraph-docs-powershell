@@ -47,9 +47,6 @@ Get-MgReportSkypeForBusinessActivityUserDetail -InputObject <IReportsIdentity> -
 ## DESCRIPTION
 Get details about Skype for Business activity by user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessactivityuserdetail-permissions.md)]
-
 ## PARAMETERS
 
 ### -Date

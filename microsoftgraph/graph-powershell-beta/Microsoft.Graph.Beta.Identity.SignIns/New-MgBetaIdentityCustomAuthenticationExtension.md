@@ -36,9 +36,6 @@ New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Res
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-customauthenticationextensions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create an onTokenIssuanceStartCustomExtension object
 

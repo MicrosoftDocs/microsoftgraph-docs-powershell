@@ -43,9 +43,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurit
 ## DESCRIPTION
 Custodian sources that are included in the eDiscovery search.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-list-custodiansources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

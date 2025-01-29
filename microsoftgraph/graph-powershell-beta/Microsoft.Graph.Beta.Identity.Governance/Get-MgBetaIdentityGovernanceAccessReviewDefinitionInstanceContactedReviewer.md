@@ -50,9 +50,6 @@ While the reviewers and fallbackReviewers properties of the accessReviewSchedule
 Supports $select.
 Read-only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-contactedreviewers-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

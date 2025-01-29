@@ -87,9 +87,6 @@ Get-MgEntitlementManagementCatalogResourceRole -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Get resourceRoles from identityGovernance
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-list-resourceroles-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieving the roles of a resource for a group
 

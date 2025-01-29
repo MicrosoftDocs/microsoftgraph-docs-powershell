@@ -48,9 +48,6 @@ Add-MgBetaGroupSiteContentModelGetByNameToDrive -InputObject <IGroupsIdentity>
 Apply a contentModel to SharePoint document libraries.
 For an existing model that's already trained, this action automatically processes new documents that are added to the SharePoint libraries.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-addtodrive-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

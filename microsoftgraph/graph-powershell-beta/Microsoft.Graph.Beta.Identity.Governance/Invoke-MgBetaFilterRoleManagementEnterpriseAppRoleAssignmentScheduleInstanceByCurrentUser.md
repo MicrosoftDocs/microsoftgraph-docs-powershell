@@ -33,9 +33,6 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceByCu
 ## DESCRIPTION
 Get the instances of active role assignments for the calling principal.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentscheduleinstance-filterbycurrentuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

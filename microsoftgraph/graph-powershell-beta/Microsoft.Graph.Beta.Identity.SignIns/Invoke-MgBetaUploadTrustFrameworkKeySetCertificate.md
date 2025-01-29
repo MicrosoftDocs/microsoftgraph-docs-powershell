@@ -50,9 +50,6 @@ Upload a certificate to a trustFrameworkKeyset.
 The input is a base-64 encoded value of the certificate contents.
 This method returns trustFrameworkKey.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-uploadcertificate-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -47,9 +47,6 @@ Remove-MgSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a term object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

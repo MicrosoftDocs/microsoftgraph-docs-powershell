@@ -41,9 +41,6 @@ Get-MgBetaSecurityThreatIntelligenceHostPassiveDns -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Passive DNS retrieval about this host.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-list-passivedns-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

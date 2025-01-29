@@ -35,9 +35,6 @@ Clear-MgApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-Resp
 Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-unsetverifiedpublisher-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,9 +33,6 @@ Remove-MgSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-IfMat
 ## DESCRIPTION
 Delete a filePlanReferenceTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-fileplanreferences-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

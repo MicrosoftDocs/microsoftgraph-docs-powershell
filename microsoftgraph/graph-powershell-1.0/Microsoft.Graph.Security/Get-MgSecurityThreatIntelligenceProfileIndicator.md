@@ -41,9 +41,6 @@ Get-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Read the properties and relationships of a intelligenceProfileIndicator object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-intelligenceprofileindicator-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

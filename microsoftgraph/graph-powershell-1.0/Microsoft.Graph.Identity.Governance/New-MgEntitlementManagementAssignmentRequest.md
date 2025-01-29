@@ -40,9 +40,6 @@ New-MgEntitlementManagementAssignmentRequest -BodyParameter <IMicrosoftGraphAcce
 In Microsoft Entra Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-assignmentrequests-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Admin requests a direct assignment for a user already in the directory
 

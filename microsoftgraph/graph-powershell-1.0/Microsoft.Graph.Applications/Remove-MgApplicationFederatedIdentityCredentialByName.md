@@ -33,9 +33,6 @@ Remove-MgApplicationFederatedIdentityCredentialByName -InputObject <IApplication
 ## DESCRIPTION
 Delete a federatedIdentityCredential object from an application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -ApplicationId

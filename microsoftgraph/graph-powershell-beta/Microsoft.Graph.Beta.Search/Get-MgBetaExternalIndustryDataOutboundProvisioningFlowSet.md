@@ -38,9 +38,6 @@ Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet -InputObject <ISearchI
 ## DESCRIPTION
 Get outboundProvisioningFlowSets from external
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataroot-list-outboundprovisioningflowsets-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

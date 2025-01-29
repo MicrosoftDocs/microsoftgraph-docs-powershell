@@ -35,9 +35,6 @@ Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 ## DESCRIPTION
 Delete an externalAuthenticationMethodConfiguration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalauthenticationmethodconfiguration-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

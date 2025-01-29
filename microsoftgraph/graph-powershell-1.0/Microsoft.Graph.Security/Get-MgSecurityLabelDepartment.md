@@ -42,12 +42,6 @@ Get-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Read the properties and relationships of a departmentTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-departmenttemplate-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-list-departments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

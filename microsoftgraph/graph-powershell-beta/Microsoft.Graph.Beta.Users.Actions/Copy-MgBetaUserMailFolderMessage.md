@@ -49,9 +49,6 @@ Copy-MgBetaUserMailFolderMessage -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-copy-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

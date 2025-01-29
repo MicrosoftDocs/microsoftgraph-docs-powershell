@@ -33,9 +33,6 @@ Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Reset a caseSettings object to the default values.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycasesettings-resettodefault-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

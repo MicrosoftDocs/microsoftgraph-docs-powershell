@@ -35,9 +35,6 @@ New-MgBetaDirectoryCustomSecurityAttributeDefinition
 ## DESCRIPTION
 Create a new customSecurityAttributeDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-customsecurityattributedefinitions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Add a custom security attribute
 

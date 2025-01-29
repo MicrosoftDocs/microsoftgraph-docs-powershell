@@ -39,9 +39,6 @@ Provide a summary of the workflows processed the most, known as top workflows, f
 Workflow basic details are given, along with run information.
 For information about tasks processed, see insights: topTasksProcessedSummary.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-insights-topworkflowsprocessedsummary-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

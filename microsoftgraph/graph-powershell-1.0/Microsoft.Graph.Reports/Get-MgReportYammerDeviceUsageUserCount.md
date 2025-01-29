@@ -32,9 +32,6 @@ Get-MgReportYammerDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Get the number of daily users by device type.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammerdeviceusageusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

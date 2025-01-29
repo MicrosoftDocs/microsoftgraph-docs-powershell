@@ -32,9 +32,6 @@ Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc
 ## DESCRIPTION
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-bulkrestorecloudpc-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

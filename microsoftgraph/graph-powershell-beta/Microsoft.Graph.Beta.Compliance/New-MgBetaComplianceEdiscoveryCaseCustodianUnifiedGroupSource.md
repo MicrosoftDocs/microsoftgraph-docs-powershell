@@ -48,9 +48,6 @@ New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ICom
 ## DESCRIPTION
 Create a new unifiedGroupSource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-post-unifiedgroupsources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create unifiedGroupSource with group SMTP address
 

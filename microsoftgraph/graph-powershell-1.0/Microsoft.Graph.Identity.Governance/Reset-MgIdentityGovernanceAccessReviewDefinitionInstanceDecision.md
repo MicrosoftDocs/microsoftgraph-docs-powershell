@@ -33,9 +33,6 @@ Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <I
 ## DESCRIPTION
 Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-resetdecisions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

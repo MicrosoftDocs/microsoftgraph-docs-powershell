@@ -41,9 +41,6 @@ Get-MgBetaReportMonthlyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Exp
 ## DESCRIPTION
 Retrieve a list of monthly print usage summaries, grouped by printer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-monthlyprintusagebyprinter-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

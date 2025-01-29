@@ -36,9 +36,6 @@ Remove-MgIdentityAuthenticationEventFlowIncludeApplication -InputObject <IIdenti
 Remove or unlink an application from an authenticationEventsFlow object.
 This disables the customized authentication experience defined for the application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationconditionapplication-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

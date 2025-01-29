@@ -37,9 +37,6 @@ Get-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get entity from programs by key
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

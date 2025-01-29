@@ -42,12 +42,6 @@ Get-MgBetaSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Read the properties and relationships of a intelligenceProfile object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-intelligenceprofile-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-threatintelligence-list-intelprofiles-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

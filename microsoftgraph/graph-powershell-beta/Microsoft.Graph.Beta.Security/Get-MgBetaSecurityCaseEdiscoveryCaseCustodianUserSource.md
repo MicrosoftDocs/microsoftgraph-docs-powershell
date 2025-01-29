@@ -45,9 +45,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityI
 Data source entity for a custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-list-usersources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

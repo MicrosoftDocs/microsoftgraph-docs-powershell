@@ -44,9 +44,6 @@ Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
 A definition that doesn't recur will have exactly one instance.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewhistorydefinition-list-instances-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,9 +33,6 @@ Publish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Invoke action publish
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -32,9 +32,6 @@ Get-MgBetaUserAuthenticationSignInPreference -InputObject <IIdentitySignInsIdent
 Read the properties of a user's authentication states.
 Use this API to retrieve the following information:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

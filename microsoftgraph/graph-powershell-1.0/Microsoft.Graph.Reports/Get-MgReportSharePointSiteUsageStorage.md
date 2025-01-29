@@ -32,9 +32,6 @@ Get-MgReportSharePointSiteUsageStorage -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Get the trend of storage allocated and consumed during the reporting period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagestorage-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

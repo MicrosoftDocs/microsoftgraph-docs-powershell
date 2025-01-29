@@ -67,9 +67,6 @@ Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 ## DESCRIPTION
 Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update a decision on an accessReviewInstance
 

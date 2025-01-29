@@ -43,9 +43,6 @@ Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore SharePoint sites.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointrestoresession-list-siterestoreartifacts-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

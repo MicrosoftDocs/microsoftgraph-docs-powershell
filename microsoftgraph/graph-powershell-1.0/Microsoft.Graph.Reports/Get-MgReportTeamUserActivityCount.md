@@ -34,9 +34,6 @@ Get-MgReportTeamUserActivityCount -InputObject <IReportsIdentity> -OutFile <Stri
 Get the number of Microsoft Teams activities by activity type.
 The activities are performed by Microsoft Teams licensed users.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsuseractivitycounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

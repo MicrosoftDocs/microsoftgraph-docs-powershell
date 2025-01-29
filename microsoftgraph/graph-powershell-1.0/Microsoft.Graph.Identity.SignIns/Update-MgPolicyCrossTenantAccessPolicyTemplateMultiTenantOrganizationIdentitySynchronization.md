@@ -35,9 +35,6 @@ Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySyn
 ## DESCRIPTION
 Update the cross-tenant access policy template with user synchronization settings for a multitenant organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationidentitysyncpolicytemplate-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,9 +33,6 @@ Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -Inp
 Reset a provisioningFlow.
 This action reprovisions all current data as if it were the initial run, and clears out the existing errors associated with the flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-provisioningflow-reset-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

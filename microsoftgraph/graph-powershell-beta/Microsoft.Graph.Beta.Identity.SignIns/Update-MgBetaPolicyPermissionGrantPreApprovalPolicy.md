@@ -46,9 +46,6 @@ Update-MgBetaPolicyPermissionGrantPreApprovalPolicy -InputObject <IIdentitySignI
 ## DESCRIPTION
 Update the properties of a permissionGrantPreApprovalPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpreapprovalpolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

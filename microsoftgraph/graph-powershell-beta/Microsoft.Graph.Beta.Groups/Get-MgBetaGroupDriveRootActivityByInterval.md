@@ -38,9 +38,6 @@ Get-MgBetaGroupDriveRootActivityByInterval -InputObject <IGroupsIdentity> [-Coun
 Get itemActivityStats for the activities that took place under this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemactivity-getbyinterval-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

@@ -37,6 +37,14 @@ Get-MgBetaDeviceManagementDataSharingConsent -InputObject <IDeviceManagementIden
 ## DESCRIPTION
 Data sharing consents.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+
 ## PARAMETERS
 
 ### -All

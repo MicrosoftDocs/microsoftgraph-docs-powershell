@@ -30,9 +30,6 @@ Get-MgBetaReportMicrosoft365CopilotUserCountTrend -InputObject <IReportsIdentity
 ## DESCRIPTION
 Get the trend in the daily number of active and enabled users of Microsoft 365 Copilot for a specified time period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getmicrosoft365copilotusercounttrend-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: CSV output
 

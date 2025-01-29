@@ -38,9 +38,6 @@ Create a new profileCardProperty for an organization.
 The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-post-profilecardproperties-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -65,9 +65,6 @@ Update-MgBetaEducationClass -InputObject <IEducationIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of a class.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -43,10 +43,12 @@ Get-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 Get a conversationMember from a channel.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-members-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-list-members-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMember.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMember.Read.All, TeamMember.Read.Group, ChannelMember.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

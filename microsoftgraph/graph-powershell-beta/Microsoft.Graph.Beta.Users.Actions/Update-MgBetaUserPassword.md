@@ -53,9 +53,6 @@ Update-MgBetaUserPassword -InputObject <IUsersActionsIdentity>
 Update the signed-in user's password.
 Any user can update their password without belonging to any administrator role.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-changepassword-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

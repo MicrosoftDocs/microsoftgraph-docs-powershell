@@ -46,7 +46,12 @@ Otherwise, the submission status changes to returned.
 For more information about how to use this header, see the Examples section.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-excuse-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Request with optional Prefer header

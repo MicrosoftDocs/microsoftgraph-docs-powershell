@@ -56,9 +56,6 @@ Get-MgBetaCommunicationOnlineMeeting [-ResponseHeadersVariable <String>]
 ## DESCRIPTION
 Get onlineMeetings from communications
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

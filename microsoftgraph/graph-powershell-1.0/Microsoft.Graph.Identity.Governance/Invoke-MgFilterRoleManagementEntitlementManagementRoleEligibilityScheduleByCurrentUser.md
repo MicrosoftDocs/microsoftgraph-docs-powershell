@@ -36,9 +36,6 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleByCurre
 ## DESCRIPTION
 Retrieve the schedules for role eligibilities for which the signed-in user is the principal.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedule-filterbycurrentuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

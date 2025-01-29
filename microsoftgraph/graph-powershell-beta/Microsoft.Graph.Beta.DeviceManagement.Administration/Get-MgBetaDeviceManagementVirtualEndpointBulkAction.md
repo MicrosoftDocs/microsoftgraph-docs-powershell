@@ -39,12 +39,6 @@ Get-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceManagem
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcBulkAction object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcbulkaction-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-bulkactions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

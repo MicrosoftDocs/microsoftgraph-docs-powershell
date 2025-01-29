@@ -47,9 +47,6 @@ New-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -Body
 ## DESCRIPTION
 Grant the specified user access to submit print jobs to the associated printerShare.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-post-allowedusers-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -32,9 +32,6 @@ Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult -InputObject <IUsersFunctio
 Check the Cloud PC-specified remote action results for a Cloud PC device.
 Cloud PC supports reprovision and resize remote actions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcremoteactionresults-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

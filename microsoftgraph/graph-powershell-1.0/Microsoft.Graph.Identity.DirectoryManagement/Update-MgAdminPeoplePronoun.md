@@ -35,9 +35,6 @@ Update-MgAdminPeoplePronoun -BodyParameter <IMicrosoftGraphPronounsSettings>
 Update the properties of a pronounsSettings object in an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/pronounssettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

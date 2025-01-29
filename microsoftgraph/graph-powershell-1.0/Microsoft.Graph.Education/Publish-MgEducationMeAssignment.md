@@ -45,9 +45,6 @@ Calling this API creates educationSubmission objects and displays the assignment
 The status of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-publish-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

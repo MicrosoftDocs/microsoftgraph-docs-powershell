@@ -51,9 +51,6 @@ Invoke-MgMarkUserChatUnreadForUser -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Mark a chat as unread for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-markchatunreadforuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

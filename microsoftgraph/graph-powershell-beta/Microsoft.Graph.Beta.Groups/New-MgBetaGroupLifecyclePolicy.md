@@ -64,9 +64,6 @@ New-MgBetaGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePoli
 ## DESCRIPTION
 Creates a new groupLifecyclePolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-post-grouplifecyclepolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -34,9 +34,6 @@ Export-MgReportPartnerBillingReconciliationBilled
 ## DESCRIPTION
 Export the billed invoice reconciliation data.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -35,9 +35,6 @@ Remove-MgVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-IfMatc
 Delete a virtualEventPresenter from a virtual event.
 Currently the supported virtual event types are:- virtualEventTownhall- virtualEventWebinar
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventpresenter-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

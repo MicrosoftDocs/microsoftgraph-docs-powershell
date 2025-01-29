@@ -33,9 +33,6 @@ Get-MgVirtualEventWebinarRegistrationByUserId -InputObject <IBookingsIdentity> [
 ## DESCRIPTION
 Get the properties and relationships of a virtualEventRegistration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistration-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -ExpandProperty

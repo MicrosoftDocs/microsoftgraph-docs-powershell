@@ -52,9 +52,6 @@ New-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a timeCard instance in a schedule.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

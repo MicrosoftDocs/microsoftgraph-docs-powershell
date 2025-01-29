@@ -49,7 +49,12 @@ New-MgBetaChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 Add a conversationMember to a chat.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-post-members-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMember.ReadWrite, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMember.ReadWrite.All, Chat.ReadWrite.All, Chat.Manage.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Add a single member to a chat and specify the timespan for the conversation history

@@ -40,6 +40,14 @@ Get-MgBetaDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -All

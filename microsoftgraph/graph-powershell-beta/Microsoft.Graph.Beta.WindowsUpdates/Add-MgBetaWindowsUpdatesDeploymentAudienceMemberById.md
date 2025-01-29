@@ -50,9 +50,6 @@ Add-MgBetaWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUpdat
 Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-addmembersbyid-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

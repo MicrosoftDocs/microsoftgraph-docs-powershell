@@ -58,9 +58,6 @@ Update-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIde
 ## DESCRIPTION
 Update the properties of a trainingCampaign object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trainingcampaign-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

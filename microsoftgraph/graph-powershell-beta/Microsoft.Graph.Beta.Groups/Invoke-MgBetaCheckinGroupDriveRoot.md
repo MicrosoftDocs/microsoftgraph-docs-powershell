@@ -49,9 +49,6 @@ Invoke-MgBetaCheckinGroupDriveRoot -InputObject <IGroupsIdentity> [-ResponseHead
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

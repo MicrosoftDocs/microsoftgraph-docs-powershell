@@ -40,9 +40,6 @@ Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConf
 ## DESCRIPTION
 Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationpartnerconfigurationtemplate-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

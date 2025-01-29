@@ -40,9 +40,6 @@ Before you call this API, call List protection policies to initialize the data s
 Data store initialization takes about 5 minutes.
 If you call this API before the data store is initialized, the call results in an error.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-enable-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

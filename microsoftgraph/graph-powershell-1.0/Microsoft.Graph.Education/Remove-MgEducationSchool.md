@@ -33,9 +33,6 @@ Remove-MgEducationSchool -InputObject <IEducationIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a school.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

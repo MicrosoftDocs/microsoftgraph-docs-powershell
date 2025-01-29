@@ -31,9 +31,6 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <I
 ## DESCRIPTION
 Delete a unifiedGroupSource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-unifiedgroupsource-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

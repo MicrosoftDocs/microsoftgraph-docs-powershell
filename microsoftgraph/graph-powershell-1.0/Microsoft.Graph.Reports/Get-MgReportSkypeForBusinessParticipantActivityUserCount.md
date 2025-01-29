@@ -35,9 +35,6 @@ Get-MgReportSkypeForBusinessParticipantActivityUserCount -InputObject <IReportsI
 Get usage trends on the number of unique users and type of conference sessions that users from your organization participated in.
 Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - third party.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessparticipantactivityusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -41,9 +41,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGoverna
 ## DESCRIPTION
 The tasks in the workflow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-list-task-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

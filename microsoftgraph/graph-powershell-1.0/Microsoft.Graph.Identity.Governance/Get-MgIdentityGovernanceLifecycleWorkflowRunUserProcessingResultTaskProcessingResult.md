@@ -44,9 +44,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingRe
 ## DESCRIPTION
 The associated individual task execution.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-userprocessingresult-list-taskprocessingresults-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the task processing results for a user processing result in a run report for a workflow
 

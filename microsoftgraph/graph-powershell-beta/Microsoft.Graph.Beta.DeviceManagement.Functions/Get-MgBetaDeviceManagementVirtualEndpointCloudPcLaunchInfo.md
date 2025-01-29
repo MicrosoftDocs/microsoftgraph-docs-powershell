@@ -30,9 +30,6 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcLaunchInfo -InputObject <IDevice
 ## DESCRIPTION
 Get the cloudPCLaunchInfo for the signed-in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpclaunchinfo-permissions.md)]
-
 ## PARAMETERS
 
 ### -CloudPcId

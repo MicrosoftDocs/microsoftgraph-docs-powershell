@@ -30,9 +30,6 @@ Remove-MgBetaTrustFrameworkPolicy -InputObject <IIdentitySignInsIdentity> [-IfMa
 ## DESCRIPTION
 Delete an existing trustFrameworkPolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkpolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

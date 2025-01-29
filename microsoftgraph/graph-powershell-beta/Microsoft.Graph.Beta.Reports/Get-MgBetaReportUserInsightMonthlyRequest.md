@@ -38,9 +38,6 @@ Get-MgBetaReportUserInsightMonthlyRequest -InputObject <IReportsIdentity> [-Expa
 ## DESCRIPTION
 Insights for all user requests on apps registered in the tenant for a specified period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-requests-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

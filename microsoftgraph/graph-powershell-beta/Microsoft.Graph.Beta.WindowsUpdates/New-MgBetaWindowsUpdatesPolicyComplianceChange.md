@@ -47,9 +47,6 @@ New-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIden
 ## DESCRIPTION
 Create a new contentApproval object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-post-compliancechanges-contentapproval-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

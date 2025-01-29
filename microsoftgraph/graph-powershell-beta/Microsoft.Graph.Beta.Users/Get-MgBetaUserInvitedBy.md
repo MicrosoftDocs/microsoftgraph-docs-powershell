@@ -30,9 +30,6 @@ Get-MgBetaUserInvitedBy -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get the user or servicePrincipal that invited the specified user into the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-invitedby-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

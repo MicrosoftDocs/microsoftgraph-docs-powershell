@@ -42,9 +42,6 @@ Get-MgRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity> [-Exp
 ## DESCRIPTION
 Represents the risk history of Microsoft Entra service principals.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyserviceprincipal-list-history-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

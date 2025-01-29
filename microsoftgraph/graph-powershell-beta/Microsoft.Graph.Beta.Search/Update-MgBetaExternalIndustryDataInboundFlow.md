@@ -50,9 +50,6 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of an inboundApiFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundapiflow-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

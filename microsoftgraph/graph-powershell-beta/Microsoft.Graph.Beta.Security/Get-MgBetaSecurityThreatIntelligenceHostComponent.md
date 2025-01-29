@@ -63,9 +63,6 @@ Get-MgBetaSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Read the properties and relationships of a hostComponent object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostcomponent-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

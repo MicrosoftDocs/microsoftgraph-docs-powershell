@@ -66,6 +66,14 @@ All the services offered by this business.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingBusinessService Cmdlet
 ```powershell

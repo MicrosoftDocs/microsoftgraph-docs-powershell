@@ -46,9 +46,6 @@ Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of a sourceSystemDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

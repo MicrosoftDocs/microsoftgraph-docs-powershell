@@ -3,8 +3,6 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofile
 schema: 2.0.0
-ms.subservice: education
-ms.subservice: education
 ---
 
 # Get-MgBetaEducationSynchronizationProfile
@@ -40,10 +38,12 @@ Get-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Ex
 Retrieve a school data synchronization profile in the tenant based on the identifier.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAdministration.Read.All, EduAdministration.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

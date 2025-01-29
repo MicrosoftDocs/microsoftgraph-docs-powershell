@@ -33,9 +33,6 @@ Remove-MgTeamMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Remove a conversationMember from a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-delete-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

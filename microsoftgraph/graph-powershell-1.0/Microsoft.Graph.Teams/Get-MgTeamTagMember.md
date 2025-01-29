@@ -43,10 +43,12 @@ Get-MgTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [
 Get the properties and relationships of a member of a standard tag in a team.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkTag.Read, TeamworkTag.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkTag.Read.All, TeamworkTag.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -36,9 +36,6 @@ Update-MgTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Update the properties of a multitenant organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

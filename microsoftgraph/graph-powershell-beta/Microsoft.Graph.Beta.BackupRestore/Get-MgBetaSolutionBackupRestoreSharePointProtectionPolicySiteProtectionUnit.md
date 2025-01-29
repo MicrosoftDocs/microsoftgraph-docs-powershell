@@ -44,9 +44,6 @@ Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit
 ## DESCRIPTION
 The protection units (sites) that are protected under the site protection policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

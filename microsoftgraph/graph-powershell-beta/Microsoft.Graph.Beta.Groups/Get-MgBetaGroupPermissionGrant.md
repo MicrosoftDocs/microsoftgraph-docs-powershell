@@ -43,9 +43,6 @@ Get-MgBetaGroupPermissionGrant -InputObject <IGroupsIdentity> [-ExpandProperty <
 The permissions granted for a group to a specific application.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-permissiongrants-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

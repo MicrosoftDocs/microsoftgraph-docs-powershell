@@ -40,9 +40,6 @@ Get-MgBetaNetworkAccessConnectivityBranchForwardingProfile -InputObject <INetwor
 Each forwarding profile associated with a branch site is specified.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-list-forwardingprofiles-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -34,9 +34,6 @@ Remove-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIden
 ## DESCRIPTION
 Remove a accessPackageResourceRoleScope from an accessPackage list of resource role scopes.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-delete-resourcerolescopes-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

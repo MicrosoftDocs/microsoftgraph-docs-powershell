@@ -42,9 +42,6 @@ Get-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact -InputOb
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore Exchange mailboxes.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/exchangerestoresession-list-mailboxrestoreartifacts-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

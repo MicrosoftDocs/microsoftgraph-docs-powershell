@@ -33,9 +33,6 @@ Remove-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Deletes an authenticationEventListener object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventlistener-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

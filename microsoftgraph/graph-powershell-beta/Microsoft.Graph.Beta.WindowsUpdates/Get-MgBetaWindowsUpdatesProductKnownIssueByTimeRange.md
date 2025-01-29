@@ -32,9 +32,6 @@ Get-MgBetaWindowsUpdatesProductKnownIssueByTimeRange -InputObject <IWindowsUpdat
 ## DESCRIPTION
 Get known issues related to a particular product based on a specified timeframe in the past.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-product-getknownissuesbytimerange-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

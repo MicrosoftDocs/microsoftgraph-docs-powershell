@@ -48,9 +48,6 @@ Update-MgBetaTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the properties of a day note.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/daynote-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

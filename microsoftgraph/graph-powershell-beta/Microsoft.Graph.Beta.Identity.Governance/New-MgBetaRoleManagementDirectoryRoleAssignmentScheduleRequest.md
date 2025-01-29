@@ -49,7 +49,12 @@ To run this request, the calling user must have multifactor authentication (MFA)
 See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roleassignmentschedulerequests-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleEligibilitySchedule.Remove.Directory, RoleAssignmentSchedule.Remove.Directory,  |
 
 ## EXAMPLES
 ### Example 1: Admin assigning a directory role to a principal

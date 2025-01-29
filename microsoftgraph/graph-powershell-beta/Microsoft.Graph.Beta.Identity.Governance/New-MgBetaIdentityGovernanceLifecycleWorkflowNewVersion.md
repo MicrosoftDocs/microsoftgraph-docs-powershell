@@ -51,9 +51,6 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion -InputObject <IIdentityG
 ## DESCRIPTION
 Create a new version of the workflow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-createnewversion-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a new version of a joiner workflow with time based trigger
 

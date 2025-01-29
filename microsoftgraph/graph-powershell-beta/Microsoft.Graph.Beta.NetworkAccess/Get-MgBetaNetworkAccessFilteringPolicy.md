@@ -39,12 +39,6 @@ Get-MgBetaNetworkAccessFilteringPolicy -InputObject <INetworkAccessIdentity> [-E
 ## DESCRIPTION
 Get a filteringPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-filteringpolicy-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-networkaccessroot-list-filteringpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

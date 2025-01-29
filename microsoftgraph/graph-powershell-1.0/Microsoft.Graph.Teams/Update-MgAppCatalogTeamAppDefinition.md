@@ -59,9 +59,6 @@ Publish an app to the Microsoft Teams app catalog.Specifically, this API publish
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsapp-publish-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

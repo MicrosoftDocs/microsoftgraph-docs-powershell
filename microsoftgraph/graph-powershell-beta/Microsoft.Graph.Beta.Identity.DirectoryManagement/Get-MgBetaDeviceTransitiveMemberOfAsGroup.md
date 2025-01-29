@@ -46,12 +46,6 @@ Get-MgBetaDeviceTransitiveMemberOfAsGroup -InputObject <IIdentityDirectoryManage
 Get groups and administrative units that the device is a member of.
 This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-transitivememberof-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-transitivememberof-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

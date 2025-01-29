@@ -35,9 +35,6 @@ Invoke-MgRecentDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <St
 ## DESCRIPTION
 List a set of items that have been recently used by the signed in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-recent-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

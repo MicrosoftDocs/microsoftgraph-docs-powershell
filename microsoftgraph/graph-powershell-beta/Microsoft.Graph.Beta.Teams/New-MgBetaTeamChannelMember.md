@@ -51,9 +51,6 @@ New-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-post-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Add a member to a private channel
 

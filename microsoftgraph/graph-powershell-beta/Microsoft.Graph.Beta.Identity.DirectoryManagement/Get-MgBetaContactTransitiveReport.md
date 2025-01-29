@@ -40,9 +40,6 @@ Get-MgBetaContactTransitiveReport -InputObject <IIdentityDirectoryManagementIden
 The transitive reports for a contact.
 Read-only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-transitivereports-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

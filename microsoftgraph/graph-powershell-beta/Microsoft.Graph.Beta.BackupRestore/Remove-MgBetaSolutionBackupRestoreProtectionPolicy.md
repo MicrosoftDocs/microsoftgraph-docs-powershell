@@ -35,9 +35,6 @@ Remove-MgBetaSolutionBackupRestoreProtectionPolicy -InputObject <IBackupRestoreI
 Delete a protection policy.
 Read the properties and relationships of a protectionPolicyBase object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

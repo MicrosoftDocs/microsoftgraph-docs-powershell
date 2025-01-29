@@ -56,9 +56,6 @@ New-MgSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphBase
 ## DESCRIPTION
 Create a new sitePage in the site pages list in a site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sitepage-create-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

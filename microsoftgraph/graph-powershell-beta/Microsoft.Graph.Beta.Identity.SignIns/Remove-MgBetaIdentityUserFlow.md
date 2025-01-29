@@ -30,9 +30,6 @@ Remove-MgBetaIdentityUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete an existing userFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflow-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

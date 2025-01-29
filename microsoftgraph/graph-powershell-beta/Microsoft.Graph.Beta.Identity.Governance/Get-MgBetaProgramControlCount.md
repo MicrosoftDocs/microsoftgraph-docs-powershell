@@ -49,6 +49,14 @@ Get-MgBetaProgramControlCount -InputObject <IIdentityGovernanceIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ProgramControl.Read.All, ProgramControl.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Filter

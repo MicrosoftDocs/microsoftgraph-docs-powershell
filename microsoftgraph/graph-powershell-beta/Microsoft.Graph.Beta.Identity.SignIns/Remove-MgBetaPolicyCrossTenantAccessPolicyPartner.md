@@ -35,9 +35,6 @@ Remove-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignIns
 Delete a partner-specific configuration in a cross-tenant access policy.
 If a configuration includes a user synchronization policy, you must first delete the user synchronization policy before you can delete the partner-specific configuration.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicyconfigurationpartner-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

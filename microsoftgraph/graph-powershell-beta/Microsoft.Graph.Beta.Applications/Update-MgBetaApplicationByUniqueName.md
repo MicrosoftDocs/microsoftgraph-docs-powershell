@@ -101,9 +101,6 @@ Update-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-upsert-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a new application if it doesn't exist
 

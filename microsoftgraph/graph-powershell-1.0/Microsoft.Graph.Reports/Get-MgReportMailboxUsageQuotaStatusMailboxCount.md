@@ -33,9 +33,6 @@ Get-MgReportMailboxUsageQuotaStatusMailboxCount -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Get the count of user mailboxes in each quota category.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getmailboxusagequotastatusmailboxcounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

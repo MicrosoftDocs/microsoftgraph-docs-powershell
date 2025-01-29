@@ -41,9 +41,6 @@ Get-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-Expand
 ## DESCRIPTION
 Get a user's presence information.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the presence information of another user
 

@@ -30,9 +30,6 @@ Remove-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIde
 ## DESCRIPTION
 Delete a tenantTag object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

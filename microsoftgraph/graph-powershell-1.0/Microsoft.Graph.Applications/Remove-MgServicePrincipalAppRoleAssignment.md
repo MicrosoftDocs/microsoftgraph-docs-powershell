@@ -37,9 +37,6 @@ Deletes an appRoleAssignment that a service principal has been granted.
 App roles which are assigned to service principals are also known as application permissions.
 Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-approleassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Remove the application role assignment for a service principal
 

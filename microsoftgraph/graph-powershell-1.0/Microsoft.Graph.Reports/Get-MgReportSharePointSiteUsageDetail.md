@@ -45,9 +45,6 @@ Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get details about SharePoint site usage.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagedetail-permissions.md)]
-
 ## PARAMETERS
 
 ### -Date

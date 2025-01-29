@@ -34,9 +34,6 @@ Get-MgBetaReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [
 ## DESCRIPTION
 Get a list of archived print jobs for a particular group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reports-getgrouparchivedprintjobs-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

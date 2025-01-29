@@ -65,9 +65,6 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of an alert object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

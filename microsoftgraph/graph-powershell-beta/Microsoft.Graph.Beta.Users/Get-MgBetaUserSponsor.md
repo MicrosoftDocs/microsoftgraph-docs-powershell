@@ -45,9 +45,6 @@ The users and groups responsible for this guest user's privileges in the tenant 
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-sponsors-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -51,9 +51,6 @@ Add-MgBetaTeamMember -InputObject <ITeamsIdentity>
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationmembers-add-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Add members in bulk to a team
 

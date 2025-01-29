@@ -63,9 +63,6 @@ Get-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 All sets under the group in a term \[store\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-list-sets-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

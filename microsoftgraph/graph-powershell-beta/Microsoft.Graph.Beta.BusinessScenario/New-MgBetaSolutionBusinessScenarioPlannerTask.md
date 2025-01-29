@@ -76,9 +76,6 @@ New-MgBetaSolutionBusinessScenarioPlannerTask -InputObject <IBusinessScenarioIde
 ## DESCRIPTION
 Create a new businessScenarioTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-post-tasks-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

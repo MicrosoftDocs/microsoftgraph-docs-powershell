@@ -42,9 +42,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult -InputObjec
 ## DESCRIPTION
 The related taskProcessingResults.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-run-list-taskprocessingresults-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the task processing results in a run report from a workflow
 

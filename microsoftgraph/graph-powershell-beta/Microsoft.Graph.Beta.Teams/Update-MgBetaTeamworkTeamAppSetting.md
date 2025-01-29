@@ -34,9 +34,6 @@ Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSetti
 ## DESCRIPTION
 Update the properties of a teamsAppSettings object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappsettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
 

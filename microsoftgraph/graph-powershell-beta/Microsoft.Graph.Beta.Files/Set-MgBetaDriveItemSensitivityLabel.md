@@ -50,6 +50,14 @@ Set-MgBetaDriveItemSensitivityLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

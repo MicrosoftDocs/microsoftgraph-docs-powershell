@@ -41,9 +41,6 @@ Get-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Represents details about attack simulation trainings.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-trainings-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

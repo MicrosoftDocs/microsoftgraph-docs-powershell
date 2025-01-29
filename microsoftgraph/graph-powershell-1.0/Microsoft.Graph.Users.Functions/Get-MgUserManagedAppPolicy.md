@@ -34,6 +34,14 @@ Get-MgUserManagedAppPolicy -InputObject <IUsersFunctionsIdentity> [-Count] [-Exp
 ## DESCRIPTION
 Gets app restrictions for a given user.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -38,9 +38,6 @@ Get-MgBetaTrustFrameworkKeySetKeyV2 -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a trustFrameworkKeyv2 object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkey_v2-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

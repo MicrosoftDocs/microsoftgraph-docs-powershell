@@ -35,9 +35,6 @@ Remove-MgBetaEducationClass -InputObject <IEducationIdentity> [-IfMatch <String>
 Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

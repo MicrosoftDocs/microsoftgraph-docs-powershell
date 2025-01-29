@@ -53,9 +53,6 @@ This enables the authentication experience defined by the user flow to be enable
 An application can only be linked to one user flow.
 The app must have an associated service principal in the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationconditionsapplications-post-includeapplications-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

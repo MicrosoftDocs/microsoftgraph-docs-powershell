@@ -32,6 +32,14 @@ Get-MgBetaUserAppRoleAssignmentCount -InputObject <IApplicationsIdentity> [-Filt
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

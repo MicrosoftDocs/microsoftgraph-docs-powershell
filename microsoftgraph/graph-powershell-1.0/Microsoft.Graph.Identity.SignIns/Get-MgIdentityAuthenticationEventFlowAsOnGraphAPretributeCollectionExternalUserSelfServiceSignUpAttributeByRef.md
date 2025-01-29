@@ -28,9 +28,6 @@ Get-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserS
 Get an identityUserFlowAttribute collection associated with an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object.
 These attributes are collected from the user during the authentication experience defined by the user flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onattributecollectionexternalusersselfservicesignup-list-attributes-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

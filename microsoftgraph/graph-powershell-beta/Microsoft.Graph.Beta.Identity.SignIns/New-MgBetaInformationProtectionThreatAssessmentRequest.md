@@ -38,9 +38,6 @@ New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosof
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a mail assessment request
 

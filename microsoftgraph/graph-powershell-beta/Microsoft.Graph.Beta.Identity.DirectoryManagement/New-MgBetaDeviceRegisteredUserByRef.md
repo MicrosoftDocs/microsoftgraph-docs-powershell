@@ -48,9 +48,6 @@ New-MgBetaDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Add a registered user for the device.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-registeredusers-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -47,6 +47,14 @@ Initialize-MgBetaDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManage
 ## DESCRIPTION
 Activate eSIM on the device.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

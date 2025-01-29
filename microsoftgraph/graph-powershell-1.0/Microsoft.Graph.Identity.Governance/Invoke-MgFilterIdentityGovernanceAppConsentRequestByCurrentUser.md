@@ -36,7 +36,12 @@ Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser -InputObject <II
 Retrieve a collection of appConsentRequest objects for which the current user is the reviewer and the status of the userConsentRequest for accessing the specified app is InProgress.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appconsentrequest-filterbycurrentuser-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -53,9 +53,6 @@ New-MgApplicationSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-provisionondemand-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -38,9 +38,6 @@ Get-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity> 
 ## DESCRIPTION
 Represents the usage rights a device has been granted.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-usagerights-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get all usage rights for a device
 

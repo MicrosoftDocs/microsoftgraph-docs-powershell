@@ -52,9 +52,6 @@ Update-MgBetaDirectoryPendingExternalUserProfile -InputObject <IIdentityDirector
 ## DESCRIPTION
 Update the properties of a pendingExternalUserProfile object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pendingexternaluserprofile-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

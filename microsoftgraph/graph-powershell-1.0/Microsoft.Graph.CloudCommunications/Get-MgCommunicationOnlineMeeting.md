@@ -56,9 +56,6 @@ Get-MgCommunicationOnlineMeeting [-ResponseHeadersVariable <String>]
 ## DESCRIPTION
 Get onlineMeetings from communications
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve an online meeting by videoTeleconferenceId
 

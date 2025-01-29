@@ -33,9 +33,6 @@ Remove-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a departmentTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-departments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

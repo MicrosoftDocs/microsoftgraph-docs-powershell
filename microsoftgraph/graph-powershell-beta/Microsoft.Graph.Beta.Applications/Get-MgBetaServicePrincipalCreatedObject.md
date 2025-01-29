@@ -45,9 +45,6 @@ Directory objects created by this service principal.
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-createdobjects-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

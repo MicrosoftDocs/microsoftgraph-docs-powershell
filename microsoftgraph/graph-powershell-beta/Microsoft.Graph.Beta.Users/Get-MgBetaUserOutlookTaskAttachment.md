@@ -42,9 +42,6 @@ The collection of fileAttachment, itemAttachment, and referenceAttachment attach
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-list-attachments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -44,9 +44,6 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 ## DESCRIPTION
 In Microsoft Entra entitlement management, create a new accessPackageAssignmentPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-accesspackageassignmentpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a direct assignment policy
 

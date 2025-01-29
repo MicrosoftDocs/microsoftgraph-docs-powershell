@@ -44,7 +44,12 @@ Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 Read the properties and relationships of an externalAuthenticationMethodConfiguration object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalauthenticationmethodconfiguration-get-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

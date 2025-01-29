@@ -33,9 +33,6 @@ Remove-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete a retentionLabel object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionlabel-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -63,9 +63,6 @@ Get-MgBetaSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Read the properties and relationships of a hostTracker object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hosttracker-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

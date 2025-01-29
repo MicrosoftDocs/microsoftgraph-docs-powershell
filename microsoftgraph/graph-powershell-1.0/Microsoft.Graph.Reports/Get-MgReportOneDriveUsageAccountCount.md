@@ -34,9 +34,6 @@ Get-MgReportOneDriveUsageAccountCount -InputObject <IReportsIdentity> -OutFile <
 Get the trend in the number of active OneDrive for Business sites.
 Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveusageaccountcounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

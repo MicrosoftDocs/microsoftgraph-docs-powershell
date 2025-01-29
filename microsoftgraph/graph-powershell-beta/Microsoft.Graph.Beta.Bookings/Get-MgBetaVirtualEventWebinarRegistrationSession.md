@@ -43,9 +43,6 @@ Get-MgBetaVirtualEventWebinarRegistrationSession -InputObject <IBookingsIdentity
 ## DESCRIPTION
 Get sessions from solutions
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistration-list-sessions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

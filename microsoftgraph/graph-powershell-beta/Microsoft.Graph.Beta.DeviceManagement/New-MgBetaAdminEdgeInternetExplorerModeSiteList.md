@@ -37,9 +37,6 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphB
 ## DESCRIPTION
 Create a new browserSiteList object to support Internet Explorer mode.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internetexplorermode-post-sitelists-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

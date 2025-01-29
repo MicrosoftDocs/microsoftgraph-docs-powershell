@@ -32,9 +32,6 @@ Get-MgReportYammerActivityUserCount -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Get the trends on the number of unique users who posted, read, and liked Yammer messages.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammeractivityusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

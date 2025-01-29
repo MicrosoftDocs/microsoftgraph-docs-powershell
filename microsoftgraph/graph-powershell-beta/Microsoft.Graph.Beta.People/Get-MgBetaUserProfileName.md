@@ -37,6 +37,14 @@ Get-MgBetaUserProfileName -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Represents the names a user has added to their profile.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

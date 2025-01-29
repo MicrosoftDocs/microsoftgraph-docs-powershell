@@ -37,9 +37,6 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphA
 ## DESCRIPTION
 Create a new agreement object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termsofusecontainer-post-agreements-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

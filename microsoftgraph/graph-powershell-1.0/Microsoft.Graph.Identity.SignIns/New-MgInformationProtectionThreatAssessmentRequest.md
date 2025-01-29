@@ -38,9 +38,6 @@ New-MgInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosoftGra
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a mail assessment request
 

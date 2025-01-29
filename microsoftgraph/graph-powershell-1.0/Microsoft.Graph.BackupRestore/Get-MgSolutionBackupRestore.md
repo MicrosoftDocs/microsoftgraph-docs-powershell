@@ -25,9 +25,6 @@ Get-MgSolutionBackupRestore [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -ExpandProperty

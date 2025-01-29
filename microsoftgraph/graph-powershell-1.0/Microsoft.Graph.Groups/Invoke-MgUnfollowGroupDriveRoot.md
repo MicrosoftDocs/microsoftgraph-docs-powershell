@@ -33,9 +33,6 @@ Invoke-MgUnfollowGroupDriveRoot -InputObject <IGroupsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Unfollow a driveItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId

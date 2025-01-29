@@ -41,9 +41,6 @@ Get-MgSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRestoreIde
 ## DESCRIPTION
 The list of mailbox protection units in the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-list-mailboxprotectionunits-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

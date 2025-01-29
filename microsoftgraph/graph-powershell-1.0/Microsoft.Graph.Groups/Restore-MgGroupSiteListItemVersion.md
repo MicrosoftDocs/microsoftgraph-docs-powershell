@@ -35,9 +35,6 @@ Restore-MgGroupSiteListItemVersion -InputObject <IGroupsIdentity> [-ResponseHead
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-restore-permissions.md)]
-
 ## PARAMETERS
 
 ### -GroupId

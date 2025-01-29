@@ -38,9 +38,6 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplianceI
 ## DESCRIPTION
 Data source entity for SharePoint sites associated with the legal hold.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-list-sitesources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

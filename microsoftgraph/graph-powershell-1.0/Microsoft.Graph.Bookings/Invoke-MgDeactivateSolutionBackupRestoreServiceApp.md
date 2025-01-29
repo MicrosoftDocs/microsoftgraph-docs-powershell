@@ -32,9 +32,6 @@ Invoke-MgDeactivateSolutionBackupRestoreServiceApp -InputObject <IBookingsIdenti
 ## DESCRIPTION
 Deactivate a serviceApp.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceapp-deactivate-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

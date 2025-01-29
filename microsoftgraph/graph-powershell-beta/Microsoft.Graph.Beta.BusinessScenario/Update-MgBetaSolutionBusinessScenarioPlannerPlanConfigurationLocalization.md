@@ -49,6 +49,14 @@ Update-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization
 ## DESCRIPTION
 Update the navigation property localizations in solutions
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

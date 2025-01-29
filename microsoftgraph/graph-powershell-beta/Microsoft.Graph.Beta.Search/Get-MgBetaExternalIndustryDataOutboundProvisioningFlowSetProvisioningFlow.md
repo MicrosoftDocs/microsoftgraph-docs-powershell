@@ -40,9 +40,6 @@ Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -Input
 ## DESCRIPTION
 A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-outboundprovisioningflowset-list-provisioningflows-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

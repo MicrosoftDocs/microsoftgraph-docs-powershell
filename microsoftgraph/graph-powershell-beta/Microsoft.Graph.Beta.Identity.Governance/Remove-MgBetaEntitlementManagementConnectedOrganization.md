@@ -33,9 +33,6 @@ Remove-MgBetaEntitlementManagementConnectedOrganization -InputObject <IIdentityG
 ## DESCRIPTION
 Delete a connectedOrganization object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

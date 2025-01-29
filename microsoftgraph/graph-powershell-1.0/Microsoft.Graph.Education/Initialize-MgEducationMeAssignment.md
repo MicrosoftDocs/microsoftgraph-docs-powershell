@@ -33,9 +33,6 @@ Initialize-MgEducationMeAssignment -InputObject <IEducationIdentity> [-ResponseH
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers or students.
 This action can only be performed by a teacher on currently inactive assignments.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-activate-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

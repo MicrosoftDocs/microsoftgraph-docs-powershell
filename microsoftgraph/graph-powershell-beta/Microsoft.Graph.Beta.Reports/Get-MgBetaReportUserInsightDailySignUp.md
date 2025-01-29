@@ -38,9 +38,6 @@ Get-MgBetaReportUserInsightDailySignUp -InputObject <IReportsIdentity> [-ExpandP
 ## DESCRIPTION
 Total sign-ups on apps registered in the tenant for a specified period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/dailyuserinsightmetricsroot-list-signups-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

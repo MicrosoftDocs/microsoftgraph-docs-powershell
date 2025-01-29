@@ -34,9 +34,6 @@ Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
 ## DESCRIPTION
 Remove a group from the list of groups marked as incompatible on an accessPackage.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-delete-incompatiblegroup-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -44,12 +44,6 @@ Get-MgVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-ExpandPro
 Read the properties and relationships of a virtualEventPresenter object.
 Currently the supported virtual event types are: - virtualEventTownhall- virtualEventWebinar
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventpresenter-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualevent-list-presenters-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

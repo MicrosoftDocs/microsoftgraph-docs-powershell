@@ -33,9 +33,6 @@ Remove-MgBetaEducationClassTeacherEducationUserByRef -InputObject <IEducationIde
 ## DESCRIPTION
 Remove a teacher from an educationClass.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-teachers-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationClassId

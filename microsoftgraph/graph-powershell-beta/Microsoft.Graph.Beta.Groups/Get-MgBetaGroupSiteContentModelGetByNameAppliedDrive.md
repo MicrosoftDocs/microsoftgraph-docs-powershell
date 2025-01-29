@@ -31,9 +31,6 @@ Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive -InputObject <IGroupsIdenti
 ## DESCRIPTION
 List all the contentModelUsage information related to a contentModel applied to a SharePoint document library.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getapplieddrives-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

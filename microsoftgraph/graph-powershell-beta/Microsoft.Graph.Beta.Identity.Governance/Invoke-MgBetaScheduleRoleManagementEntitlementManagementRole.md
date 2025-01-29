@@ -24,9 +24,6 @@ Invoke-MgBetaScheduleRoleManagementEntitlementManagementRole [-AppScopeId <Strin
 ## DESCRIPTION
 Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-roleschedules-permissions.md)]
-
 ## PARAMETERS
 
 ### -AppScopeId

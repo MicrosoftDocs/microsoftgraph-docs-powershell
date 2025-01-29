@@ -30,6 +30,14 @@ Invoke-MgBetaAppDeviceManagementManagedDeviceDiagnostic -InputObject <IDeviceMan
 ## DESCRIPTION
 Invoke function appDiagnostics
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+
 ## PARAMETERS
 
 ### -Count

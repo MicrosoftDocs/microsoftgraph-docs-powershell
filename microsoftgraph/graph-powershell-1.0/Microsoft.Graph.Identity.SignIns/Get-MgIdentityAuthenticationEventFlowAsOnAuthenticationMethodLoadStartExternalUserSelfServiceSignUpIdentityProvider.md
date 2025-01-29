@@ -27,9 +27,6 @@ Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUs
 ## DESCRIPTION
 Get the identity providers that are defined for an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object type.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,9 +33,6 @@ Find-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsI
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
-
 ## PARAMETERS
 
 ### -ApplicationId

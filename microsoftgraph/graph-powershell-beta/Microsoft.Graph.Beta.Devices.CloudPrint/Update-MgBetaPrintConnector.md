@@ -53,9 +53,6 @@ Update-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the properties of a printConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printconnector-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

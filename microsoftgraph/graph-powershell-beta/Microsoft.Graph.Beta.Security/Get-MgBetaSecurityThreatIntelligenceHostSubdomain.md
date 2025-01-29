@@ -41,9 +41,6 @@ Get-MgBetaSecurityThreatIntelligenceHostSubdomain -InputObject <ISecurityIdentit
 ## DESCRIPTION
 The subdomains that are associated with this host.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-list-subdomains-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

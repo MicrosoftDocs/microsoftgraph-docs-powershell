@@ -41,9 +41,6 @@ Get-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-Expan
 ## DESCRIPTION
 List of notes associated with the request.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-list-notes-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

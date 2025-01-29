@@ -38,9 +38,6 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink -InputObject <INetwor
 ## DESCRIPTION
 Retrieves a specific device link associated with a remote network.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

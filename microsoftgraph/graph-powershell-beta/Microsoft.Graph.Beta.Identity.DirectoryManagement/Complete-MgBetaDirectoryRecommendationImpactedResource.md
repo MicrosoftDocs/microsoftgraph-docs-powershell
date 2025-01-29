@@ -30,9 +30,6 @@ Complete-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDi
 ## DESCRIPTION
 Complete an impactedResource object and update its status to completedByUser.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-complete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

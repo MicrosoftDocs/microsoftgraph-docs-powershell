@@ -39,7 +39,12 @@ Get-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 Retrieve the properties and relationships of an itemEmail object in a user's profile.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itememail-get-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

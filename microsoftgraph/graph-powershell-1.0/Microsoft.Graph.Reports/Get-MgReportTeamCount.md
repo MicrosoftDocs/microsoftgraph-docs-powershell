@@ -31,9 +31,6 @@ Get-MgReportTeamCount -InputObject <IReportsIdentity> -OutFile <String> [-Respon
 ## DESCRIPTION
 Get the number of teams of a particular type in an instance of Microsoft Teams.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsteamcounts-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

@@ -34,9 +34,6 @@ Get-MgReportTeamUserActivityUserCount -InputObject <IReportsIdentity> -OutFile <
 Get the number of Microsoft Teams users by activity type.
 The activity types are number of teams chat messages, private chat messages, calls, or meetings.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsuseractivityusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

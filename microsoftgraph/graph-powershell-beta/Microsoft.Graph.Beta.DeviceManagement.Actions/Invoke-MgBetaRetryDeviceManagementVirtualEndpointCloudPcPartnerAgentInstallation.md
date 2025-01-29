@@ -32,9 +32,6 @@ Invoke-MgBetaRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation
 Retry installation for the partner agents that failed to install on the Cloud PC.
 Service side checks which agent installation failed firstly and retry.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-retrypartneragentinstallation-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

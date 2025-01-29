@@ -41,9 +41,6 @@ Get-MgBetaUserOauth2PermissionGrant -InputObject <IUsersIdentity> [-ExpandProper
 ## DESCRIPTION
 Get oauth2PermissionGrants from users
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-oauth2permissiongrants-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

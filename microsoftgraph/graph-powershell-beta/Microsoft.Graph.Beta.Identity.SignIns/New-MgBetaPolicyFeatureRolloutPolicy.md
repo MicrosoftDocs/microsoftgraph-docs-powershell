@@ -34,9 +34,6 @@ New-MgBetaPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRollo
 ## DESCRIPTION
 Create a new featureRolloutPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-featurerolloutpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -32,9 +32,6 @@ Get-MgReportYammerActivityCount -InputObject <IReportsIdentity> -OutFile <String
 ## DESCRIPTION
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammeractivitycounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

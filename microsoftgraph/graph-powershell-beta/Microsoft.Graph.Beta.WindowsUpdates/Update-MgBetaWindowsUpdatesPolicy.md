@@ -50,9 +50,6 @@ Update-MgBetaWindowsUpdatesPolicy -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Update the properties of an updatePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

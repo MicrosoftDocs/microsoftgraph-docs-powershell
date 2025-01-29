@@ -48,9 +48,6 @@ New-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementIdent
 ## DESCRIPTION
 Add a user as a registered owner of the device.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-registeredowners-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

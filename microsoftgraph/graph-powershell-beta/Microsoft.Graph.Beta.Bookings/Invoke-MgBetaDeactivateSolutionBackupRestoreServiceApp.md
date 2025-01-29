@@ -33,9 +33,6 @@ Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp -InputObject <IBookingsId
 ## DESCRIPTION
 Deactivate a serviceApp.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceapp-deactivate-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

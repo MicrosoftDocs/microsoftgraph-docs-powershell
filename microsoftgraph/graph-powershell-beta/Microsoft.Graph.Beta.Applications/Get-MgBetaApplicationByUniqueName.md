@@ -34,7 +34,12 @@ Get-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity> [-ExpandP
 Get the properties and relationships of an application object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-get-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.Read,  |
+| Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## PARAMETERS
 

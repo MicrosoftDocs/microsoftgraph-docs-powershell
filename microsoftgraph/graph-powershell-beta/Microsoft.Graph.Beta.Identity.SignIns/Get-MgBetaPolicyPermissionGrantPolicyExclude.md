@@ -44,9 +44,6 @@ Get-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdent
 Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-list-excludes-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a permission grant policy exclude by ID
 

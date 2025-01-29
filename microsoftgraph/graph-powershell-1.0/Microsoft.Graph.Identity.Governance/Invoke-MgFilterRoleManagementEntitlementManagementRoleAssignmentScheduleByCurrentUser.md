@@ -36,9 +36,6 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurren
 ## DESCRIPTION
 Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentschedule-filterbycurrentuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

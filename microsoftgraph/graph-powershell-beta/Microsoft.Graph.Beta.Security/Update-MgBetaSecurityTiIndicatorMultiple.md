@@ -31,9 +31,6 @@ Update-MgBetaSecurityTiIndicatorMultiple
 ## DESCRIPTION
 Update multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-updatetiindicators-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

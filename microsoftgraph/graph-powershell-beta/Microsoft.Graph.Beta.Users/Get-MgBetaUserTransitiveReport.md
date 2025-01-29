@@ -40,9 +40,6 @@ Get-MgBetaUserTransitiveReport -InputObject <IUsersIdentity> [-ExpandProperty <S
 The transitive reports for a user.
 Read-only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-get-transitivereports-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

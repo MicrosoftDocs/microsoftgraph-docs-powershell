@@ -36,9 +36,6 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
 ## DESCRIPTION
 Get the instances of active role assignments for the calling principal.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentscheduleinstance-filterbycurrentuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

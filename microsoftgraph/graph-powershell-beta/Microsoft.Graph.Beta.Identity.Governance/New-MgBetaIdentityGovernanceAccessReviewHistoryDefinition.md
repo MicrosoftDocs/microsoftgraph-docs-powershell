@@ -38,9 +38,6 @@ New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
 ## DESCRIPTION
 Create a new accessReviewHistoryDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewset-post-historydefinitions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

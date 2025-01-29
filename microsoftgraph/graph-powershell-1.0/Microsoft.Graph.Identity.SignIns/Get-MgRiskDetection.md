@@ -41,12 +41,6 @@ Get-MgRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Read the properties and relationships of a riskDetection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskdetection-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskdetection-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

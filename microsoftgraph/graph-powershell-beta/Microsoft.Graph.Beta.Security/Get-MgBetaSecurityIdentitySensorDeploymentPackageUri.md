@@ -23,9 +23,6 @@ Get-MgBetaSecurityIdentitySensorDeploymentPackageUri [-ResponseHeadersVariable <
 Get the sensor deployment package URL and version.
 You can use this URL to download the installer to install the sensor on a server.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-getdeploymentpackageuri-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

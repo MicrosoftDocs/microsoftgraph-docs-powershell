@@ -56,9 +56,6 @@ Update-MgBetaSecurityPartnerSecurityAlert -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the properties of a partnerSecurityAlert object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityalert-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -49,9 +49,6 @@ Add-MgGroupSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Follow a user's site or multiple sites.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-follow-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

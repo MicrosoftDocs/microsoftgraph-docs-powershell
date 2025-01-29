@@ -33,9 +33,6 @@ Get-MgReportTeamDeviceUsageDistributionUserCount -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Get the number of Microsoft Teams unique users by device type over the selected time period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsdeviceusagedistributionusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -24,9 +24,6 @@ Get-MgBetaTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [-Respons
 ## DESCRIPTION
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamwork-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

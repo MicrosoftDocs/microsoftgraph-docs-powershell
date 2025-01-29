@@ -38,9 +38,6 @@ Get-MgBetaBusinessFlowTemplate -InputObject <IIdentityGovernanceIdentity> [-Expa
 ## DESCRIPTION
 Get entity from businessFlowTemplates by key
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessflowtemplate-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

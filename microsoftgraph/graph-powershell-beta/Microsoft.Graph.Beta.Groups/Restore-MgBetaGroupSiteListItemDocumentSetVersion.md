@@ -34,9 +34,6 @@ Restore-MgBetaGroupSiteListItemDocumentSetVersion -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Restore a document set version.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-restore-permissions.md)]
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId

@@ -42,12 +42,6 @@ Get-MgBetaApplicationTemplate -InputObject <IApplicationsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties of an applicationTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

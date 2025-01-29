@@ -69,9 +69,6 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ## DESCRIPTION
 Update the properties of a cloudPcProvisioningPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

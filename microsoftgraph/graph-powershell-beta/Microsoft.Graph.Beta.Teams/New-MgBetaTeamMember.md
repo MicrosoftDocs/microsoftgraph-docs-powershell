@@ -48,9 +48,6 @@ New-MgBetaTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Add a new conversation member to a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-post-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Add a member to a team
 

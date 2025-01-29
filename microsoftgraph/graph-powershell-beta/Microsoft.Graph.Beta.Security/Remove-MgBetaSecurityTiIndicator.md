@@ -30,9 +30,6 @@ Remove-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a tiIndicator object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

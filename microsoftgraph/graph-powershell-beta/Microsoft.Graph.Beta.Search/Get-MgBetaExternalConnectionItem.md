@@ -48,7 +48,12 @@ It isn't intended to be used for any other purpose.
 Repeated requests to this API might result in 429 HTTP errors.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-get-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All, ExternalItem.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

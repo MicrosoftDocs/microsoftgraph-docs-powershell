@@ -33,9 +33,6 @@ Get-MgDirectorySubscriptionByCommerceSubscriptionId -InputObject <IIdentityDirec
 ## DESCRIPTION
 Get a specific commercial subscription that an organization acquired.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/companysubscription-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -CommerceSubscriptionId

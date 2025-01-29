@@ -40,12 +40,6 @@ Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 ## DESCRIPTION
 Get the properties and relationships of a cloudPcFrontLineServicePlan object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcfrontlineserviceplan-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-frontlineserviceplans-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

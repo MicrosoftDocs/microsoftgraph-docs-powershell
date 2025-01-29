@@ -49,9 +49,6 @@ The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filteri
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-get-recent-activities-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

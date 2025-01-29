@@ -39,9 +39,6 @@ New-MgTenantRelationshipDelegatedAdminRelationship -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create a new delegatedAdminRelationship object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

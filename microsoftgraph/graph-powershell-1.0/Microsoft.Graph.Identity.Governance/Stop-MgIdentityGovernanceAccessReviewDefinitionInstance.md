@@ -39,9 +39,6 @@ After the access review instance stops, the instance status is marked as Complet
 Stopping an instance will not stop future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-stop-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

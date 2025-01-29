@@ -34,9 +34,6 @@ Get-MgReportMailboxUsageMailboxCount -InputObject <IReportsIdentity> -OutFile <S
 Get the total number of user mailboxes in your organization and how many are active each day of the reporting period.
 A mailbox is considered active if the user sent or read any email.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getmailboxusagemailboxcounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

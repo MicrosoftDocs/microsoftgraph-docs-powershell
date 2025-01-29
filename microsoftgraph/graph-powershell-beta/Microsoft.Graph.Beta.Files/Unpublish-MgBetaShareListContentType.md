@@ -33,9 +33,6 @@ Unpublish-MgBetaShareListContentType -InputObject <IFilesIdentity> [-ResponseHea
 ## DESCRIPTION
 Invoke action unpublish
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
-
 ## PARAMETERS
 
 ### -ContentTypeId

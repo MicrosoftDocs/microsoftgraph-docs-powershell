@@ -63,9 +63,6 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createforward-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

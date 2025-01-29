@@ -36,9 +36,6 @@ Add the group to the list of the current user's favorite groups.
 The group shows up in Outlook and Teams favorites.
 Supported for Microsoft 365 groups only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-addfavorite-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

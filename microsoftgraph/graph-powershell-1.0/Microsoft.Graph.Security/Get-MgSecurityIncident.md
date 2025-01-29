@@ -47,10 +47,12 @@ Attacks are typically inflicted on different types of entities, such as devices,
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-incident-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-list-incidents-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIncident.Read.All, SecurityIncident.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: List all incidents

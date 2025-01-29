@@ -30,9 +30,6 @@ Remove-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName -InputObject 
 ## DESCRIPTION
 Delete an accessPackageCatalog.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

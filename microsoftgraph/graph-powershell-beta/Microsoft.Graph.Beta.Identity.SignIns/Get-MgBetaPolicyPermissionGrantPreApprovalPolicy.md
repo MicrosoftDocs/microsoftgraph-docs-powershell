@@ -39,12 +39,6 @@ Get-MgBetaPolicyPermissionGrantPreApprovalPolicy -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Read the properties and relationships of a permissionGrantPreApprovalPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpreapprovalpolicy-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/policyroot-list-permissiongrantpreapprovalpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

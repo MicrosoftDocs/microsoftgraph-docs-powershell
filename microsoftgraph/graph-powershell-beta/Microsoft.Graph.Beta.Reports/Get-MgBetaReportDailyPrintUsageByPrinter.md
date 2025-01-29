@@ -44,12 +44,6 @@ Get-MgBetaReportDailyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Expan
 Retrieve a printer's usage summary for a particular time period.
 For descriptions of each of the endpoints, see printUsageByPrinter.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printusagebyprinter-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-dailyprintusagebyprinter-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

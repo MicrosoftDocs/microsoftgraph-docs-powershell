@@ -64,7 +64,12 @@ New-MgTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Send a new chatMessage in the specified channel or a chat.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Teamwork.Migrate.All,  |
 
 ## EXAMPLES
 ### Example 1: Send a Hello World message in a channel
@@ -435,7 +440,7 @@ $params = @{
 New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-This example will### Example 9: send message that contains cards that are attributed to a teams app
+This example will send message that contains cards that are attributed to a teams app
 
 ### Example 10: Send a message that contains an announcement
 
@@ -476,7 +481,7 @@ $params = @{
 New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-This example will### Example 10: send a message that contains an announcement
+This example will send a message that contains an announcement
 
 
 ## PARAMETERS

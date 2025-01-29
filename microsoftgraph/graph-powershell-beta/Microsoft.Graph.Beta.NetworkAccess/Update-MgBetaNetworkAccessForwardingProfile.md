@@ -52,9 +52,6 @@ Update-MgBetaNetworkAccessForwardingProfile -InputObject <INetworkAccessIdentity
 ## DESCRIPTION
 Update an existing forwarding profile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingprofile-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

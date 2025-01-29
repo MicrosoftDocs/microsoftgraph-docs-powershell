@@ -55,9 +55,6 @@ Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRe
 ## DESCRIPTION
 Update the properties of an exchangeRestoreSession.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangerestoresession-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

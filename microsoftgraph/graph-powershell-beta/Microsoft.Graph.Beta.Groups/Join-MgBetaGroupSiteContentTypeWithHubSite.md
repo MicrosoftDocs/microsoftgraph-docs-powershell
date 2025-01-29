@@ -51,9 +51,6 @@ Join-MgBetaGroupSiteContentTypeWithHubSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action associateWithHubSites
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

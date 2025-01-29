@@ -55,9 +55,6 @@ Get-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Represents an attack simulation training campaign payload in a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-payloads-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

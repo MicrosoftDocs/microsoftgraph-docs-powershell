@@ -36,9 +36,6 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanc
 ## DESCRIPTION
 Get the instances of eligible roles for the calling principal.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

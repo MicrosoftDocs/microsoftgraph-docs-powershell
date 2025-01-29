@@ -33,9 +33,6 @@ Remove-MgGroupRejectedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Remove rejectedSender
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-rejectedsenders-permissions.md)]
-
 ## PARAMETERS
 
 ### -DirectoryObjectId

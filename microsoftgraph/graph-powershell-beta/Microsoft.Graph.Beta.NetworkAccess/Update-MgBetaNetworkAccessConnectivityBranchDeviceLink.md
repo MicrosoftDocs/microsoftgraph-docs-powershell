@@ -52,9 +52,6 @@ Update-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAcc
 ## DESCRIPTION
 Update the device link associated with a specific branch or remote network.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-devicelink-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

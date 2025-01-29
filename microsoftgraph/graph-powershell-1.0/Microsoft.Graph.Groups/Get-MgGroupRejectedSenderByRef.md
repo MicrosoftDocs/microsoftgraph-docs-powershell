@@ -28,7 +28,12 @@ Users in the rejected senders list can't post to conversations of the group (ide
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-rejectedsenders-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 

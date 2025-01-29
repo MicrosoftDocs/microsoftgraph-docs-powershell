@@ -50,9 +50,6 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMember -InputObject <IWindowsU
 Remove members from an updatableAssetGroup.
 You can also use the method removeMembersById to remove members.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatableassetgroup-removemembers-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

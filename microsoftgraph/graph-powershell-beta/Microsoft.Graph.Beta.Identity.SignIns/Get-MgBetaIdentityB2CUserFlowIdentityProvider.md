@@ -46,9 +46,6 @@ Get-MgBetaIdentityB2CUserFlowIdentityProvider -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 The identity providers included in the user flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-list-identityproviders-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

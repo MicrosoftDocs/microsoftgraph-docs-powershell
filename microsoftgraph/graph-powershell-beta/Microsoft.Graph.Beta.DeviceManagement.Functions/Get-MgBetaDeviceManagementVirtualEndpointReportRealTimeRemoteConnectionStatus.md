@@ -30,9 +30,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
 ## DESCRIPTION
 Get the real-time connection status information, such as signInStatus or daysSinceLastUse, for a Cloud PC.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrealtimeremoteconnectionstatus-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

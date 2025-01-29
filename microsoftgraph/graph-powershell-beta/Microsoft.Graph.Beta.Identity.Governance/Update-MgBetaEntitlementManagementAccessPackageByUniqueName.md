@@ -60,9 +60,6 @@ Update-MgBetaEntitlementManagementAccessPackageByUniqueName -InputObject <IIdent
 ## DESCRIPTION
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicies

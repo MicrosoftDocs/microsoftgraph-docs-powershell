@@ -33,9 +33,6 @@ Remove-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceMan
 ## DESCRIPTION
 Delete a cloudPcUserSetting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

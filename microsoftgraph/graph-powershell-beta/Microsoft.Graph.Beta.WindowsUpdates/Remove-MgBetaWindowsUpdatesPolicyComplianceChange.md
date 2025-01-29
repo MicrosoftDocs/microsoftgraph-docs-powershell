@@ -30,9 +30,6 @@ Remove-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesI
 ## DESCRIPTION
 Delete a complianceChange object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-compliancechange-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

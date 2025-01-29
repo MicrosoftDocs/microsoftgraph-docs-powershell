@@ -38,9 +38,6 @@ New-MgIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow>
 ## DESCRIPTION
 Create a new b2xIdentityUserFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-post-b2xuserflows-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

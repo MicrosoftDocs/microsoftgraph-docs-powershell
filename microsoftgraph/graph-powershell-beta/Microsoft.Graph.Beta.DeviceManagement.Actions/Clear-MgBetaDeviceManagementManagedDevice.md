@@ -52,6 +52,14 @@ Clear-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementActions
 ## DESCRIPTION
 Wipe a device
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PrivilegedOperations.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,9 +50,6 @@ New-MgIdentityGovernanceLifecycleWorkflowNewVersion -InputObject <IIdentityGover
 ## DESCRIPTION
 Create a new version of the workflow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-createnewversion-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a new version of a workflow
 

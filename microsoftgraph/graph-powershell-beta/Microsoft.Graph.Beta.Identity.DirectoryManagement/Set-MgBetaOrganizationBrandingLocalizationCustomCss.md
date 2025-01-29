@@ -36,6 +36,14 @@ Set-MgBetaOrganizationBrandingLocalizationCustomCss -InputObject <IIdentityDirec
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -ContentType

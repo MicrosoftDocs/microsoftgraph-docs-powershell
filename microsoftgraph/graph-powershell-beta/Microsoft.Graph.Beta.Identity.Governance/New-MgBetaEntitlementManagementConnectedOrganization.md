@@ -44,9 +44,6 @@ New-MgBetaEntitlementManagementConnectedOrganization [-ResponseHeadersVariable <
 ## DESCRIPTION
 Create a new connectedOrganization object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-connectedorganizations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a connected organization
 

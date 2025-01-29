@@ -33,9 +33,6 @@ Remove-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete an appRoleAssignment that has been granted to a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delete-approleassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Remove a user's application role assignment
 

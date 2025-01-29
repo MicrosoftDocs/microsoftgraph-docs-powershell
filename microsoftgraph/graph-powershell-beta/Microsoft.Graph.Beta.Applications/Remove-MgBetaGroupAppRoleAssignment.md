@@ -33,9 +33,6 @@ Remove-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMat
 ## DESCRIPTION
 Deletes an appRoleAssignment that a group has been granted.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-approleassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

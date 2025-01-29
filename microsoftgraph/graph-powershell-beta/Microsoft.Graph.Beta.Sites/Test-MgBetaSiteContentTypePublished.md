@@ -32,9 +32,6 @@ Test-MgBetaSiteContentTypePublished -InputObject <ISitesIdentity> [-ResponseHead
 ## DESCRIPTION
 Invoke function isPublished
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

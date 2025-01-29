@@ -29,6 +29,14 @@ Get-MgBetaChatOperationCount -InputObject <ITeamsIdentity> [-Filter <String>] [-
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
+
 ## PARAMETERS
 
 ### -ChatId

@@ -67,9 +67,6 @@ Get-MgEntitlementManagementResourceEnvironment -InputObject <IIdentityGovernance
 ## DESCRIPTION
 A reference to the geolocation environments in which a resource is located.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-list-resourceenvironments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

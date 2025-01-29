@@ -32,9 +32,6 @@ Get-MgReportSharePointSiteUsageSiteCount -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Get the trend of total and active site count during the reporting period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagesitecounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

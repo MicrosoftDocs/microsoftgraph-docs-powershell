@@ -52,9 +52,6 @@ Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdent
 ## DESCRIPTION
 Update an existing accessPackageSubject object to change the subject lifecycle.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagesubject-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AccessPackageSubjectId

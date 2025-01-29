@@ -33,9 +33,6 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleByCurrentUse
 ## DESCRIPTION
 Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentschedule-filterbycurrentuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

@@ -35,9 +35,6 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser
 Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
 A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-decisions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve all decision items for which you're a reviewer and expand the definitions
 

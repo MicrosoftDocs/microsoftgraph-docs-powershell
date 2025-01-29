@@ -50,9 +50,6 @@ Stop-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-cancel-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

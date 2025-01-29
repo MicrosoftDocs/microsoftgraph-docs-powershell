@@ -36,9 +36,6 @@ New-MgSolutionBackupRestoreSharePointRestoreSession -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create a new sharePointRestoreSession object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-post-sharepointrestoresessions-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

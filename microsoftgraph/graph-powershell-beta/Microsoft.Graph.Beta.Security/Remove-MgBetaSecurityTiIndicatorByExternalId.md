@@ -31,9 +31,6 @@ Remove-MgBetaSecurityTiIndicatorByExternalId
 ## DESCRIPTION
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, when the request contains external IDs instead of IDs.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-deletetiindicatorsbyexternalid-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

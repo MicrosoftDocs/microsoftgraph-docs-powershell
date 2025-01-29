@@ -51,9 +51,6 @@ Hide-MgBetaUserChatForUser -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Hide a chat for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-hideforuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

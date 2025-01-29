@@ -33,9 +33,6 @@ Remove-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManageme
 ## DESCRIPTION
 Delete a browserSite from a browserSiteList.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-delete-sites-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Delete a site that was not previously published
 

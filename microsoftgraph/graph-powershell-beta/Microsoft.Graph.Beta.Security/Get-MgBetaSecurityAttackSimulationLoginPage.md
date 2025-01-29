@@ -55,9 +55,6 @@ Get-MgBetaSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Represents an attack simulation training login page.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-loginpage-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

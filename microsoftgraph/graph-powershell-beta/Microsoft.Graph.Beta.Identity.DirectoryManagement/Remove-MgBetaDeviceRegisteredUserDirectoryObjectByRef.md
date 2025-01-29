@@ -33,9 +33,6 @@ Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef -InputObject <IIdentityDir
 ## DESCRIPTION
 Remove a user as a registered user of the device.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-registeredusers-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

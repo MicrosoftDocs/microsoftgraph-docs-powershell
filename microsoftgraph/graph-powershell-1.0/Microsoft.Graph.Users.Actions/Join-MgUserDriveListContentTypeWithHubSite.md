@@ -51,9 +51,6 @@ Join-MgUserDriveListContentTypeWithHubSite -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Associate a published content type present in a content type hub with a list of hub sites.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

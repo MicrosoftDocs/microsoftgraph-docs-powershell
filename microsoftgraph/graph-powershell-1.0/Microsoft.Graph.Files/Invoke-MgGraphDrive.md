@@ -37,9 +37,6 @@ Invoke-MgGraphDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <Str
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they are items from a different drive.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-sharedwithme-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get driveItems shared with me
 

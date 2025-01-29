@@ -49,9 +49,6 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Update the properties of a an eDiscovery caseSettings object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-casesettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

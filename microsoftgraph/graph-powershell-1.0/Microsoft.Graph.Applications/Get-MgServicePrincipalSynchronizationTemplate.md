@@ -42,7 +42,12 @@ Get-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentit
 Preconfigured synchronization settings for a particular application.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
 
 ## EXAMPLES
 ### Example
@@ -54,7 +59,7 @@ Import-Module Microsoft.Graph.Applications
 Get-MgServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
 
 ```
-This example will### example
+This example shows how to use the Get-MgServicePrincipalSynchronizationTemplate Cmdlet.
 
 
 ## PARAMETERS

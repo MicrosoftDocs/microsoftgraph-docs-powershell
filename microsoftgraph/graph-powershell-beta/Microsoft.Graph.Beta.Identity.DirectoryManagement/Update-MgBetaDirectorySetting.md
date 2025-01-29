@@ -47,7 +47,12 @@ Update-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
 Update the properties of a specific directory setting object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysetting-update-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

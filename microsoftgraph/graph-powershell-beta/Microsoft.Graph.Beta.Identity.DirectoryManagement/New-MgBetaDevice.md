@@ -46,9 +46,6 @@ New-MgBetaDevice -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Create a new device.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-devices-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

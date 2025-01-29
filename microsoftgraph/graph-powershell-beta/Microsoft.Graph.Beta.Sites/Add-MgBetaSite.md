@@ -33,9 +33,6 @@ Add-MgBetaSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbody
 ## DESCRIPTION
 Follow a user's site or multiple sites.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-follow-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

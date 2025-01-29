@@ -34,9 +34,6 @@ New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter <IMicrosoftGraphSecur
 ## DESCRIPTION
 Create a new urlThreatSubmission object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-urlthreatsubmission-post-urlthreats-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

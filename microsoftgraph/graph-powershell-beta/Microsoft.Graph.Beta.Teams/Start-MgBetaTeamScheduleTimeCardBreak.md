@@ -46,9 +46,6 @@ Start-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Start a break in a specific timeCard.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-startbreak-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

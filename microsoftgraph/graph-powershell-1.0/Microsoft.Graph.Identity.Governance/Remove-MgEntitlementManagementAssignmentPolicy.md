@@ -30,9 +30,6 @@ Remove-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernance
 ## DESCRIPTION
 In Microsoft Entra entitlement management, delete an accessPackageAssignmentPolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentpolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

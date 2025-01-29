@@ -52,9 +52,6 @@ Update-MgBetaNetworkAccessFilteringProfile -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Update the properties of a filteringProfile object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-filteringprofile-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

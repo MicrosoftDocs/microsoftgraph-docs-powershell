@@ -55,9 +55,6 @@ For more information, see delta query.
 For more examples, see callTranscript: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-getalltranscripts-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

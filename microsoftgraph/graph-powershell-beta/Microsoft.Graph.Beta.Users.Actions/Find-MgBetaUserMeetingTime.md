@@ -62,7 +62,12 @@ The algorithm used to suggest meeting times and locations undergoes fine-tuning 
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-findmeetingtimes-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.Read.Shared, Calendars.ReadWrite.Shared,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Using the Find-MgBetaUserMeetingTime Cmdlet

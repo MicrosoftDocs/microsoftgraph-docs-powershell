@@ -33,9 +33,6 @@ Remove-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete a servicePrincipal object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -AppId

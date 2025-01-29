@@ -33,9 +33,6 @@ Remove-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Delete an agreement object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -35,9 +35,6 @@ Get-MgBetaVirtualEventWebinarByUserRole -InputObject <IBookingsIdentity> [-Count
 ## DESCRIPTION
 Get a list of virtualEventWebinar objects where the signed-in user is either the organizer or a coorganizer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-getbyuserrole-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

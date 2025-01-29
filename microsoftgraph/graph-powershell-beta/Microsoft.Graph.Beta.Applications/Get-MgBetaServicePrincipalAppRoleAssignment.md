@@ -42,9 +42,6 @@ Get-MgBetaServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Read the properties and relationships of an appRoleAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-approleassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get all application role assignments for a service principal
 

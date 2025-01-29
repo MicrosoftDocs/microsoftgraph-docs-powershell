@@ -30,9 +30,6 @@ Get-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a connectionQuota object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-connectionquota-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

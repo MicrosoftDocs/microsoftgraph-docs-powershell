@@ -33,9 +33,6 @@ New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
 ## DESCRIPTION
 Create a new scheduledPermissionsRequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsmanagement-post-scheduledpermissionsrequests-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: AWS policy request
 

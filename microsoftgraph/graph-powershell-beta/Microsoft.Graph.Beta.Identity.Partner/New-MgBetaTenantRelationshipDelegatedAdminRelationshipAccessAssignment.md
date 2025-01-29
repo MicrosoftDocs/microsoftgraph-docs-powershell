@@ -51,9 +51,6 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObj
 ## DESCRIPTION
 Create a new delegatedAdminAccessAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-post-accessassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

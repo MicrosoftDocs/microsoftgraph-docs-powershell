@@ -33,9 +33,6 @@ Remove-MgSecurityLabelCategory -InputObject <ISecurityIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete a categoryTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-categories-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

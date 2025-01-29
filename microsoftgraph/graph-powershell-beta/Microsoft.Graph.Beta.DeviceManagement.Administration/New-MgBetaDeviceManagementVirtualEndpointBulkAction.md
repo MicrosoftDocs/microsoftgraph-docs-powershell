@@ -32,9 +32,6 @@ New-MgBetaDeviceManagementVirtualEndpointBulkAction -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create a new cloudPcBulkAction object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-bulkactions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

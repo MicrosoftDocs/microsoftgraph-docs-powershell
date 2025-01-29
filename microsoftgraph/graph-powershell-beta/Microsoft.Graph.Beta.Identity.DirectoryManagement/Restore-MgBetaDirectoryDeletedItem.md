@@ -61,6 +61,14 @@ You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.DeleteRestore.All, User.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -81,6 +89,21 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	autoReconcileProxyConflict = $true
+}
+
+Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgBetaDirectoryDeletedItem Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	newUserPrincipalName = "johndoe@contoso.com"
 }
 
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params

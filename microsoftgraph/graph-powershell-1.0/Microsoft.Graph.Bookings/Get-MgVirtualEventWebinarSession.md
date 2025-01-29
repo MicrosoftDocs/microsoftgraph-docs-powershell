@@ -44,9 +44,6 @@ Get-MgVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-ExpandProper
 Read the properties and relationships of a virtualEventSession object.
 Currently, the following virtual event types are supported: - virtualEventTownhall- virtualEventWebinar
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventsession-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

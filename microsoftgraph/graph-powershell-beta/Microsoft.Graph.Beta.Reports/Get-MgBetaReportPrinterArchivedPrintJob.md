@@ -34,9 +34,6 @@ Get-MgBetaReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count]
 ## DESCRIPTION
 Get a list of archived print jobs that were queued for particular printer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reports-getprinterarchivedprintjobs-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

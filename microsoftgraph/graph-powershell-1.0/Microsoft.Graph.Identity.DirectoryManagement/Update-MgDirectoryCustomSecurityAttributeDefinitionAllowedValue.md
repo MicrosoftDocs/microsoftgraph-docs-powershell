@@ -51,9 +51,6 @@ Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Update the properties of an allowedValue object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/allowedvalue-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -35,9 +35,6 @@ Get-MgReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Count]
 ## DESCRIPTION
 Get a summary of AD FS relying parties information.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getrelyingpartydetailedsummary-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

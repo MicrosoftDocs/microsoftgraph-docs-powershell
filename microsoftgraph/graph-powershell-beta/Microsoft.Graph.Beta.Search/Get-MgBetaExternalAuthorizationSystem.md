@@ -38,9 +38,6 @@ Get-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity> [-ExpandPro
 ## DESCRIPTION
 Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-external-list-authorizationsystems-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List authorization systems onboarded to Permissions Management
 

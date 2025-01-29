@@ -33,9 +33,6 @@ Invoke-MgBetaRetryContactServiceProvisioning -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Retry the orgContact service provisioning.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-retryserviceprovisioning-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

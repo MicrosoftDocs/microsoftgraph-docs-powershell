@@ -59,10 +59,12 @@ Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharedwithchannelteaminfo-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharedwithchannelteaminfo-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

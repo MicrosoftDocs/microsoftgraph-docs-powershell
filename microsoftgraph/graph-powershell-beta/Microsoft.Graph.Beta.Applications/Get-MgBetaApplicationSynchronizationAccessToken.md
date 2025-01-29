@@ -52,7 +52,12 @@ Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdent
 Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

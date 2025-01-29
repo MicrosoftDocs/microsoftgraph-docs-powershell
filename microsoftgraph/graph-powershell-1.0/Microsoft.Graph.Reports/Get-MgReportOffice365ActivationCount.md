@@ -24,9 +24,6 @@ Get-MgReportOffice365ActivationCount -OutFile <String> [-ResponseHeadersVariable
 ## DESCRIPTION
 Get the count of Microsoft 365 activations on desktops and devices.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365activationcounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -47,7 +47,12 @@ Enroll a meeting registrant in an online meeting that has meeting registration e
 This operation has two scenarios: In either scenario, the registrant will receive an email notification that contains their registration information.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-post-registrants-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetings.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Enroll a signed-in registrant

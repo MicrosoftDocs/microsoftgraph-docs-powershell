@@ -41,12 +41,6 @@ Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 ## DESCRIPTION
 Read the properties and relationships of a credentialUserRegistrationsSummary object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-credentialuserregistrationssummary-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-credentialuserregistrationssummaries-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

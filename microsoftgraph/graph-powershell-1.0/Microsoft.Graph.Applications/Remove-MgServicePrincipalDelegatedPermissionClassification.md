@@ -33,9 +33,6 @@ Remove-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplic
 ## DESCRIPTION
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-delegatedpermissionclassifications-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

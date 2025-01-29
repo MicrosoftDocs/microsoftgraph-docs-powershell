@@ -35,9 +35,6 @@ Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight -InputObject <IIdentity
 Provide a summary of workflows processed, by category, in a tenant.
 This allows you to quickly get category information, by numerical value, bypassing other information found in the WorkflowsProcessedSummary call.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-insights-workflowsprocessedbycategory-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

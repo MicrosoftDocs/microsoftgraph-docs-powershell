@@ -33,6 +33,14 @@ Get-MgUserMessageContent -InputObject <IMailIdentity> -OutFile <String> [-Respon
 The unique identifier for an entity.
 Read-only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Mail.ReadBasic,  |
+| Application | Mail.Read, Mail.ReadBasic.All,  |
+
 ## PARAMETERS
 
 ### -Headers

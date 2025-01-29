@@ -52,9 +52,6 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion
 ## DESCRIPTION
 Create a new version of the workflow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-createnewversion-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

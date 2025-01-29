@@ -48,9 +48,6 @@ Remove-MgBetaSiteContentModelGetByNameFromDrive -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Remove a contentModel from a SharePoint document library.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-removefromdrive-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

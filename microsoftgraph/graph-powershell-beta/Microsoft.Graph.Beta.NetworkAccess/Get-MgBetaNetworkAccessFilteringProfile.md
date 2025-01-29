@@ -38,9 +38,6 @@ Get-MgBetaNetworkAccessFilteringProfile -InputObject <INetworkAccessIdentity> [-
 ## DESCRIPTION
 A filtering profile associates network access policies with Microsoft Entra ID Conditional Access policies, so that access policies can be applied to users and groups.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-filteringprofile-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

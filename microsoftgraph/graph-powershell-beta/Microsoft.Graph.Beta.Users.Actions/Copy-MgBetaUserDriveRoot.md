@@ -57,9 +57,6 @@ After the request is acknowledged, it enters a queue.
 The actual copying, including any subitems, occurs at an undetermined time.
 Progress is reported until the operation is completed by monitoring the progress.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

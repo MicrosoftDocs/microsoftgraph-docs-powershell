@@ -30,9 +30,6 @@ Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy -InputObject <IIdentitySignI
 ## DESCRIPTION
 Delete a permissionGrantPreApprovalPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpreapprovalpolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

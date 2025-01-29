@@ -33,9 +33,6 @@ Get-MgBetaDirectorySettingTemplateById
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-getbyids-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

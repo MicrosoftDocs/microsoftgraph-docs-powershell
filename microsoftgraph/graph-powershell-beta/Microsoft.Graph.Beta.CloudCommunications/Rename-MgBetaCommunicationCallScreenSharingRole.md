@@ -50,9 +50,6 @@ Rename-MgBetaCommunicationCallScreenSharingRole -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Allow applications to share screen content with the participants of a group call.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-changescreensharingrole-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

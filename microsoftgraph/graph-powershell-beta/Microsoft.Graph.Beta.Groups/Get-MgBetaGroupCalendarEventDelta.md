@@ -50,7 +50,12 @@ This allows you to maintain and synchronize a local store of events in the speci
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-delta-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
 
 ## PARAMETERS
 

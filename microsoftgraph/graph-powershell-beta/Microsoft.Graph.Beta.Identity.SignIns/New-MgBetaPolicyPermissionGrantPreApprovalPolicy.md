@@ -31,9 +31,6 @@ New-MgBetaPolicyPermissionGrantPreApprovalPolicy
 ## DESCRIPTION
 Create a new permissionGrantPreApprovalPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/policyroot-post-permissiongrantpreapprovalpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a preapproval policy for both group and chat scope
 

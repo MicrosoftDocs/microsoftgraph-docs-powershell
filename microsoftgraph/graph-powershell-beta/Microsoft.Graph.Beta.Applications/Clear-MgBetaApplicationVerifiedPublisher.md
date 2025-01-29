@@ -35,9 +35,6 @@ Clear-MgBetaApplicationVerifiedPublisher -InputObject <IApplicationsIdentity>
 Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-unsetverifiedpublisher-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

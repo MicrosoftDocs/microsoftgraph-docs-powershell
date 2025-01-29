@@ -33,9 +33,6 @@ Stop-MgUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersActionsIde
 ## DESCRIPTION
 Trigger the policies associated with the end of working hours for a specific user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workingtimeschedule-endworkingtime-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

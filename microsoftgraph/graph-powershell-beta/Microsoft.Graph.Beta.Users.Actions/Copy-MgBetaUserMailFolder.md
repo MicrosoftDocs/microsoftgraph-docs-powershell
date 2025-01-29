@@ -49,9 +49,6 @@ Copy-MgBetaUserMailFolder -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copy a mail folder and its contents to another mail folder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-copy-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -23,6 +23,14 @@ Get-MgOrganizationCount [-Filter <String>] [-Search <String>] [-ResponseHeadersV
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read, DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.Read.All, Organization.ReadWrite.All, Organization.Read.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+
 ## PARAMETERS
 
 ### -Filter

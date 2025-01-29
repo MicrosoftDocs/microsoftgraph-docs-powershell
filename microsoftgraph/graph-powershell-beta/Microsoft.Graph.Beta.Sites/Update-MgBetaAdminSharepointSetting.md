@@ -44,9 +44,6 @@ Update-MgBetaAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSet
 ## DESCRIPTION
 Update one or more tenant-level settings for SharePoint and OneDrive.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

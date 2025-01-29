@@ -56,9 +56,6 @@ Update-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of a b2cIdentityUserFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

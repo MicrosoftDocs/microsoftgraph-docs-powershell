@@ -63,9 +63,6 @@ Update-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity>
 Update the properties of a retentionLabel object.
 To update a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionlabel-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -ActionAfterRetentionPeriod

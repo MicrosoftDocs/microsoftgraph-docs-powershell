@@ -48,9 +48,6 @@ Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 ## DESCRIPTION
 Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftapplicationdataaccesssettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

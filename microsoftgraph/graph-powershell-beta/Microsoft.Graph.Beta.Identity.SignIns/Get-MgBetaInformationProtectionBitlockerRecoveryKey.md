@@ -51,10 +51,12 @@ Including the $select query parameter triggers a Microsoft Entra audit of the op
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bitlockerrecoverykey-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bitlocker-list-recoverykeys-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Get the BitLocker key by specifying the key **id**

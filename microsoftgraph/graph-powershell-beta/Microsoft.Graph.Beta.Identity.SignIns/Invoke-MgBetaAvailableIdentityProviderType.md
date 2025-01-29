@@ -26,7 +26,12 @@ Invoke-MgBetaAvailableIdentityProviderType [-Count] [-Filter <String>] [-Search 
 Get all identity providers supported in a directory.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityproviderbase-availableprovidertypes-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: List all **identityProvider** available in a Microsoft Entra directory

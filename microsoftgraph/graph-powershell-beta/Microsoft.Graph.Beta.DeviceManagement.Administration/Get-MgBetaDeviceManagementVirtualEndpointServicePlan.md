@@ -38,9 +38,6 @@ Get-MgBetaDeviceManagementVirtualEndpointServicePlan -InputObject <IDeviceManage
 ## DESCRIPTION
 Cloud PC service plans.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-serviceplans-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

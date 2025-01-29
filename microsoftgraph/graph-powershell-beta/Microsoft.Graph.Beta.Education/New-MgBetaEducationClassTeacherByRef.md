@@ -47,9 +47,6 @@ New-MgBetaEducationClassTeacherByRef -InputObject <IEducationIdentity> -BodyPara
 ## DESCRIPTION
 Add a teacher to a class.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-teachers-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

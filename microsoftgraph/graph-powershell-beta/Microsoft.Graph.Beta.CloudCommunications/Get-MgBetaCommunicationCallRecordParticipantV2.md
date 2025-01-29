@@ -41,9 +41,6 @@ Get-MgBetaCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunication
 ## DESCRIPTION
 List of distinct participants in the call.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/callrecords-callrecord-list-participants_v2-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -39,12 +39,6 @@ Get-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a roleGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-rolegroup-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-rolegroup-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

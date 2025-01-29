@@ -34,9 +34,6 @@ Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicy-delete-appliesto-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

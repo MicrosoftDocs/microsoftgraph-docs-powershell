@@ -52,9 +52,6 @@ Upload a plain text secret to a trustFrameworkKeyset.
 Examples of secrets are application secrets in Microsoft Entra ID, Google, Facebook, or any other identity provider.
 his method returns trustFrameworkKey.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-uploadsecret-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

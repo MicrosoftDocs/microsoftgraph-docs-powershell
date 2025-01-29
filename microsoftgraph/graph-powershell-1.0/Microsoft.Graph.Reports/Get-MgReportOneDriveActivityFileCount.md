@@ -32,9 +32,6 @@ Get-MgReportOneDriveActivityFileCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get the number of unique, licensed users that performed file interactions against any OneDrive account.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveactivityfilecounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

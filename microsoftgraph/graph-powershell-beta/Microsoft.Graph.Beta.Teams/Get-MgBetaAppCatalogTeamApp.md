@@ -41,9 +41,6 @@ Get-MgBetaAppCatalogTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Get teamsApps from appCatalogs
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appcatalogs-list-teamsapps-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List all applications specific to the tenant
 

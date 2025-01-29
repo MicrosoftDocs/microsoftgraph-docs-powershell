@@ -36,9 +36,6 @@ New-MgBetaSecurityAttackSimulationTrainingCampaign -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create a new trainingCampaign object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-post-trainingcampaigns-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,9 +33,6 @@ Remove-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGov
 ## DESCRIPTION
 Delete an accessReviewScheduleDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewscheduledefinition-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

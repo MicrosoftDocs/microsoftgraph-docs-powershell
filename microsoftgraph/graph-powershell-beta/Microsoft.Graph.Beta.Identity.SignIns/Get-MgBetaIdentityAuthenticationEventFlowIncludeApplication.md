@@ -42,9 +42,6 @@ Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication -InputObject <IIdent
 ## DESCRIPTION
 Get includeApplications from identity
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationconditionsapplications-list-includeapplications-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -32,9 +32,6 @@ Invoke-MgBetaTroubleshootUserCloudPc -InputObject <IUsersActionsIdentity> [-Resp
 Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-troubleshoot-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

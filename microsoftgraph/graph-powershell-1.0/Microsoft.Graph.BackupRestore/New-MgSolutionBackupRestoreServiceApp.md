@@ -35,9 +35,6 @@ New-MgSolutionBackupRestoreServiceApp -BodyParameter <IMicrosoftGraphServiceApp>
 ## DESCRIPTION
 Create a new serviceApp.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-post-serviceapps-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

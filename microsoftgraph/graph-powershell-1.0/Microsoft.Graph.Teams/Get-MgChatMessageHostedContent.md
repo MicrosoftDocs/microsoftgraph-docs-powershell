@@ -56,6 +56,14 @@ Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMessage.Read.Chat, Chat.ReadWrite.All, Chat.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: List hosted content for message in a chat
 

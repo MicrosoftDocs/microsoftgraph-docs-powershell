@@ -23,6 +23,14 @@ Get-MgEducationMeRubricCount [-Filter <String>] [-Search <String>] [-ResponseHea
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Filter

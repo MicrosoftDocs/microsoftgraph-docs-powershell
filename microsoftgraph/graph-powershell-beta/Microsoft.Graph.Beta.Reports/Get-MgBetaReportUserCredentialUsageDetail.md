@@ -38,9 +38,6 @@ Get-MgBetaReportUserCredentialUsageDetail -InputObject <IReportsIdentity> [-Expa
 ## DESCRIPTION
 Represents the self-service password reset (SSPR) usage for a given tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-usercredentialusagedetails-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

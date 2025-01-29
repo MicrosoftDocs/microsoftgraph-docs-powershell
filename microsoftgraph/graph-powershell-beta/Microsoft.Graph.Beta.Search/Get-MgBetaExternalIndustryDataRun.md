@@ -39,12 +39,6 @@ Get-MgBetaExternalIndustryDataRun -InputObject <ISearchIdentity> [-ExpandPropert
 ## DESCRIPTION
 Read the properties and relationships of an industryDataRun object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydatarun-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydatarun-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -29,6 +29,14 @@ Get-MgBetaExternalIndustryDataInboundFlowYear -InputObject <ISearchIdentity> [-E
 ## DESCRIPTION
 The year associated to the data that this flow brings in.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IndustryData-TimePeriod.Read.All, IndustryData-TimePeriod.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -ExpandProperty

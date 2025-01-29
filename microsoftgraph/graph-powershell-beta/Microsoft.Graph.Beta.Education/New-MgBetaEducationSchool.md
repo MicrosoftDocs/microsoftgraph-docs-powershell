@@ -37,9 +37,6 @@ New-MgBetaEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-Resp
 ## DESCRIPTION
 Create a school.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-post-schools-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

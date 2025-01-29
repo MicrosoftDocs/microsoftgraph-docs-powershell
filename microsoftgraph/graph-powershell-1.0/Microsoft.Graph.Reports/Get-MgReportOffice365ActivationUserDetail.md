@@ -24,9 +24,6 @@ Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-ResponseHeadersVar
 ## DESCRIPTION
 Get details about users who have activated Microsoft 365.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365activationsuserdetail-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

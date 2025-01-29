@@ -46,9 +46,6 @@ Stop-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 End the open break in a specific timeCard.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-endbreak-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

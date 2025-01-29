@@ -42,12 +42,6 @@ Get-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Retrieve the properties and relationships of an agreement object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termsofusecontainer-list-agreements-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve an agreement
 

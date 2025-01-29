@@ -32,9 +32,6 @@ Test-MgBetaDriveListContentTypePublished -InputObject <IFilesIdentity> [-Respons
 ## DESCRIPTION
 Invoke function isPublished
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]
-
 ## PARAMETERS
 
 ### -ContentTypeId

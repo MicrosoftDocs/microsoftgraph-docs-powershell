@@ -42,12 +42,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Read the properties and relationships of a caseOperation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-caseoperation-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-list-operations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

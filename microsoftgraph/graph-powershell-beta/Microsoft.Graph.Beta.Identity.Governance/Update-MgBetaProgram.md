@@ -46,9 +46,6 @@ Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> -BodyParameter <
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, update an existing program object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

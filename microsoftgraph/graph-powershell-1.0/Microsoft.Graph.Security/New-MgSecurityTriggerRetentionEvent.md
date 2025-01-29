@@ -38,9 +38,6 @@ New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityReten
 ## DESCRIPTION
 Create a new retentionEvent object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

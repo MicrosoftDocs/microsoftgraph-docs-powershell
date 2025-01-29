@@ -30,9 +30,6 @@ Remove-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-IfMa
 ## DESCRIPTION
 Delete an industryDataConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -31,9 +31,6 @@ Test-MgSiteContentTypePublished -InputObject <ISitesIdentity> [-ResponseHeadersV
 ## DESCRIPTION
 Check the publishing status of a contentType in a content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-ispublished-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

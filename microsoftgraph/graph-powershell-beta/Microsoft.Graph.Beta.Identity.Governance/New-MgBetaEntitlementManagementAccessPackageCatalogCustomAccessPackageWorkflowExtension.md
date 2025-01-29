@@ -54,9 +54,6 @@ New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowEx
 ## DESCRIPTION
 Create a new customAccessPackageWorkflowExtension object and add it to an existing accessPackageCatalog object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-post-customaccesspackageworkflowextensions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

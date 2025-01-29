@@ -48,9 +48,6 @@ Update-MgBetaUserAuthenticationSignInPreference -InputObject <IIdentitySignInsId
 Update the properties of a user's authentication method states.
 Use this API to update the following information:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

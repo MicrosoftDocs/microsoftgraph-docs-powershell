@@ -34,7 +34,12 @@ Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IAppl
 Discover the latest schema definition for provisioning to an application.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

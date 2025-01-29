@@ -45,10 +45,12 @@ Retrieve the properties and relationships of a specific authenticationEventsFlow
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-list-authenticationeventsflows-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.Read.All, EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: List all user flows

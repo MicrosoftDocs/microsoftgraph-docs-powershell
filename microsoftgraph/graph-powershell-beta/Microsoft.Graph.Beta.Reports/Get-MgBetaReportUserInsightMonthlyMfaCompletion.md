@@ -38,9 +38,6 @@ Get-MgBetaReportUserInsightMonthlyMfaCompletion -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Insights for MFA usage on apps registered in the tenant for a specified period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-mfacompletions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

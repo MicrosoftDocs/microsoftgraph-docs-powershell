@@ -31,9 +31,6 @@ Update-MgBetaSecurityAlertMultiple
 ## DESCRIPTION
 Update multiple alerts in one request instead of multiple requests.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/alert-updatealerts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -29,9 +29,6 @@ New-MgBetaProgram -BodyParameter <IMicrosoftGraphProgram> [-ResponseHeadersVaria
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, create a new program object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-create-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

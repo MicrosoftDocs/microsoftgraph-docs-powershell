@@ -36,9 +36,6 @@ New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create a new connectedOrganization object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-connectedorganizations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a connected organization
 

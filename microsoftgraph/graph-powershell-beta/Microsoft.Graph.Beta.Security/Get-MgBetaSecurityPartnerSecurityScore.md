@@ -22,9 +22,6 @@ Get-MgBetaSecurityPartnerSecurityScore [-ExpandProperty <String[]>] [-Property <
 ## DESCRIPTION
 Read the properties and relationships of a partnerSecurityScore object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -44,9 +44,6 @@ Get-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore a OneDrive for Business drive.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onedriveforbusinessrestoresession-list-driverestoreartifacts-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

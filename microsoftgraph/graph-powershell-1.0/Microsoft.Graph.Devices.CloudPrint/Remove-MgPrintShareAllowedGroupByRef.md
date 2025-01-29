@@ -47,9 +47,6 @@ Remove-MgPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -
 ## DESCRIPTION
 Revoke the specified group's access to submit print jobs to the associated printerShare.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-delete-allowedgroup-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

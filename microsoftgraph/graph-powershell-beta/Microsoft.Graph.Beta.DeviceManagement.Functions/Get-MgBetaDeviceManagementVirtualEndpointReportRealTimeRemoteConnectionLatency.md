@@ -30,9 +30,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
 ## DESCRIPTION
 Get the real-time connection latency information for a Cloud PC.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrealtimeremoteconnectionlatency-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

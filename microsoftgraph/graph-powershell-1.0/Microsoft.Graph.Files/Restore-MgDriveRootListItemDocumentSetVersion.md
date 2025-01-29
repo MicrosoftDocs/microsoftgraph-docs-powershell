@@ -33,9 +33,6 @@ Restore-MgDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Re
 ## DESCRIPTION
 Restore a document set version.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId

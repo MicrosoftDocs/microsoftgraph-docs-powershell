@@ -34,7 +34,12 @@ Remove-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [
 Delete a printer's task trigger to prevent related print events from triggering tasks on the specified printer.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-delete-tasktrigger-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Printer.ReadWrite.All, Printer.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

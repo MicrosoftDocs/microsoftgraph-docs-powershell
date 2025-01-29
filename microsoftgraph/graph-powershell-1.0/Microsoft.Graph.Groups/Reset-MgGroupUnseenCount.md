@@ -34,9 +34,6 @@ Reset-MgGroupUnseenCount -InputObject <IGroupsIdentity> [-ResponseHeadersVariabl
 Reset the unseenCount of all the posts that the current user hasn't seen since their last visit.
 Supported for Microsoft 365 groups only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-resetunseencount-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

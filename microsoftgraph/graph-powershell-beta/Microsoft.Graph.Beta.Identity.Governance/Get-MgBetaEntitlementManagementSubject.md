@@ -38,9 +38,6 @@ Get-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 Represents the subjects within entitlement management.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagesubject-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -AccessPackageSubjectId

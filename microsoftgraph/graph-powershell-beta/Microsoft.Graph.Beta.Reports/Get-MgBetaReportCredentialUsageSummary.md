@@ -32,9 +32,6 @@ Get-MgBetaReportCredentialUsageSummary -InputObject <IReportsIdentity> [-Count] 
 ## DESCRIPTION
 Report the current state of how many users in your organization used the self-service password reset capabilities.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getcredentialusagesummary-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

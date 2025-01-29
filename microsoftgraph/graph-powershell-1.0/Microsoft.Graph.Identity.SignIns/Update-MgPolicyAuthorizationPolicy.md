@@ -36,9 +36,6 @@ Update-MgPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorizationP
 ## DESCRIPTION
 Update the properties of an authorizationPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authorizationpolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update or set Guest user access level for the tenant
 

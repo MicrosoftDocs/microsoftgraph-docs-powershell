@@ -46,9 +46,6 @@ Update-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of an azureDataLakeConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-azuredatalakeconnector-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

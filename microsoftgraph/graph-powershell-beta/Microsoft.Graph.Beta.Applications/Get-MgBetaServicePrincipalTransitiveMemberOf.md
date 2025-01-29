@@ -42,9 +42,6 @@ Get-MgBetaServicePrincipalTransitiveMemberOf -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Get transitiveMemberOf from servicePrincipals
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-transitivememberof-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

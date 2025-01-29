@@ -41,9 +41,6 @@ Get-MgBetaPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 The policy that controls Microsoft Entra authorization settings.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authorizationpolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

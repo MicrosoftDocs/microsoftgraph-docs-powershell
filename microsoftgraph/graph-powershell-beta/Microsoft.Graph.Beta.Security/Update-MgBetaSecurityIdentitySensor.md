@@ -50,9 +50,6 @@ Update-MgBetaSecurityIdentitySensor -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the properties of a sensor object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

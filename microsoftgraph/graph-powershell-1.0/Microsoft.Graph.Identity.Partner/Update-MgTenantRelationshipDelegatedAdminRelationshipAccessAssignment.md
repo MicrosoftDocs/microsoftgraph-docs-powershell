@@ -53,9 +53,6 @@ Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObje
 ## DESCRIPTION
 Update the properties of a delegatedAdminAccessAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminaccessassignment-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

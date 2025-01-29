@@ -55,9 +55,6 @@ Update the properties of an authenticationEventsFlow object by ID.
 You must specify the @odata.type property and the value of the authenticationEventsFlow object type to update.
 The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update the display name and priority of an authenticationEventsFlow
 

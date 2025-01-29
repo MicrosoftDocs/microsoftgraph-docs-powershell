@@ -57,9 +57,6 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagem
 ## DESCRIPTION
 Create a new browserSite object in a browserSiteList.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-post-sites-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

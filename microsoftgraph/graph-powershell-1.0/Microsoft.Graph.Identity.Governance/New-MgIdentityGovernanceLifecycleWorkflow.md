@@ -44,9 +44,6 @@ New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter <IMicrosoftGraphIdentit
 Create a new workflow object.
 You can create up to 100 workflows in a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-post-workflows-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a new workflow
 

@@ -48,9 +48,6 @@ Update-MgBetaNetworkAccessForwardingProfilePolicy -InputObject <INetworkAccessId
 Update an existing forwarding policy link to modify the association between a forwarding policy and a forwarding profile.
 This operation allows for linking or unlinking them as needed.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingpolicylink-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

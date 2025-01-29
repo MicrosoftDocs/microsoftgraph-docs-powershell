@@ -34,9 +34,6 @@ Invoke-MgBetaArchiveServiceAnnouncementMessage
 ## DESCRIPTION
 Archive a list of serviceUpdateMessages for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-archive-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

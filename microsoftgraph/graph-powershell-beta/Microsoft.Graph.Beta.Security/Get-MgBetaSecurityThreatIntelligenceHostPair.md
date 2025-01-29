@@ -63,9 +63,6 @@ Get-MgBetaSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Read the properties and relationships of a hostPair object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostpair-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

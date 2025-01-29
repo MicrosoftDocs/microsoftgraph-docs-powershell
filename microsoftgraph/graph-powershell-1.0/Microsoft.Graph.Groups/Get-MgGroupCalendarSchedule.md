@@ -51,9 +51,6 @@ Get-MgGroupCalendarSchedule -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-getschedule-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

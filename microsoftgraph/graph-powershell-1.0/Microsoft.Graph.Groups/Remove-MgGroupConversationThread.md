@@ -32,6 +32,14 @@ Remove-MgGroupConversationThread -InputObject <IGroupsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property threads for groups
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -ConversationId

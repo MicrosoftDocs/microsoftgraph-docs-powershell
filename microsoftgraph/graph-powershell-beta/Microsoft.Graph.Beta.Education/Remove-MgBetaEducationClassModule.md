@@ -36,7 +36,12 @@ Delete an existing module in a class.
 Only teachers within a class can delete modules.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-delete-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduCurricula.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

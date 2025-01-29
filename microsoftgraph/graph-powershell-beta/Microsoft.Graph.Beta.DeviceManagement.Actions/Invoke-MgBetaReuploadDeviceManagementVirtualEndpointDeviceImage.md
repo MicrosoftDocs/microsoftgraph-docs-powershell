@@ -30,9 +30,6 @@ Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -InputObject <ID
 ## DESCRIPTION
 Reupload a cloudPcDeviceImage object that failed to upload.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcdeviceimage-reupload-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

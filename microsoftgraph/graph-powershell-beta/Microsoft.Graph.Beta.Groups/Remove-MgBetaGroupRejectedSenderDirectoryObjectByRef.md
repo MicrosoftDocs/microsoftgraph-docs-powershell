@@ -33,9 +33,6 @@ Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef -InputObject <IGroupsIdenti
 ## DESCRIPTION
 Remove a user or group from the rejected-senders list of the specified group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-rejectedsenders-permissions.md)]
-
 ## PARAMETERS
 
 ### -DirectoryObjectId

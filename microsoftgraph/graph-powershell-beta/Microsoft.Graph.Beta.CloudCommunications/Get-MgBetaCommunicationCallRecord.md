@@ -35,9 +35,6 @@ Get-MgBetaCommunicationCallRecord -InputObject <ICloudCommunicationsIdentity> [-
 Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the id of a callRecord:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/callrecords-callrecord-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get basic details
 

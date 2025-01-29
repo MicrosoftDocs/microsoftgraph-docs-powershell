@@ -77,9 +77,6 @@ Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityId
 ## DESCRIPTION
 Get the properties and relationships of a hostSslCertificate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostsslcertificate-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

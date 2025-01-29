@@ -42,12 +42,6 @@ Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentit
 ## DESCRIPTION
 Get a tenant and its properties in the multi-tenant organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationmember-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-list-tenants-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

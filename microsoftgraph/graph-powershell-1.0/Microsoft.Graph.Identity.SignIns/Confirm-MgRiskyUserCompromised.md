@@ -36,9 +36,6 @@ Confirm-MgRiskyUserCompromised
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyuser-confirmcompromised-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

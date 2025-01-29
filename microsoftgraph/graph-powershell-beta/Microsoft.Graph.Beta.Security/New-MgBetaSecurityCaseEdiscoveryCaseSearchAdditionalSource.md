@@ -52,9 +52,6 @@ New-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecuri
 ## DESCRIPTION
 Create a new additional source associated with an eDiscovery search.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-post-additionalsources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

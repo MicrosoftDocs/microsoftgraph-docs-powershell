@@ -35,9 +35,6 @@ Invoke-MgBetaRecentUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-E
 ## DESCRIPTION
 List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-recent-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

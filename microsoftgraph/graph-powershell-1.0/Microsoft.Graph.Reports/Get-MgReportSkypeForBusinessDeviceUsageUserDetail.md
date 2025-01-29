@@ -47,9 +47,6 @@ Get-MgReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity
 ## DESCRIPTION
 Get details about Skype for Business device usage by user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessdeviceusageuserdetail-permissions.md)]
-
 ## PARAMETERS
 
 ### -Date

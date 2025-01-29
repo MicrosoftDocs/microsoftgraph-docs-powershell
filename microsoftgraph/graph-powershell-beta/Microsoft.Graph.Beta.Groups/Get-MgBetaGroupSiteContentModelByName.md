@@ -31,9 +31,6 @@ Get-MgBetaGroupSiteContentModelByName -InputObject <IGroupsIdentity> [-ResponseH
 Read the properties and relationships of a contentModel object by its model name.
 The name should be the full model filename, including the file extension; for example, exampleModel.classifier.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getbyname-permissions.md)]
-
 ## PARAMETERS
 
 ### -GroupId

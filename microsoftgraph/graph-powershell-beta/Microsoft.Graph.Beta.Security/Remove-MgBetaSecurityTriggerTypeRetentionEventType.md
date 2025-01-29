@@ -33,9 +33,6 @@ Remove-MgBetaSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Delete a retentionEventType object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentioneventtype-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

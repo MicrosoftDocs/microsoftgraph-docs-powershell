@@ -59,7 +59,12 @@ This feature requires a Microsoft Entra ID P1 or P2 license.
 The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroledefinition-update-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -84,6 +89,7 @@ Update-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifi
 
 ```
 This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

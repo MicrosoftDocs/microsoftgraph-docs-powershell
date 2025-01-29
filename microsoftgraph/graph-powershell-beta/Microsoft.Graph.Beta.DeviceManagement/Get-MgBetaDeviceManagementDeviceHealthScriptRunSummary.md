@@ -29,6 +29,14 @@ Get-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceMana
 ## DESCRIPTION
 High level run summary for device health script.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementScripts.ReadWrite.All, DeviceManagementScripts.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -DeviceHealthScriptId

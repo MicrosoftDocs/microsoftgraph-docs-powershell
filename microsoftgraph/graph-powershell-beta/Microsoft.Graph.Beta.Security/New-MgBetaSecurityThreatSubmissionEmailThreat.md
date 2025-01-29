@@ -37,9 +37,6 @@ New-MgBetaSecurityThreatSubmissionEmailThreat -BodyParameter <IMicrosoftGraphSec
 ## DESCRIPTION
 Create a new emailThreatSubmission object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-emailthreatsubmission-post-emailthreats-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

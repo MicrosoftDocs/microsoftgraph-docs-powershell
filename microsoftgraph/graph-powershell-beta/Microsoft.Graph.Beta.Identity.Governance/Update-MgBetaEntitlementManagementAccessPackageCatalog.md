@@ -62,9 +62,6 @@ Update-MgBetaEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGo
 ## DESCRIPTION
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

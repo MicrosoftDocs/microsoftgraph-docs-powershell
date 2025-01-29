@@ -57,7 +57,12 @@ To create a new file-based resource, upload the file to the feedback resources f
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationfeedbackresourceoutcome-post-outcomes-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

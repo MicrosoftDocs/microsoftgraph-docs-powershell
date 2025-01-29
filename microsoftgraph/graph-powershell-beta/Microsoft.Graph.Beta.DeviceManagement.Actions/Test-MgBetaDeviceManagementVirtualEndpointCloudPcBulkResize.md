@@ -31,9 +31,6 @@ Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize
 ## DESCRIPTION
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-validatebulkresize-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

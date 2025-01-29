@@ -51,9 +51,6 @@ Set-MgDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceMan
 ## DESCRIPTION
 Assign a cloudPcProvisioningPolicy to user groups.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-assign-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

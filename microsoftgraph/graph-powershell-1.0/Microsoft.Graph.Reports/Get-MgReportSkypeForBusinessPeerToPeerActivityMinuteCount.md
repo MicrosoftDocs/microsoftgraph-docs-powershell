@@ -35,9 +35,6 @@ Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -InputObject <IReports
 Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization.
 Types of sessions include audio and video.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinesspeertopeeractivityminutecounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -49,9 +49,6 @@ Invoke-MgSnoozeGroupEventReminder -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-snoozereminder-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

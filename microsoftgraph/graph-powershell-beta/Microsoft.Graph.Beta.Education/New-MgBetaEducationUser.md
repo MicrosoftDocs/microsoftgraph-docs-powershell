@@ -46,9 +46,6 @@ New-MgBetaEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-Response
 ## DESCRIPTION
 Create a new user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-post-users-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

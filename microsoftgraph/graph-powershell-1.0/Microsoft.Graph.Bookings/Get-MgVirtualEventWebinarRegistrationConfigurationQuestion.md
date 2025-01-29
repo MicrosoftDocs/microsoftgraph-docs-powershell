@@ -42,9 +42,6 @@ Get-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBookin
 ## DESCRIPTION
 Registration questions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistrationconfiguration-list-questions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -42,6 +42,14 @@ Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get an event object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calendars.ReadBasic, Calendars.Read,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

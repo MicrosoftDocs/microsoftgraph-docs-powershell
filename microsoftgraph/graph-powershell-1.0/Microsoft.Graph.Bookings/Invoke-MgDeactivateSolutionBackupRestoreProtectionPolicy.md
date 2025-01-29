@@ -33,9 +33,6 @@ Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy -InputObject <IBookings
 ## DESCRIPTION
 Deactivate a protectionPolicyBase.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/protectionpolicybase-deactivate-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Deactivate an active protection policy
 
@@ -57,7 +54,7 @@ Import-Module Microsoft.Graph.Bookings
 Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
 
 ```
-This example will### example 2 : deactivate a protection policy in updating state
+This example will deactivate a protection policy in updating state
 
 
 ## PARAMETERS

@@ -53,9 +53,6 @@ Invoke-MgBetaInviteCommunicationCallParticipant -InputObject <ICloudCommunicatio
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-invite-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Invite one participant to an existing call
 

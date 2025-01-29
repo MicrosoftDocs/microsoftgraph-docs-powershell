@@ -32,9 +32,6 @@ Get-MgReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getm365appusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: CSV output
 

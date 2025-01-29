@@ -30,9 +30,6 @@ Remove-MgBetaWindowsUpdatesPolicy -InputObject <IWindowsUpdatesIdentity> [-IfMat
 ## DESCRIPTION
 Delete an updatePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

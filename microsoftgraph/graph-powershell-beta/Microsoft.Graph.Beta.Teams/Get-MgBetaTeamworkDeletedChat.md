@@ -42,7 +42,12 @@ Get-MgBetaTeamworkDeletedChat -InputObject <ITeamsIdentity> [-ExpandProperty <St
 Read the properties and relationships of a deletedChat object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/deletedchat-get-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ManageDeletion.All, Chat.ManageDeletion.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

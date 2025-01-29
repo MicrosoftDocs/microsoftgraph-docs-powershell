@@ -49,9 +49,6 @@ Add-MgBetaGroupSiteContentTypeCopy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action addCopy
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopy-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

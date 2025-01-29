@@ -32,9 +32,6 @@ Get-MgReportTeamDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Get the number of Microsoft Teams daily unique users by device type.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsdeviceusageusercounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

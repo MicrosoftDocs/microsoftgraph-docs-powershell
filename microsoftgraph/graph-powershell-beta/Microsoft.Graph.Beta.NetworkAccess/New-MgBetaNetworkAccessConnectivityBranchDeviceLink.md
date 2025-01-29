@@ -52,9 +52,6 @@ New-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAccess
 ## DESCRIPTION
 Create a branch site with associated device links.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-post-devicelinks-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

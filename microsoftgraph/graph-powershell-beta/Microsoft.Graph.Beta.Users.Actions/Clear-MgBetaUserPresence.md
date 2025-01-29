@@ -54,7 +54,12 @@ If it is the user's only presence session, a successful clearPresence changes th
 Read more about presence sessions and their time-out and expiration.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-clearpresence-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Presence.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

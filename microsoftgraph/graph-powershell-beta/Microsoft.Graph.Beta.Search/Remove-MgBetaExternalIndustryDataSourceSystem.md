@@ -30,9 +30,6 @@ Remove-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-I
 ## DESCRIPTION
 Delete a sourceSystemDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

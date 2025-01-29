@@ -33,9 +33,6 @@ Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssignment objects filtered on the signed-in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignment-filterbycurrentuser-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

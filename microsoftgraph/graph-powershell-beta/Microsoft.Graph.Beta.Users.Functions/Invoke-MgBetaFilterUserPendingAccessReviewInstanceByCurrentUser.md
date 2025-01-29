@@ -32,9 +32,6 @@ Invoke-MgBetaFilterUserPendingAccessReviewInstanceByCurrentUser -InputObject <IU
 ## DESCRIPTION
 Returns all accessReviewInstance objects on a given accessReviewScheduleDefinition where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-filterbycurrentuser-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

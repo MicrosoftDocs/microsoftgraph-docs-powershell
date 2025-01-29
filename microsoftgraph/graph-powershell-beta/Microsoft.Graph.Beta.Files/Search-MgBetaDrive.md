@@ -35,9 +35,6 @@ Search-MgBetaDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <Stri
 ## DESCRIPTION
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-search-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

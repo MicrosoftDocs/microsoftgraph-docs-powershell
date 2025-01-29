@@ -39,12 +39,6 @@ Get-MgBetaNetworkAccessForwardingPolicy -InputObject <INetworkAccessIdentity> [-
 ## DESCRIPTION
 Retrieve information about a specific forwarding policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-forwardingpolicy-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-networkaccessroot-list-forwardingpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

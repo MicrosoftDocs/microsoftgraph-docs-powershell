@@ -41,9 +41,6 @@ Get-MgDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onpremisesdirectorysynchronization-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

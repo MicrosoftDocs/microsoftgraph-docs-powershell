@@ -36,9 +36,6 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 ## DESCRIPTION
 Create a new sharePointRestoreSession object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-sharepointrestoresessions-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

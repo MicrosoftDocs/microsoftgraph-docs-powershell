@@ -45,10 +45,12 @@ Retrieve the properties and relationships of a specified threatAssessmentRequest
 A threat assessment request can be one of the following types:
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/threatassessmentrequest-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/informationprotection-list-threatassessmentrequests-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatAssessment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatAssessment.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Get the properties of a mail assessment request

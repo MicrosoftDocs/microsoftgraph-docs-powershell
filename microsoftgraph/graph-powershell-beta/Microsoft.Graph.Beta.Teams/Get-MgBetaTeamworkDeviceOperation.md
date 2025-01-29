@@ -40,10 +40,12 @@ Get-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-ExpandProperty
 Get the details of an async, long-running operation on a Microsoft Teams-enabled device.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkdeviceoperation-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkdeviceoperation-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

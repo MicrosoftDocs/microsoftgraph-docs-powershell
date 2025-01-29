@@ -49,9 +49,6 @@ New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Create a new allowedValue object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-post-allowedvalues-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -51,9 +51,6 @@ Update-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Update the properties of a deployment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-deployment-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Pause a deployment
 

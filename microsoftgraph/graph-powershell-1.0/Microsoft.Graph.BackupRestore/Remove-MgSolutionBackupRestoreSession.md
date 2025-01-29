@@ -33,9 +33,6 @@ Remove-MgSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> [-If
 ## DESCRIPTION
 Delete a draft restoreSessionBase object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/restoresessionbase-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

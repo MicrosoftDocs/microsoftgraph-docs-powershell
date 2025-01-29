@@ -53,9 +53,6 @@ Update-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGover
 ## DESCRIPTION
 Update a connectedOrganization object to change one or more of its properties.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/connectedorganization-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

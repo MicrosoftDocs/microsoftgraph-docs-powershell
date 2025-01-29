@@ -33,9 +33,6 @@ Invoke-MgBetaUnfollowDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVa
 ## DESCRIPTION
 Unfollow a driveItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-unfollow-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

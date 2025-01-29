@@ -35,9 +35,6 @@ Get-MgReportSkypeForBusinessPeerToPeerActivityCount -InputObject <IReportsIdenti
 Get usage trends on the number and type of sessions held in your organization.
 Types of sessions include IM, audio, video, application sharing, and file transfer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinesspeertopeeractivitycounts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

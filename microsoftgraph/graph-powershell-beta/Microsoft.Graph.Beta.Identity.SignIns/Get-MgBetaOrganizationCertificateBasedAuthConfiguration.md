@@ -44,10 +44,12 @@ Get-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentityS
 Get the properties of a certificateBasedAuthConfiguration object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedauthconfiguration-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedauthconfiguration-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Organization.Read.All, Organization.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

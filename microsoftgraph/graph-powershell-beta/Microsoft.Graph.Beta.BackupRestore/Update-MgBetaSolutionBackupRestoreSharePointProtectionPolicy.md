@@ -59,9 +59,6 @@ Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBack
 Update a SharePoint protection policy.
 This method adds a siteprotectionunit to or removes it from the protection policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointprotectionpolicy-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

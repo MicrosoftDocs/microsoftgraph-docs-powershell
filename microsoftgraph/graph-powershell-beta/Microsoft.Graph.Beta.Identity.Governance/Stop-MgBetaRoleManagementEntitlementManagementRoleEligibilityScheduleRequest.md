@@ -35,9 +35,6 @@ Stop-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 Immediately cancel a unifiedRoleEligibilityScheduleRequest that is in a Granted status, and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the status of the cancelled unifiedRoleEligibilityScheduleRequest changes to Revoked.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityschedulerequest-cancel-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

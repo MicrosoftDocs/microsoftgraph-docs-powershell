@@ -32,9 +32,6 @@ New-MgBetaSecurityLabelAuthority -BodyParameter <Hashtable> [-ResponseHeadersVar
 ## DESCRIPTION
 Create a new authorityTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-authorities-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

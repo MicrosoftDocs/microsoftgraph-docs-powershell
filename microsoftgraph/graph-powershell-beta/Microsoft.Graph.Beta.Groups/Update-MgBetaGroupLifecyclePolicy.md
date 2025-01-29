@@ -80,9 +80,6 @@ Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -53,9 +53,6 @@ Update-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the properties of a healthIssue object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-healthissue-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

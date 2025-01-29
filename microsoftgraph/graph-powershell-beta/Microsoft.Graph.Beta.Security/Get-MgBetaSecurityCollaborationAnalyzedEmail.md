@@ -39,7 +39,12 @@ Get-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity> [-
 Read the properties and relationships of an analyzedEmail object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-analyzedemail-get-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityAnalyzedMessage.Read.All, SecurityAnalyzedMessage.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -40,10 +40,12 @@ Get-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-ExpandP
 Retrieve the properties and associations for a Trustframeworkkeyset.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-list-keysets-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

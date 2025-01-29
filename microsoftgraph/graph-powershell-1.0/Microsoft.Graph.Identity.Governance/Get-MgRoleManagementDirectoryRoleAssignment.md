@@ -42,6 +42,14 @@ Get-MgRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 ### Example 1 : Get the details of a role assignment
 
@@ -52,7 +60,7 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
 
 ```
-This example will### example 1 : get the details of a role assignment
+This example will get the details of a role assignment
 
 ### Example 2: Get the details of a role assignment and expand the relationships
 

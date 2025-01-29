@@ -34,9 +34,6 @@ Invoke-MgBetaMarkServiceAnnouncementMessageUnread
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as unread for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-markunread-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

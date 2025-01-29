@@ -49,9 +49,6 @@ New-MgBetaTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create a new teamworkTagMember object in a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktagmember-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

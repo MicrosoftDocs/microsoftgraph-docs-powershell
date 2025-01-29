@@ -51,9 +51,6 @@ Invoke-MgBetaMarkChatUnreadForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Mark a chat as unread for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-markchatunreadforuser-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

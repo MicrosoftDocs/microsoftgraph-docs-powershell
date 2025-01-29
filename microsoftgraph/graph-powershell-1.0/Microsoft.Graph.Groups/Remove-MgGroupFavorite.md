@@ -34,9 +34,6 @@ Remove-MgGroupFavorite -InputObject <IGroupsIdentity> [-ResponseHeadersVariable 
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-removefavorite-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

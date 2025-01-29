@@ -34,9 +34,6 @@ Update-MgPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdminCon
 ## DESCRIPTION
 Update the properties of an adminConsentRequestPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminconsentrequestpolicy-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

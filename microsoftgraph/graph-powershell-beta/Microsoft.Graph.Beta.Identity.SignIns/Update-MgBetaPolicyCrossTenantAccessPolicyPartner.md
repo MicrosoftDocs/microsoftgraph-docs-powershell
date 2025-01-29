@@ -67,9 +67,6 @@ Update-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Update the properties of a partner-specific configuration.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicyconfigurationpartner-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Configure inbound trust settings
 

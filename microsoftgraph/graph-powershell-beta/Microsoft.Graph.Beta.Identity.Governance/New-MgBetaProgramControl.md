@@ -102,9 +102,6 @@ In the Microsoft Entra access reviews feature, create a new programControl objec
 This links an access review to a program.
 Prior to making this request, the caller must have previously
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/programcontrol-create-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -51,9 +51,6 @@ New-MgIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Create a new localized agreement file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-post-files-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

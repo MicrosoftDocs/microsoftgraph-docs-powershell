@@ -30,9 +30,6 @@ Remove-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdent
 ## DESCRIPTION
 Delete a resourceConnection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-resourceconnection-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -38,9 +38,6 @@ Get-MgEntitlementManagementResourceRequest -InputObject <IIdentityGovernanceIden
 ## DESCRIPTION
 Represents a request to add or remove a resource to or from a catalog respectively.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-list-resourcerequests-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

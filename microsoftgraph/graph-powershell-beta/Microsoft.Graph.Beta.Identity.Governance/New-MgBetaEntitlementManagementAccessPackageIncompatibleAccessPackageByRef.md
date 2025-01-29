@@ -50,9 +50,6 @@ New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 ## DESCRIPTION
 Add an accessPackage to the list of access packages marked as incompatible on an accessPackage.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-post-incompatibleaccesspackage-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

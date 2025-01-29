@@ -27,7 +27,12 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackage
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-incompatibleaccesspackages-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

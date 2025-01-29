@@ -47,9 +47,6 @@ Remove-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a groupLifecyclePolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -54,7 +54,12 @@ Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 Update the properties of an authenticationContextClassReference object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcontextclassreference-update-permissions.md)]
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AuthenticationContext.ReadWrite.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

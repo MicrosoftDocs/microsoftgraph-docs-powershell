@@ -42,12 +42,6 @@ Get-MgBetaSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> [-E
 ## DESCRIPTION
 Get the properties of a restoreSession object by ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-restoresessions-permissions.md)]
-
 ## PARAMETERS
 
 ### -All

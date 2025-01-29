@@ -33,9 +33,6 @@ New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnect
 ## DESCRIPTION
 Create a new identityApiConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-create-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create an API connector with basic authentication
 

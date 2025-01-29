@@ -33,9 +33,6 @@ Remove-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete (unregister) a printConnector.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printconnector-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

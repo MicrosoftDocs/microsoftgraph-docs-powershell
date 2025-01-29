@@ -43,9 +43,6 @@ Get-MgVirtualEventWebinarRegistrationSession -InputObject <IBookingsIdentity> [-
 ## DESCRIPTION
 Sessions for a registration.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistration-list-sessions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

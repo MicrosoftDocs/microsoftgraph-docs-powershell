@@ -56,9 +56,6 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDe
 ## DESCRIPTION
 Update the properties of a browserSharedCookie object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersharedcookie-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -34,9 +34,6 @@ Delete a pendingExternalUserProfile object.
 Note: To permanently delete the pendingExternalUserProfile, follow permanently delete an item.
 To restore a pendingExternalUserProfile, follow restore a deleted item.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-delete-pendingexternaluserprofiles-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

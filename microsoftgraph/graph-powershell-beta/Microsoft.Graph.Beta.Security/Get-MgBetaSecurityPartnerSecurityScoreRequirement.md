@@ -39,12 +39,6 @@ Get-MgBetaSecurityPartnerSecurityScoreRequirement -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Read the properties and relationships of a securityRequirement object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-securityrequirement-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-requirements-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

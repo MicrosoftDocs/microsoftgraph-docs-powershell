@@ -46,9 +46,6 @@ Update-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of a yearTimePeriodDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

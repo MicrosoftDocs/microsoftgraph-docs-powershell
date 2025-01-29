@@ -51,12 +51,6 @@ By default, this operation returns 100 places per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 See details for how they compare.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/place-list-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/place-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List all the rooms defined in the tenant
 

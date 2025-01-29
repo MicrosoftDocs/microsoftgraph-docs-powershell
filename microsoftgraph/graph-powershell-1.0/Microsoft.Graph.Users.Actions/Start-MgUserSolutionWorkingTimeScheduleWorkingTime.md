@@ -33,9 +33,6 @@ Start-MgUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersActionsId
 ## DESCRIPTION
 Trigger the policies associated with the start of working hours for a specific user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workingtimeschedule-startworkingtime-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

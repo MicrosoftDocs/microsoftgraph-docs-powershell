@@ -33,9 +33,6 @@ Remove-MgEducationUser -InputObject <IEducationIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

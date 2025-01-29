@@ -30,9 +30,6 @@ Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail -InputObject <IApplic
 ## DESCRIPTION
 Get the license status of a user in Microsoft Teams.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/licensedetails-getteamslicensingdetails-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers

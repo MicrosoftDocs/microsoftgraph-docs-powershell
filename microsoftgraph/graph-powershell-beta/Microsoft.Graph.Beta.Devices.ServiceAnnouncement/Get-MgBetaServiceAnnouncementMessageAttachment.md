@@ -43,12 +43,6 @@ Get-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnno
 ## DESCRIPTION
 Read the properties and relationships of a serviceAnnouncementAttachment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncementattachment-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-list-attachments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get an attachment with message ID
 

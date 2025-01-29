@@ -50,9 +50,6 @@ Hide-MgBetaChatForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Hide a chat for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-hideforuser-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

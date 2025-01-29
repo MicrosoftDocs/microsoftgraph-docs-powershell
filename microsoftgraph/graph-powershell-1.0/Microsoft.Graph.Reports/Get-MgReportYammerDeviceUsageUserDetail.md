@@ -45,9 +45,6 @@ Get-MgReportYammerDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Get details about Yammer device usage by user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammerdeviceusageuserdetail-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

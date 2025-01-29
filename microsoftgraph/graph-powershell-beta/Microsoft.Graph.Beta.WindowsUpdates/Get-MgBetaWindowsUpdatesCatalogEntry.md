@@ -40,9 +40,6 @@ Get-MgBetaWindowsUpdatesCatalogEntry -InputObject <IWindowsUpdatesIdentity> [-Ex
 Lists the content that you can approve for deployment.
 Read-only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-catalog-list-entries-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

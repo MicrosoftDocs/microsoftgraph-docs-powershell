@@ -55,9 +55,6 @@ Send-MgUserOnlineMeetingVirtualAppointmentReminderSm -InputObject <IUsersActions
 Send an SMS reminder to external attendees for a Teams virtual appointment.
 This feature requires Teams premium and attendees must have a valid United States phone number to receive SMS notifications.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

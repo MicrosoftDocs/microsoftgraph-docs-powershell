@@ -40,9 +40,6 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject 
 ## DESCRIPTION
 Adds an additional source to the sourceCollection.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-additionalsources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

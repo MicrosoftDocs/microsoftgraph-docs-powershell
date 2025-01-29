@@ -48,9 +48,6 @@ Grant-MgBetaGroupDriveListItemPermission -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

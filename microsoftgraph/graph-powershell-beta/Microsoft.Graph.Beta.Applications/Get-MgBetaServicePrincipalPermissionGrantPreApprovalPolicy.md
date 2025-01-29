@@ -39,9 +39,6 @@ Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy -InputObject <IApplic
 ## DESCRIPTION
 Retrieve the permissionGrantPreApprovalPolicy object for the servicePrincipal.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-permissiongrantpreapprovalpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

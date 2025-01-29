@@ -27,9 +27,6 @@ Get-MgReportSecurityAttackSimulationTrainingUserCoverage [-Count] [-Filter <Stri
 List training coverage for tenant users in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/securityreportsroot-getattacksimulationtrainingusercoverage-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

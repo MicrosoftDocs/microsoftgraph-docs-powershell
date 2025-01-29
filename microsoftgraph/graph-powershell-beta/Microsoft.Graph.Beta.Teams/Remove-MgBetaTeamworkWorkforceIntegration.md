@@ -33,9 +33,6 @@ Remove-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete an instance of a workforceIntegration.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workforceintegration-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

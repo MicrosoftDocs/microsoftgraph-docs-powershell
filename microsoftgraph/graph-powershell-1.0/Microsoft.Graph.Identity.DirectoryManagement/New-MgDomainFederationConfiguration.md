@@ -57,9 +57,6 @@ New-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Create a new internalDomainFederation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-post-federationconfiguration-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Configure federation settings for a federated domain
 

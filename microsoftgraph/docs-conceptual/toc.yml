@@ -25,15 +25,11 @@
     - name: Privileged Identity Management (PIM)
       items:
         - name: Assign Microsoft Entra roles in PIM
-          href: tutorial-pim.md
+          href: how-to-assign-microsoft-entra-roles-in-pim.md
         - name: Manage PIM policies
           href: how-to-manage-pim-policies.md
     - name: Grant API permissions
-      items:
-        - name: Manage delegated permissions
-          href: tutorial-grant-delegated-api-permissions.md
-        - name: Manage app roles
-          href: tutorial-grant-app-only-api-permissions.md      
+      href: how-to-grant-revoke-api-permissions.md    
     - name: Query parameters
       items:
         - name: Use query parameters

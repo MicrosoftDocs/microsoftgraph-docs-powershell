@@ -42,9 +42,6 @@ New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-Resp
 ## DESCRIPTION
 Create an attack simulation campaign for a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

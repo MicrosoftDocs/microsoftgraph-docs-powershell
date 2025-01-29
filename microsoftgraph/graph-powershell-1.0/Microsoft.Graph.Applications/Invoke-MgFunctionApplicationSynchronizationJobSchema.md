@@ -35,9 +35,6 @@ Invoke-MgFunctionApplicationSynchronizationJobSchema -InputObject <IApplications
 ## DESCRIPTION
 List all the functions currently supported in the attributeMappingSource.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-functions-permissions.md)]
-
 ## PARAMETERS
 
 ### -ApplicationId

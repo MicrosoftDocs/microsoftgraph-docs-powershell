@@ -43,9 +43,6 @@ New-MgBetaPrivacySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRigh
 ## DESCRIPTION
 Create a new subjectRightsRequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

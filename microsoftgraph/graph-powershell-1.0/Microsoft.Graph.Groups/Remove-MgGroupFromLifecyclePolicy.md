@@ -49,9 +49,6 @@ Remove-MgGroupFromLifecyclePolicy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Removes a group from a lifecycle policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-removegroup-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

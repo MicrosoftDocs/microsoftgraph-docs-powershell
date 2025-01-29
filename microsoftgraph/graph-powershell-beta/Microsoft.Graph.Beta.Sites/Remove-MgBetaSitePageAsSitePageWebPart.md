@@ -33,9 +33,6 @@ Remove-MgBetaSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a webPart object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/webpart-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

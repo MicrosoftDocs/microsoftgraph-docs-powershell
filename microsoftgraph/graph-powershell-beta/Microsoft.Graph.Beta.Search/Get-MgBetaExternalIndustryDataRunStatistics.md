@@ -34,9 +34,6 @@ Get-MgBetaExternalIndustryDataRunStatistics -InputObject <ISearchIdentity> [-Res
 ## DESCRIPTION
 Get statistics for an industryDataRun.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydatarun-getstatistics-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

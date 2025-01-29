@@ -53,9 +53,6 @@ Update-MgBetaTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 Replace an existing timeOffReason.
 If the specified timeOffReason doesn't exist, this method returns 404 Not found.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffreason-put-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -24,6 +24,14 @@ Get-MgPolicyDeviceRegistrationPolicy [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get deviceRegistrationPolicy from policies
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration, Policy.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -ExpandProperty

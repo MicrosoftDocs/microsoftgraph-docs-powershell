@@ -3,7 +3,7 @@ title: "Using Find-MgGraphCommand cmdlet"
 description: "Learn how to use the Find-MgGraphCommand to aid in discoverability of cmdlets."
 
 ms.topic: how-to
-ms.date: 01/15/2024
+ms.date: 01/22/2025
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -14,9 +14,9 @@ reviewer: maisarissi
 
 # Using Find-MgGraphCommand cmdlet
 
-Find-MgGraphCommand aims to make it easier for you to discover which API path a command calls, by providing a URI or a command name.
+`Find-MgGraphCommand` aims to make it easier for you to discover which API path a command calls, by providing a URI or a command name.
 
-The Find-MgGraphCommand allows to:
+The `Find-MgGraphCommand` cmdlet allows you to:
 
 - Pass a Microsoft Graph URL (relative and absolute) and get an equivalent Microsoft Graph PowerShell command.
 - Pass a command and get the URL it calls.
@@ -24,7 +24,7 @@ The Find-MgGraphCommand allows to:
 
 The output of this cmdlet also includes the permissions required to authenticate the specified cmdlet. For more information on cmdlet permissions, see  [Using Find-MgGraphPermission](find-mg-graph-permission.md). Not all cmdlets have the permissions available on running this command. This is an ongoing feature, and permissions will continue to be added.
 
-The permissions displayed don't show the privilege levels. To learn more, including how to choose permissions, permission type and what is the most privileged/least privileged permission, use the corresponding API page doc.
+The permissions displayed don't show the privilege levels. To learn more, including how to choose permissions, permission type, and what is the most privileged/least privileged permission, use the corresponding API page doc.
 
 ## Find Microsoft Graph PowerShell commands by URI
 
@@ -62,8 +62,8 @@ Update-MgUser Users  PATCH  /users/{user-id}                     {DeviceManageme
 ```
 
 >[!Note]
->1. For **-ApiVersion** parameter, there are two possible values: `v1.0` and `Beta`.
->1. The **-Method** parameter is only available when using URI to find commands and allows the HTTPs methods such as GET, POST, PUT, PATCH and DELETE.
+>1. For **-ApiVersion** parameter, there are two possible values: `v1.0` and `beta`.
+>1. The **-Method** parameter is only available when using URI to find commands and allows the HTTPs methods such as GET, POST, PUT, PATCH, and DELETE.
 >1. The output shown in this article has been shortened for readability.
 
 ## Find Microsoft Graph PowerShell commands by command name
@@ -172,3 +172,7 @@ Get-MgUserActivity                    CrossDeviceExperiences       GET    /users
 Get-MgUserActivity                    CrossDeviceExperiences       GET    /users/{user-id}/activities
 Get-MgUserActivityHistoryItem         CrossDeviceExperiences       GET    /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}
 ```
+
+## See also
+
+- [Using Find-MgGraphPermission cmdlet](find-mg-graph-permission.md)

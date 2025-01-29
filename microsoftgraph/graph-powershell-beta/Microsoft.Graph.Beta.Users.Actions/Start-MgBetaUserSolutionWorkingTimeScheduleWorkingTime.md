@@ -33,9 +33,6 @@ Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersActio
 ## DESCRIPTION
 Trigger the policies associated with the start of working hours for a specific user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workingtimeschedule-startworkingtime-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

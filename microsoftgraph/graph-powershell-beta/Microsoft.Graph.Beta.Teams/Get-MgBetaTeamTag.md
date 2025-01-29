@@ -43,10 +43,12 @@ Get-MgBetaTeamTag -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 Read the properties and relationships of a tag object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworktag-list-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkTag.Read, TeamworkTag.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkTag.Read.All, TeamworkTag.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

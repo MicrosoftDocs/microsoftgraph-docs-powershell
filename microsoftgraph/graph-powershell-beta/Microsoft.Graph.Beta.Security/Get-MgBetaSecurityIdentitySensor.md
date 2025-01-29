@@ -39,12 +39,6 @@ Get-MgBetaSecurityIdentitySensor -InputObject <ISecurityIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a sensor object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-identitycontainer-list-sensors-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -53,9 +53,6 @@ Invoke-MgInviteGroupDriveRoot -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-invite-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties

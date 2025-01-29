@@ -44,9 +44,6 @@ Remove-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -InputObject <IId
 ## DESCRIPTION
 Delete a group from the list of groups included in a mobile app management policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-delete-includedgroups-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef Cmdlet
 ```powershell

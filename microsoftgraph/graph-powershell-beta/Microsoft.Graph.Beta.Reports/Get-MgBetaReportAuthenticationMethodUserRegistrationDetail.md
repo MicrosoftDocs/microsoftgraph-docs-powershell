@@ -43,10 +43,12 @@ Get-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IReport
 Read the properties and relationships of a userRegistrationDetails object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userregistrationdetails-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethodsroot-list-userregistrationdetails-permissions.md)]
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AuditLog.Read.All, UserAuthenticationMethod.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

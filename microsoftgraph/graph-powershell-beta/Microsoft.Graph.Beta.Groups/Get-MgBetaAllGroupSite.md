@@ -37,9 +37,6 @@ Get-MgBetaAllGroupSite -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty 
 List sites across geographies in an organization.
 For more details, see Best practices for discovering files and detecting changes at scale.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getallsites-permissions.md)]
-
 ## PARAMETERS
 
 ### -Count

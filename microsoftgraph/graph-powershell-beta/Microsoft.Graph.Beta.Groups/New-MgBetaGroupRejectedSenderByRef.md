@@ -53,9 +53,6 @@ Specify the user or group in @odata.id in the request body.
 Users in the rejected senders list can't post to conversations of the group (identified in the POST request URL).
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you'll get an error.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-rejectedsenders-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -35,9 +35,6 @@ Invoke-MgFilterApplicationSynchronizationJobSchemaOperator -InputObject <IApplic
 ## DESCRIPTION
 List all operators supported in the scoping filters.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-filteroperators-permissions.md)]
-
 ## PARAMETERS
 
 ### -ApplicationId

@@ -41,9 +41,6 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost -InputObject <ISec
 ## DESCRIPTION
 The host resources related with this sslCertificate.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sslcertificate-list-relatedhosts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

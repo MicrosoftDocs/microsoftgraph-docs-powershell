@@ -55,9 +55,6 @@ Update-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the properties of a workforceintegration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workforceintegration-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -49,9 +49,6 @@ Publish-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeaders
 Make the scheduling page of this business available to external customers.
 Set the isPublished property to true, and publicUrl property to the URL of the scheduling page.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-publish-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Publish-MgBetaBookingBusiness Cmdlet
 ```powershell

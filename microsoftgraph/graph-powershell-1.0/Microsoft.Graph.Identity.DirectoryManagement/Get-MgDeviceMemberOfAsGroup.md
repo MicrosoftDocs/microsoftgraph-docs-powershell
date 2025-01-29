@@ -44,12 +44,6 @@ Get-MgDeviceMemberOfAsGroup -InputObject <IIdentityDirectoryManagementIdentity> 
 Get groups and administrative units that this device is a direct member of.
 This operation is not transitive.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-list-memberof-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-list-memberof-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

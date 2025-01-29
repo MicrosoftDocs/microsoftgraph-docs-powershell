@@ -98,9 +98,6 @@ Update-MgApplicationByUniqueName -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-upsert-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a new application if it doesn't exist
 

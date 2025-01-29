@@ -33,9 +33,6 @@ Invoke-MgHaveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <String
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-doesuserhaveaccess-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
