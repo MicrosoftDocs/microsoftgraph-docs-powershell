@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 The protection units (sites) that are protected under the site protection policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

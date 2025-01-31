@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Update the properties of an alert object in an organization based on the specified alert id property.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Trigger the policies associated with the end of working hours for a specific user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### End (Default)

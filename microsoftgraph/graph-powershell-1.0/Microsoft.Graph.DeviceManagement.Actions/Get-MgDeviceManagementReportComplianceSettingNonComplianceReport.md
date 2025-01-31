@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportComplianceSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportComplianceSettingNonComplianceReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

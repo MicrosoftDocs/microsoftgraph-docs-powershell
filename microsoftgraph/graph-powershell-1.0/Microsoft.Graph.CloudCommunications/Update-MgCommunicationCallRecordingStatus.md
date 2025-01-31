@@ -12,6 +12,9 @@ ms.subservice: cloud-communications
 Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallRecordingStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

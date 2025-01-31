@@ -11,6 +11,9 @@ ms.subservice: cloud-pc
 ## SYNOPSIS
 Assign a cloudPcUserSetting to user groups.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

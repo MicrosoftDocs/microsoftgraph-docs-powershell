@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Update the properties of an externalitem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Set-MgExternalConnectionItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
