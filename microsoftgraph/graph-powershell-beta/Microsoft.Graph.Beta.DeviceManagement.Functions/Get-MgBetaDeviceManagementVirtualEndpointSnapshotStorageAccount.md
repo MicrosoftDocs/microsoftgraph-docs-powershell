@@ -40,13 +40,17 @@ List all storage accounts cloudPcForensicStorageAccount that can be used to stor
 | Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount Cmdlet.
+
 
 ## PARAMETERS
 

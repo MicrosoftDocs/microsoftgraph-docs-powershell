@@ -45,11 +45,11 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 | Application | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a role assignment in Intune over two scope groups (which are Microsoft Entra objects)
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleAssignmentMultiple"
@@ -67,10 +67,14 @@ directoryScopeIds = @(
 
 New-MgBetaRoleManagementDeviceManagementRoleAssignment -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a role assignment in intune over two scope groups (which are microsoft entra objects)
+
+### Example 2: Create a role assignment in Intune at Intune-specific scope of "all Devices"
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleAssignmentMultiple"
@@ -86,6 +90,10 @@ appScopeIds = @(
 }
 
 New-MgBetaRoleManagementDeviceManagementRoleAssignment -BodyParameter $params
+
+```
+This example will create a role assignment in intune at intune-specific scope of "all devices"
+
 
 ## PARAMETERS
 

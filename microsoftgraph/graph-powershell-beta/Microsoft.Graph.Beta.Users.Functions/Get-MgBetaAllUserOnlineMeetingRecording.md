@@ -56,13 +56,17 @@ For more examples, see callRecording: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 ## EXAMPLES
+### Example 1: Get all recordings
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Functions
-```
 
 Get-MgBetaAllUserOnlineMeetingRecording -UserId $userId
+
+```
+This example will get all recordings
+
 
 ## PARAMETERS
 

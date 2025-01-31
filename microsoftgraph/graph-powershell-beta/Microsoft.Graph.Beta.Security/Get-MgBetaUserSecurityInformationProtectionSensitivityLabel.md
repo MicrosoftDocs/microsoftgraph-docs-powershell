@@ -47,13 +47,17 @@ Read the Microsoft Purview Information Protection labels for the user or organiz
 | Application | InformationProtectionPolicy.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaUserSecurityInformationProtectionSensitivityLabel -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserSecurityInformationProtectionSensitivityLabel Cmdlet.
+
 
 ## PARAMETERS
 

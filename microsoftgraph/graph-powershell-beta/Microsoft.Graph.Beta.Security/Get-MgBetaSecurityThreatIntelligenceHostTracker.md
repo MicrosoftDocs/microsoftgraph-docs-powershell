@@ -64,13 +64,17 @@ Get-MgBetaSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity>
 Read the properties and relationships of a hostTracker object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatIntelligenceHostTracker -HostTrackerId $hostTrackerId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostTracker Cmdlet.
+
 
 ## PARAMETERS
 

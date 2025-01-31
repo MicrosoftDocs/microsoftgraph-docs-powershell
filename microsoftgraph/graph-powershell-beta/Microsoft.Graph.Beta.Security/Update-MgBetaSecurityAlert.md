@@ -85,15 +85,15 @@ Update an editable alert property within any integrated solution to keep alert s
 This method updates any solution that has a record of the referenced alert ID.
 
 ## EXAMPLES
+### Example 1: Request without Prefer header
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -110,14 +110,18 @@ $params = @{
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will request without prefer header
+
+### Example 2: Request with Prefer header
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -133,6 +137,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
+
+```
+This example will request with prefer header
+
 
 ## PARAMETERS
 

@@ -50,11 +50,11 @@ Add-MgBetaUserFollowedSite -InputObject <IUsersActionsIdentity>
 Follow a user's site or multiple sites.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	value = @(
@@ -68,6 +68,10 @@ $params = @{
 }
 
 Add-MgBetaUserFollowedSite -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaUserFollowedSite Cmdlet.
+
 
 ## PARAMETERS
 

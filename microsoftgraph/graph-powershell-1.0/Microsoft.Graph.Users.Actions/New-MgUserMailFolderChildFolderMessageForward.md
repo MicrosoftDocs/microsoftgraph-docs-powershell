@@ -64,18 +64,6 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -564,6 +552,7 @@ TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfolderchildfoldermessageforward](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfolderchildfoldermessageforward)
 
 [https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0)
+
 
 
 

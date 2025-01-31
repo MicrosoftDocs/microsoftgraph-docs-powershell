@@ -46,14 +46,18 @@ Represents data that a user has supplied related to undergraduate, graduate, pos
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileEducationalActivity -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileEducationalActivity Cmdlet.
+
 
 ## PARAMETERS
 

@@ -36,13 +36,17 @@ Get-MgVirtualEventWebinarByUserRole -InputObject <IBookingsIdentity> [-Count] [-
 Get a virtualEventWebinar collection where the signed-in user is either the organizer or a coorganizer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
-Get-MgVirtualEventWebinarByUserRole -Role $roleId
+Get-MgVirtualEventWebinarByUserRole -Role $roleId 
+
+```
+This example shows how to use the Get-MgVirtualEventWebinarByUserRole Cmdlet.
+
 
 ## PARAMETERS
 

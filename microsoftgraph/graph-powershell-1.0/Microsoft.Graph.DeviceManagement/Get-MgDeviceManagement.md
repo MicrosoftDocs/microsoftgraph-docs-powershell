@@ -33,13 +33,17 @@ Read properties and relationships of the deviceManagement object.
 | Application | DeviceManagementApps.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgDeviceManagement
+
+```
+This example shows how to use the Get-MgDeviceManagement Cmdlet.
+
 
 ## PARAMETERS
 

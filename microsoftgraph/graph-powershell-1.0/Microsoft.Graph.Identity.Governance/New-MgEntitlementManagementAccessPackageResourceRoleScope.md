@@ -56,11 +56,11 @@ The access package resource, for a group, an app, or a SharePoint Online site, m
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
 ## EXAMPLES
+### Example 1: Add a SharePoint Online site role to an access package
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	role = @{
@@ -82,10 +82,14 @@ $params = @{
 
 New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId $accessPackageId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will add a sharepoint online site role to an access package
+
+### Example 2: Add an application role to an access package
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	role = @{
@@ -110,10 +114,14 @@ $params = @{
 
 New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId $accessPackageId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will add an application role to an access package
+
+### Example 3: Add group membership to an access package
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	role = @{
@@ -140,6 +148,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId $accessPackageId -BodyParameter $params
+
+```
+This example will add group membership to an access package
+
 
 ## PARAMETERS
 

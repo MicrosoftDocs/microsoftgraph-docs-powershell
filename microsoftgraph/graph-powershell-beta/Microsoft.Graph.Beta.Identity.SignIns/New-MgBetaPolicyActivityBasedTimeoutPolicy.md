@@ -43,11 +43,11 @@ Create a new activityBasedTimeoutPolicy object.
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	definition = @(
@@ -58,6 +58,10 @@ isOrganizationDefault = $true
 }
 
 New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPolicyActivityBasedTimeoutPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,13 +33,17 @@ Permanently delete an outlook task folder and remove its items from the user's m
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 Remove-MgBetaUserOutlookTaskFolderPermanent -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId
+
+```
+This example shows how to use the Remove-MgBetaUserOutlookTaskFolderPermanent Cmdlet.
+
 
 ## PARAMETERS
 

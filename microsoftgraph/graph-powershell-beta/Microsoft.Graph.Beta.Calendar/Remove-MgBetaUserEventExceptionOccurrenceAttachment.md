@@ -29,18 +29,6 @@ Remove-MgBetaUserEventExceptionOccurrenceAttachment -InputObject <ICalendarIdent
 ## DESCRIPTION
 Delete navigation property attachments for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -259,6 +247,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventexceptionoccurrenceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventexceptionoccurrenceattachment)
+
 
 
 

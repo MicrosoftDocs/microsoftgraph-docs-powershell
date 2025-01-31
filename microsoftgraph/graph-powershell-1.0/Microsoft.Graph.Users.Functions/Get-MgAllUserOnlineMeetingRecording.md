@@ -55,18 +55,6 @@ Find more information in the delta query documentation.
 For more examples, see callRecording: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -359,6 +347,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluseronlinemeetingrecording)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-1.0)
+
 
 
 

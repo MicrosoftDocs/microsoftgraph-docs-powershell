@@ -50,13 +50,17 @@ This operation allows retrieval of the properties of the directorySettingTemplat
 | Application | Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectorySettingTemplate
+
+```
+This example shows how to use the Get-MgBetaDirectorySettingTemplate Cmdlet.
+
 
 ## PARAMETERS
 

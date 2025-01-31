@@ -34,13 +34,17 @@ Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersAction
 Trigger the policies associated with the end of working hours for a specific user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -UserId $userId
+
+```
+This example shows how to use the Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime Cmdlet.
+
 
 ## PARAMETERS
 

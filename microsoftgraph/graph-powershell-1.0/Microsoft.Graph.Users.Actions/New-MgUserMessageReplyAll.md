@@ -60,14 +60,18 @@ Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 # A UPN can also be used as -UserId.
 New-MgUserMessageReplyAll -UserId $userId -MessageId $messageId
+
+```
+This example shows how to use the New-MgUserMessageReplyAll Cmdlet.
+
 
 ## PARAMETERS
 

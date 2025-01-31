@@ -36,13 +36,17 @@ Get-MgBetaReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Co
 Get a summary of AD FS relying parties information.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
-Get-MgBetaReportRelyingPartyDetailedSummary -Period $periodId
+Get-MgBetaReportRelyingPartyDetailedSummary -Period $periodId 
+
+```
+This example shows how to use the Get-MgBetaReportRelyingPartyDetailedSummary Cmdlet.
+
 
 ## PARAMETERS
 

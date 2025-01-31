@@ -55,11 +55,11 @@ Adding a Microsoft Entra device as a member of an updatable asset group automati
 You can also use the method addMembersById to add members.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	assets = @(
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Add-MgBetaWindowsUpdatesUpdatableAssetMember -UpdatableAssetId $updatableAssetId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet.
+
 
 ## PARAMETERS
 

@@ -36,11 +36,11 @@ Get the device recommendation reports for Cloud PCs, such as the usage category 
 The usage category report categorizes a Cloud PC as Undersized, Oversized, Rightsized, or Underutilized, and also provides the recommended SKU when the Cloud PC isn't Rightsized.
 
 ## EXAMPLES
+### Example 1: List recommendation reports by device
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	reportName = "cloudPcUsageCategoryReports"
@@ -65,10 +65,14 @@ orderBy = @(
 
 Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will list recommendation reports by device
+
+### Example 2: Get summary reports by usage insight
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	reportName = "cloudPcUsageCategoryReports"
@@ -82,6 +86,10 @@ filter = ""
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
+
+```
+This example will get summary reports by usage insight
+
 
 ## PARAMETERS
 

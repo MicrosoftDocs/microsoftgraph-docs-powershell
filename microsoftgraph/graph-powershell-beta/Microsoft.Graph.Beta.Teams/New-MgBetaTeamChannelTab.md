@@ -58,18 +58,6 @@ Create new navigation property to tabs for teams
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsTab.Create.Group, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, TeamsTab.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -603,6 +591,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchanneltab)
+
 
 
 

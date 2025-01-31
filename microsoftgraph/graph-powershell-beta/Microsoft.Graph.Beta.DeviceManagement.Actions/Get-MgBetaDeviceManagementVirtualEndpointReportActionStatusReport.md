@@ -34,11 +34,11 @@ Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport -OutFile <Stri
 Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	filter = "ActionState eq 'failed'"
@@ -61,6 +61,10 @@ top = 50
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport Cmdlet.
+
 
 ## PARAMETERS
 

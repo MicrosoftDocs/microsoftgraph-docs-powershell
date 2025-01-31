@@ -60,11 +60,11 @@ Get the free/busy availability information for a collection of users, distributi
 | Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	schedules = @(
@@ -84,6 +84,10 @@ availabilityViewInterval = 60
 
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgUserDefaultCalendarSchedule Cmdlet.
+
 
 ## PARAMETERS
 

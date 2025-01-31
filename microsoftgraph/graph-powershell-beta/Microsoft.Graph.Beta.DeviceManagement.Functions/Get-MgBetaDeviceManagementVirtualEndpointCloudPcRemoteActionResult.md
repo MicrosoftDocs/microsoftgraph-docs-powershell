@@ -32,13 +32,17 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcRemoteActionResult
 Retrieve remote action results and check the status of a specific remote action performed on the associated Cloud PC device.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointCloudPcRemoteActionResult -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPcRemoteActionResult Cmdlet.
+
 
 ## PARAMETERS
 

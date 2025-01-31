@@ -54,11 +54,11 @@ Get the overall connection quality reports for all devices within a current tena
 Get also other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	filter = "EventDateTime gt datetime'2023-04-16T07:40:41.694Z'"
@@ -83,6 +83,10 @@ orderBy = @(
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport Cmdlet.
+
 
 ## PARAMETERS
 

@@ -52,18 +52,6 @@ Rename-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementA
 Rename a specific cloudPC object.
 Use this API to update the displayName of a Cloud PC entity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -278,6 +266,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/rename-mgdevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/rename-mgdevicemanagementvirtualendpointcloudpc)
 
 [https://learn.microsoft.com/graph/api/cloudpc-rename?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-rename?view=graph-rest-1.0)
+
 
 
 

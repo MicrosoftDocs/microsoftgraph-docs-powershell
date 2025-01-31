@@ -54,18 +54,6 @@ Get-MgUserDriveRootActivityByInterval -InputObject <IUsersFunctionsIdentity> [-C
 Get a collection of itemActivityStats resources for the activities that took place on this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -373,6 +361,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriverootactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriverootactivitybyinterval)
 
 [https://learn.microsoft.com/graph/api/itemactivitystat-getactivitybyinterval?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemactivitystat-getactivitybyinterval?view=graph-rest-1.0)
+
 
 
 

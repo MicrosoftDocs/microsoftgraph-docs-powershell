@@ -62,11 +62,11 @@ The only one property that can be updated is displayName, for all resource types
 | Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	resource = @{
@@ -75,6 +75,10 @@ $params = @{
 }
 
 Update-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaEducationClassModuleResource Cmdlet.
+
 
 ## PARAMETERS
 

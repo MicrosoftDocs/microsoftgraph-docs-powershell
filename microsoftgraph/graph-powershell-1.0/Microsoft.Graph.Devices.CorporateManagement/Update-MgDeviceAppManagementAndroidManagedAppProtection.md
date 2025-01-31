@@ -87,11 +87,11 @@ Update-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCo
 Update the properties of a androidManagedAppProtection object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.androidManagedAppProtection"
@@ -139,6 +139,10 @@ customBrowserDisplayName = "Custom Browser Display Name value"
 }
 
 Update-MgDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppProtectionId $androidManagedAppProtectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementAndroidManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 

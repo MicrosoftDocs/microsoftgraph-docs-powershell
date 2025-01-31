@@ -31,18 +31,6 @@ Get-MgBetaUserEffectiveDeviceEnrollmentConfiguration -InputObject <IUsersFunctio
 ## DESCRIPTION
 Invoke function getEffectiveDeviceEnrollmentConfigurations
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -300,6 +288,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausereffectivedeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausereffectivedeviceenrollmentconfiguration)
+
 
 
 

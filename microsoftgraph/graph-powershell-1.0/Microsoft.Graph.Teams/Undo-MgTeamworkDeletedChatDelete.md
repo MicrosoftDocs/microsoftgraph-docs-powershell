@@ -42,13 +42,17 @@ Restore a  deletedChat to an active chat.
 | Application | Chat.ManageDeletion.All, Chat.ManageDeletion.Chat,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Undo-MgTeamworkDeletedChatDelete -DeletedChatId $deletedChatId
+
+```
+This example shows how to use the Undo-MgTeamworkDeletedChatDelete Cmdlet.
+
 
 ## PARAMETERS
 

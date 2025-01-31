@@ -34,13 +34,17 @@ Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Invoke-MgPromoteDomain -DomainId $domainId
+
+```
+This example shows how to use the Invoke-MgPromoteDomain Cmdlet.
+
 
 ## PARAMETERS
 

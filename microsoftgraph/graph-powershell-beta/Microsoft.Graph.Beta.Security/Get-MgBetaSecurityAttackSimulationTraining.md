@@ -42,13 +42,17 @@ Get-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity> [-Ex
 Represents details about attack simulation trainings.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityAttackSimulationTraining
+
+```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationTraining Cmdlet.
+
 
 ## PARAMETERS
 

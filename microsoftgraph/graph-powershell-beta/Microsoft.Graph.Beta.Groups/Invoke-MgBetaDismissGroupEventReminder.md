@@ -33,18 +33,6 @@ Invoke-MgBetaDismissGroupEventReminder -InputObject <IGroupsIdentity> [-Response
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EventId
@@ -255,6 +243,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupeventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupeventreminder)
 
 [https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-beta)
+
 
 
 

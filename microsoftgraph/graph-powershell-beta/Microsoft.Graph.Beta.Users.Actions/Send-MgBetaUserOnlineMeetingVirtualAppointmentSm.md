@@ -56,11 +56,11 @@ This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	attendees = @(
@@ -78,6 +78,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Send-MgBetaUserOnlineMeetingVirtualAppointmentSm -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+```
+This example shows how to use the Send-MgBetaUserOnlineMeetingVirtualAppointmentSm Cmdlet.
+
 
 ## PARAMETERS
 

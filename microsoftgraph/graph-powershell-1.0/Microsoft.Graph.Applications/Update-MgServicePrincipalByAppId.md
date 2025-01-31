@@ -105,11 +105,11 @@ Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 
 ## EXAMPLES
+### Example 1: Create a new servicePrincipal if it doesn't exist
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	displayName = "My app instance"
@@ -117,16 +117,24 @@ $params = @{
 
 Update-MgServicePrincipalByAppId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a new serviceprincipal if it doesn't exist
+
+### Example 2: Update an existing servicePrincipal
+
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	displayName = "My app instance"
 }
 
 Update-MgServicePrincipalByAppId -BodyParameter $params
+
+```
+This example will update an existing serviceprincipal
+
 
 ## PARAMETERS
 

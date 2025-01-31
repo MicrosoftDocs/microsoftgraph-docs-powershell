@@ -62,11 +62,11 @@ To learn more about configuring naming policies, see Configure naming policy.
 | Application | Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	entityType = "Group"
@@ -76,6 +76,10 @@ $params = @{
 }
 
 Test-MgDirectoryObjectProperty -BodyParameter $params
+
+```
+This example shows how to use the Test-MgDirectoryObjectProperty Cmdlet.
+
 
 ## PARAMETERS
 
