@@ -29,18 +29,6 @@ Get-MgBetaGroupSitePageTemplateWebPartPositionOfWebPart -InputObject <IGroupsIde
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -264,6 +252,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitepagetemplatewebpartpositionofwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitepagetemplatewebpartpositionofwebpart)
+
 
 
 

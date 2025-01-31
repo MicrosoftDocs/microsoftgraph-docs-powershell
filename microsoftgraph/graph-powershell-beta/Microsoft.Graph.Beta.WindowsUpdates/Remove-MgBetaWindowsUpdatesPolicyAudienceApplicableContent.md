@@ -29,18 +29,6 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceApplicableContent -InputObject <IWindow
 ## DESCRIPTION
 Delete navigation property applicableContent for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicableContentCatalogEntryId
@@ -231,6 +219,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyaudienceapplicablecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyaudienceapplicablecontent)
+
 
 
 

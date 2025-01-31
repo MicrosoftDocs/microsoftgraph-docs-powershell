@@ -40,18 +40,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Mail.ReadBasic,  |
 | Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -204,6 +192,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldercount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldercount)
+
 
 
 
