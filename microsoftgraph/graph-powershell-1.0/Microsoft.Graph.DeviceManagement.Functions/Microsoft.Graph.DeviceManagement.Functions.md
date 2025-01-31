@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-Module Guid: 443ee3ff-b4e8-45d0-b5ee-103039d15680
+Module Guid: aabf6549-1c03-4a0f-8b8b-16cf8f18e6c3
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -30,23 +30,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgExperienceDeviceManagement](Invoke-MgExperienceDeviceManagement.md)
 
 ### [Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/search-mgbetabackuprestorepoint
 schema: 2.0.0
-ms.subservice: m365-backup-storage
 ---
 
 # Search-MgBetaBackupRestorePoint
 
 ## SYNOPSIS
 Search for the restorePoint objects associated with a protectionUnit.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Search-MgBackupRestorePoint](/powershell/module/Microsoft.Graph.Bookings/Search-MgBackupRestorePoint?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,11 +32,11 @@ Search-MgBetaBackupRestorePoint
 Search for the restorePoint objects associated with a protectionUnit.
 
 ## EXAMPLES
-### Example 1: Search request
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
+```
 
 $params = @{
 	protectionUnitIds = @(
@@ -50,8 +46,8 @@ $params = @{
 "83014d8c-71fe-4d00-a01a-31850bc5b42d"
 )
 protectionTimePeriod = @{
-startDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
-endDateTime = [System.DateTime]::Parse("2021-01-08T00:00:00Z")
+startDateTime = \[System.DateTime\]::Parse("2021-01-01T00:00:00Z")
+endDateTime = \[System.DateTime\]::Parse("2021-01-08T00:00:00Z")
 }
 restorePointPreference = "latest"
 tags = "fastRestore"
@@ -59,34 +55,26 @@ tags = "fastRestore"
 
 Search-MgBetaBackupRestorePoint -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will search request
-
-### Example 2: Search with artifactQuery expression
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Bookings
+```
 
 $params = @{
 	artifactQuery = @{
-		queryExpression = "((subject -contains ‘Finance’)  -or  (subject -contains ‘Legal’)) -and (sender -eq 'alex@contoso.com') -and (recipient -eq 'carol@contoso.com') -and hasAttachment -eq true"
+		queryExpression = "((subject -contains 'Finance')  -or  (subject -contains 'Legal')) -and (sender -eq 'alex@contoso.com') -and (recipient -eq 'carol@contoso.com') -and hasAttachment -eq true"
 		artifactType = "message"
 	}
 	protectionUnitIds = @(
 	"23014d8c-71fe-4d00-a01a-31850bc5b42a"
 )
 protectionTimePeriod = @{
-	startDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
+	startDateTime = \[System.DateTime\]::Parse("2021-01-01T00:00:00Z")
 }
 restorePointPreference = "oldest"
 }
 
 Search-MgBetaBackupRestorePoint -BodyParameter $params
-
-```
-This example will search with artifactquery expression
-
 
 ## PARAMETERS
 
@@ -290,55 +278,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARTIFACTQUERY `<IMicrosoftGraphArtifactQuery>`: artifactQuery
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ArtifactType <String>]`: restorableArtifact
-  - `[QueryExpression <String>]`: Specifies criteria to retrieve artifacts.
+ARTIFACTQUERY \<IMicrosoftGraphArtifactQuery\>: artifactQuery
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ArtifactType \<String\>\]: restorableArtifact
+  \[QueryExpression \<String\>\]: Specifies criteria to retrieve artifacts.
 
-BODYPARAMETER `<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ArtifactQuery <IMicrosoftGraphArtifactQuery>]`: artifactQuery
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ArtifactType <String>]`: restorableArtifact
-    - `[QueryExpression <String>]`: Specifies criteria to retrieve artifacts.
-  - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
-    - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
-  - `[ProtectionUnitIds <String- `[]`>]`: 
-  - `[RestorePointPreference <String>]`: restorePointPreference
-  - `[Tags <String>]`: restorePointTags
+BODYPARAMETER \<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ArtifactQuery \<IMicrosoftGraphArtifactQuery\>\]: artifactQuery
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ArtifactType \<String\>\]: restorableArtifact
+    \[QueryExpression \<String\>\]: Specifies criteria to retrieve artifacts.
+  \[ProtectionTimePeriod \<IMicrosoftGraphTimePeriod\>\]: timePeriod
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
+    \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
+  \[ProtectionUnitIds \<String\[\]\>\]: 
+  \[RestorePointPreference \<String\>\]: restorePointPreference
+  \[Tags \<String\>\]: restorePointTags
 
-PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
-  - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+PROTECTIONTIMEPERIOD \<IMicrosoftGraphTimePeriod\>: timePeriod
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
+  \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/search-mgbetabackuprestorepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/search-mgbetabackuprestorepoint)
 
 [https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-beta](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

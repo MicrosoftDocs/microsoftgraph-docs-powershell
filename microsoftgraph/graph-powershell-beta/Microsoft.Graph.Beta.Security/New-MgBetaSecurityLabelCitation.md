@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation
 schema: 2.0.0
-ms.subservice: security
 ---
 
 # New-MgBetaSecurityLabelCitation
 
 ## SYNOPSIS
 Create a new citationTemplate object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCitation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,11 +31,11 @@ New-MgBetaSecurityLabelCitation -BodyParameter <IMicrosoftGraphSecurityCitationT
 Create a new citationTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.citationTemplate"
@@ -49,10 +45,6 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelCitation -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityLabelCitation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -272,64 +264,42 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+BODYPARAMETER \<IMicrosoftGraphSecurityCitationTemplate\>: citationTemplate
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
-  - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
-  - `[CitationUrl <String>]`: Represents the URL to the published citation.
+  \[CitationJurisdiction \<String\>\]: Represents the jurisdiction or agency that published the citation.
+  \[CitationUrl \<String\>\]: Represents the URL to the published citation.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

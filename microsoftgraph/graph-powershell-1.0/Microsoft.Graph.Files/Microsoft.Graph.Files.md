@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Files
-Module Guid: 7d0e4a50-14f1-4287-8c8b-8276c5f5b700
+Module Guid: 576aa3aa-9da6-4b1c-a189-b4cbba02fcbb
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.files/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -2460,23 +2460,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserDriveRootThumbnail](Update-MgUserDriveRootThumbnail.md)
 
 ### [Update-MgUserDriveRootVersion](Update-MgUserDriveRootVersion.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

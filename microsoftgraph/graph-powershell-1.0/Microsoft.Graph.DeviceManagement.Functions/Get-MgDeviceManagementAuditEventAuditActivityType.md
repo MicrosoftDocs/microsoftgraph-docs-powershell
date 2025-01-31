@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementauditeventauditactivitytype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getAuditActivityTypes
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditActivityType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,13 +29,17 @@ Get-MgDeviceManagementAuditEventAuditActivityType -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Invoke function getAuditActivityTypes
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -209,38 +210,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
-  - `[Category <String>]`: Usage: category='{category}'
-  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
-  - `[DomainName <String>]`: Usage: domainName='{domainName}'
-  - `[Scope <String>]`: Usage: scope='{scope}'
-  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
-  - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
+INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
+  \[Category \<String\>\]: Usage: category='{category}'
+  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
+  \[DomainName \<String\>\]: Usage: domainName='{domainName}'
+  \[Scope \<String\>\]: Usage: scope='{scope}'
+  \[SecretReferenceValueId \<String\>\]: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  \[SummarizeBy \<UserExperienceAnalyticsSummarizedBy?\>\]: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementauditeventauditactivitytype](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementauditeventauditactivitytype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

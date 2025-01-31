@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofilecount
@@ -21,13 +21,17 @@ Get-MgBetaEducationSynchronizationProfileCount [-Filter <String>] [-Search <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAdministration.Read.All, EduAdministration.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -120,27 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofilecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

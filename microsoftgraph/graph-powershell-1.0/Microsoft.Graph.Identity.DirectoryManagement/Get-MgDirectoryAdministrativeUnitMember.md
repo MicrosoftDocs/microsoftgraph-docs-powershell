@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryAdministrativeUnitMember
 
 ## SYNOPSIS
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,26 +22,14 @@ Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandP
 ## DESCRIPTION
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AdministrativeUnit.Read.All, Directory.ReadWrite.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: List member objects
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
-
-```
-This example will list member objects
-
 
 ## PARAMETERS
 
@@ -292,26 +276,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-list-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

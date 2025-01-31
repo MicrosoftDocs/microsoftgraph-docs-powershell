@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym
 schema: 2.0.0
-ms.subservice: search
 ---
 
 # New-MgSearchAcronym
 
 ## SYNOPSIS
 Create a new acronym object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchAcronym?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,20 +30,12 @@ New-MgSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-ResponseHead
 ## DESCRIPTION
 Create a new acronym object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Search
+```
 
 $params = @{
 	displayName = "DNN"
@@ -58,10 +46,6 @@ $params = @{
 }
 
 New-MgSearchAcronym -BodyParameter $params
-
-```
-This example shows how to use the New-MgSearchAcronym Cmdlet.
-
 
 ## PARAMETERS
 
@@ -314,63 +298,41 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: The search answer description that is shown on the search results page.
-  - `[DisplayName <String>]`: The search answer name that is displayed in search results.
-  - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: 
-      - `[Id <String>]`: 
-    - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
-    - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the search answer was created or last edited.
+BODYPARAMETER \<IMicrosoftGraphSearchAcronym\>: acronym
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: The search answer description that is shown on the search results page.
+  \[DisplayName \<String\>\]: The search answer name that is displayed in search results.
+  \[LastModifiedBy \<IMicrosoftGraphSearchIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: 
+      \[Id \<String\>\]: 
+    \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
+    \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
+  \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the search answer was created or last edited.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[WebUrl <String>]`: The URL link for the search answer.
+  \[WebUrl \<String\>\]: The URL link for the search answer.
 When users select this search answer from the search results, they are directed to the specified URL.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[StandsFor <String>]`: What the acronym stands for.
-  - `[State <String>]`: answerState
+  \[StandsFor \<String\>\]: What the acronym stands for.
+  \[State \<String\>\]: answerState
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: 
-    - `[Id <String>]`: 
-  - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[User <IMicrosoftGraphSearchIdentity>]`: identity
+LASTMODIFIEDBY \<IMicrosoftGraphSearchIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: 
+    \[Id \<String\>\]: 
+  \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
+  \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym)
 
 [https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

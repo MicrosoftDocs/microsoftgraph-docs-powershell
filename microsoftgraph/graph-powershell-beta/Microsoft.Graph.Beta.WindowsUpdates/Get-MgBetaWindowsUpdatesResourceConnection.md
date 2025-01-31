@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection
 schema: 2.0.0
-ms.subservice: windows-autopatch
-ms.subservice: autopatch
 ---
 
 # Get-MgBetaWindowsUpdatesResourceConnection
@@ -40,17 +38,13 @@ Get-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity
 Read the properties and relationships of a resourceConnection object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
+```
 
 Get-MgBetaWindowsUpdatesResourceConnection
-
-```
-This example shows how to use the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -297,22 +291,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
-  - `[ApplicableContentCatalogEntryId <String>]`: The unique identifier of applicableContent
-  - `[ApplicableContentDeviceMatchDeviceId <String>]`: The unique identifier of applicableContentDeviceMatch
-  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
-  - `[CatalogId <String>]`: Usage: catalogID='{catalogID}'
-  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
-  - `[DaysInPast <Int32?>]`: Usage: daysInPast={daysInPast}
-  - `[DeploymentId <String>]`: The unique identifier of deployment
-  - `[EditionId <String>]`: The unique identifier of edition
-  - `[KbNumber <Int32?>]`: Usage: kbNumber={kbNumber}
-  - `[KnownIssueId <String>]`: The unique identifier of knownIssue
-  - `[ProductId <String>]`: The unique identifier of product
-  - `[ProductRevisionId <String>]`: The unique identifier of productRevision
-  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
-  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
-  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
+INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
+  \[ApplicableContentCatalogEntryId \<String\>\]: The unique identifier of applicableContent
+  \[ApplicableContentDeviceMatchDeviceId \<String\>\]: The unique identifier of applicableContentDeviceMatch
+  \[CatalogEntryId \<String\>\]: The unique identifier of catalogEntry
+  \[CatalogId \<String\>\]: Usage: catalogID='{catalogID}'
+  \[ComplianceChangeId \<String\>\]: The unique identifier of complianceChange
+  \[DaysInPast \<Int32?\>\]: Usage: daysInPast={daysInPast}
+  \[DeploymentId \<String\>\]: The unique identifier of deployment
+  \[EditionId \<String\>\]: The unique identifier of edition
+  \[KbNumber \<Int32?\>\]: Usage: kbNumber={kbNumber}
+  \[KnownIssueId \<String\>\]: The unique identifier of knownIssue
+  \[ProductId \<String\>\]: The unique identifier of product
+  \[ProductRevisionId \<String\>\]: The unique identifier of productRevision
+  \[ResourceConnectionId \<String\>\]: The unique identifier of resourceConnection
+  \[UpdatableAssetId \<String\>\]: The unique identifier of updatableAsset
+  \[UpdatePolicyId \<String\>\]: The unique identifier of updatePolicy
 
 ## RELATED LINKS
 
@@ -321,26 +315,4 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/windowsupdates-resourceconnection-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-resourceconnection-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/adminwindowsupdates-list-resourceconnections?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminwindowsupdates-list-resourceconnections?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

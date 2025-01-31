@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityApiConnector
 
 ## SYNOPSIS
 Create a new identityApiConnector object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,32 +30,28 @@ New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnect
 Create a new identityApiConnector object.
 
 ## EXAMPLES
-### Example 1: Create an API connector with basic authentication
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Test API"
 	targetUrl = "https://someapi.com/api"
 	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.basicAuthentication"
-		username = "<USERNAME>"
-		password = "<PASSWORD>"
+		username = "\<USERNAME\>"
+		password = "\<PASSWORD\>"
 	}
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create an api connector with basic authentication
-
-### Example 2: Create an API connector with client certificate authentication
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Test API"
@@ -67,15 +59,11 @@ $params = @{
 	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.pkcs12Certificate"
 		pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
-		password = "<password>"
+		password = "\<password\>"
 	}
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
-
-```
-This example will create an api connector with client certificate authentication
-
 
 ## PARAMETERS
 
@@ -263,40 +251,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityApiConnector>`: identityApiConnector
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIdentityApiConnector\>: identityApiConnector
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AuthenticationConfiguration <IMicrosoftGraphApiAuthenticationConfigurationBase>]`: apiAuthenticationConfigurationBase
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The name of the API connector.
-  - `[TargetUrl <String>]`: The URL of the API endpoint to call.
+  \[AuthenticationConfiguration \<IMicrosoftGraphApiAuthenticationConfigurationBase\>\]: apiAuthenticationConfigurationBase
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The name of the API connector.
+  \[TargetUrl \<String\>\]: The URL of the API endpoint to call.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector)
 
 [https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
