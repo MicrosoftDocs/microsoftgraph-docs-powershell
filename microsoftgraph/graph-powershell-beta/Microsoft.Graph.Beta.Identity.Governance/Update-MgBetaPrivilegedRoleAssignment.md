@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsElevated
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResultMessage
-.
+
 
 ```yaml
 Type: String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleId
-.
+
 
 ```yaml
 Type: String
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-.
+
 
 ```yaml
 Type: String

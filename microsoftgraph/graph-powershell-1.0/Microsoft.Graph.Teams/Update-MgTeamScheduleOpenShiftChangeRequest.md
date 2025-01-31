@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagerActionMessage
-.
+
 
 ```yaml
 Type: String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -SenderMessage
-.
+
 
 ```yaml
 Type: String

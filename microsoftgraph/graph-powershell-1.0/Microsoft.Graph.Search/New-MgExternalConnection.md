@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Groups
-.
+
 To construct, see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Items
-.
+
 To construct, see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operations
-.
+
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml

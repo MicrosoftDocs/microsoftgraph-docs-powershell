@@ -48,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-.
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -EntityId
-.
+
 
 ```yaml
 Type: String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -EntityType
-.
+
 
 ```yaml
 Type: String

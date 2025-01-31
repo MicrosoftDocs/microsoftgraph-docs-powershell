@@ -409,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsManagementRestricted
-.
+
 
 ```yaml
 Type: SwitchParameter

@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAcceptingJobs
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jobs
-.
+
 To construct, see NOTES section for JOBS properties and create a hash table.
 
 ```yaml
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -Manufacturer
-.
+
 
 ```yaml
 Type: String
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -Model
-.
+
 
 ```yaml
 Type: String
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+
 
 ```yaml
 Type: String

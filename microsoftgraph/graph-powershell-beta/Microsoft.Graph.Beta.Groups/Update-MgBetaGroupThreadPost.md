@@ -398,7 +398,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mentions
-.
+
 To construct, see NOTES section for MENTIONS properties and create a hash table.
 
 ```yaml

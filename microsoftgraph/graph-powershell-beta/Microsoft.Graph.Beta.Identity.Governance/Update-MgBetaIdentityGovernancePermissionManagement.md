@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduledPermissionsApprovals
-.
+
 To construct, see NOTES section for SCHEDULEDPERMISSIONSAPPROVALS properties and create a hash table.
 
 ```yaml
