@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetacreationuserauthenticationfido2methodoption
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaCreationUserAuthenticationFido2MethodOption

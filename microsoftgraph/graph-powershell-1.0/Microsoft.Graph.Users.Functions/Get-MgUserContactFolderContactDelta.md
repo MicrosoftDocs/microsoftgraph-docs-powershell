@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactfoldercontactdelta
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgUserContactFolderContactDelta
