@@ -679,3 +679,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
