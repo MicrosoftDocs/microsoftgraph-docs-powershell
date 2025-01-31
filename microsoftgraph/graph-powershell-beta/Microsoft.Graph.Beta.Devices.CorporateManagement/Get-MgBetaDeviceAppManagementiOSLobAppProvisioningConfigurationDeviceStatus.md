@@ -40,6 +40,14 @@ Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus
 ## DESCRIPTION
 The list of device installation states for this mobile app configuration.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

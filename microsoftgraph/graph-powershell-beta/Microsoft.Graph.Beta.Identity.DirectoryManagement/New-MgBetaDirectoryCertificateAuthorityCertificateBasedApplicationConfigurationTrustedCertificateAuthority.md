@@ -50,6 +50,14 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
 ## DESCRIPTION
 Create a new trusted certificate authority in a certificateBasedApplicationConfiguration object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

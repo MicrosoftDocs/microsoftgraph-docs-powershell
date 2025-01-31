@@ -51,6 +51,14 @@ New-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to phones for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

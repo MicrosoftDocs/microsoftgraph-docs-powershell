@@ -46,6 +46,14 @@ Add-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Add a strong password or secret to a servicePrincipal object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

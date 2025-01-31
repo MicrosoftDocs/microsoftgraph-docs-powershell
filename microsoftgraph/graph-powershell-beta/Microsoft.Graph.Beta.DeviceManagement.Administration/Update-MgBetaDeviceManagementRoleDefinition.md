@@ -49,6 +49,14 @@ Update-MgBetaDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdmin
 ## DESCRIPTION
 Update the navigation property roleDefinitions in deviceManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

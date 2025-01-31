@@ -24,6 +24,14 @@ Get-MgBetaGroupDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property 
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
 See Using Delta Query for details.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
