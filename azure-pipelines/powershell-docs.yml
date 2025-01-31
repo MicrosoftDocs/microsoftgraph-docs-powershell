@@ -138,6 +138,13 @@ extends:
             pwsh: true
             filePath: scripts/RemoveBoilerPlateCode.ps1
         - task: PowerShell@2
+          displayName: 'Remove invalid fullstops'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/RemoveInvalidFullStops.ps1
+        - task: PowerShell@2
           displayName: 'Generate missing docs for aliased cmdlets'
           continueOnError: false
           inputs:
