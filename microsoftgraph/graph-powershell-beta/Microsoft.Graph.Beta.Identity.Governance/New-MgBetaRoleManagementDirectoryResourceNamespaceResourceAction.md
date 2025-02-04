@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthenticationContextId
-.
+
 
 ```yaml
 Type: String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAuthenticationContextSettable
-.
+
 
 ```yaml
 Type: SwitchParameter

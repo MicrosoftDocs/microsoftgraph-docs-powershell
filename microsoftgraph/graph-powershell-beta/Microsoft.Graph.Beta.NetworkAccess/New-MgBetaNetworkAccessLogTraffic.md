@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationUrl
-.
+
 
 ```yaml
 Type: String
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilteringProfileId
-.
+
 
 ```yaml
 Type: String
@@ -359,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilteringProfileName
-.
+
 
 ```yaml
 Type: String
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 ```
 
 ### -InitiatingProcessName
-.
+
 
 ```yaml
 Type: String
@@ -435,7 +435,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyName
-.
+
 
 ```yaml
 Type: String
@@ -466,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyRuleName
-.
+
 
 ```yaml
 Type: String
@@ -528,7 +528,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteNetworkId
-.
+
 
 ```yaml
 Type: String
@@ -543,7 +543,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceTenantId
-.
+
 
 ```yaml
 Type: String
@@ -653,7 +653,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatType
-.
+
 
 ```yaml
 Type: String
@@ -763,7 +763,7 @@ Accept wildcard characters: False
 ```
 
 ### -VendorNames
-.
+
 
 ```yaml
 Type: String[]

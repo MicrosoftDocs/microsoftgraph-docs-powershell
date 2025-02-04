@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceNamespaces
-.
+
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleAssignments
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitions
-.
+
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml

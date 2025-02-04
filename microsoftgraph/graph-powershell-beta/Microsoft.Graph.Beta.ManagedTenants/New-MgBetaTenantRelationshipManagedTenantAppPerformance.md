@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppFriendlyName
-.
+
 
 ```yaml
 Type: String
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppName
-.
+
 
 ```yaml
 Type: String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppPublisher
-.
+
 
 ```yaml
 Type: String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -MeanTimeToFailureInMinutes
-.
+
 
 ```yaml
 Type: Int32
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantDisplayName
-.
+
 
 ```yaml
 Type: String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-.
+
 
 ```yaml
 Type: String
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalActiveDeviceCount
-.
+
 
 ```yaml
 Type: Int32
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAppCrashCount
-.
+
 
 ```yaml
 Type: Int32
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAppFreezeCount
-.
+
 
 ```yaml
 Type: Int32

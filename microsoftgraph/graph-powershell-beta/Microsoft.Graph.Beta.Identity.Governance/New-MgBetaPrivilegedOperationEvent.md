@@ -35,7 +35,7 @@ Add new entity to privilegedOperationEvents
 ## PARAMETERS
 
 ### -AdditionalInformation
-.
+
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreationDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReferenceKey
-.
+
 
 ```yaml
 Type: String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReferenceSystem
-.
+
 
 ```yaml
 Type: String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestorId
-.
+
 
 ```yaml
 Type: String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestorName
-.
+
 
 ```yaml
 Type: String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestType
-.
+
 
 ```yaml
 Type: String
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleId
-.
+
 
 ```yaml
 Type: String
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-.
+
 
 ```yaml
 Type: String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-.
+
 
 ```yaml
 Type: String
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-.
+
 
 ```yaml
 Type: String
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMail
-.
+
 
 ```yaml
 Type: String
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-.
+
 
 ```yaml
 Type: String

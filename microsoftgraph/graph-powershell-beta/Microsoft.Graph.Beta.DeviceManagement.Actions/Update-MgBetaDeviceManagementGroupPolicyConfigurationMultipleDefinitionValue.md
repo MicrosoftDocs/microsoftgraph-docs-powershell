@@ -54,7 +54,7 @@ Invoke action updateDefinitionValues
 ## PARAMETERS
 
 ### -Added
-.
+
 To construct, see NOTES section for ADDED properties and create a hash table.
 
 ```yaml
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeletedIds
-.
+
 
 ```yaml
 Type: String[]
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Updated
-.
+
 To construct, see NOTES section for UPDATED properties and create a hash table.
 
 ```yaml

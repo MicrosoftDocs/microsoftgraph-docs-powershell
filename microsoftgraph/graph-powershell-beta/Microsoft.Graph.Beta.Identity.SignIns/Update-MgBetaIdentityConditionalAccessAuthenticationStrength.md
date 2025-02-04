@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Combinations
-.
+
 
 ```yaml
 Type: String[]

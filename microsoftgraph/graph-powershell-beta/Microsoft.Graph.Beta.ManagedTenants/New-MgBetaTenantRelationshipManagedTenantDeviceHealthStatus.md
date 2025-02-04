@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlueScreenCount
-.
+
 
 ```yaml
 Type: Int32
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -BootTotalDurationInSeconds
-.
+
 
 ```yaml
 Type: Double
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-.
+
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceMake
-.
+
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceModel
-.
+
 
 ```yaml
 Type: String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-.
+
 
 ```yaml
 Type: String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthStatus
-.
+
 
 ```yaml
 Type: String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSVersion
-.
+
 
 ```yaml
 Type: String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryDiskType
-.
+
 
 ```yaml
 Type: String
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestartCount
-.
+
 
 ```yaml
 Type: Int32
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartupPerformanceScore
-.
+
 
 ```yaml
 Type: Double
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantDisplayName
-.
+
 
 ```yaml
 Type: String
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-.
+
 
 ```yaml
 Type: String
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -TopProcesses
-.
+
 
 ```yaml
 Type: String

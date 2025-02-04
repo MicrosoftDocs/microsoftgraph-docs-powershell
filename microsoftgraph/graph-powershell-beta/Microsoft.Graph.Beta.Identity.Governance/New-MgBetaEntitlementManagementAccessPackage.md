@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccessPackageResourceRoleScopes
-.
+
 To construct, see NOTES section for ACCESSPACKAGERESOURCEROLESCOPES properties and create a hash table.
 
 ```yaml
@@ -409,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### -UniqueName
-.
+
 
 ```yaml
 Type: String

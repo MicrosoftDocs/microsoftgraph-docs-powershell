@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -SettingStates
-.
+
 To construct, see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml

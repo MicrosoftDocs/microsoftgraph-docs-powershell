@@ -720,7 +720,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsManagementRestricted
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -1085,7 +1085,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionGrants
-.
+
 To construct, see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
