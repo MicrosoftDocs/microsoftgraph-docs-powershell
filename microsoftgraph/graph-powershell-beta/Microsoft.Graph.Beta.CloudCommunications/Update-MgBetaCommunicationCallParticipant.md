@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsIdentityAnonymized
-.
+
 
 ```yaml
 Type: SwitchParameter

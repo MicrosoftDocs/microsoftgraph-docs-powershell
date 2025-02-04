@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Excludes
-.
+
 To construct, see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Includes
-.
+
 To construct, see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsBuiltIn
-.
+
 
 ```yaml
 Type: SwitchParameter

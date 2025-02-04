@@ -454,7 +454,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkforceIntegrationIds
-.
+
 
 ```yaml
 Type: String[]

@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignedTenantsCount
-.
+
 
 ```yaml
 Type: Int32
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompliantTenantsCount
-.
+
 
 ```yaml
 Type: Int32
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedByUserId
-.
+
 
 ```yaml
 Type: String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DismissedTenantsCount
-.
+
 
 ```yaml
 Type: Int32
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -IneligibleTenantsCount
-.
+
 
 ```yaml
 Type: Int32
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActionByUserId
-.
+
 
 ```yaml
 Type: String
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActionDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementTemplateCollectionDisplayName
-.
+
 
 ```yaml
 Type: String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementTemplateCollectionId
-.
+
 
 ```yaml
 Type: String
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementTemplateDisplayName
-.
+
 
 ```yaml
 Type: String
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementTemplateId
-.
+
 
 ```yaml
 Type: String
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementTemplateStepDisplayName
-.
+
 
 ```yaml
 Type: String
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementTemplateStepId
-.
+
 
 ```yaml
 Type: String
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotCompliantTenantsCount
-.
+
 
 ```yaml
 Type: Int32

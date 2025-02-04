@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -BaseUnitOfMeasureId
-.
+
 
 ```yaml
 Type: String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Blocked
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Gtin
-.
+
 
 ```yaml
 Type: String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -Inventory
-.
+
 
 ```yaml
 Type: Decimal
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -ItemCategoryCode
-.
+
 
 ```yaml
 Type: String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ItemCategoryId
-.
+
 
 ```yaml
 Type: String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -Number
-.
+
 
 ```yaml
 Type: String
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -Picture
-.
+
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -PriceIncludesTax
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -391,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaxGroupCode
-.
+
 
 ```yaml
 Type: String
@@ -406,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaxGroupId
-.
+
 
 ```yaml
 Type: String
@@ -421,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-.
+
 
 ```yaml
 Type: String
@@ -436,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnitCost
-.
+
 
 ```yaml
 Type: Decimal
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnitPrice
-.
+
 
 ```yaml
 Type: Decimal

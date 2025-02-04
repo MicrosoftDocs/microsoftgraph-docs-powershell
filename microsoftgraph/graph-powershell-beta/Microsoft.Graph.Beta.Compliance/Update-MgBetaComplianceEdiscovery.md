@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cases
-.
+
 To construct, see NOTES section for CASES properties and create a hash table.
 
 ```yaml

@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElevatedCount
-.
+
 
 ```yaml
 Type: Int32
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedCount
-.
+
 
 ```yaml
 Type: Int32
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -MfaEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsersCount
-.
+
 
 ```yaml
 Type: Int32
