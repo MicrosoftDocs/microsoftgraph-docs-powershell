@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession
 schema: 2.0.0
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgCommunicationCallContentSharingSession
