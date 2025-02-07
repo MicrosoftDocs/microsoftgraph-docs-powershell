@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DependentResources
-.
+
 To construct, see NOTES section for DEPENDENTRESOURCES properties and create a hash table.
 
 ```yaml

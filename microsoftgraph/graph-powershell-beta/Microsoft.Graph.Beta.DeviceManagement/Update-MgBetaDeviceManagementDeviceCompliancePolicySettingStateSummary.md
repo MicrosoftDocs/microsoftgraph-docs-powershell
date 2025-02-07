@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceComplianceSettingStates
-.
+
 To construct, see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
 
 ```yaml

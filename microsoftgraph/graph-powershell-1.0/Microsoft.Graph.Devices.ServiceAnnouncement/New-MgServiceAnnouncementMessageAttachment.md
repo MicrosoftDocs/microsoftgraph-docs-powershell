@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentType
-.
+
 
 ```yaml
 Type: String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+
 
 ```yaml
 Type: String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Size
-.
+
 
 ```yaml
 Type: Int32

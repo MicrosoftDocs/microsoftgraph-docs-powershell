@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InactiveUsers
-.
+
 To construct, see NOTES section for INACTIVEUSERS properties and create a hash table.
 
 ```yaml
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -InactiveUsersByApplication
-.
+
 To construct, see NOTES section for INACTIVEUSERSBYAPPLICATION properties and create a hash table.
 
 ```yaml

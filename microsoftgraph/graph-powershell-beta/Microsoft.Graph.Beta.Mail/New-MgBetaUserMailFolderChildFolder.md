@@ -379,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserConfigurations
-.
+
 To construct, see NOTES section for USERCONFIGURATIONS properties and create a hash table.
 
 ```yaml

@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomWorkflowExtensions
-.
+
 To construct, see NOTES section for CUSTOMWORKFLOWEXTENSIONS properties and create a hash table.
 
 ```yaml
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceRoles
-.
+
 To construct, see NOTES section for RESOURCEROLES properties and create a hash table.
 
 ```yaml
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceScopes
-.
+
 To construct, see NOTES section for RESOURCESCOPES properties and create a hash table.
 
 ```yaml
