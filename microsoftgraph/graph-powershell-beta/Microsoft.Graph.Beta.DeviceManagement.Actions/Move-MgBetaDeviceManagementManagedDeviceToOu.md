@@ -31,6 +31,14 @@ Move-MgBetaDeviceManagementManagedDeviceToOu
 ## DESCRIPTION
 Invoke action moveDevicesToOU
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,14 @@ Get-MgGroupOnenoteRecentNotebook -InputObject <IGroupsIdentity> [-Count] [-Filte
 ## DESCRIPTION
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

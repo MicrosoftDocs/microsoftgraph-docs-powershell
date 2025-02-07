@@ -30,6 +30,14 @@ Remove-MgBetaUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Deletes a user's FIDO2 Security Key Authentication Method object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

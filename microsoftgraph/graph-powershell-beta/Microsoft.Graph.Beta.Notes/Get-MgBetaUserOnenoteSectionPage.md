@@ -26,6 +26,14 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
+| Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

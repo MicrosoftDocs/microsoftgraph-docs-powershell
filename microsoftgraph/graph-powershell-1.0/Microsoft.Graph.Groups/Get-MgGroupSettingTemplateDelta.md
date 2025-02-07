@@ -25,6 +25,14 @@ Get-MgGroupSettingTemplateDelta [-ExpandProperty <String[]>] [-Filter <String>] 
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

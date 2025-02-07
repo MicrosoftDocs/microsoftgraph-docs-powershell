@@ -41,6 +41,14 @@ Get-MgBetaRoleManagementCloudPcRoleDefinition -InputObject <IDeviceManagementEnr
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Microsoft Entra directory roles)- entitlement management (Microsoft Entra entitlement management)- Exchange Online
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.CloudPC, RoleManagement.Read.Directory, RoleManagement.Read.CloudPC, RoleManagement.Read.All, EntitlementManagement.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementRBAC.Read.All, RoleManagement.ReadWrite.Directory, EntitlementManagement.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, CloudPC.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
