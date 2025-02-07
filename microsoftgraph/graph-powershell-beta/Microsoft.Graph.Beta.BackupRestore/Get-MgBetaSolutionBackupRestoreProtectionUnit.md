@@ -41,18 +41,6 @@ Get-MgBetaSolutionBackupRestoreProtectionUnit -InputObject <IBackupRestoreIdenti
 ## DESCRIPTION
 Read the properties and relationships of a protectionUnitBase object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -326,6 +314,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreprotectionunit)
 
 [https://learn.microsoft.com/graph/api/protectionunitbase-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/protectionunitbase-get?view=graph-rest-beta)
+
 
 
 
