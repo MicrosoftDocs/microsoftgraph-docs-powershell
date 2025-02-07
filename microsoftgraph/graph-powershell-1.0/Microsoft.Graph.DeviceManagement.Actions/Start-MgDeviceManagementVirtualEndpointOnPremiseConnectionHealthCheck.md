@@ -12,6 +12,9 @@ ms.subservice: cloud-pc
 Run health checks on the cloudPcOnPremisesConnection object.
 It triggers a new health check for the cloudPcOnPremisesConnection (../resources/cloudpconpremisesconnection.md) object and changes the healthCheckStatus and \[healthCheckStatusDetail properties when check finished.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Start-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Run (Default)

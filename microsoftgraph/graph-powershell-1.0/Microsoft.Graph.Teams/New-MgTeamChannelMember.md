@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Add a conversationMember to a channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content streams that are uploaded.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserTodoListTaskAttachmentSessionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

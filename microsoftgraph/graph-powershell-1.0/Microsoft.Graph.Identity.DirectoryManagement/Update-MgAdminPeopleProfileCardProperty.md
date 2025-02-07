@@ -11,6 +11,9 @@ ms.subservice: people
 ## SYNOPSIS
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
