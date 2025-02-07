@@ -43,13 +43,17 @@ Get-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> 
 Read the properties and relationships of a servicePrincipalRiskDetection object.
 
 ## EXAMPLES
+### Example: Get a specific risk detection object
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaServicePrincipalRiskDetection -ServicePrincipalRiskDetectionId $servicePrincipalRiskDetectionId
+
+```
+This example will get a specific risk detection object
+
 
 ## PARAMETERS
 

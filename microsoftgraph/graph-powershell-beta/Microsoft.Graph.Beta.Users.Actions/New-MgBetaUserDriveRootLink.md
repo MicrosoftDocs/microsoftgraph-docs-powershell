@@ -55,18 +55,6 @@ New-MgBetaUserDriveRootLink -InputObject <IUsersActionsIdentity>
 Create a link to share a driveItem driveItem.The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link is returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -432,6 +420,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootlink)
 
 [https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta)
+
 
 
 

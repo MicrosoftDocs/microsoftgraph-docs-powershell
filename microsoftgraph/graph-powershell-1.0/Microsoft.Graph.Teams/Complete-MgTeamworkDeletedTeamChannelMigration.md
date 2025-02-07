@@ -39,18 +39,6 @@ Migration mode is a special state that prevents certain operations, like sending
 After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -246,6 +234,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamworkdeletedteamchannelmigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamworkdeletedteamchannelmigration)
 
 [https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0)
+
 
 
 

@@ -52,11 +52,11 @@ Set-MgDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceMan
 Assign a cloudPcProvisioningPolicy to user groups.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 $params = @{
 	assignments = @(
@@ -70,6 +70,10 @@ $params = @{
 }
 
 Set-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+
 
 ## PARAMETERS
 

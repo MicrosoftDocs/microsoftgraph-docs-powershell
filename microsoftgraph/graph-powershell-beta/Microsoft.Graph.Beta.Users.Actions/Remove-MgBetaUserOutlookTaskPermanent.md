@@ -37,13 +37,17 @@ Unless there's a hold set on the mailbox, the items are permanently deleted afte
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 Remove-MgBetaUserOutlookTaskPermanent -UserId $userId -OutlookTaskId $outlookTaskId
+
+```
+This example shows how to use the Remove-MgBetaUserOutlookTaskPermanent Cmdlet.
+
 
 ## PARAMETERS
 

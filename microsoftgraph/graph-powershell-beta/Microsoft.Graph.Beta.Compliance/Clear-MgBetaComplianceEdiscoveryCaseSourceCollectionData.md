@@ -39,13 +39,17 @@ Also called *1:N* chats or *group conversations*.- Teams channels - Chat message
 For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- Advanced eDiscovery workflow for content in Microsoft Teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Clear-MgBetaComplianceEdiscoveryCaseSourceCollectionData -CaseId $caseId -SourceCollectionId $sourceCollectionId
+
+```
+This example shows how to use the Clear-MgBetaComplianceEdiscoveryCaseSourceCollectionData Cmdlet.
+
 
 ## PARAMETERS
 

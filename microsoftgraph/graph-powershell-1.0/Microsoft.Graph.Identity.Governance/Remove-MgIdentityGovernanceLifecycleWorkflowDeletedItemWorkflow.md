@@ -34,13 +34,17 @@ Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -InputObject <II
 Delete a workflow object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId
+
+```
+This example shows how to use the Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow Cmdlet.
+
 
 ## PARAMETERS
 

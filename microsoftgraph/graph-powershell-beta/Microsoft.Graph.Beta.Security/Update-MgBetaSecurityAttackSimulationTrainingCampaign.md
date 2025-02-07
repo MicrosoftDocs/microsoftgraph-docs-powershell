@@ -59,11 +59,11 @@ Update-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIde
 Update the properties of a trainingCampaign object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	displayName = "Graph Training Campaign"
@@ -117,13 +117,17 @@ trainingSetting = @{
 )
 }
 campaignSchedule = @{
-launchDateTime = \[System.DateTime\]::Parse("2024-02-15T07:59:44Z")
-completionDateTime = \[System.DateTime\]::Parse("2024-02-18T07:59:44Z")
+launchDateTime = [System.DateTime]::Parse("2024-02-15T07:59:44Z")
+completionDateTime = [System.DateTime]::Parse("2024-02-18T07:59:44Z")
 status = "Cancelled"
 }
 }
 
 Update-MgBetaSecurityAttackSimulationTrainingCampaign -TrainingCampaignId $trainingCampaignId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityAttackSimulationTrainingCampaign Cmdlet.
+
 
 ## PARAMETERS
 

@@ -50,11 +50,11 @@ Move-MgBetaUserMailFolder -InputObject <IUsersActionsIdentity>
 Move a mail folder and its contents to another mail folder.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	destinationId = "destinationId-value"
@@ -62,6 +62,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Move-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+
+```
+This example shows how to use the Move-MgBetaUserMailFolder Cmdlet.
+
 
 ## PARAMETERS
 

@@ -35,18 +35,6 @@ Get-MgBetaVirtualEventWebinarByUserIdAndRole -InputObject <IBookingsIdentity> [-
 ## DESCRIPTION
 Get a list of virtualEventWebinar objects where the specified user is either the organizer or a coorganizer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -308,6 +296,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuseridandrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuseridandrole)
 
 [https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuseridandrole?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuseridandrole?view=graph-rest-beta)
+
 
 
 

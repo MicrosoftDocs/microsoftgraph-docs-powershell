@@ -53,18 +53,6 @@ Invoke-MgInviteUserDriveRoot -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -416,6 +404,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mginviteuserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mginviteuserdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
+
 
 
 

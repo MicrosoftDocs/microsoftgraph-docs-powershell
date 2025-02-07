@@ -62,18 +62,6 @@ When using MIME format:- Provide the applicable Internet message headers and the
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply-all to a message, and send it later.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -638,6 +626,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta)
+
 
 
 

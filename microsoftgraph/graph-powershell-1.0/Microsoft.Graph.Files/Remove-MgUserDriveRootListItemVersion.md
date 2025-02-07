@@ -32,18 +32,6 @@ Remove-MgUserDriveRootListItemVersion -InputObject <IFilesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property versions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -258,6 +246,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootlistitemversion)
+
 
 
 

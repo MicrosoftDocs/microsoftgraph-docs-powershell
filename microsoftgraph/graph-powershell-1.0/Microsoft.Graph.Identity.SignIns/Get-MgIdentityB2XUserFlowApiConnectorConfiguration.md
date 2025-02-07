@@ -34,13 +34,17 @@ Get-MgIdentityB2XUserFlowApiConnectorConfiguration -InputObject <IIdentitySignIn
 Get the apiConnectorConfiguration property in a b2xIdentityUserFlow to detail the API connectors enabled for the user flow.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
-Get-MgIdentityB2XUserFlowApiConnectorConfiguration -B2xIdentityUserFlowId $b2xIdentityUserFlowId -ExpandProperty "postFederationSignup,postAttributeCollection"
+Get-MgIdentityB2XUserFlowApiConnectorConfiguration -B2xIdentityUserFlowId $b2xIdentityUserFlowId -ExpandProperty "postFederationSignup,postAttributeCollection" 
+
+```
+This example shows how to use the Get-MgIdentityB2XUserFlowApiConnectorConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

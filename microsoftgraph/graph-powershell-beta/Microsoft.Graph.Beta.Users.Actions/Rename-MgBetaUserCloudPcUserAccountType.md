@@ -48,18 +48,6 @@ Rename-MgBetaUserCloudPcUserAccountType -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Change the account type of the user on a specific Cloud PC.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -317,6 +305,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausercloudpcuseraccounttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausercloudpcuseraccounttype)
 
 [https://learn.microsoft.com/graph/api/cloudpc-changeuseraccounttype?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-changeuseraccounttype?view=graph-rest-beta)
+
 
 
 

@@ -47,14 +47,18 @@ A successful unsubscribe action moves the message to the Deleted Items folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaUnsubscribeUserMessage -UserId $userId -MessageId $messageId
+
+```
+This example shows how to use the Invoke-MgBetaUnsubscribeUserMessage Cmdlet.
+
 
 ## PARAMETERS
 

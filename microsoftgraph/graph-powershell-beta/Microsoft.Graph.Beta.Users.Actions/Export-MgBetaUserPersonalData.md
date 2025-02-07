@@ -54,17 +54,21 @@ This data includes the user's data stored in OneDrive and their activity reports
 For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	storageLocation = "storageLocation-value"
 }
 
 Export-MgBetaUserPersonalData -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Export-MgBetaUserPersonalData Cmdlet.
+
 
 ## PARAMETERS
 

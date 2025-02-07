@@ -49,18 +49,6 @@ Invoke-MgGraphUserChat -InputObject <IUsersActionsIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Unhide a chat for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -345,6 +333,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mggraphuserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mggraphuserchat)
 
 [https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-1.0)
+
 
 
 

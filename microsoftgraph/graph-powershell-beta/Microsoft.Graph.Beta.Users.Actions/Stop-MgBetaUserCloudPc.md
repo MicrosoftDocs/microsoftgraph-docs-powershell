@@ -50,18 +50,6 @@ This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered off, it's deallocated, and licenses are revoked immediately.
 Only IT admin users can perform this action.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -270,6 +258,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpc-poweroff?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-poweroff?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/cloudpc-stop?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-stop?view=graph-rest-beta)
+
 
 
 

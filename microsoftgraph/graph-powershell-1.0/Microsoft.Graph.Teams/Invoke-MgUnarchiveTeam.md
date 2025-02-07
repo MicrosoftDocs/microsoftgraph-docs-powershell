@@ -49,13 +49,17 @@ A team is unarchived once the async operation completes successfully, which migh
 | Application | TeamSettings.ReadWrite.Group, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Invoke-MgUnarchiveTeam -TeamId $teamId
+
+```
+This example shows how to use the Invoke-MgUnarchiveTeam Cmdlet.
+
 
 ## PARAMETERS
 

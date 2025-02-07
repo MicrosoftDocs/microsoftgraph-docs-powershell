@@ -32,18 +32,6 @@ Get-MgBetaVirtualEventWebinarSessionByJoinWebUrl -InputObject <IBookingsIdentity
 Read the properties and relationships of a virtualEventSession object.
 Currently, the following virtual event types are supported: virtualEventTownhall and virtualEventWebinar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -215,6 +203,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionbyjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionbyjoinweburl)
 
 [https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-beta)
+
 
 
 

@@ -57,9 +57,8 @@ Invoke action getMemberObjects
 | Application | Application.Read.All, User.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserMemberObject Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	SecurityEnabledOnly = $true
@@ -67,6 +66,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMemberObject -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Get-MgBetaUserMemberObject Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

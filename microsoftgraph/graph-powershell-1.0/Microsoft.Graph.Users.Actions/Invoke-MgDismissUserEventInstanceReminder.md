@@ -33,18 +33,6 @@ Invoke-MgDismissUserEventInstanceReminder -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EventId
@@ -252,6 +240,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdismissusereventinstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdismissusereventinstancereminder)
 
 [https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0)
+
 
 
 

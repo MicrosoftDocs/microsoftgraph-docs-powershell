@@ -35,13 +35,17 @@ Note: To permanently delete the externalUserProfile, follow permanently delete a
 To restore an externalUserProfile, follow restore a deleted item.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaDirectoryExternalUserProfile -ExternalUserProfileId $externalUserProfileId
+
+```
+This example shows how to use the Remove-MgBetaDirectoryExternalUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

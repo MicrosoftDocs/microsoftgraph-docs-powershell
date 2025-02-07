@@ -70,11 +70,11 @@ The following RBAC providers are currently supported:- Cloud PC- device manageme
 | Application | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	description = "Update basic properties of application registrations"
@@ -89,6 +89,10 @@ $params = @{
 }
 
 Update-MgBetaRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaRoleManagementDirectoryRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

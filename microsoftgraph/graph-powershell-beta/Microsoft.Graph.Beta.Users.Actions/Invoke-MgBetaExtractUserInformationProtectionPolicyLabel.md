@@ -49,18 +49,6 @@ Invoke-MgBetaExtractUserInformationProtectionPolicyLabel -InputObject <IUsersAct
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,6 +293,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserinformationprotectionpolicylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserinformationprotectionpolicylabel)
 
 [https://learn.microsoft.com/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta)
+
 
 
 

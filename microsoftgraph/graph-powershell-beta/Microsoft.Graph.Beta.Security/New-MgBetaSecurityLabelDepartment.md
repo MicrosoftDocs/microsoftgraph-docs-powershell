@@ -33,11 +33,11 @@ New-MgBetaSecurityLabelDepartment -BodyParameter <Hashtable> [-ResponseHeadersVa
 Create a new departmentTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.departmentTemplate"
@@ -45,6 +45,10 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelDepartment -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelDepartment Cmdlet.
+
 
 ## PARAMETERS
 

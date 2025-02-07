@@ -52,11 +52,11 @@ Update-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity>
 Update the properties of a deployment object.
 
 ## EXAMPLES
+### Example 1: Pause a deployment
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
@@ -68,10 +68,14 @@ $params = @{
 
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will pause a deployment
+
+### Example 2: Update deployment settings to add a monitoring rule
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
@@ -90,6 +94,10 @@ $params = @{
 }
 
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
+
+```
+This example will update deployment settings to add a monitoring rule
+
 
 ## PARAMETERS
 

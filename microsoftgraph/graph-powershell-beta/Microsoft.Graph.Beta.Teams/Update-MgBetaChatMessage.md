@@ -72,18 +72,6 @@ Update the navigation property messages in chats
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1121,6 +1109,7 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatmessage)
+
 
 
 

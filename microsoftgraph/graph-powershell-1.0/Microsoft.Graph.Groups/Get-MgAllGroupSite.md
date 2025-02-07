@@ -39,18 +39,6 @@ List sites across geographies in an organization.
 This API can also be used to enumerate all sites in a non-multi-geo tenant.
 For more information, see Best practices for discovering files and detecting changes at scale.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -312,6 +300,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite)
 
 [https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)
+
 
 
 

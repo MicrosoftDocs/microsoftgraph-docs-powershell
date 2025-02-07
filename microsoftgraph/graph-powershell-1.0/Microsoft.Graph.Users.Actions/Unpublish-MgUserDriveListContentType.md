@@ -33,18 +33,6 @@ Unpublish-MgUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Resp
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -252,6 +240,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/unpublish-mguserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/unpublish-mguserdrivelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
+
 
 
 

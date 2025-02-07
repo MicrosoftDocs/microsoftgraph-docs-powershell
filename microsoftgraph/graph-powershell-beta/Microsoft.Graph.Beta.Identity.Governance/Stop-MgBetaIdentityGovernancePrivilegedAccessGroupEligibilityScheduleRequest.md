@@ -35,13 +35,17 @@ Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 Cancel an eligibility assignment request to a group whose membership and ownership are governed by PIM.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -PrivilegedAccessGroupEligibilityScheduleRequestId $privilegedAccessGroupEligibilityScheduleRequestId
+
+```
+This example shows how to use the Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

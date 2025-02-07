@@ -37,18 +37,6 @@ Get-MgBetaAllGroupSite -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty 
 List sites across geographies in an organization.
 For more details, see Best practices for discovering files and detecting changes at scale.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -318,6 +306,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetaallgroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetaallgroupsite)
 
 [https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta)
+
 
 
 

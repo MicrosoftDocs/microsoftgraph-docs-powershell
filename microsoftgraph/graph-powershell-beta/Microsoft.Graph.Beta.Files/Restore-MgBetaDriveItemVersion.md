@@ -44,13 +44,17 @@ This will create a new version with the contents of the previous version, but pr
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Restore-MgBetaDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
+
+```
+This example shows how to use the Restore-MgBetaDriveItemVersion Cmdlet.
+
 
 ## PARAMETERS
 

@@ -31,13 +31,17 @@ Invoke-MgBetaEntityNetworkAccessReportSummary -InputObject <INetworkAccessIdenti
 Get the number of users, devices, and workloads per traffic type in a specified time period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Invoke-MgBetaEntityNetworkAccessReportSummary
+
+```
+This example shows how to use the Invoke-MgBetaEntityNetworkAccessReportSummary Cmdlet.
+
 
 ## PARAMETERS
 

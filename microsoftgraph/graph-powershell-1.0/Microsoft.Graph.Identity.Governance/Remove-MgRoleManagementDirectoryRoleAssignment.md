@@ -34,13 +34,17 @@ Remove-MgRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernance
 Delete a unifiedRoleAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
+```
+This example shows how to use the Remove-MgRoleManagementDirectoryRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

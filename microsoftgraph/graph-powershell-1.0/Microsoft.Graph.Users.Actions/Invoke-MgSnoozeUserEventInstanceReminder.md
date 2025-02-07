@@ -51,18 +51,6 @@ Invoke-MgSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,6 +320,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsnoozeusereventinstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsnoozeusereventinstancereminder)
 
 [https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0)
+
 
 
 

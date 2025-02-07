@@ -49,18 +49,6 @@ Add-MgGroupSiteContentTypeCopy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Add a copy of a content type from a site to a list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -299,6 +287,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitecontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitecontenttypecopy)
 
 [https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
+
 
 
 

@@ -51,20 +51,28 @@ Read the properties and relationships of a workflow object.
 | Application | LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Retrieve all workflows created in the tenant
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceLifecycleWorkflow
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.Governance
-```
+This example will retrieve all workflows created in the tenant
 
-Get-MgIdentityGovernanceLifecycleWorkflow -Filter "category eq 'leaver'" -Property "id,category,displayName,isEnabled,isSchedulingEnabled"
+### Example 2: Retrieve only specific properties of "leaver" workflows
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflow -Filter "category eq 'leaver'" -Property "id,category,displayName,isEnabled,isSchedulingEnabled" 
+
+```
+This example will retrieve only specific properties of "leaver" workflows
+
 
 ## PARAMETERS
 
