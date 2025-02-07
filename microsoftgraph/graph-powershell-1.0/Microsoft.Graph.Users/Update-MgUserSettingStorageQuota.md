@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstoragequota
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property quota in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingStorageQuota](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingStorageQuota?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +47,18 @@ Update-MgUserSettingStorageQuota -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the navigation property quota in users
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -84,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deleted
-
+.
 
 ```yaml
 Type: Int64
@@ -146,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManageWebUrl
-
+.
 
 ```yaml
 Type: String
@@ -176,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Remaining
-
+.
 
 ```yaml
 Type: Int64
@@ -206,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Services
-
+.
 To construct, see NOTES section for SERVICES properties and create a hash table.
 
 ```yaml
@@ -222,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -State
-
+.
 
 ```yaml
 Type: String
@@ -237,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -Total
-
+.
 
 ```yaml
 Type: Int64
@@ -252,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -Used
-
+.
 
 ```yaml
 Type: Int64
@@ -329,75 +338,52 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedStorageQuota>`: unifiedStorageQuota
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUnifiedStorageQuota\>: unifiedStorageQuota
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Deleted <Int64?>]`: 
-  - `[ManageWebUrl <String>]`: 
-  - `[Remaining <Int64?>]`: 
-  - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
-    - `[DisplayName <String>]`: 
-    - `[ManageWebUrl <String>]`: 
-    - `[Used <Int64?>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Deleted \<Int64?\>\]: 
+  \[ManageWebUrl \<String\>\]: 
+  \[Remaining \<Int64?\>\]: 
+  \[Services \<IMicrosoftGraphServiceStorageQuotaBreakdown\[\]\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[ManageWebUrl \<String\>\]: 
+    \[Used \<Int64?\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[State <String>]`: 
-  - `[Total <Int64?>]`: 
-  - `[Used <Int64?>]`: 
+  \[State \<String\>\]: 
+  \[Total \<Int64?\>\]: 
+  \[Used \<Int64?\>\]: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
-  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ServiceStorageQuotaBreakdownId \<String\>\]: The unique identifier of serviceStorageQuotaBreakdown
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WindowsSettingId \<String\>\]: The unique identifier of windowsSetting
+  \[WindowsSettingInstanceId \<String\>\]: The unique identifier of windowsSettingInstance
 
-SERVICES `<IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>`: .
-  - `[DisplayName <String>]`: 
-  - `[ManageWebUrl <String>]`: 
-  - `[Used <Int64?>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+SERVICES \<IMicrosoftGraphServiceStorageQuotaBreakdown\[\]\>: .
+  \[DisplayName \<String\>\]: 
+  \[ManageWebUrl \<String\>\]: 
+  \[Used \<Int64?\>\]: 
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstoragequota](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstoragequota)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

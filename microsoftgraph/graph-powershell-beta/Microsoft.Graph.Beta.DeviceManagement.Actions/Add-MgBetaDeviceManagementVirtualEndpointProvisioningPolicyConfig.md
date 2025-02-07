@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementvirtualendpointprovisioningpolicyconfig
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyConfig
@@ -35,11 +34,11 @@ Update the provisioning policy configuration for a set of Cloud PC devices by th
 This method supports retry and allows you to apply the configuration to a subset of Cloud PCs initially to test.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+```
 
 $params = @{
 	cloudPcIds = @(
@@ -50,10 +49,6 @@ policySettings = "region"
 }
 
 Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyConfig -BodyParameter $params
-
-```
-This example shows how to use the Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyConfig Cmdlet.
-
 
 ## PARAMETERS
 
@@ -73,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -89,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudPcIds
-
+.
 
 ```yaml
 Type: String[]
@@ -225,36 +220,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1131ZgkDevicemanagementVirtualendpointProvisioningpoliciesMicrosoftGraphApplyconfigPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CloudPcIds <String- `[]`>]`: 
-  - `[PolicySettings <String>]`: cloudPcPolicySettingType
+BODYPARAMETER \<IPaths1131ZgkDevicemanagementVirtualendpointProvisioningpoliciesMicrosoftGraphApplyconfigPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CloudPcIds \<String\[\]\>\]: 
+  \[PolicySettings \<String\>\]: cloudPcPolicySettingType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementvirtualendpointprovisioningpolicyconfig](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementvirtualendpointprovisioningpolicyconfig)
 
 [https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-applyconfig?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-applyconfig?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

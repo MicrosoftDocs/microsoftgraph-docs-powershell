@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkrestoredevicemanagementmanageddevicecloudpc
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc
@@ -33,26 +32,22 @@ Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+```
 
 $params = @{
 	managedDeviceIds = @(
 	"30d0e128-de93-41dc-89ec-33d84bb662a0"
 "7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
 )
-restorePointDateTime = [System.DateTime]::Parse("2021-09-23T04:00:00.0000000")
+restorePointDateTime = \[System.DateTime\]::Parse("2021-09-23T04:00:00.0000000")
 timeRange = "before"
 }
 
 Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc Cmdlet.
-
 
 ## PARAMETERS
 
@@ -72,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -103,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceIds
-
+.
 
 ```yaml
 Type: String[]
@@ -148,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -224,37 +219,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths2F9570DevicemanagementManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ManagedDeviceIds <String- `[]`>]`: 
-  - `[RestorePointDateTime <DateTime?>]`: 
-  - `[TimeRange <String>]`: restoreTimeRange
+BODYPARAMETER \<IPaths2F9570DevicemanagementManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ManagedDeviceIds \<String\[\]\>\]: 
+  \[RestorePointDateTime \<DateTime?\>\]: 
+  \[TimeRange \<String\>\]: restoreTimeRange
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkrestoredevicemanagementmanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkrestoredevicemanagementmanageddevicecloudpc)
 
 [https://learn.microsoft.com/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

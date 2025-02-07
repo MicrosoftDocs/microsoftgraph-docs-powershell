@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # Get-MgOauth2PermissionGrantDelta
@@ -11,9 +10,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
 For details, see Using delta query.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaOauth2PermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaOauth2PermissionGrantDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,26 +24,14 @@ Get-MgOauth2PermissionGrantDelta [-ExpandProperty <String[]>] [-Filter <String>]
 Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
 For details, see Using delta query.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Directory.ReadWrite.All, DelegatedPermissionGrant.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgOauth2PermissionGrantDelta
-
-```
-This example shows how to use the Get-MgOauth2PermissionGrantDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -263,26 +247,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta)
 
 [https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
