@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -RolePermissions
-.
+
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml

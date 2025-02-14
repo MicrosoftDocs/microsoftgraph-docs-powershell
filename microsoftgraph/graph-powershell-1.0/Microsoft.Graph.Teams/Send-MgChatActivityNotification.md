@@ -230,7 +230,7 @@ This example will notify the chat members about a task created in a chat
 ## PARAMETERS
 
 ### -ActivityType
-.
+
 
 ```yaml
 Type: String
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -ChainId
-.
+
 
 ```yaml
 Type: Int64
@@ -413,7 +413,7 @@ Accept wildcard characters: False
 ```
 
 ### -TeamsAppId
-.
+
 
 ```yaml
 Type: String
@@ -428,7 +428,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameters
-.
+
 To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml

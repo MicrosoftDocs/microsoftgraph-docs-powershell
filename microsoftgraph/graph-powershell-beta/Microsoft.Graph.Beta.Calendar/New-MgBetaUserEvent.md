@@ -486,7 +486,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExceptionOccurrences
-.
+
 To construct, see NOTES section for EXCEPTIONOCCURRENCES properties and create a hash table.
 
 ```yaml

@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -Alerts
-.
+
 To construct, see NOTES section for ALERTS properties and create a hash table.
 
 ```yaml

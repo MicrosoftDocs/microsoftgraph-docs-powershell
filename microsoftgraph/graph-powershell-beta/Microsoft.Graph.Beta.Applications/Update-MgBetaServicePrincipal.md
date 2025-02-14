@@ -568,7 +568,7 @@ Accept wildcard characters: False
 ```
 
 ### -FederatedIdentityCredentials
-.
+
 To construct, see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
@@ -697,7 +697,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseDetails
-.
+
 To construct, see NOTES section for LICENSEDETAILS properties and create a hash table.
 
 ```yaml
@@ -887,7 +887,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionGrantPreApprovalPolicies
-.
+
 To construct, see NOTES section for PERMISSIONGRANTPREAPPROVALPOLICIES properties and create a hash table.
 
 ```yaml
@@ -1236,7 +1236,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransitiveMemberOf
-.
+
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
