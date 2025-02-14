@@ -32,18 +32,6 @@ Remove-MgBetaSolutionBackupRestoreDriveProtectionUnit -InputObject <IBackupResto
 ## DESCRIPTION
 Delete navigation property driveProtectionUnits for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveProtectionUnitId
@@ -225,6 +213,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoredriveprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoredriveprotectionunit)
+
 
 
 
