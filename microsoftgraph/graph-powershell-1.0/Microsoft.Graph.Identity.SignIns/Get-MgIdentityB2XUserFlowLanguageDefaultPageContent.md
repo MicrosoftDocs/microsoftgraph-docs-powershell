@@ -33,6 +33,14 @@ Get-MgIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentitySignI
 Read the values in a userFlowLanguagePage object for a language in a user flow.
 These values are shown to a user during a user journey defined by a user flow.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,14 @@ Publish-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentit
 Release a custodian from a case.
 For details, see Release a custodian from a case.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

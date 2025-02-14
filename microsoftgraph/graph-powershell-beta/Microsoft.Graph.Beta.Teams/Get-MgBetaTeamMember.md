@@ -39,6 +39,14 @@ Get-MgBetaTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Get a conversationMember from a team.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamMember.Read.Group, TeamMember.ReadWrite.All, TeamMember.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
