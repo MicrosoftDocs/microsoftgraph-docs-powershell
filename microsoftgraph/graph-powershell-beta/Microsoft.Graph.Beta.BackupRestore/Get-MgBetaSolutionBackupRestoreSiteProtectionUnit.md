@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 The list of site protection units in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSiteProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSiteProtectionUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

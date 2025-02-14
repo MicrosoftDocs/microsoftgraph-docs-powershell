@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Mark a chat as unread for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkUserChatUnreadForUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaMarkUserChatUnreadForUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MarkExpanded (Default)

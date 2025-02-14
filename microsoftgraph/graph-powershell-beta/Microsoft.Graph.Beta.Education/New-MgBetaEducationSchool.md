@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Create a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

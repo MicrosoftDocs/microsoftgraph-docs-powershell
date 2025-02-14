@@ -12,6 +12,9 @@ ms.subservice: security
 ## SYNOPSIS
 Read the properties and relationships of a categoryTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

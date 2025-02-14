@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Get a user's presence information.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

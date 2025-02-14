@@ -11,6 +11,9 @@ ms.subservice: cloud-pc
 ## SYNOPSIS
 Assign cloudPcProvisioningPolicy to user groups.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

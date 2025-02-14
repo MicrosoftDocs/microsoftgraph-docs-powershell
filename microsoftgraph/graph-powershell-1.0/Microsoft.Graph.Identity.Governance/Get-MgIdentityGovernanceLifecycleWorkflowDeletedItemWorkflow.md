@@ -12,6 +12,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Retrieve a deleted workflow object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
