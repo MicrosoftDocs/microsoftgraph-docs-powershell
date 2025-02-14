@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Education
-Module Guid: 5a363100-0735-4962-9c2e-2ae9fd71dc05
+Module Guid: 92d05785-4f33-4277-921c-bba3a1cc3f7d
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.education/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -630,23 +630,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgEducationUserMailboxSetting](Update-MgEducationUserMailboxSetting.md)
 
 ### [Update-MgEducationUserRubric](Update-MgEducationUserRubric.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

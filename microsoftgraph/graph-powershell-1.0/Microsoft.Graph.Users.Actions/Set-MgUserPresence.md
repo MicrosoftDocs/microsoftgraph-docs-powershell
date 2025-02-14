@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresence
 schema: 2.0.0
-ms.subservice: cloud-communications
 ---
 
 # Set-MgUserPresence
 
 ## SYNOPSIS
 Set the state of a user's presence session as an application.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,20 +47,12 @@ Set-MgUserPresence -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Set the state of a user's presence session as an application.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Presence.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Presence.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87"
@@ -75,14 +63,10 @@ $params = @{
 
 Set-MgUserPresence -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Set-MgUserPresence Cmdlet.
-
-
 ## PARAMETERS
 
 ### -Activity
-
+.
 
 ```yaml
 Type: String
@@ -112,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Availability
-
+.
 
 ```yaml
 Type: String
@@ -127,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -143,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDuration
-
+.
 
 ```yaml
 Type: TimeSpan
@@ -234,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-
+.
 
 ```yaml
 Type: String
@@ -311,70 +295,48 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1XdpsmjUsersUserIdPresenceMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Activity <String>]`: 
-  - `[Availability <String>]`: 
-  - `[ExpirationDuration <TimeSpan?>]`: 
-  - `[SessionId <String>]`: 
+BODYPARAMETER \<IPaths1XdpsmjUsersUserIdPresenceMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Activity \<String\>\]: 
+  \[Availability \<String\>\]: 
+  \[ExpirationDuration \<TimeSpan?\>\]: 
+  \[SessionId \<String\>\]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresence)
 
 [https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

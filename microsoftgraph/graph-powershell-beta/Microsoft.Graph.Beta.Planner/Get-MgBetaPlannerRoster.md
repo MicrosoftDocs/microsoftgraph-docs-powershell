@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster
 schema: 2.0.0
-ms.subservice: planner
 ---
 
 # Get-MgBetaPlannerRoster
@@ -38,26 +37,14 @@ Get-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Read the properties and relationships of a plannerRoster object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 Get-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId
-
-```
-This example shows how to use the Get-MgBetaPlannerRoster Cmdlet.
-
 
 ## PARAMETERS
 
@@ -304,41 +291,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
-  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerDeltaId \<String\>\]: The unique identifier of plannerDelta
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[PlannerRosterId \<String\>\]: The unique identifier of plannerRoster
+  \[PlannerRosterMemberId \<String\>\]: The unique identifier of plannerRosterMember
+  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster)
 
 [https://learn.microsoft.com/graph/api/plannerroster-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerroster-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

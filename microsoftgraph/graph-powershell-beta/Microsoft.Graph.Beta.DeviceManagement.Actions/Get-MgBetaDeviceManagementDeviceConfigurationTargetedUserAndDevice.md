@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementdeviceconfigurationtargeteduseranddevice
@@ -30,6 +30,18 @@ Get-MgBetaDeviceManagementDeviceConfigurationTargetedUserAndDevice
 ## DESCRIPTION
 Invoke action getTargetedUsersAndDevices
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -48,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -64,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceConfigurationIds
-
+.
 
 ```yaml
 Type: String[]
@@ -170,34 +182,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphGettargetedusersanddevicesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeviceConfigurationIds <String- `[]`>]`:
+BODYPARAMETER \<IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphGettargetedusersanddevicesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeviceConfigurationIds \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementdeviceconfigurationtargeteduseranddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementdeviceconfigurationtargeteduseranddevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

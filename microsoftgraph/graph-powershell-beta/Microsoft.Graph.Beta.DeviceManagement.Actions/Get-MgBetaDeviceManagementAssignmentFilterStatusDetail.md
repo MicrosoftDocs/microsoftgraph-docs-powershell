@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementassignmentfilterstatusdetail
@@ -31,13 +31,17 @@ Get-MgBetaDeviceManagementAssignmentFilterStatusDetail
 ## DESCRIPTION
 Invoke action getAssignmentFiltersStatusDetails
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -57,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignmentFilterIds
-
+.
 
 ```yaml
 Type: String[]
@@ -72,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -103,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceId
-
+.
 
 ```yaml
 Type: String
@@ -118,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PayloadId
-
+.
 
 ```yaml
 Type: String
@@ -163,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-
+.
 
 ```yaml
 Type: Int32
@@ -178,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-
+.
 
 ```yaml
 Type: String
@@ -224,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skip
-
+.
 
 ```yaml
 Type: Int32
@@ -254,39 +258,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Dv3M96DevicemanagementMicrosoftGraphGetassignmentfiltersstatusdetailsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AssignmentFilterIds <String- `[]`>]`: 
-  - `[ManagedDeviceId <String>]`: 
-  - `[PayloadId <String>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`: 
-  - `[UserId <String>]`:
+BODYPARAMETER \<IPaths1Dv3M96DevicemanagementMicrosoftGraphGetassignmentfiltersstatusdetailsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AssignmentFilterIds \<String\[\]\>\]: 
+  \[ManagedDeviceId \<String\>\]: 
+  \[PayloadId \<String\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]: 
+  \[UserId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementassignmentfilterstatusdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementassignmentfilterstatusdetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

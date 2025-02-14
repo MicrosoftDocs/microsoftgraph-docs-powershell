@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplepronoun
 schema: 2.0.0
-ms.subservice: people
 ---
 
 # Update-MgBetaAdminPeoplePronoun
@@ -11,9 +10,6 @@ ms.subservice: people
 ## SYNOPSIS
 Update the properties of a pronounsSettings object in an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminPeoplePronoun](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeoplePronoun?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,21 +32,17 @@ Update the properties of a pronounsSettings object in an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	isEnabledInOrganization = $true
 }
 
 Update-MgBetaAdminPeoplePronoun -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaAdminPeoplePronoun Cmdlet.
-
 
 ## PARAMETERS
 
@@ -209,11 +201,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPronounsSettings>`: pronounsSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPronounsSettings\>: pronounsSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization; otherwise, false.
+  \[IsEnabledInOrganization \<Boolean?\>\]: true to enable pronouns in the organization; otherwise, false.
 The default value is false, and pronouns are disabled.
 
 ## RELATED LINKS
@@ -221,26 +213,4 @@ The default value is false, and pronouns are disabled.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplepronoun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplepronoun)
 
 [https://learn.microsoft.com/graph/api/pronounssettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/pronounssettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

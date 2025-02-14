@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesupdatableasset
 schema: 2.0.0
-ms.subservice: windows-autopatch
 ---
 
 # New-MgBetaWindowsUpdatesUpdatableAsset
@@ -32,21 +31,17 @@ Create a new updatableAssetGroup object.
 The updatableAssetGroup resource inherits from updatableAsset.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.updatableAssetGroup"
 }
 
 New-MgBetaWindowsUpdatesUpdatableAsset -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
-
 
 ## PARAMETERS
 
@@ -189,26 +184,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesupdatableasset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesupdatableasset)
 
 [https://learn.microsoft.com/graph/api/adminwindowsupdates-post-updatableassets-updatableassetgroup?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminwindowsupdates-post-updatableassets-updatableassetgroup?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

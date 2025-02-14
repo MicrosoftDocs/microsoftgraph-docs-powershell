@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplan
 schema: 2.0.0
-ms.subservice: business-scenarios
 ---
 
 # Get-MgBetaBusinessScenarioPlannerPlan
@@ -48,20 +47,12 @@ Get-MgBetaBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity>
 Get information about the plannerPlan mapped to a given target.
 If a plannerPlan doesn't exist for the specified target at the time of the request, a new plan will be created for the businessScenario.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioData.Read.OwnedBy, BusinessScenarioData.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
+```
 
 $params = @{
 	target = @{
@@ -72,10 +63,6 @@ $params = @{
 }
 
 Get-MgBetaBusinessScenarioPlannerPlan -BusinessScenarioId $businessScenarioId -BodyParameter $params
-
-```
-This example shows how to use the Get-MgBetaBusinessScenarioPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -95,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -250,68 +237,46 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>]`: businessScenarioTaskTargetBase
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[TaskTargetKind <String>]`: plannerTaskTargetKind
+BODYPARAMETER \<IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Target \<IMicrosoftGraphBusinessScenarioTaskTargetBase\>\]: businessScenarioTaskTargetBase
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[TaskTargetKind \<String\>\]: plannerTaskTargetKind
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
-  - `[UserId <String>]`: Alternate key of virtualEventRegistration
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[ApprovalItemId \<String\>\]: The unique identifier of approvalItem
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[Email \<String\>\]: Alternate key of virtualEventRegistration
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[ProtectionPolicyBaseId \<String\>\]: The unique identifier of protectionPolicyBase
+  \[RestoreSessionBaseId \<String\>\]: The unique identifier of restoreSessionBase
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[ServiceAppId \<String\>\]: The unique identifier of serviceApp
+  \[UserId \<String\>\]: Alternate key of virtualEventRegistration
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventRegistrationQuestionBaseId \<String\>\]: The unique identifier of virtualEventRegistrationQuestionBase
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-TARGET `<IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTargetBase
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[TaskTargetKind <String>]`: plannerTaskTargetKind
+TARGET \<IMicrosoftGraphBusinessScenarioTaskTargetBase\>: businessScenarioTaskTargetBase
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[TaskTargetKind \<String\>\]: plannerTaskTargetKind
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplan)
 
 [https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

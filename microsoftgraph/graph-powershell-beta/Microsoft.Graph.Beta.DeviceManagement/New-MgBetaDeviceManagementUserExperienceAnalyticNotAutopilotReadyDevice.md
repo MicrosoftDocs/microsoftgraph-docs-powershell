@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticnotautopilotreadydevice
@@ -32,13 +32,17 @@ New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -316,44 +320,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice>`: The user experience analytics Device not windows autopilot ready.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice\>: The user experience analytics Device not windows autopilot ready.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AutoPilotProfileAssigned <Boolean?>]`: The intune device's autopilotProfileAssigned.
-  - `[AutoPilotRegistered <Boolean?>]`: The intune device's autopilotRegistered.
-  - `[AzureAdJoinType <String>]`: The intune device's azure Ad joinType.
-  - `[AzureAdRegistered <Boolean?>]`: The intune device's azureAdRegistered.
-  - `[DeviceName <String>]`: The intune device's name.
-  - `[ManagedBy <String>]`: The intune device's managed by.
-  - `[Manufacturer <String>]`: The intune device's manufacturer.
-  - `[Model <String>]`: The intune device's model.
-  - `[SerialNumber <String>]`: The intune device's serial number.
+  \[AutoPilotProfileAssigned \<Boolean?\>\]: The intune device's autopilotProfileAssigned.
+  \[AutoPilotRegistered \<Boolean?\>\]: The intune device's autopilotRegistered.
+  \[AzureAdJoinType \<String\>\]: The intune device's azure Ad joinType.
+  \[AzureAdRegistered \<Boolean?\>\]: The intune device's azureAdRegistered.
+  \[DeviceName \<String\>\]: The intune device's name.
+  \[ManagedBy \<String\>\]: The intune device's managed by.
+  \[Manufacturer \<String\>\]: The intune device's manufacturer.
+  \[Model \<String\>\]: The intune device's model.
+  \[SerialNumber \<String\>\]: The intune device's serial number.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticnotautopilotreadydevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticnotautopilotreadydevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

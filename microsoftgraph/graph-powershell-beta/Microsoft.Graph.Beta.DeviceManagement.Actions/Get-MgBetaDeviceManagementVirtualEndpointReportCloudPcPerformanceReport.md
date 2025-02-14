@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcperformancereport
@@ -32,6 +32,18 @@ Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcPerformanceReport -OutFile
 ## DESCRIPTION
 Invoke action getCloudPcPerformanceReport
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -50,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -66,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-
+.
 
 ```yaml
 Type: String
@@ -81,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupBy
-
+.
 
 ```yaml
 Type: String[]
@@ -156,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Property
-
+.
 
 ```yaml
 Type: String[]
@@ -201,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Search
-
+.
 
 ```yaml
 Type: String
@@ -216,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sort
-
+.
 
 ```yaml
 Type: String[]
@@ -231,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-
+.
 
 ```yaml
 Type: Int32
@@ -277,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skip
-
+.
 
 ```yaml
 Type: Int32
@@ -307,41 +319,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsTqm6V0DevicemanagementVirtualendpointReportsMicrosoftGraphGetcloudpcperformancereportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[ReportName <String>]`: cloudPCPerformanceReportName
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODYPARAMETER \<IPathsTqm6V0DevicemanagementVirtualendpointReportsMicrosoftGraphGetcloudpcperformancereportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[ReportName \<String\>\]: cloudPCPerformanceReportName
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcperformancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcperformancereport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

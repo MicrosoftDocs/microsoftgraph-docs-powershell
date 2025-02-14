@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcrecommendationreport
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport
@@ -36,11 +35,11 @@ Get the device recommendation reports for Cloud PCs, such as the usage category 
 The usage category report categorizes a Cloud PC as Undersized, Oversized, Rightsized, or Underutilized, and also provides the recommended SKU when the Cloud PC isn't Rightsized.
 
 ## EXAMPLES
-### Example 1: List recommendation reports by device
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+```
 
 $params = @{
 	reportName = "cloudPcUsageCategoryReports"
@@ -65,14 +64,10 @@ orderBy = @(
 
 Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will list recommendation reports by device
-
-### Example 2: Get summary reports by usage insight
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+```
 
 $params = @{
 	reportName = "cloudPcUsageCategoryReports"
@@ -86,10 +81,6 @@ filter = ""
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
-
-```
-This example will get summary reports by usage insight
-
 
 ## PARAMETERS
 
@@ -109,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -125,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-
+.
 
 ```yaml
 Type: String
@@ -140,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupBy
-
+.
 
 ```yaml
 Type: String[]
@@ -215,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Property
-
+.
 
 ```yaml
 Type: String[]
@@ -260,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Search
-
+.
 
 ```yaml
 Type: String
@@ -275,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sort
-
+.
 
 ```yaml
 Type: String[]
@@ -290,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-
+.
 
 ```yaml
 Type: Int32
@@ -336,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skip
-
+.
 
 ```yaml
 Type: Int32
@@ -366,42 +357,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Vvo8XoDevicemanagementVirtualendpointReportsMicrosoftGraphGetcloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[ReportName <String>]`: cloudPcReportName
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODYPARAMETER \<IPaths1Vvo8XoDevicemanagementVirtualendpointReportsMicrosoftGraphGetcloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[ReportName \<String\>\]: cloudPcReportName
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcrecommendationreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcrecommendationreport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportdailyaggregatedremoteconnectionreport
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport
@@ -33,20 +32,12 @@ Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionRe
 ## DESCRIPTION
 Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+```
 
 $params = @{
 	filter = "CloudPcId eq '5db15afe-025d-4f1b-b43a-d0554b63ffff' and RoundTripTimeInMsP50 lt 100 and EventDateTime gt 2022-06-01 "
@@ -67,10 +58,6 @@ top = "25"
 
 Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport -BodyParameter $params
 
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -89,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -105,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-
+.
 
 ```yaml
 Type: String
@@ -120,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupBy
-
+.
 
 ```yaml
 Type: String[]
@@ -195,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Property
-
+.
 
 ```yaml
 Type: String[]
@@ -225,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Search
-
+.
 
 ```yaml
 Type: String
@@ -240,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sort
-
+.
 
 ```yaml
 Type: String[]
@@ -255,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-
+.
 
 ```yaml
 Type: Int32
@@ -301,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skip
-
+.
 
 ```yaml
 Type: Int32
@@ -331,41 +318,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODYPARAMETER \<IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportdailyaggregatedremoteconnectionreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportdailyaggregatedremoteconnectionreport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getdailyaggregatedremoteconnectionreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getdailyaggregatedremoteconnectionreports?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingandroiddeviceownerfullymanagedenrollmentstate
@@ -30,6 +30,18 @@ Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDevi
 ## DESCRIPTION
 Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -48,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -64,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Enabled
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -185,34 +197,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Wtan1TDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphSetandroiddeviceownerfullymanagedenrollmentstatePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Enabled <Boolean?>]`:
+BODYPARAMETER \<IPaths1Wtan1TDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphSetandroiddeviceownerfullymanagedenrollmentstatePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Enabled \<Boolean?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingandroiddeviceownerfullymanagedenrollmentstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingandroiddeviceownerfullymanagedenrollmentstate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: fdea71b8-2257-47fd-910f-cb71c8c54522
+Module Guid: c3467d9f-2575-46ea-990f-43f1912d3206
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -958,23 +958,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
 
 ### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport
@@ -34,11 +33,11 @@ Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport -OutFile <Stri
 Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+```
 
 $params = @{
 	filter = "ActionState eq 'failed'"
@@ -62,10 +61,6 @@ top = 50
 
 Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport -BodyParameter $params
 
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -84,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -100,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-
+.
 
 ```yaml
 Type: String
@@ -115,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupBy
-
+.
 
 ```yaml
 Type: String[]
@@ -190,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Property
-
+.
 
 ```yaml
 Type: String[]
@@ -220,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Search
-
+.
 
 ```yaml
 Type: String
@@ -235,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sort
-
+.
 
 ```yaml
 Type: String[]
@@ -250,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-
+.
 
 ```yaml
 Type: Int32
@@ -296,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skip
-
+.
 
 ```yaml
 Type: Int32
@@ -326,41 +321,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsXvswb4DevicemanagementVirtualendpointReportsMicrosoftGraphGetactionstatusreportsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODYPARAMETER \<IPathsXvswb4DevicemanagementVirtualendpointReportsMicrosoftGraphGetactionstatusreportsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

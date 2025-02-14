@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgadminreportsetting
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property reportSettings for admin
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaAdminReportSetting](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaAdminReportSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Remove-MgAdminReportSetting [-IfMatch <String>] [-ResponseHeadersVariable <Strin
 
 ## DESCRIPTION
 Delete navigation property reportSettings for admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -145,27 +154,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgadminreportsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
