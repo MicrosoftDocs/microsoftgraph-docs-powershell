@@ -131,3 +131,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
