@@ -35,18 +35,6 @@ Search-MgUserDriveRoot -InputObject <IUsersFunctionsIdentity> [-Count] [-ExpandP
 ## DESCRIPTION
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -324,6 +312,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/search-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/search-mguserdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0)
+
 
 
 

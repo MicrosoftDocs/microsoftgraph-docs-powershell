@@ -40,13 +40,17 @@ Get-MgBetaNetworkAccessConnectivityBranch -InputObject <INetworkAccessIdentity> 
 Retrieve information about a specific branch.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Get-MgBetaNetworkAccessConnectivityBranch
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessConnectivityBranch Cmdlet.
+
 
 ## PARAMETERS
 

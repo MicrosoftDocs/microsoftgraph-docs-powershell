@@ -49,13 +49,17 @@ Read properties and relationships of the iosManagedAppProtection object.
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementiOSManagedAppProtection
+
+```
+This example shows how to use the Get-MgDeviceAppManagementiOSManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 

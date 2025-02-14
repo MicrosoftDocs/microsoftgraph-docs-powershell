@@ -33,18 +33,6 @@ Users in the accepted senders list can post to conversations of the group (ident
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -244,6 +232,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupacceptedsenderbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0)
+
 
 
 

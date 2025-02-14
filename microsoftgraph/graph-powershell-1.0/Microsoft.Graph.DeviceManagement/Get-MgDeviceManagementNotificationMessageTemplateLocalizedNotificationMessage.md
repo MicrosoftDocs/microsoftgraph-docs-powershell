@@ -54,13 +54,17 @@ Read properties and relationships of the localizedNotificationMessage object.
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage -NotificationMessageTemplateId $notificationMessageTemplateId
+
+```
+This example shows how to use the Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -34,13 +34,17 @@ Restart-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManage
 Reboot a specific Cloud PC.
 
 ## EXAMPLES
+### Example 1: Reboot the cloudPC for the administrator
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 Restart-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
+
+```
+This example will reboot the cloudpc for the administrator
+
 
 ## PARAMETERS
 

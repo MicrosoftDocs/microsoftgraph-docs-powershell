@@ -60,11 +60,11 @@ Set the availability and activity status in a presence session of an application
 | Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87"
@@ -74,6 +74,10 @@ $params = @{
 }
 
 Set-MgBetaUserPresence -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaUserPresence Cmdlet.
+
 
 ## PARAMETERS
 

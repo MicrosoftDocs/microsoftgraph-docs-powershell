@@ -49,18 +49,6 @@ Hide-MgUserChatForUser -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Hide a chat for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -319,6 +307,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/hide-mguserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/hide-mguserchatforuser)
 
 [https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-1.0)
+
 
 
 

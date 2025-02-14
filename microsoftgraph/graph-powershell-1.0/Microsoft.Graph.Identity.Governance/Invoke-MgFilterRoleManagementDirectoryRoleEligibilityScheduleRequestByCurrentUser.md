@@ -47,13 +47,17 @@ The principal can be the creator or approver of the unifiedRoleEligibilitySchedu
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
-Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser -On $onId
+Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

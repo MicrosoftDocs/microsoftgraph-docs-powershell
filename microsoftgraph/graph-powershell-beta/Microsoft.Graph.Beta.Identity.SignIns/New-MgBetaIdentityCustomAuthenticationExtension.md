@@ -37,11 +37,11 @@ Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
 ## EXAMPLES
+### Example 1: Create an onTokenIssuanceStartCustomExtension object
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
@@ -71,10 +71,14 @@ $params = @{
 
 New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an ontokenissuancestartcustomextension object
+
+### Example 2: Create an onAttributeCollectionStartCustomExtension object
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onAttributeCollectionStartCustomExtension"
@@ -96,10 +100,14 @@ $params = @{
 
 New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will create an onattributecollectionstartcustomextension object
+
+### Example 3: Create an onAttributeCollectionSubmitCustomExtension object
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onAttributeCollectionSubmitCustomExtension"
@@ -120,6 +128,10 @@ $params = @{
 }
 
 New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter $params
+
+```
+This example will create an onattributecollectionsubmitcustomextension object
+
 
 ## PARAMETERS
 

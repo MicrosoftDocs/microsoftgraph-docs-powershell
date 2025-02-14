@@ -40,18 +40,6 @@ Get-MgBetaUserTransitiveReport -InputObject <IUsersIdentity> [-ExpandProperty <S
 The transitive reports for a user.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +349,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport)
 
 [https://learn.microsoft.com/graph/api/user-get-transitivereports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-get-transitivereports?view=graph-rest-beta)
+
+
 
 
 

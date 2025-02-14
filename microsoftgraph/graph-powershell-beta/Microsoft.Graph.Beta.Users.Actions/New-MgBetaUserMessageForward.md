@@ -64,11 +64,11 @@ Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	message = @{
@@ -87,6 +87,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageForward -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserMessageForward Cmdlet.
+
 
 ## PARAMETERS
 

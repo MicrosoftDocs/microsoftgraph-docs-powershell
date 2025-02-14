@@ -42,20 +42,28 @@ Get all provisioned Cloud PCs of a specific service plan for users under a Micro
 | Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get all provisioned Cloud PCs and their default properties
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-```
+This example will get all provisioned cloud pcs and their default properties
 
-Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc -Property "id,displayName,powerState,connectivityResult,lastLoginResult,lastRemoteActionResult,osVersion,provisioningPolicyName,userAccountType"
+### Example 2: Get all provisioned Cloud PCs and specific properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
+Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc -Property "id,displayName,powerState,connectivityResult,lastLoginResult,lastRemoteActionResult,osVersion,provisioningPolicyName,userAccountType" 
+
+```
+This example will get all provisioned cloud pcs and specific properties
+
 
 ## PARAMETERS
 

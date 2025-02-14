@@ -56,13 +56,17 @@ Get-MgSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-ExpandP
 Represents an attack simulation training campaign payload in a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
-Get-MgSecurityAttackSimulationPayload -Filter "source eq 'Tenant'"
+Get-MgSecurityAttackSimulationPayload -Filter "source eq 'Tenant'" 
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationPayload Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,11 +60,11 @@ Use this configuration to enable or disable the Microsoft Entra ID Remote Deskto
 | Application | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.remoteDesktopSecurityConfiguration"
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Update-MgServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgServicePrincipalRemoteDesktopSecurityConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -54,11 +54,11 @@ Create a new virtualEventPresenter object on a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
 ## EXAMPLES
+### Example 1: Create an in-tenant presenter
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	identity = @{
@@ -69,10 +69,14 @@ $params = @{
 
 New-MgBetaVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an in-tenant presenter
+
+### Example 2: Create an out-of-tenant presenter
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	identity = @{
@@ -83,6 +87,10 @@ $params = @{
 }
 
 New-MgBetaVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
+
+```
+This example will create an out-of-tenant presenter
+
 
 ## PARAMETERS
 

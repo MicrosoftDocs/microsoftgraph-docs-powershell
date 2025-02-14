@@ -48,17 +48,21 @@ Remove-MgBetaSiteContentModelFromDrive -InputObject <ISitesIdentity>
 Remove a contentModel from a SharePoint document library.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	driveId = "b!HEq8Q8ZfAkuMECqSaQFnJVwNMbAGLHhHnXMz1C32pozpolsoEg-MT47fBTiYcbnd"
 }
 
 Remove-MgBetaSiteContentModelFromDrive -SiteId $siteId -ContentModelId $contentModelId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgBetaSiteContentModelFromDrive Cmdlet.
+
 
 ## PARAMETERS
 

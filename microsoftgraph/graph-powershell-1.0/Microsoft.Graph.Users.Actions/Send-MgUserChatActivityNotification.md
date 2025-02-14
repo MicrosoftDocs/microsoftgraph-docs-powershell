@@ -57,18 +57,6 @@ Send-MgUserChatActivityNotification -InputObject <IUsersActionsIdentity>
 Send an activity feed notification in scope of a chat.
 For more information about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivityType
@@ -442,6 +430,7 @@ Optional when source is entityUrl; required when source is text.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguserchatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguserchatactivitynotification)
 
 [https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0)
+
 
 
 

@@ -51,17 +51,21 @@ The input is a base-64 encoded value of the certificate contents.
 This method returns trustFrameworkKey.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	key = "key-value"
 }
 
 Invoke-MgBetaUploadTrustFrameworkKeySetCertificate -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaUploadTrustFrameworkKeySetCertificate Cmdlet.
+
 
 ## PARAMETERS
 

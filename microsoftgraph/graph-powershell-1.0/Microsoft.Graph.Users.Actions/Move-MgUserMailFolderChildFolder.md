@@ -49,18 +49,6 @@ Move-MgUserMailFolderChildFolder -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Move a mailfolder and its contents to another mailfolder.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -304,6 +292,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolderchildfolder)
 
 [https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-1.0)
+
 
 
 

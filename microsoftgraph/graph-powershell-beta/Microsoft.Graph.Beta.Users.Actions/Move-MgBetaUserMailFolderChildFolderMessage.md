@@ -53,18 +53,6 @@ Move-MgBetaUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -337,6 +325,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-move?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-beta)
+
 
 
 

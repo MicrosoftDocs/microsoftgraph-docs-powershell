@@ -50,11 +50,11 @@ Copy-MgBetaUserMessage -InputObject <IUsersActionsIdentity>
 Copy a message to a folder within the user's mailbox.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	destinationId = "destinationId-value"
@@ -62,6 +62,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgBetaUserMessage Cmdlet.
+
 
 ## PARAMETERS
 

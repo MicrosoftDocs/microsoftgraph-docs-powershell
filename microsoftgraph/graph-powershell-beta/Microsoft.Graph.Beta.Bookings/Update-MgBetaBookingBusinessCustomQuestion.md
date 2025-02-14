@@ -89,9 +89,8 @@ Update the navigation property customQuestions in bookingBusinesses
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaBookingBusinessCustomQuestion Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
@@ -102,6 +101,8 @@ $params = @{
 }
 Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaBookingBusinessCustomQuestion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

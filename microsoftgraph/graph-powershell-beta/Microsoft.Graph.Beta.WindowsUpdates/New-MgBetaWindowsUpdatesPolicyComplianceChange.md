@@ -48,11 +48,11 @@ New-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIden
 Create a new contentApproval object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.contentApproval"
@@ -75,6 +75,10 @@ $params = @{
 }
 
 New-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId $updatePolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaWindowsUpdatesPolicyComplianceChange Cmdlet.
+
 
 ## PARAMETERS
 

@@ -48,11 +48,11 @@ Invoke-MgBetaClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
 Clock out to end an open timeCard.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	atAprovedLocation = $true
@@ -63,6 +63,10 @@ $params = @{
 }
 
 Invoke-MgBetaClockTeamScheduleTimeCardOut -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaClockTeamScheduleTimeCardOut Cmdlet.
+
 
 ## PARAMETERS
 

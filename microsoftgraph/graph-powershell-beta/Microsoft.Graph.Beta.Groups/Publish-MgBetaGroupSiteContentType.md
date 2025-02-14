@@ -33,18 +33,6 @@ Publish-MgBetaGroupSiteContentType -InputObject <IGroupsIdentity> [-ResponseHead
 ## DESCRIPTION
 Invoke action publish
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -270,6 +258,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitecontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-beta)
+
 
 
 

@@ -49,18 +49,6 @@ Add-MgBetaGroupDriveListContentTypeCopy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action addCopy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -307,6 +295,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupdrivelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupdrivelistcontenttypecopy)
 
 [https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta)
+
 
 
 

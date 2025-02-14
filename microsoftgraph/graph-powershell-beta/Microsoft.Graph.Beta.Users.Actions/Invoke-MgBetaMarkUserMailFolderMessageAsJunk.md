@@ -48,18 +48,6 @@ Invoke-MgBetaMarkUserMailFolderMessageAsJunk -InputObject <IUsersActionsIdentity
 Mark a message as junk.
 This API adds the sender to the list of blocked senders and moves the message to the Junk Email folder, when moveToJunk is true.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -317,6 +305,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetamarkusermailfoldermessageasjunk](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetamarkusermailfoldermessageasjunk)
 
 [https://learn.microsoft.com/graph/api/message-markasjunk?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-markasjunk?view=graph-rest-beta)
+
 
 
 

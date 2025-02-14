@@ -50,11 +50,11 @@ Remove-MgUserFollowedSite -InputObject <IUsersActionsIdentity>
 Unfollow a user's site or multiple sites.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	value = @(
@@ -68,6 +68,10 @@ $params = @{
 }
 
 Remove-MgUserFollowedSite -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgUserFollowedSite Cmdlet.
+
 
 ## PARAMETERS
 

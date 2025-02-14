@@ -39,11 +39,11 @@ New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityReten
 Create a new retentionEvent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEvent"
@@ -54,11 +54,15 @@ $params = @{
 			"@odata.type" = "microsoft.graph.security.eventQuery"
 		}
 	)
-	eventTriggerDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	eventTriggerDateTime = [System.DateTime]::Parse("String (timestamp)")
 	"retentionEventType@odata.bind" = "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType/9eecef97-fb3c-4c68-825b-4dd74530863a"
 }
 
 New-MgSecurityTriggerRetentionEvent -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityTriggerRetentionEvent Cmdlet.
+
 
 ## PARAMETERS
 

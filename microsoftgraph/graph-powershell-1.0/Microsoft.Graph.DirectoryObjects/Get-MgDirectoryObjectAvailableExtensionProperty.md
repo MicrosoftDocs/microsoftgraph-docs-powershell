@@ -34,16 +34,20 @@ Return all directory extension definitions that have been registered in a direct
 The following entities support extension properties:
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 }
 
 Get-MgDirectoryObjectAvailableExtensionProperty -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDirectoryObjectAvailableExtensionProperty Cmdlet.
+
 
 ## PARAMETERS
 

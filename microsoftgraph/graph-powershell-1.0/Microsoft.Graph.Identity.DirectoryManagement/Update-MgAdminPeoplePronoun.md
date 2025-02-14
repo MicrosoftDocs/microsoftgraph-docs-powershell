@@ -36,17 +36,21 @@ Update the properties of a pronounsSettings object in an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	isEnabledInOrganization = $true
 }
 
 Update-MgAdminPeoplePronoun -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminPeoplePronoun Cmdlet.
+
 
 ## PARAMETERS
 

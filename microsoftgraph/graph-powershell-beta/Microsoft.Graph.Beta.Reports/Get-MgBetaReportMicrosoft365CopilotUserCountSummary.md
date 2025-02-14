@@ -31,20 +31,28 @@ Get-MgBetaReportMicrosoft365CopilotUserCountSummary -InputObject <IReportsIdenti
 Get the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period.
 
 ## EXAMPLES
+### Example 1: CSV output
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
-Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "text/csv"  -Period $periodId
+Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "text/csv"  -Period $periodId 
 
-### EXAMPLE 2
 ```
+This example will csv output
+
+### Example 2: JSON output
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
-Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "application/json"  -Period $periodId
+Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "application/json"  -Period $periodId 
+
+```
+This example will json output
+
 
 ## PARAMETERS
 

@@ -48,18 +48,6 @@ Add-MgBetaGroupSiteContentModelGetByNameToDrive -InputObject <IGroupsIdentity>
 Apply a contentModel to SharePoint document libraries.
 For an existing model that's already trained, this action automatically processes new documents that are added to the SharePoint libraries.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -321,6 +309,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontentmodelgetbynametodrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontentmodelgetbynametodrive)
 
 [https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta)
+
 
 
 

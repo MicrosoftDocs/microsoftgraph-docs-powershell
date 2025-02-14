@@ -51,13 +51,17 @@ Read properties and relationships of the roleDefinition object.
 | Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementRoleDefinition
+
+```
+This example shows how to use the Get-MgDeviceManagementRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

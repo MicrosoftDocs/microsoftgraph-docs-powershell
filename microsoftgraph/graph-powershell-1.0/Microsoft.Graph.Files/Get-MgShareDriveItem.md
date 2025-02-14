@@ -44,20 +44,28 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Files
-```
+This example shows how to use the Get-MgShareDriveItem Cmdlet.
 
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children" 
+
+```
+This example shows how to use the Get-MgShareDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

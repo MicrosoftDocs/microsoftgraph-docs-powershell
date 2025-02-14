@@ -50,18 +50,6 @@ Perform a bulk resize action to resize a group of cloudPCs that successfully pas
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,6 +293,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusercloudpcresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusercloudpcresize)
 
 [https://learn.microsoft.com/graph/api/cloudpc-bulkresize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-bulkresize?view=graph-rest-beta)
+
 
 
 

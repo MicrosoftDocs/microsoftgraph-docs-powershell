@@ -40,14 +40,18 @@ This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
 
 ## EXAMPLES
+### Example 1: Send an existing draft message
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMessage -UserId $userId -MessageId $messageId
+
+```
+This example will send an existing draft message
+
 
 ## PARAMETERS
 

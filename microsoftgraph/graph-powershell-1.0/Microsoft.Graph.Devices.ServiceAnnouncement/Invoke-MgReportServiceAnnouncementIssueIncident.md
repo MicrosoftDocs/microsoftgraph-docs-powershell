@@ -38,13 +38,17 @@ An issue only with status of PostIncidentReviewPublished indicates that the PIR 
 The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId $serviceHealthIssueId
+
+```
+This example shows how to use the Invoke-MgReportServiceAnnouncementIssueIncident Cmdlet.
+
 
 ## PARAMETERS
 

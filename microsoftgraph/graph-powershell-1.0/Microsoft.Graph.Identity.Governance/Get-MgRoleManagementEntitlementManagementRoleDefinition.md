@@ -50,13 +50,17 @@ Resource representing the roles allowed by RBAC providers and the permissions as
 | Application | RoleManagement.ReadWrite.Directory, EntitlementManagement.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All, CloudPC.ReadWrite.All, CloudPC.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Retrieve role definitions for the entitlement management provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgRoleManagementEntitlementManagementRoleDefinition
+
+```
+This example will retrieve role definitions for the entitlement management provider
+
 
 ## PARAMETERS
 

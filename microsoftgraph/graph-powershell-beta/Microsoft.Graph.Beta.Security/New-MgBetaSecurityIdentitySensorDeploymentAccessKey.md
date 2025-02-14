@@ -22,13 +22,17 @@ New-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <S
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 New-MgBetaSecurityIdentitySensorDeploymentAccessKey
+
+```
+This example shows how to use the New-MgBetaSecurityIdentitySensorDeploymentAccessKey Cmdlet.
+
 
 ## PARAMETERS
 

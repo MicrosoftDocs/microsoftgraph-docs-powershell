@@ -36,13 +36,17 @@ Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 Delete an externalAuthenticationMethodConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+
+```
+This example shows how to use the Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

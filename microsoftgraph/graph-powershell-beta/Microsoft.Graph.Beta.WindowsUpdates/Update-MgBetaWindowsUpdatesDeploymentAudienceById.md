@@ -57,11 +57,11 @@ If the same updatableAsset gets included in the exclusions and members collectio
 You can also use the method updateAudience to update the deploymentAudience.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	memberEntityType = "String"
@@ -80,6 +80,10 @@ removeExclusions = @(
 }
 
 Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId $deploymentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaWindowsUpdatesDeploymentAudienceById Cmdlet.
+
 
 ## PARAMETERS
 
