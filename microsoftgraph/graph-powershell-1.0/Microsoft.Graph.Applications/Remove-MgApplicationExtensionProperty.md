@@ -10,7 +10,6 @@ ms.subservice: extensions
 
 ## SYNOPSIS
 Delete a directory extension definition represented by an extensionProperty object.
-You can delete only directory extensions that aren't synced from on-premises active directory (AD).
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
@@ -33,8 +32,6 @@ Remove-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-IfM
 
 ## DESCRIPTION
 Delete a directory extension definition represented by an extensionProperty object.
-You can delete only directory extensions that aren't synced from on-premises active directory (AD).
-
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
@@ -227,7 +224,7 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of application
+- `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
