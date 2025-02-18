@@ -49,7 +49,6 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
     - [Users](#users)
   - [Azure AD Preview to Microsoft Graph PowerShell](#azure-ad-preview-to-microsoft-graph-powershell)
   - [MSOnline to Microsoft Graph PowerShell](#msonline-to-microsoft-graph-powershell)
-:::row-end:::
 
 ### Administrative units
 
@@ -185,7 +184,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADTrustedCertificateAuthority|[Get-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfiguration)|
 |New-AzureADTrustedCertificateAuthority|[New-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration)|
 |Remove-AzureADTrustedCertificateAuthority|[Remove-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/remove-mgorganizationcertificatebasedauthconfiguration)|
-|Set-AzureADTrustedCertificateAuthorit| Updating **certificateBasedAuthConfiguration** is not supported. To change a **certificateBasedAuthConfiguration**, first delete the existing one and then create a new **certificateBasedAuthConfiguration**. |
+|Set-AzureADTrustedCertificateAuthority| Updating **certificateBasedAuthConfiguration** is not supported. To change a **certificateBasedAuthConfiguration**, first delete the existing one and then create a new **certificateBasedAuthConfiguration**. |
 
 ### Connect to your directory
 
