@@ -3,7 +3,7 @@ title: "Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell"
 description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to find their Microsoft Graph PowerShell equivalents."
 
 ms.topic: reference
-ms.date: 10/08/2024
+ms.date: 02/18/2025
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -184,7 +184,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADTrustedCertificateAuthority|[Get-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfiguration)|
 |New-AzureADTrustedCertificateAuthority|[New-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration)|
 |Remove-AzureADTrustedCertificateAuthority|[Remove-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/remove-mgorganizationcertificatebasedauthconfiguration)|
-|Set-AzureADTrustedCertificateAuthority||
+|Set-AzureADTrustedCertificateAuthority| Updating **certificateBasedAuthConfiguration** is not supported. To change a **certificateBasedAuthConfiguration**, first delete the existing one and then create a new **certificateBasedAuthConfiguration**. |
 
 ### Connect to your directory
 
