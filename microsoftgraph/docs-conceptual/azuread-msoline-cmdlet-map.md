@@ -24,30 +24,31 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 :::row:::
     :::column:::
-        - [Administrative units](#administrative-units)
-        - [Application proxy application management](#application-proxy-application-management)
-        - [Application proxy connector management](#application-proxy-connector-management)
-        - [Applications](#applications)
-        - [Azure AD](#azure-ad)
-        - [Certificate authorities](#certificate-authorities)
-        - [Connect to your directory](#connect-to-your-directory)
-        - [Contacts](#contacts)
-        - [Contracts](#contracts)
-        - [Deleted objects](#deleted-objects)
-        - [Devices](#devices)
-    :::column-end:::
-    :::column:::
-        - [Directory](#directory)
-        - [Directory objects](#directory-objects)
-        - [Directory roles](#directory-roles)
-        - [Domains](#domains)
-        - [Extension properties](#extension-properties)
-        - [Groups](#groups)
-        - [Oauth2](#oauth2)
-        - [Policies](#policies)
-        - [Service principals](#service-principals)
-        - [Users](#users)
-    :::column-end:::
+- [Find Azure AD PowerShell and MSOnline cmdlets in Microsoft Graph PowerShell](#find-azure-ad-powershell-and-msonline-cmdlets-in-microsoft-graph-powershell)
+  - [Azure AD PowerShell to Microsoft Graph PowerShell by category](#azure-ad-powershell-to-microsoft-graph-powershell-by-category)
+    - [Administrative units](#administrative-units)
+    - [Application proxy application management](#application-proxy-application-management)
+    - [Application proxy connector management](#application-proxy-connector-management)
+    - [Applications](#applications)
+    - [Azure AD](#azure-ad)
+    - [Certificate Authorities](#certificate-authorities)
+    - [Connect to your directory](#connect-to-your-directory)
+    - [Contacts](#contacts)
+    - [Contracts](#contracts)
+    - [Deleted objects](#deleted-objects)
+    - [Devices](#devices)
+    - [Directory](#directory)
+    - [Directory Objects](#directory-objects)
+    - [Directory roles](#directory-roles)
+    - [Domains](#domains)
+    - [Extension properties](#extension-properties)
+    - [Groups](#groups)
+    - [Oauth2](#oauth2)
+    - [Policies](#policies)
+    - [Service principals](#service-principals)
+    - [Users](#users)
+  - [Azure AD Preview to Microsoft Graph PowerShell](#azure-ad-preview-to-microsoft-graph-powershell)
+  - [MSOnline to Microsoft Graph PowerShell](#msonline-to-microsoft-graph-powershell)
 :::row-end:::
 
 ### Administrative units
@@ -184,7 +185,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADTrustedCertificateAuthority|[Get-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfiguration)|
 |New-AzureADTrustedCertificateAuthority|[New-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration)|
 |Remove-AzureADTrustedCertificateAuthority|[Remove-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/remove-mgorganizationcertificatebasedauthconfiguration)|
-|Set-AzureADTrustedCertificateAuthority||
+|Set-AzureADTrustedCertificateAuthorit| Updating **certificateBasedAuthConfiguration** is not supported. To change a **certificateBasedAuthConfiguration**, first delete the existing one and then create a new **certificateBasedAuthConfiguration**. |
 
 ### Connect to your directory
 
