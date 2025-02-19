@@ -100,7 +100,7 @@
       "apiPlatform": "powershell",
       "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json",
       "ms.service": "microsoft-graph-powershell",
-      "ms.topic": "reference",
+      "ms.topic": "generated-reference",
       "ms.author": "twamalwa",
       "author": "finsharp"
     },
