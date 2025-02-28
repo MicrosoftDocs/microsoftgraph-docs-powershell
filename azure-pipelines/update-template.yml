@@ -5,8 +5,8 @@ steps:
     targetType: 'inline'
     pwsh: true
     script: |
-          Uninstall-Module Microsoft.Graph -Force -AllVersions -ErrorAction SilentlyContinue
-          Uninstall-Module Microsoft.Graph.Beta -Force -AllVersions -ErrorAction SilentlyContinue
+          Uninstall-Module Microsoft.Graph -Force -AllVersions -Force
+          Uninstall-Module Microsoft.Graph.Beta -Force -AllVersions -Force
           try{
               # Try to update the V1 module first.
               Install-Module Microsoft.Graph.Beta -Repository PSGallery -Scope AllUsers -AcceptLicense -SkipPublisherCheck -Force -AllowClobber
