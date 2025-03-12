@@ -1,5 +1,5 @@
 ---
-title: "Navigating the Microsoft Graph PowerShell SDK"
+title: "Navigate the Microsoft Graph PowerShell SDK"
 description: "The Microsoft Graph PowerShell SDK contains a large number of commands. Learn how to find the right command for what you want to achieve."
 
 author: msewaweru
