@@ -5,7 +5,7 @@ description: "Learn how to install the Microsoft Graph PowerShell SDK with Power
 author: msewaweru
 manager: CelesteDG
 ms.topic: how-to
-ms.date: 03/05/2024
+ms.date: 03/12/2025
 ms.author: eunicewaweru
 
 #customer intent: As a PowerShell user, I want to install the Microsoft Graph PowerShell SDK, so that I can use it to interact with Microsoft Graph and perform tasks using PowerShell.
@@ -38,7 +38,7 @@ The Microsoft Graph PowerShell SDK comes in two modules, Microsoft.Graph and Mic
 Using the **Install-Module** cmdlet is the preferred installation method for the Microsoft Graph PowerShell modules.
 
 > [!NOTE]
-> Installing the main modules of the SDK, Microsoft.Graph and Microsoft.Graph.Beta, will install all 38 sub modules for each module. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication` which is installed by default when you opt to install the sub modules individually. For a list of available Microsoft Graph modules, use `Find-Module Microsoft.Graph*`.
+> Installing the main modules of the SDK, Microsoft.Graph or Microsoft.Graph.Beta, will install the over 47 sub modules for each module. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication` which is installed by default when you opt to install the sub modules individually. For a list of available Microsoft Graph modules, use `Find-Module Microsoft.Graph*`.
 > Only cmdlets for the installed modules will be available for use.
 
 To install the v1 module of the SDK in PowerShell Core or Windows PowerShell, run the following command.
@@ -78,7 +78,7 @@ To verify the installed submodules and their versions, run:
 Get-InstalledModule
 ```
 
-The version in the output should match the latest version published on the PowerShell Gallery. Now you're ready to use the SDK.
+The version in the output should match the latest version published on [the PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Now you're ready to use the SDK.
 
 ## Updating the SDK
 
