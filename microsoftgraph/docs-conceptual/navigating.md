@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 03/12/2025
 ms.author: eunicewaweru
 #customer intent: As a user new to the Microsoft Graph PowerShell SDK, I want to find the right command for a specific task, so that I can effectively use Microsoft Graph PowerShell to interact with the Microsoft Graph API.
---
+---
 
 # Navigate the Microsoft Graph PowerShell SDK
 
