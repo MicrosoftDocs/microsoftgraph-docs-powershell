@@ -18,34 +18,34 @@ The Microsoft Graph API is huge, and it's growing all the time. Therefore, the n
 
 ## Command naming conventions
 
-The commands in Microsoft Graph PowerShell are generated directly from the [Microsoft Graph API](/graph/api/overview?view=graph-rest-1.0&preserve-view=true), so the names are influenced by the API. You don't have to understand the details of the API to use Microsoft Graph PowerShell, but it helps to understand the naming convention.
+Microsoft Graph PowerShell generates commands directly from the [Microsoft Graph API](/graph/api/overview), so the API influences their names. You don't have to understand the details of the API to use Microsoft Graph PowerShell, but it helps to understand the naming convention.
 
 PowerShell commands are named using a verb-noun pair, such as `Get-Command` or `Update-List`. Let's start with the verb.
 
 ### Command verbs
 
-For basic REST operations, the verb is determined by the HTTP method used for the API.
+For basic REST operations, the HTTP method determines the verb used for the API.
 
-| HTTP method | Command verb | Example |
-|-------------|--------------|---|
-| GET         | Get          | `Get-MgUser` [API reference](/graph/api/user-get) |
-| POST        | New          | `New-MgUser` [API reference](/graph/api/user-post-users) |
-| PUT         | New          | `New-MgTeam` [API reference](/graph/api/team-put-teams) |
-| PATCH       | Update       | `Update-MgUser` [API reference](/graph/api/user-update) |
-| DELETE      | Remove       | `Remove-MgUser` [API reference](/graph/api/user-delete) |
+| HTTP Method | Command Verb | Example |
+|------------|-------------|---------|
+| **GET**    | Get         | `Get-MgUser` [API reference](/graph/api/user-get) |
+| **POST**   | New         | `New-MgUser` [API reference](/graph/api/user-post-users) |
+| **PUT**    | New         | `New-MgTeam` [API reference](/graph/api/team-put-teams) |
+| **PATCH**  | Update      | `Update-MgUser` [API reference](/graph/api/user-update) |
+| **DELETE** | Remove      | `Remove-MgUser` [API reference](/graph/api/user-delete) |
 
-For functions and actions, it's a little more complicated. APIs in Microsoft Graph that are implemented as OData functions or actions are typically named with at least a verb. The corresponding command's verb is based on the verb in the function or action name. However, command verbs in PowerShell have to conform to specific [naming rules](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands), which can result in non-intuitive name-to-command mappings.
+For functions and actions, it's a little more complicated. APIs in Microsoft Graph that are implemented as OData functions or actions are typically named with at least a verb. The corresponding command's verb is based on the verb in the function or action name. However, command verbs in PowerShell have to conform to specific [naming rules](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands), which can result in nonintuitive name-to-command mappings.
 
-Let's look at some examples. The [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) API uses `get`, and `Get` is an approved PowerShell verb, so its command is `Get-MgUserCalendarSchedule`. The [cancel](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) API on an event on the other hand, uses a nonapproved verb `cancel`. The approved verb for canceling or discontinuing something is `Stop`, so the command is `Stop-MgUserEvent`. Finally, the [snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) API's verb, `snooze`, has no PowerShell-approved equivalent. For APIs like that, Microsoft Graph PowerShell uses the verb `Invoke`, so that API's command is `Invoke-MgSnoozeUserEventReminder`.
+Let's look at some examples. The [getSchedule](/graph/api/calendar-getschedule) API uses `get`, and `Get` is an approved PowerShell verb, so its command is `Get-MgUserCalendarSchedule`. The [cancel](/graph/api/event-cancel) API on an event on the other hand, uses a nonapproved verb `cancel`. The approved verb for canceling or discontinuing something is `Stop`, so the command is `Stop-MgUserEvent`. Finally, the [snoozeReminder](/graph/api/event-snoozereminder) API's verb, `snooze`, has no PowerShell-approved equivalent. For APIs like that, Microsoft Graph PowerShell uses the verb `Invoke`, so that API's command is `Invoke-MgSnoozeUserEventReminder`.
 
 > [!NOTE]
 > For Beta cmdlets, add a **Beta** prefix before the resource. For example, the beta version of the Get-MgUser cmdlet is **Get-MgBetaUser**.
 
 ### Command nouns
 
-By now you may have noticed that all nouns in Microsoft Graph PowerShell commands start with `Mg`. This prefix helps to avoid naming conflicts with other PowerShell modules. With that in mind, it should make sense that a command like `Get-MgUser` is used to get a user. Following PowerShell convention, even though the noun is singular, those same commands can return multiple results if no specific instance is requested.
+By now, you might notice that all nouns in Microsoft Graph PowerShell commands start with `Mg`. This prefix helps avoid naming conflicts with other PowerShell modules. With that in mind, a command like `Get-MgUser` gets a user. Following PowerShell convention, even though the noun is singular, these commands return multiple results if no specific instance is requested.
 
-But what about commands like `Get-MgUserMessage` or `Get-MgUserMailFolderMessage`? Both of these commands get a [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) object, so why not `Get-MgMessage`? The answer comes from the [get message API](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true).
+But what about commands like `Get-MgUserMessage` or `Get-MgUserMailFolderMessage`? Both of these commands get a [message](/graph/api/resources/message) object, so why not `Get-MgMessage`? The answer comes from the [get message API](/graph/api/message-get).
 
 Look at the HTTP requests for this API. If you ignore the requests with `/me` in the URL, there are two other ways to call this API.
 
@@ -62,7 +62,7 @@ Use [Find-MgGraphCommand](find-mg-graph-command.md) to discover which API path a
 
 ### Listing parameters
 
-After you've found the right command, you can examine all the available parameters by using the `Get-Help` command. For example, the following command lists all the available parameters for the `Get-MgUser` command.
+After you find the right command, you examine all the available parameters using the `Get-Help` command. For example, the following command lists all the available parameters for the `Get-MgUser` command.
 
 ```powershell
 Get-Help Get-MgUser -Detailed
