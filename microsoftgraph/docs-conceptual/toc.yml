@@ -4,7 +4,7 @@
   href: overview.md
 - name: Getting started
   items:
-    - name: Installation
+    - name: Install the SDK
       href: installation.md
     - name: Use PowerShell
       href: get-started.md 
