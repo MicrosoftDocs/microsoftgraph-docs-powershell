@@ -30,6 +30,14 @@ Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -InputObject <IIdent
 ## DESCRIPTION
 Get the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Organization.Read.All, Organization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

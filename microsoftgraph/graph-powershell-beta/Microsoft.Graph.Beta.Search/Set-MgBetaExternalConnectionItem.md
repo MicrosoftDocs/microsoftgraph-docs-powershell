@@ -52,6 +52,14 @@ Create a new externalItem.
 This API can be used to create a custom item.
 The containing externalConnection must have a schema registered of the corresponding type.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

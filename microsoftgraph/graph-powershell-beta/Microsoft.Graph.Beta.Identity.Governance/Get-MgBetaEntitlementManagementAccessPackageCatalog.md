@@ -59,6 +59,14 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

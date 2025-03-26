@@ -37,6 +37,14 @@ Get-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Represents the FIDO2 security keys registered to a user for authentication.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

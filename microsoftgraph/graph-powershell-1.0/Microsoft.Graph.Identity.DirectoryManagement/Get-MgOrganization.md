@@ -38,6 +38,14 @@ Get-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandP
 ## DESCRIPTION
 Read properties and relationships of the organization object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.Read.All, User.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

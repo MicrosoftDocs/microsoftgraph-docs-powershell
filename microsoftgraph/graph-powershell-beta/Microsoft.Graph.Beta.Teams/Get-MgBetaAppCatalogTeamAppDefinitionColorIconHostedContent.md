@@ -44,6 +44,14 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeams
 ## DESCRIPTION
 Retrieve the hosted content in an app's icon.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppCatalog.Submit,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppCatalog.Read.All, AppCatalog.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

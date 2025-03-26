@@ -29,6 +29,14 @@ Set-MgBetaDriveItemContentStream -InputObject <IFilesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

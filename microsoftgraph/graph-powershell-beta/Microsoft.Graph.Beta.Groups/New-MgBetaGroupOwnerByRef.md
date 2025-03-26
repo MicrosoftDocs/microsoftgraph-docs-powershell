@@ -46,6 +46,14 @@ New-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> -BodyParameter <IRefere
 Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

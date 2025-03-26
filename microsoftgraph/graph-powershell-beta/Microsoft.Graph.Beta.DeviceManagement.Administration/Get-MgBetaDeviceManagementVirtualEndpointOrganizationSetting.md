@@ -24,6 +24,14 @@ Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting [-ExpandProperty <S
 Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
 A tenant has only one cloudPcOrganizationSettings object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -39,6 +39,14 @@ Get-MgBetaDirectoryInboundSharedUserProfile -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Read the properties of an inboundSharedUserProfile.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CrossTenantUserProfileSharing.Read, CrossTenantUserProfileSharing.ReadWrite.All, CrossTenantUserProfileSharing.ReadWrite, CrossTenantUserProfileSharing.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

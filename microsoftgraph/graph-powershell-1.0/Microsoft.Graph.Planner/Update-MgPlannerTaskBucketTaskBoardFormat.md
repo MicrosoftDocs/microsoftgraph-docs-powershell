@@ -44,6 +44,14 @@ Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -IfMat
 ## DESCRIPTION
 Update the properties of a plannerBucketTaskBoardTaskFormat object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Tasks.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -36,6 +36,14 @@ This operation prevents access to the organization's data through applications o
 If the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.
 If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.RevokeSessions.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

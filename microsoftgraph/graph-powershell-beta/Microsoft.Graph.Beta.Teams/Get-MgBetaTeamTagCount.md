@@ -29,6 +29,14 @@ Get-MgBetaTeamTagCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkTag.Read, TeamworkTag.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkTag.Read.All, TeamworkTag.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

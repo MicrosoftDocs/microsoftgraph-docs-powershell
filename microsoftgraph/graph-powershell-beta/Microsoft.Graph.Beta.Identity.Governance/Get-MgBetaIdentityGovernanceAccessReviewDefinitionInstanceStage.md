@@ -41,6 +41,14 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <II
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessReviewStage object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

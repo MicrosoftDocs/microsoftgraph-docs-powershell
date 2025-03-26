@@ -56,6 +56,14 @@ Update-MgBetaSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update contentType
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Manage.All, Sites.FullControl.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

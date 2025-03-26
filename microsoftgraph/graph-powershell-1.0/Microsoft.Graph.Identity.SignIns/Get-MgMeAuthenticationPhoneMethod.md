@@ -41,6 +41,14 @@ Get-MgMeAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity> [-Expa
 Retrieve a single phoneAuthenticationMethod object for a user.
 This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

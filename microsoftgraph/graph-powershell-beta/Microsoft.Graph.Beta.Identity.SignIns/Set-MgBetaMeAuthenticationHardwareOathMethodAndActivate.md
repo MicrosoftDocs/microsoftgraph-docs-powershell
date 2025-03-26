@@ -34,6 +34,14 @@ Set-MgBetaMeAuthenticationHardwareOathMethodAndActivate
 Assign and activate a hardware token at the same time.
 This operation requires the device ID to activate it.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

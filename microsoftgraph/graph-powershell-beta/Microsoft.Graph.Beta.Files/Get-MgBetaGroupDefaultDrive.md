@@ -31,6 +31,14 @@ Get-MgBetaGroupDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 The group's default drive.
 Read-only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.Read.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
