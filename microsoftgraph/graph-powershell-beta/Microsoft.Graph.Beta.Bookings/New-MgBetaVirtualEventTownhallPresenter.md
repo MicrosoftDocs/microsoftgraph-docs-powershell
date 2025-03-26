@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-.
+
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml

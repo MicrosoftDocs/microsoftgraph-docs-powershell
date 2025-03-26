@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceNamespaces
-.
+
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleAssignmentApprovals
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTAPPROVALS properties and create a hash table.
 
 ```yaml
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleAssignments
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleAssignmentScheduleInstances
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleAssignmentScheduleRequests
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleAssignmentSchedules
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULES properties and create a hash table.
 
 ```yaml
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitions
-.
+
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleEligibilityScheduleInstances
-.
+
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleEligibilityScheduleRequests
-.
+
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleEligibilitySchedules
-.
+
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULES properties and create a hash table.
 
 ```yaml
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransitiveRoleAssignments
-.
+
 To construct, see NOTES section for TRANSITIVEROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml

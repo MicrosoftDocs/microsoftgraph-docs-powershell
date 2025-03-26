@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -385,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -Self
-.
+
 
 ```yaml
 Type: String
