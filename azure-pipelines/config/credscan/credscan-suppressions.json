@@ -68,6 +68,14 @@
     },
     {
       "file": [
+        "microsoftgraph\\graph-powershell-beta\\Microsoft.Graph.Beta.Identity.SignIns\\Reset-MgBetaUserAuthenticationMethodPassword.md",
+        "microsoftgraph\\graph-powershell-1.0\\Microsoft.Graph.Identity.SignIns\\Reset-MgUserAuthenticationMethodPassword.md"
+      ],
+      "_justification": "[Identity.SignIns] Examples contain random values recognized as secret"
+    },
+    
+    {
+      "file": [
         "msgraph-sdk-powershell\\src\\DeviceManagement.Actions\\beta\\examples\\Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword.md",
         "microsoftgraph\\graph-powershell-beta\\Microsoft.Graph.Beta.DeviceManagement.Actions\\Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword.md"
       ],
