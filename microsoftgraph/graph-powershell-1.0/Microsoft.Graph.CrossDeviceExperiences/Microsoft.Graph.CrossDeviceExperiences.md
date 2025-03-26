@@ -1,58 +1,49 @@
----
+﻿---
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-Module Guid: 11710381-b20a-4b3a-b27c-21478cd1bf48
-Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/?view=graph-powershell-1.0
-Help Version: 1.0.0.0
+Module Guid: 75b297a1-ea4a-42b4-8a11-eb7999e23bae
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.CrossDeviceExperiences Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.CrossDeviceExperiences Cmdlets
 ### [Get-MgUserActivity](Get-MgUserActivity.md)
-
-### [Get-MgUserActivity](Get-MgUserActivity.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserActivityCount](Get-MgUserActivityCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserActivityHistoryItem](Get-MgUserActivityHistoryItem.md)
-
-### [Get-MgUserActivityHistoryItem](Get-MgUserActivityHistoryItem.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserActivityHistoryItemActivity](Get-MgUserActivityHistoryItemActivity.md)
+{{ Fill in the Description }}
 
 ### [Get-MgUserActivityHistoryItemCount](Get-MgUserActivityHistoryItemCount.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgRecentUserActivity](Invoke-MgRecentUserActivity.md)
+{{ Fill in the Description }}
 
 ### [New-MgUserActivity](New-MgUserActivity.md)
+{{ Fill in the Description }}
 
 ### [New-MgUserActivityHistoryItem](New-MgUserActivityHistoryItem.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgUserActivity](Remove-MgUserActivity.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgUserActivityHistoryItem](Remove-MgUserActivityHistoryItem.md)
+{{ Fill in the Description }}
 
 ### [Update-MgUserActivity](Update-MgUserActivity.md)
+{{ Fill in the Description }}
 
 ### [Update-MgUserActivityHistoryItem](Update-MgUserActivityHistoryItem.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{ Fill in the Description }}
 

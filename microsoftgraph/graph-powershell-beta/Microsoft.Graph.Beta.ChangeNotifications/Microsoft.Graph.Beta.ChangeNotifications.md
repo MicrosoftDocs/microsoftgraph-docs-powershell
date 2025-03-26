@@ -1,44 +1,28 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
-Module Guid: 80a6ee9d-1e97-40eb-847a-0eaea46c2368
-Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.changenotifications/?view=graph-powershell-beta
-Help Version: 1.0.0.0
+Module Guid: 1265385f-29cb-43a3-849c-cd49dcc7f783
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.ChangeNotifications Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.ChangeNotifications Cmdlets
 ### [Get-MgBetaSubscription](Get-MgBetaSubscription.md)
-
-### [Get-MgBetaSubscription](Get-MgBetaSubscription.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReauthorizeSubscription](Invoke-MgBetaReauthorizeSubscription.md)
+{{ Fill in the Description }}
 
 ### [New-MgBetaSubscription](New-MgBetaSubscription.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaSubscription](Remove-MgBetaSubscription.md)
+{{ Fill in the Description }}
 
 ### [Update-MgBetaSubscription](Update-MgBetaSubscription.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{ Fill in the Description }}
 

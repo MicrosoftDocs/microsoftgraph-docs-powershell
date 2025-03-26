@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroledelta
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryRoleDelta
 
 ## SYNOPSIS
 Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
-See Using Delta Query for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleDelta?view=graph-powershell-beta)
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 ## SYNTAX
 
@@ -26,28 +22,16 @@ Get-MgDirectoryRoleDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Prope
 
 ## DESCRIPTION
 Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
-See Using Delta Query for details.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 ## EXAMPLES
-### Example
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgDirectoryRoleDelta
-
-```
-This example shows how to use the Get-MgDirectoryRoleDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -263,26 +247,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroledelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroledelta)
 
 [https://learn.microsoft.com/graph/api/directoryrole-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerbyref
 schema: 2.0.0
-ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupOwnerByRef
@@ -11,10 +10,7 @@ ms.subservice: entra-groups
 ## SYNOPSIS
 Retrieve a list of the group's owners.
 The owners are a set of users who are allowed to modify the group object.
-Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerByRef?view=graph-powershell-1.0)
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange, distribution groups, or groups that are synchronized from an on-premises environment.
 
 ## SYNTAX
 
@@ -28,15 +24,19 @@ Get-MgBetaGroupOwnerByRef -GroupId <String> [-Filter <String>] [-Search <String>
 ## DESCRIPTION
 Retrieve a list of the group's owners.
 The owners are a set of users who are allowed to modify the group object.
-Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange, distribution groups, or groups that are synchronized from an on-premises environment.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -253,27 +253,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

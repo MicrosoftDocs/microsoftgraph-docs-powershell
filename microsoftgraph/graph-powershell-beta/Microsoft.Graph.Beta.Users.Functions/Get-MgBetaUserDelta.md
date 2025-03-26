@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta
 schema: 2.0.0
-ms.subservice: entra-users
 ---
 
 # Get-MgBetaUserDelta
 
 ## SYNOPSIS
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
-See change tracking for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 ## SYNTAX
 
@@ -25,50 +21,30 @@ Get-MgBetaUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <
 
 ## DESCRIPTION
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
-See change tracking for details.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 ## EXAMPLES
-### Example 1: Default properties
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Functions
+```
 
 Get-MgBetaUserDelta
 
+### EXAMPLE 2
 ```
-This example will default properties
-
-### Example 2: Selecting three properties
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Users.Functions
-
-Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone" 
-
 ```
-This example shows selecting three properties
 
-### Example 3: Alternative minimal response behavior
+Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Users.Functions
-
-Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone" 
-
 ```
-This example will alternative minimal response behavior
 
+Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone"
 
 ## PARAMETERS
 
@@ -284,26 +260,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta)
 
 [https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

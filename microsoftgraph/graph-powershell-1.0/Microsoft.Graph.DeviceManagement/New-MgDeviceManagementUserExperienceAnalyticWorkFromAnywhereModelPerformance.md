@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticworkfromanywheremodelperformance
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsWorkFromAnywhereModelPerformance for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,13 +33,17 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsWorkFromAnywhereModelPerformance for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -352,46 +353,46 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance>`: The user experience analytics work from anywhere model performance.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance\>: The user experience analytics work from anywhere model performance.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CloudIdentityScore <Double?>]`: The cloud identity score of the device model.
+  \[CloudIdentityScore \<Double?\>\]: The cloud identity score of the device model.
 Valid values 0 to 100.
 Value -1 means associated score is unavailable.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[CloudManagementScore <Double?>]`: The cloud management score of the device model.
+  \[CloudManagementScore \<Double?\>\]: The cloud management score of the device model.
 Valid values 0 to 100.
 Value -1 means associated score is unavailable.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[CloudProvisioningScore <Double?>]`: The cloud provisioning score of the device model. 
+  \[CloudProvisioningScore \<Double?\>\]: The cloud provisioning score of the device model. 
 Valid values 0 to 100.
 Value -1 means associated score is unavailable.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
-  - `[Manufacturer <String>]`: The manufacturer name of the device.
+  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
+  \[Manufacturer \<String\>\]: The manufacturer name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[Model <String>]`: The model name of the device.
+  \[Model \<String\>\]: The model name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[ModelDeviceCount <Int32?>]`: The devices count for the model.
+  \[ModelDeviceCount \<Int32?\>\]: The devices count for the model.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[WindowsScore <Double?>]`: The window score of the device model.
+  \[WindowsScore \<Double?\>\]: The window score of the device model.
 Valid values 0 to 100.
 Value -1 means associated score is unavailable.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[WorkFromAnywhereScore <Double?>]`: The work from anywhere score of the device model.
+  \[WorkFromAnywhereScore \<Double?\>\]: The work from anywhere score of the device model.
 Valid values 0 to 100.
 Value -1 means associated score is unavailable.
 Supports: $select, $OrderBy.
@@ -401,27 +402,4 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticworkfromanywheremodelperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticworkfromanywheremodelperformance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

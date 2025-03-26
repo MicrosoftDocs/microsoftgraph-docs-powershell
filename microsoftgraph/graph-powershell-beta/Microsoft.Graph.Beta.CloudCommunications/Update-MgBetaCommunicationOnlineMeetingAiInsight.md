@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingaiinsight
@@ -49,10 +49,22 @@ Update-MgBetaCommunicationOnlineMeetingAiInsight -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Update the navigation property aiInsights in communications
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -ActionItems
-
+.
 To construct, see NOTES section for ACTIONITEMS properties and create a hash table.
 
 ```yaml
@@ -114,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -CallId
-
+.
 
 ```yaml
 Type: String
@@ -129,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentCorrelationId
-
+.
 
 ```yaml
 Type: String
@@ -144,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -159,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -221,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -MeetingNotes
-
+.
 To construct, see NOTES section for MEETINGNOTES properties and create a hash table.
 
 ```yaml
@@ -345,116 +357,91 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIONITEMS `<IMicrosoftGraphActionItem- `[]`>`: .
-  - `[OwnerDisplayName <String>]`: 
-  - `[Text <String>]`: 
-  - `[Title <String>]`: 
+ACTIONITEMS \<IMicrosoftGraphActionItem\[\]\>: .
+  \[OwnerDisplayName \<String\>\]: 
+  \[Text \<String\>\]: 
+  \[Title \<String\>\]: 
 
-BODYPARAMETER `<IMicrosoftGraphCallAiInsight>`: callAiInsight
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCallAiInsight\>: callAiInsight
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
-    - `[OwnerDisplayName <String>]`: 
-    - `[Text <String>]`: 
-    - `[Title <String>]`: 
-  - `[CallId <String>]`: 
-  - `[ContentCorrelationId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[EndDateTime <DateTime?>]`: 
-  - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
-    - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
-      - `[Text <String>]`: 
-      - `[Title <String>]`: 
-    - `[Text <String>]`: 
-    - `[Title <String>]`: 
-  - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
-      - `[EventDateTime <DateTime?>]`: 
-      - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Application <IMicrosoftGraphIdentity>]`: identity
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-        - `[Device <IMicrosoftGraphIdentity>]`: identity
-        - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[TranscriptUtterance <String>]`: 
+  \[ActionItems \<IMicrosoftGraphActionItem\[\]\>\]: 
+    \[OwnerDisplayName \<String\>\]: 
+    \[Text \<String\>\]: 
+    \[Title \<String\>\]: 
+  \[CallId \<String\>\]: 
+  \[ContentCorrelationId \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[EndDateTime \<DateTime?\>\]: 
+  \[MeetingNotes \<IMicrosoftGraphMeetingNote\[\]\>\]: 
+    \[Subpoints \<IMicrosoftGraphMeetingNoteSubpoint\[\]\>\]: 
+      \[Text \<String\>\]: 
+      \[Title \<String\>\]: 
+    \[Text \<String\>\]: 
+    \[Title \<String\>\]: 
+  \[Viewpoint \<IMicrosoftGraphCallAiInsightViewPoint\>\]: callAiInsightViewPoint
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[MentionEvents \<IMicrosoftGraphMentionEvent\[\]\>\]: 
+      \[EventDateTime \<DateTime?\>\]: 
+      \[Speaker \<IMicrosoftGraphIdentitySet\>\]: identitySet
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Application \<IMicrosoftGraphIdentity\>\]: identity
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+          \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+        \[Device \<IMicrosoftGraphIdentity\>\]: identity
+        \[User \<IMicrosoftGraphIdentity\>\]: identity
+      \[TranscriptUtterance \<String\>\]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallAiInsightId <String>]`: The unique identifier of callAiInsight
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallAiInsightId \<String\>\]: The unique identifier of callAiInsight
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
-MEETINGNOTES `<IMicrosoftGraphMeetingNote- `[]`>`: .
-  - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
-    - `[Text <String>]`: 
-    - `[Title <String>]`: 
-  - `[Text <String>]`: 
-  - `[Title <String>]`: 
+MEETINGNOTES \<IMicrosoftGraphMeetingNote\[\]\>: .
+  \[Subpoints \<IMicrosoftGraphMeetingNoteSubpoint\[\]\>\]: 
+    \[Text \<String\>\]: 
+    \[Title \<String\>\]: 
+  \[Text \<String\>\]: 
+  \[Title \<String\>\]: 
 
-VIEWPOINT `<IMicrosoftGraphCallAiInsightViewPoint>`: callAiInsightViewPoint
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
-    - `[EventDateTime <DateTime?>]`: 
-    - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[TranscriptUtterance <String>]`:
+VIEWPOINT \<IMicrosoftGraphCallAiInsightViewPoint\>: callAiInsightViewPoint
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MentionEvents \<IMicrosoftGraphMentionEvent\[\]\>\]: 
+    \[EventDateTime \<DateTime?\>\]: 
+    \[Speaker \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+        \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[TranscriptUtterance \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingaiinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingaiinsight)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

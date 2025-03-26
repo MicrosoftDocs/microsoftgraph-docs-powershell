@@ -1,824 +1,679 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
-Module Guid: e52e12c3-5822-47f3-b73c-6c22fe31a8ce
-Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.groups/?view=graph-powershell-1.0
-Help Version: 1.0.0.0
+Module Guid: 50bc9e18-e281-4208-8913-c9e1bef6083d
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Groups Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Groups Cmdlets
-### [Add-MgGroupDriveListContentTypeCopy](Add-MgGroupDriveListContentTypeCopy.md)
-
-### [Add-MgGroupDriveListContentTypeCopyFromContentTypeHub](Add-MgGroupDriveListContentTypeCopyFromContentTypeHub.md)
-
 ### [Add-MgGroupFavorite](Add-MgGroupFavorite.md)
-
-### [Add-MgGroupSite](Add-MgGroupSite.md)
-
-### [Add-MgGroupSiteContentTypeCopy](Add-MgGroupSiteContentTypeCopy.md)
-
-### [Add-MgGroupSiteContentTypeCopyFromContentTypeHub](Add-MgGroupSiteContentTypeCopyFromContentTypeHub.md)
-
-### [Add-MgGroupSiteListContentTypeCopy](Add-MgGroupSiteListContentTypeCopy.md)
-
-### [Add-MgGroupSiteListContentTypeCopyFromContentTypeHub](Add-MgGroupSiteListContentTypeCopyFromContentTypeHub.md)
+{{ Fill in the Description }}
 
 ### [Add-MgGroupToLifecyclePolicy](Add-MgGroupToLifecyclePolicy.md)
+{{ Fill in the Description }}
 
 ### [Confirm-MgGroupGrantedPermissionForApp](Confirm-MgGroupGrantedPermissionForApp.md)
+{{ Fill in the Description }}
 
 ### [Confirm-MgGroupMemberGroup](Confirm-MgGroupMemberGroup.md)
+{{ Fill in the Description }}
 
 ### [Confirm-MgGroupMemberObject](Confirm-MgGroupMemberObject.md)
+{{ Fill in the Description }}
 
 ### [Confirm-MgGroupSettingTemplateMemberGroup](Confirm-MgGroupSettingTemplateMemberGroup.md)
+{{ Fill in the Description }}
 
 ### [Confirm-MgGroupSettingTemplateMemberObject](Confirm-MgGroupSettingTemplateMemberObject.md)
-
-### [Copy-MgGroupDriveItem](Copy-MgGroupDriveItem.md)
-
-### [Copy-MgGroupDriveListContentTypeToDefaultContentLocation](Copy-MgGroupDriveListContentTypeToDefaultContentLocation.md)
-
-### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
-
-### [Copy-MgGroupOnenoteNotebook](Copy-MgGroupOnenoteNotebook.md)
-
-### [Copy-MgGroupOnenotePageToSection](Copy-MgGroupOnenotePageToSection.md)
-
-### [Copy-MgGroupOnenoteSectionToNotebook](Copy-MgGroupOnenoteSectionToNotebook.md)
-
-### [Copy-MgGroupOnenoteSectionToSectionGroup](Copy-MgGroupOnenoteSectionToSectionGroup.md)
-
-### [Copy-MgGroupSiteContentTypeToDefaultContentLocation](Copy-MgGroupSiteContentTypeToDefaultContentLocation.md)
-
-### [Copy-MgGroupSiteListContentTypeToDefaultContentLocation](Copy-MgGroupSiteListContentTypeToDefaultContentLocation.md)
-
-### [Get-MgAllGroupSite](Get-MgAllGroupSite.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroup](Get-MgGroup.md)
-
-### [Get-MgGroup](Get-MgGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupAcceptedSender](Get-MgGroupAcceptedSender.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupAcceptedSenderByRef](Get-MgGroupAcceptedSenderByRef.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupAcceptedSenderCount](Get-MgGroupAcceptedSenderCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupById](Get-MgGroupById.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupByUniqueName](Get-MgGroupByUniqueName.md)
-
-### [Get-MgGroupCalendarEventDelta](Get-MgGroupCalendarEventDelta.md)
-
-### [Get-MgGroupCalendarSchedule](Get-MgGroupCalendarSchedule.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversation](Get-MgGroupConversation.md)
-
-### [Get-MgGroupConversation](Get-MgGroupConversation.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationCount](Get-MgGroupConversationCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThread](Get-MgGroupConversationThread.md)
-
-### [Get-MgGroupConversationThread](Get-MgGroupConversationThread.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadCount](Get-MgGroupConversationThreadCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPost](Get-MgGroupConversationThreadPost.md)
-
-### [Get-MgGroupConversationThreadPost](Get-MgGroupConversationThreadPost.md)
-
-### [Get-MgGroupConversationThreadPostAttachment](Get-MgGroupConversationThreadPostAttachment.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPostAttachment](Get-MgGroupConversationThreadPostAttachment.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPostAttachmentCount](Get-MgGroupConversationThreadPostAttachmentCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPostCount](Get-MgGroupConversationThreadPostCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPostExtension](Get-MgGroupConversationThreadPostExtension.md)
-
-### [Get-MgGroupConversationThreadPostExtension](Get-MgGroupConversationThreadPostExtension.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPostExtensionCount](Get-MgGroupConversationThreadPostExtensionCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPostInReplyToAttachment](Get-MgGroupConversationThreadPostInReplyToAttachment.md)
-
-### [Get-MgGroupConversationThreadPostInReplyToAttachment](Get-MgGroupConversationThreadPostInReplyToAttachment.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPostInReplyToAttachmentCount](Get-MgGroupConversationThreadPostInReplyToAttachmentCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPostInReplyToExtension](Get-MgGroupConversationThreadPostInReplyToExtension.md)
-
-### [Get-MgGroupConversationThreadPostInReplyToExtension](Get-MgGroupConversationThreadPostInReplyToExtension.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupConversationThreadPostInReplyToExtensionCount](Get-MgGroupConversationThreadPostInReplyToExtensionCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupCount](Get-MgGroupCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupCreatedOnBehalfOf](Get-MgGroupCreatedOnBehalfOf.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupDelta](Get-MgGroupDelta.md)
-
-### [Get-MgGroupDriveItemActivityByInterval](Get-MgGroupDriveItemActivityByInterval.md)
-
-### [Get-MgGroupDriveItemDelta](Get-MgGroupDriveItemDelta.md)
-
-### [Get-MgGroupDriveItemListItemActivityByInterval](Get-MgGroupDriveItemListItemActivityByInterval.md)
-
-### [Get-MgGroupDriveListContentTypeCompatibleHubContentType](Get-MgGroupDriveListContentTypeCompatibleHubContentType.md)
-
-### [Get-MgGroupDriveListItemActivityByInterval](Get-MgGroupDriveListItemActivityByInterval.md)
-
-### [Get-MgGroupDriveListItemDelta](Get-MgGroupDriveListItemDelta.md)
-
-### [Get-MgGroupDriveRootActivityByInterval](Get-MgGroupDriveRootActivityByInterval.md)
-
-### [Get-MgGroupDriveRootDelta](Get-MgGroupDriveRootDelta.md)
-
-### [Get-MgGroupDriveRootListItemActivityByInterval](Get-MgGroupDriveRootListItemActivityByInterval.md)
-
-### [Get-MgGroupEventDelta](Get-MgGroupEventDelta.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupExtension](Get-MgGroupExtension.md)
-
-### [Get-MgGroupExtension](Get-MgGroupExtension.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupExtensionCount](Get-MgGroupExtensionCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupLifecyclePolicy](Get-MgGroupLifecyclePolicy.md)
-
-### [Get-MgGroupLifecyclePolicy](Get-MgGroupLifecyclePolicy.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupLifecyclePolicyByGroup](Get-MgGroupLifecyclePolicyByGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupLifecyclePolicyCount](Get-MgGroupLifecyclePolicyCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMember](Get-MgGroupMember.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberAsApplication](Get-MgGroupMemberAsApplication.md)
-
-### [Get-MgGroupMemberAsApplication](Get-MgGroupMemberAsApplication.md)
-
-### [Get-MgGroupMemberAsDevice](Get-MgGroupMemberAsDevice.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberAsDevice](Get-MgGroupMemberAsDevice.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberAsGroup](Get-MgGroupMemberAsGroup.md)
-
-### [Get-MgGroupMemberAsGroup](Get-MgGroupMemberAsGroup.md)
-
-### [Get-MgGroupMemberAsOrgContact](Get-MgGroupMemberAsOrgContact.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberAsOrgContact](Get-MgGroupMemberAsOrgContact.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberAsServicePrincipal](Get-MgGroupMemberAsServicePrincipal.md)
-
-### [Get-MgGroupMemberAsServicePrincipal](Get-MgGroupMemberAsServicePrincipal.md)
-
-### [Get-MgGroupMemberAsUser](Get-MgGroupMemberAsUser.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberAsUser](Get-MgGroupMemberAsUser.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberByRef](Get-MgGroupMemberByRef.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberCount](Get-MgGroupMemberCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberCountAsApplication](Get-MgGroupMemberCountAsApplication.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberCountAsDevice](Get-MgGroupMemberCountAsDevice.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberCountAsGroup](Get-MgGroupMemberCountAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberCountAsOrgContact](Get-MgGroupMemberCountAsOrgContact.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberCountAsServicePrincipal](Get-MgGroupMemberCountAsServicePrincipal.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberCountAsUser](Get-MgGroupMemberCountAsUser.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberGroup](Get-MgGroupMemberGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberObject](Get-MgGroupMemberObject.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberOf](Get-MgGroupMemberOf.md)
-
-### [Get-MgGroupMemberOf](Get-MgGroupMemberOf.md)
-
-### [Get-MgGroupMemberOfAsAdministrativeUnit](Get-MgGroupMemberOfAsAdministrativeUnit.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberOfAsAdministrativeUnit](Get-MgGroupMemberOfAsAdministrativeUnit.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberOfAsGroup](Get-MgGroupMemberOfAsGroup.md)
-
-### [Get-MgGroupMemberOfAsGroup](Get-MgGroupMemberOfAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberOfCount](Get-MgGroupMemberOfCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberOfCountAsAdministrativeUnit](Get-MgGroupMemberOfCountAsAdministrativeUnit.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberOfCountAsGroup](Get-MgGroupMemberOfCountAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
-
-### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsApplication](Get-MgGroupMemberWithLicenseErrorAsApplication.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorAsApplication](Get-MgGroupMemberWithLicenseErrorAsApplication.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorAsDevice](Get-MgGroupMemberWithLicenseErrorAsDevice.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsDevice](Get-MgGroupMemberWithLicenseErrorAsDevice.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsGroup](Get-MgGroupMemberWithLicenseErrorAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorAsGroup](Get-MgGroupMemberWithLicenseErrorAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorAsOrgContact](Get-MgGroupMemberWithLicenseErrorAsOrgContact.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsOrgContact](Get-MgGroupMemberWithLicenseErrorAsOrgContact.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsServicePrincipal](Get-MgGroupMemberWithLicenseErrorAsServicePrincipal.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorAsServicePrincipal](Get-MgGroupMemberWithLicenseErrorAsServicePrincipal.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorAsUser](Get-MgGroupMemberWithLicenseErrorAsUser.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsUser](Get-MgGroupMemberWithLicenseErrorAsUser.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorCount](Get-MgGroupMemberWithLicenseErrorCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorCountAsApplication](Get-MgGroupMemberWithLicenseErrorCountAsApplication.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorCountAsDevice](Get-MgGroupMemberWithLicenseErrorCountAsDevice.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorCountAsGroup](Get-MgGroupMemberWithLicenseErrorCountAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorCountAsOrgContact](Get-MgGroupMemberWithLicenseErrorCountAsOrgContact.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorCountAsServicePrincipal](Get-MgGroupMemberWithLicenseErrorCountAsServicePrincipal.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupMemberWithLicenseErrorCountAsUser](Get-MgGroupMemberWithLicenseErrorCountAsUser.md)
-
-### [Get-MgGroupOnenoteNotebookFromWebUrl](Get-MgGroupOnenoteNotebookFromWebUrl.md)
-
-### [Get-MgGroupOnenoteRecentNotebook](Get-MgGroupOnenoteRecentNotebook.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwner](Get-MgGroupOwner.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerAsApplication](Get-MgGroupOwnerAsApplication.md)
-
-### [Get-MgGroupOwnerAsApplication](Get-MgGroupOwnerAsApplication.md)
-
-### [Get-MgGroupOwnerAsDevice](Get-MgGroupOwnerAsDevice.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerAsDevice](Get-MgGroupOwnerAsDevice.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerAsGroup](Get-MgGroupOwnerAsGroup.md)
-
-### [Get-MgGroupOwnerAsGroup](Get-MgGroupOwnerAsGroup.md)
-
-### [Get-MgGroupOwnerAsOrgContact](Get-MgGroupOwnerAsOrgContact.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerAsOrgContact](Get-MgGroupOwnerAsOrgContact.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerAsServicePrincipal](Get-MgGroupOwnerAsServicePrincipal.md)
-
-### [Get-MgGroupOwnerAsServicePrincipal](Get-MgGroupOwnerAsServicePrincipal.md)
-
-### [Get-MgGroupOwnerAsUser](Get-MgGroupOwnerAsUser.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerAsUser](Get-MgGroupOwnerAsUser.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerByRef](Get-MgGroupOwnerByRef.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerCount](Get-MgGroupOwnerCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerCountAsApplication](Get-MgGroupOwnerCountAsApplication.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerCountAsDevice](Get-MgGroupOwnerCountAsDevice.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerCountAsGroup](Get-MgGroupOwnerCountAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerCountAsOrgContact](Get-MgGroupOwnerCountAsOrgContact.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerCountAsServicePrincipal](Get-MgGroupOwnerCountAsServicePrincipal.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupOwnerCountAsUser](Get-MgGroupOwnerCountAsUser.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupPermissionGrant](Get-MgGroupPermissionGrant.md)
-
-### [Get-MgGroupPermissionGrant](Get-MgGroupPermissionGrant.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupPermissionGrantCount](Get-MgGroupPermissionGrantCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupPhoto](Get-MgGroupPhoto.md)
-
-### [Get-MgGroupPhoto](Get-MgGroupPhoto.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupPhotoContent](Get-MgGroupPhotoContent.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupRejectedSender](Get-MgGroupRejectedSender.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupRejectedSenderByRef](Get-MgGroupRejectedSenderByRef.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupRejectedSenderCount](Get-MgGroupRejectedSenderCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSetting](Get-MgGroupSetting.md)
-
-### [Get-MgGroupSetting](Get-MgGroupSetting.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSettingCount](Get-MgGroupSettingCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSettingTemplateById](Get-MgGroupSettingTemplateById.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSettingTemplateCount](Get-MgGroupSettingTemplateCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSettingTemplateDelta](Get-MgGroupSettingTemplateDelta.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSettingTemplateGroupSettingTemplate](Get-MgGroupSettingTemplateGroupSettingTemplate.md)
-
-### [Get-MgGroupSettingTemplateGroupSettingTemplate](Get-MgGroupSettingTemplateGroupSettingTemplate.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSettingTemplateMemberGroup](Get-MgGroupSettingTemplateMemberGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSettingTemplateMemberObject](Get-MgGroupSettingTemplateMemberObject.md)
-
-### [Get-MgGroupSiteActivityByInterval](Get-MgGroupSiteActivityByInterval.md)
-
-### [Get-MgGroupSiteApplicableContentTypeForList](Get-MgGroupSiteApplicableContentTypeForList.md)
-
-### [Get-MgGroupSiteByPath](Get-MgGroupSiteByPath.md)
-
-### [Get-MgGroupSiteContentTypeCompatibleHubContentType](Get-MgGroupSiteContentTypeCompatibleHubContentType.md)
-
-### [Get-MgGroupSiteDelta](Get-MgGroupSiteDelta.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSiteGetByPathApplicableContentTypeForList](Get-MgGroupSiteGetByPathApplicableContentTypeForList.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupSiteGetGraphBPrePathActivityByInterval](Get-MgGroupSiteGetGraphBPrePathActivityByInterval.md)
-
-### [Get-MgGroupSiteListContentTypeCompatibleHubContentType](Get-MgGroupSiteListContentTypeCompatibleHubContentType.md)
-
-### [Get-MgGroupSiteListItemActivityByInterval](Get-MgGroupSiteListItemActivityByInterval.md)
-
-### [Get-MgGroupSiteListItemDelta](Get-MgGroupSiteListItemDelta.md)
-
-### [Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart](Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart.md)
-
-### [Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart.md)
-
-### [Get-MgGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](Get-MgGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThread](Get-MgGroupThread.md)
-
-### [Get-MgGroupThread](Get-MgGroupThread.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadCount](Get-MgGroupThreadCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPost](Get-MgGroupThreadPost.md)
-
-### [Get-MgGroupThreadPost](Get-MgGroupThreadPost.md)
-
-### [Get-MgGroupThreadPostAttachment](Get-MgGroupThreadPostAttachment.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPostAttachment](Get-MgGroupThreadPostAttachment.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPostAttachmentCount](Get-MgGroupThreadPostAttachmentCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPostCount](Get-MgGroupThreadPostCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPostExtension](Get-MgGroupThreadPostExtension.md)
-
-### [Get-MgGroupThreadPostExtension](Get-MgGroupThreadPostExtension.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPostExtensionCount](Get-MgGroupThreadPostExtensionCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPostInReplyToAttachment](Get-MgGroupThreadPostInReplyToAttachment.md)
-
-### [Get-MgGroupThreadPostInReplyToAttachment](Get-MgGroupThreadPostInReplyToAttachment.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPostInReplyToAttachmentCount](Get-MgGroupThreadPostInReplyToAttachmentCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPostInReplyToExtension](Get-MgGroupThreadPostInReplyToExtension.md)
-
-### [Get-MgGroupThreadPostInReplyToExtension](Get-MgGroupThreadPostInReplyToExtension.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupThreadPostInReplyToExtensionCount](Get-MgGroupThreadPostInReplyToExtensionCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMember](Get-MgGroupTransitiveMember.md)
-
-### [Get-MgGroupTransitiveMember](Get-MgGroupTransitiveMember.md)
-
-### [Get-MgGroupTransitiveMemberAsApplication](Get-MgGroupTransitiveMemberAsApplication.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberAsApplication](Get-MgGroupTransitiveMemberAsApplication.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberAsDevice](Get-MgGroupTransitiveMemberAsDevice.md)
-
-### [Get-MgGroupTransitiveMemberAsDevice](Get-MgGroupTransitiveMemberAsDevice.md)
-
-### [Get-MgGroupTransitiveMemberAsGroup](Get-MgGroupTransitiveMemberAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberAsGroup](Get-MgGroupTransitiveMemberAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberAsOrgContact](Get-MgGroupTransitiveMemberAsOrgContact.md)
-
-### [Get-MgGroupTransitiveMemberAsOrgContact](Get-MgGroupTransitiveMemberAsOrgContact.md)
-
-### [Get-MgGroupTransitiveMemberAsServicePrincipal](Get-MgGroupTransitiveMemberAsServicePrincipal.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberAsServicePrincipal](Get-MgGroupTransitiveMemberAsServicePrincipal.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberAsUser](Get-MgGroupTransitiveMemberAsUser.md)
-
-### [Get-MgGroupTransitiveMemberAsUser](Get-MgGroupTransitiveMemberAsUser.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberCount](Get-MgGroupTransitiveMemberCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberCountAsApplication](Get-MgGroupTransitiveMemberCountAsApplication.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberCountAsDevice](Get-MgGroupTransitiveMemberCountAsDevice.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberCountAsGroup](Get-MgGroupTransitiveMemberCountAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberCountAsOrgContact](Get-MgGroupTransitiveMemberCountAsOrgContact.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberCountAsServicePrincipal](Get-MgGroupTransitiveMemberCountAsServicePrincipal.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberCountAsUser](Get-MgGroupTransitiveMemberCountAsUser.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberOf](Get-MgGroupTransitiveMemberOf.md)
-
-### [Get-MgGroupTransitiveMemberOf](Get-MgGroupTransitiveMemberOf.md)
-
-### [Get-MgGroupTransitiveMemberOfAsAdministrativeUnit](Get-MgGroupTransitiveMemberOfAsAdministrativeUnit.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberOfAsAdministrativeUnit](Get-MgGroupTransitiveMemberOfAsAdministrativeUnit.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberOfAsGroup](Get-MgGroupTransitiveMemberOfAsGroup.md)
-
-### [Get-MgGroupTransitiveMemberOfAsGroup](Get-MgGroupTransitiveMemberOfAsGroup.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberOfCount](Get-MgGroupTransitiveMemberOfCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit](Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit.md)
+{{ Fill in the Description }}
 
 ### [Get-MgGroupTransitiveMemberOfCountAsGroup](Get-MgGroupTransitiveMemberOfCountAsGroup.md)
-
-### [Grant-MgGroupDriveItemPermission](Grant-MgGroupDriveItemPermission.md)
-
-### [Grant-MgGroupDriveRootPermission](Grant-MgGroupDriveRootPermission.md)
-
-### [Grant-MgGroupSitePermission](Grant-MgGroupSitePermission.md)
-
-### [Invoke-MgAcceptGroupCalendarEvent](Invoke-MgAcceptGroupCalendarEvent.md)
-
-### [Invoke-MgAcceptGroupCalendarEventTentatively](Invoke-MgAcceptGroupCalendarEventTentatively.md)
-
-### [Invoke-MgAcceptGroupEvent](Invoke-MgAcceptGroupEvent.md)
-
-### [Invoke-MgAcceptGroupEventTentatively](Invoke-MgAcceptGroupEventTentatively.md)
-
-### [Invoke-MgCalendarGroupCalendar](Invoke-MgCalendarGroupCalendar.md)
-
-### [Invoke-MgCheckinGroupDriveItem](Invoke-MgCheckinGroupDriveItem.md)
-
-### [Invoke-MgCheckinGroupDriveRoot](Invoke-MgCheckinGroupDriveRoot.md)
-
-### [Invoke-MgCheckoutGroupDriveItem](Invoke-MgCheckoutGroupDriveItem.md)
-
-### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
-
-### [Invoke-MgDeclineGroupCalendarEvent](Invoke-MgDeclineGroupCalendarEvent.md)
-
-### [Invoke-MgDeclineGroupEvent](Invoke-MgDeclineGroupEvent.md)
-
-### [Invoke-MgDismissGroupCalendarEventReminder](Invoke-MgDismissGroupCalendarEventReminder.md)
-
-### [Invoke-MgDismissGroupEventReminder](Invoke-MgDismissGroupEventReminder.md)
-
-### [Invoke-MgExtractGroupDriveItemSensitivityLabel](Invoke-MgExtractGroupDriveItemSensitivityLabel.md)
-
-### [Invoke-MgExtractGroupDriveRootSensitivityLabel](Invoke-MgExtractGroupDriveRootSensitivityLabel.md)
-
-### [Invoke-MgFollowGroupDriveItem](Invoke-MgFollowGroupDriveItem.md)
-
-### [Invoke-MgFollowGroupDriveRoot](Invoke-MgFollowGroupDriveRoot.md)
-
-### [Invoke-MgForwardGroupCalendarEvent](Invoke-MgForwardGroupCalendarEvent.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgForwardGroupConversationThreadPost](Invoke-MgForwardGroupConversationThreadPost.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgForwardGroupConversationThreadPostInReplyTo](Invoke-MgForwardGroupConversationThreadPostInReplyTo.md)
-
-### [Invoke-MgForwardGroupEvent](Invoke-MgForwardGroupEvent.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgForwardGroupThreadPost](Invoke-MgForwardGroupThreadPost.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgForwardGroupThreadPostInReplyTo](Invoke-MgForwardGroupThreadPostInReplyTo.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgGraphGroup](Invoke-MgGraphGroup.md)
-
-### [Invoke-MgGraphGroupDrive](Invoke-MgGraphGroupDrive.md)
-
-### [Invoke-MgInviteGroupDriveItem](Invoke-MgInviteGroupDriveItem.md)
-
-### [Invoke-MgInviteGroupDriveRoot](Invoke-MgInviteGroupDriveRoot.md)
-
-### [Invoke-MgPreviewGroupDriveItem](Invoke-MgPreviewGroupDriveItem.md)
-
-### [Invoke-MgPreviewGroupDriveRoot](Invoke-MgPreviewGroupDriveRoot.md)
-
-### [Invoke-MgPreviewGroupOnenotePage](Invoke-MgPreviewGroupOnenotePage.md)
-
-### [Invoke-MgReauthorizeGroupDriveItemSubscription](Invoke-MgReauthorizeGroupDriveItemSubscription.md)
-
-### [Invoke-MgReauthorizeGroupDriveListSubscription](Invoke-MgReauthorizeGroupDriveListSubscription.md)
-
-### [Invoke-MgReauthorizeGroupDriveRootSubscription](Invoke-MgReauthorizeGroupDriveRootSubscription.md)
-
-### [Invoke-MgReauthorizeGroupSiteListSubscription](Invoke-MgReauthorizeGroupSiteListSubscription.md)
-
-### [Invoke-MgRecentGroupDrive](Invoke-MgRecentGroupDrive.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgRenewGroup](Invoke-MgRenewGroup.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgReplyGroupConversationThread](Invoke-MgReplyGroupConversationThread.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgReplyGroupConversationThreadPost](Invoke-MgReplyGroupConversationThreadPost.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgReplyGroupConversationThreadPostInReplyTo](Invoke-MgReplyGroupConversationThreadPostInReplyTo.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgReplyGroupThread](Invoke-MgReplyGroupThread.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgReplyGroupThreadPost](Invoke-MgReplyGroupThreadPost.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgReplyGroupThreadPostInReplyTo](Invoke-MgReplyGroupThreadPostInReplyTo.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgRetryGroupServiceProvisioning](Invoke-MgRetryGroupServiceProvisioning.md)
-
-### [Invoke-MgSnoozeGroupCalendarEventReminder](Invoke-MgSnoozeGroupCalendarEventReminder.md)
-
-### [Invoke-MgSnoozeGroupEventReminder](Invoke-MgSnoozeGroupEventReminder.md)
+{{ Fill in the Description }}
 
 ### [Invoke-MgSubscribeGroupByMail](Invoke-MgSubscribeGroupByMail.md)
-
-### [Invoke-MgUnfollowGroupDriveItem](Invoke-MgUnfollowGroupDriveItem.md)
-
-### [Invoke-MgUnfollowGroupDriveRoot](Invoke-MgUnfollowGroupDriveRoot.md)
-
-### [Join-MgGroupDriveListContentTypeWithHubSite](Join-MgGroupDriveListContentTypeWithHubSite.md)
-
-### [Join-MgGroupSiteContentTypeWithHubSite](Join-MgGroupSiteContentTypeWithHubSite.md)
-
-### [Join-MgGroupSiteListContentTypeWithHubSite](Join-MgGroupSiteListContentTypeWithHubSite.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroup](New-MgGroup.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupAcceptedSenderByRef](New-MgGroupAcceptedSenderByRef.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupConversation](New-MgGroupConversation.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupConversationThread](New-MgGroupConversationThread.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupConversationThreadPostAttachment](New-MgGroupConversationThreadPostAttachment.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupConversationThreadPostAttachmentUploadSession](New-MgGroupConversationThreadPostAttachmentUploadSession.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupConversationThreadPostExtension](New-MgGroupConversationThreadPostExtension.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupConversationThreadPostInReplyToAttachment](New-MgGroupConversationThreadPostInReplyToAttachment.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession](New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupConversationThreadPostInReplyToExtension](New-MgGroupConversationThreadPostInReplyToExtension.md)
-
-### [New-MgGroupDriveItemLink](New-MgGroupDriveItemLink.md)
-
-### [New-MgGroupDriveItemListItemLink](New-MgGroupDriveItemListItemLink.md)
-
-### [New-MgGroupDriveItemUploadSession](New-MgGroupDriveItemUploadSession.md)
-
-### [New-MgGroupDriveListItemLink](New-MgGroupDriveListItemLink.md)
-
-### [New-MgGroupDriveRootLink](New-MgGroupDriveRootLink.md)
-
-### [New-MgGroupDriveRootListItemLink](New-MgGroupDriveRootListItemLink.md)
-
-### [New-MgGroupDriveRootUploadSession](New-MgGroupDriveRootUploadSession.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupExtension](New-MgGroupExtension.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupLifecyclePolicy](New-MgGroupLifecyclePolicy.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupMember](New-MgGroupMember.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupMemberByRef](New-MgGroupMemberByRef.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupOwner](New-MgGroupOwner.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupOwnerByRef](New-MgGroupOwnerByRef.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupPermissionGrant](New-MgGroupPermissionGrant.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupRejectedSenderByRef](New-MgGroupRejectedSenderByRef.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupSetting](New-MgGroupSetting.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupSettingTemplateGroupSettingTemplate](New-MgGroupSettingTemplateGroupSettingTemplate.md)
-
-### [New-MgGroupSiteListItemLink](New-MgGroupSiteListItemLink.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupThread](New-MgGroupThread.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupThreadPostAttachment](New-MgGroupThreadPostAttachment.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupThreadPostAttachmentUploadSession](New-MgGroupThreadPostAttachmentUploadSession.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupThreadPostExtension](New-MgGroupThreadPostExtension.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupThreadPostInReplyToAttachment](New-MgGroupThreadPostInReplyToAttachment.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupThreadPostInReplyToAttachmentUploadSession](New-MgGroupThreadPostInReplyToAttachmentUploadSession.md)
+{{ Fill in the Description }}
 
 ### [New-MgGroupThreadPostInReplyToExtension](New-MgGroupThreadPostInReplyToExtension.md)
-
-### [Publish-MgGroupDriveListContentType](Publish-MgGroupDriveListContentType.md)
-
-### [Publish-MgGroupSiteContentType](Publish-MgGroupSiteContentType.md)
-
-### [Publish-MgGroupSiteListContentType](Publish-MgGroupSiteListContentType.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroup](Remove-MgGroup.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupAcceptedSenderDirectoryObjectByRef](Remove-MgGroupAcceptedSenderDirectoryObjectByRef.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupByUniqueName](Remove-MgGroupByUniqueName.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupConversation](Remove-MgGroupConversation.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupConversationThread](Remove-MgGroupConversationThread.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupConversationThreadPostAttachment](Remove-MgGroupConversationThreadPostAttachment.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupConversationThreadPostExtension](Remove-MgGroupConversationThreadPostExtension.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupConversationThreadPostInReplyToAttachment](Remove-MgGroupConversationThreadPostInReplyToAttachment.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupConversationThreadPostInReplyToExtension](Remove-MgGroupConversationThreadPostInReplyToExtension.md)
-
-### [Remove-MgGroupDriveItemPermanent](Remove-MgGroupDriveItemPermanent.md)
-
-### [Remove-MgGroupDriveRootPermanent](Remove-MgGroupDriveRootPermanent.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupExtension](Remove-MgGroupExtension.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupFavorite](Remove-MgGroupFavorite.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupFromLifecyclePolicy](Remove-MgGroupFromLifecyclePolicy.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupLifecyclePolicy](Remove-MgGroupLifecyclePolicy.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupMemberDirectoryObjectByRef](Remove-MgGroupMemberDirectoryObjectByRef.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupOwnerDirectoryObjectByRef](Remove-MgGroupOwnerDirectoryObjectByRef.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupPermissionGrant](Remove-MgGroupPermissionGrant.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupPhotoContent](Remove-MgGroupPhotoContent.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupRejectedSenderDirectoryObjectByRef](Remove-MgGroupRejectedSenderDirectoryObjectByRef.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupSetting](Remove-MgGroupSetting.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupSettingTemplateGroupSettingTemplate](Remove-MgGroupSettingTemplateGroupSettingTemplate.md)
-
-### [Remove-MgGroupSite](Remove-MgGroupSite.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupThread](Remove-MgGroupThread.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupThreadPostAttachment](Remove-MgGroupThreadPostAttachment.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupThreadPostExtension](Remove-MgGroupThreadPostExtension.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupThreadPostInReplyToAttachment](Remove-MgGroupThreadPostInReplyToAttachment.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgGroupThreadPostInReplyToExtension](Remove-MgGroupThreadPostInReplyToExtension.md)
+{{ Fill in the Description }}
 
 ### [Reset-MgGroupUnseenCount](Reset-MgGroupUnseenCount.md)
-
-### [Restore-MgGroupDriveItem](Restore-MgGroupDriveItem.md)
-
-### [Restore-MgGroupDriveItemListItemDocumentSetVersion](Restore-MgGroupDriveItemListItemDocumentSetVersion.md)
-
-### [Restore-MgGroupDriveItemListItemVersion](Restore-MgGroupDriveItemListItemVersion.md)
-
-### [Restore-MgGroupDriveItemVersion](Restore-MgGroupDriveItemVersion.md)
-
-### [Restore-MgGroupDriveListItemDocumentSetVersion](Restore-MgGroupDriveListItemDocumentSetVersion.md)
-
-### [Restore-MgGroupDriveListItemVersion](Restore-MgGroupDriveListItemVersion.md)
-
-### [Restore-MgGroupDriveRoot](Restore-MgGroupDriveRoot.md)
-
-### [Restore-MgGroupDriveRootListItemDocumentSetVersion](Restore-MgGroupDriveRootListItemDocumentSetVersion.md)
-
-### [Restore-MgGroupDriveRootListItemVersion](Restore-MgGroupDriveRootListItemVersion.md)
-
-### [Restore-MgGroupDriveRootVersion](Restore-MgGroupDriveRootVersion.md)
+{{ Fill in the Description }}
 
 ### [Restore-MgGroupSettingTemplate](Restore-MgGroupSettingTemplate.md)
-
-### [Restore-MgGroupSiteListItemDocumentSetVersion](Restore-MgGroupSiteListItemDocumentSetVersion.md)
-
-### [Restore-MgGroupSiteListItemVersion](Restore-MgGroupSiteListItemVersion.md)
-
-### [Search-MgGroupDrive](Search-MgGroupDrive.md)
-
-### [Search-MgGroupDriveItem](Search-MgGroupDriveItem.md)
-
-### [Search-MgGroupDriveRoot](Search-MgGroupDriveRoot.md)
-
-### [Set-MgGroupDriveItemSensitivityLabel](Set-MgGroupDriveItemSensitivityLabel.md)
-
-### [Set-MgGroupDriveRootSensitivityLabel](Set-MgGroupDriveRootSensitivityLabel.md)
+{{ Fill in the Description }}
 
 ### [Set-MgGroupLicense](Set-MgGroupLicense.md)
+{{ Fill in the Description }}
 
 ### [Set-MgGroupPhotoContent](Set-MgGroupPhotoContent.md)
-
-### [Stop-MgGroupCalendarEvent](Stop-MgGroupCalendarEvent.md)
-
-### [Stop-MgGroupEvent](Stop-MgGroupEvent.md)
-
-### [Test-MgGroupDriveItemPermission](Test-MgGroupDriveItemPermission.md)
-
-### [Test-MgGroupDriveListContentTypePublished](Test-MgGroupDriveListContentTypePublished.md)
-
-### [Test-MgGroupDriveRootPermission](Test-MgGroupDriveRootPermission.md)
+{{ Fill in the Description }}
 
 ### [Test-MgGroupProperty](Test-MgGroupProperty.md)
+{{ Fill in the Description }}
 
 ### [Test-MgGroupSettingTemplateProperty](Test-MgGroupSettingTemplateProperty.md)
-
-### [Test-MgGroupSiteContentTypePublished](Test-MgGroupSiteContentTypePublished.md)
-
-### [Test-MgGroupSiteListContentTypePublished](Test-MgGroupSiteListContentTypePublished.md)
-
-### [Unpublish-MgGroupDriveListContentType](Unpublish-MgGroupDriveListContentType.md)
-
-### [Unpublish-MgGroupSiteContentType](Unpublish-MgGroupSiteContentType.md)
-
-### [Unpublish-MgGroupSiteListContentType](Unpublish-MgGroupSiteListContentType.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroup](Update-MgGroup.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupByUniqueName](Update-MgGroupByUniqueName.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupConversationThread](Update-MgGroupConversationThread.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupConversationThreadPostExtension](Update-MgGroupConversationThreadPostExtension.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupConversationThreadPostInReplyToExtension](Update-MgGroupConversationThreadPostInReplyToExtension.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupExtension](Update-MgGroupExtension.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupLifecyclePolicy](Update-MgGroupLifecyclePolicy.md)
-
-### [Update-MgGroupOnenotePageContent](Update-MgGroupOnenotePageContent.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupPermissionGrant](Update-MgGroupPermissionGrant.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupSetting](Update-MgGroupSetting.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupSettingTemplateGroupSettingTemplate](Update-MgGroupSettingTemplateGroupSettingTemplate.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupThread](Update-MgGroupThread.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupThreadPostExtension](Update-MgGroupThreadPostExtension.md)
+{{ Fill in the Description }}
 
 ### [Update-MgGroupThreadPostInReplyToExtension](Update-MgGroupThreadPostInReplyToExtension.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{ Fill in the Description }}
 

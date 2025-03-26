@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthority
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectoryCertificateAuthority
 
 ## SYNOPSIS
-Get certificateAuthorities from directory
+Container for certificate authorities-related configurations for applications in the tenant.
 
 ## SYNTAX
 
@@ -19,7 +19,19 @@ Get-MgBetaDirectoryCertificateAuthority [-ExpandProperty <String[]>] [-Property 
 ```
 
 ## DESCRIPTION
-Get certificateAuthorities from directory
+Container for certificate authorities-related configurations for applications in the tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -112,27 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthority)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelmember
 schema: 2.0.0
-ms.subservice: teams
 ---
 
 # Remove-MgTeamChannelMember
@@ -12,16 +11,41 @@ ms.subservice: teams
 Delete a conversationMember from a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelMember?view=graph-powershell-beta)
-
 ## SYNTAX
 
-### Delete (Default)
+### RemoveExpanded (Default)
+```
+Remove-MgTeamChannelMember -ChannelId <String> -TeamId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Remove
+```
+Remove-MgTeamChannelMember -ChannelId <String> -TeamId <String> [-ResponseHeadersVariable <String>]
+ -BodyParameter <IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete
 ```
 Remove-MgTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentityExpanded
+```
+Remove-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentity
+```
+Remove-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ -BodyParameter <IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -36,26 +60,53 @@ Delete a conversationMember from a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Remove-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId
 
-```
-This example shows how to use the Remove-MgTeamChannelMember Cmdlet.
-
-
 ## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Remove, RemoveViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -ChannelId
 The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: RemoveExpanded, Remove, Delete
 Aliases:
 
 Required: True
@@ -100,7 +151,7 @@ ETag
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -116,7 +167,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -131,7 +182,7 @@ Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -176,10 +227,26 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: RemoveExpanded, Remove, Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Values
+.
+To construct, see NOTES section for VALUES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphConversationMember[]
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -222,10 +289,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ### System.Collections.IDictionary
 ## OUTPUTS
 
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActionResultPart
 ### System.Boolean
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
@@ -233,40 +302,66 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
-  - `[ChannelId <String>]`: The unique identifier of channel
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
-  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
-  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: The unique identifier of openShift
-  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: The unique identifier of shift
-  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
-  - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
-  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeOffId <String>]`: The unique identifier of timeOff
-  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
-  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+BODYPARAMETER \<IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Values \<IMicrosoftGraphConversationMember\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[DisplayName \<String\>\]: The display name of the user.
+    \[Roles \<String\[\]\>\]: The roles for that user.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
+A basic member shouldn't have any values specified in the roles property.
+An Out-of-tenant external member is assigned the owner role.
+    \[VisibleHistoryStartDateTime \<DateTime?\>\]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
+This property is settable only for members of a chat.
+
+INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
+  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
+  \[ChannelId \<String\>\]: The unique identifier of channel
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
+  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
+  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
+  \[OpenShiftId \<String\>\]: The unique identifier of openShift
+  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
+  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
+  \[ShiftId \<String\>\]: The unique identifier of shift
+  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
+  \[TeamId \<String\>\]: The unique identifier of team
+  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
+  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
+  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
+  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
+  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
+  \[TimeOffId \<String\>\]: The unique identifier of timeOff
+  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
+  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
+  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
+
+VALUES \<IMicrosoftGraphConversationMember\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DisplayName \<String\>\]: The display name of the user.
+  \[Roles \<String\[\]\>\]: The roles for that user.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
+A basic member shouldn't have any values specified in the roles property.
+An Out-of-tenant external member is assigned the owner role.
+  \[VisibleHistoryStartDateTime \<DateTime?\>\]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
+This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
@@ -274,25 +369,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/channel-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-delete-members?view=graph-rest-1.0)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
 

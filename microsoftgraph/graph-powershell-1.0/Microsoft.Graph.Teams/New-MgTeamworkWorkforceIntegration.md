@@ -1,28 +1,24 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration
 schema: 2.0.0
-ms.subservice: teams
 ---
 
 # New-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Create a new workforceIntegration object.You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+Create a new workforceIntegration object.\nYou can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgTeamworkWorkforceIntegration [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-ApiVersion <Int32>] [-DisplayName <String>] [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]
- [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>]
- [-Url <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ApiVersion <Int32>] [-DisplayName <String>] [-EligibilityFilteringEnabledEntities <String>]
+ [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>] [-Id <String>] [-IsActive]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>] [-Url <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -33,14 +29,14 @@ New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceInteg
 ```
 
 ## DESCRIPTION
-Create a new workforceIntegration object.You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
+Create a new workforceIntegration object.\nYou can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	displayName = "ABCWorkforceIntegration"
@@ -56,10 +52,6 @@ $params = @{
 }
 
 New-MgTeamworkWorkforceIntegration -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamworkWorkforceIntegration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -112,6 +104,21 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Name of the workforce integration.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EligibilityFilteringEnabledEntities
+eligibilityFilteringEnabledEntities
 
 ```yaml
 Type: String
@@ -310,72 +317,51 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+BODYPARAMETER \<IMicrosoftGraphWorkforceIntegration\>: workforceIntegration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApiVersion <Int32?>]`: API version for the call back URL.
+  \[ApiVersion \<Int32?\>\]: API version for the call back URL.
 Start with 1.
-  - `[DisplayName <String>]`: Name of the workforce integration.
-  - `[Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]`: workforceIntegrationEncryption
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
-    - `[Secret <String>]`: Encryption shared secret.
-  - `[IsActive <Boolean?>]`: Indicates whether this workforce integration is currently active and available.
-  - `[SupportedEntities <String>]`: workforceIntegrationSupportedEntities
-  - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
+  \[DisplayName \<String\>\]: Name of the workforce integration.
+  \[EligibilityFilteringEnabledEntities \<String\>\]: eligibilityFilteringEnabledEntities
+  \[Encryption \<IMicrosoftGraphWorkforceIntegrationEncryption\>\]: workforceIntegrationEncryption
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Protocol \<String\>\]: workforceIntegrationEncryptionProtocol
+    \[Secret \<String\>\]: Encryption shared secret.
+  \[IsActive \<Boolean?\>\]: Indicates whether this workforce integration is currently active and available.
+  \[SupportedEntities \<String\>\]: workforceIntegrationSupportedEntities
+  \[Url \<String\>\]: Workforce Integration URL for callbacks from the Shifts service.
 
-ENCRYPTION `<IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
-  - `[Secret <String>]`: Encryption shared secret.
+ENCRYPTION \<IMicrosoftGraphWorkforceIntegrationEncryption\>: workforceIntegrationEncryption
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Protocol \<String\>\]: workforceIntegrationEncryptionProtocol
+  \[Secret \<String\>\]: Encryption shared secret.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration)
 
 [https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

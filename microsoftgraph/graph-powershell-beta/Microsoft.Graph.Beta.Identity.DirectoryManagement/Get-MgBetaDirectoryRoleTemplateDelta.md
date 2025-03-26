@@ -1,19 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatedelta
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryRoleTemplateDelta
 
 ## SYNOPSIS
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
-For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleTemplateDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplateDelta?view=graph-powershell-1.0)
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 ## SYNTAX
 
@@ -26,15 +22,19 @@ Get-MgBetaDirectoryRoleTemplateDelta [-ExpandProperty <String[]>] [-Filter <Stri
 
 ## DESCRIPTION
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
-For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -250,27 +250,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatedelta)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

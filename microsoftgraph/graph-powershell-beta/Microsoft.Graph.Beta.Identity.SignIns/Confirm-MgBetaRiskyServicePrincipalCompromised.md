@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyserviceprincipalcompromised
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Confirm-MgBetaRiskyServicePrincipalCompromised
@@ -11,9 +10,6 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgRiskyServicePrincipalCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyServicePrincipalCompromised?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,11 +33,11 @@ Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	servicePrincipalIds = @(
@@ -50,10 +46,6 @@ $params = @{
 }
 
 Confirm-MgBetaRiskyServicePrincipalCompromised -BodyParameter $params
-
-```
-This example shows how to use the Confirm-MgBetaRiskyServicePrincipalCompromised Cmdlet.
-
 
 ## PARAMETERS
 
@@ -73,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -149,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalIds
-
+.
 
 ```yaml
 Type: String[]
@@ -210,35 +202,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ServicePrincipalIds <String- `[]`>]`:
+BODYPARAMETER \<IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ServicePrincipalIds \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyserviceprincipalcompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyserviceprincipalcompromised)
 
 [https://learn.microsoft.com/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta](https://learn.microsoft.com/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

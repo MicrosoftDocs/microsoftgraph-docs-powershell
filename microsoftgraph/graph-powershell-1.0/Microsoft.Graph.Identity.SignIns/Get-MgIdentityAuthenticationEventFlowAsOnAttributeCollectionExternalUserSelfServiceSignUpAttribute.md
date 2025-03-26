@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute
@@ -11,9 +10,6 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Get an identityUserFlowAttribute collection associated with an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object.
 These attributes are collected from the user during the authentication experience defined by the user flow.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,17 +26,13 @@ Get an identityUserFlowAttribute collection associated with an external identiti
 These attributes are collected from the user during the authentication experience defined by the user flow.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute -AuthenticationEventsFlowId $authenticationEventsFlowId
-
-```
-This example shows how to use the Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute Cmdlet.
-
 
 ## PARAMETERS
 
@@ -271,26 +263,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute)
 
 [https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
