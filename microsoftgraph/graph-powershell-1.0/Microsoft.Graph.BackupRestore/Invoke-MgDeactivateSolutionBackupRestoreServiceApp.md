@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgdeactivatesolutionbackuprestoreserviceapp
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Invoke-MgDeactivateSolutionBackupRestoreServiceApp
