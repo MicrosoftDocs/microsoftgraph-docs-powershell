@@ -11,6 +11,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Read the properties and relationships of an adminConsentRequestPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAdminConsentRequestPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

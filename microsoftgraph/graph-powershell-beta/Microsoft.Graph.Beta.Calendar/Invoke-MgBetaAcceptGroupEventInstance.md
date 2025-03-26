@@ -11,6 +11,9 @@ ms.subservice: outlook
 ## SYNOPSIS
 Accept the specified event in a user calendar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptGroupEventInstance](/powershell/module/Microsoft.Graph.Calendar/Invoke-MgAcceptGroupEventInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)

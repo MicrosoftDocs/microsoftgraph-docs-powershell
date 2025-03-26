@@ -13,6 +13,9 @@ ms.subservice: entra-sign-in
 Retrieve a single phoneAuthenticationMethod object for a user.
 This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaMeAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaMeAuthenticationPhoneMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

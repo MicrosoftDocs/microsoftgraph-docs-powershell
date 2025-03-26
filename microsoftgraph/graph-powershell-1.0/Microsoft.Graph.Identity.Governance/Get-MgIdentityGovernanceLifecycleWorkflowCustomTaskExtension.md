@@ -12,6 +12,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Read the properties and relationships of a customTaskExtension object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

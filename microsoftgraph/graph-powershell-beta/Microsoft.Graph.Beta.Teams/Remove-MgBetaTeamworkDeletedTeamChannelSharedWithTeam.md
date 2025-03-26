@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property sharedWithTeams for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

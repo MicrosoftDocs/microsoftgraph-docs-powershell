@@ -15,6 +15,9 @@ If you want to remove a mobile number from a user that also has an alternateMobi
 If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
 Have the user change their default authentication method, and then delete the number.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgMeAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgMeAuthenticationPhoneMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

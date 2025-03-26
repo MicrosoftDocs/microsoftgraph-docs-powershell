@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Retrieve a user's single FIDO2 Security Key Authentication Method object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaMeAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaMeAuthenticationFido2Method?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

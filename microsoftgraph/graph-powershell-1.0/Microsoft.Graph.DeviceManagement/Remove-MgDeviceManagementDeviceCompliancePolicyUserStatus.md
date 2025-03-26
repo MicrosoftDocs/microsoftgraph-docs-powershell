@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Deletes a deviceComplianceUserStatus.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

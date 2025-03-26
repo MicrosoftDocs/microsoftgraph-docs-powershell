@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to methods for me
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaMeAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaMeAuthenticationMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

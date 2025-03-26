@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property emailMethods for me
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgMeAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgMeAuthenticationEmailMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

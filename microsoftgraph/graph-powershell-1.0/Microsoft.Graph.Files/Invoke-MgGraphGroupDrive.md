@@ -12,6 +12,9 @@ ms.subservice: sharepoint
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they are items from a different drive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaGraphGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)
