@@ -29,18 +29,6 @@ Remove-MgBetaNetworkAccessFilteringProfile -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Delete navigation property filteringProfiles for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -FilteringProfileId
@@ -220,6 +208,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofile)
+
 
 
 

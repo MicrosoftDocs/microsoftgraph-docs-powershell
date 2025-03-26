@@ -32,18 +32,6 @@ Remove-MgBetaGroupOnenoteOperation -InputObject <INotesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property operations for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -231,6 +219,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenoteoperation)
+
 
 
 

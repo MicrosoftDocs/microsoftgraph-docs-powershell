@@ -29,18 +29,6 @@ Update-MgBetaMeAuthenticationRequirement -BodyParameter <IMicrosoftGraphStrongAu
 ## DESCRIPTION
 Update property requirements value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -188,6 +176,7 @@ BODYPARAMETER `<IMicrosoftGraphStrongAuthenticationRequirements>`: strongAuthent
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetameauthenticationrequirement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetameauthenticationrequirement)
+
 
 
 

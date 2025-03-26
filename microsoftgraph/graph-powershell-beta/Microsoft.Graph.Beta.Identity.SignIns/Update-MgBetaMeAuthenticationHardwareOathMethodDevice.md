@@ -53,18 +53,6 @@ Update-MgBetaMeAuthenticationHardwareOathMethodDevice -InputObject <IIdentitySig
 ## DESCRIPTION
 Update the navigation property device in me
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -25332,6 +25320,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetameauthenticationhardwareoathmethoddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetameauthenticationhardwareoathmethoddevice)
+
 
 
 

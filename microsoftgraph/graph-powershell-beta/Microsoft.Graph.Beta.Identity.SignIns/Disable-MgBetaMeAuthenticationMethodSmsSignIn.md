@@ -29,18 +29,6 @@ Disable-MgBetaMeAuthenticationMethodSmsSignIn -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Invoke action disableSmsSignIn
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationMethodId
@@ -267,6 +255,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/disable-mgbetameauthenticationmethodsmssignin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/disable-mgbetameauthenticationmethodsmssignin)
+
 
 
 

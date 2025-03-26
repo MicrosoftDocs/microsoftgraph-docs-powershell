@@ -40,18 +40,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Calendars.Read.Shared,  |
 | Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -195,6 +183,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarcount)
+
 
 
 

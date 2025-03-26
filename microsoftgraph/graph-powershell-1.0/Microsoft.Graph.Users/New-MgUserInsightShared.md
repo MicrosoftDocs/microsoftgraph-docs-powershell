@@ -54,18 +54,6 @@ New-MgUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to shared for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -480,6 +468,7 @@ Can be by a 1Link1, 1Attachment1, 1Group1, 1Site1.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserinsightshared](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserinsightshared)
+
 
 
 

@@ -49,18 +49,6 @@ Update-MgBetaUserOnenoteNotebookSectionPage -InputObject <INotesIdentity>
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,6 +317,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotenotebooksectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotenotebooksectionpage)
+
 
 
 
