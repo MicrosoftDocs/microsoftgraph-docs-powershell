@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationsynchronizationprofile
@@ -324,65 +324,87 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphEducationSynchronizationProfile\>: educationSynchronizationProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationProfile>`: educationSynchronizationProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DataProvider \<IMicrosoftGraphEducationSynchronizationDataProvider\>\]: educationSynchronizationDataProvider
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: 
-  \[Errors \<IMicrosoftGraphEducationSynchronizationError\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[DataProvider <IMicrosoftGraphEducationSynchronizationDataProvider>]`: educationSynchronizationDataProvider
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: 
+  - `[Errors <IMicrosoftGraphEducationSynchronizationError- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[EntryType \<String\>\]: 
-    \[ErrorCode \<String\>\]: 
-    \[ErrorMessage \<String\>\]: 
-    \[JoiningValue \<String\>\]: 
-    \[RecordedDateTime \<DateTime?\>\]: 
-    \[ReportableIdentifier \<String\>\]: 
-  \[ExpirationDate \<DateTime?\>\]: 
-  \[HandleSpecialCharacterConstraint \<Boolean?\>\]: 
-  \[IdentitySynchronizationConfiguration \<IMicrosoftGraphEducationIdentitySynchronizationConfiguration\>\]: educationIdentitySynchronizationConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[LicensesToAssign \<IMicrosoftGraphEducationSynchronizationLicenseAssignment\[\]\>\]: 
-    \[AppliesTo \<String\>\]: educationUserRole
-    \[SkuIds \<String\[\]\>\]: 
-  \[ProfileStatus \<IMicrosoftGraphEducationSynchronizationProfileStatus\>\]: educationSynchronizationProfileStatus
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[EntryType <String>]`: 
+    - `[ErrorCode <String>]`: 
+    - `[ErrorMessage <String>]`: 
+    - `[JoiningValue <String>]`: 
+    - `[RecordedDateTime <DateTime?>]`: 
+    - `[ReportableIdentifier <String>]`: 
+  - `[ExpirationDate <DateTime?>]`: 
+  - `[HandleSpecialCharacterConstraint <Boolean?>]`: 
+  - `[IdentitySynchronizationConfiguration <IMicrosoftGraphEducationIdentitySynchronizationConfiguration>]`: educationIdentitySynchronizationConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>]`: 
+    - `[AppliesTo <String>]`: educationUserRole
+    - `[SkuIds <String- `[]`>]`: 
+  - `[ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>]`: educationSynchronizationProfileStatus
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ErrorCount \<Int64?\>\]: 
-    \[LastActivityDateTime \<DateTime?\>\]: 
-    \[LastSynchronizationDateTime \<DateTime?\>\]: 
-    \[Status \<String\>\]: educationSynchronizationStatus
-    \[StatusMessage \<String\>\]: 
-  \[State \<String\>\]: educationSynchronizationProfileState
+    - `[ErrorCount <Int64?>]`: 
+    - `[LastActivityDateTime <DateTime?>]`: 
+    - `[LastSynchronizationDateTime <DateTime?>]`: 
+    - `[Status <String>]`: educationSynchronizationStatus
+    - `[StatusMessage <String>]`: 
+  - `[State <String>]`: educationSynchronizationProfileState
 
-ERRORS \<IMicrosoftGraphEducationSynchronizationError\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+ERRORS `<IMicrosoftGraphEducationSynchronizationError- `[]`>`: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[EntryType \<String\>\]: 
-  \[ErrorCode \<String\>\]: 
-  \[ErrorMessage \<String\>\]: 
-  \[JoiningValue \<String\>\]: 
-  \[RecordedDateTime \<DateTime?\>\]: 
-  \[ReportableIdentifier \<String\>\]: 
+  - `[EntryType <String>]`: 
+  - `[ErrorCode <String>]`: 
+  - `[ErrorMessage <String>]`: 
+  - `[JoiningValue <String>]`: 
+  - `[RecordedDateTime <DateTime?>]`: 
+  - `[ReportableIdentifier <String>]`: 
 
-LICENSESTOASSIGN \<IMicrosoftGraphEducationSynchronizationLicenseAssignment\[\]\>: .
-  \[AppliesTo \<String\>\]: educationUserRole
-  \[SkuIds \<String\[\]\>\]: 
+LICENSESTOASSIGN `<IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>`: .
+  - `[AppliesTo <String>]`: educationUserRole
+  - `[SkuIds <String- `[]`>]`: 
 
-PROFILESTATUS \<IMicrosoftGraphEducationSynchronizationProfileStatus\>: educationSynchronizationProfileStatus
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+PROFILESTATUS `<IMicrosoftGraphEducationSynchronizationProfileStatus>`: educationSynchronizationProfileStatus
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ErrorCount \<Int64?\>\]: 
-  \[LastActivityDateTime \<DateTime?\>\]: 
-  \[LastSynchronizationDateTime \<DateTime?\>\]: 
-  \[Status \<String\>\]: educationSynchronizationStatus
-  \[StatusMessage \<String\>\]:
+  - `[ErrorCount <Int64?>]`: 
+  - `[LastActivityDateTime <DateTime?>]`: 
+  - `[LastSynchronizationDateTime <DateTime?>]`: 
+  - `[Status <String>]`: educationSynchronizationStatus
+  - `[StatusMessage <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationsynchronizationprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
