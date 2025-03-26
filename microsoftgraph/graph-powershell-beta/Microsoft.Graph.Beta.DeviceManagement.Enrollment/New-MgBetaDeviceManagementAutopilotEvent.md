@@ -18,13 +18,11 @@ New-MgBetaDeviceManagementAutopilotEvent [-ResponseHeadersVariable <String>] [-A
  [-AccountSetupStatus <WindowsAutopilotDeploymentState>] [-AdditionalProperties <Hashtable>]
  [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>] [-DeploymentStartDateTime <DateTime>]
  [-DeploymentState <WindowsAutopilotDeploymentState>] [-DeploymentTotalDuration <TimeSpan>]
- [-DeviceId <String>] [-DevicePreparationDuration <TimeSpan>] [-DeviceRegisteredDateTime <DateTime>]
- [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>]
- [-DeviceSetupStatus <WindowsAutopilotDeploymentState>] [-EnrollmentFailureDetails <String>]
- [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>]
- [-EventDateTime <DateTime>] [-Id <String>] [-ManagedDeviceName <String>] [-OSVersion <String>]
- [-PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>]
- [-TargetedAppCount <Int32>] [-TargetedPolicyCount <Int32>] [-UserPrincipalName <String>]
+ [-DeviceId <String>] [-DeviceRegisteredDateTime <DateTime>] [-DeviceSerialNumber <String>]
+ [-DeviceSetupDuration <TimeSpan>] [-DeviceSetupStatus <WindowsAutopilotDeploymentState>]
+ [-EnrollmentFailureDetails <String>] [-EnrollmentStartDateTime <DateTime>]
+ [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>] [-EventDateTime <DateTime>] [-Id <String>]
+ [-ManagedDeviceName <String>] [-OSVersion <String>] [-UserId <String>] [-UserPrincipalName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationId <String>]
  [-WindowsAutopilotDeploymentProfileDisplayName <String>] [-Headers <IDictionary>]
@@ -184,21 +182,6 @@ Device id associated with the object
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DevicePreparationDuration
-Time spent in device enrollment.
-
-```yaml
-Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -405,22 +388,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PolicyStatusDetails
-Policy and application status details for this device.
-To construct, see NOTES section for POLICYSTATUSDETAILS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -451,32 +418,17 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TargetedAppCount
-Count of applications targeted.
+### -UserId
+UserId id associated with the object
 
 ```yaml
-Type: Int32
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
 Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TargetedPolicyCount
-Count of policies targeted.
-
-```yaml
-Type: Int32
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -600,7 +552,6 @@ Read-only.
   - `[DeploymentState <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
   - `[DeploymentTotalDuration <TimeSpan?>]`: Total deployment duration from enrollment to Desktop screen.
   - `[DeviceId <String>]`: Device id associated with the object
-  - `[DevicePreparationDuration <TimeSpan?>]`: Time spent in device enrollment.
   - `[DeviceRegisteredDateTime <DateTime?>]`: Device registration date.
   - `[DeviceSerialNumber <String>]`: Device serial number.
   - `[DeviceSetupDuration <TimeSpan?>]`: Time spent in device ESP.
@@ -612,33 +563,11 @@ Read-only.
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
   - `[ManagedDeviceName <String>]`: Managed device name.
   - `[OSVersion <String>]`: Device operating system version.
-  - `[PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail- `[]`>]`: Policy and application status details for this device.
-    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-    - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
-    - `[DisplayName <String>]`: The friendly name of the policy.
-    - `[ErrorCode <Int32?>]`: The errorode associated with the compliance or enforcement status of the policy.
-Error code for enforcement status takes precedence if it exists.
-    - `[LastReportedDateTime <DateTime?>]`: Timestamp of the reported policy status
-    - `[PolicyType <String>]`: deviceManagementAutopilotPolicyType
-    - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this policy was tracked as part of the autopilot bootstrap enrollment sync session
-  - `[TargetedAppCount <Int32?>]`: Count of applications targeted.
-  - `[TargetedPolicyCount <Int32?>]`: Count of policies targeted.
+  - `[UserId <String>]`: UserId id associated with the object
   - `[UserPrincipalName <String>]`: User principal name used to enroll the device.
   - `[Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]`: Enrollment Status Page profile name
   - `[Windows10EnrollmentCompletionPageConfigurationId <String>]`: Enrollment Status Page profile ID
   - `[WindowsAutopilotDeploymentProfileDisplayName <String>]`: Autopilot profile name.
-
-POLICYSTATUSDETAILS `<IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail- `[]`>`: Policy and application status details for this device.
-  - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-  - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
-  - `[DisplayName <String>]`: The friendly name of the policy.
-  - `[ErrorCode <Int32?>]`: The errorode associated with the compliance or enforcement status of the policy.
-Error code for enforcement status takes precedence if it exists.
-  - `[LastReportedDateTime <DateTime?>]`: Timestamp of the reported policy status
-  - `[PolicyType <String>]`: deviceManagementAutopilotPolicyType
-  - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this policy was tracked as part of the autopilot bootstrap enrollment sync session
 
 ## RELATED LINKS
 

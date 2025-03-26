@@ -12,9 +12,6 @@ ms.subservice: entra-directory-management
 Update the properties of domain object.
 Only verified domains can be updated.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomain?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -179,7 +176,8 @@ Accept wildcard characters: False
 ### -DomainNameReferences
 The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Doesn't support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 To construct, see NOTES section for DOMAINNAMEREFERENCES properties and create a hash table.
 
@@ -197,7 +195,7 @@ Accept wildcard characters: False
 
 ### -FederationConfiguration
 Domain settings configured by a customer when federated with Microsoft Entra ID.
-Supports $expand.
+Doesn't support $expand.
 To construct, see NOTES section for FEDERATIONCONFIGURATION properties and create a hash table.
 
 ```yaml
@@ -279,7 +277,7 @@ Accept wildcard characters: False
 ### -IsDefault
 true if this is the default domain that is used for user creation.
 There's only one default domain per company.
-Not nullable
+Not nullable.
 
 ```yaml
 Type: SwitchParameter
@@ -313,7 +311,7 @@ Accept wildcard characters: False
 ### -IsRoot
 true if the domain is a verified root domain.
 Otherwise, false if the domain is a subdomain or unverified.
-Not nullable
+Not nullable.
 
 ```yaml
 Type: SwitchParameter
@@ -328,8 +326,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsVerified
-true if the domain has completed domain ownership verification.
-Not nullable
+true if the domain completed domain ownership verification.
+Not nullable.
 
 ```yaml
 Type: SwitchParameter
@@ -374,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordNotificationWindowInDays
-Specifies the number of days before a user receives notification that their password will expire.
+Specifies the number of days before a user receives notification that their password expires.
 If the property isn't set, a default value of 14 days is used.
 
 ```yaml
@@ -454,7 +452,7 @@ Accept wildcard characters: False
 ### -ServiceConfigurationRecords
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
-Supports $expand.
+Doesn't support $expand.
 To construct, see NOTES section for SERVICECONFIGURATIONRECORDS properties and create a hash table.
 
 ```yaml
@@ -506,7 +504,7 @@ Accept wildcard characters: False
 ### -VerificationDnsRecords
 DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
-Supports $expand.
+Doesn't support $expand.
 To construct, see NOTES section for VERIFICATIONDNSRECORDS properties and create a hash table.
 
 ```yaml
@@ -584,14 +582,15 @@ When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
   - `[DomainNameReferences <IMicrosoftGraphDirectoryObject- `[]`>]`: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Doesn't support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[FederationConfiguration <IMicrosoftGraphInternalDomainFederation- `[]`>]`: Domain settings configured by a customer when federated with Microsoft Entra ID.
-Supports $expand.
+Doesn't support $expand.
     - `[IssuerUri <String>]`: Issuer URI of the federation server.
     - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
     - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
@@ -613,6 +612,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
+    - `[PasswordResetUri <String>]`: 
     - `[PromptLoginBehavior <String>]`: promptLoginBehavior
     - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
@@ -628,25 +628,25 @@ Otherwise, the value is true.
 Not nullable
   - `[IsDefault <Boolean?>]`: true if this is the default domain that is used for user creation.
 There's only one default domain per company.
-Not nullable
+Not nullable.
   - `[IsInitial <Boolean?>]`: true if this is the initial domain created by Microsoft Online Services (contoso.com).
 There's only one initial domain per company.
 Not nullable
   - `[IsRoot <Boolean?>]`: true if the domain is a verified root domain.
 Otherwise, false if the domain is a subdomain or unverified.
-Not nullable
-  - `[IsVerified <Boolean?>]`: true if the domain has completed domain ownership verification.
-Not nullable
+Not nullable.
+  - `[IsVerified <Boolean?>]`: true if the domain completed domain ownership verification.
+Not nullable.
   - `[Manufacturer <String>]`: 
   - `[Model <String>]`: 
-  - `[PasswordNotificationWindowInDays <Int32?>]`: Specifies the number of days before a user receives notification that their password will expire.
+  - `[PasswordNotificationWindowInDays <Int32?>]`: Specifies the number of days before a user receives notification that their password expires.
 If the property isn't set, a default value of 14 days is used.
   - `[PasswordValidityPeriodInDays <Int32?>]`: Specifies the length of time that a password is valid before it must be changed.
 If the property isn't set, a default value of 90 days is used.
   - `[RootDomain <IMicrosoftGraphDomain>]`: domain
   - `[ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
-Supports $expand.
+Doesn't support $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
@@ -673,11 +673,12 @@ The values that you can add or remove using the API include: Email, OfficeCommun
 Not nullable.
   - `[VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
-Supports $expand.
+Doesn't support $expand.
 
 DOMAINNAMEREFERENCES `<IMicrosoftGraphDirectoryObject- `[]`>`: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Doesn't support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -685,7 +686,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 FEDERATIONCONFIGURATION `<IMicrosoftGraphInternalDomainFederation- `[]`>`: Domain settings configured by a customer when federated with Microsoft Entra ID.
-Supports $expand.
+Doesn't support $expand.
   - `[IssuerUri <String>]`: Issuer URI of the federation server.
   - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
   - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
@@ -707,6 +708,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
+  - `[PasswordResetUri <String>]`: 
   - `[PromptLoginBehavior <String>]`: promptLoginBehavior
   - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
@@ -733,6 +735,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
@@ -744,6 +747,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[UserId <String>]`: The unique identifier of user
 
 ROOTDOMAIN `<IMicrosoftGraphDomain>`: domain
@@ -761,14 +765,15 @@ When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
   - `[DomainNameReferences <IMicrosoftGraphDirectoryObject- `[]`>]`: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Doesn't support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[FederationConfiguration <IMicrosoftGraphInternalDomainFederation- `[]`>]`: Domain settings configured by a customer when federated with Microsoft Entra ID.
-Supports $expand.
+Doesn't support $expand.
     - `[IssuerUri <String>]`: Issuer URI of the federation server.
     - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
     - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
@@ -790,6 +795,7 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
+    - `[PasswordResetUri <String>]`: 
     - `[PromptLoginBehavior <String>]`: promptLoginBehavior
     - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
@@ -805,25 +811,25 @@ Otherwise, the value is true.
 Not nullable
   - `[IsDefault <Boolean?>]`: true if this is the default domain that is used for user creation.
 There's only one default domain per company.
-Not nullable
+Not nullable.
   - `[IsInitial <Boolean?>]`: true if this is the initial domain created by Microsoft Online Services (contoso.com).
 There's only one initial domain per company.
 Not nullable
   - `[IsRoot <Boolean?>]`: true if the domain is a verified root domain.
 Otherwise, false if the domain is a subdomain or unverified.
-Not nullable
-  - `[IsVerified <Boolean?>]`: true if the domain has completed domain ownership verification.
-Not nullable
+Not nullable.
+  - `[IsVerified <Boolean?>]`: true if the domain completed domain ownership verification.
+Not nullable.
   - `[Manufacturer <String>]`: 
   - `[Model <String>]`: 
-  - `[PasswordNotificationWindowInDays <Int32?>]`: Specifies the number of days before a user receives notification that their password will expire.
+  - `[PasswordNotificationWindowInDays <Int32?>]`: Specifies the number of days before a user receives notification that their password expires.
 If the property isn't set, a default value of 14 days is used.
   - `[PasswordValidityPeriodInDays <Int32?>]`: Specifies the length of time that a password is valid before it must be changed.
 If the property isn't set, a default value of 90 days is used.
   - `[RootDomain <IMicrosoftGraphDomain>]`: domain
   - `[ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
-Supports $expand.
+Doesn't support $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
@@ -850,11 +856,11 @@ The values that you can add or remove using the API include: Email, OfficeCommun
 Not nullable.
   - `[VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
-Supports $expand.
+Doesn't support $expand.
 
 SERVICECONFIGURATIONRECORDS `<IMicrosoftGraphDomainDnsRecord- `[]`>`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
-Supports $expand.
+Doesn't support $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
@@ -879,7 +885,7 @@ Failed - The operation failed.
 
 VERIFICATIONDNSRECORDS `<IMicrosoftGraphDomainDnsRecord- `[]`>`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
-Supports $expand.
+Doesn't support $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.

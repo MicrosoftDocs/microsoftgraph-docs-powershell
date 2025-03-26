@@ -3,16 +3,12 @@ external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryObject
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a directoryObject object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,17 +38,13 @@ Get-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandPrope
 Retrieve the properties and relationships of a directoryObject object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 Get-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Get-MgBetaDirectoryObject Cmdlet.
-
 
 ## PARAMETERS
 

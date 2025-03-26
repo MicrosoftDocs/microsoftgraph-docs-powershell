@@ -10,6 +10,7 @@ ms.subservice: entra-sign-in
 
 ## SYNOPSIS
 Update the properties of a customAuthenticationExtension object.
+The following derived types are currently supported.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
@@ -52,6 +53,7 @@ Update-MgIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsIde
 
 ## DESCRIPTION
 Update the properties of a customAuthenticationExtension object.
+The following derived types are currently supported.
 
 ## EXAMPLES
 ### Example 1: Code snippet

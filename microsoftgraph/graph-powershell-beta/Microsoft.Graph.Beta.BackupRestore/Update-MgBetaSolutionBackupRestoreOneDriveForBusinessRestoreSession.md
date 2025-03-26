@@ -22,9 +22,11 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
  -OneDriveForBusinessRestoreSessionId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact[]>]
+ [-DriveRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest[]>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-RestoreJobType <String>]
+ [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -40,10 +42,12 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
 Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession -InputObject <IBackupRestoreIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact[]>] [-Error <IMicrosoftGraphPublicError>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact[]>]
+ [-DriveRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest[]>]
+ [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-RestoreJobType <String>]
+ [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -136,11 +140,27 @@ Accept wildcard characters: False
 ```
 
 ### -DriveRestoreArtifacts
-A collection of restore points and destination details that can be used to restore a OneDrive for Business drive.
+A collection of restore points and destination details that can be used to restore a OneDrive for work or school drive.
 To construct, see NOTES section for DRIVERESTOREARTIFACTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDriveRestoreArtifact[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DriveRestoreArtifactsBulkAdditionRequests
+A collection of user mailboxes and destination details that can be used to restore a OneDrive for work or school drive.
+To construct, see NOTES section for DRIVERESTOREARTIFACTSBULKADDITIONREQUESTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -290,6 +310,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RestoreJobType
+restoreJobType
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestoreSessionArtifactCount
+restoreSessionArtifactCount
+To construct, see NOTES section for RESTORESESSIONARTIFACTCOUNT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRestoreSessionArtifactCount
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 restoreSessionStatus
 
@@ -385,10 +436,17 @@ For example, in the access reviews decisions API, this property might record the
     - `[Target <String>]`: The target of the error.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of the restore session.
+  - `[RestoreJobType <String>]`: restoreJobType
+  - `[RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]`: restoreSessionArtifactCount
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Completed <Int32?>]`: The number of artifacts whose restoration completed.
+    - `[Failed <Int32?>]`: The number of artifacts whose restoration failed.
+    - `[InProgress <Int32?>]`: The number of artifacts whose restoration is in progress.
+    - `[Total <Int32?>]`: The number of artifacts present in the restore session.
   - `[Status <String>]`: restoreSessionStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact- `[]`>]`: A collection of restore points and destination details that can be used to restore a OneDrive for Business drive.
+  - `[DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact- `[]`>]`: A collection of restore points and destination details that can be used to restore a OneDrive for work or school drive.
     - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
     - `[DestinationType <String>]`: destinationType
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -415,6 +473,30 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[RestoredSiteId <String>]`: The new site identifier if destinationType is new, and the input site ID if the destinationType is inPlace.
+  - `[DriveRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of user mailboxes and destination details that can be used to restore a OneDrive for work or school drive.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+    - `[DestinationType <String>]`: destinationType
+    - `[DisplayName <String>]`: Name of the addition request.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+    - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+      - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+    - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+    - `[RestorePointPreference <String>]`: restorePointPreference
+    - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+    - `[Tags <String>]`: restorePointTags
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+This property isn't implemented yet.
+Future value; don't use.
+    - `[Drives <String- `[]`>]`: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -428,7 +510,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DRIVERESTOREARTIFACTS `<IMicrosoftGraphDriveRestoreArtifact- `[]`>`: A collection of restore points and destination details that can be used to restore a OneDrive for Business drive.
+DRIVERESTOREARTIFACTS `<IMicrosoftGraphDriveRestoreArtifact- `[]`>`: A collection of restore points and destination details that can be used to restore a OneDrive for work or school drive.
   - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
   - `[DestinationType <String>]`: destinationType
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -480,6 +562,55 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   - `[RestoredSiteId <String>]`: The new site identifier if destinationType is new, and the input site ID if the destinationType is inPlace.
 
+DRIVERESTOREARTIFACTSBULKADDITIONREQUESTS `<IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest- `[]`>`: A collection of user mailboxes and destination details that can be used to restore a OneDrive for work or school drive.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+  - `[DestinationType <String>]`: destinationType
+  - `[DisplayName <String>]`: Name of the addition request.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+  - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+    - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+  - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+  - `[RestorePointPreference <String>]`: restorePointPreference
+  - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+  - `[Tags <String>]`: restorePointTags
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DirectoryObjectIds <String- `[]`>]`: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+This property isn't implemented yet.
+Future value; don't use.
+  - `[Drives <String- `[]`>]`: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+
 ERROR `<IMicrosoftGraphPublicError>`: publicError
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <String>]`: Represents the error code.
@@ -499,13 +630,17 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
   - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of driveProtectionUnitsBulkAdditionJob
   - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
+  - `[DriveRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
   - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[GranularMailboxRestoreArtifactId <String>]`: The unique identifier of granularMailboxRestoreArtifact
   - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
   - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
   - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
+  - `[MailboxRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
   - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
   - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
@@ -517,7 +652,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
   - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
   - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of siteProtectionUnitsBulkAdditionJob
   - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
+  - `[SiteRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -530,6 +667,13 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
+
+RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Completed <Int32?>]`: The number of artifacts whose restoration completed.
+  - `[Failed <Int32?>]`: The number of artifacts whose restoration failed.
+  - `[InProgress <Int32?>]`: The number of artifacts whose restoration is in progress.
+  - `[Total <Int32?>]`: The number of artifacts present in the restore session.
 
 ## RELATED LINKS
 

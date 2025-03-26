@@ -39,7 +39,7 @@ Delete a shift from the schedule.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.Read.All,  |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet

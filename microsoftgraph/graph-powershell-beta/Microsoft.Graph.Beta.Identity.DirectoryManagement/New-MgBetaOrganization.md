@@ -776,8 +776,8 @@ Read-only.
     - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
       - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
       - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
@@ -993,8 +993,10 @@ Maximum length is 255 characters.
 The URL that directs to the company's privacy statement.
 Not required.
   - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan- `[]`>]`: Not nullable.
-    - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-    - `[ProvisioningStatus <String>]`: For example, 'Success'.
+    - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+    - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
     - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
   - `[SecurityComplianceNotificationMails <String- `[]`>]`: Not nullable.
   - `[SecurityComplianceNotificationPhones <String- `[]`>]`: Not nullable.
@@ -1061,8 +1063,8 @@ Read-only.
   - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-      - `[Key <String>]`: Key.
-      - `[Value <String>]`: Value.
+      - `[Key <String>]`: Contains the name of the field that a value is associated with.
+      - `[Value <String>]`: Contains the corresponding value for the specified key.
     - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
     - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
     - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
@@ -1258,8 +1260,10 @@ The URL that directs to the company's privacy statement.
 Not required.
 
 PROVISIONEDPLANS `<IMicrosoftGraphProvisionedPlan- `[]`>`: Not nullable.
-  - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-  - `[ProvisioningStatus <String>]`: For example, 'Success'.
+  - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+  - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
   - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
 
 SETTINGS `<IMicrosoftGraphOrganizationSettings>`: organizationSettings

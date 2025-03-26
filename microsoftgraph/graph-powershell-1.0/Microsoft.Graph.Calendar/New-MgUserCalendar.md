@@ -1324,6 +1324,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlaceId <String>]`: The unique identifier of place
   - `[RoomId <String>]`: The unique identifier of room
+  - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: The unique identifier of user
 
 MULTIVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>`: The collection of multi-value extended properties defined for the calendar.

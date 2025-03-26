@@ -8,7 +8,7 @@ schema: 2.0.0
 # Resume-MgBetaEducationSynchronizationProfile
 
 ## SYNOPSIS
-Resume the sync of a specific school data synchronization profile in the tenant.
+Invoke action resume
 
 ## SYNTAX
 
@@ -27,15 +27,7 @@ Resume-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Resume the sync of a specific school data synchronization profile in the tenant.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAdministration.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAdministration.ReadWrite.All,  |
+Invoke action resume
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -209,12 +201,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
+  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
+  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/resume-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/resume-mgbetaeducationsynchronizationprofile)
-
-[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta)
 
 
 

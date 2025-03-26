@@ -369,7 +369,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/site-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0)
 
 
 

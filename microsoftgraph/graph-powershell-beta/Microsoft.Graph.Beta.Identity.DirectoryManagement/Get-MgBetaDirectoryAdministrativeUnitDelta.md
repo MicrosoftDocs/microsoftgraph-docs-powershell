@@ -10,7 +10,7 @@ ms.subservice: entra-directory-management
 
 ## SYNOPSIS
 Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
-For details, see Using delta query.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAdministrativeUnitDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitDelta?view=graph-powershell-1.0)
@@ -26,7 +26,7 @@ Get-MgBetaDirectoryAdministrativeUnitDelta [-ExpandProperty <String[]>] [-Filter
 
 ## DESCRIPTION
 Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
-For details, see Using delta query.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**
 

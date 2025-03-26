@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The bulk upload operation for the job.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -41,7 +38,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: Set
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

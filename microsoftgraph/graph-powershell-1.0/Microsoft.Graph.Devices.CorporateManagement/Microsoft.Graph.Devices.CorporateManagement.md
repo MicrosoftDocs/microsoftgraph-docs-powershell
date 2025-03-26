@@ -1,1467 +1,1875 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: cf2df748-e7ed-4a59-941e-75c27e7eeb7f
-Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/?view=graph-powershell-1.0
-Help Version: 1.0.0.0
+Module Guid: 39dbb3bc-1a84-424a-9efe-683be70a1810
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Devices.CorporateManagement Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+
 
 ## Microsoft.Graph.Devices.CorporateManagement Cmdlets
+### [Clear-MgUserManagedDevice](Clear-MgUserManagedDevice.md)
+
+
+### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
+
+
+### [Find-MgUserManagedDevice](Find-MgUserManagedDevice.md)
+
+
 ### [Get-MgDeviceAppManagement](Get-MgDeviceAppManagement.md)
 
-### [Get-MgDeviceAppManagementAndroidManagedAppProtection](Get-MgDeviceAppManagementAndroidManagedAppProtection.md)
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtection](Get-MgDeviceAppManagementAndroidManagedAppProtection.md)
 
-### [Get-MgDeviceAppManagementAndroidManagedAppProtectionApp](Get-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionApp](Get-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
+
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAppCount](Get-MgDeviceAppManagementAndroidManagedAppProtectionAppCount.md)
 
-### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignmentCount](Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignmentCount.md)
 
+
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionCount](Get-MgDeviceAppManagementAndroidManagedAppProtectionCount.md)
+
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Get-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
 
-### [Get-MgDeviceAppManagementDefaultManagedAppProtection](Get-MgDeviceAppManagementDefaultManagedAppProtection.md)
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtection](Get-MgDeviceAppManagementDefaultManagedAppProtection.md)
 
-### [Get-MgDeviceAppManagementDefaultManagedAppProtectionApp](Get-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionApp](Get-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
+
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionAppCount](Get-MgDeviceAppManagementDefaultManagedAppProtectionAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionCount](Get-MgDeviceAppManagementDefaultManagedAppProtectionCount.md)
+
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Get-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
 
-### [Get-MgDeviceAppManagementiOSManagedAppProtection](Get-MgDeviceAppManagementiOSManagedAppProtection.md)
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtection](Get-MgDeviceAppManagementiOSManagedAppProtection.md)
 
-### [Get-MgDeviceAppManagementiOSManagedAppProtectionApp](Get-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionApp](Get-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
+
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionAppCount](Get-MgDeviceAppManagementiOSManagedAppProtectionAppCount.md)
 
-### [Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment](Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment](Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionAssignmentCount](Get-MgDeviceAppManagementiOSManagedAppProtectionAssignmentCount.md)
 
+
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionCount](Get-MgDeviceAppManagementiOSManagedAppProtectionCount.md)
+
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
 
-### [Get-MgDeviceAppManagementManagedAppPolicy](Get-MgDeviceAppManagementManagedAppPolicy.md)
 
 ### [Get-MgDeviceAppManagementManagedAppPolicy](Get-MgDeviceAppManagementManagedAppPolicy.md)
+
 
 ### [Get-MgDeviceAppManagementManagedAppPolicyCount](Get-MgDeviceAppManagementManagedAppPolicyCount.md)
 
-### [Get-MgDeviceAppManagementManagedAppRegistration](Get-MgDeviceAppManagementManagedAppRegistration.md)
 
 ### [Get-MgDeviceAppManagementManagedAppRegistration](Get-MgDeviceAppManagementManagedAppRegistration.md)
 
-### [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
+
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicyCount](Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicyCount.md)
 
+
 ### [Get-MgDeviceAppManagementManagedAppRegistrationCount](Get-MgDeviceAppManagementManagedAppRegistrationCount.md)
 
-### [Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
+
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicyCount](Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicyCount.md)
 
-### [Get-MgDeviceAppManagementManagedAppRegistrationOperation](Get-MgDeviceAppManagementManagedAppRegistrationOperation.md)
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationOperation](Get-MgDeviceAppManagementManagedAppRegistrationOperation.md)
+
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationOperationCount](Get-MgDeviceAppManagementManagedAppRegistrationOperationCount.md)
 
+
 ### [Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration.md)
 
-### [Get-MgDeviceAppManagementManagedAppStatus](Get-MgDeviceAppManagementManagedAppStatus.md)
 
 ### [Get-MgDeviceAppManagementManagedAppStatus](Get-MgDeviceAppManagementManagedAppStatus.md)
+
 
 ### [Get-MgDeviceAppManagementManagedAppStatusCount](Get-MgDeviceAppManagementManagedAppStatusCount.md)
 
-### [Get-MgDeviceAppManagementManagedEBook](Get-MgDeviceAppManagementManagedEBook.md)
 
 ### [Get-MgDeviceAppManagementManagedEBook](Get-MgDeviceAppManagementManagedEBook.md)
 
-### [Get-MgDeviceAppManagementManagedEBookAssignment](Get-MgDeviceAppManagementManagedEBookAssignment.md)
 
 ### [Get-MgDeviceAppManagementManagedEBookAssignment](Get-MgDeviceAppManagementManagedEBookAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementManagedEBookAssignmentCount](Get-MgDeviceAppManagementManagedEBookAssignmentCount.md)
 
+
 ### [Get-MgDeviceAppManagementManagedEBookCount](Get-MgDeviceAppManagementManagedEBookCount.md)
 
-### [Get-MgDeviceAppManagementManagedEBookDeviceState](Get-MgDeviceAppManagementManagedEBookDeviceState.md)
 
 ### [Get-MgDeviceAppManagementManagedEBookDeviceState](Get-MgDeviceAppManagementManagedEBookDeviceState.md)
+
 
 ### [Get-MgDeviceAppManagementManagedEBookDeviceStateCount](Get-MgDeviceAppManagementManagedEBookDeviceStateCount.md)
 
+
 ### [Get-MgDeviceAppManagementManagedEBookInstallSummary](Get-MgDeviceAppManagementManagedEBookInstallSummary.md)
 
-### [Get-MgDeviceAppManagementManagedEBookUserStateSummary](Get-MgDeviceAppManagementManagedEBookUserStateSummary.md)
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummary](Get-MgDeviceAppManagementManagedEBookUserStateSummary.md)
+
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryCount](Get-MgDeviceAppManagementManagedEBookUserStateSummaryCount.md)
 
-### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
+
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount](Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount.md)
 
-### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 
-### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount.md)
 
+
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyCount](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyCount.md)
 
-### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
 
-### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileApp](Get-MgDeviceAppManagementMobileApp.md)
 
 ### [Get-MgDeviceAppManagementMobileApp](Get-MgDeviceAppManagementMobileApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobApp](Get-MgDeviceAppManagementMobileAppAsiOSLobApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobApp](Get-MgDeviceAppManagementMobileAppAsiOSLobApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsIoStoreApp](Get-MgDeviceAppManagementMobileAppAsIoStoreApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreApp](Get-MgDeviceAppManagementMobileAppAsIoStoreApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsIoVppApp](Get-MgDeviceAppManagementMobileAppAsIoVppApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppApp](Get-MgDeviceAppManagementMobileAppAsIoVppApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsIoVppAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAssignment](Get-MgDeviceAppManagementMobileAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAssignment](Get-MgDeviceAppManagementMobileAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobApp](Get-MgDeviceAppManagementMobileAppAsWin32LobApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobApp](Get-MgDeviceAppManagementMobileAppAsWin32LobApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppX](Get-MgDeviceAppManagementMobileAppAsWindowsAppX.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppX](Get-MgDeviceAppManagementMobileAppAsWindowsAppX.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppAsWindowsWebApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppAsWindowsWebApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignmentCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppCategory](Get-MgDeviceAppManagementMobileAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppCategory](Get-MgDeviceAppManagementMobileAppCategory.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCategoryCount](Get-MgDeviceAppManagementMobileAppCategoryCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppConfiguration](Get-MgDeviceAppManagementMobileAppConfiguration.md)
 
 ### [Get-MgDeviceAppManagementMobileAppConfiguration](Get-MgDeviceAppManagementMobileAppConfiguration.md)
 
-### [Get-MgDeviceAppManagementMobileAppConfigurationAssignment](Get-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationAssignment](Get-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationAssignmentCount](Get-MgDeviceAppManagementMobileAppConfigurationAssignmentCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppConfigurationCount](Get-MgDeviceAppManagementMobileAppConfigurationCount.md)
 
-### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusCount](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
 
-### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatus](Get-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatus](Get-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatusCount](Get-MgDeviceAppManagementMobileAppConfigurationUserStatusCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCount](Get-MgDeviceAppManagementMobileAppCount.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppCountAsAndroidLobApp](Get-MgDeviceAppManagementMobileAppCountAsAndroidLobApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppCountAsAndroidStoreApp.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppCountAsiOSLobApp](Get-MgDeviceAppManagementMobileAppCountAsiOSLobApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsIoStoreApp](Get-MgDeviceAppManagementMobileAppCountAsIoStoreApp.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppCountAsIoVppApp](Get-MgDeviceAppManagementMobileAppCountAsIoVppApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppCountAsMacOSDmgApp.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppCountAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppCountAsMacOSLobApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppCountAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppCountAsManagediOSLobApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppCountAsManagedMobileLobApp.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsWin32LobApp](Get-MgDeviceAppManagementMobileAppCountAsWin32LobApp.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppCountAsWindowsAppX](Get-MgDeviceAppManagementMobileAppCountAsWindowsAppX.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppCountAsWindowsMobileMsi.md)
 
+
 ### [Get-MgDeviceAppManagementMobileAppCountAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppCountAsWindowsUniversalAppX.md)
+
 
 ### [Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp.md)
 
-### [Get-MgDeviceAppManagementTargetedManagedAppConfiguration](Get-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfiguration](Get-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
 
-### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp](Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp](Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
+
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAppCount](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAppCount.md)
 
-### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignmentCount](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignmentCount.md)
 
+
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationCount](Get-MgDeviceAppManagementTargetedManagedAppConfigurationCount.md)
+
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Get-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
 
-### [Get-MgDeviceAppManagementVppToken](Get-MgDeviceAppManagementVppToken.md)
 
 ### [Get-MgDeviceAppManagementVppToken](Get-MgDeviceAppManagementVppToken.md)
+
 
 ### [Get-MgDeviceAppManagementVppTokenCount](Get-MgDeviceAppManagementVppTokenCount.md)
 
-### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
 
-### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount.md)
 
+
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyCount](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyCount.md)
 
-### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
 
-### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
 
-### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
 
 ### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
+
 
 ### [Get-MgUserDeviceManagementTroubleshootingEventCount](Get-MgUserDeviceManagementTroubleshootingEventCount.md)
 
-### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
 
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
+
 
 ### [Get-MgUserManagedAppRegistrationCount](Get-MgUserManagedAppRegistrationCount.md)
 
-### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
 
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
+
 
 ### [Get-MgUserManagedDeviceCategory](Get-MgUserManagedDeviceCategory.md)
 
-### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
+
+### [Get-MgUserManagedDeviceCategoryByRef](Get-MgUserManagedDeviceCategoryByRef.md)
+
 
 ### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
+
 
 ### [Get-MgUserManagedDeviceCompliancePolicyStateCount](Get-MgUserManagedDeviceCompliancePolicyStateCount.md)
 
-### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
 
 ### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
+
 
 ### [Get-MgUserManagedDeviceConfigurationStateCount](Get-MgUserManagedDeviceConfigurationStateCount.md)
 
+
 ### [Get-MgUserManagedDeviceCount](Get-MgUserManagedDeviceCount.md)
+
 
 ### [Get-MgUserManagedDeviceLogCollectionRequestCount](Get-MgUserManagedDeviceLogCollectionRequestCount.md)
 
-### [Get-MgUserManagedDeviceLogCollectionResponse](Get-MgUserManagedDeviceLogCollectionResponse.md)
 
 ### [Get-MgUserManagedDeviceLogCollectionResponse](Get-MgUserManagedDeviceLogCollectionResponse.md)
+
 
 ### [Get-MgUserManagedDeviceUser](Get-MgUserManagedDeviceUser.md)
 
+
 ### [Get-MgUserManagedDeviceWindowsProtectionState](Get-MgUserManagedDeviceWindowsProtectionState.md)
 
-### [Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
 ### [Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
+
 
 ### [Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareStateCount](Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareStateCount.md)
 
+
+### [Invoke-MgCleanUserManagedDeviceWindowsDevice](Invoke-MgCleanUserManagedDeviceWindowsDevice.md)
+
+
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile.md)
+
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile.md)
 
+
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile.md)
+
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile.md)
 
+
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile.md)
+
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile.md)
 
+
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFile.md)
+
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile.md)
 
+
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile.md)
+
 
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile.md)
 
+
 ### [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile](Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile.md)
+
+
+### [Invoke-MgDownUserManagedDeviceShut](Invoke-MgDownUserManagedDeviceShut.md)
+
+
+### [Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser.md)
+
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFileUpload.md)
 
+
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload.md)
+
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload.md)
 
+
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFileUpload.md)
+
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFileUpload.md)
 
+
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFileUpload.md)
+
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload.md)
 
+
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload.md)
+
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFileUpload.md)
 
+
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload.md)
+
 
 ### [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload](Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload.md)
 
+
+### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
+
+
+### [Invoke-MgScanUserManagedDeviceWindowsDefender](Invoke-MgScanUserManagedDeviceWindowsDefender.md)
+
+
 ### [Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp](Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp.md)
+
 
 ### [Invoke-MgTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp](Invoke-MgTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp.md)
 
+
 ### [Invoke-MgTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp](Invoke-MgTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp.md)
+
 
 ### [Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
+
+### [Lock-MgUserManagedDeviceRemote](Lock-MgUserManagedDeviceRemote.md)
+
+
 ### [New-MgDeviceAppManagementAndroidManagedAppProtection](New-MgDeviceAppManagementAndroidManagedAppProtection.md)
+
 
 ### [New-MgDeviceAppManagementAndroidManagedAppProtectionApp](New-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
 
+
 ### [New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
+
 
 ### [New-MgDeviceAppManagementDefaultManagedAppProtection](New-MgDeviceAppManagementDefaultManagedAppProtection.md)
 
+
 ### [New-MgDeviceAppManagementDefaultManagedAppProtectionApp](New-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
+
 
 ### [New-MgDeviceAppManagementiOSManagedAppProtection](New-MgDeviceAppManagementiOSManagedAppProtection.md)
 
+
 ### [New-MgDeviceAppManagementiOSManagedAppProtectionApp](New-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
+
 
 ### [New-MgDeviceAppManagementiOSManagedAppProtectionAssignment](New-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
 
+
 ### [New-MgDeviceAppManagementManagedAppPolicy](New-MgDeviceAppManagementManagedAppPolicy.md)
+
 
 ### [New-MgDeviceAppManagementManagedAppRegistration](New-MgDeviceAppManagementManagedAppRegistration.md)
 
+
 ### [New-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](New-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
+
 
 ### [New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
 
+
 ### [New-MgDeviceAppManagementManagedAppRegistrationOperation](New-MgDeviceAppManagementManagedAppRegistrationOperation.md)
+
 
 ### [New-MgDeviceAppManagementManagedAppStatus](New-MgDeviceAppManagementManagedAppStatus.md)
 
+
 ### [New-MgDeviceAppManagementManagedEBook](New-MgDeviceAppManagementManagedEBook.md)
+
 
 ### [New-MgDeviceAppManagementManagedEBookAssignment](New-MgDeviceAppManagementManagedEBookAssignment.md)
 
+
 ### [New-MgDeviceAppManagementManagedEBookDeviceState](New-MgDeviceAppManagementManagedEBookDeviceState.md)
+
 
 ### [New-MgDeviceAppManagementManagedEBookUserStateSummary](New-MgDeviceAppManagementManagedEBookUserStateSummary.md)
 
+
 ### [New-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](New-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
+
 
 ### [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 
+
 ### [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
+
 ### [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileApp](New-MgDeviceAppManagementMobileApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](New-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](New-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](New-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](New-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](New-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](New-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](New-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](New-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](New-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAssignment](New-MgDeviceAppManagementMobileAppAssignment.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](New-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](New-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](New-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](New-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppCategory](New-MgDeviceAppManagementMobileAppCategory.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppConfiguration](New-MgDeviceAppManagementMobileAppConfiguration.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppConfigurationAssignment](New-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
 
+
 ### [New-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](New-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
+
 
 ### [New-MgDeviceAppManagementMobileAppConfigurationUserStatus](New-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
+
 ### [New-MgDeviceAppManagementTargetedManagedAppConfiguration](New-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
+
 
 ### [New-MgDeviceAppManagementTargetedManagedAppConfigurationApp](New-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
+
 ### [New-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](New-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
+
 
 ### [New-MgDeviceAppManagementVppToken](New-MgDeviceAppManagementVppToken.md)
 
+
 ### [New-MgDeviceAppManagementWindowsInformationProtectionPolicy](New-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
+
 
 ### [New-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](New-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
 
+
 ### [New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+
 
 ### [New-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
+
 ### [New-MgUserDeviceManagementTroubleshootingEvent](New-MgUserDeviceManagementTroubleshootingEvent.md)
+
 
 ### [New-MgUserManagedDevice](New-MgUserManagedDevice.md)
 
+
 ### [New-MgUserManagedDeviceCompliancePolicyState](New-MgUserManagedDeviceCompliancePolicyState.md)
+
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
 
+
+### [New-MgUserManagedDeviceLogCollectionRequestDownloadUrl](New-MgUserManagedDeviceLogCollectionRequestDownloadUrl.md)
+
+
 ### [New-MgUserManagedDeviceLogCollectionResponse](New-MgUserManagedDeviceLogCollectionResponse.md)
+
 
 ### [New-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](New-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
+
 ### [Remove-MgDeviceAppManagementAndroidManagedAppProtection](Remove-MgDeviceAppManagementAndroidManagedAppProtection.md)
+
 
 ### [Remove-MgDeviceAppManagementAndroidManagedAppProtectionApp](Remove-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
 
+
 ### [Remove-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](Remove-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Remove-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
 
+
 ### [Remove-MgDeviceAppManagementDefaultManagedAppProtection](Remove-MgDeviceAppManagementDefaultManagedAppProtection.md)
+
 
 ### [Remove-MgDeviceAppManagementDefaultManagedAppProtectionApp](Remove-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
 
+
 ### [Remove-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Remove-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
+
 
 ### [Remove-MgDeviceAppManagementiOSManagedAppProtection](Remove-MgDeviceAppManagementiOSManagedAppProtection.md)
 
+
 ### [Remove-MgDeviceAppManagementiOSManagedAppProtectionApp](Remove-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
+
 
 ### [Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment](Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Remove-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
+
 
 ### [Remove-MgDeviceAppManagementManagedAppPolicy](Remove-MgDeviceAppManagementManagedAppPolicy.md)
 
+
 ### [Remove-MgDeviceAppManagementManagedAppRegistration](Remove-MgDeviceAppManagementManagedAppRegistration.md)
+
 
 ### [Remove-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](Remove-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
 
+
 ### [Remove-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](Remove-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
+
 
 ### [Remove-MgDeviceAppManagementManagedAppRegistrationOperation](Remove-MgDeviceAppManagementManagedAppRegistrationOperation.md)
 
+
 ### [Remove-MgDeviceAppManagementManagedAppStatus](Remove-MgDeviceAppManagementManagedAppStatus.md)
+
 
 ### [Remove-MgDeviceAppManagementManagedEBook](Remove-MgDeviceAppManagementManagedEBook.md)
 
+
 ### [Remove-MgDeviceAppManagementManagedEBookAssignment](Remove-MgDeviceAppManagementManagedEBookAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementManagedEBookDeviceState](Remove-MgDeviceAppManagementManagedEBookDeviceState.md)
 
+
 ### [Remove-MgDeviceAppManagementManagedEBookInstallSummary](Remove-MgDeviceAppManagementManagedEBookInstallSummary.md)
+
 
 ### [Remove-MgDeviceAppManagementManagedEBookUserStateSummary](Remove-MgDeviceAppManagementManagedEBookUserStateSummary.md)
 
+
 ### [Remove-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Remove-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
+
 
 ### [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 
+
 ### [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
+
 ### [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileApp](Remove-MgDeviceAppManagementMobileApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Remove-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Remove-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Remove-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Remove-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAssignment](Remove-MgDeviceAppManagementMobileAppAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Remove-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Remove-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Remove-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppCategory](Remove-MgDeviceAppManagementMobileAppCategory.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppConfiguration](Remove-MgDeviceAppManagementMobileAppConfiguration.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationAssignment](Remove-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
 
+
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus](Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
+
 
 ### [Remove-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](Remove-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
 
+
 ### [Remove-MgDeviceAppManagementTargetedManagedAppConfiguration](Remove-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
+
 
 ### [Remove-MgDeviceAppManagementTargetedManagedAppConfigurationApp](Remove-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
+
 ### [Remove-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](Remove-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Remove-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
 
+
 ### [Remove-MgDeviceAppManagementVppToken](Remove-MgDeviceAppManagementVppToken.md)
+
 
 ### [Remove-MgDeviceAppManagementWindowsInformationProtectionPolicy](Remove-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
 
+
 ### [Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
+
 ### [Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [Remove-MgUserDeviceManagementTroubleshootingEvent](Remove-MgUserDeviceManagementTroubleshootingEvent.md)
 
+
 ### [Remove-MgUserManagedDevice](Remove-MgUserManagedDevice.md)
+
 
 ### [Remove-MgUserManagedDeviceCategory](Remove-MgUserManagedDeviceCategory.md)
 
+
+### [Remove-MgUserManagedDeviceCategoryByRef](Remove-MgUserManagedDeviceCategoryByRef.md)
+
+
 ### [Remove-MgUserManagedDeviceCompliancePolicyState](Remove-MgUserManagedDeviceCompliancePolicyState.md)
+
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
 
+
 ### [Remove-MgUserManagedDeviceLogCollectionResponse](Remove-MgUserManagedDeviceLogCollectionResponse.md)
+
+
+### [Remove-MgUserManagedDeviceUserFromSharedAppleDevice](Remove-MgUserManagedDeviceUserFromSharedAppleDevice.md)
+
 
 ### [Remove-MgUserManagedDeviceWindowsProtectionState](Remove-MgUserManagedDeviceWindowsProtectionState.md)
 
+
 ### [Remove-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Remove-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
+
+
+### [Request-MgUserManagedDeviceRemoteAssistance](Request-MgUserManagedDeviceRemoteAssistance.md)
+
+
+### [Reset-MgUserManagedDevicePasscode](Reset-MgUserManagedDevicePasscode.md)
+
+
+### [Restart-MgUserManagedDeviceNow](Restart-MgUserManagedDeviceNow.md)
+
+
+### [Restore-MgUserManagedDevicePasscode](Restore-MgUserManagedDevicePasscode.md)
+
 
 ### [Set-MgDeviceAppManagementManagedEBook](Set-MgDeviceAppManagementManagedEBook.md)
 
+
 ### [Set-MgDeviceAppManagementMobileApp](Set-MgDeviceAppManagementMobileApp.md)
+
 
 ### [Set-MgDeviceAppManagementMobileAppConfiguration](Set-MgDeviceAppManagementMobileAppConfiguration.md)
 
+
 ### [Set-MgDeviceAppManagementTargetedManagedAppConfiguration](Set-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
+
+
+### [Set-MgUserManagedDeviceCategoryByRef](Set-MgUserManagedDeviceCategoryByRef.md)
+
+
+### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
+
 
 ### [Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp.md)
 
+
 ### [Sync-MgDeviceAppManagementVppTokenLicense](Sync-MgDeviceAppManagementVppTokenLicense.md)
+
+
+### [Sync-MgUserManagedDevice](Sync-MgUserManagedDevice.md)
+
 
 ### [Update-MgDeviceAppManagement](Update-MgDeviceAppManagement.md)
 
+
 ### [Update-MgDeviceAppManagementAndroidManagedAppProtection](Update-MgDeviceAppManagementAndroidManagedAppProtection.md)
+
 
 ### [Update-MgDeviceAppManagementAndroidManagedAppProtectionApp](Update-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
 
+
 ### [Update-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](Update-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
 
+
 ### [Update-MgDeviceAppManagementDefaultManagedAppProtection](Update-MgDeviceAppManagementDefaultManagedAppProtection.md)
+
 
 ### [Update-MgDeviceAppManagementDefaultManagedAppProtectionApp](Update-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
 
+
 ### [Update-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Update-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
+
 
 ### [Update-MgDeviceAppManagementiOSManagedAppProtection](Update-MgDeviceAppManagementiOSManagedAppProtection.md)
 
+
 ### [Update-MgDeviceAppManagementiOSManagedAppProtectionApp](Update-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
+
 
 ### [Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment](Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
+
 
 ### [Update-MgDeviceAppManagementManagedAppPolicy](Update-MgDeviceAppManagementManagedAppPolicy.md)
 
+
 ### [Update-MgDeviceAppManagementManagedAppRegistration](Update-MgDeviceAppManagementManagedAppRegistration.md)
+
 
 ### [Update-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](Update-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
 
+
 ### [Update-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](Update-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
+
 
 ### [Update-MgDeviceAppManagementManagedAppRegistrationOperation](Update-MgDeviceAppManagementManagedAppRegistrationOperation.md)
 
+
 ### [Update-MgDeviceAppManagementManagedAppStatus](Update-MgDeviceAppManagementManagedAppStatus.md)
+
 
 ### [Update-MgDeviceAppManagementManagedEBook](Update-MgDeviceAppManagementManagedEBook.md)
 
+
 ### [Update-MgDeviceAppManagementManagedEBookAssignment](Update-MgDeviceAppManagementManagedEBookAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementManagedEBookDeviceState](Update-MgDeviceAppManagementManagedEBookDeviceState.md)
 
+
 ### [Update-MgDeviceAppManagementManagedEBookInstallSummary](Update-MgDeviceAppManagementManagedEBookInstallSummary.md)
+
 
 ### [Update-MgDeviceAppManagementManagedEBookUserStateSummary](Update-MgDeviceAppManagementManagedEBookUserStateSummary.md)
 
+
 ### [Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
+
 
 ### [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 
+
 ### [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
+
 ### [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileApp](Update-MgDeviceAppManagementMobileApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Update-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Update-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Update-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Update-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAssignment](Update-MgDeviceAppManagementMobileAppAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Update-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Update-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Update-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Update-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Update-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppCategory](Update-MgDeviceAppManagementMobileAppCategory.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppConfiguration](Update-MgDeviceAppManagementMobileAppConfiguration.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppConfigurationAssignment](Update-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
 
+
 ### [Update-MgDeviceAppManagementMobileAppConfigurationUserStatus](Update-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
+
 
 ### [Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
 
+
 ### [Update-MgDeviceAppManagementTargetedManagedAppConfiguration](Update-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
+
 
 ### [Update-MgDeviceAppManagementTargetedManagedAppConfigurationApp](Update-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
+
 ### [Update-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](Update-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Update-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
 
+
 ### [Update-MgDeviceAppManagementVppToken](Update-MgDeviceAppManagementVppToken.md)
+
 
 ### [Update-MgDeviceAppManagementWindowsInformationProtectionPolicy](Update-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
 
+
 ### [Update-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Update-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
+
 ### [Update-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [Update-MgUserDeviceManagementTroubleshootingEvent](Update-MgUserDeviceManagementTroubleshootingEvent.md)
 
+
 ### [Update-MgUserManagedDevice](Update-MgUserManagedDevice.md)
+
 
 ### [Update-MgUserManagedDeviceCategory](Update-MgUserManagedDeviceCategory.md)
 
+
 ### [Update-MgUserManagedDeviceCompliancePolicyState](Update-MgUserManagedDeviceCompliancePolicyState.md)
+
 
 ### [Update-MgUserManagedDeviceConfigurationState](Update-MgUserManagedDeviceConfigurationState.md)
 
+
 ### [Update-MgUserManagedDeviceLogCollectionResponse](Update-MgUserManagedDeviceLogCollectionResponse.md)
+
+
+### [Update-MgUserManagedDeviceWindowsDeviceAccount](Update-MgUserManagedDeviceWindowsDeviceAccount.md)
+
 
 ### [Update-MgUserManagedDeviceWindowsProtectionState](Update-MgUserManagedDeviceWindowsProtectionState.md)
 
+
 ### [Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
+
 
 
 

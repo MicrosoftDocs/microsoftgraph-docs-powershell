@@ -40,7 +40,7 @@ When invoked with delegated permissions, this operation only works for tenant ad
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ManageDeletion.All, Chat.ManageDeletion.Chat,  |
+| Application | Chat.ManageDeletion.Chat, Chat.ManageDeletion.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Provide credentials for establishing connectivity with the target system.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### SetExpanded (Default)

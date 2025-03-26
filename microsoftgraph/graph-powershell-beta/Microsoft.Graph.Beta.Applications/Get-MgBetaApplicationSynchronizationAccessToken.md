@@ -103,7 +103,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: AcquireExpanded, Acquire
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

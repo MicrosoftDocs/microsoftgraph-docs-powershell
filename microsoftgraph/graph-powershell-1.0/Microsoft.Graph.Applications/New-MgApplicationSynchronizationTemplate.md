@@ -73,7 +73,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded, Create
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: CreateViaIdentityExpanded
-Aliases:
+Aliases: ObjectId
 
 Required: False
 Position: Named

@@ -11,9 +11,6 @@ schema: 2.0.0
 The main logo for the application.
 Not nullable.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationLogo?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -50,7 +47,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: Set
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

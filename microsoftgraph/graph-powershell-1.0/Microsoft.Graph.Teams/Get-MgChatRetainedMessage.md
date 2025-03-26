@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgChatRetainedMessage
 
 ## SYNOPSIS
-Invoke function getAllRetainedMessages
+Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatRetainedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatRetainedMessage?view=graph-powershell-beta)
@@ -22,7 +24,8 @@ Get-MgChatRetainedMessage [-Count] [-ExpandProperty <String[]>] [-Filter <String
 ```
 
 ## DESCRIPTION
-Invoke function getAllRetainedMessages
+Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 **Permissions**
 
@@ -213,6 +216,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage)
+
+[https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0)
 
 
 

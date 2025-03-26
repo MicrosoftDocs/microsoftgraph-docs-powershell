@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Update (override) the synchronization template associated with a given application.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -82,7 +79,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named
@@ -94,7 +91,7 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: UpdateViaIdentityExpanded
-Aliases:
+Aliases: ObjectId
 
 Required: False
 Position: Named

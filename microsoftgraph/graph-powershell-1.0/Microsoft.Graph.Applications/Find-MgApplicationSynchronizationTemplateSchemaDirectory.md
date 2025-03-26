@@ -41,7 +41,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: Discover
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

@@ -9,11 +9,7 @@ ms.subservice: entra-users
 # Remove-MgUser
 
 ## SYNOPSIS
-Delete a user object.
- When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
-The user is also restored to any groups they were a member of.
-After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
-To manage the deleted user object, see deletedItems.
+Deletes a user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
@@ -34,11 +30,7 @@ Remove-MgUser -InputObject <IUsersIdentity> [-IfMatch <String>] [-ResponseHeader
 ```
 
 ## DESCRIPTION
-Delete a user object.
- When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
-The user is also restored to any groups they were a member of.
-After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
-To manage the deleted user object, see deletedItems.
+Deletes a user.
 
 **Permissions**
 
@@ -233,11 +225,13 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
   - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
   - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
+  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
@@ -245,7 +239,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser)
 
-[https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-user-delete?view=graph-rest-1.0)
 
 
 

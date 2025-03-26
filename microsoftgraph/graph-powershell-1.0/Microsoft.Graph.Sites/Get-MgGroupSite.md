@@ -16,7 +16,15 @@ Access the default site with /sites/root.
 
 ## SYNTAX
 
-### List (Default)
+### Get2 (Default)
+```
+Get-MgGroupSite -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Count]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
+```
+
+### List
 ```
 Get-MgGroupSite -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
@@ -27,6 +35,14 @@ Get-MgGroupSite -GroupId <String> [-ExpandProperty <String[]>] [-Property <Strin
 ### Get
 ```
 Get-MgGroupSite -GroupId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgGroupSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>] [-Count]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -50,6 +66,21 @@ List all pages.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get2, GetViaIdentity2
 Aliases:
 
 Required: False
@@ -95,7 +126,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases:
 
 Required: False
@@ -110,7 +141,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get2, List, Get
 Aliases:
 
 Required: True
@@ -141,7 +172,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity
 Aliases:
 
 Required: True
@@ -216,7 +247,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases:
 
 Required: False
@@ -246,7 +277,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases: OrderBy
 
 Required: False
@@ -261,7 +292,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases: Limit
 
 Required: False
@@ -276,7 +307,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases:
 
 Required: False
@@ -350,6 +381,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsite)
+
+[https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)
 
 
 

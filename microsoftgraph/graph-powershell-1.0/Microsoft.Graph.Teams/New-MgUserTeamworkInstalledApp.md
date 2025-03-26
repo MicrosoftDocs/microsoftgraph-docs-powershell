@@ -352,6 +352,7 @@ Read-only.
 Read-only.
       - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
         - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
       - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -394,6 +395,8 @@ Read-only.
       - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
       - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
       - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+    - `[IsHiddenForAllMembers <Boolean?>]`: Indicates whether the chat is hidden for all its members.
+Read-only.
     - `[LastMessagePreview <IMicrosoftGraphChatMessageInfo>]`: chatMessageInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -420,9 +423,9 @@ Nullable.
 Read-only.
       - `[DisplayName <String>]`: The display name of the user.
       - `[Roles <String- `[]`>]`: The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
       - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
@@ -435,12 +438,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
         - `[ContentUrl <String>]`: The URL for the content of the attachment.
         - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
         - `[Name <String>]`: The name of the attachment.
         - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -479,7 +483,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
       - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
         - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention.
@@ -501,9 +505,12 @@ For example, in the access reviews decisions API, this property might record the
         - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
         - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+          - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[DisplayName <String>]`: The name of the reaction.
+          - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+          - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
           - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -618,6 +625,7 @@ Read-only.
 Read-only.
         - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
           - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
         - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -644,6 +652,8 @@ For example, in the access reviews decisions API, this property might record the
       - `[DistributionMethod <String>]`: teamsAppDistributionMethod
       - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
     - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+  - `[IsHiddenForAllMembers <Boolean?>]`: Indicates whether the chat is hidden for all its members.
+Read-only.
   - `[LastMessagePreview <IMicrosoftGraphChatMessageInfo>]`: chatMessageInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -670,9 +680,9 @@ Nullable.
 Read-only.
     - `[DisplayName <String>]`: The display name of the user.
     - `[Roles <String- `[]`>]`: The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
     - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
@@ -685,12 +695,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
       - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
       - `[ContentUrl <String>]`: The URL for the content of the attachment.
       - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
       - `[Name <String>]`: The name of the attachment.
       - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -729,7 +740,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
     - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
     - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
       - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
       - `[MentionText <String>]`: String used to represent the mention.
@@ -751,9 +762,12 @@ For example, in the access reviews decisions API, this property might record the
       - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
       - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+        - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[DisplayName <String>]`: The name of the reaction.
+        - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+        - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
         - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -893,6 +907,7 @@ Read-only.
 Read-only.
     - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
       - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.
@@ -929,6 +944,7 @@ TEAMSAPPDEFINITION `<IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
 Read-only.
   - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
     - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.

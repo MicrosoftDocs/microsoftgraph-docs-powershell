@@ -74,6 +74,10 @@ Update the navigation property schedule in groups
 
 ### -ActivitiesIncludedWhenCopyingShiftsEnabled
 Indicates whether copied shifts should include the activities.
+This property will be removed by November 20, 2027.
+Use isActivitiesIncludedWhenCopyingShiftsEnabled instead.
+activitiesIncludedWhenCopyingShiftsEnabled and isActivitiesIncludedWhenCopyingShiftsEnabled always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isActivitiesIncludedWhenCopyingShiftsEnabled takes precedence.
 
 ```yaml
 Type: SwitchParameter
@@ -653,6 +657,10 @@ BODYPARAMETER `<IMicrosoftGraphSchedule>`: schedule
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts should include the activities.
+This property will be removed by November 20, 2027.
+Use isActivitiesIncludedWhenCopyingShiftsEnabled instead.
+activitiesIncludedWhenCopyingShiftsEnabled and isActivitiesIncludedWhenCopyingShiftsEnabled always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isActivitiesIncludedWhenCopyingShiftsEnabled takes precedence.
   - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -819,7 +827,11 @@ Read-only.
       - `[BreakId <String>]`: ID of the timeCardBreak.
       - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+        - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
         - `[DateTime <DateTime?>]`: The time the entry is recorded.
         - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
@@ -960,6 +972,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
@@ -1200,7 +1213,11 @@ Read-only.
     - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+      - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
       - `[DateTime <DateTime?>]`: The time the entry is recorded.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.

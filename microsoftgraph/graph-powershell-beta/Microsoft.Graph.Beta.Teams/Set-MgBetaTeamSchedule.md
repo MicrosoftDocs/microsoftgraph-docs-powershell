@@ -88,7 +88,7 @@ Clients can also inspect the configuration of the schedule.
 | Application | Not supported |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Update a schedule
 
 ```powershell
 
@@ -102,13 +102,44 @@ $params = @{
 Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
 
 ```
-This example shows how to use the Set-MgBetaTeamSchedule Cmdlet.
+This example will update a schedule
+
+### Example 2: Enable location detection for time clock
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	enabled = $true
+	timeZone = "America/Chicago"
+	provisionStatus = "Completed"
+	provisionStatusCode = $null
+	openShiftsEnabled = $true
+	swapShiftsRequestsEnabled = $true
+	offerShiftRequestsEnabled = $true
+	timeOffRequestsEnabled = $true
+	startDayOfWeek = "Tuesday"
+	isActivitiesIncludedWhenCopyingShiftsEnabled = $true
+	isCrossLocationShiftsEnabled = $true
+	isCrossLocationShiftRequestApprovalRequired = $true
+	timeClockEnabled = $true
+}
+
+Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
+
+```
+This example will enable location detection for time clock
 
 
 ## PARAMETERS
 
 ### -ActivitiesIncludedWhenCopyingShiftsEnabled
 Indicates whether copied shifts should include the activities.
+This property will be removed by November 20, 2027.
+Use isActivitiesIncludedWhenCopyingShiftsEnabled instead.
+activitiesIncludedWhenCopyingShiftsEnabled and isActivitiesIncludedWhenCopyingShiftsEnabled always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isActivitiesIncludedWhenCopyingShiftsEnabled takes precedence.
 
 ```yaml
 Type: SwitchParameter
@@ -688,6 +719,10 @@ BODYPARAMETER `<IMicrosoftGraphSchedule>`: schedule
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts should include the activities.
+This property will be removed by November 20, 2027.
+Use isActivitiesIncludedWhenCopyingShiftsEnabled instead.
+activitiesIncludedWhenCopyingShiftsEnabled and isActivitiesIncludedWhenCopyingShiftsEnabled always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isActivitiesIncludedWhenCopyingShiftsEnabled takes precedence.
   - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -854,7 +889,11 @@ Read-only.
       - `[BreakId <String>]`: ID of the timeCardBreak.
       - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+        - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
         - `[DateTime <DateTime?>]`: The time the entry is recorded.
         - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
@@ -995,6 +1034,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
@@ -1235,7 +1275,11 @@ Read-only.
     - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+      - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
       - `[DateTime <DateTime?>]`: The time the entry is recorded.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.

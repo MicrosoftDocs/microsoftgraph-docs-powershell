@@ -239,6 +239,8 @@ These commands run in sequence for the single recommended fix.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CreatedDateTime <DateTime?>]`: The date and time when the sensor was generated.
+The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[DeploymentStatus <String>]`: deploymentStatus
     - `[DisplayName <String>]`: The display name of the sensor.
     - `[DomainName <String>]`: The fully qualified domain name of the sensor.
@@ -288,6 +290,8 @@ SENSORS `<IMicrosoftGraphSecuritySensor- `[]`>`: Represents a customer's Microso
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the sensor was generated.
+The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DeploymentStatus <String>]`: deploymentStatus
   - `[DisplayName <String>]`: The display name of the sensor.
   - `[DomainName <String>]`: The fully qualified domain name of the sensor.

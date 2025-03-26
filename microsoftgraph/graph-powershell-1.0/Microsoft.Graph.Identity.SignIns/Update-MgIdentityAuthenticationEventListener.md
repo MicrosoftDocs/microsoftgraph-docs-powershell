@@ -11,6 +11,7 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
+The following derived types are currently supported.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
@@ -50,6 +51,7 @@ Update-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
+The following derived types are currently supported.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -507,7 +507,8 @@ For example, in the access reviews decisions API, this property might record the
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -542,7 +543,8 @@ Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
-      - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+      - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
       - `[Status <String>]`: protectionRuleStatus
@@ -698,7 +700,8 @@ Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
-      - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+      - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
       - `[Status <String>]`: protectionRuleStatus
@@ -767,7 +770,8 @@ For example, in the access reviews decisions API, this property might record the
       - `[Target <String>]`: The target of the error.
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
   - `[Status <String>]`: protectionRuleStatus
@@ -850,7 +854,8 @@ Read-only.
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -970,7 +975,8 @@ For example, in the access reviews decisions API, this property might record the
       - `[Target <String>]`: The target of the error.
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
   - `[Status <String>]`: protectionRuleStatus
@@ -1053,7 +1059,8 @@ Read-only.
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -1342,7 +1349,8 @@ Read-only.
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -1450,7 +1458,8 @@ For example, in the access reviews decisions API, this property might record the
       - `[Target <String>]`: The target of the error.
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
   - `[Status <String>]`: protectionRuleStatus

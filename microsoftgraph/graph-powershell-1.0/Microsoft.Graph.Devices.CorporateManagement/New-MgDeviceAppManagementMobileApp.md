@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Create a new macOSLobApp object.
+Create a new windowsMobileMSI object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 ```
 
 ## DESCRIPTION
-Create a new macOSLobApp object.
+Create a new windowsMobileMSI object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -45,7 +45,7 @@ Create a new macOSLobApp object.
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.macOSLobApp"
+	"@odata.type" = "#microsoft.graph.windowsMobileMSI"
 	displayName = "Display Name value"
 	description = "Description value"
 	publisher = "Publisher value"
@@ -64,38 +64,10 @@ $params = @{
 	committedContentVersion = "Committed Content Version value"
 	fileName = "File Name value"
 	size = 
-	bundleId = "Bundle Id value"
-	minimumSupportedOperatingSystem = @{
-		"@odata.type" = "microsoft.graph.macOSMinimumOperatingSystem"
-		v10_7 = $true
-		v10_8 = $true
-		v10_9 = $true
-		v10_10 = $true
-		v10_11 = $true
-		v10_12 = $true
-		v10_13 = $true
-		v10_14 = $true
-		v10_15 = $true
-		v11_0 = $true
-		v12_0 = $true
-		v13_0 = $true
-	}
-	buildNumber = "Build Number value"
-	versionNumber = "Version Number value"
-	childApps = @(
-		@{
-			"@odata.type" = "microsoft.graph.macOSLobChildApp"
-			bundleId = "Bundle Id value"
-			buildNumber = "Build Number value"
-			versionNumber = "Version Number value"
-		}
-	)
-	md5HashChunkSize = 
-	md5Hash = @(
-	"Md5Hash value"
-)
-ignoreVersionDetection = $true
-installAsManaged = $true
+	commandLine = "Command Line value"
+	productCode = "Product Code value"
+	productVersion = "Product Version value"
+	ignoreVersionDetection = $true
 }
 
 New-MgDeviceAppManagementMobileApp -BodyParameter $params
@@ -503,7 +475,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-macoslobapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-macoslobapp-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-windowsmobilemsi-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowsmobilemsi-create?view=graph-rest-1.0)
 
 
 

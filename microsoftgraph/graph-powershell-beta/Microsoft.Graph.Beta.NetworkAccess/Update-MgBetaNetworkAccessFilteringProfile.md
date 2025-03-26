@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-Profile last modified time.
+The date and time when the profile was last modified.
 
 ```yaml
 Type: DateTime
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Profile name.
+The name of the profile.
 
 ```yaml
 Type: String
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Policies
-Traffic forwarding policies associated with this profile.
+The traffic forwarding policies associated with this profile.
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
@@ -383,9 +383,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IMicrosoftGraphNetworkaccessFilteringProfile>`: filteringProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description.
-  - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time.
-  - `[Name <String>]`: Profile name.
-  - `[Policies <IMicrosoftGraphNetworkaccessPolicyLink- `[]`>]`: Traffic forwarding policies associated with this profile.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the profile was last modified.
+  - `[Name <String>]`: The name of the profile.
+  - `[Policies <IMicrosoftGraphNetworkaccessPolicyLink- `[]`>]`: The traffic forwarding policies associated with this profile.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Policy <IMicrosoftGraphNetworkaccessPolicy>]`: policy
@@ -446,7 +446,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
 
-POLICIES `<IMicrosoftGraphNetworkaccessPolicyLink- `[]`>`: Traffic forwarding policies associated with this profile.
+POLICIES `<IMicrosoftGraphNetworkaccessPolicyLink- `[]`>`: The traffic forwarding policies associated with this profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Policy <IMicrosoftGraphNetworkaccessPolicy>]`: policy

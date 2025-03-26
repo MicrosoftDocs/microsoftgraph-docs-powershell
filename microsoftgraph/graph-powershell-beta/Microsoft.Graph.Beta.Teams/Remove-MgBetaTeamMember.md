@@ -16,11 +16,39 @@ Remove a conversationMember from a team.
 
 ## SYNTAX
 
-### Delete (Default)
+### RemoveExpanded (Default)
+```
+Remove-MgBetaTeamMember -TeamId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete
 ```
 Remove-MgBetaTeamMember -ConversationMemberId <String> -TeamId <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Remove
+```
+Remove-MgBetaTeamMember -TeamId <String> [-ResponseHeadersVariable <String>]
+ -BodyParameter <IPaths183Cm6MTeamsTeamIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentityExpanded
+```
+Remove-MgBetaTeamMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentity
+```
+Remove-MgBetaTeamMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ -BodyParameter <IPaths183Cm6MTeamsTeamIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -47,6 +75,37 @@ This example shows how to use the Remove-MgBetaTeamMember Cmdlet.
 
 
 ## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths183Cm6MTeamsTeamIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Remove, RemoveViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -ConversationMemberId
 The unique identifier of conversationMember
@@ -83,7 +142,7 @@ ETag
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -99,7 +158,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -114,7 +173,7 @@ Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -159,10 +218,26 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: RemoveExpanded, Delete, Remove
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Values
+
+To construct, see NOTES section for VALUES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphConversationMember[]
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -205,16 +280,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths183Cm6MTeamsTeamIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ### System.Collections.IDictionary
 ## OUTPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphActionResultPart
 ### System.Boolean
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODYPARAMETER `<IPaths183Cm6MTeamsTeamIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Values <IMicrosoftGraphConversationMember- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DisplayName <String>]`: The display name of the user.
+    - `[Roles <String- `[]`>]`: The roles for that user.
+This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
+A basic member should not have any values specified in the roles property.
+An Out-of-tenant external member is assigned the owner role.
+    - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
+This property is settable only for members of a chat.
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
@@ -256,14 +347,29 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+
+VALUES `<IMicrosoftGraphConversationMember- `[]`>`: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DisplayName <String>]`: The display name of the user.
+  - `[Roles <String- `[]`>]`: The roles for that user.
+This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
+A basic member should not have any values specified in the roles property.
+An Out-of-tenant external member is assigned the owner role.
+  - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
+This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateammember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateammember)
 
 [https://learn.microsoft.com/graph/api/team-delete-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-delete-members?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
 
 
 

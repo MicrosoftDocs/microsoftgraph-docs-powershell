@@ -654,9 +654,9 @@ Supports $filter (eq).
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
 For example, PT3H refers to three hours. 
-If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
+If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
           - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
           - `[Type <String>]`: expirationPatternType
         - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1328,9 +1328,9 @@ Supports $filter (eq).
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
 For example, PT3H refers to three hours. 
-If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
+If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
         - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
         - `[Type <String>]`: expirationPatternType
       - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1544,9 +1544,9 @@ Supports $filter (eq).
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
 For example, PT3H refers to three hours. 
-If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
+If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
         - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
         - `[Type <String>]`: expirationPatternType
       - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1825,9 +1825,9 @@ Supports $filter (eq, ne).
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
 For example, PT3H refers to three hours. 
-If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
+If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
       - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
       - `[Type <String>]`: expirationPatternType
     - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1988,9 +1988,9 @@ Supports $filter (eq).
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations.
 For example, PT3H refers to three hours. 
-If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
+If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
       - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
       - `[Type <String>]`: expirationPatternType
     - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

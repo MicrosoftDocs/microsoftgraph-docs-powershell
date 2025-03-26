@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A collection of membership records associated with the channel.
+It includes both direct and indirect members of shared channels.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelMember?view=graph-powershell-1.0)
@@ -23,11 +24,33 @@ Get-MgBetaGroupTeamChannelMember -ChannelId <String> -GroupId <String> [-ExpandP
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
+### List1
+```
+Get-MgBetaGroupTeamChannelMember -ChannelId <String> -GroupId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgBetaGroupTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -GroupId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
 ### Get
 ```
 Get-MgBetaGroupTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -GroupId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -39,6 +62,7 @@ Get-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 A collection of membership records associated with the channel.
+It includes both direct and indirect members of shared channels.
 
 ## PARAMETERS
 
@@ -47,7 +71,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -62,7 +86,7 @@ The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, List1, Get1, Get
 Aliases:
 
 Required: True
@@ -77,7 +101,7 @@ The unique identifier of conversationMember
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -93,7 +117,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -123,7 +147,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -138,7 +162,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, List1, Get1, Get
 Aliases:
 
 Required: True
@@ -169,7 +193,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -184,7 +208,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -244,7 +268,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -259,7 +283,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -274,7 +298,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases: Limit
 
 Required: False
@@ -289,7 +313,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -355,6 +379,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 

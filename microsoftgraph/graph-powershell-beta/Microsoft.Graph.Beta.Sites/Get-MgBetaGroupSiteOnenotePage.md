@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteOnenotePage
 
 ## SYNOPSIS
-The pages in all OneNote notebooks that are owned by the user or group.
+The pages in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 
@@ -40,7 +40,7 @@ Get-MgBetaGroupSiteOnenotePage -InputObject <ISitesIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-The pages in all OneNote notebooks that are owned by the user or group.
+The pages in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 

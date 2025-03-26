@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorCount
-Number of errors during synchronization.
+
 
 ```yaml
 Type: Int64
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActivityDateTime
-Date and time when most recent changes were observed in the profile.
+
 
 ```yaml
 Type: DateTime
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastSynchronizationDateTime
-Date and time of the most recent successful synchronization.
+
 
 ```yaml
 Type: DateTime
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusMessage
-Status message for the synchronization stage of the current profile.
+
 
 ```yaml
 Type: String
@@ -299,11 +299,11 @@ BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationProfileStatus>`: educatio
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
-  - `[LastActivityDateTime <DateTime?>]`: Date and time when most recent changes were observed in the profile.
-  - `[LastSynchronizationDateTime <DateTime?>]`: Date and time of the most recent successful synchronization.
+  - `[ErrorCount <Int64?>]`: 
+  - `[LastActivityDateTime <DateTime?>]`: 
+  - `[LastSynchronizationDateTime <DateTime?>]`: 
   - `[Status <String>]`: educationSynchronizationStatus
-  - `[StatusMessage <String>]`: Status message for the synchronization stage of the current profile.
+  - `[StatusMessage <String>]`: 
 
 INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
@@ -324,6 +324,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
+  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
+  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
 
 ## RELATED LINKS
 

@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelretainedmessage
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamChannelRetainedMessage
 
 ## SYNOPSIS
-Invoke function getAllRetainedMessages
+Get all retained messages across all channels in a team.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelRetainedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelRetainedMessage?view=graph-powershell-beta)
@@ -32,7 +34,21 @@ Get-MgTeamChannelRetainedMessage -InputObject <ITeamsIdentity> [-Count] [-Expand
 ```
 
 ## DESCRIPTION
-Invoke function getAllRetainedMessages
+Get all retained messages across all channels in a team.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannelRetainedMessage -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamChannelRetainedMessage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -287,6 +303,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelretainedmessage)
 
+[https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-1.0)
 
 
 

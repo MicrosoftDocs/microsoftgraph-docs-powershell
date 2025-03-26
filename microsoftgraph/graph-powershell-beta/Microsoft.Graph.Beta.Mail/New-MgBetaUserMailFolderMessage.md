@@ -1093,6 +1093,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
   - `[MailFolderId <String>]`: The unique identifier of mailFolder
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MailFolderOperationId <String>]`: The unique identifier of mailFolderOperation
   - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule

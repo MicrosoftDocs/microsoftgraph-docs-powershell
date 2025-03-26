@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedByUser
-user
+Represents a Microsoft Entra user account.
 To construct, see NOTES section for CREATEDBYUSER properties and create a hash table.
 
 ```yaml
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedByUser
-user
+Represents a Microsoft Entra user account.
 To construct, see NOTES section for LASTMODIFIEDBYUSER properties and create a hash table.
 
 ```yaml
@@ -620,7 +620,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+  - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -752,6 +752,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
       - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
       - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -761,6 +762,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
       - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
       - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -850,6 +852,7 @@ Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
+Maximum length is 256 characters.
 Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
           - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
@@ -1302,6 +1305,7 @@ Read-only.
 Read-only.
             - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
               - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
             - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1319,6 +1323,8 @@ Read-only.
           - `[DistributionMethod <String>]`: teamsAppDistributionMethod
           - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
         - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+      - `[IsHiddenForAllMembers <Boolean?>]`: Indicates whether the chat is hidden for all its members.
+Read-only.
       - `[LastMessagePreview <IMicrosoftGraphChatMessageInfo>]`: chatMessageInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -1342,9 +1348,9 @@ Nullable.
 Read-only.
         - `[DisplayName <String>]`: The display name of the user.
         - `[Roles <String- `[]`>]`: The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
@@ -1357,12 +1363,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: The URL for the content of the attachment.
           - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
           - `[Name <String>]`: The name of the attachment.
           - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -1401,7 +1408,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
         - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
           - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention.
@@ -1423,9 +1430,12 @@ For example, in the access reviews decisions API, this property might record the
           - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
           - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+            - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[DisplayName <String>]`: The name of the reaction.
+            - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+            - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
             - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1684,7 +1694,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), 
     - `[Drive <IMicrosoftGraphDrive>]`: drive
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -1692,7 +1702,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -1732,7 +1742,7 @@ Read-only.
       - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -1740,7 +1750,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -1866,7 +1876,7 @@ Read-only.
         - `[ListItem <IMicrosoftGraphListItem>]`: listItem
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+          - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
           - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
           - `[Description <String>]`: Provides a user-visible description of the item.
@@ -1874,7 +1884,7 @@ Optional.
           - `[ETag <String>]`: ETag for the item.
 Read-only.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+          - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
           - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
           - `[Name <String>]`: The name of the item.
@@ -2523,9 +2533,9 @@ Read-only.
           - `[Worksheets <IMicrosoftGraphWorkbookWorksheet- `[]`>]`: Represents a collection of worksheets associated with the workbook.
 Read-only.
       - `[DriveType <String>]`: Describes the type of drive represented by this resource.
-OneDrive personal drives will return personal.
-OneDrive for Business will return business.
-SharePoint document libraries will return documentLibrary.
+OneDrive personal drives return personal.
+OneDrive for Business returns business.
+SharePoint document libraries return documentLibrary.
 Read-only.
       - `[Following <IMicrosoftGraphDriveItem- `[]`>]`: The list of items the user is following.
 Only in OneDrive for Business.
@@ -2538,7 +2548,7 @@ Nullable.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Deleted <Int64?>]`: Total space consumed by files in the recycle bin, in bytes.
 Read-only.
-        - `[Remaining <Int64?>]`: Total space remaining before reaching the quota limit, in bytes.
+        - `[Remaining <Int64?>]`: Total space remaining before reaching the capacity limit, in bytes.
 Read-only.
         - `[State <String>]`: Enumeration value that indicates the state of the storage space.
 Read-only.
@@ -2588,7 +2598,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization.
 To read this property, the calling app must be assigned the User-LifeCycleInfo.Read.All permission.
 To write this property, the calling app must be assigned the User.Read.All and User-LifeCycleInfo.ReadWrite.All permissions.
-To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator, Global Reader.
+To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator (least privilege), Global Reader.
 To write this property in delegated scenarios, the admin needs the Global Administrator role.
 Supports $filter (eq, ne, not , ge, le, in).
 For more information, see Configure the employeeLeaveDateTime property for a user.
@@ -2624,7 +2634,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[FollowedSites <IMicrosoftGraphSite- `[]`>]`: 
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -2632,7 +2642,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -2871,7 +2881,7 @@ This collection can't be enumerated.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -2879,7 +2889,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -3070,7 +3080,7 @@ Read-only.
         - `[Type <String>]`: The type of the operation.
       - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list in this site.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -3078,7 +3088,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -3301,10 +3311,10 @@ Read-only.
       - `[Channels <IMicrosoftGraphChannel- `[]`>]`: The collection of channels and messages associated with the team.
       - `[Classification <String>]`: An optional label.
 Typically describes the data or business sensitivity of the team.
-Must match one of a pre-configured set in the tenant's directory.
+Must match one of a preconfigured set in the tenant's directory.
       - `[CreatedDateTime <DateTime?>]`: Timestamp at which the team was created.
       - `[Description <String>]`: An optional description for the team.
-Maximum length: 1024 characters.
+Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3312,7 +3322,7 @@ Maximum length: 1024 characters.
         - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
         - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
         - `[GiphyContentRating <String>]`: giphyRatingType
-      - `[Group <IMicrosoftGraphGroup>]`: group
+      - `[Group <IMicrosoftGraphGroup>]`: Represents a Microsoft Entra group.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -3814,7 +3824,7 @@ Nullable.
         - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
       - `[IncomingChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels shared with the team.
       - `[InstalledApps <IMicrosoftGraphTeamsAppInstallation- `[]`>]`: The apps installed in this team.
-      - `[InternalId <String>]`: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+      - `[InternalId <String>]`: A unique ID for the team that was used in a few places such as the audit log/Office 365 Management Activity API.
       - `[IsArchived <Boolean?>]`: Whether this team is in read-only mode.
       - `[MemberSettings <IMicrosoftGraphTeamMemberSettings>]`: teamMemberSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3891,13 +3901,13 @@ Required.
               - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
               - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
               - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
               - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
               - `[Theme <String>]`: scheduleEntityTheme
@@ -3907,7 +3917,8 @@ Required.
             - `[StartDateTime <DateTime?>]`: 
             - `[Theme <String>]`: scheduleEntityTheme
             - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-          - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
+          - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+          - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
           - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
@@ -3933,6 +3944,7 @@ For example, an assignment or a scheduled break or lunch.
 Required.
             - `[DisplayName <String>]`: The shift label of the shiftItem.
             - `[Notes <String>]`: The shift notes for the shiftItem.
+          - `[IsStagedForDeletion <Boolean?>]`: The shift is marked for deletion, a process that is finalized when the schedule is shared.
           - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of.
 Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
@@ -3988,6 +4000,7 @@ Read-only.
             - `[Theme <String>]`: scheduleEntityTheme
             - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.
+          - `[IsStagedForDeletion <Boolean?>]`: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
@@ -4019,8 +4032,8 @@ Read-only.
 Read-only.
       - `[TenantId <String>]`: The ID of the Microsoft Entra tenant.
       - `[Visibility <String>]`: teamVisibilityType
-      - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+      - `[WebUrl <String>]`: A hyperlink that goes to the team in the Microsoft Teams client.
+You get this URL when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
     - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
 The date and time information uses ISO 8601 format and is always in UTC.
@@ -4028,7 +4041,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
     - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
+Allowed values: null, Undefined,  MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
     - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState- `[]`>]`: State of license assignments for this user.
@@ -4562,7 +4575,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
+      - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -4600,6 +4615,9 @@ Read-only.
         - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
         - `[ReplyChainMessageId <String>]`: The ID of the reply message.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+      - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AllowTextOnly <Boolean?>]`: 
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -4654,6 +4672,7 @@ Read-only.
 Required when you create an online meeting.
       - `[ExternalId <String>]`: 
       - `[IsBroadcast <Boolean?>]`: Indicates whether this meeting is a Teams live event.
+      - `[MeetingTemplateId <String>]`: The ID of the meeting template.
       - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: Information about the meeting attendees.
@@ -5090,9 +5109,11 @@ Read-only.
 Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, ge, le).
-      - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-      - `[ProvisioningStatus <String>]`: For example, 'Success'.
-      - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
+      - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+      - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+      - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'.
     - `[ProxyAddresses <String- `[]`>]`: For example: - `['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']`.
 Changes to the mail property update this collection to include the value as an SMTP address.
 For more information, see mail and proxyAddresses properties.
@@ -5380,7 +5401,7 @@ Optional.
   - `[ETag <String>]`: ETag for the item.
 Read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+  - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
   - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
   - `[Name <String>]`: The name of the item.
@@ -5810,7 +5831,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CREATEDBYUSER `<IMicrosoftGraphUser>`: user
+CREATEDBYUSER `<IMicrosoftGraphUser>`: Represents a Microsoft Entra user account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -5942,6 +5963,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
     - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
     - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -5951,6 +5973,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
     - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
     - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -6040,6 +6063,7 @@ Intune sets this property.
 Possible values are: unknown, company, personal.
         - `[DeviceVersion <Int32?>]`: For internal use only.
         - `[DisplayName <String>]`: The display name for the device.
+Maximum length is 256 characters.
 Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
         - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
@@ -6492,6 +6516,7 @@ Read-only.
 Read-only.
           - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
             - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
           - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6518,6 +6543,8 @@ For example, in the access reviews decisions API, this property might record the
         - `[DistributionMethod <String>]`: teamsAppDistributionMethod
         - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
       - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+    - `[IsHiddenForAllMembers <Boolean?>]`: Indicates whether the chat is hidden for all its members.
+Read-only.
     - `[LastMessagePreview <IMicrosoftGraphChatMessageInfo>]`: chatMessageInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -6541,9 +6568,9 @@ Nullable.
 Read-only.
       - `[DisplayName <String>]`: The display name of the user.
       - `[Roles <String- `[]`>]`: The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
       - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
@@ -6556,12 +6583,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
         - `[ContentUrl <String>]`: The URL for the content of the attachment.
         - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
         - `[Name <String>]`: The name of the attachment.
         - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -6600,7 +6628,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
       - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
         - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention.
@@ -6622,9 +6650,12 @@ For example, in the access reviews decisions API, this property might record the
         - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
         - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+          - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[DisplayName <String>]`: The name of the reaction.
+          - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+          - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
           - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -6883,7 +6914,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), 
   - `[Drive <IMicrosoftGraphDrive>]`: drive
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+    - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
     - `[Description <String>]`: Provides a user-visible description of the item.
@@ -6891,7 +6922,7 @@ Optional.
     - `[ETag <String>]`: ETag for the item.
 Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
     - `[Name <String>]`: The name of the item.
@@ -6931,7 +6962,7 @@ Read-only.
     - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -6939,7 +6970,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -7065,7 +7096,7 @@ Read-only.
       - `[ListItem <IMicrosoftGraphListItem>]`: listItem
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -7073,7 +7104,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -7722,9 +7753,9 @@ Read-only.
         - `[Worksheets <IMicrosoftGraphWorkbookWorksheet- `[]`>]`: Represents a collection of worksheets associated with the workbook.
 Read-only.
     - `[DriveType <String>]`: Describes the type of drive represented by this resource.
-OneDrive personal drives will return personal.
-OneDrive for Business will return business.
-SharePoint document libraries will return documentLibrary.
+OneDrive personal drives return personal.
+OneDrive for Business returns business.
+SharePoint document libraries return documentLibrary.
 Read-only.
     - `[Following <IMicrosoftGraphDriveItem- `[]`>]`: The list of items the user is following.
 Only in OneDrive for Business.
@@ -7734,7 +7765,7 @@ Nullable.
     - `[List <IMicrosoftGraphList>]`: list
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -7742,7 +7773,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -8001,7 +8032,7 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Deleted <Int64?>]`: Total space consumed by files in the recycle bin, in bytes.
 Read-only.
-      - `[Remaining <Int64?>]`: Total space remaining before reaching the quota limit, in bytes.
+      - `[Remaining <Int64?>]`: Total space remaining before reaching the capacity limit, in bytes.
 Read-only.
       - `[State <String>]`: Enumeration value that indicates the state of the storage space.
 Read-only.
@@ -8050,7 +8081,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization.
 To read this property, the calling app must be assigned the User-LifeCycleInfo.Read.All permission.
 To write this property, the calling app must be assigned the User.Read.All and User-LifeCycleInfo.ReadWrite.All permissions.
-To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator, Global Reader.
+To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator (least privilege), Global Reader.
 To write this property in delegated scenarios, the admin needs the Global Administrator role.
 Supports $filter (eq, ne, not , ge, le, in).
 For more information, see Configure the employeeLeaveDateTime property for a user.
@@ -8086,7 +8117,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[FollowedSites <IMicrosoftGraphSite- `[]`>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+    - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
     - `[Description <String>]`: Provides a user-visible description of the item.
@@ -8094,7 +8125,7 @@ Optional.
     - `[ETag <String>]`: ETag for the item.
 Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
     - `[Name <String>]`: The name of the item.
@@ -8120,7 +8151,7 @@ This collection can't be enumerated.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -8128,7 +8159,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -8304,7 +8335,7 @@ Nullable.
     - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the site.
     - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list in this site.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -8312,7 +8343,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -8535,10 +8566,10 @@ Read-only.
     - `[Channels <IMicrosoftGraphChannel- `[]`>]`: The collection of channels and messages associated with the team.
     - `[Classification <String>]`: An optional label.
 Typically describes the data or business sensitivity of the team.
-Must match one of a pre-configured set in the tenant's directory.
+Must match one of a preconfigured set in the tenant's directory.
     - `[CreatedDateTime <DateTime?>]`: Timestamp at which the team was created.
     - `[Description <String>]`: An optional description for the team.
-Maximum length: 1024 characters.
+Maximum length: 1,024 characters.
     - `[DisplayName <String>]`: The name of the team.
     - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8546,7 +8577,7 @@ Maximum length: 1024 characters.
       - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
       - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
       - `[GiphyContentRating <String>]`: giphyRatingType
-    - `[Group <IMicrosoftGraphGroup>]`: group
+    - `[Group <IMicrosoftGraphGroup>]`: Represents a Microsoft Entra group.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -9048,7 +9079,7 @@ Nullable.
       - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
     - `[IncomingChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels shared with the team.
     - `[InstalledApps <IMicrosoftGraphTeamsAppInstallation- `[]`>]`: The apps installed in this team.
-    - `[InternalId <String>]`: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+    - `[InternalId <String>]`: A unique ID for the team that was used in a few places such as the audit log/Office 365 Management Activity API.
     - `[IsArchived <Boolean?>]`: Whether this team is in read-only mode.
     - `[MemberSettings <IMicrosoftGraphTeamMemberSettings>]`: teamMemberSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9125,13 +9156,13 @@ Required.
             - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
             - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
             - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
             - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
             - `[Theme <String>]`: scheduleEntityTheme
@@ -9141,7 +9172,8 @@ Required.
           - `[StartDateTime <DateTime?>]`: 
           - `[Theme <String>]`: scheduleEntityTheme
           - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-        - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
+        - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+        - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
         - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
       - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
       - `[ProvisionStatus <String>]`: operationStatus
@@ -9167,6 +9199,7 @@ For example, an assignment or a scheduled break or lunch.
 Required.
           - `[DisplayName <String>]`: The shift label of the shiftItem.
           - `[Notes <String>]`: The shift notes for the shiftItem.
+        - `[IsStagedForDeletion <Boolean?>]`: The shift is marked for deletion, a process that is finalized when the schedule is shared.
         - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of.
 Required.
         - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
@@ -9222,6 +9255,7 @@ Read-only.
           - `[Theme <String>]`: scheduleEntityTheme
           - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.
+        - `[IsStagedForDeletion <Boolean?>]`: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
         - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
         - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
@@ -9253,8 +9287,8 @@ Read-only.
 Read-only.
     - `[TenantId <String>]`: The ID of the Microsoft Entra tenant.
     - `[Visibility <String>]`: teamVisibilityType
-    - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+    - `[WebUrl <String>]`: A hyperlink that goes to the team in the Microsoft Teams client.
+You get this URL when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
   - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
 The date and time information uses ISO 8601 format and is always in UTC.
@@ -9262,7 +9296,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
   - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
+Allowed values: null, Undefined,  MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
   - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState- `[]`>]`: State of license assignments for this user.
@@ -9796,7 +9830,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
+    - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -9834,6 +9870,9 @@ Read-only.
       - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
       - `[ReplyChainMessageId <String>]`: The ID of the reply message.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+    - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowTextOnly <Boolean?>]`: 
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -9888,6 +9927,7 @@ Read-only.
 Required when you create an online meeting.
     - `[ExternalId <String>]`: 
     - `[IsBroadcast <Boolean?>]`: Indicates whether this meeting is a Teams live event.
+    - `[MeetingTemplateId <String>]`: The ID of the meeting template.
     - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: Information about the meeting attendees.
@@ -10324,9 +10364,11 @@ Read-only.
 Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, ge, le).
-    - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-    - `[ProvisioningStatus <String>]`: For example, 'Success'.
-    - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
+    - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+    - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+    - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'.
   - `[ProxyAddresses <String- `[]`>]`: For example: - `['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']`.
 Changes to the mail property update this collection to include the value as an SMTP address.
 For more information, see mail and proxyAddresses properties.
@@ -10620,7 +10662,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+  - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -10752,6 +10794,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
       - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
       - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -10761,6 +10804,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
       - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
       - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -10850,6 +10894,7 @@ Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
+Maximum length is 256 characters.
 Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
           - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
@@ -11302,6 +11347,7 @@ Read-only.
 Read-only.
             - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
               - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
             - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11319,6 +11365,8 @@ Read-only.
           - `[DistributionMethod <String>]`: teamsAppDistributionMethod
           - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
         - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+      - `[IsHiddenForAllMembers <Boolean?>]`: Indicates whether the chat is hidden for all its members.
+Read-only.
       - `[LastMessagePreview <IMicrosoftGraphChatMessageInfo>]`: chatMessageInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -11342,9 +11390,9 @@ Nullable.
 Read-only.
         - `[DisplayName <String>]`: The display name of the user.
         - `[Roles <String- `[]`>]`: The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
@@ -11357,12 +11405,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: The URL for the content of the attachment.
           - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
           - `[Name <String>]`: The name of the attachment.
           - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -11401,7 +11450,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
         - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
           - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention.
@@ -11423,9 +11472,12 @@ For example, in the access reviews decisions API, this property might record the
           - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
           - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+            - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[DisplayName <String>]`: The name of the reaction.
+            - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+            - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
             - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -11713,7 +11765,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization.
 To read this property, the calling app must be assigned the User-LifeCycleInfo.Read.All permission.
 To write this property, the calling app must be assigned the User.Read.All and User-LifeCycleInfo.ReadWrite.All permissions.
-To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator, Global Reader.
+To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator (least privilege), Global Reader.
 To write this property in delegated scenarios, the admin needs the Global Administrator role.
 Supports $filter (eq, ne, not , ge, le, in).
 For more information, see Configure the employeeLeaveDateTime property for a user.
@@ -11749,7 +11801,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[FollowedSites <IMicrosoftGraphSite- `[]`>]`: 
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -11757,7 +11809,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -11819,7 +11871,7 @@ Read-only.
             - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+              - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
               - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
               - `[Description <String>]`: Provides a user-visible description of the item.
@@ -11827,7 +11879,7 @@ Optional.
               - `[ETag <String>]`: ETag for the item.
 Read-only.
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+              - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
               - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
               - `[Name <String>]`: The name of the item.
@@ -11916,7 +11968,7 @@ Read-only.
               - `[ListItem <IMicrosoftGraphListItem>]`: listItem
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+                - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
                 - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
                 - `[Description <String>]`: Provides a user-visible description of the item.
@@ -11924,7 +11976,7 @@ Optional.
                 - `[ETag <String>]`: ETag for the item.
 Read-only.
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+                - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
                 - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
                 - `[Name <String>]`: The name of the item.
@@ -12815,7 +12867,7 @@ This collection can't be enumerated.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -12823,7 +12875,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -12833,7 +12885,7 @@ Read-write.
 Read-only.
       - `[Lists <IMicrosoftGraphList- `[]`>]`: The collection of lists under this site.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -12841,7 +12893,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -13049,7 +13101,7 @@ Nullable.
       - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the site.
       - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list in this site.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -13057,7 +13109,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -13280,10 +13332,10 @@ Read-only.
       - `[Channels <IMicrosoftGraphChannel- `[]`>]`: The collection of channels and messages associated with the team.
       - `[Classification <String>]`: An optional label.
 Typically describes the data or business sensitivity of the team.
-Must match one of a pre-configured set in the tenant's directory.
+Must match one of a preconfigured set in the tenant's directory.
       - `[CreatedDateTime <DateTime?>]`: Timestamp at which the team was created.
       - `[Description <String>]`: An optional description for the team.
-Maximum length: 1024 characters.
+Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13291,7 +13343,7 @@ Maximum length: 1024 characters.
         - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
         - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
         - `[GiphyContentRating <String>]`: giphyRatingType
-      - `[Group <IMicrosoftGraphGroup>]`: group
+      - `[Group <IMicrosoftGraphGroup>]`: Represents a Microsoft Entra group.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -13793,7 +13845,7 @@ Nullable.
         - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
       - `[IncomingChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels shared with the team.
       - `[InstalledApps <IMicrosoftGraphTeamsAppInstallation- `[]`>]`: The apps installed in this team.
-      - `[InternalId <String>]`: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+      - `[InternalId <String>]`: A unique ID for the team that was used in a few places such as the audit log/Office 365 Management Activity API.
       - `[IsArchived <Boolean?>]`: Whether this team is in read-only mode.
       - `[MemberSettings <IMicrosoftGraphTeamMemberSettings>]`: teamMemberSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13870,13 +13922,13 @@ Required.
               - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
               - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
               - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
               - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
               - `[Theme <String>]`: scheduleEntityTheme
@@ -13886,7 +13938,8 @@ Required.
             - `[StartDateTime <DateTime?>]`: 
             - `[Theme <String>]`: scheduleEntityTheme
             - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-          - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
+          - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+          - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
           - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
@@ -13912,6 +13965,7 @@ For example, an assignment or a scheduled break or lunch.
 Required.
             - `[DisplayName <String>]`: The shift label of the shiftItem.
             - `[Notes <String>]`: The shift notes for the shiftItem.
+          - `[IsStagedForDeletion <Boolean?>]`: The shift is marked for deletion, a process that is finalized when the schedule is shared.
           - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of.
 Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
@@ -13967,6 +14021,7 @@ Read-only.
             - `[Theme <String>]`: scheduleEntityTheme
             - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.
+          - `[IsStagedForDeletion <Boolean?>]`: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
@@ -13998,8 +14053,8 @@ Read-only.
 Read-only.
       - `[TenantId <String>]`: The ID of the Microsoft Entra tenant.
       - `[Visibility <String>]`: teamVisibilityType
-      - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+      - `[WebUrl <String>]`: A hyperlink that goes to the team in the Microsoft Teams client.
+You get this URL when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
     - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
 The date and time information uses ISO 8601 format and is always in UTC.
@@ -14007,7 +14062,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
     - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
+Allowed values: null, Undefined,  MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
     - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState- `[]`>]`: State of license assignments for this user.
@@ -14541,7 +14596,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
+      - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -14579,6 +14636,9 @@ Read-only.
         - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
         - `[ReplyChainMessageId <String>]`: The ID of the reply message.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+      - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AllowTextOnly <Boolean?>]`: 
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -14633,6 +14693,7 @@ Read-only.
 Required when you create an online meeting.
       - `[ExternalId <String>]`: 
       - `[IsBroadcast <Boolean?>]`: Indicates whether this meeting is a Teams live event.
+      - `[MeetingTemplateId <String>]`: The ID of the meeting template.
       - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: Information about the meeting attendees.
@@ -15069,9 +15130,11 @@ Read-only.
 Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, ge, le).
-      - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-      - `[ProvisioningStatus <String>]`: For example, 'Success'.
-      - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
+      - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+      - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+      - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'.
     - `[ProxyAddresses <String- `[]`>]`: For example: - `['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']`.
 Changes to the mail property update this collection to include the value as an SMTP address.
 For more information, see mail and proxyAddresses properties.
@@ -15359,7 +15422,7 @@ Optional.
   - `[ETag <String>]`: ETag for the item.
 Read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+  - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
   - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
   - `[Name <String>]`: The name of the item.
@@ -15372,9 +15435,9 @@ Read-only.
   - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
   - `[DriveType <String>]`: Describes the type of drive represented by this resource.
-OneDrive personal drives will return personal.
-OneDrive for Business will return business.
-SharePoint document libraries will return documentLibrary.
+OneDrive personal drives return personal.
+OneDrive for Business returns business.
+SharePoint document libraries return documentLibrary.
 Read-only.
   - `[Following <IMicrosoftGraphDriveItem- `[]`>]`: The list of items the user is following.
 Only in OneDrive for Business.
@@ -15387,7 +15450,7 @@ Nullable.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Deleted <Int64?>]`: Total space consumed by files in the recycle bin, in bytes.
 Read-only.
-    - `[Remaining <Int64?>]`: Total space remaining before reaching the quota limit, in bytes.
+    - `[Remaining <Int64?>]`: Total space remaining before reaching the capacity limit, in bytes.
 Read-only.
     - `[State <String>]`: Enumeration value that indicates the state of the storage space.
 Read-only.
@@ -15462,7 +15525,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+  - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -15594,6 +15657,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
       - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
       - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -15603,6 +15667,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
       - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
       - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -15692,6 +15757,7 @@ Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
+Maximum length is 256 characters.
 Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
           - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
@@ -16144,6 +16210,7 @@ Read-only.
 Read-only.
             - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
               - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
             - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16161,6 +16228,8 @@ Read-only.
           - `[DistributionMethod <String>]`: teamsAppDistributionMethod
           - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
         - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+      - `[IsHiddenForAllMembers <Boolean?>]`: Indicates whether the chat is hidden for all its members.
+Read-only.
       - `[LastMessagePreview <IMicrosoftGraphChatMessageInfo>]`: chatMessageInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -16184,9 +16253,9 @@ Nullable.
 Read-only.
         - `[DisplayName <String>]`: The display name of the user.
         - `[Roles <String- `[]`>]`: The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
@@ -16199,12 +16268,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: The URL for the content of the attachment.
           - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
           - `[Name <String>]`: The name of the attachment.
           - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -16243,7 +16313,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
         - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
           - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention.
@@ -16265,9 +16335,12 @@ For example, in the access reviews decisions API, this property might record the
           - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
           - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+            - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[DisplayName <String>]`: The name of the reaction.
+            - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+            - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
             - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -16526,7 +16599,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), 
     - `[Drive <IMicrosoftGraphDrive>]`: drive
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -16534,7 +16607,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -16574,7 +16647,7 @@ Read-only.
       - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -16582,7 +16655,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -17309,9 +17382,9 @@ Read-only.
           - `[Worksheets <IMicrosoftGraphWorkbookWorksheet- `[]`>]`: Represents a collection of worksheets associated with the workbook.
 Read-only.
       - `[DriveType <String>]`: Describes the type of drive represented by this resource.
-OneDrive personal drives will return personal.
-OneDrive for Business will return business.
-SharePoint document libraries will return documentLibrary.
+OneDrive personal drives return personal.
+OneDrive for Business returns business.
+SharePoint document libraries return documentLibrary.
 Read-only.
       - `[Following <IMicrosoftGraphDriveItem- `[]`>]`: The list of items the user is following.
 Only in OneDrive for Business.
@@ -17321,7 +17394,7 @@ Nullable.
       - `[List <IMicrosoftGraphList>]`: list
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -17329,7 +17402,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -17591,7 +17664,7 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Deleted <Int64?>]`: Total space consumed by files in the recycle bin, in bytes.
 Read-only.
-        - `[Remaining <Int64?>]`: Total space remaining before reaching the quota limit, in bytes.
+        - `[Remaining <Int64?>]`: Total space remaining before reaching the capacity limit, in bytes.
 Read-only.
         - `[State <String>]`: Enumeration value that indicates the state of the storage space.
 Read-only.
@@ -17640,7 +17713,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization.
 To read this property, the calling app must be assigned the User-LifeCycleInfo.Read.All permission.
 To write this property, the calling app must be assigned the User.Read.All and User-LifeCycleInfo.ReadWrite.All permissions.
-To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator, Global Reader.
+To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator (least privilege), Global Reader.
 To write this property in delegated scenarios, the admin needs the Global Administrator role.
 Supports $filter (eq, ne, not , ge, le, in).
 For more information, see Configure the employeeLeaveDateTime property for a user.
@@ -17676,7 +17749,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[FollowedSites <IMicrosoftGraphSite- `[]`>]`: 
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -17684,7 +17757,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -17710,7 +17783,7 @@ This collection can't be enumerated.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -17718,7 +17791,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -17894,7 +17967,7 @@ Nullable.
       - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the site.
       - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list in this site.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -17902,7 +17975,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -18125,10 +18198,10 @@ Read-only.
       - `[Channels <IMicrosoftGraphChannel- `[]`>]`: The collection of channels and messages associated with the team.
       - `[Classification <String>]`: An optional label.
 Typically describes the data or business sensitivity of the team.
-Must match one of a pre-configured set in the tenant's directory.
+Must match one of a preconfigured set in the tenant's directory.
       - `[CreatedDateTime <DateTime?>]`: Timestamp at which the team was created.
       - `[Description <String>]`: An optional description for the team.
-Maximum length: 1024 characters.
+Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18136,7 +18209,7 @@ Maximum length: 1024 characters.
         - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
         - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
         - `[GiphyContentRating <String>]`: giphyRatingType
-      - `[Group <IMicrosoftGraphGroup>]`: group
+      - `[Group <IMicrosoftGraphGroup>]`: Represents a Microsoft Entra group.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -18638,7 +18711,7 @@ Nullable.
         - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
       - `[IncomingChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels shared with the team.
       - `[InstalledApps <IMicrosoftGraphTeamsAppInstallation- `[]`>]`: The apps installed in this team.
-      - `[InternalId <String>]`: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+      - `[InternalId <String>]`: A unique ID for the team that was used in a few places such as the audit log/Office 365 Management Activity API.
       - `[IsArchived <Boolean?>]`: Whether this team is in read-only mode.
       - `[MemberSettings <IMicrosoftGraphTeamMemberSettings>]`: teamMemberSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18715,13 +18788,13 @@ Required.
               - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
               - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
               - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
               - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
               - `[Theme <String>]`: scheduleEntityTheme
@@ -18731,7 +18804,8 @@ Required.
             - `[StartDateTime <DateTime?>]`: 
             - `[Theme <String>]`: scheduleEntityTheme
             - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-          - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
+          - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+          - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
           - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
@@ -18757,6 +18831,7 @@ For example, an assignment or a scheduled break or lunch.
 Required.
             - `[DisplayName <String>]`: The shift label of the shiftItem.
             - `[Notes <String>]`: The shift notes for the shiftItem.
+          - `[IsStagedForDeletion <Boolean?>]`: The shift is marked for deletion, a process that is finalized when the schedule is shared.
           - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of.
 Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
@@ -18812,6 +18887,7 @@ Read-only.
             - `[Theme <String>]`: scheduleEntityTheme
             - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.
+          - `[IsStagedForDeletion <Boolean?>]`: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
@@ -18843,8 +18919,8 @@ Read-only.
 Read-only.
       - `[TenantId <String>]`: The ID of the Microsoft Entra tenant.
       - `[Visibility <String>]`: teamVisibilityType
-      - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+      - `[WebUrl <String>]`: A hyperlink that goes to the team in the Microsoft Teams client.
+You get this URL when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
     - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
 The date and time information uses ISO 8601 format and is always in UTC.
@@ -18852,7 +18928,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
     - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
+Allowed values: null, Undefined,  MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
     - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState- `[]`>]`: State of license assignments for this user.
@@ -19386,7 +19462,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
+      - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -19424,6 +19502,9 @@ Read-only.
         - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
         - `[ReplyChainMessageId <String>]`: The ID of the reply message.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+      - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AllowTextOnly <Boolean?>]`: 
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -19478,6 +19559,7 @@ Read-only.
 Required when you create an online meeting.
       - `[ExternalId <String>]`: 
       - `[IsBroadcast <Boolean?>]`: Indicates whether this meeting is a Teams live event.
+      - `[MeetingTemplateId <String>]`: The ID of the meeting template.
       - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: Information about the meeting attendees.
@@ -19914,9 +19996,11 @@ Read-only.
 Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, ge, le).
-      - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-      - `[ProvisioningStatus <String>]`: For example, 'Success'.
-      - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
+      - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+      - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+      - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'.
     - `[ProxyAddresses <String- `[]`>]`: For example: - `['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']`.
 Changes to the mail property update this collection to include the value as an SMTP address.
 For more information, see mail and proxyAddresses properties.
@@ -20204,7 +20288,7 @@ Optional.
   - `[ETag <String>]`: ETag for the item.
 Read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+  - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
   - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
   - `[Name <String>]`: The name of the item.
@@ -20259,7 +20343,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LASTMODIFIEDBYUSER `<IMicrosoftGraphUser>`: user
+LASTMODIFIEDBYUSER `<IMicrosoftGraphUser>`: Represents a Microsoft Entra user account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -20391,6 +20475,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
     - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
     - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -20400,6 +20485,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
     - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
     - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -20489,6 +20575,7 @@ Intune sets this property.
 Possible values are: unknown, company, personal.
         - `[DeviceVersion <Int32?>]`: For internal use only.
         - `[DisplayName <String>]`: The display name for the device.
+Maximum length is 256 characters.
 Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
         - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
@@ -20941,6 +21028,7 @@ Read-only.
 Read-only.
           - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
             - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
           - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -20967,6 +21055,8 @@ For example, in the access reviews decisions API, this property might record the
         - `[DistributionMethod <String>]`: teamsAppDistributionMethod
         - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
       - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+    - `[IsHiddenForAllMembers <Boolean?>]`: Indicates whether the chat is hidden for all its members.
+Read-only.
     - `[LastMessagePreview <IMicrosoftGraphChatMessageInfo>]`: chatMessageInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -20990,9 +21080,9 @@ Nullable.
 Read-only.
       - `[DisplayName <String>]`: The display name of the user.
       - `[Roles <String- `[]`>]`: The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
       - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
@@ -21005,12 +21095,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
         - `[ContentUrl <String>]`: The URL for the content of the attachment.
         - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
         - `[Name <String>]`: The name of the attachment.
         - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -21049,7 +21140,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
       - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
         - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention.
@@ -21071,9 +21162,12 @@ For example, in the access reviews decisions API, this property might record the
         - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
         - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+          - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[DisplayName <String>]`: The name of the reaction.
+          - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+          - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
           - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -21332,7 +21426,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), 
   - `[Drive <IMicrosoftGraphDrive>]`: drive
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+    - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
     - `[Description <String>]`: Provides a user-visible description of the item.
@@ -21340,7 +21434,7 @@ Optional.
     - `[ETag <String>]`: ETag for the item.
 Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
     - `[Name <String>]`: The name of the item.
@@ -21380,7 +21474,7 @@ Read-only.
     - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -21388,7 +21482,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -21514,7 +21608,7 @@ Read-only.
       - `[ListItem <IMicrosoftGraphListItem>]`: listItem
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item.
@@ -21522,7 +21616,7 @@ Optional.
         - `[ETag <String>]`: ETag for the item.
 Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
         - `[Name <String>]`: The name of the item.
@@ -22171,9 +22265,9 @@ Read-only.
         - `[Worksheets <IMicrosoftGraphWorkbookWorksheet- `[]`>]`: Represents a collection of worksheets associated with the workbook.
 Read-only.
     - `[DriveType <String>]`: Describes the type of drive represented by this resource.
-OneDrive personal drives will return personal.
-OneDrive for Business will return business.
-SharePoint document libraries will return documentLibrary.
+OneDrive personal drives return personal.
+OneDrive for Business returns business.
+SharePoint document libraries return documentLibrary.
 Read-only.
     - `[Following <IMicrosoftGraphDriveItem- `[]`>]`: The list of items the user is following.
 Only in OneDrive for Business.
@@ -22183,7 +22277,7 @@ Nullable.
     - `[List <IMicrosoftGraphList>]`: list
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -22191,7 +22285,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -22450,7 +22544,7 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Deleted <Int64?>]`: Total space consumed by files in the recycle bin, in bytes.
 Read-only.
-      - `[Remaining <Int64?>]`: Total space remaining before reaching the quota limit, in bytes.
+      - `[Remaining <Int64?>]`: Total space remaining before reaching the capacity limit, in bytes.
 Read-only.
       - `[State <String>]`: Enumeration value that indicates the state of the storage space.
 Read-only.
@@ -22499,7 +22593,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[EmployeeLeaveDateTime <DateTime?>]`: The date and time when the user left or will leave the organization.
 To read this property, the calling app must be assigned the User-LifeCycleInfo.Read.All permission.
 To write this property, the calling app must be assigned the User.Read.All and User-LifeCycleInfo.ReadWrite.All permissions.
-To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator, Global Reader.
+To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: Lifecycle Workflows Administrator (least privilege), Global Reader.
 To write this property in delegated scenarios, the admin needs the Global Administrator role.
 Supports $filter (eq, ne, not , ge, le, in).
 For more information, see Configure the employeeLeaveDateTime property for a user.
@@ -22535,7 +22629,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[FollowedSites <IMicrosoftGraphSite- `[]`>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+    - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
     - `[Description <String>]`: Provides a user-visible description of the item.
@@ -22543,7 +22637,7 @@ Optional.
     - `[ETag <String>]`: ETag for the item.
 Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+    - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
     - `[Name <String>]`: The name of the item.
@@ -22569,7 +22663,7 @@ This collection can't be enumerated.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -22577,7 +22671,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -22753,7 +22847,7 @@ Nullable.
     - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the site.
     - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list in this site.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
 Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item.
@@ -22761,7 +22855,7 @@ Optional.
       - `[ETag <String>]`: ETag for the item.
 Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: Represents a Microsoft Entra user account.
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
 Read-only.
       - `[Name <String>]`: The name of the item.
@@ -22984,10 +23078,10 @@ Read-only.
     - `[Channels <IMicrosoftGraphChannel- `[]`>]`: The collection of channels and messages associated with the team.
     - `[Classification <String>]`: An optional label.
 Typically describes the data or business sensitivity of the team.
-Must match one of a pre-configured set in the tenant's directory.
+Must match one of a preconfigured set in the tenant's directory.
     - `[CreatedDateTime <DateTime?>]`: Timestamp at which the team was created.
     - `[Description <String>]`: An optional description for the team.
-Maximum length: 1024 characters.
+Maximum length: 1,024 characters.
     - `[DisplayName <String>]`: The name of the team.
     - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -22995,7 +23089,7 @@ Maximum length: 1024 characters.
       - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
       - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
       - `[GiphyContentRating <String>]`: giphyRatingType
-    - `[Group <IMicrosoftGraphGroup>]`: group
+    - `[Group <IMicrosoftGraphGroup>]`: Represents a Microsoft Entra group.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -23497,7 +23591,7 @@ Nullable.
       - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
     - `[IncomingChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels shared with the team.
     - `[InstalledApps <IMicrosoftGraphTeamsAppInstallation- `[]`>]`: The apps installed in this team.
-    - `[InternalId <String>]`: A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
+    - `[InternalId <String>]`: A unique ID for the team that was used in a few places such as the audit log/Office 365 Management Activity API.
     - `[IsArchived <Boolean?>]`: Whether this team is in read-only mode.
     - `[MemberSettings <IMicrosoftGraphTeamMemberSettings>]`: teamMemberSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -23574,13 +23668,13 @@ Required.
             - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
             - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
             - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
             - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
             - `[Theme <String>]`: scheduleEntityTheme
@@ -23590,7 +23684,8 @@ Required.
           - `[StartDateTime <DateTime?>]`: 
           - `[Theme <String>]`: scheduleEntityTheme
           - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-        - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
+        - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+        - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
         - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
       - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
       - `[ProvisionStatus <String>]`: operationStatus
@@ -23616,6 +23711,7 @@ For example, an assignment or a scheduled break or lunch.
 Required.
           - `[DisplayName <String>]`: The shift label of the shiftItem.
           - `[Notes <String>]`: The shift notes for the shiftItem.
+        - `[IsStagedForDeletion <Boolean?>]`: The shift is marked for deletion, a process that is finalized when the schedule is shared.
         - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of.
 Required.
         - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
@@ -23671,6 +23767,7 @@ Read-only.
           - `[Theme <String>]`: scheduleEntityTheme
           - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.
+        - `[IsStagedForDeletion <Boolean?>]`: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
         - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
         - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
@@ -23702,8 +23799,8 @@ Read-only.
 Read-only.
     - `[TenantId <String>]`: The ID of the Microsoft Entra tenant.
     - `[Visibility <String>]`: teamVisibilityType
-    - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client.
-This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team.
+    - `[WebUrl <String>]`: A hyperlink that goes to the team in the Microsoft Teams client.
+You get this URL when you right-click a team in the Microsoft Teams client and select Get link to team.
 This URL should be treated as an opaque blob, and not parsed.
   - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed.
 The date and time information uses ISO 8601 format and is always in UTC.
@@ -23711,7 +23808,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
   - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
-Allowed values: null, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
+Allowed values: null, Undefined,  MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 For more information, see legal age group property definitions.
 Returned only on $select.
   - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState- `[]`>]`: State of license assignments for this user.
@@ -24245,7 +24342,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
+    - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -24283,6 +24382,9 @@ Read-only.
       - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
       - `[ReplyChainMessageId <String>]`: The ID of the reply message.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+    - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowTextOnly <Boolean?>]`: 
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -24337,6 +24439,7 @@ Read-only.
 Required when you create an online meeting.
     - `[ExternalId <String>]`: 
     - `[IsBroadcast <Boolean?>]`: Indicates whether this meeting is a Teams live event.
+    - `[MeetingTemplateId <String>]`: The ID of the meeting template.
     - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: Information about the meeting attendees.
@@ -24773,9 +24876,11 @@ Read-only.
 Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, ge, le).
-    - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-    - `[ProvisioningStatus <String>]`: For example, 'Success'.
-    - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
+    - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+    - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+    - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'.
   - `[ProxyAddresses <String- `[]`>]`: For example: - `['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']`.
 Changes to the mail property update this collection to include the value as an SMTP address.
 For more information, see mail and proxyAddresses properties.

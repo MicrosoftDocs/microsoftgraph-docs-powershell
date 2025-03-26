@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportSla
 
 ## SYNOPSIS
-Reports that relate to tenant-level Microsoft Entra SLA attainment.
+Reports that relate to tenant-level Microsoft Entra Health SLA attainment.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgBetaReportSla [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ```
 
 ## DESCRIPTION
-Reports that relate to tenant-level Microsoft Entra SLA attainment.
+Reports that relate to tenant-level Microsoft Entra Health SLA attainment.
 
 ## PARAMETERS
 

@@ -38,7 +38,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
+| Application | ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
 
 ## PARAMETERS
 

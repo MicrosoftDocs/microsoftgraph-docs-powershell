@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-longRunningOperation
+The status of a long-running operation.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -297,7 +297,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphLongRunningOperation>`: longRunningOperation
+BODYPARAMETER `<IMicrosoftGraphLongRunningOperation>`: The status of a long-running operation.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

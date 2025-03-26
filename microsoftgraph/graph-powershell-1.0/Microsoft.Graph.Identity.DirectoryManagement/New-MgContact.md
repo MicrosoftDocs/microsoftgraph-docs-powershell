@@ -158,6 +158,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Display name for this organizational contact.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values), $search, and $orderby.
 
 ```yaml
@@ -554,6 +555,7 @@ Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[DisplayName <String>]`: Display name for this organizational contact.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values), $search, and $orderby.
   - `[GivenName <String>]`: First name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).

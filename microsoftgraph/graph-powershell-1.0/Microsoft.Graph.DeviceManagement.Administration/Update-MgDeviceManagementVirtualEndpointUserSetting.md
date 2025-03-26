@@ -417,6 +417,7 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[Category <String>]`: Usage: category='{category}'
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
   - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
@@ -441,6 +442,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
 
 RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

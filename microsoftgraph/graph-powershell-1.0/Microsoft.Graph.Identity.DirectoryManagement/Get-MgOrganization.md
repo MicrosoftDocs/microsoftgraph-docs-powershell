@@ -10,8 +10,7 @@ ms.subservice: entra-directory-management
 # Get-MgOrganization
 
 ## SYNOPSIS
-Get the properties and relationships of the currently authenticated organization.
-Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
+Read properties and relationships of the organization object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganization?view=graph-powershell-beta)
@@ -40,8 +39,7 @@ Get-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of the currently authenticated organization.
-Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
+Read properties and relationships of the organization object.
 
 **Permissions**
 
@@ -49,7 +47,7 @@ Since the organization resource supports extensions, you can also use the GET op
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+| Application | DeviceManagementServiceConfig.Read.All, User.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -324,6 +322,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
@@ -335,15 +334,16 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization)
 
-[https://learn.microsoft.com/graph/api/organization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-organization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/organization-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-organization-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-list?view=graph-rest-1.0)
 
 
 

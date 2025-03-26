@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Update the properties of a deviceAndAppManagementRoleDefinition object.
+Update the properties of a roleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceAndAppManagementRoleDefinition object.
+Update the properties of a roleDefinition object.
 
 **Permissions**
 
@@ -67,7 +67,7 @@ Update the properties of a deviceAndAppManagementRoleDefinition object.
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleDefinition"
+	"@odata.type" = "#microsoft.graph.roleDefinition"
 	displayName = "Display Name value"
 	description = "Description value"
 	rolePermissions = @(
@@ -389,6 +389,7 @@ These must match the actionName that is defined as part of the rolePermission.
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[Category <String>]`: Usage: category='{category}'
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
   - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
@@ -413,6 +414,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
 
 ROLEASSIGNMENTS `<IMicrosoftGraphRoleAssignment- `[]`>`: List of Role assignments for this role definition.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -452,7 +454,7 @@ These must match the actionName that is defined as part of the rolePermission.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition)
 
-[https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-update?view=graph-rest-1.0)
 
 
 

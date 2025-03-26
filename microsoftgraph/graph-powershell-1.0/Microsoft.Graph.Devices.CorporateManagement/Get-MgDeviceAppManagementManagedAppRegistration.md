@@ -349,7 +349,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappregistration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappregistration-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappregistration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappregistration-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-managedappregistration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappregistration-list?view=graph-rest-1.0)
 
 
 

@@ -9,7 +9,7 @@ ms.subservice: entra-sign-in
 # Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration
 
 ## SYNOPSIS
-An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
+An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension object, which can represent one of the following derived types:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-Respon
 ```
 
 ## DESCRIPTION
-An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
+An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension object, which can represent one of the following derived types:
 
 **Permissions**
 

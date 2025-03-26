@@ -16,20 +16,24 @@ Update the navigation property analyzedEmails in security
 ```
 Update-MgBetaSecurityCollaborationAnalyzedEmail -AnalyzedEmailId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AlertIds <String[]>]
- [-Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment[]>] [-AttachmentsCount <Int32>]
+ [-Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment[]>]
  [-AuthenticationDetails <IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>]
- [-BulkComplaintLevel <String>] [-Contexts <String[]>] [-DetectionMethods <String[]>]
- [-Directionality <String>] [-DistributionList <String>] [-EmailClusterId <String>]
- [-ExchangeTransportRules <IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo[]>] [-Id <String>]
+ [-BulkComplaintLevel <String>] [-ClientType <String>] [-Contexts <String[]>] [-DetectionMethods <String[]>]
+ [-Directionality <String>] [-DistributionList <String>]
+ [-DlpRules <IMicrosoftGraphSecurityAnalyzedEmailDlpRuleInfo[]>] [-EmailClusterId <String>]
+ [-ExchangeTransportRules <IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo[]>]
+ [-ForwardingDetail <String>] [-Id <String>] [-InboundConnectorFormattedName <String>]
  [-InternetMessageId <String>] [-Language <String>]
  [-LatestDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>] [-LoggedDateTime <DateTime>]
  [-NetworkMessageId <String>] [-OriginalDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]
  [-OverrideSources <String[]>] [-PhishConfidenceLevel <String>] [-Policy <String>] [-PolicyAction <String>]
- [-RecipientEmailAddress <String>] [-ReturnPath <String>]
- [-SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>] [-SizeInBytes <Int32>]
- [-SpamConfidenceLevel <String>] [-Subject <String>] [-ThreatTypes <String[]>]
- [-Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl[]>] [-UrlsCount <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PolicyType <String>] [-PrimaryOverrideSource <String>]
+ [-RecipientDetail <IMicrosoftGraphSecurityAnalyzedEmailRecipientDetail>] [-RecipientEmailAddress <String>]
+ [-ReturnPath <String>] [-SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]
+ [-SizeInBytes <Int32>] [-SpamConfidenceLevel <String>] [-Subject <String>]
+ [-ThreatDetectionDetails <IMicrosoftGraphSecurityThreatDetectionDetail[]>] [-ThreatTypes <String[]>]
+ [-TimelineEvents <IMicrosoftGraphSecurityTimelineEvent[]>] [-Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -43,20 +47,24 @@ Update-MgBetaSecurityCollaborationAnalyzedEmail -AnalyzedEmailId <String>
 ```
 Update-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AlertIds <String[]>]
- [-Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment[]>] [-AttachmentsCount <Int32>]
+ [-Attachments <IMicrosoftGraphSecurityAnalyzedEmailAttachment[]>]
  [-AuthenticationDetails <IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>]
- [-BulkComplaintLevel <String>] [-Contexts <String[]>] [-DetectionMethods <String[]>]
- [-Directionality <String>] [-DistributionList <String>] [-EmailClusterId <String>]
- [-ExchangeTransportRules <IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo[]>] [-Id <String>]
+ [-BulkComplaintLevel <String>] [-ClientType <String>] [-Contexts <String[]>] [-DetectionMethods <String[]>]
+ [-Directionality <String>] [-DistributionList <String>]
+ [-DlpRules <IMicrosoftGraphSecurityAnalyzedEmailDlpRuleInfo[]>] [-EmailClusterId <String>]
+ [-ExchangeTransportRules <IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo[]>]
+ [-ForwardingDetail <String>] [-Id <String>] [-InboundConnectorFormattedName <String>]
  [-InternetMessageId <String>] [-Language <String>]
  [-LatestDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>] [-LoggedDateTime <DateTime>]
  [-NetworkMessageId <String>] [-OriginalDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]
  [-OverrideSources <String[]>] [-PhishConfidenceLevel <String>] [-Policy <String>] [-PolicyAction <String>]
- [-RecipientEmailAddress <String>] [-ReturnPath <String>]
- [-SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>] [-SizeInBytes <Int32>]
- [-SpamConfidenceLevel <String>] [-Subject <String>] [-ThreatTypes <String[]>]
- [-Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl[]>] [-UrlsCount <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PolicyType <String>] [-PrimaryOverrideSource <String>]
+ [-RecipientDetail <IMicrosoftGraphSecurityAnalyzedEmailRecipientDetail>] [-RecipientEmailAddress <String>]
+ [-ReturnPath <String>] [-SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]
+ [-SizeInBytes <Int32>] [-SpamConfidenceLevel <String>] [-Subject <String>]
+ [-ThreatDetectionDetails <IMicrosoftGraphSecurityThreatDetectionDetail[]>] [-ThreatTypes <String[]>]
+ [-TimelineEvents <IMicrosoftGraphSecurityTimelineEvent[]>] [-Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -132,21 +140,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AttachmentsCount
-The number of attachments in the email.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -AuthenticationDetails
 analyzedEmailAuthenticationDetail
 To construct, see NOTES section for AUTHENTICATIONDETAILS properties and create a hash table.
@@ -182,6 +175,21 @@ Accept wildcard characters: False
 ### -BulkComplaintLevel
 The bulk complaint level of the email.
 A higher level is more likely to be spam.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ClientType
+
 
 ```yaml
 Type: String
@@ -255,6 +263,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DlpRules
+
+To construct, see NOTES section for DLPRULES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityAnalyzedEmailDlpRuleInfo[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -EmailClusterId
 The identifier for the group of similar emails clustered based on heuristic analysis of their content.
 
@@ -286,6 +310,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ForwardingDetail
+
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -304,6 +343,21 @@ Accept wildcard characters: False
 ### -Id
 The unique identifier for an entity.
 Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InboundConnectorFormattedName
+
 
 ```yaml
 Type: String
@@ -486,6 +540,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PolicyType
+
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PrimaryOverrideSource
+
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -493,6 +577,22 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RecipientDetail
+analyzedEmailRecipientDetail
+To construct, see NOTES section for RECIPIENTDETAIL properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityAnalyzedEmailRecipientDetail
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -607,12 +707,44 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ThreatDetectionDetails
+
+To construct, see NOTES section for THREATDETECTIONDETAILS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityThreatDetectionDetail[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ThreatTypes
 Indicates the threat types.
 The possible values are: unknown, spam, malware, phish, none, unknownFutureValue.
 
 ```yaml
 Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TimelineEvents
+
+To construct, see NOTES section for TIMELINEEVENTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityTimelineEvent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -635,21 +767,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UrlsCount
-The number of URLs in the email.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -706,6 +823,20 @@ ATTACHMENTS `<IMicrosoftGraphSecurityAnalyzedEmailAttachment- `[]`>`: A collecti
   - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AnalysisDateTime <DateTime?>]`: The time of detonation.
+    - `[CompromiseIndicators <IMicrosoftGraphSecurityCompromiseIndicator- `[]`>]`: 
+      - `[Value <String>]`: 
+      - `[Verdict <String>]`: verdictCategory
+    - `[DetonationBehaviourDetails <IMicrosoftGraphSecurityDetonationBehaviourDetails>]`: detonationBehaviourDetails
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ActionStatus <String>]`: 
+      - `[BehaviourCapability <String>]`: 
+      - `[BehaviourGroup <String>]`: 
+      - `[Details <String>]`: 
+      - `[EventDateTime <DateTime?>]`: 
+      - `[Operation <String>]`: 
+      - `[ProcessId <String>]`: 
+      - `[ProcessName <String>]`: 
+      - `[Target <String>]`: 
     - `[DetonationChain <IMicrosoftGraphSecurityDetonationChain>]`: detonationChain
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ChildNodes <IMicrosoftGraphSecurityDetonationChain- `[]`>]`: A list of all child nodes in the chain.
@@ -715,12 +846,16 @@ ATTACHMENTS `<IMicrosoftGraphSecurityAnalyzedEmailAttachment- `[]`>`: A collecti
       - `[ContactedIps <String- `[]`>]`: The list of all contacted IPs in the detonation.
       - `[ContactedUrls <String- `[]`>]`: The list of all URLs found in the detonation.
       - `[Droppedfiles <String- `[]`>]`: The list of all dropped files in the detonation.
+    - `[DetonationScreenshotUri <String>]`: 
     - `[DetonationVerdict <String>]`: The verdict of the detonation.
     - `[DetonationVerdictReason <String>]`: The reason for the verdict of the detonation.
+  - `[FileExtension <String>]`: 
   - `[FileName <String>]`: The name of the attachment in the email.
+  - `[FileSize <Int32?>]`: 
   - `[FileType <String>]`: The type of the attachment in the email.
+  - `[MalwareFamily <String>]`: 
   - `[Sha256 <String>]`: The SHA256 file hash of the attachment.
-  - `[ThreatName <String>]`: The threat name associated with the threat type.
+  - `[TenantAllowBlockListDetailInfo <String>]`: 
   - `[ThreatType <String>]`: threatType
 
 AUTHENTICATIONDETAILS `<IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>`: analyzedEmailAuthenticationDetail
@@ -742,6 +877,20 @@ Read-only.
     - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AnalysisDateTime <DateTime?>]`: The time of detonation.
+      - `[CompromiseIndicators <IMicrosoftGraphSecurityCompromiseIndicator- `[]`>]`: 
+        - `[Value <String>]`: 
+        - `[Verdict <String>]`: verdictCategory
+      - `[DetonationBehaviourDetails <IMicrosoftGraphSecurityDetonationBehaviourDetails>]`: detonationBehaviourDetails
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ActionStatus <String>]`: 
+        - `[BehaviourCapability <String>]`: 
+        - `[BehaviourGroup <String>]`: 
+        - `[Details <String>]`: 
+        - `[EventDateTime <DateTime?>]`: 
+        - `[Operation <String>]`: 
+        - `[ProcessId <String>]`: 
+        - `[ProcessName <String>]`: 
+        - `[Target <String>]`: 
       - `[DetonationChain <IMicrosoftGraphSecurityDetonationChain>]`: detonationChain
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ChildNodes <IMicrosoftGraphSecurityDetonationChain- `[]`>]`: A list of all child nodes in the chain.
@@ -751,14 +900,17 @@ Read-only.
         - `[ContactedIps <String- `[]`>]`: The list of all contacted IPs in the detonation.
         - `[ContactedUrls <String- `[]`>]`: The list of all URLs found in the detonation.
         - `[Droppedfiles <String- `[]`>]`: The list of all dropped files in the detonation.
+      - `[DetonationScreenshotUri <String>]`: 
       - `[DetonationVerdict <String>]`: The verdict of the detonation.
       - `[DetonationVerdictReason <String>]`: The reason for the verdict of the detonation.
+    - `[FileExtension <String>]`: 
     - `[FileName <String>]`: The name of the attachment in the email.
+    - `[FileSize <Int32?>]`: 
     - `[FileType <String>]`: The type of the attachment in the email.
+    - `[MalwareFamily <String>]`: 
     - `[Sha256 <String>]`: The SHA256 file hash of the attachment.
-    - `[ThreatName <String>]`: The threat name associated with the threat type.
+    - `[TenantAllowBlockListDetailInfo <String>]`: 
     - `[ThreatType <String>]`: threatType
-  - `[AttachmentsCount <Int32?>]`: The number of attachments in the email.
   - `[AuthenticationDetails <IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>]`: analyzedEmailAuthenticationDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CompositeAuthentication <String>]`: A value used by Microsoft 365 to combine email authentication such as SPF, DKIM, and DMARC, to determine whether the message is authentic.
@@ -770,21 +922,29 @@ Indicates whether it was pass/fail/soft fail.
 Indicates whether it was pass/fail/soft fail.
   - `[BulkComplaintLevel <String>]`: The bulk complaint level of the email.
 A higher level is more likely to be spam.
+  - `[ClientType <String>]`: 
   - `[Contexts <String- `[]`>]`: Provides context of the email.
   - `[DetectionMethods <String- `[]`>]`: The methods of detection used.
   - `[Directionality <String>]`: antispamDirectionality
   - `[DistributionList <String>]`: The distribution list details to which the email was sent.
+  - `[DlpRules <IMicrosoftGraphSecurityAnalyzedEmailDlpRuleInfo- `[]`>]`: 
+    - `[Name <String>]`: 
+    - `[RuleId <String>]`: 
   - `[EmailClusterId <String>]`: The identifier for the group of similar emails clustered based on heuristic analysis of their content.
   - `[ExchangeTransportRules <IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo- `[]`>]`: The name of the Exchange transport rules (ETRs) associated with the email.
     - `[Name <String>]`: Name of the Exchange transport rules (ETRs) that are part of the email.
     - `[RuleId <String>]`: The ETR rule ID.
+  - `[ForwardingDetail <String>]`: 
+  - `[InboundConnectorFormattedName <String>]`: 
   - `[InternetMessageId <String>]`: A public-facing identifier for the email that is sent.
 The message ID is in the format specified by RFC2822.
   - `[Language <String>]`: The detected language of the email content.
   - `[LatestDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]`: analyzedEmailDeliveryDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Action <String>]`: deliveryAction
+    - `[LatestThreats <String>]`: 
     - `[Location <String>]`: deliveryLocation
+    - `[OriginalThreats <String>]`: 
   - `[LoggedDateTime <DateTime?>]`: Date-time when the email record was logged.
   - `[NetworkMessageId <String>]`: An internal identifier for the email generated by Microsoft 365.
   - `[OriginalDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]`: analyzedEmailDeliveryDetail
@@ -792,26 +952,53 @@ The message ID is in the format specified by RFC2822.
   - `[PhishConfidenceLevel <String>]`: The phish confidence level associated with the email
   - `[Policy <String>]`: The action policy that took effect.
   - `[PolicyAction <String>]`: The action taken on the email based on the configured policy.
+  - `[PolicyType <String>]`: 
+  - `[PrimaryOverrideSource <String>]`: 
+  - `[RecipientDetail <IMicrosoftGraphSecurityAnalyzedEmailRecipientDetail>]`: analyzedEmailRecipientDetail
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CcRecipients <String- `[]`>]`: 
+    - `[DomainName <String>]`: 
   - `[RecipientEmailAddress <String>]`: Contains the email address of the recipient.
   - `[ReturnPath <String>]`: A field that indicates where and how bounced emails are processed.
   - `[SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]`: analyzedEmailSenderDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: 
+    - `[DomainCreationDateTime <DateTime?>]`: 
+    - `[DomainName <String>]`: 
+    - `[DomainOwner <String>]`: 
     - `[FromAddress <String>]`: The sender email address in the mail From header, also known as the envelope sender or the P1 sender.
     - `[Ipv4 <String>]`: The IPv4 address of the last detected mail server that relayed the message.
+    - `[Location <String>]`: 
     - `[MailFromAddress <String>]`: The sender email address in the From header, which is visible to email recipients on their email clients.
 Also known as P2 sender.
+    - `[MailFromDomainName <String>]`: 
   - `[SizeInBytes <Int32?>]`: Size of the email in bytes.
   - `[SpamConfidenceLevel <String>]`: Spam confidence of the email.
   - `[Subject <String>]`: Subject of the email.
+  - `[ThreatDetectionDetails <IMicrosoftGraphSecurityThreatDetectionDetail- `[]`>]`: 
+    - `[ConfidenceLevel <String>]`: 
+    - `[PriorityAccountProtection <String>]`: 
+    - `[Threats <String>]`: 
   - `[ThreatTypes <String- `[]`>]`: Indicates the threat types.
 The possible values are: unknown, spam, malware, phish, none, unknownFutureValue.
+  - `[TimelineEvents <IMicrosoftGraphSecurityTimelineEvent- `[]`>]`: 
+    - `[EventDateTime <DateTime?>]`: 
+    - `[EventDetails <String>]`: 
+    - `[EventResult <String>]`: 
+    - `[EventSource <String>]`: eventSource
+    - `[EventThreats <String- `[]`>]`: 
+    - `[EventType <String>]`: timelineEventType
   - `[Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>]`: A collection of the URLs in the email.
     - `[DetectionMethod <String>]`: The method used to detect threats in the URL.
     - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
+    - `[TenantAllowBlockListDetailInfo <String>]`: 
     - `[ThreatType <String>]`: threatType
     - `[Url <String>]`: The URL that is found in the email.
 This is full URL string, including query parameters.
-  - `[UrlsCount <Int32?>]`: The number of URLs in the email.
+
+DLPRULES `<IMicrosoftGraphSecurityAnalyzedEmailDlpRuleInfo- `[]`>`: .
+  - `[Name <String>]`: 
+  - `[RuleId <String>]`: 
 
 EXCHANGETRANSPORTRULES `<IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRuleInfo- `[]`>`: The name of the Exchange transport rules (ETRs) associated with the email.
   - `[Name <String>]`: Name of the Exchange transport rules (ETRs) that are part of the email.
@@ -830,6 +1017,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
@@ -899,6 +1087,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
@@ -909,25 +1098,67 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 LATESTDELIVERY `<IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>`: analyzedEmailDeliveryDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: deliveryAction
+  - `[LatestThreats <String>]`: 
   - `[Location <String>]`: deliveryLocation
+  - `[OriginalThreats <String>]`: 
 
 ORIGINALDELIVERY `<IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>`: analyzedEmailDeliveryDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: deliveryAction
+  - `[LatestThreats <String>]`: 
   - `[Location <String>]`: deliveryLocation
+  - `[OriginalThreats <String>]`: 
+
+RECIPIENTDETAIL `<IMicrosoftGraphSecurityAnalyzedEmailRecipientDetail>`: analyzedEmailRecipientDetail
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CcRecipients <String- `[]`>]`: 
+  - `[DomainName <String>]`: 
 
 SENDERDETAIL `<IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>`: analyzedEmailSenderDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: 
+  - `[DomainCreationDateTime <DateTime?>]`: 
+  - `[DomainName <String>]`: 
+  - `[DomainOwner <String>]`: 
   - `[FromAddress <String>]`: The sender email address in the mail From header, also known as the envelope sender or the P1 sender.
   - `[Ipv4 <String>]`: The IPv4 address of the last detected mail server that relayed the message.
+  - `[Location <String>]`: 
   - `[MailFromAddress <String>]`: The sender email address in the From header, which is visible to email recipients on their email clients.
 Also known as P2 sender.
+  - `[MailFromDomainName <String>]`: 
+
+THREATDETECTIONDETAILS `<IMicrosoftGraphSecurityThreatDetectionDetail- `[]`>`: .
+  - `[ConfidenceLevel <String>]`: 
+  - `[PriorityAccountProtection <String>]`: 
+  - `[Threats <String>]`: 
+
+TIMELINEEVENTS `<IMicrosoftGraphSecurityTimelineEvent- `[]`>`: .
+  - `[EventDateTime <DateTime?>]`: 
+  - `[EventDetails <String>]`: 
+  - `[EventResult <String>]`: 
+  - `[EventSource <String>]`: eventSource
+  - `[EventThreats <String- `[]`>]`: 
+  - `[EventType <String>]`: timelineEventType
 
 URLS `<IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>`: A collection of the URLs in the email.
   - `[DetectionMethod <String>]`: The method used to detect threats in the URL.
   - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AnalysisDateTime <DateTime?>]`: The time of detonation.
+    - `[CompromiseIndicators <IMicrosoftGraphSecurityCompromiseIndicator- `[]`>]`: 
+      - `[Value <String>]`: 
+      - `[Verdict <String>]`: verdictCategory
+    - `[DetonationBehaviourDetails <IMicrosoftGraphSecurityDetonationBehaviourDetails>]`: detonationBehaviourDetails
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ActionStatus <String>]`: 
+      - `[BehaviourCapability <String>]`: 
+      - `[BehaviourGroup <String>]`: 
+      - `[Details <String>]`: 
+      - `[EventDateTime <DateTime?>]`: 
+      - `[Operation <String>]`: 
+      - `[ProcessId <String>]`: 
+      - `[ProcessName <String>]`: 
+      - `[Target <String>]`: 
     - `[DetonationChain <IMicrosoftGraphSecurityDetonationChain>]`: detonationChain
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ChildNodes <IMicrosoftGraphSecurityDetonationChain- `[]`>]`: A list of all child nodes in the chain.
@@ -937,8 +1168,10 @@ URLS `<IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>`: A collection of the URLs
       - `[ContactedIps <String- `[]`>]`: The list of all contacted IPs in the detonation.
       - `[ContactedUrls <String- `[]`>]`: The list of all URLs found in the detonation.
       - `[Droppedfiles <String- `[]`>]`: The list of all dropped files in the detonation.
+    - `[DetonationScreenshotUri <String>]`: 
     - `[DetonationVerdict <String>]`: The verdict of the detonation.
     - `[DetonationVerdictReason <String>]`: The reason for the verdict of the detonation.
+  - `[TenantAllowBlockListDetailInfo <String>]`: 
   - `[ThreatType <String>]`: threatType
   - `[Url <String>]`: The URL that is found in the email.
 This is full URL string, including query parameters.

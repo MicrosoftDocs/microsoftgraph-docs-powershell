@@ -10,7 +10,7 @@ ms.subservice: entra-id-governance
 # Get-MgEntitlementManagementCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
+Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
+Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -386,7 +386,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogcustomworkflowextension)
 
-[https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-1.0)
 

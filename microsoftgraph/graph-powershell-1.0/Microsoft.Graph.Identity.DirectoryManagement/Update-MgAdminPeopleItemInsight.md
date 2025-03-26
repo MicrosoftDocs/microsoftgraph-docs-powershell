@@ -13,9 +13,6 @@ Update privacy settings to display or return the specified type of insights in a
 Currently, itemInsights is the only supported type of settings.
 To learn more about customizing insights privacy for your organization, see Customize item insights privacy in Microsoft Graph.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleItemInsight](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleItemInsight?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)

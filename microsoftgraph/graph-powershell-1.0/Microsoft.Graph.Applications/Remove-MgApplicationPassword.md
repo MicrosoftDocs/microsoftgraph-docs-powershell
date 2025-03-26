@@ -97,7 +97,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: RemoveExpanded, Remove
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

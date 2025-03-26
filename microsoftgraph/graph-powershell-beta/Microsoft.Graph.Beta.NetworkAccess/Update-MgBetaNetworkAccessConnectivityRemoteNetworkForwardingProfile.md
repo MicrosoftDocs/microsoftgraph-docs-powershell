@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-Profile last modified time.
+The date and time when the profile was last modified.
 
 ```yaml
 Type: DateTime
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Profile name.
+The name of the profile.
 
 ```yaml
 Type: String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Policies
-Traffic forwarding policies associated with this profile.
+The traffic forwarding policies associated with this profile.
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
@@ -395,9 +395,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IMicrosoftGraphNetworkaccessForwardingProfile>`: forwardingProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description.
-  - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time.
-  - `[Name <String>]`: Profile name.
-  - `[Policies <IMicrosoftGraphNetworkaccessPolicyLink- `[]`>]`: Traffic forwarding policies associated with this profile.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the profile was last modified.
+  - `[Name <String>]`: The name of the profile.
+  - `[Policies <IMicrosoftGraphNetworkaccessPolicyLink- `[]`>]`: The traffic forwarding policies associated with this profile.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Policy <IMicrosoftGraphNetworkaccessPolicy>]`: policy
@@ -442,6 +442,7 @@ Required.
 Supports $filter (eq, not, ge, le, startsWith).
     - `[AppDescription <String>]`: The description exposed by the associated application.
     - `[AppDisplayName <String>]`: The display name exposed by the associated application.
+Maximum length is 256 characters.
     - `[AppId <String>]`: The unique identifier for the associated application (its appId property).
 Alternate key.
 Supports $filter (eq, ne, not, in, startsWith).
@@ -479,6 +480,23 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appCredentialRestrictionType
           - `[State <String>]`: appManagementRestrictionState
+        - `[ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]`: customAppManagementApplicationConfiguration
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]`: identifierUriConfiguration
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                  - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+              - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+              - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+              - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+              - `[State <String>]`: appManagementRestrictionState
     - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -494,6 +512,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
       - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
       - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -503,6 +522,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
       - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
       - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -523,9 +543,10 @@ This is displayed when the app role is being assigned and, if the app role funct
       - `[DisplayName <String>]`: Display name for the permission that appears in the app role assignment and consent experiences.
       - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 You must specify a new GUID identifier when you create a new app role.
-      - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false. 
-At that point, in a subsequent call, this role may be removed.
+      - `[IsEnabled <Boolean?>]`: When you create or updating an app role, this value must be true.
+To delete a role, this must first be set to false.
+At that point, in a subsequent call, this role might be removed.
+Default value is true.
       - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
 Read-only.
@@ -534,7 +555,7 @@ Must not exceed 120 characters in length.
 Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
 
 
-@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     - `[ApplicationTemplateId <String>]`: Unique identifier of the applicationTemplate.
@@ -640,6 +661,13 @@ It says what Microsoft identity platform should accept in the aud claim in the i
 This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token.
 This field can only accept a single value and has a limit of 600 characters.
 Required.
+      - `[ClaimsMatchingExpression <IMicrosoftGraphFederatedIdentityExpression>]`: federatedIdentityExpression
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[LanguageVersion <Int32?>]`: Indicated the language version to be used.
+Should always be set to 1.
+Required.
+        - `[Value <String>]`: Indicates the configured expression.
+Required.
       - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential.
 It has a limit of 600 characters.
 Optional.
@@ -695,14 +723,15 @@ Supports $filter (eq, not, ge, le).
       - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-      - `[DisplayName <String>]`: Friendly name for the key.
+      - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
       - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Key <Byte- `[]`>]`: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
       - `[KeyId <String>]`: The unique identifier for the key.
@@ -1209,7 +1238,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
 
-POLICIES `<IMicrosoftGraphNetworkaccessPolicyLink- `[]`>`: Traffic forwarding policies associated with this profile.
+POLICIES `<IMicrosoftGraphNetworkaccessPolicyLink- `[]`>`: The traffic forwarding policies associated with this profile.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Policy <IMicrosoftGraphNetworkaccessPolicy>]`: policy
@@ -1249,6 +1278,7 @@ Required.
 Supports $filter (eq, not, ge, le, startsWith).
   - `[AppDescription <String>]`: The description exposed by the associated application.
   - `[AppDisplayName <String>]`: The display name exposed by the associated application.
+Maximum length is 256 characters.
   - `[AppId <String>]`: The unique identifier for the associated application (its appId property).
 Alternate key.
 Supports $filter (eq, ne, not, in, startsWith).
@@ -1286,6 +1316,23 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
         - `[RestrictionType <String>]`: appCredentialRestrictionType
         - `[State <String>]`: appManagementRestrictionState
+      - `[ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]`: customAppManagementApplicationConfiguration
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]`: identifierUriConfiguration
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+            - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+            - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+            - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+            - `[State <String>]`: appManagementRestrictionState
   - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -1301,6 +1348,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
     - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
     - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -1310,6 +1358,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
     - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
     - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -1330,9 +1379,10 @@ This is displayed when the app role is being assigned and, if the app role funct
     - `[DisplayName <String>]`: Display name for the permission that appears in the app role assignment and consent experiences.
     - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 You must specify a new GUID identifier when you create a new app role.
-    - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false. 
-At that point, in a subsequent call, this role may be removed.
+    - `[IsEnabled <Boolean?>]`: When you create or updating an app role, this value must be true.
+To delete a role, this must first be set to false.
+At that point, in a subsequent call, this role might be removed.
+Default value is true.
     - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
 Read-only.
@@ -1341,7 +1391,7 @@ Must not exceed 120 characters in length.
 Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
 
 
-@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   - `[ApplicationTemplateId <String>]`: Unique identifier of the applicationTemplate.
@@ -1447,6 +1497,13 @@ It says what Microsoft identity platform should accept in the aud claim in the i
 This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token.
 This field can only accept a single value and has a limit of 600 characters.
 Required.
+    - `[ClaimsMatchingExpression <IMicrosoftGraphFederatedIdentityExpression>]`: federatedIdentityExpression
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[LanguageVersion <Int32?>]`: Indicated the language version to be used.
+Should always be set to 1.
+Required.
+      - `[Value <String>]`: Indicates the configured expression.
+Required.
     - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential.
 It has a limit of 600 characters.
 Optional.
@@ -1502,14 +1559,15 @@ Supports $filter (eq, not, ge, le).
     - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-    - `[DisplayName <String>]`: Friendly name for the key.
+    - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
     - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Key <Byte- `[]`>]`: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     - `[KeyId <String>]`: The unique identifier for the key.

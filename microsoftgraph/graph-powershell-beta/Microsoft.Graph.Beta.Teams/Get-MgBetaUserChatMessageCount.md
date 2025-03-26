@@ -38,7 +38,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.Read, Chat.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMessage.Read.Chat, Chat.ReadWrite.All, Chat.Read.All,  |
+| Application | ChatMessage.Read.Chat, ChatMessage.ReadWriteSelected.Chat, Chat.ReadWrite.All, Chat.Read.All,  |
 
 ## PARAMETERS
 
@@ -219,6 +219,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 

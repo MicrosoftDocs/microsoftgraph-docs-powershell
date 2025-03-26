@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectoryCertificateAuthority
 
 ## SYNOPSIS
-Get certificateAuthorities from directory
+Container for certificate authorities-related configurations for applications in the tenant.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaDirectoryCertificateAuthority [-ExpandProperty <String[]>] [-Property 
 ```
 
 ## DESCRIPTION
-Get certificateAuthorities from directory
+Container for certificate authorities-related configurations for applications in the tenant.
 
 ## PARAMETERS
 

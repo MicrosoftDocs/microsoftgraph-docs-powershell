@@ -48,7 +48,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: Get
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

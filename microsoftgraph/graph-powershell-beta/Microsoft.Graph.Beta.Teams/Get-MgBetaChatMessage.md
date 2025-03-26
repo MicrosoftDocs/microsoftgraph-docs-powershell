@@ -56,7 +56,7 @@ Retrieve a single message or a message reply in a channel or a chat.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMessage.Read.Chat, Chat.Read.All,  |
+| Application | ChatMessage.Read.Chat, ChatMessage.ReadWriteSelected.Chat, Chat.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Get a message in a chat
@@ -401,6 +401,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 

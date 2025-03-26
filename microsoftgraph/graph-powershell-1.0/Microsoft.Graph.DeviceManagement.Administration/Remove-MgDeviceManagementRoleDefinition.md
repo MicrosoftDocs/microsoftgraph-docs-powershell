@@ -9,7 +9,7 @@ ms.subservice: intune
 # Remove-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Deletes a roleDefinition.
+Deletes a deviceAndAppManagementRoleDefinition.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Deletes a roleDefinition.
+Deletes a deviceAndAppManagementRoleDefinition.
 
 **Permissions**
 
@@ -211,6 +211,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[Category <String>]`: Usage: category='{category}'
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
   - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
@@ -235,12 +236,13 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroledefinition)
 
-[https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-delete?view=graph-rest-1.0)
 
 
 

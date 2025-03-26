@@ -574,7 +574,7 @@ Must be one of default, friendly, or standard.
 See below for more details.
 If unspecified, treated as default.
       - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time.
-Must be one of dateOnly or dateTime
+It must be either dateOnly or dateTime.
     - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Formula <String>]`: The formula used to compute the default value for the column.
@@ -690,7 +690,7 @@ Read-only.
       - `[LinesForEditing <Int32?>]`: The size of the text box.
       - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
       - `[TextType <String>]`: The type of text being stored.
-Must be one of plain or richText
+Must be one of plain or richText.
     - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: columnTypes
@@ -805,7 +805,7 @@ Must be one of default, friendly, or standard.
 See below for more details.
 If unspecified, treated as default.
       - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time.
-Must be one of dateOnly or dateTime
+It must be either dateOnly or dateTime.
     - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Formula <String>]`: The formula used to compute the default value for the column.
@@ -921,7 +921,7 @@ Read-only.
       - `[LinesForEditing <Int32?>]`: The size of the text box.
       - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
       - `[TextType <String>]`: The type of text being stored.
-Must be one of plain or richText
+Must be one of plain or richText.
     - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: columnTypes
@@ -1037,7 +1037,7 @@ Must be one of default, friendly, or standard.
 See below for more details.
 If unspecified, treated as default.
       - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time.
-Must be one of dateOnly or dateTime
+It must be either dateOnly or dateTime.
     - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Formula <String>]`: The formula used to compute the default value for the column.
@@ -1153,7 +1153,7 @@ Read-only.
       - `[LinesForEditing <Int32?>]`: The size of the text box.
       - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
       - `[TextType <String>]`: The type of text being stored.
-Must be one of plain or richText
+Must be one of plain or richText.
     - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: columnTypes
@@ -1261,7 +1261,7 @@ Must be one of default, friendly, or standard.
 See below for more details.
 If unspecified, treated as default.
     - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time.
-Must be one of dateOnly or dateTime
+It must be either dateOnly or dateTime.
   - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Formula <String>]`: The formula used to compute the default value for the column.
@@ -1377,7 +1377,7 @@ Read-only.
     - `[LinesForEditing <Int32?>]`: The size of the text box.
     - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
     - `[TextType <String>]`: The type of text being stored.
-Must be one of plain or richText
+Must be one of plain or richText.
   - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: columnTypes
@@ -1423,7 +1423,7 @@ Must be one of default, friendly, or standard.
 See below for more details.
 If unspecified, treated as default.
     - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time.
-Must be one of dateOnly or dateTime
+It must be either dateOnly or dateTime.
   - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Formula <String>]`: The formula used to compute the default value for the column.
@@ -1539,7 +1539,7 @@ Read-only.
     - `[LinesForEditing <Int32?>]`: The size of the text box.
     - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
     - `[TextType <String>]`: The type of text being stored.
-Must be one of plain or richText
+Must be one of plain or richText.
   - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: columnTypes
@@ -1595,7 +1595,7 @@ Must be one of default, friendly, or standard.
 See below for more details.
 If unspecified, treated as default.
       - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time.
-Must be one of dateOnly or dateTime
+It must be either dateOnly or dateTime.
     - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Formula <String>]`: The formula used to compute the default value for the column.
@@ -1708,7 +1708,7 @@ Read-only.
       - `[LinesForEditing <Int32?>]`: The size of the text box.
       - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
       - `[TextType <String>]`: The type of text being stored.
-Must be one of plain or richText
+Must be one of plain or richText.
     - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: columnTypes

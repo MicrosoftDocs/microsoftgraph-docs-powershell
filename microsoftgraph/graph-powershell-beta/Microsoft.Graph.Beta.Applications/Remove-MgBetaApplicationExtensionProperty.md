@@ -64,7 +64,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: Delete
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

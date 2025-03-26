@@ -287,11 +287,13 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
   - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
+  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
@@ -311,9 +313,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
     - `[SharingReference <IMicrosoftGraphResourceReference>]`: resourceReference
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The item's unique identifier.
-      - `[Type <String>]`: A string value that can be used to classify the item, such as 'microsoft.graph.driveItem'
-      - `[WebUrl <String>]`: A URL leading to the referenced item.
+      - `[Id <String>]`: 
+      - `[Type <String>]`: 
+      - `[WebUrl <String>]`: 
     - `[SharingSubject <String>]`: The subject with which the document was shared.
     - `[SharingType <String>]`: Determines the way the document was shared, can be by a 'Link', 'Attachment', 'Group', 'Site'.
   - `[LastSharedMethod <IMicrosoftGraphEntity>]`: entity
@@ -351,9 +353,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
   - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The item's unique identifier.
-    - `[Type <String>]`: A string value that can be used to classify the item, such as 'microsoft.graph.driveItem'
-    - `[WebUrl <String>]`: A URL leading to the referenced item.
+    - `[Id <String>]`: 
+    - `[Type <String>]`: 
+    - `[WebUrl <String>]`: 
   - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContainerDisplayName <String>]`: A string describing where the item is stored.
@@ -393,9 +395,9 @@ Read-only.
 Read-only.
   - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The item's unique identifier.
-    - `[Type <String>]`: A string value that can be used to classify the item, such as 'microsoft.graph.driveItem'
-    - `[WebUrl <String>]`: A URL leading to the referenced item.
+    - `[Id <String>]`: 
+    - `[Type <String>]`: 
+    - `[WebUrl <String>]`: 
   - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContainerDisplayName <String>]`: A string describing where the item is stored.

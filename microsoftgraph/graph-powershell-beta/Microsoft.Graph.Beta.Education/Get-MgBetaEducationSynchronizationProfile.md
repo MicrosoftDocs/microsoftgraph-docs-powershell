@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEducationSynchronizationProfile
 
 ## SYNOPSIS
-Retrieve a school data synchronization profile in the tenant based on the identifier.
+Get synchronizationProfiles from education
 
 ## SYNTAX
 
@@ -35,15 +35,7 @@ Get-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Retrieve a school data synchronization profile in the tenant based on the identifier.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAdministration.Read.All, EduAdministration.ReadWrite.All,  |
+Get synchronizationProfiles from education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -322,14 +314,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
+  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
+  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofile)
-
-[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-get?view=graph-rest-beta)
-
-[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-list?view=graph-rest-beta)
 
 
 

@@ -10,6 +10,7 @@ ms.subservice: cloud-communications
 
 ## SYNOPSIS
 Update the properties of a virtualEventTownhall object.
+Only the Organizer and Co-organizer can make changes to a townhall event.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhall](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhall?view=graph-powershell-beta)
@@ -22,7 +23,8 @@ Update-MgVirtualEventTownhall -VirtualEventTownhallId <String> [-ResponseHeaders
  [-AdditionalProperties <Hashtable>] [-Audience <String>]
  [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
- [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
+ [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
+ [-ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>] [-Id <String>]
  [-InvitedAttendees <IMicrosoftGraphIdentity[]>] [-IsInviteOnly]
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
  [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
@@ -43,7 +45,8 @@ Update-MgVirtualEventTownhall -InputObject <IBookingsIdentity> [-ResponseHeaders
  [-AdditionalProperties <Hashtable>] [-Audience <String>]
  [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
- [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
+ [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
+ [-ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>] [-Id <String>]
  [-InvitedAttendees <IMicrosoftGraphIdentity[]>] [-IsInviteOnly]
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
  [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
@@ -60,6 +63,7 @@ Update-MgVirtualEventTownhall -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the properties of a virtualEventTownhall object.
+Only the Organizer and Co-organizer can make changes to a townhall event.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -202,6 +206,23 @@ To construct, see NOTES section for ENDDATETIME properties and create a hash tab
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExternalEventInformation
+The external information of a virtual event.
+Returned only for event organizers or coorganizers; otherwise, null.
+To construct, see NOTES section for EXTERNALEVENTINFORMATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVirtualEventExternalInformation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -494,6 +515,14 @@ For example, in the access reviews decisions API, this property might record the
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
+  - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers; otherwise, null.
+    - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+    - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
   - `[Presenters <IMicrosoftGraphVirtualEventPresenter- `[]`>]`: The virtual event presenters.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -513,7 +542,9 @@ Read-only.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
+    - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -551,6 +582,9 @@ Read-only.
       - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
       - `[ReplyChainMessageId <String>]`: The ID of the reply message.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+    - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowTextOnly <Boolean?>]`: 
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -639,6 +673,15 @@ ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
+EXTERNALEVENTINFORMATION `<IMicrosoftGraphVirtualEventExternalInformation- `[]`>`: The external information of a virtual event.
+Returned only for event organizers or coorganizers; otherwise, null.
+  - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+  - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
+
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
@@ -650,10 +693,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -698,7 +738,9 @@ SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: The sessions for the virt
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
+  - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -741,6 +783,9 @@ Read-only.
     - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+  - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AllowTextOnly <Boolean?>]`: 
   - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
   - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

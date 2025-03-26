@@ -23,7 +23,8 @@ Users can also provide a list of protection units under the policy.
 New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]
- [-DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit[]>] [-Id <String>]
+ [-DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit[]>]
+ [-DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -121,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -DriveInclusionRules
-Contains the details of the Onedrive for Business protection rule.
+Contains the details of the OneDrive for Work or School protection rule.
 To construct, see NOTES section for DRIVEINCLUSIONRULES properties and create a hash table.
 
 ```yaml
@@ -137,11 +138,27 @@ Accept wildcard characters: False
 ```
 
 ### -DriveProtectionUnits
-Contains the protection units associated with a OneDrive for Business protection policy.
+Contains the protection units associated with a OneDrive for Work or School protection policy.
 To construct, see NOTES section for DRIVEPROTECTIONUNITS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDriveProtectionUnit[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DriveProtectionUnitsBulkAdditionJobs
+
+To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -345,7 +362,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Status <String>]`: protectionPolicyStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[DriveInclusionRules <IMicrosoftGraphDriveProtectionRule- `[]`>]`: Contains the details of the Onedrive for Business protection rule.
+  - `[DriveInclusionRules <IMicrosoftGraphDriveProtectionRule- `[]`>]`: Contains the details of the OneDrive for Work or School protection rule.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -363,7 +380,8 @@ Read-only.
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
-    - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+    - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
     - `[Status <String>]`: protectionRuleStatus
@@ -371,7 +389,7 @@ Read-only.
 Read-only.
     - `[DriveExpression <String>]`: Contains a drive expression.
 For examples, see driveExpression examples.
-  - `[DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit- `[]`>]`: Contains the protection units associated with a  OneDrive for Business protection policy.
+  - `[DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit- `[]`>]`: Contains the protection units associated with a  OneDrive for Work or School protection policy.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The time of creation of the protection unit.
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
@@ -382,6 +400,18 @@ For examples, see driveExpression examples.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DirectoryObjectId <String>]`: ID of the directory object.
+  - `[DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob- `[]`>]`: 
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+    - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+    - `[Status <String>]`: protectionUnitsBulkJobStatus
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DirectoryObjectIds <String- `[]`>]`: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
+    - `[Drives <String- `[]`>]`: The list of email addresses to add to the OneDrive protection policy.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -395,7 +425,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DRIVEINCLUSIONRULES `<IMicrosoftGraphDriveProtectionRule- `[]`>`: Contains the details of the Onedrive for Business protection rule.
+DRIVEINCLUSIONRULES `<IMicrosoftGraphDriveProtectionRule- `[]`>`: Contains the details of the OneDrive for Work or School protection rule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -423,7 +453,8 @@ For example, in the access reviews decisions API, this property might record the
       - `[Target <String>]`: The target of the error.
     - `[Message <String>]`: A non-localized message for the developer.
     - `[Target <String>]`: The target of the error.
-  - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+  - `[IsAutoApplyEnabled <Boolean?>]`: true indicates that the protection rule is dynamic; false that it's static.
+Currently, only static rules are supported.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
   - `[Status <String>]`: protectionRuleStatus
@@ -432,7 +463,7 @@ Read-only.
   - `[DriveExpression <String>]`: Contains a drive expression.
 For examples, see driveExpression examples.
 
-DRIVEPROTECTIONUNITS `<IMicrosoftGraphDriveProtectionUnit- `[]`>`: Contains the protection units associated with a OneDrive for Business protection policy.
+DRIVEPROTECTIONUNITS `<IMicrosoftGraphDriveProtectionUnit- `[]`>`: Contains the protection units associated with a OneDrive for Work or School protection policy.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -467,6 +498,43 @@ For example, in the access reviews decisions API, this property might record the
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DirectoryObjectId <String>]`: ID of the directory object.
+
+DRIVEPROTECTIONUNITSBULKADDITIONJOBS `<IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob- `[]`>`: .
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the job.
+  - `[DisplayName <String>]`: The name of the protection units bulk addition job.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the job.
+  - `[Status <String>]`: protectionUnitsBulkJobStatus
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DirectoryObjectIds <String- `[]`>]`: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
+  - `[Drives <String- `[]`>]`: The list of email addresses to add to the OneDrive protection policy.
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

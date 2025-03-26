@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy
 
 ## SYNOPSIS
-Traffic forwarding policies associated with this profile.
+The traffic forwarding policies associated with this profile.
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy -InputOb
 ```
 
 ## DESCRIPTION
-Traffic forwarding policies associated with this profile.
+The traffic forwarding policies associated with this profile.
 
 ## PARAMETERS
 

@@ -10,6 +10,7 @@ ms.subservice: entra-sign-in
 
 ## SYNOPSIS
 Delete an authenticationEventListener object.
+The following derived types are currently supported.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
@@ -32,6 +33,7 @@ Remove-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdent
 
 ## DESCRIPTION
 Delete an authenticationEventListener object.
+The following derived types are currently supported.
 
 ## EXAMPLES
 ### Example 1: Code snippet

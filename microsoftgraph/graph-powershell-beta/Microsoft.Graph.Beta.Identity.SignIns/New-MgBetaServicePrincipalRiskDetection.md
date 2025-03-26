@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -CorrelationId
 Correlation ID of the sign-in activity associated with the risk detection.
-This property is null if the risk detection is not associated with a sign-in activity.
+This property is null if the risk detection isn't associated with a sign-in activity.
 
 ```yaml
 Type: String
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 
 ### -RequestId
 Request identifier of the sign-in activity associated with the risk detection.
-This property is null if the risk detection is not associated with a sign-in activity.
+This property is null if the risk detection isn't associated with a sign-in activity.
 Supports $filter (eq).
 
 ```yaml
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 
 ### -RiskEventType
 The type of risk event detected.
-The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
+The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication, suspiciousAPITraffic.
 
 ```yaml
 Type: String
@@ -518,7 +518,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 This string value is represented as a JSON object with the quotations escaped.
   - `[AppId <String>]`: The unique identifier for the associated application.
   - `[CorrelationId <String>]`: Correlation ID of the sign-in activity associated with the risk detection.
-This property is null if the risk detection is not associated with a sign-in activity.
+This property is null if the risk detection isn't associated with a sign-in activity.
   - `[DetectedDateTime <DateTime?>]`: Date and time when the risk was detected.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -547,11 +547,11 @@ Writable on OneDrive Personal.
 This is calculated using latitude/longitude information from the sign-in activity.
   - `[MitreTechniqueId <String>]`: 
   - `[RequestId <String>]`: Request identifier of the sign-in activity associated with the risk detection.
-This property is null if the risk detection is not associated with a sign-in activity.
+This property is null if the risk detection isn't associated with a sign-in activity.
 Supports $filter (eq).
   - `[RiskDetail <String>]`: riskDetail
   - `[RiskEventType <String>]`: The type of risk event detected.
-The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
+The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication, suspiciousAPITraffic.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[ServicePrincipalDisplayName <String>]`: The display name for the service principal.

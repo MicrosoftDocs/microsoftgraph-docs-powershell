@@ -12,6 +12,7 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
+The following derived types are currently supported.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ Get-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
+The following derived types are currently supported.
 
 **Permissions**
 

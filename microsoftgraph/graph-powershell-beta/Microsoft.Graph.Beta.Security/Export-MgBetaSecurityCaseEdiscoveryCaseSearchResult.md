@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasesearchresult
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Export results from an estimated ediscoverySearch.
 For details, see Manage a collection estimate.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseSearchResult](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseSearchResult?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,9 +59,105 @@ For details, see Manage a collection estimate.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Export results with search hits only, excluding partially indexed items, with no additional options, as .pst files for each mailbox
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 1 - simple PST"
+	exportCriteria = "searchHits"
+	additionalOptions = "none"
+	exportFormat = "pst"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export results with search hits only, excluding partially indexed items, with no additional options, as .pst files for each mailbox
+
+### Example 2: Export results with search hits and partially indexed items in all locations, with no additional options, as .pst files for each mailbox.
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 2"
+	exportCriteria = "searchHits, partiallyIndexed"
+	exportLocation = "responsiveLocations, nonresponsiveLocations"
+	additionalOptions = "none"
+	exportFormat = "pst"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export results with search hits and partially indexed items in all locations, with no additional options, as .pst files for each mailbox.
+
+### Example 3: Export results with search hits and partially indexed items in locations with search hits, with no additional options, as .msg files for each message
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 3"
+	exportCriteria = "searchHits, partiallyIndexed"
+	exportLocation = "responsiveLocations"
+	additionalOptions = "none"
+	exportFormat = "msg"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export results with search hits and partially indexed items in locations with search hits, with no additional options, as .msg files for each message
+
+### Example 4: Export results with partially indexed items in all targeted locations, with all additional options, as .eml files for each message
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 4"
+	exportCriteria = "partiallyIndexed"
+	exportLocation = "responsiveLocations, nonresponsiveLocations"
+	additionalOptions = "teamsAndYammerConversations, cloudAttachments, allDocumentVersions, subfolderContents, listAttachments"
+	exportFormat = "eml"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export results with partially indexed items in all targeted locations, with all additional options, as .eml files for each message
+
+### Example 5: Export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 5"
+	exportCriteria = "partiallyIndexed"
+	exportLocation = "responsiveLocations"
+	additionalOptions = "cloudAttachments"
+	exportFormat = "eml"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message
+
 
 ## PARAMETERS
 
@@ -374,6 +474,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
@@ -443,6 +544,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
@@ -454,6 +556,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasesearchresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasesearchresult)
 
+[https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-beta)
 
 
 

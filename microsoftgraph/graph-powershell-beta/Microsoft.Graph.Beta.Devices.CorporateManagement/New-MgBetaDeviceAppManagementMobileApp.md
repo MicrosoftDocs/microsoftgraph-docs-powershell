@@ -419,7 +419,7 @@ Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The ID of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 BODYPARAMETER `<IMicrosoftGraphMobileApp>`: An abstract class containing the base properties for Intune mobile apps.
@@ -438,7 +438,7 @@ Read-only.
     - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The ID of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[Categories <IMicrosoftGraphMobileAppCategory- `[]`>]`: The list of categories for this app.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -461,8 +461,12 @@ Read-only.
   - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: The set of direct relationships for this app.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
-Read-Only
+    - `[TargetId <String>]`: The unique app identifier of the target of the mobile app relationship entity.
+For example: 2dbc75b9-e993-4e4d-a071-91ac5a218672.
+Read-Only.
+Returned by default.
+Supports: $select.
+Does not support $search, $filter, $orderBy.
     - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
   - `[RoleScopeTagIds <String- `[]`>]`: List of scope tag ids for this mobile app.
 
@@ -479,8 +483,12 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 RELATIONSHIPS `<IMicrosoftGraphMobileAppRelationship- `[]`>`: The set of direct relationships for this app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
-Read-Only
+  - `[TargetId <String>]`: The unique app identifier of the target of the mobile app relationship entity.
+For example: 2dbc75b9-e993-4e4d-a071-91ac5a218672.
+Read-Only.
+Returned by default.
+Supports: $select.
+Does not support $search, $filter, $orderBy.
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 ## RELATED LINKS

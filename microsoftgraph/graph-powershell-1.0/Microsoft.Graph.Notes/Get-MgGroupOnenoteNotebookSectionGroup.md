@@ -17,25 +17,55 @@ Nullable.
 
 ## SYNTAX
 
+### List (Default)
 ```
 Get-MgGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### List1
+```
+Get-MgGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <String> -SectionGroupId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <String> -SectionGroupId <String>
+ -SectionGroupId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgGroupOnenoteNotebookSectionGroup -GroupId <String> -NotebookId <String> -SectionGroupId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The section groups in the notebook.
 Read-only.
 Nullable.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
-| Application | Not supported |
 
 ## PARAMETERS
 
@@ -44,7 +74,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -60,7 +90,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -90,7 +120,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -105,7 +135,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List, List1, Get1, Get
 Aliases:
 
 Required: True
@@ -130,12 +160,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: INotesIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -NotebookId
 The unique identifier of notebook
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List, List1, Get1, Get
 Aliases:
 
 Required: True
@@ -150,7 +196,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -210,10 +256,40 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SectionGroupId
+The unique identifier of sectionGroup
+
+```yaml
+Type: String
+Parameter Sets: List1, Get1, Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SectionGroupId1
+The unique identifier of sectionGroup
+
+```yaml
+Type: String
+Parameter Sets: Get1
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -225,7 +301,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -240,7 +316,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases: Limit
 
 Required: False
@@ -255,7 +331,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -270,15 +346,35 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.INotesIdentity
 ### System.Collections.IDictionary
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSectionGroup
 ## NOTES
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksectiongroup)
+
 
 
 

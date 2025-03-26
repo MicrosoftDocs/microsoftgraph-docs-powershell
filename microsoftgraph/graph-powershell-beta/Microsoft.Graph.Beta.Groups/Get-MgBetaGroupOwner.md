@@ -11,7 +11,7 @@ ms.subservice: entra-groups
 ## SYNOPSIS
 Retrieve a list of the group's owners.
 The owners are a set of users who are allowed to modify the group object.
-Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange, distribution groups, or groups that are synchronized from an on-premises environment.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupOwner](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwner?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Get-MgBetaGroupOwner -GroupId <String> [-ExpandProperty <String[]>] [-Filter <St
 ## DESCRIPTION
 Retrieve a list of the group's owners.
 The owners are a set of users who are allowed to modify the group object.
-Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange, distribution groups, or groups that are synchronized from an on-premises environment.
 
 **Permissions**
 

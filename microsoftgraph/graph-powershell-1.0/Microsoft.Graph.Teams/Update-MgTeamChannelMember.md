@@ -9,7 +9,8 @@ ms.subservice: teams
 # Update-MgTeamChannelMember
 
 ## SYNOPSIS
-Update the role of a conversationMember in a team or channel.
+Update the role of a conversationMember in a channel.
+This operation is allowed only for channels with a membershipType value of private or shared.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelMember?view=graph-powershell-beta)
@@ -47,7 +48,8 @@ Update-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the role of a conversationMember in a team or channel.
+Update the role of a conversationMember in a channel.
+This operation is allowed only for channels with a membershipType value of private or shared.
 
 **Permissions**
 
@@ -55,7 +57,7 @@ Update the role of a conversationMember in a team or channel.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMember.ReadWrite.All, TeamMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | TeamMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, ChannelMember.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -234,9 +236,9 @@ Accept wildcard characters: False
 
 ### -Roles
 The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
 
 ```yaml
@@ -336,9 +338,9 @@ BODYPARAMETER `<IMicrosoftGraphConversationMember>`: conversationMember
 Read-only.
   - `[DisplayName <String>]`: The display name of the user.
   - `[Roles <String- `[]`>]`: The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
@@ -382,7 +384,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmember)
 
-[https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-1.0)
 
 
 

@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Name of the configuration profile for syncing identities.
+
 
 ```yaml
 Type: String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Errors
-All errors associated with this synchronization profile.
+
 To construct, see NOTES section for ERRORS properties and create a hash table.
 
 ```yaml
@@ -113,10 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDate
-The date the profile should be considered expired and cease syncing.
-Provide the date in YYYY-MM-DD format, following ISO 8601.
-Maximum value is 18 months from profile creation.
-(optional)
+
 
 ```yaml
 Type: DateTime
@@ -131,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -HandleSpecialCharacterConstraint
-Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.
+
 
 ```yaml
 Type: SwitchParameter
@@ -192,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicensesToAssign
-License setup configuration.
+
 To construct, see NOTES section for LICENSESTOASSIGN properties and create a hash table.
 
 ```yaml
@@ -321,60 +318,57 @@ BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationProfile>`: educationSynch
 Read-only.
   - `[DataProvider <IMicrosoftGraphEducationSynchronizationDataProvider>]`: educationSynchronizationDataProvider
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: Name of the configuration profile for syncing identities.
-  - `[Errors <IMicrosoftGraphEducationSynchronizationError- `[]`>]`: All errors associated with this synchronization profile.
+  - `[DisplayName <String>]`: 
+  - `[Errors <IMicrosoftGraphEducationSynchronizationError- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[EntryType <String>]`: Represents the sync entity (school, section, student, teacher).
-    - `[ErrorCode <String>]`: Represents the error code for this error.
-    - `[ErrorMessage <String>]`: Contains a description of the error.
-    - `[JoiningValue <String>]`: The unique identifier for the entry.
-    - `[RecordedDateTime <DateTime?>]`: The time of occurrence of this error.
-    - `[ReportableIdentifier <String>]`: The identifier of this error entry.
-  - `[ExpirationDate <DateTime?>]`: The date the profile should be considered expired and cease syncing.
-Provide the date in YYYY-MM-DD format, following ISO 8601.
-Maximum value is 18 months from profile creation. 
-(optional)
-  - `[HandleSpecialCharacterConstraint <Boolean?>]`: Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.
+    - `[EntryType <String>]`: 
+    - `[ErrorCode <String>]`: 
+    - `[ErrorMessage <String>]`: 
+    - `[JoiningValue <String>]`: 
+    - `[RecordedDateTime <DateTime?>]`: 
+    - `[ReportableIdentifier <String>]`: 
+  - `[ExpirationDate <DateTime?>]`: 
+  - `[HandleSpecialCharacterConstraint <Boolean?>]`: 
   - `[IdentitySynchronizationConfiguration <IMicrosoftGraphEducationIdentitySynchronizationConfiguration>]`: educationIdentitySynchronizationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>]`: License setup configuration.
+  - `[LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>]`: 
     - `[AppliesTo <String>]`: educationUserRole
-    - `[SkuIds <String- `[]`>]`: Represents the SKU identifiers of the licenses to assign.
+    - `[SkuIds <String- `[]`>]`: 
   - `[ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>]`: educationSynchronizationProfileStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
-    - `[LastActivityDateTime <DateTime?>]`: Date and time when most recent changes were observed in the profile.
-    - `[LastSynchronizationDateTime <DateTime?>]`: Date and time of the most recent successful synchronization.
+    - `[ErrorCount <Int64?>]`: 
+    - `[LastActivityDateTime <DateTime?>]`: 
+    - `[LastSynchronizationDateTime <DateTime?>]`: 
     - `[Status <String>]`: educationSynchronizationStatus
-    - `[StatusMessage <String>]`: Status message for the synchronization stage of the current profile.
+    - `[StatusMessage <String>]`: 
   - `[State <String>]`: educationSynchronizationProfileState
 
-ERRORS `<IMicrosoftGraphEducationSynchronizationError- `[]`>`: All errors associated with this synchronization profile.
+ERRORS `<IMicrosoftGraphEducationSynchronizationError- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[EntryType <String>]`: Represents the sync entity (school, section, student, teacher).
-  - `[ErrorCode <String>]`: Represents the error code for this error.
-  - `[ErrorMessage <String>]`: Contains a description of the error.
-  - `[JoiningValue <String>]`: The unique identifier for the entry.
-  - `[RecordedDateTime <DateTime?>]`: The time of occurrence of this error.
-  - `[ReportableIdentifier <String>]`: The identifier of this error entry.
+  - `[EntryType <String>]`: 
+  - `[ErrorCode <String>]`: 
+  - `[ErrorMessage <String>]`: 
+  - `[JoiningValue <String>]`: 
+  - `[RecordedDateTime <DateTime?>]`: 
+  - `[ReportableIdentifier <String>]`: 
 
-LICENSESTOASSIGN `<IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>`: License setup configuration.
+LICENSESTOASSIGN `<IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>`: .
   - `[AppliesTo <String>]`: educationUserRole
-  - `[SkuIds <String- `[]`>]`: Represents the SKU identifiers of the licenses to assign.
+  - `[SkuIds <String- `[]`>]`: 
 
 PROFILESTATUS `<IMicrosoftGraphEducationSynchronizationProfileStatus>`: educationSynchronizationProfileStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
-  - `[LastActivityDateTime <DateTime?>]`: Date and time when most recent changes were observed in the profile.
-  - `[LastSynchronizationDateTime <DateTime?>]`: Date and time of the most recent successful synchronization.
+  - `[ErrorCount <Int64?>]`: 
+  - `[LastActivityDateTime <DateTime?>]`: 
+  - `[LastSynchronizationDateTime <DateTime?>]`: 
   - `[Status <String>]`: educationSynchronizationStatus
-  - `[StatusMessage <String>]`: Status message for the synchronization stage of the current profile.
+  - `[StatusMessage <String>]`:
 
 ## RELATED LINKS
 

@@ -12,9 +12,6 @@ ms.subservice: entra-applications
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Suspend-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Pause (Default)
@@ -43,7 +40,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: Pause
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

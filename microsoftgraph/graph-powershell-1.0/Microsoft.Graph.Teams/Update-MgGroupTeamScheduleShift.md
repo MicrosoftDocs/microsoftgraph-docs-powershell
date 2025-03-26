@@ -19,7 +19,7 @@ Update the navigation property shifts in groups
 ```
 Update-MgGroupTeamScheduleShift -GroupId <String> -ShiftId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
+ [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ Update-MgGroupTeamScheduleShift -GroupId <String> -ShiftId <String> -BodyParamet
 ```
 Update-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
+ [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -158,6 +158,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsStagedForDeletion
+The shift is marked for deletion, a process that is finalized when the schedule is shared.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -345,18 +360,19 @@ Required.
       - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
       - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
       - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
       - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
       - `[Theme <String>]`: scheduleEntityTheme
     - `[DisplayName <String>]`: The shift label of the shiftItem.
     - `[Notes <String>]`: The shift notes for the shiftItem.
+  - `[IsStagedForDeletion <Boolean?>]`: The shift is marked for deletion, a process that is finalized when the schedule is shared.
   - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of.
 Required.
   - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
@@ -376,13 +392,13 @@ Required.
     - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
     - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
     - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
     - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
     - `[Theme <String>]`: scheduleEntityTheme
@@ -448,13 +464,13 @@ Required.
     - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
     - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
     - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
     - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
     - `[Theme <String>]`: scheduleEntityTheme

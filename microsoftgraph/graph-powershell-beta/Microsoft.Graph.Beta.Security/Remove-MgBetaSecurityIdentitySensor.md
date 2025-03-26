@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysensor
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Remove-MgBetaSecurityIdentitySensor
 
 ## SYNOPSIS
 Delete a sensor object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityIdentitySensor](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityIdentitySensor?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -210,6 +214,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
@@ -279,6 +284,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
@@ -290,7 +296,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysensor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysensor)
 
-[https://learn.microsoft.com/graph/api/security-identitycontainer-delete-sensors?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-identitycontainer-delete-sensors?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/security-sensor-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensor-delete?view=graph-rest-beta)
 
 
 

@@ -9,7 +9,7 @@ ms.subservice: entra-id-governance
 # Remove-MgEntitlementManagementAccessPackageResourceRoleScope
 
 ## SYNOPSIS
-Remove a accessPackageResourceRoleScope from an accessPackage list of resource role scopes.
+Remove an accessPackageResourceRoleScope from an accessPackage list of resource role scopes.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Remove-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Remove a accessPackageResourceRoleScope from an accessPackage list of resource role scopes.
+Remove an accessPackageResourceRoleScope from an accessPackage list of resource role scopes.
 
 ## EXAMPLES
 ### Example 1: Code snippet

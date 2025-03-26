@@ -75,6 +75,7 @@ Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 $params = @{
 	description = "Update basic properties and permission of application registrations"
+### Example 2
 	rolePermissions = @(
 		@{
 			allowedResourceActions = @(
@@ -89,6 +90,8 @@ Update-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifi
 
 ```
 This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
+
 
 ## PARAMETERS
 
@@ -549,10 +552,10 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
   - `[DeviceManagementAutopilotEventId <String>]`: The unique identifier of deviceManagementAutopilotEvent
-  - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: The unique identifier of deviceManagementAutopilotPolicyStatusDetail
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
   - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
+  - `[ExpiringBeforeDateTime <String>]`: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
   - `[ImportedAppleDeviceIdentityId <String>]`: The unique identifier of importedAppleDeviceIdentity
   - `[ImportedDeviceIdentityId <String>]`: The unique identifier of importedDeviceIdentity
   - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of importedWindowsAutopilotDeviceIdentity

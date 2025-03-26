@@ -156,6 +156,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
+  - `[AlertConfigurationId <String>]`: The unique identifier of alertConfiguration
+  - `[AlertId <String>]`: The unique identifier of alert
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[AuthenticationsMetricId <String>]`: The unique identifier of authenticationsMetric
@@ -177,6 +179,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[InsightSummaryId <String>]`: The unique identifier of insightSummary
   - `[ManifestId <String>]`: The unique identifier of manifest
   - `[MfaCompletionMetricId <String>]`: The unique identifier of mfaCompletionMetric
+  - `[MfaTelecomFraudMetricId <String>]`: The unique identifier of mfaTelecomFraudMetric
+  - `[MfaUserCountMetricId <String>]`: The unique identifier of mfaUserCountMetric
   - `[MonthlyInactiveUsersByApplicationMetricId <String>]`: The unique identifier of monthlyInactiveUsersByApplicationMetric
   - `[MonthlyInactiveUsersMetricId <String>]`: The unique identifier of monthlyInactiveUsersMetric
   - `[OperationId <String>]`: The unique identifier of operation
@@ -186,6 +190,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[PrintUsageId <String>]`: The unique identifier of printUsage
   - `[PrinterId <String>]`: Usage: printerId='{printerId}'
   - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
+  - `[SelfServiceSignUpId <String>]`: The unique identifier of selfServiceSignUp
   - `[ServicePrincipalSignInActivityId <String>]`: The unique identifier of servicePrincipalSignInActivity
   - `[SignInId <String>]`: The unique identifier of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}

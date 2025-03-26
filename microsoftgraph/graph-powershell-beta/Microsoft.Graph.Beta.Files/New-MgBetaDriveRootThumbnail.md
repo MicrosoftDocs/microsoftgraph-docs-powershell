@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-thumbnailSet
+The ThumbnailSet resource is a keyed collection of thumbnail resources.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -285,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphThumbnailSet>`: thumbnailSet
+BODYPARAMETER `<IMicrosoftGraphThumbnailSet>`: The ThumbnailSet resource is a keyed collection of thumbnail resources.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

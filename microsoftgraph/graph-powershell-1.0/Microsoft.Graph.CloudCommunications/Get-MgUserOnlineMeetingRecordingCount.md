@@ -32,6 +32,14 @@ Get-MgUserOnlineMeetingRecordingCount -InputObject <ICloudCommunicationsIdentity
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetingRecording.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetingRecording.Read.Chat,  |
+
 ## PARAMETERS
 
 ### -Filter

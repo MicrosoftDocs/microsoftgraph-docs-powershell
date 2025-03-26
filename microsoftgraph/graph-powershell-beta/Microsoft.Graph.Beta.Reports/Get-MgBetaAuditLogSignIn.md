@@ -10,7 +10,8 @@ ms.subservice: entra-monitoring-health
 # Get-MgBetaAuditLogSignIn
 
 ## SYNOPSIS
-Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
+Retrieve a specific Microsoft Entra user sign-in event for your tenant.
+Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)
@@ -40,7 +41,8 @@ Get-MgBetaAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
+Retrieve a specific Microsoft Entra user sign-in event for your tenant.
+Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
 **Permissions**
 
@@ -332,6 +334,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
+  - `[AlertConfigurationId <String>]`: The unique identifier of alertConfiguration
+  - `[AlertId <String>]`: The unique identifier of alert
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[AuthenticationsMetricId <String>]`: The unique identifier of authenticationsMetric
@@ -353,6 +357,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[InsightSummaryId <String>]`: The unique identifier of insightSummary
   - `[ManifestId <String>]`: The unique identifier of manifest
   - `[MfaCompletionMetricId <String>]`: The unique identifier of mfaCompletionMetric
+  - `[MfaTelecomFraudMetricId <String>]`: The unique identifier of mfaTelecomFraudMetric
+  - `[MfaUserCountMetricId <String>]`: The unique identifier of mfaUserCountMetric
   - `[MonthlyInactiveUsersByApplicationMetricId <String>]`: The unique identifier of monthlyInactiveUsersByApplicationMetric
   - `[MonthlyInactiveUsersMetricId <String>]`: The unique identifier of monthlyInactiveUsersMetric
   - `[OperationId <String>]`: The unique identifier of operation
@@ -362,6 +368,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[PrintUsageId <String>]`: The unique identifier of printUsage
   - `[PrinterId <String>]`: Usage: printerId='{printerId}'
   - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
+  - `[SelfServiceSignUpId <String>]`: The unique identifier of selfServiceSignUp
   - `[ServicePrincipalSignInActivityId <String>]`: The unique identifier of servicePrincipalSignInActivity
   - `[SignInId <String>]`: The unique identifier of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}

@@ -39,6 +39,14 @@ Get-MgBetaNetworkAccessConnectivityBranch -InputObject <INetworkAccessIdentity> 
 ## DESCRIPTION
 Retrieve information about a specific branch.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -50,19 +50,6 @@ Pre-configured synchronization settings for a particular application.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
 
-## EXAMPLES
-### Example
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalSynchronizationTemplate Cmdlet.
-
-
 ## PARAMETERS
 
 ### -All
@@ -364,6 +351,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-beta)
+
+
 
 
 

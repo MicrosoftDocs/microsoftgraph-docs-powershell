@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Test-MgBetaDirectoryObjectProperty
@@ -18,9 +17,6 @@ Validate the custom banned words policy3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDirectoryObjectProperty](/powershell/module/Microsoft.Graph.DirectoryObjects/Test-MgDirectoryObjectProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,20 +47,12 @@ Validate the mail nickname is unique This API returns with the first failure enc
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 $params = @{
 	entityType = "Group"
@@ -74,10 +62,6 @@ $params = @{
 }
 
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
-
-```
-This example shows how to use the Test-MgBetaDirectoryObjectProperty Cmdlet.
-
 
 ## PARAMETERS
 

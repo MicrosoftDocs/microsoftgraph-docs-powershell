@@ -48,7 +48,7 @@ Read the properties and relationships of a workflow object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
+| Application | LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Retrieve all workflows created in the tenant

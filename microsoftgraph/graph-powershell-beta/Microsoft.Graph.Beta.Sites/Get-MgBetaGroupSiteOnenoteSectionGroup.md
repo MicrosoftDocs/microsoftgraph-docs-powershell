@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteOnenoteSectionGroup
 
 ## SYNOPSIS
-The section groups in all OneNote notebooks that are owned by the user or group.
+The section groups in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 
@@ -63,7 +63,7 @@ Get-MgBetaGroupSiteOnenoteSectionGroup -InputObject <ISitesIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-The section groups in all OneNote notebooks that are owned by the user or group.
+The section groups in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 

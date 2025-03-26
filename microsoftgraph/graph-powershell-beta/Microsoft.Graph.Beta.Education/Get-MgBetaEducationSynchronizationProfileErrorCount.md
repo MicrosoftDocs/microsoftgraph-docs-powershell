@@ -29,14 +29,6 @@ Get-MgBetaEducationSynchronizationProfileErrorCount -InputObject <IEducationIden
 ## DESCRIPTION
 Get the number of the resource
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAdministration.Read.All, EduAdministration.ReadWrite.All,  |
-
 ## PARAMETERS
 
 ### -EducationSynchronizationProfileId
@@ -180,6 +172,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
+  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
+  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
 
 ## RELATED LINKS
 

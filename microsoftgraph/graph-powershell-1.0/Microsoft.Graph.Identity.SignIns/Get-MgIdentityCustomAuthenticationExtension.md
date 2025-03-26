@@ -11,6 +11,7 @@ ms.subservice: entra-sign-in
 
 ## SYNOPSIS
 Read the properties and relationships of a customAuthenticationExtension object.
+The following derived types are currently supported.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ Get-MgIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsIdenti
 
 ## DESCRIPTION
 Read the properties and relationships of a customAuthenticationExtension object.
+The following derived types are currently supported.
 
 **Permissions**
 

@@ -26,7 +26,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All,  |
+| Application | Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## PARAMETERS
 

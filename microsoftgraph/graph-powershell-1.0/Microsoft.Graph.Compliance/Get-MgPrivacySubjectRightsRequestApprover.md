@@ -306,6 +306,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
 
 ## RELATED LINKS
 

@@ -61,7 +61,7 @@ Content in a message hosted by Microsoft Teams - for example, images or code sni
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMessage.Read.Chat, Chat.ReadWrite.All, Chat.Read.All,  |
+| Application | ChatMessage.Read.Chat, ChatMessage.ReadWriteSelected.Chat, Chat.ReadWrite.All, Chat.Read.All,  |
 
 ## PARAMETERS
 

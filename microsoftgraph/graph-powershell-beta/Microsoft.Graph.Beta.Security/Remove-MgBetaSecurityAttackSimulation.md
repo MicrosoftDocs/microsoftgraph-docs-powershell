@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulation
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Remove-MgBetaSecurityAttackSimulation
 
 ## SYNOPSIS
-Delete navigation property attackSimulation for security
+Delete an attack simulation campaign for a tenant.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulation?view=graph-powershell-1.0)
@@ -16,13 +17,6 @@ Delete navigation property attackSimulation for security
 ## SYNTAX
 
 ### Delete (Default)
-```
-Remove-MgBetaSecurityAttackSimulation [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete1
 ```
 Remove-MgBetaSecurityAttackSimulation -SimulationId <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
@@ -37,7 +31,20 @@ Remove-MgBetaSecurityAttackSimulation -InputObject <ISecurityIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete navigation property attackSimulation for security
+Delete an attack simulation campaign for a tenant.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Remove-MgBetaSecurityAttackSimulation -SimulationId $simulationId
+
+```
+This example shows how to use the Remove-MgBetaSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -137,7 +144,7 @@ The unique identifier of simulation
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -207,6 +214,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
@@ -276,6 +284,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
@@ -288,7 +297,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulation)
 
 [https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-beta)
-
 
 
 

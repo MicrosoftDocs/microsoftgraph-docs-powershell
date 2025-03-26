@@ -10,7 +10,7 @@ ms.subservice: entra-directory-management
 
 ## SYNOPSIS
 Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
-See Using Delta Query for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleDelta?view=graph-powershell-1.0)
@@ -26,7 +26,7 @@ Get-MgBetaDirectoryRoleDelta [-ExpandProperty <String[]>] [-Filter <String>] [-P
 
 ## DESCRIPTION
 Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
-See Using Delta Query for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**
 

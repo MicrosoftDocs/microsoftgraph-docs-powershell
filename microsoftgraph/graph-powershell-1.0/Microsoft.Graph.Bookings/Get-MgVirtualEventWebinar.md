@@ -11,6 +11,7 @@ ms.subservice: cloud-communications
 
 ## SYNOPSIS
 Read the properties and relationships of a virtualEventWebinar object.
+All roles can get the details of a webinar event.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ Get-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinar object.
+All roles can get the details of a webinar event.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -311,10 +313,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

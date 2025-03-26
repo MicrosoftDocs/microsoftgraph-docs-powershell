@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaNetworkAccessConnectivityRemoteNetwork
 
 ## SYNOPSIS
-Represent locations, such as branches, that are connected to Global Secure Access services through an IPsec tunnel.
+The locations, such as branches, that are connected to Global Secure Access services through an IPsec tunnel.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetwork -InputObject <INetworkAccessIde
 ```
 
 ## DESCRIPTION
-Represent locations, such as branches, that are connected to Global Secure Access services through an IPsec tunnel.
+The locations, such as branches, that are connected to Global Secure Access services through an IPsec tunnel.
 
 ## PARAMETERS
 

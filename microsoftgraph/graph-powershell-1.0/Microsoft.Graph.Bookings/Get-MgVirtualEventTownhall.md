@@ -10,6 +10,7 @@ ms.subservice: cloud-communications
 
 ## SYNOPSIS
 Read the properties and relationships of a virtualEventTownhall object.
+All roles can get the details of a townhall event.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhall](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhall?view=graph-powershell-beta)
@@ -40,6 +41,7 @@ Get-MgVirtualEventTownhall -InputObject <IBookingsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventTownhall object.
+All roles can get the details of a townhall event.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -310,10 +312,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

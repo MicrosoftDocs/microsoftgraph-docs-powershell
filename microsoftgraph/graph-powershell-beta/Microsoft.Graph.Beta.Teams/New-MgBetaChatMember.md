@@ -54,7 +54,7 @@ Add a conversationMember to a chat.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChatMember.ReadWrite, Chat.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMember.ReadWrite.All, Chat.ReadWrite.All, Chat.Manage.Chat,  |
+| Application | Chat.Manage.Chat, ChatMember.ReadWrite.All, Chat.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Add a single member to a chat and specify the timespan for the conversation history
@@ -452,6 +452,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 

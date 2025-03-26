@@ -64,7 +64,7 @@ In Microsoft Entra entitlement management, retrieve the properties and relations
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1cenario1 for u1ing query parameter1
+### Example scenarios for using query parameters
 
 ```powershell
 
@@ -73,7 +73,7 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgEntitlementManagementAssignmentRequest
 
 ```
-This example shows scenarios for using query parameters
+This example shows how to use the Get-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 
 ## PARAMETERS

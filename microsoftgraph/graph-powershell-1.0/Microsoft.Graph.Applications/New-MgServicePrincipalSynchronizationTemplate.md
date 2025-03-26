@@ -73,7 +73,7 @@ Identifier of the application this template belongs to.
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Aliases: ObjectId
 
 Required: False
 Position: Named

@@ -4,12 +4,13 @@ Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationpayload
 schema: 2.0.0
 ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityAttackSimulationPayload
 
 ## SYNOPSIS
-Represents an attack simulation training campaign payload in a tenant.
+Get an attack simulation campaign payload for a tenant.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
@@ -53,7 +54,7 @@ Get-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Represents an attack simulation training campaign payload in a tenant.
+Get an attack simulation campaign payload for a tenant.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -341,6 +342,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
@@ -410,6 +412,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
@@ -420,6 +423,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationpayload)
+
+[https://learn.microsoft.com/graph/api/payload-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/payload-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/attacksimulationroot-list-payloads?view=graph-rest-beta](https://learn.microsoft.com/graph/api/attacksimulationroot-list-payloads?view=graph-rest-beta)
 

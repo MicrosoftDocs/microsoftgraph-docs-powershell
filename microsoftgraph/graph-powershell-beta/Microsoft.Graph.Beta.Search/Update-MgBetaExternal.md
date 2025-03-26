@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationSystems
-Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.
+Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, or Google Cloud Platform (GCP) project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.
 To construct, see NOTES section for AUTHORIZATIONSYSTEMS properties and create a hash table.
 
 ```yaml
@@ -207,7 +207,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATIONSYSTEMS `<IMicrosoftGraphAuthorizationSystem- `[]`>`: Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.
+AUTHORIZATIONSYSTEMS `<IMicrosoftGraphAuthorizationSystem- `[]`>`: Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, or Google Cloud Platform (GCP) project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AuthorizationSystemId <String>]`: ID of the authorization system retrieved from the customer cloud environment.
@@ -226,7 +226,7 @@ Read-only.
 
 BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AuthorizationSystems <IMicrosoftGraphAuthorizationSystem- `[]`>]`: Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.
+  - `[AuthorizationSystems <IMicrosoftGraphAuthorizationSystem- `[]`>]`: Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, or Google Cloud Platform (GCP) project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AuthorizationSystemId <String>]`: ID of the authorization system retrieved from the customer cloud environment.
@@ -272,7 +272,7 @@ Required.
           - `[ValuesJoinedBy <String>]`: binaryOperator
     - `[Configuration <IMicrosoftGraphExternalConnectorsConfiguration>]`: configuration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AuthorizedAppIds <String- `[]`>]`: A collection of application IDs for registered Microsoft Entra apps that are allowed to manage the externalConnection and to index content in the externalConnection.
+      - `[AuthorizedAppIds <String- `[]`>]`: A collection of application IDs for registered Microsoft Entra apps allowed to manage the externalConnection and index content in the externalConnection.
     - `[ConnectorId <String>]`: The Teams App ID.
 Optional.
     - `[Description <String>]`: Description of the connection displayed in the Microsoft 365 admin center.
@@ -384,7 +384,7 @@ Optional.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
 Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-You must use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl.
+Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl.
         - `[Name <String>]`: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
@@ -545,7 +545,7 @@ Required.
         - `[ValuesJoinedBy <String>]`: binaryOperator
   - `[Configuration <IMicrosoftGraphExternalConnectorsConfiguration>]`: configuration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AuthorizedAppIds <String- `[]`>]`: A collection of application IDs for registered Microsoft Entra apps that are allowed to manage the externalConnection and to index content in the externalConnection.
+    - `[AuthorizedAppIds <String- `[]`>]`: A collection of application IDs for registered Microsoft Entra apps allowed to manage the externalConnection and index content in the externalConnection.
   - `[ConnectorId <String>]`: The Teams App ID.
 Optional.
   - `[Description <String>]`: Description of the connection displayed in the Microsoft 365 admin center.
@@ -657,7 +657,7 @@ Optional.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
 Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-You must use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl.
+Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl.
       - `[Name <String>]`: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.

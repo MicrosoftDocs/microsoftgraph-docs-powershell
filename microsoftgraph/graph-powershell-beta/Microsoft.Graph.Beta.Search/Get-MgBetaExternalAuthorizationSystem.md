@@ -9,7 +9,7 @@ ms.subservice: entra-permissions-management
 # Get-MgBetaExternalAuthorizationSystem
 
 ## SYNOPSIS
-Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.
+Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, or Google Cloud Platform (GCP) project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Represents an onboarded AWS account, Azure subscription, or GCP project that Microsoft Entra Permissions Management will collect and analyze permissions and actions on.
+Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, or Google Cloud Platform (GCP) project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.
 
 ## EXAMPLES
 ### Example 1: List authorization systems onboarded to Permissions Management
