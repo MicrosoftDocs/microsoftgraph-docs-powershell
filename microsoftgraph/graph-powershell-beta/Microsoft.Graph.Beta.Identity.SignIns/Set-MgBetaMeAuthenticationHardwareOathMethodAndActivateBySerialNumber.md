@@ -40,18 +40,6 @@ Assign and activate a hardware token at the same time by hardware token serial n
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -248,6 +236,7 @@ BODYPARAMETER `<IPaths3E7Mp2MeAuthenticationHardwareoathmethodsMicrosoftGraphAss
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetameauthenticationhardwareoathmethodandactivatebyserialnumber](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetameauthenticationhardwareoathmethodandactivatebyserialnumber)
 
 [https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber?view=graph-rest-beta](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber?view=graph-rest-beta)
+
 
 
 

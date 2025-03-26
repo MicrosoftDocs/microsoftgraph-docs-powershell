@@ -49,18 +49,6 @@ This allows you to maintain and synchronize a local store of events in the speci
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -372,6 +360,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventdelta)
 
 [https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0)
+
 
 
 

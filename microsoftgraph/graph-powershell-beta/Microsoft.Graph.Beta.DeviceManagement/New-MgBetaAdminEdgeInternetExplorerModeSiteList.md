@@ -38,11 +38,11 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphB
 Create a new browserSiteList object to support Internet Explorer mode.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement
-```
 
 $params = @{
 	displayName = "Production Site List A"
@@ -50,6 +50,10 @@ $params = @{
 }
 
 New-MgBetaAdminEdgeInternetExplorerModeSiteList -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 

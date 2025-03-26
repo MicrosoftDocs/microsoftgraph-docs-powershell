@@ -62,9 +62,8 @@ The table in the Permissions section lists the resources that support open exten
 | Application | Not supported |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgReplyGroupThread Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	Post = @{
@@ -76,9 +75,10 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Invoke-MgReplyGroupThread Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	Post = @{
@@ -97,9 +97,10 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
-### EXAMPLE 3
-```
+This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Invoke-MgReplyGroupThread Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	Post = @{
@@ -121,9 +122,10 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
-### EXAMPLE 4
-```
+This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Invoke-MgReplyGroupThread Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	Post = @{
@@ -145,6 +147,8 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

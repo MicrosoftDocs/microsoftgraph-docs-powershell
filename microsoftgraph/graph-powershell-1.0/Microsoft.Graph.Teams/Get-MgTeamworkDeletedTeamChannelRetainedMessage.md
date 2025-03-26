@@ -37,18 +37,6 @@ Get-MgTeamworkDeletedTeamChannelRetainedMessage -InputObject <ITeamsIdentity> [-
 Get all retained messages across all channels in a team.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -303,6 +291,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelretainedmessage)
 
 [https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-1.0)
+
 
 
 

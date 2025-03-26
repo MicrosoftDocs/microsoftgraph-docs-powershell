@@ -43,13 +43,17 @@ Get-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> [-Ex
 Read the properties and relationships of a subcategoryTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId $categoryTemplateId
+
+```
+This example shows how to use the Get-MgBetaSecurityLabelCategorySubcategory Cmdlet.
+
 
 ## PARAMETERS
 

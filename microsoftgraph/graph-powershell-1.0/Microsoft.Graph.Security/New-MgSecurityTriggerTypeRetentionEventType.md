@@ -36,11 +36,11 @@ New-MgSecurityTriggerTypeRetentionEventType -BodyParameter <IMicrosoftGraphSecur
 Create a new retentionEventType object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEventType"
@@ -52,6 +52,10 @@ $params = @{
 }
 
 New-MgSecurityTriggerTypeRetentionEventType -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityTriggerTypeRetentionEventType Cmdlet.
+
 
 ## PARAMETERS
 

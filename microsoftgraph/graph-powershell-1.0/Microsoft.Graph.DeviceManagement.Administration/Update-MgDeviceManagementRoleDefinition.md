@@ -60,14 +60,14 @@ Update the properties of a roleDefinition object.
 | Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleDefinition"
+	"@odata.type" = "#microsoft.graph.roleDefinition"
 	displayName = "Display Name value"
 	description = "Description value"
 	rolePermissions = @(
@@ -90,6 +90,10 @@ isBuiltIn = $true
 }
 
 Update-MgDeviceManagementRoleDefinition -RoleDefinitionId $roleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

@@ -53,17 +53,21 @@ Update-MgBetaNetworkAccessConnectivityBranch -InputObject <INetworkAccessIdentit
 Update the configuration or properties of a specific branch.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	name = "My updated branch"
 }
 
 Update-MgBetaNetworkAccessConnectivityBranch -BranchSiteId $branchSiteId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessConnectivityBranch Cmdlet.
+
 
 ## PARAMETERS
 

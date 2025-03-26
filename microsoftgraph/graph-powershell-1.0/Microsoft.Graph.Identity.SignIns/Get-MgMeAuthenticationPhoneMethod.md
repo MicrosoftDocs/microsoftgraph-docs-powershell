@@ -52,18 +52,6 @@ This method is available only for standard Microsoft Entra ID and B2B users, but
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -377,6 +365,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/phoneauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/authentication-list-phonemethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-phonemethods?view=graph-rest-1.0)
+
+
 
 
 

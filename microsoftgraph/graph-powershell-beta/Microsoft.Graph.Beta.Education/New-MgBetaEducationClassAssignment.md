@@ -78,14 +78,14 @@ Assignments start in draft status, which means that students can't see the assig
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
-	dueDateTime = \[System.DateTime\]::Parse("2022-09-16T00:00:00Z")
+	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
 	displayName = "Reading test 09.14 Beta"
 	instructions = @{
 		contentType = "text"
@@ -103,6 +103,10 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationClassAssignment Cmdlet.
+
 
 ## PARAMETERS
 

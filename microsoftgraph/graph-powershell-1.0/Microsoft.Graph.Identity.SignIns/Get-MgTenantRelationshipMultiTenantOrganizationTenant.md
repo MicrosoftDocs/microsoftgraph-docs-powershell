@@ -43,13 +43,17 @@ Get-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentitySig
 Get a tenant and its properties in the multitenant organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgTenantRelationshipMultiTenantOrganizationTenant
+
+```
+This example shows how to use the Get-MgTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
 
 ## PARAMETERS
 

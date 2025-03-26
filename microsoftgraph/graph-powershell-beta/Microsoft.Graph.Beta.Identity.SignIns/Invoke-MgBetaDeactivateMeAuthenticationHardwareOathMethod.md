@@ -32,18 +32,6 @@ Invoke-MgBetaDeactivateMeAuthenticationHardwareOathMethod -InputObject <IIdentit
 Deactive a hardware OATH token.
 It remains assigned to a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HardwareOathAuthenticationMethodId
@@ -272,6 +260,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadeactivatemeauthenticationhardwareoathmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadeactivatemeauthenticationhardwareoathmethod)
 
 [https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-deactivate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-deactivate?view=graph-rest-beta)
+
 
 
 

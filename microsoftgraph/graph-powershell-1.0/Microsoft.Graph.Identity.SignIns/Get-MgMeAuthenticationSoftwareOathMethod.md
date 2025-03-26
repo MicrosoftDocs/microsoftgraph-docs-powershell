@@ -50,18 +50,6 @@ Retrieve a user's single Software OATH token authentication method object and it
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -375,6 +363,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/softwareoathauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/softwareoathauthenticationmethod-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/authentication-list-softwareoathmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-softwareoathmethods?view=graph-rest-1.0)
+
+
 
 
 

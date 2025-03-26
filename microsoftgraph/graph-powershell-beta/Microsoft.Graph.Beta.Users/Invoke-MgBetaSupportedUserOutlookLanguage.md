@@ -46,16 +46,18 @@ You can subsequently get the preferred language bygetting the user's mailbox set
 | Application | User.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaSupportedUserOutlookLanguage -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaSupportedUserOutlookLanguage Cmdlet.
+
 
 ## PARAMETERS
 

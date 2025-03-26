@@ -30,13 +30,17 @@ Complete-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagemen
 Complete a recommendation object and update its status to completedByUser.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Complete-MgBetaDirectoryRecommendation -RecommendationId $recommendationId
+
+```
+This example shows how to use the Complete-MgBetaDirectoryRecommendation Cmdlet.
+
 
 ## PARAMETERS
 

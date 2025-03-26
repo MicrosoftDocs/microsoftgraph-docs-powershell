@@ -62,16 +62,31 @@ This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply-all to a message, and send it later.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Mail
+
+$params = @{
+	message = @{
+		attachments = @(
+			@{
+				"@odata.type" = "#microsoft.graph.fileAttachment"
+				name = "guidelines.txt"
+				contentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+			}
+		)
+	}
+	comment = "Please take a look at the attached guidelines before you decide on the name."
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaReplyAllUserMessage Cmdlet.
+
 
 ## PARAMETERS
 

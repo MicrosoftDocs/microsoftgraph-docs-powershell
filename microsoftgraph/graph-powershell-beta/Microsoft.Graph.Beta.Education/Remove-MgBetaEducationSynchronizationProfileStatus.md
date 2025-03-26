@@ -29,18 +29,6 @@ Remove-MgBetaEducationSynchronizationProfileStatus -InputObject <IEducationIdent
 ## DESCRIPTION
 Delete navigation property profileStatus for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationSynchronizationProfileId
@@ -221,6 +209,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationsynchronizationprofilestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationsynchronizationprofilestatus)
+
 
 
 

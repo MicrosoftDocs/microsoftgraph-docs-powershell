@@ -41,13 +41,17 @@ Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 Read the properties and relationships of a permissionsRequestChange object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange -Filter "modificationDateTime gt {t}"
+Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange -Filter "modificationDateTime gt {t}" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange Cmdlet.
+
 
 ## PARAMETERS
 

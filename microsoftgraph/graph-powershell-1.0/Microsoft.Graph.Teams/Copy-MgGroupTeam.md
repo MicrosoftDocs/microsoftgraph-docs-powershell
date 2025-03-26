@@ -65,18 +65,6 @@ After the POST clone returns, you need to GET the operation returned by the Loca
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -388,6 +376,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mggroupteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mggroupteam)
 
 [https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-1.0)
+
 
 
 

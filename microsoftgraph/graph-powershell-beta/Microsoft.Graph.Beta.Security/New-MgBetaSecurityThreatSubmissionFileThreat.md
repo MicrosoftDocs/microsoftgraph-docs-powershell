@@ -43,16 +43,24 @@ Create a new fileThreatSubmission object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.fileContentThreatSubmission"
+	category = "malware"
+	fileName = "test.html"
+	fileContent = "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
+}
+
+New-MgBetaSecurityThreatSubmissionFileThreat -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaSecurityThreatSubmissionFileThreat Cmdlet.
+
 
 ## PARAMETERS
 

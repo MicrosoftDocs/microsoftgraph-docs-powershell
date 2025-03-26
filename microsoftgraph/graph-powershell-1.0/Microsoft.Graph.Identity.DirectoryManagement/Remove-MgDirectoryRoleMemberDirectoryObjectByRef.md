@@ -37,13 +37,17 @@ The template ID of a built-in role is immutable and can be seen in the role desc
 For details, see Role template IDs.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryRoleMemberDirectoryObjectByRef -DirectoryRoleId $directoryRoleId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgDirectoryRoleMemberDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

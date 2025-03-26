@@ -34,13 +34,17 @@ Remove-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManage
 Deletes a notificationMessageTemplate.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementNotificationMessageTemplate -NotificationMessageTemplateId $notificationMessageTemplateId
+
+```
+This example shows how to use the Remove-MgDeviceManagementNotificationMessageTemplate Cmdlet.
+
 
 ## PARAMETERS
 

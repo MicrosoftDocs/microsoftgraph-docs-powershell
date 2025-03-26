@@ -34,16 +34,18 @@ Invoke-MgDismissUserEventReminder -InputObject <ICalendarIdentity> [-ResponseHea
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Calendar
+
+# A UPN can also be used as -UserId.
+Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgDismissUserEventReminder Cmdlet.
+
 
 ## PARAMETERS
 

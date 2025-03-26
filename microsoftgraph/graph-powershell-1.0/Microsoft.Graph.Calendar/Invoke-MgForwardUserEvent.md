@@ -56,16 +56,30 @@ If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to an
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	ToRecipients = @(
+		@{
+			EmailAddress = @{
+				Address = "danas@contoso.com"
+				Name = "Dana Swope"
+			}
+		}
+	)
+	Comment = "Dana, hope you can make this meeting."
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgForwardUserEvent Cmdlet.
+
 
 ## PARAMETERS
 

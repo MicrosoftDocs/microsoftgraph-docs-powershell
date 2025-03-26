@@ -37,11 +37,11 @@ Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	servicePrincipalIds = @(
@@ -50,6 +50,10 @@ $params = @{
 }
 
 Confirm-MgRiskyServicePrincipalCompromised -BodyParameter $params
+
+```
+This example shows how to use the Confirm-MgRiskyServicePrincipalCompromised Cmdlet.
+
 
 ## PARAMETERS
 

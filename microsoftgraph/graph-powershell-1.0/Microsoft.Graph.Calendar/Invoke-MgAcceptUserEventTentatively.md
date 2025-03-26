@@ -56,16 +56,33 @@ If the event allows proposals for new times, on responding tentative to the even
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	comment = "I may not be able to make this week. How about next week?"
+	sendResponse = $true
+	proposedNewTime = @{
+		start = @{
+			dateTime = "2019-12-02T18:00:00"
+			timeZone = "Pacific Standard Time"
+		}
+		end = @{
+			dateTime = "2019-12-02T19:00:00"
+			timeZone = "Pacific Standard Time"
+		}
+	}
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgAcceptUserEventTentatively Cmdlet.
+
 
 ## PARAMETERS
 

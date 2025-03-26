@@ -43,16 +43,17 @@ Unassigns the user from an Autopilot device.
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice -WindowsAutopilotDeviceIdentityId $windowsAutopilotDeviceIdentityId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice Cmdlet.
+
 
 ## PARAMETERS
 

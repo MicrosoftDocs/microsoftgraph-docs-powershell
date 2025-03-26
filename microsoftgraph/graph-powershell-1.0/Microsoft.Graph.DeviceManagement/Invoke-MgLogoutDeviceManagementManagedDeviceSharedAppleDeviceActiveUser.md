@@ -31,16 +31,17 @@ Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser
 Logout shared Apple device active user
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser -ManagedDeviceId $managedDeviceId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser Cmdlet.
+
 
 ## PARAMETERS
 

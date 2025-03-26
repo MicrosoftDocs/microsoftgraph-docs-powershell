@@ -52,16 +52,22 @@ Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Mail
+
+$params = @{
+	destinationId = "deleteditems"
+}
+
+# A UPN can also be used as -UserId.
+Move-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Move-MgBetaUserMessage Cmdlet.
+
 
 ## PARAMETERS
 

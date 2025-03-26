@@ -34,13 +34,17 @@ Remove-MgSitePage -InputObject <ISitesIdentity> [-IfMatch <String>] [-ResponseHe
 Delete a baseSitePage from the site pages list in a site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId
+
+```
+This example shows how to use the Remove-MgSitePage Cmdlet.
+
 
 ## PARAMETERS
 
