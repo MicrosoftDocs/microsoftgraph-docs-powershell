@@ -5,7 +5,7 @@ description: "Get started with the Microsoft Graph PowerShell SDK by using it pe
 author: msewaweru
 manager: CelesteDG
 ms.topic: quickstart
-ms.date: 03/05/2024
+ms.date: 03/18/2025
 ms.author: eunicewaweru
 
 #customer intent: As a PowerShell user, I want to learn how to use the Microsoft Graph PowerShell SDK, so that I can perform basic tasks using the Microsoft Graph REST API and authenticate with delegated access.
@@ -21,7 +21,7 @@ The SDK contains two modules, Microsoft.Graph and Microsoft.Graph.Beta that call
 
 ## Authentication
 
-The PowerShell SDK supports two types of authentication: *delegated access*, and *app-only access*. In this guide, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
+The PowerShell SDK supports two types of authentication: *delegated access*, and *app-only access*. In this guide, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call Microsoft Graph.
 
 For details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
