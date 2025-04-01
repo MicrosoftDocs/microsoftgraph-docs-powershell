@@ -39,9 +39,9 @@ For details, see Manage custodians in an eDiscovery (Premium) case.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -256,6 +256,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
   - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -268,6 +269,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability

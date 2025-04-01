@@ -10,7 +10,7 @@ ms.subservice: teams
 # Get-MgChatMember
 
 ## SYNOPSIS
-Retrieve a conversationMember from a chat.
+Retrieve a conversationMember from a chat or channel.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMember?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Retrieve a conversationMember from a chat.
+Retrieve a conversationMember from a chat or channel.
 
 **Permissions**
 
@@ -362,7 +362,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmember)
 
-[https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/conversationmember-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/conversationmember-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-list?view=graph-rest-1.0)
 

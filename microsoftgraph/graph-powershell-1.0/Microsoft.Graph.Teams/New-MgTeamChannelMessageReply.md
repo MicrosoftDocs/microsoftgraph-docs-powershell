@@ -9,7 +9,7 @@ ms.subservice: teams
 # New-MgTeamChannelMessageReply
 
 ## SYNOPSIS
-Send a new reply to a chatMessage in a specified channel.
+Create a new reply to a chatMessage in a specified channel.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMessageReply?view=graph-powershell-beta)
@@ -62,7 +62,7 @@ New-MgTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Send a new reply to a chatMessage in a specified channel.
+Create a new reply to a chatMessage in a specified channel.
 
 **Permissions**
 
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 
 ### -Mentions
 List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
 To construct, see NOTES section for MENTIONS properties and create a hash table.
 
 ```yaml
@@ -707,12 +707,13 @@ ATTACHMENTS `<IMicrosoftGraphChatMessageAttachment- `[]`>`: References to attach
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
   - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
   - `[ContentUrl <String>]`: The URL for the content of the attachment.
   - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
   - `[Name <String>]`: The name of the attachment.
   - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -735,12 +736,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
     - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
     - `[ContentUrl <String>]`: The URL for the content of the attachment.
     - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
     - `[Name <String>]`: The name of the attachment.
     - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -792,7 +794,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
   - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
     - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention.
@@ -814,9 +816,12 @@ For example, in the access reviews decisions API, this property might record the
     - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
     - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+      - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[DisplayName <String>]`: The name of the reaction.
+      - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+      - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
       - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -898,7 +903,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 MENTIONS `<IMicrosoftGraphChatMessageMention- `[]`>`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
   - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
   - `[MentionText <String>]`: String used to represent the mention.
@@ -926,9 +931,12 @@ MESSAGEHISTORY `<IMicrosoftGraphChatMessageHistoryItem- `[]`>`: List of activity
   - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
   - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+    - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[DisplayName <String>]`: The name of the reaction.
+    - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+    - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
     - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -955,9 +963,12 @@ Each DLP app defines its own conditions, examples include 'Credit Card Number' a
   - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
 
 REACTIONS `<IMicrosoftGraphChatMessageReaction- `[]`>`: Reactions for this chat message (for example, Like).
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+  - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[DisplayName <String>]`: The name of the reaction.
+  - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+  - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
   - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -978,12 +989,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
     - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
     - `[ContentUrl <String>]`: The URL for the content of the attachment.
     - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
     - `[Name <String>]`: The name of the attachment.
     - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -1035,7 +1047,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
   - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, and channel.
+Supported entities are: user, bot, team, channel, chat, and tag.
     - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention.
@@ -1057,9 +1069,12 @@ For example, in the access reviews decisions API, this property might record the
     - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
     - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+      - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[DisplayName <String>]`: The name of the reaction.
+      - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+      - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
       - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1095,7 +1110,7 @@ Link to the message in Microsoft Teams.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessagereply)
 
-[https://learn.microsoft.com/graph/api/chatmessage-post-replies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-post-replies?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0)
 
 
 

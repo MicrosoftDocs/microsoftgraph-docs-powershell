@@ -455,6 +455,7 @@ Office365 - Includes the applications mentioned as part of the Office 365 suite.
     - `[DisplayName <String>]`: Display name for the cross-tenant user synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
 Optional.
+    - `[ExternalCloudAuthorizedApplicationId <String>]`: 
     - `[TenantId <String>]`: Tenant identifier for the partner Microsoft Entra organization.
 Read-only.
     - `[UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>]`: crossTenantUserSyncInbound
@@ -487,6 +488,7 @@ IDENTITYSYNCHRONIZATION `<IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>`:
   - `[DisplayName <String>]`: Display name for the cross-tenant user synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
 Optional.
+  - `[ExternalCloudAuthorizedApplicationId <String>]`: 
   - `[TenantId <String>]`: Tenant identifier for the partner Microsoft Entra organization.
 Read-only.
   - `[UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>]`: crossTenantUserSyncInbound

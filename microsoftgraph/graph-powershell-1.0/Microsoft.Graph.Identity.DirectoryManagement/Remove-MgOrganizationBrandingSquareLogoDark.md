@@ -12,9 +12,6 @@ A square dark version of your company logo that appears in Windows 10 out-of-box
 Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingSquareLogoDark?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -206,6 +203,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
@@ -217,6 +215,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

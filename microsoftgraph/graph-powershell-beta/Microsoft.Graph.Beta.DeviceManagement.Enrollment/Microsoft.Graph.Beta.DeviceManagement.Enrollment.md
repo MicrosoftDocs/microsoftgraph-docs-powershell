@@ -1,683 +1,993 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-Module Guid: a3e912f9-308a-4d0c-b705-337bf7ca8e67
-Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/?view=graph-powershell-beta
-Help Version: 1.0.0.0
+Module Guid: f1430cdd-e7c8-4cb3-af1c-4267717fc906
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.DeviceManagement.Enrollment Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+
 
 ## Microsoft.Graph.Beta.DeviceManagement.Enrollment Cmdlets
-### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
+### [Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig.md)
+
 
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
+
 
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileCount](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileCount.md)
 
-### [Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
 
 ### [Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
+
 
 ### [Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileCount](Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileCount.md)
 
-### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
 
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
 
-### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
 
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
+
 
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignmentCount](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileCount](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileCount.md)
 
-### [Get-MgBetaDeviceManagementAutopilotEvent](Get-MgBetaDeviceManagementAutopilotEvent.md)
 
 ### [Get-MgBetaDeviceManagementAutopilotEvent](Get-MgBetaDeviceManagementAutopilotEvent.md)
+
 
 ### [Get-MgBetaDeviceManagementAutopilotEventCount](Get-MgBetaDeviceManagementAutopilotEventCount.md)
 
-### [Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail](Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail.md)
-
-### [Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail](Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail.md)
-
-### [Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetailCount](Get-MgBetaDeviceManagementAutopilotEventPolicyStatusDetailCount.md)
 
 ### [Get-MgBetaDeviceManagementConditionalAccessSetting](Get-MgBetaDeviceManagementConditionalAccessSetting.md)
 
-### [Get-MgBetaDeviceManagementDepOnboardingSetting](Get-MgBetaDeviceManagementDepOnboardingSetting.md)
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSetting](Get-MgBetaDeviceManagementDepOnboardingSetting.md)
+
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingCount](Get-MgBetaDeviceManagementDepOnboardingSettingCount.md)
 
+
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile.md)
+
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile.md)
 
-### [Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
+
+### [Get-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey](Get-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey.md)
+
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
+
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileCount](Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileCount.md)
 
-### [Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
+
+### [Get-MgBetaDeviceManagementDepOnboardingSettingExpiringVppTokenCount](Get-MgBetaDeviceManagementDepOnboardingSettingExpiringVppTokenCount.md)
+
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
+
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityCount](Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityCount.md)
 
-### [Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
 
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
 
-### [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
 
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
+
 
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignmentCount](Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationCount](Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationCount.md)
 
-### [Get-MgBetaDeviceManagementImportedDeviceIdentity](Get-MgBetaDeviceManagementImportedDeviceIdentity.md)
 
 ### [Get-MgBetaDeviceManagementImportedDeviceIdentity](Get-MgBetaDeviceManagementImportedDeviceIdentity.md)
+
 
 ### [Get-MgBetaDeviceManagementImportedDeviceIdentityCount](Get-MgBetaDeviceManagementImportedDeviceIdentityCount.md)
 
-### [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
 
 ### [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
+
 
 ### [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount](Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount.md)
 
-### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
 
-### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
+
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceCount](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceCount.md)
 
+
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceDeploymentProfile.md)
+
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfile.md)
 
-### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
+
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignmentCount](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileCount](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileCount.md)
 
-### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity.md)
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity.md)
+
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityCount](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityCount.md)
 
+
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeploymentProfile.md)
+
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityIntendedDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityIntendedDeploymentProfile.md)
 
+
 ### [Get-MgBetaDeviceManagementWindowsAutopilotSetting](Get-MgBetaDeviceManagementWindowsAutopilotSetting.md)
 
-### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
 
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
 
-### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
 
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
+
 
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignmentCount](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileCount](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileCount.md)
+
 
 ### [Get-MgBetaRoleManagement](Get-MgBetaRoleManagement.md)
 
+
 ### [Get-MgBetaRoleManagementCloudPc](Get-MgBetaRoleManagementCloudPc.md)
 
-### [Get-MgBetaRoleManagementCloudPcResourceNamespace](Get-MgBetaRoleManagementCloudPcResourceNamespace.md)
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespace](Get-MgBetaRoleManagementCloudPcResourceNamespace.md)
+
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceCount](Get-MgBetaRoleManagementCloudPcResourceNamespaceCount.md)
 
-### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
+
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionAuthenticationContext.md)
 
+
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionCount.md)
+
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
 
-### [Get-MgBetaRoleManagementCloudPcRoleAssignment](Get-MgBetaRoleManagementCloudPcRoleAssignment.md)
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignment](Get-MgBetaRoleManagementCloudPcRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
+
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScopeCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScopeCount.md)
 
+
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentCount.md)
 
-### [Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope.md)
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope.md)
+
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScopeCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScopeCount.md)
 
-### [Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal](Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal.md)
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal](Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal.md)
+
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipalCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipalCount.md)
 
+
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementCloudPcRoleAssignmentRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementCloudPcRoleDefinition](Get-MgBetaRoleManagementCloudPcRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinition](Get-MgBetaRoleManagementCloudPcRoleDefinition.md)
+
 
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinitionCount](Get-MgBetaRoleManagementCloudPcRoleDefinitionCount.md)
 
-### [Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
 
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
+
 
 ### [Get-MgBetaRoleManagementDefender](Get-MgBetaRoleManagementDefender.md)
 
-### [Get-MgBetaRoleManagementDefenderResourceNamespace](Get-MgBetaRoleManagementDefenderResourceNamespace.md)
 
 ### [Get-MgBetaRoleManagementDefenderResourceNamespace](Get-MgBetaRoleManagementDefenderResourceNamespace.md)
+
 
 ### [Get-MgBetaRoleManagementDefenderResourceNamespaceCount](Get-MgBetaRoleManagementDefenderResourceNamespaceCount.md)
 
-### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
+
 
 ### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionAuthenticationContext.md)
 
+
 ### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionCount.md)
+
 
 ### [Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope.md)
 
-### [Get-MgBetaRoleManagementDefenderRoleAssignment](Get-MgBetaRoleManagementDefenderRoleAssignment.md)
 
 ### [Get-MgBetaRoleManagementDefenderRoleAssignment](Get-MgBetaRoleManagementDefenderRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentAppScope](Get-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
 
 ### [Get-MgBetaRoleManagementDefenderRoleAssignmentAppScope](Get-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
+
 
 ### [Get-MgBetaRoleManagementDefenderRoleAssignmentAppScopeCount](Get-MgBetaRoleManagementDefenderRoleAssignmentAppScopeCount.md)
 
+
 ### [Get-MgBetaRoleManagementDefenderRoleAssignmentCount](Get-MgBetaRoleManagementDefenderRoleAssignmentCount.md)
 
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScope.md)
 
 ### [Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScope.md)
+
 
 ### [Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScopeCount](Get-MgBetaRoleManagementDefenderRoleAssignmentDirectoryScopeCount.md)
 
-### [Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipal](Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipal.md)
 
 ### [Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipal](Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipal.md)
+
 
 ### [Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipalCount](Get-MgBetaRoleManagementDefenderRoleAssignmentPrincipalCount.md)
 
+
 ### [Get-MgBetaRoleManagementDefenderRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementDefenderRoleAssignmentRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementDefenderRoleDefinition](Get-MgBetaRoleManagementDefenderRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementDefenderRoleDefinition](Get-MgBetaRoleManagementDefenderRoleDefinition.md)
+
 
 ### [Get-MgBetaRoleManagementDefenderRoleDefinitionCount](Get-MgBetaRoleManagementDefenderRoleDefinitionCount.md)
 
-### [Get-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
 
 ### [Get-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
+
 
 ### [Get-MgBetaRoleManagementDeviceManagement](Get-MgBetaRoleManagementDeviceManagement.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementResourceNamespace](Get-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespace](Get-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
+
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceCount](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceCount.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
+
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionAuthenticationContext.md)
 
+
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionCount.md)
+
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementRoleAssignment](Get-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignment](Get-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
+
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScopeCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScopeCount.md)
 
+
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentCount.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope.md)
+
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScopeCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScopeCount.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal.md)
+
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipalCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipalCount.md)
 
+
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementRoleDefinition](Get-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinition](Get-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
+
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinitionCount](Get-MgBetaRoleManagementDeviceManagementRoleDefinitionCount.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
+
 
 ### [Get-MgBetaRoleManagementExchange](Get-MgBetaRoleManagementExchange.md)
 
-### [Get-MgBetaRoleManagementExchangeCustomAppScope](Get-MgBetaRoleManagementExchangeCustomAppScope.md)
 
 ### [Get-MgBetaRoleManagementExchangeCustomAppScope](Get-MgBetaRoleManagementExchangeCustomAppScope.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeCustomAppScopeCount](Get-MgBetaRoleManagementExchangeCustomAppScopeCount.md)
 
-### [Get-MgBetaRoleManagementExchangeResourceNamespace](Get-MgBetaRoleManagementExchangeResourceNamespace.md)
 
 ### [Get-MgBetaRoleManagementExchangeResourceNamespace](Get-MgBetaRoleManagementExchangeResourceNamespace.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeResourceNamespaceCount](Get-MgBetaRoleManagementExchangeResourceNamespaceCount.md)
 
-### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionAuthenticationContext.md)
 
+
 ### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionCount.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope.md)
 
-### [Get-MgBetaRoleManagementExchangeRoleAssignment](Get-MgBetaRoleManagementExchangeRoleAssignment.md)
 
 ### [Get-MgBetaRoleManagementExchangeRoleAssignment](Get-MgBetaRoleManagementExchangeRoleAssignment.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeRoleAssignmentAppScope](Get-MgBetaRoleManagementExchangeRoleAssignmentAppScope.md)
 
+
 ### [Get-MgBetaRoleManagementExchangeRoleAssignmentCount](Get-MgBetaRoleManagementExchangeRoleAssignmentCount.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementExchangeRoleAssignmentDirectoryScope.md)
 
+
 ### [Get-MgBetaRoleManagementExchangeRoleAssignmentPrincipal](Get-MgBetaRoleManagementExchangeRoleAssignmentPrincipal.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementExchangeRoleAssignmentRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementExchangeRoleDefinition](Get-MgBetaRoleManagementExchangeRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementExchangeRoleDefinition](Get-MgBetaRoleManagementExchangeRoleDefinition.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeRoleDefinitionCount](Get-MgBetaRoleManagementExchangeRoleDefinitionCount.md)
 
-### [Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
 
 ### [Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
 
-### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
 
 ### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
 
+
 ### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentCount](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentCount.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentDirectoryScope.md)
 
+
 ### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentPrincipal](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentPrincipal.md)
+
 
 ### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentRoleDefinition.md)
 
+
+### [Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList](Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList.md)
+
+
+### [Import-MgBetaDeviceManagementImportedDeviceIdentityList](Import-MgBetaDeviceManagementImportedDeviceIdentityList.md)
+
+
+### [Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
+
+
+### [Import-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Import-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
+
+
+### [Import-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Import-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
+
+
+### [Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
+
+
+### [Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
+
+
+### [Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
+
+
+### [Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeviceIdentity](Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeviceIdentity.md)
+
+
+### [Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceNextEnrollment](Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceNextEnrollment.md)
+
+
+### [Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeviceIdentityNextEnrollment](Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeviceIdentityNextEnrollment.md)
+
+
+### [Invoke-MgBetaAssignedRoleManagementCloudPcRoleDefinitionPrincipal](Invoke-MgBetaAssignedRoleManagementCloudPcRoleDefinitionPrincipal.md)
+
+
+### [Invoke-MgBetaAssignedRoleManagementDefenderRoleDefinitionPrincipal](Invoke-MgBetaAssignedRoleManagementDefenderRoleDefinitionPrincipal.md)
+
+
+### [Invoke-MgBetaAssignedRoleManagementDeviceManagementRoleDefinitionPrincipal](Invoke-MgBetaAssignedRoleManagementDeviceManagementRoleDefinitionPrincipal.md)
+
+
+### [Invoke-MgBetaAssignedRoleManagementExchangeRoleDefinitionPrincipal](Invoke-MgBetaAssignedRoleManagementExchangeRoleDefinitionPrincipal.md)
+
+
+### [Invoke-MgBetaGraphDeviceManagementDepOnboardingSetting](Invoke-MgBetaGraphDeviceManagementDepOnboardingSetting.md)
+
+
+### [Invoke-MgBetaHasDeviceManagementDeviceEnrollmentConfigurationPayloadLink](Invoke-MgBetaHasDeviceManagementDeviceEnrollmentConfigurationPayloadLink.md)
+
+
+### [Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink](Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink.md)
+
+
+### [Invoke-MgBetaShareDeviceManagementDepOnboardingSettingForSchoolDataSyncService](Invoke-MgBetaShareDeviceManagementDepOnboardingSettingForSchoolDataSyncService.md)
+
+
+### [Invoke-MgBetaUnassignDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceUserFromDevice](Invoke-MgBetaUnassignDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceUserFromDevice.md)
+
+
+### [Invoke-MgBetaUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice](Invoke-MgBetaUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice.md)
+
+
+### [Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken](Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken.md)
+
+
 ### [New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
+
+
+### [New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken](New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken.md)
+
 
 ### [New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
 
+
+### [New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileToken](New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileToken.md)
+
+
 ### [New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
+
 
 ### [New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
 
+
 ### [New-MgBetaDeviceManagementAutopilotEvent](New-MgBetaDeviceManagementAutopilotEvent.md)
 
-### [New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail](New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail.md)
 
 ### [New-MgBetaDeviceManagementDepOnboardingSetting](New-MgBetaDeviceManagementDepOnboardingSetting.md)
 
+
+### [New-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey](New-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey.md)
+
+
 ### [New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
+
 
 ### [New-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](New-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
 
+
 ### [New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](New-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
+
 
 ### [New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
 
+
+### [New-MgBetaDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration](New-MgBetaDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration.md)
+
+
 ### [New-MgBetaDeviceManagementImportedDeviceIdentity](New-MgBetaDeviceManagementImportedDeviceIdentity.md)
+
 
 ### [New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
 
+
 ### [New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
+
 
 ### [New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
 
+
 ### [New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
+
 
 ### [New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity.md)
 
+
 ### [New-MgBetaDeviceManagementWindowsFeatureUpdateProfile](New-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
+
 
 ### [New-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](New-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
 
+
 ### [New-MgBetaRoleManagementCloudPcResourceNamespace](New-MgBetaRoleManagementCloudPcResourceNamespace.md)
+
 
 ### [New-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](New-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
 
+
 ### [New-MgBetaRoleManagementCloudPcRoleAssignment](New-MgBetaRoleManagementCloudPcRoleAssignment.md)
+
 
 ### [New-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](New-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
 
+
 ### [New-MgBetaRoleManagementCloudPcRoleDefinition](New-MgBetaRoleManagementCloudPcRoleDefinition.md)
+
 
 ### [New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [New-MgBetaRoleManagementDefenderResourceNamespace](New-MgBetaRoleManagementDefenderResourceNamespace.md)
+
 
 ### [New-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](New-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
 
+
 ### [New-MgBetaRoleManagementDefenderRoleAssignment](New-MgBetaRoleManagementDefenderRoleAssignment.md)
+
 
 ### [New-MgBetaRoleManagementDefenderRoleAssignmentAppScope](New-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
 
+
 ### [New-MgBetaRoleManagementDefenderRoleDefinition](New-MgBetaRoleManagementDefenderRoleDefinition.md)
+
 
 ### [New-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [New-MgBetaRoleManagementDeviceManagementResourceNamespace](New-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
+
 
 ### [New-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](New-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
 
+
 ### [New-MgBetaRoleManagementDeviceManagementRoleAssignment](New-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
+
 
 ### [New-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](New-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
 
+
 ### [New-MgBetaRoleManagementDeviceManagementRoleDefinition](New-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
+
 
 ### [New-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [New-MgBetaRoleManagementExchangeCustomAppScope](New-MgBetaRoleManagementExchangeCustomAppScope.md)
+
 
 ### [New-MgBetaRoleManagementExchangeResourceNamespace](New-MgBetaRoleManagementExchangeResourceNamespace.md)
 
+
 ### [New-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](New-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
+
 
 ### [New-MgBetaRoleManagementExchangeRoleAssignment](New-MgBetaRoleManagementExchangeRoleAssignment.md)
 
+
 ### [New-MgBetaRoleManagementExchangeRoleDefinition](New-MgBetaRoleManagementExchangeRoleDefinition.md)
+
 
 ### [New-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [New-MgBetaRoleManagementExchangeTransitiveRoleAssignment](New-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
+
 
 ### [Remove-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Remove-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 
+
 ### [Remove-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Remove-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
+
 
 ### [Remove-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](Remove-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
 
+
 ### [Remove-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Remove-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
+
 
 ### [Remove-MgBetaDeviceManagementAutopilotEvent](Remove-MgBetaDeviceManagementAutopilotEvent.md)
 
-### [Remove-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail](Remove-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail.md)
 
 ### [Remove-MgBetaDeviceManagementConditionalAccessSetting](Remove-MgBetaDeviceManagementConditionalAccessSetting.md)
 
+
 ### [Remove-MgBetaDeviceManagementDepOnboardingSetting](Remove-MgBetaDeviceManagementDepOnboardingSetting.md)
+
 
 ### [Remove-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](Remove-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
 
+
 ### [Remove-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Remove-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
+
 
 ### [Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
 
+
 ### [Remove-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](Remove-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
+
 
 ### [Remove-MgBetaDeviceManagementImportedDeviceIdentity](Remove-MgBetaDeviceManagementImportedDeviceIdentity.md)
 
+
 ### [Remove-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Remove-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
+
 
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
 
+
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
+
 
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
 
+
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity.md)
+
 
 ### [Remove-MgBetaDeviceManagementWindowsAutopilotSetting](Remove-MgBetaDeviceManagementWindowsAutopilotSetting.md)
 
+
 ### [Remove-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Remove-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
+
 
 ### [Remove-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](Remove-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
 
+
 ### [Remove-MgBetaRoleManagementCloudPc](Remove-MgBetaRoleManagementCloudPc.md)
+
 
 ### [Remove-MgBetaRoleManagementCloudPcResourceNamespace](Remove-MgBetaRoleManagementCloudPcResourceNamespace.md)
 
+
 ### [Remove-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Remove-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
+
 
 ### [Remove-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Remove-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
 
+
 ### [Remove-MgBetaRoleManagementCloudPcRoleAssignment](Remove-MgBetaRoleManagementCloudPcRoleAssignment.md)
+
 
 ### [Remove-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](Remove-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
 
+
 ### [Remove-MgBetaRoleManagementCloudPcRoleDefinition](Remove-MgBetaRoleManagementCloudPcRoleDefinition.md)
+
 
 ### [Remove-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [Remove-MgBetaRoleManagementDefender](Remove-MgBetaRoleManagementDefender.md)
+
 
 ### [Remove-MgBetaRoleManagementDefenderResourceNamespace](Remove-MgBetaRoleManagementDefenderResourceNamespace.md)
 
+
 ### [Remove-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Remove-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
+
 
 ### [Remove-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope](Remove-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope.md)
 
+
 ### [Remove-MgBetaRoleManagementDefenderRoleAssignment](Remove-MgBetaRoleManagementDefenderRoleAssignment.md)
+
 
 ### [Remove-MgBetaRoleManagementDefenderRoleAssignmentAppScope](Remove-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
 
+
 ### [Remove-MgBetaRoleManagementDefenderRoleDefinition](Remove-MgBetaRoleManagementDefenderRoleDefinition.md)
+
 
 ### [Remove-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [Remove-MgBetaRoleManagementDeviceManagement](Remove-MgBetaRoleManagementDeviceManagement.md)
+
 
 ### [Remove-MgBetaRoleManagementDeviceManagementResourceNamespace](Remove-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
 
+
 ### [Remove-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Remove-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
+
 
 ### [Remove-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Remove-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
 
+
 ### [Remove-MgBetaRoleManagementDeviceManagementRoleAssignment](Remove-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
+
 
 ### [Remove-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](Remove-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
 
+
 ### [Remove-MgBetaRoleManagementDeviceManagementRoleDefinition](Remove-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
+
 
 ### [Remove-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [Remove-MgBetaRoleManagementExchange](Remove-MgBetaRoleManagementExchange.md)
+
 
 ### [Remove-MgBetaRoleManagementExchangeCustomAppScope](Remove-MgBetaRoleManagementExchangeCustomAppScope.md)
 
+
 ### [Remove-MgBetaRoleManagementExchangeResourceNamespace](Remove-MgBetaRoleManagementExchangeResourceNamespace.md)
+
 
 ### [Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
 
+
 ### [Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope](Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope.md)
+
 
 ### [Remove-MgBetaRoleManagementExchangeRoleAssignment](Remove-MgBetaRoleManagementExchangeRoleAssignment.md)
 
+
 ### [Remove-MgBetaRoleManagementExchangeRoleAssignmentAppScope](Remove-MgBetaRoleManagementExchangeRoleAssignmentAppScope.md)
+
 
 ### [Remove-MgBetaRoleManagementExchangeRoleDefinition](Remove-MgBetaRoleManagementExchangeRoleDefinition.md)
 
+
 ### [Remove-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
+
 
 ### [Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
 
+
 ### [Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
+
+
+### [Revoke-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken](Revoke-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken.md)
+
+
+### [Revoke-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileToken](Revoke-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileToken.md)
+
+
+### [Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity](Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity.md)
+
+
+### [Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority](Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority.md)
+
+
+### [Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile](Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile.md)
+
+
+### [Set-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Set-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
+
+
+### [Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority](Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority.md)
+
+
+### [Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
+
+
+### [Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceResourceAccountToDevice](Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceResourceAccountToDevice.md)
+
+
+### [Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceUserToDevice](Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceUserToDevice.md)
+
+
+### [Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice](Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice.md)
+
+
+### [Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice.md)
+
+
+### [Set-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Set-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
+
+
+### [Sync-MgBetaDeviceManagementDepOnboardingSettingWithAppleDeviceEnrollmentProgram](Sync-MgBetaDeviceManagementDepOnboardingSettingWithAppleDeviceEnrollmentProgram.md)
+
+
+### [Sync-MgBetaDeviceManagementWindowsAutopilotSetting](Sync-MgBetaDeviceManagementWindowsAutopilotSetting.md)
+
 
 ### [Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 
+
 ### [Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
+
 
 ### [Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
 
+
 ### [Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Update-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
+
 
 ### [Update-MgBetaDeviceManagementAutopilotEvent](Update-MgBetaDeviceManagementAutopilotEvent.md)
 
-### [Update-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail](Update-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail.md)
 
 ### [Update-MgBetaDeviceManagementConditionalAccessSetting](Update-MgBetaDeviceManagementConditionalAccessSetting.md)
 
+
 ### [Update-MgBetaDeviceManagementDepOnboardingSetting](Update-MgBetaDeviceManagementDepOnboardingSetting.md)
+
 
 ### [Update-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](Update-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
 
+
+### [Update-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDeviceProfileAssignment](Update-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDeviceProfileAssignment.md)
+
+
 ### [Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
+
 
 ### [Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
 
+
 ### [Update-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](Update-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
+
 
 ### [Update-MgBetaDeviceManagementImportedDeviceIdentity](Update-MgBetaDeviceManagementImportedDeviceIdentity.md)
 
+
 ### [Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
+
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
 
+
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
+
+
+### [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProperty](Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProperty.md)
+
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
 
+
+### [Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty.md)
+
+
 ### [Update-MgBetaDeviceManagementWindowsAutopilotSetting](Update-MgBetaDeviceManagementWindowsAutopilotSetting.md)
+
 
 ### [Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
 
+
 ### [Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
+
 
 ### [Update-MgBetaRoleManagement](Update-MgBetaRoleManagement.md)
 
+
 ### [Update-MgBetaRoleManagementCloudPc](Update-MgBetaRoleManagementCloudPc.md)
+
 
 ### [Update-MgBetaRoleManagementCloudPcResourceNamespace](Update-MgBetaRoleManagementCloudPcResourceNamespace.md)
 
+
 ### [Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
+
 
 ### [Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
 
+
 ### [Update-MgBetaRoleManagementCloudPcRoleAssignment](Update-MgBetaRoleManagementCloudPcRoleAssignment.md)
+
 
 ### [Update-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](Update-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
 
+
 ### [Update-MgBetaRoleManagementCloudPcRoleDefinition](Update-MgBetaRoleManagementCloudPcRoleDefinition.md)
+
 
 ### [Update-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [Update-MgBetaRoleManagementDefender](Update-MgBetaRoleManagementDefender.md)
+
 
 ### [Update-MgBetaRoleManagementDefenderResourceNamespace](Update-MgBetaRoleManagementDefenderResourceNamespace.md)
 
+
 ### [Update-MgBetaRoleManagementDefenderResourceNamespaceResourceAction](Update-MgBetaRoleManagementDefenderResourceNamespaceResourceAction.md)
+
 
 ### [Update-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope](Update-MgBetaRoleManagementDefenderResourceNamespaceResourceActionResourceScope.md)
 
+
 ### [Update-MgBetaRoleManagementDefenderRoleAssignment](Update-MgBetaRoleManagementDefenderRoleAssignment.md)
+
 
 ### [Update-MgBetaRoleManagementDefenderRoleAssignmentAppScope](Update-MgBetaRoleManagementDefenderRoleAssignmentAppScope.md)
 
+
 ### [Update-MgBetaRoleManagementDefenderRoleDefinition](Update-MgBetaRoleManagementDefenderRoleDefinition.md)
+
 
 ### [Update-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementDefenderRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [Update-MgBetaRoleManagementDeviceManagement](Update-MgBetaRoleManagementDeviceManagement.md)
+
 
 ### [Update-MgBetaRoleManagementDeviceManagementResourceNamespace](Update-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
 
+
 ### [Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
+
 
 ### [Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
 
+
 ### [Update-MgBetaRoleManagementDeviceManagementRoleAssignment](Update-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
+
 
 ### [Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
 
+
 ### [Update-MgBetaRoleManagementDeviceManagementRoleDefinition](Update-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
+
 
 ### [Update-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
 
+
 ### [Update-MgBetaRoleManagementExchange](Update-MgBetaRoleManagementExchange.md)
+
 
 ### [Update-MgBetaRoleManagementExchangeCustomAppScope](Update-MgBetaRoleManagementExchangeCustomAppScope.md)
 
+
 ### [Update-MgBetaRoleManagementExchangeResourceNamespace](Update-MgBetaRoleManagementExchangeResourceNamespace.md)
+
 
 ### [Update-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Update-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
 
+
 ### [Update-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope](Update-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope.md)
+
 
 ### [Update-MgBetaRoleManagementExchangeRoleAssignment](Update-MgBetaRoleManagementExchangeRoleAssignment.md)
 
+
 ### [Update-MgBetaRoleManagementExchangeRoleAssignmentAppScope](Update-MgBetaRoleManagementExchangeRoleAssignmentAppScope.md)
+
 
 ### [Update-MgBetaRoleManagementExchangeRoleDefinition](Update-MgBetaRoleManagementExchangeRoleDefinition.md)
 
+
 ### [Update-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
+
 
 ### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
 
+
 ### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
+
 
 
 

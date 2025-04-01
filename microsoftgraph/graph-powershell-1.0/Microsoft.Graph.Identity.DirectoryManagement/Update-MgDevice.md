@@ -12,9 +12,6 @@ ms.subservice: entra-directory-management
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDevice?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -340,6 +337,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The display name for the device.
+Maximum length is 256 characters.
 Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
 
@@ -957,6 +955,7 @@ Intune sets this property.
 Possible values are: unknown, company, personal.
   - `[DeviceVersion <Int32?>]`: For internal use only.
   - `[DisplayName <String>]`: The display name for the device.
+Maximum length is 256 characters.
 Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
   - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
@@ -1066,6 +1065,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
@@ -1077,6 +1077,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[UserId <String>]`: The unique identifier of user
 
 MEMBEROF `<IMicrosoftGraphDirectoryObject- `[]`>`: Groups and administrative units that this device is a member of.

@@ -9,7 +9,9 @@ ms.subservice: search
 # Set-MgBetaExternalConnectionItem
 
 ## SYNOPSIS
-Update the properties of an externalitem.
+Create a new externalItem.
+This API can be used to create a custom item.
+The containing externalConnection must have a schema registered of the corresponding type.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Set-MgExternalConnectionItem?view=graph-powershell-1.0)
@@ -49,7 +51,9 @@ Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an externalitem.
+Create a new externalItem.
+This API can be used to create a custom item.
+The containing externalConnection must have a schema registered of the corresponding type.
 
 **Permissions**
 
@@ -443,7 +447,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem)
 
-[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta)
 
 
 

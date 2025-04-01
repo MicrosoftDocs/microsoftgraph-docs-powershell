@@ -595,7 +595,6 @@ Accept wildcard characters: False
 
 ### -CustomBrowserDisplayName
 Friendly name of the preferred custom browser to open weblink on Android.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
 
 ```yaml
 Type: String
@@ -610,8 +609,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomBrowserPackageId
-Unique identifier of the preferred custom browser to open weblink on Android.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+Unique identifier of a custom browser to open weblink on Android.
 
 ```yaml
 Type: String
@@ -1793,7 +1791,7 @@ Read-only.
   - `[SourceId <String>]`: Identifier for resource used for deployment to a group
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The ID of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 BODYPARAMETER `<IMicrosoftGraphAndroidManagedAppProtection>`: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device
@@ -1806,7 +1804,7 @@ Read-only.
     - `[SourceId <String>]`: Identifier for resource used for deployment to a group
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The ID of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[IsAssigned <Boolean?>]`: Indicates if the policy is deployed to any inclusion groups or not.
   - `[TargetedAppManagementLevels <AppManagementLevel?>]`: Management levels for apps
@@ -1894,9 +1892,7 @@ Read-only.
   - `[BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
   - `[ConnectToVpnOnLaunch <Boolean?>]`: Whether the app should connect to the configured VPN on launch.
   - `[CustomBrowserDisplayName <String>]`: Friendly name of the preferred custom browser to open weblink on Android.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
-  - `[CustomBrowserPackageId <String>]`: Unique identifier of the preferred custom browser to open weblink on Android.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+  - `[CustomBrowserPackageId <String>]`: Unique identifier of a custom browser to open weblink on Android.
   - `[CustomDialerAppDisplayName <String>]`: Friendly name of a custom dialer app to click-to-open a phone number on Android.
   - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.

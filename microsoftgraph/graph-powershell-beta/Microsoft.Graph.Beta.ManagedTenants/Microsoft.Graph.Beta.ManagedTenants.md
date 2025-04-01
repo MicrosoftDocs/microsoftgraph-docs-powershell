@@ -1,517 +1,639 @@
 ---
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-Module Guid: dc56e9de-d595-49b0-a41b-298a2151a6b1
-Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.managedtenants/?view=graph-powershell-beta
-Help Version: 1.0.0.0
+Module Guid: e5ddb308-d7d6-4bb1-82ed-cc467c794955
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.ManagedTenants Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+
 
 ## Microsoft.Graph.Beta.ManagedTenants Cmdlets
 ### [Get-MgBetaTenantRelationshipManagedTenant](Get-MgBetaTenantRelationshipManagedTenant.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenant](Get-MgBetaTenantRelationshipManagedTenant.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance](Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance](Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyComplianceCount](Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyComplianceCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlert](Get-MgBetaTenantRelationshipManagedTenantAlert.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlert](Get-MgBetaTenantRelationshipManagedTenantAlert.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlertApiNotification](Get-MgBetaTenantRelationshipManagedTenantAlertApiNotification.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertApiNotification](Get-MgBetaTenantRelationshipManagedTenantAlertApiNotification.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertApiNotificationCount](Get-MgBetaTenantRelationshipManagedTenantAlertApiNotificationCount.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertCount](Get-MgBetaTenantRelationshipManagedTenantAlertCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotification](Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotification.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotification](Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotification.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotificationCount](Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotificationCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlertLog](Get-MgBetaTenantRelationshipManagedTenantAlertLog.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertLog](Get-MgBetaTenantRelationshipManagedTenantAlertLog.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertLogAlert](Get-MgBetaTenantRelationshipManagedTenantAlertLogAlert.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertLogCount](Get-MgBetaTenantRelationshipManagedTenantAlertLogCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlertRule](Get-MgBetaTenantRelationshipManagedTenantAlertRule.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRule](Get-MgBetaTenantRelationshipManagedTenantAlertRule.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlert](Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlert.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlert](Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlert.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlertCount](Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlertCount.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleCount](Get-MgBetaTenantRelationshipManagedTenantAlertRuleCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRule](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRule.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRule](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRule.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRuleCount](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRuleCount.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionCount](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantApiNotification](Get-MgBetaTenantRelationshipManagedTenantApiNotification.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantApiNotification](Get-MgBetaTenantRelationshipManagedTenantApiNotification.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantApiNotificationAlert](Get-MgBetaTenantRelationshipManagedTenantApiNotificationAlert.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantApiNotificationCount](Get-MgBetaTenantRelationshipManagedTenantApiNotificationCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAppPerformance](Get-MgBetaTenantRelationshipManagedTenantAppPerformance.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAppPerformance](Get-MgBetaTenantRelationshipManagedTenantAppPerformance.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAppPerformanceCount](Get-MgBetaTenantRelationshipManagedTenantAppPerformanceCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAuditEvent](Get-MgBetaTenantRelationshipManagedTenantAuditEvent.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAuditEvent](Get-MgBetaTenantRelationshipManagedTenantAuditEvent.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAuditEventCount](Get-MgBetaTenantRelationshipManagedTenantAuditEventCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection](Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection](Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcConnectionCount](Get-MgBetaTenantRelationshipManagedTenantCloudPcConnectionCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice](Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice](Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcDeviceCount](Get-MgBetaTenantRelationshipManagedTenantCloudPcDeviceCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview](Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview](Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcOverviewCount](Get-MgBetaTenantRelationshipManagedTenantCloudPcOverviewCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage](Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage](Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverageCount](Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverageCount.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantCount](Get-MgBetaTenantRelationshipManagedTenantCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary](Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary](Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummaryCount](Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummaryCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation](Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation](Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCustomizedInformationCount](Get-MgBetaTenantRelationshipManagedTenantCustomizedInformationCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantDetailedInformation](Get-MgBetaTenantRelationshipManagedTenantDetailedInformation.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDetailedInformation](Get-MgBetaTenantRelationshipManagedTenantDetailedInformation.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDetailedInformationCount](Get-MgBetaTenantRelationshipManagedTenantDetailedInformationCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance](Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance](Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformanceCount](Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformanceCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary](Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary](Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummaryCount](Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummaryCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus](Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus](Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatusCount](Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatusCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantEmailNotification](Get-MgBetaTenantRelationshipManagedTenantEmailNotification.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantEmailNotification](Get-MgBetaTenantRelationshipManagedTenantEmailNotification.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantEmailNotificationAlert](Get-MgBetaTenantRelationshipManagedTenantEmailNotificationAlert.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantEmailNotificationCount](Get-MgBetaTenantRelationshipManagedTenantEmailNotificationCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantGroup](Get-MgBetaTenantRelationshipManagedTenantGroup.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantGroup](Get-MgBetaTenantRelationshipManagedTenantGroup.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantGroupCount](Get-MgBetaTenantRelationshipManagedTenantGroupCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceCount](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrendCount](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrendCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementAction](Get-MgBetaTenantRelationshipManagedTenantManagementAction.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementAction](Get-MgBetaTenantRelationshipManagedTenantManagementAction.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementActionCount](Get-MgBetaTenantRelationshipManagedTenantManagementActionCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatusCount](Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatusCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementIntent](Get-MgBetaTenantRelationshipManagedTenantManagementIntent.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementIntent](Get-MgBetaTenantRelationshipManagedTenantManagementIntent.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementIntentCount](Get-MgBetaTenantRelationshipManagedTenantManagementIntentCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplate](Get-MgBetaTenantRelationshipManagedTenantManagementTemplate.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplate](Get-MgBetaTenantRelationshipManagedTenantManagementTemplate.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplate](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplate.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplate](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplate.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplateCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplateCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummaryCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummaryCount.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStep](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStep.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStep](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStep.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepAcceptedVersion](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepAcceptedVersion.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepCount.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepManagementTemplate](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepManagementTemplate.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummaryCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummaryCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionAcceptedFor](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionAcceptedFor.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploymentCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploymentCount.md)
 
+
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploymentTemplateStepVersion](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploymentTemplateStepVersion.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionTemplateStep](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionTemplateStep.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantMyRole](Get-MgBetaTenantRelationshipManagedTenantMyRole.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantMyRole](Get-MgBetaTenantRelationshipManagedTenantMyRole.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantMyRoleCount](Get-MgBetaTenantRelationshipManagedTenantMyRoleCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantTag](Get-MgBetaTenantRelationshipManagedTenantTag.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantTag](Get-MgBetaTenantRelationshipManagedTenantTag.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantTagCount](Get-MgBetaTenantRelationshipManagedTenantTagCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantTicketingEndpoint](Get-MgBetaTenantRelationshipManagedTenantTicketingEndpoint.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantTicketingEndpoint](Get-MgBetaTenantRelationshipManagedTenantTicketingEndpoint.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantTicketingEndpointCount](Get-MgBetaTenantRelationshipManagedTenantTicketingEndpointCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState](Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState](Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareStateCount](Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareStateCount.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState](Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState](Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState.md)
+
 
 ### [Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionStateCount](Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionStateCount.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenant](New-MgBetaTenantRelationshipManagedTenant.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance](New-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantAlert](New-MgBetaTenantRelationshipManagedTenantAlert.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantAlertLog](New-MgBetaTenantRelationshipManagedTenantAlertLog.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantAlertRule](New-MgBetaTenantRelationshipManagedTenantAlertRule.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition](New-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantApiNotification](New-MgBetaTenantRelationshipManagedTenantApiNotification.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantAppPerformance](New-MgBetaTenantRelationshipManagedTenantAppPerformance.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantAuditEvent](New-MgBetaTenantRelationshipManagedTenantAuditEvent.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantCloudPcConnection](New-MgBetaTenantRelationshipManagedTenantCloudPcConnection.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantCloudPcDevice](New-MgBetaTenantRelationshipManagedTenantCloudPcDevice.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantCloudPcOverview](New-MgBetaTenantRelationshipManagedTenantCloudPcOverview.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage](New-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary](New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantCustomizedInformation](New-MgBetaTenantRelationshipManagedTenantCustomizedInformation.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantDetailedInformation](New-MgBetaTenantRelationshipManagedTenantDetailedInformation.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance](New-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary](New-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus](New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantEmailNotification](New-MgBetaTenantRelationshipManagedTenantEmailNotification.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantGroup](New-MgBetaTenantRelationshipManagedTenantGroup.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance](New-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend](New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantManagementAction](New-MgBetaTenantRelationshipManagedTenantManagementAction.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](New-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantManagementIntent](New-MgBetaTenantRelationshipManagedTenantManagementIntent.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantManagementTemplate](New-MgBetaTenantRelationshipManagedTenantManagementTemplate.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection](New-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary](New-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep](New-MgBetaTenantRelationshipManagedTenantManagementTemplateStep.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion](New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment](New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantMyRole](New-MgBetaTenantRelationshipManagedTenantMyRole.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantTag](New-MgBetaTenantRelationshipManagedTenantTag.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantTicketingEndpoint](New-MgBetaTenantRelationshipManagedTenantTicketingEndpoint.md)
 
+
 ### [New-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState](New-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState.md)
+
 
 ### [New-MgBetaTenantRelationshipManagedTenantWindowsProtectionState](New-MgBetaTenantRelationshipManagedTenantWindowsProtectionState.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenant](Remove-MgBetaTenantRelationshipManagedTenant.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance](Remove-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantAlert](Remove-MgBetaTenantRelationshipManagedTenantAlert.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantAlertLog](Remove-MgBetaTenantRelationshipManagedTenantAlertLog.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantAlertRule](Remove-MgBetaTenantRelationshipManagedTenantAlertRule.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition](Remove-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantApiNotification](Remove-MgBetaTenantRelationshipManagedTenantApiNotification.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantAppPerformance](Remove-MgBetaTenantRelationshipManagedTenantAppPerformance.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantAuditEvent](Remove-MgBetaTenantRelationshipManagedTenantAuditEvent.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantCloudPcConnection](Remove-MgBetaTenantRelationshipManagedTenantCloudPcConnection.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantCloudPcDevice](Remove-MgBetaTenantRelationshipManagedTenantCloudPcDevice.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantCloudPcOverview](Remove-MgBetaTenantRelationshipManagedTenantCloudPcOverview.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage](Remove-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary](Remove-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantCustomizedInformation](Remove-MgBetaTenantRelationshipManagedTenantCustomizedInformation.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantDetailedInformation](Remove-MgBetaTenantRelationshipManagedTenantDetailedInformation.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance](Remove-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary](Remove-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus](Remove-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantEmailNotification](Remove-MgBetaTenantRelationshipManagedTenantEmailNotification.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantGroup](Remove-MgBetaTenantRelationshipManagedTenantGroup.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance](Remove-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend](Remove-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementAction](Remove-MgBetaTenantRelationshipManagedTenantManagementAction.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](Remove-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementIntent](Remove-MgBetaTenantRelationshipManagedTenantManagementIntent.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementTemplate](Remove-MgBetaTenantRelationshipManagedTenantManagementTemplate.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection](Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary](Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStep](Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStep.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion](Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment](Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantMyRole](Remove-MgBetaTenantRelationshipManagedTenantMyRole.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantTag](Remove-MgBetaTenantRelationshipManagedTenantTag.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantTicketingEndpoint](Remove-MgBetaTenantRelationshipManagedTenantTicketingEndpoint.md)
 
+
 ### [Remove-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState](Remove-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState.md)
+
 
 ### [Remove-MgBetaTenantRelationshipManagedTenantWindowsProtectionState](Remove-MgBetaTenantRelationshipManagedTenantWindowsProtectionState.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenant](Update-MgBetaTenantRelationshipManagedTenant.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance](Update-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantAlert](Update-MgBetaTenantRelationshipManagedTenantAlert.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantAlertLog](Update-MgBetaTenantRelationshipManagedTenantAlertLog.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantAlertRule](Update-MgBetaTenantRelationshipManagedTenantAlertRule.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition](Update-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantApiNotification](Update-MgBetaTenantRelationshipManagedTenantApiNotification.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantAppPerformance](Update-MgBetaTenantRelationshipManagedTenantAppPerformance.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantAuditEvent](Update-MgBetaTenantRelationshipManagedTenantAuditEvent.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection](Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantCloudPcDevice](Update-MgBetaTenantRelationshipManagedTenantCloudPcDevice.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantCloudPcOverview](Update-MgBetaTenantRelationshipManagedTenantCloudPcOverview.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage](Update-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary](Update-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation](Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantDetailedInformation](Update-MgBetaTenantRelationshipManagedTenantDetailedInformation.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance](Update-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary](Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus](Update-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantEmailNotification](Update-MgBetaTenantRelationshipManagedTenantEmailNotification.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantGroup](Update-MgBetaTenantRelationshipManagedTenantGroup.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance](Update-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend](Update-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementAction](Update-MgBetaTenantRelationshipManagedTenantManagementAction.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementIntent](Update-MgBetaTenantRelationshipManagedTenantManagementIntent.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementTemplate](Update-MgBetaTenantRelationshipManagedTenantManagementTemplate.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection](Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary](Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStep](Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStep.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion](Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment](Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantMyRole](Update-MgBetaTenantRelationshipManagedTenantMyRole.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantTag](Update-MgBetaTenantRelationshipManagedTenantTag.md)
+
 
 ### [Update-MgBetaTenantRelationshipManagedTenantTicketingEndpoint](Update-MgBetaTenantRelationshipManagedTenantTicketingEndpoint.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState](Update-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState.md)
 
+
 ### [Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState](Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState.md)
+
 
 
 

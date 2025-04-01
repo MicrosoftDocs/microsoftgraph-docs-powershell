@@ -372,7 +372,13 @@ For existing applications, the enforcement date can be retroactively applied.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Entra ID; else, the restriction isn't enforced for those applications.
+      - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+      - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
       - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -411,7 +417,13 @@ For existing applications, the enforcement date can be retroactively applied.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Entra ID; else, the restriction isn't enforced for those applications.
+        - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+        - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
         - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
         - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.

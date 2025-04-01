@@ -549,11 +549,11 @@ It's a free-format string value, for example, 'United States'.
     - `[Activities <String- `[]`>]`: Extracurricular activities undertaken alongside the program.
     - `[Awards <String- `[]`>]`: Any awards or honors associated with the program.
     - `[Description <String>]`: Short description of the program provided by the user.
-    - `[DisplayName <String>]`: Long-form name of the program that the user has provided.
+    - `[DisplayName <String>]`: Long-form name of the program that the user provided.
     - `[FieldsOfStudy <String- `[]`>]`: Majors and minors associated with the program.
 (if applicable)
-    - `[Grade <String>]`: The final grade, class, GPA or score.
-    - `[Notes <String>]`: Additional notes the user has provided.
+    - `[Grade <String>]`: The final grade, class, GPA, or score.
+    - `[Notes <String>]`: More notes the user provided.
     - `[WebUrl <String>]`: Link to the degree or program page.
   - `[StartMonthYear <DateTime?>]`: The month and year the user commenced the activity referenced.
 
@@ -632,11 +632,11 @@ PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
   - `[Activities <String- `[]`>]`: Extracurricular activities undertaken alongside the program.
   - `[Awards <String- `[]`>]`: Any awards or honors associated with the program.
   - `[Description <String>]`: Short description of the program provided by the user.
-  - `[DisplayName <String>]`: Long-form name of the program that the user has provided.
+  - `[DisplayName <String>]`: Long-form name of the program that the user provided.
   - `[FieldsOfStudy <String- `[]`>]`: Majors and minors associated with the program.
 (if applicable)
-  - `[Grade <String>]`: The final grade, class, GPA or score.
-  - `[Notes <String>]`: Additional notes the user has provided.
+  - `[Grade <String>]`: The final grade, class, GPA, or score.
+  - `[Notes <String>]`: More notes the user provided.
   - `[WebUrl <String>]`: Link to the degree or program page.
 
 SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources

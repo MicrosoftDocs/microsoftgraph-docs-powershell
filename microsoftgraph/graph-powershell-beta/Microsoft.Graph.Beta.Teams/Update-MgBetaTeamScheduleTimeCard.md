@@ -417,7 +417,11 @@ Read-only.
     - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+      - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
       - `[DateTime <DateTime?>]`: The time the entry is recorded.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -441,7 +445,11 @@ BREAKS `<IMicrosoftGraphTimeCardBreak- `[]`>`: The list of breaks associated wit
   - `[BreakId <String>]`: ID of the timeCardBreak.
   - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+    - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
     - `[DateTime <DateTime?>]`: The time the entry is recorded.
     - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -452,7 +460,11 @@ BREAKS `<IMicrosoftGraphTimeCardBreak- `[]`>`: The list of breaks associated wit
 
 CLOCKINEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+  - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -461,7 +473,11 @@ CLOCKINEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
 
 CLOCKOUTEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+  - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -520,6 +536,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
@@ -546,7 +563,11 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
     - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+      - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
       - `[DateTime <DateTime?>]`: The time the entry is recorded.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -21,7 +21,8 @@ Update-MgBetaUserMailFolder -MailFolderId <String> -UserId <String> [-ResponseHe
  [-AdditionalProperties <Hashtable>] [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>]
  [-DisplayName <String>] [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
  [-Messages <IMicrosoftGraphMessage[]>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-Operations <IMicrosoftGraphMailFolderOperation[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>]
  [-UserConfigurations <IMicrosoftGraphUserConfiguration[]>] [-WellKnownName <String>] [-Headers <IDictionary>]
@@ -41,7 +42,8 @@ Update-MgBetaUserMailFolder -InputObject <IMailIdentity> [-ResponseHeadersVariab
  [-AdditionalProperties <Hashtable>] [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>]
  [-DisplayName <String>] [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
  [-Messages <IMicrosoftGraphMessage[]>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-Operations <IMicrosoftGraphMailFolderOperation[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>]
  [-UserConfigurations <IMicrosoftGraphUserConfiguration[]>] [-WellKnownName <String>] [-Headers <IDictionary>]
@@ -274,6 +276,22 @@ To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and 
 
 ```yaml
 Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Operations
+
+To construct, see NOTES section for OPERATIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMailFolderOperation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -674,6 +692,11 @@ You are prompted to sign in if you are not already signed in with the browser.Th
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
+  - `[Operations <IMicrosoftGraphMailFolderOperation- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[ResourceLocation <String>]`: 
+    - `[Status <String>]`: mailFolderOperationStatus
   - `[ParentFolderId <String>]`: The unique identifier for the mailFolder's parent mailFolder.
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the mailFolder.
 Read-only.
@@ -888,6 +911,11 @@ You are prompted to sign in if you are not already signed in with the browser.Th
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
+  - `[Operations <IMicrosoftGraphMailFolderOperation- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[ResourceLocation <String>]`: 
+    - `[Status <String>]`: mailFolderOperationStatus
   - `[ParentFolderId <String>]`: The unique identifier for the mailFolder's parent mailFolder.
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the mailFolder.
 Read-only.
@@ -909,6 +937,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
   - `[MailFolderId <String>]`: The unique identifier of mailFolder
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MailFolderOperationId <String>]`: The unique identifier of mailFolderOperation
   - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
@@ -1114,6 +1143,12 @@ Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Value <String- `[]`>]`: A collection of property values.
+
+OPERATIONS `<IMicrosoftGraphMailFolderOperation- `[]`>`: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[ResourceLocation <String>]`: 
+  - `[Status <String>]`: mailFolderOperationStatus
 
 SINGLEVALUEEXTENDEDPROPERTIES `<IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>`: The collection of single-value extended properties defined for the mailFolder.
 Read-only.

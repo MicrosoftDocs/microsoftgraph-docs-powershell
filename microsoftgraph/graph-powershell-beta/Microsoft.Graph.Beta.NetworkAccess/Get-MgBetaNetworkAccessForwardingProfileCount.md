@@ -21,6 +21,14 @@ Get-MgBetaNetworkAccessForwardingProfileCount [-Filter <String>] [-Search <Strin
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Filter

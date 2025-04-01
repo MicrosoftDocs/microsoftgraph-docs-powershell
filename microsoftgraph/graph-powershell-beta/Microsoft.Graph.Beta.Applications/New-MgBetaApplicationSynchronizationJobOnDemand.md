@@ -78,7 +78,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: ProvisionExpanded, Provision
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

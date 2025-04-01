@@ -1,313 +1,510 @@
 ---
 Module Name: Microsoft.Graph.Beta.BackupRestore
-Module Guid: 13043ff5-b233-4e96-ac07-930278cebdf6
-Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.backuprestore/?view=graph-powershell-beta
-Help Version: 1.0.0.0
+Module Guid: 69b0b44f-d549-438a-a070-1e473c1823db
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.BackupRestore Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+
 
 ## Microsoft.Graph.Beta.BackupRestore Cmdlets
+### [Enable-MgBetaSolutionBackupRestore](Enable-MgBetaSolutionBackupRestore.md)
+
+
 ### [Get-MgBetaSolutionBackupRestore](Get-MgBetaSolutionBackupRestore.md)
 
-### [Get-MgBetaSolutionBackupRestoreDriveInclusionRule](Get-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
 
 ### [Get-MgBetaSolutionBackupRestoreDriveInclusionRule](Get-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreDriveInclusionRuleCount](Get-MgBetaSolutionBackupRestoreDriveInclusionRuleCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreDriveProtectionUnit](Get-MgBetaSolutionBackupRestoreDriveProtectionUnit.md)
 
 ### [Get-MgBetaSolutionBackupRestoreDriveProtectionUnit](Get-MgBetaSolutionBackupRestoreDriveProtectionUnit.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJobCount.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreDriveProtectionUnitCount](Get-MgBetaSolutionBackupRestoreDriveProtectionUnitCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicy.md)
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicy.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyCount](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRule](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRule.md)
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRule](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRule.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit.md)
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJob.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJobCount.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSession](Get-MgBetaSolutionBackupRestoreExchangeRestoreSession.md)
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSession](Get-MgBetaSolutionBackupRestoreExchangeRestoreSession.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionCount](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact.md)
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifactCount](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifactCount.md)
 
+
 ### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifactRestorePoint](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifactRestorePoint.md)
 
-### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequestCount](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequestCount.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactCount](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactCount.md)
 
+
 ### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint.md)
 
-### [Get-MgBetaSolutionBackupRestoreMailboxInclusionRule](Get-MgBetaSolutionBackupRestoreMailboxInclusionRule.md)
 
 ### [Get-MgBetaSolutionBackupRestoreMailboxInclusionRule](Get-MgBetaSolutionBackupRestoreMailboxInclusionRule.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreMailboxInclusionRuleCount](Get-MgBetaSolutionBackupRestoreMailboxInclusionRuleCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreMailboxProtectionUnit](Get-MgBetaSolutionBackupRestoreMailboxProtectionUnit.md)
 
 ### [Get-MgBetaSolutionBackupRestoreMailboxProtectionUnit](Get-MgBetaSolutionBackupRestoreMailboxProtectionUnit.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJobCount.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitCount](Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy.md)
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule.md)
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRuleCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRuleCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit.md)
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitBulkAdditionJob.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitBulkAdditionJobCount.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession.md)
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequestCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequestCount.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactCount.md)
 
+
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint.md)
 
-### [Get-MgBetaSolutionBackupRestorePoint](Get-MgBetaSolutionBackupRestorePoint.md)
 
 ### [Get-MgBetaSolutionBackupRestorePoint](Get-MgBetaSolutionBackupRestorePoint.md)
+
 
 ### [Get-MgBetaSolutionBackupRestorePointCount](Get-MgBetaSolutionBackupRestorePointCount.md)
 
+
 ### [Get-MgBetaSolutionBackupRestorePointProtectionUnit](Get-MgBetaSolutionBackupRestorePointProtectionUnit.md)
 
-### [Get-MgBetaSolutionBackupRestoreProtectionPolicy](Get-MgBetaSolutionBackupRestoreProtectionPolicy.md)
 
 ### [Get-MgBetaSolutionBackupRestoreProtectionPolicy](Get-MgBetaSolutionBackupRestoreProtectionPolicy.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreProtectionPolicyCount](Get-MgBetaSolutionBackupRestoreProtectionPolicyCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreProtectionUnit](Get-MgBetaSolutionBackupRestoreProtectionUnit.md)
 
 ### [Get-MgBetaSolutionBackupRestoreProtectionUnit](Get-MgBetaSolutionBackupRestoreProtectionUnit.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreProtectionUnitCount](Get-MgBetaSolutionBackupRestoreProtectionUnitCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreServiceApp](Get-MgBetaSolutionBackupRestoreServiceApp.md)
 
 ### [Get-MgBetaSolutionBackupRestoreServiceApp](Get-MgBetaSolutionBackupRestoreServiceApp.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreServiceAppCount](Get-MgBetaSolutionBackupRestoreServiceAppCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreSession](Get-MgBetaSolutionBackupRestoreSession.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSession](Get-MgBetaSolutionBackupRestoreSession.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreSessionCount](Get-MgBetaSolutionBackupRestoreSessionCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicyCount](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicyCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRuleCount](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRuleCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitBulkAdditionJob.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitBulkAdditionJobCount.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSession](Get-MgBetaSolutionBackupRestoreSharePointRestoreSession.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSession](Get-MgBetaSolutionBackupRestoreSharePointRestoreSession.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionCount](Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequestCount](Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequestCount.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactCount](Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactCount.md)
 
+
 ### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint](Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint.md)
 
-### [Get-MgBetaSolutionBackupRestoreSiteInclusionRule](Get-MgBetaSolutionBackupRestoreSiteInclusionRule.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSiteInclusionRule](Get-MgBetaSolutionBackupRestoreSiteInclusionRule.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreSiteInclusionRuleCount](Get-MgBetaSolutionBackupRestoreSiteInclusionRuleCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreSiteProtectionUnit](Get-MgBetaSolutionBackupRestoreSiteProtectionUnit.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSiteProtectionUnit](Get-MgBetaSolutionBackupRestoreSiteProtectionUnit.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob.md)
+
+
+### [Get-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJobCount.md)
+
 
 ### [Get-MgBetaSolutionBackupRestoreSiteProtectionUnitCount](Get-MgBetaSolutionBackupRestoreSiteProtectionUnitCount.md)
 
+
+### [Initialize-MgBetaSolutionBackupRestoreProtectionPolicy](Initialize-MgBetaSolutionBackupRestoreProtectionPolicy.md)
+
+
+### [Initialize-MgBetaSolutionBackupRestoreServiceApp](Initialize-MgBetaSolutionBackupRestoreServiceApp.md)
+
+
+### [Initialize-MgBetaSolutionBackupRestoreSession](Initialize-MgBetaSolutionBackupRestoreSession.md)
+
+
+### [Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy](Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy.md)
+
+
+### [Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp](Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp.md)
+
+
 ### [New-MgBetaSolutionBackupRestoreDriveInclusionRule](New-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
+
 
 ### [New-MgBetaSolutionBackupRestoreDriveProtectionUnit](New-MgBetaSolutionBackupRestoreDriveProtectionUnit.md)
 
+
+### [New-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](New-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob.md)
+
+
 ### [New-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](New-MgBetaSolutionBackupRestoreExchangeProtectionPolicy.md)
+
 
 ### [New-MgBetaSolutionBackupRestoreExchangeRestoreSession](New-MgBetaSolutionBackupRestoreExchangeRestoreSession.md)
 
+
 ### [New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact.md)
+
 
 ### [New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
 
+
+### [New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest.md)
+
+
 ### [New-MgBetaSolutionBackupRestoreMailboxInclusionRule](New-MgBetaSolutionBackupRestoreMailboxInclusionRule.md)
+
 
 ### [New-MgBetaSolutionBackupRestoreMailboxProtectionUnit](New-MgBetaSolutionBackupRestoreMailboxProtectionUnit.md)
 
+
+### [New-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](New-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob.md)
+
+
 ### [New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy.md)
+
 
 ### [New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession.md)
 
+
 ### [New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
+
+
+### [New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest.md)
+
 
 ### [New-MgBetaSolutionBackupRestorePoint](New-MgBetaSolutionBackupRestorePoint.md)
 
+
 ### [New-MgBetaSolutionBackupRestoreProtectionPolicy](New-MgBetaSolutionBackupRestoreProtectionPolicy.md)
+
 
 ### [New-MgBetaSolutionBackupRestoreServiceApp](New-MgBetaSolutionBackupRestoreServiceApp.md)
 
+
 ### [New-MgBetaSolutionBackupRestoreSession](New-MgBetaSolutionBackupRestoreSession.md)
+
 
 ### [New-MgBetaSolutionBackupRestoreSharePointProtectionPolicy](New-MgBetaSolutionBackupRestoreSharePointProtectionPolicy.md)
 
+
 ### [New-MgBetaSolutionBackupRestoreSharePointRestoreSession](New-MgBetaSolutionBackupRestoreSharePointRestoreSession.md)
+
 
 ### [New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
 
+
+### [New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest.md)
+
+
 ### [New-MgBetaSolutionBackupRestoreSiteInclusionRule](New-MgBetaSolutionBackupRestoreSiteInclusionRule.md)
+
 
 ### [New-MgBetaSolutionBackupRestoreSiteProtectionUnit](New-MgBetaSolutionBackupRestoreSiteProtectionUnit.md)
 
+
+### [New-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](New-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob.md)
+
+
 ### [Remove-MgBetaSolutionBackupRestore](Remove-MgBetaSolutionBackupRestore.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreDriveInclusionRule](Remove-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
 
+
 ### [Remove-MgBetaSolutionBackupRestoreDriveProtectionUnit](Remove-MgBetaSolutionBackupRestoreDriveProtectionUnit.md)
+
+
+### [Remove-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](Remove-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](Remove-MgBetaSolutionBackupRestoreExchangeProtectionPolicy.md)
 
+
 ### [Remove-MgBetaSolutionBackupRestoreExchangeRestoreSession](Remove-MgBetaSolutionBackupRestoreExchangeRestoreSession.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact.md)
 
+
 ### [Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
+
+
+### [Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreMailboxInclusionRule](Remove-MgBetaSolutionBackupRestoreMailboxInclusionRule.md)
 
+
 ### [Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnit](Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnit.md)
+
+
+### [Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy.md)
 
+
 ### [Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
 
+
+### [Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest.md)
+
+
 ### [Remove-MgBetaSolutionBackupRestorePoint](Remove-MgBetaSolutionBackupRestorePoint.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreProtectionPolicy](Remove-MgBetaSolutionBackupRestoreProtectionPolicy.md)
 
+
 ### [Remove-MgBetaSolutionBackupRestoreServiceApp](Remove-MgBetaSolutionBackupRestoreServiceApp.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreSession](Remove-MgBetaSolutionBackupRestoreSession.md)
 
+
 ### [Remove-MgBetaSolutionBackupRestoreSharePointProtectionPolicy](Remove-MgBetaSolutionBackupRestoreSharePointProtectionPolicy.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreSharePointRestoreSession](Remove-MgBetaSolutionBackupRestoreSharePointRestoreSession.md)
 
+
 ### [Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
+
+
+### [Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest.md)
+
 
 ### [Remove-MgBetaSolutionBackupRestoreSiteInclusionRule](Remove-MgBetaSolutionBackupRestoreSiteInclusionRule.md)
 
+
 ### [Remove-MgBetaSolutionBackupRestoreSiteProtectionUnit](Remove-MgBetaSolutionBackupRestoreSiteProtectionUnit.md)
+
+
+### [Remove-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](Remove-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob.md)
+
+
+### [Search-MgBetaSolutionBackupRestorePoint](Search-MgBetaSolutionBackupRestorePoint.md)
+
 
 ### [Update-MgBetaSolutionBackupRestore](Update-MgBetaSolutionBackupRestore.md)
 
+
 ### [Update-MgBetaSolutionBackupRestoreDriveInclusionRule](Update-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
+
 
 ### [Update-MgBetaSolutionBackupRestoreDriveProtectionUnit](Update-MgBetaSolutionBackupRestoreDriveProtectionUnit.md)
 
+
+### [Update-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob.md)
+
+
 ### [Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy.md)
+
 
 ### [Update-MgBetaSolutionBackupRestoreExchangeRestoreSession](Update-MgBetaSolutionBackupRestoreExchangeRestoreSession.md)
 
+
 ### [Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact.md)
+
 
 ### [Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
 
+
+### [Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest.md)
+
+
 ### [Update-MgBetaSolutionBackupRestoreMailboxInclusionRule](Update-MgBetaSolutionBackupRestoreMailboxInclusionRule.md)
+
 
 ### [Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit](Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit.md)
 
+
+### [Update-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob.md)
+
+
 ### [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy.md)
+
 
 ### [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession.md)
 
+
 ### [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
+
+
+### [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest.md)
+
 
 ### [Update-MgBetaSolutionBackupRestorePoint](Update-MgBetaSolutionBackupRestorePoint.md)
 
+
 ### [Update-MgBetaSolutionBackupRestoreProtectionPolicy](Update-MgBetaSolutionBackupRestoreProtectionPolicy.md)
+
 
 ### [Update-MgBetaSolutionBackupRestoreServiceApp](Update-MgBetaSolutionBackupRestoreServiceApp.md)
 
+
 ### [Update-MgBetaSolutionBackupRestoreSession](Update-MgBetaSolutionBackupRestoreSession.md)
+
 
 ### [Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy](Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy.md)
 
+
 ### [Update-MgBetaSolutionBackupRestoreSharePointRestoreSession](Update-MgBetaSolutionBackupRestoreSharePointRestoreSession.md)
+
 
 ### [Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
 
+
+### [Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest.md)
+
+
 ### [Update-MgBetaSolutionBackupRestoreSiteInclusionRule](Update-MgBetaSolutionBackupRestoreSiteInclusionRule.md)
 
+
 ### [Update-MgBetaSolutionBackupRestoreSiteProtectionUnit](Update-MgBetaSolutionBackupRestoreSiteProtectionUnit.md)
+
+
+### [Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob.md)
+
 
 
 

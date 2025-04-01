@@ -20,8 +20,9 @@ Update the navigation property attendanceRecords in solutions
 Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord -AttendanceRecordId <String>
  -MeetingAttendanceReportId <String> -VirtualEventId <String> -VirtualEventSessionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>] [-Id <String>]
- [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-Role <String>]
+ [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>]
+ [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>] [-Id <String>]
+ [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-RegistrationId <String>] [-Role <String>]
  [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -38,8 +39,9 @@ Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord -AttendanceReco
 ```
 Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <IBookingsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>] [-Id <String>]
- [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-Role <String>]
+ [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>]
+ [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>] [-Id <String>]
+ [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-RegistrationId <String>] [-Role <String>]
  [-TotalAttendanceInSeconds <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -123,6 +125,22 @@ Email address of the user associated with this attendance record.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExternalRegistrationInformation
+virtualEventExternalRegistrationInformation
+To construct, see NOTES section for EXTERNALREGISTRATIONINFORMATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVirtualEventExternalRegistrationInformation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -230,6 +248,22 @@ Accept wildcard characters: False
 Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RegistrationId
+Unique identifier of a virtualEventRegistration.
+Presents for all participant who has registered for the virtualEventWebinar.
 
 ```yaml
 Type: String
@@ -381,6 +415,13 @@ Read-only.
     - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
     - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
   - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+  - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+    - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
@@ -391,9 +432,19 @@ For example, in the access reviews decisions API, this property might record the
   - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
+  - `[RegistrationId <String>]`: Unique identifier of a virtualEventRegistration.
+Presents for all participant who has registered for the virtualEventWebinar.
   - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
   - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+
+EXTERNALREGISTRATIONINFORMATION `<IMicrosoftGraphVirtualEventExternalRegistrationInformation>`: virtualEventExternalRegistrationInformation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+  - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
 
 IDENTITY `<IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -404,7 +455,6 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
@@ -413,14 +463,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

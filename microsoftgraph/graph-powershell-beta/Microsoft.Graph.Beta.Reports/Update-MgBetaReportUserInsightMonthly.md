@@ -19,7 +19,8 @@ Update-MgBetaReportUserInsightMonthly [-ResponseHeadersVariable <String>]
  [-Authentications <IMicrosoftGraphAuthenticationsMetric[]>] [-Id <String>]
  [-InactiveUsers <IMicrosoftGraphMonthlyInactiveUsersMetric[]>]
  [-InactiveUsersByApplication <IMicrosoftGraphMonthlyInactiveUsersByApplicationMetric[]>]
- [-MfaCompletions <IMicrosoftGraphMfaCompletionMetric[]>] [-Requests <IMicrosoftGraphUserRequestsMetric[]>]
+ [-MfaCompletions <IMicrosoftGraphMfaCompletionMetric[]>]
+ [-MfaRegisteredUsers <IMicrosoftGraphMfaUserCountMetric[]>] [-Requests <IMicrosoftGraphUserRequestsMetric[]>]
  [-SignUps <IMicrosoftGraphUserSignUpMetric[]>] [-Summary <IMicrosoftGraphInsightSummary[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -178,6 +179,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MfaRegisteredUsers
+
+To construct, see NOTES section for MFAREGISTEREDUSERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMfaUserCountMetric[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -321,9 +338,17 @@ Read-only.
 Supports $filter (eq).
   - `[AttemptsCount <Int64?>]`: The number of authentication requests made in the specified period.
 Supports $filter (eq).
+  - `[AuthFlow <String>]`: 
+  - `[Browser <String>]`: 
   - `[Country <String>]`: The location where the customers authenticated from.
 Supports $filter (eq).
   - `[FactDate <DateTime?>]`: The date of the user insight.
+  - `[Failures <IMicrosoftGraphAuthenticationFailure- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Count <Int64?>]`: 
+    - `[Reason <String>]`: 
+    - `[ReasonCode <String>]`: authenticationFailureReasonCode
   - `[IdentityProvider <String>]`: 
   - `[Language <String>]`: 
   - `[OS <String>]`: The platform for the device that the customers used.
@@ -352,9 +377,17 @@ Read-only.
 Supports $filter (eq).
     - `[AttemptsCount <Int64?>]`: The number of authentication requests made in the specified period.
 Supports $filter (eq).
+    - `[AuthFlow <String>]`: 
+    - `[Browser <String>]`: 
     - `[Country <String>]`: The location where the customers authenticated from.
 Supports $filter (eq).
     - `[FactDate <DateTime?>]`: The date of the user insight.
+    - `[Failures <IMicrosoftGraphAuthenticationFailure- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Count <Int64?>]`: 
+      - `[Reason <String>]`: 
+      - `[ReasonCode <String>]`: authenticationFailureReasonCode
     - `[IdentityProvider <String>]`: 
     - `[Language <String>]`: 
     - `[OS <String>]`: The platform for the device that the customers used.
@@ -402,10 +435,17 @@ Supports $filter (eq).
 Supports $filter (eq).
     - `[SuccessCount <Int64?>]`: Number of users who signed up successfully.
 Supports $filter (eq).
+  - `[MfaRegisteredUsers <IMicrosoftGraphMfaUserCountMetric- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Count <Int64?>]`: 
+    - `[FactDate <DateTime?>]`: 
+    - `[MfaType <String>]`: mfaType
   - `[Requests <IMicrosoftGraphUserRequestsMetric- `[]`>]`: Insights for all user requests on apps registered in the tenant for a specified period.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AppId <String>]`: 
+    - `[Browser <String>]`: 
     - `[Country <String>]`: 
     - `[FactDate <DateTime?>]`: The date of the user insight.
     - `[IdentityProvider <String>]`: 
@@ -416,6 +456,7 @@ Supports $filter (eq).
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AppId <String>]`: 
+    - `[Browser <String>]`: 
     - `[Count <Int64?>]`: The total number of users who signed up in the specified period.
 Supports $filter (eq).
     - `[Country <String>]`: 
@@ -483,10 +524,18 @@ Supports $filter (eq).
   - `[SuccessCount <Int64?>]`: Number of users who signed up successfully.
 Supports $filter (eq).
 
+MFAREGISTEREDUSERS `<IMicrosoftGraphMfaUserCountMetric- `[]`>`: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Count <Int64?>]`: 
+  - `[FactDate <DateTime?>]`: 
+  - `[MfaType <String>]`: mfaType
+
 REQUESTS `<IMicrosoftGraphUserRequestsMetric- `[]`>`: Insights for all user requests on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: 
+  - `[Browser <String>]`: 
   - `[Country <String>]`: 
   - `[FactDate <DateTime?>]`: The date of the user insight.
   - `[IdentityProvider <String>]`: 
@@ -498,6 +547,7 @@ SIGNUPS `<IMicrosoftGraphUserSignUpMetric- `[]`>`: Total sign-ups on apps regist
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: 
+  - `[Browser <String>]`: 
   - `[Count <Int64?>]`: The total number of users who signed up in the specified period.
 Supports $filter (eq).
   - `[Country <String>]`: 

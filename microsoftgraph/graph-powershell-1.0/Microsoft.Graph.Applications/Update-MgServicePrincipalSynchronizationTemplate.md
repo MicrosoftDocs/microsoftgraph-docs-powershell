@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property templates in servicePrincipals
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationTemplate?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -75,7 +72,7 @@ Identifier of the application this template belongs to.
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Aliases: ObjectId
 
 Required: False
 Position: Named

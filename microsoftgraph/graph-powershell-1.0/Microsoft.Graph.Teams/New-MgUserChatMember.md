@@ -190,9 +190,9 @@ Accept wildcard characters: False
 
 ### -Roles
 The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
 
 ```yaml
@@ -292,9 +292,9 @@ BODYPARAMETER `<IMicrosoftGraphConversationMember>`: conversationMember
 Read-only.
   - `[DisplayName <String>]`: The display name of the user.
   - `[Roles <String- `[]`>]`: The roles for that user.
-This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
+This property contains more qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
 Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+A basic member shouldn't have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.

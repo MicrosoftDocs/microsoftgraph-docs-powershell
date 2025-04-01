@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamworkDeletedTeamChannelMember
 
 ## SYNOPSIS
-Create new navigation property to members for teamwork
+Create new navigation property to allMembers for teamwork
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
@@ -23,11 +23,34 @@ New-MgBetaTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <S
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### CreateExpanded1
+```
+New-MgBetaTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create1
+```
+New-MgBetaTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <String>
+ -BodyParameter <IMicrosoftGraphConversationMember> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Create
 ```
 New-MgBetaTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <String>
  -BodyParameter <IMicrosoftGraphConversationMember> [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Roles <String[]>]
+ [-VisibleHistoryStartDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,6 +61,13 @@ New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-Respo
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### CreateViaIdentity1
+```
+New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphConversationMember> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### CreateViaIdentity
 ```
 New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
@@ -46,7 +76,7 @@ New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for teamwork
+Create new navigation property to allMembers for teamwork
 
 ## PARAMETERS
 
@@ -55,7 +85,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -71,7 +101,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphConversationMember
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create1, Create, CreateViaIdentity1, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -86,7 +116,7 @@ The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
 Aliases:
 
 Required: True
@@ -101,7 +131,7 @@ The unique identifier of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
 Aliases:
 
 Required: True
@@ -116,7 +146,7 @@ The display name of the user.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -147,7 +177,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -163,7 +193,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateViaIdentity1, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -212,7 +242,7 @@ An Out-of-tenant external member is assigned the owner role.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -228,7 +258,7 @@ This property is settable only for members of a chat.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -339,6 +369,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 

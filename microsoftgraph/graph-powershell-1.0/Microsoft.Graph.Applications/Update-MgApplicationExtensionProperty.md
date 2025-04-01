@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property extensionProperties in applications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -89,7 +86,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

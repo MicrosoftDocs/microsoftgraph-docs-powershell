@@ -11,7 +11,8 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Doesn't support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
 > [!NOTE]
@@ -44,7 +45,8 @@ Get-MgDomainNameReference -InputObject <IIdentityDirectoryManagementIdentity> [-
 ## DESCRIPTION
 The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Doesn't support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
 ## EXAMPLES
@@ -335,6 +337,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
@@ -346,6 +349,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

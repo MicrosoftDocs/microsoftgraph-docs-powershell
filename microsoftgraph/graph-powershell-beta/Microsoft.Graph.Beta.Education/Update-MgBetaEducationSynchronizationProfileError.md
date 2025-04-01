@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -EntryType
-Represents the sync entity (school, section, student, teacher).
+
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorCode
-Represents the error code for this error.
+
 
 ```yaml
 Type: String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorMessage
-Contains a description of the error.
+
 
 ```yaml
 Type: String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoiningValue
-The unique identifier for the entry.
+
 
 ```yaml
 Type: String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordedDateTime
-The time of occurrence of this error.
+
 
 ```yaml
 Type: DateTime
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportableIdentifier
-The identifier of this error entry.
+
 
 ```yaml
 Type: String
@@ -330,12 +330,12 @@ BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationError>`: educationSynchro
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[EntryType <String>]`: Represents the sync entity (school, section, student, teacher).
-  - `[ErrorCode <String>]`: Represents the error code for this error.
-  - `[ErrorMessage <String>]`: Contains a description of the error.
-  - `[JoiningValue <String>]`: The unique identifier for the entry.
-  - `[RecordedDateTime <DateTime?>]`: The time of occurrence of this error.
-  - `[ReportableIdentifier <String>]`: The identifier of this error entry.
+  - `[EntryType <String>]`: 
+  - `[ErrorCode <String>]`: 
+  - `[ErrorMessage <String>]`: 
+  - `[JoiningValue <String>]`: 
+  - `[RecordedDateTime <DateTime?>]`: 
+  - `[ReportableIdentifier <String>]`: 
 
 INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
@@ -356,6 +356,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
+  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
+  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
 
 ## RELATED LINKS
 

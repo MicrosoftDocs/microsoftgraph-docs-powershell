@@ -56,18 +56,7 @@ Retrieve properties and relationships for a site resource.A site resource repres
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null" 
-
-```
-This example shows how to use the Get-MgBetaSite Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaSite
+Get-MgBetaSite -Search '"{query}"' 
 
 ```
 This example shows how to use the Get-MgBetaSite Cmdlet.
@@ -381,7 +370,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/site-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/site-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-list?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/site-search?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-search?view=graph-rest-beta)
 
 
 

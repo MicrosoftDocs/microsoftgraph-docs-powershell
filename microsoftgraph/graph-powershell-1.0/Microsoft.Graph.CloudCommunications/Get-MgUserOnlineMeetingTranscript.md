@@ -20,12 +20,13 @@ Retrieving the content of the transcript returns the stream of text associated w
 
 ## SYNTAX
 
-### List (Default)
+### Get1 (Default)
 ```
-Get-MgUserOnlineMeetingTranscript -OnlineMeetingId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgUserOnlineMeetingTranscript -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Count]
+ [-EndDateTime <DateTime>] [-Filter <String>] [-MeetingOrganizerUserId <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-StartDateTime <DateTime>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -33,6 +34,23 @@ Get-MgUserOnlineMeetingTranscript -OnlineMeetingId <String> -UserId <String> [-E
 Get-MgUserOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### List
+```
+Get-MgUserOnlineMeetingTranscript -OnlineMeetingId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Count] [-EndDateTime <DateTime>] [-Filter <String>]
+ [-MeetingOrganizerUserId <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-StartDateTime <DateTime>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -47,6 +65,14 @@ Retrieve a callTranscript object associated with a scheduled onlineMeeting.
 This API doesn't support getting call transcripts from channel meetings.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetingTranscript.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetingTranscript.Read.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Get a callTranscript
@@ -93,6 +119,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get1, GetViaIdentity1
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -101,6 +142,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndDateTime
+Usage: endDateTime=@endDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get1, GetViaIdentity1
+Aliases:
 
 Required: False
 Position: Named
@@ -129,7 +185,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -160,7 +216,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -170,12 +226,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -MeetingOrganizerUserId
+Usage: meetingOrganizerUserId='@meetingOrganizerUserId'
+
+```yaml
+Type: String
+Parameter Sets: Get1, GetViaIdentity1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OnlineMeetingId
 The unique identifier of onlineMeeting
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -250,7 +321,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -265,8 +336,23 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartDateTime
+Usage: startDateTime=@startDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get1, GetViaIdentity1
+Aliases:
 
 Required: False
 Position: Named
@@ -280,7 +366,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases: Limit
 
 Required: False
@@ -295,7 +381,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get1, Get, List
 Aliases:
 
 Required: True
@@ -310,7 +396,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -357,6 +443,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscript)
 
 [https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0)
 

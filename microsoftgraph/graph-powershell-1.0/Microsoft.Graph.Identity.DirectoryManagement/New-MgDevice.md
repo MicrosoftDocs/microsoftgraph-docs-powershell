@@ -274,6 +274,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The display name for the device.
+Maximum length is 256 characters.
 Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
 
@@ -874,6 +875,7 @@ Intune sets this property.
 Possible values are: unknown, company, personal.
   - `[DeviceVersion <Int32?>]`: For internal use only.
   - `[DisplayName <String>]`: The display name for the device.
+Maximum length is 256 characters.
 Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
   - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.

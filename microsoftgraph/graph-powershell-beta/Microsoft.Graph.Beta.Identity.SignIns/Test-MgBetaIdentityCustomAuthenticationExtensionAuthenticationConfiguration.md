@@ -9,7 +9,7 @@ ms.subservice: entra-sign-in
 # Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
 
 ## SYNOPSIS
-An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
+An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension object, which can represent one of the following derived types:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-Re
 ```
 
 ## DESCRIPTION
-An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
+An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension object, which can represent one of the following derived types:
 
 **Permissions**
 
@@ -281,6 +281,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
+  - `[ChangeItemBaseId <String>]`: The unique identifier of changeItemBase
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
@@ -294,6 +295,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
   - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
   - `[GroupId <String>]`: The unique identifier of group
+  - `[HardwareOathAuthenticationMethodId <String>]`: The unique identifier of hardwareOathAuthenticationMethod
+  - `[HardwareOathTokenAuthenticationMethodDeviceId <String>]`: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
   - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase

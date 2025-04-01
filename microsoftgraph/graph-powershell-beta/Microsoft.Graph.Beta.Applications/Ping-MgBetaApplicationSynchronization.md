@@ -35,7 +35,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: Ping
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

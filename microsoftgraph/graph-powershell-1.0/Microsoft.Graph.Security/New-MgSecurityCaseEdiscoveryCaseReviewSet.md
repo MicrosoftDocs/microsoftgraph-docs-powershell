@@ -20,8 +20,9 @@ Create a new ediscoveryReviewSet object.
 ```
 New-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -35,8 +36,9 @@ New-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String>
 ```
 New-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-Queries <IMicrosoftGraphSecurityEdiscoveryReviewSetQuery[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -53,9 +55,9 @@ Create a new ediscoveryReviewSet object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -128,6 +130,21 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Description
+
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -322,6 +339,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: 
+  - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -392,6 +410,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
   - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -404,6 +423,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability

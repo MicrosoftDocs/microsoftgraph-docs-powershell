@@ -874,9 +874,11 @@ Maximum length is 255 characters.
 The URL that directs to the company's privacy statement.
 Not required.
   - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan- `[]`>]`: Not nullable.
-    - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-    - `[ProvisioningStatus <String>]`: For example, 'Success'.
-    - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
+    - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+    - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+    - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'.
   - `[SecurityComplianceNotificationMails <String- `[]`>]`: Not nullable.
   - `[SecurityComplianceNotificationPhones <String- `[]`>]`: Not nullable.
   - `[State <String>]`: State name of the address for the organization.
@@ -1088,9 +1090,11 @@ The URL that directs to the company's privacy statement.
 Not required.
 
 PROVISIONEDPLANS `<IMicrosoftGraphProvisionedPlan- `[]`>`: Not nullable.
-  - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-  - `[ProvisioningStatus <String>]`: For example, 'Success'.
-  - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
+  - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+  - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+  - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'.
 
 VERIFIEDDOMAINS `<IMicrosoftGraphVerifiedDomain- `[]`>`: The collection of domains associated with this tenant.
 Not nullable.

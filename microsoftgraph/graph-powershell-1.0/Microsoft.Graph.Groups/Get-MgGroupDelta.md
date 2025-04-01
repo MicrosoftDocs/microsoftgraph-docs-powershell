@@ -10,7 +10,7 @@ ms.subservice: entra-groups
 
 ## SYNOPSIS
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
-See Using Delta Query for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDelta?view=graph-powershell-beta)
@@ -25,7 +25,7 @@ Get-MgGroupDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Str
 
 ## DESCRIPTION
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
-See Using Delta Query for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**
 

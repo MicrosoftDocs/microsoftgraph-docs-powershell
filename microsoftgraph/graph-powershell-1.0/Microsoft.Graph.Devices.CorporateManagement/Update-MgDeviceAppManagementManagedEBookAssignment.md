@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Update the properties of a managedEBookAssignment object.
+Update the properties of a iosVppEBookAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ Update-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Update the properties of a managedEBookAssignment object.
+Update the properties of a iosVppEBookAssignment object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -57,9 +57,9 @@ Update the properties of a managedEBookAssignment object.
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.managedEBookAssignment"
+	"@odata.type" = "#microsoft.graph.iosVppEBookAssignment"
 	target = @{
-		"@odata.type" = "microsoft.graph.allLicensedUsersAssignmentTarget"
+		"@odata.type" = "microsoft.graph.deviceAndAppManagementAssignmentTarget"
 	}
 	installIntent = "required"
 }
@@ -337,7 +337,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookassignment)
 
-[https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebookassignment-update?view=graph-rest-1.0)
 
 
 

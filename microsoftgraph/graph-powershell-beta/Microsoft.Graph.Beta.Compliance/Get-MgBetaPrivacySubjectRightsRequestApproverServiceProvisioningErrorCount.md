@@ -188,6 +188,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[TagId1 <String>]`: The unique identifier of tag
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS

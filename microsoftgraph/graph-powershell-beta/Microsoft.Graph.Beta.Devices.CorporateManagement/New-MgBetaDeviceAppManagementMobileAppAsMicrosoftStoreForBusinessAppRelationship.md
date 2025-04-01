@@ -173,8 +173,12 @@ Accept wildcard characters: False
 ```
 
 ### -TargetId
-App ID of the app that is the target of the mobile app relationship entity.
-Read-Only
+The unique app identifier of the target of the mobile app relationship entity.
+For example: 2dbc75b9-e993-4e4d-a071-91ac5a218672.
+Read-Only.
+Returned by default.
+Supports: $select.
+Does not support $search, $filter, $orderBy.
 
 ```yaml
 Type: String
@@ -255,8 +259,12 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppRelationship>`: Describes a relationship
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
-Read-Only
+  - `[TargetId <String>]`: The unique app identifier of the target of the mobile app relationship entity.
+For example: 2dbc75b9-e993-4e4d-a071-91ac5a218672.
+Read-Only.
+Returned by default.
+Supports: $select.
+Does not support $search, $filter, $orderBy.
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
@@ -318,8 +326,10 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
   - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
   - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
+  - `[Upn <String>]`: Usage: upn='{upn}'
   - `[UserId <String>]`: The unique identifier of user
   - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
+  - `[UserPrincipalName <String>]`: Usage: userPrincipalName='{userPrincipalName}'
   - `[VppTokenId <String>]`: The unique identifier of vppToken
   - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
   - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus

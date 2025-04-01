@@ -16,7 +16,16 @@ Read-only.
 
 ## SYNTAX
 
-### List (Default)
+### Get2 (Default)
+```
+Get-MgBetaUserOnlineMeetingRecording -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Count] [-EndDateTime <DateTime>] [-Filter <String>] [-MeetingOrganizerUserId <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-StartDateTime <DateTime>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
+```
+
+### List
 ```
 Get-MgBetaUserOnlineMeetingRecording -OnlineMeetingId <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -36,6 +45,15 @@ Get-MgBetaUserOnlineMeetingRecording -OnlineMeetingId <String> -UserId <String> 
 Get-MgBetaUserOnlineMeetingRecording -OnlineMeetingId <String> -UserId <String> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Count] [-EndDateTime <DateTime>] [-Filter <String>]
+ [-MeetingOrganizerUserId <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-StartDateTime <DateTime>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -106,6 +124,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get2, GetViaIdentity2
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -122,12 +155,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -EndDateTime
+Usage: endDateTime=@endDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get2, GetViaIdentity2
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: List, Get1, GetViaIdentity1
+Parameter Sets: Get2, List, Get1, GetViaIdentity2, GetViaIdentity1
 Aliases: Expand
 
 Required: False
@@ -142,7 +190,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases:
 
 Required: False
@@ -173,13 +221,28 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MeetingOrganizerUserId
+Usage: meetingOrganizerUserId='@meetingOrganizerUserId'
+
+```yaml
+Type: String
+Parameter Sets: Get2, GetViaIdentity2
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -263,7 +326,7 @@ Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: List, Get1, GetViaIdentity1
+Parameter Sets: Get2, List, Get1, GetViaIdentity2, GetViaIdentity1
 Aliases: Select
 
 Required: False
@@ -293,7 +356,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases:
 
 Required: False
@@ -308,8 +371,23 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartDateTime
+Usage: startDateTime=@startDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get2, GetViaIdentity2
+Aliases:
 
 Required: False
 Position: Named
@@ -323,7 +401,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases: Limit
 
 Required: False
@@ -338,7 +416,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1, Get
+Parameter Sets: Get2, List, Get1, Get
 Aliases:
 
 Required: True
@@ -353,7 +431,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get2, List, GetViaIdentity2
 Aliases:
 
 Required: False
@@ -407,6 +485,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording)
 
 [https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta)
 
 
 

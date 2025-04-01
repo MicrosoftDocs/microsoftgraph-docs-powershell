@@ -20,9 +20,9 @@ Create new navigation property to mailboxProtectionUnits for solutions
 New-MgBetaSolutionBackupRestoreMailboxProtectionUnit [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DirectoryObjectId <String>] [-Error <IMicrosoftGraphPublicError>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-PolicyId <String>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-MailboxType <String>]
+ [-PolicyId <String>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -192,6 +192,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MailboxType
+mailboxType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PolicyId
 The unique identifier of the protection policy based on which protection unit was created.
 
@@ -335,6 +350,7 @@ For example, in the access reviews decisions API, this property might record the
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DirectoryObjectId <String>]`: The ID of the directory object.
+  - `[MailboxType <String>]`: mailboxType
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

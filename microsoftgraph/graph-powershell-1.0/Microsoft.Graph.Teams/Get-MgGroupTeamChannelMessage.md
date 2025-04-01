@@ -17,7 +17,15 @@ Nullable.
 
 ## SYNTAX
 
-### List (Default)
+### Get1 (Default)
+```
+Get-MgGroupTeamChannelMessage -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Count]
+ [-Filter <String>] [-Model <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
+```
+
+### List
 ```
 Get-MgGroupTeamChannelMessage -ChannelId <String> -GroupId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -30,6 +38,14 @@ Get-MgGroupTeamChannelMessage -ChannelId <String> -GroupId <String> [-ExpandProp
 Get-MgGroupTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -GroupId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Count] [-Filter <String>] [-Model <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -91,6 +107,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get1, GetViaIdentity1
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -127,7 +158,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -142,7 +173,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get1, List, Get
 Aliases:
 
 Required: True
@@ -173,13 +204,28 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Model
+The payment model for the API
+
+```yaml
+Type: String
+Parameter Sets: Get1, GetViaIdentity1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -248,7 +294,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -263,7 +309,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases: OrderBy
 
 Required: False
@@ -278,7 +324,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases: Limit
 
 Required: False
@@ -293,7 +339,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -357,6 +403,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmessage)
+
+[https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-1.0)
 
 
 

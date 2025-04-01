@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserOnenoteNotebook
 
 ## SYNOPSIS
-The collection of OneNote notebooks that are owned by the user or group.
+The collection of OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 
@@ -40,7 +40,7 @@ Get-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-The collection of OneNote notebooks that are owned by the user or group.
+The collection of OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 
@@ -328,6 +328,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
@@ -335,6 +336,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SiteId <String>]`: The unique identifier of site
   - `[UserId <String>]`: The unique identifier of user
 

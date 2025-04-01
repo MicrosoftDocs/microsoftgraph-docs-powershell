@@ -20,7 +20,8 @@ Create an appManagementPolicy object.
 ```
 New-MgBetaPolicyAppManagementPolicy [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsEnabled] [-Restrictions <Hashtable>] [-Headers <IDictionary>]
+ [-DisplayName <String>] [-Id <String>] [-IsEnabled]
+ [-Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -276,9 +277,10 @@ Accept wildcard characters: False
 
 ### -Restrictions
 customAppManagementConfiguration
+To construct, see NOTES section for RESTRICTIONS properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: IMicrosoftGraphCustomAppManagementConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -377,6 +379,60 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
       - `[RestrictionType <String>]`: appCredentialRestrictionType
       - `[State <String>]`: appManagementRestrictionState
+    - `[ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]`: customAppManagementApplicationConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]`: identifierUriConfiguration
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+          - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+          - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+          - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+          - `[State <String>]`: appManagementRestrictionState
+
+RESTRICTIONS `<IMicrosoftGraphCustomAppManagementConfiguration>`: customAppManagementConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
+    - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+    - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
+    - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+    - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+    - `[State <String>]`: appManagementRestrictionState
+  - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
+    - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to passwordLifetime.
+    - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+    - `[RestrictionType <String>]`: appCredentialRestrictionType
+    - `[State <String>]`: appManagementRestrictionState
+  - `[ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]`: customAppManagementApplicationConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]`: identifierUriConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+        - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+        - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+        - `[State <String>]`: appManagementRestrictionState
 
 ## RELATED LINKS
 

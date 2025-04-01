@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Update the properties of a sensor object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIdentitySensor](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIdentitySensor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -108,6 +111,8 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 The date and time when the sensor was generated.
+The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -403,6 +408,8 @@ BODYPARAMETER `<IMicrosoftGraphSecuritySensor>`: sensor
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the sensor was generated.
+The Timestamp represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DeploymentStatus <String>]`: deploymentStatus
   - `[DisplayName <String>]`: The display name of the sensor.
   - `[DomainName <String>]`: The fully qualified domain name of the sensor.
@@ -485,6 +492,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
@@ -554,6 +562,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent

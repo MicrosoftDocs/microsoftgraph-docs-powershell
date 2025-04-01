@@ -48,7 +48,7 @@ Get a conversationMember from a channel.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChannelMember.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMember.Read.All, TeamMember.Read.Group, ChannelMember.ReadWrite.All,  |
+| Application | TeamMember.Read.Group, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

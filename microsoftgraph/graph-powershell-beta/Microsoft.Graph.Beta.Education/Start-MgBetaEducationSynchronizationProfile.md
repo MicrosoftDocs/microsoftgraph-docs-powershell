@@ -8,11 +8,7 @@ schema: 2.0.0
 # Start-MgBetaEducationSynchronizationProfile
 
 ## SYNOPSIS
-Verify the files uploaded to a specific school data synchronization profile in the tenant.
-If the verification is successful, synchronization starts on the profile.
-Otherwise, the response contains errors and warnings.
-If the response contains errors, the synchronization won't start.
-If the response contains only warnings, synchronization starts.
+Invoke action start
 
 ## SYNTAX
 
@@ -31,19 +27,7 @@ Start-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Verify the files uploaded to a specific school data synchronization profile in the tenant.
-If the verification is successful, synchronization starts on the profile.
-Otherwise, the response contains errors and warnings.
-If the response contains errors, the synchronization won't start.
-If the response contains only warnings, synchronization starts.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAdministration.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAdministration.ReadWrite.All,  |
+Invoke action start
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -202,12 +186,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
+  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
+  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile)
-
-[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-start?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-start?view=graph-rest-beta)
 
 
 

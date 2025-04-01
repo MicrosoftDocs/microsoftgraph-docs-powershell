@@ -9,7 +9,7 @@ ms.subservice: entra-sign-in
 # Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
 
 ## SYNOPSIS
-Join a multi-tenant organization, after the owner of the multi-tenant organization has added your tenant to the multi-tenant organization as pending.
+Join a multi-tenant organization, after the owner of the multi-tenant organization adds your tenant to the multi-tenant organization as pending.
 Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
@@ -35,7 +35,7 @@ Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
 ```
 
 ## DESCRIPTION
-Join a multi-tenant organization, after the owner of the multi-tenant organization has added your tenant to the multi-tenant organization as pending.
+Join a multi-tenant organization, after the owner of the multi-tenant organization adds your tenant to the multi-tenant organization as pending.
 Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.

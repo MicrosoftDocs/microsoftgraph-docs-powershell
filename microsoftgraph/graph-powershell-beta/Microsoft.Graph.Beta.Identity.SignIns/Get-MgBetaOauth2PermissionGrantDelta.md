@@ -10,7 +10,7 @@ ms.subservice: entra-applications
 
 ## SYNOPSIS
 Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
-For details, see Using delta query.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgOauth2PermissionGrantDelta](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgOauth2PermissionGrantDelta?view=graph-powershell-1.0)
@@ -26,7 +26,7 @@ Get-MgBetaOauth2PermissionGrantDelta [-ExpandProperty <String[]>] [-Filter <Stri
 
 ## DESCRIPTION
 Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
-For details, see Using delta query.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**
 

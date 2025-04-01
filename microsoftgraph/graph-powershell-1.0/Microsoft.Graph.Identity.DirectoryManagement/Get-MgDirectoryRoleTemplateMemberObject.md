@@ -9,9 +9,8 @@ ms.subservice: entra-directory-management
 # Get-MgDirectoryRoleTemplateMemberObject
 
 ## SYNOPSIS
-Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-Note: Only users and role-enabled groups can be members of directory roles.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+Only users and role-enabled groups can be members of directory roles.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleTemplateMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateMemberObject?view=graph-powershell-beta)
@@ -49,9 +48,8 @@ Get-MgDirectoryRoleTemplateMemberObject -InputObject <IIdentityDirectoryManageme
 ```
 
 ## DESCRIPTION
-Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-Note: Only users and role-enabled groups can be members of directory roles.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+Only users and role-enabled groups can be members of directory roles.
 
 ## PARAMETERS
 
@@ -244,6 +242,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
@@ -255,6 +254,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

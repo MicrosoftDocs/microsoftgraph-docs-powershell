@@ -20,10 +20,11 @@ Update the navigation property events in solutions
 Update-MgBetaVirtualEvent -VirtualEventId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>]
  [-Description <IMicrosoftGraphItemBody>] [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
- [-Id <String>] [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
- [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Settings <IMicrosoftGraphVirtualEventSettings>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>] [-Id <String>]
+ [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
+ [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update1
@@ -38,10 +39,11 @@ Update-MgBetaVirtualEvent -VirtualEventId <String> -BodyParameter <IMicrosoftGra
 Update-MgBetaVirtualEvent -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>]
  [-Description <IMicrosoftGraphItemBody>] [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
- [-Id <String>] [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
- [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Settings <IMicrosoftGraphVirtualEventSettings>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>] [-Id <String>]
+ [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
+ [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -140,6 +142,23 @@ To construct, see NOTES section for ENDDATETIME properties and create a hash tab
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExternalEventInformation
+The external information of a virtual event.
+Returned only for event organizers or coorganizers; otherwise, null.
+To construct, see NOTES section for EXTERNALEVENTINFORMATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVirtualEventExternalInformation[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
@@ -403,6 +422,14 @@ For example, in the access reviews decisions API, this property might record the
 For example, '2019-04-16T09:00:00'.
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
+  - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers; otherwise, null.
+    - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+    - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
   - `[Presenters <IMicrosoftGraphVirtualEventPresenter- `[]`>]`: The virtual event presenters.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -429,6 +456,7 @@ Read-only.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
       - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+      - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -446,13 +474,25 @@ Read-only.
             - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
             - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
           - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+          - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+            - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
           - `[Identity <IMicrosoftGraphIdentity>]`: identity
           - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
+          - `[RegistrationId <String>]`: Unique identifier of a virtualEventRegistration.
+Presents for all participant who has registered for the virtualEventWebinar.
           - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
           - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+        - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers.
+Read-only.
         - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
 Read-only.
         - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
@@ -517,6 +557,7 @@ Only appears when applicable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Email <String>]`: Email address of the registrant.
+        - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
         - `[FirstName <String>]`: First name of the registrant.
         - `[LastName <String>]`: Last name of the registrant.
         - `[PreferredLanguage <String>]`: The registrant's preferred language.
@@ -577,8 +618,16 @@ For example, '2019-04-16T09:00:00'.
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
+EXTERNALEVENTINFORMATION `<IMicrosoftGraphVirtualEventExternalInformation- `[]`>`: The external information of a virtual event.
+Returned only for event organizers or coorganizers; otherwise, null.
+  - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+  - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
+
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
@@ -587,14 +636,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
-  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -639,6 +684,7 @@ For example, in the access reviews decisions API, this property might record the
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
     - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+    - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -656,13 +702,31 @@ Read-only.
           - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
           - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
         - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+        - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+          - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
+        - `[RegistrationId <String>]`: Unique identifier of a virtualEventRegistration.
+Presents for all participant who has registered for the virtualEventWebinar.
         - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
         - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+      - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers.
+Read-only.
+        - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+        - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
       - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
 Read-only.
       - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
@@ -732,6 +796,7 @@ Only appears when applicable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Email <String>]`: Email address of the registrant.
+      - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
       - `[FirstName <String>]`: First name of the registrant.
       - `[LastName <String>]`: Last name of the registrant.
       - `[PreferredLanguage <String>]`: The registrant's preferred language.
@@ -766,6 +831,7 @@ SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: The sessions for the virt
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
   - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+  - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -783,6 +849,13 @@ Read-only.
         - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
         - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
       - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+      - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+        - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
@@ -793,9 +866,20 @@ For example, in the access reviews decisions API, this property might record the
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
+      - `[RegistrationId <String>]`: Unique identifier of a virtualEventRegistration.
+Presents for all participant who has registered for the virtualEventWebinar.
       - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+    - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers.
+Read-only.
+      - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+      - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
     - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
 Read-only.
     - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
@@ -882,6 +966,7 @@ Only appears when applicable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Email <String>]`: Email address of the registrant.
+    - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
     - `[FirstName <String>]`: First name of the registrant.
     - `[LastName <String>]`: Last name of the registrant.
     - `[PreferredLanguage <String>]`: The registrant's preferred language.

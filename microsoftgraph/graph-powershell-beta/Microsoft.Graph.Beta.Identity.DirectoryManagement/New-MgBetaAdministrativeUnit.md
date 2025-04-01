@@ -9,16 +9,16 @@ ms.subservice: entra-directory-management
 # New-MgBetaAdministrativeUnit
 
 ## SYNOPSIS
-Use this API to create a new administrativeUnit.
+Create a new administrativeUnit.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaAdministrativeUnit [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsMemberManagementRestricted]
- [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
+ [-DeletedDateTime <DateTime>] [-DeletedMembers <IMicrosoftGraphDirectoryObject[]>] [-Description <String>]
+ [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
+ [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
  [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
  [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -32,7 +32,7 @@ New-MgBetaAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit>
 ```
 
 ## DESCRIPTION
-Use this API to create a new administrativeUnit.
+Create a new administrativeUnit.
 
 ## EXAMPLES
 ### Example 1: Create an administrative unit
@@ -111,6 +111,22 @@ Always null when the object hasn't been deleted.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeletedMembers
+
+To construct, see NOTES section for DELETEDMEMBERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -390,6 +406,11 @@ BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[DeletedMembers <IMicrosoftGraphDirectoryObject- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
@@ -399,10 +420,6 @@ Read-only.
   - `[IsMemberManagementRestricted <Boolean?>]`: 
   - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
-    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
   - `[MembershipRule <String>]`: 
   - `[MembershipRuleProcessingState <String>]`: 
   - `[MembershipType <String>]`: 
@@ -419,6 +436,12 @@ For example, if a user changes their display name the API might show the new val
       - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Visibility <String>]`: 
+
+DELETEDMEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
 
 EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for this administrative unit.
 Nullable.

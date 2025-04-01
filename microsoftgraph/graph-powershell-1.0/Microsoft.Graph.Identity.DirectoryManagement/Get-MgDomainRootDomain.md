@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainrootdomain
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDomainRootDomain
 
 ## SYNOPSIS
-Get rootDomain from domains
+Get the root domain of a subdomain.
+This API returns a single object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDomainRootDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainRootDomain?view=graph-powershell-beta)
@@ -30,7 +32,8 @@ Get-MgDomainRootDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get rootDomain from domains
+Get the root domain of a subdomain.
+This API returns a single object.
 
 **Permissions**
 
@@ -39,6 +42,19 @@ Get rootDomain from domains
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDomainRootDomain -DomainId $domainId
+
+```
+This example shows how to use the Get-MgDomainRootDomain Cmdlet.
+
 
 ## PARAMETERS
 
@@ -179,6 +195,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
@@ -190,12 +207,14 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainrootdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainrootdomain)
 
+[https://learn.microsoft.com/graph/api/domain-get-rootdomain?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-get-rootdomain?view=graph-rest-1.0)
 
 
 

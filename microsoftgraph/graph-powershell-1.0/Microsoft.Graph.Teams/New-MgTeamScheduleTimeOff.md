@@ -20,9 +20,9 @@ Create a new timeOff instance in a schedule.
 ```
 New-MgTeamScheduleTimeOff -TeamId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedTimeOff <IMicrosoftGraphTimeOffItem>]
- [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -36,9 +36,9 @@ New-MgTeamScheduleTimeOff -TeamId <String> -BodyParameter <IMicrosoftGraphTimeOf
 ```
 New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedTimeOff <IMicrosoftGraphTimeOffItem>]
- [-UserId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -177,6 +177,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsStagedForDeletion
+The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -342,6 +357,7 @@ Read-only.
     - `[Theme <String>]`: scheduleEntityTheme
     - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.
+  - `[IsStagedForDeletion <Boolean?>]`: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
   - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
   - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.

@@ -63,7 +63,7 @@ $params = @{
 	onBehalfOfUserId = "a3601044-a1b5-438e-b742-f78d01d68a67"
 	clockInEvent = @{
 		dateTime = [System.DateTime]::Parse("2019-03-18T00:00:00.000Z")
-		atApprovedLocation = $true
+		isAtApprovedLocation = $true
 		notes = @{
 			content = "Started late due to traffic in CA 237"
 			contentType = "text"
@@ -82,7 +82,7 @@ $params = @{
 			}
 			start = @{
 				dateTime = [System.DateTime]::Parse("2019-03-18T02:00:00.000Z")
-				atApprovedLocation = $true
+				isAtApprovedLocation = $true
 				notes = @{
 					content = "Reduced break to make up for lost time"
 					contentType = "text"
@@ -448,7 +448,11 @@ Read-only.
     - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+      - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
       - `[DateTime <DateTime?>]`: The time the entry is recorded.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -472,7 +476,11 @@ BREAKS `<IMicrosoftGraphTimeCardBreak- `[]`>`: The list of breaks associated wit
   - `[BreakId <String>]`: ID of the timeCardBreak.
   - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+    - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
     - `[DateTime <DateTime?>]`: The time the entry is recorded.
     - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -483,7 +491,11 @@ BREAKS `<IMicrosoftGraphTimeCardBreak- `[]`>`: The list of breaks associated wit
 
 CLOCKINEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+  - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -492,7 +504,11 @@ CLOCKINEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
 
 CLOCKOUTEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+  - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -551,6 +567,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
@@ -577,7 +594,11 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
     - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+      - `[AtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+This property will be removed by November 20, 2027.
+Use isAtApprovedLocation instead.
+atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
+If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
       - `[DateTime <DateTime?>]`: The time the entry is recorded.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -9,7 +9,8 @@ ms.subservice: entra-sign-in
 # Remove-MgBetaIdentityAuthenticationEventListener
 
 ## SYNOPSIS
-Deletes an authenticationEventListener object.
+Delete an authenticationEventListener object.
+The following derived types are currently supported.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
@@ -31,7 +32,8 @@ Remove-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsI
 ```
 
 ## DESCRIPTION
-Deletes an authenticationEventListener object.
+Delete an authenticationEventListener object.
+The following derived types are currently supported.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -219,6 +221,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
+  - `[ChangeItemBaseId <String>]`: The unique identifier of changeItemBase
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
@@ -232,6 +235,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
   - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
   - `[GroupId <String>]`: The unique identifier of group
+  - `[HardwareOathAuthenticationMethodId <String>]`: The unique identifier of hardwareOathAuthenticationMethod
+  - `[HardwareOathTokenAuthenticationMethodDeviceId <String>]`: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
   - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
