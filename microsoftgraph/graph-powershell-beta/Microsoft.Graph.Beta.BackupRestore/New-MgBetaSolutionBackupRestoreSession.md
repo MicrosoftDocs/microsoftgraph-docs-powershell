@@ -20,8 +20,9 @@ Create new navigation property to restoreSessions for solutions
 New-MgBetaSolutionBackupRestoreSession [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-RestoreJobType <String>]
+ [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -221,6 +222,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RestoreJobType
+restoreJobType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestoreSessionArtifactCount
+restoreSessionArtifactCount
+To construct, see NOTES section for RESTORESESSIONARTIFACTCOUNT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRestoreSessionArtifactCount
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 restoreSessionStatus
 
@@ -317,6 +349,13 @@ For example, in the access reviews decisions API, this property might record the
     - `[Target <String>]`: The target of the error.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of the restore session.
+  - `[RestoreJobType <String>]`: restoreJobType
+  - `[RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]`: restoreSessionArtifactCount
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Completed <Int32?>]`: The number of artifacts whose restoration completed.
+    - `[Failed <Int32?>]`: The number of artifacts whose restoration failed.
+    - `[InProgress <Int32?>]`: The number of artifacts whose restoration is in progress.
+    - `[Total <Int32?>]`: The number of artifacts present in the restore session.
   - `[Status <String>]`: restoreSessionStatus
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
@@ -358,6 +397,13 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
+
+RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Completed <Int32?>]`: The number of artifacts whose restoration completed.
+  - `[Failed <Int32?>]`: The number of artifacts whose restoration failed.
+  - `[InProgress <Int32?>]`: The number of artifacts whose restoration is in progress.
+  - `[Total <Int32?>]`: The number of artifacts present in the restore session.
 
 ## RELATED LINKS
 

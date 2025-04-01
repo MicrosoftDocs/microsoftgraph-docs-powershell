@@ -224,7 +224,7 @@ Read-only.
 Read-only.
     - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
     - `[Filter <String>]`: Filters applied on the report
-    - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report.
+    - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report to be exported.
     - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized.
     - `[ReportName <String>]`: Name of the report
     - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
@@ -241,7 +241,7 @@ EXPORTJOBS `<IMicrosoftGraphDeviceManagementExportJob- `[]`>`: Entity representi
 Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
   - `[Filter <String>]`: Filters applied on the report
-  - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report.
+  - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report to be exported.
   - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized.
   - `[ReportName <String>]`: Name of the report
   - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested

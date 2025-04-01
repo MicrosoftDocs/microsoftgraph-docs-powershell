@@ -10,7 +10,7 @@ ms.subservice: cloud-communications
 
 ## SYNOPSIS
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
-You will need to register the calling bot and go through the list of permissions needed as mentioned below.
+You need to register the calling bot and go through the list of permissions needed.
 This API supports the following PSTN scenarios:
 
 > [!NOTE]
@@ -42,7 +42,7 @@ New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVa
 
 ## DESCRIPTION
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
-You will need to register the calling bot and go through the list of permissions needed as mentioned below.
+You need to register the calling bot and go through the list of permissions needed.
 This API supports the following PSTN scenarios:
 
 **Permissions**
@@ -1052,6 +1052,7 @@ This identifier must be copied over from Microsoft.Graph.Call.CallChainId.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
     - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
+    - `[IsDeltaRosterEnabled <Boolean?>]`: Indicates whether delta roster is enabled for the call.
   - `[CallRoutes <IMicrosoftGraphCallRoute- `[]`>]`: The routing information on how the call was retargeted.
 Read-only.
     - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1174,6 +1175,7 @@ CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
   - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
+  - `[IsDeltaRosterEnabled <Boolean?>]`: Indicates whether delta roster is enabled for the call.
 
 CALLROUTES `<IMicrosoftGraphCallRoute- `[]`>`: The routing information on how the call was retargeted.
 Read-only.

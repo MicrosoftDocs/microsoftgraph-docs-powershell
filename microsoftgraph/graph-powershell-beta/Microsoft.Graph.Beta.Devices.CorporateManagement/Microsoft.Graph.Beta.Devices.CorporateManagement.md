@@ -1,2371 +1,3120 @@
 ---
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-Module Guid: 5c9ded70-6ac5-40e8-a86b-474f1448dbd1
-Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devices.corporatemanagement/?view=graph-powershell-beta
-Help Version: 1.0.0.0
+Module Guid: ebbf4df4-1be0-458b-a73c-6204060e5c3e
+Download Help Link: {{ Update Download Link }}
+Help Version: {{ Please enter version of help manually (X.X.X.X) format }}
 Locale: en-US
 ---
 
 # Microsoft.Graph.Beta.Devices.CorporateManagement Module
 ## Description
-Microsoft Graph PowerShell Cmdlets
+
 
 ## Microsoft.Graph.Beta.Devices.CorporateManagement Cmdlets
 ### [Clear-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Clear-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
 
+
+### [Clear-MgBetaUserManagedDevice](Clear-MgBetaUserManagedDevice.md)
+
+
 ### [Convert-MgBetaDeviceAppManagementMobileAppFromMobileAppCatalogPackage](Convert-MgBetaDeviceAppManagementMobileAppFromMobileAppCatalogPackage.md)
+
+
+### [Disable-MgBetaUserManagedDevice](Disable-MgBetaUserManagedDevice.md)
+
+
+### [Disable-MgBetaUserManagedDeviceLostMode](Disable-MgBetaUserManagedDeviceLostMode.md)
+
+
+### [Enable-MgBetaUserManagedDeviceLostMode](Enable-MgBetaUserManagedDeviceLostMode.md)
+
+
+### [Find-MgBetaUserManagedDevice](Find-MgBetaUserManagedDevice.md)
+
 
 ### [Get-MgBetaDeviceAppManagement](Get-MgBetaDeviceAppManagement.md)
 
-### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtection](Get-MgBetaDeviceAppManagementAndroidManagedAppProtection.md)
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtection](Get-MgBetaDeviceAppManagementAndroidManagedAppProtection.md)
 
-### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAppCount.md)
 
-### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignmentCount](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionCount](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionCount.md)
+
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
 
-### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtection](Get-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
 
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtection](Get-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
 
-### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp](Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp.md)
 
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp](Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionCount](Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionCount.md)
+
 
 ### [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
 
-### [Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate.md)
 
 ### [Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate.md)
+
 
 ### [Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificateCount](Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificateCount.md)
 
-### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration.md)
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration.md)
 
-### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignmentCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationCount.md)
 
-### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus.md)
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus.md)
+
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatusCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatusCount.md)
 
-### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignmentCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus.md)
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus.md)
+
 
 ### [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatusCount](Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatusCount.md)
 
-### [Get-MgBetaDeviceAppManagementiOSManagedAppProtection](Get-MgBetaDeviceAppManagementiOSManagedAppProtection.md)
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtection](Get-MgBetaDeviceAppManagementiOSManagedAppProtection.md)
 
-### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAppCount.md)
 
-### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignmentCount](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount.md)
+
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
 
-### [Get-MgBetaDeviceAppManagementManagedAppPolicy](Get-MgBetaDeviceAppManagementManagedAppPolicy.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedAppPolicy](Get-MgBetaDeviceAppManagementManagedAppPolicy.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedAppPolicyCount](Get-MgBetaDeviceAppManagementManagedAppPolicyCount.md)
 
-### [Get-MgBetaDeviceAppManagementManagedAppRegistration](Get-MgBetaDeviceAppManagementManagedAppRegistration.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistration](Get-MgBetaDeviceAppManagementManagedAppRegistration.md)
 
-### [Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicyCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicyCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationCount.md)
 
-### [Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicyCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicyCount.md)
 
-### [Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequestCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequestCount.md)
 
-### [Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationOperationCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationOperationCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration.md)
 
-### [Get-MgBetaDeviceAppManagementManagedAppStatus](Get-MgBetaDeviceAppManagementManagedAppStatus.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedAppStatus](Get-MgBetaDeviceAppManagementManagedAppStatus.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedAppStatusCount](Get-MgBetaDeviceAppManagementManagedAppStatusCount.md)
 
-### [Get-MgBetaDeviceAppManagementManagedEBook](Get-MgBetaDeviceAppManagementManagedEBook.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedEBook](Get-MgBetaDeviceAppManagementManagedEBook.md)
 
-### [Get-MgBetaDeviceAppManagementManagedEBookAssignment](Get-MgBetaDeviceAppManagementManagedEBookAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookAssignment](Get-MgBetaDeviceAppManagementManagedEBookAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookAssignmentCount](Get-MgBetaDeviceAppManagementManagedEBookAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementManagedEBookCategory](Get-MgBetaDeviceAppManagementManagedEBookCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookCategory](Get-MgBetaDeviceAppManagementManagedEBookCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookCategoryCount](Get-MgBetaDeviceAppManagementManagedEBookCategoryCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementManagedEBookCount](Get-MgBetaDeviceAppManagementManagedEBookCount.md)
 
-### [Get-MgBetaDeviceAppManagementManagedEBookDeviceState](Get-MgBetaDeviceAppManagementManagedEBookDeviceState.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookDeviceState](Get-MgBetaDeviceAppManagementManagedEBookDeviceState.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookDeviceStateCount](Get-MgBetaDeviceAppManagementManagedEBookDeviceStateCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementManagedEBookInstallSummary](Get-MgBetaDeviceAppManagementManagedEBookInstallSummary.md)
 
-### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryCount](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryCount.md)
 
-### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
+
 
 ### [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount](Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount.md)
 
-### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 
-### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyCount.md)
 
-### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileApp](Get-MgBetaDeviceAppManagementMobileApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileApp](Get-MgBetaDeviceAppManagementMobileApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp](Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp](Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicenseCount](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicenseCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedAppCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppX](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppX.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppX](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppX.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetApp](Get-MgBetaDeviceAppManagementMobileAppAsWinGetApp.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetApp](Get-MgBetaDeviceAppManagementMobileAppAsWinGetApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignmentCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppCatalogPackage](Get-MgBetaDeviceAppManagementMobileAppCatalogPackage.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCatalogPackage](Get-MgBetaDeviceAppManagementMobileAppCatalogPackage.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCatalogPackageCount](Get-MgBetaDeviceAppManagementMobileAppCatalogPackageCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppCategory](Get-MgBetaDeviceAppManagementMobileAppCategory.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCategory](Get-MgBetaDeviceAppManagementMobileAppCategory.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppCategoryCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppConfiguration](Get-MgBetaDeviceAppManagementMobileAppConfiguration.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfiguration](Get-MgBetaDeviceAppManagementMobileAppConfiguration.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationCount](Get-MgBetaDeviceAppManagementMobileAppConfigurationCount.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusCount](Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusCount](Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCount](Get-MgBetaDeviceAppManagementMobileAppCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidForWorkApp](Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidForWorkApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidLobApp.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidManagedStoreApp](Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidManagedStoreApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidStoreApp](Get-MgBetaDeviceAppManagementMobileAppCountAsAndroidStoreApp.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsiOSLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsiOSLobApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsIoStoreApp](Get-MgBetaDeviceAppManagementMobileAppCountAsIoStoreApp.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsIoVppApp](Get-MgBetaDeviceAppManagementMobileAppCountAsIoVppApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSDmgApp](Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSDmgApp.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSLobApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSPkgApp](Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSPkgApp.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsManagedAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsManagedAndroidLobApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsManagediOSLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsManagediOSLobApp.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsManagedMobileLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsManagedMobileLobApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp](Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWin32LobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsWin32LobApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsAppX](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsAppX.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsMobileMsi](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsMobileMsi.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowStoreApp](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowStoreApp.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsUniversalAppX](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsUniversalAppX.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsWebApp](Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsWebApp.md)
 
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCountAsWinGetApp](Get-MgBetaDeviceAppManagementMobileAppCountAsWinGetApp.md)
 
-### [Get-MgBetaDeviceAppManagementMobileAppRelationship](Get-MgBetaDeviceAppManagementMobileAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppRelationship](Get-MgBetaDeviceAppManagementMobileAppRelationship.md)
+
 
 ### [Get-MgBetaDeviceAppManagementMobileAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppRelationshipCount.md)
 
-### [Get-MgBetaDeviceAppManagementPolicySet](Get-MgBetaDeviceAppManagementPolicySet.md)
 
 ### [Get-MgBetaDeviceAppManagementPolicySet](Get-MgBetaDeviceAppManagementPolicySet.md)
 
-### [Get-MgBetaDeviceAppManagementPolicySetAssignment](Get-MgBetaDeviceAppManagementPolicySetAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementPolicySetAssignment](Get-MgBetaDeviceAppManagementPolicySetAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementPolicySetAssignmentCount](Get-MgBetaDeviceAppManagementPolicySetAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementPolicySetCount](Get-MgBetaDeviceAppManagementPolicySetCount.md)
 
-### [Get-MgBetaDeviceAppManagementPolicySetItem](Get-MgBetaDeviceAppManagementPolicySetItem.md)
 
 ### [Get-MgBetaDeviceAppManagementPolicySetItem](Get-MgBetaDeviceAppManagementPolicySetItem.md)
+
 
 ### [Get-MgBetaDeviceAppManagementPolicySetItemCount](Get-MgBetaDeviceAppManagementPolicySetItemCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate](Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate.md)
 
-### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
 
-### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAppCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAppCount.md)
 
-### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignmentCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationCount.md)
+
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
 
-### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
+
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingCount.md)
 
-### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition.md)
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition.md)
+
 
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinitionCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinitionCount.md)
 
-### [Get-MgBetaDeviceAppManagementTask](Get-MgBetaDeviceAppManagementTask.md)
 
 ### [Get-MgBetaDeviceAppManagementTask](Get-MgBetaDeviceAppManagementTask.md)
+
 
 ### [Get-MgBetaDeviceAppManagementTaskCount](Get-MgBetaDeviceAppManagementTaskCount.md)
 
-### [Get-MgBetaDeviceAppManagementVppToken](Get-MgBetaDeviceAppManagementVppToken.md)
 
 ### [Get-MgBetaDeviceAppManagementVppToken](Get-MgBetaDeviceAppManagementVppToken.md)
+
 
 ### [Get-MgBetaDeviceAppManagementVppTokenCount](Get-MgBetaDeviceAppManagementVppTokenCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementVppTokenLicenseForApp](Get-MgBetaDeviceAppManagementVppTokenLicenseForApp.md)
 
-### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicy](Get-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicy](Get-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
 
-### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignmentCount](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyCount](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyCount.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary.md)
 
-### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus.md)
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus.md)
 
-### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistrationCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistrationCount.md)
 
-### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
 
-### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount.md)
 
-### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
 
-### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeActionCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeActionCount.md)
 
-### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtection](Get-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtection](Get-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
 
-### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp.md)
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAppCount.md)
 
-### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignmentCount](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignmentCount.md)
 
+
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionCount](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionCount.md)
+
 
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary.md)
 
+
 ### [Get-MgBetaDeviceAppManagementWindowsManagementApp](Get-MgBetaDeviceAppManagementWindowsManagementApp.md)
 
-### [Get-MgBetaUserDeviceEnrollmentConfiguration](Get-MgBetaUserDeviceEnrollmentConfiguration.md)
 
 ### [Get-MgBetaUserDeviceEnrollmentConfiguration](Get-MgBetaUserDeviceEnrollmentConfiguration.md)
 
-### [Get-MgBetaUserDeviceEnrollmentConfigurationAssignment](Get-MgBetaUserDeviceEnrollmentConfigurationAssignment.md)
 
 ### [Get-MgBetaUserDeviceEnrollmentConfigurationAssignment](Get-MgBetaUserDeviceEnrollmentConfigurationAssignment.md)
+
 
 ### [Get-MgBetaUserDeviceEnrollmentConfigurationAssignmentCount](Get-MgBetaUserDeviceEnrollmentConfigurationAssignmentCount.md)
 
+
 ### [Get-MgBetaUserDeviceEnrollmentConfigurationCount](Get-MgBetaUserDeviceEnrollmentConfigurationCount.md)
 
-### [Get-MgBetaUserDeviceManagementTroubleshootingEvent](Get-MgBetaUserDeviceManagementTroubleshootingEvent.md)
 
 ### [Get-MgBetaUserDeviceManagementTroubleshootingEvent](Get-MgBetaUserDeviceManagementTroubleshootingEvent.md)
+
 
 ### [Get-MgBetaUserDeviceManagementTroubleshootingEventCount](Get-MgBetaUserDeviceManagementTroubleshootingEventCount.md)
 
-### [Get-MgBetaUserManagedAppRegistration](Get-MgBetaUserManagedAppRegistration.md)
 
 ### [Get-MgBetaUserManagedAppRegistration](Get-MgBetaUserManagedAppRegistration.md)
+
 
 ### [Get-MgBetaUserManagedAppRegistrationCount](Get-MgBetaUserManagedAppRegistrationCount.md)
 
-### [Get-MgBetaUserManagedDevice](Get-MgBetaUserManagedDevice.md)
 
 ### [Get-MgBetaUserManagedDevice](Get-MgBetaUserManagedDevice.md)
 
-### [Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
 
 ### [Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
+
 
 ### [Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetailCount](Get-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetailCount.md)
 
+
 ### [Get-MgBetaUserManagedDeviceCategory](Get-MgBetaUserManagedDeviceCategory.md)
 
-### [Get-MgBetaUserManagedDeviceCompliancePolicyState](Get-MgBetaUserManagedDeviceCompliancePolicyState.md)
+
+### [Get-MgBetaUserManagedDeviceCategoryByRef](Get-MgBetaUserManagedDeviceCategoryByRef.md)
+
+
+### [Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult](Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult.md)
+
+
+### [Get-MgBetaUserManagedDeviceCloudPcReviewStatus](Get-MgBetaUserManagedDeviceCloudPcReviewStatus.md)
+
 
 ### [Get-MgBetaUserManagedDeviceCompliancePolicyState](Get-MgBetaUserManagedDeviceCompliancePolicyState.md)
+
 
 ### [Get-MgBetaUserManagedDeviceCompliancePolicyStateCount](Get-MgBetaUserManagedDeviceCompliancePolicyStateCount.md)
 
-### [Get-MgBetaUserManagedDeviceConfigurationState](Get-MgBetaUserManagedDeviceConfigurationState.md)
 
 ### [Get-MgBetaUserManagedDeviceConfigurationState](Get-MgBetaUserManagedDeviceConfigurationState.md)
+
 
 ### [Get-MgBetaUserManagedDeviceConfigurationStateCount](Get-MgBetaUserManagedDeviceConfigurationStateCount.md)
 
+
 ### [Get-MgBetaUserManagedDeviceCount](Get-MgBetaUserManagedDeviceCount.md)
 
-### [Get-MgBetaUserManagedDeviceDetectedApp](Get-MgBetaUserManagedDeviceDetectedApp.md)
 
 ### [Get-MgBetaUserManagedDeviceDetectedApp](Get-MgBetaUserManagedDeviceDetectedApp.md)
+
 
 ### [Get-MgBetaUserManagedDeviceDetectedAppCount](Get-MgBetaUserManagedDeviceDetectedAppCount.md)
 
-### [Get-MgBetaUserManagedDeviceHealthScriptState](Get-MgBetaUserManagedDeviceHealthScriptState.md)
+
+### [Get-MgBetaUserManagedDeviceFileVaultKey](Get-MgBetaUserManagedDeviceFileVaultKey.md)
+
 
 ### [Get-MgBetaUserManagedDeviceHealthScriptState](Get-MgBetaUserManagedDeviceHealthScriptState.md)
+
 
 ### [Get-MgBetaUserManagedDeviceHealthScriptStateCount](Get-MgBetaUserManagedDeviceHealthScriptStateCount.md)
 
+
 ### [Get-MgBetaUserManagedDeviceLogCollectionRequestCount](Get-MgBetaUserManagedDeviceLogCollectionRequestCount.md)
 
-### [Get-MgBetaUserManagedDeviceLogCollectionResponse](Get-MgBetaUserManagedDeviceLogCollectionResponse.md)
 
 ### [Get-MgBetaUserManagedDeviceLogCollectionResponse](Get-MgBetaUserManagedDeviceLogCollectionResponse.md)
 
-### [Get-MgBetaUserManagedDeviceMobileAppConfigurationState](Get-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
 
 ### [Get-MgBetaUserManagedDeviceMobileAppConfigurationState](Get-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
+
 
 ### [Get-MgBetaUserManagedDeviceMobileAppConfigurationStateCount](Get-MgBetaUserManagedDeviceMobileAppConfigurationStateCount.md)
 
-### [Get-MgBetaUserManagedDeviceSecurityBaselineState](Get-MgBetaUserManagedDeviceSecurityBaselineState.md)
+
+### [Get-MgBetaUserManagedDeviceNonCompliantSetting](Get-MgBetaUserManagedDeviceNonCompliantSetting.md)
+
+
+### [Get-MgBetaUserManagedDevicePowerliftAppDiagnosticDetail](Get-MgBetaUserManagedDevicePowerliftAppDiagnosticDetail.md)
+
 
 ### [Get-MgBetaUserManagedDeviceSecurityBaselineState](Get-MgBetaUserManagedDeviceSecurityBaselineState.md)
+
 
 ### [Get-MgBetaUserManagedDeviceSecurityBaselineStateCount](Get-MgBetaUserManagedDeviceSecurityBaselineStateCount.md)
 
-### [Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingState](Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingState.md)
 
 ### [Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingState](Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingState.md)
+
 
 ### [Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingStateCount](Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingStateCount.md)
 
+
 ### [Get-MgBetaUserManagedDeviceUser](Get-MgBetaUserManagedDeviceUser.md)
+
 
 ### [Get-MgBetaUserManagedDeviceWindowsProtectionState](Get-MgBetaUserManagedDeviceWindowsProtectionState.md)
 
-### [Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
 ### [Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
+
 
 ### [Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareStateCount](Get-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareStateCount.md)
 
-### [Get-MgBetaUserMobileAppIntentAndState](Get-MgBetaUserMobileAppIntentAndState.md)
 
 ### [Get-MgBetaUserMobileAppIntentAndState](Get-MgBetaUserMobileAppIntentAndState.md)
+
 
 ### [Get-MgBetaUserMobileAppIntentAndStateCount](Get-MgBetaUserMobileAppIntentAndStateCount.md)
 
-### [Get-MgBetaUserMobileAppTroubleshootingEvent](Get-MgBetaUserMobileAppTroubleshootingEvent.md)
 
 ### [Get-MgBetaUserMobileAppTroubleshootingEvent](Get-MgBetaUserMobileAppTroubleshootingEvent.md)
 
-### [Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 
 ### [Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
+
 
 ### [Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequestCount](Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequestCount.md)
 
+
 ### [Get-MgBetaUserMobileAppTroubleshootingEventCount](Get-MgBetaUserMobileAppTroubleshootingEventCount.md)
 
-### [Get-MgBetaUserWindowsInformationProtectionDeviceRegistration](Get-MgBetaUserWindowsInformationProtectionDeviceRegistration.md)
 
 ### [Get-MgBetaUserWindowsInformationProtectionDeviceRegistration](Get-MgBetaUserWindowsInformationProtectionDeviceRegistration.md)
+
 
 ### [Get-MgBetaUserWindowsInformationProtectionDeviceRegistrationCount](Get-MgBetaUserWindowsInformationProtectionDeviceRegistrationCount.md)
 
+
+### [Initialize-MgBetaUserManagedDeviceEsim](Initialize-MgBetaUserManagedDeviceEsim.md)
+
+
+### [Invoke-MgBetaAppUserManagedDeviceDiagnostic](Invoke-MgBetaAppUserManagedDeviceDiagnostic.md)
+
+
+### [Invoke-MgBetaBulkUserManagedDeviceReprovisionCloudPc](Invoke-MgBetaBulkUserManagedDeviceReprovisionCloudPc.md)
+
+
+### [Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc](Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc.md)
+
+
+### [Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus](Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus.md)
+
+
+### [Invoke-MgBetaCleanUserManagedDeviceWindowsDevice](Invoke-MgBetaCleanUserManagedDeviceWindowsDevice.md)
+
+
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFile.md)
+
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile.md)
 
+
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile.md)
+
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile.md)
 
+
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSPkgAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSPkgAppContentVersionFile.md)
+
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile.md)
 
+
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFile.md)
+
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFile.md)
 
+
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile.md)
+
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile.md)
 
+
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile.md)
+
 
 ### [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile](Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFile.md)
 
+
+### [Invoke-MgBetaDeprovisionUserManagedDevice](Invoke-MgBetaDeprovisionUserManagedDevice.md)
+
+
+### [Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic](Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic.md)
+
+
+### [Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic](Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic.md)
+
+
+### [Invoke-MgBetaDownUserManagedDeviceShut](Invoke-MgBetaDownUserManagedDeviceShut.md)
+
+
+### [Invoke-MgBetaEnrollUserManagedDeviceNowAction](Invoke-MgBetaEnrollUserManagedDeviceNowAction.md)
+
+
+### [Invoke-MgBetaExecuteUserManagedDeviceAction](Invoke-MgBetaExecuteUserManagedDeviceAction.md)
+
+
 ### [Invoke-MgBetaHasDeviceAppManagementAndroidManagedAppProtectionPayloadLink](Invoke-MgBetaHasDeviceAppManagementAndroidManagedAppProtectionPayloadLink.md)
+
 
 ### [Invoke-MgBetaHasDeviceAppManagementiOSLobAppProvisioningConfigurationPayloadLink](Invoke-MgBetaHasDeviceAppManagementiOSLobAppProvisioningConfigurationPayloadLink.md)
 
+
 ### [Invoke-MgBetaHasDeviceAppManagementiOSManagedAppProtectionPayloadLink](Invoke-MgBetaHasDeviceAppManagementiOSManagedAppProtectionPayloadLink.md)
+
 
 ### [Invoke-MgBetaHasDeviceAppManagementMdmWindowsInformationProtectionPolicyPayloadLink](Invoke-MgBetaHasDeviceAppManagementMdmWindowsInformationProtectionPolicyPayloadLink.md)
 
+
 ### [Invoke-MgBetaHasDeviceAppManagementMobileAppPayloadLink](Invoke-MgBetaHasDeviceAppManagementMobileAppPayloadLink.md)
+
 
 ### [Invoke-MgBetaHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink](Invoke-MgBetaHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink.md)
 
+
+### [Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink](Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink.md)
+
+
+### [Invoke-MgBetaInitiateUserManagedDeviceAttestation](Invoke-MgBetaInitiateUserManagedDeviceAttestation.md)
+
+
+### [Invoke-MgBetaInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgBetaInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery.md)
+
+
+### [Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation](Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation.md)
+
+
+### [Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser.md)
+
+
+### [Invoke-MgBetaOverrideUserManagedDeviceComplianceState](Invoke-MgBetaOverrideUserManagedDeviceComplianceState.md)
+
+
+### [Invoke-MgBetaPlayUserManagedDeviceLostModeSound](Invoke-MgBetaPlayUserManagedDeviceLostModeSound.md)
+
+
+### [Invoke-MgBetaReenableUserManagedDevice](Invoke-MgBetaReenableUserManagedDevice.md)
+
+
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContentVersionFileUpload.md)
+
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFileUpload.md)
 
+
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload.md)
+
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFileUpload.md)
 
+
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSPkgAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSPkgAppContentVersionFileUpload.md)
+
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFileUpload.md)
 
+
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagediOSLobAppContentVersionFileUpload.md)
+
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload.md)
 
+
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload.md)
+
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFileUpload.md)
 
+
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload.md)
+
 
 ### [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload](Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload.md)
 
+
+### [Invoke-MgBetaRetireUserManagedDevice](Invoke-MgBetaRetireUserManagedDevice.md)
+
+
+### [Invoke-MgBetaRotateUserManagedDeviceBitLockerKey](Invoke-MgBetaRotateUserManagedDeviceBitLockerKey.md)
+
+
+### [Invoke-MgBetaRotateUserManagedDeviceFileVaultKey](Invoke-MgBetaRotateUserManagedDeviceFileVaultKey.md)
+
+
+### [Invoke-MgBetaRotateUserManagedDeviceLocalAdminPassword](Invoke-MgBetaRotateUserManagedDeviceLocalAdminPassword.md)
+
+
+### [Invoke-MgBetaScanUserManagedDeviceWindowsDefender](Invoke-MgBetaScanUserManagedDeviceWindowsDefender.md)
+
+
 ### [Invoke-MgBetaTargetDeviceAppManagementManagedAppPolicyApp](Invoke-MgBetaTargetDeviceAppManagementManagedAppPolicyApp.md)
+
 
 ### [Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp](Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp.md)
 
+
 ### [Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp](Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp.md)
+
 
 ### [Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp](Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
+
 ### [Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp](Invoke-MgBetaTargetDeviceAppManagementWindowsManagedAppProtectionApp.md)
+
+
+### [Lock-MgBetaUserManagedDeviceRemote](Lock-MgBetaUserManagedDeviceRemote.md)
+
+
+### [Move-MgBetaUserManagedDeviceToOu](Move-MgBetaUserManagedDeviceToOu.md)
+
 
 ### [New-MgBetaDeviceAppManagementAndroidManagedAppProtection](New-MgBetaDeviceAppManagementAndroidManagedAppProtection.md)
 
+
 ### [New-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](New-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](New-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementDefaultManagedAppProtection](New-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
+
 
 ### [New-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp](New-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp.md)
 
+
 ### [New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate.md)
+
 
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration.md)
 
+
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus.md)
 
+
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus.md)
 
+
 ### [New-MgBetaDeviceAppManagementiOSManagedAppProtection](New-MgBetaDeviceAppManagementiOSManagedAppProtection.md)
+
 
 ### [New-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](New-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
 
+
 ### [New-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](New-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementManagedAppPolicy](New-MgBetaDeviceAppManagementManagedAppPolicy.md)
 
+
 ### [New-MgBetaDeviceAppManagementManagedAppRegistration](New-MgBetaDeviceAppManagementManagedAppRegistration.md)
+
 
 ### [New-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](New-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
 
+
 ### [New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
+
 
 ### [New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest.md)
 
+
 ### [New-MgBetaDeviceAppManagementManagedAppRegistrationOperation](New-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
+
 
 ### [New-MgBetaDeviceAppManagementManagedAppStatus](New-MgBetaDeviceAppManagementManagedAppStatus.md)
 
+
 ### [New-MgBetaDeviceAppManagementManagedEBook](New-MgBetaDeviceAppManagementManagedEBook.md)
+
 
 ### [New-MgBetaDeviceAppManagementManagedEBookAssignment](New-MgBetaDeviceAppManagementManagedEBookAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementManagedEBookCategory](New-MgBetaDeviceAppManagementManagedEBookCategory.md)
+
 
 ### [New-MgBetaDeviceAppManagementManagedEBookDeviceState](New-MgBetaDeviceAppManagementManagedEBookDeviceState.md)
 
+
 ### [New-MgBetaDeviceAppManagementManagedEBookUserStateSummary](New-MgBetaDeviceAppManagementManagedEBookUserStateSummary.md)
+
 
 ### [New-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](New-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
 
+
 ### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
+
 
 ### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+
 
 ### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileApp](New-MgBetaDeviceAppManagementMobileApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAssignment](New-MgBetaDeviceAppManagementMobileAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppCatalogPackage](New-MgBetaDeviceAppManagementMobileAppCatalogPackage.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppCategory](New-MgBetaDeviceAppManagementMobileAppCategory.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppConfiguration](New-MgBetaDeviceAppManagementMobileAppConfiguration.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](New-MgBetaDeviceAppManagementMobileAppConfigurationAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](New-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
 
+
 ### [New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
+
 
 ### [New-MgBetaDeviceAppManagementMobileAppRelationship](New-MgBetaDeviceAppManagementMobileAppRelationship.md)
 
+
 ### [New-MgBetaDeviceAppManagementPolicySet](New-MgBetaDeviceAppManagementPolicySet.md)
+
 
 ### [New-MgBetaDeviceAppManagementPolicySetAssignment](New-MgBetaDeviceAppManagementPolicySetAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementPolicySetItem](New-MgBetaDeviceAppManagementPolicySetItem.md)
+
 
 ### [New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
 
+
 ### [New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp.md)
+
 
 ### [New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
 
+
 ### [New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
+
 
 ### [New-MgBetaDeviceAppManagementTask](New-MgBetaDeviceAppManagementTask.md)
 
+
 ### [New-MgBetaDeviceAppManagementVppToken](New-MgBetaDeviceAppManagementVppToken.md)
+
 
 ### [New-MgBetaDeviceAppManagementWdacSupplementalPolicy](New-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
 
+
 ### [New-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](New-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus](New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus.md)
 
+
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
+
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
 
+
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
+
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
 
+
 ### [New-MgBetaDeviceAppManagementWindowsManagedAppProtection](New-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
+
 
 ### [New-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp](New-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp.md)
 
+
 ### [New-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](New-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
+
 
 ### [New-MgBetaUserDeviceEnrollmentConfiguration](New-MgBetaUserDeviceEnrollmentConfiguration.md)
 
+
 ### [New-MgBetaUserDeviceEnrollmentConfigurationAssignment](New-MgBetaUserDeviceEnrollmentConfigurationAssignment.md)
+
+
+### [New-MgBetaUserDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration](New-MgBetaUserDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration.md)
+
 
 ### [New-MgBetaUserDeviceManagementTroubleshootingEvent](New-MgBetaUserDeviceManagementTroubleshootingEvent.md)
 
+
 ### [New-MgBetaUserManagedDevice](New-MgBetaUserManagedDevice.md)
+
 
 ### [New-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](New-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
 
+
 ### [New-MgBetaUserManagedDeviceCompliancePolicyState](New-MgBetaUserManagedDeviceCompliancePolicyState.md)
+
 
 ### [New-MgBetaUserManagedDeviceConfigurationState](New-MgBetaUserManagedDeviceConfigurationState.md)
 
+
 ### [New-MgBetaUserManagedDeviceHealthScriptState](New-MgBetaUserManagedDeviceHealthScriptState.md)
+
+
+### [New-MgBetaUserManagedDeviceLogCollectionRequestDownloadUrl](New-MgBetaUserManagedDeviceLogCollectionRequestDownloadUrl.md)
+
 
 ### [New-MgBetaUserManagedDeviceLogCollectionResponse](New-MgBetaUserManagedDeviceLogCollectionResponse.md)
 
+
 ### [New-MgBetaUserManagedDeviceMobileAppConfigurationState](New-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
+
 
 ### [New-MgBetaUserManagedDeviceSecurityBaselineState](New-MgBetaUserManagedDeviceSecurityBaselineState.md)
 
+
 ### [New-MgBetaUserManagedDeviceSecurityBaselineStateSettingState](New-MgBetaUserManagedDeviceSecurityBaselineStateSettingState.md)
+
 
 ### [New-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState](New-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
+
 ### [New-MgBetaUserMobileAppIntentAndState](New-MgBetaUserMobileAppIntentAndState.md)
+
 
 ### [New-MgBetaUserMobileAppTroubleshootingEvent](New-MgBetaUserMobileAppTroubleshootingEvent.md)
 
+
 ### [New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
+
+
+### [New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl](New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtection](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtection.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementDefaultManagedAppProtection](Remove-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](Remove-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtection](Remove-MgBetaDeviceAppManagementiOSManagedAppProtection.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementManagedAppPolicy](Remove-MgBetaDeviceAppManagementManagedAppPolicy.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistration](Remove-MgBetaDeviceAppManagementManagedAppRegistration.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](Remove-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](Remove-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementManagedAppStatus](Remove-MgBetaDeviceAppManagementManagedAppStatus.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBook](Remove-MgBetaDeviceAppManagementManagedEBook.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementManagedEBookAssignment](Remove-MgBetaDeviceAppManagementManagedEBookAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBookCategory](Remove-MgBetaDeviceAppManagementManagedEBookCategory.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementManagedEBookDeviceState](Remove-MgBetaDeviceAppManagementManagedEBookDeviceState.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBookInstallSummary](Remove-MgBetaDeviceAppManagementManagedEBookInstallSummary.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary](Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileApp](Remove-MgBetaDeviceAppManagementMobileApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppCatalogPackage](Remove-MgBetaDeviceAppManagementMobileAppCatalogPackage.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppCategory](Remove-MgBetaDeviceAppManagementMobileAppCategory.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfiguration](Remove-MgBetaDeviceAppManagementMobileAppConfiguration.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](Remove-MgBetaDeviceAppManagementMobileAppConfigurationAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppRelationship.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementPolicySet](Remove-MgBetaDeviceAppManagementPolicySet.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementPolicySetAssignment](Remove-MgBetaDeviceAppManagementPolicySetAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementPolicySetItem](Remove-MgBetaDeviceAppManagementPolicySetItem.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementSymantecCodeSigningCertificate](Remove-MgBetaDeviceAppManagementSymantecCodeSigningCertificate.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementTask](Remove-MgBetaDeviceAppManagementTask.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementVppToken](Remove-MgBetaDeviceAppManagementVppToken.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementWdacSupplementalPolicy](Remove-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary](Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus](Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementWindowsManagedAppProtection](Remove-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp.md)
+
 
 ### [Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
 
+
 ### [Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary.md)
+
 
 ### [Remove-MgBetaUserDeviceEnrollmentConfiguration](Remove-MgBetaUserDeviceEnrollmentConfiguration.md)
 
+
 ### [Remove-MgBetaUserDeviceEnrollmentConfigurationAssignment](Remove-MgBetaUserDeviceEnrollmentConfigurationAssignment.md)
+
 
 ### [Remove-MgBetaUserDeviceManagementTroubleshootingEvent](Remove-MgBetaUserDeviceManagementTroubleshootingEvent.md)
 
+
 ### [Remove-MgBetaUserManagedDevice](Remove-MgBetaUserManagedDevice.md)
+
 
 ### [Remove-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Remove-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
 
+
 ### [Remove-MgBetaUserManagedDeviceCategory](Remove-MgBetaUserManagedDeviceCategory.md)
+
+
+### [Remove-MgBetaUserManagedDeviceCategoryByRef](Remove-MgBetaUserManagedDeviceCategoryByRef.md)
+
 
 ### [Remove-MgBetaUserManagedDeviceCompliancePolicyState](Remove-MgBetaUserManagedDeviceCompliancePolicyState.md)
 
+
 ### [Remove-MgBetaUserManagedDeviceConfigurationState](Remove-MgBetaUserManagedDeviceConfigurationState.md)
+
+
+### [Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement.md)
+
 
 ### [Remove-MgBetaUserManagedDeviceHealthScriptState](Remove-MgBetaUserManagedDeviceHealthScriptState.md)
 
+
 ### [Remove-MgBetaUserManagedDeviceLogCollectionResponse](Remove-MgBetaUserManagedDeviceLogCollectionResponse.md)
+
 
 ### [Remove-MgBetaUserManagedDeviceMobileAppConfigurationState](Remove-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
 
+
 ### [Remove-MgBetaUserManagedDeviceSecurityBaselineState](Remove-MgBetaUserManagedDeviceSecurityBaselineState.md)
+
 
 ### [Remove-MgBetaUserManagedDeviceSecurityBaselineStateSettingState](Remove-MgBetaUserManagedDeviceSecurityBaselineStateSettingState.md)
 
+
+### [Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice](Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice.md)
+
+
 ### [Remove-MgBetaUserManagedDeviceWindowsProtectionState](Remove-MgBetaUserManagedDeviceWindowsProtectionState.md)
+
 
 ### [Remove-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Remove-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
+
 ### [Remove-MgBetaUserMobileAppIntentAndState](Remove-MgBetaUserMobileAppIntentAndState.md)
+
 
 ### [Remove-MgBetaUserMobileAppTroubleshootingEvent](Remove-MgBetaUserMobileAppTroubleshootingEvent.md)
 
+
 ### [Remove-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
+
 
 ### [Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
 
+
+### [Rename-MgBetaUserManagedDeviceAssignment](Rename-MgBetaUserManagedDeviceAssignment.md)
+
+
+### [Request-MgBetaUserManagedDeviceRemoteAssistance](Request-MgBetaUserManagedDeviceRemoteAssistance.md)
+
+
+### [Reset-MgBetaUserManagedDevicePasscode](Reset-MgBetaUserManagedDevicePasscode.md)
+
+
+### [Restart-MgBetaUserManagedDeviceNow](Restart-MgBetaUserManagedDeviceNow.md)
+
+
+### [Restore-MgBetaUserManagedDevicePasscode](Restore-MgBetaUserManagedDevicePasscode.md)
+
+
 ### [Revoke-MgBetaDeviceAppManagementVppTokenLicense](Revoke-MgBetaDeviceAppManagementVppTokenLicense.md)
+
+
+### [Revoke-MgBetaUserManagedDeviceAppleVppLicense](Revoke-MgBetaUserManagedDeviceAppleVppLicense.md)
+
+
+### [Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal](Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal.md)
+
 
 ### [Set-MgBetaDeviceAppManagementIosLobAppProvisioningConfiguration](Set-MgBetaDeviceAppManagementIosLobAppProvisioningConfiguration.md)
 
+
 ### [Set-MgBetaDeviceAppManagementManagedEBook](Set-MgBetaDeviceAppManagementManagedEBook.md)
+
 
 ### [Set-MgBetaDeviceAppManagementMobileApp](Set-MgBetaDeviceAppManagementMobileApp.md)
 
+
 ### [Set-MgBetaDeviceAppManagementMobileAppConfiguration](Set-MgBetaDeviceAppManagementMobileAppConfiguration.md)
+
 
 ### [Set-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](Set-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
 
+
 ### [Set-MgBetaDeviceAppManagementWdacSupplementalPolicy](Set-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
+
 
 ### [Set-MgBetaDeviceAppManagementWindowsManagedAppProtection](Set-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
 
+
+### [Set-MgBetaUserDeviceEnrollmentConfiguration](Set-MgBetaUserDeviceEnrollmentConfiguration.md)
+
+
+### [Set-MgBetaUserDeviceEnrollmentConfigurationPriority](Set-MgBetaUserDeviceEnrollmentConfigurationPriority.md)
+
+
+### [Set-MgBetaUserManagedDeviceCategoryByRef](Set-MgBetaUserManagedDeviceCategoryByRef.md)
+
+
+### [Set-MgBetaUserManagedDeviceCloudPcReviewStatus](Set-MgBetaUserManagedDeviceCloudPcReviewStatus.md)
+
+
+### [Set-MgBetaUserManagedDeviceName](Set-MgBetaUserManagedDeviceName.md)
+
+
+### [Skip-MgBetaUserManagedDeviceActivationLock](Skip-MgBetaUserManagedDeviceActivationLock.md)
+
+
+### [Start-MgBetaUserManagedDeviceConfigurationManagerAction](Start-MgBetaUserManagedDeviceConfigurationManagerAction.md)
+
+
+### [Suspend-MgBetaUserManagedDeviceConfigurationRefresh](Suspend-MgBetaUserManagedDeviceConfigurationRefresh.md)
+
+
 ### [Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp](Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp.md)
+
 
 ### [Sync-MgBetaDeviceAppManagementVppTokenLicense](Sync-MgBetaDeviceAppManagementVppTokenLicense.md)
 
+
 ### [Sync-MgBetaDeviceAppManagementVppTokenLicenseCount](Sync-MgBetaDeviceAppManagementVppTokenLicenseCount.md)
+
+
+### [Sync-MgBetaUserManagedDevice](Sync-MgBetaUserManagedDevice.md)
+
 
 ### [Test-MgBetaDeviceAppManagementMobileAppXml](Test-MgBetaDeviceAppManagementMobileAppXml.md)
 
+
 ### [Update-MgBetaDeviceAppManagement](Update-MgBetaDeviceAppManagement.md)
+
 
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtection](Update-MgBetaDeviceAppManagementAndroidManagedAppProtection.md)
 
+
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
+
 
 ### [Update-MgBetaDeviceAppManagementDefaultManagedAppProtection](Update-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
 
+
 ### [Update-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp](Update-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary.md)
 
+
 ### [Update-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](Update-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate.md)
+
 
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration.md)
 
+
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus.md)
 
+
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus.md)
 
+
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtection](Update-MgBetaDeviceAppManagementiOSManagedAppProtection.md)
+
 
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](Update-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
 
+
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
 
+
 ### [Update-MgBetaDeviceAppManagementManagedAppPolicy](Update-MgBetaDeviceAppManagementManagedAppPolicy.md)
+
 
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistration](Update-MgBetaDeviceAppManagementManagedAppRegistration.md)
 
+
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
+
 
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](Update-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
 
+
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest.md)
+
 
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Update-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
 
+
 ### [Update-MgBetaDeviceAppManagementManagedAppStatus](Update-MgBetaDeviceAppManagementManagedAppStatus.md)
+
 
 ### [Update-MgBetaDeviceAppManagementManagedEBook](Update-MgBetaDeviceAppManagementManagedEBook.md)
 
+
 ### [Update-MgBetaDeviceAppManagementManagedEBookAssignment](Update-MgBetaDeviceAppManagementManagedEBookAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementManagedEBookCategory](Update-MgBetaDeviceAppManagementManagedEBookCategory.md)
 
+
 ### [Update-MgBetaDeviceAppManagementManagedEBookDeviceState](Update-MgBetaDeviceAppManagementManagedEBookDeviceState.md)
+
 
 ### [Update-MgBetaDeviceAppManagementManagedEBookInstallSummary](Update-MgBetaDeviceAppManagementManagedEBookInstallSummary.md)
 
+
 ### [Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary](Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary.md)
+
 
 ### [Update-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Update-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileApp](Update-MgBetaDeviceAppManagementMobileApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppCatalogPackage](Update-MgBetaDeviceAppManagementMobileAppCatalogPackage.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppCategory](Update-MgBetaDeviceAppManagementMobileAppCategory.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppConfiguration](Update-MgBetaDeviceAppManagementMobileAppConfiguration.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](Update-MgBetaDeviceAppManagementMobileAppConfigurationAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
+
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
+
 
 ### [Update-MgBetaDeviceAppManagementMultiplePolicySet](Update-MgBetaDeviceAppManagementMultiplePolicySet.md)
 
+
 ### [Update-MgBetaDeviceAppManagementPolicySet](Update-MgBetaDeviceAppManagementPolicySet.md)
+
 
 ### [Update-MgBetaDeviceAppManagementPolicySetAssignment](Update-MgBetaDeviceAppManagementPolicySetAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementPolicySetItem](Update-MgBetaDeviceAppManagementPolicySetItem.md)
+
 
 ### [Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate](Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate.md)
 
+
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration.md)
+
 
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
+
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
 
+
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
+
 
 ### [Update-MgBetaDeviceAppManagementTask](Update-MgBetaDeviceAppManagementTask.md)
 
+
 ### [Update-MgBetaDeviceAppManagementTaskStatus](Update-MgBetaDeviceAppManagementTaskStatus.md)
+
 
 ### [Update-MgBetaDeviceAppManagementVppToken](Update-MgBetaDeviceAppManagementVppToken.md)
 
+
 ### [Update-MgBetaDeviceAppManagementWdacSupplementalPolicy](Update-MgBetaDeviceAppManagementWdacSupplementalPolicy.md)
+
 
 ### [Update-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](Update-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
 
+
 ### [Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary](Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary.md)
+
 
 ### [Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus](Update-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus.md)
 
+
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Update-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
+
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
 
+
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
+
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
 
+
 ### [Update-MgBetaDeviceAppManagementWindowsManagedAppProtection](Update-MgBetaDeviceAppManagementWindowsManagedAppProtection.md)
+
 
 ### [Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp](Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionApp.md)
 
+
 ### [Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
+
 
 ### [Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary.md)
 
+
 ### [Update-MgBetaUserDeviceEnrollmentConfiguration](Update-MgBetaUserDeviceEnrollmentConfiguration.md)
+
 
 ### [Update-MgBetaUserDeviceEnrollmentConfigurationAssignment](Update-MgBetaUserDeviceEnrollmentConfigurationAssignment.md)
 
+
 ### [Update-MgBetaUserDeviceManagementTroubleshootingEvent](Update-MgBetaUserDeviceManagementTroubleshootingEvent.md)
+
 
 ### [Update-MgBetaUserManagedDevice](Update-MgBetaUserManagedDevice.md)
 
+
 ### [Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Update-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
+
 
 ### [Update-MgBetaUserManagedDeviceCategory](Update-MgBetaUserManagedDeviceCategory.md)
 
+
 ### [Update-MgBetaUserManagedDeviceCompliancePolicyState](Update-MgBetaUserManagedDeviceCompliancePolicyState.md)
+
 
 ### [Update-MgBetaUserManagedDeviceConfigurationState](Update-MgBetaUserManagedDeviceConfigurationState.md)
 
+
 ### [Update-MgBetaUserManagedDeviceHealthScriptState](Update-MgBetaUserManagedDeviceHealthScriptState.md)
+
 
 ### [Update-MgBetaUserManagedDeviceLogCollectionResponse](Update-MgBetaUserManagedDeviceLogCollectionResponse.md)
 
+
 ### [Update-MgBetaUserManagedDeviceMobileAppConfigurationState](Update-MgBetaUserManagedDeviceMobileAppConfigurationState.md)
+
 
 ### [Update-MgBetaUserManagedDeviceSecurityBaselineState](Update-MgBetaUserManagedDeviceSecurityBaselineState.md)
 
+
 ### [Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState](Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState.md)
+
+
+### [Update-MgBetaUserManagedDeviceWindowsDeviceAccount](Update-MgBetaUserManagedDeviceWindowsDeviceAccount.md)
+
 
 ### [Update-MgBetaUserManagedDeviceWindowsProtectionState](Update-MgBetaUserManagedDeviceWindowsProtectionState.md)
 
+
 ### [Update-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgBetaUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
+
 
 ### [Update-MgBetaUserMobileAppIntentAndState](Update-MgBetaUserMobileAppIntentAndState.md)
 
+
 ### [Update-MgBetaUserMobileAppTroubleshootingEvent](Update-MgBetaUserMobileAppTroubleshootingEvent.md)
 
+
 ### [Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
+
 
 
 

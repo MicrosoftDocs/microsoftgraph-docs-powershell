@@ -10,7 +10,12 @@ ms.subservice: entra-users
 # Get-MgUser
 
 ## SYNOPSIS
-Read properties and relationships of the user object.
+Retrieve the properties and relationships of user object.
+This operation returns by default only a subset of the more commonly used properties for each user.
+These default properties are noted in the Properties section.
+To get properties that are not returned by default, do a GET operation for the user and specify the properties in a $select OData query option.
+Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
+Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
@@ -40,7 +45,12 @@ Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the user object.
+Retrieve the properties and relationships of user object.
+This operation returns by default only a subset of the more commonly used properties for each user.
+These default properties are noted in the Properties section.
+To get properties that are not returned by default, do a GET operation for the user and specify the properties in a $select OData query option.
+Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
+Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
 **Permissions**
 
@@ -434,11 +444,13 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
   - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
   - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
+  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
@@ -446,9 +458,9 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-user-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-user-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-mam-user-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-user-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-user-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-user-list?view=graph-rest-1.0)
 
 
 

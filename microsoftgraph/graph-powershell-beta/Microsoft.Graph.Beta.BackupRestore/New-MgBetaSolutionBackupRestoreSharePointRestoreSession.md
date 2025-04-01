@@ -21,9 +21,12 @@ Create a new sharePointRestoreSession object.
 New-MgBetaSolutionBackupRestoreSharePointRestoreSession [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphPublicError>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-RestoreJobType <String>]
+ [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]
+ [-SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]
+ [-SiteRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest[]>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -223,12 +226,59 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RestoreJobType
+restoreJobType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestoreSessionArtifactCount
+restoreSessionArtifactCount
+To construct, see NOTES section for RESTORESESSIONARTIFACTCOUNT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRestoreSessionArtifactCount
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteRestoreArtifacts
 A collection of restore points and destination details that can be used to restore SharePoint sites.
 To construct, see NOTES section for SITERESTOREARTIFACTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSiteRestoreArtifact[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SiteRestoreArtifactsBulkAdditionRequests
+A collection of SharePoint site URLs and destination details that can be used to restore SharePoint sites.
+To construct, see NOTES section for SITERESTOREARTIFACTSBULKADDITIONREQUESTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -333,6 +383,13 @@ For example, in the access reviews decisions API, this property might record the
     - `[Target <String>]`: The target of the error.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of the restore session.
+  - `[RestoreJobType <String>]`: restoreJobType
+  - `[RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]`: restoreSessionArtifactCount
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Completed <Int32?>]`: The number of artifacts whose restoration completed.
+    - `[Failed <Int32?>]`: The number of artifacts whose restoration failed.
+    - `[InProgress <Int32?>]`: The number of artifacts whose restoration is in progress.
+    - `[Total <Int32?>]`: The number of artifacts present in the restore session.
   - `[Status <String>]`: restoreSessionStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -363,6 +420,30 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[RestoredSiteId <String>]`: The new site identifier if the value of the destinationType property is new, and the existing site ID if the value is inPlace.
+  - `[SiteRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest- `[]`>]`: A collection of SharePoint site URLs and destination details that can be used to restore SharePoint sites.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+    - `[DestinationType <String>]`: destinationType
+    - `[DisplayName <String>]`: Name of the addition request.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+    - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+      - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+    - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+    - `[RestorePointPreference <String>]`: restorePointPreference
+    - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+    - `[Tags <String>]`: restorePointTags
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
+This property isn't implemented yet.
+Future value; don't use.
+    - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -403,6 +484,13 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
+
+RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Completed <Int32?>]`: The number of artifacts whose restoration completed.
+  - `[Failed <Int32?>]`: The number of artifacts whose restoration failed.
+  - `[InProgress <Int32?>]`: The number of artifacts whose restoration is in progress.
+  - `[Total <Int32?>]`: The number of artifacts present in the restore session.
 
 SITERESTOREARTIFACTS `<IMicrosoftGraphSiteRestoreArtifact- `[]`>`: A collection of restore points and destination details that can be used to restore SharePoint sites.
   - `[CompletionDateTime <DateTime?>]`: The time when restoration of restore artifact is completed.
@@ -455,6 +543,55 @@ For example, in the access reviews decisions API, this property might record the
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[RestoredSiteId <String>]`: The new site identifier if the value of the destinationType property is new, and the existing site ID if the value is inPlace.
+
+SITERESTOREARTIFACTSBULKADDITIONREQUESTS `<IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest- `[]`>`: A collection of SharePoint site URLs and destination details that can be used to restore SharePoint sites.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time when the bulk request was created.
+  - `[DestinationType <String>]`: destinationType
+  - `[DisplayName <String>]`: Name of the addition request.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp when this entity was last modified.
+  - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
+    - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+  - `[ProtectionUnitIds <String- `[]`>]`: Indicates which protection units to restore.
+This property isn't implemented yet.
+Future value; don't use.
+  - `[RestorePointPreference <String>]`: restorePointPreference
+  - `[Status <String>]`: restoreArtifactsBulkRequestStatus
+  - `[Tags <String>]`: restorePointTags
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[SiteIds <String- `[]`>]`: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
+This property isn't implemented yet.
+Future value; don't use.
+  - `[SiteWebUrls <String- `[]`>]`: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
 
 ## RELATED LINKS
 

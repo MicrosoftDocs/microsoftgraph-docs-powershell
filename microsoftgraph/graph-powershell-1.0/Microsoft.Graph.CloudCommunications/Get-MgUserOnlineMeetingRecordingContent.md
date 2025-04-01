@@ -34,6 +34,14 @@ Get-MgUserOnlineMeetingRecordingContent -InputObject <ICloudCommunicationsIdenti
 The content of the recording.
 Read-only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetingRecording.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetingRecording.Read.Chat,  |
+
 ## PARAMETERS
 
 ### -CallRecordingId

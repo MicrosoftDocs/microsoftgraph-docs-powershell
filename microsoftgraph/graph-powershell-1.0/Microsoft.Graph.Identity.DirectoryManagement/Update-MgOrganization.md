@@ -9,10 +9,9 @@ ms.subservice: entra-directory-management
 # Update-MgOrganization
 
 ## SYNOPSIS
-Update the properties of a organization object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
+Update the properties of the currently authenticated organization.
+In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
+The ID is also known as the tenantId of the organization.
 
 ## SYNTAX
 
@@ -67,7 +66,9 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a organization object.
+Update the properties of the currently authenticated organization.
+In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
+The ID is also known as the tenantId of the organization.
 
 **Permissions**
 
@@ -973,9 +974,11 @@ Maximum length is 255 characters.
 The URL that directs to the company's privacy statement.
 Not required.
   - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan- `[]`>]`: Not nullable.
-    - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-    - `[ProvisioningStatus <String>]`: For example, 'Success'.
-    - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
+    - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+    - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+    - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'.
   - `[SecurityComplianceNotificationMails <String- `[]`>]`: Not nullable.
   - `[SecurityComplianceNotificationPhones <String- `[]`>]`: Not nullable.
   - `[State <String>]`: State name of the address for the organization.
@@ -1192,6 +1195,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
+  - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
@@ -1203,6 +1207,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: Usage: tenantId='{tenantId}'
   - `[UserId <String>]`: The unique identifier of user
 
 PRIVACYPROFILE `<IMicrosoftGraphPrivacyProfile>`: privacyProfile
@@ -1215,9 +1220,11 @@ The URL that directs to the company's privacy statement.
 Not required.
 
 PROVISIONEDPLANS `<IMicrosoftGraphProvisionedPlan- `[]`>`: Not nullable.
-  - `[CapabilityStatus <String>]`: For example, 'Enabled'.
-  - `[ProvisioningStatus <String>]`: For example, 'Success'.
-  - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
+  - `[CapabilityStatus <String>]`: Condition of the capability assignment.
+The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
+See a detailed description of each value.
+  - `[ProvisioningStatus <String>]`: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+  - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'.
 
 VERIFIEDDOMAINS `<IMicrosoftGraphVerifiedDomain- `[]`>`: The collection of domains associated with this tenant.
 Not nullable.
@@ -1231,7 +1238,7 @@ Not nullable.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0)
 
 
 

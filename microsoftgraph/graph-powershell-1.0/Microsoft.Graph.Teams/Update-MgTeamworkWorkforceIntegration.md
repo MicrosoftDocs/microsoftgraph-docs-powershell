@@ -20,9 +20,10 @@ Update the properties of a workforceIntegration object.
 ```
 Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ApiVersion <Int32>] [-DisplayName <String>]
- [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>] [-Id <String>] [-IsActive]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>] [-Url <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EligibilityFilteringEnabledEntities <String>] [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]
+ [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>]
+ [-Url <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -36,9 +37,10 @@ Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId <String>
 ```
 Update-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ApiVersion <Int32>] [-DisplayName <String>]
- [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>] [-Id <String>] [-IsActive]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>] [-Url <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EligibilityFilteringEnabledEntities <String>] [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]
+ [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>]
+ [-Url <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -128,6 +130,21 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Name of the workforce integration.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EligibilityFilteringEnabledEntities
+eligibilityFilteringEnabledEntities
 
 ```yaml
 Type: String
@@ -375,6 +392,7 @@ Read-only.
   - `[ApiVersion <Int32?>]`: API version for the call back URL.
 Start with 1.
   - `[DisplayName <String>]`: Name of the workforce integration.
+  - `[EligibilityFilteringEnabledEntities <String>]`: eligibilityFilteringEnabledEntities
   - `[Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]`: workforceIntegrationEncryption
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol

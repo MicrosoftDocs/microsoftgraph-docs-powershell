@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPrintPrinterShareJob
 
 ## SYNOPSIS
-Get jobs from print
+The list of jobs that are queued for printing by the printer/printerShare.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get jobs from print
+The list of jobs that are queued for printing by the printer/printerShare.
 
 ## PARAMETERS
 

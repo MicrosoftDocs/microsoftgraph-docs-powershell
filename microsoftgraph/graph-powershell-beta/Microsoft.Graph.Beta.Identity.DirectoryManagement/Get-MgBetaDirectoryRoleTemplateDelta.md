@@ -10,7 +10,7 @@ ms.subservice: entra-directory-management
 
 ## SYNOPSIS
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
-For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleTemplateDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplateDelta?view=graph-powershell-1.0)
@@ -26,7 +26,7 @@ Get-MgBetaDirectoryRoleTemplateDelta [-ExpandProperty <String[]>] [-Filter <Stri
 
 ## DESCRIPTION
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
-For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**
 

@@ -18,16 +18,16 @@ Update-MgBetaCommunicationOnlineMeetingByJoinWebUrl -JoinWebUrl <String> [-Respo
  [-AdditionalProperties <Hashtable>] [-AiInsights <IMicrosoftGraphCallAiInsight[]>]
  [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare <String>]
  [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording]
- [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard] [-AllowedPresenters <String>]
- [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
- [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
- [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-BroadcastRecordingInputFile <String>]
- [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
- [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
- [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
- [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <String>] [-JoinWebUrl1 <String>]
- [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
+ [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard] [-AllowedLobbyAdmitters <String>]
+ [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+ [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
+ [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
+ [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
+ [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
+ [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
+ [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
+ [-JoinUrl <String>] [-JoinWebUrl1 <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>] [-MeetingTemplateId <String>]
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
@@ -44,16 +44,16 @@ Update-MgBetaCommunicationOnlineMeetingByJoinWebUrl [-JoinWebUrl <String>]
  [-AdditionalProperties <Hashtable>] [-AiInsights <IMicrosoftGraphCallAiInsight[]>]
  [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare <String>]
  [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording]
- [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard] [-AllowedPresenters <String>]
- [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
- [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
- [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-BroadcastRecordingInputFile <String>]
- [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
- [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
- [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
- [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <String>]
- [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
+ [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard] [-AllowedLobbyAdmitters <String>]
+ [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+ [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
+ [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
+ [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
+ [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
+ [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
+ [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
+ [-JoinUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>] [-MeetingTemplateId <String>]
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
@@ -154,6 +154,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowedLobbyAdmitters
+allowedLobbyAdmitterRoles
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1027,10 +1042,9 @@ Read-only.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[TranscriptUtterance <String>]`: 
@@ -1048,19 +1062,36 @@ Read-only.
       - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
       - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
     - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+    - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+      - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
+    - `[RegistrationId <String>]`: Unique identifier of a virtualEventRegistration.
+Presents for all participant who has registered for the virtualEventWebinar.
     - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
     - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+  - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers.
+Read-only.
+    - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+    - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
   - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
 Read-only.
   - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
@@ -1090,6 +1121,7 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
   - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+  - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -1107,19 +1139,36 @@ Read-only.
         - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
         - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
       - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+      - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+        - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
+      - `[RegistrationId <String>]`: Unique identifier of a virtualEventRegistration.
+Presents for all participant who has registered for the virtualEventWebinar.
       - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+    - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers.
+Read-only.
+      - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+      - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
     - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
 Read-only.
     - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
@@ -1414,19 +1463,36 @@ Read-only.
       - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
       - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
     - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+    - `[ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]`: virtualEventExternalRegistrationInformation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Referrer <String>]`: A URL or string that represents the location from which the registrant registered.
+Optional.
+      - `[RegistrationId <String>]`: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
+    - `[RegistrationId <String>]`: Unique identifier of a virtualEventRegistration.
+Presents for all participant who has registered for the virtualEventWebinar.
     - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
     - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+  - `[ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation- `[]`>]`: The external information of a virtual event.
+Returned only for event organizers or coorganizers.
+Read-only.
+    - `[ApplicationId <String>]`: Identifier of the application that hosts the externalEventId.
+Read-only.
+    - `[ExternalEventId <String>]`: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
   - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
 Read-only.
   - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
@@ -1442,10 +1508,9 @@ PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Role <String>]`: onlineMeetingRole
@@ -1479,10 +1544,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
@@ -1543,10 +1607,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.

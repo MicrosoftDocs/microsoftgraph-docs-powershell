@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Create a new windows10EnterpriseModernAppManagementConfiguration object.
+Create a new windows10EndpointProtectionConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 ```
 
 ## DESCRIPTION
-Create a new windows10EnterpriseModernAppManagementConfiguration object.
+Create a new windows10EndpointProtectionConfiguration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -47,11 +47,99 @@ Create a new windows10EnterpriseModernAppManagementConfiguration object.
 Import-Module Microsoft.Graph.DeviceManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windows10EnterpriseModernAppManagementConfiguration"
+	"@odata.type" = "#microsoft.graph.windows10EndpointProtectionConfiguration"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
-	uninstallBuiltInApps = $true
+	firewallBlockStatefulFTP = $true
+	firewallIdleTimeoutForSecurityAssociationInSeconds = 
+	firewallPreSharedKeyEncodingMethod = "none"
+	firewallIPSecExemptionsAllowNeighborDiscovery = $true
+	firewallIPSecExemptionsAllowICMP = $true
+	firewallIPSecExemptionsAllowRouterDiscovery = $true
+	firewallIPSecExemptionsAllowDHCP = $true
+	firewallCertificateRevocationListCheckMethod = "none"
+	firewallMergeKeyingModuleSettings = $true
+	firewallPacketQueueingMethod = "disabled"
+	firewallProfileDomain = @{
+		"@odata.type" = "microsoft.graph.windowsFirewallNetworkProfile"
+		firewallEnabled = "blocked"
+		stealthModeBlocked = $true
+		incomingTrafficBlocked = $true
+		unicastResponsesToMulticastBroadcastsBlocked = $true
+		inboundNotificationsBlocked = $true
+		authorizedApplicationRulesFromGroupPolicyMerged = $true
+		globalPortRulesFromGroupPolicyMerged = $true
+		connectionSecurityRulesFromGroupPolicyMerged = $true
+		outboundConnectionsBlocked = $true
+		inboundConnectionsBlocked = $true
+		securedPacketExemptionAllowed = $true
+		policyRulesFromGroupPolicyMerged = $true
+	}
+	firewallProfilePublic = @{
+		"@odata.type" = "microsoft.graph.windowsFirewallNetworkProfile"
+		firewallEnabled = "blocked"
+		stealthModeBlocked = $true
+		incomingTrafficBlocked = $true
+		unicastResponsesToMulticastBroadcastsBlocked = $true
+		inboundNotificationsBlocked = $true
+		authorizedApplicationRulesFromGroupPolicyMerged = $true
+		globalPortRulesFromGroupPolicyMerged = $true
+		connectionSecurityRulesFromGroupPolicyMerged = $true
+		outboundConnectionsBlocked = $true
+		inboundConnectionsBlocked = $true
+		securedPacketExemptionAllowed = $true
+		policyRulesFromGroupPolicyMerged = $true
+	}
+	firewallProfilePrivate = @{
+		"@odata.type" = "microsoft.graph.windowsFirewallNetworkProfile"
+		firewallEnabled = "blocked"
+		stealthModeBlocked = $true
+		incomingTrafficBlocked = $true
+		unicastResponsesToMulticastBroadcastsBlocked = $true
+		inboundNotificationsBlocked = $true
+		authorizedApplicationRulesFromGroupPolicyMerged = $true
+		globalPortRulesFromGroupPolicyMerged = $true
+		connectionSecurityRulesFromGroupPolicyMerged = $true
+		outboundConnectionsBlocked = $true
+		inboundConnectionsBlocked = $true
+		securedPacketExemptionAllowed = $true
+		policyRulesFromGroupPolicyMerged = $true
+	}
+	defenderAttackSurfaceReductionExcludedPaths = @(
+	"Defender Attack Surface Reduction Excluded Paths value"
+)
+defenderGuardedFoldersAllowedAppPaths = @(
+"Defender Guarded Folders Allowed App Paths value"
+)
+defenderAdditionalGuardedFolders = @(
+"Defender Additional Guarded Folders value"
+)
+defenderExploitProtectionXml = "ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA=="
+defenderExploitProtectionXmlFileName = "Defender Exploit Protection Xml File Name value"
+defenderSecurityCenterBlockExploitProtectionOverride = $true
+appLockerApplicationControl = "enforceComponentsAndStoreApps"
+smartScreenEnableInShell = $true
+smartScreenBlockOverrideForFiles = $true
+applicationGuardEnabled = $true
+applicationGuardBlockFileTransfer = "blockImageAndTextFile"
+applicationGuardBlockNonEnterpriseContent = $true
+applicationGuardAllowPersistence = $true
+applicationGuardForceAuditing = $true
+applicationGuardBlockClipboardSharing = "blockBoth"
+applicationGuardAllowPrintToPDF = $true
+applicationGuardAllowPrintToXPS = $true
+applicationGuardAllowPrintToLocalPrinters = $true
+applicationGuardAllowPrintToNetworkPrinters = $true
+bitLockerDisableWarningForOtherDiskEncryption = $true
+bitLockerEnableStorageCardEncryptionOnMobile = $true
+bitLockerEncryptDevice = $true
+bitLockerRemovableDrivePolicy = @{
+"@odata.type" = "microsoft.graph.bitLockerRemovableDrivePolicy"
+encryptionMethod = "aesCbc256"
+requireEncryptionForWriteAccess = $true
+blockCrossOrganizationWriteAccess = $true
+}
 }
 
 New-MgDeviceManagementDeviceConfiguration -BodyParameter $params
@@ -506,7 +594,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-create?view=graph-rest-1.0)
 
 
 

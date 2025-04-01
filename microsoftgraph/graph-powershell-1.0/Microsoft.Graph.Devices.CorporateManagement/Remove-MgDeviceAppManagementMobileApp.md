@@ -9,7 +9,7 @@ ms.subservice: intune
 # Remove-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Deletes a androidStoreApp.
+Deletes a managedAndroidStoreApp.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ```
 
 ## DESCRIPTION
-Deletes a androidStoreApp.
+Deletes a managedAndroidStoreApp.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -242,7 +242,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-androidstoreapp-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-androidstoreapp-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-managedandroidstoreapp-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-managedandroidstoreapp-delete?view=graph-rest-1.0)
 
 
 

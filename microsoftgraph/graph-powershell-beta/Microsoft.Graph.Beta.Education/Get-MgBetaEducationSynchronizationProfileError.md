@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEducationSynchronizationProfileError
 
 ## SYNOPSIS
-All errors associated with this synchronization profile.
+Get errors from education
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-All errors associated with this synchronization profile.
+Get errors from education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -330,12 +330,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
+  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
+  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofileerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofileerror)
-
-[https://learn.microsoft.com/graph/api/educationsynchronizationerrors-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsynchronizationerrors-get?view=graph-rest-beta)
 
 
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action checkMemberObjects
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Confirm-MgBetaDirectoryObjectMemberObject?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -47,14 +44,6 @@ Confirm-MgDirectoryObjectMemberObject -InputObject <IDirectoryObjectsIdentity>
 
 ## DESCRIPTION
 Invoke action checkMemberObjects
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, User.Read, GroupMember.Read.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, User.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All,  |
 
 ## PARAMETERS
 

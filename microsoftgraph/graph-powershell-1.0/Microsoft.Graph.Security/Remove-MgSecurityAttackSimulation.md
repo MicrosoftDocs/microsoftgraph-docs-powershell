@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulation
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Remove-MgSecurityAttackSimulation
 
 ## SYNOPSIS
-Delete navigation property attackSimulation for security
+Delete an attack simulation campaign for a tenant.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
@@ -16,13 +17,6 @@ Delete navigation property attackSimulation for security
 ## SYNTAX
 
 ### Delete (Default)
-```
-Remove-MgSecurityAttackSimulation [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete1
 ```
 Remove-MgSecurityAttackSimulation -SimulationId <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
@@ -37,7 +31,20 @@ Remove-MgSecurityAttackSimulation -InputObject <ISecurityIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete navigation property attackSimulation for security
+Delete an attack simulation campaign for a tenant.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityAttackSimulation -SimulationId $simulationId
+
+```
+This example shows how to use the Remove-MgSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -137,7 +144,7 @@ The unique identifier of simulation
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -239,6 +246,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
   - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -251,6 +259,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
@@ -262,7 +271,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulation)
 
 [https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-1.0)
-
 
 
 

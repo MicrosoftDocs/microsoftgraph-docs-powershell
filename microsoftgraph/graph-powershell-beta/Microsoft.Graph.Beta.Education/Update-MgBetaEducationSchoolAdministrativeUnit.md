@@ -18,9 +18,10 @@ Update the navigation property administrativeUnit in education
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaEducationSchoolAdministrativeUnit -EducationSchoolId <String> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
- [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
+ [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
+ [-DeletedMembers <IMicrosoftGraphDirectoryObject[]>] [-Description <String>] [-DisplayName <String>]
+ [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsMemberManagementRestricted]
+ [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
  [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
  [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -37,8 +38,9 @@ Update-MgBetaEducationSchoolAdministrativeUnit -EducationSchoolId <String>
 ```
 Update-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
- [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
+ [-DeletedMembers <IMicrosoftGraphDirectoryObject[]>] [-Description <String>] [-DisplayName <String>]
+ [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsMemberManagementRestricted]
+ [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
  [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
  [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -93,6 +95,22 @@ Always null when the object hasn't been deleted.
 
 ```yaml
 Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeletedMembers
+
+To construct, see NOTES section for DELETEDMEMBERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -404,6 +422,11 @@ BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[DeletedMembers <IMicrosoftGraphDirectoryObject- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
@@ -413,10 +436,6 @@ Read-only.
   - `[IsMemberManagementRestricted <Boolean?>]`: 
   - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
-    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
   - `[MembershipRule <String>]`: 
   - `[MembershipRuleProcessingState <String>]`: 
   - `[MembershipType <String>]`: 
@@ -433,6 +452,12 @@ For example, if a user changes their display name the API might show the new val
       - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Visibility <String>]`: 
+
+DELETEDMEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
 
 EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for this administrative unit.
 Nullable.
@@ -458,6 +483,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
+  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
+  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
 
 MEMBERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Users and groups that are members of this administrative unit.
 Supports $expand.

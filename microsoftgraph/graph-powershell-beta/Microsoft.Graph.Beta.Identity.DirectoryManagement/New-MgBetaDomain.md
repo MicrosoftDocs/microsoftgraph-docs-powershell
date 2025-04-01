@@ -125,7 +125,8 @@ Accept wildcard characters: False
 ### -DomainNameReferences
 The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Does not support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 To construct, see NOTES section for DOMAINNAMEREFERENCES properties and create a hash table.
 
@@ -143,7 +144,7 @@ Accept wildcard characters: False
 
 ### -FederationConfiguration
 Domain settings configured by customer when federated with Microsoft Entra ID.
-Supports $expand.
+Does not support $expand.
 To construct, see NOTES section for FEDERATIONCONFIGURATION properties and create a hash table.
 
 ```yaml
@@ -355,7 +356,7 @@ Accept wildcard characters: False
 ### -ServiceConfigurationRecords
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
-Supports $expand.
+Does not support $expand.
 To construct, see NOTES section for SERVICECONFIGURATIONRECORDS properties and create a hash table.
 
 ```yaml
@@ -424,7 +425,7 @@ Accept wildcard characters: False
 ### -VerificationDnsRecords
 DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
-Supports $expand.
+Does not support $expand.
 To construct, see NOTES section for VERIFICATIONDNSRECORDS properties and create a hash table.
 
 ```yaml
@@ -501,14 +502,15 @@ When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
   - `[DomainNameReferences <IMicrosoftGraphDirectoryObject- `[]`>]`: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Does not support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[FederationConfiguration <IMicrosoftGraphInternalDomainFederation- `[]`>]`: Domain settings configured by customer when federated with Microsoft Entra ID.
-Supports $expand.
+Does not support $expand.
     - `[IssuerUri <String>]`: Issuer URI of the federation server.
     - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
     - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
@@ -563,7 +565,7 @@ Not nullable.
   - `[RootDomain <IMicrosoftGraphDomain>]`: domain
   - `[ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
-Supports $expand.
+Does not support $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
@@ -597,11 +599,12 @@ Not nullable.
 For more information about CustomUrlDomain, see Custom URL domains in external tenants.
   - `[VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
-Supports $expand.
+Does not support $expand.
 
 DOMAINNAMEREFERENCES `<IMicrosoftGraphDirectoryObject- `[]`>`: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Does not support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -609,7 +612,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 FEDERATIONCONFIGURATION `<IMicrosoftGraphInternalDomainFederation- `[]`>`: Domain settings configured by customer when federated with Microsoft Entra ID.
-Supports $expand.
+Does not support $expand.
   - `[IssuerUri <String>]`: Issuer URI of the federation server.
   - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
   - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
@@ -658,14 +661,15 @@ When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
   - `[DomainNameReferences <IMicrosoftGraphDirectoryObject- `[]`>]`: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
-Supports $expand and $filter by the OData type of objects returned.
+Does not support $expand.
+Supports $filter by the OData type of objects returned.
 For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[FederationConfiguration <IMicrosoftGraphInternalDomainFederation- `[]`>]`: Domain settings configured by customer when federated with Microsoft Entra ID.
-Supports $expand.
+Does not support $expand.
     - `[IssuerUri <String>]`: Issuer URI of the federation server.
     - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
     - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
@@ -720,7 +724,7 @@ Not nullable.
   - `[RootDomain <IMicrosoftGraphDomain>]`: domain
   - `[ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
-Supports $expand.
+Does not support $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
@@ -754,11 +758,11 @@ Not nullable.
 For more information about CustomUrlDomain, see Custom URL domains in external tenants.
   - `[VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
-Supports $expand.
+Does not support $expand.
 
 SERVICECONFIGURATIONRECORDS `<IMicrosoftGraphDomainDnsRecord- `[]`>`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
-Supports $expand.
+Does not support $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
@@ -790,7 +794,7 @@ Failed - The operation failed.
 
 VERIFICATIONDNSRECORDS `<IMicrosoftGraphDomainDnsRecord- `[]`>`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
-Supports $expand.
+Does not support $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.

@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Update the properties of a managedAndroidStoreApp object.
+Update the properties of a androidLobApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ```
 
 ## DESCRIPTION
-Update the properties of a managedAndroidStoreApp object.
+Update the properties of a androidLobApp object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -64,7 +64,7 @@ Update the properties of a managedAndroidStoreApp object.
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.managedAndroidStoreApp"
+	"@odata.type" = "#microsoft.graph.androidLobApp"
 	displayName = "Display Name value"
 	description = "Description value"
 	publisher = "Publisher value"
@@ -80,10 +80,10 @@ $params = @{
 	developer = "Developer value"
 	notes = "Notes value"
 	publishingState = "processing"
-	appAvailability = "lineOfBusiness"
-	version = "Version value"
+	committedContentVersion = "Committed Content Version value"
+	fileName = "File Name value"
+	size = 
 	packageId = "Package Id value"
-	appStoreUrl = "https://example.com/appStoreUrl/"
 	minimumSupportedOperatingSystem = @{
 		"@odata.type" = "microsoft.graph.androidMinimumOperatingSystem"
 		v4_0 = $true
@@ -103,6 +103,8 @@ $params = @{
 		v10_0 = $true
 		v11_0 = $true
 	}
+	versionName = "Version Name value"
+	versionCode = "Version Code value"
 }
 
 Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
@@ -579,7 +581,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-managedandroidstoreapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-managedandroidstoreapp-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-androidlobapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-androidlobapp-update?view=graph-rest-1.0)
 
 
 

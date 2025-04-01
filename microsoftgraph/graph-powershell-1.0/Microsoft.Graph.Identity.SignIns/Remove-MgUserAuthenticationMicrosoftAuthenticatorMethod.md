@@ -9,7 +9,7 @@ ms.subservice: entra-sign-in
 # Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod
 
 ## SYNOPSIS
-Deletes a microsoftAuthenticatorAuthenticationMethod object.
+Delete a microsoftAuthenticatorAuthenticationMethod object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentityS
 ```
 
 ## DESCRIPTION
-Deletes a microsoftAuthenticatorAuthenticationMethod object.
+Delete a microsoftAuthenticatorAuthenticationMethod object.
 
 **Permissions**
 

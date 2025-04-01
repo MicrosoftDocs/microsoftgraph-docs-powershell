@@ -19,7 +19,8 @@ Update-MgBetaReportUserInsightDaily [-ResponseHeadersVariable <String>]
  [-Authentications <IMicrosoftGraphAuthenticationsMetric[]>] [-Id <String>]
  [-InactiveUsers <IMicrosoftGraphDailyInactiveUsersMetric[]>]
  [-InactiveUsersByApplication <IMicrosoftGraphDailyInactiveUsersByApplicationMetric[]>]
- [-MfaCompletions <IMicrosoftGraphMfaCompletionMetric[]>] [-SignUps <IMicrosoftGraphUserSignUpMetric[]>]
+ [-MfaCompletions <IMicrosoftGraphMfaCompletionMetric[]>]
+ [-MfaTelecomFraud <IMicrosoftGraphMfaTelecomFraudMetric[]>] [-SignUps <IMicrosoftGraphUserSignUpMetric[]>]
  [-Summary <IMicrosoftGraphInsightSummary[]>] [-UserCount <IMicrosoftGraphUserCountMetric[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -178,6 +179,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MfaTelecomFraud
+
+To construct, see NOTES section for MFATELECOMFRAUD properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMfaTelecomFraudMetric[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -321,9 +338,17 @@ Read-only.
 Supports $filter (eq).
   - `[AttemptsCount <Int64?>]`: The number of authentication requests made in the specified period.
 Supports $filter (eq).
+  - `[AuthFlow <String>]`: 
+  - `[Browser <String>]`: 
   - `[Country <String>]`: The location where the customers authenticated from.
 Supports $filter (eq).
   - `[FactDate <DateTime?>]`: The date of the user insight.
+  - `[Failures <IMicrosoftGraphAuthenticationFailure- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Count <Int64?>]`: 
+    - `[Reason <String>]`: 
+    - `[ReasonCode <String>]`: authenticationFailureReasonCode
   - `[IdentityProvider <String>]`: 
   - `[Language <String>]`: 
   - `[OS <String>]`: The platform for the device that the customers used.
@@ -352,9 +377,17 @@ Read-only.
 Supports $filter (eq).
     - `[AttemptsCount <Int64?>]`: The number of authentication requests made in the specified period.
 Supports $filter (eq).
+    - `[AuthFlow <String>]`: 
+    - `[Browser <String>]`: 
     - `[Country <String>]`: The location where the customers authenticated from.
 Supports $filter (eq).
     - `[FactDate <DateTime?>]`: The date of the user insight.
+    - `[Failures <IMicrosoftGraphAuthenticationFailure- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Count <Int64?>]`: 
+      - `[Reason <String>]`: 
+      - `[ReasonCode <String>]`: authenticationFailureReasonCode
     - `[IdentityProvider <String>]`: 
     - `[Language <String>]`: 
     - `[OS <String>]`: The platform for the device that the customers used.
@@ -402,10 +435,20 @@ Supports $filter (eq).
 Supports $filter (eq).
     - `[SuccessCount <Int64?>]`: Number of users who signed up successfully.
 Supports $filter (eq).
+  - `[MfaTelecomFraud <IMicrosoftGraphMfaTelecomFraudMetric- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CaptchaFailureCount <Int64?>]`: 
+    - `[CaptchaNotTriggeredUserCount <Int64?>]`: 
+    - `[CaptchaShownUserCount <Int64?>]`: 
+    - `[CaptchaSuccessCount <Int64?>]`: 
+    - `[FactDate <DateTime?>]`: 
+    - `[TelecomBlockedUserCount <Int64?>]`: 
   - `[SignUps <IMicrosoftGraphUserSignUpMetric- `[]`>]`: Total sign-ups on apps registered in the tenant for a specified period.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AppId <String>]`: 
+    - `[Browser <String>]`: 
     - `[Count <Int64?>]`: The total number of users who signed up in the specified period.
 Supports $filter (eq).
     - `[Country <String>]`: 
@@ -479,10 +522,21 @@ Supports $filter (eq).
   - `[SuccessCount <Int64?>]`: Number of users who signed up successfully.
 Supports $filter (eq).
 
+MFATELECOMFRAUD `<IMicrosoftGraphMfaTelecomFraudMetric- `[]`>`: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[CaptchaFailureCount <Int64?>]`: 
+  - `[CaptchaNotTriggeredUserCount <Int64?>]`: 
+  - `[CaptchaShownUserCount <Int64?>]`: 
+  - `[CaptchaSuccessCount <Int64?>]`: 
+  - `[FactDate <DateTime?>]`: 
+  - `[TelecomBlockedUserCount <Int64?>]`: 
+
 SIGNUPS `<IMicrosoftGraphUserSignUpMetric- `[]`>`: Total sign-ups on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: 
+  - `[Browser <String>]`: 
   - `[Count <Int64?>]`: The total number of users who signed up in the specified period.
 Supports $filter (eq).
   - `[Country <String>]`: 

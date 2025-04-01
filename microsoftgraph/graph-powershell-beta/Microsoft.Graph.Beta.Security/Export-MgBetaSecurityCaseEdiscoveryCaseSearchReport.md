@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasesearchreport
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Export an item report from an estimated ediscoverySearch.
 For details, see Manage a collection estimate.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseSearchReport](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseSearchReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,9 +59,102 @@ For details, see Manage a collection estimate.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Export a report of items with search hits only, excluding partially indexed items, without additional options
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 1"
+	exportCriteria = "searchHits"
+	additionalOptions = "none"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export a report of items with search hits only, excluding partially indexed items, without additional options
+
+### Example 2: Export a report of items with search hits and partially indexed items in all targeted locations, without additional options
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 2"
+	exportCriteria = "searchHits, partiallyIndexed"
+	exportLocation = "responsiveLocations, nonresponsiveLocations"
+	additionalOptions = "none"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export a report of items with search hits and partially indexed items in all targeted locations, without additional options
+
+### Example 3: Export a report of items with search hits and partially indexed items in locations with search hits, without additional options
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 3"
+	exportCriteria = "searchHits, partiallyIndexed"
+	exportLocation = "responsiveLocations"
+	additionalOptions = "none"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export a report of items with search hits and partially indexed items in locations with search hits, without additional options
+
+### Example 4: Export a report of partially indexed items in all targeted locations with all additional options selected
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 4"
+	exportCriteria = "partiallyIndexed"
+	exportLocation = "responsiveLocations, nonresponsiveLocations"
+	additionalOptions = "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export a report of partially indexed items in all targeted locations with all additional options selected
+
+### Example 5: Export a report of partially indexed items in locations with search hits and cloud attachments
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Export 5"
+	exportCriteria = "partiallyIndexed"
+	exportLocation = "responsiveLocations"
+	additionalOptions = "cloudAttachments"
+	cloudAttachmentVersion = "all"
+	doucmentVersion = "recent100"
+}
+
+Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export a report of partially indexed items in locations with search hits and cloud attachments
+
 
 ## PARAMETERS
 
@@ -342,6 +439,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
@@ -411,6 +509,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
@@ -422,6 +521,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasesearchreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasesearchreport)
 
+[https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-beta)
 
 
 

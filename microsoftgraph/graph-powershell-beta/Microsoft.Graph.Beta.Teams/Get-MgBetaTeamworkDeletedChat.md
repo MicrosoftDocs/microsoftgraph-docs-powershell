@@ -47,7 +47,7 @@ Read the properties and relationships of a deletedChat object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ManageDeletion.All, Chat.ManageDeletion.Chat,  |
+| Application | Chat.ManageDeletion.Chat, Chat.ManageDeletion.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -348,6 +348,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 

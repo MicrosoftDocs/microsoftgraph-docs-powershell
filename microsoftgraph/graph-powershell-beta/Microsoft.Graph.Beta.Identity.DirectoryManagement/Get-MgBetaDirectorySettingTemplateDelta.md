@@ -10,7 +10,7 @@ ms.subservice: entra-directory-management
 
 ## SYNOPSIS
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
-For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgBetaDirectorySettingTemplateDelta [-ExpandProperty <String[]>] [-Filter <S
 
 ## DESCRIPTION
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
-For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**
 
@@ -31,7 +31,7 @@ For more information about the delta function, see Use delta query to track chan
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Directory.ReadWrite.All,  |
+| Application | Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## PARAMETERS
 

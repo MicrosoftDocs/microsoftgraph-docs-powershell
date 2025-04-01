@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/test-mgdirectoryobjectproperty
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Test-MgDirectoryObjectProperty
@@ -19,9 +18,6 @@ Validate that the mail nickname is unique This API only returns the first valida
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaDirectoryObjectProperty](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Test-MgBetaDirectoryObjectProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,20 +49,12 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	entityType = "Group"
@@ -76,10 +64,6 @@ $params = @{
 }
 
 Test-MgDirectoryObjectProperty -BodyParameter $params
-
-```
-This example shows how to use the Test-MgDirectoryObjectProperty Cmdlet.
-
 
 ## PARAMETERS
 

@@ -9,7 +9,7 @@ ms.subservice: entra-directory-management
 # New-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Use this API to create a new administrativeUnit.
+Create a new administrativeUnit.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeU
 ```
 
 ## DESCRIPTION
-Use this API to create a new administrativeUnit.
+Create a new administrativeUnit.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -126,6 +126,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Display name for the administrative unit.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
 
 ```yaml
@@ -221,7 +222,8 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRule
-
+The dynamic membership rule for the administrative unit.
+For more information about the rules you can use for dynamic administrative units and dynamic groups, see Manage rules for dynamic membership groups in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -236,7 +238,8 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRuleProcessingState
-
+Controls whether the dynamic membership rule is actively processed.
+Set to On to activate the dynamic membership rule, or Paused to stop updating membership dynamically.
 
 ```yaml
 Type: String
@@ -251,7 +254,9 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipType
-
+Indicates the membership type for the administrative unit.
+The possible values are: dynamic, assigned.
+If not set, the default value is null and the default behavior is assigned.
 
 ```yaml
 Type: String
@@ -314,7 +319,7 @@ Accept wildcard characters: False
 ### -Visibility
 Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership.
-If not set (value is null), the default behavior is public.
+If not set, the default value is null and the default behavior is public.
 When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
 ```yaml
@@ -385,6 +390,7 @@ Read-only.
   - `[Description <String>]`: An optional description for the administrative unit.
 Supports $filter (eq, ne, in, startsWith), $search.
   - `[DisplayName <String>]`: Display name for the administrative unit.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
 Nullable.
@@ -397,9 +403,13 @@ Supports $expand.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[MembershipRule <String>]`: 
-  - `[MembershipRuleProcessingState <String>]`: 
-  - `[MembershipType <String>]`: 
+  - `[MembershipRule <String>]`: The dynamic membership rule for the administrative unit.
+For more information about the rules you can use for dynamic administrative units and dynamic groups, see Manage rules for dynamic membership groups in Microsoft Entra ID.
+  - `[MembershipRuleProcessingState <String>]`: Controls whether the dynamic membership rule is actively processed.
+Set to On to activate the dynamic membership rule, or Paused to stop updating membership dynamically.
+  - `[MembershipType <String>]`: Indicates the membership type for the administrative unit.
+The possible values are: dynamic, assigned.
+If not set, the default value is null and the default behavior is assigned.
   - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -413,7 +423,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership.
-If not set (value is null), the default behavior is public.
+If not set, the default value is null and the default behavior is public.
 When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
 EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for this administrative unit.

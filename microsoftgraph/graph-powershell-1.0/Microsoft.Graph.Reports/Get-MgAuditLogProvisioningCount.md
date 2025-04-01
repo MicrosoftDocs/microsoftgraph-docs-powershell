@@ -29,7 +29,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All,  |
+| Application | Directory.Read.All, AuditLog.Read.All,  |
 
 ## PARAMETERS
 

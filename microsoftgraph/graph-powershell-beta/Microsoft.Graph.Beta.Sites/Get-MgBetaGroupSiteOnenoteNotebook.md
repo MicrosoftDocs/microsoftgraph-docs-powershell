@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteOnenoteNotebook
 
 ## SYNOPSIS
-The collection of OneNote notebooks that are owned by the user or group.
+The collection of OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 
@@ -40,7 +40,7 @@ Get-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-The collection of OneNote notebooks that are owned by the user or group.
+The collection of OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 

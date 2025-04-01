@@ -9,7 +9,7 @@ ms.subservice: universal-print
 # Get-MgBetaPrintShareJob
 
 ## SYNOPSIS
-Get jobs from print
+The list of jobs that are queued for printing by the printer/printerShare.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJob?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ Get-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get jobs from print
+The list of jobs that are queued for printing by the printer/printerShare.
 
 **Permissions**
 

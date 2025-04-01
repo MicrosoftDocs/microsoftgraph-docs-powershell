@@ -37,6 +37,14 @@ Get-MgBetaUserOnlineMeetingAiInsight -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Get aiInsights from users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetingAiInsight.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetingAiInsight.Read.Chat,  |
+
 ## PARAMETERS
 
 ### -All

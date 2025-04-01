@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -40,7 +40,7 @@ Because the amount of runs returned by the List API call can be overwhelming, th
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
+| Application | LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
 
 ## PARAMETERS
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessageCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessageCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -31,14 +28,6 @@ Get-MgTeamChannelMessageCount -InputObject <ITeamsIdentity> [-Filter <String>] [
 
 ## DESCRIPTION
 Get the number of the resource
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMessage.Read.Group, Group.ReadWrite.All, Group.Read.All, ChannelMessage.Read.All,  |
 
 ## PARAMETERS
 

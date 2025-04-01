@@ -20,9 +20,9 @@ Create new navigation property to mailboxRestoreArtifacts for solutions
 New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact -ExchangeRestoreSessionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CompletionDateTime <DateTime>]
  [-DestinationType <String>] [-Error <IMicrosoftGraphPublicError>] [-Id <String>]
- [-RestorePoint <IMicrosoftGraphRestorePoint>] [-RestoredFolderId <String>] [-StartDateTime <DateTime>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RestorePoint <IMicrosoftGraphRestorePoint>] [-RestoredFolderId <String>] [-RestoredItemCount <Int32>]
+ [-StartDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -38,8 +38,8 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact
  -InputObject <IBackupRestoreIdentity> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CompletionDateTime <DateTime>] [-DestinationType <String>] [-Error <IMicrosoftGraphPublicError>]
  [-Id <String>] [-RestorePoint <IMicrosoftGraphRestorePoint>] [-RestoredFolderId <String>]
- [-StartDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RestoredItemCount <Int32>] [-StartDateTime <DateTime>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoredFolderId
-The new restored folder identifier for the user.
+The newly restored folder identifier for the user.
 
 ```yaml
 Type: String
@@ -235,6 +235,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestoredItemCount
+The number of items that are being restored in the folder.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -384,7 +399,8 @@ For example, in the access reviews decisions API, this property might record the
   - `[Status <String>]`: artifactRestoreStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[RestoredFolderId <String>]`: The new restored folder identifier for the user.
+  - `[RestoredFolderId <String>]`: The newly restored folder identifier for the user.
+  - `[RestoredItemCount <Int32?>]`: The number of items that are being restored in the folder.
 
 ERROR `<IMicrosoftGraphPublicError>`: publicError
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -405,13 +421,17 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
   - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of driveProtectionUnitsBulkAdditionJob
   - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
+  - `[DriveRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
   - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[GranularMailboxRestoreArtifactId <String>]`: The unique identifier of granularMailboxRestoreArtifact
   - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
   - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
   - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
+  - `[MailboxRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
   - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
   - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
@@ -423,7 +443,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
   - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
   - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteProtectionUnitsBulkAdditionJobId <String>]`: The unique identifier of siteProtectionUnitsBulkAdditionJob
   - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
+  - `[SiteRestoreArtifactsBulkAdditionRequestId <String>]`: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
 RESTOREPOINT `<IMicrosoftGraphRestorePoint>`: restorePoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

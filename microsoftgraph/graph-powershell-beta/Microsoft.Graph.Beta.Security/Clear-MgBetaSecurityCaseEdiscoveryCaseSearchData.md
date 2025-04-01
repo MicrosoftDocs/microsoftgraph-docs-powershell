@@ -9,7 +9,7 @@ ms.subservice: ediscovery
 # Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData
 
 ## SYNOPSIS
-Delete Microsoft Teams messages contained in a eDiscovery search.
+Delete Exchange mailbox items or Microsoft Teams messages contained in an eDiscovery search.
 You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
 Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
 Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
@@ -53,7 +53,7 @@ Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData -InputObject <ISecurityIdentity
 ```
 
 ## DESCRIPTION
-Delete Microsoft Teams messages contained in a eDiscovery search.
+Delete Exchange mailbox items or Microsoft Teams messages contained in an eDiscovery search.
 You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
 Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
 Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
@@ -312,6 +312,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppDiscoveryReportId <String>]`: The unique identifier of cloudAppDiscoveryReport
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
@@ -381,6 +382,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent

@@ -12,9 +12,6 @@ ms.subservice: entra-applications
 Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)

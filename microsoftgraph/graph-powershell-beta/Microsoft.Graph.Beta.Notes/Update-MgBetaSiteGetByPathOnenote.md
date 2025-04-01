@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Notebooks
-The collection of OneNote notebooks that are owned by the user or group.
+The collection of OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 To construct, see NOTES section for NOTEBOOKS properties and create a hash table.
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pages
-The pages in all OneNote notebooks that are owned by the user or group.
+The pages in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 To construct, see NOTES section for PAGES properties and create a hash table.
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -SectionGroups
-The section groups in all OneNote notebooks that are owned by the user or group.
+The section groups in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 To construct, see NOTES section for SECTIONGROUPS properties and create a hash table.
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sections
-The sections in all OneNote notebooks that are owned by the user or group.
+The sections in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 To construct, see NOTES section for SECTIONS properties and create a hash table.
@@ -354,7 +354,7 @@ BODYPARAMETER `<IMicrosoftGraphOnenote>`: onenote
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Notebooks <IMicrosoftGraphNotebook- `[]`>]`: The collection of OneNote notebooks that are owned by the user or group.
+  - `[Notebooks <IMicrosoftGraphNotebook- `[]`>]`: The collection of OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -362,10 +362,9 @@ Nullable.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: 
@@ -480,7 +479,7 @@ Read-only.
     - `[ResourceId <String>]`: The resource id.
     - `[ResourceLocation <String>]`: The resource URI for the object.
 For example, the resource URI for a copied page or section.
-  - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The pages in all OneNote notebooks that are owned by the user or group. 
+  - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The pages in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
   - `[Resources <IMicrosoftGraphOnenoteResource- `[]`>]`: The image and other file resources in OneNote pages.
@@ -492,15 +491,16 @@ Nullable.
 Read-only.
     - `[Content <Byte- `[]`>]`: The content of the resource.
     - `[ContentUrl <String>]`: The URL for the content stream.
-  - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in all OneNote notebooks that are owned by the user or group. 
+  - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
-  - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in all OneNote notebooks that are owned by the user or group. 
+  - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 
 INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
@@ -508,10 +508,11 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SiteId <String>]`: The unique identifier of site
   - `[UserId <String>]`: The unique identifier of user
 
-NOTEBOOKS `<IMicrosoftGraphNotebook- `[]`>`: The collection of OneNote notebooks that are owned by the user or group.
+NOTEBOOKS `<IMicrosoftGraphNotebook- `[]`>`: The collection of OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -519,10 +520,9 @@ Nullable.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: 
@@ -639,7 +639,7 @@ Read-only.
   - `[ResourceLocation <String>]`: The resource URI for the object.
 For example, the resource URI for a copied page or section.
 
-PAGES `<IMicrosoftGraphOnenotePage- `[]`>`: The pages in all OneNote notebooks that are owned by the user or group.
+PAGES `<IMicrosoftGraphOnenotePage- `[]`>`: The pages in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
   - `[CreatedDateTime <DateTime?>]`: 
@@ -672,10 +672,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: 
@@ -760,7 +759,7 @@ Read-only.
   - `[Content <Byte- `[]`>]`: The content of the resource.
   - `[ContentUrl <String>]`: The URL for the content stream.
 
-SECTIONGROUPS `<IMicrosoftGraphSectionGroup- `[]`>`: The section groups in all OneNote notebooks that are owned by the user or group.
+SECTIONGROUPS `<IMicrosoftGraphSectionGroup- `[]`>`: The section groups in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -768,10 +767,9 @@ Nullable.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: 
@@ -871,7 +869,7 @@ Nullable.
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
 Read-only.
 
-SECTIONS `<IMicrosoftGraphOnenoteSection- `[]`>`: The sections in all OneNote notebooks that are owned by the user or group.
+SECTIONS `<IMicrosoftGraphOnenoteSection- `[]`>`: The sections in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -879,10 +877,9 @@ Nullable.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: 

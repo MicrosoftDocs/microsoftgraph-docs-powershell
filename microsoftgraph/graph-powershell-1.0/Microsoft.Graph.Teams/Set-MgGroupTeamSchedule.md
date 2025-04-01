@@ -566,13 +566,13 @@ Required.
         - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
         - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
         - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
         - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
         - `[Theme <String>]`: scheduleEntityTheme
@@ -582,7 +582,8 @@ Required.
       - `[StartDateTime <DateTime?>]`: 
       - `[Theme <String>]`: scheduleEntityTheme
       - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-    - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
+    - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+    - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
     - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
   - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
   - `[ProvisionStatus <String>]`: operationStatus
@@ -608,6 +609,7 @@ For example, an assignment or a scheduled break or lunch.
 Required.
       - `[DisplayName <String>]`: The shift label of the shiftItem.
       - `[Notes <String>]`: The shift notes for the shiftItem.
+    - `[IsStagedForDeletion <Boolean?>]`: The shift is marked for deletion, a process that is finalized when the schedule is shared.
     - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of.
 Required.
     - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
@@ -663,6 +665,7 @@ Read-only.
       - `[Theme <String>]`: scheduleEntityTheme
       - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.
+    - `[IsStagedForDeletion <Boolean?>]`: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
     - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
     - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
@@ -766,13 +769,13 @@ Required.
       - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
       - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
       - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
       - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
       - `[Theme <String>]`: scheduleEntityTheme
@@ -782,7 +785,8 @@ Required.
     - `[StartDateTime <DateTime?>]`: 
     - `[Theme <String>]`: scheduleEntityTheme
     - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-  - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
+  - `[IsStagedForDeletion <Boolean?>]`: The openShift is marked for deletion, a process that is finalized when the schedule is shared.
+  - `[SchedulingGroupId <String>]`: The ID of the schedulingGroup that contains the openShift.
   - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
 
 SCHEDULINGGROUPS `<IMicrosoftGraphSchedulingGroup- `[]`>`: The logical grouping of users in the schedule (usually by role).
@@ -829,18 +833,19 @@ Required.
       - `[DisplayName <String>]`: The name of the shiftActivity.
 Required.
       - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
       - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift.
 Required.
       - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
       - `[Theme <String>]`: scheduleEntityTheme
     - `[DisplayName <String>]`: The shift label of the shiftItem.
     - `[Notes <String>]`: The shift notes for the shiftItem.
+  - `[IsStagedForDeletion <Boolean?>]`: The shift is marked for deletion, a process that is finalized when the schedule is shared.
   - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of.
 Required.
   - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
@@ -931,6 +936,7 @@ Read-only.
     - `[Theme <String>]`: scheduleEntityTheme
     - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem.
 Required.
+  - `[IsStagedForDeletion <Boolean?>]`: The timeOff is marked for deletion, a process that is finalized when the schedule is shared.
   - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
   - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.

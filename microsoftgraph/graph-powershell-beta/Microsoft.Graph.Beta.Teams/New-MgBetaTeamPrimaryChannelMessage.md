@@ -639,12 +639,13 @@ ATTACHMENTS `<IMicrosoftGraphChatMessageAttachment- `[]`>`: References to attach
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
   - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
   - `[ContentUrl <String>]`: The URL for the content of the attachment.
   - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
   - `[Name <String>]`: Name of the attachment.
   - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -667,12 +668,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
     - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
     - `[ContentUrl <String>]`: The URL for the content of the attachment.
     - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
     - `[Name <String>]`: Name of the attachment.
     - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.
@@ -845,6 +847,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
@@ -946,12 +949,13 @@ Read-only.
 If the attachment is a rich card, set the property to the rich card object.
 This property and contentUrl are mutually exclusive.
     - `[ContentType <String>]`: The media type of the content attachment.
-It can have the following values: reference: Attachment is a link to another file.
-Populate the contentURL with the link to the object.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
+The possible values are: reference: The attachment is a link to another file.
+Populate the contentURL with the link to the object.forwardedMessageReference: The attachment is a reference to a forwarded message.
+Populate the content with the original message context.Any contentType that is supported by the Bot Framework's Attachment object.application/vnd.microsoft.card.codesnippet: A code snippet.
 application/vnd.microsoft.card.announcement: An announcement header.
     - `[ContentUrl <String>]`: The URL for the content of the attachment.
     - `[Id <String>]`: Read-only.
-The unique id of the attachment.
+The unique ID of the attachment.
     - `[Name <String>]`: Name of the attachment.
     - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment.
 The property is used to attribute a Teams message card to the specified app.

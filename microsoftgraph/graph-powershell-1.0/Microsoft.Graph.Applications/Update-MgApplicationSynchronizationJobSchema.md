@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property schema in applications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobSchema?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -73,7 +70,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named

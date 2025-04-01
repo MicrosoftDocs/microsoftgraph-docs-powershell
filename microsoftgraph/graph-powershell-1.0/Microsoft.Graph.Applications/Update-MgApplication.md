@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -192,7 +189,7 @@ The unique identifier of application
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+Aliases: ObjectId
 
 Required: True
 Position: Named
