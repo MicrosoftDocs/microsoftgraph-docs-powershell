@@ -30,6 +30,14 @@ Remove-MgBetaMeAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentit
 ## DESCRIPTION
 Delete navigation property microsoftAuthenticatorMethods for me
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

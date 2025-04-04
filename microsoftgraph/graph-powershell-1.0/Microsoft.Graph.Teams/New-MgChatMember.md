@@ -45,6 +45,14 @@ New-MgChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphCo
 ## DESCRIPTION
 Add a conversationMember to a chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMember.ReadWrite, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.Manage.Chat, ChatMember.ReadWrite.All, Chat.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

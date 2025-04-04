@@ -36,6 +36,14 @@ Get-MgBetaDeviceManagementEffectivePermission -InputObject <IDeviceManagementFun
 ## DESCRIPTION
 Invoke function getEffectivePermissions
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,14 @@ Get-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Provides detailed information about interests the user has associated with themselves in various services.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

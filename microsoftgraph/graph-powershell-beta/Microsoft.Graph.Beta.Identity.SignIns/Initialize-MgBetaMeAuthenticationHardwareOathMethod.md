@@ -50,6 +50,14 @@ Initialize-MgBetaMeAuthenticationHardwareOathMethod -InputObject <IIdentitySignI
 Activate a hardware OATH token that is already assigned to a user.
 A user can self-activate their token or an admin can activate for a user.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

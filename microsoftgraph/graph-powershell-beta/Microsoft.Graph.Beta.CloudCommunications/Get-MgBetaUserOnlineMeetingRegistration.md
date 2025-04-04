@@ -31,6 +31,14 @@ Get-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdenti
 The registration that is enabled for an online meeting.
 One online meeting can only have one registration enabled.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetings.Read, OnlineMeetings.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

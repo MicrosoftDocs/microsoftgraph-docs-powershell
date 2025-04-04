@@ -21,6 +21,14 @@ Get-MgBetaMeAuthenticationRequirement [-ExpandProperty <String[]>] [-Property <S
 ## DESCRIPTION
 The settings and preferences for per-user Microsoft Entra multifactor authentication.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.AuthenticationMethod,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

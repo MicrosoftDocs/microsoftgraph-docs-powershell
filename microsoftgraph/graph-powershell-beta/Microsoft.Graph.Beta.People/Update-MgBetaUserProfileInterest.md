@@ -53,6 +53,14 @@ Update-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property interests in users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

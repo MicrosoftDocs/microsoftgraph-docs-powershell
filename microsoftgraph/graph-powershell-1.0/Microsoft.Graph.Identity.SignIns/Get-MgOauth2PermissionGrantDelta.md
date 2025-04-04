@@ -25,6 +25,14 @@ Get-MgOauth2PermissionGrantDelta [-ExpandProperty <String[]>] [-Filter <String>]
 Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All, Directory.ReadWrite.All, DelegatedPermissionGrant.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
