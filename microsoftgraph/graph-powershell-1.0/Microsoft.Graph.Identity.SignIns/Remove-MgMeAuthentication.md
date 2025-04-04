@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgmeauthentication
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property authentication for me
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaMeAuthentication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaMeAuthentication?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Remove-MgMeAuthentication [-IfMatch <String>] [-ResponseHeadersVariable <String>
 
 ## DESCRIPTION
 Delete navigation property authentication for me
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -145,27 +154,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgmeauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgmeauthentication)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

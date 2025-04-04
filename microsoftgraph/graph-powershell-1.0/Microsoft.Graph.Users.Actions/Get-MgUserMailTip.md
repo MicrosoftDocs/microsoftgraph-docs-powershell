@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermailtip
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # Get-MgUserMailTip
 
 ## SYNOPSIS
 Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
+Note that by making a POST call to the getMailTips action, you can request specific types of MailTips to\nbe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMailTip?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,23 +46,15 @@ Get-MgUserMailTip -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
+Note that by making a POST call to the getMailTips action, you can request specific types of MailTips to\nbe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Read.Shared,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Mail.Read,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	EmailAddresses = @(
@@ -78,10 +66,6 @@ MailTipsOptions = "automaticReplies, mailboxFullStatus"
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailTip -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Get-MgUserMailTip Cmdlet.
-
 
 ## PARAMETERS
 
@@ -101,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -117,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddresses
-
+.
 
 ```yaml
 Type: String[]
@@ -270,39 +254,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EmailAddresses <String- `[]`>]`: 
-  - `[MailTipsOptions <String>]`: mailTipsType
+BODYPARAMETER \<IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[EmailAddresses \<String\[\]\>\]: 
+  \[MailTipsOptions \<String\>\]: mailTipsType
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermailtip](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermailtip)
 
 [https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

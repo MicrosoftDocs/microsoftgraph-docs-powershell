@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofile
@@ -53,6 +53,18 @@ Update-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property synchronizationProfiles in education
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -102,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-
+.
 
 ```yaml
 Type: String
@@ -132,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Errors
-
+.
 To construct, see NOTES section for ERRORS properties and create a hash table.
 
 ```yaml
@@ -148,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDate
-
+.
 
 ```yaml
 Type: DateTime
@@ -163,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -HandleSpecialCharacterConstraint
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -240,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicensesToAssign
-
+.
 To construct, see NOTES section for LICENSESTOASSIGN properties and create a hash table.
 
 ```yaml
@@ -364,110 +376,87 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationProfile>`: educationSynchronizationProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphEducationSynchronizationProfile\>: educationSynchronizationProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DataProvider <IMicrosoftGraphEducationSynchronizationDataProvider>]`: educationSynchronizationDataProvider
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-  - `[Errors <IMicrosoftGraphEducationSynchronizationError- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[DataProvider \<IMicrosoftGraphEducationSynchronizationDataProvider\>\]: educationSynchronizationDataProvider
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: 
+  \[Errors \<IMicrosoftGraphEducationSynchronizationError\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[EntryType <String>]`: 
-    - `[ErrorCode <String>]`: 
-    - `[ErrorMessage <String>]`: 
-    - `[JoiningValue <String>]`: 
-    - `[RecordedDateTime <DateTime?>]`: 
-    - `[ReportableIdentifier <String>]`: 
-  - `[ExpirationDate <DateTime?>]`: 
-  - `[HandleSpecialCharacterConstraint <Boolean?>]`: 
-  - `[IdentitySynchronizationConfiguration <IMicrosoftGraphEducationIdentitySynchronizationConfiguration>]`: educationIdentitySynchronizationConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>]`: 
-    - `[AppliesTo <String>]`: educationUserRole
-    - `[SkuIds <String- `[]`>]`: 
-  - `[ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>]`: educationSynchronizationProfileStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[EntryType \<String\>\]: 
+    \[ErrorCode \<String\>\]: 
+    \[ErrorMessage \<String\>\]: 
+    \[JoiningValue \<String\>\]: 
+    \[RecordedDateTime \<DateTime?\>\]: 
+    \[ReportableIdentifier \<String\>\]: 
+  \[ExpirationDate \<DateTime?\>\]: 
+  \[HandleSpecialCharacterConstraint \<Boolean?\>\]: 
+  \[IdentitySynchronizationConfiguration \<IMicrosoftGraphEducationIdentitySynchronizationConfiguration\>\]: educationIdentitySynchronizationConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[LicensesToAssign \<IMicrosoftGraphEducationSynchronizationLicenseAssignment\[\]\>\]: 
+    \[AppliesTo \<String\>\]: educationUserRole
+    \[SkuIds \<String\[\]\>\]: 
+  \[ProfileStatus \<IMicrosoftGraphEducationSynchronizationProfileStatus\>\]: educationSynchronizationProfileStatus
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ErrorCount <Int64?>]`: 
-    - `[LastActivityDateTime <DateTime?>]`: 
-    - `[LastSynchronizationDateTime <DateTime?>]`: 
-    - `[Status <String>]`: educationSynchronizationStatus
-    - `[StatusMessage <String>]`: 
-  - `[State <String>]`: educationSynchronizationProfileState
+    \[ErrorCount \<Int64?\>\]: 
+    \[LastActivityDateTime \<DateTime?\>\]: 
+    \[LastSynchronizationDateTime \<DateTime?\>\]: 
+    \[Status \<String\>\]: educationSynchronizationStatus
+    \[StatusMessage \<String\>\]: 
+  \[State \<String\>\]: educationSynchronizationProfileState
 
-ERRORS `<IMicrosoftGraphEducationSynchronizationError- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+ERRORS \<IMicrosoftGraphEducationSynchronizationError\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[EntryType <String>]`: 
-  - `[ErrorCode <String>]`: 
-  - `[ErrorMessage <String>]`: 
-  - `[JoiningValue <String>]`: 
-  - `[RecordedDateTime <DateTime?>]`: 
-  - `[ReportableIdentifier <String>]`: 
+  \[EntryType \<String\>\]: 
+  \[ErrorCode \<String\>\]: 
+  \[ErrorMessage \<String\>\]: 
+  \[JoiningValue \<String\>\]: 
+  \[RecordedDateTime \<DateTime?\>\]: 
+  \[ReportableIdentifier \<String\>\]: 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationGradingSchemeId <String>]`: The unique identifier of educationGradingScheme
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
-  - `[ReadingAssignmentSubmissionId <String>]`: The unique identifier of readingAssignmentSubmission
-  - `[ReflectCheckInResponseId <String>]`: The unique identifier of reflectCheckInResponse
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationAssignmentResourceId1 \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationGradingSchemeId \<String\>\]: The unique identifier of educationGradingScheme
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationSubmissionResourceId1 \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationSynchronizationErrorId \<String\>\]: The unique identifier of educationSynchronizationError
+  \[EducationSynchronizationProfileId \<String\>\]: The unique identifier of educationSynchronizationProfile
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
+  \[ReadingAssignmentSubmissionId \<String\>\]: The unique identifier of readingAssignmentSubmission
+  \[ReflectCheckInResponseId \<String\>\]: The unique identifier of reflectCheckInResponse
 
-LICENSESTOASSIGN `<IMicrosoftGraphEducationSynchronizationLicenseAssignment- `[]`>`: .
-  - `[AppliesTo <String>]`: educationUserRole
-  - `[SkuIds <String- `[]`>]`: 
+LICENSESTOASSIGN \<IMicrosoftGraphEducationSynchronizationLicenseAssignment\[\]\>: .
+  \[AppliesTo \<String\>\]: educationUserRole
+  \[SkuIds \<String\[\]\>\]: 
 
-PROFILESTATUS `<IMicrosoftGraphEducationSynchronizationProfileStatus>`: educationSynchronizationProfileStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+PROFILESTATUS \<IMicrosoftGraphEducationSynchronizationProfileStatus\>: educationSynchronizationProfileStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ErrorCount <Int64?>]`: 
-  - `[LastActivityDateTime <DateTime?>]`: 
-  - `[LastSynchronizationDateTime <DateTime?>]`: 
-  - `[Status <String>]`: educationSynchronizationStatus
-  - `[StatusMessage <String>]`:
+  \[ErrorCount \<Int64?\>\]: 
+  \[LastActivityDateTime \<DateTime?\>\]: 
+  \[LastSynchronizationDateTime \<DateTime?\>\]: 
+  \[Status \<String\>\]: educationSynchronizationStatus
+  \[StatusMessage \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

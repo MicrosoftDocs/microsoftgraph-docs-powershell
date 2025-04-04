@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject
@@ -307,36 +307,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
-  - `[CertificateAuthorityDetailId <String>]`: The unique identifier of certificateAuthorityDetail
-  - `[CertificateBasedAuthPkiId <String>]`: The unique identifier of certificateBasedAuthPki
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+INPUTOBJECT \<IDirectoryObjectsIdentity\>: Identity Parameter
+  \[CertificateAuthorityDetailId \<String\>\]: The unique identifier of certificateAuthorityDetail
+  \[CertificateBasedAuthPkiId \<String\>\]: The unique identifier of certificateBasedAuthPki
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

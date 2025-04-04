@@ -1,10 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup
 schema: 2.0.0
-ms.subservice: entra-groups
-ms.subservice: entra-groups
 ---
 
 # Get-MgGroupMemberOfAsGroup
@@ -13,9 +11,6 @@ ms.subservice: entra-groups
 Get groups that the group is a direct member of.
 This operation is not transitive.
 Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberOfAsGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,18 +42,13 @@ This operation is not transitive.
 Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Groups
-
-Get-MgGroupMemberOfAsGroup -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual 
-
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgGroupMemberOfAsGroup Cmdlet.
+Import-Module Microsoft.Graph.Groups
+```
 
+Get-MgGroupMemberOfAsGroup -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual
 
 ## PARAMETERS
 
@@ -336,52 +326,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
-  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: Usage: listId='{listId}'
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[UniqueName <String>]`: Alternate key of group
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[GroupSettingId \<String\>\]: The unique identifier of groupSetting
+  \[GroupSettingTemplateId \<String\>\]: The unique identifier of groupSettingTemplate
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: Usage: listId='{listId}'
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[UniqueName \<String\>\]: Alternate key of group
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup)
 
 [https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

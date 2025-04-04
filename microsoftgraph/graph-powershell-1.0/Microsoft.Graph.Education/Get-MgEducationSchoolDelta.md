@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooldelta
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Get-MgEducationSchoolDelta
@@ -11,9 +10,6 @@ ms.subservice: education
 ## SYNOPSIS
 Get newly created or updated schools without having to perform a full read of the entire school collection.
 See Use delta query for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,26 +24,14 @@ Get-MgEducationSchoolDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 Get newly created or updated schools without having to perform a full read of the entire school collection.
 See Use delta query for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.ReadBasic.All, EduRoster.WriteWrite.All, EduRoster.ReadWrite.All, EduRoster.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationSchoolDelta
-
-```
-This example shows how to use the Get-MgEducationSchoolDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -263,26 +247,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooldelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooldelta)
 
 [https://learn.microsoft.com/graph/api/educationschool-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

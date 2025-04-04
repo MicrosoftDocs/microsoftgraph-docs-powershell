@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationmethodpolicy
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgPolicyAuthenticationMethodPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of an authenticationMethodsPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,26 +21,14 @@ Get-MgPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Property <
 ## DESCRIPTION
 Read the properties and relationships of an authenticationMethodsPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.AuthenticationMethod,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgPolicyAuthenticationMethodPolicy
-
-```
-This example shows how to use the Get-MgPolicyAuthenticationMethodPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -139,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationmethodpolicy)
 
 [https://learn.microsoft.com/graph/api/authenticationmethodspolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

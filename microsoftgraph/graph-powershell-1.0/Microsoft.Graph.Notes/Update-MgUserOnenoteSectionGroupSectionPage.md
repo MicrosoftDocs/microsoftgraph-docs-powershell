@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotesectiongroupsectionpage
@@ -49,6 +49,18 @@ Update-MgUserOnenoteSectionGroupSectionPage -InputObject <INotesIdentity>
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -67,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -83,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Commands
-
+.
 To construct, see NOTES section for COMMANDS properties and create a hash table.
 
 ```yaml
@@ -282,62 +294,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsLw4YucUsersUserIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Commands <IMicrosoftGraphOnenotePatchContentCommand- `[]`>]`: 
-    - `[Action <String>]`: onenotePatchActionType
-    - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data.
+BODYPARAMETER \<IPathsLw4YucUsersUserIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Commands \<IMicrosoftGraphOnenotePatchContentCommand\[\]\>\]: 
+    \[Action \<String\>\]: onenotePatchActionType
+    \[Content \<String\>\]: A string of well-formed HTML to add to the page, and any image or file binary data.
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
-    - `[Position <String>]`: onenotePatchInsertPosition
-    - `[Target <String>]`: The element to update.
-Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+    \[Position \<String\>\]: onenotePatchInsertPosition
+    \[Target \<String\>\]: The element to update.
+Must be the #\<data-id\> or the generated \<id\> of the element, or the body or title keyword.
 
-COMMANDS `<IMicrosoftGraphOnenotePatchContentCommand- `[]`>`: .
-  - `[Action <String>]`: onenotePatchActionType
-  - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data.
+COMMANDS \<IMicrosoftGraphOnenotePatchContentCommand\[\]\>: .
+  \[Action \<String\>\]: onenotePatchActionType
+  \[Content \<String\>\]: A string of well-formed HTML to add to the page, and any image or file binary data.
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
-  - `[Position <String>]`: onenotePatchInsertPosition
-  - `[Target <String>]`: The element to update.
-Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+  \[Position \<String\>\]: onenotePatchInsertPosition
+  \[Target \<String\>\]: The element to update.
+Must be the #\<data-id\> or the generated \<id\> of the element, or the body or title keyword.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<INotesIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
+  \[SectionGroupId1 \<String\>\]: The unique identifier of sectionGroup
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotesectiongroupsectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotesectiongroupsectionpage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

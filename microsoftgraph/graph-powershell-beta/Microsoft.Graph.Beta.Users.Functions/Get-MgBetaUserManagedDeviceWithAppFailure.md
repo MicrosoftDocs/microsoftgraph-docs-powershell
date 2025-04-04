@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicewithappfailure
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieves the list of devices with failed apps
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceWithAppFailure](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceWithAppFailure?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,13 +29,17 @@ Get-MgBetaUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity>
 ## DESCRIPTION
 Retrieves the list of devices with failed apps
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -209,38 +210,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
-  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
-  - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
+  \[EndDateTime \<String\>\]: Usage: EndDateTime='{EndDateTime}'
+  \[RoomList \<String\>\]: Usage: RoomList='{RoomList}'
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[StartDateTime \<String\>\]: Usage: StartDateTime='{StartDateTime}'
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicewithappfailure](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicewithappfailure)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

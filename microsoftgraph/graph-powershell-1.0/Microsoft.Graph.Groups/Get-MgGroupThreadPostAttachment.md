@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostattachment
 schema: 2.0.0
-ms.subservice: entra-groups
 ---
 
 # Get-MgGroupThreadPostAttachment
@@ -12,9 +11,6 @@ ms.subservice: entra-groups
 Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPostAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,17 +42,13 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupThreadPostAttachment -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId
-
-```
-This example shows how to use the Get-MgGroupThreadPostAttachment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -348,52 +340,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
-  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: Usage: listId='{listId}'
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[UniqueName <String>]`: Alternate key of group
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[GroupSettingId \<String\>\]: The unique identifier of groupSetting
+  \[GroupSettingTemplateId \<String\>\]: The unique identifier of groupSettingTemplate
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: Usage: listId='{listId}'
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[UniqueName \<String\>\]: Alternate key of group
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostattachment)
 
 [https://learn.microsoft.com/graph/api/post-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-list-attachments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

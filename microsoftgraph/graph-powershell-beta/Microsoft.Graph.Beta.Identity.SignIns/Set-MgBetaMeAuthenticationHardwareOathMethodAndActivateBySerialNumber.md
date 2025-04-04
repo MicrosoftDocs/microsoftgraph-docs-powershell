@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetameauthenticationhardwareoathmethodandactivatebyserialnumber
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Set-MgBetaMeAuthenticationHardwareOathMethodAndActivateBySerialNumber
@@ -32,13 +31,17 @@ Set-MgBetaMeAuthenticationHardwareOathMethodAndActivateBySerialNumber
 ## DESCRIPTION
 Assign and activate a hardware token at the same time by hardware token serial number.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-
+.
 
 ```yaml
 Type: String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -SerialNumber
-
+.
 
 ```yaml
 Type: String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -VerificationCode
-
+.
 
 ```yaml
 Type: String
@@ -225,38 +228,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths3E7Mp2MeAuthenticationHardwareoathmethodsMicrosoftGraphAssignandactivatebyserialnumberPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-  - `[SerialNumber <String>]`: 
-  - `[VerificationCode <String>]`:
+BODYPARAMETER \<IPaths3E7Mp2MeAuthenticationHardwareoathmethodsMicrosoftGraphAssignandactivatebyserialnumberPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: 
+  \[SerialNumber \<String\>\]: 
+  \[VerificationCode \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetameauthenticationhardwareoathmethodandactivatebyserialnumber](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetameauthenticationhardwareoathmethodandactivatebyserialnumber)
 
 [https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber?view=graph-rest-beta](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

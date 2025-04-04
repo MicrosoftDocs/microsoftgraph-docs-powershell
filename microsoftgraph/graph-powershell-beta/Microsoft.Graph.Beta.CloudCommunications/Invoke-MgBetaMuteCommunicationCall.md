@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamutecommunicationcall
 schema: 2.0.0
-ms.subservice: cloud-communications
 ---
 
 # Invoke-MgBetaMuteCommunicationCall
@@ -12,9 +11,6 @@ ms.subservice: cloud-communications
 Allows the application to mute itself.
 This is a server mute, meaning that the server drops all audio packets for this participant, even if the participant continues to stream audio.
 For more information about how to handle mute operations, see muteParticipantOperation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,30 +49,18 @@ Allows the application to mute itself.
 This is a server mute, meaning that the server drops all audio packets for this participant, even if the participant continues to stream audio.
 For more information about how to handle mute operations, see muteParticipantOperation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Invoke-MgBetaMuteCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaMuteCommunicationCall Cmdlet.
-
 
 ## PARAMETERS
 
@@ -96,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -127,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientContext
-
+.
 
 ```yaml
 Type: String
@@ -250,57 +234,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths13Zt223CommunicationsCallsCallIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ClientContext <String>]`: 
+BODYPARAMETER \<IPaths13Zt223CommunicationsCallsCallIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ClientContext \<String\>\]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallAiInsightId <String>]`: The unique identifier of callAiInsight
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallAiInsightId \<String\>\]: The unique identifier of callAiInsight
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamutecommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamutecommunicationcall)
 
 [https://learn.microsoft.com/graph/api/call-mute?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-mute?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

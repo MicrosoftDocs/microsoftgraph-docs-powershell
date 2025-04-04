@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderpermanent
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # Remove-MgBetaUserContactFolderPermanent
@@ -33,17 +32,16 @@ Permanently delete a contact folder and remove its items from the user's mailbox
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.PersonalContacts
-
-Remove-MgBetaUserContactFolderPermanent -UserId $userId -ContactFolderId $contactFolderId
-
+### EXAMPLE 1
 ```
-This example shows how to use the Remove-MgBetaUserContactFolderPermanent Cmdlet.
+{{ Add code here }}
+```
 
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -200,38 +198,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContactId <String>]`: The unique identifier of contact
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContactId \<String\>\]: The unique identifier of contact
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderpermanent)
 
 [https://learn.microsoft.com/graph/api/contactfolder-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contactfolder-permanentdelete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

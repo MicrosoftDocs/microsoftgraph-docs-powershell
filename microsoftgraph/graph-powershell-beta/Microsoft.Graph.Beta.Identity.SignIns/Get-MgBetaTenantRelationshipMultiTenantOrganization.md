@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganization
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaTenantRelationshipMultiTenantOrganization
 
 ## SYNOPSIS
 Get properties of the multitenant organization.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipMultiTenantOrganization](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTenantRelationshipMultiTenantOrganization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,26 +21,14 @@ Get-MgBetaTenantRelationshipMultiTenantOrganization [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Get properties of the multitenant organization.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | MultiTenantOrganization.ReadBasic.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaTenantRelationshipMultiTenantOrganization
-
-```
-This example shows how to use the Get-MgBetaTenantRelationshipMultiTenantOrganization Cmdlet.
-
 
 ## PARAMETERS
 
@@ -139,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganization)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganization-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

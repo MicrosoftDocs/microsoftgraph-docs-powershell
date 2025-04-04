@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 Module Guid: a4ee7646-1105-456f-ae3b-1ce5d0e246ef
 Download Help Link: {{ Update Download Link }}
@@ -8,34 +8,15 @@ Locale: en-US
 
 # Microsoft.Graph.DeviceManagement.Functions Module
 ## Description
-
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.DeviceManagement.Functions Cmdlets
 ### [Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery](Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementEffectivePermission](Get-MgDeviceManagementEffectivePermission.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgExperienceDeviceManagement](Invoke-MgExperienceDeviceManagement.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{ Fill in the Description }}
 

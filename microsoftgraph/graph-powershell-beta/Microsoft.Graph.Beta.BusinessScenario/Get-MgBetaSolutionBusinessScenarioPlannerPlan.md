@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.BusinessScenario-help.xml
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannerplan
 schema: 2.0.0
-ms.subservice: business-scenarios
 ---
 
 # Get-MgBetaSolutionBusinessScenarioPlannerPlan
@@ -49,34 +48,17 @@ Get-MgBetaSolutionBusinessScenarioPlannerPlan -InputObject <IBusinessScenarioIde
 Get information about the plannerPlan mapped to a given target.
 If a plannerPlan doesn't exist for the specified target at the time of the request, a new plan will be created for the businessScenario.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioData.Read.OwnedBy, BusinessScenarioData.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.BusinessScenario
-
-$params = @{
-	target = @{
-		"@odata.type" = "microsoft.graph.businessScenarioGroupTarget"
-		taskTargetKind = "group"
-		groupId = "7a339254-4b2b-4410-b295-c890a16776ee"
-	}
-}
-
-Get-MgBetaSolutionBusinessScenarioPlannerPlan -BusinessScenarioId $businessScenarioId -BodyParameter $params
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaSolutionBusinessScenarioPlannerPlan Cmdlet.
+{{ Add code here }}
+```
 
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -96,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -251,47 +233,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>]`: businessScenarioTaskTargetBase
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[TaskTargetKind <String>]`: plannerTaskTargetKind
+BODYPARAMETER \<IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Target \<IMicrosoftGraphBusinessScenarioTaskTargetBase\>\]: businessScenarioTaskTargetBase
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[TaskTargetKind \<String\>\]: plannerTaskTargetKind
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[UniqueName <String>]`: Alternate key of businessScenario
+INPUTOBJECT \<IBusinessScenarioIdentity\>: Identity Parameter
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
 
-TARGET `<IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTargetBase
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[TaskTargetKind <String>]`: plannerTaskTargetKind
+TARGET \<IMicrosoftGraphBusinessScenarioTaskTargetBase\>: businessScenarioTaskTargetBase
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[TaskTargetKind \<String\>\]: plannerTaskTargetKind
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannerplan)
 
 [https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

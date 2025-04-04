@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostmention
@@ -47,6 +47,18 @@ New-MgBetaGroupThreadPostMention -InputObject <IGroupsIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Create new navigation property to mentions for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -383,90 +395,67 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMention>`: mention
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMention\>: mention
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Application <String>]`: The name of the application where the mention is created.
+  \[Application \<String\>\]: The name of the application where the mention is created.
 Optional.
 Not used and defaulted as null for message.
-  - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance.
+  \[ClientReference \<String\>\]: A unique identifier that represents a parent of the resource instance.
 Optional.
 Not used and defaulted as null for message.
-  - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of an entity instance.
-    - `[Name <String>]`: The display name of an entity instance.
-  - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
-  - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance.
+  \[CreatedBy \<IMicrosoftGraphEmailAddress\>\]: emailAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Address \<String\>\]: The email address of an entity instance.
+    \[Name \<String\>\]: The display name of an entity instance.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time that the mention is created on the client.
+  \[DeepLink \<String\>\]: A deep web link to the context of the mention in the resource instance.
 Optional.
 Not used and defaulted as null for message.
-  - `[MentionText <String>]`: Optional.
+  \[MentionText \<String\>\]: Optional.
 Not used and defaulted as null for message.
 To get the mentions in a message, see the bodyPreview property of the message instead.
-  - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server.
+  \[Mentioned \<IMicrosoftGraphEmailAddress\>\]: emailAddress
+  \[ServerCreatedDateTime \<DateTime?\>\]: The date and time that the mention is created on the server.
 Optional.
 Not used and defaulted as null for message.
 
-CREATEDBY `<IMicrosoftGraphEmailAddress>`: emailAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of an entity instance.
-  - `[Name <String>]`: The display name of an entity instance.
+CREATEDBY \<IMicrosoftGraphEmailAddress\>: emailAddress
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Address \<String\>\]: The email address of an entity instance.
+  \[Name \<String\>\]: The display name of an entity instance.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: Usage: listId='{listId}'
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[ModelName <String>]`: Usage: modelName='{modelName}'
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[UniqueName <String>]`: Alternate key of group
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: Usage: listId='{listId}'
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[ModelName \<String\>\]: Usage: modelName='{modelName}'
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[UniqueName \<String\>\]: Alternate key of group
+  \[UserId \<String\>\]: The unique identifier of user
 
-MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of an entity instance.
-  - `[Name <String>]`: The display name of an entity instance.
+MENTIONED \<IMicrosoftGraphEmailAddress\>: emailAddress
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Address \<String\>\]: The email address of an entity instance.
+  \[Name \<String\>\]: The display name of an entity instance.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostmention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostmention)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

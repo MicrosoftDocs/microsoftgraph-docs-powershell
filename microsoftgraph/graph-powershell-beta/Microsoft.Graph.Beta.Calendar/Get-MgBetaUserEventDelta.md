@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventdelta
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # Get-MgBetaUserEventDelta
@@ -17,9 +16,6 @@ Typically, synchronizing events in a calendar or calendarView in a local store e
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 Using deltas allows you to incrementally maintain and synchronize a local store of events in the specified calendar.
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserEventDelta](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,13 +45,17 @@ The initial call is a full synchronization, and every subsequent delta call in t
 Using deltas allows you to incrementally maintain and synchronize a local store of events in the specified calendar.
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -349,48 +349,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[EventId2 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[RoomId <String>]`: The unique identifier of room
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WorkspaceId <String>]`: The unique identifier of workspace
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[EventId2 \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventdelta)
 
 [https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

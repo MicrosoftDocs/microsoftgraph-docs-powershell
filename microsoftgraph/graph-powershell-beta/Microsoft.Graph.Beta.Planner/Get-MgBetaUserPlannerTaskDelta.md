@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertaskdelta
 schema: 2.0.0
-ms.subservice: planner
 ---
 
 # Get-MgBetaUserPlannerTaskDelta
@@ -34,27 +33,17 @@ Get-MgBetaUserPlannerTaskDelta -InputObject <IPlannerIdentity> [-ExpandProperty 
 Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get delta on tasks assigned to a user
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Planner
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserPlannerTaskDelta -UserId $userId
-
+### EXAMPLE 1
 ```
-This example will get delta on tasks assigned to a user
+{{ Add code here }}
+```
 
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -316,41 +305,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
-  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerDeltaId \<String\>\]: The unique identifier of plannerDelta
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[PlannerRosterId \<String\>\]: The unique identifier of plannerRoster
+  \[PlannerRosterMemberId \<String\>\]: The unique identifier of plannerRosterMember
+  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertaskdelta)
 
 [https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

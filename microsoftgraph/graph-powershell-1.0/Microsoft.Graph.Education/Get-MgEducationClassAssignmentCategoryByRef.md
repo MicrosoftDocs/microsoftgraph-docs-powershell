@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Get-MgEducationClassAssignmentCategoryByRef
@@ -11,9 +10,6 @@ ms.subservice: education
 ## SYNOPSIS
 List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentCategoryByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,13 +24,17 @@ Get-MgEducationClassAssignmentCategoryByRef -EducationAssignmentId <String> -Edu
 List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All, EduAssignments.Read.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -250,27 +250,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref)
 
 [https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
