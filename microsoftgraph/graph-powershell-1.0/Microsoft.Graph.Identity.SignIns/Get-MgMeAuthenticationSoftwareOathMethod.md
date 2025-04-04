@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Retrieve a user's single Software OATH token authentication method object and its properties.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaMeAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaMeAuthenticationSoftwareOathMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

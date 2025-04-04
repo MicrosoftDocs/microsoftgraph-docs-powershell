@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Retrieve a user's single email Authentication Method object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgMeAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgMeAuthenticationEmailMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

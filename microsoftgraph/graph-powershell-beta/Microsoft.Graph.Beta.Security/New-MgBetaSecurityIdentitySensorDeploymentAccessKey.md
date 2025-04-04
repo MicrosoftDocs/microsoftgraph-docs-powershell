@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityIdentitySensorDeploymentAccessKey](/powershell/module/Microsoft.Graph.Security/New-MgSecurityIdentitySensorDeploymentAccessKey?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

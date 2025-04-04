@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Create a new workforceIntegration object.You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

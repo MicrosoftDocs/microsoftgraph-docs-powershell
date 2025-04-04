@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the status of a long-running operation, such as a password reset operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaMeAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaMeAuthenticationOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

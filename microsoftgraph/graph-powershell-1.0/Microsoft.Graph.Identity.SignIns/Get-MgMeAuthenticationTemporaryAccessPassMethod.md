@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaMeAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaMeAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

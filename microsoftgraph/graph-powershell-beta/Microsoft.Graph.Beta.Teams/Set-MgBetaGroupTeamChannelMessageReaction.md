@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setReaction
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamChannelMessageReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

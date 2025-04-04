@@ -12,6 +12,9 @@ ms.subservice: entra-id-governance
 Provide a summary of workflows processed, by category, in a tenant.
 This allows you to quickly get category information, by numerical value, bypassing other information found in the WorkflowsProcessedSummary call.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Graph (Default)

@@ -11,6 +11,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Delete a printer's task trigger to prevent related print events from triggering tasks on the specified printer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinterTaskTrigger?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

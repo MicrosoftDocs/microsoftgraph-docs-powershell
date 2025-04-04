@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgMeAuthenticationFido2MethodCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgMeAuthenticationFido2MethodCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

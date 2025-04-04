@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property phoneMethods in me
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaMeAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaMeAuthenticationPhoneMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

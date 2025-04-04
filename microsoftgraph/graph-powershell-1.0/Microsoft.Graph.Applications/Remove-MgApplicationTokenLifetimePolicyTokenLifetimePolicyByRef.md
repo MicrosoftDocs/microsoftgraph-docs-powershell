@@ -11,6 +11,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Remove a tokenLifetimePolicy from an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Delete an openShift object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

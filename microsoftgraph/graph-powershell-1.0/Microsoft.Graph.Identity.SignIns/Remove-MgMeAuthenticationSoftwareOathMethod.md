@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property softwareOathMethods for me
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaMeAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaMeAuthenticationSoftwareOathMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
