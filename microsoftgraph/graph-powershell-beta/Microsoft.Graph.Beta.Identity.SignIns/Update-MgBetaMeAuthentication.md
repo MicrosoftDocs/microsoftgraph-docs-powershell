@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformCredentialMethods
-.
+
 To construct, see NOTES section for PLATFORMCREDENTIALMETHODS properties and create a hash table.
 
 ```yaml

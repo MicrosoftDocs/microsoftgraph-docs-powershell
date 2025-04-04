@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -PresenterParticipantId
-.
+
 
 ```yaml
 Type: String

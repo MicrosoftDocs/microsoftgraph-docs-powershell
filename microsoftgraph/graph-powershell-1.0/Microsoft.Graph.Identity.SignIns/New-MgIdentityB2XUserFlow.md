@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserFlowIdentityProviders
-.
+
 To construct, see NOTES section for USERFLOWIDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserFlowTypeVersion
-.
+
 
 ```yaml
 Type: Single

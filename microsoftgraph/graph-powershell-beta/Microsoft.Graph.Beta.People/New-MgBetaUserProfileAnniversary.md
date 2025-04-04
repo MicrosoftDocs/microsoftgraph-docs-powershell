@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Date
-.
+
 
 ```yaml
 Type: DateTime
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSearchable
-.
+
 
 ```yaml
 Type: SwitchParameter

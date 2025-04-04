@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -Data
-.
+
 
 ```yaml
 Type: Stream

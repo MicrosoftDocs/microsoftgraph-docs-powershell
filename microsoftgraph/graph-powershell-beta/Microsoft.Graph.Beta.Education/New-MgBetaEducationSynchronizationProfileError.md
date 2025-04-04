@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -EntryType
-.
+
 
 ```yaml
 Type: String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorCode
-.
+
 
 ```yaml
 Type: String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorMessage
-.
+
 
 ```yaml
 Type: String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoiningValue
-.
+
 
 ```yaml
 Type: String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportableIdentifier
-.
+
 
 ```yaml
 Type: String

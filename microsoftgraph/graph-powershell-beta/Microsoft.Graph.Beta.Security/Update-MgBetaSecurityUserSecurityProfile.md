@@ -52,7 +52,7 @@ Update the navigation property userSecurityProfiles in security
 ## PARAMETERS
 
 ### -Accounts
-.
+
 To construct, see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-.
+
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-.
+
 
 ```yaml
 Type: String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-.
+
 
 ```yaml
 Type: String
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-.
+
 
 ```yaml
 Type: String[]
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-.
+
 
 ```yaml
 Type: String

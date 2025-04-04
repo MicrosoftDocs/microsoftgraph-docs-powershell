@@ -479,7 +479,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsFavorite
-.
+
 
 ```yaml
 Type: SwitchParameter
