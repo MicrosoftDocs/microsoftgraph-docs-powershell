@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Teams
 Module Guid: f8619bb2-8640-4d8d-baf5-0829db98fbe2
 Download Help Link: {{ Update Download Link }}
@@ -2194,4 +2194,23 @@ Locale: en-US
 
 ### [Update-MgUserTeamworkAssociatedTeam](Update-MgUserTeamworkAssociatedTeam.md)
 {{ Fill in the Description }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

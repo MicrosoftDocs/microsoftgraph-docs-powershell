@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Notes
 Module Guid: dfba33b1-0baf-47e5-9deb-4f381cdd48e7
 Download Help Link: {{ Update Download Link }}
@@ -1207,4 +1207,23 @@ Locale: en-US
 
 ### [Update-MgBetaUserOnenoteSectionPage](Update-MgBetaUserOnenoteSectionPage.md)
 {{ Fill in the Description }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

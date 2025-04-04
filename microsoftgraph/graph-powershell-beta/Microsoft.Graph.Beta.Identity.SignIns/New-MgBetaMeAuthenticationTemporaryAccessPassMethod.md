@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationtemporaryaccesspassmethod
@@ -266,25 +266,47 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphTemporaryAccessPassAuthenticationMethod\>: temporaryAccessPassAuthenticationMethod
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time the authentication method was registered to the user.
+BODYPARAMETER `<IMicrosoftGraphTemporaryAccessPassAuthenticationMethod>`: temporaryAccessPassAuthenticationMethod
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[IsUsableOnce \<Boolean?\>\]: Determines whether the pass is limited to a one-time use.
+  - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
-  \[LifetimeInMinutes \<Int32?\>\]: The lifetime of the Temporary Access Pass in minutes starting at startDateTime.
+  - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime.
 Must be between 10 and 43200 inclusive (equivalent to 30 days).
-  \[StartDateTime \<DateTime?\>\]: The date and time when the Temporary Access Pass becomes available to use and when isUsable is true is enforced.
-  \[TemporaryAccessPass \<String\>\]: The Temporary Access Pass used to authenticate.
+  - `[StartDateTime <DateTime?>]`: The date and time when the Temporary Access Pass becomes available to use and when isUsable is true is enforced.
+  - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationtemporaryaccesspassmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationtemporaryaccesspassmethod)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
