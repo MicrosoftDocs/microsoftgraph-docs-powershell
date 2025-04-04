@@ -43,13 +43,17 @@ Get-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> [-Ex
 Read the properties and relationships of a servicePrincipalRiskDetection object.
 
 ## EXAMPLES
+### Example: Get a specific risk detection object
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgServicePrincipalRiskDetection -ServicePrincipalRiskDetectionId $servicePrincipalRiskDetectionId
+
+```
+This example will get a specific risk detection object
+
 
 ## PARAMETERS
 

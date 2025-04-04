@@ -54,16 +54,27 @@ Update-MgSecurityIdentitySensor -InputObject <ISecurityIdentity> -BodyParameter 
 Update the properties of a sensor object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	settings = @{
+		description = "dc1 settings new description"
+		domainControllerDnsNames = @(
+		"DC1.domain1.test.local"
+	)
+	isDelayedDeploymentEnabled = $false
+}
+}
+
+Update-MgSecurityIdentitySensor -SensorId $sensorId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgSecurityIdentitySensor Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,11 +39,11 @@ New-MgBetaSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityR
 Create a new retentionEvent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEvent"
@@ -54,7 +54,7 @@ $params = @{
 			"@odata.type" = "microsoft.graph.security.eventQuery"
 		}
 	)
-	eventTriggerDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	eventTriggerDateTime = [System.DateTime]::Parse("String (timestamp)")
 	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
@@ -66,10 +66,14 @@ $params = @{
 	eventStatus = @{
 		"@odata.type" = "microsoft.graph.security.retentionEventStatus"
 	}
-	lastStatusUpdateDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	lastStatusUpdateDateTime = [System.DateTime]::Parse("String (timestamp)")
 }
 
 New-MgBetaSecurityTriggerRetentionEvent -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityTriggerRetentionEvent Cmdlet.
+
 
 ## PARAMETERS
 

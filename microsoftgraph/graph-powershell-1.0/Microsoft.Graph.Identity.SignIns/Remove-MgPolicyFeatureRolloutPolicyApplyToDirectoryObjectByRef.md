@@ -35,13 +35,17 @@ Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef -InputObject <IId
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

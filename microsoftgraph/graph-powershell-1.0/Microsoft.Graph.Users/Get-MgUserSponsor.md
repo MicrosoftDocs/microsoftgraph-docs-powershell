@@ -46,13 +46,17 @@ The users and groups responsible for this guest's privileges in the tenant and k
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 Get-MgUserSponsor -UserId $userId
+
+```
+This example shows how to use the Get-MgUserSponsor Cmdlet.
+
 
 ## PARAMETERS
 

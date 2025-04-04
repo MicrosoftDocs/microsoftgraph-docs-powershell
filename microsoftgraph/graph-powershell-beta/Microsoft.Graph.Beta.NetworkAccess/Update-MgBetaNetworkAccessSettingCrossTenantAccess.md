@@ -31,11 +31,11 @@ Update-MgBetaNetworkAccessSettingCrossTenantAccess
 Update the cross-tenant access settings to include network packet tagging for enforcing Tenant Restrictions Policies (TRv2 Policies) that prevent data exfiltration to external tenants.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.networkaccess.crossTenantAccessSettings"
@@ -43,6 +43,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessSettingCrossTenantAccess -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessSettingCrossTenantAccess Cmdlet.
+
 
 ## PARAMETERS
 

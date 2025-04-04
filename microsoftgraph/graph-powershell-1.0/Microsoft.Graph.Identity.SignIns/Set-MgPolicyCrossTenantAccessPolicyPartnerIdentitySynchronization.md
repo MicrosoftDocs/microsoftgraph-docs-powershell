@@ -51,18 +51,6 @@ Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObject <
 ## DESCRIPTION
 Update the user synchronization policy of a partner-specific configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -354,6 +342,7 @@ This property has no impact on existing users who have already been synchronized
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization)
 
 [https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-update?view=graph-rest-1.0)
+
 
 
 

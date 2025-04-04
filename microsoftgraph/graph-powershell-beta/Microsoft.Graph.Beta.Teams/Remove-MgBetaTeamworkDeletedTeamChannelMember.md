@@ -76,18 +76,6 @@ Remove-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property allMembers for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -397,6 +385,7 @@ This property is settable only for members of a chat.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelmember)
 
 [https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
+
 
 
 

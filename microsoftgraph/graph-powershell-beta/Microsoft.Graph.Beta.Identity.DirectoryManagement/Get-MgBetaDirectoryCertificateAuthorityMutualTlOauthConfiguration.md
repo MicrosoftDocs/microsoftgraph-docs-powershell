@@ -41,13 +41,17 @@ Get-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration
 Get the properties and relationships of the specified mutualTlsOauthConfiguration resource.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration
+
+```
+This example shows how to use the Get-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

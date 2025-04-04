@@ -56,16 +56,32 @@ This feature requires Teams premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	attendees = @(
+		@{
+			phoneNumber = "+13129224122"
+			timeZone = "Pacific Standard Time"
+		}
+		@{
+			phoneNumber = "+1242421412"
+			timeZone = "Eastern Standard Time"
+		}
+	)
+	messageType = "confirmation"
+}
+
+# A UPN can also be used as -UserId.
+Send-MgUserOnlineMeetingVirtualAppointmentSm -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Send-MgUserOnlineMeetingVirtualAppointmentSm Cmdlet.
+
 
 ## PARAMETERS
 

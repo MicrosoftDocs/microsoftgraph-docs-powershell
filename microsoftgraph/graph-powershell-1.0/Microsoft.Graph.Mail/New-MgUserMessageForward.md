@@ -64,16 +64,18 @@ Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Mail
+
+# A UPN can also be used as -UserId.
+New-MgUserMessageForward -UserId $userId -MessageId $messageId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgUserMessageForward Cmdlet.
+
 
 ## PARAMETERS
 

@@ -58,18 +58,6 @@ A user can self-activate their token or an admin can activate for a user.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,6 +353,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/initialize-mgbetameauthenticationhardwareoathmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/initialize-mgbetameauthenticationhardwareoathmethod)
 
 [https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-activate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-activate?view=graph-rest-beta)
+
 
 
 

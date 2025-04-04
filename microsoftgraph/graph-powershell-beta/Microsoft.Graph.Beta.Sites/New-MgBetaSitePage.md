@@ -57,11 +57,11 @@ New-MgBetaSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraph
 Create a new sitePage in the site pages list in a site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.sitePage"
@@ -95,7 +95,7 @@ $params = @{
 						webparts = @(
 							@{
 								id = "6f9230af-2a98-4952-b205-9ede4f9ef548"
-								innerHtml = "\<p\>\<b\>Hello!\</b\>\</p\>"
+								innerHtml = "<p><b>Hello!</b></p>"
 							}
 						)
 					}
@@ -156,6 +156,10 @@ $params = @{
 }
 
 New-MgBetaSitePage -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSitePage Cmdlet.
+
 
 ## PARAMETERS
 

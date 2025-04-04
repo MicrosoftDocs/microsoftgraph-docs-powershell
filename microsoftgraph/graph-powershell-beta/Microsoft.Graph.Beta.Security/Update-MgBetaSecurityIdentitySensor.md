@@ -54,11 +54,11 @@ Update-MgBetaSecurityIdentitySensor -InputObject <ISecurityIdentity>
 Update the properties of a sensor object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	settings = @{
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityIdentitySensor -SensorId $sensorId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityIdentitySensor Cmdlet.
+
 
 ## PARAMETERS
 

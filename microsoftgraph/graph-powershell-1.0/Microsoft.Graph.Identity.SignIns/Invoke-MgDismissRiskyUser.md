@@ -37,11 +37,11 @@ Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	userIds = @(
@@ -51,6 +51,10 @@ $params = @{
 }
 
 Invoke-MgDismissRiskyUser -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgDismissRiskyUser Cmdlet.
+
 
 ## PARAMETERS
 

@@ -34,12 +34,14 @@ Remove-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 Delete a permissionGrantPolicy object.
 
 ## EXAMPLES
+### Example 1: Remove a permission grant policy
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
 Remove-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
 ```
+
+This command deletes the specified permission grant policy in Azure AD.
 
 ## PARAMETERS
 

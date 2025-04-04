@@ -62,11 +62,11 @@ Update the navigation property websites in users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	description = "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
@@ -74,6 +74,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileWebsite -UserId $userId -PersonWebsiteId $personWebsiteId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileWebsite Cmdlet.
+
 
 ## PARAMETERS
 

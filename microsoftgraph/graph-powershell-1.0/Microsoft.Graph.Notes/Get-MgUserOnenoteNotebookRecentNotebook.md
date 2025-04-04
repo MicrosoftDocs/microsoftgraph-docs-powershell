@@ -42,16 +42,18 @@ Get a list of recentNotebook instances that have been accessed by the signed-in 
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Notes
+
+# A UPN can also be used as -UserId.
+Get-MgUserOnenoteNotebookRecentNotebook -UserId $userId -IncludePersonalNotebooks $includePersonalNotebooksId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgUserOnenoteNotebookRecentNotebook Cmdlet.
+
 
 ## PARAMETERS
 

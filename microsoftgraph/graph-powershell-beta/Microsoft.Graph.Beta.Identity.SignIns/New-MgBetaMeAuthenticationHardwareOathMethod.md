@@ -41,18 +41,6 @@ To activate, use the activation API operation.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -16788,6 +16776,7 @@ Supports $filter (eq).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationhardwareoathmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationhardwareoathmethod)
 
 [https://learn.microsoft.com/graph/api/authentication-post-hardwareoathmethods?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-post-hardwareoathmethods?view=graph-rest-beta)
+
 
 
 

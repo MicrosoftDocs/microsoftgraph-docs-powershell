@@ -47,13 +47,17 @@ Call the Update accessPackageAssignmentPolicy operation to remove the custom wor
 For an example, see Example 2: Remove the customExtensionHandlers and verifiableCredentialSettings from a policy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -CustomAccessPackageWorkflowExtensionId $customAccessPackageWorkflowExtensionId
+
+```
+This example shows how to use the Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension Cmdlet.
+
 
 ## PARAMETERS
 

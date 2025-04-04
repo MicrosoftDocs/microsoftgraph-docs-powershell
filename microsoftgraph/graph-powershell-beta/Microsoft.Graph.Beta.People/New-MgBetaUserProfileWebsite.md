@@ -62,11 +62,11 @@ Create new navigation property to websites for users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	categories = @(
@@ -78,6 +78,10 @@ webUrl = "www.lyndamer.no"
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileWebsite -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileWebsite Cmdlet.
+
 
 ## PARAMETERS
 

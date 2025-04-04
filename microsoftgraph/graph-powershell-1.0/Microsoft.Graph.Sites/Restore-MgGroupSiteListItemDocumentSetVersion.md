@@ -33,18 +33,6 @@ Restore-MgGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Re
 ## DESCRIPTION
 Restore a document set version.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -295,6 +283,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mggroupsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mggroupsitelistitemdocumentsetversion)
 
 [https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)
+
 
 
 

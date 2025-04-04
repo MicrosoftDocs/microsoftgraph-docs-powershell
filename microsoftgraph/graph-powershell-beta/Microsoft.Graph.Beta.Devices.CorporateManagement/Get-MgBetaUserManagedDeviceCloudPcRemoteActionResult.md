@@ -34,18 +34,6 @@ Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult -InputObject <IDevicesCorpo
 Check the Cloud PC-specified remote action results for a Cloud PC device.
 Cloud PC supports reprovision and resize remote actions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -309,6 +297,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicecloudpcremoteactionresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicecloudpcremoteactionresult)
 
 [https://learn.microsoft.com/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta)
+
+
 
 
 

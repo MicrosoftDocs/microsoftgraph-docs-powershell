@@ -40,16 +40,17 @@ Not yet documented
 | Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -AppLogCollectionRequestId $appLogCollectionRequestId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl Cmdlet.
+
 
 ## PARAMETERS
 

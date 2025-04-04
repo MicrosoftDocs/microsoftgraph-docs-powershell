@@ -50,18 +50,6 @@ Update-MgBetaPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Update the navigation property roleManagementPolicyAssignments in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -515,6 +503,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyassignment)
+
 
 
 

@@ -54,11 +54,10 @@ New-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity>
 Create new navigation property to childFolders for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 $params = @{
 	displayName = "Family"
@@ -66,6 +65,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserContactFolderChildFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
+```
+This example shows how to use the New-MgUserContactFolderChildFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

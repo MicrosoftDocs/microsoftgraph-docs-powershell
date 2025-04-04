@@ -62,18 +62,6 @@ New-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to messages for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1051,6 +1039,7 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessage)
+
 
 
 

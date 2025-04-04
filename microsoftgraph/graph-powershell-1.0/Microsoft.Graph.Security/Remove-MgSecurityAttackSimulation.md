@@ -34,16 +34,17 @@ Remove-MgSecurityAttackSimulation -InputObject <ISecurityIdentity> [-IfMatch <St
 Delete an attack simulation campaign for a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityAttackSimulation -SimulationId $simulationId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 

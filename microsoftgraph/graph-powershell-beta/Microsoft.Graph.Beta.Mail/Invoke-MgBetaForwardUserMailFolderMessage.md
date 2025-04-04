@@ -63,18 +63,6 @@ When using MIME format:- Provide the applicable Internet message headers and the
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -614,6 +602,7 @@ TORECIPIENTS `<IMicrosoftGraphRecipient- `[]`>`: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaforwardusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaforwardusermailfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-beta)
+
 
 
 

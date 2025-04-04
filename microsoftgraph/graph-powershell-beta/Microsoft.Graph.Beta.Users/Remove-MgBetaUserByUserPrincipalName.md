@@ -41,18 +41,6 @@ The user is also restored to any groups they were a member of.
 After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
 To manage the deleted user object, see deletedItems.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -243,6 +231,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserbyuserprincipalname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserbyuserprincipalname)
 
 [https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-beta)
+
 
 
 

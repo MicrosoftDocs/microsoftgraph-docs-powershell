@@ -33,16 +33,17 @@ Permanently delete a contact folder and remove its items from the user's mailbox
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.PersonalContacts
+
+Remove-MgBetaUserContactFolderPermanent -UserId $userId -ContactFolderId $contactFolderId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaUserContactFolderPermanent Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,11 +39,11 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 Create a new customTaskExtension object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Grant manager access to mailbox and OneDrive"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
+
 
 ## PARAMETERS
 

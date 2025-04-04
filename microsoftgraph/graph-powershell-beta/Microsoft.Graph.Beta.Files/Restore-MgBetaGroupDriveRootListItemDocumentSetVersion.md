@@ -33,18 +33,6 @@ Restore-MgBetaGroupDriveRootListItemDocumentSetVersion -InputObject <IFilesIdent
 ## DESCRIPTION
 Restore a document set version.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -246,6 +234,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetagroupdriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetagroupdriverootlistitemdocumentsetversion)
 
 [https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-beta)
+
 
 
 

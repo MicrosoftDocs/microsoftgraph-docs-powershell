@@ -59,11 +59,11 @@ Optionally clears existing the synchronization state and previous errors.
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	criteria = @{
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Restart-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+
+```
+This example shows how to use the Restart-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

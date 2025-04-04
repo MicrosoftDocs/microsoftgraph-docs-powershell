@@ -50,18 +50,6 @@ Grant-MgBetaDriveItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -326,6 +314,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriveitempermission)
 
 [https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
+
 
 
 

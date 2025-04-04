@@ -50,16 +50,23 @@ Invoke-MgBetaAcceptUserEvent -InputObject <ICalendarIdentity>
 Accept the specified event in a user calendar.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	comment = "comment-value"
+	sendResponse = $true
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaAcceptUserEvent Cmdlet.
+
 
 ## PARAMETERS
 

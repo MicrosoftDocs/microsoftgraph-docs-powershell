@@ -43,13 +43,17 @@ Get-MgSecurityAttackSimulation -InputObject <ISecurityIdentity> [-ExpandProperty
 Get an attack simulation campaign for a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityAttackSimulation
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 

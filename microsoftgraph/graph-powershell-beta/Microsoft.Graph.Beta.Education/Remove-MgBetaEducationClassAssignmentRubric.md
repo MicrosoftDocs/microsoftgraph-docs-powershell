@@ -43,18 +43,6 @@ This method doesn't delete the rubric itself and can only be performed by teache
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -252,6 +240,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentrubric)
 
 [https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-beta)
+
 
 
 
