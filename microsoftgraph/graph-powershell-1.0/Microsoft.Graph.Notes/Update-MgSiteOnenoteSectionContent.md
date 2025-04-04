@@ -52,18 +52,6 @@ Update-MgSiteOnenoteSectionContent -InputObject <INotesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property sections in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1031,6 +1019,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotesectioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotesectioncontent)
+
 
 
 

@@ -57,18 +57,6 @@ Update-MgBetaDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Update the navigation property mobileApps in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -632,6 +620,7 @@ Does not support $search, $filter, $orderBy.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileapp)
+
 
 
 

@@ -51,18 +51,6 @@ An inclusion rule indicates that a protection policy should contain protection u
 The initial status of a protection rule upon creation is active.
 After the rule is applied, the state is either completed or completedWithErrors.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -353,6 +341,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-list-mailboxinclusionrules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-list-mailboxinclusionrules?view=graph-rest-1.0)
+
 
 
 

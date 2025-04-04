@@ -45,22 +45,6 @@ Get-MgReportOneDriveActivityUserDetail -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Get details about OneDrive activity by user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -229,6 +213,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail)
 
 [https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0)
+
 
 
 

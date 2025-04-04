@@ -32,18 +32,6 @@ Remove-MgGroupDriveItemPermanent -InputObject <IFilesIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Invoke action permanentDelete
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -243,6 +231,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitempermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveitempermanent)
+
 
 
 

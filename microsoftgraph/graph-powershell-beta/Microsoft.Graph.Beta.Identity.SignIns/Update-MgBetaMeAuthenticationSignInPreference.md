@@ -30,18 +30,6 @@ Update-MgBetaMeAuthenticationSignInPreference -BodyParameter <IMicrosoftGraphSig
 ## DESCRIPTION
 Update property signInPreferences value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -205,6 +193,7 @@ BODYPARAMETER `<IMicrosoftGraphSignInPreferences>`: signInPreferences
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetameauthenticationsigninpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetameauthenticationsigninpreference)
+
 
 
 

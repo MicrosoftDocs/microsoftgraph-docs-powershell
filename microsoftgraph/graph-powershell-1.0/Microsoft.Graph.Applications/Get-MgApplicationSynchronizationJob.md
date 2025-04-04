@@ -40,18 +40,6 @@ Get-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-Expan
 ## DESCRIPTION
 Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -341,6 +329,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjob)
+
 
 
 
