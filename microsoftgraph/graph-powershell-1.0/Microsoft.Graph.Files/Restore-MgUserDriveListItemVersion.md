@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdrivelistitemversion
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Restore-MgUserDriveListItemVersion
