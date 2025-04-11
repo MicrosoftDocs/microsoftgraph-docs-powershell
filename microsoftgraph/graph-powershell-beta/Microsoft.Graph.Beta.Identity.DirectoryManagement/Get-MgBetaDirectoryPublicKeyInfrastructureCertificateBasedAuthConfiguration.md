@@ -40,6 +40,14 @@ Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
 ## DESCRIPTION
 Read the properties and relationships of a certificateBasedAuthPki object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PublicKeyInfrastructure.Read.All, PublicKeyInfrastructure.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

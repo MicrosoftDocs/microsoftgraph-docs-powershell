@@ -39,6 +39,14 @@ Get-MgUserChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 A collection of all the members in the chat.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadWrite, Chat.ReadBasic, Chat.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMember.Read.Chat, ChatMember.ReadWrite.All, ChatMember.Read.All, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

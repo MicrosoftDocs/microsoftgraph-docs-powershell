@@ -23,6 +23,14 @@ Get-MgServicePrincipalDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pr
 ## DESCRIPTION
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All, Application.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

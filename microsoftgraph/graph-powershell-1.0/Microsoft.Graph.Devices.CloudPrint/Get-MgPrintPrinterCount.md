@@ -20,6 +20,14 @@ Get-MgPrintPrinterCount [-Filter <String>] [-Search <String>] [-ResponseHeadersV
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

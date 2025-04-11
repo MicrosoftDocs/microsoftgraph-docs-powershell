@@ -21,6 +21,14 @@ Get-MgBetaMeAuthenticationFido2MethodCount [-Filter <String>] [-Search <String>]
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

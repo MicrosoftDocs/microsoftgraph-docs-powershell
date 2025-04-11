@@ -41,6 +41,14 @@ Get-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIde
 A directory setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

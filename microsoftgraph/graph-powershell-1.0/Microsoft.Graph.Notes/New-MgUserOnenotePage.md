@@ -50,6 +50,14 @@ New-MgUserOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to pages for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

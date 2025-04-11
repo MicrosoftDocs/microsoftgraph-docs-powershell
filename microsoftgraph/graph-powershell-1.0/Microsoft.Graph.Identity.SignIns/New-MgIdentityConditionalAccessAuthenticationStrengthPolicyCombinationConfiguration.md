@@ -32,6 +32,14 @@ New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfigurat
 ## DESCRIPTION
 Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:* fido2combinationConfiguration* x509certificatecombinationconfiguration
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

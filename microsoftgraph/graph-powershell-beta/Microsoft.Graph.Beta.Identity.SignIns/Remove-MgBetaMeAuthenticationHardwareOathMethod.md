@@ -32,6 +32,14 @@ Remove-MgBetaMeAuthenticationHardwareOathMethod -InputObject <IIdentitySignInsId
 Unassign a hardware token from a user.
 The token remains in the directory and its details can be retrieved by List hardwareOathDevices API.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

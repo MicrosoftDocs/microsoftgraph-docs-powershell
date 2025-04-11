@@ -29,6 +29,14 @@ Get-MgBetaDeviceManagementIntentDeviceStateSummary -InputObject <IDeviceManageme
 ## DESCRIPTION
 A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

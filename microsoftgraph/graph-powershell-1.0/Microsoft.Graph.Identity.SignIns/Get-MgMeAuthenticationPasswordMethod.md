@@ -41,6 +41,14 @@ Get-MgMeAuthenticationPasswordMethod -InputObject <IIdentitySignInsIdentity> [-E
 Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
 For security, the password itself will never be returned in the object and the password property is always null.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

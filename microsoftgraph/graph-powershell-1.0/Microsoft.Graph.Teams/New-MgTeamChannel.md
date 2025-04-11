@@ -59,6 +59,14 @@ When you create a channel, the maximum length of the channel's displayName is 50
 This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Channel.Create.Group, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All, Channel.Create,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

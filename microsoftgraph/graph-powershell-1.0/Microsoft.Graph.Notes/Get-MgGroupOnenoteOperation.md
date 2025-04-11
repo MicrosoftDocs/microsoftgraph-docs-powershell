@@ -43,6 +43,14 @@ Getting an operations collection isn't supported, but you can get the status of 
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
