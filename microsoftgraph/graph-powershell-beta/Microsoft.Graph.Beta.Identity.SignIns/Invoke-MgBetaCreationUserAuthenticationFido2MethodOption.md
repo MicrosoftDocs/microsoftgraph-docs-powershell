@@ -41,16 +41,17 @@ Self-service operations aren't supported.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Invoke-MgBetaCreationUserAuthenticationFido2MethodOption -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaCreationUserAuthenticationFido2MethodOption Cmdlet.
+
 
 ## PARAMETERS
 

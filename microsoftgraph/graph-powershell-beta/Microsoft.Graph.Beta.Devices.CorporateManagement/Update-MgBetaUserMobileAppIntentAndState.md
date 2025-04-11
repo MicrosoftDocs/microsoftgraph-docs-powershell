@@ -46,18 +46,6 @@ Update-MgBetaUserMobileAppIntentAndState -InputObject <IDevicesCorporateManageme
 ## DESCRIPTION
 Update the navigation property mobileAppIntentAndStates in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -413,6 +401,8 @@ Since the application status is identified during device interaction with the In
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileappintentandstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileappintentandstate)
+
+
 
 
 

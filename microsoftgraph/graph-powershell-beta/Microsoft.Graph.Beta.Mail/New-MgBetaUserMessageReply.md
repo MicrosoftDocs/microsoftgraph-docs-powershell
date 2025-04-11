@@ -60,16 +60,38 @@ Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Mail
+
+$params = @{
+	message = @{
+		toRecipients = @(
+			@{
+				emailAddress = @{
+					address = "samanthab@contoso.com"
+					name = "Samantha Booth"
+				}
+			}
+			@{
+				emailAddress = @{
+					address = "randiw@contoso.com"
+					name = "Randi Welch"
+				}
+			}
+		)
+	}
+	comment = "Samantha, Randi, would you name the group if the project is approved, please?"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserMessageReply -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaUserMessageReply Cmdlet.
+
 
 ## PARAMETERS
 

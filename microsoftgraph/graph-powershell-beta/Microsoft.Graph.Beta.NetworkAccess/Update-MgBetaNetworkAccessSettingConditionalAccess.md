@@ -31,11 +31,11 @@ Update-MgBetaNetworkAccessSettingConditionalAccess
 Update the conditional access settings to include the preservation of the original source IP address in network traffic for accurate identification and tracking, as well as the establishment of scalable network connectivity through the Global Secure Access services.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	"@odata.context" = "https://graph.microsoft.com/beta/networkAccess/settings/$metadata#conditionalAccess"
@@ -43,6 +43,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessSettingConditionalAccess -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessSettingConditionalAccess Cmdlet.
+
 
 ## PARAMETERS
 

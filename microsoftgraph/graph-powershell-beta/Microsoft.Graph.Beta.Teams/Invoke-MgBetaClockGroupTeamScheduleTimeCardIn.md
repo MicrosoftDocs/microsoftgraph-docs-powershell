@@ -48,18 +48,6 @@ Invoke-MgBetaClockGroupTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Clock in to start a timeCard.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -326,6 +314,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockgroupteamscheduletimecardin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockgroupteamscheduletimecardin)
 
 [https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
+
 
 
 

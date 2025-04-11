@@ -33,16 +33,17 @@ View a list of all the managed image resources from your Microsoft Entra subscri
 | Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage Cmdlet.
+
 
 ## PARAMETERS
 

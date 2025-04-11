@@ -34,16 +34,17 @@ Invoke-MgSoftUserChatMessageDelete -InputObject <ITeamsIdentity> [-ResponseHeade
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
+### Example 1: Soft-delete message in a chat
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgSoftUserChatMessageDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
+
 ```
-{{ Add code here }}
-```
+This example will soft-delete message in a chat
+
 
 ## PARAMETERS
 

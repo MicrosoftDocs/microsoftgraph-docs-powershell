@@ -61,18 +61,6 @@ The admin can either provide a new password or have the system generate one.
 The user is prompted to change their password on their next sign in.
 This reset is a long-running operation and returns a Location header with a link where the caller can periodically check for the status of the reset operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -315,6 +303,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/reset-mgmeauthenticationmethodpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/reset-mgmeauthenticationmethodpassword)
 
 [https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0)
+
 
 
 

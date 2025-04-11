@@ -57,11 +57,11 @@ Wipe a device
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PrivilegedOperations.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	keepEnrollmentData = $true
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Clear-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgDeviceManagementManagedDevice Cmdlet.
+
 
 ## PARAMETERS
 

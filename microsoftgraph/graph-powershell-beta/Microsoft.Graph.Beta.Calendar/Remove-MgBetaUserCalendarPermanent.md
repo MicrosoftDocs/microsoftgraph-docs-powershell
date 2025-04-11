@@ -47,16 +47,17 @@ Permanently delete a calendar folder and the events that it contains and remove 
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Calendar
+
+Remove-MgBetaUserCalendarPermanent -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaUserCalendarPermanent Cmdlet.
+
 
 ## PARAMETERS
 

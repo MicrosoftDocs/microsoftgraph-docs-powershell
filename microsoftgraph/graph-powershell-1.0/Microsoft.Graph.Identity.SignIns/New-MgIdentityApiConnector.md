@@ -34,11 +34,11 @@ New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector>
 Create a new identityApiConnector object.
 
 ## EXAMPLES
+### Example 1: Create an API connector with basic authentication
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Test API"
@@ -52,10 +52,14 @@ $params = @{
 
 New-MgIdentityApiConnector -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an api connector with basic authentication
+
+### Example 2: Create an API connector with client certificate authentication
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Test API"
@@ -68,6 +72,10 @@ $params = @{
 }
 
 New-MgIdentityApiConnector -BodyParameter $params
+
+```
+This example will create an api connector with client certificate authentication
+
 
 ## PARAMETERS
 

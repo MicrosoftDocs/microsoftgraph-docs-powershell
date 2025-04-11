@@ -41,16 +41,17 @@ Use this API to retrieve the following information:
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get a user's MFA state
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaUserAuthenticationRequirement -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example will get a user's mfa state
+
 
 ## PARAMETERS
 

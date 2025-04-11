@@ -56,16 +56,32 @@ Send an SMS reminder to external attendees for a Teams virtual appointment.
 This feature requires Teams premium and attendees must have a valid United States phone number to receive SMS notifications.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	attendees = @(
+		@{
+			phoneNumber = "+13129224122"
+			timeZone = "Pacific Standard Time"
+		}
+		@{
+			phoneNumber = "+1242421412"
+			timeZone = "Eastern Standard Time"
+		}
+	)
+	remindBeforeTimeInMinutesType = "mins15"
+}
+
+# A UPN can also be used as -UserId.
+Send-MgUserOnlineMeetingVirtualAppointmentReminderSm -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Send-MgUserOnlineMeetingVirtualAppointmentReminderSm Cmdlet.
+
 
 ## PARAMETERS
 

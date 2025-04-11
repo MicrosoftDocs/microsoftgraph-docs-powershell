@@ -42,18 +42,6 @@ This operation requires the device ID to activate it.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -16801,6 +16789,7 @@ Supports $filter (eq).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetameauthenticationhardwareoathmethodandactivate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetameauthenticationhardwareoathmethodandactivate)
 
 [https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivate?view=graph-rest-beta)
+
 
 
 

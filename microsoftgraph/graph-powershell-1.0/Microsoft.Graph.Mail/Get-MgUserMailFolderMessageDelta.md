@@ -48,16 +48,18 @@ This allows you to maintain and synchronize a local store of a user's messages w
 | Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolderMessageDelta -UserId $userId -MailFolderId $mailFolderId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgUserMailFolderMessageDelta Cmdlet.
+
 
 ## PARAMETERS
 

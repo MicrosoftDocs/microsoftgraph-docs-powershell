@@ -44,16 +44,17 @@ This API returns a single object.
 | Application | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDomainRootDomain -DomainId $domainId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDomainRootDomain Cmdlet.
+
 
 ## PARAMETERS
 

@@ -70,16 +70,23 @@ For more details, see presence sessions and time-out and expiration.
 | Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	availability = "DoNotDisturb"
+	activity = "DoNotDisturb"
+	expirationDuration = "PT8H"
+}
+
+Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Set-MgUserPresenceUserPreferredPresence Cmdlet.
+
 
 ## PARAMETERS
 

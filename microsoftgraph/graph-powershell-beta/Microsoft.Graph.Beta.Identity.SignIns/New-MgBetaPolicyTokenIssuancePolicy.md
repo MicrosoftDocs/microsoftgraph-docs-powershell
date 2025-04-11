@@ -42,11 +42,11 @@ Create a new tokenIssuancePolicy object.
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	definition = @(
@@ -57,6 +57,10 @@ isOrganizationDefault = $true
 }
 
 New-MgBetaPolicyTokenIssuancePolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPolicyTokenIssuancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

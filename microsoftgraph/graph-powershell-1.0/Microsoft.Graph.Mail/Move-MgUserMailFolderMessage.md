@@ -51,18 +51,6 @@ Move-MgUserMailFolderMessage -InputObject <IMailIdentity>
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -284,6 +272,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermailfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0)
+
 
 
 

@@ -68,11 +68,11 @@ Create a new sourceCollection object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 $params = @{
 	displayName = "Quarterly Financials search"
@@ -83,6 +83,10 @@ $params = @{
 }
 
 New-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet.
+
 
 ## PARAMETERS
 

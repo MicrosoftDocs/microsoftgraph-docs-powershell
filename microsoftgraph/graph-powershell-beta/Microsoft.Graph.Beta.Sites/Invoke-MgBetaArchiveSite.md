@@ -30,16 +30,17 @@ Invoke-MgBetaArchiveSite -InputObject <ISitesIdentity> [-ResponseHeadersVariable
 Archive an active SharePoint site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Sites
+
+Invoke-MgBetaArchiveSite -SiteId $siteId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaArchiveSite Cmdlet.
+
 
 ## PARAMETERS
 

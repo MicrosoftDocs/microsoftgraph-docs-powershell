@@ -44,16 +44,33 @@ Not yet documented
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+$params = @{
+	id = "Id value"
+	select = @(
+	"Select value"
+)
+search = "Search value"
+groupBy = @(
+"Group By value"
+)
+orderBy = @(
+"Order By value"
+)
+skip = 4
+top = 3
+}
+
+Get-MgDeviceManagementReportCachedReport -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceManagementReportCachedReport Cmdlet.
+
 
 ## PARAMETERS
 

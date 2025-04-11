@@ -60,16 +60,26 @@ This operation requires the device ID to activate it.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	device = @{
+		id = "aad49556-####-####-####-############"
+	}
+	verificationCode = "588651"
+	displayName = "Amy Masters Token"
+}
+
+# A UPN can also be used as -UserId.
+Set-MgBetaUserAuthenticationHardwareOathMethodAndActivate -UserId $userId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Set-MgBetaUserAuthenticationHardwareOathMethodAndActivate Cmdlet.
+
 
 ## PARAMETERS
 

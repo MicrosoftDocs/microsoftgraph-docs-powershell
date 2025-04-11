@@ -50,18 +50,6 @@ Retrieve the properties and relationships of a password authentication method ob
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -397,6 +385,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/passwordauthenticationmethod-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/passwordauthenticationmethod-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/authentication-list-passwordmethods?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-list-passwordmethods?view=graph-rest-beta)
+
+
 
 
 

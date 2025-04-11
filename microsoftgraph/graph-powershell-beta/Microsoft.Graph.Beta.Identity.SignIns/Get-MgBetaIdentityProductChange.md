@@ -39,13 +39,17 @@ Get-MgBetaIdentityProductChange -InputObject <IIdentitySignInsIdentity> [-Expand
 Represents entry point for Microsoft Entra product changes and planned new features.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityProductChange
+
+```
+This example shows how to use the Get-MgBetaIdentityProductChange Cmdlet.
+
 
 ## PARAMETERS
 

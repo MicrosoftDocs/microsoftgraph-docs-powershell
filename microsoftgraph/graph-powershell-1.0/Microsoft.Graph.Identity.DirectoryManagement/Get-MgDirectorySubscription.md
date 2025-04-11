@@ -43,13 +43,17 @@ Get-MgDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity> 
 Get a specific commercial subscription that an organization acquired.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectorySubscription
+
+```
+This example shows how to use the Get-MgDirectorySubscription Cmdlet.
+
 
 ## PARAMETERS
 

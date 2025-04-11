@@ -50,20 +50,28 @@ Since the administrativeUnit resource supports extensions, you can also use the 
 | Application | AdministrativeUnit.Read.All, Directory.ReadWrite.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get an administrative unit
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
 
-### EXAMPLE 2
 ```
+This example will get an administrative unit
+
+### Example 2: Get a restricted management administrative unit
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
+
+```
+This example will get a restricted management administrative unit
+
 
 ## PARAMETERS
 

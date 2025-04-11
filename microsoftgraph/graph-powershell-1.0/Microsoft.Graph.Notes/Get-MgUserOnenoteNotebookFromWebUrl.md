@@ -60,16 +60,22 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Notes
+
+$params = @{
+	webUrl = "webUrl value"
+}
+
+# A UPN can also be used as -UserId.
+Get-MgUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgUserOnenoteNotebookFromWebUrl Cmdlet.
+
 
 ## PARAMETERS
 

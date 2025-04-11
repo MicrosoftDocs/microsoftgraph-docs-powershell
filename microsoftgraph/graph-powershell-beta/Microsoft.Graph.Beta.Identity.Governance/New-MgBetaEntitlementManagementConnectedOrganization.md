@@ -45,11 +45,11 @@ New-MgBetaEntitlementManagementConnectedOrganization [-ResponseHeadersVariable <
 Create a new connectedOrganization object.
 
 ## EXAMPLES
+### Example 1: Create a connected organization
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Connected organization name"
@@ -66,10 +66,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a connected organization
+
+### Example 2: Create a connected organization with an identitySource based on a tenant ID
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Connected organization name"
@@ -85,6 +89,10 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter $params
+
+```
+This example will create a connected organization with an identitysource based on a tenant id
+
 
 ## PARAMETERS
 

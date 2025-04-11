@@ -50,16 +50,22 @@ Move-MgUserMailFolder -InputObject <IMailIdentity>
 Move a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Mail
+
+$params = @{
+	destinationId = "destinationId-value"
+}
+
+# A UPN can also be used as -UserId.
+Move-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Move-MgUserMailFolder Cmdlet.
+
 
 ## PARAMETERS
 

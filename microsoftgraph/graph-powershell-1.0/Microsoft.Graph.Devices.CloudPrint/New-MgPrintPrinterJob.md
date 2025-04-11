@@ -64,11 +64,11 @@ Also creates a new printDocument associated with the printJob.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	configuration = @{
@@ -107,6 +107,10 @@ $params = @{
 }
 
 New-MgPrintPrinterJob -PrinterId $printerId -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 

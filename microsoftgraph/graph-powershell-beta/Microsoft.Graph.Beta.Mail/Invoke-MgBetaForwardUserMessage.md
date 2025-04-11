@@ -64,16 +64,33 @@ This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Mail
+
+$params = @{
+	message = @{
+		isDeliveryReceiptRequested = $true
+		toRecipients = @(
+			@{
+				emailAddress = @{
+					address = "danas@contoso.com"
+					name = "Dana Swope"
+				}
+			}
+		)
+	}
+	comment = "Dana, just want to make sure you get this."
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaForwardUserMessage Cmdlet.
+
 
 ## PARAMETERS
 

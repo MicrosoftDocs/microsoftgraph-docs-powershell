@@ -52,18 +52,6 @@ For security, the password itself will never be returned in the object and the p
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -377,6 +365,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/passwordauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/passwordauthenticationmethod-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/authentication-list-passwordmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-passwordmethods?view=graph-rest-1.0)
+
+
 
 
 
