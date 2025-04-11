@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvitationDomain
-.
+
 
 ```yaml
 Type: String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvitationStatus
-.
+
 
 ```yaml
 Type: String

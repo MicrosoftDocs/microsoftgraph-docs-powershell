@@ -434,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### -Chats
-.
+
 To construct, see NOTES section for CHATS properties and create a hash table.
 
 ```yaml
@@ -985,7 +985,7 @@ Accept wildcard characters: False
 ```
 
 ### -FollowedSites
-.
+
 To construct, see NOTES section for FOLLOWEDSITES properties and create a hash table.
 
 ```yaml
@@ -1155,7 +1155,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsManagementRestricted
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -1203,7 +1203,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoinedTeams
-.
+
 To construct, see NOTES section for JOINEDTEAMS properties and create a hash table.
 
 ```yaml
@@ -1486,7 +1486,7 @@ Accept wildcard characters: False
 ```
 
 ### -Oauth2PermissionGrants
-.
+
 To construct, see NOTES section for OAUTH2PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
@@ -2171,7 +2171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopedRoleMemberOf
-.
+
 To construct, see NOTES section for SCOPEDROLEMEMBEROF properties and create a hash table.
 
 ```yaml

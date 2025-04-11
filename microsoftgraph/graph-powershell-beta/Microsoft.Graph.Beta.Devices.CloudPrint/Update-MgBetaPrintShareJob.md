@@ -57,7 +57,7 @@ Update the navigation property jobs in print
 ## PARAMETERS
 
 ### -AcknowledgedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompletedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Documents
-.
+
 To construct, see NOTES section for DOCUMENTS properties and create a hash table.
 
 ```yaml
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorCode
-.
+
 
 ```yaml
 Type: Int32

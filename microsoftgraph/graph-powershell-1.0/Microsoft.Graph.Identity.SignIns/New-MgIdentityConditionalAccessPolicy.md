@@ -346,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String
@@ -501,7 +501,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateId
-.
+
 
 ```yaml
 Type: String

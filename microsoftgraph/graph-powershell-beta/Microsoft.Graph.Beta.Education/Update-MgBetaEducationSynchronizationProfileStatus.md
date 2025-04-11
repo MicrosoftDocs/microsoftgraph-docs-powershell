@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorCount
-.
+
 
 ```yaml
 Type: Int64
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActivityDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastSynchronizationDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusMessage
-.
+
 
 ```yaml
 Type: String

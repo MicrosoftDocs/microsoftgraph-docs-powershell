@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Footer
-.
+
 
 ```yaml
 Type: String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Message
-.
+
 
 ```yaml
 Type: String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneNumber
-.
+
 
 ```yaml
 Type: String

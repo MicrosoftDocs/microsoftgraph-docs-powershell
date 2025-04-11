@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-.
+
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Enabled
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Provider
-.
+
 
 ```yaml
 Type: String
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vendor
-.
+
 
 ```yaml
 Type: String

@@ -72,7 +72,7 @@ Update the properties of a printer object.
 ## PARAMETERS
 
 ### -AcceptingJobs
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+
 
 ```yaml
 Type: String
