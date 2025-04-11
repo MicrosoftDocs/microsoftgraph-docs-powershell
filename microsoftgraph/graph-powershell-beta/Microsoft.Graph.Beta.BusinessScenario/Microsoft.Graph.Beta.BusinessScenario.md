@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 Module Guid: 66547b17-94b5-4e75-ac5d-c2a5d47a8fc0
 Download Help Link: {{ Update Download Link }}
@@ -130,4 +130,23 @@ Locale: en-US
 
 ### [Update-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat](Update-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
 {{ Fill in the Description }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

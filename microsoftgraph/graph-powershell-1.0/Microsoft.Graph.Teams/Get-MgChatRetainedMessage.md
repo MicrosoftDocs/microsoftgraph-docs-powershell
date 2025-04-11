@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage
@@ -218,4 +218,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage)
 
 [https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
