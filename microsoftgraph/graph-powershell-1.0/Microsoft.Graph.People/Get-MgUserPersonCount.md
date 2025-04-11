@@ -40,18 +40,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | People.Read,  |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -183,6 +171,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount)
+
 
 
 

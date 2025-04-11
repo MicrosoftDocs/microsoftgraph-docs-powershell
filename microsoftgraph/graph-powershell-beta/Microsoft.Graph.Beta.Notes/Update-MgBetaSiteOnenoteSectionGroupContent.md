@@ -53,18 +53,6 @@ Update-MgBetaSiteOnenoteSectionGroupContent -InputObject <INotesIdentity>
 ## DESCRIPTION
 Update the navigation property sectionGroups in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1030,6 +1018,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotesectiongroupcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotesectiongroupcontent)
+
 
 
 

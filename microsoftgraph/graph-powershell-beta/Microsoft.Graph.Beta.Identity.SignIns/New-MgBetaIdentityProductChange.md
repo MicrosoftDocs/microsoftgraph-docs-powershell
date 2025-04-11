@@ -30,18 +30,6 @@ New-MgBetaIdentityProductChange -BodyParameter <IMicrosoftGraphChangeItemBase>
 ## DESCRIPTION
 Create new navigation property to productChanges for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -321,6 +309,7 @@ Supports $filter (eq, ne, in, startswith) and $orderby.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityproductchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityproductchange)
+
 
 
 

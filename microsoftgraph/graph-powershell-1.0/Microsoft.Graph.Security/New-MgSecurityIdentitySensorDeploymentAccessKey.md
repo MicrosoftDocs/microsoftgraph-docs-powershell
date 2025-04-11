@@ -23,18 +23,6 @@ New-MgSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <Strin
 ## DESCRIPTION
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -127,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensordeploymentaccesskey](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensordeploymentaccesskey)
+
 
 
 

@@ -34,18 +34,6 @@ New-MgBetaEducationReportReadingAssignmentSubmission
 ## DESCRIPTION
 Create new navigation property to readingAssignmentSubmissions for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccuracyScore
@@ -546,6 +534,7 @@ CHALLENGINGWORDS `<IMicrosoftGraphChallengingWord- `[]`>`: List of words that th
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreadingassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationreportreadingassignmentsubmission)
+
 
 
 

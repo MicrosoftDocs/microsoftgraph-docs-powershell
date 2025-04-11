@@ -23,18 +23,6 @@ Get-MgMeAuthentication [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 ## DESCRIPTION
 The authentication methods that are supported for the user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -126,6 +114,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgmeauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgmeauthentication)
+
 
 
 

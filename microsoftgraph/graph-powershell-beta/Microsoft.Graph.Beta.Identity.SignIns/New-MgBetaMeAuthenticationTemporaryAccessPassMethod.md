@@ -33,18 +33,6 @@ New-MgBetaMeAuthenticationTemporaryAccessPassMethod
 ## DESCRIPTION
 Create new navigation property to temporaryAccessPassMethods for me
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,6 +278,7 @@ Returned only on creation of a new temporaryAccessPassAuthenticationMethod objec
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationtemporaryaccesspassmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationtemporaryaccesspassmethod)
+
 
 
 

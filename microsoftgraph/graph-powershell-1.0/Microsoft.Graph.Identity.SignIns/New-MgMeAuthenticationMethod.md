@@ -31,18 +31,6 @@ New-MgMeAuthenticationMethod -BodyParameter <Hashtable> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Create new navigation property to methods for me
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -182,6 +170,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgmeauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgmeauthenticationmethod)
+
 
 
 

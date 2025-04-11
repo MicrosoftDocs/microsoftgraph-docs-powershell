@@ -32,18 +32,6 @@ Remove-MgBetaMeAuthenticationOperation -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete navigation property operations for me
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -285,6 +273,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetameauthenticationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetameauthenticationoperation)
+
 
 
 

@@ -30,18 +30,6 @@ Get-MgBetaUserManagedDevicePowerliftAppDiagnosticDetail -InputObject <IDevicesCo
 ## DESCRIPTION
 Invoke function retrievePowerliftAppDiagnosticsDetails
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -303,6 +291,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicepowerliftappdiagnosticdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicepowerliftappdiagnosticdetail)
+
 
 
 
