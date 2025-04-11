@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent
@@ -38,6 +38,18 @@ New-MgBetaDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceMa
 
 ## DESCRIPTION
 Create new navigation property to autopilotEvents for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -540,59 +552,36 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an Autopilot flow event.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceManagementAutopilotEvent\>: Represents an Autopilot flow event.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AccountSetupDuration <TimeSpan?>]`: Time spent in user ESP.
-  - `[AccountSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
-  - `[DeploymentDuration <TimeSpan?>]`: Autopilot deployment duration including enrollment.
-  - `[DeploymentEndDateTime <DateTime?>]`: Deployment end time.
-  - `[DeploymentStartDateTime <DateTime?>]`: Deployment start time.
-  - `[DeploymentState <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
-  - `[DeploymentTotalDuration <TimeSpan?>]`: Total deployment duration from enrollment to Desktop screen.
-  - `[DeviceId <String>]`: Device id associated with the object
-  - `[DeviceRegisteredDateTime <DateTime?>]`: Device registration date.
-  - `[DeviceSerialNumber <String>]`: Device serial number.
-  - `[DeviceSetupDuration <TimeSpan?>]`: Time spent in device ESP.
-  - `[DeviceSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
-  - `[EnrollmentFailureDetails <String>]`: Enrollment failure details.
-  - `[EnrollmentStartDateTime <DateTime?>]`: Device enrollment start date.
-  - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-  - `[EnrollmentType <String>]`: windowsAutopilotEnrollmentType
-  - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-  - `[ManagedDeviceName <String>]`: Managed device name.
-  - `[OSVersion <String>]`: Device operating system version.
-  - `[UserId <String>]`: UserId id associated with the object
-  - `[UserPrincipalName <String>]`: User principal name used to enroll the device.
-  - `[Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]`: Enrollment Status Page profile name
-  - `[Windows10EnrollmentCompletionPageConfigurationId <String>]`: Enrollment Status Page profile ID
-  - `[WindowsAutopilotDeploymentProfileDisplayName <String>]`: Autopilot profile name.
+  \[AccountSetupDuration \<TimeSpan?\>\]: Time spent in user ESP.
+  \[AccountSetupStatus \<WindowsAutopilotDeploymentState?\>\]: Deployment states for Autopilot devices
+  \[DeploymentDuration \<TimeSpan?\>\]: Autopilot deployment duration including enrollment.
+  \[DeploymentEndDateTime \<DateTime?\>\]: Deployment end time.
+  \[DeploymentStartDateTime \<DateTime?\>\]: Deployment start time.
+  \[DeploymentState \<WindowsAutopilotDeploymentState?\>\]: Deployment states for Autopilot devices
+  \[DeploymentTotalDuration \<TimeSpan?\>\]: Total deployment duration from enrollment to Desktop screen.
+  \[DeviceId \<String\>\]: Device id associated with the object
+  \[DeviceRegisteredDateTime \<DateTime?\>\]: Device registration date.
+  \[DeviceSerialNumber \<String\>\]: Device serial number.
+  \[DeviceSetupDuration \<TimeSpan?\>\]: Time spent in device ESP.
+  \[DeviceSetupStatus \<WindowsAutopilotDeploymentState?\>\]: Deployment states for Autopilot devices
+  \[EnrollmentFailureDetails \<String\>\]: Enrollment failure details.
+  \[EnrollmentStartDateTime \<DateTime?\>\]: Device enrollment start date.
+  \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+  \[EnrollmentType \<String\>\]: windowsAutopilotEnrollmentType
+  \[EventDateTime \<DateTime?\>\]: Time when the event occurred .
+  \[ManagedDeviceName \<String\>\]: Managed device name.
+  \[OSVersion \<String\>\]: Device operating system version.
+  \[UserId \<String\>\]: UserId id associated with the object
+  \[UserPrincipalName \<String\>\]: User principal name used to enroll the device.
+  \[Windows10EnrollmentCompletionPageConfigurationDisplayName \<String\>\]: Enrollment Status Page profile name
+  \[Windows10EnrollmentCompletionPageConfigurationId \<String\>\]: Enrollment Status Page profile ID
+  \[WindowsAutopilotDeploymentProfileDisplayName \<String\>\]: Autopilot profile name.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionsensitivitypolicysetting
@@ -29,6 +29,18 @@ Update-MgBetaInformationProtectionSensitivityPolicySetting
 
 ## DESCRIPTION
 Update the navigation property sensitivityPolicySettings in informationProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -79,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DowngradeSensitivityRequiresJustification
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -109,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -HelpWebUrl
-
+.
 
 ```yaml
 Type: String
@@ -140,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMandatory
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -231,39 +243,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSensitivityPolicySettings\>: sensitivityPolicySettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicableTo <String>]`: sensitivityLabelTarget
-  - `[DowngradeSensitivityRequiresJustification <Boolean?>]`: 
-  - `[HelpWebUrl <String>]`: 
-  - `[IsMandatory <Boolean?>]`:
+  \[ApplicableTo \<String\>\]: sensitivityLabelTarget
+  \[DowngradeSensitivityRequiresJustification \<Boolean?\>\]: 
+  \[HelpWebUrl \<String\>\]: 
+  \[IsMandatory \<Boolean?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionsensitivitypolicysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionsensitivitypolicysetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

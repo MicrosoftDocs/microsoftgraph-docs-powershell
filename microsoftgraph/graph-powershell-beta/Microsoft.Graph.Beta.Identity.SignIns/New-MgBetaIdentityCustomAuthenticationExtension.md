@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityCustomAuthenticationExtension
@@ -11,9 +10,6 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,11 +34,11 @@ Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
 ## EXAMPLES
-### Example 1: Create an onTokenIssuanceStartCustomExtension object
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
@@ -72,14 +68,10 @@ $params = @{
 
 New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will create an ontokenissuancestartcustomextension object
-
-### Example 2: Create an onAttributeCollectionStartCustomExtension object
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onAttributeCollectionStartCustomExtension"
@@ -101,14 +93,10 @@ $params = @{
 
 New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will create an onattributecollectionstartcustomextension object
-
-### Example 3: Create an onAttributeCollectionSubmitCustomExtension object
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onAttributeCollectionSubmitCustomExtension"
@@ -129,10 +117,6 @@ $params = @{
 }
 
 New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter $params
-
-```
-This example will create an onattributecollectionsubmitcustomextension object
-
 
 ## PARAMETERS
 
@@ -366,33 +350,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCustomAuthenticationExtension>`: customAuthenticationExtension
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]`: customExtensionAuthenticationConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>]`: customExtensionClientConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MaximumRetries <Int32?>]`: The max number of retries that Microsoft Entra ID makes to the external API.
+BODYPARAMETER \<IMicrosoftGraphCustomAuthenticationExtension\>: customAuthenticationExtension
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AuthenticationConfiguration \<IMicrosoftGraphCustomExtensionAuthenticationConfiguration\>\]: customExtensionAuthenticationConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ClientConfiguration \<IMicrosoftGraphCustomExtensionClientConfiguration\>\]: customExtensionClientConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[MaximumRetries \<Int32?\>\]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
 If null, the default for the service applies.
-    - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
+    \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
 If null, the default for the service applies.
-  - `[Description <String>]`: Description for the customCalloutExtension object.
-  - `[DisplayName <String>]`: Display name for the customCalloutExtension object.
-  - `[EndpointConfiguration <IMicrosoftGraphCustomExtensionEndpointConfiguration>]`: customExtensionEndpointConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Description \<String\>\]: Description for the customCalloutExtension object.
+  \[DisplayName \<String\>\]: Display name for the customCalloutExtension object.
+  \[EndpointConfiguration \<IMicrosoftGraphCustomExtensionEndpointConfiguration\>\]: customExtensionEndpointConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[BehaviorOnError <IMicrosoftGraphCustomExtensionBehaviorOnError>]`: customExtensionBehaviorOnError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[BehaviorOnError \<IMicrosoftGraphCustomExtensionBehaviorOnError\>\]: customExtensionBehaviorOnError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MaximumRetries <Int32?>]`: The max number of retries that Microsoft Entra ID makes to the external API.
+CLIENTCONFIGURATION \<IMicrosoftGraphCustomExtensionClientConfiguration\>: customExtensionClientConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MaximumRetries \<Int32?\>\]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
 If null, the default for the service applies.
-  - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
+  \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
 If null, the default for the service applies.
 
@@ -401,26 +385,4 @@ If null, the default for the service applies.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

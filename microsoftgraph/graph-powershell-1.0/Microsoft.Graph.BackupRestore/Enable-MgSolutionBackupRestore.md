@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/enable-mgsolutionbackuprestore
 schema: 2.0.0
-ms.subservice: m365-backup-storage
 ---
 
 # Enable-MgSolutionBackupRestore
 
 ## SYNOPSIS
 Enable the Microsoft 365 Backup Storage service for a tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Enable-MgBetaSolutionBackupRestore](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Enable-MgBetaSolutionBackupRestore?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,6 +30,18 @@ Enable-MgSolutionBackupRestore
 ## DESCRIPTION
 Enable the Microsoft 365 Backup Storage service for a tenant.
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -52,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppOwnerTenantId
-
+.
 
 ```yaml
 Type: String
@@ -67,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -174,36 +182,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AppOwnerTenantId <String>]`:
+BODYPARAMETER \<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AppOwnerTenantId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/enable-mgsolutionbackuprestore](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/enable-mgsolutionbackuprestore)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

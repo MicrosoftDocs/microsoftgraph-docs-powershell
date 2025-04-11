@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedoperationevent
@@ -32,10 +32,22 @@ New-MgBetaPrivilegedOperationEvent -BodyParameter <IMicrosoftGraphPrivilegedOper
 ## DESCRIPTION
 Add new entity to privilegedOperationEvents
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalInformation
-
+.
 
 ```yaml
 Type: String
@@ -81,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreationDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -96,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -157,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReferenceKey
-
+.
 
 ```yaml
 Type: String
@@ -172,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReferenceSystem
-
+.
 
 ```yaml
 Type: String
@@ -187,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestorId
-
+.
 
 ```yaml
 Type: String
@@ -202,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestorName
-
+.
 
 ```yaml
 Type: String
@@ -217,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestType
-
+.
 
 ```yaml
 Type: String
@@ -247,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleId
-
+.
 
 ```yaml
 Type: String
@@ -262,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-
+.
 
 ```yaml
 Type: String
@@ -277,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-
+.
 
 ```yaml
 Type: String
@@ -292,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-
+.
 
 ```yaml
 Type: String
@@ -307,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMail
-
+.
 
 ```yaml
 Type: String
@@ -322,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-
+.
 
 ```yaml
 Type: String
@@ -383,49 +395,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedOperationEvent>`: privilegedOperationEvent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPrivilegedOperationEvent\>: privilegedOperationEvent
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdditionalInformation <String>]`: 
-  - `[CreationDateTime <DateTime?>]`: 
-  - `[ExpirationDateTime <DateTime?>]`: 
-  - `[ReferenceKey <String>]`: 
-  - `[ReferenceSystem <String>]`: 
-  - `[RequestType <String>]`: 
-  - `[RequestorId <String>]`: 
-  - `[RequestorName <String>]`: 
-  - `[RoleId <String>]`: 
-  - `[RoleName <String>]`: 
-  - `[TenantId <String>]`: 
-  - `[UserId <String>]`: 
-  - `[UserMail <String>]`: 
-  - `[UserName <String>]`:
+  \[AdditionalInformation \<String\>\]: 
+  \[CreationDateTime \<DateTime?\>\]: 
+  \[ExpirationDateTime \<DateTime?\>\]: 
+  \[ReferenceKey \<String\>\]: 
+  \[ReferenceSystem \<String\>\]: 
+  \[RequestType \<String\>\]: 
+  \[RequestorId \<String\>\]: 
+  \[RequestorName \<String\>\]: 
+  \[RoleId \<String\>\]: 
+  \[RoleName \<String\>\]: 
+  \[TenantId \<String\>\]: 
+  \[UserId \<String\>\]: 
+  \[UserMail \<String\>\]: 
+  \[UserName \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedoperationevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedoperationevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

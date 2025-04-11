@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetacreationmeauthenticationfido2methodoption
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaCreationMeAuthenticationFido2MethodOption
@@ -24,13 +23,17 @@ Invoke-MgBetaCreationMeAuthenticationFido2MethodOption [-ChallengeTimeoutInMinut
 Retrieve creation options required to generate and register a Microsoft Entra ID-compatible passkey.
 Self-service operations aren't supported.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -110,27 +113,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetacreationmeauthenticationfido2methodoption](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetacreationmeauthenticationfido2methodoption)
 
 [https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

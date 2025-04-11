@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationpasswordmethod
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to passwordMethods for me
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgMeAuthenticationPasswordMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgMeAuthenticationPasswordMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ New-MgBetaMeAuthenticationPasswordMethod -BodyParameter <IMicrosoftGraphPassword
 
 ## DESCRIPTION
 Create new navigation property to passwordMethods for me
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -208,42 +217,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPasswordAuthenticationMethod>`: passwordAuthenticationMethod
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+BODYPARAMETER \<IMicrosoftGraphPasswordAuthenticationMethod\>: passwordAuthenticationMethod
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
+  \[Password \<String\>\]: For security, the password is always returned as null from a LIST or GET operation.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationpasswordmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationpasswordmethod)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

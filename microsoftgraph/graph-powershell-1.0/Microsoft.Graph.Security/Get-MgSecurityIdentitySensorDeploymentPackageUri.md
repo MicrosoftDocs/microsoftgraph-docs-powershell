@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri
@@ -11,9 +11,6 @@ schema: 2.0.0
 Get the sensor deployment package URL and version.
 You can use this URL to download the installer to install the sensor on a server.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorDeploymentPackageUri](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorDeploymentPackageUri?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -24,6 +21,18 @@ Get-MgSecurityIdentitySensorDeploymentPackageUri [-ResponseHeadersVariable <Stri
 ## DESCRIPTION
 Get the sensor deployment package URL and version.
 You can use this URL to download the installer to install the sensor on a server.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -86,27 +95,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

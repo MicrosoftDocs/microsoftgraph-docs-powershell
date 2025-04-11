@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.People
 Module Guid: c084d1b1-7ed4-45c3-a9b8-9b531f789082
 Download Help Link: {{ Update Download Link }}
@@ -8,31 +8,12 @@ Locale: en-US
 
 # Microsoft.Graph.People Module
 ## Description
-
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.People Cmdlets
 ### [Get-MgUserPerson](Get-MgUserPerson.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgUserPersonCount](Get-MgUserPersonCount.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{ Fill in the Description }}
 
