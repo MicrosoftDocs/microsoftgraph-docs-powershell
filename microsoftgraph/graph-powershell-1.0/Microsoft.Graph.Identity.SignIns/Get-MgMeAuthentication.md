@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The authentication methods that are supported for the user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaMeAuthentication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaMeAuthentication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

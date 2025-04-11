@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Retrieve the properties and relationships of an authenticationMethod object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgMeAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgMeAuthenticationMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

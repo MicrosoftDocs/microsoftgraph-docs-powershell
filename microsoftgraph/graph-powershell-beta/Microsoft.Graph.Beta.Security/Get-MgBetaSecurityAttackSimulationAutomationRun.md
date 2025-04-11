@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 A collection of simulation automation runs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Publishes a contentType present in the content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)

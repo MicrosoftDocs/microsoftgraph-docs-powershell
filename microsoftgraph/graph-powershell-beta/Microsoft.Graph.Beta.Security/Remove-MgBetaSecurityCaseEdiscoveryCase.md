@@ -11,6 +11,9 @@ ms.subservice: ediscovery
 ## SYNOPSIS
 Delete an ediscoveryCase object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

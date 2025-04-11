@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Get the default channel, General, of a team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

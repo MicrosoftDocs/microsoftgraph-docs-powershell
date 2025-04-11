@@ -11,6 +11,9 @@ ms.subservice: ediscovery
 ## SYNOPSIS
 Reset a caseSettings object to the default values.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Security/Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reset (Default)

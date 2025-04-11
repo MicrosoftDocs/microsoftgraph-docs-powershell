@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property softwareOathMethods for me
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgMeAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgMeAuthenticationSoftwareOathMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

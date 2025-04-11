@@ -11,6 +11,9 @@ ms.subservice: entra-users
 ## SYNOPSIS
 Assign a user's manager.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Set-MgUserManagerByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
