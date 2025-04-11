@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/disable-mgdevicemanagementmanageddevicelostmode
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Disable-MgDeviceManagementManagedDeviceLostMode

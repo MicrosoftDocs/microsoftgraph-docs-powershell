@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/invoke-mgrecentuseractivity
 schema: 2.0.0
+ms.subservice: project-rome
 ---
 
 # Invoke-MgRecentUserActivity
