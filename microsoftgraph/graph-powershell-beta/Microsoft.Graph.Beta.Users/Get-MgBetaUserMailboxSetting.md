@@ -35,6 +35,14 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

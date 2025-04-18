@@ -44,6 +44,14 @@ Update-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
 ## DESCRIPTION
 Update the properties of a deviceCategory object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

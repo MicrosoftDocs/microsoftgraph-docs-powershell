@@ -48,6 +48,14 @@ Update-MgGroupConversationThread -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Update the navigation property threads in groups
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

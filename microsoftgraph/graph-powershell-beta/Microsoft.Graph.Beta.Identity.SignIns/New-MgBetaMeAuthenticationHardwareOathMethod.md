@@ -33,6 +33,14 @@ New-MgBetaMeAuthenticationHardwareOathMethod -BodyParameter <IMicrosoftGraphHard
 Assign a hardware token to a user without activation.
 To activate, use the activation API operation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

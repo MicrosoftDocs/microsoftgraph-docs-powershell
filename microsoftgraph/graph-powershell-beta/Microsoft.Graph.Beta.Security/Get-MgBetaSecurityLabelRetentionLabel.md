@@ -38,6 +38,14 @@ Get-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Represents how customers can manage their data, whether and for how long to retain or delete it.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

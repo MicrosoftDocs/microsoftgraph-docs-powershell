@@ -22,6 +22,14 @@ Get-MgBetaPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property
 ## DESCRIPTION
 Read the properties and relationships of an authenticationFlowsPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.AuthenticationFlows,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

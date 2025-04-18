@@ -37,6 +37,14 @@ New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ## DESCRIPTION
 Create a new privilegedAccessGroupEligibilityScheduleRequest object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup, PrivilegedEligibilitySchedule.Remove.AzureADGroup,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

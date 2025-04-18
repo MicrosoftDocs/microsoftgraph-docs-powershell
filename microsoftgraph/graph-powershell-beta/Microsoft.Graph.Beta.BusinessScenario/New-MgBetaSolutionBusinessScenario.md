@@ -32,6 +32,14 @@ New-MgBetaSolutionBusinessScenario -BodyParameter <IMicrosoftGraphBusinessScenar
 ## DESCRIPTION
 Create a new businessScenario object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
