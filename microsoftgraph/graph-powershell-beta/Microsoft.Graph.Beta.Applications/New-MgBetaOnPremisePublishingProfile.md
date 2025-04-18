@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSegments
-.
+
 To construct, see NOTES section for APPLICATIONSEGMENTS properties and create a hash table.
 
 ```yaml
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefaultAccessEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter

@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalCloudAuthorizedApplicationId
-.
+
 
 ```yaml
 Type: String

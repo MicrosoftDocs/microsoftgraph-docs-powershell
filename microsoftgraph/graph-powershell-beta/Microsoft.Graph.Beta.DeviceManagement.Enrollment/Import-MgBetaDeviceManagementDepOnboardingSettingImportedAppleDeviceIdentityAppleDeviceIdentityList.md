@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImportedAppleDeviceIdentities
-.
+
 To construct, see NOTES section for IMPORTEDAPPLEDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -OverwriteImportedDeviceIdentities
-.
+
 
 ```yaml
 Type: SwitchParameter

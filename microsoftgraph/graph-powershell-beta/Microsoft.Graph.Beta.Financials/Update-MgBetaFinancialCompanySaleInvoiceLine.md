@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountId
-.
+
 
 ```yaml
 Type: String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -AmountExcludingTax
-.
+
 
 ```yaml
 Type: Decimal
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -AmountIncludingTax
-.
+
 
 ```yaml
 Type: Decimal
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiscountAmount
-.
+
 
 ```yaml
 Type: Decimal
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiscountAppliedBeforeTax
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiscountPercent
-.
+
 
 ```yaml
 Type: Decimal
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -DocumentId
-.
+
 
 ```yaml
 Type: String
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvoiceDiscountAllocation
-.
+
 
 ```yaml
 Type: Decimal
@@ -362,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -ItemId
-.
+
 
 ```yaml
 Type: String
@@ -377,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### -LineType
-.
+
 
 ```yaml
 Type: String
@@ -392,7 +392,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetAmount
-.
+
 
 ```yaml
 Type: Decimal
@@ -407,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetAmountIncludingTax
-.
+
 
 ```yaml
 Type: Decimal
@@ -422,7 +422,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetTaxAmount
-.
+
 
 ```yaml
 Type: Decimal
@@ -452,7 +452,7 @@ Accept wildcard characters: False
 ```
 
 ### -Quantity
-.
+
 
 ```yaml
 Type: Decimal
@@ -512,7 +512,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sequence
-.
+
 
 ```yaml
 Type: Int32
@@ -527,7 +527,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShipmentDate
-.
+
 
 ```yaml
 Type: DateTime
@@ -542,7 +542,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaxCode
-.
+
 
 ```yaml
 Type: String
@@ -557,7 +557,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaxPercent
-.
+
 
 ```yaml
 Type: Decimal
@@ -572,7 +572,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalTaxAmount
-.
+
 
 ```yaml
 Type: Decimal
@@ -587,7 +587,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnitOfMeasureId
-.
+
 
 ```yaml
 Type: String
@@ -602,7 +602,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnitPrice
-.
+
 
 ```yaml
 Type: Decimal

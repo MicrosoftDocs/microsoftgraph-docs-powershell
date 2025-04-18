@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillToCustomerId
-.
+
 
 ```yaml
 Type: String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillToCustomerNumber
-.
+
 
 ```yaml
 Type: String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillToName
-.
+
 
 ```yaml
 Type: String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreditMemoDate
-.
+
 
 ```yaml
 Type: DateTime
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -CurrencyCode
-.
+
 
 ```yaml
 Type: String
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -CurrencyId
-.
+
 
 ```yaml
 Type: String
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomerId
-.
+
 
 ```yaml
 Type: String
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomerName
-.
+
 
 ```yaml
 Type: String
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomerNumber
-.
+
 
 ```yaml
 Type: String
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiscountAmount
-.
+
 
 ```yaml
 Type: Decimal
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiscountAppliedBeforeTax
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -DueDate
-.
+
 
 ```yaml
 Type: DateTime
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -Email
-.
+
 
 ```yaml
 Type: String
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalDocumentNumber
-.
+
 
 ```yaml
 Type: String
@@ -387,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String
@@ -418,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvoiceId
-.
+
 
 ```yaml
 Type: String
@@ -433,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvoiceNumber
-.
+
 
 ```yaml
 Type: String
@@ -448,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -463,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### -Number
-.
+
 
 ```yaml
 Type: String
@@ -494,7 +494,7 @@ Accept wildcard characters: False
 ```
 
 ### -PaymentTermsId
-.
+
 
 ```yaml
 Type: String
@@ -509,7 +509,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneNumber
-.
+
 
 ```yaml
 Type: String
@@ -524,7 +524,7 @@ Accept wildcard characters: False
 ```
 
 ### -PricesIncludeTax
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -584,7 +584,7 @@ Accept wildcard characters: False
 ```
 
 ### -SalesCreditMemoLines
-.
+
 To construct, see NOTES section for SALESCREDITMEMOLINES properties and create a hash table.
 
 ```yaml
@@ -600,7 +600,7 @@ Accept wildcard characters: False
 ```
 
 ### -Salesperson
-.
+
 
 ```yaml
 Type: String
@@ -631,7 +631,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-.
+
 
 ```yaml
 Type: String
@@ -646,7 +646,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAmountExcludingTax
-.
+
 
 ```yaml
 Type: Decimal
@@ -661,7 +661,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalAmountIncludingTax
-.
+
 
 ```yaml
 Type: Decimal
@@ -676,7 +676,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalTaxAmount
-.
+
 
 ```yaml
 Type: Decimal

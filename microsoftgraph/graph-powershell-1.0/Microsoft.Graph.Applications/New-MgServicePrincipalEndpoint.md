@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Capability
-.
+
 
 ```yaml
 Type: String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-.
+
 
 ```yaml
 Type: String
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderName
-.
+
 
 ```yaml
 Type: String
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderResourceId
-.
+
 
 ```yaml
 Type: String
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-.
+
 
 ```yaml
 Type: String

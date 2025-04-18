@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -GradingSchemes
-.
+
 To construct, see NOTES section for GRADINGSCHEMES properties and create a hash table.
 
 ```yaml

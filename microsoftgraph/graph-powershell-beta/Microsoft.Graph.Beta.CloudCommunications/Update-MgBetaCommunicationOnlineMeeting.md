@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -AiInsights
-.
+
 To construct, see NOTES section for AIINSIGHTS properties and create a hash table.
 
 ```yaml
@@ -599,7 +599,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEndToEndEncryptionEnabled
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -661,7 +661,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoinUrl
-.
+
 
 ```yaml
 Type: String

@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowEdit
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Chromeless
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Page
-.
+
 
 ```yaml
 Type: String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Viewer
-.
+
 
 ```yaml
 Type: String
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zoom
-.
+
 
 ```yaml
 Type: Double
