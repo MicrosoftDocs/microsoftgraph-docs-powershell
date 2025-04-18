@@ -31,18 +31,6 @@ New-MgBetaReportHealthMonitoringAlert -BodyParameter <IMicrosoftGraphHealthMonit
 ## DESCRIPTION
 Create new navigation property to alerts for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -349,6 +337,7 @@ Examples include user, group, application, servicePrincipal, device.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert)
+
 
 
 

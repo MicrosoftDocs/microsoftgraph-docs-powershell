@@ -32,18 +32,6 @@ Remove-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackup
 ## DESCRIPTION
 Delete navigation property exchangeProtectionPolicies for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExchangeProtectionPolicyId
@@ -231,6 +219,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreexchangeprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreexchangeprotectionpolicy)
+
 
 
 

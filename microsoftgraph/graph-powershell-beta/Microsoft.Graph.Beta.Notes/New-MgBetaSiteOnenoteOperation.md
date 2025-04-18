@@ -50,18 +50,6 @@ New-MgBetaSiteOnenoteOperation -InputObject <INotesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to operations for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -380,6 +368,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenoteoperation)
+
 
 
 

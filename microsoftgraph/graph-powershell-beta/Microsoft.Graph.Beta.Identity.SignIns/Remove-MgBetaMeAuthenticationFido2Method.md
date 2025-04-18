@@ -40,18 +40,6 @@ Delete navigation property fido2Methods for me
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Fido2AuthenticationMethodId
@@ -293,6 +281,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetameauthenticationfido2method](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetameauthenticationfido2method)
+
 
 
 

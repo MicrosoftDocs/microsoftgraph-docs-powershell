@@ -48,18 +48,6 @@ Update-MgMeAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property operations in me
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,6 +378,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgmeauthenticationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgmeauthenticationoperation)
+
 
 
 

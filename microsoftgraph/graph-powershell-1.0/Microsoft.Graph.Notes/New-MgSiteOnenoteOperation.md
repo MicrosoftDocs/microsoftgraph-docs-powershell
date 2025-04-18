@@ -50,18 +50,6 @@ New-MgSiteOnenoteOperation -InputObject <INotesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to operations for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -380,6 +368,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenoteoperation)
+
 
 
 

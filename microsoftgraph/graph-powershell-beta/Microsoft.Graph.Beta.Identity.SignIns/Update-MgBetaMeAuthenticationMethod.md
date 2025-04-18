@@ -46,18 +46,6 @@ Update-MgBetaMeAuthenticationMethod -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property methods in me
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -348,6 +336,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetameauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetameauthenticationmethod)
+
 
 
 

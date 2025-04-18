@@ -37,18 +37,6 @@ Get-MgBetaReportUserInsightDailyMfaTelecomFraud -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Get mfaTelecomFraud from reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -347,6 +335,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailymfatelecomfraud](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailymfatelecomfraud)
+
 
 
 

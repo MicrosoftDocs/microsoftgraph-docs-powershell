@@ -34,18 +34,6 @@ Get-MgMeAuthenticationMicrosoftAuthenticatorMethodDevice -InputObject <IIdentity
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device isn't registered for passwordless Phone Sign-In.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -234,6 +222,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgmeauthenticationmicrosoftauthenticatormethoddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgmeauthenticationmicrosoftauthenticatormethoddevice)
+
 
 
 

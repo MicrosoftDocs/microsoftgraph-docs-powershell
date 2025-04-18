@@ -40,18 +40,6 @@ Update-MgMeAuthentication -BodyParameter <IMicrosoftGraphAuthentication> [-Respo
 ## DESCRIPTION
 Update the navigation property authentication in me
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -907,6 +895,7 @@ For more information, see Introduction to device management in Microsoft Entra I
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgmeauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgmeauthentication)
+
 
 
 

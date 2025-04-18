@@ -55,18 +55,6 @@ Get-MgBetaAllUserChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 A collection of all the messages in the chat.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -421,6 +409,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaalluserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaalluserchatmessage)
 
 [https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-beta)
+
 
 
 

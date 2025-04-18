@@ -56,18 +56,6 @@ Update the navigation property phoneMethods in me
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -364,6 +352,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgmeauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgmeauthenticationphonemethod)
+
 
 
 

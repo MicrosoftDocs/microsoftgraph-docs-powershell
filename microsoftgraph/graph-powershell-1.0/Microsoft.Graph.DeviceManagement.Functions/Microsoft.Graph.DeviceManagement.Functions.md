@@ -8,17 +8,17 @@ Locale: en-US
 
 # Microsoft.Graph.DeviceManagement.Functions Module
 ## Description
-{{ Fill in the Description }}
+
 
 ## Microsoft.Graph.DeviceManagement.Functions Cmdlets
 ### [Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery](Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgDeviceManagementEffectivePermission](Get-MgDeviceManagementEffectivePermission.md)
-{{ Fill in the Description }}
+
 
 ### [Invoke-MgExperienceDeviceManagement](Invoke-MgExperienceDeviceManagement.md)
-{{ Fill in the Description }}
+
 
 
 
