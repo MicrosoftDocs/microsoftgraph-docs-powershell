@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagedelta
@@ -9,8 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a set of messages that have been added, deleted, or updated in a specified folder.
-A delta function call for messages in a folder is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls, you can \[query for incremental changes in the messages in\nthat folder\](/graph/delta-query-messages).
-This allows you to maintain and synchronize a local store of a user's messages without\nhaving to fetch the entire set of messages from the server every time.
+A delta function call for messages in a folder is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls, you can \[query for incremental changes in the messages inthat folder\](/graph/delta-query-messages).
+This allows you to maintain and synchronize a local store of a user's messages withouthaving to fetch the entire set of messages from the server every time.
 
 ## SYNTAX
 
@@ -32,8 +32,8 @@ Get-MgUserMailFolderMessageDelta -InputObject <IMailIdentity> [-ChangeType <Stri
 
 ## DESCRIPTION
 Get a set of messages that have been added, deleted, or updated in a specified folder.
-A delta function call for messages in a folder is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls, you can \[query for incremental changes in the messages in\nthat folder\](/graph/delta-query-messages).
-This allows you to maintain and synchronize a local store of a user's messages without\nhaving to fetch the entire set of messages from the server every time.
+A delta function call for messages in a folder is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls, you can \[query for incremental changes in the messages inthat folder\](/graph/delta-query-messages).
+This allows you to maintain and synchronize a local store of a user's messages withouthaving to fetch the entire set of messages from the server every time.
 
 ## EXAMPLES
 
@@ -338,19 +338,41 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IMailIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MessageRuleId <String>]`: The unique identifier of messageRule
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagedelta)
 
 [https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

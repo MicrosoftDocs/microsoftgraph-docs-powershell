@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityproductchange
@@ -297,28 +297,50 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphChangeItemBase\>: changeItemBase
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphChangeItemBase>`: changeItemBase
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ChangeItemService \<String\>\]: Specifies the Microsoft Entra service name to which this item belongs.
+  - `[ChangeItemService <String>]`: Specifies the Microsoft Entra service name to which this item belongs.
 Supports $filter (eq, ne, in) and $orderby.
-  \[Description \<String\>\]: Description of the new feature or change announcement.
+  - `[Description <String>]`: Description of the new feature or change announcement.
 Supports $filter (eq, ne, in, startswith) and $orderby.
-  \[DocumentationUrls \<String\[\]\>\]: Link to the feature or change documentation.
+  - `[DocumentationUrls <String- `[]`>]`: Link to the feature or change documentation.
 Supports $filter (any with eq).
-  \[ShortDescription \<String\>\]: A short description of the feature or change.
+  - `[ShortDescription <String>]`: A short description of the feature or change.
 Supports $filter (eq, ne, in, startswith) and $orderby.
-  \[SystemTags \<String\[\]\>\]: Microsoft Entra-specific tags.
+  - `[SystemTags <String- `[]`>]`: Microsoft Entra-specific tags.
 Example values: Top announcement - entraroadmaphighlightproductnews, New release highlight - entraroadmaphighlightnewfeature.
 Supports $filter (any with eq).
-  \[Tags \<String\[\]\>\]: Identity and Access Management (IAM) related tags.
+  - `[Tags <String- `[]`>]`: Identity and Access Management (IAM) related tags.
 Example values: External Identities, Reliability and Resilience.
 Supports $filter (any with eq).
-  \[Title \<String\>\]: Title of the feature or change.
+  - `[Title <String>]`: Title of the feature or change.
 Supports $filter (eq, ne, in, startswith) and $orderby.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityproductchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityproductchange)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

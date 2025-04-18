@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote
@@ -283,45 +283,67 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHOR \<IMicrosoftGraphIdentity\>: identity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+AUTHOR `<IMicrosoftGraphIdentity>`: identity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-  \[Id \<String\>\]: Unique identifier for the identity or actor.
+  - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-BODYPARAMETER \<IMicrosoftGraphAuthoredNote\>: authoredNote
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAuthoredNote>`: authoredNote
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Author \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  - `[Author <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity or actor.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  \[Content \<IMicrosoftGraphItemBody\>\]: itemBody
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of the item.
-    \[ContentType \<String\>\]: bodyType
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when the entity was created.
+  - `[Content <IMicrosoftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the entity was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-CONTENT \<IMicrosoftGraphItemBody\>: itemBody
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of the item.
-  \[ContentType \<String\>\]: bodyType
+CONTENT `<IMicrosoftGraphItemBody>`: itemBody
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of the item.
+  - `[ContentType <String>]`: bodyType
 
-INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserPrincipalName \<String\>\]: Alternate key of user
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

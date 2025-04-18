@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 Module Guid: 1265385f-29cb-43a3-849c-cd49dcc7f783
 Download Help Link: {{ Update Download Link }}
@@ -25,4 +25,23 @@ Locale: en-US
 
 ### [Update-MgBetaSubscription](Update-MgBetaSubscription.md)
 {{ Fill in the Description }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 Module Guid: 39dbb3bc-1a84-424a-9efe-683be70a1810
 Download Help Link: {{ Update Download Link }}
@@ -1870,4 +1870,23 @@ Locale: en-US
 
 ### [Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 {{ Fill in the Description }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
