@@ -11,6 +11,9 @@ schema: 2.0.0
 The user's OneDrive.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDefaultDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

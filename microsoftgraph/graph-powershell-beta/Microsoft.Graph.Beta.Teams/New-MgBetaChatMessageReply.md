@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to replies for chats
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgChatMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgChatMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

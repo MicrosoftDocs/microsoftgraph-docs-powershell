@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgRiskyUserCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyUserCompromised?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)

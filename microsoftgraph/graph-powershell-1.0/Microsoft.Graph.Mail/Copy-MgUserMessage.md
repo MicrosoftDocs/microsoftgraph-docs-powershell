@@ -11,6 +11,9 @@ ms.subservice: outlook
 ## SYNOPSIS
 Copy a message to a folder within the user's mailbox.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Copy-MgBetaUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

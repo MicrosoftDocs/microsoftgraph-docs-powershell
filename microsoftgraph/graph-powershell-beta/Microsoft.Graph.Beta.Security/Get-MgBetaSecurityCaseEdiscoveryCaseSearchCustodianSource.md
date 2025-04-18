@@ -11,6 +11,9 @@ ms.subservice: ediscovery
 ## SYNOPSIS
 Custodian sources that are included in the eDiscovery search.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Retrieves the effective permissions of the currently authenticated user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementEffectivePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

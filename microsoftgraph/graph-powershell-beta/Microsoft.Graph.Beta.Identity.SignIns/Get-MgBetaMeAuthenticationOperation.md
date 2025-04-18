@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the status of a long-running operation, such as a password reset operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgMeAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgMeAuthenticationOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

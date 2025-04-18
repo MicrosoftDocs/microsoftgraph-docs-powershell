@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property fido2Methods for me
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaMeAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaMeAuthenticationFido2Method?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

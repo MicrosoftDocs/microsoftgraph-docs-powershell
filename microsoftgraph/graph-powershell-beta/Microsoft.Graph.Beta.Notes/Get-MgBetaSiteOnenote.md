@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get onenote from sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenote](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

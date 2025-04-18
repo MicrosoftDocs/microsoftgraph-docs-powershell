@@ -11,6 +11,9 @@ schema: 2.0.0
 The notebook that contains the section group.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteSectionGroupParentNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteSectionGroupParentNotebook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

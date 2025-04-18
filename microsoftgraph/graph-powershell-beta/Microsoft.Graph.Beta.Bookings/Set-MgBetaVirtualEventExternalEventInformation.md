@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setExternalEventInformation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgVirtualEventExternalEventInformation](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventExternalEventInformation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Read properties and relationships of the applePushNotificationCertificate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

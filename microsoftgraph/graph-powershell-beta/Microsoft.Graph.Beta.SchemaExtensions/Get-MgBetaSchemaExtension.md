@@ -12,6 +12,9 @@ ms.subservice: extensions
 ## SYNOPSIS
 Get the properties of the specified schemaExtension definition.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
