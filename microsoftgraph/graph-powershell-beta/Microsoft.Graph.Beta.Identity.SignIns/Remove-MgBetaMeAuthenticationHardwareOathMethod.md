@@ -40,18 +40,6 @@ The token remains in the directory and its details can be retrieved by List hard
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HardwareOathAuthenticationMethodId
@@ -295,6 +283,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetameauthenticationhardwareoathmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetameauthenticationhardwareoathmethod)
 
 [https://learn.microsoft.com/graph/api/authentication-delete-hardwareoathmethods?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-delete-hardwareoathmethods?view=graph-rest-beta)
+
 
 
 

@@ -32,16 +32,27 @@ New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration
 Create a mutualTlsOauthConfiguration resource that contains a specified certificate authority object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	displayName = "DoorCamera_Model_X_TrustedCAs"
+	tlsClientAuthParameter = "tls_client_auth_san_uri"
+	certificateAuthorities = @(
+		@{
+			"@odata.type" = "microsoft.graph.certificateAuthority"
+		}
+	)
+}
+
+New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -34,16 +34,17 @@ Undo-MgBetaUserChatMessageSoftDelete -InputObject <ITeamsIdentity> [-ResponseHea
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
+### Example 1: Undo soft deletion of a message in a chat
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Teams
+
+Undo-MgBetaUserChatMessageSoftDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
+
 ```
-{{ Add code here }}
-```
+This example will undo soft deletion of a message in a chat
+
 
 ## PARAMETERS
 

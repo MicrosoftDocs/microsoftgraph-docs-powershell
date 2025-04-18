@@ -33,18 +33,6 @@ Remove-MgUserByUserPrincipalName -InputObject <IUsersIdentity> [-IfMatch <String
 ## DESCRIPTION
 Deletes a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -228,6 +216,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserbyuserprincipalname](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserbyuserprincipalname)
 
 [https://learn.microsoft.com/graph/api/intune-mam-user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-user-delete?view=graph-rest-1.0)
+
 
 
 

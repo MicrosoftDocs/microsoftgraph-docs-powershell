@@ -54,17 +54,21 @@ Update-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity>
 Update the properties of a healthIssue object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	status = "closed"
 }
 
 Update-MgBetaSecurityIdentityHealthIssue -HealthIssueId $healthIssueId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityIdentityHealthIssue Cmdlet.
+
 
 ## PARAMETERS
 

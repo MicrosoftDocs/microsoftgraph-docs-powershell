@@ -36,18 +36,6 @@ Email clients such as Outlook or Outlook on the web can't access permanently del
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -236,6 +224,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagepermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagepermanent)
 
 [https://learn.microsoft.com/graph/api/message-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-permanentdelete?view=graph-rest-beta)
+
 
 
 

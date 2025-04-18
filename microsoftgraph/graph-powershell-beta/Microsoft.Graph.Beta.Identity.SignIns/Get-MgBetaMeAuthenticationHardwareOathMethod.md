@@ -47,18 +47,6 @@ Get the details of the hardware token assigned to a user.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -394,6 +382,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/authentication-list-hardwareoathmethods?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-list-hardwareoathmethods?view=graph-rest-beta)
+
+
 
 
 

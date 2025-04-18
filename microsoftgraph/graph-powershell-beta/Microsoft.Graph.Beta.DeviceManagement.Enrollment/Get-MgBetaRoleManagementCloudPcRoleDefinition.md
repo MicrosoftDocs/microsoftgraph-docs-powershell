@@ -50,13 +50,17 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 | Application | DeviceManagementRBAC.Read.All, RoleManagement.ReadWrite.Directory, EntitlementManagement.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, CloudPC.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Get the definition of a built-in role for a Cloud PC provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 Get-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a built-in role for a cloud pc provider
+
 
 ## PARAMETERS
 

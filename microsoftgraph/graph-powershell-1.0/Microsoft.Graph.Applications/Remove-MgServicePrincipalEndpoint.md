@@ -29,18 +29,6 @@ Remove-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property endpoints for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EndpointId
@@ -240,6 +228,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalendpoint)
+
 
 
 

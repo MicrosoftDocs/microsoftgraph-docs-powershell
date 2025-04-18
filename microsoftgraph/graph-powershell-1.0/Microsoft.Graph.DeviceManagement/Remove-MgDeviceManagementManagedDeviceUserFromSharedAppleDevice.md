@@ -49,16 +49,21 @@ Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -InputObject <ID
 Delete user from shared Apple device
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	userPrincipalName = "User Principal Name value"
+}
+
+Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice Cmdlet.
+
 
 ## PARAMETERS
 

@@ -34,13 +34,17 @@ Invoke-MgBetaRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity>
 Retry the user service provisioning.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 Invoke-MgBetaRetryUserServiceProvisioning -UserId $userId
+
+```
+This example shows how to use the Invoke-MgBetaRetryUserServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 

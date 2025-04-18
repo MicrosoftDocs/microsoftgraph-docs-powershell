@@ -57,17 +57,21 @@ Assign a tokenIssuancePolicy to an application.
 | Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
 }
 
 New-MgApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgApplicationTokenIssuancePolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 

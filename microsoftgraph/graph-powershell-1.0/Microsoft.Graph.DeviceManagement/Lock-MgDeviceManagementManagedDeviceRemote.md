@@ -31,16 +31,17 @@ Lock-MgDeviceManagementManagedDeviceRemote -InputObject <IDeviceManagementIdenti
 Remote lock
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+Lock-MgDeviceManagementManagedDeviceRemote -ManagedDeviceId $managedDeviceId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Lock-MgDeviceManagementManagedDeviceRemote Cmdlet.
+
 
 ## PARAMETERS
 

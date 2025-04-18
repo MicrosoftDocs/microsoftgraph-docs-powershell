@@ -48,16 +48,18 @@ This allows you to maintain and synchronize a local store of a user's todoTaskLi
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Users
+
+# A UPN can also be used as -UserId.
+Get-MgUserTodoListDelta -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgUserTodoListDelta Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,18 +51,6 @@ Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
 ## DESCRIPTION
 Update the navigation property deviceConfigurationRestrictedAppsViolations in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -451,6 +439,7 @@ RESTRICTEDAPPS `<IMicrosoftGraphManagedDeviceReportedApp- `[]`>`: List of violat
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation)
+
 
 
 

@@ -45,16 +45,35 @@ Not yet documented
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+$params = @{
+	name = "Name value"
+	select = @(
+	"Select value"
+)
+search = "Search value"
+groupBy = @(
+"Group By value"
+)
+orderBy = @(
+"Order By value"
+)
+skip = 4
+top = 3
+sessionId = "Session Id value"
+filter = "Filter value"
+}
+
+Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport Cmdlet.
+
 
 ## PARAMETERS
 

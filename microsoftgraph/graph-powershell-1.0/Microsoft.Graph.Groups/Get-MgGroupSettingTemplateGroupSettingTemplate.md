@@ -50,13 +50,17 @@ This operation allows retrieval of the properties of the groupSettingTemplate ob
 | Application | Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupSettingTemplateGroupSettingTemplate
+
+```
+This example shows how to use the Get-MgGroupSettingTemplateGroupSettingTemplate Cmdlet.
+
 
 ## PARAMETERS
 

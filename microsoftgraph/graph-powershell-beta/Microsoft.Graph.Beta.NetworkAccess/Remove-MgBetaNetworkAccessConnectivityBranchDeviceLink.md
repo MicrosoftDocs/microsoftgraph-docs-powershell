@@ -31,13 +31,17 @@ Remove-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAcc
 Removes the link between the branch or remote network and the CPE device, effectively removing the connection and associated configuration between them.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Remove-MgBetaNetworkAccessConnectivityBranchDeviceLink -BranchSiteId $branchSiteId -DeviceLinkId $deviceLinkId
+
+```
+This example shows how to use the Remove-MgBetaNetworkAccessConnectivityBranchDeviceLink Cmdlet.
+
 
 ## PARAMETERS
 

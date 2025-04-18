@@ -37,13 +37,17 @@ For details, see Using delta query.
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All, Application.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationDelta
+
+```
+This example shows how to use the Get-MgApplicationDelta Cmdlet.
+
 
 ## PARAMETERS
 

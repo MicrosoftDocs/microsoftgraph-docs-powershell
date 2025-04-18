@@ -56,11 +56,11 @@ You must specify the @odata.type property and the value of the authenticationEve
 The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow
 
 ## EXAMPLES
+### Example 1: Update the display name of an external identities self-service sign-up user flow
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -69,10 +69,14 @@ $params = @{
 
 Update-MgIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will update the display name of an external identities self-service sign-up user flow
+
+### Example 2: Update the page layout of a self-service sign up user flow
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
@@ -93,7 +97,7 @@ $params = @{
 							editable = $false
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^\[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_\`{|}~-\]+@\[a-zA-Z0-9-\]+(?:.\[a-zA-Z0-9-\]+)*$"
+							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
 							options = @(
 							)
 						}
@@ -106,7 +110,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 							options = @(
 							)
 						}
@@ -119,7 +123,7 @@ $params = @{
 							editable = $true
 							writeToDirectory = $true
 							required = $true
-							validationRegEx = "^\[a-zA-Z_\]\[0-9a-zA-Z_ \]*\[0-9a-zA-Z_\]+$"
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 							options = @(
 							)
 						}
@@ -152,6 +156,10 @@ $params = @{
 }
 
 Update-MgIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example will update the page layout of a self-service sign up user flow
+
 
 ## PARAMETERS
 

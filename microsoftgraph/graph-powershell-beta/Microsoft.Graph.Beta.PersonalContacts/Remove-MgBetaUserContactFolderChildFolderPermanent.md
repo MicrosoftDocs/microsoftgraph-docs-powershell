@@ -32,18 +32,6 @@ Remove-MgBetaUserContactFolderChildFolderPermanent -InputObject <IPersonalContac
 Permanently delete a contact folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -226,6 +214,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderchildfolderpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderchildfolderpermanent)
 
 [https://learn.microsoft.com/graph/api/contactfolder-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contactfolder-permanentdelete?view=graph-rest-beta)
+
 
 
 

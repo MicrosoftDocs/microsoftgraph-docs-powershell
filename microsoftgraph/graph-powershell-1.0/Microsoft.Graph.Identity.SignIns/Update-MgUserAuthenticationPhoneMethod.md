@@ -66,11 +66,11 @@ Self-service operations aren't supported.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	phoneNumber = "+1 2065555554"
@@ -78,6 +78,10 @@ $params = @{
 }
 
 Update-MgUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgUserAuthenticationPhoneMethod Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,11 +60,11 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject
 Update the properties of a customTaskExtension object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Grant manager access to mailbox and OneDrive"
@@ -91,6 +91,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId $customTaskExtensionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,11 +60,11 @@ Also called *1:N* chats or *group conversations*.- Teams channels - Chat message
 For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	purgeType = "recoverable"
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgSecurityCaseEdiscoveryCaseSearchData Cmdlet.
+
 
 ## PARAMETERS
 

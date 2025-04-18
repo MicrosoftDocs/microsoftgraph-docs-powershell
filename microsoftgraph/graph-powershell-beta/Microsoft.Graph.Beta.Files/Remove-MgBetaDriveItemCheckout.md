@@ -50,13 +50,17 @@ Another alternative is to use application permissions.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Remove-MgBetaDriveItemCheckout -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Remove-MgBetaDriveItemCheckout Cmdlet.
+
 
 ## PARAMETERS
 

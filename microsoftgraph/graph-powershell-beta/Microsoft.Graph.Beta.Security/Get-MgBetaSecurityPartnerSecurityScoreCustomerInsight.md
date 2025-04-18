@@ -39,13 +39,17 @@ Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight -InputObject <ISecurityIde
 Contains customer-specific information for certain requirements.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight
+
+```
+This example shows how to use the Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight Cmdlet.
+
 
 ## PARAMETERS
 

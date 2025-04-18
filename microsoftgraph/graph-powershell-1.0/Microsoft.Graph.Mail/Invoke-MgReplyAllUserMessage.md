@@ -62,16 +62,22 @@ This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply-all to a message and send it later.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Mail
+
+$params = @{
+	comment = "comment-value"
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgReplyAllUserMessage Cmdlet.
+
 
 ## PARAMETERS
 

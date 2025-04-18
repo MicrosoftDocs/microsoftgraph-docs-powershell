@@ -30,13 +30,17 @@ Suspend-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 Invoke action pause
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Suspend-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
+
+```
+This example shows how to use the Suspend-MgBetaEducationSynchronizationProfile Cmdlet.
+
 
 ## PARAMETERS
 

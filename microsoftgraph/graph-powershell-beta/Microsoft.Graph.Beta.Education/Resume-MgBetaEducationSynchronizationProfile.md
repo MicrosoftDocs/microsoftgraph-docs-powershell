@@ -30,13 +30,17 @@ Resume-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 Invoke action resume
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Resume-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
+
+```
+This example shows how to use the Resume-MgBetaEducationSynchronizationProfile Cmdlet.
+
 
 ## PARAMETERS
 

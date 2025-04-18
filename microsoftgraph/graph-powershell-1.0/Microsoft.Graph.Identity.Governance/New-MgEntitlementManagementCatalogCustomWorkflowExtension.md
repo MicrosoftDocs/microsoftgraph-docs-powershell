@@ -53,11 +53,11 @@ Create a new accessPackageAssignmentRequestWorkflowExtension or accessPackageAss
 You must explicitly provide an @odata.type property that indicates whether the object is an  accessPackageAssignmentRequestWorkflowExtension or an accessPackageAssignmentWorkflowExtension.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"
@@ -80,10 +80,14 @@ $params = @{
 
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the New-MgEntitlementManagementCatalogCustomWorkflowExtension Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	value = @{
@@ -103,6 +107,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEntitlementManagementCatalogCustomWorkflowExtension Cmdlet.
+
 
 ## PARAMETERS
 

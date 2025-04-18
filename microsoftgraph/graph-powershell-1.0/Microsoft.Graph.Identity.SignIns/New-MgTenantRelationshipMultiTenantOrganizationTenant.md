@@ -43,11 +43,11 @@ The added tenant is in the pending state until the administrator of the added te
 A tenant can be part of only one multitenant organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	tenantId = "4a12efe6-aa14-4d03-8dff-88fc89e2e2ad"
@@ -55,6 +55,10 @@ $params = @{
 }
 
 New-MgTenantRelationshipMultiTenantOrganizationTenant -BodyParameter $params
+
+```
+This example shows how to use the New-MgTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
 
 ## PARAMETERS
 

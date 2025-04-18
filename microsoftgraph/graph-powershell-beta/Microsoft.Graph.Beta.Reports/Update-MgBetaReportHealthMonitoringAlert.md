@@ -51,16 +51,21 @@ Update the properties of a Microsoft Entra health monitoring alert object.
 For example, change an alert's state from active to resolved.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+$params = @{
+	state = "resolved"
+}
+
+Update-MgBetaReportHealthMonitoringAlert -AlertId $alertId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaReportHealthMonitoringAlert Cmdlet.
+
 
 ## PARAMETERS
 

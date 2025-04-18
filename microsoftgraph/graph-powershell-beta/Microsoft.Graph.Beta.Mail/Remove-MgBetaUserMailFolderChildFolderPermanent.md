@@ -32,18 +32,6 @@ Remove-MgBetaUserMailFolderChildFolderPermanent -InputObject <IMailIdentity>
 Permanently delete a mail folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -232,6 +220,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolderpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolderpermanent)
 
 [https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta)
+
 
 
 

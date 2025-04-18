@@ -50,16 +50,25 @@ Invoke-MgSnoozeUserEventReminder -InputObject <ICalendarIdentity>
 Postpone a reminder for an event in a user calendar until a new time.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	newReminderTime = @{
+		dateTime = "dateTime-value"
+		timeZone = "timeZone-value"
+	}
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgSnoozeUserEventReminder Cmdlet.
+
 
 ## PARAMETERS
 

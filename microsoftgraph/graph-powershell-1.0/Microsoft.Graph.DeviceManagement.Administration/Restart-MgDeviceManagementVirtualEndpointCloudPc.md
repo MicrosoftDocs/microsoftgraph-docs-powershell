@@ -31,16 +31,17 @@ Restart-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 Reboot a specific cloudPC object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Restart-MgDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Restart-MgDeviceManagementVirtualEndpointCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

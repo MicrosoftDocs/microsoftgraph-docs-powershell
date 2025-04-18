@@ -33,18 +33,6 @@ Add-MgBetaSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbody
 ## DESCRIPTION
 Follow a user's site or multiple sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -16725,6 +16713,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite)
 
 [https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-beta)
+
 
 
 

@@ -43,13 +43,17 @@ Get-MgBetaSecurityAttackSimulation -InputObject <ISecurityIdentity> [-ExpandProp
 Get an attack simulation campaign for a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityAttackSimulation
+
+```
+This example shows how to use the Get-MgBetaSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 

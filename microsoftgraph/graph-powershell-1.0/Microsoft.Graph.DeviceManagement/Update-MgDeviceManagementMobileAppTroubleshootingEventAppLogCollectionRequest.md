@@ -62,11 +62,11 @@ Update the properties of a appLogCollectionRequest object.
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.appLogCollectionRequest"
@@ -75,10 +75,14 @@ $params = @{
 	customLogFolders = @(
 	"Custom Log Folders value"
 )
-completedDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:52.3534526-08:00")
+completedDateTime = [System.DateTime]::Parse("2016-12-31T23:58:52.3534526-08:00")
 }
 
 Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -AppLogCollectionRequestId $appLogCollectionRequestId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest Cmdlet.
+
 
 ## PARAMETERS
 

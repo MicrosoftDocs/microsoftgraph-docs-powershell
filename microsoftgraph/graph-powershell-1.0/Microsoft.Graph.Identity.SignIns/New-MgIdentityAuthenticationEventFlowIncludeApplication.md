@@ -54,11 +54,11 @@ An application can only be linked to one user flow.
 The app must have an associated service principal in the tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.authenticationConditionApplication"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 New-MgIdentityAuthenticationEventFlowIncludeApplication -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityAuthenticationEventFlowIncludeApplication Cmdlet.
+
 
 ## PARAMETERS
 

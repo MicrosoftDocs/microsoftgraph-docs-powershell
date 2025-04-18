@@ -31,16 +31,17 @@ Restart-MgDeviceManagementManagedDeviceNow -InputObject <IDeviceManagementIdenti
 Reboot device
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+Restart-MgDeviceManagementManagedDeviceNow -ManagedDeviceId $managedDeviceId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Restart-MgDeviceManagementManagedDeviceNow Cmdlet.
+
 
 ## PARAMETERS
 

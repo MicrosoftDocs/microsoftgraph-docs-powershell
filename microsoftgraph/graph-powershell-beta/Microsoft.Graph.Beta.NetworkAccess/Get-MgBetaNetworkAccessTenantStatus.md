@@ -23,13 +23,17 @@ Get-MgBetaNetworkAccessTenantStatus [-ExpandProperty <String[]>] [-Property <Str
 Retrieve the onboarding status of a specific tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Get-MgBetaNetworkAccessTenantStatus
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessTenantStatus Cmdlet.
+
 
 ## PARAMETERS
 

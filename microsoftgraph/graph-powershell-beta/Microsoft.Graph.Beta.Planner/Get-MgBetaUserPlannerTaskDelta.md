@@ -43,16 +43,18 @@ For details, see Use delta query to track changes in Microsoft Graph data.
 | Application | Tasks.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Get delta on tasks assigned to a user
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Planner
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserPlannerTaskDelta -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example will get delta on tasks assigned to a user
+
 
 ## PARAMETERS
 

@@ -60,16 +60,23 @@ A user can self-activate their token or an admin can activate for a user.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	verificationCode = "588651"
+	displayName = "Amy Masters Token"
+}
+
+# A UPN can also be used as -UserId.
+Initialize-MgBetaUserAuthenticationHardwareOathMethod -UserId $userId -HardwareOathAuthenticationMethodId $hardwareOathAuthenticationMethodId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Initialize-MgBetaUserAuthenticationHardwareOathMethod Cmdlet.
+
 
 ## PARAMETERS
 

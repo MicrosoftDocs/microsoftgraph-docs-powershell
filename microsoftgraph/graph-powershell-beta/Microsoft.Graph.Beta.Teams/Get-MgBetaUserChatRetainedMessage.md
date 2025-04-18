@@ -46,16 +46,17 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 | Application | Chat.Read.All, Chat.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaUserChatRetainedMessage -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserChatRetainedMessage Cmdlet.
+
 
 ## PARAMETERS
 

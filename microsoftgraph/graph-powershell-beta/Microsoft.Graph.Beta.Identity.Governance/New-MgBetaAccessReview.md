@@ -47,16 +47,16 @@ After making this request, the caller should create a programControl, to link th
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "TestReview"
-	startDateTime = \[System.DateTime\]::Parse("2017-02-10T00:35:53.214Z")
-	endDateTime = \[System.DateTime\]::Parse("2017-03-12T00:35:53.214Z")
+	startDateTime = [System.DateTime]::Parse("2017-02-10T00:35:53.214Z")
+	endDateTime = [System.DateTime]::Parse("2017-03-12T00:35:53.214Z")
 	reviewedEntity = @{
 		id = "99025615-a0b1-47ec-9117-35377b10998b"
 	}
@@ -92,6 +92,10 @@ $params = @{
 }
 
 New-MgBetaAccessReview -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaAccessReview Cmdlet.
+
 
 ## PARAMETERS
 

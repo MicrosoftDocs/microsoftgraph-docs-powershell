@@ -50,18 +50,6 @@ Retrieve a user's single email Authentication Method object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -397,6 +385,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/emailauthenticationmethod-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/emailauthenticationmethod-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/authentication-list-emailmethods?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-list-emailmethods?view=graph-rest-beta)
+
+
 
 
 

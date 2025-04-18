@@ -36,27 +36,39 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 | Application | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupDelta
 
-### EXAMPLE 2
 ```
+This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
-Get-MgBetaGroupDelta -Property "displayName,description,mailNickname"
+Get-MgBetaGroupDelta -Property "displayName,description,mailNickname" 
 
-### EXAMPLE 3
 ```
+This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
-Get-MgBetaGroupDelta -Property "displayName,description,mailNickname"
+Get-MgBetaGroupDelta -Property "displayName,description,mailNickname" 
+
+```
+This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
+
 
 ## PARAMETERS
 

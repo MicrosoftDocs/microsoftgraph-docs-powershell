@@ -50,21 +50,25 @@ Update-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorpora
 Update the properties of a iosVppEBookAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.managedEBookAssignment"
+	"@odata.type" = "#microsoft.graph.iosVppEBookAssignment"
 	target = @{
-		"@odata.type" = "microsoft.graph.allLicensedUsersAssignmentTarget"
+		"@odata.type" = "microsoft.graph.deviceAndAppManagementAssignmentTarget"
 	}
 	installIntent = "required"
 }
 
 Update-MgDeviceAppManagementManagedEBookAssignment -ManagedEBookId $managedEBookId -ManagedEBookAssignmentId $managedEBookAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementManagedEBookAssignment Cmdlet.
+
 
 ## PARAMETERS
 

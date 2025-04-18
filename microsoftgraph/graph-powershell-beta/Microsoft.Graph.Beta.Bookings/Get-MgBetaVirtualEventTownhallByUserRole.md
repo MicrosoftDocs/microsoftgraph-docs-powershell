@@ -36,16 +36,17 @@ Get-MgBetaVirtualEventTownhallByUserRole -InputObject <IBookingsIdentity> [-Coun
 Get a list of virtualEventTownhall objects where the signed-in user is either the organizer or a coorganizer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventTownhallByUserRole -Role $roleId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaVirtualEventTownhallByUserRole Cmdlet.
+
 
 ## PARAMETERS
 

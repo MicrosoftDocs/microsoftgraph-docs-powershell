@@ -47,16 +47,21 @@ Update the properties of a user's authentication method states.
 Use this API to update the following information:
 
 ## EXAMPLES
+### Example 1: Update a user's MFA state
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	perUserMfaState = "disabled"
+}
+
+Update-MgBetaUserAuthenticationRequirement -UserId $userId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example will update a user's mfa state
+
 
 ## PARAMETERS
 

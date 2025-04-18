@@ -33,13 +33,17 @@ Delete a customAppScope object of an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 Remove-MgBetaRoleManagementExchangeCustomAppScope -CustomAppScopeId $customAppScopeId
+
+```
+This example shows how to use the Remove-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
+
 
 ## PARAMETERS
 

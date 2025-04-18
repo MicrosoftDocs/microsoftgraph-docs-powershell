@@ -53,11 +53,11 @@ Update-MgBetaNetworkAccessForwardingProfile -InputObject <INetworkAccessIdentity
 Update an existing forwarding profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 $params = @{
 	associations = @(
@@ -69,6 +69,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessForwardingProfile -ForwardingProfileId $forwardingProfileId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessForwardingProfile Cmdlet.
+
 
 ## PARAMETERS
 

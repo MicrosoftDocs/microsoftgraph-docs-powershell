@@ -42,13 +42,17 @@ Deletes a user's email Authentication Method object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaUserAuthenticationEmailMethod -UserId $userId -EmailAuthenticationMethodId $emailAuthenticationMethodId
+
+```
+This example shows how to use the Remove-MgBetaUserAuthenticationEmailMethod Cmdlet.
+
 
 ## PARAMETERS
 

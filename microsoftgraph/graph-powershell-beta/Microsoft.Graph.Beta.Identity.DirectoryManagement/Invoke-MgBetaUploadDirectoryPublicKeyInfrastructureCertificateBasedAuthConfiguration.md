@@ -57,16 +57,22 @@ To know whether another upload is in progress, call the Get certificateBasedAuth
 The status property will have the value running.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	uploadUrl = "https://microsoft.sharepoint.com/CBA/demo/CBARootPKI.p7b"
+	sha256FileHash = "D7F9....61E6F"
+}
+
+Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration -CertificateBasedAuthPkiId $certificateBasedAuthPkiId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
