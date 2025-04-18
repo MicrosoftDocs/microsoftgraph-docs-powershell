@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentity
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 A container for security identities APIs.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentity](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentity?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Get-MgSecurityIdentity [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 
 ## DESCRIPTION
 A container for security identities APIs.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,27 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

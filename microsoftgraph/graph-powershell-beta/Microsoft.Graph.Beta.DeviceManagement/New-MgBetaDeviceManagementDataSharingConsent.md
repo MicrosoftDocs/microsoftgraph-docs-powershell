@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdatasharingconsent
@@ -30,13 +30,17 @@ New-MgBetaDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphData
 ## DESCRIPTION
 Create new navigation property to dataSharingConsents for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -269,41 +273,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDataSharingConsent>`: Data sharing consent information.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDataSharingConsent\>: Data sharing consent information.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[GrantDateTime <DateTime?>]`: The time consent was granted for this account
-  - `[Granted <Boolean?>]`: The granted state for the data sharing consent
-  - `[GrantedByUpn <String>]`: The Upn of the user that granted consent for this account
-  - `[GrantedByUserId <String>]`: The UserId of the user that granted consent for this account
-  - `[ServiceDisplayName <String>]`: The display name of the service work flow
-  - `[TermsUrl <String>]`: The TermsUrl for the data sharing consent
+  \[GrantDateTime \<DateTime?\>\]: The time consent was granted for this account
+  \[Granted \<Boolean?\>\]: The granted state for the data sharing consent
+  \[GrantedByUpn \<String\>\]: The Upn of the user that granted consent for this account
+  \[GrantedByUserId \<String\>\]: The UserId of the user that granted consent for this account
+  \[ServiceDisplayName \<String\>\]: The display name of the service work flow
+  \[TermsUrl \<String\>\]: The TermsUrl for the data sharing consent
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdatasharingconsent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdatasharingconsent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Update-MgBetaAdminReportSetting
 
 ## SYNOPSIS
 Update tenant-level settings for Microsoft 365 reports.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Update-MgAdminReportSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,21 +30,17 @@ Update-MgBetaAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettin
 Update tenant-level settings for Microsoft 365 reports.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
+```
 
 $params = @{
 	displayConcealedNames = $true
 }
 
 Update-MgBetaAdminReportSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaAdminReportSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -209,11 +201,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdminReportSettings>`: adminReportSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAdminReportSettings\>: adminReportSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayConcealedNames <Boolean?>]`: If set to true, all reports conceal user information such as usernames, groups, and sites.
+  \[DisplayConcealedNames \<Boolean?\>\]: If set to true, all reports conceal user information such as usernames, groups, and sites.
 If false, all reports show identifiable information.
 This property represents a setting in the Microsoft 365 admin center.
 Required.
@@ -223,26 +215,4 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting)
 
 [https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

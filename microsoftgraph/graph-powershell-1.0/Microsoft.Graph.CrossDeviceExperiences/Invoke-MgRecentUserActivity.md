@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/invoke-mgrecentuseractivity
 schema: 2.0.0
-ms.subservice: project-rome
 ---
 
 # Invoke-MgRecentUserActivity
@@ -17,9 +16,6 @@ This means that activities without activityHistoryItems won't be included in the
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +46,16 @@ This server-side filtering might result in empty pages if the user is active and
 To get your application's activities, use the nextLink property to paginate.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.CrossDeviceExperiences
-
-# A UPN can also be used as -UserId.
-Invoke-MgRecentUserActivity -UserId $userId
-
+### EXAMPLE 1
 ```
-This example shows how to use the Invoke-MgRecentUserActivity Cmdlet.
+{{ Add code here }}
+```
 
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -277,36 +271,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
-  - `[UserActivityId <String>]`: The unique identifier of userActivity
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
+  \[ActivityHistoryItemId \<String\>\]: The unique identifier of activityHistoryItem
+  \[UserActivityId \<String\>\]: The unique identifier of userActivity
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/invoke-mgrecentuseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/invoke-mgrecentuseractivity)
 
 [https://learn.microsoft.com/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

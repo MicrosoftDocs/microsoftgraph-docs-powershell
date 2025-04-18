@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense
 schema: 2.0.0
-ms.subservice: entra-groups
 ---
 
 # Set-MgBetaGroupLicense
@@ -14,9 +13,6 @@ Licenses assigned to the group will be assigned to all users in the group.
 Group-based licensing is an alternative to direct user licensing.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgGroupLicense](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupLicense?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,20 +55,12 @@ Group-based licensing is an alternative to direct user licensing.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LicenseAssignment.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Add licenses to the group
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	addLicenses = @(
@@ -96,14 +84,10 @@ removeLicenses = @(
 
 Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will add licenses to the group
-
-### Example 2: Remove licenses from the group
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	addLicenses = @(
@@ -115,10 +99,6 @@ $params = @{
 }
 
 Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
-
-```
-This example will remove licenses from the group
-
 
 ## PARAMETERS
 
@@ -138,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -AddLicenses
-
+.
 To construct, see NOTES section for ADDLICENSES properties and create a hash table.
 
 ```yaml
@@ -154,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -231,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveLicenses
-
+.
 
 ```yaml
 Type: String[]
@@ -308,70 +288,48 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDLICENSES `<IMicrosoftGraphAssignedLicense- `[]`>`: .
-  - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
-IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
-  - `[SkuId <String>]`: The unique identifier for the SKU.
+ADDLICENSES \<IMicrosoftGraphAssignedLicense\[\]\>: .
+  \[DisabledPlans \<String\[\]\>\]: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans \> servicePlanId in the tenant's subscribedSkus or serviceStatus \> servicePlanId in the tenant's companySubscription.
+  \[SkuId \<String\>\]: The unique identifier for the SKU.
 Corresponds to the skuId from subscribedSkus or companySubscription.
 
-BODYPARAMETER `<IPaths6Fg5LiGroupsGroupIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AddLicenses <IMicrosoftGraphAssignedLicense- `[]`>]`: 
-    - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
-IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
-    - `[SkuId <String>]`: The unique identifier for the SKU.
+BODYPARAMETER \<IPaths6Fg5LiGroupsGroupIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AddLicenses \<IMicrosoftGraphAssignedLicense\[\]\>\]: 
+    \[DisabledPlans \<String\[\]\>\]: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans \> servicePlanId in the tenant's subscribedSkus or serviceStatus \> servicePlanId in the tenant's companySubscription.
+    \[SkuId \<String\>\]: The unique identifier for the SKU.
 Corresponds to the skuId from subscribedSkus or companySubscription.
-  - `[RemoveLicenses <String- `[]`>]`: 
+  \[RemoveLicenses \<String\[\]\>\]: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: Usage: listId='{listId}'
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[ModelName <String>]`: Usage: modelName='{modelName}'
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[UniqueName <String>]`: Alternate key of group
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: Usage: listId='{listId}'
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[ModelName \<String\>\]: Usage: modelName='{modelName}'
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[UniqueName \<String\>\]: Alternate key of group
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense)
 
 [https://learn.microsoft.com/graph/api/group-assignlicense?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-assignlicense?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

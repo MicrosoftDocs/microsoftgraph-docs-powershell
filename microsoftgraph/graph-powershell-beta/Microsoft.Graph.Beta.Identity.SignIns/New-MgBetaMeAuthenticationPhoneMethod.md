@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationphonemethod
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to phoneMethods for me
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgMeAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgMeAuthenticationPhoneMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,13 +30,17 @@ New-MgBetaMeAuthenticationPhoneMethod -BodyParameter <IMicrosoftGraphPhoneAuthen
 ## DESCRIPTION
 Create new navigation property to phoneMethods for me
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -127,7 +128,7 @@ Accept wildcard characters: False
 
 ### -PhoneNumber
 The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+\<country code\> \<number\>x\<extension\>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
 
@@ -250,47 +251,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationMethod
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the authentication method was registered to the user.
+BODYPARAMETER \<IMicrosoftGraphPhoneAuthenticationMethod\>: phoneAuthenticationMethod
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
 This optional value is null if the authentication method doesn't populate it.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[PhoneNumber <String>]`: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+  \[PhoneNumber \<String\>\]: The phone number to text or call for authentication.
+Phone numbers use the format '+\<country code\> \<number\>x\<extension\>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
-  - `[PhoneType <String>]`: authenticationPhoneType
-  - `[SmsSignInState <String>]`: authenticationMethodSignInState
+  \[PhoneType \<String\>\]: authenticationPhoneType
+  \[SmsSignInState \<String\>\]: authenticationMethodSignInState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetameauthenticationphonemethod)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

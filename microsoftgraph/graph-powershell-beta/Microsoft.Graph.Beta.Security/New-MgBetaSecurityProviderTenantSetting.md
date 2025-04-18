@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting
@@ -30,6 +30,18 @@ New-MgBetaSecurityProviderTenantSetting -BodyParameter <IMicrosoftGraphProviderT
 ## DESCRIPTION
 Create new navigation property to providerTenantSettings for security
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -48,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-
+.
 
 ```yaml
 Type: String
@@ -79,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Enabled
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -125,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -155,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Provider
-
+.
 
 ```yaml
 Type: String
@@ -185,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vendor
-
+.
 
 ```yaml
 Type: String
@@ -246,40 +258,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphProviderTenantSetting>`: providerTenantSetting
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphProviderTenantSetting\>: providerTenantSetting
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AzureTenantId <String>]`: 
-  - `[Enabled <Boolean?>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Provider <String>]`: 
-  - `[Vendor <String>]`:
+  \[AzureTenantId \<String\>\]: 
+  \[Enabled \<Boolean?\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[Provider \<String\>\]: 
+  \[Vendor \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

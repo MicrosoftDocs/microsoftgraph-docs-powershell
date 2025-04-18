@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function exportDeviceAndAppManagementData
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Export-MgUserDeviceAndAppManagementData](/powershell/module/Microsoft.Graph.Users.Functions/Export-MgUserDeviceAndAppManagementData?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,13 +43,17 @@ Export-MgBetaUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentit
 ## DESCRIPTION
 Invoke function exportDeviceAndAppManagementData
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -208,38 +209,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
-  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
-  - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
+  \[EndDateTime \<String\>\]: Usage: EndDateTime='{EndDateTime}'
+  \[RoomList \<String\>\]: Usage: RoomList='{RoomList}'
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[StartDateTime \<String\>\]: Usage: StartDateTime='{StartDateTime}'
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantticketingendpoint
@@ -31,6 +31,18 @@ New-MgBetaTenantRelationshipManagedTenantTicketingEndpoint
 
 ## DESCRIPTION
 Create new navigation property to managedTenantTicketingEndpoints for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -66,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedByUserId
-
+.
 
 ```yaml
 Type: String
@@ -81,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -96,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-
+.
 
 ```yaml
 Type: String
@@ -111,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-
+.
 
 ```yaml
 Type: String
@@ -157,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActionByUserId
-
+.
 
 ```yaml
 Type: String
@@ -172,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActionDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -187,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneNumber
-
+.
 
 ```yaml
 Type: String
@@ -278,42 +290,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantTicketingEndpoint>`: managedTenantTicketingEndpoint
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagedTenantTicketingEndpoint\>: managedTenantTicketingEndpoint
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedByUserId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
-  - `[EmailAddress <String>]`: 
-  - `[LastActionByUserId <String>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
-  - `[PhoneNumber <String>]`:
+  \[CreatedByUserId \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[EmailAddress \<String\>\]: 
+  \[LastActionByUserId \<String\>\]: 
+  \[LastActionDateTime \<DateTime?\>\]: 
+  \[PhoneNumber \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantticketingendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantticketingendpoint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
