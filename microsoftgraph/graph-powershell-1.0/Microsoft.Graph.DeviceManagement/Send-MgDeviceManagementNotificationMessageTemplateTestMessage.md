@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Sends test message using the specified notificationMessageTemplate in the default locale
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Send (Default)

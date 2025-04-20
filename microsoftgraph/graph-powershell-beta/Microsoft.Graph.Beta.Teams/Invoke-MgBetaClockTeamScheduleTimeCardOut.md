@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Clock out to end an open timeCard.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgClockTeamScheduleTimeCardOut](/powershell/module/Microsoft.Graph.Teams/Invoke-MgClockTeamScheduleTimeCardOut?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ClockExpanded (Default)

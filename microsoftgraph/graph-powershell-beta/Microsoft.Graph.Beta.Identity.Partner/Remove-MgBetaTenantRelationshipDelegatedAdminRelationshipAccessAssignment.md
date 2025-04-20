@@ -11,6 +11,9 @@ ms.subservice: partner-customer-administration
 ## SYNOPSIS
 Delete a delegatedAdminAccessAssignment object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

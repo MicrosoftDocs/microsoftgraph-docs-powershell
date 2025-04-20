@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of content types present in this list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

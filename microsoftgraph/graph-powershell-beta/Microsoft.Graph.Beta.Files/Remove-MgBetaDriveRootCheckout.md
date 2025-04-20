@@ -15,6 +15,9 @@ Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootCheckout](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootCheckout?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Discard (Default)

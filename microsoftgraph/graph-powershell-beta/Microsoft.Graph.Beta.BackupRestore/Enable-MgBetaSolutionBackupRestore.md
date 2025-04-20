@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Enable the Microsoft 365 Backup Storage service for a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Enable-MgSolutionBackupRestore](/powershell/module/Microsoft.Graph.BackupRestore/Enable-MgSolutionBackupRestore?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### EnableExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Get the apiConnectorConfiguration property in a b2xIdentityUserFlow to detail the API connectors enabled for the user flow.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

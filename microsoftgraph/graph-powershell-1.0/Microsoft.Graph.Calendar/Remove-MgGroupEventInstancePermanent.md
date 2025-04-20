@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action permanentDelete
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupEventInstancePermanent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEventInstancePermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

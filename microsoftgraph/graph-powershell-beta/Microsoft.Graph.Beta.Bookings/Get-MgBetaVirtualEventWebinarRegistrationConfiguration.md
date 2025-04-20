@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Read the properties and relationships of a virtualEventWebinarRegistrationConfiguration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarRegistrationConfiguration](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarRegistrationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

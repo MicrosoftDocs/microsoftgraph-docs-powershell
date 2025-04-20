@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 End the open break in a specific timeCard.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Teams/Stop-MgTeamScheduleTimeCardBreak?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### EndExpanded (Default)

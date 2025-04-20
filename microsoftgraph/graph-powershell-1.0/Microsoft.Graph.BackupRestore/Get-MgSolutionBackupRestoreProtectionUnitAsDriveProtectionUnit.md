@@ -12,6 +12,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Get a list of the driveProtectionUnit objects that are associated with a oneDriveForBusinessProtectionPolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreProtectionUnitAsDriveProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreProtectionUnitAsDriveProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
