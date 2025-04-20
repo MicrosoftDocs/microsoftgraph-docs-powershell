@@ -53,18 +53,6 @@ Read-only.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.Read.All, User.ReadBasic.All, User.Read.All, ProfilePhoto.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -237,6 +225,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphotocontent)
+
 
 
 

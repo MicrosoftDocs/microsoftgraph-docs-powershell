@@ -38,18 +38,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Returns a list of ediscoveryCaseMember objects associated to this case.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -407,6 +395,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasemember)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverycasemember-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-list?view=graph-rest-beta)
+
+
 
 
 

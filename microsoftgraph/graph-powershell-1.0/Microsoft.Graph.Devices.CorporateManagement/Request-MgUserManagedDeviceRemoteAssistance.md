@@ -33,18 +33,6 @@ Request-MgUserManagedDeviceRemoteAssistance -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 Request remote assistance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -242,6 +230,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/request-mgusermanageddeviceremoteassistance](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/request-mgusermanageddeviceremoteassistance)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0)
+
 
 
 

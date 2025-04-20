@@ -49,11 +49,11 @@ For help creating the required Certificate Signing Request (CSR) for creating pr
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "Test Printer"
@@ -69,6 +69,10 @@ $params = @{
 }
 
 New-MgPrintPrinter -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrintPrinter Cmdlet.
+
 
 ## PARAMETERS
 

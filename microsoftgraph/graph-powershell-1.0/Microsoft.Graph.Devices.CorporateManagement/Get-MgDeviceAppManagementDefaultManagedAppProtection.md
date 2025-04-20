@@ -49,13 +49,17 @@ Read properties and relationships of the defaultManagedAppProtection object.
 | Application | DeviceManagementApps.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementDefaultManagedAppProtection
+
+```
+This example shows how to use the Get-MgDeviceAppManagementDefaultManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 

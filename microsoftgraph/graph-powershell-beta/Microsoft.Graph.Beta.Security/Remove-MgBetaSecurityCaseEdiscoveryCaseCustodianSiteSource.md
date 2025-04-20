@@ -35,16 +35,17 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecuri
 Delete a siteSource object associated with an ediscoveryCustodian.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -SiteSourceId $siteSourceId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource Cmdlet.
+
 
 ## PARAMETERS
 

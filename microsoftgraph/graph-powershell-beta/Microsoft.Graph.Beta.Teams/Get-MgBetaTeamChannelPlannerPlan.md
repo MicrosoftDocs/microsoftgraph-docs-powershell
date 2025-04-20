@@ -44,18 +44,6 @@ Currently, only shared channels are supported.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -383,6 +371,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelplannerplan)
 
 [https://learn.microsoft.com/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta)
+
+
 
 
 

@@ -97,11 +97,11 @@ Update-MgApplicationByUniqueName -InputObject <IApplicationsIdentity>
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
 ## EXAMPLES
+### Example 1: Create a new application if it doesn't exist
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	displayName = "Display name"
@@ -109,16 +109,24 @@ $params = @{
 
 Update-MgApplicationByUniqueName -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a new application if it doesn't exist
+
+### Example 2: Update an existing application
+
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	displayName = "Display name"
 }
 
 Update-MgApplicationByUniqueName -BodyParameter $params
+
+```
+This example will update an existing application
+
 
 ## PARAMETERS
 

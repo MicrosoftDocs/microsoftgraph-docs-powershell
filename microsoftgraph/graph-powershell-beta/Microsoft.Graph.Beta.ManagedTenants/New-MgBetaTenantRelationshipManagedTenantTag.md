@@ -34,11 +34,11 @@ New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter <IMicrosoftGraphMana
 Create a new tenantTag object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 $params = @{
 	displayName = "Support"
@@ -46,6 +46,10 @@ $params = @{
 }
 
 New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
+
 
 ## PARAMETERS
 

@@ -34,18 +34,6 @@ Get-MgBetaReportOffice365GroupActivityCount -InputObject <IReportsIdentity> [-Co
 ## DESCRIPTION
 Invoke function getOffice365GroupsActivityCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -313,6 +301,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365groupactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365groupactivitycount)
+
 
 
 

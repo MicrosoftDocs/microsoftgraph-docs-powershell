@@ -34,13 +34,17 @@ Get-MgReportOffice365GroupActivityStorage -InputObject <IReportsIdentity> -OutFi
 Get the total storage used across all group mailboxes and group sites.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportOffice365GroupActivityStorage -Period $periodId
+Get-MgReportOffice365GroupActivityStorage -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOffice365GroupActivityStorage Cmdlet.
+
 
 ## PARAMETERS
 

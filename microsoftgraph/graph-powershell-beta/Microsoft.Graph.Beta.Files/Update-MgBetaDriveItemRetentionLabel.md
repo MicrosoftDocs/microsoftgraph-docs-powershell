@@ -60,19 +60,21 @@ For information about conflict resolution for retention labels, see Will an exis
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
-	retentionSettings = @{
-		isRecordLocked = $true
-	}
+	name = "Retention label for Contracts"
 }
 
 Update-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDriveItemRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 

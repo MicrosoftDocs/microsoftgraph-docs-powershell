@@ -63,18 +63,6 @@ Create a timeCard instance in a schedule.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -561,6 +549,7 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimecard)
 
 [https://learn.microsoft.com/graph/api/schedule-post-timecards?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-timecards?view=graph-rest-1.0)
+
 
 
 

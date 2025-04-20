@@ -50,11 +50,11 @@ New-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 Create a new authoredNote object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Compliance
-```
 
 $params = @{
 	content = @{
@@ -64,6 +64,10 @@ $params = @{
 }
 
 New-MgPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrivacySubjectRightsRequestNote Cmdlet.
+
 
 ## PARAMETERS
 

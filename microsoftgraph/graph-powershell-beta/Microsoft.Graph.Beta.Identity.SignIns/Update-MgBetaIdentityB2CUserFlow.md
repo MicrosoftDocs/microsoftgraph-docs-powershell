@@ -65,11 +65,11 @@ Update the properties of a b2cIdentityUserFlow object.
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	isLanguageCustomizationEnabled = $true
@@ -77,6 +77,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityB2CUserFlow -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityB2CUserFlow Cmdlet.
+
 
 ## PARAMETERS
 

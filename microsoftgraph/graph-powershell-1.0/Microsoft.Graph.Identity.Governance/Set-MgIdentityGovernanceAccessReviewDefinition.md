@@ -72,11 +72,11 @@ Update an existing accessReviewScheduleDefinition object to change one or more o
 | Application | AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	id = "60860cdd-fb4d-4054-91ba-f75e04444aa6"
@@ -118,6 +118,10 @@ $params = @{
 }
 
 Set-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+
 
 ## PARAMETERS
 
