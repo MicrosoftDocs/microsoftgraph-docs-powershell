@@ -33,18 +33,6 @@ Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp -InputObject <IBackupRest
 ## DESCRIPTION
 Deactivate a serviceApp.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -204,6 +192,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetadeactivatesolutionbackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetadeactivatesolutionbackuprestoreserviceapp)
 
 [https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-beta)
+
 
 
 

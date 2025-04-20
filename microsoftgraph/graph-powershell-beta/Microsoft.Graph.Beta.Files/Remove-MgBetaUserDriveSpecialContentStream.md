@@ -29,18 +29,6 @@ Remove-MgBetaUserDriveSpecialContentStream -InputObject <IFilesIdentity> [-IfMat
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -256,6 +244,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdrivespecialcontentstream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdrivespecialcontentstream)
+
 
 
 

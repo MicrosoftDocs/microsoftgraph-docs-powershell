@@ -8,68 +8,68 @@ Locale: en-US
 
 # Microsoft.Graph.Devices.ServiceAnnouncement Module
 ## Description
-{{ Fill in the Description }}
+
 
 ## Microsoft.Graph.Devices.ServiceAnnouncement Cmdlets
 ### [Get-MgServiceAnnouncementHealthOverview](Get-MgServiceAnnouncementHealthOverview.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementHealthOverviewCount](Get-MgServiceAnnouncementHealthOverviewCount.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementHealthOverviewIssue](Get-MgServiceAnnouncementHealthOverviewIssue.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementHealthOverviewIssueCount](Get-MgServiceAnnouncementHealthOverviewIssueCount.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementIssue](Get-MgServiceAnnouncementIssue.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementIssueCount](Get-MgServiceAnnouncementIssueCount.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementMessage](Get-MgServiceAnnouncementMessage.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementMessageAttachment](Get-MgServiceAnnouncementMessageAttachment.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementMessageAttachmentArchive](Get-MgServiceAnnouncementMessageAttachmentArchive.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementMessageAttachmentContent](Get-MgServiceAnnouncementMessageAttachmentContent.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementMessageAttachmentCount](Get-MgServiceAnnouncementMessageAttachmentCount.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgServiceAnnouncementMessageCount](Get-MgServiceAnnouncementMessageCount.md)
-{{ Fill in the Description }}
+
 
 ### [Invoke-MgArchiveServiceAnnouncementMessage](Invoke-MgArchiveServiceAnnouncementMessage.md)
-{{ Fill in the Description }}
+
 
 ### [Invoke-MgFavoriteServiceAnnouncementMessage](Invoke-MgFavoriteServiceAnnouncementMessage.md)
-{{ Fill in the Description }}
+
 
 ### [Invoke-MgMarkServiceAnnouncementMessageRead](Invoke-MgMarkServiceAnnouncementMessageRead.md)
-{{ Fill in the Description }}
+
 
 ### [Invoke-MgMarkServiceAnnouncementMessageUnread](Invoke-MgMarkServiceAnnouncementMessageUnread.md)
-{{ Fill in the Description }}
+
 
 ### [Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident](Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident.md)
-{{ Fill in the Description }}
+
 
 ### [Invoke-MgReportServiceAnnouncementIssueIncident](Invoke-MgReportServiceAnnouncementIssueIncident.md)
-{{ Fill in the Description }}
+
 
 ### [Invoke-MgUnarchiveServiceAnnouncementMessage](Invoke-MgUnarchiveServiceAnnouncementMessage.md)
-{{ Fill in the Description }}
+
 
 ### [Invoke-MgUnfavoriteServiceAnnouncementMessage](Invoke-MgUnfavoriteServiceAnnouncementMessage.md)
-{{ Fill in the Description }}
+
 
 
 

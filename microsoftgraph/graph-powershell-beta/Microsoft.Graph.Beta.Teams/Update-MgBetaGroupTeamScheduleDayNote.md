@@ -50,18 +50,6 @@ Update-MgBetaGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParamet
 ## DESCRIPTION
 Update the navigation property dayNotes in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -433,6 +421,7 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduledaynote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduledaynote)
+
 
 
 

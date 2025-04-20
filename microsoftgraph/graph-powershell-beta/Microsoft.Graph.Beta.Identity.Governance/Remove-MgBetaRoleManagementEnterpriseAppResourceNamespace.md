@@ -30,18 +30,6 @@ Remove-MgBetaRoleManagementEnterpriseAppResourceNamespace -InputObject <IIdentit
 ## DESCRIPTION
 Delete navigation property resourceNamespaces for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -317,6 +305,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententerpriseappresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententerpriseappresourcenamespace)
+
 
 
 

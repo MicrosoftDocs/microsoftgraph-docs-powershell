@@ -41,18 +41,6 @@ New-MgBetaGroupMember -InputObject <IGroupsIdentity> -BodyParameter <Hashtable>
 ## DESCRIPTION
 Add a member to an Office 365 group or security group through the members navigation property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BodyParameter
@@ -242,6 +230,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmember)
+
 
 
 

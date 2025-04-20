@@ -33,18 +33,6 @@ Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName -InputObject <I
 ## DESCRIPTION
 Get approvers from privacy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -207,6 +195,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapproverbyuserprincipalname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapproverbyuserprincipalname)
+
 
 
 

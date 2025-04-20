@@ -39,18 +39,6 @@ Invoke function usageProfiling
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess-Reports.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AggregatedBy
@@ -304,6 +292,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetausagenetworkaccessreportprofiling](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetausagenetworkaccessreportprofiling)
+
 
 
 

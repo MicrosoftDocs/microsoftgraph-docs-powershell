@@ -29,18 +29,6 @@ Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDetail -InputObject <ITeamsId
 ## DESCRIPTION
 Delete navigation property details for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -276,6 +264,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamprimarychannelplannerplantaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamprimarychannelplannerplantaskdetail)
+
 
 
 

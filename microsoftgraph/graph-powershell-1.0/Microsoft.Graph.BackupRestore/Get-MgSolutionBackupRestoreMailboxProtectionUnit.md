@@ -40,18 +40,6 @@ Get-MgSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRestoreIde
 ## DESCRIPTION
 The list of mailbox protection units in the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -323,6 +311,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoremailboxprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoremailboxprotectionunit)
+
 
 
 
