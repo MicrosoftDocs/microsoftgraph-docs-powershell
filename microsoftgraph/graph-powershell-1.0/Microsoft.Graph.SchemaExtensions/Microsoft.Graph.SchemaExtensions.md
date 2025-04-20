@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.SchemaExtensions
 Module Guid: fd6bc590-0f4b-4644-baf0-a816bf40616e
 Download Help Link: {{ Update Download Link }}
@@ -25,4 +25,23 @@ Locale: en-US
 
 ### [Update-MgSchemaExtension](Update-MgSchemaExtension.md)
 {{ Fill in the Description }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

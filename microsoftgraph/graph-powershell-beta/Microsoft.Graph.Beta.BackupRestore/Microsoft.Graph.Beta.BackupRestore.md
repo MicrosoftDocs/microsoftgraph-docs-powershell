@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.BackupRestore
 Module Guid: 69b0b44f-d549-438a-a070-1e473c1823db
 Download Help Link: {{ Update Download Link }}
@@ -523,4 +523,23 @@ Locale: en-US
 
 ### [Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob.md)
 {{ Fill in the Description }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

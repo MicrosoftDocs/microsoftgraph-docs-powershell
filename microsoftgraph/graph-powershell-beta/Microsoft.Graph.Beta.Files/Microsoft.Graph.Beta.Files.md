@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Files
 Module Guid: d6278476-f9b5-4d1e-909c-110aff851952
 Download Help Link: {{ Update Download Link }}
@@ -4540,4 +4540,23 @@ Locale: en-US
 
 ### [Update-MgBetaUserDriveRootVersion](Update-MgBetaUserDriveRootVersion.md)
 {{ Fill in the Description }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
