@@ -46,6 +46,14 @@ Remove-MgBetaUserCalendarPermanent -InputObject <ICalendarIdentity> [-ResponseHe
 Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calendars.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

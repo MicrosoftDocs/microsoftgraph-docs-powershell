@@ -48,6 +48,14 @@ Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -InputObject <IIdent
 ## DESCRIPTION
 Dismiss an impactedResources object and update its status to dismissed.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DirectoryRecommendations.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DirectoryRecommendations.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

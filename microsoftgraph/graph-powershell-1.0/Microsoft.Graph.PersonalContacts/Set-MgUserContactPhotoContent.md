@@ -31,6 +31,14 @@ Set-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Data <S
 Optional contact picture.
 You can get or set a photo for a contact.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Contacts.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Contacts.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

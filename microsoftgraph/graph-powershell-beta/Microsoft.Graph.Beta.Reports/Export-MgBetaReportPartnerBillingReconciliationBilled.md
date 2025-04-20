@@ -31,6 +31,14 @@ Export-MgBetaReportPartnerBillingReconciliationBilled
 ## DESCRIPTION
 Export the billed invoice reconciliation data.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PartnerBilling.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PartnerBilling.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

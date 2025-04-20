@@ -54,6 +54,14 @@ New-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdent
 Add conditions under which a permission grant event is *included* in a permission grant policy.
 You do this by adding a permissionGrantConditionSet to the includes collection of a  permissionGrantPolicy.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.PermissionGrant,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.PermissionGrant,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

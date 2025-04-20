@@ -30,6 +30,14 @@ Remove-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a yearTimePeriodDefinition object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IndustryData-TimePeriod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IndustryData-TimePeriod.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

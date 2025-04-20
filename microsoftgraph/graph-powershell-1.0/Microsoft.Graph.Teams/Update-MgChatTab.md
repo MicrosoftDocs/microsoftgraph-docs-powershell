@@ -48,6 +48,14 @@ Update-MgChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 Update the properties of the specified tab in a chat.
 This can be used to configure the content of the tab.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

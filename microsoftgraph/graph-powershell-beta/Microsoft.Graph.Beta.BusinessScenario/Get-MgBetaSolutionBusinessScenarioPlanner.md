@@ -30,6 +30,14 @@ Get-MgBetaSolutionBusinessScenarioPlanner -InputObject <IBusinessScenarioIdentit
 ## DESCRIPTION
 Read the properties and relationships of a businessScenarioPlanner object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All, BusinessScenarioConfig.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -20,6 +20,14 @@ Get-MgChatCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable 
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ReadBasic.All, Chat.ReadWrite.All, Chat.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
