@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritymutualtloauthconfiguration
 schema: 2.0.0
-ms.subservice: entra-id
 ---
 
 # New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration
@@ -32,11 +31,11 @@ New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration
 Create a mutualTlsOauthConfiguration resource that contains a specified certificate authority object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	displayName = "DoorCamera_Model_X_TrustedCAs"
@@ -49,10 +48,6 @@ $params = @{
 }
 
 New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -258,37 +253,37 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMutualTlsOauthConfiguration>`: mutualTlsOauthConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthority- `[]`>]`: Multi-value property that represents a list of trusted certificate authorities.
-    - `[Certificate <Byte- `[]`>]`: Required.
+BODYPARAMETER \<IMicrosoftGraphMutualTlsOauthConfiguration\>: mutualTlsOauthConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CertificateAuthorities \<IMicrosoftGraphCertificateAuthority\[\]\>\]: Multi-value property that represents a list of trusted certificate authorities.
+    \[Certificate \<Byte\[\]\>\]: Required.
 The base64 encoded string representing the public certificate.
-    - `[CertificateRevocationListUrl <String>]`: The URL of the certificate revocation list.
-    - `[DeltaCertificateRevocationListUrl <String>]`: The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.
-    - `[IsRootAuthority <Boolean?>]`: Required.
+    \[CertificateRevocationListUrl \<String\>\]: The URL of the certificate revocation list.
+    \[DeltaCertificateRevocationListUrl \<String\>\]: The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.
+    \[IsRootAuthority \<Boolean?\>\]: Required.
 true if the trusted certificate is a root authority, false if the trusted certificate is an intermediate authority.
-    - `[Issuer <String>]`: The issuer of the certificate, calculated from the certificate value.
+    \[Issuer \<String\>\]: The issuer of the certificate, calculated from the certificate value.
 Read-only.
-    - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value.
+    \[IssuerSki \<String\>\]: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: Friendly name.
+  \[DisplayName \<String\>\]: Friendly name.
 Supports $filter (eq, in).
-  - `[TlsClientAuthParameter <String>]`: tlsClientRegistrationMetadata
+  \[TlsClientAuthParameter \<String\>\]: tlsClientRegistrationMetadata
 
-CERTIFICATEAUTHORITIES `<IMicrosoftGraphCertificateAuthority- `[]`>`: Multi-value property that represents a list of trusted certificate authorities.
-  - `[Certificate <Byte- `[]`>]`: Required.
+CERTIFICATEAUTHORITIES \<IMicrosoftGraphCertificateAuthority\[\]\>: Multi-value property that represents a list of trusted certificate authorities.
+  \[Certificate \<Byte\[\]\>\]: Required.
 The base64 encoded string representing the public certificate.
-  - `[CertificateRevocationListUrl <String>]`: The URL of the certificate revocation list.
-  - `[DeltaCertificateRevocationListUrl <String>]`: The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.
-  - `[IsRootAuthority <Boolean?>]`: Required.
+  \[CertificateRevocationListUrl \<String\>\]: The URL of the certificate revocation list.
+  \[DeltaCertificateRevocationListUrl \<String\>\]: The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.
+  \[IsRootAuthority \<Boolean?\>\]: Required.
 true if the trusted certificate is a root authority, false if the trusted certificate is an intermediate authority.
-  - `[Issuer <String>]`: The issuer of the certificate, calculated from the certificate value.
+  \[Issuer \<String\>\]: The issuer of the certificate, calculated from the certificate value.
 Read-only.
-  - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value.
+  \[IssuerSki \<String\>\]: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
 
 ## RELATED LINKS
@@ -296,26 +291,4 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritymutualtloauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritymutualtloauthconfiguration)
 
 [https://learn.microsoft.com/graph/api/certificateauthoritypath-post-mutualtlsoauthconfigurations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/certificateauthoritypath-post-mutualtlsoauthconfigurations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

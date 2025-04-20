@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement
 Module Guid: 4131557d-8635-4903-9cfd-d59ddef4a597
 Download Help Link: {{ Update Download Link }}
@@ -8,1108 +8,693 @@ Locale: en-US
 
 # Microsoft.Graph.DeviceManagement Module
 ## Description
-
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.DeviceManagement Cmdlets
 ### [Clear-MgDeviceManagementManagedDevice](Clear-MgDeviceManagementManagedDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Disable-MgDeviceManagementManagedDeviceLostMode](Disable-MgDeviceManagementManagedDeviceLostMode.md)
-
+{{ Fill in the Description }}
 
 ### [Find-MgDeviceManagementManagedDevice](Find-MgDeviceManagementManagedDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdge](Get-MgAdminEdge.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerMode](Get-MgAdminEdgeInternetExplorerMode.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteList](Get-MgAdminEdgeInternetExplorerModeSiteList.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListCount](Get-MgAdminEdgeInternetExplorerModeSiteListCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount](Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSite](Get-MgAdminEdgeInternetExplorerModeSiteListSite.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSiteCount](Get-MgAdminEdgeInternetExplorerModeSiteListSiteCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagement](Get-MgDeviceManagement.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDetectedApp](Get-MgDeviceManagementDetectedApp.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDetectedAppCount](Get-MgDeviceManagementDetectedAppCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDetectedAppManagedDevice](Get-MgDeviceManagementDetectedAppManagedDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDetectedAppManagedDeviceCount](Get-MgDeviceManagementDetectedAppManagedDeviceCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCategory](Get-MgDeviceManagementDeviceCategory.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCategoryCount](Get-MgDeviceManagementDeviceCategoryCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicy](Get-MgDeviceManagementDeviceCompliancePolicy.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyAssignment](Get-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyAssignmentCount](Get-MgDeviceManagementDeviceCompliancePolicyAssignmentCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyCount](Get-MgDeviceManagementDeviceCompliancePolicyCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount](Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatus](Get-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatusCount](Get-MgDeviceManagementDeviceCompliancePolicyUserStatusCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfiguration](Get-MgDeviceManagementDeviceConfiguration.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationAssignment](Get-MgDeviceManagementDeviceConfigurationAssignment.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationAssignmentCount](Get-MgDeviceManagementDeviceConfigurationAssignmentCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationCount](Get-MgDeviceManagementDeviceConfigurationCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount](Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStatus](Get-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStatusCount](Get-MgDeviceManagementDeviceConfigurationDeviceStatusCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatus](Get-MgDeviceManagementDeviceConfigurationUserStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatusCount](Get-MgDeviceManagementDeviceConfigurationUserStatusCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](Get-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDevice](Get-MgDeviceManagementManagedDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceCategory](Get-MgDeviceManagementManagedDeviceCategory.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceCategoryByRef](Get-MgDeviceManagementManagedDeviceCategoryByRef.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceCompliancePolicyState](Get-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount](Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceConfigurationState](Get-MgDeviceManagementManagedDeviceConfigurationState.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceConfigurationStateCount](Get-MgDeviceManagementManagedDeviceConfigurationStateCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceCount](Get-MgDeviceManagementManagedDeviceCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceLogCollectionRequest](Get-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceLogCollectionRequestCount](Get-MgDeviceManagementManagedDeviceLogCollectionRequestCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceOverview](Get-MgDeviceManagementManagedDeviceOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceUser](Get-MgDeviceManagementManagedDeviceUser.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceWindowsProtectionState](Get-MgDeviceManagementManagedDeviceWindowsProtectionState.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount](Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEvent](Get-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount](Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEventCount](Get-MgDeviceManagementMobileAppTroubleshootingEventCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementNotificationMessageTemplate](Get-MgDeviceManagementNotificationMessageTemplate.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementNotificationMessageTemplateCount](Get-MgDeviceManagementNotificationMessageTemplateCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount](Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementSoftwareUpdateStatusSummary](Get-MgDeviceManagementSoftwareUpdateStatusSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementTroubleshootingEvent](Get-MgDeviceManagementTroubleshootingEvent.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementTroubleshootingEventCount](Get-MgDeviceManagementTroubleshootingEventCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaseline](Get-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineCount](Get-MgDeviceManagementUserExperienceAnalyticBaselineCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticCategory](Get-MgDeviceManagementUserExperienceAnalyticCategory.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticCategoryCount](Get-MgDeviceManagementUserExperienceAnalyticCategoryCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValueCount](Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValueCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDevicePerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticDevicePerformanceCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceScore](Get-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceScoreCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceScoreCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](Get-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryCount](Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticModelScore](Get-MgDeviceManagementUserExperienceAnalyticModelScore.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticModelScoreCount](Get-MgDeviceManagementUserExperienceAnalyticModelScoreCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticOverview](Get-MgDeviceManagementUserExperienceAnalyticOverview.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticScoreHistory](Get-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticScoreHistoryCount](Get-MgDeviceManagementUserExperienceAnalyticScoreHistoryCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-
-
-### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummaryCount](Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummaryCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount](Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsMalwareInformation](Get-MgDeviceManagementWindowsMalwareInformation.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsMalwareInformationCount](Get-MgDeviceManagementWindowsMalwareInformationCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount](Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgDownDeviceManagementManagedDeviceShut](Invoke-MgDownDeviceManagementManagedDeviceShut.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgRetireDeviceManagementManagedDevice](Invoke-MgRetireDeviceManagementManagedDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender](Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule](Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule.md)
-
-
-### [Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Lock-MgDeviceManagementManagedDeviceRemote](Lock-MgDeviceManagementManagedDeviceRemote.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgAdminEdgeInternetExplorerModeSiteList](New-MgAdminEdgeInternetExplorerModeSiteList.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgAdminEdgeInternetExplorerModeSiteListSite](New-MgAdminEdgeInternetExplorerModeSiteListSite.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDetectedApp](New-MgDeviceManagementDetectedApp.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCategory](New-MgDeviceManagementDeviceCategory.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicy](New-MgDeviceManagementDeviceCompliancePolicy.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyAssignment](New-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyUserStatus](New-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfiguration](New-MgDeviceManagementDeviceConfiguration.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfigurationAssignment](New-MgDeviceManagementDeviceConfigurationAssignment.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfigurationDeviceStatus](New-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementDeviceConfigurationUserStatus](New-MgDeviceManagementDeviceConfigurationUserStatus.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDevice](New-MgDeviceManagementManagedDevice.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDeviceCompliancePolicyState](New-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDeviceConfigurationState](New-MgDeviceManagementManagedDeviceConfigurationState.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](New-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementMobileAppTroubleshootingEvent](New-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl](New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementNotificationMessageTemplate](New-MgDeviceManagementNotificationMessageTemplate.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementTroubleshootingEvent](New-MgDeviceManagementTroubleshootingEvent.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticBaseline](New-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticCategory](New-MgDeviceManagementUserExperienceAnalyticCategory.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticDevicePerformance](New-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticDeviceScore](New-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticMetricHistory](New-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticModelScore](New-MgDeviceManagementUserExperienceAnalyticModelScore.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticScoreHistory](New-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-
-
-### [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementWindowsMalwareInformation](New-MgDeviceManagementWindowsMalwareInformation.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](New-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-
+{{ Fill in the Description }}
 
 ### [Publish-MgAdminEdgeInternetExplorerModeSiteList](Publish-MgAdminEdgeInternetExplorerModeSiteList.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdge](Remove-MgAdminEdge.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdgeInternetExplorerMode](Remove-MgAdminEdgeInternetExplorerMode.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdgeInternetExplorerModeSiteList](Remove-MgAdminEdgeInternetExplorerModeSiteList.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgAdminEdgeInternetExplorerModeSiteListSite](Remove-MgAdminEdgeInternetExplorerModeSiteListSite.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDetectedApp](Remove-MgDeviceManagementDetectedApp.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCategory](Remove-MgDeviceManagementDeviceCategory.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicy](Remove-MgDeviceManagementDeviceCompliancePolicy.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyAssignment](Remove-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus](Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfiguration](Remove-MgDeviceManagementDeviceConfiguration.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationAssignment](Remove-MgDeviceManagementDeviceConfigurationAssignment.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceStatus](Remove-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationUserStatus](Remove-MgDeviceManagementDeviceConfigurationUserStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview](Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDevice](Remove-MgDeviceManagementManagedDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceCategory](Remove-MgDeviceManagementManagedDeviceCategory.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceCategoryByRef](Remove-MgDeviceManagementManagedDeviceCategoryByRef.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceCompliancePolicyState](Remove-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceConfigurationState](Remove-MgDeviceManagementManagedDeviceConfigurationState.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceLogCollectionRequest](Remove-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceWindowsProtectionState](Remove-MgDeviceManagementManagedDeviceWindowsProtectionState.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Remove-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementMobileAppTroubleshootingEvent](Remove-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementNotificationMessageTemplate](Remove-MgDeviceManagementNotificationMessageTemplate.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementTroubleshootingEvent](Remove-MgDeviceManagementTroubleshootingEvent.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticBaseline](Remove-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticCategory](Remove-MgDeviceManagementUserExperienceAnalyticCategory.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore](Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory](Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticModelScore](Remove-MgDeviceManagementUserExperienceAnalyticModelScore.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticOverview](Remove-MgDeviceManagementUserExperienceAnalyticOverview.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory](Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementWindowsMalwareInformation](Remove-MgDeviceManagementWindowsMalwareInformation.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Remove-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-
+{{ Fill in the Description }}
 
 ### [Request-MgDeviceManagementManagedDeviceRemoteAssistance](Request-MgDeviceManagementManagedDeviceRemoteAssistance.md)
-
+{{ Fill in the Description }}
 
 ### [Reset-MgDeviceManagementManagedDevicePasscode](Reset-MgDeviceManagementManagedDevicePasscode.md)
-
+{{ Fill in the Description }}
 
 ### [Restart-MgDeviceManagementManagedDeviceNow](Restart-MgDeviceManagementManagedDeviceNow.md)
-
+{{ Fill in the Description }}
 
 ### [Restore-MgDeviceManagementManagedDevicePasscode](Restore-MgDeviceManagementManagedDevicePasscode.md)
-
+{{ Fill in the Description }}
 
 ### [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](Send-MgDeviceManagementNotificationMessageTemplateTestMessage.md)
-
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceManagementDeviceCompliancePolicy](Set-MgDeviceManagementDeviceCompliancePolicy.md)
-
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceManagementDeviceConfiguration](Set-MgDeviceManagementDeviceConfiguration.md)
-
+{{ Fill in the Description }}
 
 ### [Set-MgDeviceManagementManagedDeviceCategoryByRef](Set-MgDeviceManagementManagedDeviceCategoryByRef.md)
-
+{{ Fill in the Description }}
 
 ### [Skip-MgDeviceManagementManagedDeviceActivationLock](Skip-MgDeviceManagementManagedDeviceActivationLock.md)
-
+{{ Fill in the Description }}
 
 ### [Sync-MgDeviceManagementManagedDevice](Sync-MgDeviceManagementManagedDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdge](Update-MgAdminEdge.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdgeInternetExplorerMode](Update-MgAdminEdgeInternetExplorerMode.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdgeInternetExplorerModeSiteList](Update-MgAdminEdgeInternetExplorerModeSiteList.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgAdminEdgeInternetExplorerModeSiteListSite](Update-MgAdminEdgeInternetExplorerModeSiteListSite.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagement](Update-MgDeviceManagement.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDetectedApp](Update-MgDeviceManagementDetectedApp.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCategory](Update-MgDeviceManagementDeviceCategory.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicy](Update-MgDeviceManagementDeviceCompliancePolicy.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyAssignment](Update-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyUserStatus](Update-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfiguration](Update-MgDeviceManagementDeviceConfiguration.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationAssignment](Update-MgDeviceManagementDeviceConfigurationAssignment.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceStatus](Update-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationUserStatus](Update-MgDeviceManagementDeviceConfigurationUserStatus.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementDeviceConfigurationUserStatusOverview](Update-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDevice](Update-MgDeviceManagementManagedDevice.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceCategory](Update-MgDeviceManagementManagedDeviceCategory.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceCompliancePolicyState](Update-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceConfigurationState](Update-MgDeviceManagementManagedDeviceConfigurationState.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceLogCollectionRequest](Update-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceWindowsProtectionState](Update-MgDeviceManagementManagedDeviceWindowsProtectionState.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementMobileAppTroubleshootingEvent](Update-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementNotificationMessageTemplate](Update-MgDeviceManagementNotificationMessageTemplate.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementTroubleshootingEvent](Update-MgDeviceManagementTroubleshootingEvent.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview](Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticBaseline](Update-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticCategory](Update-MgDeviceManagementUserExperienceAnalyticCategory.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticDeviceScore](Update-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticMetricHistory](Update-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticModelScore](Update-MgDeviceManagementUserExperienceAnalyticModelScore.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticOverview](Update-MgDeviceManagementUserExperienceAnalyticOverview.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticScoreHistory](Update-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-
-
-### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementWindowsMalwareInformation](Update-MgDeviceManagementWindowsMalwareInformation.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{ Fill in the Description }}
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightmonthlymfaregistereduser
@@ -28,6 +28,18 @@ New-MgBetaReportUserInsightMonthlyMfaRegisteredUser -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Create new navigation property to mfaRegisteredUsers for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Count
-
+.
 
 ```yaml
 Type: Int64
@@ -78,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -FactDate
-
+.
 
 ```yaml
 Type: DateTime
@@ -215,38 +227,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMfaUserCountMetric>`: mfaUserCountMetric
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMfaUserCountMetric\>: mfaUserCountMetric
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Count <Int64?>]`: 
-  - `[FactDate <DateTime?>]`: 
-  - `[MfaType <String>]`: mfaType
+  \[Count \<Int64?\>\]: 
+  \[FactDate \<DateTime?\>\]: 
+  \[MfaType \<String\>\]: mfaType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightmonthlymfaregistereduser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightmonthlymfaregistereduser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

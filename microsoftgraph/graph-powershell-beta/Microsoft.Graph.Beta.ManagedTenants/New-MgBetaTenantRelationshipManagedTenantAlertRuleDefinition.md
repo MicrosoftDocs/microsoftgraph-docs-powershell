@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertruledefinition
@@ -33,6 +33,18 @@ New-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition
 ## DESCRIPTION
 Create new navigation property to managedTenantAlertRuleDefinitions for tenantRelationships
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -51,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRules
-
+.
 To construct, see NOTES section for ALERTRULES properties and create a hash table.
 
 ```yaml
@@ -83,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedByUserId
-
+.
 
 ```yaml
 Type: String
@@ -98,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -129,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-
+.
 
 ```yaml
 Type: String
@@ -175,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActionByUserId
-
+.
 
 ```yaml
 Type: String
@@ -190,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastActionDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -281,214 +293,191 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTRULES `<IMicrosoftGraphManagedTenantsManagedTenantAlertRule- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+ALERTRULES \<IMicrosoftGraphManagedTenantsManagedTenantAlertRule\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AlertDisplayName <String>]`: 
-  - `[AlertTtl <Int32?>]`: 
-  - `[Alerts <IMicrosoftGraphManagedTenantsManagedTenantAlert- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AlertDisplayName \<String\>\]: 
+  \[AlertTtl \<Int32?\>\]: 
+  \[Alerts \<IMicrosoftGraphManagedTenantsManagedTenantAlert\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AlertData <IMicrosoftGraphManagedTenantsAlertData>]`: alertData
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: 
-    - `[AlertDataReferenceStrings <IMicrosoftGraphManagedTenantsAlertDataReferenceString- `[]`>]`: 
-      - `[DisplayName <String>]`: 
-    - `[AlertLogs <IMicrosoftGraphManagedTenantsManagedTenantAlertLog- `[]`>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[AlertData \<IMicrosoftGraphManagedTenantsAlertData\>\]: alertData
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: 
+    \[AlertDataReferenceStrings \<IMicrosoftGraphManagedTenantsAlertDataReferenceString\[\]\>\]: 
+      \[DisplayName \<String\>\]: 
+    \[AlertLogs \<IMicrosoftGraphManagedTenantsManagedTenantAlertLog\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]`: managedTenantAlert
-      - `[Content <IMicrosoftGraphManagedTenantsAlertLogContent>]`: alertLogContent
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: 
-      - `[CreatedByUserId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[LastActionByUserId <String>]`: 
-      - `[LastActionDateTime <DateTime?>]`: 
-    - `[AlertRule <IMicrosoftGraphManagedTenantsManagedTenantAlertRule>]`: managedTenantAlertRule
-    - `[AlertRuleDisplayName <String>]`: 
-    - `[ApiNotifications <IMicrosoftGraphManagedTenantsManagedTenantApiNotification- `[]`>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+      \[Alert \<IMicrosoftGraphManagedTenantsManagedTenantAlert\>\]: managedTenantAlert
+      \[Content \<IMicrosoftGraphManagedTenantsAlertLogContent\>\]: alertLogContent
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: 
+      \[CreatedByUserId \<String\>\]: 
+      \[CreatedDateTime \<DateTime?\>\]: 
+      \[LastActionByUserId \<String\>\]: 
+      \[LastActionDateTime \<DateTime?\>\]: 
+    \[AlertRule \<IMicrosoftGraphManagedTenantsManagedTenantAlertRule\>\]: managedTenantAlertRule
+    \[AlertRuleDisplayName \<String\>\]: 
+    \[ApiNotifications \<IMicrosoftGraphManagedTenantsManagedTenantApiNotification\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]`: managedTenantAlert
-      - `[CreatedByUserId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[IsAcknowledged <Boolean?>]`: 
-      - `[LastActionByUserId <String>]`: 
-      - `[LastActionDateTime <DateTime?>]`: 
-      - `[Message <String>]`: 
-      - `[Title <String>]`: 
-      - `[UserId <String>]`: 
-    - `[AssignedToUserId <String>]`: 
-    - `[CorrelationCount <Int32?>]`: 
-    - `[CorrelationId <String>]`: 
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[EmailNotifications <IMicrosoftGraphManagedTenantsManagedTenantEmailNotification- `[]`>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+      \[Alert \<IMicrosoftGraphManagedTenantsManagedTenantAlert\>\]: managedTenantAlert
+      \[CreatedByUserId \<String\>\]: 
+      \[CreatedDateTime \<DateTime?\>\]: 
+      \[IsAcknowledged \<Boolean?\>\]: 
+      \[LastActionByUserId \<String\>\]: 
+      \[LastActionDateTime \<DateTime?\>\]: 
+      \[Message \<String\>\]: 
+      \[Title \<String\>\]: 
+      \[UserId \<String\>\]: 
+    \[AssignedToUserId \<String\>\]: 
+    \[CorrelationCount \<Int32?\>\]: 
+    \[CorrelationId \<String\>\]: 
+    \[CreatedByUserId \<String\>\]: 
+    \[CreatedDateTime \<DateTime?\>\]: 
+    \[EmailNotifications \<IMicrosoftGraphManagedTenantsManagedTenantEmailNotification\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]`: managedTenantAlert
-      - `[CreatedByUserId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[EmailAddresses <IMicrosoftGraphManagedTenantsEmail- `[]`>]`: 
-        - `[EmailAddress <String>]`: 
-      - `[EmailBody <String>]`: 
-      - `[LastActionByUserId <String>]`: 
-      - `[LastActionDateTime <DateTime?>]`: 
-      - `[Subject <String>]`: 
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[Message <String>]`: 
-    - `[Severity <String>]`: alertSeverity
-    - `[Status <String>]`: alertStatus
-    - `[TenantId <String>]`: 
-    - `[Title <String>]`: 
-  - `[CreatedByUserId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LastActionByUserId <String>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
-  - `[LastRunDateTime <DateTime?>]`: 
-  - `[NotificationFinalDestinations <String>]`: notificationDestination
-  - `[RuleDefinition <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>]`: managedTenantAlertRuleDefinition
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+      \[Alert \<IMicrosoftGraphManagedTenantsManagedTenantAlert\>\]: managedTenantAlert
+      \[CreatedByUserId \<String\>\]: 
+      \[CreatedDateTime \<DateTime?\>\]: 
+      \[EmailAddresses \<IMicrosoftGraphManagedTenantsEmail\[\]\>\]: 
+        \[EmailAddress \<String\>\]: 
+      \[EmailBody \<String\>\]: 
+      \[LastActionByUserId \<String\>\]: 
+      \[LastActionDateTime \<DateTime?\>\]: 
+      \[Subject \<String\>\]: 
+    \[LastActionByUserId \<String\>\]: 
+    \[LastActionDateTime \<DateTime?\>\]: 
+    \[Message \<String\>\]: 
+    \[Severity \<String\>\]: alertSeverity
+    \[Status \<String\>\]: alertStatus
+    \[TenantId \<String\>\]: 
+    \[Title \<String\>\]: 
+  \[CreatedByUserId \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[LastActionByUserId \<String\>\]: 
+  \[LastActionDateTime \<DateTime?\>\]: 
+  \[LastRunDateTime \<DateTime?\>\]: 
+  \[NotificationFinalDestinations \<String\>\]: notificationDestination
+  \[RuleDefinition \<IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition\>\]: managedTenantAlertRuleDefinition
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AlertRules <IMicrosoftGraphManagedTenantsManagedTenantAlertRule- `[]`>]`: 
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[DefinitionTemplate <IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>]`: alertRuleDefinitionTemplate
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DefaultSeverity <String>]`: alertSeverity
-    - `[DisplayName <String>]`: 
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-  - `[Severity <String>]`: alertSeverity
-  - `[Targets <IMicrosoftGraphManagedTenantsNotificationTarget- `[]`>]`: 
-    - `[DisplayName <String>]`: 
-  - `[TenantIds <IMicrosoftGraphManagedTenantsTenantInfo- `[]`>]`: 
-    - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+    \[AlertRules \<IMicrosoftGraphManagedTenantsManagedTenantAlertRule\[\]\>\]: 
+    \[CreatedByUserId \<String\>\]: 
+    \[CreatedDateTime \<DateTime?\>\]: 
+    \[DefinitionTemplate \<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate\>\]: alertRuleDefinitionTemplate
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DefaultSeverity \<String\>\]: alertSeverity
+    \[DisplayName \<String\>\]: 
+    \[LastActionByUserId \<String\>\]: 
+    \[LastActionDateTime \<DateTime?\>\]: 
+  \[Severity \<String\>\]: alertSeverity
+  \[Targets \<IMicrosoftGraphManagedTenantsNotificationTarget\[\]\>\]: 
+    \[DisplayName \<String\>\]: 
+  \[TenantIds \<IMicrosoftGraphManagedTenantsTenantInfo\[\]\>\]: 
+    \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>`: managedTenantAlertRuleDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition\>: managedTenantAlertRuleDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AlertRules <IMicrosoftGraphManagedTenantsManagedTenantAlertRule- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AlertRules \<IMicrosoftGraphManagedTenantsManagedTenantAlertRule\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AlertDisplayName <String>]`: 
-    - `[AlertTtl <Int32?>]`: 
-    - `[Alerts <IMicrosoftGraphManagedTenantsManagedTenantAlert- `[]`>]`: 
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[AlertDisplayName \<String\>\]: 
+    \[AlertTtl \<Int32?\>\]: 
+    \[Alerts \<IMicrosoftGraphManagedTenantsManagedTenantAlert\[\]\>\]: 
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[AlertData <IMicrosoftGraphManagedTenantsAlertData>]`: alertData
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: 
-      - `[AlertDataReferenceStrings <IMicrosoftGraphManagedTenantsAlertDataReferenceString- `[]`>]`: 
-        - `[DisplayName <String>]`: 
-      - `[AlertLogs <IMicrosoftGraphManagedTenantsManagedTenantAlertLog- `[]`>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+      \[AlertData \<IMicrosoftGraphManagedTenantsAlertData\>\]: alertData
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: 
+      \[AlertDataReferenceStrings \<IMicrosoftGraphManagedTenantsAlertDataReferenceString\[\]\>\]: 
+        \[DisplayName \<String\>\]: 
+      \[AlertLogs \<IMicrosoftGraphManagedTenantsManagedTenantAlertLog\[\]\>\]: 
+        \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]`: managedTenantAlert
-        - `[Content <IMicrosoftGraphManagedTenantsAlertLogContent>]`: alertLogContent
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: 
-        - `[CreatedByUserId <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[LastActionByUserId <String>]`: 
-        - `[LastActionDateTime <DateTime?>]`: 
-      - `[AlertRule <IMicrosoftGraphManagedTenantsManagedTenantAlertRule>]`: managedTenantAlertRule
-      - `[AlertRuleDisplayName <String>]`: 
-      - `[ApiNotifications <IMicrosoftGraphManagedTenantsManagedTenantApiNotification- `[]`>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+        \[Alert \<IMicrosoftGraphManagedTenantsManagedTenantAlert\>\]: managedTenantAlert
+        \[Content \<IMicrosoftGraphManagedTenantsAlertLogContent\>\]: alertLogContent
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[DisplayName \<String\>\]: 
+        \[CreatedByUserId \<String\>\]: 
+        \[CreatedDateTime \<DateTime?\>\]: 
+        \[LastActionByUserId \<String\>\]: 
+        \[LastActionDateTime \<DateTime?\>\]: 
+      \[AlertRule \<IMicrosoftGraphManagedTenantsManagedTenantAlertRule\>\]: managedTenantAlertRule
+      \[AlertRuleDisplayName \<String\>\]: 
+      \[ApiNotifications \<IMicrosoftGraphManagedTenantsManagedTenantApiNotification\[\]\>\]: 
+        \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]`: managedTenantAlert
-        - `[CreatedByUserId <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[IsAcknowledged <Boolean?>]`: 
-        - `[LastActionByUserId <String>]`: 
-        - `[LastActionDateTime <DateTime?>]`: 
-        - `[Message <String>]`: 
-        - `[Title <String>]`: 
-        - `[UserId <String>]`: 
-      - `[AssignedToUserId <String>]`: 
-      - `[CorrelationCount <Int32?>]`: 
-      - `[CorrelationId <String>]`: 
-      - `[CreatedByUserId <String>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[EmailNotifications <IMicrosoftGraphManagedTenantsManagedTenantEmailNotification- `[]`>]`: 
-        - `[Id <String>]`: The unique identifier for an entity.
+        \[Alert \<IMicrosoftGraphManagedTenantsManagedTenantAlert\>\]: managedTenantAlert
+        \[CreatedByUserId \<String\>\]: 
+        \[CreatedDateTime \<DateTime?\>\]: 
+        \[IsAcknowledged \<Boolean?\>\]: 
+        \[LastActionByUserId \<String\>\]: 
+        \[LastActionDateTime \<DateTime?\>\]: 
+        \[Message \<String\>\]: 
+        \[Title \<String\>\]: 
+        \[UserId \<String\>\]: 
+      \[AssignedToUserId \<String\>\]: 
+      \[CorrelationCount \<Int32?\>\]: 
+      \[CorrelationId \<String\>\]: 
+      \[CreatedByUserId \<String\>\]: 
+      \[CreatedDateTime \<DateTime?\>\]: 
+      \[EmailNotifications \<IMicrosoftGraphManagedTenantsManagedTenantEmailNotification\[\]\>\]: 
+        \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>]`: managedTenantAlert
-        - `[CreatedByUserId <String>]`: 
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[EmailAddresses <IMicrosoftGraphManagedTenantsEmail- `[]`>]`: 
-          - `[EmailAddress <String>]`: 
-        - `[EmailBody <String>]`: 
-        - `[LastActionByUserId <String>]`: 
-        - `[LastActionDateTime <DateTime?>]`: 
-        - `[Subject <String>]`: 
-      - `[LastActionByUserId <String>]`: 
-      - `[LastActionDateTime <DateTime?>]`: 
-      - `[Message <String>]`: 
-      - `[Severity <String>]`: alertSeverity
-      - `[Status <String>]`: alertStatus
-      - `[TenantId <String>]`: 
-      - `[Title <String>]`: 
-    - `[CreatedByUserId <String>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[LastActionByUserId <String>]`: 
-    - `[LastActionDateTime <DateTime?>]`: 
-    - `[LastRunDateTime <DateTime?>]`: 
-    - `[NotificationFinalDestinations <String>]`: notificationDestination
-    - `[RuleDefinition <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>]`: managedTenantAlertRuleDefinition
-    - `[Severity <String>]`: alertSeverity
-    - `[Targets <IMicrosoftGraphManagedTenantsNotificationTarget- `[]`>]`: 
-      - `[DisplayName <String>]`: 
-    - `[TenantIds <IMicrosoftGraphManagedTenantsTenantInfo- `[]`>]`: 
-      - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+        \[Alert \<IMicrosoftGraphManagedTenantsManagedTenantAlert\>\]: managedTenantAlert
+        \[CreatedByUserId \<String\>\]: 
+        \[CreatedDateTime \<DateTime?\>\]: 
+        \[EmailAddresses \<IMicrosoftGraphManagedTenantsEmail\[\]\>\]: 
+          \[EmailAddress \<String\>\]: 
+        \[EmailBody \<String\>\]: 
+        \[LastActionByUserId \<String\>\]: 
+        \[LastActionDateTime \<DateTime?\>\]: 
+        \[Subject \<String\>\]: 
+      \[LastActionByUserId \<String\>\]: 
+      \[LastActionDateTime \<DateTime?\>\]: 
+      \[Message \<String\>\]: 
+      \[Severity \<String\>\]: alertSeverity
+      \[Status \<String\>\]: alertStatus
+      \[TenantId \<String\>\]: 
+      \[Title \<String\>\]: 
+    \[CreatedByUserId \<String\>\]: 
+    \[CreatedDateTime \<DateTime?\>\]: 
+    \[Description \<String\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[LastActionByUserId \<String\>\]: 
+    \[LastActionDateTime \<DateTime?\>\]: 
+    \[LastRunDateTime \<DateTime?\>\]: 
+    \[NotificationFinalDestinations \<String\>\]: notificationDestination
+    \[RuleDefinition \<IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition\>\]: managedTenantAlertRuleDefinition
+    \[Severity \<String\>\]: alertSeverity
+    \[Targets \<IMicrosoftGraphManagedTenantsNotificationTarget\[\]\>\]: 
+      \[DisplayName \<String\>\]: 
+    \[TenantIds \<IMicrosoftGraphManagedTenantsTenantInfo\[\]\>\]: 
+      \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
-  - `[CreatedByUserId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DefinitionTemplate <IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>]`: alertRuleDefinitionTemplate
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DefaultSeverity <String>]`: alertSeverity
-  - `[DisplayName <String>]`: 
-  - `[LastActionByUserId <String>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
+  \[CreatedByUserId \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[DefinitionTemplate \<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate\>\]: alertRuleDefinitionTemplate
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DefaultSeverity \<String\>\]: alertSeverity
+  \[DisplayName \<String\>\]: 
+  \[LastActionByUserId \<String\>\]: 
+  \[LastActionDateTime \<DateTime?\>\]: 
 
-DEFINITIONTEMPLATE `<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>`: alertRuleDefinitionTemplate
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DefaultSeverity <String>]`: alertSeverity
+DEFINITIONTEMPLATE \<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate\>: alertRuleDefinitionTemplate
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DefaultSeverity \<String\>\]: alertSeverity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertruledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertruledefinition)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

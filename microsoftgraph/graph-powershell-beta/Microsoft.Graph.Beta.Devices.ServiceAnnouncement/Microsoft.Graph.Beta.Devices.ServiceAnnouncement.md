@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 Module Guid: 22317fb0-f305-44b0-a696-5806cf8041fb
 Download Help Link: {{ Update Download Link }}
@@ -8,142 +8,66 @@ Locale: en-US
 
 # Microsoft.Graph.Beta.Devices.ServiceAnnouncement Module
 ## Description
-
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.Devices.ServiceAnnouncement Cmdlets
 ### [Get-MgBetaServiceAnnouncementHealthOverview](Get-MgBetaServiceAnnouncementHealthOverview.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementHealthOverviewCount](Get-MgBetaServiceAnnouncementHealthOverviewCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementHealthOverviewIssue](Get-MgBetaServiceAnnouncementHealthOverviewIssue.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementHealthOverviewIssueCount](Get-MgBetaServiceAnnouncementHealthOverviewIssueCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementIssue](Get-MgBetaServiceAnnouncementIssue.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementIssueCount](Get-MgBetaServiceAnnouncementIssueCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementMessage](Get-MgBetaServiceAnnouncementMessage.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementMessageAttachment](Get-MgBetaServiceAnnouncementMessageAttachment.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementMessageAttachmentArchive](Get-MgBetaServiceAnnouncementMessageAttachmentArchive.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementMessageAttachmentContent](Get-MgBetaServiceAnnouncementMessageAttachmentContent.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementMessageAttachmentCount](Get-MgBetaServiceAnnouncementMessageAttachmentCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaServiceAnnouncementMessageCount](Get-MgBetaServiceAnnouncementMessageCount.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaArchiveServiceAnnouncementMessage](Invoke-MgBetaArchiveServiceAnnouncementMessage.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaFavoriteServiceAnnouncementMessage](Invoke-MgBetaFavoriteServiceAnnouncementMessage.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaMarkServiceAnnouncementMessageRead](Invoke-MgBetaMarkServiceAnnouncementMessageRead.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaMarkServiceAnnouncementMessageUnread](Invoke-MgBetaMarkServiceAnnouncementMessageUnread.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReportServiceAnnouncementHealthOverviewIssueIncident](Invoke-MgBetaReportServiceAnnouncementHealthOverviewIssueIncident.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaReportServiceAnnouncementIssueIncident](Invoke-MgBetaReportServiceAnnouncementIssueIncident.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnarchiveServiceAnnouncementMessage](Invoke-MgBetaUnarchiveServiceAnnouncementMessage.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaUnfavoriteServiceAnnouncementMessage](Invoke-MgBetaUnfavoriteServiceAnnouncementMessage.md)
-
-
-### [New-MgBetaServiceAnnouncementHealthOverview](New-MgBetaServiceAnnouncementHealthOverview.md)
-
-
-### [New-MgBetaServiceAnnouncementHealthOverviewIssue](New-MgBetaServiceAnnouncementHealthOverviewIssue.md)
-
-
-### [New-MgBetaServiceAnnouncementIssue](New-MgBetaServiceAnnouncementIssue.md)
-
-
-### [New-MgBetaServiceAnnouncementMessage](New-MgBetaServiceAnnouncementMessage.md)
-
-
-### [New-MgBetaServiceAnnouncementMessageAttachment](New-MgBetaServiceAnnouncementMessageAttachment.md)
-
-
-### [Remove-MgBetaServiceAnnouncementHealthOverview](Remove-MgBetaServiceAnnouncementHealthOverview.md)
-
-
-### [Remove-MgBetaServiceAnnouncementHealthOverviewIssue](Remove-MgBetaServiceAnnouncementHealthOverviewIssue.md)
-
-
-### [Remove-MgBetaServiceAnnouncementIssue](Remove-MgBetaServiceAnnouncementIssue.md)
-
-
-### [Remove-MgBetaServiceAnnouncementMessage](Remove-MgBetaServiceAnnouncementMessage.md)
-
-
-### [Remove-MgBetaServiceAnnouncementMessageAttachment](Remove-MgBetaServiceAnnouncementMessageAttachment.md)
-
-
-### [Remove-MgBetaServiceAnnouncementMessageAttachmentArchive](Remove-MgBetaServiceAnnouncementMessageAttachmentArchive.md)
-
-
-### [Remove-MgBetaServiceAnnouncementMessageAttachmentContent](Remove-MgBetaServiceAnnouncementMessageAttachmentContent.md)
-
-
-### [Set-MgBetaServiceAnnouncementMessageAttachmentArchive](Set-MgBetaServiceAnnouncementMessageAttachmentArchive.md)
-
-
-### [Set-MgBetaServiceAnnouncementMessageAttachmentContent](Set-MgBetaServiceAnnouncementMessageAttachmentContent.md)
-
-
-### [Update-MgBetaServiceAnnouncementHealthOverview](Update-MgBetaServiceAnnouncementHealthOverview.md)
-
-
-### [Update-MgBetaServiceAnnouncementHealthOverviewIssue](Update-MgBetaServiceAnnouncementHealthOverviewIssue.md)
-
-
-### [Update-MgBetaServiceAnnouncementIssue](Update-MgBetaServiceAnnouncementIssue.md)
-
-
-### [Update-MgBetaServiceAnnouncementMessage](Update-MgBetaServiceAnnouncementMessage.md)
-
-
-### [Update-MgBetaServiceAnnouncementMessageAttachment](Update-MgBetaServiceAnnouncementMessageAttachment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{ Fill in the Description }}
 
