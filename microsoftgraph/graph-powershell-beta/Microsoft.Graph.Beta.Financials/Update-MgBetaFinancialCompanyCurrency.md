@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -AmountDecimalPlaces
-.
+
 
 ```yaml
 Type: String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -AmountRoundingPrecision
-.
+
 
 ```yaml
 Type: Decimal
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Code
-.
+
 
 ```yaml
 Type: String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+
 
 ```yaml
 Type: String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -Symbol
-.
+
 
 ```yaml
 Type: String

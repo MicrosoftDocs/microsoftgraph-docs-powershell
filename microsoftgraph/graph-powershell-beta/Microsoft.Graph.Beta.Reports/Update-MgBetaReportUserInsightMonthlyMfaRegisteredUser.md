@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Count
-.
+
 
 ```yaml
 Type: Int64
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -FactDate
-.
+
 
 ```yaml
 Type: DateTime

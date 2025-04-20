@@ -489,7 +489,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeIds
-.
+
 
 ```yaml
 Type: String[]

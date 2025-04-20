@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -MitreTechniqueId
-.
+
 
 ```yaml
 Type: String

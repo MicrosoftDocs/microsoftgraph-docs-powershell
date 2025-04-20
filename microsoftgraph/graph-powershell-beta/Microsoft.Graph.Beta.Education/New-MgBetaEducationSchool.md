@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalSourceDetail
-.
+
 
 ```yaml
 Type: String
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fax
-.
+
 
 ```yaml
 Type: String

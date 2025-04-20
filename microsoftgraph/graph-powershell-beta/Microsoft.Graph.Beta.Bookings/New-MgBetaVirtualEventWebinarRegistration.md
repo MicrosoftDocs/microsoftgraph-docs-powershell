@@ -362,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrantVideoOnDemandWebUrl
-.
+
 
 ```yaml
 Type: String
@@ -425,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-.
+
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml

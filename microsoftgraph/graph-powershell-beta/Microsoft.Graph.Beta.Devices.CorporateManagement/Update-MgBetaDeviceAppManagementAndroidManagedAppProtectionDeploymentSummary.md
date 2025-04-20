@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationDeployedUserCount
-.
+
 
 ```yaml
 Type: Int32
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationDeploymentSummaryPerApp
-.
+
 To construct, see NOTES section for CONFIGURATIONDEPLOYMENTSUMMARYPERAPP properties and create a hash table.
 
 ```yaml
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastRefreshTime
-.
+
 
 ```yaml
 Type: DateTime

@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Condition
-.
+
 
 ```yaml
 Type: String

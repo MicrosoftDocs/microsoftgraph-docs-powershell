@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientType
-.
+
 
 ```yaml
 Type: String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -DlpRules
-.
+
 To construct, see NOTES section for DLPRULES properties and create a hash table.
 
 ```yaml
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardingDetail
-.
+
 
 ```yaml
 Type: String
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -InboundConnectorFormattedName
-.
+
 
 ```yaml
 Type: String
@@ -479,7 +479,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyType
-.
+
 
 ```yaml
 Type: String
@@ -494,7 +494,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryOverrideSource
-.
+
 
 ```yaml
 Type: String
@@ -646,7 +646,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatDetectionDetails
-.
+
 To construct, see NOTES section for THREATDETECTIONDETAILS properties and create a hash table.
 
 ```yaml
@@ -678,7 +678,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimelineEvents
-.
+
 To construct, see NOTES section for TIMELINEEVENTS properties and create a hash table.
 
 ```yaml

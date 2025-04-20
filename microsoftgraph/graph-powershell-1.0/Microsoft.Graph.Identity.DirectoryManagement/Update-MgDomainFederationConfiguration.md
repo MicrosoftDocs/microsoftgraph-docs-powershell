@@ -309,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordResetUri
-.
+
 
 ```yaml
 Type: String
