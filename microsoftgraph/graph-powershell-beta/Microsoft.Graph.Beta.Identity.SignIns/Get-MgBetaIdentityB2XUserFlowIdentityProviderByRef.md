@@ -25,6 +25,14 @@ Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <Strin
 ## DESCRIPTION
 Get ref of userFlowIdentityProviders from identity
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -All

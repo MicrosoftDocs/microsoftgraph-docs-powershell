@@ -37,6 +37,14 @@ New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
 ## DESCRIPTION
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -86,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppLogCollectionRequests
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
@@ -352,7 +360,7 @@ ADDITIONALINFORMATION `<IMicrosoftGraphKeyValuePair- `[]`>`: A set of string key
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-APPLOGCOLLECTIONREQUESTS `<IMicrosoftGraphAppLogCollectionRequest- `[]`>`: Indicates collection of App Log Upload Request.
+APPLOGCOLLECTIONREQUESTS `<IMicrosoftGraphAppLogCollectionRequest- `[]`>`: The collection property of AppLogUploadRequest.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -381,7 +389,7 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
       - `[Text <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
+  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.

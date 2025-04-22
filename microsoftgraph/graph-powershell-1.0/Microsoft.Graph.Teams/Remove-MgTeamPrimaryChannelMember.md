@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamPrimaryChannelMember
 
 ## SYNOPSIS
-Delete navigation property members for teams
+Delete navigation property allMembers for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
@@ -20,6 +20,13 @@ Delete navigation property members for teams
 Remove-MgTeamPrimaryChannelMember -TeamId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Values <IMicrosoftGraphConversationMember[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgTeamPrimaryChannelMember -ConversationMemberId <String> -TeamId <String> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete
@@ -50,6 +57,13 @@ Remove-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ResponseHeader
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### DeleteViaIdentity1
+```
+Remove-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### DeleteViaIdentity
 ```
 Remove-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
@@ -58,7 +72,7 @@ Remove-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete navigation property members for teams
+Delete navigation property allMembers for teams
 
 ## PARAMETERS
 
@@ -98,7 +112,7 @@ The unique identifier of conversationMember
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1, Delete
 Aliases:
 
 Required: True
@@ -128,7 +142,7 @@ ETag
 
 ```yaml
 Type: String
-Parameter Sets: Delete, DeleteViaIdentity
+Parameter Sets: Delete1, Delete, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -144,7 +158,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity, DeleteViaIdentity
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -159,7 +173,7 @@ Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Delete, DeleteViaIdentity
+Parameter Sets: Delete1, Delete, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -204,7 +218,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded, Delete, Remove
+Parameter Sets: RemoveExpanded, Delete1, Delete, Remove
 Aliases:
 
 Required: True
@@ -301,6 +315,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DayNoteId <String>]`: The unique identifier of dayNote
   - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
@@ -321,6 +336,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest

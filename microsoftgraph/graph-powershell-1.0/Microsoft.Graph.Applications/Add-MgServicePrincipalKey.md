@@ -60,7 +60,7 @@ Update servicePrincipal can be used to perform an update instead.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
@@ -321,13 +321,14 @@ BODYPARAMETER `<IPathsN3Fx9GServiceprincipalsServiceprincipalIdMicrosoftGraphAdd
     - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-    - `[DisplayName <String>]`: Friendly name for the key.
+    - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
     - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     - `[KeyId <String>]`: The unique identifier (GUID) for the key.
@@ -386,13 +387,14 @@ KEYCREDENTIAL `<IMicrosoftGraphKeyCredential>`: keyCredential
   - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-  - `[DisplayName <String>]`: Friendly name for the key.
+  - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
   - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   - `[KeyId <String>]`: The unique identifier (GUID) for the key.

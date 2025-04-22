@@ -872,6 +872,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -980,7 +981,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
         - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
         - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -1015,35 +1016,35 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
           - `[Content <String>]`: The content of the item.
           - `[ContentType <String>]`: bodyType
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
         - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
         - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
         - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
         - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
         - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
         - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
         - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
         - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
         - `[Location <IMicrosoftGraphLocation>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1071,7 +1072,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
           - `[UniqueIdType <String>]`: locationUniqueIdType
         - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -1101,7 +1102,7 @@ The onlineMeetingUrl property will be deprecated in the future.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -1154,19 +1155,19 @@ Read-only.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Subject <String>]`: The text of the event's subject line.
         - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
         - `[Type <String>]`: eventType
         - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-      - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+      - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-      - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+      - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
       - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -1578,7 +1579,7 @@ Nullable.
     - `[Contacts <IMicrosoftGraphContact- `[]`>]`: The user's contacts.
 Read-only.
 Nullable.
-    - `[Country <String>]`: The country/region where the user is located; for example, US or UK.
+    - `[Country <String>]`: The country or region where the user is located; for example, US or UK.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -1820,14 +1821,14 @@ Nullable.
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Hashes <IMicrosoftGraphHashes>]`: hashes
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available).
+                  - `[Crc32Hash <String>]`: The CRC32 value of the file (if available).
 Read-only.
-                  - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+                  - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file change (if available).
 Read-only.
                   - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available).
 Read-only.
-                  - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available).
-Read-only.
+                  - `[Sha256Hash <String>]`: This property isn't supported.
+Don't use.
                 - `[MimeType <String>]`: The MIME type for the file.
 This is determined by logic on the server and might not be the value provided when the file was uploaded.
 Read-only.
@@ -2405,17 +2406,17 @@ Read-only.
 Read-only.
                       - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                        - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                        - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                        - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                        - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                        - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                        - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                        - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                        - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                        - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                        - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                        - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                        - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                        - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                        - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                        - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                        - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                        - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                        - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                        - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                        - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                        - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                        - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
                       - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                     - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -3179,6 +3180,7 @@ Read-only.
       - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AllMembers <IMicrosoftGraphConversationMember- `[]`>]`: A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
         - `[CreatedDateTime <DateTime?>]`: Read only.
 Timestamp at which the channel was created.
         - `[Description <String>]`: Optional textual description for the channel.
@@ -3227,6 +3229,8 @@ Must match one of a preconfigured set in the tenant's directory.
       - `[Description <String>]`: An optional description for the team.
 Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
+      - `[FirstChannelName <String>]`: The name of the first channel in the team.
+This is an optional property, only used during team creation and isn't returned in methods to get and list teams.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
@@ -3775,13 +3779,23 @@ This URL should be treated as an opaque value and not parsed into its component 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DayNoteDate <DateTime?>]`: The date of the day note.
+          - `[DraftDayNote <IMicrosoftGraphItemBody>]`: itemBody
+          - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
         - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+        - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
         - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3794,11 +3808,13 @@ Read-only.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[OpenShiftId <String>]`: ID for the open shift.
         - `[OpenShifts <IMicrosoftGraphOpenShift- `[]`>]`: The set of open shifts in a scheduling group in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3834,14 +3850,18 @@ Required.
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
         - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
           - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
 Required.
         - `[Shifts <IMicrosoftGraphShift- `[]`>]`: The shifts in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3861,6 +3881,7 @@ Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
           - `[UserId <String>]`: ID of the user assigned to the shift.
 Required.
+        - `[StartDayOfWeek <String>]`: dayOfWeek
         - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
           - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
           - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -3869,16 +3890,48 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
         - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+        - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The list of breaks associated with the timeCard.
+            - `[BreakId <String>]`: ID of the timeCardBreak.
+            - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DateTime <DateTime?>]`: The time the entry is recorded.
+              - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+              - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ConfirmedBy <String>]`: confirmedBy
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The clock-in event of the timeCard.
+            - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+            - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[State <String>]`: timeCardState
+          - `[UserId <String>]`: User ID to which the timeCard belongs.
+        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
+        - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
+        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
           - `[IconType <String>]`: timeOffReasonIconType
@@ -3889,6 +3942,7 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3901,6 +3955,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
 Required.
         - `[TimesOff <IMicrosoftGraphTimeOff- `[]`>]`: The instances of times off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3915,7 +3970,7 @@ Required.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
-        - `[WorkforceIntegrationIds <String- `[]`>]`: 
+        - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
       - `[Specialization <String>]`: teamSpecialization
       - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4484,11 +4539,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+      - `[AllowLiveShare <String>]`: meetingLiveShareOptions
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
       - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+      - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+      - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -4528,7 +4588,8 @@ Read-only.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AllowTextOnly <Boolean?>]`: 
+        - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -4641,6 +4702,7 @@ Read-only.
         - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
     - `[OtherMails <String- `[]`>]`: A list of other email addresses for the user; for example: - `['bob@contoso.com', 'Robert@fabrikam.com']`.
+Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
@@ -4740,7 +4802,7 @@ Returns the plannerTasks assigned to the user.
 Nullable.
 Returns the plannerPlans shared with the user.
     - `[PostalCode <String>]`: The postal code for the user's postal address.
-The postal code is specific to the user's country/region.
+The postal code is specific to the user's country or region.
 In the United States of America, this attribute contains the ZIP code.
 Maximum length is 40 characters.
 Returned only on $select.
@@ -4839,6 +4901,8 @@ See the printer's capabilities for a list of supported output bins.
         - `[Jobs <IMicrosoftGraphPrintJob- `[]`>]`: The list of jobs that are queued for printing by the printer/printerShare.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -4889,7 +4953,13 @@ Read-only.
 Read-only.
             - `[DisplayName <String>]`: The document's name.
 Read-only.
+            - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
             - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+            - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+          - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
           - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
           - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -5075,6 +5145,7 @@ The default value is true.
 Optional.
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -5135,16 +5206,19 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
       - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
+This property records the last time a user attempted an interactive sign-in to the directory-whether the attempt was successful or not.
+Note: Since unsuccessful attempts are also logged, this value might not accurately reflect actual system usage.
+For tracking actual account access, please use the lastSuccessfulSignInDateTime property.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
+      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful interactive or non-interactive sign-in.
+Use this property if you need to determine when the account was truly accessed.
 This field can be used to build reports, such as inactive users.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
-      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
-      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful sign-in activity.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[LastSuccessfulSignInRequestId <String>]`: The request ID of the last successful sign-in.
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or session tokens (session cookies) issued before this time are invalid.
 Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph).
@@ -5283,7 +5357,7 @@ Read-only.
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
     - `[UsageLocation <String>]`: A two-letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions.
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -5691,6 +5765,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -5799,7 +5874,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
         - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
         - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -5834,35 +5909,35 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
           - `[Content <String>]`: The content of the item.
           - `[ContentType <String>]`: bodyType
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
         - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
         - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
         - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
         - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
         - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
         - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
         - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
         - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
         - `[Location <IMicrosoftGraphLocation>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5890,7 +5965,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
           - `[UniqueIdType <String>]`: locationUniqueIdType
         - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -5920,7 +5995,7 @@ The onlineMeetingUrl property will be deprecated in the future.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -5973,19 +6048,19 @@ Read-only.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Subject <String>]`: The text of the event's subject line.
         - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
         - `[Type <String>]`: eventType
         - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-      - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+      - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-      - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+      - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
       - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -6397,7 +6472,7 @@ Nullable.
     - `[Contacts <IMicrosoftGraphContact- `[]`>]`: The user's contacts.
 Read-only.
 Nullable.
-    - `[Country <String>]`: The country/region where the user is located; for example, US or UK.
+    - `[Country <String>]`: The country or region where the user is located; for example, US or UK.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -7477,6 +7552,7 @@ Read-only.
       - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AllMembers <IMicrosoftGraphConversationMember- `[]`>]`: A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
         - `[CreatedDateTime <DateTime?>]`: Read only.
 Timestamp at which the channel was created.
         - `[Description <String>]`: Optional textual description for the channel.
@@ -7525,6 +7601,8 @@ Must match one of a preconfigured set in the tenant's directory.
       - `[Description <String>]`: An optional description for the team.
 Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
+      - `[FirstChannelName <String>]`: The name of the first channel in the team.
+This is an optional property, only used during team creation and isn't returned in methods to get and list teams.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
@@ -8073,13 +8151,23 @@ This URL should be treated as an opaque value and not parsed into its component 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DayNoteDate <DateTime?>]`: The date of the day note.
+          - `[DraftDayNote <IMicrosoftGraphItemBody>]`: itemBody
+          - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
         - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+        - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
         - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -8092,11 +8180,13 @@ Read-only.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[OpenShiftId <String>]`: ID for the open shift.
         - `[OpenShifts <IMicrosoftGraphOpenShift- `[]`>]`: The set of open shifts in a scheduling group in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -8132,14 +8222,18 @@ Required.
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
         - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
           - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
 Required.
         - `[Shifts <IMicrosoftGraphShift- `[]`>]`: The shifts in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -8159,6 +8253,7 @@ Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
           - `[UserId <String>]`: ID of the user assigned to the shift.
 Required.
+        - `[StartDayOfWeek <String>]`: dayOfWeek
         - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
           - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
           - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -8167,16 +8262,58 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
         - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+        - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The list of breaks associated with the timeCard.
+            - `[BreakId <String>]`: ID of the timeCardBreak.
+            - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DateTime <DateTime?>]`: The time the entry is recorded.
+              - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+              - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ConfirmedBy <String>]`: confirmedBy
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The clock-in event of the timeCard.
+            - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+            - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[State <String>]`: timeCardState
+          - `[UserId <String>]`: User ID to which the timeCard belongs.
+        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
+        - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Altitude <Double?>]`: Optional.
+The altitude (height), in feet,  above sea level for the item.
+Read-only.
+            - `[Latitude <Double?>]`: Optional.
+The latitude, in decimal, for the item.
+Read-only.
+            - `[Longitude <Double?>]`: Optional.
+The longitude, in decimal, for the item.
+Read-only.
+        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
           - `[IconType <String>]`: timeOffReasonIconType
@@ -8187,6 +8324,7 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -8199,6 +8337,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
 Required.
         - `[TimesOff <IMicrosoftGraphTimeOff- `[]`>]`: The instances of times off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -8213,7 +8352,7 @@ Required.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
-        - `[WorkforceIntegrationIds <String- `[]`>]`: 
+        - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
       - `[Specialization <String>]`: teamSpecialization
       - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8782,11 +8921,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+      - `[AllowLiveShare <String>]`: meetingLiveShareOptions
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
       - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+      - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+      - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -8826,7 +8970,8 @@ Read-only.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AllowTextOnly <Boolean?>]`: 
+        - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -8939,6 +9084,7 @@ Read-only.
         - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
     - `[OtherMails <String- `[]`>]`: A list of other email addresses for the user; for example: - `['bob@contoso.com', 'Robert@fabrikam.com']`.
+Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
@@ -9038,7 +9184,7 @@ Returns the plannerTasks assigned to the user.
 Nullable.
 Returns the plannerPlans shared with the user.
     - `[PostalCode <String>]`: The postal code for the user's postal address.
-The postal code is specific to the user's country/region.
+The postal code is specific to the user's country or region.
 In the United States of America, this attribute contains the ZIP code.
 Maximum length is 40 characters.
 Returned only on $select.
@@ -9137,6 +9283,8 @@ See the printer's capabilities for a list of supported output bins.
         - `[Jobs <IMicrosoftGraphPrintJob- `[]`>]`: The list of jobs that are queued for printing by the printer/printerShare.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -9187,7 +9335,13 @@ Read-only.
 Read-only.
             - `[DisplayName <String>]`: The document's name.
 Read-only.
+            - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
             - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+            - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+          - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
           - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
           - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -9373,6 +9527,7 @@ The default value is true.
 Optional.
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -9433,16 +9588,19 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
       - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
+This property records the last time a user attempted an interactive sign-in to the directory-whether the attempt was successful or not.
+Note: Since unsuccessful attempts are also logged, this value might not accurately reflect actual system usage.
+For tracking actual account access, please use the lastSuccessfulSignInDateTime property.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
+      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful interactive or non-interactive sign-in.
+Use this property if you need to determine when the account was truly accessed.
 This field can be used to build reports, such as inactive users.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
-      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
-      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful sign-in activity.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[LastSuccessfulSignInRequestId <String>]`: The request ID of the last successful sign-in.
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or session tokens (session cookies) issued before this time are invalid.
 Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph).
@@ -9581,7 +9739,7 @@ Read-only.
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
     - `[UsageLocation <String>]`: A two-letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions.
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -9661,14 +9819,14 @@ Nullable.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Hashes <IMicrosoftGraphHashes>]`: hashes
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available).
+      - `[Crc32Hash <String>]`: The CRC32 value of the file (if available).
 Read-only.
-      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file change (if available).
 Read-only.
       - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available).
 Read-only.
-      - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available).
-Read-only.
+      - `[Sha256Hash <String>]`: This property isn't supported.
+Don't use.
     - `[MimeType <String>]`: The MIME type for the file.
 This is determined by logic on the server and might not be the value provided when the file was uploaded.
 Read-only.
@@ -9698,16 +9856,6 @@ Width of the image, in pixels.
 Read-only.
   - `[ListItem <IMicrosoftGraphListItem>]`: listItem
   - `[Location <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Altitude <Double?>]`: Optional.
-The altitude (height), in feet,  above sea level for the item.
-Read-only.
-    - `[Latitude <Double?>]`: Optional.
-The latitude, in decimal, for the item.
-Read-only.
-    - `[Longitude <Double?>]`: Optional.
-The longitude, in decimal, for the item.
-Read-only.
   - `[Malware <IMicrosoftGraphMalware>]`: malware
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Contains the virus details for the malware facet.
@@ -10068,17 +10216,17 @@ Read-only.
 Read-only.
           - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-            - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-            - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-            - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-            - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-            - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-            - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-            - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-            - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-            - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-            - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+            - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+            - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+            - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+            - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+            - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+            - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+            - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+            - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+            - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+            - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+            - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
           - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
         - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -10509,6 +10657,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
       - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -10617,7 +10766,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
       - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
       - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -10652,35 +10801,35 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Content <String>]`: The content of the item.
         - `[ContentType <String>]`: bodyType
       - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
       - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
       - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
       - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
       - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
       - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
       - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-      - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+      - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
       - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
       - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
       - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
       - `[Location <IMicrosoftGraphLocation>]`: location
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10708,7 +10857,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
         - `[UniqueIdType <String>]`: locationUniqueIdType
       - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -10738,7 +10887,7 @@ The onlineMeetingUrl property will be deprecated in the future.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -10791,19 +10940,19 @@ Read-only.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Subject <String>]`: The text of the event's subject line.
       - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
       - `[Type <String>]`: eventType
       - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+    - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+    - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
     - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -11224,7 +11373,7 @@ Nullable.
   - `[Contacts <IMicrosoftGraphContact- `[]`>]`: The user's contacts.
 Read-only.
 Nullable.
-  - `[Country <String>]`: The country/region where the user is located; for example, US or UK.
+  - `[Country <String>]`: The country or region where the user is located; for example, US or UK.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -11416,14 +11565,14 @@ Nullable.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Hashes <IMicrosoftGraphHashes>]`: hashes
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available).
+          - `[Crc32Hash <String>]`: The CRC32 value of the file (if available).
 Read-only.
-          - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+          - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file change (if available).
 Read-only.
           - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available).
 Read-only.
-          - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available).
-Read-only.
+          - `[Sha256Hash <String>]`: This property isn't supported.
+Don't use.
         - `[MimeType <String>]`: The MIME type for the file.
 This is determined by logic on the server and might not be the value provided when the file was uploaded.
 Read-only.
@@ -12001,17 +12150,17 @@ Read-only.
 Read-only.
               - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
               - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
             - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -12881,6 +13030,7 @@ Read-only.
     - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[AllMembers <IMicrosoftGraphConversationMember- `[]`>]`: A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
       - `[CreatedDateTime <DateTime?>]`: Read only.
 Timestamp at which the channel was created.
       - `[Description <String>]`: Optional textual description for the channel.
@@ -12929,6 +13079,8 @@ Must match one of a preconfigured set in the tenant's directory.
     - `[Description <String>]`: An optional description for the team.
 Maximum length: 1,024 characters.
     - `[DisplayName <String>]`: The name of the team.
+    - `[FirstChannelName <String>]`: The name of the first channel in the team.
+This is an optional property, only used during team creation and isn't returned in methods to get and list teams.
     - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
@@ -13477,13 +13629,23 @@ This URL should be treated as an opaque value and not parsed into its component 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[DayNoteDate <DateTime?>]`: The date of the day note.
+        - `[DraftDayNote <IMicrosoftGraphItemBody>]`: itemBody
+        - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
       - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+      - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
       - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
         - `[AssignedTo <String>]`: scheduleChangeRequestActor
         - `[ManagerActionMessage <String>]`: 
         - `[SenderMessage <String>]`: 
         - `[State <String>]`: scheduleChangeState
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -13496,11 +13658,13 @@ Read-only.
         - `[ManagerActionMessage <String>]`: 
         - `[SenderMessage <String>]`: 
         - `[State <String>]`: scheduleChangeState
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[OpenShiftId <String>]`: ID for the open shift.
       - `[OpenShifts <IMicrosoftGraphOpenShift- `[]`>]`: The set of open shifts in a scheduling group in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -13536,14 +13700,18 @@ Required.
       - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
       - `[ProvisionStatus <String>]`: operationStatus
       - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
         - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
         - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
 Required.
       - `[Shifts <IMicrosoftGraphShift- `[]`>]`: The shifts in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -13563,6 +13731,7 @@ Required.
         - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
         - `[UserId <String>]`: ID of the user assigned to the shift.
 Required.
+      - `[StartDayOfWeek <String>]`: dayOfWeek
       - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
         - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
         - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -13571,16 +13740,48 @@ Required.
         - `[ManagerActionMessage <String>]`: 
         - `[SenderMessage <String>]`: 
         - `[State <String>]`: scheduleChangeState
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
       - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-      - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-      - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+      - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The list of breaks associated with the timeCard.
+          - `[BreakId <String>]`: ID of the timeCardBreak.
+          - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DateTime <DateTime?>]`: The time the entry is recorded.
+            - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+            - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+        - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+        - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+        - `[ConfirmedBy <String>]`: confirmedBy
+        - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+        - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The clock-in event of the timeCard.
+          - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+        - `[State <String>]`: timeCardState
+        - `[UserId <String>]`: User ID to which the timeCard belongs.
+      - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
+      - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
+      - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
         - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
         - `[IconType <String>]`: timeOffReasonIconType
@@ -13591,6 +13792,7 @@ Required.
         - `[ManagerActionMessage <String>]`: 
         - `[SenderMessage <String>]`: 
         - `[State <String>]`: scheduleChangeState
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -13603,6 +13805,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
 Required.
       - `[TimesOff <IMicrosoftGraphTimeOff- `[]`>]`: The instances of times off in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -13617,7 +13820,7 @@ Required.
         - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
         - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
-      - `[WorkforceIntegrationIds <String- `[]`>]`: 
+      - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
     - `[Specialization <String>]`: teamSpecialization
     - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14186,11 +14389,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
   - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+    - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+    - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+    - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -14230,7 +14438,8 @@ Read-only.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
     - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowTextOnly <Boolean?>]`: 
+      - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -14343,6 +14552,7 @@ Read-only.
       - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
   - `[OtherMails <String- `[]`>]`: A list of other email addresses for the user; for example: - `['bob@contoso.com', 'Robert@fabrikam.com']`.
+Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
@@ -14442,7 +14652,7 @@ Returns the plannerTasks assigned to the user.
 Nullable.
 Returns the plannerPlans shared with the user.
   - `[PostalCode <String>]`: The postal code for the user's postal address.
-The postal code is specific to the user's country/region.
+The postal code is specific to the user's country or region.
 In the United States of America, this attribute contains the ZIP code.
 Maximum length is 40 characters.
 Returned only on $select.
@@ -14541,6 +14751,8 @@ See the printer's capabilities for a list of supported output bins.
       - `[Jobs <IMicrosoftGraphPrintJob- `[]`>]`: The list of jobs that are queued for printing by the printer/printerShare.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
         - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -14591,7 +14803,13 @@ Read-only.
 Read-only.
           - `[DisplayName <String>]`: The document's name.
 Read-only.
+          - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
           - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+          - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+        - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
         - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
         - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -14777,6 +14995,7 @@ The default value is true.
 Optional.
     - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -14837,16 +15056,19 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
     - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
     - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
+This property records the last time a user attempted an interactive sign-in to the directory-whether the attempt was successful or not.
+Note: Since unsuccessful attempts are also logged, this value might not accurately reflect actual system usage.
+For tracking actual account access, please use the lastSuccessfulSignInDateTime property.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
+    - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful interactive or non-interactive sign-in.
+Use this property if you need to determine when the account was truly accessed.
 This field can be used to build reports, such as inactive users.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
-    - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
-    - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful sign-in activity.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[LastSuccessfulSignInRequestId <String>]`: The request ID of the last successful sign-in.
   - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or session tokens (session cookies) issued before this time are invalid.
 Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph).
@@ -14985,7 +15207,7 @@ Read-only.
   - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
   - `[UsageLocation <String>]`: A two-letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions.
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -15340,6 +15562,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -15448,7 +15671,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
         - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
         - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -15483,35 +15706,35 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
           - `[Content <String>]`: The content of the item.
           - `[ContentType <String>]`: bodyType
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
         - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
         - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
         - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
         - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
         - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
         - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
         - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
         - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
         - `[Location <IMicrosoftGraphLocation>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15539,7 +15762,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
           - `[UniqueIdType <String>]`: locationUniqueIdType
         - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -15569,7 +15792,7 @@ The onlineMeetingUrl property will be deprecated in the future.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -15622,19 +15845,19 @@ Read-only.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Subject <String>]`: The text of the event's subject line.
         - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
         - `[Type <String>]`: eventType
         - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-      - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+      - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-      - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+      - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
       - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -16046,7 +16269,7 @@ Nullable.
     - `[Contacts <IMicrosoftGraphContact- `[]`>]`: The user's contacts.
 Read-only.
 Nullable.
-    - `[Country <String>]`: The country/region where the user is located; for example, US or UK.
+    - `[Country <String>]`: The country or region where the user is located; for example, US or UK.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -17126,6 +17349,7 @@ Read-only.
       - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AllMembers <IMicrosoftGraphConversationMember- `[]`>]`: A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
         - `[CreatedDateTime <DateTime?>]`: Read only.
 Timestamp at which the channel was created.
         - `[Description <String>]`: Optional textual description for the channel.
@@ -17174,6 +17398,8 @@ Must match one of a preconfigured set in the tenant's directory.
       - `[Description <String>]`: An optional description for the team.
 Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
+      - `[FirstChannelName <String>]`: The name of the first channel in the team.
+This is an optional property, only used during team creation and isn't returned in methods to get and list teams.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
@@ -17722,13 +17948,23 @@ This URL should be treated as an opaque value and not parsed into its component 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DayNoteDate <DateTime?>]`: The date of the day note.
+          - `[DraftDayNote <IMicrosoftGraphItemBody>]`: itemBody
+          - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
         - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+        - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
         - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17741,11 +17977,13 @@ Read-only.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[OpenShiftId <String>]`: ID for the open shift.
         - `[OpenShifts <IMicrosoftGraphOpenShift- `[]`>]`: The set of open shifts in a scheduling group in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17781,14 +18019,18 @@ Required.
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
         - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
           - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
 Required.
         - `[Shifts <IMicrosoftGraphShift- `[]`>]`: The shifts in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17808,6 +18050,7 @@ Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
           - `[UserId <String>]`: ID of the user assigned to the shift.
 Required.
+        - `[StartDayOfWeek <String>]`: dayOfWeek
         - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
           - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
           - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -17816,16 +18059,58 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
         - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+        - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The list of breaks associated with the timeCard.
+            - `[BreakId <String>]`: ID of the timeCardBreak.
+            - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DateTime <DateTime?>]`: The time the entry is recorded.
+              - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+              - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ConfirmedBy <String>]`: confirmedBy
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The clock-in event of the timeCard.
+            - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+            - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[State <String>]`: timeCardState
+          - `[UserId <String>]`: User ID to which the timeCard belongs.
+        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
+        - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Altitude <Double?>]`: Optional.
+The altitude (height), in feet,  above sea level for the item.
+Read-only.
+            - `[Latitude <Double?>]`: Optional.
+The latitude, in decimal, for the item.
+Read-only.
+            - `[Longitude <Double?>]`: Optional.
+The longitude, in decimal, for the item.
+Read-only.
+        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
           - `[IconType <String>]`: timeOffReasonIconType
@@ -17836,6 +18121,7 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17848,6 +18134,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
 Required.
         - `[TimesOff <IMicrosoftGraphTimeOff- `[]`>]`: The instances of times off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17862,7 +18149,7 @@ Required.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
-        - `[WorkforceIntegrationIds <String- `[]`>]`: 
+        - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
       - `[Specialization <String>]`: teamSpecialization
       - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18431,11 +18718,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+      - `[AllowLiveShare <String>]`: meetingLiveShareOptions
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
       - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+      - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+      - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -18475,7 +18767,8 @@ Read-only.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AllowTextOnly <Boolean?>]`: 
+        - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -18588,6 +18881,7 @@ Read-only.
         - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
     - `[OtherMails <String- `[]`>]`: A list of other email addresses for the user; for example: - `['bob@contoso.com', 'Robert@fabrikam.com']`.
+Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
@@ -18687,7 +18981,7 @@ Returns the plannerTasks assigned to the user.
 Nullable.
 Returns the plannerPlans shared with the user.
     - `[PostalCode <String>]`: The postal code for the user's postal address.
-The postal code is specific to the user's country/region.
+The postal code is specific to the user's country or region.
 In the United States of America, this attribute contains the ZIP code.
 Maximum length is 40 characters.
 Returned only on $select.
@@ -18786,6 +19080,8 @@ See the printer's capabilities for a list of supported output bins.
         - `[Jobs <IMicrosoftGraphPrintJob- `[]`>]`: The list of jobs that are queued for printing by the printer/printerShare.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -18836,7 +19132,13 @@ Read-only.
 Read-only.
             - `[DisplayName <String>]`: The document's name.
 Read-only.
+            - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
             - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+            - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+          - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
           - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
           - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -19022,6 +19324,7 @@ The default value is true.
 Optional.
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -19082,16 +19385,19 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
       - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
+This property records the last time a user attempted an interactive sign-in to the directory-whether the attempt was successful or not.
+Note: Since unsuccessful attempts are also logged, this value might not accurately reflect actual system usage.
+For tracking actual account access, please use the lastSuccessfulSignInDateTime property.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
+      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful interactive or non-interactive sign-in.
+Use this property if you need to determine when the account was truly accessed.
 This field can be used to build reports, such as inactive users.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
-      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
-      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful sign-in activity.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[LastSuccessfulSignInRequestId <String>]`: The request ID of the last successful sign-in.
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or session tokens (session cookies) issued before this time are invalid.
 Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph).
@@ -19230,7 +19536,7 @@ Read-only.
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
     - `[UsageLocation <String>]`: A two-letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions.
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -19310,14 +19616,14 @@ Nullable.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Hashes <IMicrosoftGraphHashes>]`: hashes
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available).
+      - `[Crc32Hash <String>]`: The CRC32 value of the file (if available).
 Read-only.
-      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file change (if available).
 Read-only.
       - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available).
 Read-only.
-      - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available).
-Read-only.
+      - `[Sha256Hash <String>]`: This property isn't supported.
+Don't use.
     - `[MimeType <String>]`: The MIME type for the file.
 This is determined by logic on the server and might not be the value provided when the file was uploaded.
 Read-only.
@@ -19347,16 +19653,6 @@ Width of the image, in pixels.
 Read-only.
   - `[ListItem <IMicrosoftGraphListItem>]`: listItem
   - `[Location <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Altitude <Double?>]`: Optional.
-The altitude (height), in feet,  above sea level for the item.
-Read-only.
-    - `[Latitude <Double?>]`: Optional.
-The latitude, in decimal, for the item.
-Read-only.
-    - `[Longitude <Double?>]`: Optional.
-The longitude, in decimal, for the item.
-Read-only.
   - `[Malware <IMicrosoftGraphMalware>]`: malware
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Contains the virus details for the malware facet.
@@ -19717,17 +20013,17 @@ Read-only.
 Read-only.
           - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-            - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-            - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-            - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-            - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-            - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-            - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-            - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-            - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-            - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-            - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+            - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+            - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+            - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+            - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+            - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+            - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+            - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+            - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+            - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+            - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+            - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
           - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
         - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -20160,6 +20456,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -20268,7 +20565,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
         - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
         - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -20303,35 +20600,35 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
           - `[Content <String>]`: The content of the item.
           - `[ContentType <String>]`: bodyType
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
         - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
         - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
         - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
         - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
         - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
         - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
         - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
         - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
         - `[Location <IMicrosoftGraphLocation>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -20359,7 +20656,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
           - `[UniqueIdType <String>]`: locationUniqueIdType
         - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -20389,7 +20686,7 @@ The onlineMeetingUrl property will be deprecated in the future.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -20442,19 +20739,19 @@ Read-only.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Subject <String>]`: The text of the event's subject line.
         - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
         - `[Type <String>]`: eventType
         - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-      - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+      - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-      - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+      - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
       - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -20866,7 +21163,7 @@ Nullable.
     - `[Contacts <IMicrosoftGraphContact- `[]`>]`: The user's contacts.
 Read-only.
 Nullable.
-    - `[Country <String>]`: The country/region where the user is located; for example, US or UK.
+    - `[Country <String>]`: The country or region where the user is located; for example, US or UK.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -21946,6 +22243,7 @@ Read-only.
       - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AllMembers <IMicrosoftGraphConversationMember- `[]`>]`: A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
         - `[CreatedDateTime <DateTime?>]`: Read only.
 Timestamp at which the channel was created.
         - `[Description <String>]`: Optional textual description for the channel.
@@ -21994,6 +22292,8 @@ Must match one of a preconfigured set in the tenant's directory.
       - `[Description <String>]`: An optional description for the team.
 Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
+      - `[FirstChannelName <String>]`: The name of the first channel in the team.
+This is an optional property, only used during team creation and isn't returned in methods to get and list teams.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
@@ -22542,13 +22842,23 @@ This URL should be treated as an opaque value and not parsed into its component 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DayNoteDate <DateTime?>]`: The date of the day note.
+          - `[DraftDayNote <IMicrosoftGraphItemBody>]`: itemBody
+          - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
         - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+        - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
         - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -22561,11 +22871,13 @@ Read-only.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[OpenShiftId <String>]`: ID for the open shift.
         - `[OpenShifts <IMicrosoftGraphOpenShift- `[]`>]`: The set of open shifts in a scheduling group in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -22601,14 +22913,18 @@ Required.
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
         - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
           - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
 Required.
         - `[Shifts <IMicrosoftGraphShift- `[]`>]`: The shifts in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -22628,6 +22944,7 @@ Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
           - `[UserId <String>]`: ID of the user assigned to the shift.
 Required.
+        - `[StartDayOfWeek <String>]`: dayOfWeek
         - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
           - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
           - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -22636,16 +22953,58 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
         - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+        - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The list of breaks associated with the timeCard.
+            - `[BreakId <String>]`: ID of the timeCardBreak.
+            - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DateTime <DateTime?>]`: The time the entry is recorded.
+              - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+              - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ConfirmedBy <String>]`: confirmedBy
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The clock-in event of the timeCard.
+            - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+            - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[State <String>]`: timeCardState
+          - `[UserId <String>]`: User ID to which the timeCard belongs.
+        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
+        - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Altitude <Double?>]`: Optional.
+The altitude (height), in feet,  above sea level for the item.
+Read-only.
+            - `[Latitude <Double?>]`: Optional.
+The latitude, in decimal, for the item.
+Read-only.
+            - `[Longitude <Double?>]`: Optional.
+The longitude, in decimal, for the item.
+Read-only.
+        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
           - `[IconType <String>]`: timeOffReasonIconType
@@ -22656,6 +23015,7 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -22668,6 +23028,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
 Required.
         - `[TimesOff <IMicrosoftGraphTimeOff- `[]`>]`: The instances of times off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -22682,7 +23043,7 @@ Required.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
-        - `[WorkforceIntegrationIds <String- `[]`>]`: 
+        - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
       - `[Specialization <String>]`: teamSpecialization
       - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -23251,11 +23612,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+      - `[AllowLiveShare <String>]`: meetingLiveShareOptions
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
       - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+      - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+      - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -23295,7 +23661,8 @@ Read-only.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AllowTextOnly <Boolean?>]`: 
+        - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -23408,6 +23775,7 @@ Read-only.
         - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
     - `[OtherMails <String- `[]`>]`: A list of other email addresses for the user; for example: - `['bob@contoso.com', 'Robert@fabrikam.com']`.
+Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
@@ -23507,7 +23875,7 @@ Returns the plannerTasks assigned to the user.
 Nullable.
 Returns the plannerPlans shared with the user.
     - `[PostalCode <String>]`: The postal code for the user's postal address.
-The postal code is specific to the user's country/region.
+The postal code is specific to the user's country or region.
 In the United States of America, this attribute contains the ZIP code.
 Maximum length is 40 characters.
 Returned only on $select.
@@ -23606,6 +23974,8 @@ See the printer's capabilities for a list of supported output bins.
         - `[Jobs <IMicrosoftGraphPrintJob- `[]`>]`: The list of jobs that are queued for printing by the printer/printerShare.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -23656,7 +24026,13 @@ Read-only.
 Read-only.
             - `[DisplayName <String>]`: The document's name.
 Read-only.
+            - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
             - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+            - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+          - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
           - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
           - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -23842,6 +24218,7 @@ The default value is true.
 Optional.
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -23902,16 +24279,19 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
       - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
+This property records the last time a user attempted an interactive sign-in to the directory-whether the attempt was successful or not.
+Note: Since unsuccessful attempts are also logged, this value might not accurately reflect actual system usage.
+For tracking actual account access, please use the lastSuccessfulSignInDateTime property.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
+      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful interactive or non-interactive sign-in.
+Use this property if you need to determine when the account was truly accessed.
 This field can be used to build reports, such as inactive users.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
-      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
-      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful sign-in activity.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[LastSuccessfulSignInRequestId <String>]`: The request ID of the last successful sign-in.
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or session tokens (session cookies) issued before this time are invalid.
 Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph).
@@ -24050,7 +24430,7 @@ Read-only.
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
     - `[UsageLocation <String>]`: A two-letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions.
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -24130,14 +24510,14 @@ Nullable.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Hashes <IMicrosoftGraphHashes>]`: hashes
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available).
+      - `[Crc32Hash <String>]`: The CRC32 value of the file (if available).
 Read-only.
-      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file change (if available).
 Read-only.
       - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available).
 Read-only.
-      - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available).
-Read-only.
+      - `[Sha256Hash <String>]`: This property isn't supported.
+Don't use.
     - `[MimeType <String>]`: The MIME type for the file.
 This is determined by logic on the server and might not be the value provided when the file was uploaded.
 Read-only.
@@ -24167,16 +24547,6 @@ Width of the image, in pixels.
 Read-only.
   - `[ListItem <IMicrosoftGraphListItem>]`: listItem
   - `[Location <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Altitude <Double?>]`: Optional.
-The altitude (height), in feet,  above sea level for the item.
-Read-only.
-    - `[Latitude <Double?>]`: Optional.
-The latitude, in decimal, for the item.
-Read-only.
-    - `[Longitude <Double?>]`: Optional.
-The longitude, in decimal, for the item.
-Read-only.
   - `[Malware <IMicrosoftGraphMalware>]`: malware
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Contains the virus details for the malware facet.
@@ -24537,17 +24907,17 @@ Read-only.
 Read-only.
           - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-            - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-            - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-            - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-            - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-            - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-            - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-            - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-            - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-            - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-            - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+            - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+            - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+            - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+            - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+            - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+            - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+            - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+            - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+            - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+            - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+            - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
           - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
         - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -24978,6 +25348,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
       - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -25086,7 +25457,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
       - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
       - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -25121,35 +25492,35 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Content <String>]`: The content of the item.
         - `[ContentType <String>]`: bodyType
       - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
       - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
       - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
       - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
       - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
       - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
       - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
       - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-      - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+      - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
       - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
       - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
       - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
       - `[Location <IMicrosoftGraphLocation>]`: location
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -25177,7 +25548,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
         - `[UniqueIdType <String>]`: locationUniqueIdType
       - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -25207,7 +25578,7 @@ The onlineMeetingUrl property will be deprecated in the future.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -25260,19 +25631,19 @@ Read-only.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Subject <String>]`: The text of the event's subject line.
       - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
       - `[Type <String>]`: eventType
       - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+    - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+    - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
     - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -25693,7 +26064,7 @@ Nullable.
   - `[Contacts <IMicrosoftGraphContact- `[]`>]`: The user's contacts.
 Read-only.
 Nullable.
-  - `[Country <String>]`: The country/region where the user is located; for example, US or UK.
+  - `[Country <String>]`: The country or region where the user is located; for example, US or UK.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -25885,14 +26256,14 @@ Nullable.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Hashes <IMicrosoftGraphHashes>]`: hashes
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available).
+          - `[Crc32Hash <String>]`: The CRC32 value of the file (if available).
 Read-only.
-          - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+          - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file change (if available).
 Read-only.
           - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available).
 Read-only.
-          - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available).
-Read-only.
+          - `[Sha256Hash <String>]`: This property isn't supported.
+Don't use.
         - `[MimeType <String>]`: The MIME type for the file.
 This is determined by logic on the server and might not be the value provided when the file was uploaded.
 Read-only.
@@ -26470,17 +26841,17 @@ Read-only.
 Read-only.
               - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
               - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
             - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -27350,6 +27721,7 @@ Read-only.
     - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[AllMembers <IMicrosoftGraphConversationMember- `[]`>]`: A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
       - `[CreatedDateTime <DateTime?>]`: Read only.
 Timestamp at which the channel was created.
       - `[Description <String>]`: Optional textual description for the channel.
@@ -27398,6 +27770,8 @@ Must match one of a preconfigured set in the tenant's directory.
     - `[Description <String>]`: An optional description for the team.
 Maximum length: 1,024 characters.
     - `[DisplayName <String>]`: The name of the team.
+    - `[FirstChannelName <String>]`: The name of the first channel in the team.
+This is an optional property, only used during team creation and isn't returned in methods to get and list teams.
     - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
@@ -27946,13 +28320,23 @@ This URL should be treated as an opaque value and not parsed into its component 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[DayNoteDate <DateTime?>]`: The date of the day note.
+        - `[DraftDayNote <IMicrosoftGraphItemBody>]`: itemBody
+        - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
       - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+      - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
       - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
         - `[AssignedTo <String>]`: scheduleChangeRequestActor
         - `[ManagerActionMessage <String>]`: 
         - `[SenderMessage <String>]`: 
         - `[State <String>]`: scheduleChangeState
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -27965,11 +28349,13 @@ Read-only.
         - `[ManagerActionMessage <String>]`: 
         - `[SenderMessage <String>]`: 
         - `[State <String>]`: scheduleChangeState
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[OpenShiftId <String>]`: ID for the open shift.
       - `[OpenShifts <IMicrosoftGraphOpenShift- `[]`>]`: The set of open shifts in a scheduling group in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -28005,14 +28391,18 @@ Required.
       - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
       - `[ProvisionStatus <String>]`: operationStatus
       - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
         - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
         - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
 Required.
       - `[Shifts <IMicrosoftGraphShift- `[]`>]`: The shifts in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -28032,6 +28422,7 @@ Required.
         - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
         - `[UserId <String>]`: ID of the user assigned to the shift.
 Required.
+      - `[StartDayOfWeek <String>]`: dayOfWeek
       - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
         - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
         - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -28040,16 +28431,48 @@ Required.
         - `[ManagerActionMessage <String>]`: 
         - `[SenderMessage <String>]`: 
         - `[State <String>]`: scheduleChangeState
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
       - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-      - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-      - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+      - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The list of breaks associated with the timeCard.
+          - `[BreakId <String>]`: ID of the timeCardBreak.
+          - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DateTime <DateTime?>]`: The time the entry is recorded.
+            - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+            - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+        - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+        - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+        - `[ConfirmedBy <String>]`: confirmedBy
+        - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+        - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The clock-in event of the timeCard.
+          - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+        - `[State <String>]`: timeCardState
+        - `[UserId <String>]`: User ID to which the timeCard belongs.
+      - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
+      - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
+      - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
         - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
         - `[IconType <String>]`: timeOffReasonIconType
@@ -28060,6 +28483,7 @@ Required.
         - `[ManagerActionMessage <String>]`: 
         - `[SenderMessage <String>]`: 
         - `[State <String>]`: scheduleChangeState
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -28072,6 +28496,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
 Required.
       - `[TimesOff <IMicrosoftGraphTimeOff- `[]`>]`: The instances of times off in the schedule.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -28086,7 +28511,7 @@ Required.
         - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
         - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
-      - `[WorkforceIntegrationIds <String- `[]`>]`: 
+      - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
     - `[Specialization <String>]`: teamSpecialization
     - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -28655,11 +29080,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
   - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+    - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+    - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+    - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -28699,7 +29129,8 @@ Read-only.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
     - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowTextOnly <Boolean?>]`: 
+      - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -28812,6 +29243,7 @@ Read-only.
       - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
   - `[OtherMails <String- `[]`>]`: A list of other email addresses for the user; for example: - `['bob@contoso.com', 'Robert@fabrikam.com']`.
+Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
@@ -28911,7 +29343,7 @@ Returns the plannerTasks assigned to the user.
 Nullable.
 Returns the plannerPlans shared with the user.
   - `[PostalCode <String>]`: The postal code for the user's postal address.
-The postal code is specific to the user's country/region.
+The postal code is specific to the user's country or region.
 In the United States of America, this attribute contains the ZIP code.
 Maximum length is 40 characters.
 Returned only on $select.
@@ -29010,6 +29442,8 @@ See the printer's capabilities for a list of supported output bins.
       - `[Jobs <IMicrosoftGraphPrintJob- `[]`>]`: The list of jobs that are queued for printing by the printer/printerShare.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
         - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -29060,7 +29494,13 @@ Read-only.
 Read-only.
           - `[DisplayName <String>]`: The document's name.
 Read-only.
+          - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
           - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+          - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+        - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
         - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
         - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -29246,6 +29686,7 @@ The default value is true.
 Optional.
     - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -29306,16 +29747,19 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
     - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
     - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
+This property records the last time a user attempted an interactive sign-in to the directory-whether the attempt was successful or not.
+Note: Since unsuccessful attempts are also logged, this value might not accurately reflect actual system usage.
+For tracking actual account access, please use the lastSuccessfulSignInDateTime property.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
+    - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful interactive or non-interactive sign-in.
+Use this property if you need to determine when the account was truly accessed.
 This field can be used to build reports, such as inactive users.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
-    - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
-    - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful sign-in activity.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[LastSuccessfulSignInRequestId <String>]`: The request ID of the last successful sign-in.
   - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or session tokens (session cookies) issued before this time are invalid.
 Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph).
@@ -29454,7 +29898,7 @@ Read-only.
   - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
   - `[UsageLocation <String>]`: A two-letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions.
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -29809,6 +30253,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -29917,7 +30362,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
         - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
         - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -29952,35 +30397,35 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
           - `[Content <String>]`: The content of the item.
           - `[ContentType <String>]`: bodyType
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
         - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
         - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
         - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
         - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
         - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
         - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
         - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
         - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
         - `[Location <IMicrosoftGraphLocation>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -30008,7 +30453,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
           - `[UniqueIdType <String>]`: locationUniqueIdType
         - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -30038,7 +30483,7 @@ The onlineMeetingUrl property will be deprecated in the future.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -30091,19 +30536,19 @@ Read-only.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Subject <String>]`: The text of the event's subject line.
         - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
         - `[Type <String>]`: eventType
         - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-      - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+      - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-      - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+      - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
       - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -30515,7 +30960,7 @@ Nullable.
     - `[Contacts <IMicrosoftGraphContact- `[]`>]`: The user's contacts.
 Read-only.
 Nullable.
-    - `[Country <String>]`: The country/region where the user is located; for example, US or UK.
+    - `[Country <String>]`: The country or region where the user is located; for example, US or UK.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -30707,14 +31152,14 @@ Nullable.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Hashes <IMicrosoftGraphHashes>]`: hashes
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available).
+            - `[Crc32Hash <String>]`: The CRC32 value of the file (if available).
 Read-only.
-            - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+            - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file change (if available).
 Read-only.
             - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available).
 Read-only.
-            - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available).
-Read-only.
+            - `[Sha256Hash <String>]`: This property isn't supported.
+Don't use.
           - `[MimeType <String>]`: The MIME type for the file.
 This is determined by logic on the server and might not be the value provided when the file was uploaded.
 Read-only.
@@ -31292,17 +31737,17 @@ Read-only.
 Read-only.
                 - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                  - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                  - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                  - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                  - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                  - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                  - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                  - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                  - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                  - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                  - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                  - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                  - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                  - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                  - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                  - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                  - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                  - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                  - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                  - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                  - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                  - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
                 - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
               - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -32137,6 +32582,7 @@ Read-only.
       - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AllMembers <IMicrosoftGraphConversationMember- `[]`>]`: A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
         - `[CreatedDateTime <DateTime?>]`: Read only.
 Timestamp at which the channel was created.
         - `[Description <String>]`: Optional textual description for the channel.
@@ -32185,6 +32631,8 @@ Must match one of a preconfigured set in the tenant's directory.
       - `[Description <String>]`: An optional description for the team.
 Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
+      - `[FirstChannelName <String>]`: The name of the first channel in the team.
+This is an optional property, only used during team creation and isn't returned in methods to get and list teams.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
@@ -32733,13 +33181,23 @@ This URL should be treated as an opaque value and not parsed into its component 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DayNoteDate <DateTime?>]`: The date of the day note.
+          - `[DraftDayNote <IMicrosoftGraphItemBody>]`: itemBody
+          - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
         - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+        - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
         - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -32752,11 +33210,13 @@ Read-only.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[OpenShiftId <String>]`: ID for the open shift.
         - `[OpenShifts <IMicrosoftGraphOpenShift- `[]`>]`: The set of open shifts in a scheduling group in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -32792,14 +33252,18 @@ Required.
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
         - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
           - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
 Required.
         - `[Shifts <IMicrosoftGraphShift- `[]`>]`: The shifts in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -32819,6 +33283,7 @@ Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
           - `[UserId <String>]`: ID of the user assigned to the shift.
 Required.
+        - `[StartDayOfWeek <String>]`: dayOfWeek
         - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
           - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
           - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -32827,16 +33292,48 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
         - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+        - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The list of breaks associated with the timeCard.
+            - `[BreakId <String>]`: ID of the timeCardBreak.
+            - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DateTime <DateTime?>]`: The time the entry is recorded.
+              - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+              - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ConfirmedBy <String>]`: confirmedBy
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The clock-in event of the timeCard.
+            - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+            - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[State <String>]`: timeCardState
+          - `[UserId <String>]`: User ID to which the timeCard belongs.
+        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
+        - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
+        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
           - `[IconType <String>]`: timeOffReasonIconType
@@ -32847,6 +33344,7 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -32859,6 +33357,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
 Required.
         - `[TimesOff <IMicrosoftGraphTimeOff- `[]`>]`: The instances of times off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -32873,7 +33372,7 @@ Required.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
-        - `[WorkforceIntegrationIds <String- `[]`>]`: 
+        - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
       - `[Specialization <String>]`: teamSpecialization
       - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -33442,11 +33941,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+      - `[AllowLiveShare <String>]`: meetingLiveShareOptions
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
       - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+      - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+      - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -33486,7 +33990,8 @@ Read-only.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AllowTextOnly <Boolean?>]`: 
+        - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -33599,6 +34104,7 @@ Read-only.
         - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
     - `[OtherMails <String- `[]`>]`: A list of other email addresses for the user; for example: - `['bob@contoso.com', 'Robert@fabrikam.com']`.
+Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
@@ -33698,7 +34204,7 @@ Returns the plannerTasks assigned to the user.
 Nullable.
 Returns the plannerPlans shared with the user.
     - `[PostalCode <String>]`: The postal code for the user's postal address.
-The postal code is specific to the user's country/region.
+The postal code is specific to the user's country or region.
 In the United States of America, this attribute contains the ZIP code.
 Maximum length is 40 characters.
 Returned only on $select.
@@ -33797,6 +34303,8 @@ See the printer's capabilities for a list of supported output bins.
         - `[Jobs <IMicrosoftGraphPrintJob- `[]`>]`: The list of jobs that are queued for printing by the printer/printerShare.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -33847,7 +34355,13 @@ Read-only.
 Read-only.
             - `[DisplayName <String>]`: The document's name.
 Read-only.
+            - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
             - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+            - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+          - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
           - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
           - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -34033,6 +34547,7 @@ The default value is true.
 Optional.
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -34093,16 +34608,19 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
       - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
+This property records the last time a user attempted an interactive sign-in to the directory-whether the attempt was successful or not.
+Note: Since unsuccessful attempts are also logged, this value might not accurately reflect actual system usage.
+For tracking actual account access, please use the lastSuccessfulSignInDateTime property.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
+      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful interactive or non-interactive sign-in.
+Use this property if you need to determine when the account was truly accessed.
 This field can be used to build reports, such as inactive users.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
-      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
-      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful sign-in activity.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[LastSuccessfulSignInRequestId <String>]`: The request ID of the last successful sign-in.
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or session tokens (session cookies) issued before this time are invalid.
 Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph).
@@ -34241,7 +34759,7 @@ Read-only.
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
     - `[UsageLocation <String>]`: A two-letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions.
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -34685,6 +35203,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -34793,7 +35312,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
         - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
         - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -34828,35 +35347,35 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
           - `[Content <String>]`: The content of the item.
           - `[ContentType <String>]`: bodyType
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
         - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
         - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
         - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
         - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
         - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
         - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
         - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
         - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
         - `[Location <IMicrosoftGraphLocation>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -34884,7 +35403,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
           - `[UniqueIdType <String>]`: locationUniqueIdType
         - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -34914,7 +35433,7 @@ The onlineMeetingUrl property will be deprecated in the future.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -34967,19 +35486,19 @@ Read-only.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Subject <String>]`: The text of the event's subject line.
         - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
         - `[Type <String>]`: eventType
         - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-      - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+      - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-      - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+      - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
       - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -35391,7 +35910,7 @@ Nullable.
     - `[Contacts <IMicrosoftGraphContact- `[]`>]`: The user's contacts.
 Read-only.
 Nullable.
-    - `[Country <String>]`: The country/region where the user is located; for example, US or UK.
+    - `[Country <String>]`: The country or region where the user is located; for example, US or UK.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -36471,6 +36990,7 @@ Read-only.
       - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AllMembers <IMicrosoftGraphConversationMember- `[]`>]`: A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
         - `[CreatedDateTime <DateTime?>]`: Read only.
 Timestamp at which the channel was created.
         - `[Description <String>]`: Optional textual description for the channel.
@@ -36519,6 +37039,8 @@ Must match one of a preconfigured set in the tenant's directory.
       - `[Description <String>]`: An optional description for the team.
 Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
+      - `[FirstChannelName <String>]`: The name of the first channel in the team.
+This is an optional property, only used during team creation and isn't returned in methods to get and list teams.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
@@ -37067,13 +37589,23 @@ This URL should be treated as an opaque value and not parsed into its component 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DayNoteDate <DateTime?>]`: The date of the day note.
+          - `[DraftDayNote <IMicrosoftGraphItemBody>]`: itemBody
+          - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
         - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+        - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
         - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -37086,11 +37618,13 @@ Read-only.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[OpenShiftId <String>]`: ID for the open shift.
         - `[OpenShifts <IMicrosoftGraphOpenShift- `[]`>]`: The set of open shifts in a scheduling group in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -37126,14 +37660,18 @@ Required.
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
         - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
           - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
 Required.
         - `[Shifts <IMicrosoftGraphShift- `[]`>]`: The shifts in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -37153,6 +37691,7 @@ Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
           - `[UserId <String>]`: ID of the user assigned to the shift.
 Required.
+        - `[StartDayOfWeek <String>]`: dayOfWeek
         - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
           - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
           - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -37161,16 +37700,58 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
         - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+        - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The list of breaks associated with the timeCard.
+            - `[BreakId <String>]`: ID of the timeCardBreak.
+            - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DateTime <DateTime?>]`: The time the entry is recorded.
+              - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+              - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ConfirmedBy <String>]`: confirmedBy
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The clock-in event of the timeCard.
+            - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+            - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[State <String>]`: timeCardState
+          - `[UserId <String>]`: User ID to which the timeCard belongs.
+        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
+        - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Altitude <Double?>]`: Optional.
+The altitude (height), in feet,  above sea level for the item.
+Read-only.
+            - `[Latitude <Double?>]`: Optional.
+The latitude, in decimal, for the item.
+Read-only.
+            - `[Longitude <Double?>]`: Optional.
+The longitude, in decimal, for the item.
+Read-only.
+        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
           - `[IconType <String>]`: timeOffReasonIconType
@@ -37181,6 +37762,7 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -37193,6 +37775,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
 Required.
         - `[TimesOff <IMicrosoftGraphTimeOff- `[]`>]`: The instances of times off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -37207,7 +37790,7 @@ Required.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
-        - `[WorkforceIntegrationIds <String- `[]`>]`: 
+        - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
       - `[Specialization <String>]`: teamSpecialization
       - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -37776,11 +38359,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+      - `[AllowLiveShare <String>]`: meetingLiveShareOptions
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
       - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+      - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+      - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -37820,7 +38408,8 @@ Read-only.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AllowTextOnly <Boolean?>]`: 
+        - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -37933,6 +38522,7 @@ Read-only.
         - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
     - `[OtherMails <String- `[]`>]`: A list of other email addresses for the user; for example: - `['bob@contoso.com', 'Robert@fabrikam.com']`.
+Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
@@ -38032,7 +38622,7 @@ Returns the plannerTasks assigned to the user.
 Nullable.
 Returns the plannerPlans shared with the user.
     - `[PostalCode <String>]`: The postal code for the user's postal address.
-The postal code is specific to the user's country/region.
+The postal code is specific to the user's country or region.
 In the United States of America, this attribute contains the ZIP code.
 Maximum length is 40 characters.
 Returned only on $select.
@@ -38131,6 +38721,8 @@ See the printer's capabilities for a list of supported output bins.
         - `[Jobs <IMicrosoftGraphPrintJob- `[]`>]`: The list of jobs that are queued for printing by the printer/printerShare.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -38181,7 +38773,13 @@ Read-only.
 Read-only.
             - `[DisplayName <String>]`: The document's name.
 Read-only.
+            - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
             - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+            - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+          - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
           - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
           - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -38367,6 +38965,7 @@ The default value is true.
 Optional.
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -38427,16 +39026,19 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
       - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
+This property records the last time a user attempted an interactive sign-in to the directory-whether the attempt was successful or not.
+Note: Since unsuccessful attempts are also logged, this value might not accurately reflect actual system usage.
+For tracking actual account access, please use the lastSuccessfulSignInDateTime property.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
+      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful interactive or non-interactive sign-in.
+Use this property if you need to determine when the account was truly accessed.
 This field can be used to build reports, such as inactive users.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
-      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
-      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful sign-in activity.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[LastSuccessfulSignInRequestId <String>]`: The request ID of the last successful sign-in.
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or session tokens (session cookies) issued before this time are invalid.
 Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph).
@@ -38575,7 +39177,7 @@ Read-only.
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
     - `[UsageLocation <String>]`: A two-letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions.
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -38655,14 +39257,14 @@ Nullable.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Hashes <IMicrosoftGraphHashes>]`: hashes
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available).
+      - `[Crc32Hash <String>]`: The CRC32 value of the file (if available).
 Read-only.
-      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file change (if available).
 Read-only.
       - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available).
 Read-only.
-      - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available).
-Read-only.
+      - `[Sha256Hash <String>]`: This property isn't supported.
+Don't use.
     - `[MimeType <String>]`: The MIME type for the file.
 This is determined by logic on the server and might not be the value provided when the file was uploaded.
 Read-only.
@@ -38692,16 +39294,6 @@ Width of the image, in pixels.
 Read-only.
   - `[ListItem <IMicrosoftGraphListItem>]`: listItem
   - `[Location <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Altitude <Double?>]`: Optional.
-The altitude (height), in feet,  above sea level for the item.
-Read-only.
-    - `[Latitude <Double?>]`: Optional.
-The latitude, in decimal, for the item.
-Read-only.
-    - `[Longitude <Double?>]`: Optional.
-The longitude, in decimal, for the item.
-Read-only.
   - `[Malware <IMicrosoftGraphMalware>]`: malware
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Contains the virus details for the malware facet.
@@ -39062,17 +39654,17 @@ Read-only.
 Read-only.
           - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-            - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-            - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-            - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-            - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-            - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-            - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-            - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-            - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-            - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-            - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+            - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+            - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+            - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+            - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+            - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+            - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+            - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+            - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+            - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+            - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+            - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
           - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
         - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -39515,6 +40107,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -39623,7 +40216,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
         - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
         - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -39658,35 +40251,35 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
           - `[Content <String>]`: The content of the item.
           - `[ContentType <String>]`: bodyType
         - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
         - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
         - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
 Nullable.
         - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
         - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
         - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
         - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
         - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
         - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
         - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
         - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
         - `[Location <IMicrosoftGraphLocation>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -39714,7 +40307,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
           - `[UniqueIdType <String>]`: locationUniqueIdType
         - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -39744,7 +40337,7 @@ The onlineMeetingUrl property will be deprecated in the future.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -39797,19 +40390,19 @@ Read-only.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Subject <String>]`: The text of the event's subject line.
         - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
         - `[Type <String>]`: eventType
         - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-      - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+      - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-      - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+      - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
       - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -40221,7 +40814,7 @@ Nullable.
     - `[Contacts <IMicrosoftGraphContact- `[]`>]`: The user's contacts.
 Read-only.
 Nullable.
-    - `[Country <String>]`: The country/region where the user is located; for example, US or UK.
+    - `[Country <String>]`: The country or region where the user is located; for example, US or UK.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -41301,6 +41894,7 @@ Read-only.
       - `[AllChannels <IMicrosoftGraphChannel- `[]`>]`: List of channels either hosted in or shared with the team (incoming channels).
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AllMembers <IMicrosoftGraphConversationMember- `[]`>]`: A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
         - `[CreatedDateTime <DateTime?>]`: Read only.
 Timestamp at which the channel was created.
         - `[Description <String>]`: Optional textual description for the channel.
@@ -41349,6 +41943,8 @@ Must match one of a preconfigured set in the tenant's directory.
       - `[Description <String>]`: An optional description for the team.
 Maximum length: 1,024 characters.
       - `[DisplayName <String>]`: The name of the team.
+      - `[FirstChannelName <String>]`: The name of the first channel in the team.
+This is an optional property, only used during team creation and isn't returned in methods to get and list teams.
       - `[FunSettings <IMicrosoftGraphTeamFunSettings>]`: teamFunSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
@@ -41897,13 +42493,23 @@ This URL should be treated as an opaque value and not parsed into its component 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[DayNotes <IMicrosoftGraphDayNote- `[]`>]`: The day notes in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[DayNoteDate <DateTime?>]`: The date of the day note.
+          - `[DraftDayNote <IMicrosoftGraphItemBody>]`: itemBody
+          - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
         - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+        - `[IsActivitiesIncludedWhenCopyingShiftsEnabled <Boolean?>]`: Indicates whether copied shifts include activities from the original shift.
         - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
           - `[AssignedTo <String>]`: scheduleChangeRequestActor
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -41916,11 +42522,13 @@ Read-only.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[OpenShiftId <String>]`: ID for the open shift.
         - `[OpenShifts <IMicrosoftGraphOpenShift- `[]`>]`: The set of open shifts in a scheduling group in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -41956,14 +42564,18 @@ Required.
         - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
         - `[ProvisionStatus <String>]`: operationStatus
         - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup- `[]`>]`: The logical grouping of users in the schedule (usually by role).
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
           - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
 Required.
         - `[Shifts <IMicrosoftGraphShift- `[]`>]`: The shifts in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -41983,6 +42595,7 @@ Required.
           - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
           - `[UserId <String>]`: ID of the user assigned to the shift.
 Required.
+        - `[StartDayOfWeek <String>]`: dayOfWeek
         - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
           - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
           - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -41991,16 +42604,58 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
         - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+        - `[TimeCards <IMicrosoftGraphTimeCard- `[]`>]`: The time cards in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The list of breaks associated with the timeCard.
+            - `[BreakId <String>]`: ID of the timeCardBreak.
+            - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DateTime <DateTime?>]`: The time the entry is recorded.
+              - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
+              - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+            - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[ConfirmedBy <String>]`: confirmedBy
+          - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
+          - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Breaks <IMicrosoftGraphTimeCardBreak- `[]`>]`: The clock-in event of the timeCard.
+            - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+            - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
+          - `[State <String>]`: timeCardState
+          - `[UserId <String>]`: User ID to which the timeCard belongs.
+        - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
+        - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Altitude <Double?>]`: Optional.
+The altitude (height), in feet,  above sea level for the item.
+Read-only.
+            - `[Latitude <Double?>]`: Optional.
+The latitude, in decimal, for the item.
+Read-only.
+            - `[Longitude <Double?>]`: Optional.
+The longitude, in decimal, for the item.
+Read-only.
+        - `[TimeOffReasons <IMicrosoftGraphTimeOffReason- `[]`>]`: The set of reasons for a time off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
           - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
           - `[IconType <String>]`: timeOffReasonIconType
@@ -42011,6 +42666,7 @@ Required.
           - `[ManagerActionMessage <String>]`: 
           - `[SenderMessage <String>]`: 
           - `[State <String>]`: scheduleChangeState
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -42023,6 +42679,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format.
 Required.
         - `[TimesOff <IMicrosoftGraphTimeOff- `[]`>]`: The instances of times off in the schedule.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -42037,7 +42694,7 @@ Required.
           - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
           - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
-        - `[WorkforceIntegrationIds <String- `[]`>]`: 
+        - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
       - `[Specialization <String>]`: teamSpecialization
       - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -42606,11 +43263,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+      - `[AllowLiveShare <String>]`: meetingLiveShareOptions
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
       - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+      - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+      - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -42650,7 +43312,8 @@ Read-only.
         - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
       - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AllowTextOnly <Boolean?>]`: 
+        - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -42763,6 +43426,7 @@ Read-only.
         - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
     - `[OtherMails <String- `[]`>]`: A list of other email addresses for the user; for example: - `['bob@contoso.com', 'Robert@fabrikam.com']`.
+Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.
 Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
@@ -42862,7 +43526,7 @@ Returns the plannerTasks assigned to the user.
 Nullable.
 Returns the plannerPlans shared with the user.
     - `[PostalCode <String>]`: The postal code for the user's postal address.
-The postal code is specific to the user's country/region.
+The postal code is specific to the user's country or region.
 In the United States of America, this attribute contains the ZIP code.
 Maximum length is 40 characters.
 Returned only on $select.
@@ -42961,6 +43625,8 @@ See the printer's capabilities for a list of supported output bins.
         - `[Jobs <IMicrosoftGraphPrintJob- `[]`>]`: The list of jobs that are queued for printing by the printer/printerShare.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
           - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -43011,7 +43677,13 @@ Read-only.
 Read-only.
             - `[DisplayName <String>]`: The document's name.
 Read-only.
+            - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
             - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+            - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+          - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
           - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
           - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -43197,6 +43869,7 @@ The default value is true.
 Optional.
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -43257,16 +43930,19 @@ Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
       - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
       - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user.
-You can use this field to calculate the last time a user attempted (either successfully or unsuccessfully) to sign in to the directory with an interactive authentication method.
+This property records the last time a user attempted an interactive sign-in to the directory-whether the attempt was successful or not.
+Note: Since unsuccessful attempts are also logged, this value might not accurately reflect actual system usage.
+For tracking actual account access, please use the lastSuccessfulSignInDateTime property.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
+      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful interactive or non-interactive sign-in.
+Use this property if you need to determine when the account was truly accessed.
 This field can be used to build reports, such as inactive users.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
-      - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
-      - `[LastSuccessfulSignInDateTime <DateTime?>]`: The date and time of the user's most recent successful sign-in activity.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[LastSuccessfulSignInRequestId <String>]`: The request ID of the last successful sign-in.
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or session tokens (session cookies) issued before this time are invalid.
 Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph).
@@ -43405,7 +44081,7 @@ Read-only.
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
     - `[UsageLocation <String>]`: A two-letter country code (ISO standard 3166).
-Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.
+Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions.
 Examples include: US, JP, and GB.
 Not nullable.
 Returned only on $select.
@@ -43485,14 +44161,14 @@ Nullable.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Hashes <IMicrosoftGraphHashes>]`: hashes
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Crc32Hash <String>]`: The CRC32 value of the file in little endian (if available).
+      - `[Crc32Hash <String>]`: The CRC32 value of the file (if available).
 Read-only.
-      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available).
+      - `[QuickXorHash <String>]`: A proprietary hash of the file that can be used to determine if the contents of the file change (if available).
 Read-only.
       - `[Sha1Hash <String>]`: SHA1 hash for the contents of the file (if available).
 Read-only.
-      - `[Sha256Hash <String>]`: SHA256 hash for the contents of the file (if available).
-Read-only.
+      - `[Sha256Hash <String>]`: This property isn't supported.
+Don't use.
     - `[MimeType <String>]`: The MIME type for the file.
 This is determined by logic on the server and might not be the value provided when the file was uploaded.
 Read-only.
@@ -43522,16 +44198,6 @@ Width of the image, in pixels.
 Read-only.
   - `[ListItem <IMicrosoftGraphListItem>]`: listItem
   - `[Location <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Altitude <Double?>]`: Optional.
-The altitude (height), in feet,  above sea level for the item.
-Read-only.
-    - `[Latitude <Double?>]`: Optional.
-The latitude, in decimal, for the item.
-Read-only.
-    - `[Longitude <Double?>]`: Optional.
-The longitude, in decimal, for the item.
-Read-only.
   - `[Malware <IMicrosoftGraphMalware>]`: malware
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Contains the virus details for the malware facet.
@@ -43892,17 +44558,17 @@ Read-only.
 Read-only.
           - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-            - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-            - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-            - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-            - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-            - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-            - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-            - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-            - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-            - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-            - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+            - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+            - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+            - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+            - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+            - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+            - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+            - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+            - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+            - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+            - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+            - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
           - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
         - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.

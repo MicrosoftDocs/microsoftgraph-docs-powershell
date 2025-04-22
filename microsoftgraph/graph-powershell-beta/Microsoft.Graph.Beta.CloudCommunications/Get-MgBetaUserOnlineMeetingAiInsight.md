@@ -43,7 +43,7 @@ Get aiInsights from users
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetingAiInsight.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingAiInsight.Read.Chat,  |
+| Application | OnlineMeetingAiInsight.Read.All, OnlineMeetingAiInsight.Read.Chat,  |
 
 ## PARAMETERS
 

@@ -45,7 +45,7 @@ The returned alert object contains information about the state, type, date, and 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | HealthMonitoringAlert.Read.All, HealthMonitoringAlert.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | HealthMonitoringAlert.Read.All, HealthMonitoringAlert.ReadWrite.All,  |
 

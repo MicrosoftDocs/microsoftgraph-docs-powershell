@@ -36,7 +36,7 @@ Delete navigation property photo for users
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite,  |
+| Delegated (work or school account) | User.ReadWrite, ProfilePhoto.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.ReadWrite.All, User.ReadWrite.All,  |
 

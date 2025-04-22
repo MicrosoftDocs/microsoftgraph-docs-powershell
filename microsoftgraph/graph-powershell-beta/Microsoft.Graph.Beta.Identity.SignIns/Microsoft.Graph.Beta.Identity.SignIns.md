@@ -23,13 +23,7 @@ Locale: en-US
 ### [Confirm-MgBetaUserInformationProtectionSignature](Confirm-MgBetaUserInformationProtectionSignature.md)
 
 
-### [Disable-MgBetaMeAuthenticationMethodSmsSignIn](Disable-MgBetaMeAuthenticationMethodSmsSignIn.md)
-
-
 ### [Disable-MgBetaUserAuthenticationMethodSmsSignIn](Disable-MgBetaUserAuthenticationMethodSmsSignIn.md)
-
-
-### [Enable-MgBetaMeAuthenticationMethodSmsSignIn](Enable-MgBetaMeAuthenticationMethodSmsSignIn.md)
 
 
 ### [Enable-MgBetaUserAuthenticationMethodSmsSignIn](Enable-MgBetaUserAuthenticationMethodSmsSignIn.md)
@@ -384,138 +378,6 @@ Locale: en-US
 
 
 ### [Get-MgBetaInvitationInvitedUserSponsorCount](Get-MgBetaInvitationInvitedUserSponsorCount.md)
-
-
-### [Get-MgBetaMeAuthentication](Get-MgBetaMeAuthentication.md)
-
-
-### [Get-MgBetaMeAuthenticationEmailMethod](Get-MgBetaMeAuthenticationEmailMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationEmailMethodCount](Get-MgBetaMeAuthenticationEmailMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationFido2Method](Get-MgBetaMeAuthenticationFido2Method.md)
-
-
-### [Get-MgBetaMeAuthenticationFido2MethodCount](Get-MgBetaMeAuthenticationFido2MethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethod](Get-MgBetaMeAuthenticationHardwareOathMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodCount](Get-MgBetaMeAuthenticationHardwareOathMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDevice](Get-MgBetaMeAuthenticationHardwareOathMethodDevice.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignTo](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignTo.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignToMailboxSetting](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignToMailboxSetting.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignToServiceProvisioningError](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignToServiceProvisioningError.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignToServiceProvisioningErrorCount](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignToServiceProvisioningErrorCount.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDevice](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDevice.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignTo](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignTo.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMailboxSetting](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMailboxSetting.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToServiceProvisioningError](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToServiceProvisioningError.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToServiceProvisioningErrorCount](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToServiceProvisioningErrorCount.md)
-
-
-### [Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceCount](Get-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceCount.md)
-
-
-### [Get-MgBetaMeAuthenticationMethod](Get-MgBetaMeAuthenticationMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationMethodCount](Get-MgBetaMeAuthenticationMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationMicrosoftAuthenticatorMethod](Get-MgBetaMeAuthenticationMicrosoftAuthenticatorMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationMicrosoftAuthenticatorMethodCount](Get-MgBetaMeAuthenticationMicrosoftAuthenticatorMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationMicrosoftAuthenticatorMethodDevice](Get-MgBetaMeAuthenticationMicrosoftAuthenticatorMethodDevice.md)
-
-
-### [Get-MgBetaMeAuthenticationOperation](Get-MgBetaMeAuthenticationOperation.md)
-
-
-### [Get-MgBetaMeAuthenticationOperationCount](Get-MgBetaMeAuthenticationOperationCount.md)
-
-
-### [Get-MgBetaMeAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Get-MgBetaMeAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationPasswordlessMicrosoftAuthenticatorMethodCount](Get-MgBetaMeAuthenticationPasswordlessMicrosoftAuthenticatorMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaMeAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
-
-
-### [Get-MgBetaMeAuthenticationPasswordMethod](Get-MgBetaMeAuthenticationPasswordMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationPasswordMethodCount](Get-MgBetaMeAuthenticationPasswordMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationPhoneMethod](Get-MgBetaMeAuthenticationPhoneMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationPhoneMethodCount](Get-MgBetaMeAuthenticationPhoneMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationPlatformCredentialMethod](Get-MgBetaMeAuthenticationPlatformCredentialMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationPlatformCredentialMethodCount](Get-MgBetaMeAuthenticationPlatformCredentialMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationPlatformCredentialMethodDevice](Get-MgBetaMeAuthenticationPlatformCredentialMethodDevice.md)
-
-
-### [Get-MgBetaMeAuthenticationRequirement](Get-MgBetaMeAuthenticationRequirement.md)
-
-
-### [Get-MgBetaMeAuthenticationSignInPreference](Get-MgBetaMeAuthenticationSignInPreference.md)
-
-
-### [Get-MgBetaMeAuthenticationSoftwareOathMethod](Get-MgBetaMeAuthenticationSoftwareOathMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationSoftwareOathMethodCount](Get-MgBetaMeAuthenticationSoftwareOathMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationTemporaryAccessPassMethod](Get-MgBetaMeAuthenticationTemporaryAccessPassMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationTemporaryAccessPassMethodCount](Get-MgBetaMeAuthenticationTemporaryAccessPassMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationWindowsHelloForBusinessMethod](Get-MgBetaMeAuthenticationWindowsHelloForBusinessMethod.md)
-
-
-### [Get-MgBetaMeAuthenticationWindowsHelloForBusinessMethodCount](Get-MgBetaMeAuthenticationWindowsHelloForBusinessMethodCount.md)
-
-
-### [Get-MgBetaMeAuthenticationWindowsHelloForBusinessMethodDevice](Get-MgBetaMeAuthenticationWindowsHelloForBusinessMethodDevice.md)
 
 
 ### [Get-MgBetaOauth2PermissionGrant](Get-MgBetaOauth2PermissionGrant.md)
@@ -1079,9 +941,6 @@ Locale: en-US
 ### [Get-MgBetaUserInformationProtectionThreatAssessmentRequestResultCount](Get-MgBetaUserInformationProtectionThreatAssessmentRequestResultCount.md)
 
 
-### [Initialize-MgBetaMeAuthenticationHardwareOathMethod](Initialize-MgBetaMeAuthenticationHardwareOathMethod.md)
-
-
 ### [Initialize-MgBetaUserAuthenticationHardwareOathMethod](Initialize-MgBetaUserAuthenticationHardwareOathMethod.md)
 
 
@@ -1100,13 +959,7 @@ Locale: en-US
 ### [Invoke-MgBetaBufferUserInformationProtectionEncrypt](Invoke-MgBetaBufferUserInformationProtectionEncrypt.md)
 
 
-### [Invoke-MgBetaCreationMeAuthenticationFido2MethodOption](Invoke-MgBetaCreationMeAuthenticationFido2MethodOption.md)
-
-
 ### [Invoke-MgBetaCreationUserAuthenticationFido2MethodOption](Invoke-MgBetaCreationUserAuthenticationFido2MethodOption.md)
-
-
-### [Invoke-MgBetaDeactivateMeAuthenticationHardwareOathMethod](Invoke-MgBetaDeactivateMeAuthenticationHardwareOathMethod.md)
 
 
 ### [Invoke-MgBetaDeactivateUserAuthenticationHardwareOathMethod](Invoke-MgBetaDeactivateUserAuthenticationHardwareOathMethod.md)
@@ -1263,30 +1116,6 @@ Locale: en-US
 
 
 ### [New-MgBetaInvitation](New-MgBetaInvitation.md)
-
-
-### [New-MgBetaMeAuthenticationEmailMethod](New-MgBetaMeAuthenticationEmailMethod.md)
-
-
-### [New-MgBetaMeAuthenticationHardwareOathMethod](New-MgBetaMeAuthenticationHardwareOathMethod.md)
-
-
-### [New-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDevice](New-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDevice.md)
-
-
-### [New-MgBetaMeAuthenticationMethod](New-MgBetaMeAuthenticationMethod.md)
-
-
-### [New-MgBetaMeAuthenticationOperation](New-MgBetaMeAuthenticationOperation.md)
-
-
-### [New-MgBetaMeAuthenticationPasswordMethod](New-MgBetaMeAuthenticationPasswordMethod.md)
-
-
-### [New-MgBetaMeAuthenticationPhoneMethod](New-MgBetaMeAuthenticationPhoneMethod.md)
-
-
-### [New-MgBetaMeAuthenticationTemporaryAccessPassMethod](New-MgBetaMeAuthenticationTemporaryAccessPassMethod.md)
 
 
 ### [New-MgBetaOauth2PermissionGrant](New-MgBetaOauth2PermissionGrant.md)
@@ -1604,48 +1433,6 @@ Locale: en-US
 ### [Remove-MgBetaInformationProtectionThreatAssessmentRequestResult](Remove-MgBetaInformationProtectionThreatAssessmentRequestResult.md)
 
 
-### [Remove-MgBetaMeAuthentication](Remove-MgBetaMeAuthentication.md)
-
-
-### [Remove-MgBetaMeAuthenticationEmailMethod](Remove-MgBetaMeAuthenticationEmailMethod.md)
-
-
-### [Remove-MgBetaMeAuthenticationFido2Method](Remove-MgBetaMeAuthenticationFido2Method.md)
-
-
-### [Remove-MgBetaMeAuthenticationHardwareOathMethod](Remove-MgBetaMeAuthenticationHardwareOathMethod.md)
-
-
-### [Remove-MgBetaMeAuthenticationHardwareOathMethodDevice](Remove-MgBetaMeAuthenticationHardwareOathMethodDevice.md)
-
-
-### [Remove-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDevice](Remove-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDevice.md)
-
-
-### [Remove-MgBetaMeAuthenticationMicrosoftAuthenticatorMethod](Remove-MgBetaMeAuthenticationMicrosoftAuthenticatorMethod.md)
-
-
-### [Remove-MgBetaMeAuthenticationOperation](Remove-MgBetaMeAuthenticationOperation.md)
-
-
-### [Remove-MgBetaMeAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgBetaMeAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
-
-
-### [Remove-MgBetaMeAuthenticationPhoneMethod](Remove-MgBetaMeAuthenticationPhoneMethod.md)
-
-
-### [Remove-MgBetaMeAuthenticationPlatformCredentialMethod](Remove-MgBetaMeAuthenticationPlatformCredentialMethod.md)
-
-
-### [Remove-MgBetaMeAuthenticationSoftwareOathMethod](Remove-MgBetaMeAuthenticationSoftwareOathMethod.md)
-
-
-### [Remove-MgBetaMeAuthenticationTemporaryAccessPassMethod](Remove-MgBetaMeAuthenticationTemporaryAccessPassMethod.md)
-
-
-### [Remove-MgBetaMeAuthenticationWindowsHelloForBusinessMethod](Remove-MgBetaMeAuthenticationWindowsHelloForBusinessMethod.md)
-
-
 ### [Remove-MgBetaOauth2PermissionGrant](Remove-MgBetaOauth2PermissionGrant.md)
 
 
@@ -1883,9 +1670,6 @@ Locale: en-US
 ### [Remove-MgBetaUserInformationProtectionThreatAssessmentRequestResult](Remove-MgBetaUserInformationProtectionThreatAssessmentRequestResult.md)
 
 
-### [Reset-MgBetaMeAuthenticationMethodPassword](Reset-MgBetaMeAuthenticationMethodPassword.md)
-
-
 ### [Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault](Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault.md)
 
 
@@ -1920,12 +1704,6 @@ Locale: en-US
 
 
 ### [Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder.md)
-
-
-### [Set-MgBetaMeAuthenticationHardwareOathMethodAndActivate](Set-MgBetaMeAuthenticationHardwareOathMethodAndActivate.md)
-
-
-### [Set-MgBetaMeAuthenticationHardwareOathMethodAndActivateBySerialNumber](Set-MgBetaMeAuthenticationHardwareOathMethodAndActivateBySerialNumber.md)
 
 
 ### [Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
@@ -2097,39 +1875,6 @@ Locale: en-US
 
 
 ### [Update-MgBetaInvitationInvitedUserMailboxSetting](Update-MgBetaInvitationInvitedUserMailboxSetting.md)
-
-
-### [Update-MgBetaMeAuthentication](Update-MgBetaMeAuthentication.md)
-
-
-### [Update-MgBetaMeAuthenticationEmailMethod](Update-MgBetaMeAuthenticationEmailMethod.md)
-
-
-### [Update-MgBetaMeAuthenticationHardwareOathMethodDevice](Update-MgBetaMeAuthenticationHardwareOathMethodDevice.md)
-
-
-### [Update-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignToMailboxSetting](Update-MgBetaMeAuthenticationHardwareOathMethodDeviceAssignToMailboxSetting.md)
-
-
-### [Update-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDevice](Update-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDevice.md)
-
-
-### [Update-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMailboxSetting](Update-MgBetaMeAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMailboxSetting.md)
-
-
-### [Update-MgBetaMeAuthenticationMethod](Update-MgBetaMeAuthenticationMethod.md)
-
-
-### [Update-MgBetaMeAuthenticationOperation](Update-MgBetaMeAuthenticationOperation.md)
-
-
-### [Update-MgBetaMeAuthenticationPhoneMethod](Update-MgBetaMeAuthenticationPhoneMethod.md)
-
-
-### [Update-MgBetaMeAuthenticationRequirement](Update-MgBetaMeAuthenticationRequirement.md)
-
-
-### [Update-MgBetaMeAuthenticationSignInPreference](Update-MgBetaMeAuthenticationSignInPreference.md)
 
 
 ### [Update-MgBetaOauth2PermissionGrant](Update-MgBetaOauth2PermissionGrant.md)

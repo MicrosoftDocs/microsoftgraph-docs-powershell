@@ -55,6 +55,14 @@ Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
 ## DESCRIPTION
 Update the navigation property importedAppleDeviceIdentities in deviceManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -271,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -Platform
-platform
+Supported platform types for policies.
 
 ```yaml
 Type: Platform
@@ -419,7 +427,7 @@ Read-only.
   - `[IsDeleted <Boolean?>]`: Indicates if the device is deleted from Apple Business Manager
   - `[IsSupervised <Boolean?>]`: Indicates if the Apple device is supervised.
   - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
-  - `[Platform <Platform?>]`: platform
+  - `[Platform <Platform?>]`: Supported platform types for policies.
   - `[RequestedEnrollmentProfileAssignmentDateTime <DateTime?>]`: The time enrollment profile was assigned to the device
   - `[RequestedEnrollmentProfileId <String>]`: Enrollment profile Id admin intends to apply to the device during next enrollment
   - `[SerialNumber <String>]`: Device serial number

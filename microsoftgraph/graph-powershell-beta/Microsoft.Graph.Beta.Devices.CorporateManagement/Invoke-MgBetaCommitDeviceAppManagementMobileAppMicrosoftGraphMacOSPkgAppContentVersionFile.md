@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileEncryptionInfo
-Contains properties for file encryption information for the content version of a line of business app.
+Contains properties for file encryption information for the content version of a line-of-business app.
 To construct, see NOTES section for FILEENCRYPTIONINFO properties and create a hash table.
 
 ```yaml
@@ -271,7 +271,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1S00MdlDeviceappmanagementMobileappsMobileappIdMicrosoftGraphMacospkgappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>]`: Contains properties for file encryption information for the content version of a line of business app.
+  - `[FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>]`: Contains properties for file encryption information for the content version of a line-of-business app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[EncryptionKey <Byte- `[]`>]`: The key used to encrypt the file content.
     - `[FileDigest <Byte- `[]`>]`: The file digest prior to encryption.
@@ -288,7 +288,7 @@ Must be 32 bytes.
 Maps to the strategy used to encrypt the file.
 Currently, only ProfileVersion1 is supported.
 
-FILEENCRYPTIONINFO `<IMicrosoftGraphFileEncryptionInfo>`: Contains properties for file encryption information for the content version of a line of business app.
+FILEENCRYPTIONINFO `<IMicrosoftGraphFileEncryptionInfo>`: Contains properties for file encryption information for the content version of a line-of-business app.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EncryptionKey <Byte- `[]`>]`: The key used to encrypt the file content.
   - `[FileDigest <Byte- `[]`>]`: The file digest prior to encryption.

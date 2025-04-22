@@ -47,7 +47,7 @@ Get documents from print
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrintJob.Read, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | PrintJob.Read.All, PrintJob.ReadWrite.All,  |
 
 ## PARAMETERS
 

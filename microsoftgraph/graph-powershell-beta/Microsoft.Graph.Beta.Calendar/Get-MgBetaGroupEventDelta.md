@@ -53,8 +53,8 @@ The following table lists the differences between the delta function on events a
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
+| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
 | Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
 
 ## PARAMETERS

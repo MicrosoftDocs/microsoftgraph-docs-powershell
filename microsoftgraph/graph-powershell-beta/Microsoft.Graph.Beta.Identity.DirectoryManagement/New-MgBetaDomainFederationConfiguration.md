@@ -19,10 +19,11 @@ Create a new internalDomainFederation object.
 ### CreateExpanded (Default)
 ```
 New-MgBetaDomainFederationConfiguration -DomainId <String> [-ResponseHeadersVariable <String>]
- [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
- [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
- [-PassiveSignInUri <String>] [-PasswordResetUri <String>] [-PreferredAuthenticationProtocol <String>]
+ [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>]
+ [-DefaultInteractiveAuthenticationMethod <String>] [-DisplayName <String>] [-FederatedIdpMfaBehavior <String>]
+ [-Id <String>] [-IsSignedAuthenticationRequestRequired] [-IssuerUri <String>] [-MetadataExchangeUri <String>]
+ [-NextSigningCertificate <String>] [-OpenIdConnectDiscoveryEndpoint <String>] [-PassiveSignInUri <String>]
+ [-PasswordChangeUri <String>] [-PasswordResetUri <String>] [-PreferredAuthenticationProtocol <String>]
  [-PromptLoginBehavior <String>] [-SignOutUri <String>] [-SigningCertificate <String>]
  [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -39,11 +40,11 @@ New-MgBetaDomainFederationConfiguration -DomainId <String>
 ```
 New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-FederatedIdpMfaBehavior <String>] [-Id <String>]
- [-IsSignedAuthenticationRequestRequired] [-IssuerUri <String>] [-MetadataExchangeUri <String>]
- [-NextSigningCertificate <String>] [-PassiveSignInUri <String>] [-PasswordResetUri <String>]
- [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>] [-SignOutUri <String>]
- [-SigningCertificate <String>]
+ [-DefaultInteractiveAuthenticationMethod <String>] [-DisplayName <String>] [-FederatedIdpMfaBehavior <String>]
+ [-Id <String>] [-IsSignedAuthenticationRequestRequired] [-IssuerUri <String>] [-MetadataExchangeUri <String>]
+ [-NextSigningCertificate <String>] [-OpenIdConnectDiscoveryEndpoint <String>] [-PassiveSignInUri <String>]
+ [-PasswordChangeUri <String>] [-PasswordResetUri <String>] [-PreferredAuthenticationProtocol <String>]
+ [-PromptLoginBehavior <String>] [-SignOutUri <String>] [-SigningCertificate <String>]
  [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -57,6 +58,14 @@ New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 
 ## DESCRIPTION
 Create a new internalDomainFederation object.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Configure federation settings for a federated domain
@@ -87,7 +96,7 @@ This examples creates new federation settings for the specified domain.
 
 ### -ActiveSignInUri
 URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Microsoft Entra ID.
-Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+Corresponds to the ActiveLogOnUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
 
 ```yaml
 Type: String
@@ -129,6 +138,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultInteractiveAuthenticationMethod
+
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -288,8 +312,38 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OpenIdConnectDiscoveryEndpoint
+
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PassiveSignInUri
 URI that web-based clients are directed to when signing in to Microsoft Entra services.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PasswordChangeUri
+
 
 ```yaml
 Type: String
@@ -415,7 +469,7 @@ Accept wildcard characters: False
 
 ### -SignOutUri
 URI that clients are redirected to when they sign out of Microsoft Entra services.
-Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+Corresponds to the LogOffUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
 
 ```yaml
 Type: String
@@ -492,7 +546,8 @@ If a new certificate isn't available, Microsoft Entra ID monitors the metadata d
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveSignInUri <String>]`: URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Microsoft Entra ID.
-Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+Corresponds to the ActiveLogOnUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
+  - `[DefaultInteractiveAuthenticationMethod <String>]`: 
   - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
   - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
 If false (default), the SAML authentication requests sent to the federated IdP aren't signed.
@@ -500,10 +555,12 @@ If false (default), the SAML authentication requests sent to the federated IdP a
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
+  - `[OpenIdConnectDiscoveryEndpoint <String>]`: 
+  - `[PasswordChangeUri <String>]`: 
   - `[PasswordResetUri <String>]`: URI that clients are redirected to for resetting their password.
   - `[PromptLoginBehavior <String>]`: promptLoginBehavior
   - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
-Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+Corresponds to the LogOffUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
   - `[SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]`: signingCertificateUpdateStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CertificateUpdateResult <String>]`: Status of the last certificate update.

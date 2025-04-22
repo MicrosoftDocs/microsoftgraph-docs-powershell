@@ -33,6 +33,14 @@ Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentityS
 ## DESCRIPTION
 Delete navigation property userAttributeAssignments for identity
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

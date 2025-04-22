@@ -45,7 +45,7 @@ To retrieve Stream types of the default branding, for example, bannerLogo and ba
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.Read.All,  |
+| Delegated (work or school account) | User.Read, User.Read.All, OrganizationalBranding.ReadWrite.All, OrganizationalBranding.Read.All, Organization.ReadWrite.All, Organization.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All, Organization.Read.All,  |
 

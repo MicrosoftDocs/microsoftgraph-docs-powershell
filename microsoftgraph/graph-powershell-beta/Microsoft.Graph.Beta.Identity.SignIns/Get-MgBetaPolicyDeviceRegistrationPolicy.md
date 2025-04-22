@@ -33,7 +33,7 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration, Policy.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

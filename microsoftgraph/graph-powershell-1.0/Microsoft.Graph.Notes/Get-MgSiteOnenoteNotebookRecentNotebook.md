@@ -37,9 +37,9 @@ Get a list of recentNotebook instances that have been accessed by the signed-in 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.ReadWrite.All, Notes.Read.All,  |
+| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All, Notes.Read,  |
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
-| Application | Not supported |
+| Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
 ## PARAMETERS
 

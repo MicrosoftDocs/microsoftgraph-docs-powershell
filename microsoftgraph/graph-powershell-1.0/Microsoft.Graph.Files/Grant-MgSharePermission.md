@@ -55,7 +55,7 @@ Grant users access to a link represented by a permission.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

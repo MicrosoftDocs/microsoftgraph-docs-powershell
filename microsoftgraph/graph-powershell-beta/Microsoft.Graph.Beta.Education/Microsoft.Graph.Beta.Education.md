@@ -338,21 +338,6 @@ Locale: en-US
 ### [Get-MgBetaEducationSchoolUserCount](Get-MgBetaEducationSchoolUserCount.md)
 
 
-### [Get-MgBetaEducationSynchronizationProfile](Get-MgBetaEducationSynchronizationProfile.md)
-
-
-### [Get-MgBetaEducationSynchronizationProfileCount](Get-MgBetaEducationSynchronizationProfileCount.md)
-
-
-### [Get-MgBetaEducationSynchronizationProfileError](Get-MgBetaEducationSynchronizationProfileError.md)
-
-
-### [Get-MgBetaEducationSynchronizationProfileErrorCount](Get-MgBetaEducationSynchronizationProfileErrorCount.md)
-
-
-### [Get-MgBetaEducationSynchronizationProfileStatus](Get-MgBetaEducationSynchronizationProfileStatus.md)
-
-
 ### [Get-MgBetaEducationUser](Get-MgBetaEducationUser.md)
 
 
@@ -536,9 +521,6 @@ Locale: en-US
 ### [Invoke-MgBetaUnsubmitEducationUserAssignmentSubmission](Invoke-MgBetaUnsubmitEducationUserAssignmentSubmission.md)
 
 
-### [Invoke-MgBetaUploadEducationSynchronizationProfileUrl](Invoke-MgBetaUploadEducationSynchronizationProfileUrl.md)
-
-
 ### [New-MgBetaEducationClass](New-MgBetaEducationClass.md)
 
 
@@ -642,12 +624,6 @@ Locale: en-US
 
 
 ### [New-MgBetaEducationSchoolUserByRef](New-MgBetaEducationSchoolUserByRef.md)
-
-
-### [New-MgBetaEducationSynchronizationProfile](New-MgBetaEducationSynchronizationProfile.md)
-
-
-### [New-MgBetaEducationSynchronizationProfileError](New-MgBetaEducationSynchronizationProfileError.md)
 
 
 ### [New-MgBetaEducationUser](New-MgBetaEducationUser.md)
@@ -827,15 +803,6 @@ Locale: en-US
 ### [Remove-MgBetaEducationSchoolUserEducationUserByRef](Remove-MgBetaEducationSchoolUserEducationUserByRef.md)
 
 
-### [Remove-MgBetaEducationSynchronizationProfile](Remove-MgBetaEducationSynchronizationProfile.md)
-
-
-### [Remove-MgBetaEducationSynchronizationProfileError](Remove-MgBetaEducationSynchronizationProfileError.md)
-
-
-### [Remove-MgBetaEducationSynchronizationProfileStatus](Remove-MgBetaEducationSynchronizationProfileStatus.md)
-
-
 ### [Remove-MgBetaEducationUser](Remove-MgBetaEducationUser.md)
 
 
@@ -878,12 +845,6 @@ Locale: en-US
 ### [Remove-MgBetaEducationUserRubric](Remove-MgBetaEducationUserRubric.md)
 
 
-### [Reset-MgBetaEducationSynchronizationProfile](Reset-MgBetaEducationSynchronizationProfile.md)
-
-
-### [Resume-MgBetaEducationSynchronizationProfile](Resume-MgBetaEducationSynchronizationProfile.md)
-
-
 ### [Set-MgBetaEducationClassAssignmentRubricByRef](Set-MgBetaEducationClassAssignmentRubricByRef.md)
 
 
@@ -923,9 +884,6 @@ Locale: en-US
 ### [Set-MgBetaEducationUserAssignmentUpResourceFolder](Set-MgBetaEducationUserAssignmentUpResourceFolder.md)
 
 
-### [Start-MgBetaEducationSynchronizationProfile](Start-MgBetaEducationSynchronizationProfile.md)
-
-
 ### [Submit-MgBetaEducationClassAssignmentSubmission](Submit-MgBetaEducationClassAssignmentSubmission.md)
 
 
@@ -933,9 +891,6 @@ Locale: en-US
 
 
 ### [Submit-MgBetaEducationUserAssignmentSubmission](Submit-MgBetaEducationUserAssignmentSubmission.md)
-
-
-### [Suspend-MgBetaEducationSynchronizationProfile](Suspend-MgBetaEducationSynchronizationProfile.md)
 
 
 ### [Update-MgBetaEducationClass](Update-MgBetaEducationClass.md)
@@ -1047,15 +1002,6 @@ Locale: en-US
 
 
 ### [Update-MgBetaEducationSchoolAdministrativeUnit](Update-MgBetaEducationSchoolAdministrativeUnit.md)
-
-
-### [Update-MgBetaEducationSynchronizationProfile](Update-MgBetaEducationSynchronizationProfile.md)
-
-
-### [Update-MgBetaEducationSynchronizationProfileError](Update-MgBetaEducationSynchronizationProfileError.md)
-
-
-### [Update-MgBetaEducationSynchronizationProfileStatus](Update-MgBetaEducationSynchronizationProfileStatus.md)
 
 
 ### [Update-MgBetaEducationUser](Update-MgBetaEducationUser.md)

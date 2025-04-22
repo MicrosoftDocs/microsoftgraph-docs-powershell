@@ -41,7 +41,7 @@ The following RBAC providers are currently supported:- Cloud PC- device manageme
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
 
@@ -54,7 +54,6 @@ Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 $params = @{
 	description = "An example custom role"
-### Example 2
 	rolePermissions = @(
 		@{
 			allowedResourceActions = @(
@@ -69,6 +68,7 @@ New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params
 
 ```
 This example shows how to use the New-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
 
 
 ## PARAMETERS

@@ -26,7 +26,7 @@ Read the properties and relationships of an accessReviewPolicy object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.AccessReview,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.AccessReview,  |
 

@@ -38,7 +38,7 @@ Get allTime from drives
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
 
 ## PARAMETERS
 
@@ -190,6 +190,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[DriveItemId1 <String>]`: The unique identifier of driveItem
   - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat

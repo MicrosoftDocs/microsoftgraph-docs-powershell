@@ -38,7 +38,7 @@ Self-service operations aren't supported.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

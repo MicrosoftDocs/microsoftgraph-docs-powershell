@@ -59,7 +59,7 @@ Self-service operations aren't supported.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

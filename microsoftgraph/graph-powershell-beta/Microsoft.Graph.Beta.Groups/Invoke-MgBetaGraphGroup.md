@@ -34,6 +34,14 @@ Invoke-MgBetaGraphGroup -InputObject <IGroupsIdentity> [-ResponseHeadersVariable
 Calling this method disables the current user to receive email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

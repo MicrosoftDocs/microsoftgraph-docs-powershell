@@ -37,7 +37,7 @@ Follow a driveItem.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

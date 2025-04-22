@@ -43,7 +43,7 @@ Retrieve the properties of a specific pendingExternalUserProfile.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | PendingExternalUserProfile.Read.All, PendingExternalUserProfile.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PendingExternalUserProfile.Read.All, PendingExternalUserProfile.ReadWrite.All,  |
 

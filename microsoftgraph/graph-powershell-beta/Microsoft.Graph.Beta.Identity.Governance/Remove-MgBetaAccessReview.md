@@ -36,7 +36,7 @@ In the Microsoft Entra access reviews feature, delete an accessReview object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | AccessReview.ReadWrite.Membership,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -59,6 +59,12 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile.md)
 
 
+### [Get-MgBetaDeviceManagementDepOnboardingSettingDefaultTvOSEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingDefaultTvOSEnrollmentProfile.md)
+
+
+### [Get-MgBetaDeviceManagementDepOnboardingSettingDefaultVisionOSEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingDefaultVisionOSEnrollmentProfile.md)
+
+
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey](Get-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey.md)
 
 

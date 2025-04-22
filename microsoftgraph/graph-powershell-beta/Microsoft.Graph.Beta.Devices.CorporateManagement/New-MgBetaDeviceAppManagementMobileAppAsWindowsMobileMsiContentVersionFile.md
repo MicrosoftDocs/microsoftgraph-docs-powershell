@@ -20,8 +20,8 @@ Create new navigation property to files for deviceAppManagement
 New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile -MobileAppContentId <String>
  -MobileAppId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-IsDependency] [-IsFrameworkFile] [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>]
- [-SizeEncrypted <Int64>] [-SizeEncryptedInBytes <Int64>] [-SizeInBytes <Int64>] [-UploadState <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SizeEncrypted <Int64>] [-UploadState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -37,8 +37,8 @@ New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDependency] [-IsFrameworkFile]
  [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>]
- [-SizeEncryptedInBytes <Int64>] [-SizeInBytes <Int64>] [-UploadState <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UploadState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -256,8 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -Size
-The size of the file prior to encryption.
-To be deprecated, please use sizeInBytes property instead.
+Indicates the original size of the file, in bytes.
 
 ```yaml
 Type: Int64
@@ -272,40 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -SizeEncrypted
-The size of the file after encryption.
-To be deprecated, please use sizeEncryptedInBytes property instead.
-
-```yaml
-Type: Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SizeEncryptedInBytes
 Indicates the size of the file after encryption, in bytes.
-Valid values 0 to 9.22337203685478E+18
-
-```yaml
-Type: Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SizeInBytes
-Indicates the original size of the file, in bytes.
-Valid values 0 to 9.22337203685478E+18
 
 ```yaml
 Type: Int64
@@ -393,14 +359,8 @@ Defaults to FALSE.
 To be deprecated.
   - `[Manifest <Byte- `[]`>]`: Indicates the manifest information, containing file metadata.
   - `[Name <String>]`: Indicates the name of the file.
-  - `[Size <Int64?>]`: The size of the file prior to encryption.
-To be deprecated, please use sizeInBytes property instead.
-  - `[SizeEncrypted <Int64?>]`: The size of the file after encryption.
-To be deprecated, please use sizeEncryptedInBytes property instead.
-  - `[SizeEncryptedInBytes <Int64?>]`: Indicates the size of the file after encryption, in bytes.
-Valid values 0 to 9.22337203685478E+18
-  - `[SizeInBytes <Int64?>]`: Indicates the original size of the file, in bytes.
-Valid values 0 to 9.22337203685478E+18
+  - `[Size <Int64?>]`: Indicates the original size of the file, in bytes.
+  - `[SizeEncrypted <Int64?>]`: Indicates the size of the file after encryption, in bytes.
   - `[UploadState <String>]`: Contains properties for upload request states.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter

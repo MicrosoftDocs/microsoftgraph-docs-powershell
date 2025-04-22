@@ -9,8 +9,7 @@ ms.subservice: teams
 # New-MgChatMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified chat.
-This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
+Send a new chatMessage in the specified channel or a chat.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
@@ -62,8 +61,7 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified chat.
-This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
+Send a new chatMessage in the specified channel or a chat.
 
 **Permissions**
 
@@ -71,7 +69,7 @@ This API can't create a new chat; you must use the list chats method to retrieve
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChatMessage.Send, Group.ReadWrite.All, Chat.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Teamwork.Migrate.All, ChatMessage.ReadWriteSelected.Chat,  |
+| Application | Teamwork.Migrate.All,  |
 
 ## EXAMPLES
 ### Example 1: Send inline images along with the message
@@ -865,6 +863,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DayNoteId <String>]`: The unique identifier of dayNote
   - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
@@ -885,6 +884,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
@@ -1100,7 +1100,7 @@ Link to the message in Microsoft Teams.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage)
 
-[https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/chatmessage-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-post?view=graph-rest-1.0)
 
 
 

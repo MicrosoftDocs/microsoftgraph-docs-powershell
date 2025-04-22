@@ -34,7 +34,7 @@ Perform validations applicable for the specific instance of the data connector.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | IndustryData-DataConnector.Upload, IndustryData-DataConnector.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-DataConnector.ReadWrite.All, IndustryData-DataConnector.Upload,  |
 

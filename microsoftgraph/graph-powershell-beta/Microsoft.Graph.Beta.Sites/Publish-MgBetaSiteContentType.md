@@ -33,6 +33,14 @@ Publish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Invoke action publish
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.FullControl.All,  |
+| Delegated (personal Microsoft account) | Sites.FullControl.All,  |
+| Application | Sites.FullControl.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

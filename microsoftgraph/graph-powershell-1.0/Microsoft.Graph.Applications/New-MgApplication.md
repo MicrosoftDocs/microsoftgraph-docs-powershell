@@ -21,11 +21,11 @@ Create a new application object.
 New-MgApplication [-ResponseHeadersVariable <String>] [-AddIns <IMicrosoftGraphAddIn[]>]
  [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
- [-ApplicationTemplateId <String>] [-Certification <IMicrosoftGraphCertification>]
- [-CreatedDateTime <DateTime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
- [-DefaultRedirectUri <String>] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisabledByMicrosoftStatus <String>] [-DisplayName <String>]
- [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
+ [-ApplicationTemplateId <String>] [-AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]
+ [-Certification <IMicrosoftGraphCertification>] [-CreatedDateTime <DateTime>]
+ [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>] [-DefaultRedirectUri <String>]
+ [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
+ [-DisplayName <String>] [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
  [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
  [-GroupMembershipClaims <String>] [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>]
  [-Id <String>] [-IdentifierUris <String[]>] [-Info <IMicrosoftGraphInformationalUrl>]
@@ -61,8 +61,8 @@ Create a new application object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (work or school account) | Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
 | Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
@@ -193,6 +193,22 @@ To construct, see NOTES section for APPROLES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppRole[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AuthenticationBehaviors
+authenticationBehaviors
+To construct, see NOTES section for AUTHENTICATIONBEHAVIORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAuthenticationBehaviors
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -337,6 +353,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The display name for the application.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
 
 ```yaml
@@ -616,9 +633,8 @@ Accept wildcard characters: False
 ```
 
 ### -Owners
-Directory objects that are owners of the application.
-Read-only.
-Nullable.
+Directory objects that are owners of this application.
+The owners are a set of nonadmin users or service principals who are allowed to modify this object.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 To construct, see NOTES section for OWNERS properties and create a hash table.
 
@@ -1111,24 +1127,21 @@ Always null when the object hasn't been deleted.
   - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
-Defined in ISO 8601 format for Durations.
-For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+      - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
-      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications regardless of their creation date, this property would be null.
-Nullable.
+      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+      - `[State <String>]`: appManagementRestrictionState
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
-Defined in ISO 8601 format for Durations.
-For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
-This property is required when restriction type is set to passwordLifetime.
-      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications, enforcement datetime would be null.
+      - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to passwordLifetime.
+      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
       - `[RestrictionType <String>]`: appCredentialRestrictionType
+      - `[State <String>]`: appManagementRestrictionState
 
 APPROLES `<IMicrosoftGraphAppRole- `[]`>`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
@@ -1155,6 +1168,12 @@ Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  { 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
+
+AUTHENTICATIONBEHAVIORS `<IMicrosoftGraphAuthenticationBehaviors>`: authenticationBehaviors
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[BlockAzureAdGraphAccess <Boolean?>]`: 
+  - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+  - `[RequireClientServicePrincipal <Boolean?>]`: 
 
 BODYPARAMETER `<IMicrosoftGraphApplication>`: application
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1241,24 +1260,21 @@ Always null when the object hasn't been deleted.
     - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
-Defined in ISO 8601 format for Durations.
-For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+        - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
-        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications regardless of their creation date, this property would be null.
-Nullable.
+        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
         - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+        - `[State <String>]`: appManagementRestrictionState
       - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
-Defined in ISO 8601 format for Durations.
-For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
-This property is required when restriction type is set to passwordLifetime.
-        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications, enforcement datetime would be null.
+        - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to passwordLifetime.
+        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
         - `[RestrictionType <String>]`: appCredentialRestrictionType
+        - `[State <String>]`: appManagementRestrictionState
   - `[AppRoles <IMicrosoftGraphAppRole- `[]`>]`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -1288,10 +1304,15 @@ May not begin with ..
 Supports $filter (eq, not, ne).
 Read-only.
 null if the app wasn't created from an application template.
+  - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[BlockAzureAdGraphAccess <Boolean?>]`: 
+    - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+    - `[RequireClientServicePrincipal <Boolean?>]`: 
   - `[Certification <IMicrosoftGraphCertification>]`: certification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application expires.
-    - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
+    - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application developer or publisher completed Publisher Attestation.
     - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
   - `[CreatedDateTime <DateTime?>]`: The date and time the application was registered.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1307,6 +1328,7 @@ Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
 Supports $filter (eq, ne, not).
   - `[DisplayName <String>]`: The display name for the application.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
   - `[ExtensionProperties <IMicrosoftGraphExtensionProperty- `[]`>]`: Read-only.
 Nullable.
@@ -1412,13 +1434,14 @@ Supports $filter (eq, not, ge, le).
     - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-    - `[DisplayName <String>]`: Friendly name for the key.
+    - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
     - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     - `[KeyId <String>]`: The unique identifier (GUID) for the key.
@@ -1445,9 +1468,8 @@ If the source value is null, the claim is a predefined optional claim.
 If the source value is user, the value in the name property is the extension property from the user object.
     - `[IdToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT ID token.
     - `[Saml2Token <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the SAML token.
-  - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of the application.
-Read-only.
-Nullable.
+  - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of this application.
+The owners are a set of nonadmin users or service principals who are allowed to modify this object.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
   - `[ParentalControlSettings <IMicrosoftGraphParentalControlSettings>]`: parentalControlSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1457,7 +1479,7 @@ Access to the application will be blocked for minors from the countries specifie
 Can be set to one of the following values: ValueDescriptionAllowDefault.
 Enforces the legal minimum.
 This means parental consent is required for minors in the European Union and Korea.RequireConsentForPrivacyServicesEnforces the user to specify date of birth to comply with COPPA rules.
-RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country minor rules.BlockMinorsBlocks minors from using the app.
+RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country/region minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country/region minor rules.BlockMinorsBlocks minors from using the app.
   - `[PasswordCredentials <IMicrosoftGraphPasswordCredential- `[]`>]`: The collection of password credentials associated with the application.
 Not nullable.
     - `[CustomKeyIdentifier <Byte- `[]`>]`: Do not use.
@@ -1839,7 +1861,7 @@ Read-only.
 CERTIFICATION `<IMicrosoftGraphCertification>`: certification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application expires.
-  - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
+  - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application developer or publisher completed Publisher Attestation.
   - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
 
 CREATEDONBEHALFOF `<IMicrosoftGraphDirectoryObject>`: directoryObject
@@ -1946,13 +1968,14 @@ Supports $filter (eq, not, ge, le).
   - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-  - `[DisplayName <String>]`: Friendly name for the key.
+  - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
   - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   - `[KeyId <String>]`: The unique identifier (GUID) for the key.
@@ -1976,9 +1999,8 @@ If the source value is user, the value in the name property is the extension pro
   - `[IdToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT ID token.
   - `[Saml2Token <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the SAML token.
 
-OWNERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Directory objects that are owners of the application.
-Read-only.
-Nullable.
+OWNERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Directory objects that are owners of this application.
+The owners are a set of nonadmin users or service principals who are allowed to modify this object.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1993,7 +2015,7 @@ Access to the application will be blocked for minors from the countries specifie
 Can be set to one of the following values: ValueDescriptionAllowDefault.
 Enforces the legal minimum.
 This means parental consent is required for minors in the European Union and Korea.RequireConsentForPrivacyServicesEnforces the user to specify date of birth to comply with COPPA rules.
-RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country minor rules.BlockMinorsBlocks minors from using the app.
+RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country/region minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country/region minor rules.BlockMinorsBlocks minors from using the app.
 
 PASSWORDCREDENTIALS `<IMicrosoftGraphPasswordCredential- `[]`>`: The collection of password credentials associated with the application.
 Not nullable.

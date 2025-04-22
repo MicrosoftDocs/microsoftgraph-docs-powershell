@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaOnPremisePublishingProfileApplicationSegment
 
 ## SYNOPSIS
-Get applicationSegments from onPremisesPublishingProfiles
+Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaOnPremisePublishingProfileApplicationSegment -InputObject <IApplicatio
 ```
 
 ## DESCRIPTION
-Get applicationSegments from onPremisesPublishingProfiles
+Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
 
 ## PARAMETERS
 

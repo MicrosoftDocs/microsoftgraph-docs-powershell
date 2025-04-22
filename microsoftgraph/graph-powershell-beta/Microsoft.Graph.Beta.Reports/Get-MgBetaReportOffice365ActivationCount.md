@@ -23,6 +23,14 @@ Get-MgBetaReportOffice365ActivationCount -OutFile <String> [-ResponseHeadersVari
 ## DESCRIPTION
 Invoke function getOffice365ActivationCounts
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Reports.Read.All,  |
+
 ## PARAMETERS
 
 ### -Headers

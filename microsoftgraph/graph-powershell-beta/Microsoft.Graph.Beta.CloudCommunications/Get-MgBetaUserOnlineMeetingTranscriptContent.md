@@ -45,7 +45,7 @@ Retrieving the content of the transcript returns the stream of text associated w
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetingTranscript.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingTranscript.Read.Chat,  |
+| Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Get a callTranscript content

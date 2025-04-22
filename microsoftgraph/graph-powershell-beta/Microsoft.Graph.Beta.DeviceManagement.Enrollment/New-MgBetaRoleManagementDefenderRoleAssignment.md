@@ -33,6 +33,14 @@ New-MgBetaRoleManagementDefenderRoleAssignment -BodyParameter <IMicrosoftGraphUn
 ## DESCRIPTION
 Create new navigation property to roleAssignments for roleManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.Defender,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.ReadWrite.Defender,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

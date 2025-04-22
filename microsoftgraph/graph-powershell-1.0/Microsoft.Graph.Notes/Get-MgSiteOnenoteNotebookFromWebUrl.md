@@ -57,7 +57,7 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All, Notes.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
 ## PARAMETERS
 

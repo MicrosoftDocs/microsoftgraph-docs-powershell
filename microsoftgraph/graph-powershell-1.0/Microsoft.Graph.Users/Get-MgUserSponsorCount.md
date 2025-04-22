@@ -38,7 +38,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.Read, User.ReadWrite.All, User.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | User.Read.All, User.ReadWrite.All,  |
 
 ## PARAMETERS
 

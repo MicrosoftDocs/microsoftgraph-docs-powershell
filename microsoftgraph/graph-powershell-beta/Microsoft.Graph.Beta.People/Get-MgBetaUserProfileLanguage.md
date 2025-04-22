@@ -41,9 +41,9 @@ Represents detailed information about languages that a user has added to their p
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite.All, User.ReadBasic.All, User.Read.All,  |
+| Delegated (work or school account) | User.Read, User.ReadWrite.All, User.ReadWrite, User.ReadBasic.All, User.Read.All,  |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
-| Application | Not supported |
+| Application | User.Read.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

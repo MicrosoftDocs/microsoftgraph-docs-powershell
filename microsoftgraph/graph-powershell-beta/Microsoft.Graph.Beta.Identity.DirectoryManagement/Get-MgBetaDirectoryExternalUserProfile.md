@@ -43,7 +43,7 @@ Retrieve the properties of a specific externalUserProfile.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | ExternalUserProfile.Read.All, ExternalUserProfile.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ExternalUserProfile.Read.All, ExternalUserProfile.ReadWrite.All,  |
 

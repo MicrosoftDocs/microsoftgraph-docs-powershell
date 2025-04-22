@@ -14,6 +14,9 @@ Email clients such as Outlook or the Outlook on the web can't access permanently
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserEventPermanent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventPermanent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -35,6 +38,14 @@ Permanently delete an event and place it in the Purges folder in the dumpster in
 Email clients such as Outlook or the Outlook on the web can't access permanently deleted items.
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadWrite,  |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
+| Application | Calendars.ReadWrite,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -221,6 +221,12 @@ Locale: en-US
 ### [Get-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSourceCount](Get-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSourceCount.md)
 
 
+### [Get-MgBetaSecurityCaseEdiscoveryCaseMember](Get-MgBetaSecurityCaseEdiscoveryCaseMember.md)
+
+
+### [Get-MgBetaSecurityCaseEdiscoveryCaseMemberCount](Get-MgBetaSecurityCaseEdiscoveryCaseMemberCount.md)
+
+
 ### [Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
 
@@ -1007,6 +1013,9 @@ Locale: en-US
 ### [New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource](New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource.md)
 
 
+### [New-MgBetaSecurityCaseEdiscoveryCaseMember](New-MgBetaSecurityCaseEdiscoveryCaseMember.md)
+
+
 ### [New-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](New-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
 
@@ -1290,6 +1299,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource](Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource.md)
+
+
+### [Remove-MgBetaSecurityCaseEdiscoveryCaseMember](Remove-MgBetaSecurityCaseEdiscoveryCaseMember.md)
 
 
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
@@ -1695,6 +1707,9 @@ Locale: en-US
 
 
 ### [Update-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource](Update-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource.md)
+
+
+### [Update-MgBetaSecurityCaseEdiscoveryCaseMember](Update-MgBetaSecurityCaseEdiscoveryCaseMember.md)
 
 
 ### [Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)

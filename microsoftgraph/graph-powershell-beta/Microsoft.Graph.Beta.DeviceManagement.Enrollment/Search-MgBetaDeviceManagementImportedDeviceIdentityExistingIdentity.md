@@ -34,7 +34,7 @@ Invoke action searchExistingIdentities
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
@@ -191,7 +191,7 @@ Read-only.
     - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
     - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
     - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
-    - `[Platform <Platform?>]`: platform
+    - `[Platform <Platform?>]`: Supported platform types for policies.
 
 IMPORTEDDEVICEIDENTITIES `<IMicrosoftGraphImportedDeviceIdentity- `[]`>`: .
   - `[Id <String>]`: The unique identifier for an entity.
@@ -203,7 +203,7 @@ Read-only.
   - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
   - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
   - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
-  - `[Platform <Platform?>]`: platform
+  - `[Platform <Platform?>]`: Supported platform types for policies.
 
 ## RELATED LINKS
 

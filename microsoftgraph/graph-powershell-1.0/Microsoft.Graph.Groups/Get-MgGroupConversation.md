@@ -10,7 +10,7 @@ ms.subservice: entra-groups
 # Get-MgGroupConversation
 
 ## SYNOPSIS
-Retrieve the properties and relationships of conversation object.
+The group's conversations.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
@@ -40,13 +40,13 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of conversation object.
+The group's conversations.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Group-Conversation.Read.All, Group.ReadWrite.All, Group.Read.All, Group-Conversation.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-Conversation.Read.All, Group.ReadWrite.All, Group.Read.All, Group-Conversation.ReadWrite.All,  |
 
@@ -348,7 +348,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation)
 
-[https://learn.microsoft.com/graph/api/conversation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversation-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-get-conversation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get-conversation?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0)
 

@@ -27,7 +27,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ThreatSubmission.Read, ThreatSubmissionPolicy.ReadWrite.All, ThreatSubmission.ReadWrite.All, ThreatSubmission.ReadWrite, ThreatSubmission.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | ThreatSubmission.Read.All, ThreatSubmissionPolicy.ReadWrite.All, ThreatSubmission.ReadWrite.All,  |
 
 ## PARAMETERS
 

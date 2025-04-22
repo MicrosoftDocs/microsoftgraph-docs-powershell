@@ -53,9 +53,9 @@ Translate identifiers of Outlook-related resources between formats.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadBasic.All, User.ReadWrite.All, User.Read.All,  |
+| Delegated (work or school account) | User.ReadBasic.All, User.ReadWrite.All, User.ReadWrite, User.Read.All, User.Read,  |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
-| Application | Not supported |
+| Application | User.Read.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

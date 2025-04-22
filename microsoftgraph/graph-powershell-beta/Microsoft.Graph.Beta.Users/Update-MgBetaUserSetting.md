@@ -20,7 +20,8 @@ Update the navigation property settings in users
 Update-MgBetaUserSetting -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
- [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
+ [-Exchange <IMicrosoftGraphExchangeSettings>] [-Id <String>]
+ [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
  [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
  [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
@@ -39,7 +40,8 @@ Update-MgBetaUserSetting -UserId <String> -BodyParameter <IMicrosoftGraphUserSet
 Update-MgBetaUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
- [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
+ [-Exchange <IMicrosoftGraphExchangeSettings>] [-Id <String>]
+ [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
  [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
  [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
@@ -62,7 +64,7 @@ Update the navigation property settings in users
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | User.ReadWrite.All,  |
 
 ## PARAMETERS
 
@@ -142,6 +144,22 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Exchange
+exchangeSettings
+To construct, see NOTES section for EXCHANGE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphExchangeSettings
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -381,6 +399,12 @@ When set to true, the organization doesn't have access to Office Delve.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
   - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, documents in the user's Office Delve are disabled.
 Users can control this setting in Office Delve.
+  - `[Exchange <IMicrosoftGraphExchangeSettings>]`: exchangeSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[InPlaceArchiveMailboxId <String>]`: The unique identifier for the user's in-place archive mailbox.
+    - `[PrimaryMailboxId <String>]`: The unique identifier for the user's primary mailbox.
   - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -431,10 +455,9 @@ Read only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -523,6 +546,13 @@ Read-only.
   - `[IsEnabled <Boolean?>]`: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled.
 Default value is true.
 
+EXCHANGE `<IMicrosoftGraphExchangeSettings>`: exchangeSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[InPlaceArchiveMailboxId <String>]`: The unique identifier for the user's in-place archive mailbox.
+  - `[PrimaryMailboxId <String>]`: The unique identifier for the user's primary mailbox.
+
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of servicePrincipal
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -605,10 +635,9 @@ SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet

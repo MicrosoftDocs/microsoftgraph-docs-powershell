@@ -83,8 +83,8 @@ Update an event object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (work or school account) | Calendars.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
 | Application | Calendars.ReadWrite,  |
 
 ## EXAMPLES
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ### -AllowNewTimeProposals
 true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
 
 ```yaml
 Type: SwitchParameter
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -BodyPreview
 The preview of the message associated with the event.
-It is in text format.
+It's in text format.
 
 ```yaml
 Type: String
@@ -383,7 +383,7 @@ Accept wildcard characters: False
 
 ### -HideAttendees
 When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
 
 ```yaml
 Type: SwitchParameter
@@ -463,7 +463,7 @@ Accept wildcard characters: False
 
 ### -Instances
 The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -483,7 +483,7 @@ Accept wildcard characters: False
 
 ### -IsAllDay
 Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
 
 ```yaml
 Type: SwitchParameter
@@ -513,8 +513,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsDraft
-Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
 
 ```yaml
 Type: SwitchParameter
@@ -533,7 +533,7 @@ True if this event has online meeting information (that is, onlineMeeting points
 Default is false (onlineMeeting is null).
 Optional.
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
 
 ```yaml
 Type: SwitchParameter
@@ -549,7 +549,7 @@ Accept wildcard characters: False
 
 ### -IsOrganizer
 Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
 
 ```yaml
 Type: SwitchParameter
@@ -613,7 +613,7 @@ Accept wildcard characters: False
 ### -Locations
 The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
 To construct, see NOTES section for LOCATIONS properties and create a hash table.
 
 ```yaml
@@ -728,7 +728,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginalStart
-Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -949,8 +949,8 @@ Accept wildcard characters: False
 
 ### -TransactionId
 A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
 
@@ -983,7 +983,7 @@ Accept wildcard characters: False
 
 ### -WebLink
 The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
 ```yaml
 Type: String
@@ -1099,7 +1099,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
   - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
   - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -1137,7 +1137,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
   - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
   - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1160,10 +1160,10 @@ Navigation property.
 Read-only.
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+    - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+    - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
     - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -1201,28 +1201,28 @@ Nullable.
 Read-only.
   - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
   - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
   - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
   - `[Importance <String>]`: importance
   - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
   - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
   - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-  - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+  - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
   - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
   - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
   - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
   - `[Location <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1250,7 +1250,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     - `[UniqueIdType <String>]`: locationUniqueIdType
   - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -1277,7 +1277,7 @@ The onlineMeetingUrl property will be deprecated in the future.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-  - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+  - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -1327,13 +1327,13 @@ Nullable.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Subject <String>]`: The text of the event's subject line.
   - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
   - `[Type <String>]`: eventType
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
 CALENDAR `<IMicrosoftGraphCalendar>`: calendar
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1371,7 +1371,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
     - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
     - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -1406,7 +1406,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Content <String>]`: The content of the item.
       - `[ContentType <String>]`: bodyType
     - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
     - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
     - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the event.
@@ -1415,28 +1415,28 @@ Nullable.
 Read-only.
     - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
     - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
     - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
     - `[Importance <String>]`: importance
     - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
     - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
     - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-    - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+    - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
     - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
     - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
     - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
     - `[Location <IMicrosoftGraphLocation>]`: location
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1464,7 +1464,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
       - `[UniqueIdType <String>]`: locationUniqueIdType
     - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -1494,7 +1494,7 @@ The onlineMeetingUrl property will be deprecated in the future.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-    - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+    - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -1547,19 +1547,19 @@ Read-only.
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Subject <String>]`: The text of the event's subject line.
     - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
     - `[Type <String>]`: eventType
     - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
   - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-  - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+  - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-  - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+  - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
   - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -1611,7 +1611,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 INSTANCES `<IMicrosoftGraphEvent- `[]`>`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -1628,7 +1628,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
   - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false.
 Optional.
-Default is true.
+The default is true.
   - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
@@ -1666,7 +1666,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
   - `[BodyPreview <String>]`: The preview of the message associated with the event.
-It is in text format.
+It's in text format.
   - `[Calendar <IMicrosoftGraphCalendar>]`: calendar
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1689,10 +1689,10 @@ Navigation property.
 Read-only.
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
-This property is also true for a user who has been shared a calendar and granted write access.
-    - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise.
+This property is also true for a user who shared a calendar and granted write access.
+    - `[CanShare <Boolean?>]`: true if the user has permission to share the calendar, false otherwise.
 Only the user who created the calendar can share it.
-    - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise.
+    - `[CanViewPrivateItems <Boolean?>]`: If true, the user can read calendar items that have been marked private, false otherwise.
     - `[ChangeKey <String>]`: Identifies the version of the calendar object.
 Every time the calendar is changed, changeKey changes as well.
 This allows Exchange to apply changes to the correct version of the object.
@@ -1730,28 +1730,28 @@ Nullable.
 Read-only.
   - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
   - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
-Default is false.
+The default is false.
   - `[ICalUId <String>]`: A unique identifier for an event across calendars.
 This ID is different for each occurrence in a recurring series.
 Read-only.
   - `[Importance <String>]`: importance
   - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series.
 Navigation property.
 Read-only.
 Nullable.
   - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+If true, regardless of whether it's a single-day or multi-day event, start, and endtime must be set to midnight and be in the same time zone.
   - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-  - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
-Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+  - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes are sent, or if the event is an appointment without any attendees.
   - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Subsequently, Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
   - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
-This also applies if a delegate organized the event on behalf of the owner.
+It also applies if a delegate organized the event on behalf of the owner.
   - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
   - `[Location <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1779,7 +1779,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     - `[UniqueIdType <String>]`: locationUniqueIdType
   - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -1806,7 +1806,7 @@ The onlineMeetingUrl property will be deprecated in the future.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-  - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+  - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property is not returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -1856,13 +1856,13 @@ Nullable.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Subject <String>]`: The text of the event's subject line.
   - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
-This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
   - `[Type <String>]`: eventType
   - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
 LOCATION `<IMicrosoftGraphLocation>`: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1891,7 +1891,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 LOCATIONS `<IMicrosoftGraphLocation- `[]`>`: The locations where the event is held or attended from.
 The location and locations properties always correspond with each other.
-If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+If you update the location property, any prior locations in the locations collection are removed and replaced by the new location value.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.

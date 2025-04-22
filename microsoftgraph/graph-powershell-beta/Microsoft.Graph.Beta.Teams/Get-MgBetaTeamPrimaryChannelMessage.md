@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A collection of all the messages in the channel.
-A navigation property.
 Nullable.
 
 > [!NOTE]
@@ -41,7 +40,6 @@ Get-MgBetaTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 A collection of all the messages in the channel.
-A navigation property.
 Nullable.
 
 ## PARAMETERS
@@ -320,6 +318,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo

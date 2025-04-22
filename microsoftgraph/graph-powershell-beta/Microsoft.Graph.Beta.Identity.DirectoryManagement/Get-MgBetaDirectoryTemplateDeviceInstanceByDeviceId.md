@@ -33,9 +33,9 @@ Collection of device objects created based on this template.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceTemplate.Read, DeviceTemplate.ReadWrite.All, DeviceTemplate.Read.All,  |
+| Delegated (work or school account) | DeviceTemplate.ReadWrite.All, DeviceTemplate.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | DeviceTemplate.Read.All, DeviceTemplate.ReadWrite.All,  |
 
 ## PARAMETERS
 

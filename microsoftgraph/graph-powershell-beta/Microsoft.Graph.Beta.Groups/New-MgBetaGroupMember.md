@@ -3,16 +3,12 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmember
 schema: 2.0.0
-ms.subservice: entra-groups
 ---
 
 # New-MgBetaGroupMember
 
 ## SYNOPSIS
 Add a member to an Office 365 group or security group through the members navigation property.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupMember](/powershell/module/Microsoft.Graph.Groups/New-MgGroupMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 

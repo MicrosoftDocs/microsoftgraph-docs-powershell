@@ -49,6 +49,14 @@ Update-MgBetaDeviceManagementImportedDeviceIdentity -InputObject <IDeviceManagem
 ## DESCRIPTION
 Update the navigation property importedDeviceIdentities in deviceManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -250,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Platform
-platform
+Supported platform types for policies.
 
 ```yaml
 Type: Platform
@@ -353,7 +361,7 @@ Read-only.
   - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
   - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
   - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
-  - `[Platform <Platform?>]`: platform
+  - `[Platform <Platform?>]`: Supported platform types for policies.
 
 INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile

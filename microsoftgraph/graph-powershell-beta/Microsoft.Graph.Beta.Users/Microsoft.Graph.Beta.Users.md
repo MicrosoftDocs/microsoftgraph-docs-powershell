@@ -227,6 +227,9 @@ Locale: en-US
 ### [Get-MgBetaUserOwnedDevice](Get-MgBetaUserOwnedDevice.md)
 
 
+### [Get-MgBetaUserOwnedDeviceAsAppRoleAssignment](Get-MgBetaUserOwnedDeviceAsAppRoleAssignment.md)
+
+
 ### [Get-MgBetaUserOwnedDeviceAsDevice](Get-MgBetaUserOwnedDeviceAsDevice.md)
 
 
@@ -234,6 +237,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaUserOwnedDeviceCount](Get-MgBetaUserOwnedDeviceCount.md)
+
+
+### [Get-MgBetaUserOwnedDeviceCountAsAppRoleAssignment](Get-MgBetaUserOwnedDeviceCountAsAppRoleAssignment.md)
 
 
 ### [Get-MgBetaUserOwnedDeviceCountAsDevice](Get-MgBetaUserOwnedDeviceCountAsDevice.md)
@@ -275,6 +281,9 @@ Locale: en-US
 ### [Get-MgBetaUserRegisteredDevice](Get-MgBetaUserRegisteredDevice.md)
 
 
+### [Get-MgBetaUserRegisteredDeviceAsAppRoleAssignment](Get-MgBetaUserRegisteredDeviceAsAppRoleAssignment.md)
+
+
 ### [Get-MgBetaUserRegisteredDeviceAsDevice](Get-MgBetaUserRegisteredDeviceAsDevice.md)
 
 
@@ -282,6 +291,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaUserRegisteredDeviceCount](Get-MgBetaUserRegisteredDeviceCount.md)
+
+
+### [Get-MgBetaUserRegisteredDeviceCountAsAppRoleAssignment](Get-MgBetaUserRegisteredDeviceCountAsAppRoleAssignment.md)
 
 
 ### [Get-MgBetaUserRegisteredDeviceCountAsDevice](Get-MgBetaUserRegisteredDeviceCountAsDevice.md)
@@ -294,6 +306,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaUserSettingContactMergeSuggestion](Get-MgBetaUserSettingContactMergeSuggestion.md)
+
+
+### [Get-MgBetaUserSettingExchange](Get-MgBetaUserSettingExchange.md)
 
 
 ### [Get-MgBetaUserSettingItemInsight](Get-MgBetaUserSettingItemInsight.md)

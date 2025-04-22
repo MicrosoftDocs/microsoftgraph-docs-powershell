@@ -44,8 +44,8 @@ The collection of messages in the mailFolder.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Mail.ReadBasic,  |
+| Delegated (work or school account) | Mail.Read, Mail.ReadBasic,  |
+| Delegated (personal Microsoft account) | Mail.Read, Mail.ReadBasic,  |
 | Application | Mail.Read, Mail.ReadBasic.All,  |
 
 ## EXAMPLES

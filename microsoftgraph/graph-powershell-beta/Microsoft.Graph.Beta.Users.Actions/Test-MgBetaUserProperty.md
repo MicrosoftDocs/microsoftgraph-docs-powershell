@@ -17,7 +17,7 @@ Validate the prefix and suffix naming policy2.
 Validate the custom banned words policy3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
-However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Test-MgUserProperty](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserProperty?view=graph-powershell-1.0)
@@ -49,7 +49,7 @@ Validate the prefix and suffix naming policy2.
 Validate the custom banned words policy3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
-However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
 ## PARAMETERS
 

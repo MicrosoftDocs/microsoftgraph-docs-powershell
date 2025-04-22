@@ -38,7 +38,7 @@ The printer that this printer share is related to.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Printer.Read.All, Printer.ReadWrite.All,  |
 
 ## PARAMETERS
 

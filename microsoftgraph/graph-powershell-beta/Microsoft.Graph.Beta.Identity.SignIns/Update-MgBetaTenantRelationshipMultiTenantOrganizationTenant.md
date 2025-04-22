@@ -52,6 +52,14 @@ Update-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property tenants in tenantRelationships
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MultiTenantOrganization.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AddedByTenantId

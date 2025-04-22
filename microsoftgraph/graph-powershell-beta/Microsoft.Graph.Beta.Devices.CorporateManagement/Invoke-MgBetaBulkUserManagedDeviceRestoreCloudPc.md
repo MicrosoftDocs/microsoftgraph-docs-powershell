@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetabulkusermanageddevicerestorecloudpc
 schema: 2.0.0
 ms.subservice: cloud-pc
-ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaBulkUserManagedDeviceRestoreCloudPc
@@ -336,7 +335,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetabulkusermanageddevicerestorecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetabulkusermanageddevicerestorecloudpc)
 
 [https://learn.microsoft.com/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta)
-
 
 
 

@@ -39,7 +39,7 @@ Get a user's presence information.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Presence.Read, Presence.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Presence.ReadWrite.All,  |
+| Application | Presence.Read.All, Presence.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get your own presence information

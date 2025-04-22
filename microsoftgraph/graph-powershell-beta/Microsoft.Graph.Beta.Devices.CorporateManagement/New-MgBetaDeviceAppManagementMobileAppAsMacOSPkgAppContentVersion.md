@@ -272,14 +272,8 @@ Defaults to FALSE.
 To be deprecated.
     - `[Manifest <Byte- `[]`>]`: Indicates the manifest information, containing file metadata.
     - `[Name <String>]`: Indicates the name of the file.
-    - `[Size <Int64?>]`: The size of the file prior to encryption.
-To be deprecated, please use sizeInBytes property instead.
-    - `[SizeEncrypted <Int64?>]`: The size of the file after encryption.
-To be deprecated, please use sizeEncryptedInBytes property instead.
-    - `[SizeEncryptedInBytes <Int64?>]`: Indicates the size of the file after encryption, in bytes.
-Valid values 0 to 9.22337203685478E+18
-    - `[SizeInBytes <Int64?>]`: Indicates the original size of the file, in bytes.
-Valid values 0 to 9.22337203685478E+18
+    - `[Size <Int64?>]`: Indicates the original size of the file, in bytes.
+    - `[SizeEncrypted <Int64?>]`: Indicates the size of the file after encryption, in bytes.
     - `[UploadState <String>]`: Contains properties for upload request states.
 
 CONTAINEDAPPS `<IMicrosoftGraphMobileContainedApp- `[]`>`: The collection of contained apps in a MobileLobApp acting as a package.
@@ -296,14 +290,8 @@ Defaults to FALSE.
 To be deprecated.
   - `[Manifest <Byte- `[]`>]`: Indicates the manifest information, containing file metadata.
   - `[Name <String>]`: Indicates the name of the file.
-  - `[Size <Int64?>]`: The size of the file prior to encryption.
-To be deprecated, please use sizeInBytes property instead.
-  - `[SizeEncrypted <Int64?>]`: The size of the file after encryption.
-To be deprecated, please use sizeEncryptedInBytes property instead.
-  - `[SizeEncryptedInBytes <Int64?>]`: Indicates the size of the file after encryption, in bytes.
-Valid values 0 to 9.22337203685478E+18
-  - `[SizeInBytes <Int64?>]`: Indicates the original size of the file, in bytes.
-Valid values 0 to 9.22337203685478E+18
+  - `[Size <Int64?>]`: Indicates the original size of the file, in bytes.
+  - `[SizeEncrypted <Int64?>]`: Indicates the size of the file after encryption, in bytes.
   - `[UploadState <String>]`: Contains properties for upload request states.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter

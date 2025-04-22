@@ -41,7 +41,7 @@ Calling this method yields a redirect response with a preauthenticated URL that 
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrintJob.Read, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | PrintJob.Read.All, PrintJob.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

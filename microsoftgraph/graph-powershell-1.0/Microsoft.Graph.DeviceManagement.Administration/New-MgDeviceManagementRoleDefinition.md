@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Create a new roleDefinition object.
+Create a new deviceAndAppManagementRoleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -32,13 +32,13 @@ New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefiniti
 ```
 
 ## DESCRIPTION
-Create a new roleDefinition object.
+Create a new deviceAndAppManagementRoleDefinition object.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
@@ -50,7 +50,7 @@ Create a new roleDefinition object.
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.roleDefinition"
+	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleDefinition"
 	displayName = "Display Name value"
 	description = "Description value"
 	rolePermissions = @(
@@ -376,7 +376,7 @@ These must match the actionName that is defined as part of the rolePermission.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition)
 
-[https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-create?view=graph-rest-1.0)
 
 
 

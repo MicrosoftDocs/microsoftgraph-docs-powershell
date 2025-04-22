@@ -30,6 +30,14 @@ Complete-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDi
 ## DESCRIPTION
 Complete an impactedResource object and update its status to completedByUser.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DirectoryRecommendations.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DirectoryRecommendations.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -21,7 +21,8 @@ New-MgBetaDeviceManagementReusableSetting [-ResponseHeadersVariable <String>] [-
  [-InfoUrls <String[]>] [-Keywords <String[]>] [-Name <String>]
  [-Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>] [-OffsetUri <String>]
  [-ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]
- [-RootDefinitionId <String>] [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
+ [-RiskLevel <DeviceManagementConfigurationSettingRiskLevel>] [-RootDefinitionId <String>]
+ [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
  [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -37,6 +38,14 @@ New-MgBetaDeviceManagementReusableSetting
 
 ## DESCRIPTION
 Create new navigation property to reusableSettings for deviceManagement
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## PARAMETERS
 
@@ -333,6 +342,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RiskLevel
+Setting RiskLevel
+
+```yaml
+Type: DeviceManagementConfigurationSettingRiskLevel
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RootDefinitionId
 Root setting definition id if the setting is a child setting.
 
@@ -493,6 +517,7 @@ A MinDeviceOccurrence of 0 means setting is optional
   - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
     - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
 Applicable for reusable setting
+  - `[RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]`: Setting RiskLevel
   - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
   - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
   - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX

@@ -49,9 +49,9 @@ Nullable.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All, Sites.Read.All, Group.ReadWrite.All,  |
+| Delegated (work or school account) | Files.Read, Group.Read.All, Files.ReadWrite, Files.ReadWrite.All, Files.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
-| Application | Group.Read.All,  |
+| Application | Files.Read.All, Group.ReadWrite.All, Group.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get metadata about a shared driveItem object
@@ -337,6 +337,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[DriveItemId1 <String>]`: The unique identifier of driveItem
   - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat

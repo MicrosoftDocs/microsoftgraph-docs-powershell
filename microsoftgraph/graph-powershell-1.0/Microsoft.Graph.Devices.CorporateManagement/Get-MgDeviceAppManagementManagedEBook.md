@@ -46,7 +46,7 @@ Read properties and relationships of the iosVppEBook object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
@@ -351,7 +351,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/intune-books-iosvppebook-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebook-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-books-iosvppebook-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebook-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-books-managedebook-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebook-list?view=graph-rest-1.0)
 
 
 

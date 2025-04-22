@@ -27,6 +27,14 @@ Get-MgBetaReportSecurityAttackSimulationRepeatOffender [-Count] [-Filter <String
 List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AttackSimulation.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AttackSimulation.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -9,9 +9,8 @@ ms.subservice: entra-directory-management
 # Get-MgGroupSettingTemplateMemberObject
 
 ## SYNOPSIS
-Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-Note: Only users and role-enabled groups can be members of directory roles.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+Only users and role-enabled groups can be members of directory roles.
 
 ## SYNTAX
 
@@ -46,9 +45,8 @@ Get-MgGroupSettingTemplateMemberObject -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-Note: Only users and role-enabled groups can be members of directory roles.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+Only users and role-enabled groups can be members of directory roles.
 
 ## PARAMETERS
 

@@ -37,8 +37,8 @@ Delete an event object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (work or school account) | Calendars.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
 | Application | Calendars.ReadWrite,  |
 
 ## EXAMPLES

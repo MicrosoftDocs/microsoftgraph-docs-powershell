@@ -47,7 +47,7 @@ The list of jobs that are queued for printing by the printer/printerShare.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | PrintJob.ReadBasic, PrintJob.ReadWriteBasic.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | PrintJob.ReadBasic.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -40,7 +40,7 @@ Create a new conditionalAccessPolicy.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Application.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All,  |
 
@@ -694,6 +694,10 @@ Readonly.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Mode <String>]`: continuousAccessEvaluationMode
     - `[DisableResilienceDefaults <Boolean?>]`: Session control that determines whether it's acceptable for Microsoft Entra ID to extend existing sessions based on information collected prior to an outage or not.
+    - `[GlobalSecureAccessFilteringProfile <IMicrosoftGraphGlobalSecureAccessFilteringProfileSessionControl>]`: globalSecureAccessFilteringProfileSessionControl
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsEnabled <Boolean?>]`: Specifies whether the session control is enabled.
+      - `[ProfileId <String>]`: Specifies the distinct identifier that is assigned to the security profile or filtering profile.
     - `[PersistentBrowser <IMicrosoftGraphPersistentBrowserSessionControl>]`: persistentBrowserSessionControl
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsEnabled <Boolean?>]`: Specifies whether the session control is enabled.
@@ -831,6 +835,10 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Mode <String>]`: continuousAccessEvaluationMode
   - `[DisableResilienceDefaults <Boolean?>]`: Session control that determines whether it's acceptable for Microsoft Entra ID to extend existing sessions based on information collected prior to an outage or not.
+  - `[GlobalSecureAccessFilteringProfile <IMicrosoftGraphGlobalSecureAccessFilteringProfileSessionControl>]`: globalSecureAccessFilteringProfileSessionControl
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsEnabled <Boolean?>]`: Specifies whether the session control is enabled.
+    - `[ProfileId <String>]`: Specifies the distinct identifier that is assigned to the security profile or filtering profile.
   - `[PersistentBrowser <IMicrosoftGraphPersistentBrowserSessionControl>]`: persistentBrowserSessionControl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsEnabled <Boolean?>]`: Specifies whether the session control is enabled.

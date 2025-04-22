@@ -42,6 +42,14 @@ Update-MgPolicyCrossTenantAccessPolicyDefault
 ## DESCRIPTION
 Update the default configuration of a cross-tenant access policy.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.CrossTenantAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.CrossTenantAccess,  |
+
 ## EXAMPLES
 ### Example 1: Block outbound B2B collaboration for a group of users
 

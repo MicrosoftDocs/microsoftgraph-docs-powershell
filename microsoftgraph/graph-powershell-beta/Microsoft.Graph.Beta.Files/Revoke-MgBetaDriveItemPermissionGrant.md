@@ -53,7 +53,7 @@ Revoke access to a listItem or driveItem granted via a sharing link by removing 
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -304,6 +304,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[DriveItemId1 <String>]`: The unique identifier of driveItem
   - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat

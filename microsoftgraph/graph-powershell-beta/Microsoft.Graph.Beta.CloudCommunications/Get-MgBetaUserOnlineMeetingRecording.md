@@ -78,7 +78,7 @@ Read-only.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OnlineMeetings.ReadWrite, OnlineMeetings.Read,  |
+| Delegated (work or school account) | OnlineMeetingArtifact.Read.All, OnlineMeetings.ReadWrite, OnlineMeetings.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetingArtifact.Read.All, OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All,  |
 

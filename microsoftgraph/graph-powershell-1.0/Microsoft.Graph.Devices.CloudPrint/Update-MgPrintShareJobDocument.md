@@ -19,8 +19,9 @@ Update the navigation property documents in print
 ```
 Update-MgPrintShareJobDocument -PrintDocumentId <String> -PrintJobId <String> -PrinterShareId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentType <String>]
- [-DisplayName <String>] [-Id <String>] [-Size <Int64>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>]
+ [-UploadedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -33,9 +34,9 @@ Update-MgPrintShareJobDocument -PrintDocumentId <String> -PrintJobId <String> -P
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-DisplayName <String>] [-Id <String>]
- [-Size <Int64>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-DisplayName <String>]
+ [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>] [-UploadedDateTime <DateTime>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -103,6 +104,22 @@ Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DownloadedDateTime
+The time the document was downloaded.
+Read-only
+
+```yaml
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -251,6 +268,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -UploadedDateTime
+The time the document was uploaded.
+Read-only
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -307,8 +340,12 @@ Read-only.
 Read-only.
   - `[DisplayName <String>]`: The document's name.
 Read-only.
+  - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
   - `[Size <Int64?>]`: The document's size in bytes.
 Read-only.
+  - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
 
 INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group

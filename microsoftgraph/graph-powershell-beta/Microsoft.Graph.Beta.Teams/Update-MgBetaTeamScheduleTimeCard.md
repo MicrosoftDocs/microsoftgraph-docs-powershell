@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Replace an existing timeCard with updated values.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeCard?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -404,10 +407,9 @@ BODYPARAMETER `<IMicrosoftGraphTimeCard>`: timeCard
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -423,6 +425,7 @@ Use isAtApprovedLocation instead.
 atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
 If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
       - `[DateTime <DateTime?>]`: The time the entry is recorded.
+      - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Content <String>]`: The content of the item.
@@ -451,6 +454,7 @@ Use isAtApprovedLocation instead.
 atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
 If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
     - `[DateTime <DateTime?>]`: The time the entry is recorded.
+    - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
     - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
@@ -466,6 +470,7 @@ Use isAtApprovedLocation instead.
 atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
 If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
+  - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -479,6 +484,7 @@ Use isAtApprovedLocation instead.
 atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
 If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
+  - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -489,10 +495,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -512,6 +517,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
@@ -545,10 +553,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -569,6 +576,7 @@ Use isAtApprovedLocation instead.
 atApprovedLocation and isAtApprovedLocation always have the same value, so setting one automatically sets the value for the other.
 If both are included in the request with different values, the value for isAtApprovedLocation takes precedence.
       - `[DateTime <DateTime?>]`: The time the entry is recorded.
+      - `[IsAtApprovedLocation <Boolean?>]`: Indicates whether this action happens at an approved location.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Content <String>]`: The content of the item.

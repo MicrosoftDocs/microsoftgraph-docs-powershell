@@ -396,7 +396,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetedVariations
-Variations of a QnA for different countries or devices.
+Variations of a QnA for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
 To construct, see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
@@ -520,7 +520,7 @@ For the list of possible values, see Supported language tags.
   - `[Platforms <DevicePlatformType- `[]`>]`: List of devices and operating systems that are able to view this QnA.
 Possible values are: android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, unknown, androidASOP, androidMobileApplicationManagement, iOSMobileApplicationManagement, unknownFutureValue.
   - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a QnA for different countries or devices.
+  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a QnA for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
     - `[Description <String>]`: The answer variation description that is shown on the search results page.
@@ -556,7 +556,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
-TARGETEDVARIATIONS `<IMicrosoftGraphSearchAnswerVariant- `[]`>`: Variations of a QnA for different countries or devices.
+TARGETEDVARIATIONS `<IMicrosoftGraphSearchAnswerVariant- `[]`>`: Variations of a QnA for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
   - `[Description <String>]`: The answer variation description that is shown on the search results page.

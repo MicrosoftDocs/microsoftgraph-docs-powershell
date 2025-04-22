@@ -72,6 +72,14 @@ New-MgUserMailFolderMessage -InputObject <IMailIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to messages for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
+| Application | Mail.ReadWrite,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

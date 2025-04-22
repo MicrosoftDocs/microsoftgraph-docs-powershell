@@ -26,7 +26,7 @@ Read the properties and relationships of the tenant-wide externalIdentitiesPolic
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.ExternalIdentities,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.ExternalIdentities,  |
 

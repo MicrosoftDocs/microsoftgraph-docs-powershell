@@ -21,9 +21,10 @@ For details, see Manage a collection estimate.
 ```
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalOptions <String>] [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-ExportCriteria <String>] [-ExportFormat <String>]
- [-ExportLocation <String>] [-ExportSingleItems] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CloudAttachmentVersion <String>] [-Description <String>] [-DisplayName <String>] [-DocumentVersion <String>]
+ [-ExportCriteria <String>] [-ExportFormat <String>] [-ExportLocation <String>] [-ExportSingleItems]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Export
@@ -38,9 +39,10 @@ Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId <String> -
 ```
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalOptions <String>] [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-ExportCriteria <String>] [-ExportFormat <String>]
- [-ExportLocation <String>] [-ExportSingleItems] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CloudAttachmentVersion <String>] [-Description <String>] [-DisplayName <String>] [-DocumentVersion <String>]
+ [-ExportCriteria <String>] [-ExportFormat <String>] [-ExportLocation <String>] [-ExportSingleItems]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
@@ -59,7 +61,7 @@ For details, see Manage a collection estimate.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
@@ -207,6 +209,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -CloudAttachmentVersion
+cloudAttachmentVersion
+
+```yaml
+Type: String
+Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Description
 
 
@@ -224,6 +241,21 @@ Accept wildcard characters: False
 
 ### -DisplayName
 
+
+```yaml
+Type: String
+Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DocumentVersion
+documentVersion
 
 ```yaml
 Type: String
@@ -454,8 +486,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPaths12QiiylSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportresultPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalOptions <String>]`: additionalOptions
+  - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
+  - `[DocumentVersion <String>]`: documentVersion
   - `[ExportCriteria <String>]`: exportCriteria
   - `[ExportFormat <String>]`: exportFormat
   - `[ExportLocation <String>]`: exportLocation
@@ -483,6 +517,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCaseMemberId <String>]`: The unique identifier of ediscoveryCaseMember
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
   - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
   - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy

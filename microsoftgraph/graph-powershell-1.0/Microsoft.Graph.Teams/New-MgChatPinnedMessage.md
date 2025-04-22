@@ -55,7 +55,7 @@ This API cannot create a new chat; you must use the list chats method to retriev
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChatMessage.Send, Chat.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadWrite.All, ChatMessage.ReadWriteSelected.Chat,  |
+| Application | Chat.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -401,6 +401,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DayNoteId <String>]`: The unique identifier of dayNote
   - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
@@ -421,6 +422,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest

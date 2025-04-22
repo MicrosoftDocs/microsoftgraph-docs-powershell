@@ -34,6 +34,14 @@ Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 ## DESCRIPTION
 Delete navigation property authenticationMethodConfigurations for policies
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.AuthenticationMethod,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.AuthenticationMethod,  |
+
 ## EXAMPLES
 ### Example 1: Using the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell

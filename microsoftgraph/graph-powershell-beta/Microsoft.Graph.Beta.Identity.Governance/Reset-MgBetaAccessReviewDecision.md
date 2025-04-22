@@ -40,7 +40,7 @@ Previous decisions are no longer recorded, but reviewers can continue to update 
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | AccessReview.ReadWrite.Membership,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

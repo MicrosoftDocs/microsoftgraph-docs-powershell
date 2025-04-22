@@ -30,7 +30,7 @@ Get deviceRegistrationPolicy from policies
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration, Policy.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration,  |
 
 ## PARAMETERS
 

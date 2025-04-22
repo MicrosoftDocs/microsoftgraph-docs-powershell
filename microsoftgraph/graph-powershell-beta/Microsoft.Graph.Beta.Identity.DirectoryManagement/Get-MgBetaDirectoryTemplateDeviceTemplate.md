@@ -43,9 +43,9 @@ Get the properties and relationships of a deviceTemplate object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceTemplate.Read, DeviceTemplate.ReadWrite.All, DeviceTemplate.Read.All,  |
+| Delegated (work or school account) | DeviceTemplate.ReadWrite.All, DeviceTemplate.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | DeviceTemplate.Read.All, DeviceTemplate.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

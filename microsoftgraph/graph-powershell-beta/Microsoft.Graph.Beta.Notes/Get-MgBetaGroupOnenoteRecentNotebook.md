@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenoterecentnotebook
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Get-MgBetaGroupOnenoteRecentNotebook
 
 ## SYNOPSIS
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteRecentNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +32,14 @@ Get-MgBetaGroupOnenoteRecentNotebook -InputObject <INotesIdentity> [-Count] [-Fi
 
 ## DESCRIPTION
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All, Notes.Read,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
+| Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
 ## PARAMETERS
 

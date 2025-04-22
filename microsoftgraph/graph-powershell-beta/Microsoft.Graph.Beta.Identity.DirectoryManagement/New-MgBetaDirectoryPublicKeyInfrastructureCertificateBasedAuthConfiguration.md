@@ -32,6 +32,14 @@ New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
 ## DESCRIPTION
 Create a new certificateBasedAuthPki object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PublicKeyInfrastructure.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PublicKeyInfrastructure.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -116,6 +124,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The name of the object.
+Maximum length is 256 characters.
 
 ```yaml
 Type: String
@@ -309,6 +318,7 @@ Optional.
     - `[Thumbprint <String>]`: The thumbprint of certificate authority certificate.
 Supports $filter (eq, startswith).
   - `[DisplayName <String>]`: The name of the object.
+Maximum length is 256 characters.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time when the object was created or last modified.
   - `[Status <String>]`: The status of any asynchronous jobs runs on the object which can be upload or delete.
   - `[StatusDetails <String>]`: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).

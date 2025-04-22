@@ -30,6 +30,14 @@ Remove-MgBetaNetworkAccessConnectivityBranchDeviceLink -InputObject <INetworkAcc
 ## DESCRIPTION
 Removes the link between the branch or remote network and the CPE device, effectively removing the connection and associated configuration between them.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -48,7 +48,7 @@ To retrieve the instances of the access review series, use the list accessReview
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 

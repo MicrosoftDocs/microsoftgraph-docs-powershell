@@ -22,6 +22,14 @@ Get-MgBetaSecurityPartnerSecurityScore [-ExpandProperty <String[]>] [-Property <
 ## DESCRIPTION
 Read the properties and relationships of a partnerSecurityScore object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PartnerSecurity.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PartnerSecurity.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

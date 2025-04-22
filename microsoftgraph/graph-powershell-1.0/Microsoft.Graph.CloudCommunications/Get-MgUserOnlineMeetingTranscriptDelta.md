@@ -40,7 +40,7 @@ Invoke function delta
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetingTranscript.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingTranscript.Read.Chat,  |
+| Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat,  |
 
 ## PARAMETERS
 

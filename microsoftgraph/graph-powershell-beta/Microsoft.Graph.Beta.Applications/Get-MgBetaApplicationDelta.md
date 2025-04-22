@@ -10,7 +10,7 @@ ms.subservice: entra-applications
 
 ## SYNOPSIS
 Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection.
-See Using Delta Query for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationDelta?view=graph-powershell-1.0)
@@ -26,13 +26,13 @@ Get-MgBetaApplicationDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 
 ## DESCRIPTION
 Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection.
-See Using Delta Query for details.
+For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Application.ReadWrite.All, Application.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All, Application.Read.All,  |
 

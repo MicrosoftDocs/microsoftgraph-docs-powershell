@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSegments
-
+Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
 To construct, see NOTES section for APPLICATIONSEGMENTS properties and create a hash table.
 
 ```yaml
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefaultAccessEnabled
-
+Specifies whether default access for app proxy is enabled or disabled.
 
 ```yaml
 Type: SwitchParameter
@@ -396,7 +396,7 @@ Read-only
   - `[Status <String>]`: agentStatus
   - `[SupportedPublishingTypes <String- `[]`>]`: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
 
-APPLICATIONSEGMENTS `<IMicrosoftGraphIPApplicationSegment- `[]`>`: .
+APPLICATIONSEGMENTS `<IMicrosoftGraphIPApplicationSegment- `[]`>`: Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Application <IMicrosoftGraphApplication>]`: application
@@ -473,7 +473,7 @@ Always null when the object hasn't been deleted.
       - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
       - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
+        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -482,7 +482,7 @@ This property is required when restrictionType is set to keyLifetime.
 For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
           - `[State <String>]`: appManagementRestrictionState
-        - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
+        - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -490,6 +490,32 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appCredentialRestrictionType
           - `[State <String>]`: appManagementRestrictionState
+        - `[ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]`: customAppManagementApplicationConfiguration
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Audiences <IMicrosoftGraphAudiencesConfiguration>]`: audiencesConfiguration
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                  - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+              - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+              - `[State <String>]`: appManagementRestrictionState
+            - `[PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
+          - `[IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]`: identifierUriConfiguration
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+              - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+              - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+              - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+              - `[State <String>]`: appManagementRestrictionState
     - `[AppRoles <IMicrosoftGraphAppRole- `[]`>]`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -501,9 +527,10 @@ This is displayed when the app role is being assigned and, if the app role funct
       - `[DisplayName <String>]`: Display name for the permission that appears in the app role assignment and consent experiences.
       - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 You must specify a new GUID identifier when you create a new app role.
-      - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false. 
-At that point, in a subsequent call, this role may be removed.
+      - `[IsEnabled <Boolean?>]`: When you create or updating an app role, this value must be true.
+To delete a role, this must first be set to false.
+At that point, in a subsequent call, this role might be removed.
+Default value is true.
       - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
 Read-only.
@@ -512,7 +539,7 @@ Must not exceed 120 characters in length.
 Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
 
 
-@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
@@ -526,7 +553,7 @@ Tenant administrators should respond to security advisories sent through Azure H
     - `[Certification <IMicrosoftGraphCertification>]`: certification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application expires.
-      - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
+      - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application developer or publisher completed Publisher Attestation.
       - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
     - `[ConnectorGroup <IMicrosoftGraphConnectorGroup>]`: connectorGroup
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -547,6 +574,7 @@ Read-only.
 Read-only.
         - `[Status <String>]`: connectorStatus
         - `[Version <String>]`: The version of the connector.
+Read-only.
       - `[Name <String>]`: The name associated with the connectorGroup.
       - `[Region <String>]`: connectorGroupRegion
     - `[CreatedDateTime <DateTime?>]`: The date and time the application was registered.
@@ -567,6 +595,7 @@ Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
 Supports $filter (eq, ne, not).
     - `[DisplayName <String>]`: The display name for the application.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
     - `[ExtensionProperties <IMicrosoftGraphExtensionProperty- `[]`>]`: Read-only.
 Nullable.
@@ -604,6 +633,13 @@ It says what Microsoft identity platform should accept in the aud claim in the i
 This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token.
 This field can only accept a single value and has a limit of 600 characters.
 Required.
+      - `[ClaimsMatchingExpression <IMicrosoftGraphFederatedIdentityExpression>]`: federatedIdentityExpression
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[LanguageVersion <Int32?>]`: Indicated the language version to be used.
+Should always be set to 1.
+Required.
+        - `[Value <String>]`: Indicates the configured expression.
+Required.
       - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential.
 It has a limit of 600 characters.
 Optional.
@@ -617,12 +653,14 @@ Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
-      - `[Subject <String>]`: Required.
+      - `[Subject <String>]`: Nullable. 
+Defaults to null if not set.
 The identifier of the external software workload within the external identity provider.
 Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings.
 The value here must match the sub claim within the token presented to Microsoft Entra ID.
 The combination of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
+If subject is defined, claimsMatchingExpression must be null.
 Supports $filter (eq).
     - `[GroupMembershipClaims <String>]`: Configures the groups claim issued in a user or OAuth 2.0 access token that the application expects.
 To set this attribute, use one of the following string values: None, SecurityGroup (for security groups and Microsoft Entra roles), All (this gets all security groups, distribution groups, and Microsoft Entra directory roles that the signed-in user is a member of).
@@ -672,14 +710,15 @@ Supports $filter (eq, not, ge, le).
       - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-      - `[DisplayName <String>]`: Friendly name for the key.
+      - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
       - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Key <Byte- `[]`>]`: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
       - `[KeyId <String>]`: The unique identifier for the key.
@@ -694,26 +733,27 @@ Not nullable.
     - `[Notes <String>]`: Notes relevant for the management of the application.
     - `[OnPremisesPublishing <IMicrosoftGraphOnPremisesPublishing>]`: onPremisesPublishing
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple App Proxy applications, the alternateUrl is the user-friendly URL that points to the traffic manager.
+      - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple app proxy applications, this user-friendly URL points to the traffic manager.
       - `[ApplicationServerTimeout <String>]`: The duration the connector waits for a response from the backend application before closing the connection.
 Possible values are default, long.
 When set to default, the backend application timeout has a length of 85 seconds.
 When set to long, the backend timeout is increased to 180 seconds.
 Use long if your server takes more than 85 seconds to respond to requests or if you are unable to access the application and the error status is 'Backend Timeout'.
 Default value is default.
-      - `[ApplicationType <String>]`: Indicates if this application is an Application Proxy configured application.
-This is pre-set by the system.
+      - `[ApplicationType <String>]`: System-defined value that indicates whether this application is an application proxy configured application.
+The possible values are quickaccessapp and nonwebapp.
 Read-only.
       - `[ExternalAuthenticationType <String>]`: externalAuthenticationType
-      - `[ExternalUrl <String>]`: The published external url for the application.
+      - `[ExternalUrl <String>]`: The published external URL for the application.
 For example, https://intranet-contoso.msappproxy.net/.
       - `[InternalUrl <String>]`: The internal url of the application.
 For example, https://intranet/.
-      - `[IsAccessibleViaZtnaClient <Boolean?>]`: 
+      - `[IsAccessibleViaZtnaClient <Boolean?>]`: Indicates whether the application is accessible via a Global Secure Access client on a managed device.
       - `[IsBackendCertificateValidationEnabled <Boolean?>]`: Indicates whether backend SSL certificate validation is enabled for the application.
 For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
-      - `[IsDnsResolutionEnabled <Boolean?>]`: 
+      - `[IsDnsResolutionEnabled <Boolean?>]`: Indicates Microsoft Entra Private Access should handle DNS resolution.
+false by default.
       - `[IsHttpOnlyCookieEnabled <Boolean?>]`: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.
 Set this value to true to have Application Proxy cookies include the HTTPOnly flag in the HTTP response headers.
 If using Remote Desktop Services, set this value to False.
@@ -764,7 +804,7 @@ The origin must be an exact case-sensitive match with the origin that the user a
 This SPN needs to be in the list of services to which the connector can present delegated credentials.
           - `[KerberosSignOnMappingAttributeType <String>]`: kerberosSignOnMappingAttributeType
         - `[SingleSignOnMode <String>]`: singleSignOnMode
-      - `[UseAlternateUrlForTranslationAndRedirect <Boolean?>]`: 
+      - `[UseAlternateUrlForTranslationAndRedirect <Boolean?>]`: Indicates whether the application should use alternateUrl instead of externalUrl.
       - `[VerifiedCustomDomainCertificatesMetadata <IMicrosoftGraphVerifiedCustomDomainCertificatesMetadata>]`: verifiedCustomDomainCertificatesMetadata
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ExpiryDate <DateTime?>]`: The expiry date of the custom domain certificate.
@@ -795,6 +835,10 @@ There is no way to retrieve this password in the future.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
+      - `[WafAllowedHeaders <IMicrosoftGraphWafAllowedHeadersDictionary>]`: wafAllowedHeadersDictionary
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[WafIPRanges <IMicrosoftGraphIPRange- `[]`>]`: 
+      - `[WafProvider <String>]`: 
     - `[OptionalClaims <IMicrosoftGraphOptionalClaims>]`: optionalClaims
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AccessToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT access token.
@@ -809,7 +853,8 @@ If the source value is null, the claim is a predefined optional claim.
 If the source value is user, the value in the name property is the extension property from the user object.
       - `[IdToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT ID token.
       - `[Saml2Token <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the SAML token.
-    - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of the application.
+    - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of this application.
+The owners are a set of nonadmin users or service principals allowed to modify this object.
 Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
@@ -821,7 +866,7 @@ Access to the application will be blocked for minors from the countries specifie
 Can be set to one of the following values: ValueDescriptionAllowDefault.
 Enforces the legal minimum.
 This means parental consent is required for minors in the European Union and Korea.RequireConsentForPrivacyServicesEnforces the user to specify date of birth to comply with COPPA rules.
-RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country minor rules.BlockMinorsBlocks minors from using the app.
+RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country/region minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country/region minor rules.BlockMinorsBlocks minors from using the app.
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredential- `[]`>]`: The collection of password credentials associated with the application.
 Not nullable.
     - `[PublicClient <IMicrosoftGraphPublicClientApplication>]`: publicClientApplication
@@ -1198,10 +1243,11 @@ Optional.
 Read-only.
       - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
-  - `[DestinationHost <String>]`: 
+  - `[DestinationHost <String>]`: Either the IP address, IP range, or FQDN of the applicationSegment, with or without wildcards.
   - `[DestinationType <String>]`: privateNetworkDestinationType
-  - `[Port <Int32?>]`: 
-  - `[Ports <String- `[]`>]`: 
+  - `[Port <Int32?>]`: Port supported for the application segment.
+DO NOT USE.
+  - `[Ports <String- `[]`>]`: List of ports supported for the application segment.
   - `[Protocol <String>]`: privateNetworkProtocol
 
 BODYPARAMETER `<IMicrosoftGraphOnPremisesPublishingProfile>`: onPremisesPublishingProfile
@@ -1245,7 +1291,7 @@ Nullable.
   - `[Agents <IMicrosoftGraphOnPremisesAgent- `[]`>]`: List of existing onPremisesAgent objects.
 Read-only.
 Nullable.
-  - `[ApplicationSegments <IMicrosoftGraphIPApplicationSegment- `[]`>]`: 
+  - `[ApplicationSegments <IMicrosoftGraphIPApplicationSegment- `[]`>]`: Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Application <IMicrosoftGraphApplication>]`: application
@@ -1322,7 +1368,7 @@ Always null when the object hasn't been deleted.
         - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
         - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
+          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -1331,7 +1377,7 @@ This property is required when restrictionType is set to keyLifetime.
 For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
             - `[State <String>]`: appManagementRestrictionState
-          - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
+          - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -1339,6 +1385,32 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appCredentialRestrictionType
             - `[State <String>]`: appManagementRestrictionState
+          - `[ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]`: customAppManagementApplicationConfiguration
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Audiences <IMicrosoftGraphAudiencesConfiguration>]`: audiencesConfiguration
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                    - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+                - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+                - `[State <String>]`: appManagementRestrictionState
+              - `[PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
+            - `[IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]`: identifierUriConfiguration
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+                - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+                - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+                - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+                - `[State <String>]`: appManagementRestrictionState
       - `[AppRoles <IMicrosoftGraphAppRole- `[]`>]`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -1350,9 +1422,10 @@ This is displayed when the app role is being assigned and, if the app role funct
         - `[DisplayName <String>]`: Display name for the permission that appears in the app role assignment and consent experiences.
         - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 You must specify a new GUID identifier when you create a new app role.
-        - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false. 
-At that point, in a subsequent call, this role may be removed.
+        - `[IsEnabled <Boolean?>]`: When you create or updating an app role, this value must be true.
+To delete a role, this must first be set to false.
+At that point, in a subsequent call, this role might be removed.
+Default value is true.
         - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
 Read-only.
@@ -1361,7 +1434,7 @@ Must not exceed 120 characters in length.
 Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
 
 
-@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
@@ -1375,7 +1448,7 @@ Tenant administrators should respond to security advisories sent through Azure H
       - `[Certification <IMicrosoftGraphCertification>]`: certification
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application expires.
-        - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
+        - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application developer or publisher completed Publisher Attestation.
         - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
       - `[ConnectorGroup <IMicrosoftGraphConnectorGroup>]`: connectorGroup
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1396,6 +1469,7 @@ Read-only.
 Read-only.
           - `[Status <String>]`: connectorStatus
           - `[Version <String>]`: The version of the connector.
+Read-only.
         - `[Name <String>]`: The name associated with the connectorGroup.
         - `[Region <String>]`: connectorGroupRegion
       - `[CreatedDateTime <DateTime?>]`: The date and time the application was registered.
@@ -1416,6 +1490,7 @@ Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
 Supports $filter (eq, ne, not).
       - `[DisplayName <String>]`: The display name for the application.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
       - `[ExtensionProperties <IMicrosoftGraphExtensionProperty- `[]`>]`: Read-only.
 Nullable.
@@ -1453,6 +1528,13 @@ It says what Microsoft identity platform should accept in the aud claim in the i
 This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token.
 This field can only accept a single value and has a limit of 600 characters.
 Required.
+        - `[ClaimsMatchingExpression <IMicrosoftGraphFederatedIdentityExpression>]`: federatedIdentityExpression
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[LanguageVersion <Int32?>]`: Indicated the language version to be used.
+Should always be set to 1.
+Required.
+          - `[Value <String>]`: Indicates the configured expression.
+Required.
         - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential.
 It has a limit of 600 characters.
 Optional.
@@ -1466,12 +1548,14 @@ Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
-        - `[Subject <String>]`: Required.
+        - `[Subject <String>]`: Nullable. 
+Defaults to null if not set.
 The identifier of the external software workload within the external identity provider.
 Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings.
 The value here must match the sub claim within the token presented to Microsoft Entra ID.
 The combination of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
+If subject is defined, claimsMatchingExpression must be null.
 Supports $filter (eq).
       - `[GroupMembershipClaims <String>]`: Configures the groups claim issued in a user or OAuth 2.0 access token that the application expects.
 To set this attribute, use one of the following string values: None, SecurityGroup (for security groups and Microsoft Entra roles), All (this gets all security groups, distribution groups, and Microsoft Entra directory roles that the signed-in user is a member of).
@@ -1521,14 +1605,15 @@ Supports $filter (eq, not, ge, le).
         - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-        - `[DisplayName <String>]`: Friendly name for the key.
+        - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
         - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Key <Byte- `[]`>]`: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
         - `[KeyId <String>]`: The unique identifier for the key.
@@ -1543,26 +1628,27 @@ Not nullable.
       - `[Notes <String>]`: Notes relevant for the management of the application.
       - `[OnPremisesPublishing <IMicrosoftGraphOnPremisesPublishing>]`: onPremisesPublishing
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple App Proxy applications, the alternateUrl is the user-friendly URL that points to the traffic manager.
+        - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple app proxy applications, this user-friendly URL points to the traffic manager.
         - `[ApplicationServerTimeout <String>]`: The duration the connector waits for a response from the backend application before closing the connection.
 Possible values are default, long.
 When set to default, the backend application timeout has a length of 85 seconds.
 When set to long, the backend timeout is increased to 180 seconds.
 Use long if your server takes more than 85 seconds to respond to requests or if you are unable to access the application and the error status is 'Backend Timeout'.
 Default value is default.
-        - `[ApplicationType <String>]`: Indicates if this application is an Application Proxy configured application.
-This is pre-set by the system.
+        - `[ApplicationType <String>]`: System-defined value that indicates whether this application is an application proxy configured application.
+The possible values are quickaccessapp and nonwebapp.
 Read-only.
         - `[ExternalAuthenticationType <String>]`: externalAuthenticationType
-        - `[ExternalUrl <String>]`: The published external url for the application.
+        - `[ExternalUrl <String>]`: The published external URL for the application.
 For example, https://intranet-contoso.msappproxy.net/.
         - `[InternalUrl <String>]`: The internal url of the application.
 For example, https://intranet/.
-        - `[IsAccessibleViaZtnaClient <Boolean?>]`: 
+        - `[IsAccessibleViaZtnaClient <Boolean?>]`: Indicates whether the application is accessible via a Global Secure Access client on a managed device.
         - `[IsBackendCertificateValidationEnabled <Boolean?>]`: Indicates whether backend SSL certificate validation is enabled for the application.
 For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
-        - `[IsDnsResolutionEnabled <Boolean?>]`: 
+        - `[IsDnsResolutionEnabled <Boolean?>]`: Indicates Microsoft Entra Private Access should handle DNS resolution.
+false by default.
         - `[IsHttpOnlyCookieEnabled <Boolean?>]`: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.
 Set this value to true to have Application Proxy cookies include the HTTPOnly flag in the HTTP response headers.
 If using Remote Desktop Services, set this value to False.
@@ -1613,7 +1699,7 @@ The origin must be an exact case-sensitive match with the origin that the user a
 This SPN needs to be in the list of services to which the connector can present delegated credentials.
             - `[KerberosSignOnMappingAttributeType <String>]`: kerberosSignOnMappingAttributeType
           - `[SingleSignOnMode <String>]`: singleSignOnMode
-        - `[UseAlternateUrlForTranslationAndRedirect <Boolean?>]`: 
+        - `[UseAlternateUrlForTranslationAndRedirect <Boolean?>]`: Indicates whether the application should use alternateUrl instead of externalUrl.
         - `[VerifiedCustomDomainCertificatesMetadata <IMicrosoftGraphVerifiedCustomDomainCertificatesMetadata>]`: verifiedCustomDomainCertificatesMetadata
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ExpiryDate <DateTime?>]`: The expiry date of the custom domain certificate.
@@ -1644,6 +1730,10 @@ There is no way to retrieve this password in the future.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
+        - `[WafAllowedHeaders <IMicrosoftGraphWafAllowedHeadersDictionary>]`: wafAllowedHeadersDictionary
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[WafIPRanges <IMicrosoftGraphIPRange- `[]`>]`: 
+        - `[WafProvider <String>]`: 
       - `[OptionalClaims <IMicrosoftGraphOptionalClaims>]`: optionalClaims
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AccessToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT access token.
@@ -1658,7 +1748,8 @@ If the source value is null, the claim is a predefined optional claim.
 If the source value is user, the value in the name property is the extension property from the user object.
         - `[IdToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT ID token.
         - `[Saml2Token <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the SAML token.
-      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of the application.
+      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of this application.
+The owners are a set of nonadmin users or service principals allowed to modify this object.
 Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
@@ -1670,7 +1761,7 @@ Access to the application will be blocked for minors from the countries specifie
 Can be set to one of the following values: ValueDescriptionAllowDefault.
 Enforces the legal minimum.
 This means parental consent is required for minors in the European Union and Korea.RequireConsentForPrivacyServicesEnforces the user to specify date of birth to comply with COPPA rules.
-RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country minor rules.BlockMinorsBlocks minors from using the app.
+RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country/region minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country/region minor rules.BlockMinorsBlocks minors from using the app.
       - `[PasswordCredentials <IMicrosoftGraphPasswordCredential- `[]`>]`: The collection of password credentials associated with the application.
 Not nullable.
       - `[PublicClient <IMicrosoftGraphPublicClientApplication>]`: publicClientApplication
@@ -2047,10 +2138,11 @@ Optional.
 Read-only.
         - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
-    - `[DestinationHost <String>]`: 
+    - `[DestinationHost <String>]`: Either the IP address, IP range, or FQDN of the applicationSegment, with or without wildcards.
     - `[DestinationType <String>]`: privateNetworkDestinationType
-    - `[Port <Int32?>]`: 
-    - `[Ports <String- `[]`>]`: 
+    - `[Port <Int32?>]`: Port supported for the application segment.
+DO NOT USE.
+    - `[Ports <String- `[]`>]`: List of ports supported for the application segment.
     - `[Protocol <String>]`: privateNetworkProtocol
   - `[ConnectorGroups <IMicrosoftGraphConnectorGroup- `[]`>]`: List of existing connectorGroup objects for applications published through Application Proxy.
 Read-only.
@@ -2067,7 +2159,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[UpdateWindowEndTime <String>]`: End of a time window during which agents can receive updates
       - `[UpdateWindowStartTime <String>]`: Start of a time window during which agents can receive updates
-  - `[IsDefaultAccessEnabled <Boolean?>]`: 
+  - `[IsDefaultAccessEnabled <Boolean?>]`: Specifies whether default access for app proxy is enabled or disabled.
   - `[IsEnabled <Boolean?>]`: Represents if Microsoft Entra application proxy is enabled for the tenant.
   - `[PublishedResources <IMicrosoftGraphPublishedResource- `[]`>]`: List of existing publishedResource objects.
 Read-only.
@@ -2151,7 +2243,7 @@ Always null when the object hasn't been deleted.
       - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
       - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
+        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -2160,7 +2252,7 @@ This property is required when restrictionType is set to keyLifetime.
 For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
           - `[State <String>]`: appManagementRestrictionState
-        - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
+        - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -2168,6 +2260,32 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appCredentialRestrictionType
           - `[State <String>]`: appManagementRestrictionState
+        - `[ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]`: customAppManagementApplicationConfiguration
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Audiences <IMicrosoftGraphAudiencesConfiguration>]`: audiencesConfiguration
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                  - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+              - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+              - `[State <String>]`: appManagementRestrictionState
+            - `[PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
+          - `[IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]`: identifierUriConfiguration
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+              - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+              - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+              - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+              - `[State <String>]`: appManagementRestrictionState
     - `[AppRoles <IMicrosoftGraphAppRole- `[]`>]`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -2179,9 +2297,10 @@ This is displayed when the app role is being assigned and, if the app role funct
       - `[DisplayName <String>]`: Display name for the permission that appears in the app role assignment and consent experiences.
       - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 You must specify a new GUID identifier when you create a new app role.
-      - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false. 
-At that point, in a subsequent call, this role may be removed.
+      - `[IsEnabled <Boolean?>]`: When you create or updating an app role, this value must be true.
+To delete a role, this must first be set to false.
+At that point, in a subsequent call, this role might be removed.
+Default value is true.
       - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
 Read-only.
@@ -2190,7 +2309,7 @@ Must not exceed 120 characters in length.
 Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
 
 
-@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
@@ -2204,7 +2323,7 @@ Tenant administrators should respond to security advisories sent through Azure H
     - `[Certification <IMicrosoftGraphCertification>]`: certification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application expires.
-      - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
+      - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application developer or publisher completed Publisher Attestation.
       - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
     - `[ConnectorGroup <IMicrosoftGraphConnectorGroup>]`: connectorGroup
     - `[CreatedDateTime <DateTime?>]`: The date and time the application was registered.
@@ -2225,6 +2344,7 @@ Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
 Supports $filter (eq, ne, not).
     - `[DisplayName <String>]`: The display name for the application.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
     - `[ExtensionProperties <IMicrosoftGraphExtensionProperty- `[]`>]`: Read-only.
 Nullable.
@@ -2262,6 +2382,13 @@ It says what Microsoft identity platform should accept in the aud claim in the i
 This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token.
 This field can only accept a single value and has a limit of 600 characters.
 Required.
+      - `[ClaimsMatchingExpression <IMicrosoftGraphFederatedIdentityExpression>]`: federatedIdentityExpression
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[LanguageVersion <Int32?>]`: Indicated the language version to be used.
+Should always be set to 1.
+Required.
+        - `[Value <String>]`: Indicates the configured expression.
+Required.
       - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential.
 It has a limit of 600 characters.
 Optional.
@@ -2275,12 +2402,14 @@ Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
-      - `[Subject <String>]`: Required.
+      - `[Subject <String>]`: Nullable. 
+Defaults to null if not set.
 The identifier of the external software workload within the external identity provider.
 Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings.
 The value here must match the sub claim within the token presented to Microsoft Entra ID.
 The combination of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
+If subject is defined, claimsMatchingExpression must be null.
 Supports $filter (eq).
     - `[GroupMembershipClaims <String>]`: Configures the groups claim issued in a user or OAuth 2.0 access token that the application expects.
 To set this attribute, use one of the following string values: None, SecurityGroup (for security groups and Microsoft Entra roles), All (this gets all security groups, distribution groups, and Microsoft Entra directory roles that the signed-in user is a member of).
@@ -2330,14 +2459,15 @@ Supports $filter (eq, not, ge, le).
       - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-      - `[DisplayName <String>]`: Friendly name for the key.
+      - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
       - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Key <Byte- `[]`>]`: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
       - `[KeyId <String>]`: The unique identifier for the key.
@@ -2352,26 +2482,27 @@ Not nullable.
     - `[Notes <String>]`: Notes relevant for the management of the application.
     - `[OnPremisesPublishing <IMicrosoftGraphOnPremisesPublishing>]`: onPremisesPublishing
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple App Proxy applications, the alternateUrl is the user-friendly URL that points to the traffic manager.
+      - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple app proxy applications, this user-friendly URL points to the traffic manager.
       - `[ApplicationServerTimeout <String>]`: The duration the connector waits for a response from the backend application before closing the connection.
 Possible values are default, long.
 When set to default, the backend application timeout has a length of 85 seconds.
 When set to long, the backend timeout is increased to 180 seconds.
 Use long if your server takes more than 85 seconds to respond to requests or if you are unable to access the application and the error status is 'Backend Timeout'.
 Default value is default.
-      - `[ApplicationType <String>]`: Indicates if this application is an Application Proxy configured application.
-This is pre-set by the system.
+      - `[ApplicationType <String>]`: System-defined value that indicates whether this application is an application proxy configured application.
+The possible values are quickaccessapp and nonwebapp.
 Read-only.
       - `[ExternalAuthenticationType <String>]`: externalAuthenticationType
-      - `[ExternalUrl <String>]`: The published external url for the application.
+      - `[ExternalUrl <String>]`: The published external URL for the application.
 For example, https://intranet-contoso.msappproxy.net/.
       - `[InternalUrl <String>]`: The internal url of the application.
 For example, https://intranet/.
-      - `[IsAccessibleViaZtnaClient <Boolean?>]`: 
+      - `[IsAccessibleViaZtnaClient <Boolean?>]`: Indicates whether the application is accessible via a Global Secure Access client on a managed device.
       - `[IsBackendCertificateValidationEnabled <Boolean?>]`: Indicates whether backend SSL certificate validation is enabled for the application.
 For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
-      - `[IsDnsResolutionEnabled <Boolean?>]`: 
+      - `[IsDnsResolutionEnabled <Boolean?>]`: Indicates Microsoft Entra Private Access should handle DNS resolution.
+false by default.
       - `[IsHttpOnlyCookieEnabled <Boolean?>]`: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.
 Set this value to true to have Application Proxy cookies include the HTTPOnly flag in the HTTP response headers.
 If using Remote Desktop Services, set this value to False.
@@ -2422,7 +2553,7 @@ The origin must be an exact case-sensitive match with the origin that the user a
 This SPN needs to be in the list of services to which the connector can present delegated credentials.
           - `[KerberosSignOnMappingAttributeType <String>]`: kerberosSignOnMappingAttributeType
         - `[SingleSignOnMode <String>]`: singleSignOnMode
-      - `[UseAlternateUrlForTranslationAndRedirect <Boolean?>]`: 
+      - `[UseAlternateUrlForTranslationAndRedirect <Boolean?>]`: Indicates whether the application should use alternateUrl instead of externalUrl.
       - `[VerifiedCustomDomainCertificatesMetadata <IMicrosoftGraphVerifiedCustomDomainCertificatesMetadata>]`: verifiedCustomDomainCertificatesMetadata
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ExpiryDate <DateTime?>]`: The expiry date of the custom domain certificate.
@@ -2453,6 +2584,10 @@ There is no way to retrieve this password in the future.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
+      - `[WafAllowedHeaders <IMicrosoftGraphWafAllowedHeadersDictionary>]`: wafAllowedHeadersDictionary
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[WafIPRanges <IMicrosoftGraphIPRange- `[]`>]`: 
+      - `[WafProvider <String>]`: 
     - `[OptionalClaims <IMicrosoftGraphOptionalClaims>]`: optionalClaims
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AccessToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT access token.
@@ -2467,7 +2602,8 @@ If the source value is null, the claim is a predefined optional claim.
 If the source value is user, the value in the name property is the extension property from the user object.
       - `[IdToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT ID token.
       - `[Saml2Token <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the SAML token.
-    - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of the application.
+    - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of this application.
+The owners are a set of nonadmin users or service principals allowed to modify this object.
 Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
@@ -2479,7 +2615,7 @@ Access to the application will be blocked for minors from the countries specifie
 Can be set to one of the following values: ValueDescriptionAllowDefault.
 Enforces the legal minimum.
 This means parental consent is required for minors in the European Union and Korea.RequireConsentForPrivacyServicesEnforces the user to specify date of birth to comply with COPPA rules.
-RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country minor rules.BlockMinorsBlocks minors from using the app.
+RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country/region minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country/region minor rules.BlockMinorsBlocks minors from using the app.
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredential- `[]`>]`: The collection of password credentials associated with the application.
 Not nullable.
     - `[PublicClient <IMicrosoftGraphPublicClientApplication>]`: publicClientApplication
@@ -2870,6 +3006,7 @@ Read-only.
 Read-only.
     - `[Status <String>]`: connectorStatus
     - `[Version <String>]`: The version of the connector.
+Read-only.
   - `[Name <String>]`: The name associated with the connectorGroup.
   - `[Region <String>]`: connectorGroupRegion
 
@@ -2958,7 +3095,7 @@ Always null when the object hasn't been deleted.
         - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
         - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
+          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: 
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -2967,7 +3104,7 @@ This property is required when restrictionType is set to keyLifetime.
 For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
             - `[State <String>]`: appManagementRestrictionState
-          - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
+          - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: 
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -2975,6 +3112,32 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appCredentialRestrictionType
             - `[State <String>]`: appManagementRestrictionState
+          - `[ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]`: customAppManagementApplicationConfiguration
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Audiences <IMicrosoftGraphAudiencesConfiguration>]`: audiencesConfiguration
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption- `[]`>]`: 
+                    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                    - `[Operator <String>]`: customSecurityAttributeComparisonOperator
+                - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+                - `[State <String>]`: appManagementRestrictionState
+              - `[PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]`: audienceRestriction
+            - `[IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]`: identifierUriConfiguration
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]`: identifierUriRestriction
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]`: appManagementPolicyActorExemptions
+                - `[ExcludeAppsReceivingV2Tokens <Boolean?>]`: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+                - `[ExcludeSaml <Boolean?>]`: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+                - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+                - `[State <String>]`: appManagementRestrictionState
       - `[AppRoles <IMicrosoftGraphAppRole- `[]`>]`: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -2986,9 +3149,10 @@ This is displayed when the app role is being assigned and, if the app role funct
         - `[DisplayName <String>]`: Display name for the permission that appears in the app role assignment and consent experiences.
         - `[Id <String>]`: Unique role identifier inside the appRoles collection.
 You must specify a new GUID identifier when you create a new app role.
-        - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default).
-To delete a role, this must first be set to false. 
-At that point, in a subsequent call, this role may be removed.
+        - `[IsEnabled <Boolean?>]`: When you create or updating an app role, this value must be true.
+To delete a role, this must first be set to false.
+At that point, in a subsequent call, this role might be removed.
+Default value is true.
         - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity.
 Must not be included in any POST or PATCH requests.
 Read-only.
@@ -2997,7 +3161,7 @@ Must not exceed 120 characters in length.
 Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges
 
 
-@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+@ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
@@ -3011,7 +3175,7 @@ Tenant administrators should respond to security advisories sent through Azure H
       - `[Certification <IMicrosoftGraphCertification>]`: certification
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application expires.
-        - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
+        - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application developer or publisher completed Publisher Attestation.
         - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
       - `[ConnectorGroup <IMicrosoftGraphConnectorGroup>]`: connectorGroup
       - `[CreatedDateTime <DateTime?>]`: The date and time the application was registered.
@@ -3032,6 +3196,7 @@ Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
 Supports $filter (eq, ne, not).
       - `[DisplayName <String>]`: The display name for the application.
+Maximum length is 256 characters.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
       - `[ExtensionProperties <IMicrosoftGraphExtensionProperty- `[]`>]`: Read-only.
 Nullable.
@@ -3069,6 +3234,13 @@ It says what Microsoft identity platform should accept in the aud claim in the i
 This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token.
 This field can only accept a single value and has a limit of 600 characters.
 Required.
+        - `[ClaimsMatchingExpression <IMicrosoftGraphFederatedIdentityExpression>]`: federatedIdentityExpression
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[LanguageVersion <Int32?>]`: Indicated the language version to be used.
+Should always be set to 1.
+Required.
+          - `[Value <String>]`: Indicates the configured expression.
+Required.
         - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential.
 It has a limit of 600 characters.
 Optional.
@@ -3082,12 +3254,14 @@ Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
-        - `[Subject <String>]`: Required.
+        - `[Subject <String>]`: Nullable. 
+Defaults to null if not set.
 The identifier of the external software workload within the external identity provider.
 Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings.
 The value here must match the sub claim within the token presented to Microsoft Entra ID.
 The combination of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
+If subject is defined, claimsMatchingExpression must be null.
 Supports $filter (eq).
       - `[GroupMembershipClaims <String>]`: Configures the groups claim issued in a user or OAuth 2.0 access token that the application expects.
 To set this attribute, use one of the following string values: None, SecurityGroup (for security groups and Microsoft Entra roles), All (this gets all security groups, distribution groups, and Microsoft Entra directory roles that the signed-in user is a member of).
@@ -3137,14 +3311,15 @@ Supports $filter (eq, not, ge, le).
         - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-        - `[DisplayName <String>]`: Friendly name for the key.
+        - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
         - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Key <Byte- `[]`>]`: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
         - `[KeyId <String>]`: The unique identifier for the key.
@@ -3159,26 +3334,27 @@ Not nullable.
       - `[Notes <String>]`: Notes relevant for the management of the application.
       - `[OnPremisesPublishing <IMicrosoftGraphOnPremisesPublishing>]`: onPremisesPublishing
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple App Proxy applications, the alternateUrl is the user-friendly URL that points to the traffic manager.
+        - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple app proxy applications, this user-friendly URL points to the traffic manager.
         - `[ApplicationServerTimeout <String>]`: The duration the connector waits for a response from the backend application before closing the connection.
 Possible values are default, long.
 When set to default, the backend application timeout has a length of 85 seconds.
 When set to long, the backend timeout is increased to 180 seconds.
 Use long if your server takes more than 85 seconds to respond to requests or if you are unable to access the application and the error status is 'Backend Timeout'.
 Default value is default.
-        - `[ApplicationType <String>]`: Indicates if this application is an Application Proxy configured application.
-This is pre-set by the system.
+        - `[ApplicationType <String>]`: System-defined value that indicates whether this application is an application proxy configured application.
+The possible values are quickaccessapp and nonwebapp.
 Read-only.
         - `[ExternalAuthenticationType <String>]`: externalAuthenticationType
-        - `[ExternalUrl <String>]`: The published external url for the application.
+        - `[ExternalUrl <String>]`: The published external URL for the application.
 For example, https://intranet-contoso.msappproxy.net/.
         - `[InternalUrl <String>]`: The internal url of the application.
 For example, https://intranet/.
-        - `[IsAccessibleViaZtnaClient <Boolean?>]`: 
+        - `[IsAccessibleViaZtnaClient <Boolean?>]`: Indicates whether the application is accessible via a Global Secure Access client on a managed device.
         - `[IsBackendCertificateValidationEnabled <Boolean?>]`: Indicates whether backend SSL certificate validation is enabled for the application.
 For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
-        - `[IsDnsResolutionEnabled <Boolean?>]`: 
+        - `[IsDnsResolutionEnabled <Boolean?>]`: Indicates Microsoft Entra Private Access should handle DNS resolution.
+false by default.
         - `[IsHttpOnlyCookieEnabled <Boolean?>]`: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.
 Set this value to true to have Application Proxy cookies include the HTTPOnly flag in the HTTP response headers.
 If using Remote Desktop Services, set this value to False.
@@ -3229,7 +3405,7 @@ The origin must be an exact case-sensitive match with the origin that the user a
 This SPN needs to be in the list of services to which the connector can present delegated credentials.
             - `[KerberosSignOnMappingAttributeType <String>]`: kerberosSignOnMappingAttributeType
           - `[SingleSignOnMode <String>]`: singleSignOnMode
-        - `[UseAlternateUrlForTranslationAndRedirect <Boolean?>]`: 
+        - `[UseAlternateUrlForTranslationAndRedirect <Boolean?>]`: Indicates whether the application should use alternateUrl instead of externalUrl.
         - `[VerifiedCustomDomainCertificatesMetadata <IMicrosoftGraphVerifiedCustomDomainCertificatesMetadata>]`: verifiedCustomDomainCertificatesMetadata
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ExpiryDate <DateTime?>]`: The expiry date of the custom domain certificate.
@@ -3260,6 +3436,10 @@ There is no way to retrieve this password in the future.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
+        - `[WafAllowedHeaders <IMicrosoftGraphWafAllowedHeadersDictionary>]`: wafAllowedHeadersDictionary
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[WafIPRanges <IMicrosoftGraphIPRange- `[]`>]`: 
+        - `[WafProvider <String>]`: 
       - `[OptionalClaims <IMicrosoftGraphOptionalClaims>]`: optionalClaims
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AccessToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT access token.
@@ -3274,7 +3454,8 @@ If the source value is null, the claim is a predefined optional claim.
 If the source value is user, the value in the name property is the extension property from the user object.
         - `[IdToken <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the JWT ID token.
         - `[Saml2Token <IMicrosoftGraphOptionalClaim- `[]`>]`: The optional claims returned in the SAML token.
-      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of the application.
+      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of this application.
+The owners are a set of nonadmin users or service principals allowed to modify this object.
 Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
@@ -3286,7 +3467,7 @@ Access to the application will be blocked for minors from the countries specifie
 Can be set to one of the following values: ValueDescriptionAllowDefault.
 Enforces the legal minimum.
 This means parental consent is required for minors in the European Union and Korea.RequireConsentForPrivacyServicesEnforces the user to specify date of birth to comply with COPPA rules.
-RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country minor rules.BlockMinorsBlocks minors from using the app.
+RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country/region minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country/region minor rules.BlockMinorsBlocks minors from using the app.
       - `[PasswordCredentials <IMicrosoftGraphPasswordCredential- `[]`>]`: The collection of password credentials associated with the application.
 Not nullable.
       - `[PublicClient <IMicrosoftGraphPublicClientApplication>]`: publicClientApplication
@@ -3672,6 +3853,7 @@ Read-only.
     - `[Region <String>]`: connectorGroupRegion
   - `[Status <String>]`: connectorStatus
   - `[Version <String>]`: The version of the connector.
+Read-only.
 
 HYBRIDAGENTUPDATERCONFIGURATION `<IMicrosoftGraphHybridAgentUpdaterConfiguration>`: hybridAgentUpdaterConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

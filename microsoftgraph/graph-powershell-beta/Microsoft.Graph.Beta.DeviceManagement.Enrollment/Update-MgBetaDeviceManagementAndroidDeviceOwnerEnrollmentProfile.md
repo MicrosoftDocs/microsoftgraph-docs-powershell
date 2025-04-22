@@ -17,7 +17,8 @@ Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceMan
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
  -AndroidDeviceOwnerEnrollmentProfileId <String> [-ResponseHeadersVariable <String>] [-AccountId <String>]
  [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
+ [-DeviceNameTemplate <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>]
+ [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
  [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
  [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
@@ -39,7 +40,8 @@ Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
  -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <String>] [-AccountId <String>]
  [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
+ [-DeviceNameTemplate <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>]
+ [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
  [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
  [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
@@ -58,6 +60,14 @@ Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 
 ## DESCRIPTION
 Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceManagement
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## PARAMETERS
 
@@ -158,6 +168,26 @@ Accept wildcard characters: False
 
 ### -Description
 Description for the enrollment profile.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceNameTemplate
+Indicates the device name template used for the enrolled Android devices.
+The maximum length allowed for this property is 63 characters.
+The template expression contains normal text and tokens, including the serial number of the device, user name, device type, upn prefix, or a randomly generated number.
+Supported Tokens for device name templates are: (for device naming template expression): {{SERIAL}}, {{SERIALLAST4DIGITS}}, {{ENROLLMENTDATETIME}}, {{USERNAME}}, {{DEVICETYPE}}, {{UPNPREFIX}}, {{rand:x}}.
+Supports: $select, $top, $skip.
+$Search, $orderBy and $filter are not supported.
 
 ```yaml
 Type: String
@@ -565,6 +595,12 @@ Default value is TRUE.
 Returned by default.
   - `[CreatedDateTime <DateTime?>]`: Date time the enrollment profile was created.
   - `[Description <String>]`: Description for the enrollment profile.
+  - `[DeviceNameTemplate <String>]`: Indicates the device name template used for the enrolled Android devices.
+The maximum length allowed for this property is 63 characters.
+The template expression contains normal text and tokens, including the serial number of the device, user name, device type, upn prefix, or a randomly generated number.
+Supported Tokens for device name templates are: (for device naming template expression): {{SERIAL}}, {{SERIALLAST4DIGITS}}, {{ENROLLMENTDATETIME}}, {{USERNAME}}, {{DEVICETYPE}}, {{UPNPREFIX}}, {{rand:x}}.
+Supports: $select, $top, $skip.
+$Search, $orderBy and $filter are not supported.
   - `[DisplayName <String>]`: Display name for the enrollment profile.
   - `[EnrolledDeviceCount <Int32?>]`: Total number of Android devices that have enrolled using this enrollment profile.
   - `[EnrollmentMode <AndroidDeviceOwnerEnrollmentMode?>]`: The enrollment mode for an enrollment profile.
