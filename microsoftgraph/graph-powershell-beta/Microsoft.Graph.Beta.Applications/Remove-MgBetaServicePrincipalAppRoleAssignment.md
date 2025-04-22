@@ -1,80 +1,63 @@
 ---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationOwnerByRef
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignment
 schema: 2.0.0
 ms.subservice: entra-applications
 ---
 
-# Remove-MgBetaApplicationOwnerByRef
+# Remove-MgBetaServicePrincipalAppRoleAssignment
 
 ## SYNOPSIS
-Remove an owner from an application.
-As a recommended best practice, apps should have at least two owners.
+Deletes an appRoleAssignment that a service principal has been granted.
+App roles that are assigned to service principals are also known as application permissions.
+Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaApplicationOwnerByRef -ApplicationId <String> -DirectoryObjectId <String>
+Remove-MgBetaServicePrincipalAppRoleAssignment -AppRoleAssignmentId <String> -ServicePrincipalId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaApplicationOwnerByRef -InputObject <IApplicationsIdentity> [-IfMatch <String>]
+Remove-MgBetaServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Remove an owner from an application.
-As a recommended best practice, apps should have at least two owners.
+Deletes an appRoleAssignment that a service principal has been granted.
+App roles that are assigned to service principals are also known as application permissions.
+Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Application | AppRoleAssignment.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Remove the application role assignment for a service principal
 
 ```powershell
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-Remove-MgBetaApplicationOwnerByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
-
+Remove-MgBetaServicePrincipalAppRoleAssignment -AppRoleAssignmentId  'PRLbC6e4yUyMwr0XutBvYZsr7FiAW3pIqP4F9944yBc' -ServicePrincipalId '0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61'
 ```
-This example shows how to use the Remove-MgBetaApplicationOwnerByRef Cmdlet.
 
+This example removed the assignment of the specified service principal to the specified application role id.
 
 ## PARAMETERS
 
-### -ApplicationId
-The unique identifier of application
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases: ObjectId
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DirectoryObjectId
-The unique identifier of directoryObject
+### -AppRoleAssignmentId
+The unique identifier of appRoleAssignment
 
 ```yaml
 Type: String
@@ -179,6 +162,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ServicePrincipalId
+The unique identifier of servicePrincipal
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -264,9 +262,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationOwnerByRef)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignment)
 
-[https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/serviceprincipal-delete-approleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-delete-approleassignments?view=graph-rest-beta)
 
 
 

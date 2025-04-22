@@ -1,46 +1,55 @@
 ---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationTokenIssuancePolicyByRef
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationverifiedpublisher
 schema: 2.0.0
 ms.subservice: entra-applications
 ---
 
-# Remove-MgBetaApplicationTokenIssuancePolicyByRef
+# Set-MgBetaApplicationVerifiedPublisher
 
 ## SYNOPSIS
-Remove a tokenIssuancePolicy from an application.
+Set the the verifiedPublisher on an application.
+For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationVerifiedPublisher?view=graph-powershell-1.0)
 
 ## SYNTAX
 
-### Delete (Default)
+### SetExpanded (Default)
 ```
-Remove-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId <String>
- -TokenIssuancePolicyId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### DeleteViaIdentity
-```
-Remove-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+Set-MgBetaApplicationVerifiedPublisher -ApplicationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-VerifiedPublisherId <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Set
+```
+Set-MgBetaApplicationVerifiedPublisher -ApplicationId <String>
+ -BodyParameter <IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgBetaApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-VerifiedPublisherId <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentity
+```
+Set-MgBetaApplicationVerifiedPublisher -InputObject <IApplicationsIdentity>
+ -BodyParameter <IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Remove a tokenIssuancePolicy from an application.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+Set the the verifiedPublisher on an application.
+For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -49,26 +58,61 @@ Remove a tokenIssuancePolicy from an application.
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Remove-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -TokenIssuancePolicyId $tokenIssuancePolicyId
+$params = @{
+	verifiedPublisherId = "1234567"
+}
+
+Set-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId -BodyParameter $params
 
 ```
-This example shows how to use the Remove-MgBetaApplicationTokenIssuancePolicyByRef Cmdlet.
+This example shows how to use the Set-MgBetaApplicationVerifiedPublisher Cmdlet.
 
 
 ## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ApplicationId
 The unique identifier of application
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: SetExpanded, Set
 Aliases: ObjectId
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Set, SetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -87,28 +131,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
@@ -163,15 +192,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TokenIssuancePolicyId
-The unique identifier of tokenIssuancePolicy
+### -VerifiedPublisherId
+
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -215,6 +244,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema
 ### System.Collections.IDictionary
 ## OUTPUTS
 
@@ -224,6 +254,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODYPARAMETER `<IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[VerifiedPublisherId <String>]`: 
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of application
@@ -263,9 +297,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationTokenIssuancePolicyByRef)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationverifiedpublisher](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationverifiedpublisher)
 
-[https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/application-setverifiedpublisher?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-setverifiedpublisher?view=graph-rest-beta)
 
 
 
