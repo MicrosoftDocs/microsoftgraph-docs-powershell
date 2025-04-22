@@ -11,6 +11,9 @@ function Start-Generator {
             $CommandName = $_.Command;
             $ApiVersion = $_.ApiVersion
             $Module = $_.Module;
+            if($Module -eq 'Beta.Applications'){
+
+            
             #Array for DelegatedWork Permissions
             $DelegatedWorkPermissions = @();
             #Array for Application Permissions
@@ -47,13 +50,14 @@ function Start-Generator {
                 }
             } 
             $CmdList += $CommandName;  
+        }
         
     
         }
-        git config --global user.email "GraphTooling@service.microsoft.com"
-        git config --global user.name "Microsoft Graph DevX Tooling"
-        git add .
-        git commit -m "Inserted permissions Table"
+        # git config --global user.email "GraphTooling@service.microsoft.com"
+        # git config --global user.name "Microsoft Graph DevX Tooling"
+        # git add .
+        # git commit -m "Inserted permissions Table"
     }
     catch {
         Write-Host "Error in $_";
