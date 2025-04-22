@@ -1,59 +1,39 @@
 ---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationTokenLifetimePolicyByRef
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob
 schema: 2.0.0
 ms.subservice: entra-applications
 ---
 
-# Remove-MgBetaApplicationTokenLifetimePolicyByRef
+# Suspend-MgBetaApplicationSynchronizationJob
 
 ## SYNOPSIS
-Remove a tokenLifetimePolicy from an application or servicePrincipal.
+Temporarily stop a running synchronization job.
+All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Suspend-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
-### Delete (Default)
+### Pause (Default)
 ```
-Remove-MgBetaApplicationTokenLifetimePolicyByRef -ApplicationId <String>
- -TokenLifetimePolicyId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Suspend-MgBetaApplicationSynchronizationJob -ApplicationId <String> -SynchronizationJobId <String>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### PauseViaIdentity
 ```
-Remove-MgBetaApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Suspend-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Remove a tokenLifetimePolicy from an application or servicePrincipal.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-Remove-MgBetaApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -TokenLifetimePolicyId $tokenLifetimePolicyId
-
-```
-This example shows how to use the Remove-MgBetaApplicationTokenLifetimePolicyByRef Cmdlet.
-
+Temporarily stop a running synchronization job.
+All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
 
 ## PARAMETERS
 
@@ -62,7 +42,7 @@ The unique identifier of application
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Pause
 Aliases: ObjectId
 
 Required: True
@@ -87,28 +67,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: PauseViaIdentity
 Aliases:
 
 Required: True
@@ -163,12 +128,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TokenLifetimePolicyId
-The unique identifier of tokenLifetimePolicy
+### -SynchronizationJobId
+The unique identifier of synchronizationJob
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Pause
 Aliases:
 
 Required: True
@@ -263,9 +228,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationTokenLifetimePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationTokenLifetimePolicyByRef)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob)
 
-[https://learn.microsoft.com/graph/api/application-delete-tokenlifetimepolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-delete-tokenlifetimepolicies?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-beta)
+
 
 
 

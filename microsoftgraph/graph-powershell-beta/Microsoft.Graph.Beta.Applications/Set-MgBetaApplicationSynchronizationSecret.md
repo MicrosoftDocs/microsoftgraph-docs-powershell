@@ -1,61 +1,77 @@
 ---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationAppManagementPolicyByRef
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationsynchronizationsecret
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
-# Remove-MgBetaApplicationAppManagementPolicyByRef
+# Set-MgBetaApplicationSynchronizationSecret
 
 ## SYNOPSIS
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
+Update property secrets value.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgApplicationSynchronizationSecret](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationSynchronizationSecret?view=graph-powershell-1.0)
 
 ## SYNTAX
 
-### Delete (Default)
+### SetExpanded (Default)
 ```
-Remove-MgBetaApplicationAppManagementPolicyByRef -AppManagementPolicyId <String>
- -ApplicationId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaApplicationSynchronizationSecret -ApplicationId <String> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Set
 ```
-Remove-MgBetaApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+Set-MgBetaApplicationSynchronizationSecret -ApplicationId <String>
+ -BodyParameter <IPaths1Ihjy9AApplicationsApplicationIdSynchronizationSecretsPutRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgBetaApplicationSynchronizationSecret -InputObject <IApplicationsIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Value <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-Remove-MgBetaApplicationAppManagementPolicyByRef -ApplicationId $applicationId -AppManagementPolicyId $appManagementPolicyId
-
+### SetViaIdentity
 ```
-This example shows how to use the Remove-MgBetaApplicationAppManagementPolicyByRef Cmdlet.
+Set-MgBetaApplicationSynchronizationSecret -InputObject <IApplicationsIdentity>
+ -BodyParameter <IPaths1Ihjy9AApplicationsApplicationIdSynchronizationSecretsPutRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
 
+## DESCRIPTION
+Update property secrets value.
 
 ## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ApplicationId
 The unique identifier of application
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: SetExpanded, Set
 Aliases: ObjectId
 
 Required: True
@@ -65,18 +81,19 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AppManagementPolicyId
-The unique identifier of appManagementPolicy
+### -BodyParameter
+
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: Delete
+Type: IPaths1Ihjy9AApplicationsApplicationIdSynchronizationSecretsPutRequestbodyContentApplicationJsonSchema
+Parameter Sets: Set, SetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -95,49 +112,19 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -163,6 +150,22 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Value
+
+To construct, see NOTES section for VALUE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -208,15 +211,22 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ihjy9AApplicationsApplicationIdSynchronizationSecretsPutRequestbodyContentApplicationJsonSchema
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSecretKeyStringValuePair
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODYPARAMETER `<IPaths1Ihjy9AApplicationsApplicationIdSynchronizationSecretsPutRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Value <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>]`: 
+    - `[Key <String>]`: synchronizationSecret
+    - `[Value <String>]`: The value of the secret.
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of application
@@ -254,11 +264,14 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
+VALUE `<IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>`: .
+  - `[Key <String>]`: synchronizationSecret
+  - `[Value <String>]`: The value of the secret.
+
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationAppManagementPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationAppManagementPolicyByRef)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationsynchronizationsecret](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationsynchronizationsecret)
 
-[https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-beta](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-beta)
 
 
 
