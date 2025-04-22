@@ -30,6 +30,14 @@ Get-MgBetaUserInvitedBy -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get the user or servicePrincipal that invited the specified user into the tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

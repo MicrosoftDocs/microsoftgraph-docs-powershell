@@ -21,8 +21,9 @@ Maximum of 20 objects can be added to an application.
 ### CreateExpanded (Default)
 ```
 New-MgBetaApplicationFederatedIdentityCredential -ApplicationId <String> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Audiences <String[]>] [-Description <String>] [-Id <String>]
- [-Issuer <String>] [-Name <String>] [-Subject <String>] [-Headers <IDictionary>]
+ [-AdditionalProperties <Hashtable>] [-Audiences <String[]>]
+ [-ClaimsMatchingExpression <IMicrosoftGraphFederatedIdentityExpression>] [-Description <String>]
+ [-Id <String>] [-Issuer <String>] [-Name <String>] [-Subject <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,8 +38,9 @@ New-MgBetaApplicationFederatedIdentityCredential -ApplicationId <String>
 ```
 New-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Audiences <String[]>]
- [-Description <String>] [-Id <String>] [-Issuer <String>] [-Name <String>] [-Subject <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ClaimsMatchingExpression <IMicrosoftGraphFederatedIdentityExpression>] [-Description <String>]
+ [-Id <String>] [-Issuer <String>] [-Name <String>] [-Subject <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -57,8 +59,8 @@ Maximum of 20 objects can be added to an application.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (work or school account) | Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
 | Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
@@ -148,6 +150,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ClaimsMatchingExpression
+federatedIdentityExpression
+To construct, see NOTES section for CLAIMSMATCHINGEXPRESSION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphFederatedIdentityExpression
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -284,12 +302,14 @@ Accept wildcard characters: False
 ```
 
 ### -Subject
-Required.
+Nullable.
+Defaults to null if not set.
 The identifier of the external software workload within the external identity provider.
 Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings.
 The value here must match the sub claim within the token presented to Microsoft Entra ID.
 The combination of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
+If subject is defined, claimsMatchingExpression must be null.
 Supports $filter (eq).
 
 ```yaml
@@ -362,6 +382,13 @@ It says what Microsoft identity platform should accept in the aud claim in the i
 This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token.
 This field can only accept a single value and has a limit of 600 characters.
 Required.
+  - `[ClaimsMatchingExpression <IMicrosoftGraphFederatedIdentityExpression>]`: federatedIdentityExpression
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LanguageVersion <Int32?>]`: Indicated the language version to be used.
+Should always be set to 1.
+Required.
+    - `[Value <String>]`: Indicates the configured expression.
+Required.
   - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential.
 It has a limit of 600 characters.
 Optional.
@@ -375,13 +402,23 @@ Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
-  - `[Subject <String>]`: Required.
+  - `[Subject <String>]`: Nullable. 
+Defaults to null if not set.
 The identifier of the external software workload within the external identity provider.
 Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings.
 The value here must match the sub claim within the token presented to Microsoft Entra ID.
 The combination of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
+If subject is defined, claimsMatchingExpression must be null.
 Supports $filter (eq).
+
+CLAIMSMATCHINGEXPRESSION `<IMicrosoftGraphFederatedIdentityExpression>`: federatedIdentityExpression
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[LanguageVersion <Int32?>]`: Indicated the language version to be used.
+Should always be set to 1.
+Required.
+  - `[Value <String>]`: Indicates the configured expression.
+Required.
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of application

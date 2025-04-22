@@ -45,9 +45,9 @@ Retrieve a conversationMember from a chat.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, ChatMember.ReadWrite, ChatMember.Read, Chat.ReadWrite, Chat.Read, ChannelMember.ReadWrite,  |
+| Delegated (work or school account) | Chat.ReadBasic, ChatMember.ReadWrite, Chat.ReadWrite, ChatMember.Read, ChannelMember.Read.All, ChannelMember.ReadWrite, Chat.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMember.Read.All, TeamMember.Read.Group, ChatMember.ReadWrite.All, ChatMember.Read.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
+| Application | ChatMember.Read.All, Chat.Manage.Chat, TeamMember.Read.Group, ChatMember.Read.Chat, Chat.ReadWrite.All, ChatMember.ReadWrite.All, Chat.Read.All, ChannelMember.ReadWrite.All, Chat.ReadBasic.All, ChannelMember.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,6 +338,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo

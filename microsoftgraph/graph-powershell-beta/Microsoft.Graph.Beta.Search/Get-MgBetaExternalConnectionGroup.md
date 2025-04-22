@@ -44,7 +44,7 @@ Get groups from external
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | ExternalItem.Read.All, ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ExternalItem.Read.All, ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
 

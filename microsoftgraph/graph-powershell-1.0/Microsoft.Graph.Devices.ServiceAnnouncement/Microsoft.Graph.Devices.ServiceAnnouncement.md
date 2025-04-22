@@ -71,63 +71,6 @@ Locale: en-US
 ### [Invoke-MgUnfavoriteServiceAnnouncementMessage](Invoke-MgUnfavoriteServiceAnnouncementMessage.md)
 
 
-### [New-MgServiceAnnouncementHealthOverview](New-MgServiceAnnouncementHealthOverview.md)
-
-
-### [New-MgServiceAnnouncementHealthOverviewIssue](New-MgServiceAnnouncementHealthOverviewIssue.md)
-
-
-### [New-MgServiceAnnouncementIssue](New-MgServiceAnnouncementIssue.md)
-
-
-### [New-MgServiceAnnouncementMessage](New-MgServiceAnnouncementMessage.md)
-
-
-### [New-MgServiceAnnouncementMessageAttachment](New-MgServiceAnnouncementMessageAttachment.md)
-
-
-### [Remove-MgServiceAnnouncementHealthOverview](Remove-MgServiceAnnouncementHealthOverview.md)
-
-
-### [Remove-MgServiceAnnouncementHealthOverviewIssue](Remove-MgServiceAnnouncementHealthOverviewIssue.md)
-
-
-### [Remove-MgServiceAnnouncementIssue](Remove-MgServiceAnnouncementIssue.md)
-
-
-### [Remove-MgServiceAnnouncementMessage](Remove-MgServiceAnnouncementMessage.md)
-
-
-### [Remove-MgServiceAnnouncementMessageAttachment](Remove-MgServiceAnnouncementMessageAttachment.md)
-
-
-### [Remove-MgServiceAnnouncementMessageAttachmentArchive](Remove-MgServiceAnnouncementMessageAttachmentArchive.md)
-
-
-### [Remove-MgServiceAnnouncementMessageAttachmentContent](Remove-MgServiceAnnouncementMessageAttachmentContent.md)
-
-
-### [Set-MgServiceAnnouncementMessageAttachmentArchive](Set-MgServiceAnnouncementMessageAttachmentArchive.md)
-
-
-### [Set-MgServiceAnnouncementMessageAttachmentContent](Set-MgServiceAnnouncementMessageAttachmentContent.md)
-
-
-### [Update-MgServiceAnnouncementHealthOverview](Update-MgServiceAnnouncementHealthOverview.md)
-
-
-### [Update-MgServiceAnnouncementHealthOverviewIssue](Update-MgServiceAnnouncementHealthOverviewIssue.md)
-
-
-### [Update-MgServiceAnnouncementIssue](Update-MgServiceAnnouncementIssue.md)
-
-
-### [Update-MgServiceAnnouncementMessage](Update-MgServiceAnnouncementMessage.md)
-
-
-### [Update-MgServiceAnnouncementMessageAttachment](Update-MgServiceAnnouncementMessageAttachment.md)
-
-
 
 
 

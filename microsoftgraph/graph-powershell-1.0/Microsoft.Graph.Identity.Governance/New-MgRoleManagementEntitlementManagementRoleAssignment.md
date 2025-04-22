@@ -40,7 +40,7 @@ Create a new unifiedRoleAssignment object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | EntitlementManagement.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
 

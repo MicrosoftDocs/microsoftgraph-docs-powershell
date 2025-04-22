@@ -24,7 +24,7 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | AuditLogsQuery-Entra.Read.All, AuditLogsQuery.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-CRM.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuditLogsQuery-Entra.Read.All, AuditLogsQuery.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-CRM.Read.All,  |
 

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaselegalholdusersource
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource
 
 ## SYNOPSIS
-Delete navigation property userSources for security
+Delete a userSource object associated with an ediscoveryHoldPolicy.
 
 ## SYNTAX
 
@@ -28,7 +29,20 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecuri
 ```
 
 ## DESCRIPTION
-Delete navigation property userSources for security
+Delete a userSource object associated with an ediscoveryHoldPolicy.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -UserSourceId $userSourceId
+
+```
+This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet.
+
 
 ## PARAMETERS
 
@@ -237,6 +251,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCaseMemberId <String>]`: The unique identifier of ediscoveryCaseMember
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
   - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
   - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy
@@ -310,6 +325,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaselegalholdusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaselegalholdusersource)
 
+[https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-delete-usersources?view=graph-rest-beta)
 
 
 

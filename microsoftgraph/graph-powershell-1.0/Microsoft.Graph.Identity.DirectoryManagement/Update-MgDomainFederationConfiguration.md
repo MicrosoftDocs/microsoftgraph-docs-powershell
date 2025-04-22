@@ -56,6 +56,14 @@ Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Update the properties of an internalDomainFederation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Update the federation settings for a federated domain
 
@@ -69,7 +77,7 @@ This example updates the DisplayName setting.
 
 ### -ActiveSignInUri
 URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Microsoft Entra ID.
-Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+Corresponds to the ActiveLogOnUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
 
 ```yaml
 Type: String
@@ -412,7 +420,7 @@ Accept wildcard characters: False
 
 ### -SignOutUri
 URI that clients are redirected to when they sign out of Microsoft Entra services.
-Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+Corresponds to the LogOffUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
 
 ```yaml
 Type: String
@@ -489,7 +497,7 @@ If a new certificate isn't available, Microsoft Entra ID monitors the metadata d
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveSignInUri <String>]`: URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Microsoft Entra ID.
-Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+Corresponds to the ActiveLogOnUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
   - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
   - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
 If false (default), the SAML authentication requests sent to the federated IdP aren't signed.
@@ -500,7 +508,7 @@ Much like the signingCertificate, the nextSigningCertificate property is used if
   - `[PasswordResetUri <String>]`: 
   - `[PromptLoginBehavior <String>]`: promptLoginBehavior
   - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
-Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+Corresponds to the LogOffUri property of the Set-EntraDomainFederationSettings PowerShell cmdlet.
   - `[SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]`: signingCertificateUpdateStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CertificateUpdateResult <String>]`: Status of the last certificate update.

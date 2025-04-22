@@ -40,7 +40,7 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 

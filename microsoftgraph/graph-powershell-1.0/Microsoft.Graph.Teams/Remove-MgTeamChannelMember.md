@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelmember
 schema: 2.0.0
-ms.subservice: teams
 ---
 
 # Remove-MgTeamChannelMember
 
 ## SYNOPSIS
-Delete a conversationMember from a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
+Delete navigation property allMembers for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelMember?view=graph-powershell-beta)
@@ -29,6 +27,13 @@ Remove-MgTeamChannelMember -ChannelId <String> -TeamId <String> [-ResponseHeader
 Remove-MgTeamChannelMember -ChannelId <String> -TeamId <String> [-ResponseHeadersVariable <String>]
  -BodyParameter <IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete
@@ -52,6 +57,13 @@ Remove-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariab
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### DeleteViaIdentity1
+```
+Remove-MgTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### DeleteViaIdentity
 ```
 Remove-MgTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
@@ -60,8 +72,7 @@ Remove-MgTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a conversationMember from a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
+Delete navigation property allMembers for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -114,7 +125,7 @@ The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded, Remove, Delete
+Parameter Sets: RemoveExpanded, Remove, Delete1, Delete
 Aliases:
 
 Required: True
@@ -129,7 +140,7 @@ The unique identifier of conversationMember
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1, Delete
 Aliases:
 
 Required: True
@@ -159,7 +170,7 @@ ETag
 
 ```yaml
 Type: String
-Parameter Sets: Delete, DeleteViaIdentity
+Parameter Sets: Delete1, Delete, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -175,7 +186,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity, DeleteViaIdentity
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -190,7 +201,7 @@ Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Delete, DeleteViaIdentity
+Parameter Sets: Delete1, Delete, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -235,7 +246,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded, Remove, Delete
+Parameter Sets: RemoveExpanded, Remove, Delete1, Delete
 Aliases:
 
 Required: True
@@ -332,6 +343,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DayNoteId <String>]`: The unique identifier of dayNote
   - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
@@ -352,6 +364,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest

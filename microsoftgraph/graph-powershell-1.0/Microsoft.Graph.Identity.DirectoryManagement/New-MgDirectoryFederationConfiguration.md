@@ -32,6 +32,14 @@ New-MgDirectoryFederationConfiguration -BodyParameter <IMicrosoftGraphIdentityPr
 ## DESCRIPTION
 Create new navigation property to federationConfigurations for directory
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityProvider.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityProvider.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Using the New-MgDirectoryFederationConfiguration Cmdlet
 ```powershell

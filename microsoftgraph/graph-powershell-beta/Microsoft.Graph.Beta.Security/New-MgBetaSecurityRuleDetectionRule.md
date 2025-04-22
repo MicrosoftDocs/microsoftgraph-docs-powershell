@@ -33,6 +33,14 @@ New-MgBetaSecurityRuleDetectionRule -BodyParameter <IMicrosoftGraphSecurityDetec
 ## DESCRIPTION
 Create new navigation property to detectionRules for security
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomDetection.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomDetection.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

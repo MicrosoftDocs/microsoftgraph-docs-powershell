@@ -53,7 +53,7 @@ Create new navigation property to localizations for solutions
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
 ## PARAMETERS
 

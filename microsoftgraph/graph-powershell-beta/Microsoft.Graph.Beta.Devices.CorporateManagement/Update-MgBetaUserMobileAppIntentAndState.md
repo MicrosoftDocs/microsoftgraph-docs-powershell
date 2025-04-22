@@ -46,6 +46,14 @@ Update-MgBetaUserMobileAppIntentAndState -InputObject <IDevicesCorporateManageme
 ## DESCRIPTION
 Update the navigation property mobileAppIntentAndStates in users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -401,7 +409,6 @@ Since the application status is identified during device interaction with the In
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileappintentandstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileappintentandstate)
-
 
 
 

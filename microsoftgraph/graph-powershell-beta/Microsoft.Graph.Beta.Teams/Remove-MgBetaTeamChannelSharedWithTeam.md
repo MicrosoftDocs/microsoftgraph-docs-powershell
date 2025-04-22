@@ -35,6 +35,14 @@ Remove-MgBetaTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-IfMatch <
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMember.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -249,6 +257,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo

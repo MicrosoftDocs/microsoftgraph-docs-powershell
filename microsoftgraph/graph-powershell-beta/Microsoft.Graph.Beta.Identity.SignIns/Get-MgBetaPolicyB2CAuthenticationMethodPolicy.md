@@ -22,6 +22,14 @@ Get-MgBetaPolicyB2CAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 Read the properties of a b2cAuthenticationMethodsPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All,  |
+| Delegated (personal Microsoft account) | Policy.Read.All,  |
+| Application | Policy.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

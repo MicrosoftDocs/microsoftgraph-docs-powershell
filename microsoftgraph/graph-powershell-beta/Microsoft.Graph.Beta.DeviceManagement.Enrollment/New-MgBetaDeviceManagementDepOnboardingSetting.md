@@ -18,6 +18,7 @@ New-MgBetaDeviceManagementDepOnboardingSetting [-ResponseHeadersVariable <String
  [-AdditionalProperties <Hashtable>] [-AppleIdentifier <String>] [-DataSharingConsentGranted]
  [-DefaultIosEnrollmentProfile <IMicrosoftGraphDepIosEnrollmentProfile>]
  [-DefaultMacOSEnrollmentProfile <IMicrosoftGraphDepMacOSEnrollmentProfile>]
+ [-DefaultTvOSEnrollmentProfile <Hashtable>] [-DefaultVisionOSEnrollmentProfile <Hashtable>]
  [-EnrollmentProfiles <IMicrosoftGraphEnrollmentProfile[]>] [-Id <String>]
  [-ImportedAppleDeviceIdentities <IMicrosoftGraphImportedAppleDeviceIdentity[]>]
  [-LastModifiedDateTime <DateTime>] [-LastSuccessfulSyncDateTime <DateTime>] [-LastSyncErrorCode <Int32>]
@@ -36,6 +37,14 @@ New-MgBetaDeviceManagementDepOnboardingSetting -BodyParameter <IMicrosoftGraphDe
 
 ## DESCRIPTION
 Create new navigation property to depOnboardingSettings for deviceManagement
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## PARAMETERS
 
@@ -125,6 +134,39 @@ To construct, see NOTES section for DEFAULTMACOSENROLLMENTPROFILE properties and
 
 ```yaml
 Type: IMicrosoftGraphDepMacOSEnrollmentProfile
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultTvOSEnrollmentProfile
+The depTvOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to Apple TV device configuration.
+This type of profile must be assigned to Apple TV devices before the devices can enroll via DEP.
+However, This entity type will only be used as a navigation property to fetch the display name of the profile while getting the exitsing depOnboardingSetting entity, it won't support any operations, as the new entity is supported in device configuration(DCV2) graph calls
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultVisionOSEnrollmentProfile
+The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged.
+Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
+
+```yaml
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -559,6 +601,29 @@ Read-only.
     - `[SetPrimarySetupAccountAsRegularUser <Boolean?>]`: Indicates whether Setup Assistant will set the account as a regular user
     - `[SkipPrimarySetupAccountCreation <Boolean?>]`: Indicates whether Setup Assistant will skip the user interface for primary account setup
     - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
+  - `[DefaultTvOSEnrollmentProfile <IMicrosoftGraphDepTvOSEnrollmentProfile>]`: The depTvOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to Apple TV device configuration.
+This type of profile must be assigned to Apple TV devices before the devices can enroll via DEP.
+However, This entity type will only be used as a navigation property to fetch the display name of the profile while getting the exitsing depOnboardingSetting entity, it won't support any operations, as the new entity is supported in device configuration(DCV2) graph calls
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ConfigurationEndpointUrl <String>]`: Configuration endpoint url to use for Enrollment
+    - `[Description <String>]`: Description of the profile
+    - `[DisplayName <String>]`: Name of the profile
+    - `[EnableAuthenticationViaCompanyPortal <Boolean?>]`: Indicates to authenticate with Apple Setup Assistant instead of Company Portal.
+    - `[RequireCompanyPortalOnSetupAssistantEnrolledDevices <Boolean?>]`: Indicates that Company Portal is required on setup assistant enrolled devices
+    - `[RequiresUserAuthentication <Boolean?>]`: Indicates if the profile requires user authentication
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DefaultVisionOSEnrollmentProfile <IMicrosoftGraphDepVisionOSEnrollmentProfile>]`: The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged.
+Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ConfigurationEndpointUrl <String>]`: Configuration endpoint url to use for Enrollment
+    - `[Description <String>]`: Description of the profile
+    - `[DisplayName <String>]`: Name of the profile
+    - `[EnableAuthenticationViaCompanyPortal <Boolean?>]`: Indicates to authenticate with Apple Setup Assistant instead of Company Portal.
+    - `[RequireCompanyPortalOnSetupAssistantEnrolledDevices <Boolean?>]`: Indicates that Company Portal is required on setup assistant enrolled devices
+    - `[RequiresUserAuthentication <Boolean?>]`: Indicates if the profile requires user authentication
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[EnrollmentProfiles <IMicrosoftGraphEnrollmentProfile- `[]`>]`: The enrollment profiles.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -578,7 +643,7 @@ Read-only.
     - `[IsDeleted <Boolean?>]`: Indicates if the device is deleted from Apple Business Manager
     - `[IsSupervised <Boolean?>]`: Indicates if the Apple device is supervised.
     - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
-    - `[Platform <Platform?>]`: platform
+    - `[Platform <Platform?>]`: Supported platform types for policies.
     - `[RequestedEnrollmentProfileAssignmentDateTime <DateTime?>]`: The time enrollment profile was assigned to the device
     - `[RequestedEnrollmentProfileId <String>]`: Enrollment profile Id admin intends to apply to the device during next enrollment
     - `[SerialNumber <String>]`: Device serial number
@@ -742,7 +807,7 @@ Read-only.
   - `[IsDeleted <Boolean?>]`: Indicates if the device is deleted from Apple Business Manager
   - `[IsSupervised <Boolean?>]`: Indicates if the Apple device is supervised.
   - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
-  - `[Platform <Platform?>]`: platform
+  - `[Platform <Platform?>]`: Supported platform types for policies.
   - `[RequestedEnrollmentProfileAssignmentDateTime <DateTime?>]`: The time enrollment profile was assigned to the device
   - `[RequestedEnrollmentProfileId <String>]`: Enrollment profile Id admin intends to apply to the device during next enrollment
   - `[SerialNumber <String>]`: Device serial number

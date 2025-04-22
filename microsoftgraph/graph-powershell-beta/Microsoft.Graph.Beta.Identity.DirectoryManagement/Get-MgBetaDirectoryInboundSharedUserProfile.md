@@ -45,7 +45,7 @@ Read the properties of an inboundSharedUserProfile.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | CrossTenantUserProfileSharing.Read, CrossTenantUserProfileSharing.ReadWrite.All, CrossTenantUserProfileSharing.ReadWrite, CrossTenantUserProfileSharing.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

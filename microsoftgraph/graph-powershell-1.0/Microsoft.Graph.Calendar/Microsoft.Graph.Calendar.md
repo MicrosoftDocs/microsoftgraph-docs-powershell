@@ -329,6 +329,9 @@ Locale: en-US
 ### [Remove-MgGroupCalendarEvent](Remove-MgGroupCalendarEvent.md)
 
 
+### [Remove-MgGroupCalendarPermanent](Remove-MgGroupCalendarPermanent.md)
+
+
 ### [Remove-MgGroupCalendarPermission](Remove-MgGroupCalendarPermission.md)
 
 
@@ -347,6 +350,12 @@ Locale: en-US
 ### [Remove-MgGroupEventInstanceExtension](Remove-MgGroupEventInstanceExtension.md)
 
 
+### [Remove-MgGroupEventInstancePermanent](Remove-MgGroupEventInstancePermanent.md)
+
+
+### [Remove-MgGroupEventPermanent](Remove-MgGroupEventPermanent.md)
+
+
 ### [Remove-MgPlace](Remove-MgPlace.md)
 
 
@@ -354,6 +363,9 @@ Locale: en-US
 
 
 ### [Remove-MgUserCalendarGroup](Remove-MgUserCalendarGroup.md)
+
+
+### [Remove-MgUserCalendarPermanent](Remove-MgUserCalendarPermanent.md)
 
 
 ### [Remove-MgUserCalendarPermission](Remove-MgUserCalendarPermission.md)
@@ -372,6 +384,12 @@ Locale: en-US
 
 
 ### [Remove-MgUserEventInstanceExtension](Remove-MgUserEventInstanceExtension.md)
+
+
+### [Remove-MgUserEventInstancePermanent](Remove-MgUserEventInstancePermanent.md)
+
+
+### [Remove-MgUserEventPermanent](Remove-MgUserEventPermanent.md)
 
 
 ### [Stop-MgGroupEvent](Stop-MgGroupEvent.md)

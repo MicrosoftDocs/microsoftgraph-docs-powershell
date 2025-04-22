@@ -23,6 +23,14 @@ Get-MgBetaReportDeviceConfigurationUserActivity -OutFile <String> [-ResponseHead
 ## DESCRIPTION
 Metadata for the device configuration user activity report
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All,  |
+
 ## PARAMETERS
 
 ### -Headers

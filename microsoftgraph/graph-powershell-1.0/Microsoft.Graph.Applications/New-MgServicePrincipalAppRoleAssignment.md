@@ -61,7 +61,7 @@ To grant an app role assignment to a client service principal, you need three id
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Application.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Application.Read.All,  |
 
@@ -218,6 +218,7 @@ Accept wildcard characters: False
 
 ### -PrincipalDisplayName
 The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
 
@@ -284,6 +285,7 @@ Accept wildcard characters: False
 
 ### -ResourceDisplayName
 The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
 
 ```yaml
 Type: String
@@ -407,6 +409,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
   - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -416,6 +419,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
   - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
   - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).

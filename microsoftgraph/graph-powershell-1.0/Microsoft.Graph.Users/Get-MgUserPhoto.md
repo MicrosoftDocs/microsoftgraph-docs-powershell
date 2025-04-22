@@ -60,7 +60,7 @@ Read-only.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read,  |
+| Delegated (work or school account) | User.Read, User.ReadBasic.All, ProfilePhoto.ReadWrite.All, ProfilePhoto.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.Read.All, User.ReadBasic.All, User.Read.All, ProfilePhoto.ReadWrite.All,  |
 

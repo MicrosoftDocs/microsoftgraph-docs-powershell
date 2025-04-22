@@ -30,6 +30,14 @@ Remove-MgBetaSolutionBusinessScenarioPlannerTask -InputObject <IBusinessScenario
 ## DESCRIPTION
 Delete a businessScenarioTask object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BusinessScenarioData.ReadWrite.OwnedBy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BusinessScenarioData.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

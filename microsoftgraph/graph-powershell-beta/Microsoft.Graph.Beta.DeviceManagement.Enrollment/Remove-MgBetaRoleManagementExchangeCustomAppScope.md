@@ -32,6 +32,14 @@ Remove-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagemen
 Delete a customAppScope object of an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.Exchange,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.ReadWrite.Exchange,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -43,8 +43,8 @@ This allows you to maintain and synchronizea local store of a user's mail folder
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Mail.ReadBasic,  |
+| Delegated (work or school account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
 | Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
 
 ## PARAMETERS

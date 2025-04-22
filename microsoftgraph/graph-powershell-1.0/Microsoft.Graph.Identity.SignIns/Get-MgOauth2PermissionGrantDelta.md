@@ -32,7 +32,7 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All, Directory.ReadWrite.All, DelegatedPermissionGrant.ReadWrite.All,  |
 

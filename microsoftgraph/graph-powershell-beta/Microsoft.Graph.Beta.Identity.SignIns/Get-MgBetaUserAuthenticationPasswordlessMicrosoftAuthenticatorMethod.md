@@ -44,7 +44,7 @@ Represents the Microsoft Authenticator Passwordless Phone Sign-in methods regist
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod Cmdlet

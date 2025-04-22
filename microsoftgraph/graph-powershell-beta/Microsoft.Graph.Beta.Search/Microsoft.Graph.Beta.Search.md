@@ -302,6 +302,9 @@ Locale: en-US
 ### [Set-MgBetaExternalConnectionItem](Set-MgBetaExternalConnectionItem.md)
 
 
+### [Start-MgBetaExternalIndustryDataRun](Start-MgBetaExternalIndustryDataRun.md)
+
+
 ### [Test-MgBetaExternalIndustryDataConnector](Test-MgBetaExternalIndustryDataConnector.md)
 
 

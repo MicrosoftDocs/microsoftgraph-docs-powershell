@@ -63,7 +63,7 @@ Update the properties of a bookmark object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
 
@@ -438,7 +438,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetedVariations
-Variations of a bookmark for different countries or devices.
+Variations of a bookmark for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
 To construct, see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
@@ -566,7 +566,7 @@ Possible values are: android, androidForWork, ios, macOS, windowsPhone81, window
   - `[PowerAppIds <String- `[]`>]`: List of Power Apps associated with this bookmark.
 If users add existing Power Apps to a bookmark, they can complete tasks directly on the search results page, such as entering vacation time or reporting expenses.
   - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a bookmark for different countries or devices.
+  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a bookmark for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
     - `[Description <String>]`: The answer variation description that is shown on the search results page.
@@ -614,7 +614,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
-TARGETEDVARIATIONS `<IMicrosoftGraphSearchAnswerVariant- `[]`>`: Variations of a bookmark for different countries or devices.
+TARGETEDVARIATIONS `<IMicrosoftGraphSearchAnswerVariant- `[]`>`: Variations of a bookmark for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
   - `[Description <String>]`: The answer variation description that is shown on the search results page.

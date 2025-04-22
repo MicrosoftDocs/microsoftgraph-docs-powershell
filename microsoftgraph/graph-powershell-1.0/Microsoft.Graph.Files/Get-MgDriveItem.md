@@ -49,9 +49,9 @@ Nullable.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All, Sites.Read.All, Group.ReadWrite.All,  |
+| Delegated (work or school account) | Files.Read, Group.Read.All, Files.ReadWrite, Files.ReadWrite.All, Files.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
-| Application | Group.Read.All,  |
+| Application | Files.Read.All, Group.ReadWrite.All, Group.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get a bundle and its children in a single call

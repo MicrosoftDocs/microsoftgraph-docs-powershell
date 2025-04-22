@@ -35,6 +35,14 @@ Export-MgReportPartnerBillingUsageUnbilled
 ## DESCRIPTION
 Export unbilled Azure usage data for a specific billing period and currency.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PartnerBilling.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PartnerBilling.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

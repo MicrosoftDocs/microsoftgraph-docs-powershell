@@ -84,6 +84,14 @@ Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMic
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityEvents.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityEvents.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Request without Prefer header
 
@@ -1210,6 +1218,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCaseMemberId <String>]`: The unique identifier of ediscoveryCaseMember
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
   - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
   - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy

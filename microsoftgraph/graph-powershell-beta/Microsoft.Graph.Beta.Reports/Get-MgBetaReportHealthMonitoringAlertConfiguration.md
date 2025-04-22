@@ -45,7 +45,7 @@ The returned alertConfiguration object contains the settings for the distributio
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | HealthMonitoringAlertConfig.ReadWrite.All,  |
+| Delegated (work or school account) | HealthMonitoringAlertConfig.Read.All, HealthMonitoringAlertConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | HealthMonitoringAlertConfig.Read.All,  |
 

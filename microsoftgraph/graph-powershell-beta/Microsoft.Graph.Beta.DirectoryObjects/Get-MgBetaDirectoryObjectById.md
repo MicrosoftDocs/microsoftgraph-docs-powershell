@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryObjectById
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObjectById](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectById?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,28 +36,13 @@ Get-MgBetaDirectoryObjectById
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-## EXAMPLES
+**Permissions**
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
-
-$params = @{
-	ids = @(
-	"84b80893-8749-40a3-97b7-68513b600544"
-"5d6059b6-368d-45f8-91e1-8e07d485f1d0"
-"0b944de3-e0fc-4774-a49a-b135213725ef"
-"b75a5ab2-fe55-4463-bd31-d21ad555c6e0"
-)
-types = @(
-"user"
-"group"
-"device"
-)
-}
-
-Get-MgBetaDirectoryObjectById -BodyParameter $params
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All,  |
 
 ## PARAMETERS
 
@@ -220,6 +209,7 @@ BODYPARAMETER `<IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbod
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+
 
 
 

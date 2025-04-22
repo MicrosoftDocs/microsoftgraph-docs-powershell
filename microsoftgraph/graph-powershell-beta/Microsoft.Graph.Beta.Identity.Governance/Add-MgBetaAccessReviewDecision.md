@@ -54,7 +54,7 @@ If you want to change a group that originates on-premises, download the results 
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | AccessReview.ReadWrite.Membership,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -19,18 +19,19 @@ Update the navigation property onlineMeetings in communications
 ```
 Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AiInsights <IMicrosoftGraphCallAiInsight[]>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare <String>]
- [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording]
- [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard] [-AllowedLobbyAdmitters <String>]
- [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
- [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
- [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
- [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
- [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
- [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
- [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
- [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
+ [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms]
+ [-AllowCopyingAndSharingMeetingContent] [-AllowLiveShare <String>] [-AllowMeetingChat <String>]
+ [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions]
+ [-AllowTranscription] [-AllowWhiteboard] [-AllowedLobbyAdmitters <String>] [-AllowedPresenters <String>]
+ [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
+ [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
+ [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-BroadcastRecordingInputFile <String>]
+ [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
+ [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
+ [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
+ [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <String>] [-JoinWebUrl <String>]
+ [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>] [-MeetingTemplateId <String>]
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
@@ -52,9 +53,10 @@ Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> -BodyParameter
 Update-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AiInsights <IMicrosoftGraphCallAiInsight[]>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowBreakoutRooms] [-AllowLiveShare <String>] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
- [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
- [-AllowedLobbyAdmitters <String>] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+ [-AllowBreakoutRooms] [-AllowCopyingAndSharingMeetingContent] [-AllowLiveShare <String>]
+ [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording]
+ [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard] [-AllowedLobbyAdmitters <String>]
+ [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
@@ -147,6 +149,21 @@ Accept wildcard characters: False
 
 ### -AllowBreakoutRooms
 Indicates whether breakout rooms are enabled for the meeting.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowCopyingAndSharingMeetingContent
+Indicates whether copying and sharing meeting content is enabled for the meeting.
 
 ```yaml
 Type: SwitchParameter
@@ -599,7 +616,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEndToEndEncryptionEnabled
-
+Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
 
 ```yaml
 Type: SwitchParameter
@@ -1103,6 +1120,7 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+  - `[AllowCopyingAndSharingMeetingContent <Boolean?>]`: Indicates whether copying and sharing meeting content is enabled for the meeting.
   - `[AllowLiveShare <String>]`: meetingLiveShareOptions
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
@@ -1182,7 +1200,7 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
 Optional.
-  - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
+  - `[IsEndToEndEncryptionEnabled <Boolean?>]`: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
   - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
   - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

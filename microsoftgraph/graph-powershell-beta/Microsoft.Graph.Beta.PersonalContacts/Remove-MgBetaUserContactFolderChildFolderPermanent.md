@@ -12,6 +12,9 @@ ms.subservice: outlook
 Permanently delete a contact folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserContactFolderChildFolderPermanent](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolderChildFolderPermanent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -31,6 +34,14 @@ Remove-MgBetaUserContactFolderChildFolderPermanent -InputObject <IPersonalContac
 ## DESCRIPTION
 Permanently delete a contact folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Contacts.ReadWrite,  |
+| Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
+| Application | Contacts.ReadWrite,  |
 
 ## PARAMETERS
 

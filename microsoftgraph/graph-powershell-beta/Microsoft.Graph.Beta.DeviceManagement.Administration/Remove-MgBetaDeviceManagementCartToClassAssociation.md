@@ -29,6 +29,14 @@ Remove-MgBetaDeviceManagementCartToClassAssociation -InputObject <IDeviceManagem
 ## DESCRIPTION
 Delete navigation property cartToClassAssociations for deviceManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -CartToClassAssociationId

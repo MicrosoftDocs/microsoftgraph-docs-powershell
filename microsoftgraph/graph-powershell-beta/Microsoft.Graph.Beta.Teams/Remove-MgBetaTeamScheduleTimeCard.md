@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Delete a timeCard instance in a schedule.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeCard?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,14 @@ Remove-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete a timeCard instance in a schedule.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Schedule.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -229,6 +240,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo

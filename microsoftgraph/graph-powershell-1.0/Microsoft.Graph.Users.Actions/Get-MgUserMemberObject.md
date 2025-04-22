@@ -9,9 +9,8 @@ ms.subservice: entra-directory-management
 # Get-MgUserMemberObject
 
 ## SYNOPSIS
-Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-Note: Only users and role-enabled groups can be members of directory roles.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+Only users and role-enabled groups can be members of directory roles.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMemberObject](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMemberObject?view=graph-powershell-beta)
@@ -49,17 +48,16 @@ Get-MgUserMemberObject -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-Note: Only users and role-enabled groups can be members of directory roles.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:- user- group- service principal- organizational contact- device- directory object This function is transitive.
+Only users and role-enabled groups can be members of directory roles.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, User.Read, GroupMember.Read.All, Group.Read.All,  |
+| Delegated (work or school account) | Application.Read.All, User.ReadWrite.All, User.Read, User.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, User.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All,  |
+| Application | Application.Read.All, Application.ReadWrite.All, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, User.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.ReadWrite.All,  |
 
 ## PARAMETERS
 

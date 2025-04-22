@@ -36,9 +36,9 @@ Delete navigation property pages for sites
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.ReadWrite.All,  |
+| Delegated (work or school account) | Notes.ReadWrite, Notes.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Notes.ReadWrite,  |
-| Application | Not supported |
+| Application | Notes.ReadWrite.All,  |
 
 ## PARAMETERS
 

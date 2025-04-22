@@ -41,6 +41,14 @@ Get-MgRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Read the properties and relationships of a riskDetection object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityRiskEvent.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskEvent.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

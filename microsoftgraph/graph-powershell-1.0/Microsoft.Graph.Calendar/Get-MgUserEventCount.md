@@ -35,8 +35,8 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (work or school account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
+| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
 | Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
 
 ## PARAMETERS

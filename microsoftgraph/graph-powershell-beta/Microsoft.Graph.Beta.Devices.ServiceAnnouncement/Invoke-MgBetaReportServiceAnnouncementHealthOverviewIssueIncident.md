@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementhealthoverviewissueincident
 schema: 2.0.0
+ms.subservice: service-communications
 ---
 
 # Invoke-MgBetaReportServiceAnnouncementHealthOverviewIssueIncident
@@ -184,6 +185,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementhealthoverviewissueincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementhealthoverviewissueincident)
+
+[https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta)
 
 
 

@@ -69,7 +69,7 @@ When using Graph Explorer to update a schemaExtension resource, include the owne
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
@@ -143,7 +143,6 @@ Accept wildcard characters: False
 
 ### -Description
 Description for the schema extension.
-Supports $filter (eq).
 
 ```yaml
 Type: String
@@ -375,7 +374,6 @@ BODYPARAMETER `<IMicrosoftGraphSchemaExtension>`: schemaExtension
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Description for the schema extension.
-Supports $filter (eq).
   - `[Owner <String>]`: The appId of the application that is the owner of the schema extension.
 The owner of the schema definition must be explicitly specified during the Create and Update operations, or it will be implied and auto-assigned by Microsoft Entra ID as follows: In delegated access: The signed-in user must be the owner of the app that calls Microsoft Graph to create the schema extension definition. 
 If the signed-in user isn't the owner of the calling app, they must explicitly specify the owner property, and assign it the appId of an app that they own.

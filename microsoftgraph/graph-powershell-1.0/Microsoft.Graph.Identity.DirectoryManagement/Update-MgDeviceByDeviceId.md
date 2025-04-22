@@ -813,6 +813,7 @@ Type of trust for the joined device.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
 
 ```yaml
 Type: String
@@ -1005,6 +1006,7 @@ Supports $expand.
 Read-only.
 Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
 
 EXTENSIONS `<IMicrosoftGraphExtension- `[]`>`: The collection of open extensions defined for the device.
 Read-only.

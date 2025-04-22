@@ -45,7 +45,7 @@ Retrieve the properties and relationships of domain object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All,  |
 

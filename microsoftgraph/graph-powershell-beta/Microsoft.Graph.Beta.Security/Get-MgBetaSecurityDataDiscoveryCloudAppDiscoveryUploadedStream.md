@@ -318,6 +318,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCaseMemberId <String>]`: The unique identifier of ediscoveryCaseMember
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
   - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
   - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy

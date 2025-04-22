@@ -19,9 +19,9 @@ Update the properties of a teamsAppSettings object.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTeamworkTeamAppSetting [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-AllowUserRequestsForAppAccess] [-Id <String>] [-IsChatResourceSpecificConsentEnabled]
- [-IsUserPersonalScopeResourceSpecificConsentEnabled] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AllowUserRequestsForAppAccess] [-CustomAppSettings <IMicrosoftGraphCustomAppSettings>] [-Id <String>]
+ [-IsChatResourceSpecificConsentEnabled] [-IsUserPersonalScopeResourceSpecificConsentEnabled]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -113,6 +113,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CustomAppSettings
+customAppSettings
+To construct, see NOTES section for CUSTOMAPPSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomAppSettings
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -263,12 +279,19 @@ BODYPARAMETER `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowUserRequestsForAppAccess <Boolean?>]`: Indicates whether users are allowed to request access to the unavailable Teams apps.
+  - `[CustomAppSettings <IMicrosoftGraphCustomAppSettings>]`: customAppSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeveloperToolsForShowingAppUsageMetrics <String>]`: appDevelopmentPlatforms
   - `[IsChatResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant.
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings.
 False blocks the installation of any Teams app that requires resource-specific permissions in a chat or a meeting.
   - `[IsUserPersonalScopeResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for personal scope in Teams apps has been enabled for the tenant.
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope.
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
+
+CUSTOMAPPSETTINGS `<IMicrosoftGraphCustomAppSettings>`: customAppSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeveloperToolsForShowingAppUsageMetrics <String>]`: appDevelopmentPlatforms
 
 ## RELATED LINKS
 

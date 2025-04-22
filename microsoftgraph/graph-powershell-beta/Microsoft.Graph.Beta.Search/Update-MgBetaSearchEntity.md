@@ -307,7 +307,7 @@ Possible values are: android, androidForWork, ios, macOS, windowsPhone81, window
     - `[PowerAppIds <String- `[]`>]`: List of Power Apps associated with this bookmark.
 If users add existing Power Apps to a bookmark, they can complete tasks directly on the search results page, such as entering vacation time or reporting expenses.
     - `[State <String>]`: answerState
-    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a bookmark for different countries or devices.
+    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a bookmark for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
       - `[Description <String>]`: The answer variation description that is shown on the search results page.
@@ -347,7 +347,7 @@ For the list of possible values, see Supported language tags.
     - `[Platforms <DevicePlatformType- `[]`>]`: List of devices and operating systems that are able to view this QnA.
 Possible values are: android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, unknown, androidASOP, androidMobileApplicationManagement, iOSMobileApplicationManagement, unknownFutureValue.
     - `[State <String>]`: answerState
-    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a QnA for different countries or devices.
+    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a QnA for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
 
@@ -397,7 +397,7 @@ Possible values are: android, androidForWork, ios, macOS, windowsPhone81, window
   - `[PowerAppIds <String- `[]`>]`: List of Power Apps associated with this bookmark.
 If users add existing Power Apps to a bookmark, they can complete tasks directly on the search results page, such as entering vacation time or reporting expenses.
   - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a bookmark for different countries or devices.
+  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a bookmark for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
     - `[Description <String>]`: The answer variation description that is shown on the search results page.
@@ -449,7 +449,7 @@ For the list of possible values, see Supported language tags.
   - `[Platforms <DevicePlatformType- `[]`>]`: List of devices and operating systems that are able to view this QnA.
 Possible values are: android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, unknown, androidASOP, androidMobileApplicationManagement, iOSMobileApplicationManagement, unknownFutureValue.
   - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a QnA for different countries or devices.
+  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a QnA for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings apply to all variations.
     - `[Description <String>]`: The answer variation description that is shown on the search results page.

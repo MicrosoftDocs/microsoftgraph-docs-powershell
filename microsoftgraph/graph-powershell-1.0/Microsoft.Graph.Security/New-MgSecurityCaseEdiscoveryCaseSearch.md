@@ -65,7 +65,7 @@ Create a new ediscoverySearch object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
@@ -512,6 +512,10 @@ For example, in the access reviews decisions API, this property might record the
   - `[Status <String>]`: caseOperationStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AdditionalDataOptions <String>]`: additionalDataOptions
+  - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
+  - `[DocumentVersion <String>]`: documentVersion
+  - `[ItemsToInclude <String>]`: itemsToInclude
   - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -567,6 +571,7 @@ Read-only.
       - `[MailboxCount <Int32?>]`: The number of mailboxes that had search hits.
       - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
       - `[SiteCount <Int32?>]`: The number of mailboxes that had search hits.
+      - `[StatisticsOptions <String>]`: statisticsOptions
       - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
       - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
     - `[NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>]`: noncustodialDataSource sources that are included in the eDiscovery search
@@ -626,6 +631,10 @@ Read-only.
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[AdditionalDataOptions <String>]`: additionalDataOptions
+    - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
+    - `[DocumentVersion <String>]`: documentVersion
+    - `[ItemsToInclude <String>]`: itemsToInclude
     - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -670,6 +679,7 @@ Read-only.
     - `[MailboxCount <Int32?>]`: The number of mailboxes that had search hits.
     - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
     - `[SiteCount <Int32?>]`: The number of mailboxes that had search hits.
+    - `[StatisticsOptions <String>]`: statisticsOptions
     - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
     - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
   - `[NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource- `[]`>]`: noncustodialDataSource sources that are included in the eDiscovery search
@@ -836,6 +846,10 @@ Read-only.
       - `[Status <String>]`: caseOperationStatus
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[AdditionalDataOptions <String>]`: additionalDataOptions
+      - `[CloudAttachmentVersion <String>]`: cloudAttachmentVersion
+      - `[DocumentVersion <String>]`: documentVersion
+      - `[ItemsToInclude <String>]`: itemsToInclude
       - `[ReviewSet <IMicrosoftGraphSecurityEdiscoveryReviewSet>]`: ediscoveryReviewSet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -887,6 +901,7 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[SiteCount <Int32?>]`: The number of mailboxes that had search hits.
+  - `[StatisticsOptions <String>]`: statisticsOptions
   - `[UnindexedItemCount <Int64?>]`: The estimated count of unindexed items for the collection.
   - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
 

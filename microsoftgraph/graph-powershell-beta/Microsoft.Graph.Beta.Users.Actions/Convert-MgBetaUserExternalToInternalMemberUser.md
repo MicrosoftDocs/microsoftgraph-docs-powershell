@@ -56,7 +56,7 @@ For more information about this conversion, see Convert external users to intern
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | User-ConvertToInternal.ReadWrite.All, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User-ConvertToInternal.ReadWrite.All, User.ReadWrite.All,  |
 

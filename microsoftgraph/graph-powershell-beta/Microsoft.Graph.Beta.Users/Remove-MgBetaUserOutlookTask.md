@@ -29,6 +29,14 @@ Remove-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property tasks for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.ReadWrite,  |
+| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserOutlookTask Cmdlet
 ```powershell

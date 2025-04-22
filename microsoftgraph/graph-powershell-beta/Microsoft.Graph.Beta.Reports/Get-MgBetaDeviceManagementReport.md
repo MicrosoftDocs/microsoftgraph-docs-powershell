@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementReport
 
 ## SYNOPSIS
-Reports singleton
+Get reports from deviceManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReport?view=graph-powershell-1.0)
@@ -22,13 +22,13 @@ Get-MgBetaDeviceManagementReport [-ExpandProperty <String[]>] [-Property <String
 ```
 
 ## DESCRIPTION
-Reports singleton
+Get reports from deviceManagement
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 

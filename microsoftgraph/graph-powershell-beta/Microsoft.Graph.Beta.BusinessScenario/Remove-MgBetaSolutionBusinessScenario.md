@@ -38,7 +38,7 @@ The deletion of a scenario causes all data associated with the scenario to be de
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

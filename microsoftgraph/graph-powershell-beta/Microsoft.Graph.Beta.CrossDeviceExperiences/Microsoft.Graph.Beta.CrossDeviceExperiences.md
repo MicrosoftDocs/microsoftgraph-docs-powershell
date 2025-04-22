@@ -74,6 +74,9 @@ Locale: en-US
 ### [Get-MgBetaUserDeviceRegisteredOwner](Get-MgBetaUserDeviceRegisteredOwner.md)
 
 
+### [Get-MgBetaUserDeviceRegisteredOwnerAsAppRoleAssignment](Get-MgBetaUserDeviceRegisteredOwnerAsAppRoleAssignment.md)
+
+
 ### [Get-MgBetaUserDeviceRegisteredOwnerAsEndpoint](Get-MgBetaUserDeviceRegisteredOwnerAsEndpoint.md)
 
 
@@ -89,6 +92,9 @@ Locale: en-US
 ### [Get-MgBetaUserDeviceRegisteredOwnerCount](Get-MgBetaUserDeviceRegisteredOwnerCount.md)
 
 
+### [Get-MgBetaUserDeviceRegisteredOwnerCountAsAppRoleAssignment](Get-MgBetaUserDeviceRegisteredOwnerCountAsAppRoleAssignment.md)
+
+
 ### [Get-MgBetaUserDeviceRegisteredOwnerCountAsEndpoint](Get-MgBetaUserDeviceRegisteredOwnerCountAsEndpoint.md)
 
 
@@ -99,6 +105,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaUserDeviceRegisteredUser](Get-MgBetaUserDeviceRegisteredUser.md)
+
+
+### [Get-MgBetaUserDeviceRegisteredUserAsAppRoleAssignment](Get-MgBetaUserDeviceRegisteredUserAsAppRoleAssignment.md)
 
 
 ### [Get-MgBetaUserDeviceRegisteredUserAsEndpoint](Get-MgBetaUserDeviceRegisteredUserAsEndpoint.md)
@@ -114,6 +123,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaUserDeviceRegisteredUserCount](Get-MgBetaUserDeviceRegisteredUserCount.md)
+
+
+### [Get-MgBetaUserDeviceRegisteredUserCountAsAppRoleAssignment](Get-MgBetaUserDeviceRegisteredUserCountAsAppRoleAssignment.md)
 
 
 ### [Get-MgBetaUserDeviceRegisteredUserCountAsEndpoint](Get-MgBetaUserDeviceRegisteredUserCountAsEndpoint.md)

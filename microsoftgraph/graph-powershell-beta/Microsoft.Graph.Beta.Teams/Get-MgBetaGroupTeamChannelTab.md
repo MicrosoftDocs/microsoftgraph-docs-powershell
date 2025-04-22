@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A collection of all the tabs in the channel.
-A navigation property.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelTab?view=graph-powershell-1.0)
@@ -40,7 +39,6 @@ Get-MgBetaGroupTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 A collection of all the tabs in the channel.
-A navigation property.
 
 ## PARAMETERS
 
@@ -333,6 +331,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo

@@ -179,6 +179,12 @@ Locale: en-US
 ### [Get-MgBetaDriveItemDelta](Get-MgBetaDriveItemDelta.md)
 
 
+### [Get-MgBetaDriveItemExtension](Get-MgBetaDriveItemExtension.md)
+
+
+### [Get-MgBetaDriveItemExtensionCount](Get-MgBetaDriveItemExtensionCount.md)
+
+
 ### [Get-MgBetaDriveItemItemLastModifiedByUser](Get-MgBetaDriveItemItemLastModifiedByUser.md)
 
 
@@ -509,6 +515,12 @@ Locale: en-US
 ### [Get-MgBetaDriveRootDelta](Get-MgBetaDriveRootDelta.md)
 
 
+### [Get-MgBetaDriveRootExtension](Get-MgBetaDriveRootExtension.md)
+
+
+### [Get-MgBetaDriveRootExtensionCount](Get-MgBetaDriveRootExtensionCount.md)
+
+
 ### [Get-MgBetaDriveRootItemLastModifiedByUser](Get-MgBetaDriveRootItemLastModifiedByUser.md)
 
 
@@ -753,6 +765,12 @@ Locale: en-US
 
 
 ### [Get-MgBetaGroupDriveItemDelta](Get-MgBetaGroupDriveItemDelta.md)
+
+
+### [Get-MgBetaGroupDriveItemExtension](Get-MgBetaGroupDriveItemExtension.md)
+
+
+### [Get-MgBetaGroupDriveItemExtensionCount](Get-MgBetaGroupDriveItemExtensionCount.md)
 
 
 ### [Get-MgBetaGroupDriveItemItemLastModifiedByUser](Get-MgBetaGroupDriveItemItemLastModifiedByUser.md)
@@ -1080,6 +1098,12 @@ Locale: en-US
 
 
 ### [Get-MgBetaGroupDriveRootDelta](Get-MgBetaGroupDriveRootDelta.md)
+
+
+### [Get-MgBetaGroupDriveRootExtension](Get-MgBetaGroupDriveRootExtension.md)
+
+
+### [Get-MgBetaGroupDriveRootExtensionCount](Get-MgBetaGroupDriveRootExtensionCount.md)
 
 
 ### [Get-MgBetaGroupDriveRootItemLastModifiedByUser](Get-MgBetaGroupDriveRootItemLastModifiedByUser.md)
@@ -1556,6 +1580,12 @@ Locale: en-US
 ### [Get-MgBetaUserDriveItemDelta](Get-MgBetaUserDriveItemDelta.md)
 
 
+### [Get-MgBetaUserDriveItemExtension](Get-MgBetaUserDriveItemExtension.md)
+
+
+### [Get-MgBetaUserDriveItemExtensionCount](Get-MgBetaUserDriveItemExtensionCount.md)
+
+
 ### [Get-MgBetaUserDriveItemItemLastModifiedByUser](Get-MgBetaUserDriveItemItemLastModifiedByUser.md)
 
 
@@ -1881,6 +1911,12 @@ Locale: en-US
 
 
 ### [Get-MgBetaUserDriveRootDelta](Get-MgBetaUserDriveRootDelta.md)
+
+
+### [Get-MgBetaUserDriveRootExtension](Get-MgBetaUserDriveRootExtension.md)
+
+
+### [Get-MgBetaUserDriveRootExtensionCount](Get-MgBetaUserDriveRootExtensionCount.md)
 
 
 ### [Get-MgBetaUserDriveRootItemLastModifiedByUser](Get-MgBetaUserDriveRootItemLastModifiedByUser.md)
@@ -2270,6 +2306,9 @@ Locale: en-US
 ### [New-MgBetaDriveItemChild](New-MgBetaDriveItemChild.md)
 
 
+### [New-MgBetaDriveItemExtension](New-MgBetaDriveItemExtension.md)
+
+
 ### [New-MgBetaDriveItemLink](New-MgBetaDriveItemLink.md)
 
 
@@ -2342,6 +2381,9 @@ Locale: en-US
 ### [New-MgBetaDriveRootChild](New-MgBetaDriveRootChild.md)
 
 
+### [New-MgBetaDriveRootExtension](New-MgBetaDriveRootExtension.md)
+
+
 ### [New-MgBetaDriveRootLink](New-MgBetaDriveRootLink.md)
 
 
@@ -2385,6 +2427,9 @@ Locale: en-US
 
 
 ### [New-MgBetaGroupDriveItemChild](New-MgBetaGroupDriveItemChild.md)
+
+
+### [New-MgBetaGroupDriveItemExtension](New-MgBetaGroupDriveItemExtension.md)
 
 
 ### [New-MgBetaGroupDriveItemLink](New-MgBetaGroupDriveItemLink.md)
@@ -2457,6 +2502,9 @@ Locale: en-US
 
 
 ### [New-MgBetaGroupDriveRootChild](New-MgBetaGroupDriveRootChild.md)
+
+
+### [New-MgBetaGroupDriveRootExtension](New-MgBetaGroupDriveRootExtension.md)
 
 
 ### [New-MgBetaGroupDriveRootLink](New-MgBetaGroupDriveRootLink.md)
@@ -2540,6 +2588,9 @@ Locale: en-US
 ### [New-MgBetaUserDriveItemChild](New-MgBetaUserDriveItemChild.md)
 
 
+### [New-MgBetaUserDriveItemExtension](New-MgBetaUserDriveItemExtension.md)
+
+
 ### [New-MgBetaUserDriveItemLink](New-MgBetaUserDriveItemLink.md)
 
 
@@ -2610,6 +2661,9 @@ Locale: en-US
 
 
 ### [New-MgBetaUserDriveRootChild](New-MgBetaUserDriveRootChild.md)
+
+
+### [New-MgBetaUserDriveRootExtension](New-MgBetaUserDriveRootExtension.md)
 
 
 ### [New-MgBetaUserDriveRootLink](New-MgBetaUserDriveRootLink.md)
@@ -2691,6 +2745,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaDriveItemContentStream](Remove-MgBetaDriveItemContentStream.md)
+
+
+### [Remove-MgBetaDriveItemExtension](Remove-MgBetaDriveItemExtension.md)
 
 
 ### [Remove-MgBetaDriveItemListItem](Remove-MgBetaDriveItemListItem.md)
@@ -2816,6 +2873,9 @@ Locale: en-US
 ### [Remove-MgBetaDriveRootContentStream](Remove-MgBetaDriveRootContentStream.md)
 
 
+### [Remove-MgBetaDriveRootExtension](Remove-MgBetaDriveRootExtension.md)
+
+
 ### [Remove-MgBetaDriveRootListItem](Remove-MgBetaDriveRootListItem.md)
 
 
@@ -2907,6 +2967,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaGroupDriveItemContentStream](Remove-MgBetaGroupDriveItemContentStream.md)
+
+
+### [Remove-MgBetaGroupDriveItemExtension](Remove-MgBetaGroupDriveItemExtension.md)
 
 
 ### [Remove-MgBetaGroupDriveItemListItem](Remove-MgBetaGroupDriveItemListItem.md)
@@ -3030,6 +3093,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaGroupDriveRootContentStream](Remove-MgBetaGroupDriveRootContentStream.md)
+
+
+### [Remove-MgBetaGroupDriveRootExtension](Remove-MgBetaGroupDriveRootExtension.md)
 
 
 ### [Remove-MgBetaGroupDriveRootListItem](Remove-MgBetaGroupDriveRootListItem.md)
@@ -3200,6 +3266,9 @@ Locale: en-US
 ### [Remove-MgBetaUserDriveItemContentStream](Remove-MgBetaUserDriveItemContentStream.md)
 
 
+### [Remove-MgBetaUserDriveItemExtension](Remove-MgBetaUserDriveItemExtension.md)
+
+
 ### [Remove-MgBetaUserDriveItemListItem](Remove-MgBetaUserDriveItemListItem.md)
 
 
@@ -3321,6 +3390,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaUserDriveRootContentStream](Remove-MgBetaUserDriveRootContentStream.md)
+
+
+### [Remove-MgBetaUserDriveRootExtension](Remove-MgBetaUserDriveRootExtension.md)
 
 
 ### [Remove-MgBetaUserDriveRootListItem](Remove-MgBetaUserDriveRootListItem.md)
@@ -3860,6 +3932,9 @@ Locale: en-US
 ### [Update-MgBetaDriveItemCreatedByUserMailboxSetting](Update-MgBetaDriveItemCreatedByUserMailboxSetting.md)
 
 
+### [Update-MgBetaDriveItemExtension](Update-MgBetaDriveItemExtension.md)
+
+
 ### [Update-MgBetaDriveItemLastModifiedByUserMailboxSetting](Update-MgBetaDriveItemLastModifiedByUserMailboxSetting.md)
 
 
@@ -3977,6 +4052,9 @@ Locale: en-US
 ### [Update-MgBetaDriveRootCreatedByUserMailboxSetting](Update-MgBetaDriveRootCreatedByUserMailboxSetting.md)
 
 
+### [Update-MgBetaDriveRootExtension](Update-MgBetaDriveRootExtension.md)
+
+
 ### [Update-MgBetaDriveRootLastModifiedByUserMailboxSetting](Update-MgBetaDriveRootLastModifiedByUserMailboxSetting.md)
 
 
@@ -4038,6 +4116,9 @@ Locale: en-US
 
 
 ### [Update-MgBetaGroupDriveItemCreatedByUserMailboxSetting](Update-MgBetaGroupDriveItemCreatedByUserMailboxSetting.md)
+
+
+### [Update-MgBetaGroupDriveItemExtension](Update-MgBetaGroupDriveItemExtension.md)
 
 
 ### [Update-MgBetaGroupDriveItemLastModifiedByUserMailboxSetting](Update-MgBetaGroupDriveItemLastModifiedByUserMailboxSetting.md)
@@ -4155,6 +4236,9 @@ Locale: en-US
 
 
 ### [Update-MgBetaGroupDriveRootCreatedByUserMailboxSetting](Update-MgBetaGroupDriveRootCreatedByUserMailboxSetting.md)
+
+
+### [Update-MgBetaGroupDriveRootExtension](Update-MgBetaGroupDriveRootExtension.md)
 
 
 ### [Update-MgBetaGroupDriveRootLastModifiedByUserMailboxSetting](Update-MgBetaGroupDriveRootLastModifiedByUserMailboxSetting.md)
@@ -4289,6 +4373,9 @@ Locale: en-US
 ### [Update-MgBetaUserDriveItemCreatedByUserMailboxSetting](Update-MgBetaUserDriveItemCreatedByUserMailboxSetting.md)
 
 
+### [Update-MgBetaUserDriveItemExtension](Update-MgBetaUserDriveItemExtension.md)
+
+
 ### [Update-MgBetaUserDriveItemLastModifiedByUserMailboxSetting](Update-MgBetaUserDriveItemLastModifiedByUserMailboxSetting.md)
 
 
@@ -4404,6 +4491,9 @@ Locale: en-US
 
 
 ### [Update-MgBetaUserDriveRootCreatedByUserMailboxSetting](Update-MgBetaUserDriveRootCreatedByUserMailboxSetting.md)
+
+
+### [Update-MgBetaUserDriveRootExtension](Update-MgBetaUserDriveRootExtension.md)
 
 
 ### [Update-MgBetaUserDriveRootLastModifiedByUserMailboxSetting](Update-MgBetaUserDriveRootLastModifiedByUserMailboxSetting.md)

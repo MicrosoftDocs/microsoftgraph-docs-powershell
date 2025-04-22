@@ -39,7 +39,7 @@ Delete a users's temporaryAccessPassAuthenticationMethod object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

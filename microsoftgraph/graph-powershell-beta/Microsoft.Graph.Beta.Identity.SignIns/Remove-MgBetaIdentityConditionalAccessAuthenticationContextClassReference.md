@@ -39,7 +39,7 @@ Delete an authenticationContextClassReference object that's not published or use
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
 

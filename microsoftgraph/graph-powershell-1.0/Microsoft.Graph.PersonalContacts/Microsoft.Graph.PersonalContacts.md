@@ -134,7 +134,13 @@ Locale: en-US
 ### [Remove-MgUserContactFolderChildFolderContactExtension](Remove-MgUserContactFolderChildFolderContactExtension.md)
 
 
+### [Remove-MgUserContactFolderChildFolderContactPermanent](Remove-MgUserContactFolderChildFolderContactPermanent.md)
+
+
 ### [Remove-MgUserContactFolderChildFolderContactPhotoContent](Remove-MgUserContactFolderChildFolderContactPhotoContent.md)
+
+
+### [Remove-MgUserContactFolderChildFolderPermanent](Remove-MgUserContactFolderChildFolderPermanent.md)
 
 
 ### [Remove-MgUserContactFolderContact](Remove-MgUserContactFolderContact.md)
@@ -143,7 +149,16 @@ Locale: en-US
 ### [Remove-MgUserContactFolderContactExtension](Remove-MgUserContactFolderContactExtension.md)
 
 
+### [Remove-MgUserContactFolderContactPermanent](Remove-MgUserContactFolderContactPermanent.md)
+
+
 ### [Remove-MgUserContactFolderContactPhotoContent](Remove-MgUserContactFolderContactPhotoContent.md)
+
+
+### [Remove-MgUserContactFolderPermanent](Remove-MgUserContactFolderPermanent.md)
+
+
+### [Remove-MgUserContactPermanent](Remove-MgUserContactPermanent.md)
 
 
 ### [Remove-MgUserContactPhotoContent](Remove-MgUserContactPhotoContent.md)

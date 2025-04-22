@@ -33,6 +33,14 @@ Remove-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdenti
 ## DESCRIPTION
 Delete a certificateBasedAuthConfiguration object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Organization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Organization.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

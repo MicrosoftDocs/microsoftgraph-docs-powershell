@@ -24,6 +24,14 @@ Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-ResponseHeadersVar
 ## DESCRIPTION
 Get details about users who have activated Microsoft 365.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Reports.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

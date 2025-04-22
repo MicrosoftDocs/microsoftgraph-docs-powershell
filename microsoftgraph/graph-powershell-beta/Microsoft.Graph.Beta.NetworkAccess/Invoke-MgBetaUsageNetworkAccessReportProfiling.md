@@ -15,21 +15,29 @@ Invoke function usageProfiling
 ### Usage (Default)
 ```
 Invoke-MgBetaUsageNetworkAccessReportProfiling -AggregatedBy <String> -EndDateTime <DateTime>
- -StartDateTime <DateTime> [-Count] [-DiscoveredApplicationSegmentId <String>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -StartDateTime <DateTime> [-ApplicationId <String>] [-Count] [-DiscoveredApplicationSegmentId <String>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### UsageViaIdentity
 ```
-Invoke-MgBetaUsageNetworkAccessReportProfiling -InputObject <INetworkAccessIdentity> [-Count]
- [-DiscoveredApplicationSegmentId <String>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+Invoke-MgBetaUsageNetworkAccessReportProfiling -InputObject <INetworkAccessIdentity> [-ApplicationId <String>]
+ [-Count] [-DiscoveredApplicationSegmentId <String>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function usageProfiling
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess-Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess-Reports.Read.All,  |
 
 ## PARAMETERS
 
@@ -42,6 +50,21 @@ Parameter Sets: Usage
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ApplicationId
+Usage: applicationId='@applicationId'
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

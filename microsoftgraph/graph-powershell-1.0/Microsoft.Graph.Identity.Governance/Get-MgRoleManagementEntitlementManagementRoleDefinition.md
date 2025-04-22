@@ -45,9 +45,9 @@ Resource representing the roles allowed by RBAC providers and the permissions as
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.Read.Directory, RoleManagement.Read.CloudPC, RoleManagement.Read.All,  |
+| Delegated (work or school account) | EntitlementManagement.Read.All, RoleManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.ReadWrite.Directory, EntitlementManagement.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All, CloudPC.ReadWrite.All, CloudPC.Read.All,  |
+| Application | EntitlementManagement.Read.All, RoleManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Retrieve role definitions for the entitlement management provider

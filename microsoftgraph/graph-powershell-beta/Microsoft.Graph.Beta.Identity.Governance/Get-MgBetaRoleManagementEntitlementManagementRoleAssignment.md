@@ -45,9 +45,9 @@ Get roleAssignments from roleManagement
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.All,  |
+| Delegated (work or school account) | EntitlementManagement.Read.All, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, EntitlementManagement.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.Read.All, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, EntitlementManagement.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | EntitlementManagement.Read.All, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Request using $filter for role assignments on an access package catalog and expand principal

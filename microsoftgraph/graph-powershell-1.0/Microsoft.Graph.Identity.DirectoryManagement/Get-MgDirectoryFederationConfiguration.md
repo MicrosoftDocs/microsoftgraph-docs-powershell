@@ -44,7 +44,7 @@ Configure domain federation with organizations whose identity provider (IdP) sup
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
 

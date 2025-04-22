@@ -74,6 +74,14 @@ Update-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity>
 ## DESCRIPTION
 Update the navigation property contacts in users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Contacts.ReadWrite,  |
+| Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
+| Application | Contacts.ReadWrite,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

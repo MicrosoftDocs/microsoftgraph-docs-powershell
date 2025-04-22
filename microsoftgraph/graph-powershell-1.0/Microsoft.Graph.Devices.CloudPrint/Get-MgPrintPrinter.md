@@ -47,7 +47,7 @@ Retrieve the properties and relationships of a printer object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Printer.Read.All, PrinterShare.ReadWrite.All, PrinterShare.ReadBasic.All, PrinterShare.Read.All, Printer.ReadWrite.All, Printer.FullControl.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Printer.Read.All, Printer.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get a printer

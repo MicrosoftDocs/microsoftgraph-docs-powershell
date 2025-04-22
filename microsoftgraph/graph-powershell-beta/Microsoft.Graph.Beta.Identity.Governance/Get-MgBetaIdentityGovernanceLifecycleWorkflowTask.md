@@ -41,6 +41,14 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGoverna
 ## DESCRIPTION
 The tasks in the workflow.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

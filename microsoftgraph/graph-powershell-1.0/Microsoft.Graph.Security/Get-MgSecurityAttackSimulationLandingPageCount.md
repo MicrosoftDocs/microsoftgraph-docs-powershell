@@ -24,6 +24,14 @@ Get-MgSecurityAttackSimulationLandingPageCount [-Filter <String>] [-Search <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AttackSimulation.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AttackSimulation.Read.All,  |
+
 ## PARAMETERS
 
 ### -Filter

@@ -38,7 +38,7 @@ To delete the organizationalBranding object, all images (Stream types) must firs
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | OrganizationalBranding.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -59,9 +59,9 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.ReadWrite.All,  |
+| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite,  |
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
-| Application | Not supported |
+| Application | Notes.ReadWrite.All,  |
 
 ## PARAMETERS
 

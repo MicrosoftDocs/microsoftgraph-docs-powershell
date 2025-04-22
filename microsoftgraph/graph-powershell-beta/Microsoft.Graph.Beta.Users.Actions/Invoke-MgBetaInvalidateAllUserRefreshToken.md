@@ -44,8 +44,8 @@ If this happens, the application needs to acquire a new refresh token by making 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.RevokeSessions.All, User.ReadWrite, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Delegated (personal Microsoft account) | User.ReadWrite,  |
+| Application | User.RevokeSessions.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

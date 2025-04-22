@@ -51,6 +51,14 @@ Update the properties of the specified identity provider configured in the tenan
 Among the types of providers derived from identityProviderBase, you can currently update a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently update a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityProvider.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityProvider.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Update a specific **social identity provider** (Microsoft Entra ID or Azure AD B2C)
 

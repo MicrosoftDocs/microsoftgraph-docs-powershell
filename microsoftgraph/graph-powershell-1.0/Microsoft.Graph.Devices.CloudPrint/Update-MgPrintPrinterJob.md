@@ -22,11 +22,12 @@ For details about how to register a task trigger, see Extending Universal Print 
 ### UpdateExpanded (Default)
 ```
 Update-MgPrintPrinterJob -PrintJobId <String> -PrinterId <String> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
- [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>]
- [-Documents <IMicrosoftGraphPrintDocument[]>] [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>]
- [-RedirectedTo <String>] [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-CreatedBy <IMicrosoftGraphUserIdentity>]
+ [-CreatedDateTime <DateTime>] [-Documents <IMicrosoftGraphPrintDocument[]>] [-ErrorCode <Int32>]
+ [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
+ [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -39,11 +40,12 @@ Update-MgPrintPrinterJob -PrintJobId <String> -PrinterId <String> -BodyParameter
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
- [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>]
- [-Documents <IMicrosoftGraphPrintDocument[]>] [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>]
- [-RedirectedTo <String>] [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>]
+ [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-CreatedBy <IMicrosoftGraphUserIdentity>]
+ [-CreatedDateTime <DateTime>] [-Documents <IMicrosoftGraphPrintDocument[]>] [-ErrorCode <Int32>]
+ [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
+ [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -115,6 +117,22 @@ This example shows how to use the Update-MgPrintPrinterJob Cmdlet.
 
 
 ## PARAMETERS
+
+### -AcknowledgedDateTime
+The dateTimeOffset when the job was acknowledged.
+Read-only.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -AdditionalProperties
 Additional Parameters
@@ -207,6 +225,22 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ErrorCode
+The error code of the print job.
+Read-only.
+
+```yaml
+Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -447,6 +481,8 @@ BODYPARAMETER `<IMicrosoftGraphPrintJob>`: printJob
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AcknowledgedDateTime <DateTime?>]`: The dateTimeOffset when the job was acknowledged.
+Read-only.
   - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -499,7 +535,13 @@ Read-only.
 Read-only.
     - `[DisplayName <String>]`: The document's name.
 Read-only.
+    - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
     - `[Size <Int64?>]`: The document's size in bytes.
+Read-only.
+    - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
+  - `[ErrorCode <Int32?>]`: The error code of the print job.
 Read-only.
   - `[IsFetchable <Boolean?>]`: If true, document can be fetched by printer.
   - `[RedirectedFrom <String>]`: Contains the source job URL, if the job has been redirected from another printer.
@@ -597,8 +639,12 @@ Read-only.
 Read-only.
   - `[DisplayName <String>]`: The document's name.
 Read-only.
+  - `[DownloadedDateTime <DateTime?>]`: The time the document was downloaded.
+Read-only
   - `[Size <Int64?>]`: The document's size in bytes.
 Read-only.
+  - `[UploadedDateTime <DateTime?>]`: The time the document was uploaded.
+Read-only
 
 INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group

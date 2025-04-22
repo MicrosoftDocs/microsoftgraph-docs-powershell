@@ -29,7 +29,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Presence.Read, Presence.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Presence.ReadWrite.All,  |
+| Application | Presence.Read.All, Presence.ReadWrite.All,  |
 
 ## PARAMETERS
 

@@ -28,7 +28,7 @@ A tenant has only one cloudPcOrganizationSettings object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
 

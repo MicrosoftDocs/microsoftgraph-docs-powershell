@@ -10,7 +10,7 @@ ms.subservice: intune
 # Get-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Read properties and relationships of the windowsAppX object.
+Read properties and relationships of the macOSMicrosoftEdgeApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -40,13 +40,13 @@ Get-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the windowsAppX object.
+Read properties and relationships of the macOSMicrosoftEdgeApp object.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
@@ -349,9 +349,9 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-windowsappx-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowsappx-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-macosmicrosoftedgeapp-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-macosmicrosoftedgeapp-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-apps-macoslobapp-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-macoslobapp-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-mobilelobapp-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobilelobapp-list?view=graph-rest-1.0)
 
 
 

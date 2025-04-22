@@ -31,6 +31,14 @@ Test-MgSiteContentTypePublished -InputObject <ISitesIdentity> [-ResponseHeadersV
 ## DESCRIPTION
 Check the publishing status of a contentType in a content type hub site.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.FullControl.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

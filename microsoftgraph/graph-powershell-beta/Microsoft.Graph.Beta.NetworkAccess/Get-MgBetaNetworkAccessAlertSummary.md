@@ -29,6 +29,14 @@ Get-MgBetaNetworkAccessAlertSummary -InputObject <INetworkAccessIdentity> [-Coun
 ## DESCRIPTION
 Invoke function getAlertSummaries
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess-Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess-Reports.Read.All,  |
+
 ## PARAMETERS
 
 ### -Count

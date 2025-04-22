@@ -59,7 +59,7 @@ The configurations are predefined and can't be created or deleted, but some of t
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
 

@@ -14,16 +14,16 @@ Invoke function userReport
 
 ### Report (Default)
 ```
-Invoke-MgBetaReportNetworkAccessReportUser -EndDateTime <DateTime> -StartDateTime <DateTime> [-Count]
- [-DiscoveredApplicationSegmentId <String>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+Invoke-MgBetaReportNetworkAccessReportUser -EndDateTime <DateTime> -StartDateTime <DateTime>
+ [-ApplicationId <String>] [-Count] [-DiscoveredApplicationSegmentId <String>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### ReportViaIdentity
 ```
-Invoke-MgBetaReportNetworkAccessReportUser -InputObject <INetworkAccessIdentity> [-Count]
- [-DiscoveredApplicationSegmentId <String>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+Invoke-MgBetaReportNetworkAccessReportUser -InputObject <INetworkAccessIdentity> [-ApplicationId <String>]
+ [-Count] [-DiscoveredApplicationSegmentId <String>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
@@ -32,6 +32,21 @@ Invoke-MgBetaReportNetworkAccessReportUser -InputObject <INetworkAccessIdentity>
 Invoke function userReport
 
 ## PARAMETERS
+
+### -ApplicationId
+Usage: applicationId='@applicationId'
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Count
 Include count of items

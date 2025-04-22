@@ -53,7 +53,7 @@ Note: Currently, it's only possible to add one member at a time to an administra
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All,  |
 

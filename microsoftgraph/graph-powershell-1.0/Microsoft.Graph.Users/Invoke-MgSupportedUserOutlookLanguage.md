@@ -41,9 +41,9 @@ You can subsequently get the preferred language bygetting the user's mailbox set
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadBasic.All,  |
+| Delegated (work or school account) | User.Read, User.ReadBasic.All,  |
 | Delegated (personal Microsoft account) | User.Read,  |
-| Application | User.Read.All,  |
+| Application | User.Read.All, User.ReadBasic.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

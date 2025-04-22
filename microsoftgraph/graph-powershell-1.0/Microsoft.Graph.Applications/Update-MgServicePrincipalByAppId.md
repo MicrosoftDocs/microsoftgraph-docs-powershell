@@ -218,6 +218,7 @@ Accept wildcard characters: False
 
 ### -AppDisplayName
 The display name exposed by the associated application.
+Maximum length is 256 characters.
 
 ```yaml
 Type: String
@@ -833,8 +834,6 @@ Accept wildcard characters: False
 ### -Owners
 Directory objects that are owners of this servicePrincipal.
 The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 To construct, see NOTES section for OWNERS properties and create a hash table.
 
@@ -1248,24 +1247,21 @@ Always null when the object hasn't been deleted.
   - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
-Defined in ISO 8601 format for Durations.
-For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+      - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
-      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications regardless of their creation date, this property would be null.
-Nullable.
+      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+      - `[State <String>]`: appManagementRestrictionState
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
-Defined in ISO 8601 format for Durations.
-For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
-This property is required when restriction type is set to passwordLifetime.
-      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications, enforcement datetime would be null.
+      - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to passwordLifetime.
+      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
       - `[RestrictionType <String>]`: appCredentialRestrictionType
+      - `[State <String>]`: appManagementRestrictionState
 
 APPROLEASSIGNEDTO `<IMicrosoftGraphAppRoleAssignment- `[]`>`: App role assignments for this app or service, granted to users, groups, and other service principals.
 Supports $expand.
@@ -1282,6 +1278,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
   - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -1291,6 +1288,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
   - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
   - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -1310,6 +1308,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
   - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -1319,6 +1318,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
   - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
   - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -1372,6 +1372,7 @@ Required.
 Supports $filter (eq, not, ge, le, startsWith).
   - `[AppDescription <String>]`: The description exposed by the associated application.
   - `[AppDisplayName <String>]`: The display name exposed by the associated application.
+Maximum length is 256 characters.
   - `[AppId <String>]`: The unique identifier for the associated application (its appId property).
 Alternate key.
 Supports $filter (eq, ne, not, in, startsWith).
@@ -1393,24 +1394,21 @@ Always null when the object hasn't been deleted.
     - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
-Defined in ISO 8601 format for Durations.
-For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+        - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
-        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications regardless of their creation date, this property would be null.
-Nullable.
+        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
         - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+        - `[State <String>]`: appManagementRestrictionState
       - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
-Defined in ISO 8601 format for Durations.
-For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
-This property is required when restriction type is set to passwordLifetime.
-        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications, enforcement datetime would be null.
+        - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to passwordLifetime.
+        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
         - `[RestrictionType <String>]`: appCredentialRestrictionType
+        - `[State <String>]`: appManagementRestrictionState
   - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -1429,6 +1427,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
     - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
+Maximum length is 256 characters.
 Read-only.
 Supports $filter (eq and startswith).
     - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
@@ -1438,6 +1437,7 @@ Required on create.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
     - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+Maximum length is 256 characters.
     - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
@@ -1591,13 +1591,14 @@ Supports $filter (eq, not, ge, le).
     - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-    - `[DisplayName <String>]`: Friendly name for the key.
+    - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
     - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     - `[KeyId <String>]`: The unique identifier (GUID) for the key.
@@ -1677,8 +1678,6 @@ Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
   - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of this servicePrincipal.
 The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
   - `[PasswordCredentials <IMicrosoftGraphPasswordCredential- `[]`>]`: The collection of password credentials associated with the application.
 Not nullable.
@@ -2183,13 +2182,14 @@ Supports $filter (eq, not, ge, le).
   - `[CustomKeyIdentifier <Byte- `[]`>]`: A 40-character binary type that can be used to identify the credential.
 Optional.
 When not provided in the payload, defaults to the thumbprint of the certificate.
-  - `[DisplayName <String>]`: Friendly name for the key.
+  - `[DisplayName <String>]`: The friendly name for the key, with a maximum length of 90 characters.
+Longer values are accepted but shortened.
 Optional.
   - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Key <Byte- `[]`>]`: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null. 
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null. 
 From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   - `[KeyId <String>]`: The unique identifier (GUID) for the key.
@@ -2273,8 +2273,6 @@ Always null when the object hasn't been deleted.
 
 OWNERS `<IMicrosoftGraphDirectoryObject- `[]`>`: Directory objects that are owners of this servicePrincipal.
 The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

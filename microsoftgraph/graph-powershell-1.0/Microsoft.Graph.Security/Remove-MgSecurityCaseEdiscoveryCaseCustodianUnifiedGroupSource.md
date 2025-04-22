@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianunifiedgroupsource
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
 
 ## SYNOPSIS
-Delete navigation property unifiedGroupSources for security
+Delete a unifiedGroupSource object associated with an ediscoveryCustodian.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-beta)
@@ -31,7 +32,20 @@ Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISe
 ```
 
 ## DESCRIPTION
-Delete navigation property unifiedGroupSources for security
+Delete a unifiedGroupSource object associated with an ediscoveryCustodian.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -UnifiedGroupSourceId $unifiedGroupSourceId
+
+```
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
+
 
 ## PARAMETERS
 
@@ -287,6 +301,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianunifiedgroupsource)
 
+[https://learn.microsoft.com/graph/api/security-unifiedgroupsource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-unifiedgroupsource-delete?view=graph-rest-1.0)
 
 
 

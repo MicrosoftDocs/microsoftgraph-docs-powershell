@@ -46,8 +46,8 @@ Get an event object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (work or school account) | Calendars.ReadBasic, Group.ReadWrite.All, Group.Read.All, Calendars.Read,  |
+| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read,  |
 | Application | Calendars.ReadBasic, Calendars.Read,  |
 
 ## EXAMPLES

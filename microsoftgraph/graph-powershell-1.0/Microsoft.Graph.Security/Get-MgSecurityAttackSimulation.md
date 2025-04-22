@@ -42,6 +42,14 @@ Get-MgSecurityAttackSimulation -InputObject <ISecurityIdentity> [-ExpandProperty
 ## DESCRIPTION
 Get an attack simulation campaign for a tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AttackSimulation.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AttackSimulation.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

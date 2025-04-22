@@ -38,7 +38,7 @@ Use this API to retrieve the following information:
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.AuthenticationMethod,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
 ### Example 1: Get a user's MFA state

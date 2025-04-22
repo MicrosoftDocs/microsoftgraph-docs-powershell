@@ -24,6 +24,14 @@ Get-MgBetaIdentityConditionalAccessNamedLocationCount [-Filter <String>] [-Searc
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All,  |
+
 ## PARAMETERS
 
 ### -Filter

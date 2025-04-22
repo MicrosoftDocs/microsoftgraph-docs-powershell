@@ -3,14 +3,15 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation
 schema: 2.0.0
-ms.subservice: entra-groups
+ms.subservice: extensions
 ---
 
 # New-MgBetaGroupConversation
 
 ## SYNOPSIS
-Create a new conversation by including a thread and a post.
-Use reply thread or reply post to further post to that conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-1.0)
@@ -50,8 +51,9 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create a new conversation by including a thread and a post.
-Use reply thread or reply post to further post to that conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 
 **Permissions**
 
@@ -69,27 +71,32 @@ Use reply thread or reply post to further post to that conversation.
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	topic = "New head count"
-	threads = @(
+	Topic = "Does anyone have a second?"
+	Threads = @(
 		@{
-			posts = @(
+			Posts = @(
 				@{
-					body = @{
-						contentType = "html"
-						content = "The confirmation will come by the end of the week."
+					Body = @{
+						ContentType = "HTML"
+						Content = "This is urgent!"
 					}
-					newParticipants = @(
+					Extensions = @(
 						@{
-							emailAddress = @{
-								name = "Adele Vance"
-								address = "AdeleV@contoso.com"
-							}
-						}
-					)
-				}
-			)
-		}
-	)
+							"@odata.type" = "microsoft.graph.openTypeExtension"
+							extensionName = "Com.Contoso.Benefits"
+							companyName = "Contoso"
+							expirationDate = "2016-08-03T11:00:00.000Z"
+							topPicks = @(
+							"Employees only"
+						"Add spouse or guest"
+					"Add family"
+				)
+			}
+		)
+	}
+)
+}
+)
 }
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
@@ -632,7 +639,7 @@ Returned by default.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation)
 
-[https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta)
 
 
 

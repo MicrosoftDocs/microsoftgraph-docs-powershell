@@ -33,7 +33,7 @@ The data connector to the source system from where this flow gets its data.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | IndustryData-DataConnector.Read.All, IndustryData-DataConnector.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-DataConnector.Read.All, IndustryData-DataConnector.ReadWrite.All,  |
 

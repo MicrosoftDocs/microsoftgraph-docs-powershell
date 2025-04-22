@@ -33,6 +33,14 @@ Unpublish-MgSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersVaria
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.FullControl.All,  |
+| Delegated (personal Microsoft account) | Sites.FullControl.All,  |
+| Application | Sites.FullControl.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

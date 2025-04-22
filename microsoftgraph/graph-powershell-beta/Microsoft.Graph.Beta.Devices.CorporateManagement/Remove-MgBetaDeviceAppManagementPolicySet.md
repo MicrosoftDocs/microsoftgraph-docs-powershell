@@ -29,6 +29,14 @@ Remove-MgBetaDeviceAppManagementPolicySet -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Delete navigation property policySets for deviceAppManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Headers

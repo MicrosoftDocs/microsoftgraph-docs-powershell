@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamworkDeletedTeamChannelMember
 
 ## SYNOPSIS
-Delete navigation property members for teamwork
+Delete navigation property allMembers for teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
@@ -29,6 +29,13 @@ Remove-MgTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <St
  [-ResponseHeadersVariable <String>]
  -BodyParameter <IPaths1T0PdcTeamworkDeletedteamsDeletedteamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgTeamworkDeletedTeamChannelMember -ChannelId <String> -ConversationMemberId <String>
+ -DeletedTeamId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete
@@ -52,6 +59,13 @@ Remove-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-Respon
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### DeleteViaIdentity1
+```
+Remove-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### DeleteViaIdentity
 ```
 Remove-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
@@ -60,7 +74,7 @@ Remove-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete navigation property members for teamwork
+Delete navigation property allMembers for teamwork
 
 ## PARAMETERS
 
@@ -100,7 +114,7 @@ The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded, Remove, Delete
+Parameter Sets: RemoveExpanded, Remove, Delete1, Delete
 Aliases:
 
 Required: True
@@ -115,7 +129,7 @@ The unique identifier of conversationMember
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1, Delete
 Aliases:
 
 Required: True
@@ -130,7 +144,7 @@ The unique identifier of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded, Remove, Delete
+Parameter Sets: RemoveExpanded, Remove, Delete1, Delete
 Aliases:
 
 Required: True
@@ -160,7 +174,7 @@ ETag
 
 ```yaml
 Type: String
-Parameter Sets: Delete, DeleteViaIdentity
+Parameter Sets: Delete1, Delete, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -176,7 +190,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity, DeleteViaIdentity
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -191,7 +205,7 @@ Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Delete, DeleteViaIdentity
+Parameter Sets: Delete1, Delete, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: False
@@ -318,6 +332,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DayNoteId <String>]`: The unique identifier of dayNote
   - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
@@ -338,6 +353,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest

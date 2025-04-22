@@ -57,6 +57,14 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the properties of an incident object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIncident.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIncident.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -561,6 +569,7 @@ Aligned with the MITRE ATT&CK framework.
     - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
     - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
   - `[CreatedDateTime <DateTime?>]`: Time when Microsoft 365 Defender created the alert.
+  - `[CustomDetails <IMicrosoftGraphSecurityDictionary>]`: dictionary
   - `[Description <String>]`: String value describing each alert.
   - `[DetectionSource <String>]`: detectionSource
   - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
@@ -617,6 +626,7 @@ Aligned with the MITRE ATT&CK framework.
       - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
       - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
     - `[CreatedDateTime <DateTime?>]`: Time when Microsoft 365 Defender created the alert.
+    - `[CustomDetails <IMicrosoftGraphSecurityDictionary>]`: dictionary
     - `[Description <String>]`: String value describing each alert.
     - `[DetectionSource <String>]`: detectionSource
     - `[DetectorId <String>]`: The ID of the detector that triggered the alert.

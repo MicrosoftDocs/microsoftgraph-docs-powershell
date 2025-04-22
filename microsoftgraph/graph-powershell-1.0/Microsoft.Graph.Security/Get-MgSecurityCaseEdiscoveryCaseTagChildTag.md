@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasetagchildtag
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseTagChildTag
@@ -40,6 +41,19 @@ Get-MgSecurityCaseEdiscoveryCaseTagChildTag -InputObject <ISecurityIdentity> [-E
 
 ## DESCRIPTION
 Returns the tags that are a child of a tag.
+
+## EXAMPLES
+### Example 1: Retrieve child tags of a specific eDiscovery review tag
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityCaseEdiscoveryCaseTagChildTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewTagId $ediscoveryReviewTagId
+
+```
+This example will retrieve child tags of a specific ediscovery review tag
+
 
 ## PARAMETERS
 
@@ -385,7 +399,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasetagchildtag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasetagchildtag)
 
-
+[https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-1.0)
 
 
 

@@ -37,6 +37,14 @@ Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossT
 ## DESCRIPTION
 Update the properties of a cross-tenant access policy.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.CrossTenantAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.CrossTenantAccess,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

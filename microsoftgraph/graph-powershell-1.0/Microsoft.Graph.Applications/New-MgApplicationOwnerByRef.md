@@ -10,7 +10,7 @@ ms.subservice: entra-applications
 
 ## SYNOPSIS
 Add an owner to an application.
-Currently, only individual users are supported as owners of applications.
+Application owners can be individual users, the associated service principal, or another service principal.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
@@ -47,13 +47,13 @@ New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Add an owner to an application.
-Currently, only individual users are supported as owners of applications.
+Application owners can be individual users, the associated service principal, or another service principal.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 

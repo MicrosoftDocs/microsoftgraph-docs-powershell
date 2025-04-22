@@ -36,7 +36,7 @@ Specifies the event that will start the retention period for labels that use thi
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
 

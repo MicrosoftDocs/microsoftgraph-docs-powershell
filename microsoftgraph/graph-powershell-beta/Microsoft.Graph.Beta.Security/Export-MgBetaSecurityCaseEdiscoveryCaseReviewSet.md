@@ -10,7 +10,7 @@ ms.subservice: ediscovery
 
 ## SYNOPSIS
 Initiate an export from a reviewSet.
-For details, see Export documents from a review set in eDiscovery (Premium).
+For more information, see Export documents from a review set in eDiscovery (Premium).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-1.0)
@@ -53,13 +53,13 @@ Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity
 
 ## DESCRIPTION
 Initiate an export from a reviewSet.
-For details, see Export documents from a review set in eDiscovery (Premium).
+For more information, see Export documents from a review set in eDiscovery (Premium).
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
@@ -391,6 +391,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCaseMemberId <String>]`: The unique identifier of ediscoveryCaseMember
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
   - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
   - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy

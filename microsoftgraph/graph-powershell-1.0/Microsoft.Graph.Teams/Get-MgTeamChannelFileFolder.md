@@ -37,9 +37,9 @@ Get the metadata for the location where the files of a channel are stored.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Files.Read,  |
-| Delegated (personal Microsoft account) | Files.ReadWrite.All,  |
-| Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Group.ReadWrite.All, Group.Read.All, File.Read.Group,  |
+| Delegated (work or school account) | Files.Read.All, Sites.ReadWrite.All, Group.ReadWrite.All, Sites.Read.All, Files.Read, Files.ReadWrite, Files.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Files.Read.All,  |
+| Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, File.Read.Group,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -201,6 +201,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DayNoteId <String>]`: The unique identifier of dayNote
   - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
@@ -221,6 +222,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest

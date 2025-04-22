@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Create a new windowsMobileMSI object.
+Create a new windowsAppX object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -35,7 +35,15 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 ```
 
 ## DESCRIPTION
-Create a new windowsMobileMSI object.
+Create a new windowsAppX object.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -45,7 +53,7 @@ Create a new windowsMobileMSI object.
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windowsMobileMSI"
+	"@odata.type" = "#microsoft.graph.windowsAppX"
 	displayName = "Display Name value"
 	description = "Description value"
 	publisher = "Publisher value"
@@ -64,10 +72,18 @@ $params = @{
 	committedContentVersion = "Committed Content Version value"
 	fileName = "File Name value"
 	size = 
-	commandLine = "Command Line value"
-	productCode = "Product Code value"
-	productVersion = "Product Version value"
-	ignoreVersionDetection = $true
+	applicableArchitectures = "x86"
+	identityName = "Identity Name value"
+	identityPublisherHash = "Identity Publisher Hash value"
+	identityResourceIdentifier = "Identity Resource Identifier value"
+	isBundle = $true
+	minimumSupportedOperatingSystem = @{
+		"@odata.type" = "microsoft.graph.windowsMinimumOperatingSystem"
+		v8_0 = $true
+		v8_1 = $true
+		v10_0 = $true
+	}
+	identityVersion = "Identity Version value"
 }
 
 New-MgDeviceAppManagementMobileApp -BodyParameter $params
@@ -475,7 +491,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-windowsmobilemsi-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowsmobilemsi-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-windowsappx-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowsappx-create?view=graph-rest-1.0)
 
 
 

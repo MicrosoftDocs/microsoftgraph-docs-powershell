@@ -52,7 +52,7 @@ Update the properties of a plannerTaskConfiguration object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -62,111 +62,53 @@ Update the properties of a plannerTaskConfiguration object.
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.plannerTaskConfiguration"
 	editPolicy = @{
 		rules = @(
 			@{
-				defaultRule = "block"
-				role = @{
+				userType = @{
 					"@odata.type" = "#microsoft.graph.plannerRelationshipBasedUserType"
-					roleKind = "relationship"
+					selectionKind = "relationship"
 					role = "defaultRules"
 				}
+				defaultRule = "block"
 				propertyRule = @{
-					percentComplete = @(
-					"allow"
-				)
-				ruleKind = "taskRule"
-				assignments = @{
+					ruleKind = "taskRule"
+					references = @{
+						defaultRules = @(
+						"allow"
+					)
+					overrides = @(
+					)
+				}
+				checkLists = @{
 					defaultRules = @(
-					"addSelf"
+					"allow"
 				)
 				overrides = @(
 				)
 			}
+			assignments = @{
+				defaultRules = @(
+				"allow"
+			)
+			overrides = @(
+				@{
+					name = "userCreated"
+					rules = @(
+					"allow"
+				)
+			}
+			@{
+				name = "applicationCreated"
+				rules = @(
+				"allow"
+			)
 		}
-	}
-	@{
-		defaultRule = "block"
-		role = @{
-			"@odata.type" = "#microsoft.graph.plannerRelationshipBasedUserType"
-			roleKind = "relationship"
-			role = "taskAssignees"
-		}
-		propertyRule = @{
-			startDate = @(
-			"allow"
-		)
-		dueDate = @(
-		"allow"
 	)
-	percentComplete = @(
-	"allow"
-)
-order = @(
-"allow"
-)
-ruleKind = "taskRule"
-references = @{
-defaultRules = @(
-"allow"
-)
-overrides = @(
-@{
-	name = "userCreated"
-	rules = @(
-	"allow"
-)
-}
-@{
-name = "applicationCreated"
-rules = @(
-"block"
-)
-}
-)
-}
-checkLists = @{
-defaultRules = @(
-"allow"
-)
-overrides = @(
-@{
-name = "userCreated"
-rules = @(
-"allow"
-)
-}
-@{
-name = "applicationCreated"
-rules = @(
-"check"
-)
-}
-)
-}
-assignments = @{
-defaultRules = @(
-"block"
-)
-overrides = @(
-@{
-name = "userCreated"
-rules = @(
-"removeSelf"
-)
-}
-@{
-name = "applicationCreated"
-rules = @(
-"check"
-)
-}
-)
 }
 appliedCategories = @{
-defaultRules = @(
-"allow"
+	defaultRules = @(
+	"allow"
 )
 overrides = @(
 )

@@ -17,13 +17,7 @@ Locale: en-US
 ### [Confirm-MgRiskyUserCompromised](Confirm-MgRiskyUserCompromised.md)
 
 
-### [Disable-MgMeAuthenticationPhoneMethodSmsSignIn](Disable-MgMeAuthenticationPhoneMethodSmsSignIn.md)
-
-
 ### [Disable-MgUserAuthenticationPhoneMethodSmsSignIn](Disable-MgUserAuthenticationPhoneMethodSmsSignIn.md)
-
-
-### [Enable-MgMeAuthenticationPhoneMethodSmsSignIn](Enable-MgMeAuthenticationPhoneMethodSmsSignIn.md)
 
 
 ### [Enable-MgUserAuthenticationPhoneMethodSmsSignIn](Enable-MgUserAuthenticationPhoneMethodSmsSignIn.md)
@@ -258,75 +252,6 @@ Locale: en-US
 
 
 ### [Get-MgInvitationInvitedUserSponsorCount](Get-MgInvitationInvitedUserSponsorCount.md)
-
-
-### [Get-MgMeAuthentication](Get-MgMeAuthentication.md)
-
-
-### [Get-MgMeAuthenticationEmailMethod](Get-MgMeAuthenticationEmailMethod.md)
-
-
-### [Get-MgMeAuthenticationEmailMethodCount](Get-MgMeAuthenticationEmailMethodCount.md)
-
-
-### [Get-MgMeAuthenticationFido2Method](Get-MgMeAuthenticationFido2Method.md)
-
-
-### [Get-MgMeAuthenticationFido2MethodCount](Get-MgMeAuthenticationFido2MethodCount.md)
-
-
-### [Get-MgMeAuthenticationMethod](Get-MgMeAuthenticationMethod.md)
-
-
-### [Get-MgMeAuthenticationMethodCount](Get-MgMeAuthenticationMethodCount.md)
-
-
-### [Get-MgMeAuthenticationMicrosoftAuthenticatorMethod](Get-MgMeAuthenticationMicrosoftAuthenticatorMethod.md)
-
-
-### [Get-MgMeAuthenticationMicrosoftAuthenticatorMethodCount](Get-MgMeAuthenticationMicrosoftAuthenticatorMethodCount.md)
-
-
-### [Get-MgMeAuthenticationMicrosoftAuthenticatorMethodDevice](Get-MgMeAuthenticationMicrosoftAuthenticatorMethodDevice.md)
-
-
-### [Get-MgMeAuthenticationOperation](Get-MgMeAuthenticationOperation.md)
-
-
-### [Get-MgMeAuthenticationOperationCount](Get-MgMeAuthenticationOperationCount.md)
-
-
-### [Get-MgMeAuthenticationPasswordMethod](Get-MgMeAuthenticationPasswordMethod.md)
-
-
-### [Get-MgMeAuthenticationPasswordMethodCount](Get-MgMeAuthenticationPasswordMethodCount.md)
-
-
-### [Get-MgMeAuthenticationPhoneMethod](Get-MgMeAuthenticationPhoneMethod.md)
-
-
-### [Get-MgMeAuthenticationPhoneMethodCount](Get-MgMeAuthenticationPhoneMethodCount.md)
-
-
-### [Get-MgMeAuthenticationSoftwareOathMethod](Get-MgMeAuthenticationSoftwareOathMethod.md)
-
-
-### [Get-MgMeAuthenticationSoftwareOathMethodCount](Get-MgMeAuthenticationSoftwareOathMethodCount.md)
-
-
-### [Get-MgMeAuthenticationTemporaryAccessPassMethod](Get-MgMeAuthenticationTemporaryAccessPassMethod.md)
-
-
-### [Get-MgMeAuthenticationTemporaryAccessPassMethodCount](Get-MgMeAuthenticationTemporaryAccessPassMethodCount.md)
-
-
-### [Get-MgMeAuthenticationWindowsHelloForBusinessMethod](Get-MgMeAuthenticationWindowsHelloForBusinessMethod.md)
-
-
-### [Get-MgMeAuthenticationWindowsHelloForBusinessMethodCount](Get-MgMeAuthenticationWindowsHelloForBusinessMethodCount.md)
-
-
-### [Get-MgMeAuthenticationWindowsHelloForBusinessMethodDevice](Get-MgMeAuthenticationWindowsHelloForBusinessMethodDevice.md)
 
 
 ### [Get-MgOauth2PermissionGrant](Get-MgOauth2PermissionGrant.md)
@@ -752,24 +677,6 @@ Locale: en-US
 ### [New-MgInvitation](New-MgInvitation.md)
 
 
-### [New-MgMeAuthenticationEmailMethod](New-MgMeAuthenticationEmailMethod.md)
-
-
-### [New-MgMeAuthenticationMethod](New-MgMeAuthenticationMethod.md)
-
-
-### [New-MgMeAuthenticationOperation](New-MgMeAuthenticationOperation.md)
-
-
-### [New-MgMeAuthenticationPasswordMethod](New-MgMeAuthenticationPasswordMethod.md)
-
-
-### [New-MgMeAuthenticationPhoneMethod](New-MgMeAuthenticationPhoneMethod.md)
-
-
-### [New-MgMeAuthenticationTemporaryAccessPassMethod](New-MgMeAuthenticationTemporaryAccessPassMethod.md)
-
-
 ### [New-MgOauth2PermissionGrant](New-MgOauth2PermissionGrant.md)
 
 
@@ -962,33 +869,6 @@ Locale: en-US
 ### [Remove-MgInformationProtectionThreatAssessmentRequestResult](Remove-MgInformationProtectionThreatAssessmentRequestResult.md)
 
 
-### [Remove-MgMeAuthentication](Remove-MgMeAuthentication.md)
-
-
-### [Remove-MgMeAuthenticationEmailMethod](Remove-MgMeAuthenticationEmailMethod.md)
-
-
-### [Remove-MgMeAuthenticationFido2Method](Remove-MgMeAuthenticationFido2Method.md)
-
-
-### [Remove-MgMeAuthenticationMicrosoftAuthenticatorMethod](Remove-MgMeAuthenticationMicrosoftAuthenticatorMethod.md)
-
-
-### [Remove-MgMeAuthenticationOperation](Remove-MgMeAuthenticationOperation.md)
-
-
-### [Remove-MgMeAuthenticationPhoneMethod](Remove-MgMeAuthenticationPhoneMethod.md)
-
-
-### [Remove-MgMeAuthenticationSoftwareOathMethod](Remove-MgMeAuthenticationSoftwareOathMethod.md)
-
-
-### [Remove-MgMeAuthenticationTemporaryAccessPassMethod](Remove-MgMeAuthenticationTemporaryAccessPassMethod.md)
-
-
-### [Remove-MgMeAuthenticationWindowsHelloForBusinessMethod](Remove-MgMeAuthenticationWindowsHelloForBusinessMethod.md)
-
-
 ### [Remove-MgOauth2PermissionGrant](Remove-MgOauth2PermissionGrant.md)
 
 
@@ -1133,9 +1013,6 @@ Locale: en-US
 ### [Remove-MgUserAuthenticationWindowsHelloForBusinessMethod](Remove-MgUserAuthenticationWindowsHelloForBusinessMethod.md)
 
 
-### [Reset-MgMeAuthenticationMethodPassword](Reset-MgMeAuthenticationMethodPassword.md)
-
-
 ### [Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault](Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault.md)
 
 
@@ -1230,21 +1107,6 @@ Locale: en-US
 
 
 ### [Update-MgInvitationInvitedUserMailboxSetting](Update-MgInvitationInvitedUserMailboxSetting.md)
-
-
-### [Update-MgMeAuthentication](Update-MgMeAuthentication.md)
-
-
-### [Update-MgMeAuthenticationEmailMethod](Update-MgMeAuthenticationEmailMethod.md)
-
-
-### [Update-MgMeAuthenticationMethod](Update-MgMeAuthenticationMethod.md)
-
-
-### [Update-MgMeAuthenticationOperation](Update-MgMeAuthenticationOperation.md)
-
-
-### [Update-MgMeAuthenticationPhoneMethod](Update-MgMeAuthenticationPhoneMethod.md)
 
 
 ### [Update-MgOauth2PermissionGrant](Update-MgOauth2PermissionGrant.md)

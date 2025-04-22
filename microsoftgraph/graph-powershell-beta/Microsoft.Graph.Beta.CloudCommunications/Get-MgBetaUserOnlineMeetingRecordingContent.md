@@ -45,7 +45,7 @@ For the content of a recording, this API returns the stream of bytes associated 
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | OnlineMeetingRecording.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingRecording.Read.Chat,  |
+| Application | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

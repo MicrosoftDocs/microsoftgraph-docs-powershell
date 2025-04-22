@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/test-mgdirectoryobjectproperty
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Test-MgDirectoryObjectProperty
@@ -16,8 +17,11 @@ Validate the prefix and suffix naming policy2.
 Validate the custom banned words policy3.
 Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
 If the properties fail multiple validations, only the first validation failure is returned.
-However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaDirectoryObjectProperty](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Test-MgBetaDirectoryObjectProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,24 +50,16 @@ Validate the prefix and suffix naming policy2.
 Validate the custom banned words policy3.
 Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
 If the properties fail multiple validations, only the first validation failure is returned.
-However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
-## EXAMPLES
+**Permissions**
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-$params = @{
-	entityType = "Group"
-	displayName = "Myprefix_test_mysuffix"
-	mailNickname = "Myprefix_test_mysuffix"
-	onBehalfOfUserId = "onBehalfOfUserId-value"
-}
-
-Test-MgDirectoryObjectProperty -BodyParameter $params
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## PARAMETERS
 
@@ -277,6 +273,7 @@ BODYPARAMETER `<IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPost
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/test-mgdirectoryobjectproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/test-mgdirectoryobjectproperty)
 
 [https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+
 
 
 

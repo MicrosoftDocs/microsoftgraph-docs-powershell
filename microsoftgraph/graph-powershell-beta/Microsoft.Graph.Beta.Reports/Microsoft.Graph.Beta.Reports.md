@@ -89,6 +89,12 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementReportCachedReportConfigurationCount](Get-MgBetaDeviceManagementReportCachedReportConfigurationCount.md)
 
 
+### [Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateReport](Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateReport.md)
+
+
+### [Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateSummaryReport](Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateSummaryReport.md)
+
+
 ### [Get-MgBetaDeviceManagementReportCompliancePolicyDeviceReport](Get-MgBetaDeviceManagementReportCompliancePolicyDeviceReport.md)
 
 
@@ -150,9 +156,6 @@ Locale: en-US
 
 
 ### [Get-MgBetaDeviceManagementReportDeviceConfigurationPolicyStatusSummary](Get-MgBetaDeviceManagementReportDeviceConfigurationPolicyStatusSummary.md)
-
-
-### [Get-MgBetaDeviceManagementReportDeviceInstallStatusReport](Get-MgBetaDeviceManagementReportDeviceInstallStatusReport.md)
 
 
 ### [Get-MgBetaDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile](Get-MgBetaDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile.md)

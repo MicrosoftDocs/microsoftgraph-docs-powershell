@@ -25,7 +25,7 @@ Invoke function allMessages
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamSettings.Read.Group, TeamSettings.ReadWrite.Group, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Team.ReadBasic.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 

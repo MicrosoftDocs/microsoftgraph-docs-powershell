@@ -134,7 +134,25 @@ Locale: en-US
 ### [Get-MgSolutionBackupRestoreProtectionUnit](Get-MgSolutionBackupRestoreProtectionUnit.md)
 
 
+### [Get-MgSolutionBackupRestoreProtectionUnitAsDriveProtectionUnit](Get-MgSolutionBackupRestoreProtectionUnitAsDriveProtectionUnit.md)
+
+
+### [Get-MgSolutionBackupRestoreProtectionUnitAsMailboxProtectionUnit](Get-MgSolutionBackupRestoreProtectionUnitAsMailboxProtectionUnit.md)
+
+
+### [Get-MgSolutionBackupRestoreProtectionUnitAsSiteProtectionUnit](Get-MgSolutionBackupRestoreProtectionUnitAsSiteProtectionUnit.md)
+
+
 ### [Get-MgSolutionBackupRestoreProtectionUnitCount](Get-MgSolutionBackupRestoreProtectionUnitCount.md)
+
+
+### [Get-MgSolutionBackupRestoreProtectionUnitCountAsDriveProtectionUnit](Get-MgSolutionBackupRestoreProtectionUnitCountAsDriveProtectionUnit.md)
+
+
+### [Get-MgSolutionBackupRestoreProtectionUnitCountAsMailboxProtectionUnit](Get-MgSolutionBackupRestoreProtectionUnitCountAsMailboxProtectionUnit.md)
+
+
+### [Get-MgSolutionBackupRestoreProtectionUnitCountAsSiteProtectionUnit](Get-MgSolutionBackupRestoreProtectionUnitCountAsSiteProtectionUnit.md)
 
 
 ### [Get-MgSolutionBackupRestoreServiceApp](Get-MgSolutionBackupRestoreServiceApp.md)

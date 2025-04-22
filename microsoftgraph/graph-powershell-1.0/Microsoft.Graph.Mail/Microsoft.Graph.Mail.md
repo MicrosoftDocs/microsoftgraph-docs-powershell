@@ -275,7 +275,13 @@ Locale: en-US
 ### [Remove-MgUserMailFolderChildFolderMessageExtension](Remove-MgUserMailFolderChildFolderMessageExtension.md)
 
 
+### [Remove-MgUserMailFolderChildFolderMessagePermanent](Remove-MgUserMailFolderChildFolderMessagePermanent.md)
+
+
 ### [Remove-MgUserMailFolderChildFolderMessageRule](Remove-MgUserMailFolderChildFolderMessageRule.md)
+
+
+### [Remove-MgUserMailFolderChildFolderPermanent](Remove-MgUserMailFolderChildFolderPermanent.md)
 
 
 ### [Remove-MgUserMailFolderMessage](Remove-MgUserMailFolderMessage.md)
@@ -290,7 +296,13 @@ Locale: en-US
 ### [Remove-MgUserMailFolderMessageExtension](Remove-MgUserMailFolderMessageExtension.md)
 
 
+### [Remove-MgUserMailFolderMessagePermanent](Remove-MgUserMailFolderMessagePermanent.md)
+
+
 ### [Remove-MgUserMailFolderMessageRule](Remove-MgUserMailFolderMessageRule.md)
+
+
+### [Remove-MgUserMailFolderPermanent](Remove-MgUserMailFolderPermanent.md)
 
 
 ### [Remove-MgUserMessage](Remove-MgUserMessage.md)
@@ -303,6 +315,9 @@ Locale: en-US
 
 
 ### [Remove-MgUserMessageExtension](Remove-MgUserMessageExtension.md)
+
+
+### [Remove-MgUserMessagePermanent](Remove-MgUserMessagePermanent.md)
 
 
 ### [Send-MgUserMailFolderChildFolderMessage](Send-MgUserMailFolderChildFolderMessage.md)

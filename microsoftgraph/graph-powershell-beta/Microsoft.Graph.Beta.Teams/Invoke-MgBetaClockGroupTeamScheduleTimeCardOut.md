@@ -11,14 +11,17 @@ ms.subservice: teams
 ## SYNOPSIS
 Clock out to end an open timeCard.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgClockGroupTeamScheduleTimeCardOut](/powershell/module/Microsoft.Graph.Teams/Invoke-MgClockGroupTeamScheduleTimeCardOut?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ClockExpanded (Default)
 ```
 Invoke-MgBetaClockGroupTeamScheduleTimeCardOut -GroupId <String> -TimeCardId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AtApprovedLocation]
- [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Clock
@@ -33,8 +36,8 @@ Invoke-MgBetaClockGroupTeamScheduleTimeCardOut -GroupId <String> -TimeCardId <St
 ```
 Invoke-MgBetaClockGroupTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AtApprovedLocation]
- [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ClockViaIdentity
@@ -139,6 +142,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsAtApprovedLocation
+
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -254,6 +272,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPaths5Qay4XGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AtApprovedLocation <Boolean?>]`: 
+  - `[IsAtApprovedLocation <Boolean?>]`: 
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -275,6 +294,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo

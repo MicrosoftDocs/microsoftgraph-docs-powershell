@@ -45,6 +45,14 @@ New-MgBetaSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-Resp
 ## DESCRIPTION
 Create a new tiIndicator object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatIndicators.ReadWrite.OwnedBy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatIndicators.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -36,7 +36,7 @@ Delete navigation property lists for users
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite,  |
 | Delegated (personal Microsoft account) | Tasks.Read, Tasks.ReadWrite,  |
 | Application | Tasks.ReadWrite.All,  |
 

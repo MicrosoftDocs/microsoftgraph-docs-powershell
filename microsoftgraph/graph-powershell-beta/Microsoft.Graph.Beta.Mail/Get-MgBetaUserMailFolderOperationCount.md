@@ -29,6 +29,14 @@ Get-MgBetaUserMailFolderOperationCount -InputObject <IMailIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Read,  |
+| Delegated (personal Microsoft account) | Mail.Read,  |
+| Application | Mail.Read,  |
+
 ## PARAMETERS
 
 ### -Filter

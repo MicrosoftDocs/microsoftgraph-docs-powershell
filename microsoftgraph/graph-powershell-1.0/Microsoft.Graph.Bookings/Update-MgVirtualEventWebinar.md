@@ -541,11 +541,16 @@ Read-only.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+    - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+    - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+    - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -585,7 +590,8 @@ Read-only.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
     - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowTextOnly <Boolean?>]`: 
+      - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -821,11 +827,16 @@ Appears when answerInputType is text, multilineText or singleChoice.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for a registration.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+    - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+    - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+    - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -870,7 +881,8 @@ Read-only.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
     - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowTextOnly <Boolean?>]`: 
+      - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -917,11 +929,16 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 SESSIONS `<IMicrosoftGraphVirtualEventSession- `[]`>`: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+  - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+  - `[AllowLiveShare <String>]`: meetingLiveShareOptions
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
   - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+  - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+  - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.
@@ -966,7 +983,8 @@ Read-only.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowTextOnly <Boolean?>]`: 
+    - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
   - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
   - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

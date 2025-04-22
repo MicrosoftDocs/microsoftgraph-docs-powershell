@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianusersource
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Delete navigation property userSources for security
+Delete a userSource object associated with an ediscoveryCustodian.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
@@ -31,7 +32,20 @@ Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityId
 ```
 
 ## DESCRIPTION
-Delete navigation property userSources for security
+Delete a userSource object associated with an ediscoveryCustodian.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -UserSourceId $userSourceId
+
+```
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource Cmdlet.
+
 
 ## PARAMETERS
 
@@ -287,6 +301,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianusersource)
 
+[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-delete-usersources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-delete-usersources?view=graph-rest-1.0)
 
 
 

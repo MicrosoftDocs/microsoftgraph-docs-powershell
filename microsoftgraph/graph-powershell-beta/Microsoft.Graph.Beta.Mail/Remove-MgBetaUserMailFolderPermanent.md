@@ -12,6 +12,9 @@ ms.subservice: outlook
 Permanently delete a mail folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderPermanent](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderPermanent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -31,6 +34,14 @@ Remove-MgBetaUserMailFolderPermanent -InputObject <IMailIdentity> [-ResponseHead
 ## DESCRIPTION
 Permanently delete a mail folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
+| Application | Mail.ReadWrite,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

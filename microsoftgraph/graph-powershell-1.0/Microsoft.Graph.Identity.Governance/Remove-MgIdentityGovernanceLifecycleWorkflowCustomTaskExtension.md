@@ -35,6 +35,14 @@ Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <II
 Delete a customTaskExtension object.
 A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-CustomExt.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-CustomExt.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

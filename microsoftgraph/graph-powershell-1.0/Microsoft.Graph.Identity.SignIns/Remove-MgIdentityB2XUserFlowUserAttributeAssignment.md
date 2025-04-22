@@ -34,6 +34,14 @@ Remove-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
 ## DESCRIPTION
 Delete an identityUserFlowAttributeAssignment object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

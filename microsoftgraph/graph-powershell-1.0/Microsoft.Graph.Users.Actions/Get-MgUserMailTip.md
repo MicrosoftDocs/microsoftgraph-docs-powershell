@@ -57,8 +57,8 @@ The requested MailTips are returned in a mailTips collection.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Read.Shared,  |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (work or school account) | Mail.Read, Mail.Read.Shared,  |
+| Delegated (personal Microsoft account) | Mail.Read,  |
 | Application | Mail.Read,  |
 
 ## EXAMPLES

@@ -19,8 +19,9 @@ Create new navigation property to onlineMeetings for users
 ```
 New-MgUserOnlineMeeting -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
- [-AllowTranscription] [-AllowedPresenters <String>]
+ [-AllowBreakoutRooms] [-AllowLiveShare <String>] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
+ [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
+ [-AllowedLobbyAdmitters <String>] [-AllowedPresenters <String>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-ChatInfo <IMicrosoftGraphChatInfo>]
@@ -46,8 +47,9 @@ New-MgUserOnlineMeeting -UserId <String> -BodyParameter <IMicrosoftGraphOnlineMe
 ```
 New-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
- [-AllowTranscription] [-AllowedPresenters <String>]
+ [-AllowBreakoutRooms] [-AllowLiveShare <String>] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
+ [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
+ [-AllowedLobbyAdmitters <String>] [-AllowedPresenters <String>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-ChatInfo <IMicrosoftGraphChatInfo>]
@@ -189,8 +191,53 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AllowBreakoutRooms
+Indicates whether breakout rooms are enabled for the meeting.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowedLobbyAdmitters
+allowedLobbyAdmitterRoles
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AllowedPresenters
 onlineMeetingPresenters
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowLiveShare
+meetingLiveShareOptions
 
 ```yaml
 Type: String
@@ -221,6 +268,21 @@ Accept wildcard characters: False
 
 ### -AllowParticipantsToChangeName
 Specifies if participants are allowed to rename themselves in an instance of the meeting.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowPowerPointSharing
+Indicates whether PowerPoint live is enabled for the meeting.
 
 ```yaml
 Type: SwitchParameter
@@ -266,6 +328,21 @@ Accept wildcard characters: False
 
 ### -AllowTranscription
 Indicates whether transcription is enabled for the meeting.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowWhiteboard
+Indicates whether whiteboard is enabled for the meeting.
 
 ```yaml
 Type: SwitchParameter
@@ -872,11 +949,16 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+  - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
+  - `[AllowLiveShare <String>]`: meetingLiveShareOptions
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
   - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+  - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
+  - `[AllowedLobbyAdmitters <String>]`: allowedLobbyAdmitterRoles
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
 Read-only.

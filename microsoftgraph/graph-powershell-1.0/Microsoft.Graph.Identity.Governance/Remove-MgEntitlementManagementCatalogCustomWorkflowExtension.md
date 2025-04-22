@@ -9,7 +9,7 @@ ms.subservice: entra-id-governance
 # Remove-MgEntitlementManagementCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Delete an accessPackageAssignmentWorkflowExtension object.
+Delete an accessPackageAssignmentRequestWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:
 
@@ -31,7 +31,7 @@ Remove-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Delete an accessPackageAssignmentWorkflowExtension object.
+Delete an accessPackageAssignmentRequestWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:
 
@@ -291,7 +291,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogcustomworkflowextension)
 
-[https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-delete?view=graph-rest-1.0)
 
 
 

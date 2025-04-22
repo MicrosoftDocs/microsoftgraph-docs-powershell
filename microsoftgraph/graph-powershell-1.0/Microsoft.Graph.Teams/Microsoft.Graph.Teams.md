@@ -14,13 +14,22 @@ Locale: en-US
 ### [Add-MgChatMember](Add-MgChatMember.md)
 
 
+### [Add-MgGroupTeamChannelAllMember](Add-MgGroupTeamChannelAllMember.md)
+
+
 ### [Add-MgGroupTeamChannelMember](Add-MgGroupTeamChannelMember.md)
 
 
 ### [Add-MgGroupTeamMember](Add-MgGroupTeamMember.md)
 
 
+### [Add-MgGroupTeamPrimaryChannelAllMember](Add-MgGroupTeamPrimaryChannelAllMember.md)
+
+
 ### [Add-MgGroupTeamPrimaryChannelMember](Add-MgGroupTeamPrimaryChannelMember.md)
+
+
+### [Add-MgTeamChannelAllMember](Add-MgTeamChannelAllMember.md)
 
 
 ### [Add-MgTeamChannelMember](Add-MgTeamChannelMember.md)
@@ -29,7 +38,13 @@ Locale: en-US
 ### [Add-MgTeamMember](Add-MgTeamMember.md)
 
 
+### [Add-MgTeamPrimaryChannelAllMember](Add-MgTeamPrimaryChannelAllMember.md)
+
+
 ### [Add-MgTeamPrimaryChannelMember](Add-MgTeamPrimaryChannelMember.md)
+
+
+### [Add-MgTeamworkDeletedTeamChannelAllMember](Add-MgTeamworkDeletedTeamChannelAllMember.md)
 
 
 ### [Add-MgTeamworkDeletedTeamChannelMember](Add-MgTeamworkDeletedTeamChannelMember.md)
@@ -99,6 +114,12 @@ Locale: en-US
 
 
 ### [Complete-MgTeamworkDeletedTeamChannelMigration](Complete-MgTeamworkDeletedTeamChannelMigration.md)
+
+
+### [Confirm-MgGroupTeamScheduleTimeCard](Confirm-MgGroupTeamScheduleTimeCard.md)
+
+
+### [Confirm-MgTeamScheduleTimeCard](Confirm-MgTeamScheduleTimeCard.md)
 
 
 ### [Copy-MgGroupTeam](Copy-MgGroupTeam.md)
@@ -230,6 +251,9 @@ Locale: en-US
 ### [Get-MgGroupTeamChannel](Get-MgGroupTeamChannel.md)
 
 
+### [Get-MgGroupTeamChannelAllMemberCount](Get-MgGroupTeamChannelAllMemberCount.md)
+
+
 ### [Get-MgGroupTeamChannelCount](Get-MgGroupTeamChannelCount.md)
 
 
@@ -353,6 +377,9 @@ Locale: en-US
 ### [Get-MgGroupTeamPrimaryChannel](Get-MgGroupTeamPrimaryChannel.md)
 
 
+### [Get-MgGroupTeamPrimaryChannelAllMemberCount](Get-MgGroupTeamPrimaryChannelAllMemberCount.md)
+
+
 ### [Get-MgGroupTeamPrimaryChannelFileFolder](Get-MgGroupTeamPrimaryChannelFileFolder.md)
 
 
@@ -419,6 +446,12 @@ Locale: en-US
 ### [Get-MgGroupTeamSchedule](Get-MgGroupTeamSchedule.md)
 
 
+### [Get-MgGroupTeamScheduleDayNote](Get-MgGroupTeamScheduleDayNote.md)
+
+
+### [Get-MgGroupTeamScheduleDayNoteCount](Get-MgGroupTeamScheduleDayNoteCount.md)
+
+
 ### [Get-MgGroupTeamScheduleOfferShiftRequest](Get-MgGroupTeamScheduleOfferShiftRequest.md)
 
 
@@ -453,6 +486,12 @@ Locale: en-US
 
 
 ### [Get-MgGroupTeamScheduleSwapShiftChangeRequestCount](Get-MgGroupTeamScheduleSwapShiftChangeRequestCount.md)
+
+
+### [Get-MgGroupTeamScheduleTimeCard](Get-MgGroupTeamScheduleTimeCard.md)
+
+
+### [Get-MgGroupTeamScheduleTimeCardCount](Get-MgGroupTeamScheduleTimeCardCount.md)
 
 
 ### [Get-MgGroupTeamScheduleTimeOff](Get-MgGroupTeamScheduleTimeOff.md)
@@ -492,6 +531,9 @@ Locale: en-US
 
 
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
+
+
+### [Get-MgTeamChannelAllMemberCount](Get-MgTeamChannelAllMemberCount.md)
 
 
 ### [Get-MgTeamChannelCount](Get-MgTeamChannelCount.md)
@@ -617,6 +659,9 @@ Locale: en-US
 ### [Get-MgTeamPrimaryChannel](Get-MgTeamPrimaryChannel.md)
 
 
+### [Get-MgTeamPrimaryChannelAllMemberCount](Get-MgTeamPrimaryChannelAllMemberCount.md)
+
+
 ### [Get-MgTeamPrimaryChannelFileFolder](Get-MgTeamPrimaryChannelFileFolder.md)
 
 
@@ -683,6 +728,12 @@ Locale: en-US
 ### [Get-MgTeamSchedule](Get-MgTeamSchedule.md)
 
 
+### [Get-MgTeamScheduleDayNote](Get-MgTeamScheduleDayNote.md)
+
+
+### [Get-MgTeamScheduleDayNoteCount](Get-MgTeamScheduleDayNoteCount.md)
+
+
 ### [Get-MgTeamScheduleOfferShiftRequest](Get-MgTeamScheduleOfferShiftRequest.md)
 
 
@@ -717,6 +768,12 @@ Locale: en-US
 
 
 ### [Get-MgTeamScheduleSwapShiftChangeRequestCount](Get-MgTeamScheduleSwapShiftChangeRequestCount.md)
+
+
+### [Get-MgTeamScheduleTimeCard](Get-MgTeamScheduleTimeCard.md)
+
+
+### [Get-MgTeamScheduleTimeCardCount](Get-MgTeamScheduleTimeCardCount.md)
 
 
 ### [Get-MgTeamScheduleTimeOff](Get-MgTeamScheduleTimeOff.md)
@@ -765,6 +822,9 @@ Locale: en-US
 
 
 ### [Get-MgTeamworkDeletedTeamChannel](Get-MgTeamworkDeletedTeamChannel.md)
+
+
+### [Get-MgTeamworkDeletedTeamChannelAllMemberCount](Get-MgTeamworkDeletedTeamChannelAllMemberCount.md)
 
 
 ### [Get-MgTeamworkDeletedTeamChannelCount](Get-MgTeamworkDeletedTeamChannelCount.md)
@@ -980,6 +1040,18 @@ Locale: en-US
 ### [Invoke-MgArchiveTeamworkDeletedTeamChannel](Invoke-MgArchiveTeamworkDeletedTeamChannel.md)
 
 
+### [Invoke-MgClockGroupTeamScheduleTimeCardIn](Invoke-MgClockGroupTeamScheduleTimeCardIn.md)
+
+
+### [Invoke-MgClockGroupTeamScheduleTimeCardOut](Invoke-MgClockGroupTeamScheduleTimeCardOut.md)
+
+
+### [Invoke-MgClockTeamScheduleTimeCardIn](Invoke-MgClockTeamScheduleTimeCardIn.md)
+
+
+### [Invoke-MgClockTeamScheduleTimeCardOut](Invoke-MgClockTeamScheduleTimeCardOut.md)
+
+
 ### [Invoke-MgGraphChat](Invoke-MgGraphChat.md)
 
 
@@ -1181,6 +1253,9 @@ Locale: en-US
 ### [New-MgGroupTeamPrimaryChannelTab](New-MgGroupTeamPrimaryChannelTab.md)
 
 
+### [New-MgGroupTeamScheduleDayNote](New-MgGroupTeamScheduleDayNote.md)
+
+
 ### [New-MgGroupTeamScheduleOfferShiftRequest](New-MgGroupTeamScheduleOfferShiftRequest.md)
 
 
@@ -1197,6 +1272,9 @@ Locale: en-US
 
 
 ### [New-MgGroupTeamScheduleSwapShiftChangeRequest](New-MgGroupTeamScheduleSwapShiftChangeRequest.md)
+
+
+### [New-MgGroupTeamScheduleTimeCard](New-MgGroupTeamScheduleTimeCard.md)
 
 
 ### [New-MgGroupTeamScheduleTimeOff](New-MgGroupTeamScheduleTimeOff.md)
@@ -1280,6 +1358,9 @@ Locale: en-US
 ### [New-MgTeamPrimaryChannelTab](New-MgTeamPrimaryChannelTab.md)
 
 
+### [New-MgTeamScheduleDayNote](New-MgTeamScheduleDayNote.md)
+
+
 ### [New-MgTeamScheduleOfferShiftRequest](New-MgTeamScheduleOfferShiftRequest.md)
 
 
@@ -1296,6 +1377,9 @@ Locale: en-US
 
 
 ### [New-MgTeamScheduleSwapShiftChangeRequest](New-MgTeamScheduleSwapShiftChangeRequest.md)
+
+
+### [New-MgTeamScheduleTimeCard](New-MgTeamScheduleTimeCard.md)
 
 
 ### [New-MgTeamScheduleTimeOff](New-MgTeamScheduleTimeOff.md)
@@ -1424,6 +1508,9 @@ Locale: en-US
 ### [Remove-MgGroupTeamChannel](Remove-MgGroupTeamChannel.md)
 
 
+### [Remove-MgGroupTeamChannelAllMember](Remove-MgGroupTeamChannelAllMember.md)
+
+
 ### [Remove-MgGroupTeamChannelEmail](Remove-MgGroupTeamChannelEmail.md)
 
 
@@ -1469,6 +1556,9 @@ Locale: en-US
 ### [Remove-MgGroupTeamPrimaryChannel](Remove-MgGroupTeamPrimaryChannel.md)
 
 
+### [Remove-MgGroupTeamPrimaryChannelAllMember](Remove-MgGroupTeamPrimaryChannelAllMember.md)
+
+
 ### [Remove-MgGroupTeamPrimaryChannelEmail](Remove-MgGroupTeamPrimaryChannelEmail.md)
 
 
@@ -1499,6 +1589,9 @@ Locale: en-US
 ### [Remove-MgGroupTeamSchedule](Remove-MgGroupTeamSchedule.md)
 
 
+### [Remove-MgGroupTeamScheduleDayNote](Remove-MgGroupTeamScheduleDayNote.md)
+
+
 ### [Remove-MgGroupTeamScheduleOfferShiftRequest](Remove-MgGroupTeamScheduleOfferShiftRequest.md)
 
 
@@ -1515,6 +1608,9 @@ Locale: en-US
 
 
 ### [Remove-MgGroupTeamScheduleSwapShiftChangeRequest](Remove-MgGroupTeamScheduleSwapShiftChangeRequest.md)
+
+
+### [Remove-MgGroupTeamScheduleTimeCard](Remove-MgGroupTeamScheduleTimeCard.md)
 
 
 ### [Remove-MgGroupTeamScheduleTimeOff](Remove-MgGroupTeamScheduleTimeOff.md)
@@ -1536,6 +1632,9 @@ Locale: en-US
 
 
 ### [Remove-MgTeamChannel](Remove-MgTeamChannel.md)
+
+
+### [Remove-MgTeamChannelAllMember](Remove-MgTeamChannelAllMember.md)
 
 
 ### [Remove-MgTeamChannelEmail](Remove-MgTeamChannelEmail.md)
@@ -1574,6 +1673,9 @@ Locale: en-US
 ### [Remove-MgTeamPrimaryChannel](Remove-MgTeamPrimaryChannel.md)
 
 
+### [Remove-MgTeamPrimaryChannelAllMember](Remove-MgTeamPrimaryChannelAllMember.md)
+
+
 ### [Remove-MgTeamPrimaryChannelEmail](Remove-MgTeamPrimaryChannelEmail.md)
 
 
@@ -1595,6 +1697,9 @@ Locale: en-US
 ### [Remove-MgTeamSchedule](Remove-MgTeamSchedule.md)
 
 
+### [Remove-MgTeamScheduleDayNote](Remove-MgTeamScheduleDayNote.md)
+
+
 ### [Remove-MgTeamScheduleOfferShiftRequest](Remove-MgTeamScheduleOfferShiftRequest.md)
 
 
@@ -1611,6 +1716,9 @@ Locale: en-US
 
 
 ### [Remove-MgTeamScheduleSwapShiftChangeRequest](Remove-MgTeamScheduleSwapShiftChangeRequest.md)
+
+
+### [Remove-MgTeamScheduleTimeCard](Remove-MgTeamScheduleTimeCard.md)
 
 
 ### [Remove-MgTeamScheduleTimeOff](Remove-MgTeamScheduleTimeOff.md)
@@ -1635,6 +1743,9 @@ Locale: en-US
 
 
 ### [Remove-MgTeamworkDeletedTeamChannel](Remove-MgTeamworkDeletedTeamChannel.md)
+
+
+### [Remove-MgTeamworkDeletedTeamChannelAllMember](Remove-MgTeamworkDeletedTeamChannelAllMember.md)
 
 
 ### [Remove-MgTeamworkDeletedTeamChannelEmail](Remove-MgTeamworkDeletedTeamChannelEmail.md)
@@ -1844,6 +1955,18 @@ Locale: en-US
 ### [Set-MgUserChatMessageReplyReaction](Set-MgUserChatMessageReplyReaction.md)
 
 
+### [Start-MgGroupTeamScheduleTimeCardBreak](Start-MgGroupTeamScheduleTimeCardBreak.md)
+
+
+### [Start-MgTeamScheduleTimeCardBreak](Start-MgTeamScheduleTimeCardBreak.md)
+
+
+### [Stop-MgGroupTeamScheduleTimeCardBreak](Stop-MgGroupTeamScheduleTimeCardBreak.md)
+
+
+### [Stop-MgTeamScheduleTimeCardBreak](Stop-MgTeamScheduleTimeCardBreak.md)
+
+
 ### [Undo-MgChatMessageReplySoftDelete](Undo-MgChatMessageReplySoftDelete.md)
 
 
@@ -1991,6 +2114,9 @@ Locale: en-US
 ### [Update-MgGroupTeamPrimaryChannelTab](Update-MgGroupTeamPrimaryChannelTab.md)
 
 
+### [Update-MgGroupTeamScheduleDayNote](Update-MgGroupTeamScheduleDayNote.md)
+
+
 ### [Update-MgGroupTeamScheduleOfferShiftRequest](Update-MgGroupTeamScheduleOfferShiftRequest.md)
 
 
@@ -2007,6 +2133,9 @@ Locale: en-US
 
 
 ### [Update-MgGroupTeamScheduleSwapShiftChangeRequest](Update-MgGroupTeamScheduleSwapShiftChangeRequest.md)
+
+
+### [Update-MgGroupTeamScheduleTimeCard](Update-MgGroupTeamScheduleTimeCard.md)
 
 
 ### [Update-MgGroupTeamScheduleTimeOff](Update-MgGroupTeamScheduleTimeOff.md)
@@ -2084,6 +2213,9 @@ Locale: en-US
 ### [Update-MgTeamPrimaryChannelTab](Update-MgTeamPrimaryChannelTab.md)
 
 
+### [Update-MgTeamScheduleDayNote](Update-MgTeamScheduleDayNote.md)
+
+
 ### [Update-MgTeamScheduleOfferShiftRequest](Update-MgTeamScheduleOfferShiftRequest.md)
 
 
@@ -2100,6 +2232,9 @@ Locale: en-US
 
 
 ### [Update-MgTeamScheduleSwapShiftChangeRequest](Update-MgTeamScheduleSwapShiftChangeRequest.md)
+
+
+### [Update-MgTeamScheduleTimeCard](Update-MgTeamScheduleTimeCard.md)
 
 
 ### [Update-MgTeamScheduleTimeOff](Update-MgTeamScheduleTimeOff.md)

@@ -9,7 +9,7 @@ ms.subservice: entra-sign-in
 # Remove-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Delete a namedLocation object.
+Delete a countryNamedLocation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -31,13 +31,13 @@ Remove-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Delete a namedLocation object.
+Delete a countryNamedLocation object.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
@@ -272,7 +272,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessnamedlocation)
 
-[https://learn.microsoft.com/graph/api/namedlocation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/namedlocation-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/countrynamedlocation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/countrynamedlocation-delete?view=graph-rest-1.0)
 
 
 

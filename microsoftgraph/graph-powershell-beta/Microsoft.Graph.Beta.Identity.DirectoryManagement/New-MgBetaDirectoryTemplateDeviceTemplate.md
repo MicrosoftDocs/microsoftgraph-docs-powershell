@@ -37,7 +37,7 @@ Create a new deviceTemplate used to identify attributes and manage a group of de
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | DeviceTemplate.Create, DeviceTemplate.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceTemplate.Create, DeviceTemplate.ReadWrite.All,  |
 
@@ -558,6 +558,7 @@ Supports $expand.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
     - `[UsageRights <IMicrosoftGraphUsageRight- `[]`>]`: Represents the usage rights a device has been granted.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -776,6 +777,7 @@ Supports $expand.
 Read-only.
 Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
 For more information, see Introduction to device management in Microsoft Entra ID.
+Supports $filter (eq, ne, not, in).
   - `[UsageRights <IMicrosoftGraphUsageRight- `[]`>]`: Represents the usage rights a device has been granted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

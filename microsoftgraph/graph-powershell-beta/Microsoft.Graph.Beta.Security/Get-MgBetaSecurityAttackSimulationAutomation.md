@@ -42,6 +42,14 @@ Get-MgBetaSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Get an attack simulation automation for a tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AttackSimulation.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AttackSimulation.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -322,6 +330,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCaseMemberId <String>]`: The unique identifier of ediscoveryCaseMember
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
   - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
   - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy

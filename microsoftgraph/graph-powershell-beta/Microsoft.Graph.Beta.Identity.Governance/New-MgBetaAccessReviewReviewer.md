@@ -56,7 +56,7 @@ This operation isn't permitted for an access review in which users review their 
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+| Application | AccessReview.ReadWrite.Membership,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

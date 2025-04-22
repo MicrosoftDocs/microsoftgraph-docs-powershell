@@ -11,6 +11,66 @@ Locale: en-US
 
 
 ## Microsoft.Graph.Beta.DeviceManagement Cmdlets
+### [Add-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](Add-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp.md)
+
+
+### [Approve-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](Approve-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp.md)
+
+
+### [Clear-MgBetaDeviceManagementComanagedDevice](Clear-MgBetaDeviceManagementComanagedDevice.md)
+
+
+### [Clear-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget](Clear-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget.md)
+
+
+### [Clear-MgBetaDeviceManagementManagedDevice](Clear-MgBetaDeviceManagementManagedDevice.md)
+
+
+### [Compare-MgBetaDeviceManagementIntent](Compare-MgBetaDeviceManagementIntent.md)
+
+
+### [Compare-MgBetaDeviceManagementTemplate](Compare-MgBetaDeviceManagementTemplate.md)
+
+
+### [Compare-MgBetaDeviceManagementTemplateMigratableTo](Compare-MgBetaDeviceManagementTemplateMigratableTo.md)
+
+
+### [Complete-MgBetaDeviceManagementAndroidForWorkSettingSignup](Complete-MgBetaDeviceManagementAndroidForWorkSettingSignup.md)
+
+
+### [Complete-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignup](Complete-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignup.md)
+
+
+### [Disable-MgBetaDeviceManagementComanagedDevice](Disable-MgBetaDeviceManagementComanagedDevice.md)
+
+
+### [Disable-MgBetaDeviceManagementComanagedDeviceLostMode](Disable-MgBetaDeviceManagementComanagedDeviceLostMode.md)
+
+
+### [Disable-MgBetaDeviceManagementManagedDevice](Disable-MgBetaDeviceManagementManagedDevice.md)
+
+
+### [Disable-MgBetaDeviceManagementManagedDeviceLostMode](Disable-MgBetaDeviceManagementManagedDeviceLostMode.md)
+
+
+### [Enable-MgBetaDeviceManagementAssignmentFilter](Enable-MgBetaDeviceManagementAssignmentFilter.md)
+
+
+### [Enable-MgBetaDeviceManagementComanagedDeviceLostMode](Enable-MgBetaDeviceManagementComanagedDeviceLostMode.md)
+
+
+### [Enable-MgBetaDeviceManagementDeviceHealthScriptGlobalScript](Enable-MgBetaDeviceManagementDeviceHealthScriptGlobalScript.md)
+
+
+### [Enable-MgBetaDeviceManagementManagedDeviceLostMode](Enable-MgBetaDeviceManagementManagedDeviceLostMode.md)
+
+
+### [Find-MgBetaDeviceManagementComanagedDevice](Find-MgBetaDeviceManagementComanagedDevice.md)
+
+
+### [Find-MgBetaDeviceManagementManagedDevice](Find-MgBetaDeviceManagementManagedDevice.md)
+
+
 ### [Get-MgBetaAdminEdge](Get-MgBetaAdminEdge.md)
 
 
@@ -71,6 +131,15 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementAssignmentFilterCount](Get-MgBetaDeviceManagementAssignmentFilterCount.md)
 
 
+### [Get-MgBetaDeviceManagementAssignmentFilterPlatformSupportedProperty](Get-MgBetaDeviceManagementAssignmentFilterPlatformSupportedProperty.md)
+
+
+### [Get-MgBetaDeviceManagementAssignmentFilterState](Get-MgBetaDeviceManagementAssignmentFilterState.md)
+
+
+### [Get-MgBetaDeviceManagementAssignmentFilterSupportedProperty](Get-MgBetaDeviceManagementAssignmentFilterSupportedProperty.md)
+
+
 ### [Get-MgBetaDeviceManagementCategory](Get-MgBetaDeviceManagementCategory.md)
 
 
@@ -95,6 +164,15 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementComanagedDeviceCategory](Get-MgBetaDeviceManagementComanagedDeviceCategory.md)
 
 
+### [Get-MgBetaDeviceManagementComanagedDeviceCategoryByRef](Get-MgBetaDeviceManagementComanagedDeviceCategoryByRef.md)
+
+
+### [Get-MgBetaDeviceManagementComanagedDeviceCloudPcRemoteActionResult](Get-MgBetaDeviceManagementComanagedDeviceCloudPcRemoteActionResult.md)
+
+
+### [Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus](Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus.md)
+
+
 ### [Get-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState](Get-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState.md)
 
 
@@ -116,6 +194,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementComanagedDeviceDetectedAppCount](Get-MgBetaDeviceManagementComanagedDeviceDetectedAppCount.md)
 
 
+### [Get-MgBetaDeviceManagementComanagedDeviceFileVaultKey](Get-MgBetaDeviceManagementComanagedDeviceFileVaultKey.md)
+
+
 ### [Get-MgBetaDeviceManagementComanagedDeviceHealthScriptState](Get-MgBetaDeviceManagementComanagedDeviceHealthScriptState.md)
 
 
@@ -132,6 +213,12 @@ Locale: en-US
 
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationStateCount](Get-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationStateCount.md)
+
+
+### [Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting](Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting.md)
+
+
+### [Get-MgBetaDeviceManagementComanagedDevicePowerliftAppDiagnosticDetail](Get-MgBetaDeviceManagementComanagedDevicePowerliftAppDiagnosticDetail.md)
 
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState](Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState.md)
@@ -212,6 +299,12 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementConfigurationPolicyCount](Get-MgBetaDeviceManagementConfigurationPolicyCount.md)
 
 
+### [Get-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget](Get-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget.md)
+
+
+### [Get-MgBetaDeviceManagementConfigurationPolicyLatestUpgradeDefaultBaselinePolicy](Get-MgBetaDeviceManagementConfigurationPolicyLatestUpgradeDefaultBaselinePolicy.md)
+
+
 ### [Get-MgBetaDeviceManagementConfigurationPolicySetting](Get-MgBetaDeviceManagementConfigurationPolicySetting.md)
 
 
@@ -290,6 +383,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyCount](Get-MgBetaDeviceManagementDeviceCompliancePolicyCount.md)
 
 
+### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire.md)
+
+
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
 
 
@@ -306,6 +402,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
+
+
+### [Get-MgBetaDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire](Get-MgBetaDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire.md)
 
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
@@ -386,10 +485,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration](Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration.md)
 
 
-### [Get-MgBetaDeviceManagementDeviceConfigurationProfile](Get-MgBetaDeviceManagementDeviceConfigurationProfile.md)
+### [Get-MgBetaDeviceManagementDeviceConfigurationIoAvailableUpdateVersion](Get-MgBetaDeviceManagementDeviceConfigurationIoAvailableUpdateVersion.md)
 
 
-### [Get-MgBetaDeviceManagementDeviceConfigurationProfileCount](Get-MgBetaDeviceManagementDeviceConfigurationProfileCount.md)
+### [Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue.md)
+
+
+### [Get-MgBetaDeviceManagementDeviceConfigurationTargetedUserAndDevice](Get-MgBetaDeviceManagementDeviceConfigurationTargetedUserAndDevice.md)
 
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Get-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
@@ -423,6 +525,15 @@ Locale: en-US
 
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
+
+
+### [Get-MgBetaDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion](Get-MgBetaDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion.md)
+
+
+### [Get-MgBetaDeviceManagementDeviceHealthScriptRemediationHistory](Get-MgBetaDeviceManagementDeviceHealthScriptRemediationHistory.md)
+
+
+### [Get-MgBetaDeviceManagementDeviceHealthScriptRemediationSummary](Get-MgBetaDeviceManagementDeviceHealthScriptRemediationSummary.md)
 
 
 ### [Get-MgBetaDeviceManagementDeviceHealthScriptRunSummary](Get-MgBetaDeviceManagementDeviceHealthScriptRunSummary.md)
@@ -539,6 +650,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementIntentCount](Get-MgBetaDeviceManagementIntentCount.md)
 
 
+### [Get-MgBetaDeviceManagementIntentCustomizedSetting](Get-MgBetaDeviceManagementIntentCustomizedSetting.md)
+
+
 ### [Get-MgBetaDeviceManagementIntentDeviceSettingStateSummary](Get-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
 
 
@@ -599,10 +713,19 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementManagedDeviceCategory](Get-MgBetaDeviceManagementManagedDeviceCategory.md)
 
 
+### [Get-MgBetaDeviceManagementManagedDeviceCategoryByRef](Get-MgBetaDeviceManagementManagedDeviceCategoryByRef.md)
+
+
 ### [Get-MgBetaDeviceManagementManagedDeviceCleanupRule](Get-MgBetaDeviceManagementManagedDeviceCleanupRule.md)
 
 
 ### [Get-MgBetaDeviceManagementManagedDeviceCleanupRuleCount](Get-MgBetaDeviceManagementManagedDeviceCleanupRuleCount.md)
+
+
+### [Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult](Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult.md)
+
+
+### [Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus](Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus.md)
 
 
 ### [Get-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](Get-MgBetaDeviceManagementManagedDeviceCompliancePolicyState.md)
@@ -632,6 +755,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementManagedDeviceEncryptionStateCount](Get-MgBetaDeviceManagementManagedDeviceEncryptionStateCount.md)
 
 
+### [Get-MgBetaDeviceManagementManagedDeviceFileVaultKey](Get-MgBetaDeviceManagementManagedDeviceFileVaultKey.md)
+
+
 ### [Get-MgBetaDeviceManagementManagedDeviceHealthScriptState](Get-MgBetaDeviceManagementManagedDeviceHealthScriptState.md)
 
 
@@ -650,7 +776,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationStateCount](Get-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationStateCount.md)
 
 
+### [Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting](Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting.md)
+
+
 ### [Get-MgBetaDeviceManagementManagedDeviceOverview](Get-MgBetaDeviceManagementManagedDeviceOverview.md)
+
+
+### [Get-MgBetaDeviceManagementManagedDevicePowerliftAppDiagnosticDetail](Get-MgBetaDeviceManagementManagedDevicePowerliftAppDiagnosticDetail.md)
 
 
 ### [Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineState](Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineState.md)
@@ -666,6 +798,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaDeviceManagementManagedDeviceUser](Get-MgBetaDeviceManagementManagedDeviceUser.md)
+
+
+### [Get-MgBetaDeviceManagementManagedDeviceWindowOSImageManagedDeviceWindowsOSImage](Get-MgBetaDeviceManagementManagedDeviceWindowOSImageManagedDeviceWindowsOSImage.md)
 
 
 ### [Get-MgBetaDeviceManagementManagedDeviceWindowsOSImage](Get-MgBetaDeviceManagementManagedDeviceWindowsOSImage.md)
@@ -716,6 +851,12 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerCount](Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerCount.md)
 
 
+### [Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric](Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric.md)
+
+
+### [Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTimeSeries](Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetricTimeSeries.md)
+
+
 ### [Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent](Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent.md)
 
 
@@ -735,6 +876,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaDeviceManagementMonitoringAlertRecordCount](Get-MgBetaDeviceManagementMonitoringAlertRecordCount.md)
+
+
+### [Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification](Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification.md)
 
 
 ### [Get-MgBetaDeviceManagementMonitoringAlertRule](Get-MgBetaDeviceManagementMonitoringAlertRule.md)
@@ -893,288 +1037,6 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementTroubleshootingEventCount](Get-MgBetaDeviceManagementTroubleshootingEventCount.md)
 
 
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverviewCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverviewCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDeviceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDeviceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetailCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceIdCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversionCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetailCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaseline](Get-MgBetaDeviceManagementUserExperienceAnalyticBaseline.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpactCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpactCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpactCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpactCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistoryCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategory](Get-MgBetaDeviceManagementUserExperienceAnalyticCategory.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue](Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValueCount](Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValueCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistoryCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScopeCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScopeCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScoreCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceScoreCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEventCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEventCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentityCount](Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentityCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess](Get-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcessCount](Get-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcessCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticMetricHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticMetricHistoryCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticModelScore](Get-MgBetaDeviceManagementUserExperienceAnalyticModelScore.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticModelScoreCount](Get-MgBetaDeviceManagementUserExperienceAnalyticModelScoreCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticOverview](Get-MgBetaDeviceManagementUserExperienceAnalyticOverview.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection](Get-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnectionCount](Get-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnectionCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformanceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](Get-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticScoreHistoryCount](Get-MgBetaDeviceManagementUserExperienceAnalyticScoreHistoryCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-
-
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformanceCount.md)
-
-
 ### [Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
 
 
@@ -1211,6 +1073,201 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileCount](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileCount.md)
 
 
+### [Import-MgBetaDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy](Import-MgBetaDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy.md)
+
+
+### [Import-MgBetaDeviceManagementTemplateOffice365DeviceConfigurationPolicy](Import-MgBetaDeviceManagementTemplateOffice365DeviceConfigurationPolicy.md)
+
+
+### [Initialize-MgBetaDeviceManagementComanagedDeviceEsim](Initialize-MgBetaDeviceManagementComanagedDeviceEsim.md)
+
+
+### [Initialize-MgBetaDeviceManagementManagedDeviceEsim](Initialize-MgBetaDeviceManagementManagedDeviceEsim.md)
+
+
+### [Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic](Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic.md)
+
+
+### [Invoke-MgBetaAppDeviceManagementManagedDeviceDiagnostic](Invoke-MgBetaAppDeviceManagementManagedDeviceDiagnostic.md)
+
+
+### [Invoke-MgBetaBulkDeviceManagementComanagedDeviceReprovisionCloudPc](Invoke-MgBetaBulkDeviceManagementComanagedDeviceReprovisionCloudPc.md)
+
+
+### [Invoke-MgBetaBulkDeviceManagementComanagedDeviceRestoreCloudPc](Invoke-MgBetaBulkDeviceManagementComanagedDeviceRestoreCloudPc.md)
+
+
+### [Invoke-MgBetaBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus](Invoke-MgBetaBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus.md)
+
+
+### [Invoke-MgBetaBulkDeviceManagementManagedDeviceReprovisionCloudPc](Invoke-MgBetaBulkDeviceManagementManagedDeviceReprovisionCloudPc.md)
+
+
+### [Invoke-MgBetaBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBetaBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+
+
+### [Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus](Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus.md)
+
+
+### [Invoke-MgBetaCleanDeviceManagementComanagedDeviceWindowsDevice](Invoke-MgBetaCleanDeviceManagementComanagedDeviceWindowsDevice.md)
+
+
+### [Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice](Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice.md)
+
+
+### [Invoke-MgBetaConsentDeviceManagementDataSharingConsentToDataSharing](Invoke-MgBetaConsentDeviceManagementDataSharingConsentToDataSharing.md)
+
+
+### [Invoke-MgBetaDeprovisionDeviceManagementComanagedDevice](Invoke-MgBetaDeprovisionDeviceManagementComanagedDevice.md)
+
+
+### [Invoke-MgBetaDeprovisionDeviceManagementManagedDevice](Invoke-MgBetaDeprovisionDeviceManagementManagedDevice.md)
+
+
+### [Invoke-MgBetaDownDeviceManagementComanagedDeviceShut](Invoke-MgBetaDownDeviceManagementComanagedDeviceShut.md)
+
+
+### [Invoke-MgBetaDownDeviceManagementManagedDeviceShut](Invoke-MgBetaDownDeviceManagementManagedDeviceShut.md)
+
+
+### [Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic](Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic.md)
+
+
+### [Invoke-MgBetaDownloadDeviceManagementComanagedDevicePowerliftAppDiagnostic](Invoke-MgBetaDownloadDeviceManagementComanagedDevicePowerliftAppDiagnostic.md)
+
+
+### [Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic](Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic.md)
+
+
+### [Invoke-MgBetaDownloadDeviceManagementManagedDevicePowerliftAppDiagnostic](Invoke-MgBetaDownloadDeviceManagementManagedDevicePowerliftAppDiagnostic.md)
+
+
+### [Invoke-MgBetaEnrollDeviceManagementComanagedDeviceNowAction](Invoke-MgBetaEnrollDeviceManagementComanagedDeviceNowAction.md)
+
+
+### [Invoke-MgBetaEnrollDeviceManagementManagedDeviceNowAction](Invoke-MgBetaEnrollDeviceManagementManagedDeviceNowAction.md)
+
+
+### [Invoke-MgBetaExecuteDeviceManagementComanagedDeviceAction](Invoke-MgBetaExecuteDeviceManagementComanagedDeviceAction.md)
+
+
+### [Invoke-MgBetaExecuteDeviceManagementManagedDeviceAction](Invoke-MgBetaExecuteDeviceManagementManagedDeviceAction.md)
+
+
+### [Invoke-MgBetaHasDeviceManagementDeviceCompliancePolicyPayloadLink](Invoke-MgBetaHasDeviceManagementDeviceCompliancePolicyPayloadLink.md)
+
+
+### [Invoke-MgBetaHasDeviceManagementDeviceConfigurationPayloadLink](Invoke-MgBetaHasDeviceManagementDeviceConfigurationPayloadLink.md)
+
+
+### [Invoke-MgBetaHasDeviceManagementScriptPayloadLink](Invoke-MgBetaHasDeviceManagementScriptPayloadLink.md)
+
+
+### [Invoke-MgBetaInitiateDeviceManagementComanagedDeviceAttestation](Invoke-MgBetaInitiateDeviceManagementComanagedDeviceAttestation.md)
+
+
+### [Invoke-MgBetaInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgBetaInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery.md)
+
+
+### [Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation](Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation.md)
+
+
+### [Invoke-MgBetaInitiateDeviceManagementManagedDeviceAttestation](Invoke-MgBetaInitiateDeviceManagementManagedDeviceAttestation.md)
+
+
+### [Invoke-MgBetaInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgBetaInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecovery.md)
+
+
+### [Invoke-MgBetaInitiateDeviceManagementManagedDeviceOnDemandProactiveRemediation](Invoke-MgBetaInitiateDeviceManagementManagedDeviceOnDemandProactiveRemediation.md)
+
+
+### [Invoke-MgBetaIsDeviceManagementDeviceHealthScriptGlobalScriptAvailable](Invoke-MgBetaIsDeviceManagementDeviceHealthScriptGlobalScriptAvailable.md)
+
+
+### [Invoke-MgBetaLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser](Invoke-MgBetaLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser.md)
+
+
+### [Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser.md)
+
+
+### [Invoke-MgBetaOverrideDeviceManagementComanagedDeviceComplianceState](Invoke-MgBetaOverrideDeviceManagementComanagedDeviceComplianceState.md)
+
+
+### [Invoke-MgBetaOverrideDeviceManagementManagedDeviceComplianceState](Invoke-MgBetaOverrideDeviceManagementManagedDeviceComplianceState.md)
+
+
+### [Invoke-MgBetaPlayDeviceManagementComanagedDeviceLostModeSound](Invoke-MgBetaPlayDeviceManagementComanagedDeviceLostModeSound.md)
+
+
+### [Invoke-MgBetaPlayDeviceManagementManagedDeviceLostModeSound](Invoke-MgBetaPlayDeviceManagementManagedDeviceLostModeSound.md)
+
+
+### [Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType](Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType.md)
+
+
+### [Invoke-MgBetaReenableDeviceManagementComanagedDevice](Invoke-MgBetaReenableDeviceManagementComanagedDevice.md)
+
+
+### [Invoke-MgBetaReenableDeviceManagementManagedDevice](Invoke-MgBetaReenableDeviceManagementManagedDevice.md)
+
+
+### [Invoke-MgBetaReorderDeviceManagementConfigurationPolicy](Invoke-MgBetaReorderDeviceManagementConfigurationPolicy.md)
+
+
+### [Invoke-MgBetaRetireDeviceManagementComanagedDevice](Invoke-MgBetaRetireDeviceManagementComanagedDevice.md)
+
+
+### [Invoke-MgBetaRetireDeviceManagementManagedDevice](Invoke-MgBetaRetireDeviceManagementManagedDevice.md)
+
+
+### [Invoke-MgBetaRotateDeviceManagementComanagedDeviceBitLockerKey](Invoke-MgBetaRotateDeviceManagementComanagedDeviceBitLockerKey.md)
+
+
+### [Invoke-MgBetaRotateDeviceManagementComanagedDeviceFileVaultKey](Invoke-MgBetaRotateDeviceManagementComanagedDeviceFileVaultKey.md)
+
+
+### [Invoke-MgBetaRotateDeviceManagementComanagedDeviceLocalAdminPassword](Invoke-MgBetaRotateDeviceManagementComanagedDeviceLocalAdminPassword.md)
+
+
+### [Invoke-MgBetaRotateDeviceManagementManagedDeviceBitLockerKey](Invoke-MgBetaRotateDeviceManagementManagedDeviceBitLockerKey.md)
+
+
+### [Invoke-MgBetaRotateDeviceManagementManagedDeviceFileVaultKey](Invoke-MgBetaRotateDeviceManagementManagedDeviceFileVaultKey.md)
+
+
+### [Invoke-MgBetaRotateDeviceManagementManagedDeviceLocalAdminPassword](Invoke-MgBetaRotateDeviceManagementManagedDeviceLocalAdminPassword.md)
+
+
+### [Invoke-MgBetaScanDeviceManagementComanagedDeviceWindowsDefender](Invoke-MgBetaScanDeviceManagementComanagedDeviceWindowsDefender.md)
+
+
+### [Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender](Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender.md)
+
+
+### [Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule](Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule.md)
+
+
+### [Invoke-MgBetaUnbindDeviceManagementAndroidForWorkSetting](Invoke-MgBetaUnbindDeviceManagementAndroidForWorkSetting.md)
+
+
+### [Invoke-MgBetaUnbindDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](Invoke-MgBetaUnbindDeviceManagementAndroidManagedStoreAccountEnterpriseSetting.md)
+
+
+### [Lock-MgBetaDeviceManagementComanagedDeviceRemote](Lock-MgBetaDeviceManagementComanagedDeviceRemote.md)
+
+
+### [Lock-MgBetaDeviceManagementManagedDeviceRemote](Lock-MgBetaDeviceManagementManagedDeviceRemote.md)
+
+
+### [Move-MgBetaDeviceManagementComanagedDeviceToOu](Move-MgBetaDeviceManagementComanagedDeviceToOu.md)
+
+
+### [Move-MgBetaDeviceManagementIntentToTemplate](Move-MgBetaDeviceManagementIntentToTemplate.md)
+
+
+### [Move-MgBetaDeviceManagementManagedDeviceToOu](Move-MgBetaDeviceManagementManagedDeviceToOu.md)
+
+
 ### [New-MgBetaAdminEdgeInternetExplorerModeSiteList](New-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
 
 
@@ -1224,6 +1281,9 @@ Locale: en-US
 
 
 ### [New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema](New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema.md)
+
+
+### [New-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingGooglePlayWebToken](New-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingGooglePlayWebToken.md)
 
 
 ### [New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema](New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
@@ -1251,6 +1311,9 @@ Locale: en-US
 
 
 ### [New-MgBetaDeviceManagementComanagedDeviceHealthScriptState](New-MgBetaDeviceManagementComanagedDeviceHealthScriptState.md)
+
+
+### [New-MgBetaDeviceManagementComanagedDeviceLogCollectionRequestDownloadUrl](New-MgBetaDeviceManagementComanagedDeviceLogCollectionRequestDownloadUrl.md)
 
 
 ### [New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
@@ -1287,6 +1350,9 @@ Locale: en-US
 
 
 ### [New-MgBetaDeviceManagementConfigurationPolicyAssignment](New-MgBetaDeviceManagementConfigurationPolicyAssignment.md)
+
+
+### [New-MgBetaDeviceManagementConfigurationPolicyCopy](New-MgBetaDeviceManagementConfigurationPolicyCopy.md)
 
 
 ### [New-MgBetaDeviceManagementConfigurationPolicySetting](New-MgBetaDeviceManagementConfigurationPolicySetting.md)
@@ -1361,9 +1427,6 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
 
 
-### [New-MgBetaDeviceManagementDeviceConfigurationProfile](New-MgBetaDeviceManagementDeviceConfigurationProfile.md)
-
-
 ### [New-MgBetaDeviceManagementDeviceConfigurationUserStatus](New-MgBetaDeviceManagementDeviceConfigurationUserStatus.md)
 
 
@@ -1430,6 +1493,9 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementIntentCategorySettingDefinition](New-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
 
 
+### [New-MgBetaDeviceManagementIntentCopy](New-MgBetaDeviceManagementIntentCopy.md)
+
+
 ### [New-MgBetaDeviceManagementIntentDeviceSettingStateSummary](New-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
 
 
@@ -1472,6 +1538,9 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementManagedDeviceHealthScriptState](New-MgBetaDeviceManagementManagedDeviceHealthScriptState.md)
 
 
+### [New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl.md)
+
+
 ### [New-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState](New-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState.md)
 
 
@@ -1496,16 +1565,25 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse](New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse.md)
 
 
+### [New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl](New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl.md)
+
+
 ### [New-MgBetaDeviceManagementMicrosoftTunnelSite](New-MgBetaDeviceManagementMicrosoftTunnelSite.md)
 
 
 ### [New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer.md)
 
 
+### [New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest](New-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerLogCollectionRequest.md)
+
+
 ### [New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](New-MgBetaDeviceManagementMobileAppTroubleshootingEvent.md)
 
 
 ### [New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
+
+
+### [New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl](New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl.md)
 
 
 ### [New-MgBetaDeviceManagementMonitoringAlertRecord](New-MgBetaDeviceManagementMonitoringAlertRecord.md)
@@ -1565,6 +1643,9 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementTemplateCategorySettingDefinition](New-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
 
 
+### [New-MgBetaDeviceManagementTemplateInstance](New-MgBetaDeviceManagementTemplateInstance.md)
+
+
 ### [New-MgBetaDeviceManagementTemplateMigratableTo](New-MgBetaDeviceManagementTemplateMigratableTo.md)
 
 
@@ -1577,6 +1658,9 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](New-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
 
 
+### [New-MgBetaDeviceManagementTemplateMigratableToInstance](New-MgBetaDeviceManagementTemplateMigratableToInstance.md)
+
+
 ### [New-MgBetaDeviceManagementTemplateMigratableToSetting](New-MgBetaDeviceManagementTemplateMigratableToSetting.md)
 
 
@@ -1584,129 +1668,6 @@ Locale: en-US
 
 
 ### [New-MgBetaDeviceManagementTroubleshootingEvent](New-MgBetaDeviceManagementTroubleshootingEvent.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticBaseline](New-MgBetaDeviceManagementUserExperienceAnalyticBaseline.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticCategory](New-MgBetaDeviceManagementUserExperienceAnalyticCategory.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue](New-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance](New-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](New-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess](New-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](New-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticModelScore](New-MgBetaDeviceManagementUserExperienceAnalyticModelScore.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection](New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance](New-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-
-
-### [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
 
 
 ### [New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
@@ -1725,6 +1686,9 @@ Locale: en-US
 
 
 ### [New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
+
+
+### [Publish-MgBetaAdminEdgeInternetExplorerModeSiteList](Publish-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
 
 
 ### [Remove-MgBetaAdminEdge](Remove-MgBetaAdminEdge.md)
@@ -1778,10 +1742,16 @@ Locale: en-US
 ### [Remove-MgBetaDeviceManagementComanagedDeviceCategory](Remove-MgBetaDeviceManagementComanagedDeviceCategory.md)
 
 
+### [Remove-MgBetaDeviceManagementComanagedDeviceCategoryByRef](Remove-MgBetaDeviceManagementComanagedDeviceCategoryByRef.md)
+
+
 ### [Remove-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState](Remove-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState.md)
 
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceConfigurationState](Remove-MgBetaDeviceManagementComanagedDeviceConfigurationState.md)
+
+
+### [Remove-MgBetaDeviceManagementComanagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgBetaDeviceManagementComanagedDeviceFirmwareConfigurationInterfaceManagement.md)
 
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceHealthScriptState](Remove-MgBetaDeviceManagementComanagedDeviceHealthScriptState.md)
@@ -1797,6 +1767,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Remove-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
+
+
+### [Remove-MgBetaDeviceManagementComanagedDeviceUserFromSharedAppleDevice](Remove-MgBetaDeviceManagementComanagedDeviceUserFromSharedAppleDevice.md)
 
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState](Remove-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState.md)
@@ -1916,9 +1889,6 @@ Locale: en-US
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](Remove-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
 
 
-### [Remove-MgBetaDeviceManagementDeviceConfigurationProfile](Remove-MgBetaDeviceManagementDeviceConfigurationProfile.md)
-
-
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Remove-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
 
 
@@ -2030,6 +2000,9 @@ Locale: en-US
 ### [Remove-MgBetaDeviceManagementManagedDeviceCategory](Remove-MgBetaDeviceManagementManagedDeviceCategory.md)
 
 
+### [Remove-MgBetaDeviceManagementManagedDeviceCategoryByRef](Remove-MgBetaDeviceManagementManagedDeviceCategoryByRef.md)
+
+
 ### [Remove-MgBetaDeviceManagementManagedDeviceCleanupRule](Remove-MgBetaDeviceManagementManagedDeviceCleanupRule.md)
 
 
@@ -2040,6 +2013,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceEncryptionState](Remove-MgBetaDeviceManagementManagedDeviceEncryptionState.md)
+
+
+### [Remove-MgBetaDeviceManagementManagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgBetaDeviceManagementManagedDeviceFirmwareConfigurationInterfaceManagement.md)
 
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceHealthScriptState](Remove-MgBetaDeviceManagementManagedDeviceHealthScriptState.md)
@@ -2055,6 +2031,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Remove-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
+
+
+### [Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
 
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceWindowsOSImage](Remove-MgBetaDeviceManagementManagedDeviceWindowsOSImage.md)
@@ -2171,144 +2150,6 @@ Locale: en-US
 ### [Remove-MgBetaDeviceManagementTroubleshootingEvent](Remove-MgBetaDeviceManagementTroubleshootingEvent.md)
 
 
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBaseline](Remove-MgBetaDeviceManagementUserExperienceAnalyticBaseline.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticCategory](Remove-MgBetaDeviceManagementUserExperienceAnalyticCategory.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue](Remove-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess](Remove-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticModelScore](Remove-MgBetaDeviceManagementUserExperienceAnalyticModelScore.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Remove-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview](Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection](Remove-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](Remove-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-
-
-### [Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
-
-
 ### [Remove-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](Remove-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
 
 
@@ -2325,6 +2166,168 @@ Locale: en-US
 
 
 ### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
+
+
+### [Rename-MgBetaDeviceManagementComanagedDeviceAssignment](Rename-MgBetaDeviceManagementComanagedDeviceAssignment.md)
+
+
+### [Rename-MgBetaDeviceManagementManagedDeviceAssignment](Rename-MgBetaDeviceManagementManagedDeviceAssignment.md)
+
+
+### [Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent.md)
+
+
+### [Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl](Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl.md)
+
+
+### [Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl](Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl.md)
+
+
+### [Request-MgBetaDeviceManagementComanagedDeviceRemoteAssistance](Request-MgBetaDeviceManagementComanagedDeviceRemoteAssistance.md)
+
+
+### [Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance](Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance.md)
+
+
+### [Request-MgBetaDeviceManagementMicrosoftTunnelSiteUpgrade](Request-MgBetaDeviceManagementMicrosoftTunnelSiteUpgrade.md)
+
+
+### [Reset-MgBetaDeviceManagementComanagedDevicePasscode](Reset-MgBetaDeviceManagementComanagedDevicePasscode.md)
+
+
+### [Reset-MgBetaDeviceManagementManagedDevicePasscode](Reset-MgBetaDeviceManagementManagedDevicePasscode.md)
+
+
+### [Restart-MgBetaDeviceManagementComanagedDeviceNow](Restart-MgBetaDeviceManagementComanagedDeviceNow.md)
+
+
+### [Restart-MgBetaDeviceManagementManagedDeviceNow](Restart-MgBetaDeviceManagementManagedDeviceNow.md)
+
+
+### [Restore-MgBetaDeviceManagementComanagedDevicePasscode](Restore-MgBetaDeviceManagementComanagedDevicePasscode.md)
+
+
+### [Restore-MgBetaDeviceManagementManagedDevicePasscode](Restore-MgBetaDeviceManagementManagedDevicePasscode.md)
+
+
+### [Revoke-MgBetaDeviceManagementComanagedDeviceAppleVppLicense](Revoke-MgBetaDeviceManagementComanagedDeviceAppleVppLicense.md)
+
+
+### [Revoke-MgBetaDeviceManagementManagedDeviceAppleVppLicense](Revoke-MgBetaDeviceManagementManagedDeviceAppleVppLicense.md)
+
+
+### [Send-MgBetaDeviceManagementComanagedDeviceCustomNotificationToCompanyPortal](Send-MgBetaDeviceManagementComanagedDeviceCustomNotificationToCompanyPortal.md)
+
+
+### [Send-MgBetaDeviceManagementManagedDeviceCustomNotificationToCompanyPortal](Send-MgBetaDeviceManagementManagedDeviceCustomNotificationToCompanyPortal.md)
+
+
+### [Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage.md)
+
+
+### [Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOwnerFullyManagedEnrollmentState](Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOwnerFullyManagedEnrollmentState.md)
+
+
+### [Set-MgBetaDeviceManagementComanagedDeviceCategoryByRef](Set-MgBetaDeviceManagementComanagedDeviceCategoryByRef.md)
+
+
+### [Set-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus](Set-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus.md)
+
+
+### [Set-MgBetaDeviceManagementComanagedDeviceName](Set-MgBetaDeviceManagementComanagedDeviceName.md)
+
+
+### [Set-MgBetaDeviceManagementCompliancePolicy](Set-MgBetaDeviceManagementCompliancePolicy.md)
+
+
+### [Set-MgBetaDeviceManagementCompliancePolicyScheduledAction](Set-MgBetaDeviceManagementCompliancePolicyScheduledAction.md)
+
+
+### [Set-MgBetaDeviceManagementConfigurationPolicy](Set-MgBetaDeviceManagementConfigurationPolicy.md)
+
+
+### [Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget](Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget.md)
+
+
+### [Set-MgBetaDeviceManagementDeviceCompliancePolicy](Set-MgBetaDeviceManagementDeviceCompliancePolicy.md)
+
+
+### [Set-MgBetaDeviceManagementDeviceCompliancePolicyScheduledRetireState](Set-MgBetaDeviceManagementDeviceCompliancePolicyScheduledRetireState.md)
+
+
+### [Set-MgBetaDeviceManagementDeviceConfiguration](Set-MgBetaDeviceManagementDeviceConfiguration.md)
+
+
+### [Set-MgBetaDeviceManagementDeviceHealthScript](Set-MgBetaDeviceManagementDeviceHealthScript.md)
+
+
+### [Set-MgBetaDeviceManagementDeviceShellScript](Set-MgBetaDeviceManagementDeviceShellScript.md)
+
+
+### [Set-MgBetaDeviceManagementEmbeddedSimActivationCodePool](Set-MgBetaDeviceManagementEmbeddedSimActivationCodePool.md)
+
+
+### [Set-MgBetaDeviceManagementGroupPolicyConfiguration](Set-MgBetaDeviceManagementGroupPolicyConfiguration.md)
+
+
+### [Set-MgBetaDeviceManagementIntent](Set-MgBetaDeviceManagementIntent.md)
+
+
+### [Set-MgBetaDeviceManagementManagedDeviceCategoryByRef](Set-MgBetaDeviceManagementManagedDeviceCategoryByRef.md)
+
+
+### [Set-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus](Set-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus.md)
+
+
+### [Set-MgBetaDeviceManagementManagedDeviceName](Set-MgBetaDeviceManagementManagedDeviceName.md)
+
+
+### [Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent.md)
+
+
+### [Set-MgBetaDeviceManagementResourceAccessProfile](Set-MgBetaDeviceManagementResourceAccessProfile.md)
+
+
+### [Set-MgBetaDeviceManagementScript](Set-MgBetaDeviceManagementScript.md)
+
+
+### [Set-MgBetaDeviceManagementWindowsQualityUpdateProfile](Set-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
+
+
+### [Skip-MgBetaDeviceManagementComanagedDeviceActivationLock](Skip-MgBetaDeviceManagementComanagedDeviceActivationLock.md)
+
+
+### [Skip-MgBetaDeviceManagementManagedDeviceActivationLock](Skip-MgBetaDeviceManagementManagedDeviceActivationLock.md)
+
+
+### [Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction](Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction.md)
+
+
+### [Start-MgBetaDeviceManagementManagedDeviceConfigurationManagerAction](Start-MgBetaDeviceManagementManagedDeviceConfigurationManagerAction.md)
+
+
+### [Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh](Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh.md)
+
+
+### [Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh](Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh.md)
+
+
+### [Sync-MgBetaDeviceManagementAndroidForWorkSettingApp](Sync-MgBetaDeviceManagementAndroidForWorkSettingApp.md)
+
+
+### [Sync-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](Sync-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp.md)
+
+
+### [Sync-MgBetaDeviceManagementComanagedDevice](Sync-MgBetaDeviceManagementComanagedDevice.md)
+
+
+### [Sync-MgBetaDeviceManagementManagedDevice](Sync-MgBetaDeviceManagementManagedDevice.md)
+
+
+### [Test-MgBetaDeviceManagementAssignmentFilter](Test-MgBetaDeviceManagementAssignmentFilter.md)
+
+
+### [Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript](Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript.md)
 
 
 ### [Update-MgBetaAdminEdge](Update-MgBetaAdminEdge.md)
@@ -2399,6 +2402,9 @@ Locale: en-US
 ### [Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
 
 
+### [Update-MgBetaDeviceManagementComanagedDeviceWindowsDeviceAccount](Update-MgBetaDeviceManagementComanagedDeviceWindowsDeviceAccount.md)
+
+
 ### [Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState](Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState.md)
 
 
@@ -2462,6 +2468,9 @@ Locale: en-US
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](Update-MgBetaDeviceManagementDeviceCompliancePolicyAssignment.md)
 
 
+### [Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummarization](Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummarization.md)
+
+
 ### [Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
 
 
@@ -2516,9 +2525,6 @@ Locale: en-US
 ### [Update-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](Update-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
 
 
-### [Update-MgBetaDeviceManagementDeviceConfigurationProfile](Update-MgBetaDeviceManagementDeviceConfigurationProfile.md)
-
-
 ### [Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
 
 
@@ -2535,6 +2541,9 @@ Locale: en-US
 
 
 ### [Update-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState](Update-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState.md)
+
+
+### [Update-MgBetaDeviceManagementDeviceHealthScriptGlobalScript](Update-MgBetaDeviceManagementDeviceHealthScriptGlobalScript.md)
 
 
 ### [Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary](Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary.md)
@@ -2573,9 +2582,6 @@ Locale: en-US
 ### [Update-MgBetaDeviceManagementGroupPolicyConfigurationAssignment](Update-MgBetaDeviceManagementGroupPolicyConfigurationAssignment.md)
 
 
-### [Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue](Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
-
-
 ### [Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Update-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
 
 
@@ -2601,9 +2607,6 @@ Locale: en-US
 
 
 ### [Update-MgBetaDeviceManagementIntentDeviceStateSummary](Update-MgBetaDeviceManagementIntentDeviceStateSummary.md)
-
-
-### [Update-MgBetaDeviceManagementIntentSetting](Update-MgBetaDeviceManagementIntentSetting.md)
 
 
 ### [Update-MgBetaDeviceManagementIntentUserState](Update-MgBetaDeviceManagementIntentUserState.md)
@@ -2655,6 +2658,9 @@ Locale: en-US
 
 
 ### [Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
+
+
+### [Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount.md)
 
 
 ### [Update-MgBetaDeviceManagementManagedDeviceWindowsOSImage](Update-MgBetaDeviceManagementManagedDeviceWindowsOSImage.md)
@@ -2769,144 +2775,6 @@ Locale: en-US
 
 
 ### [Update-MgBetaDeviceManagementTroubleshootingEvent](Update-MgBetaDeviceManagementTroubleshootingEvent.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticBaseline](Update-MgBetaDeviceManagementUserExperienceAnalyticBaseline.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticCategory](Update-MgBetaDeviceManagementUserExperienceAnalyticCategory.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue](Update-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess](Update-MgBetaDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore](Update-MgBetaDeviceManagementUserExperienceAnalyticModelScore.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Update-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticOverview](Update-MgBetaDeviceManagementUserExperienceAnalyticOverview.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection](Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](Update-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
-
-
-### [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance.md)
 
 
 ### [Update-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](Update-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary.md)

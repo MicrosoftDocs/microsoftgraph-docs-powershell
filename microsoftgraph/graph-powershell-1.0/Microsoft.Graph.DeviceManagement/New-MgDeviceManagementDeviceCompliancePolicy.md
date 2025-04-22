@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Create a new windowsPhone81CompliancePolicy object.
+Create a new androidCompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -39,7 +39,15 @@ New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDevi
 ```
 
 ## DESCRIPTION
-Create a new windowsPhone81CompliancePolicy object.
+Create a new androidCompliancePolicy object.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -49,21 +57,31 @@ Create a new windowsPhone81CompliancePolicy object.
 Import-Module Microsoft.Graph.DeviceManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windowsPhone81CompliancePolicy"
+	"@odata.type" = "#microsoft.graph.androidCompliancePolicy"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
-	passwordBlockSimple = $true
-	passwordExpirationDays = 
-	passwordMinimumLength = 
-	passwordMinutesOfInactivityBeforeLock = 
-	passwordMinimumCharacterSetCount = 
-	passwordRequiredType = "alphanumeric"
-	passwordPreviousPasswordBlockCount = 
 	passwordRequired = $true
+	passwordMinimumLength = 
+	passwordRequiredType = "alphabetic"
+	passwordMinutesOfInactivityBeforeLock = 
+	passwordExpirationDays = 
+	passwordPreviousPasswordBlockCount = 
+	securityPreventInstallAppsFromUnknownSources = $true
+	securityDisableUsbDebugging = $true
+	securityRequireVerifyApps = $true
+	deviceThreatProtectionEnabled = $true
+	deviceThreatProtectionRequiredSecurityLevel = "secured"
+	securityBlockJailbrokenDevices = $true
 	osMinimumVersion = "Os Minimum Version value"
 	osMaximumVersion = "Os Maximum Version value"
+	minAndroidSecurityPatchLevel = "Min Android Security Patch Level value"
 	storageRequireEncryption = $true
+	securityRequireSafetyNetAttestationBasicIntegrity = $true
+	securityRequireSafetyNetAttestationCertifiedDevice = $true
+	securityRequireGooglePlayServices = $true
+	securityRequireUpToDateSecurityProviders = $true
+	securityRequireCompanyPortalAppIntegrity = $true
 }
 
 New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter $params
@@ -569,7 +587,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsphone81compliancepolicy-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsphone81compliancepolicy-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-androidcompliancepolicy-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidcompliancepolicy-create?view=graph-rest-1.0)
 
 
 

@@ -43,7 +43,7 @@ If this happens, the application will need to acquire a new refresh token by mak
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
+| Delegated (work or school account) | User.RevokeSessions.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.RevokeSessions.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
 
