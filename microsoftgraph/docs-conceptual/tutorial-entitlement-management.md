@@ -3,7 +3,7 @@ title: "Manage access to resources in Microsoft Entra entitlement management usi
 description: "Learn how to manage access to resources in Microsoft Entra entitlement management using Microsoft Graph PowerShell."
 
 ms.topic: tutorial
-ms.date: 03/05/2024
+ms.date: 04/23/2025
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
@@ -15,7 +15,7 @@ author: msewaweru
 
 Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it's no longer needed. [Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph PowerShell enables you to manage this type of access.
 
-In this tutorial, you'll create a package of resources for a marketing campaign that internal users can use for self-service requests. Requests don't require approval and users' access expires after 30 days. Here, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
+In this tutorial, you create a package of resources for a marketing campaign that internal users can use for self-service requests. Requests don't require approval and users' access expires after 30 days. Here, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
 ## Prerequisites
 
@@ -35,11 +35,11 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 ## Step 1: Create a user account and a group
 
-In this step, you'll create a group named **Marketing resources** in the directory that is the target resource for entitlement management. You'll also create a user account that is set up as an internal requestor.
+In this step, you create a group named **Marketing resources** in the directory that is the target resource for entitlement management. You also create a user account that is set up as an internal requestor.
 
 ### Create a user account
 
-Create a user account that you'll use later to request access to the resources in the access package.
+Create a user account that you use later to request access to the resources in the access package.
 
 When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the value of the returned `Id` property to use later.
 
@@ -144,7 +144,7 @@ The request state indicates the outcome of whether the service was able to add t
 
 ### Get catalog resources
 
-In later steps, you'll need the **Id** that was assigned to the group resource in the catalog. This identifier represents the group as a resource in the catalog and is different from the group identifier itself in Microsoft Graph PowerShell. To get the resource, provide the **Id** of the catalog and filter by the display name of the group.
+In later steps, you need the **Id** that was assigned to the group resource in the catalog. This identifier represents the group as a resource in the catalog and is different from the group identifier itself in Microsoft Graph PowerShell. To get the resource, provide the **Id** of the catalog and filter by the display name of the group.
 
 ```powershell
 Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '88d3e491-5247-4209-9b56-c4c95d9694e9' -Filter "DisplayName eq 'Marketing resources'" | Format-List
@@ -170,7 +170,7 @@ AdditionalProperties             : {}
 
 ### Get resource roles
 
-The access package assigns users to the roles of a resource. The typical role of a group used in an access package is the member role. You'll need the member role when you add a resource role to the access package.
+The access package assigns users to the roles of a resource. The typical role of a group used in an access package is the member role. You need the member role when you add a resource role to the access package.
 
 In this command, use the **Id** of the catalog and the **Id** of the group resource you recorded in the previous step to get the **OriginId** of the member resource role.
 
@@ -188,7 +188,7 @@ If successful, a single record is returned which represents the member role of t
 
 ### Create the access package
 
-At this point, you have a catalog with a group resource, and you know that you'll use the resource role of group member in the access package. The next step is to create the access package. After creating the access package, you can add the resource role to it and create a policy for how users can request access to that resource role. You use the **Id** of the catalog that you recorded earlier to create the access package. Record the **Id** of the access package to use later. In this step, you create a **Marketing Campaign** access package in the General catalog.
+At this point, you have a catalog with a group resource, and you'll use the resource role of group member in the access package. The next step is to create the access package. After creating the access package, you can add the resource role to it and create a policy for how users can request access to that resource role. You use the **Id** of the catalog that you recorded earlier to create the access package. Record the **Id** of the access package to use later. In this step, you create a **Marketing Campaign** access package in the General catalog.
 
 ```powershell
 New-MgBetaEntitlementManagementAccessPackage -CatalogId '88d3e491-5247-4209-9b56-c4c95d9694e9'  -DisplayName 'Marketing Campaign'| 
