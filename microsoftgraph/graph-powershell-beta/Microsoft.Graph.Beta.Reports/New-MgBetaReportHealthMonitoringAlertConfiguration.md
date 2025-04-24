@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalertconfiguration
@@ -201,23 +201,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphHealthMonitoringAlertConfiguration\>: alertConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphHealthMonitoringAlertConfiguration>`: alertConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[EmailNotificationConfigurations \<IMicrosoftGraphHealthMonitoringEmailNotificationConfiguration\[\]\>\]: Defines the recipients of email notifications for an alert type.
+  - `[EmailNotificationConfigurations <IMicrosoftGraphHealthMonitoringEmailNotificationConfiguration- `[]`>]`: Defines the recipients of email notifications for an alert type.
 Currently, only one email notification configuration is supported for an alert configuration, meaning only one group can receive notifications for an alert type.
-    \[GroupId \<String\>\]: The identifier of the group to send an email to.
+    - `[GroupId <String>]`: The identifier of the group to send an email to.
 All group types with configured email addresses are supported.
-    \[IsEnabled \<Boolean?\>\]: Indicates whether email notifications are enabled on the alert type.
+    - `[IsEnabled <Boolean?>]`: Indicates whether email notifications are enabled on the alert type.
 
-EMAILNOTIFICATIONCONFIGURATIONS \<IMicrosoftGraphHealthMonitoringEmailNotificationConfiguration\[\]\>: Defines the recipients of email notifications for an alert type.
+EMAILNOTIFICATIONCONFIGURATIONS `<IMicrosoftGraphHealthMonitoringEmailNotificationConfiguration- `[]`>`: Defines the recipients of email notifications for an alert type.
 Currently, only one email notification configuration is supported for an alert configuration, meaning only one group can receive notifications for an alert type.
-  \[GroupId \<String\>\]: The identifier of the group to send an email to.
+  - `[GroupId <String>]`: The identifier of the group to send an email to.
 All group types with configured email addresses are supported.
-  \[IsEnabled \<Boolean?\>\]: Indicates whether email notifications are enabled on the alert type.
+  - `[IsEnabled <Boolean?>]`: Indicates whether email notifications are enabled on the alert type.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalertconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalertconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

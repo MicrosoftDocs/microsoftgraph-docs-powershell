@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenoteresource
@@ -291,30 +291,52 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphOnenoteResource\>: onenoteResource
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Self \<String\>\]: The endpoint where you can get details about the page.
+BODYPARAMETER `<IMicrosoftGraphOnenoteResource>`: onenoteResource
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Self <String>]`: The endpoint where you can get details about the page.
 Read-only.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<Byte\[\]\>\]: The content stream
-  \[ContentUrl \<String\>\]: The URL for downloading the content
+  - `[Content <Byte- `[]`>]`: The content stream
+  - `[ContentUrl <String>]`: The URL for downloading the content
 
-INPUTOBJECT \<INotesIdentity\>: Identity Parameter
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[Path \<String\>\]: Usage: path='{path}'
-  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
-  \[SectionGroupId1 \<String\>\]: The unique identifier of sectionGroup
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenoteresource)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

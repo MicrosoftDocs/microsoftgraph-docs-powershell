@@ -827,3 +827,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaReportUserInsightMonthlyMfaRegisteredUser](Update-MgBetaReportUserInsightMonthlyMfaRegisteredUser.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
