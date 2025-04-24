@@ -40,6 +40,14 @@ Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage -InputO
 ## DESCRIPTION
 Read the properties and relationships of a conditionalAccessPolicyCoverage object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

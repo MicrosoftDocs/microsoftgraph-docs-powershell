@@ -32,6 +32,14 @@ Remove-MgBetaChat -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHe
 Soft-delete a chat.
 When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ManageDeletion.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ManageDeletion.Chat, Chat.ManageDeletion.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

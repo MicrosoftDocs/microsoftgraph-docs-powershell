@@ -39,6 +39,14 @@ Get-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a printer object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Printer.Read.All, PrinterShare.ReadWrite.All, PrinterShare.ReadBasic.All, PrinterShare.Read.All, Printer.ReadWrite.All, Printer.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Printer.Read.All, Printer.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

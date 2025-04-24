@@ -39,6 +39,14 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get a group's conversation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group-Conversation.Read.All, Group.ReadWrite.All, Group.Read.All, Group-Conversation.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group-Conversation.Read.All, Group.ReadWrite.All, Group.Read.All, Group-Conversation.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,14 @@ Remove-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration
 ## DESCRIPTION
 Delete navigation property mutualTlsOauthConfigurations for directory
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MutualTlsOauthConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MutualTlsOauthConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

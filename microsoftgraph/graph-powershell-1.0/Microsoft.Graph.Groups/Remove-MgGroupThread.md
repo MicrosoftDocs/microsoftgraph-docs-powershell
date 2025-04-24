@@ -30,6 +30,14 @@ Remove-MgGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete conversationThread.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

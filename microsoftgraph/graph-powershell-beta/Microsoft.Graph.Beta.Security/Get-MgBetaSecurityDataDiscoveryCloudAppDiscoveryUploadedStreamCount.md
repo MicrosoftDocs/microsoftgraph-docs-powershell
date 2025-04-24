@@ -21,6 +21,14 @@ Get-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStreamCount [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CloudApp-Discovery.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudApp-Discovery.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

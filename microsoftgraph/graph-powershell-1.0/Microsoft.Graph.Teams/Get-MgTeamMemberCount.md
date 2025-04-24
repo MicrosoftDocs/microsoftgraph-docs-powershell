@@ -29,6 +29,14 @@ Get-MgTeamMemberCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search 
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamMember.Read.Group, TeamMember.ReadWrite.All, TeamMember.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

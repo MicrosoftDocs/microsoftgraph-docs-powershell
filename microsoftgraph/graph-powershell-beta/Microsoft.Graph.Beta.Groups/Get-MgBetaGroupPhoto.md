@@ -52,6 +52,14 @@ Get-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 The group's profile photo.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, Group.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -39,6 +39,14 @@ Get-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Retrieve the properties and relationships of an ipNamedLocation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
