@@ -43,7 +43,12 @@ function Set-Help {
         }
         Import-Module $Module -Force -Global
     }
-    New-MarkdownHelp @generationParams
+    try{
+        New-MarkdownHelp @generationParams
+    } catch {
+        Write-Host "Error: $($_.Exception.Message)"
+    }
+    
 }
 
 function Start-GraphHelp {
@@ -131,7 +136,12 @@ function Get-FolderByProfile {
             $Command = $_.Command
             $CmdletDocsPath = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
             if (-not(Test-Path $CmdletDocsPath)) {
-                Set-Help -ModuleDocsPath $Destination -Command $Command -Module $Path
+                if (Get-Command -Name $Command -ErrorAction SilentlyContinue) {
+                    Set-Help -ModuleDocsPath $Destination -Command $Command -Module $Path
+                } else {
+                    Write-Warning "Cmdlet $Command is not available."
+                }
+                
             }
             Add-Content -Path $Destination\$TocFileName -Value "### [$Command]($Command.md)"
             Add-Content -Path $Destination\$TocFileName -Value ""
