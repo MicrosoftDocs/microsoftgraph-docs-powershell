@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventinstance
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # Invoke-MgAcceptGroupEventInstance
 
 ## SYNOPSIS
 Accept the specified event in a user calendar.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupEventInstance](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaAcceptGroupEventInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +46,18 @@ Invoke-MgAcceptGroupEventInstance -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Accept the specified event in a user calendar.
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -68,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -84,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Comment
-
+.
 
 ```yaml
 Type: String
@@ -220,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendResponse
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -282,51 +290,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Mj8GzzGroupsGroupIdEventsEventIdInstancesEventId1MicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Comment <String>]`: 
-  - `[SendResponse <Boolean?>]`: 
+BODYPARAMETER \<IPaths1Mj8GzzGroupsGroupIdEventsEventIdInstancesEventId1MicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Comment \<String\>\]: 
+  \[SendResponse \<Boolean?\>\]: 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[RoomId <String>]`: The unique identifier of room
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventinstance)
 
 [https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

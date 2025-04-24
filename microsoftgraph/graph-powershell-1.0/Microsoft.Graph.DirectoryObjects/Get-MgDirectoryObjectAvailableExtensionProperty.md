@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryObjectAvailableExtensionProperty
@@ -33,13 +32,17 @@ Get-MgDirectoryObjectAvailableExtensionProperty
 Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
 The following entities support extension properties:
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All,  |
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.DirectoryObjects
+```
+
+$params = @{
+}
+
+Get-MgDirectoryObjectAvailableExtensionProperty -BodyParameter $params
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSyncedFromOnPremises
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -181,36 +184,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsSyncedFromOnPremises <Boolean?>]`:
+BODYPARAMETER \<IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsSyncedFromOnPremises \<Boolean?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

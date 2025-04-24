@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarview
@@ -11,9 +11,6 @@ schema: 2.0.0
 The calendar view for the calendar.
 Navigation property.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarView?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,23 +35,14 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
-| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
-| Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
-
 ## EXAMPLES
-### Example 1: Using the Get-MgUserCalendarView Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
 # A UPN can also be used as -UserId.
-Get-MgUserCalendarView -UserId $userId -Startdatetime "2017-01-01T19:00:00-08:00" -Enddatetime "2017-01-07T19:00:00-08:00" 
+Get-MgUserCalendarView -UserId $userId -Startdatetime "2017-01-01T19:00:00-08:00" -Enddatetime "2017-01-07T19:00:00-08:00"
 ```
-This example shows how to use the Get-MgUserCalendarView Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -330,26 +318,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarview)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

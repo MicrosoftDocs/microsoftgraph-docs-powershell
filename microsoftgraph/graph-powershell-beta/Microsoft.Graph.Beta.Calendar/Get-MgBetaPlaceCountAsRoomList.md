@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplacecountasroomlist
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlaceCountAsRoomList](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceCountAsRoomList?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -23,13 +20,17 @@ Get-MgBetaPlaceCountAsRoomList [-Filter <String>] [-Search <String>] [-ResponseH
 ## DESCRIPTION
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.Read.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -122,27 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplacecountasroomlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplacecountasroomlist)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

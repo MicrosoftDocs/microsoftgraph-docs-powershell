@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # Get-MgBetaServicePrincipalDelta
@@ -11,9 +10,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,26 +24,14 @@ Get-MgBetaServicePrincipalDelta [-ExpandProperty <String[]>] [-Filter <String>] 
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Application.ReadWrite.All, Application.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All, Application.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Get-MgBetaServicePrincipalDelta
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -263,26 +247,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

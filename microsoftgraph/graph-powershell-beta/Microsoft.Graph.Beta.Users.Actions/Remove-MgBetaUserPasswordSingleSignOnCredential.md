@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserpasswordsinglesignoncredential
 schema: 2.0.0
-ms.subservice: entra-users
 ---
 
 # Remove-MgBetaUserPasswordSingleSignOnCredential
@@ -47,30 +46,18 @@ Remove-MgBetaUserPasswordSingleSignOnCredential -InputObject <IUsersActionsIdent
 ## DESCRIPTION
 Delete the password-based single sign-on credentials for a given user to a given service principal.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.AccessAsUser.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	id = "314ac440-129f-4cb3-ad61-24ef4a7de1d9"
 }
 
 Remove-MgBetaUserPasswordSingleSignOnCredential -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Remove-MgBetaUserPasswordSingleSignOnCredential Cmdlet.
-
 
 ## PARAMETERS
 
@@ -90,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -121,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-
+.
 
 ```yaml
 Type: String
@@ -259,38 +246,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponents7C4RwpRequestbodiesDeletepasswordsinglesignoncredentialsrequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+BODYPARAMETER \<IComponents7C4RwpRequestbodiesDeletepasswordsinglesignoncredentialsrequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserpasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserpasswordsinglesignoncredential)
 
 [https://learn.microsoft.com/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

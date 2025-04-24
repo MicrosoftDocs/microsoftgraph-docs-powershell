@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementcomanageddeviceaction
@@ -33,13 +33,17 @@ Invoke-MgBetaExecuteDeviceManagementComanagedDeviceAction
 ## DESCRIPTION
 Invoke action executeAction
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -74,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -90,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -CarrierUrl
-
+.
 
 ```yaml
 Type: String
@@ -105,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeprovisionReason
-
+.
 
 ```yaml
 Type: String
@@ -120,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceIds
-
+.
 
 ```yaml
 Type: String[]
@@ -135,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-
+.
 
 ```yaml
 Type: String
@@ -165,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeepEnrollmentData
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -180,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeepUserData
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -195,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationBody
-
+.
 
 ```yaml
 Type: String
@@ -210,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationTitle
-
+.
 
 ```yaml
 Type: String
@@ -225,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationalUnitPath
-
+.
 
 ```yaml
 Type: String
@@ -240,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersistEsimDataPlan
-
+.
 
 ```yaml
 Type: SwitchParameter
@@ -331,44 +335,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths5Wfb68DevicemanagementComanageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ActionName <ManagedDeviceRemoteAction?>]`: managedDeviceRemoteAction
-  - `[CarrierUrl <String>]`: 
-  - `[DeprovisionReason <String>]`: 
-  - `[DeviceIds <String- `[]`>]`: 
-  - `[DeviceName <String>]`: 
-  - `[KeepEnrollmentData <Boolean?>]`: 
-  - `[KeepUserData <Boolean?>]`: 
-  - `[NotificationBody <String>]`: 
-  - `[NotificationTitle <String>]`: 
-  - `[OrganizationalUnitPath <String>]`: 
-  - `[PersistEsimDataPlan <Boolean?>]`:
+BODYPARAMETER \<IPaths5Wfb68DevicemanagementComanageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ActionName \<ManagedDeviceRemoteAction?\>\]: managedDeviceRemoteAction
+  \[CarrierUrl \<String\>\]: 
+  \[DeprovisionReason \<String\>\]: 
+  \[DeviceIds \<String\[\]\>\]: 
+  \[DeviceName \<String\>\]: 
+  \[KeepEnrollmentData \<Boolean?\>\]: 
+  \[KeepUserData \<Boolean?\>\]: 
+  \[NotificationBody \<String\>\]: 
+  \[NotificationTitle \<String\>\]: 
+  \[OrganizationalUnitPath \<String\>\]: 
+  \[PersistEsimDataPlan \<Boolean?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementcomanageddeviceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementcomanageddeviceaction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

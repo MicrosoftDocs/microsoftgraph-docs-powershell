@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser
 schema: 2.0.0
-ms.subservice: entra-users
 ---
 
 # Invoke-MgBetaLicenseUser
@@ -12,9 +11,6 @@ ms.subservice: entra-users
 Reprocess all group-based license assignments for the user.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgLicenseUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgLicenseUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,26 +31,14 @@ Reprocess all group-based license assignments for the user.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 Invoke-MgBetaLicenseUser -UserId $userId
-
-```
-This example shows how to use the Invoke-MgBetaLicenseUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -181,34 +165,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser)
 
 [https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

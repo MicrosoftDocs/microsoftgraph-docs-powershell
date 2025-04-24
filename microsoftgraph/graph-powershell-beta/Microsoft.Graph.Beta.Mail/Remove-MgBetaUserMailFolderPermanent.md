@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderpermanent
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # Remove-MgBetaUserMailFolderPermanent
@@ -11,9 +10,6 @@ ms.subservice: outlook
 ## SYNOPSIS
 Permanently delete a mail folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderPermanent](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderPermanent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,26 +31,14 @@ Remove-MgBetaUserMailFolderPermanent -InputObject <IMailIdentity> [-ResponseHead
 Permanently delete a mail folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
-| Application | Mail.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 Remove-MgBetaUserMailFolderPermanent -UserId $userId -MailFolderId $mailFolderId
-
-```
-This example shows how to use the Remove-MgBetaUserMailFolderPermanent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -211,44 +195,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MailFolderOperationId <String>]`: The unique identifier of mailFolderOperation
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderOperationId \<String\>\]: The unique identifier of mailFolderOperation
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserConfigurationId \<String\>\]: The unique identifier of userConfiguration
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderpermanent)
 
 [https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

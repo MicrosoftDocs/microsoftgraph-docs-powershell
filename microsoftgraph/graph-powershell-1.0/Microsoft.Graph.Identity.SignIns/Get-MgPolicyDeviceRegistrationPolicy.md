@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get deviceRegistrationPolicy from policies
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyDeviceRegistrationPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,13 +21,17 @@ Get-MgPolicyDeviceRegistrationPolicy [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get deviceRegistrationPolicy from policies
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration, Policy.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -123,27 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
