@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Update the properties of an educationuser object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

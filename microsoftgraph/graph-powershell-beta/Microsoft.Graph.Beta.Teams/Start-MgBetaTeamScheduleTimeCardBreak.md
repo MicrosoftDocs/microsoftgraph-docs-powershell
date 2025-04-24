@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Start a break in a specific timeCard.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamScheduleTimeCardBreak?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### StartExpanded (Default)

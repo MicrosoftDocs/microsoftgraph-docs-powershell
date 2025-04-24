@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get onenote from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenote](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

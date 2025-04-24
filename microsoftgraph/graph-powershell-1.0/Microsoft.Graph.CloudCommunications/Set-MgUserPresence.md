@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Set the state of a user's presence session as an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

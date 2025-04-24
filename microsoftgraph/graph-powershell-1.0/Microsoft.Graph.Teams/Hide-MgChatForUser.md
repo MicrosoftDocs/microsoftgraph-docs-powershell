@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Hide a chat for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Hide-MgBetaChatForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Hide-MgBetaChatForUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### HideExpanded (Default)
