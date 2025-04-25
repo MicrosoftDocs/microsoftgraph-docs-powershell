@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebCategories
-.
+
 To construct, see NOTES section for WEBCATEGORIES properties and create a hash table.
 
 ```yaml

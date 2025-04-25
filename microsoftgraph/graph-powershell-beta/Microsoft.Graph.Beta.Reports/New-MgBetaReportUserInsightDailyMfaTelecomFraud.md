@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaptchaFailureCount
-.
+
 
 ```yaml
 Type: Int64
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaptchaNotTriggeredUserCount
-.
+
 
 ```yaml
 Type: Int64
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaptchaShownUserCount
-.
+
 
 ```yaml
 Type: Int64
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaptchaSuccessCount
-.
+
 
 ```yaml
 Type: Int64
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -FactDate
-.
+
 
 ```yaml
 Type: DateTime
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -TelecomBlockedUserCount
-.
+
 
 ```yaml
 Type: Int64

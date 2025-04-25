@@ -36,7 +36,7 @@ Create new navigation property to domainSecurityProfiles for security
 ## PARAMETERS
 
 ### -ActivityGroupNames
-.
+
 
 ```yaml
 Type: String[]
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-.
+
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-.
+
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -CountHits
-.
+
 
 ```yaml
 Type: Int32
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -CountInOrg
-.
+
 
 ```yaml
 Type: Int32
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainCategories
-.
+
 To construct, see NOTES section for DOMAINCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainRegisteredDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirstSeenDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastSeenDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+
 
 ```yaml
 Type: String
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-.
+
 
 ```yaml
 Type: String
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-.
+
 
 ```yaml
 Type: String[]

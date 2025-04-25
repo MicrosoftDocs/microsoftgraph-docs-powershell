@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Extension
-.
+
 
 ```yaml
 Type: String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -MediaType
-.
+
 
 ```yaml
 Type: String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+
 
 ```yaml
 Type: String
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -SenderOrAuthors
-.
+
 
 ```yaml
 Type: String[]
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -Size
-.
+
 
 ```yaml
 Type: Int64
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubjectTitle
-.
+
 
 ```yaml
 Type: String

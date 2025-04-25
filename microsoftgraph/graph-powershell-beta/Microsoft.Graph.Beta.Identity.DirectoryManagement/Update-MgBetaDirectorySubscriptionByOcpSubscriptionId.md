@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -OcpSubscriptionId1
-.
+
 
 ```yaml
 Type: String

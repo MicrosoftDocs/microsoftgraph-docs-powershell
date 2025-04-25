@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -AnalyzedEmails
-.
+
 To construct, see NOTES section for ANALYZEDEMAILS properties and create a hash table.
 
 ```yaml
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-.
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemediateSendersCopy
-.
+
 
 ```yaml
 Type: SwitchParameter

@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operations
-.
+
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrinterShares
-.
+
 To construct, see NOTES section for PRINTERSHARES properties and create a hash table.
 
 ```yaml
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaskDefinitions
-.
+
 To construct, see NOTES section for TASKDEFINITIONS properties and create a hash table.
 
 ```yaml

@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSVersionNumber
-.
+
 
 ```yaml
 Type: String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeIds
-.
+
 
 ```yaml
 Type: String[]

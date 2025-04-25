@@ -284,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operations
-.
+
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -393,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserConfigurations
-.
+
 To construct, see NOTES section for USERCONFIGURATIONS properties and create a hash table.
 
 ```yaml

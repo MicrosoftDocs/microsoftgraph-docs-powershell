@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppProvisioningConfigurationGroupAssignments
-.
+
 To construct, see NOTES section for APPPROVISIONINGCONFIGURATIONGROUPASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -IOSLobAppProvisioningConfigAssignments
-.
+
 To construct, see NOTES section for IOSLOBAPPPROVISIONINGCONFIGASSIGNMENTS properties and create a hash table.
 
 ```yaml
