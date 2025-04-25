@@ -43,18 +43,6 @@ Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit
 ## DESCRIPTION
 The protection units (mailboxes) that are  protected under the Exchange protection policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -347,6 +335,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreexchangeprotectionpolicymailboxprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreexchangeprotectionpolicymailboxprotectionunit)
+
 
 
 

@@ -50,18 +50,6 @@ New-MgGroupOnenoteOperation -InputObject <INotesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to operations for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -380,6 +368,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenoteoperation)
+
 
 
 

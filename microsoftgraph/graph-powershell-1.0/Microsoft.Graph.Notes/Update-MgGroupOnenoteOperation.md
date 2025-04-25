@@ -50,18 +50,6 @@ Update-MgGroupOnenoteOperation -InputObject <INotesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property operations in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -395,6 +383,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenoteoperation)
+
 
 
 

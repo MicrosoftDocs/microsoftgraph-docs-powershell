@@ -32,18 +32,6 @@ Set-MgGroupSiteOnenoteResourceContent -InputObject <ISitesIdentity> [-Data <Stre
 ## DESCRIPTION
 The content stream
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -296,6 +284,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenoteresourcecontent)
+
 
 
 

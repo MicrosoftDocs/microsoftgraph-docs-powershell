@@ -52,18 +52,6 @@ Update-MgBetaTeamPrimaryChannelPlannerPlanTaskDetail -InputObject <ITeamsIdentit
 ## DESCRIPTION
 Update the navigation property details in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -511,6 +499,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplantaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplantaskdetail)
+
 
 
 
