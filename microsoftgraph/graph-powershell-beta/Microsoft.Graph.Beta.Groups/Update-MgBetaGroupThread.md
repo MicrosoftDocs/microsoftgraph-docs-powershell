@@ -60,11 +60,11 @@ Update a thread object.
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
@@ -79,6 +79,10 @@ $params = @{
 }
 
 Update-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaGroupThread Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,13 +39,17 @@ Deletes an itemAddress object.
 | Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 Remove-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileAddress Cmdlet.
+
 
 ## PARAMETERS
 

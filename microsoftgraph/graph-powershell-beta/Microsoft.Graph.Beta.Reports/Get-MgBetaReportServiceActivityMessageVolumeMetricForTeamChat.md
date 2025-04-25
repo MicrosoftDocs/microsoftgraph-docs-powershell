@@ -33,13 +33,17 @@ Get-MgBetaReportServiceActivityMessageVolumeMetricForTeamChat -InputObject <IRep
 Get the number of chat messages successfully sent and delivered in Teams.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportServiceActivityMessageVolumeMetricForTeamChat
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityMessageVolumeMetricForTeamChat Cmdlet.
+
 
 ## PARAMETERS
 

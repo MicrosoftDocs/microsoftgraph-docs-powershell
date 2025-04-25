@@ -26,13 +26,17 @@ Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfigu
 Get the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration
+
+```
+This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

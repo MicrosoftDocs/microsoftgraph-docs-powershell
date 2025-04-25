@@ -49,18 +49,6 @@ Copy-MgUserMailFolderChildFolder -InputObject <IMailIdentity>
 ## DESCRIPTION
 Copy a mailfolder and its contents to another mailfolder.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -282,6 +270,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolderchildfolder)
 
 [https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0)
+
 
 
 

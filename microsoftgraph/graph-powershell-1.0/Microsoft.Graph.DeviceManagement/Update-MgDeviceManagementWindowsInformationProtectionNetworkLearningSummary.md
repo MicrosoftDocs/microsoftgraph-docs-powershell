@@ -62,11 +62,11 @@ Update the properties of a windowsInformationProtectionNetworkLearningSummary ob
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary"
@@ -75,6 +75,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary -WindowsInformationProtectionNetworkLearningSummaryId $windowsInformationProtectionNetworkLearningSummaryId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary Cmdlet.
+
 
 ## PARAMETERS
 

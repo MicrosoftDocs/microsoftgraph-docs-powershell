@@ -32,18 +32,6 @@ Confirm-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-Response
 ## DESCRIPTION
 Confirm a specific timeCard.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -236,6 +224,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetagroupteamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetagroupteamscheduletimecard)
 
 [https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-beta)
+
 
 
 

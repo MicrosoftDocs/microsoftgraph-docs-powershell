@@ -29,18 +29,6 @@ Remove-MgBetaDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Delete navigation property featureRolloutPolicies for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -FeatureRolloutPolicyId
@@ -251,6 +239,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryfeaturerolloutpolicy)
+
 
 
 

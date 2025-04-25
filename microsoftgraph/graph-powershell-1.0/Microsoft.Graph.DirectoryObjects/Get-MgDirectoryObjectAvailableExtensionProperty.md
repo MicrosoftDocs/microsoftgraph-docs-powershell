@@ -41,18 +41,6 @@ The following entities support extension properties:
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-$params = @{
-}
-
-Get-MgDirectoryObjectAvailableExtensionProperty -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -202,6 +190,7 @@ BODYPARAMETER `<IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextension
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-1.0)
+
 
 
 

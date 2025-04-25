@@ -45,11 +45,11 @@ You may only update the values in an overridesPage, which is used to customize t
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	LocalizedStrings = @(
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Set-MgIdentityB2XUserFlowLanguageOverridePageContent -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId -UserFlowLanguagePageId $userFlowLanguagePageId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgIdentityB2XUserFlowLanguageOverridePageContent Cmdlet.
+
 
 ## PARAMETERS
 

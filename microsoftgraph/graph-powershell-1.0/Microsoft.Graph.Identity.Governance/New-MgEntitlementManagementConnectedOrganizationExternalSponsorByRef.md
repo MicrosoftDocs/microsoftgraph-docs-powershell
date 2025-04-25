@@ -60,17 +60,21 @@ The external sponsors are a set of users who can approve requests on behalf of o
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/users/{id}"
 }
 
 New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef Cmdlet.
+
 
 ## PARAMETERS
 

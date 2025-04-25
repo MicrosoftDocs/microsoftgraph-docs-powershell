@@ -64,11 +64,11 @@ Update the properties of an administrativeUnit object.
 | Application | AdministrativeUnit.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Executive Division"
@@ -78,6 +78,10 @@ $params = @{
 }
 
 Update-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDirectoryAdministrativeUnit Cmdlet.
+
 
 ## PARAMETERS
 

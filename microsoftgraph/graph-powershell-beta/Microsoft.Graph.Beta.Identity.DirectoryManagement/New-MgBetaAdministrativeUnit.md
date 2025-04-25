@@ -43,11 +43,11 @@ Create a new administrativeUnit.
 | Application | AdministrativeUnit.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create an administrative unit
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Seattle District Technical Schools"
@@ -59,10 +59,14 @@ $params = @{
 
 New-MgBetaAdministrativeUnit -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an administrative unit
+
+### Example 2: Create a restricted management administrative unit
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Executive Division"
@@ -71,6 +75,10 @@ $params = @{
 }
 
 New-MgBetaAdministrativeUnit -BodyParameter $params
+
+```
+This example will create a restricted management administrative unit
+
 
 ## PARAMETERS
 

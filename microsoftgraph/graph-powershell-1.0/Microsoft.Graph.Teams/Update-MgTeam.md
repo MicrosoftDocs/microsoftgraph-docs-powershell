@@ -78,11 +78,11 @@ Update the properties of the specified team.
 | Application | TeamSettings.ReadWrite.Group, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	memberSettings = @{
@@ -99,6 +99,10 @@ $params = @{
 }
 
 Update-MgTeam -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTeam Cmdlet.
+
 
 ## PARAMETERS
 

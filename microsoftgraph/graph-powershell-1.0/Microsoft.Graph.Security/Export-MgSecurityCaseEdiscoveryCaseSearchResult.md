@@ -65,18 +65,6 @@ For details, see Manage a collection estimate.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalOptions
@@ -481,6 +469,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchresult](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchresult)
 
 [https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-1.0)
+
 
 
 

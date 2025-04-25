@@ -64,11 +64,11 @@ This feature requires Teams Premium and attendees must have a valid United State
 | Application | VirtualAppointmentNotification.Send,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	attendees = @(
@@ -86,6 +86,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+```
+This example shows how to use the Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm Cmdlet.
+
 
 ## PARAMETERS
 

@@ -57,9 +57,8 @@ Invoke action checkMemberObjects
 | Application | Application.Read.All, Application.ReadWrite.All, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, User.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Confirm-MgUserMemberObject Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Ids = @(
@@ -72,6 +71,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Confirm-MgUserMemberObject -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Confirm-MgUserMemberObject Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

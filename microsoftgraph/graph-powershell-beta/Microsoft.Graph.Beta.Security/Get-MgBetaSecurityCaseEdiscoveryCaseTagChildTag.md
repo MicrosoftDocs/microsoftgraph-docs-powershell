@@ -43,16 +43,17 @@ Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag -InputObject <ISecurityIdentity>
 Returns the tags that are a child of a tag.
 
 ## EXAMPLES
+### Example 1: Retrieve child tags of a specific eDiscovery review tag
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewTagId $ediscoveryReviewTagId
+
 ```
-{{ Add code here }}
-```
+This example will retrieve child tags of a specific ediscovery review tag
+
 
 ## PARAMETERS
 

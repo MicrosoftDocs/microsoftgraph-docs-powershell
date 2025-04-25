@@ -58,11 +58,11 @@ Create a new audioRoutingGroup.
 | Application | Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	id = "oneToOne"
@@ -76,6 +76,10 @@ receivers = @(
 }
 
 New-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
+
 
 ## PARAMETERS
 

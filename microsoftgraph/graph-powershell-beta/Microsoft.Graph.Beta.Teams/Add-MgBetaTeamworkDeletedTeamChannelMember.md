@@ -52,18 +52,6 @@ Add-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -330,6 +318,7 @@ This property is settable only for members of a chat.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamworkdeletedteamchannelmember)
 
 [https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
+
 
 
 

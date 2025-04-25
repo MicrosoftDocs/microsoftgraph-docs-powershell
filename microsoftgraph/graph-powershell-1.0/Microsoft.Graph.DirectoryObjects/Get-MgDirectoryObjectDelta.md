@@ -36,36 +36,6 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-Get-MgDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')"
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-Get-MgDirectoryObjectDelta -Filter "id eq '87d349ed-44d7-43e1-9a83-5f2406dee5bd'"
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-Get-MgDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')" -Property "microsoft.graph.user/surname,microsoft.graph.group/displayName"
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-Get-MgDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')" -Property "microsoft.graph.user/surname,microsoft.graph.group/displayName"
-
 ## PARAMETERS
 
 ### -All
@@ -280,6 +250,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectdelta)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0)
+
 
 
 

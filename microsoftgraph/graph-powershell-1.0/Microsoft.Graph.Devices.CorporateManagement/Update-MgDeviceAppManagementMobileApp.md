@@ -65,21 +65,21 @@ Update the properties of a win32LobApp object.
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.androidLobApp"
+	"@odata.type" = "#microsoft.graph.win32LobApp"
 	displayName = "Display Name value"
 	description = "Description value"
 	publisher = "Publisher value"
 	largeIcon = @{
 		"@odata.type" = "microsoft.graph.mimeContent"
 		type = "Type value"
-		value = \[System.Text.Encoding\]::ASCII.GetBytes("dmFsdWU=")
+		value = [System.Text.Encoding]::ASCII.GetBytes("dmFsdWU=")
 	}
 	isFeatured = $true
 	privacyInformationUrl = "https://example.com/privacyInformationUrl/"
@@ -91,31 +91,56 @@ $params = @{
 	committedContentVersion = "Committed Content Version value"
 	fileName = "File Name value"
 	size = 
-	packageId = "Package Id value"
-	minimumSupportedOperatingSystem = @{
-		"@odata.type" = "microsoft.graph.androidMinimumOperatingSystem"
-		v4_0 = $true
-		v4_0_3 = $true
-		v4_1 = $true
-		v4_2 = $true
-		v4_3 = $true
-		v4_4 = $true
-		v5_0 = $true
-		v5_1 = $true
-		v6_0 = $true
-		v7_0 = $true
-		v7_1 = $true
-		v8_0 = $true
-		v8_1 = $true
-		v9_0 = $true
-		v10_0 = $true
-		v11_0 = $true
+	installCommandLine = "Install Command Line value"
+	uninstallCommandLine = "Uninstall Command Line value"
+	applicableArchitectures = "x86"
+	minimumFreeDiskSpaceInMB = 
+	minimumMemoryInMB = 
+	minimumNumberOfProcessors = 
+	minimumCpuSpeedInMHz = 
+	rules = @(
+		@{
+			"@odata.type" = "microsoft.graph.win32LobAppRegistryRule"
+			ruleType = "requirement"
+			check32BitOn64System = $true
+			keyPath = "Key Path value"
+			valueName = "Value Name value"
+			operationType = "exists"
+			operator = "equal"
+			comparisonValue = "Comparison Value value"
+		}
+	)
+	installExperience = @{
+		"@odata.type" = "microsoft.graph.win32LobAppInstallExperience"
+		runAsAccount = "user"
+		deviceRestartBehavior = "allow"
 	}
-	versionName = "Version Name value"
-	versionCode = "Version Code value"
+	returnCodes = @(
+		@{
+			"@odata.type" = "microsoft.graph.win32LobAppReturnCode"
+			returnCode = 
+			type = "success"
+		}
+	)
+	msiInformation = @{
+		"@odata.type" = "microsoft.graph.win32LobAppMsiInformation"
+		productCode = "Product Code value"
+		productVersion = "Product Version value"
+		upgradeCode = "Upgrade Code value"
+		requiresReboot = $true
+		packageType = "perUser"
+		productName = "Product Name value"
+		publisher = "Publisher value"
+	}
+	setupFilePath = "Setup File Path value"
+	minimumSupportedWindowsRelease = "Minimum Supported Windows Release value"
 }
 
 Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileApp Cmdlet.
+
 
 ## PARAMETERS
 
