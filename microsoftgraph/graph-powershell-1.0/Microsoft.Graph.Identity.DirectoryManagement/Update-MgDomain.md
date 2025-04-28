@@ -12,6 +12,9 @@ ms.subservice: entra-directory-management
 Update the properties of domain object.
 Only verified domains can be updated.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomain?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
