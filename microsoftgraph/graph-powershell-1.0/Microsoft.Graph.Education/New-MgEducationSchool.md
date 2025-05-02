@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fax
-.
+
 
 ```yaml
 Type: String

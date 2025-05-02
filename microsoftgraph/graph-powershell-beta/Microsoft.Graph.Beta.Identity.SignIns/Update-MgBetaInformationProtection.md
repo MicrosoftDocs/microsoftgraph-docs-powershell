@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataLossPreventionPolicies
-.
+
 To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
 
 ```yaml
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -SensitivityLabels
-.
+
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatAssessmentRequests
-.
+
 To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
