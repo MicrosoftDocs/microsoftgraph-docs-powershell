@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Get a list of newly created or updated educationCategory objects without performing a full read of the collection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentCategoryDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentCategoryDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

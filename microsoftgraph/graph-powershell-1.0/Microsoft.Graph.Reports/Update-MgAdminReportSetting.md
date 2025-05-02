@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Update tenant-level settings for Microsoft 365 reports.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminReportSetting](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaAdminReportSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

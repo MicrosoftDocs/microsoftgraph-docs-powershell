@@ -11,6 +11,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Provide credentials for establishing connectivity with the target system.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronizationSecret?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

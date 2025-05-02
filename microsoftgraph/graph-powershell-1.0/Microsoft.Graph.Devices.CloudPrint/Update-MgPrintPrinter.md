@@ -11,6 +11,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Update the properties of a printer object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

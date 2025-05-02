@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Create a new newsLinkPage in the site pages list of a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSitePage](/powershell/module/Microsoft.Graph.Sites/New-MgSitePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

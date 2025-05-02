@@ -11,6 +11,9 @@ ms.subservice: entra-groups
 ## SYNOPSIS
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupLifecyclePolicyByGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicyByGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

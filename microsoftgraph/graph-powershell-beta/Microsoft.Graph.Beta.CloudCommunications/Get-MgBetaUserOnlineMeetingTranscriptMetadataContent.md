@@ -14,6 +14,9 @@ This API supports the retrieval of call transcripts from private chat meetings a
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscriptMetadataContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
