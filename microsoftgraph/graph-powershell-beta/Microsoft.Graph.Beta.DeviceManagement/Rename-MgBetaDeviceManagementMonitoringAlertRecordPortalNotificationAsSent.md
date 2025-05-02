@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent
@@ -32,6 +32,18 @@ Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent
 Set the isPortalNotificationSent property of all portal notification resources associated with the specified alertRecord to true, marking them as sent.
 A maximum of 100 alertRecord IDs can be received at one time, and a maximum of 100 portal notification resources can be changed in the isPortalNotificationSent property status.
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -50,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRecordIds
-
+.
 
 ```yaml
 Type: String[]
@@ -65,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -187,34 +199,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths180CsoDevicemanagementMonitoringAlertrecordsMicrosoftGraphDevicemanagementChangealertrecordsportalnotificationassentPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AlertRecordIds <String- `[]`>]`:
+BODYPARAMETER \<IPaths180CsoDevicemanagementMonitoringAlertrecordsMicrosoftGraphDevicemanagementChangealertrecordsportalnotificationassentPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AlertRecordIds \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

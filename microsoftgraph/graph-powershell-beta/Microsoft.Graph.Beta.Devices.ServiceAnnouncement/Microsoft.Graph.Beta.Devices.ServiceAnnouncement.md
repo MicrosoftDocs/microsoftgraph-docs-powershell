@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-Module Guid: 4ea05ab9-9e4a-4c06-800c-fb9bbbd99252
+Module Guid: 70275820-fe86-4070-8fc2-b15ea07d37d7
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devices.serviceannouncement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -60,61 +60,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaUnarchiveServiceAnnouncementMessage](Invoke-MgBetaUnarchiveServiceAnnouncementMessage.md)
 
 ### [Invoke-MgBetaUnfavoriteServiceAnnouncementMessage](Invoke-MgBetaUnfavoriteServiceAnnouncementMessage.md)
-
-### [New-MgBetaServiceAnnouncementHealthOverview](New-MgBetaServiceAnnouncementHealthOverview.md)
-
-### [New-MgBetaServiceAnnouncementHealthOverviewIssue](New-MgBetaServiceAnnouncementHealthOverviewIssue.md)
-
-### [New-MgBetaServiceAnnouncementIssue](New-MgBetaServiceAnnouncementIssue.md)
-
-### [New-MgBetaServiceAnnouncementMessage](New-MgBetaServiceAnnouncementMessage.md)
-
-### [New-MgBetaServiceAnnouncementMessageAttachment](New-MgBetaServiceAnnouncementMessageAttachment.md)
-
-### [Remove-MgBetaServiceAnnouncementHealthOverview](Remove-MgBetaServiceAnnouncementHealthOverview.md)
-
-### [Remove-MgBetaServiceAnnouncementHealthOverviewIssue](Remove-MgBetaServiceAnnouncementHealthOverviewIssue.md)
-
-### [Remove-MgBetaServiceAnnouncementIssue](Remove-MgBetaServiceAnnouncementIssue.md)
-
-### [Remove-MgBetaServiceAnnouncementMessage](Remove-MgBetaServiceAnnouncementMessage.md)
-
-### [Remove-MgBetaServiceAnnouncementMessageAttachment](Remove-MgBetaServiceAnnouncementMessageAttachment.md)
-
-### [Remove-MgBetaServiceAnnouncementMessageAttachmentArchive](Remove-MgBetaServiceAnnouncementMessageAttachmentArchive.md)
-
-### [Remove-MgBetaServiceAnnouncementMessageAttachmentContent](Remove-MgBetaServiceAnnouncementMessageAttachmentContent.md)
-
-### [Set-MgBetaServiceAnnouncementMessageAttachmentArchive](Set-MgBetaServiceAnnouncementMessageAttachmentArchive.md)
-
-### [Set-MgBetaServiceAnnouncementMessageAttachmentContent](Set-MgBetaServiceAnnouncementMessageAttachmentContent.md)
-
-### [Update-MgBetaServiceAnnouncementHealthOverview](Update-MgBetaServiceAnnouncementHealthOverview.md)
-
-### [Update-MgBetaServiceAnnouncementHealthOverviewIssue](Update-MgBetaServiceAnnouncementHealthOverviewIssue.md)
-
-### [Update-MgBetaServiceAnnouncementIssue](Update-MgBetaServiceAnnouncementIssue.md)
-
-### [Update-MgBetaServiceAnnouncementMessage](Update-MgBetaServiceAnnouncementMessage.md)
-
-### [Update-MgBetaServiceAnnouncementMessageAttachment](Update-MgBetaServiceAnnouncementMessageAttachment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

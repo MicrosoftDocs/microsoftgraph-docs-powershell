@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensordeploymentaccesskey
 schema: 2.0.0
-ms.subservice: security
 ---
 
 # New-MgBetaSecurityIdentitySensorDeploymentAccessKey
 
 ## SYNOPSIS
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityIdentitySensorDeploymentAccessKey](/powershell/module/Microsoft.Graph.Security/New-MgSecurityIdentitySensorDeploymentAccessKey?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,26 +20,14 @@ New-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesSensors.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 New-MgBetaSecurityIdentitySensorDeploymentAccessKey
-
-```
-This example shows how to use the New-MgBetaSecurityIdentitySensorDeploymentAccessKey Cmdlet.
-
 
 ## PARAMETERS
 
@@ -139,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensordeploymentaccesskey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensordeploymentaccesskey)
 
 [https://learn.microsoft.com/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectdelta
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryObjectDelta
@@ -11,9 +10,6 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectDelta](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,13 +24,35 @@ Get-MgDirectoryObjectDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All,  |
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.DirectoryObjects
+```
+
+Get-MgDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')"
+
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.DirectoryObjects
+```
+
+Get-MgDirectoryObjectDelta -Filter "id eq '87d349ed-44d7-43e1-9a83-5f2406dee5bd'"
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.DirectoryObjects
+```
+
+Get-MgDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')" -Property "microsoft.graph.user/surname,microsoft.graph.group/displayName"
+
+### EXAMPLE 4
+```
+Import-Module Microsoft.Graph.DirectoryObjects
+```
+
+Get-MgDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')" -Property "microsoft.graph.user/surname,microsoft.graph.group/displayName"
 
 ## PARAMETERS
 
@@ -250,27 +268,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectdelta)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata
 schema: 2.0.0
-ms.subservice: entra-users
 ---
 
 # Export-MgUserPersonalData
@@ -12,9 +11,6 @@ ms.subservice: entra-users
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
 For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaUserPersonalData](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Export-MgBetaUserPersonalData?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,30 +49,18 @@ Submit a data policy operation request from a company administrator or an applic
 This data includes the user's data stored in OneDrive and their activity reports.
 For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Export.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.Export.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
 	storageLocation = "storageLocation-value"
 }
 
 Export-MgUserPersonalData -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Export-MgUserPersonalData Cmdlet.
-
 
 ## PARAMETERS
 
@@ -96,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -188,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageLocation
-
+.
 
 ```yaml
 Type: String
@@ -265,38 +249,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponents1Fpckw4RequestbodiesExportpersonaldatarequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[StorageLocation <String>]`: 
+BODYPARAMETER \<IComponents1Fpckw4RequestbodiesExportpersonaldatarequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[StorageLocation \<String\>\]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata)
 
 [https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

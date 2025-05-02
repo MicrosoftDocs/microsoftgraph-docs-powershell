@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
 Create a new windowsAppX object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,30 +33,22 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 ## DESCRIPTION
 Create a new windowsAppX object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CorporateManagement
+```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windowsAppX"
+	"@odata.type" = "#microsoft.graph.windowsMobileMSI"
 	displayName = "Display Name value"
 	description = "Description value"
 	publisher = "Publisher value"
 	largeIcon = @{
 		"@odata.type" = "microsoft.graph.mimeContent"
 		type = "Type value"
-		value = [System.Text.Encoding]::ASCII.GetBytes("dmFsdWU=")
+		value = \[System.Text.Encoding\]::ASCII.GetBytes("dmFsdWU=")
 	}
 	isFeatured = $true
 	privacyInformationUrl = "https://example.com/privacyInformationUrl/"
@@ -72,25 +60,13 @@ $params = @{
 	committedContentVersion = "Committed Content Version value"
 	fileName = "File Name value"
 	size = 
-	applicableArchitectures = "x86"
-	identityName = "Identity Name value"
-	identityPublisherHash = "Identity Publisher Hash value"
-	identityResourceIdentifier = "Identity Resource Identifier value"
-	isBundle = $true
-	minimumSupportedOperatingSystem = @{
-		"@odata.type" = "microsoft.graph.windowsMinimumOperatingSystem"
-		v8_0 = $true
-		v8_1 = $true
-		v10_0 = $true
-	}
-	identityVersion = "Identity Version value"
+	commandLine = "Command Line value"
+	productCode = "Product Code value"
+	productVersion = "Product Version value"
+	ignoreVersionDetection = $true
 }
 
 New-MgDeviceAppManagementMobileApp -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceAppManagementMobileApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -434,84 +410,62 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS `<IMicrosoftGraphMobileAppAssignment- `[]`>`: The list of group assignments for this mobile app.
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSIGNMENTS \<IMicrosoftGraphMobileAppAssignment\[\]\>: The list of group assignments for this mobile app.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
-  - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[Intent \<InstallIntent?\>\]: Possible values for the install intent chosen by the admin.
+  \[Settings \<IMicrosoftGraphMobileAppAssignmentSettings\>\]: Abstract class to contain properties used to assign a mobile app to a group.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphMobileApp>`: An abstract class containing the base properties for Intune mobile apps.
+BODYPARAMETER \<IMicrosoftGraphMobileApp\>: An abstract class containing the base properties for Intune mobile apps.
 Note: Listing mobile apps with \`$expand=assignments\` has been deprecated.
 Instead get the list of apps without the \`$expand\` query on \`assignments\`.
 Then, perform the expansion on individual applications.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphMobileAppAssignment- `[]`>]`: The list of group assignments for this mobile app.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Assignments \<IMicrosoftGraphMobileAppAssignment\[\]\>\]: The list of group assignments for this mobile app.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
-    - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <IMicrosoftGraphMobileAppCategory- `[]`>]`: The list of categories for this app.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Intent \<InstallIntent?\>\]: Possible values for the install intent chosen by the admin.
+    \[Settings \<IMicrosoftGraphMobileAppAssignmentSettings\>\]: Abstract class to contain properties used to assign a mobile app to a group.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Categories \<IMicrosoftGraphMobileAppCategory\[\]\>\]: The list of categories for this app.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: The name of the app category.
-  - `[Description <String>]`: The description of the app.
-  - `[Developer <String>]`: The developer of the app.
-  - `[DisplayName <String>]`: The admin provided or imported title of the app.
-  - `[InformationUrl <String>]`: The more information Url.
-  - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
-  - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Type <String>]`: Indicates the content mime type.
-    - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
-  - `[Notes <String>]`: Notes for the app.
-  - `[Owner <String>]`: The owner of the app.
-  - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
-  - `[Publisher <String>]`: The publisher of the app.
-  - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
+    \[DisplayName \<String\>\]: The name of the app category.
+  \[Description \<String\>\]: The description of the app.
+  \[Developer \<String\>\]: The developer of the app.
+  \[DisplayName \<String\>\]: The admin provided or imported title of the app.
+  \[InformationUrl \<String\>\]: The more information Url.
+  \[IsFeatured \<Boolean?\>\]: The value indicating whether the app is marked as featured by the admin.
+  \[LargeIcon \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Type \<String\>\]: Indicates the content mime type.
+    \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+  \[Notes \<String\>\]: Notes for the app.
+  \[Owner \<String\>\]: The owner of the app.
+  \[PrivacyInformationUrl \<String\>\]: The privacy statement Url.
+  \[Publisher \<String\>\]: The publisher of the app.
+  \[PublishingState \<MobileAppPublishingState?\>\]: Indicates the publishing state of an app.
 
-CATEGORIES `<IMicrosoftGraphMobileAppCategory- `[]`>`: The list of categories for this app.
-  - `[Id <String>]`: The unique identifier for an entity.
+CATEGORIES \<IMicrosoftGraphMobileAppCategory\[\]\>: The list of categories for this app.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The name of the app category.
+  \[DisplayName \<String\>\]: The name of the app category.
 
-LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String>]`: Indicates the content mime type.
-  - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
+LARGEICON \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mime content.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Type \<String\>\]: Indicates the content mime type.
+  \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
 
 [https://learn.microsoft.com/graph/api/intune-apps-windowsappx-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowsappx-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

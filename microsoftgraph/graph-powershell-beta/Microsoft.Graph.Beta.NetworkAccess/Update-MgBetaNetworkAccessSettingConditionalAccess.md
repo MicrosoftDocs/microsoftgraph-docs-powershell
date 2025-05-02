@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingconditionalaccess
 schema: 2.0.0
-ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessSettingConditionalAccess
@@ -30,20 +29,12 @@ Update-MgBetaNetworkAccessSettingConditionalAccess
 ## DESCRIPTION
 Update the conditional access settings to include the preservation of the original source IP address in network traffic for accurate identification and tracking, as well as the establishment of scalable network connectivity through the Global Secure Access services.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.NetworkAccess
+```
 
 $params = @{
 	"@odata.context" = "https://graph.microsoft.com/beta/networkAccess/settings/$metadata#conditionalAccess"
@@ -51,10 +42,6 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessSettingConditionalAccess -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaNetworkAccessSettingConditionalAccess Cmdlet.
-
 
 ## PARAMETERS
 
@@ -212,37 +199,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessConditionalAccessSettings>`: conditionalAccessSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessConditionalAccessSettings\>: conditionalAccessSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[SignalingStatus <String>]`: status
+  \[SignalingStatus \<String\>\]: status
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingconditionalaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingconditionalaccess)
 
 [https://learn.microsoft.com/graph/api/networkaccess-conditionalaccesssettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/networkaccess-conditionalaccesssettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

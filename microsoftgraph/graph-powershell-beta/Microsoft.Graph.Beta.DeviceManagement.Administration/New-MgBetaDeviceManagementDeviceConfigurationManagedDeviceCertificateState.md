@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate
@@ -35,13 +35,17 @@ New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -364,47 +368,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedAllDeviceCertificateState>`: managedAllDeviceCertificateState
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedAllDeviceCertificateState\>: managedAllDeviceCertificateState
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CertificateExpirationDateTime <DateTime?>]`: Certificate expiry date
-  - `[CertificateExtendedKeyUsages <String>]`: Enhanced Key Usage
-  - `[CertificateIssuanceDateTime <DateTime?>]`: Issuance date
-  - `[CertificateIssuerName <String>]`: Issuer
-  - `[CertificateKeyUsages <Int32?>]`: Key Usage
-  - `[CertificateRevokeStatus <CertificateRevocationStatus?>]`: Certificate Revocation Status.
-  - `[CertificateRevokeStatusLastChangeDateTime <DateTime?>]`: The time the revoke status was last changed
-  - `[CertificateSerialNumber <String>]`: Serial number
-  - `[CertificateSubjectName <String>]`: Certificate subject name
-  - `[CertificateThumbprint <String>]`: Thumbprint
-  - `[ManagedDeviceDisplayName <String>]`: Device display name
-  - `[UserPrincipalName <String>]`: User principal name
+  \[CertificateExpirationDateTime \<DateTime?\>\]: Certificate expiry date
+  \[CertificateExtendedKeyUsages \<String\>\]: Enhanced Key Usage
+  \[CertificateIssuanceDateTime \<DateTime?\>\]: Issuance date
+  \[CertificateIssuerName \<String\>\]: Issuer
+  \[CertificateKeyUsages \<Int32?\>\]: Key Usage
+  \[CertificateRevokeStatus \<CertificateRevocationStatus?\>\]: Certificate Revocation Status.
+  \[CertificateRevokeStatusLastChangeDateTime \<DateTime?\>\]: The time the revoke status was last changed
+  \[CertificateSerialNumber \<String\>\]: Serial number
+  \[CertificateSubjectName \<String\>\]: Certificate subject name
+  \[CertificateThumbprint \<String\>\]: Thumbprint
+  \[ManagedDeviceDisplayName \<String\>\]: Device display name
+  \[UserPrincipalName \<String\>\]: User principal name
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

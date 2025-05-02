@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgexperiencedevicemanagement
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaExperienceDeviceManagement?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,13 +20,17 @@ Invoke-MgExperienceDeviceManagement [-ResponseHeadersVariable <String>] [-Header
 ## DESCRIPTION
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -92,27 +93,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgexperiencedevicemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgexperiencedevicemanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
