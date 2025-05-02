@@ -30,18 +30,6 @@ Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnWebpartPosition
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -302,6 +290,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagetemplatecanvalayouthorizontalsectioncolumnwebpartpositionofwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagetemplatecanvalayouthorizontalsectioncolumnwebpartpositionofwebpart)
+
 
 
 

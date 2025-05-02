@@ -32,18 +32,6 @@ Remove-MgGroupEventPermanent -InputObject <ICalendarIdentity> [-ResponseHeadersV
 ## DESCRIPTION
 Invoke action permanentDelete
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EventId
@@ -216,6 +204,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventpermanent)
+
 
 
 

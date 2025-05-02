@@ -31,18 +31,6 @@ New-MgBetaReportUserInsightDailyMfaTelecomFraud -BodyParameter <IMicrosoftGraphM
 ## DESCRIPTION
 Create new navigation property to mfaTelecomFraud for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,6 +276,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightdailymfatelecomfraud](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightdailymfatelecomfraud)
+
 
 
 

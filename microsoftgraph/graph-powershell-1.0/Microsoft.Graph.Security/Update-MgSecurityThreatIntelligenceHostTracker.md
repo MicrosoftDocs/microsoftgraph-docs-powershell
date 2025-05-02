@@ -49,18 +49,6 @@ Update-MgSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hostTrackers in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -936,6 +924,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehosttracker](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehosttracker)
+
 
 
 

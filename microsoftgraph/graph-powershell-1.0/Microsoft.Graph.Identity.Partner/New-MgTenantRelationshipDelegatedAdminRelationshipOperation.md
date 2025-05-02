@@ -50,18 +50,6 @@ New-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IIdent
 ## DESCRIPTION
 Create new navigation property to operations for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -337,6 +325,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshipoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshipoperation)
+
 
 
 

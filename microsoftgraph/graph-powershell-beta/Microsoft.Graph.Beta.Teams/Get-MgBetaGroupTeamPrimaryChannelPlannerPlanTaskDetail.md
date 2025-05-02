@@ -34,18 +34,6 @@ Read-only.
 Nullable.
 More details about the task.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -250,6 +238,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelplannerplantaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelplannerplantaskdetail)
+
 
 
 

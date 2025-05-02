@@ -38,18 +38,6 @@ Get-MgBetaNetworkAccessLogRemoteNetwork -InputObject <INetworkAccessIdentity> [-
 ## DESCRIPTION
 A collection of remote network health events.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -319,6 +307,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogremotenetwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogremotenetwork)
+
 
 
 

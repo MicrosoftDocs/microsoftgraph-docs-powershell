@@ -58,18 +58,6 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkA
 Create a new mailboxRestoreArtifactsBulkAdditionRequest object associated with an exchangeRestoreSession.
 The following steps describe how to create and manage an exchangeRestoreSession with bulk artifact additions:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -587,6 +575,7 @@ PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresessionmailboxrestoreartifactbulkadditionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresessionmailboxrestoreartifactbulkadditionrequest)
 
 [https://learn.microsoft.com/graph/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests?view=graph-rest-beta)
+
 
 
 

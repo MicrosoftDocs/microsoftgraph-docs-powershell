@@ -54,18 +54,6 @@ Update-MgTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property timeCards in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -565,6 +553,7 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimecard)
+
 
 
 

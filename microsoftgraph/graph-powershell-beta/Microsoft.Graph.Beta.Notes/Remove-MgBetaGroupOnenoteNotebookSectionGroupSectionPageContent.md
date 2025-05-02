@@ -33,18 +33,6 @@ Remove-MgBetaGroupOnenoteNotebookSectionGroupSectionPageContent -InputObject <IN
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -277,6 +265,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenotenotebooksectiongroupsectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenotenotebooksectiongroupsectionpagecontent)
+
 
 
 

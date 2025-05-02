@@ -55,18 +55,6 @@ Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession -InputObject <IB
 ## DESCRIPTION
 Update the properties of a oneDriveForBusinessRestoreSession object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -543,6 +531,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreonedriveforbusinessrestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreonedriveforbusinessrestoresession)
 
 [https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-1.0)
+
 
 
 

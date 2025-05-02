@@ -40,18 +40,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallId
@@ -195,6 +183,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallparticipantcount](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallparticipantcount)
+
 
 
 

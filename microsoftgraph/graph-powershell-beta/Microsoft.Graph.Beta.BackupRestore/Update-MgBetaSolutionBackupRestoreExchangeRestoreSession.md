@@ -61,18 +61,6 @@ Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRe
 ## DESCRIPTION
 Update the properties of an exchangeRestoreSession.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -776,6 +764,7 @@ RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: rest
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreexchangerestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreexchangerestoresession)
 
 [https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-beta)
+
 
 
 

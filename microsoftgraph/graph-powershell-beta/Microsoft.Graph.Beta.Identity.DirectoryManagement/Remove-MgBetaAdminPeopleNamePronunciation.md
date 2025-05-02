@@ -21,18 +21,6 @@ Remove-MgBetaAdminPeopleNamePronunciation [-IfMatch <String>] [-ResponseHeadersV
 ## DESCRIPTION
 Delete navigation property namePronunciation for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -155,6 +143,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeoplenamepronunciation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeoplenamepronunciation)
+
 
 
 
