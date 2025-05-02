@@ -32,16 +32,17 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecuri
 Delete a userSource object associated with an ediscoveryHoldPolicy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -UserSourceId $userSourceId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet.
+
 
 ## PARAMETERS
 

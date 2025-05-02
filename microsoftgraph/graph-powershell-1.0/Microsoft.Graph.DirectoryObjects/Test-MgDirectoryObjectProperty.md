@@ -61,22 +61,6 @@ To learn more about configuring naming policies, see Configure naming policy.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-$params = @{
-	entityType = "Group"
-	displayName = "Myprefix_test_mysuffix"
-	mailNickname = "Myprefix_test_mysuffix"
-	onBehalfOfUserId = "onBehalfOfUserId-value"
-}
-
-Test-MgDirectoryObjectProperty -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -289,6 +273,7 @@ BODYPARAMETER `<IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPost
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/test-mgdirectoryobjectproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/test-mgdirectoryobjectproperty)
 
 [https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+
 
 
 

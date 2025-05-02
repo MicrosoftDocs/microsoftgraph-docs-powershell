@@ -45,11 +45,11 @@ Not yet documented
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 $params = @{
 	name = "Name value"
@@ -70,6 +70,10 @@ filter = "Filter value"
 }
 
 Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport Cmdlet.
+
 
 ## PARAMETERS
 

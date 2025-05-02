@@ -39,18 +39,6 @@ Get-MgBetaDeviceManagementTemplateMigratableToSetting -InputObject <IDeviceManag
 ## DESCRIPTION
 Collection of all settings this template has
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -438,6 +426,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtemplatemigratabletosetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtemplatemigratabletosetting)
+
+
 
 
 

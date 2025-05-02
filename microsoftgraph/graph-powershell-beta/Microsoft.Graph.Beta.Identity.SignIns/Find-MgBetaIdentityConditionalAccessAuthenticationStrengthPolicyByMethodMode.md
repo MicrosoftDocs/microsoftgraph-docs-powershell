@@ -34,18 +34,6 @@ Find-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyByMethodMode
 ## DESCRIPTION
 Get a list of the authenticationStrengthPolicy objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationMethodModes
@@ -348,6 +336,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetaidentityconditionalaccessauthenticationstrengthpolicybymethodmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetaidentityconditionalaccessauthenticationstrengthpolicybymethodmode)
 
 [https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-findbymethodmode?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-findbymethodmode?view=graph-rest-beta)
+
 
 
 

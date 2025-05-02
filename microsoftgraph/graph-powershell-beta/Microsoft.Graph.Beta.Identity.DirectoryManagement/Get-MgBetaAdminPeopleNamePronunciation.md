@@ -31,16 +31,17 @@ Read the properties and relationships of a namePronunciationSettings object.
 | Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaAdminPeopleNamePronunciation
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaAdminPeopleNamePronunciation Cmdlet.
+
 
 ## PARAMETERS
 

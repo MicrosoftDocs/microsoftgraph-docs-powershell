@@ -35,18 +35,6 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.ReadBasic.All, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.Read.All, Chat.Manage.Chat,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -230,6 +218,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage)
 
 [https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0)
+
 
 
 

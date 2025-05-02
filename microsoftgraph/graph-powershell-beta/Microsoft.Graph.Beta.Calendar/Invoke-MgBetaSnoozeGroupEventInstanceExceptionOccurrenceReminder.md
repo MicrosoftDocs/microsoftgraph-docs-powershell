@@ -49,18 +49,6 @@ Invoke-MgBetaSnoozeGroupEventInstanceExceptionOccurrenceReminder -InputObject <I
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -331,6 +319,7 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetasnoozegroupeventinstanceexceptionoccurrencereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetasnoozegroupeventinstanceexceptionoccurrencereminder)
 
 [https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-beta)
+
 
 
 

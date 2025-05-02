@@ -48,18 +48,6 @@ Update-MgChatMessageReplyHostedContent -InputObject <ITeamsIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property hostedContents in chats
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -350,6 +338,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmessagereplyhostedcontent)
+
 
 
 

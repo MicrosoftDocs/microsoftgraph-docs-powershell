@@ -39,16 +39,17 @@ Get-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity> [-Ex
 Returns a list of ediscoveryCaseMember objects associated to this case.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseMember Cmdlet.
+
 
 ## PARAMETERS
 

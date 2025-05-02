@@ -58,11 +58,11 @@ Update the properties of a schema for an externalConnection.
 | Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	baseType = "microsoft.graph.externalItem"
@@ -92,6 +92,10 @@ $params = @{
 }
 
 Update-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaExternalConnectionSchema Cmdlet.
+
 
 ## PARAMETERS
 

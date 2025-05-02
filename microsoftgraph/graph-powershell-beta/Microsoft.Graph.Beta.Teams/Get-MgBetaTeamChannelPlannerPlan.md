@@ -45,16 +45,17 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamChannelPlannerPlan -TeamId $teamId -ChannelId $channelId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaTeamChannelPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

@@ -35,16 +35,17 @@ Remove-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityId
 Delete a siteSource object associated with an ediscoveryCustodian.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -SiteSourceId $siteSourceId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseCustodianSiteSource Cmdlet.
+
 
 ## PARAMETERS
 

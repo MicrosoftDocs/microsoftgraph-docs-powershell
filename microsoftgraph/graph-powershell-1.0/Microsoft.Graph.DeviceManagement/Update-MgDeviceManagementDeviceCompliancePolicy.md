@@ -72,31 +72,40 @@ Update the properties of a windows10MobileCompliancePolicy object.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windowsPhone81CompliancePolicy"
+	"@odata.type" = "#microsoft.graph.windows10MobileCompliancePolicy"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
+	passwordRequired = $true
 	passwordBlockSimple = $true
-	passwordExpirationDays = 
 	passwordMinimumLength = 
-	passwordMinutesOfInactivityBeforeLock = 
 	passwordMinimumCharacterSetCount = 
 	passwordRequiredType = "alphanumeric"
 	passwordPreviousPasswordBlockCount = 
-	passwordRequired = $true
+	passwordExpirationDays = 
+	passwordMinutesOfInactivityBeforeLock = 
+	passwordRequireToUnlockFromIdle = $true
 	osMinimumVersion = "Os Minimum Version value"
 	osMaximumVersion = "Os Maximum Version value"
+	earlyLaunchAntiMalwareDriverEnabled = $true
+	bitLockerEnabled = $true
+	secureBootEnabled = $true
+	codeIntegrityEnabled = $true
 	storageRequireEncryption = $true
 }
 
 Update-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

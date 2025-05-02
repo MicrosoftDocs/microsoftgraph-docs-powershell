@@ -32,18 +32,6 @@ Remove-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property secureScores for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -294,6 +282,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritysecurescore)
+
 
 
 

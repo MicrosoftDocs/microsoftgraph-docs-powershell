@@ -41,13 +41,17 @@ Deletes a deviceCategory.
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementDeviceCategory -DeviceCategoryId $deviceCategoryId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCategory Cmdlet.
+
 
 ## PARAMETERS
 

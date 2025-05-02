@@ -55,118 +55,60 @@ Update the properties of a plannerTaskConfiguration object.
 | Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.BusinessScenario
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.plannerTaskConfiguration"
 	editPolicy = @{
 		rules = @(
 			@{
-				defaultRule = "block"
-				role = @{
+				userType = @{
 					"@odata.type" = "#microsoft.graph.plannerRelationshipBasedUserType"
-					roleKind = "relationship"
+					selectionKind = "relationship"
 					role = "defaultRules"
 				}
+				defaultRule = "block"
 				propertyRule = @{
-					percentComplete = @(
-					"allow"
-				)
-				ruleKind = "taskRule"
-				assignments = @{
+					ruleKind = "taskRule"
+					references = @{
+						defaultRules = @(
+						"allow"
+					)
+					overrides = @(
+					)
+				}
+				checkLists = @{
 					defaultRules = @(
-					"addSelf"
+					"allow"
 				)
 				overrides = @(
 				)
 			}
+			assignments = @{
+				defaultRules = @(
+				"allow"
+			)
+			overrides = @(
+				@{
+					name = "userCreated"
+					rules = @(
+					"allow"
+				)
+			}
+			@{
+				name = "applicationCreated"
+				rules = @(
+				"allow"
+			)
 		}
-	}
-	@{
-		defaultRule = "block"
-		role = @{
-			"@odata.type" = "#microsoft.graph.plannerRelationshipBasedUserType"
-			roleKind = "relationship"
-			role = "taskAssignees"
-		}
-		propertyRule = @{
-			startDate = @(
-			"allow"
-		)
-		dueDate = @(
-		"allow"
 	)
-	percentComplete = @(
-	"allow"
-)
-order = @(
-"allow"
-)
-ruleKind = "taskRule"
-references = @{
-defaultRules = @(
-"allow"
-)
-overrides = @(
-@{
-	name = "userCreated"
-	rules = @(
-	"allow"
-)
-}
-@{
-name = "applicationCreated"
-rules = @(
-"block"
-)
-}
-)
-}
-checkLists = @{
-defaultRules = @(
-"allow"
-)
-overrides = @(
-@{
-name = "userCreated"
-rules = @(
-"allow"
-)
-}
-@{
-name = "applicationCreated"
-rules = @(
-"check"
-)
-}
-)
-}
-assignments = @{
-defaultRules = @(
-"block"
-)
-overrides = @(
-@{
-name = "userCreated"
-rules = @(
-"removeSelf"
-)
-}
-@{
-name = "applicationCreated"
-rules = @(
-"check"
-)
-}
-)
 }
 appliedCategories = @{
-defaultRules = @(
-"allow"
+	defaultRules = @(
+	"allow"
 )
 overrides = @(
 )
@@ -178,6 +120,10 @@ overrides = @(
 }
 
 Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

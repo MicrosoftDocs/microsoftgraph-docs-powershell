@@ -45,11 +45,11 @@ You can create one of the following subtypes that are derived from authenticatio
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartListener"
@@ -71,6 +71,10 @@ $params = @{
 }
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
+
 
 ## PARAMETERS
 

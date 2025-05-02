@@ -40,16 +40,17 @@ Confirm a timeCard.
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Teams
+
+Confirm-MgTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Confirm-MgTeamScheduleTimeCard Cmdlet.
+
 
 ## PARAMETERS
 

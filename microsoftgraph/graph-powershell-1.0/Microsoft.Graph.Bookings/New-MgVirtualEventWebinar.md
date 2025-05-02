@@ -41,18 +41,6 @@ New-MgVirtualEventWebinar -BodyParameter <IMicrosoftGraphVirtualEventWebinar>
 ## DESCRIPTION
 Create a new virtualEventWebinar object in draft mode.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -949,6 +937,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinar)
 
 [https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-1.0)
+
 
 
 
