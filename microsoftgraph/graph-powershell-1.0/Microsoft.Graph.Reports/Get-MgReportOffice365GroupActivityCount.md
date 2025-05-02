@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitycount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOffice365GroupActivityCount

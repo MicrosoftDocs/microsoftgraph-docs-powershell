@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteaminstalledapp
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgTeamInstalledApp
