@@ -30,6 +30,14 @@ Remove-MgUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySign
 ## DESCRIPTION
 Delete a users's temporaryAccessPassAuthenticationMethod object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

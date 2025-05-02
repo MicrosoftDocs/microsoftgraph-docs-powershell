@@ -42,6 +42,14 @@ Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCerti
 ## DESCRIPTION
 Read the properties and relationships of a certificateAuthorityDetail object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PublicKeyInfrastructure.Read.All, PublicKeyInfrastructure.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PublicKeyInfrastructure.Read.All, PublicKeyInfrastructure.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

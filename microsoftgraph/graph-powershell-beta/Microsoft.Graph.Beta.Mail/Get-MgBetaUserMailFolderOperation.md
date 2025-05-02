@@ -37,6 +37,14 @@ Get-MgBetaUserMailFolderOperation -InputObject <IMailIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get operations from users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Read,  |
+| Delegated (personal Microsoft account) | Mail.Read,  |
+| Application | Mail.Read,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

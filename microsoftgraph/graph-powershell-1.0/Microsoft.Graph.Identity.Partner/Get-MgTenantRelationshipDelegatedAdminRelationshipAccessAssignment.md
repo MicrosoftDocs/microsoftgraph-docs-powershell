@@ -40,6 +40,14 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObject 
 ## DESCRIPTION
 Read the properties of a delegatedAdminAccessAssignment object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

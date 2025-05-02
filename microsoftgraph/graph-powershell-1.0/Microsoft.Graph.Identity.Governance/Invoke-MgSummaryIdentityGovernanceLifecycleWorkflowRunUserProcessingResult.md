@@ -29,6 +29,14 @@ Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult
 ## DESCRIPTION
 Invoke function summary
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

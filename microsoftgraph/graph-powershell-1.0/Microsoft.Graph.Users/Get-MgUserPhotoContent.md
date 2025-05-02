@@ -42,6 +42,14 @@ Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-Respons
 The user's profile photo.
 Read-only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read, User.ReadBasic.All, ProfilePhoto.ReadWrite.All, ProfilePhoto.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ProfilePhoto.Read.All, User.ReadBasic.All, User.Read.All, ProfilePhoto.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

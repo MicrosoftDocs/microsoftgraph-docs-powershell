@@ -50,6 +50,14 @@ New-MgServicePrincipalSynchronizationJobOnDemand -InputObject <IApplicationsIden
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
