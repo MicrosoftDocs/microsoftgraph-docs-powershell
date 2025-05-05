@@ -47,7 +47,7 @@ This operation isn't transitive.
 To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 2: Code snippet
 
 ```powershell
 

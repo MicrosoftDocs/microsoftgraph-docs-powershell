@@ -47,7 +47,7 @@ This operation is not transitive.
 Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 2: Code snippet
 
 ```powershell
 

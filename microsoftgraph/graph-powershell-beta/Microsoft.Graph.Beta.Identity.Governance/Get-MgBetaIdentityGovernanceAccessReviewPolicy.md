@@ -31,7 +31,7 @@ Read the properties and relationships of an accessReviewPolicy object.
 | Application | Policy.Read.All, Policy.ReadWrite.AccessReview,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 2: Code snippet
 
 ```powershell
 

@@ -44,6 +44,19 @@ Currently, only shared channels are supported.
 Read-only.
 Nullable.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamChannelPlannerPlan -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Get-MgBetaTeamChannelPlannerPlan Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -371,8 +384,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelplannerplan)
 
 [https://learn.microsoft.com/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamschannelplanner-list-plans?view=graph-rest-beta)
-
-
 
 
 

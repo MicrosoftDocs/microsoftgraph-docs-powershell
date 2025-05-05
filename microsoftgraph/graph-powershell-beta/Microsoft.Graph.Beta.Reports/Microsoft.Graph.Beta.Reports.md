@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Reports
-Module Guid: 0160377e-cf0e-4b2d-b9e7-be8ca632eacf
+Module Guid: b42d7324-a04b-4b24-9f06-6c932966dbd4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.reports/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -216,6 +216,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceManagementReportWindowsUpdateAlertSummaryReport](Get-MgBetaDeviceManagementReportWindowsUpdateAlertSummaryReport.md)
 
 ### [Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport](Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport.md)
+
+### [Get-MgBetaReportApiUsage](Get-MgBetaReportApiUsage.md)
 
 ### [Get-MgBetaReportAppCredentialSignInActivity](Get-MgBetaReportAppCredentialSignInActivity.md)
 
@@ -494,6 +496,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaReportServiceActivityMessageVolumeMetricForEmailDelivery](Get-MgBetaReportServiceActivityMessageVolumeMetricForEmailDelivery.md)
 
 ### [Get-MgBetaReportServiceActivityMessageVolumeMetricForTeamChat](Get-MgBetaReportServiceActivityMessageVolumeMetricForTeamChat.md)
+
+### [Get-MgBetaReportServiceActivityMetricForConditionalAccessBlockedSignIn](Get-MgBetaReportServiceActivityMetricForConditionalAccessBlockedSignIn.md)
 
 ### [Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess](Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess.md)
 

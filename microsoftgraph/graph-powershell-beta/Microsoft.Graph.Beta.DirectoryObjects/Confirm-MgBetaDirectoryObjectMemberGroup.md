@@ -65,6 +65,29 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Application.ReadWrite.All, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, User.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.ReadWrite.All,  |
 
+## EXAMPLES
+### Example 1: Check group memberships for a directory object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+
+$params = @{
+	groupIds = @(
+	"f448435d-3ca7-4073-8152-a1fd73c0fd09"
+"bd7c6263-4dd5-4ae8-8c96-556e1c0bece6"
+"93670da6-d731-4366-94b5-abed40b6016b"
+"f5484ab1-4d4d-41ec-a9b8-754b3957bfc7"
+"c9103f26-f3cf-4004-a611-2a14e81b8f79"
+)
+}
+
+Confirm-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example will check group memberships for a directory object
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -251,7 +274,6 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/confirm-mgbetadirectoryobjectmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/confirm-mgbetadirectoryobjectmembergroup)
 
 [https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
-
 
 
 

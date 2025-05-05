@@ -39,6 +39,19 @@ Confirm a timeCard.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Confirm-MgTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
+
+```
+This example shows how to use the Confirm-MgTeamScheduleTimeCard Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -221,7 +234,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/confirm-mgteamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/confirm-mgteamscheduletimecard)
 
 [https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-1.0)
-
 
 
 

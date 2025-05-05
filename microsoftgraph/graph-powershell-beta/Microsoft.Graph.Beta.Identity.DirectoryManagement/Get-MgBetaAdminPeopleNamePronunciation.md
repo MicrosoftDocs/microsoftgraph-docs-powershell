@@ -30,6 +30,19 @@ Read the properties and relationships of a namePronunciationSettings object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaAdminPeopleNamePronunciation
+
+```
+This example shows how to use the Get-MgBetaAdminPeopleNamePronunciation Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -123,7 +136,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplenamepronunciation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplenamepronunciation)
 
 [https://learn.microsoft.com/graph/api/namepronunciationsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/namepronunciationsettings-get?view=graph-rest-beta)
-
 
 
 

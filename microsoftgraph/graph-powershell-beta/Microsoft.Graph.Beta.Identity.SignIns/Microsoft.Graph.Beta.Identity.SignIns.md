@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-Module Guid: c0b0b556-0666-496f-9f16-4d8a7db24991
+Module Guid: 4440cb92-e83f-4f7c-903c-bf9776444ee4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.signins/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -761,6 +761,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice](Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice.md)
 
+### [Get-MgBetaUserAuthenticationQrCodePinMethod](Get-MgBetaUserAuthenticationQrCodePinMethod.md)
+
+### [Get-MgBetaUserAuthenticationQrCodePinMethodPin](Get-MgBetaUserAuthenticationQrCodePinMethodPin.md)
+
+### [Get-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode](Get-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode.md)
+
+### [Get-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode](Get-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode.md)
+
 ### [Get-MgBetaUserAuthenticationRequirement](Get-MgBetaUserAuthenticationRequirement.md)
 
 ### [Get-MgBetaUserAuthenticationSignInPreference](Get-MgBetaUserAuthenticationSignInPreference.md)
@@ -1297,6 +1305,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaUserAuthenticationPlatformCredentialMethod](Remove-MgBetaUserAuthenticationPlatformCredentialMethod.md)
 
+### [Remove-MgBetaUserAuthenticationQrCodePinMethod](Remove-MgBetaUserAuthenticationQrCodePinMethod.md)
+
+### [Remove-MgBetaUserAuthenticationQrCodePinMethodPin](Remove-MgBetaUserAuthenticationQrCodePinMethodPin.md)
+
+### [Remove-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode](Remove-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode.md)
+
+### [Remove-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode](Remove-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode.md)
+
 ### [Remove-MgBetaUserAuthenticationSoftwareOathMethod](Remove-MgBetaUserAuthenticationSoftwareOathMethod.md)
 
 ### [Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod](Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod.md)
@@ -1584,6 +1600,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserAuthenticationOperation](Update-MgBetaUserAuthenticationOperation.md)
 
 ### [Update-MgBetaUserAuthenticationPhoneMethod](Update-MgBetaUserAuthenticationPhoneMethod.md)
+
+### [Update-MgBetaUserAuthenticationQrCodePinMethodPin](Update-MgBetaUserAuthenticationQrCodePinMethodPin.md)
+
+### [Update-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode](Update-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode.md)
+
+### [Update-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode](Update-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode.md)
 
 ### [Update-MgBetaUserAuthenticationRequirement](Update-MgBetaUserAuthenticationRequirement.md)
 
