@@ -34,6 +34,19 @@ Get a list of Exchange settings, including mailboxes that belong to a user.
 Currently, the mailbox types supported are the user's primary and in-place archive.
 To learn how to get a list of users in a tenant, see List users.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users
+
+Get-MgBetaUserSettingExchange -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserSettingExchange Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -193,7 +206,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingexchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingexchange)
 
 [https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-beta](https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-beta)
-
 
 
 

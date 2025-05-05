@@ -46,7 +46,7 @@ Get groups and administrative units that the device is a direct member of.
 This operation is not transitive.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 2: Code snippet
 
 ```powershell
 

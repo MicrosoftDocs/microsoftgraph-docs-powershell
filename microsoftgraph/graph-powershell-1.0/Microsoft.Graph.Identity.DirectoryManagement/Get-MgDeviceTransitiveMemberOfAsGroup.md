@@ -47,7 +47,7 @@ Get the groups and administrative units that the device is a member of.
 This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 2: Code snippet
 
 ```powershell
 
