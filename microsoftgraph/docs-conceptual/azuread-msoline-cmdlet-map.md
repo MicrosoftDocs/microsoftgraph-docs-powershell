@@ -538,7 +538,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Connect-MsolService|[Connect-MgGraph](authentication-commands.md#use-connect-mggraph)|
 |Convert-MsolDomainToFederated|[New-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration)|
 |Convert-MsolDomainToStandard|[Remove-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainfederationconfiguration)|
-|Convert-MsolFederatedUser|[Reset-MgUserAuthenticationMethodPassword](/powershell/module/microsoft.graph.users.actions/reset-mguserauthenticationmethodpassword)|
+|Convert-MsolFederatedUser|[Reset-MgUserAuthenticationMethodPassword](/powershell/module/microsoft.graph.identity.signins/reset-mguserauthenticationmethodpassword)|
 |Disable-MsolDevice|[Update-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice)|
 |Enable-MsolDevice|[Update-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice)|
 |Get-MsolAccountSku|[Get-MgSubscribedSku](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku)|
@@ -622,7 +622,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Set-MsolServicePrincipal|[Update-MgServicePrincipal](/powershell/module/microsoft.graph.applications/update-mgserviceprincipal)|
 |Set-MsolUser|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser)|
 |Set-MsolUserLicense|[Set-MgUserLicense](/powershell/module/microsoft.graph.users.actions/set-mguserlicense)|
-|Set-MsolUserPassword|[Reset-MgUserAuthenticationMethodPassword](/powershell/module/microsoft.graph.users.actions/reset-mguserauthenticationmethodpassword)|
+|Set-MsolUserPassword|[Reset-MgUserAuthenticationMethodPassword](/powershell/module/microsoft.graph.identity.signins/reset-mguserauthenticationmethodpassword)|
 |Set-MsolUserPrincipalName|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser)|
 |Update-MsolFederatedDomain|[Update-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration)|
 
