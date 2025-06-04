@@ -25,7 +25,7 @@
         ]
       },
       "monikerPath": [
-        "mapping/monikerMapping.json"
+        "mapping/MAML2Yaml/monikerMapping.json"
       ]
     }
   ],
@@ -64,7 +64,7 @@
     }
   ],
   "monikerPath": [
-    "mapping/monikerMapping.json"
+    "mapping/MAML2Yaml/monikerMapping.json"
   ],
   "need_generate_pdf_url_template": false,
   "enable_incremental_build": false,
