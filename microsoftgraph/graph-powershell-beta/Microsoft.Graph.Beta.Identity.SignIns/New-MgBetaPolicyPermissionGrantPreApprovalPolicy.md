@@ -32,11 +32,11 @@ New-MgBetaPolicyPermissionGrantPreApprovalPolicy
 Create a new permissionGrantPreApprovalPolicy object.
 
 ## EXAMPLES
+### Example 1: Create a preapproval policy for both group and chat scope
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	conditions = @(
@@ -78,10 +78,14 @@ $params = @{
 
 New-MgBetaPolicyPermissionGrantPreApprovalPolicy -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a preapproval policy for both group and chat scope
+
+### Example 2: Create a preapproval policy for group scope and preapprove all permissions from a given API
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	conditions = @(
@@ -102,6 +106,10 @@ $params = @{
 }
 
 New-MgBetaPolicyPermissionGrantPreApprovalPolicy -BodyParameter $params
+
+```
+This example will create a preapproval policy for group scope and preapprove all permissions from a given api
+
 
 ## PARAMETERS
 

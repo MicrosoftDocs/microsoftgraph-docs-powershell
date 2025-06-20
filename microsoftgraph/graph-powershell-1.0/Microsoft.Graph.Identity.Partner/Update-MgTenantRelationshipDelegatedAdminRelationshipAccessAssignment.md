@@ -62,11 +62,11 @@ Update the properties of a delegatedAdminAccessAssignment object.
 | Application | DelegatedAdminRelationship.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Partner
-```
 
 $params = @{
 	accessDetails = @{
@@ -85,6 +85,10 @@ $params = @{
 }
 
 Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -DelegatedAdminAccessAssignmentId $delegatedAdminAccessAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -35,13 +35,17 @@ Delete a certificateAuthorityAsEntity object.
 You can't delete all items in the collection because this collection requires at least one object that is a root authority to always persist.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority -CertificateBasedApplicationConfigurationId $certificateBasedApplicationConfigurationId -CertificateAuthorityAsEntityId $certificateAuthorityAsEntityId
+
+```
+This example shows how to use the Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority Cmdlet.
+
 
 ## PARAMETERS
 

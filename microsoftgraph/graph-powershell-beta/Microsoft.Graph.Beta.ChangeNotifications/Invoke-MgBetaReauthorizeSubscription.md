@@ -34,13 +34,17 @@ Invoke-MgBetaReauthorizeSubscription -InputObject <IChangeNotificationsIdentity>
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
-```
 
 Invoke-MgBetaReauthorizeSubscription -SubscriptionId $subscriptionId
+
+```
+This example shows how to use the Invoke-MgBetaReauthorizeSubscription Cmdlet.
+
 
 ## PARAMETERS
 

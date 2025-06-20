@@ -29,18 +29,6 @@ Remove-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property definitions for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -261,6 +249,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkteamtemplatedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkteamtemplatedefinition)
+
 
 
 

@@ -34,18 +34,6 @@ Reactivate an accidentally dismissed, completed, or postponed impactedResource o
 This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -228,6 +216,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryimpactedresource)
 
 [https://learn.microsoft.com/graph/api/impactedresource-reactivate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/impactedresource-reactivate?view=graph-rest-beta)
+
 
 
 

@@ -39,18 +39,6 @@ The draft message can be a new message draft, reply draft, reply-all draft, or a
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -251,6 +239,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/send-mgusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/send-mgusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-send?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-1.0)
+
 
 
 

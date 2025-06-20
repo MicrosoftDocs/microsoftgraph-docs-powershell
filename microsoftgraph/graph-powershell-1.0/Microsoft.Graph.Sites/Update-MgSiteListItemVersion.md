@@ -50,18 +50,6 @@ Update-MgSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property versions in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -449,6 +437,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemversion)
+
 
 
 

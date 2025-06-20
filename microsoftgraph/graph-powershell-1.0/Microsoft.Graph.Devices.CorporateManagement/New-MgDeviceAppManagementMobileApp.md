@@ -46,11 +46,11 @@ Create a new managedAndroidLobApp object.
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsAppX"
@@ -60,7 +60,7 @@ $params = @{
 	largeIcon = @{
 		"@odata.type" = "microsoft.graph.mimeContent"
 		type = "Type value"
-		value = \[System.Text.Encoding\]::ASCII.GetBytes("dmFsdWU=")
+		value = [System.Text.Encoding]::ASCII.GetBytes("dmFsdWU=")
 	}
 	isFeatured = $true
 	privacyInformationUrl = "https://example.com/privacyInformationUrl/"
@@ -87,6 +87,10 @@ $params = @{
 }
 
 New-MgDeviceAppManagementMobileApp -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementMobileApp Cmdlet.
+
 
 ## PARAMETERS
 

@@ -86,11 +86,11 @@ If the group was created less than 15 minutes ago, it's possible for a call to c
 | Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	memberSettings = @{
@@ -108,6 +108,10 @@ $params = @{
 }
 
 Set-MgGroupTeam -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgGroupTeam Cmdlet.
+
 
 ## PARAMETERS
 

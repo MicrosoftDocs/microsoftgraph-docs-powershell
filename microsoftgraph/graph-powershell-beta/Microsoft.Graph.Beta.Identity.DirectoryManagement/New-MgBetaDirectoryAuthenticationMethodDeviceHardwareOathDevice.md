@@ -37,11 +37,11 @@ Create a new hardwareOathTokenAuthenticationMethodDevice object.
 You can optionally create and assign to a user in the same request; Or assign to a user via the assign API.
 
 ## EXAMPLES
+### Example 1: Create a token without user assignment
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Token 1"
@@ -55,10 +55,14 @@ $params = @{
 
 New-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a token without user assignment
+
+### Example 2: Create a token and assign it to a user
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Token 1"
@@ -74,6 +78,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -BodyParameter $params
+
+```
+This example will create a token and assign it to a user
+
 
 ## PARAMETERS
 

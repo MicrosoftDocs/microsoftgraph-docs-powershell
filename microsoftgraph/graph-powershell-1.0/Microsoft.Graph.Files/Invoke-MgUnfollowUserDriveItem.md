@@ -33,18 +33,6 @@ Invoke-MgUnfollowUserDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVa
 ## DESCRIPTION
 Unfollow a driveItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -246,6 +234,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowuserdriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0)
+
 
 
 

@@ -30,18 +30,6 @@ Invoke-MgBetaUnarchiveGroupSiteGetByPath -InputObject <IGroupsIdentity> [-Respon
 ## DESCRIPTION
 Unarchive an archived SharePoint site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -241,6 +229,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaunarchivegroupsitegetbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaunarchivegroupsitegetbypath)
 
 [https://learn.microsoft.com/graph/api/site-unarchive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-unarchive?view=graph-rest-beta)
+
 
 
 

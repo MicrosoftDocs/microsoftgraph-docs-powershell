@@ -62,17 +62,21 @@ For more details about how to handle mute operations, see muteParticipantOperati
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Invoke-MgMuteCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgMuteCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

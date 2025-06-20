@@ -40,18 +40,6 @@ The printer that this printer share is related to.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Printer.Read.All, Printer.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -194,6 +182,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareprinter)
+
 
 
 

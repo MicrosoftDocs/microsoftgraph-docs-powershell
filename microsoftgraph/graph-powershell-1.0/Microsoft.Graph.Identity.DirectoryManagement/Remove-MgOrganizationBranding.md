@@ -44,17 +44,21 @@ To delete the organizationalBranding object, all images (Stream types) must firs
 | Application | OrganizationalBranding.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	id = "0"
 }
 
 Remove-MgOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgOrganizationBranding Cmdlet.
+
 
 ## PARAMETERS
 

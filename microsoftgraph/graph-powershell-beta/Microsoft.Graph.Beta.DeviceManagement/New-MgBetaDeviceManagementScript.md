@@ -35,18 +35,6 @@ New-MgBetaDeviceManagementScript -BodyParameter <IMicrosoftGraphDeviceManagement
 ## DESCRIPTION
 Create new navigation property to deviceManagementScripts for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -25542,6 +25530,7 @@ Defaults to setting on client device.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementscript)
+
 
 
 

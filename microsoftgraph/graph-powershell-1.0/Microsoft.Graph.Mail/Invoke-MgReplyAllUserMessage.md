@@ -70,11 +70,11 @@ Alternatively, create a draft to reply-all to a message and send it later.
 | Application | Mail.Send,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	comment = "comment-value"
@@ -82,6 +82,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgReplyAllUserMessage Cmdlet.
+
 
 ## PARAMETERS
 

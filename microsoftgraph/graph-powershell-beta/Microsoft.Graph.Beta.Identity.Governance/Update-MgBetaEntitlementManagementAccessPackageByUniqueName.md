@@ -60,18 +60,6 @@ Update-MgBetaEntitlementManagementAccessPackageByUniqueName -InputObject <IIdent
 ## DESCRIPTION
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicies
@@ -52176,6 +52164,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagebyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagebyuniquename)
 
 [https://learn.microsoft.com/graph/api/accesspackage-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-update?view=graph-rest-beta)
+
 
 
 

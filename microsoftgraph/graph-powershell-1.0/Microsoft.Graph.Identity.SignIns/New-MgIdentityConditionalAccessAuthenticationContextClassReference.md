@@ -41,18 +41,6 @@ Create new navigation property to authenticationContextClassReferences for ident
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuthenticationContext.ReadWrite.All, Policy.ReadWrite.ConditionalAccess,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -266,6 +254,7 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessauthenticationcontextclassreference)
+
 
 
 

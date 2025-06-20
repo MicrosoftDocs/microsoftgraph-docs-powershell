@@ -51,20 +51,28 @@ Read the properties and relationships of a specific cloudPC object.
 | Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: List all cloudPC devices in a tenant
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementVirtualEndpointCloudPc
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
+This example will list all cloudpc devices in a tenant
 
-Get-MgDeviceManagementVirtualEndpointCloudPc -Top 2
+### Example 2: Get the top two cloudPC devices in a tenant
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointCloudPc -Top 2 
+
+```
+This example will get the top two cloudpc devices in a tenant
+
 
 ## PARAMETERS
 
