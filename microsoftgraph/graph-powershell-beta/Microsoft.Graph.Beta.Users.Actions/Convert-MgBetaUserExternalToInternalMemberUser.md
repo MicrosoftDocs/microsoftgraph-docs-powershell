@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser
 schema: 2.0.0
-ms.subservice: entra-users
 ---
 
 # Convert-MgBetaUserExternalToInternalMemberUser
@@ -52,20 +51,12 @@ Convert an externally authenticated user into an internal user.
 The user is able to sign into the host tenant as an internal user and access resources as a member.
 For more information about this conversion, see Convert external users to internal users.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User-ConvertToInternal.ReadWrite.All, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User-ConvertToInternal.ReadWrite.All, User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Convert a cloud user and require them to reset their password on next sign in
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	userPrincipalName = "AdeleVance@contoso.com"
@@ -77,14 +68,10 @@ $params = @{
 
 Convert-MgBetaUserExternalToInternalMemberUser -UserId $userId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will convert a cloud user and require them to reset their password on next sign in
-
-### Example 2: Convert a cloud user, change their mail address, and require password reset on next sign in
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	userPrincipalName = "AdeleVance@contoso.com"
@@ -97,20 +84,12 @@ $params = @{
 
 Convert-MgBetaUserExternalToInternalMemberUser -UserId $userId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example will convert a cloud user, change their mail address, and require password reset on next sign in
-
-### Example 3: Convert external User to internal for a user synchronized from on-premises AD
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 Convert-MgBetaUserExternalToInternalMemberUser -UserId $userId
-
-```
-This example will convert external user to internal for a user synchronized from on-premises ad
-
 
 ## PARAMETERS
 
@@ -130,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -146,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -193,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mail
-
+.
 
 ```yaml
 Type: String
@@ -269,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-
+.
 
 ```yaml
 Type: String
@@ -331,54 +310,54 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Mail <String>]`: 
-  - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
+BODY \<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Mail \<String\>\]: 
+  \[PasswordProfile \<IMicrosoftGraphPasswordProfile\>\]: passwordProfile
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ForceChangePasswordNextSignIn \<Boolean?\>\]: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
-    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+    \[ForceChangePasswordNextSignInWithMfa \<Boolean?\>\]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
 The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
-    - `[Password <String>]`: The password for the user.
+    \[Password \<String\>\]: The password for the user.
 This property is required when a user is created.
 It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
-  - `[UserPrincipalName <String>]`: 
+  \[UserPrincipalName \<String\>\]: 
 
-BODYPARAMETER `<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Mail <String>]`: 
-  - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
+BODYPARAMETER \<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Mail \<String\>\]: 
+  \[PasswordProfile \<IMicrosoftGraphPasswordProfile\>\]: passwordProfile
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ForceChangePasswordNextSignIn \<Boolean?\>\]: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
-    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+    \[ForceChangePasswordNextSignInWithMfa \<Boolean?\>\]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
 The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
-    - `[Password <String>]`: The password for the user.
+    \[Password \<String\>\]: The password for the user.
 This property is required when a user is created.
 It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
-  - `[UserPrincipalName <String>]`: 
+  \[UserPrincipalName \<String\>\]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
-PASSWORDPROFILE `<IMicrosoftGraphPasswordProfile>`: passwordProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
+PASSWORDPROFILE \<IMicrosoftGraphPasswordProfile\>: passwordProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ForceChangePasswordNextSignIn \<Boolean?\>\]: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
-  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+  \[ForceChangePasswordNextSignInWithMfa \<Boolean?\>\]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
 The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
-  - `[Password <String>]`: The password for the user.
+  \[Password \<String\>\]: The password for the user.
 This property is required when a user is created.
 It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
@@ -389,26 +368,4 @@ By default, a strong password is required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser)
 
 [https://learn.microsoft.com/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

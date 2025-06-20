@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadismissusereventreminder
 schema: 2.0.0
-ms.subservice: outlook
 ---
 
 # Invoke-MgBetaDismissUserEventReminder
 
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissUserEventReminder](/powershell/module/Microsoft.Graph.Calendar/Invoke-MgDismissUserEventReminder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,27 +29,15 @@ Invoke-MgBetaDismissUserEventReminder -InputObject <ICalendarIdentity> [-Respons
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
-| Application | Calendars.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
-
-```
-This example shows how to use the Invoke-MgBetaDismissUserEventReminder Cmdlet.
-
 
 ## PARAMETERS
 
@@ -210,47 +194,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[EventId2 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[RoomId <String>]`: The unique identifier of room
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WorkspaceId <String>]`: The unique identifier of workspace
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[EventId2 \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadismissusereventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadismissusereventreminder)
 
 [https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdeviceappinstallationstatusreport
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action retrieveDeviceAppInstallationStatusReport
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportDeviceAppInstallationStatusReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportDeviceAppInstallationStatusReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,6 +32,18 @@ Get-MgBetaDeviceManagementReportDeviceAppInstallationStatusReport -OutFile <Stri
 ## DESCRIPTION
 Invoke action retrieveDeviceAppInstallationStatusReport
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -53,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Body
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -69,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-
+.
 
 ```yaml
 Type: String
@@ -84,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupBy
-
+.
 
 ```yaml
 Type: String[]
@@ -114,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-
+.
 
 ```yaml
 Type: String
@@ -174,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Property
-
+.
 
 ```yaml
 Type: String[]
@@ -204,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Search
-
+.
 
 ```yaml
 Type: String
@@ -219,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-
+.
 
 ```yaml
 Type: String
@@ -234,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sort
-
+.
 
 ```yaml
 Type: String[]
@@ -249,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-
+.
 
 ```yaml
 Type: Int32
@@ -295,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skip
-
+.
 
 ```yaml
 Type: Int32
@@ -325,42 +334,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstallationstatusreportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[Name <String>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[SessionId <String>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODY \<IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstallationstatusreportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[Name \<String\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[SessionId \<String\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdeviceappinstallationstatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdeviceappinstallationstatusreport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

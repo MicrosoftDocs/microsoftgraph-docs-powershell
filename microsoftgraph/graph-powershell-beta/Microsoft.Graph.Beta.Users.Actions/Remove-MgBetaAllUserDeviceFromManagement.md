@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetaalluserdevicefrommanagement
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retire all devices from management for this user
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgAllUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgAllUserDeviceFromManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ Remove-MgBetaAllUserDeviceFromManagement -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Retire all devices from management for this user
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -172,33 +181,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetaalluserdevicefrommanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetaalluserdevicefrommanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

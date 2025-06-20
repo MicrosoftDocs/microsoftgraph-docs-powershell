@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtroubleshootingevent
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to troubleshootingEvents for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,13 +31,17 @@ New-MgBetaDeviceManagementTroubleshootingEvent
 ## DESCRIPTION
 Create new navigation property to troubleshootingEvents for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -261,67 +262,48 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDITIONALINFORMATION `<IMicrosoftGraphKeyValuePair- `[]`>`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+ADDITIONALINFORMATION \<IMicrosoftGraphKeyValuePair\[\]\>: A set of string key and string value pairs which provides additional information on the Troubleshooting event
+  \[Name \<String\>\]: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+  \[Value \<String\>\]: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementTroubleshootingEvent>`: Event representing an general failure.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceManagementTroubleshootingEvent\>: Event representing an general failure.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
-  - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-  - `[EventName <String>]`: Event Name corresponding to the Troubleshooting Event.
+  \[AdditionalInformation \<IMicrosoftGraphKeyValuePair\[\]\>\]: A set of string key and string value pairs which provides additional information on the Troubleshooting event
+    \[Name \<String\>\]: Name for this key-value pair.
+For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    \[Value \<String\>\]: Value for this key-value pair.
+For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+  \[CorrelationId \<String\>\]: Id used for tracing the failure in the service.
+  \[EventDateTime \<DateTime?\>\]: Time when the event occurred .
+  \[EventName \<String\>\]: Event Name corresponding to the Troubleshooting Event.
 It is an Optional field
-  - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Context <String>]`: 
-    - `[Failure <String>]`: 
-    - `[FailureDetails <String>]`: The detailed description of what went wrong.
-    - `[Remediation <String>]`: The detailed description of how to remediate this issue.
-    - `[Resources <IMicrosoftGraphDeviceManagementTroubleshootingErrorResource- `[]`>]`: Links to helpful documentation about this failure.
-      - `[Link <String>]`: The link to the web resource.
+  \[TroubleshootingErrorDetails \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>\]: Object containing detailed information about the error and its remediation.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Context \<String\>\]: 
+    \[Failure \<String\>\]: 
+    \[FailureDetails \<String\>\]: The detailed description of what went wrong.
+    \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
+    \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
+      \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      - `[Text <String>]`: 
+      \[Text \<String\>\]: 
 
-TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Context <String>]`: 
-  - `[Failure <String>]`: 
-  - `[FailureDetails <String>]`: The detailed description of what went wrong.
-  - `[Remediation <String>]`: The detailed description of how to remediate this issue.
-  - `[Resources <IMicrosoftGraphDeviceManagementTroubleshootingErrorResource- `[]`>]`: Links to helpful documentation about this failure.
-    - `[Link <String>]`: The link to the web resource.
+TROUBLESHOOTINGERRORDETAILS \<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails\>: Object containing detailed information about the error and its remediation.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Context \<String\>\]: 
+  \[Failure \<String\>\]: 
+  \[FailureDetails \<String\>\]: The detailed description of what went wrong.
+  \[Remediation \<String\>\]: The detailed description of how to remediate this issue.
+  \[Resources \<IMicrosoftGraphDeviceManagementTroubleshootingErrorResource\[\]\>\]: Links to helpful documentation about this failure.
+    \[Link \<String\>\]: The link to the web resource.
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-    - `[Text <String>]`:
+    \[Text \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtroubleshootingevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

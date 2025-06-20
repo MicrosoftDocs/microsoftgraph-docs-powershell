@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatedelta
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgGroupSettingTemplateDelta
@@ -25,13 +24,17 @@ Get-MgGroupSettingTemplateDelta [-ExpandProperty <String[]>] [-Filter <String>] 
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.ReadWrite.All, Directory.Read.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -247,27 +250,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatedelta)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

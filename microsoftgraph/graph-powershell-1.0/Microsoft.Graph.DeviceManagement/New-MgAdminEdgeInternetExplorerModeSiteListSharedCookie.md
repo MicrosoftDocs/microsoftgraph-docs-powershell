@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
-ms.subservice: edge-browser-management
 ---
 
 # New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 ## SYNOPSIS
 Create a new browserSharedCookie object in a browserSiteList.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,20 +51,12 @@ New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceMan
 ## DESCRIPTION
 Create a new browserSharedCookie object in a browserSiteList.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BrowserSiteLists.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BrowserSiteLists.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.browserSharedCookie"
@@ -81,10 +69,6 @@ $params = @{
 }
 
 New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BodyParameter $params
-
-```
-This example shows how to use the New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
-
 
 ## PARAMETERS
 
@@ -441,130 +425,108 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBrowserSharedCookie>`: browserSharedCookie
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphBrowserSharedCookie\>: browserSharedCookie
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Comment <String>]`: The comment for the shared cookie.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the shared cookie was created.
-  - `[DeletedDateTime <DateTime?>]`: The date and time when the shared cookie was deleted.
-  - `[DisplayName <String>]`: The name of the cookie.
-  - `[History <IMicrosoftGraphBrowserSharedCookieHistory- `[]`>]`: The history of modifications applied to the cookie.
-    - `[Comment <String>]`: The comment for the shared cookie.
-    - `[DisplayName <String>]`: The name of the cookie.
-    - `[HostOnly <Boolean?>]`: Controls whether a cookie is a host-only or domain cookie.
-    - `[HostOrDomain <String>]`: The URL of the cookie.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+  \[Comment \<String\>\]: The comment for the shared cookie.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the shared cookie was created.
+  \[DeletedDateTime \<DateTime?\>\]: The date and time when the shared cookie was deleted.
+  \[DisplayName \<String\>\]: The name of the cookie.
+  \[History \<IMicrosoftGraphBrowserSharedCookieHistory\[\]\>\]: The history of modifications applied to the cookie.
+    \[Comment \<String\>\]: The comment for the shared cookie.
+    \[DisplayName \<String\>\]: The name of the cookie.
+    \[HostOnly \<Boolean?\>\]: Controls whether a cookie is a host-only or domain cookie.
+    \[HostOrDomain \<String\>\]: The URL of the cookie.
+    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity or actor.
+        \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Path <String>]`: The path of the cookie.
-    - `[PublishedDateTime <DateTime?>]`: The date and time when the cookie was last published.
-    - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
-  - `[HostOnly <Boolean?>]`: Controls whether a cookie is a host-only or domain cookie.
-  - `[HostOrDomain <String>]`: The URL of the cookie.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the cookie was last modified.
-  - `[Path <String>]`: The path of the cookie.
-  - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
-  - `[Status <BrowserSharedCookieStatus?>]`: browserSharedCookieStatus
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[Path \<String\>\]: The path of the cookie.
+    \[PublishedDateTime \<DateTime?\>\]: The date and time when the cookie was last published.
+    \[SourceEnvironment \<BrowserSharedCookieSourceEnvironment?\>\]: browserSharedCookieSourceEnvironment
+  \[HostOnly \<Boolean?\>\]: Controls whether a cookie is a host-only or domain cookie.
+  \[HostOrDomain \<String\>\]: The URL of the cookie.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the cookie was last modified.
+  \[Path \<String\>\]: The path of the cookie.
+  \[SourceEnvironment \<BrowserSharedCookieSourceEnvironment?\>\]: browserSharedCookieSourceEnvironment
+  \[Status \<BrowserSharedCookieStatus?\>\]: browserSharedCookieStatus
 
-HISTORY `<IMicrosoftGraphBrowserSharedCookieHistory- `[]`>`: The history of modifications applied to the cookie.
-  - `[Comment <String>]`: The comment for the shared cookie.
-  - `[DisplayName <String>]`: The name of the cookie.
-  - `[HostOnly <Boolean?>]`: Controls whether a cookie is a host-only or domain cookie.
-  - `[HostOrDomain <String>]`: The URL of the cookie.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+HISTORY \<IMicrosoftGraphBrowserSharedCookieHistory\[\]\>: The history of modifications applied to the cookie.
+  \[Comment \<String\>\]: The comment for the shared cookie.
+  \[DisplayName \<String\>\]: The name of the cookie.
+  \[HostOnly \<Boolean?\>\]: Controls whether a cookie is a host-only or domain cookie.
+  \[HostOrDomain \<String\>\]: The URL of the cookie.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity or actor.
+      \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Path <String>]`: The path of the cookie.
-  - `[PublishedDateTime <DateTime?>]`: The date and time when the cookie was last published.
-  - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[Path \<String\>\]: The path of the cookie.
+  \[PublishedDateTime \<DateTime?\>\]: The date and time when the cookie was last published.
+  \[SourceEnvironment \<BrowserSharedCookieSourceEnvironment?\>\]: browserSharedCookieSourceEnvironment
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[BrowserSharedCookieId <String>]`: The unique identifier of browserSharedCookie
-  - `[BrowserSiteId <String>]`: The unique identifier of browserSite
-  - `[BrowserSiteListId <String>]`: The unique identifier of browserSiteList
-  - `[DetectedAppId <String>]`: The unique identifier of detectedApp
-  - `[DeviceCategoryId <String>]`: The unique identifier of deviceCategory
-  - `[DeviceComplianceActionItemId <String>]`: The unique identifier of deviceComplianceActionItem
-  - `[DeviceComplianceDeviceStatusId <String>]`: The unique identifier of deviceComplianceDeviceStatus
-  - `[DeviceCompliancePolicyAssignmentId <String>]`: The unique identifier of deviceCompliancePolicyAssignment
-  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
-  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceComplianceScheduledActionForRuleId <String>]`: The unique identifier of deviceComplianceScheduledActionForRule
-  - `[DeviceComplianceSettingStateId <String>]`: The unique identifier of deviceComplianceSettingState
-  - `[DeviceComplianceUserStatusId <String>]`: The unique identifier of deviceComplianceUserStatus
-  - `[DeviceConfigurationAssignmentId <String>]`: The unique identifier of deviceConfigurationAssignment
-  - `[DeviceConfigurationDeviceStatusId <String>]`: The unique identifier of deviceConfigurationDeviceStatus
-  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceConfigurationUserStatusId <String>]`: The unique identifier of deviceConfigurationUserStatus
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[LocalizedNotificationMessageId <String>]`: The unique identifier of localizedNotificationMessage
-  - `[MalwareStateForWindowsDeviceId <String>]`: The unique identifier of malwareStateForWindowsDevice
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
-  - `[SettingStateDeviceSummaryId <String>]`: The unique identifier of settingStateDeviceSummary
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
-  - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
-  - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+INPUTOBJECT \<IDeviceManagementIdentity\>: Identity Parameter
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[BrowserSharedCookieId \<String\>\]: The unique identifier of browserSharedCookie
+  \[BrowserSiteId \<String\>\]: The unique identifier of browserSite
+  \[BrowserSiteListId \<String\>\]: The unique identifier of browserSiteList
+  \[DetectedAppId \<String\>\]: The unique identifier of detectedApp
+  \[DeviceCategoryId \<String\>\]: The unique identifier of deviceCategory
+  \[DeviceComplianceActionItemId \<String\>\]: The unique identifier of deviceComplianceActionItem
+  \[DeviceComplianceDeviceStatusId \<String\>\]: The unique identifier of deviceComplianceDeviceStatus
+  \[DeviceCompliancePolicyAssignmentId \<String\>\]: The unique identifier of deviceCompliancePolicyAssignment
+  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
+  \[DeviceCompliancePolicySettingStateSummaryId \<String\>\]: The unique identifier of deviceCompliancePolicySettingStateSummary
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceComplianceScheduledActionForRuleId \<String\>\]: The unique identifier of deviceComplianceScheduledActionForRule
+  \[DeviceComplianceSettingStateId \<String\>\]: The unique identifier of deviceComplianceSettingState
+  \[DeviceComplianceUserStatusId \<String\>\]: The unique identifier of deviceComplianceUserStatus
+  \[DeviceConfigurationAssignmentId \<String\>\]: The unique identifier of deviceConfigurationAssignment
+  \[DeviceConfigurationDeviceStatusId \<String\>\]: The unique identifier of deviceConfigurationDeviceStatus
+  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceConfigurationUserStatusId \<String\>\]: The unique identifier of deviceConfigurationUserStatus
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[LocalizedNotificationMessageId \<String\>\]: The unique identifier of localizedNotificationMessage
+  \[MalwareStateForWindowsDeviceId \<String\>\]: The unique identifier of malwareStateForWindowsDevice
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[SecretReferenceValueId \<String\>\]: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  \[SettingStateDeviceSummaryId \<String\>\]: The unique identifier of settingStateDeviceSummary
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLearningSummaryId \<String\>\]: The unique identifier of windowsInformationProtectionAppLearningSummary
+  \[WindowsInformationProtectionNetworkLearningSummaryId \<String\>\]: The unique identifier of windowsInformationProtectionNetworkLearningSummary
+  \[WindowsMalwareInformationId \<String\>\]: The unique identifier of windowsMalwareInformation
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity or actor.
+    \[Id \<String\>\]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie)
 
 [https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

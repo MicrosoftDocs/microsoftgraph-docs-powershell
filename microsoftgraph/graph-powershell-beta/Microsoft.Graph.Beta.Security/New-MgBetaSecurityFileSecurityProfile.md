@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile
@@ -35,10 +35,22 @@ New-MgBetaSecurityFileSecurityProfile -BodyParameter <IMicrosoftGraphFileSecurit
 ## DESCRIPTION
 Create new navigation property to fileSecurityProfiles for security
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
-
+.
 
 ```yaml
 Type: String[]
@@ -68,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSubscriptionId
-
+.
 
 ```yaml
 Type: String
@@ -83,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureTenantId
-
+.
 
 ```yaml
 Type: String
@@ -114,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateThumbprint
-
+.
 
 ```yaml
 Type: String
@@ -129,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Extensions
-
+.
 
 ```yaml
 Type: String[]
@@ -144,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileType
-
+.
 
 ```yaml
 Type: String
@@ -159,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirstSeenDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -174,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Hashes
-
+.
 To construct, see NOTES section for HASHES properties and create a hash table.
 
 ```yaml
@@ -221,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastSeenDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -236,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -MalwareStates
-
+.
 To construct, see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
@@ -252,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -Names
-
+.
 
 ```yaml
 Type: String[]
@@ -297,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskScore
-
+.
 
 ```yaml
 Type: String
@@ -312,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -Size
-
+.
 
 ```yaml
 Type: Int64
@@ -327,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-
+.
 
 ```yaml
 Type: String[]
@@ -358,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -VulnerabilityStates
-
+.
 To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml
@@ -420,93 +432,70 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFileSecurityProfile>`: fileSecurityProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphFileSecurityProfile\>: fileSecurityProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActivityGroupNames <String- `[]`>]`: 
-  - `[AzureSubscriptionId <String>]`: 
-  - `[AzureTenantId <String>]`: 
-  - `[CertificateThumbprint <String>]`: 
-  - `[Extensions <String- `[]`>]`: 
-  - `[FileType <String>]`: 
-  - `[FirstSeenDateTime <DateTime?>]`: 
-  - `[Hashes <IMicrosoftGraphFileHash- `[]`>]`: 
-    - `[HashType <String>]`: fileHashType
-    - `[HashValue <String>]`: Value of the file hash.
-  - `[LastSeenDateTime <DateTime?>]`: 
-  - `[MalwareStates <IMicrosoftGraphMalwareState- `[]`>]`: 
-    - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
-    - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
-    - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
-    - `[Severity <String>]`: Provider-determined severity of this malware.
-    - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
-  - `[Names <String- `[]`>]`: 
-  - `[RiskScore <String>]`: 
-  - `[Size <Int64?>]`: 
-  - `[Tags <String- `[]`>]`: 
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+  \[ActivityGroupNames \<String\[\]\>\]: 
+  \[AzureSubscriptionId \<String\>\]: 
+  \[AzureTenantId \<String\>\]: 
+  \[CertificateThumbprint \<String\>\]: 
+  \[Extensions \<String\[\]\>\]: 
+  \[FileType \<String\>\]: 
+  \[FirstSeenDateTime \<DateTime?\>\]: 
+  \[Hashes \<IMicrosoftGraphFileHash\[\]\>\]: 
+    \[HashType \<String\>\]: fileHashType
+    \[HashValue \<String\>\]: Value of the file hash.
+  \[LastSeenDateTime \<DateTime?\>\]: 
+  \[MalwareStates \<IMicrosoftGraphMalwareState\[\]\>\]: 
+    \[Category \<String\>\]: Provider-generated malware category (for example, trojan, ransomware, etc.).
+    \[Family \<String\>\]: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
+    \[Name \<String\>\]: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
+    \[Severity \<String\>\]: Provider-determined severity of this malware.
+    \[WasRunning \<Boolean?\>\]: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
+  \[Names \<String\[\]\>\]: 
+  \[RiskScore \<String\>\]: 
+  \[Size \<Int64?\>\]: 
+  \[Tags \<String\[\]\>\]: 
+  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
-  - `[VulnerabilityStates <IMicrosoftGraphVulnerabilityState- `[]`>]`: 
-    - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
-    - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
-    - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
+  \[VulnerabilityStates \<IMicrosoftGraphVulnerabilityState\[\]\>\]: 
+    \[Cve \<String\>\]: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
+    \[Severity \<String\>\]: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
+    \[WasRunning \<Boolean?\>\]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-HASHES `<IMicrosoftGraphFileHash- `[]`>`: .
-  - `[HashType <String>]`: fileHashType
-  - `[HashValue <String>]`: Value of the file hash.
+HASHES \<IMicrosoftGraphFileHash\[\]\>: .
+  \[HashType \<String\>\]: fileHashType
+  \[HashValue \<String\>\]: Value of the file hash.
 
-MALWARESTATES `<IMicrosoftGraphMalwareState- `[]`>`: .
-  - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
-  - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
-  - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
-  - `[Severity <String>]`: Provider-determined severity of this malware.
-  - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
+MALWARESTATES \<IMicrosoftGraphMalwareState\[\]\>: .
+  \[Category \<String\>\]: Provider-generated malware category (for example, trojan, ransomware, etc.).
+  \[Family \<String\>\]: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
+  \[Name \<String\>\]: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
+  \[Severity \<String\>\]: Provider-determined severity of this malware.
+  \[WasRunning \<Boolean?\>\]: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-VULNERABILITYSTATES `<IMicrosoftGraphVulnerabilityState- `[]`>`: .
-  - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
-  - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
-  - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
+VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: .
+  \[Cve \<String\>\]: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
+  \[Severity \<String\>\]: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
+  \[WasRunning \<Boolean?\>\]: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

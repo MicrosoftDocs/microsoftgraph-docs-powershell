@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetabulkdevicemanagementcomanageddevicerestorecloudpc
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaBulkDeviceManagementComanagedDeviceRestoreCloudPc
@@ -32,6 +31,18 @@ Invoke-MgBetaBulkDeviceManagementComanagedDeviceRestoreCloudPc
 ## DESCRIPTION
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -50,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -81,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceIds
-
+.
 
 ```yaml
 Type: String[]
@@ -126,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointDateTime
-
+.
 
 ```yaml
 Type: DateTime
@@ -202,38 +213,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Rxaz9ODevicemanagementComanageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ManagedDeviceIds <String- `[]`>]`: 
-  - `[RestorePointDateTime <DateTime?>]`: 
-  - `[TimeRange <String>]`: restoreTimeRange
+BODYPARAMETER \<IPaths1Rxaz9ODevicemanagementComanageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ManagedDeviceIds \<String\[\]\>\]: 
+  \[RestorePointDateTime \<DateTime?\>\]: 
+  \[TimeRange \<String\>\]: restoreTimeRange
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetabulkdevicemanagementcomanageddevicerestorecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetabulkdevicemanagementcomanageddevicerestorecloudpc)
 
 [https://learn.microsoft.com/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

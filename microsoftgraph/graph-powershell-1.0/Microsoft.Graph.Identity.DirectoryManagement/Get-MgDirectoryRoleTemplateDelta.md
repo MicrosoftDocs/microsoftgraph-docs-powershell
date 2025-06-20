@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatedelta
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryRoleTemplateDelta
@@ -11,9 +10,6 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleTemplateDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,13 +24,17 @@ Get-MgDirectoryRoleTemplateDelta [-ExpandProperty <String[]>] [-Filter <String>]
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -250,27 +250,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatedelta)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

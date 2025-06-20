@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning
 schema: 2.0.0
-ms.subservice: entra-users
 ---
 
 # Invoke-MgBetaRetryUserServiceProvisioning
 
 ## SYNOPSIS
 Retry the provisioning of a user object in Microsoft Entra ID.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetryUserServiceProvisioning?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,17 +30,13 @@ Invoke-MgBetaRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity>
 Retry the provisioning of a user object in Microsoft Entra ID.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 Invoke-MgBetaRetryUserServiceProvisioning -UserId $userId
-
-```
-This example shows how to use the Invoke-MgBetaRetryUserServiceProvisioning Cmdlet.
-
 
 ## PARAMETERS
 
@@ -186,34 +178,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning)
 
 [https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

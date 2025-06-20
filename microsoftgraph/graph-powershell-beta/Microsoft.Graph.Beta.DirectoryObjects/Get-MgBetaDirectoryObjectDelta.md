@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectdelta
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryObjectDelta
@@ -11,9 +10,6 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObjectDelta](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,59 +24,35 @@ Get-MgBetaDirectoryObjectDelta [-ExpandProperty <String[]>] [-Filter <String>] [
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Retrieve changes for a collection of users and groups
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.DirectoryObjects
-
-Get-MgBetaDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')" 
-
+### EXAMPLE 1
 ```
-This example will retrieve changes for a collection of users and groups
-
-### Example 2: Retrieve a collection of changes for a directory object
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-
-Get-MgBetaDirectoryObjectDelta -Filter "id eq '87d349ed-44d7-43e1-9a83-5f2406dee5bd'" 
-
 ```
-This example will retrieve a collection of changes for a directory object
 
-### Example 3: Retrieve changes to specific properties for a collection of users and groups
+Get-MgBetaDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')"
 
-```powershell
-
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-
-Get-MgBetaDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')" -Property "microsoft.graph.user/surname,microsoft.graph.group/displayName" 
-
 ```
-This example will retrieve changes to specific properties for a collection of users and groups
 
-### Example 4: Retrieve specific properties only if they changed for a collection of users and groups
+Get-MgBetaDirectoryObjectDelta -Filter "id eq '87d349ed-44d7-43e1-9a83-5f2406dee5bd'"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-
-Get-MgBetaDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')" -Property "microsoft.graph.user/surname,microsoft.graph.group/displayName" 
-
 ```
-This example will retrieve specific properties only if they changed for a collection of users and groups
 
+Get-MgBetaDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')" -Property "microsoft.graph.user/surname,microsoft.graph.group/displayName"
+
+### EXAMPLE 4
+```
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
+
+Get-MgBetaDirectoryObjectDelta -Filter "isof('microsoft.graph.user') or isof('microsoft.graph.group')" -Property "microsoft.graph.user/surname,microsoft.graph.group/displayName"
 
 ## PARAMETERS
 
@@ -296,26 +268,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectdelta)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
