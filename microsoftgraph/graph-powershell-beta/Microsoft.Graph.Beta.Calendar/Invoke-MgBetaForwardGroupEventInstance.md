@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaforwardgroupeventinstance
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Invoke-MgBetaForwardGroupEventInstance
