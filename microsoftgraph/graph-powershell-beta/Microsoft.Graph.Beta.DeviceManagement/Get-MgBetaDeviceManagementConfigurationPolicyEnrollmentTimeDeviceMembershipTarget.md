@@ -29,18 +29,6 @@ Get-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarge
 ## DESCRIPTION
 Invoke action retrieveEnrollmentTimeDeviceMembershipTarget
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationPolicyId
@@ -278,6 +266,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementconfigurationpolicyenrollmenttimedevicemembershiptarget](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementconfigurationpolicyenrollmenttimedevicemembershiptarget)
+
 
 
 

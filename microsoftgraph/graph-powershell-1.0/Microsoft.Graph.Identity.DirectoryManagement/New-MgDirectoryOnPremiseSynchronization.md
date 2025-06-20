@@ -33,18 +33,6 @@ New-MgDirectoryOnPremiseSynchronization -BodyParameter <IMicrosoftGraphOnPremise
 ## DESCRIPTION
 Create new navigation property to onPremisesSynchronization for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,6 +278,7 @@ This property isn't in use and updating it isn't supported.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryonpremisesynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryonpremisesynchronization)
+
 
 
 

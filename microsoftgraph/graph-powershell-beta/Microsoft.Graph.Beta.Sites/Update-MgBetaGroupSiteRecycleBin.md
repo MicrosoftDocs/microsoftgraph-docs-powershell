@@ -53,18 +53,6 @@ Update-MgBetaGroupSiteRecycleBin -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property recycleBin in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -33999,6 +33987,7 @@ Read-write.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiterecyclebin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiterecyclebin)
+
 
 
 

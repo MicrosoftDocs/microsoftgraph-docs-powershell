@@ -32,18 +32,6 @@ Invoke-MgCalendarGroupCalendar -InputObject <ICalendarIdentity> [-Count] [-Filte
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -245,6 +233,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendargroupcalendar)
+
 
 
 

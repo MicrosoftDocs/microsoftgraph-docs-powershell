@@ -38,18 +38,6 @@ Invoke action requestSignupUrl
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -197,6 +185,7 @@ BODYPARAMETER `<IPaths1Mblqr0DevicemanagementAndroidmanagedstoreaccountenterpris
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl)
+
 
 
 
