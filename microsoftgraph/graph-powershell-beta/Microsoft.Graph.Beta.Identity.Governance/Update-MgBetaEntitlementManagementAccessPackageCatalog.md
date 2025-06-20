@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccessPackageResources
-.
+
 To construct, see NOTES section for ACCESSPACKAGERESOURCES properties and create a hash table.
 
 ```yaml
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccessPackageResourceScopes
-.
+
 To construct, see NOTES section for ACCESSPACKAGERESOURCESCOPES properties and create a hash table.
 
 ```yaml
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomAccessPackageWorkflowExtensions
-.
+
 To construct, see NOTES section for CUSTOMACCESSPACKAGEWORKFLOWEXTENSIONS properties and create a hash table.
 
 ```yaml
@@ -455,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -UniqueName
-.
+
 
 ```yaml
 Type: String

@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReferenceTemplateVersion
-.
+
 
 ```yaml
 Type: Int32

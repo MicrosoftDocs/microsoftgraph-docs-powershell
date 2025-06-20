@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-.
+
 
 ```yaml
 Type: DateTime
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Message
-.
+
 
 ```yaml
 Type: String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-.
+
 
 ```yaml
 Type: String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -Recipients
-.
+
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetainInheritedPermissions
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -Scope
-.
+
 
 ```yaml
 Type: String
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendNotification
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-.
+
 
 ```yaml
 Type: String

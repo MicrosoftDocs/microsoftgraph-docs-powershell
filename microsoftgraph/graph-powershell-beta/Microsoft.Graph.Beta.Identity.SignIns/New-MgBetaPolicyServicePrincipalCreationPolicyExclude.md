@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationIds
-.
+
 
 ```yaml
 Type: String[]
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationPublisherIds
-.
+
 
 ```yaml
 Type: String[]
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationsFromVerifiedPublisherOnly
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationTenantIds
-.
+
 
 ```yaml
 Type: String[]
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertifiedApplicationsOnly
-.
+
 
 ```yaml
 Type: SwitchParameter

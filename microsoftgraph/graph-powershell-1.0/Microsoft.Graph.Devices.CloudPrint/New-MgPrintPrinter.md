@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectorId
-.
+
 
 ```yaml
 Type: String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -HasPhysicalDevice
-.
+
 
 ```yaml
 Type: SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Manufacturer
-.
+
 
 ```yaml
 Type: String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Model
-.
+
 
 ```yaml
 Type: String
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhysicalDeviceId
-.
+
 
 ```yaml
 Type: String

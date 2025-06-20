@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -DownloadUri
-.
+
 
 ```yaml
 Type: String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -FulfilledDateTime
-.
+
 
 ```yaml
 Type: DateTime

@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalSponsors
-.
+
 To construct, see NOTES section for EXTERNALSPONSORS properties and create a hash table.
 
 ```yaml
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalSponsors
-.
+
 To construct, see NOTES section for INTERNALSPONSORS properties and create a hash table.
 
 ```yaml
