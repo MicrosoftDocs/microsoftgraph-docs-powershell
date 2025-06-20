@@ -39,6 +39,14 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Read the properties and relationships of a workflow object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

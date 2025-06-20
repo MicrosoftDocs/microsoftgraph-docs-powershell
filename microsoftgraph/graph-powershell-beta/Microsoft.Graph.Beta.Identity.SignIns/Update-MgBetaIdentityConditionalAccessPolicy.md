@@ -52,6 +52,14 @@ Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Update the properties of a conditionalAccessPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

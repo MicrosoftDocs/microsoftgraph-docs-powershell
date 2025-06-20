@@ -29,6 +29,14 @@ Get-MgBetaGroupMemberCount -InputObject <IGroupsIdentity> [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupMember.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupMember.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

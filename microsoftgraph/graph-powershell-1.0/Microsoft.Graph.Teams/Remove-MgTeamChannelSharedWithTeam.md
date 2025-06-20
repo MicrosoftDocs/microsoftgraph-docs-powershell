@@ -32,6 +32,14 @@ Remove-MgTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-IfMatch <Stri
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMember.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

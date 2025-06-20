@@ -29,6 +29,14 @@ Get-MgCommunicationCallParticipantCount -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

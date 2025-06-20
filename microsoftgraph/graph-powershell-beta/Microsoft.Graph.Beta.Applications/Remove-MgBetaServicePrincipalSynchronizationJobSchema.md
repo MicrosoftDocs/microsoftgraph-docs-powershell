@@ -30,6 +30,14 @@ Remove-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplication
 ## DESCRIPTION
 Delete navigation property schema for servicePrincipals
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Synchronization.ReadWrite.All, CustomSecAttributeProvisioning.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, CustomSecAttributeProvisioning.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

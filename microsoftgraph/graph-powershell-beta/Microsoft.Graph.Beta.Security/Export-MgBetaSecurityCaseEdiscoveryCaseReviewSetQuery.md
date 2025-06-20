@@ -54,6 +54,14 @@ Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

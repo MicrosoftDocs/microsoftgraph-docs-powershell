@@ -53,6 +53,14 @@ New-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to childFolders for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
+| Application | Mail.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
