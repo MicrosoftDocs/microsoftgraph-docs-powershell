@@ -12,6 +12,9 @@ ms.subservice: entra-directory-management
 Given a domain name, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use the tenantId to configure cross-tenant access settings between you and the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaTenantRelationshipTenantInformationByDomainName](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Find-MgBetaTenantRelationshipTenantInformationByDomainName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Find (Default)

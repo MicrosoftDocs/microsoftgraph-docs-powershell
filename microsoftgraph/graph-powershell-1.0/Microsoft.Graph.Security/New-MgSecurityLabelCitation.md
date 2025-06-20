@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Create a new citationTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

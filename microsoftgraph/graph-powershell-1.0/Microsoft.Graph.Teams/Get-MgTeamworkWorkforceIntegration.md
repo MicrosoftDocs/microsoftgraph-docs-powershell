@@ -12,6 +12,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Retrieve the properties and relationships of a workforceIntegration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

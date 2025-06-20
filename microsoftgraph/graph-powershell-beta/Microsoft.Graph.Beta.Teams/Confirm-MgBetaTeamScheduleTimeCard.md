@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Confirm a specific timeCard.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Confirm-MgTeamScheduleTimeCard?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Confirm (Default)

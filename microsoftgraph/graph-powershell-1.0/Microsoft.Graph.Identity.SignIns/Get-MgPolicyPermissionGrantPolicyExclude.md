@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
