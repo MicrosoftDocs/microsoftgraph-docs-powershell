@@ -55,11 +55,11 @@ Add a strong password or secret to a servicePrincipal object.
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	passwordCredential = @{
@@ -68,6 +68,10 @@ $params = @{
 }
 
 Add-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgServicePrincipalPassword Cmdlet.
+
 
 ## PARAMETERS
 

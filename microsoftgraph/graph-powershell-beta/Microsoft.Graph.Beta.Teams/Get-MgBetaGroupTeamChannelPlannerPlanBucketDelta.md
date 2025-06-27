@@ -34,18 +34,6 @@ Get-MgBetaGroupTeamChannelPlannerPlanBucketDelta -InputObject <ITeamsIdentity> [
 Get newly created, updated, or deleted buckets in a Planner plan without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -388,6 +376,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelplannerplanbucketdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelplannerplanbucketdelta)
 
 [https://learn.microsoft.com/graph/api/plannerbucket-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerbucket-delta?view=graph-rest-beta)
+
 
 
 

@@ -56,11 +56,11 @@ A consultative transfer means that the transferor can inform the person they wan
 This is opposed to transfering the call directly.
 
 ## EXAMPLES
+### Example 1: Call transfer from a peer-to-peer call
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	transferTarget = @{
@@ -76,10 +76,14 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will call transfer from a peer-to-peer call
+
+### Example 2: Consultative transfer from a peer-to-peer call
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	transferTarget = @{
@@ -99,10 +103,14 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will consultative transfer from a peer-to-peer call
+
+### Example 3: Call transfer from a peer-to-peer call to PSTN number
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	transferTarget = @{
@@ -121,10 +129,14 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will call transfer from a peer-to-peer call to pstn number
+
+### Example 4: Consultative transfer from a peer-to-peer call to PSTN number
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	transferTarget = @{
@@ -146,10 +158,14 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will consultative transfer from a peer-to-peer call to pstn number
+
+### Example 5: Call transfer from a group call
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	transferTarget = @{
@@ -173,6 +189,10 @@ $params = @{
 }
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example will call transfer from a group call
+
 
 ## PARAMETERS
 

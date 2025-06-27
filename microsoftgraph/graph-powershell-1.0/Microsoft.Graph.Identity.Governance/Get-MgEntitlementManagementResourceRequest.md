@@ -39,13 +39,17 @@ Get-MgEntitlementManagementResourceRequest -InputObject <IIdentityGovernanceIden
 Represents a request to add or remove a resource to or from a catalog respectively.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementResourceRequest
+
+```
+This example shows how to use the Get-MgEntitlementManagementResourceRequest Cmdlet.
+
 
 ## PARAMETERS
 

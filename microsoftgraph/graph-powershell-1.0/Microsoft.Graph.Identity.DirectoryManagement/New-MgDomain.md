@@ -60,17 +60,21 @@ For example, subdomain.contoso.com is automatically be verified if contoso.com h
 | Application | Domain.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	id = "contoso.com"
 }
 
 New-MgDomain -BodyParameter $params
+
+```
+This example shows how to use the New-MgDomain Cmdlet.
+
 
 ## PARAMETERS
 

@@ -56,18 +56,6 @@ Update the navigation property settings in groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -347,6 +335,7 @@ VALUES `<IMicrosoftGraphSettingValue- `[]`>`: Collection of name-value pairs cor
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting)
+
 
 
 

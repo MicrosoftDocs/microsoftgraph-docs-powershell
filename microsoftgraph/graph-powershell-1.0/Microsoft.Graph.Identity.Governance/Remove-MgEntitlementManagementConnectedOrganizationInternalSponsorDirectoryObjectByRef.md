@@ -46,13 +46,17 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef -ConnectedOrganizationId $connectedOrganizationId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

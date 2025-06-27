@@ -60,11 +60,11 @@ Create new navigation property to phones for users
 | Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	displayName = "Car Phone"
@@ -73,6 +73,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePhone -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfilePhone Cmdlet.
+
 
 ## PARAMETERS
 

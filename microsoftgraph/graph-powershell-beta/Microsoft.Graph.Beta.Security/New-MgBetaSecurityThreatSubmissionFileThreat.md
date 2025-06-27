@@ -43,11 +43,11 @@ Create a new fileThreatSubmission object.
 | Application | ThreatSubmission.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.fileContentThreatSubmission"
@@ -57,6 +57,10 @@ $params = @{
 }
 
 New-MgBetaSecurityThreatSubmissionFileThreat -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityThreatSubmissionFileThreat Cmdlet.
+
 
 ## PARAMETERS
 

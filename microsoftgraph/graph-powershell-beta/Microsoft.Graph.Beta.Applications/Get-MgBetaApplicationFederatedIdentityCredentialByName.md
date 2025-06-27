@@ -41,18 +41,6 @@ Read the properties and relationships of a federatedIdentityCredential object.
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
 | Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -233,6 +221,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname)
 
 [https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-beta)
+
 
 
 

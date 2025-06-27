@@ -43,13 +43,17 @@ Deletes a deviceComplianceDeviceStatus.
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceDeviceStatusId $deviceComplianceDeviceStatusId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus Cmdlet.
+
 
 ## PARAMETERS
 

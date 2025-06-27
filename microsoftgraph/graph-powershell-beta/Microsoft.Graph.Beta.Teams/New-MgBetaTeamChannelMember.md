@@ -79,11 +79,11 @@ New-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 Create new navigation property to allMembers for teams
 
 ## EXAMPLES
+### Example 1: Add a member to a private channel
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -95,10 +95,14 @@ $params = @{
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will add a member to a private channel
+
+### Example 2: Add a member with the owner role to a private channel
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -110,10 +114,14 @@ $params = @{
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will add a member with the owner role to a private channel
+
+### Example 3: Add an owner to a channel using user principal name
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -125,10 +133,14 @@ $params = @{
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will add an owner to a channel using user principal name
+
+### Example 4: Add a user who is part of the same tenant as a member to a shared channel
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -139,10 +151,14 @@ $params = @{
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will add a user who is part of the same tenant as a member to a shared channel
+
+### Example 5: Add a user who is part of a different tenant as a member to a shared channel
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -154,10 +170,14 @@ $params = @{
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 6
 ```
+This example will add a user who is part of a different tenant as a member to a shared channel
+
+### Example 6: Add a user who is part of the same or a different tenant as a member to a shared channel using user principal name
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -167,6 +187,10 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example will add a user who is part of the same or a different tenant as a member to a shared channel using user principal name
+
 
 ## PARAMETERS
 

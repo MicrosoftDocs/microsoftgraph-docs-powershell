@@ -33,13 +33,17 @@ Get-MgReportOffice365GroupActivityCount -InputObject <IReportsIdentity> -OutFile
 Get the number of group activities across group workloads.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportOffice365GroupActivityCount -Period $periodId
+Get-MgReportOffice365GroupActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOffice365GroupActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

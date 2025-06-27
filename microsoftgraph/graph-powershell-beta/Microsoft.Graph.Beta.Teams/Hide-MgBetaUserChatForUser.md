@@ -51,18 +51,6 @@ Hide-MgBetaUserChatForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Hide a chat for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -352,6 +340,7 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetauserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetauserchatforuser)
 
 [https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-beta)
+
 
 
 

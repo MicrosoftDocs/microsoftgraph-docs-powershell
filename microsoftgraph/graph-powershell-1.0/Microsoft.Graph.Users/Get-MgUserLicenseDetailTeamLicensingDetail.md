@@ -39,18 +39,6 @@ Get the license status of a user in Microsoft Teams.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -173,6 +161,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetailteamlicensingdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetailteamlicensingdetail)
 
 [https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-1.0)
+
 
 
 
