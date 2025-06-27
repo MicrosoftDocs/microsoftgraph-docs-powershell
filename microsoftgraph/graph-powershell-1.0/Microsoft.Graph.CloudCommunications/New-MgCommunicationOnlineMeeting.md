@@ -403,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalId
-.
+
 
 ```yaml
 Type: String
