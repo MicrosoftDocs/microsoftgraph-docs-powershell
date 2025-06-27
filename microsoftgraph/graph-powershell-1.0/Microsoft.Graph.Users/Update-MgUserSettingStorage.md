@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage
@@ -244,68 +244,90 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserStorage\>: userStorage
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserStorage>`: userStorage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Quota \<IMicrosoftGraphUnifiedStorageQuota\>\]: unifiedStorageQuota
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Deleted \<Int64?\>\]: 
-    \[ManageWebUrl \<String\>\]: 
-    \[Remaining \<Int64?\>\]: 
-    \[Services \<IMicrosoftGraphServiceStorageQuotaBreakdown\[\]\>\]: 
-      \[DisplayName \<String\>\]: 
-      \[ManageWebUrl \<String\>\]: 
-      \[Used \<Int64?\>\]: 
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Deleted <Int64?>]`: 
+    - `[ManageWebUrl <String>]`: 
+    - `[Remaining <Int64?>]`: 
+    - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
+      - `[DisplayName <String>]`: 
+      - `[ManageWebUrl <String>]`: 
+      - `[Used <Int64?>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[State \<String\>\]: 
-    \[Total \<Int64?\>\]: 
-    \[Used \<Int64?\>\]: 
+    - `[State <String>]`: 
+    - `[Total <Int64?>]`: 
+    - `[Used <Int64?>]`: 
 
-INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
-  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
-  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
-  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
-  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
-  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
-  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[ServiceStorageQuotaBreakdownId \<String\>\]: The unique identifier of serviceStorageQuotaBreakdown
-  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
-  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[TrendingId \<String\>\]: The unique identifier of trending
-  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserPrincipalName \<String\>\]: Alternate key of user
-  \[WindowsSettingId \<String\>\]: The unique identifier of windowsSetting
-  \[WindowsSettingInstanceId \<String\>\]: The unique identifier of windowsSettingInstance
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
+  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
+  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
+  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserPrincipalName <String>]`: Alternate key of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
-QUOTA \<IMicrosoftGraphUnifiedStorageQuota\>: unifiedStorageQuota
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+QUOTA `<IMicrosoftGraphUnifiedStorageQuota>`: unifiedStorageQuota
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Deleted \<Int64?\>\]: 
-  \[ManageWebUrl \<String\>\]: 
-  \[Remaining \<Int64?\>\]: 
-  \[Services \<IMicrosoftGraphServiceStorageQuotaBreakdown\[\]\>\]: 
-    \[DisplayName \<String\>\]: 
-    \[ManageWebUrl \<String\>\]: 
-    \[Used \<Int64?\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Deleted <Int64?>]`: 
+  - `[ManageWebUrl <String>]`: 
+  - `[Remaining <Int64?>]`: 
+  - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
+    - `[DisplayName <String>]`: 
+    - `[ManageWebUrl <String>]`: 
+    - `[Used <Int64?>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[State \<String\>\]: 
-  \[Total \<Int64?\>\]: 
-  \[Used \<Int64?\>\]:
+  - `[State <String>]`: 
+  - `[Total <Int64?>]`: 
+  - `[Used <Int64?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
