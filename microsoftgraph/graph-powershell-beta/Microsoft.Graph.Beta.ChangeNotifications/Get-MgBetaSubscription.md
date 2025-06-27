@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription
 schema: 2.0.0
+ms.subservice: change-notifications
+ms.subservice: change-notifications
 ---
 
 # Get-MgBetaSubscription
