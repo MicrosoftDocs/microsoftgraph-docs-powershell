@@ -48,6 +48,14 @@ Publish-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagem
 ## DESCRIPTION
 Publish the specified browserSiteList for devices to download.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BrowserSiteLists.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BrowserSiteLists.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

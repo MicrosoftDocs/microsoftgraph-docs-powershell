@@ -29,6 +29,14 @@ Get-MgBetaTeamScheduleShiftRoleDefinitionCount -InputObject <ITeamsIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Schedule.Read.All, SchedulePermissions.ReadWrite.All, Schedule.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Schedule.Read.All, SchedulePermissions.ReadWrite.All, Schedule.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

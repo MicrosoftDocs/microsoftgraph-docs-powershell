@@ -29,6 +29,14 @@ Remove-MgBetaUserProfileProject -InputObject <IPeopleIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property projects for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.ReadWrite,  |
+| Application | User.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

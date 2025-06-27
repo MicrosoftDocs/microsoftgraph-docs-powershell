@@ -29,6 +29,14 @@ Disable-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementIdent
 ## DESCRIPTION
 Invoke action disable
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

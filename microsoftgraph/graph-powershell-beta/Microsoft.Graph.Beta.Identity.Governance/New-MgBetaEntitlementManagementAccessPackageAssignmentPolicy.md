@@ -41,6 +41,14 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 ## DESCRIPTION
 Create a new accessPackageAssignmentPolicy object in Microsoft Entra entitlement management.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

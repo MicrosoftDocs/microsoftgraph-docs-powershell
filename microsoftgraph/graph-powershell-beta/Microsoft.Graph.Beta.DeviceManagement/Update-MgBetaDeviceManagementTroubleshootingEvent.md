@@ -49,6 +49,14 @@ Update-MgBetaDeviceManagementTroubleshootingEvent -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Update the navigation property troubleshootingEvents in deviceManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

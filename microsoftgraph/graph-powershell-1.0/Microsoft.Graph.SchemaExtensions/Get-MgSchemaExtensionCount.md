@@ -20,6 +20,14 @@ Get-MgSchemaExtensionCount [-Filter <String>] [-Search <String>] [-ResponseHeade
 ## DESCRIPTION
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read, Application.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

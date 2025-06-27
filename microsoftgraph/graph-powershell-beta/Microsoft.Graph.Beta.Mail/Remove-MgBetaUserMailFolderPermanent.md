@@ -32,6 +32,14 @@ Remove-MgBetaUserMailFolderPermanent -InputObject <IMailIdentity> [-ResponseHead
 Permanently delete a mail folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
+| Application | Mail.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

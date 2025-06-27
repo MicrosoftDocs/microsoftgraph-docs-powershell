@@ -39,6 +39,14 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 ## DESCRIPTION
 Read the properties and relationships of an inboundFlow object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
