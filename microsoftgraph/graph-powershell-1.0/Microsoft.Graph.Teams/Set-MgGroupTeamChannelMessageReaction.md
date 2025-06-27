@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setReaction
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamChannelMessageReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

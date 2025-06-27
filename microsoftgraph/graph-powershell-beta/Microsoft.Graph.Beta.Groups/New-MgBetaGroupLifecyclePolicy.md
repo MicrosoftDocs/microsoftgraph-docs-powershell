@@ -12,6 +12,9 @@ ms.subservice: entra-groups
 Creates a new groupLifecyclePolicy.
 Only one policy exists in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/New-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

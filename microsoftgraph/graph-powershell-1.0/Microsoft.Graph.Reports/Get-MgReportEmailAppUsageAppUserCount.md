@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get the count of unique users per email app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageAppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageAppUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

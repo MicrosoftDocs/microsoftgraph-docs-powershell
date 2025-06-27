@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Replace an existing timeCard with updated values.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeCard?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

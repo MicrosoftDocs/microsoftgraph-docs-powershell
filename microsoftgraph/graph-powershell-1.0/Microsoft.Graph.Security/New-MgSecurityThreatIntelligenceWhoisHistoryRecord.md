@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to whoisHistoryRecords for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

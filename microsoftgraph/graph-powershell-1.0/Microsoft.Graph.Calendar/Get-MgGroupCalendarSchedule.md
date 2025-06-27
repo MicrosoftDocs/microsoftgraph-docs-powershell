@@ -11,6 +11,9 @@ ms.subservice: outlook
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

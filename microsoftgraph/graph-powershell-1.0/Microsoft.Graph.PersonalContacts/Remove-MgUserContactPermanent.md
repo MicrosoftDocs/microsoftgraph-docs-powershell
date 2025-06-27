@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action permanentDelete
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserContactPermanent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

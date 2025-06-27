@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Search for the restorePoint objects associated with a protectionUnit.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Search-MgSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.BackupRestore/Search-MgSolutionBackupRestorePoint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SearchExpanded (Default)

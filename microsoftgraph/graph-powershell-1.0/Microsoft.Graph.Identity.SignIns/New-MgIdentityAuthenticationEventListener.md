@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
