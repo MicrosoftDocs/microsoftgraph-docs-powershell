@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplenamepronunciation
 schema: 2.0.0
-ms.subservice: people
 ---
 
 # Get-MgBetaAdminPeopleNamePronunciation
@@ -22,26 +21,14 @@ Get-MgBetaAdminPeopleNamePronunciation [-ExpandProperty <String[]>] [-Property <
 ## DESCRIPTION
 Read the properties and relationships of a namePronunciationSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaAdminPeopleNamePronunciation
-
-```
-This example shows how to use the Get-MgBetaAdminPeopleNamePronunciation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -136,26 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplenamepronunciation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplenamepronunciation)
 
 [https://learn.microsoft.com/graph/api/namepronunciationsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/namepronunciationsettings-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

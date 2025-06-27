@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/confirm-mgbetadevicemanagementwindowsenrollmentautodiscovery
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function verifyWindowsEnrollmentAutoDiscovery
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,13 +29,17 @@ Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery -InputObject <IDevi
 ## DESCRIPTION
 Invoke function verifyWindowsEnrollmentAutoDiscovery
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -134,38 +135,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
-  - `[DomainName <String>]`: Usage: domainName='{domainName}'
-  - `[EnrollmentType <String>]`: Usage: enrollmentType='{enrollmentType}'
-  - `[Ids <String- `[]`>]`: Usage: ids={ids}
-  - `[Resource <String>]`: Usage: resource='{resource}'
-  - `[Scope <String>]`: Usage: scope='{scope}'
-  - `[Userid <String>]`: Usage: userid='{userid}'
+INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
+  \[DomainName \<String\>\]: Usage: domainName='{domainName}'
+  \[EnrollmentType \<String\>\]: Usage: enrollmentType='{enrollmentType}'
+  \[Ids \<String\[\]\>\]: Usage: ids={ids}
+  \[Resource \<String\>\]: Usage: resource='{resource}'
+  \[Scope \<String\>\]: Usage: scope='{scope}'
+  \[Userid \<String\>\]: Usage: userid='{userid}'
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/confirm-mgbetadevicemanagementwindowsenrollmentautodiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/confirm-mgbetadevicemanagementwindowsenrollmentautodiscovery)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

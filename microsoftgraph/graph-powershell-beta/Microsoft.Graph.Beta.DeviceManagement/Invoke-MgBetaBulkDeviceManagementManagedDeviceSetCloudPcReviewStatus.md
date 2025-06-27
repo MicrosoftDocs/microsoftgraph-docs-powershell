@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetabulkdevicemanagementmanageddevicesetcloudpcreviewstatus
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
@@ -32,13 +31,17 @@ Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
 ## DESCRIPTION
 Invoke action bulkSetCloudPcReviewStatus
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceIds
-
+.
 
 ```yaml
 Type: String[]
@@ -196,69 +199,46 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ManagedDeviceIds <String- `[]`>]`: 
-  - `[ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>]`: cloudPcReviewStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AccessTier <String>]`: cloudPcBlobAccessTier
-    - `[AzureStorageAccountId <String>]`: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
-    - `[AzureStorageAccountName <String>]`: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
-    - `[AzureStorageContainerName <String>]`: The name of the container in an Azure Storage account in which the Cloud PC snapshot is being saved.
-    - `[InReview <Boolean?>]`: True if the Cloud PC is set to in review by the administrator.
-    - `[RestorePointDateTime <DateTime?>]`: The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review.
+BODYPARAMETER \<IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ManagedDeviceIds \<String\[\]\>\]: 
+  \[ReviewStatus \<IMicrosoftGraphCloudPcReviewStatus\>\]: cloudPcReviewStatus
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AccessTier \<String\>\]: cloudPcBlobAccessTier
+    \[AzureStorageAccountId \<String\>\]: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
+    \[AzureStorageAccountName \<String\>\]: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
+    \[AzureStorageContainerName \<String\>\]: The name of the container in an Azure Storage account in which the Cloud PC snapshot is being saved.
+    \[InReview \<Boolean?\>\]: True if the Cloud PC is set to in review by the administrator.
+    \[RestorePointDateTime \<DateTime?\>\]: The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
-    - `[ReviewStartDateTime <DateTime?>]`: The specific date and time when the Cloud PC was set to in review.
+    \[ReviewStartDateTime \<DateTime?\>\]: The specific date and time when the Cloud PC was set to in review.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
-    - `[SubscriptionId <String>]`: The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.
-    - `[SubscriptionName <String>]`: The name of the Azure subscription in which the Cloud PC snapshot is being saved.
-    - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
+    \[SubscriptionId \<String\>\]: The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.
+    \[SubscriptionName \<String\>\]: The name of the Azure subscription in which the Cloud PC snapshot is being saved.
+    \[UserAccessLevel \<String\>\]: cloudPcUserAccessLevel
 
-REVIEWSTATUS `<IMicrosoftGraphCloudPcReviewStatus>`: cloudPcReviewStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AccessTier <String>]`: cloudPcBlobAccessTier
-  - `[AzureStorageAccountId <String>]`: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
-  - `[AzureStorageAccountName <String>]`: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
-  - `[AzureStorageContainerName <String>]`: The name of the container in an Azure Storage account in which the Cloud PC snapshot is being saved.
-  - `[InReview <Boolean?>]`: True if the Cloud PC is set to in review by the administrator.
-  - `[RestorePointDateTime <DateTime?>]`: The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review.
+REVIEWSTATUS \<IMicrosoftGraphCloudPcReviewStatus\>: cloudPcReviewStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AccessTier \<String\>\]: cloudPcBlobAccessTier
+  \[AzureStorageAccountId \<String\>\]: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
+  \[AzureStorageAccountName \<String\>\]: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
+  \[AzureStorageContainerName \<String\>\]: The name of the container in an Azure Storage account in which the Cloud PC snapshot is being saved.
+  \[InReview \<Boolean?\>\]: True if the Cloud PC is set to in review by the administrator.
+  \[RestorePointDateTime \<DateTime?\>\]: The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
-  - `[ReviewStartDateTime <DateTime?>]`: The specific date and time when the Cloud PC was set to in review.
+  \[ReviewStartDateTime \<DateTime?\>\]: The specific date and time when the Cloud PC was set to in review.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
-  - `[SubscriptionId <String>]`: The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.
-  - `[SubscriptionName <String>]`: The name of the Azure subscription in which the Cloud PC snapshot is being saved.
-  - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
+  \[SubscriptionId \<String\>\]: The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.
+  \[SubscriptionName \<String\>\]: The name of the Azure subscription in which the Cloud PC snapshot is being saved.
+  \[UserAccessLevel \<String\>\]: cloudPcUserAccessLevel
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetabulkdevicemanagementmanageddevicesetcloudpcreviewstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetabulkdevicemanagementmanageddevicesetcloudpcreviewstatus)
 
 [https://learn.microsoft.com/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

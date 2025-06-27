@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicysettingstatesummary
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to deviceCompliancePolicySettingStateSummaries for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,13 +33,17 @@ New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary
 ## DESCRIPTION
 Create new navigation property to deviceCompliancePolicySettingStateSummaries for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -108,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceComplianceSettingStates
-
+.
 To construct, see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
 
 ```yaml
@@ -351,76 +352,53 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicySettingStateSummary>`: Device Compilance Policy Setting State summary across the account.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceCompliancePolicySettingStateSummary\>: Device Compilance Policy Setting State summary across the account.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
-  - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
-  - `[DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[CompliantDeviceCount \<Int32?\>\]: Number of compliant devices
+  \[ConflictDeviceCount \<Int32?\>\]: Number of conflict devices
+  \[DeviceComplianceSettingStates \<IMicrosoftGraphDeviceComplianceSettingState\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-    - `[DeviceId <String>]`: The Device Id that is being reported
-    - `[DeviceModel <String>]`: The device model that is being reported
-    - `[DeviceName <String>]`: The Device Name that is being reported
-    - `[PlatformType <DeviceType?>]`: Device type.
-    - `[Setting <String>]`: The setting class name and property name.
-    - `[SettingName <String>]`: The Setting Name that is being reported
-    - `[State <String>]`: complianceStatus
-    - `[UserEmail <String>]`: The User email address that is being reported
-    - `[UserId <String>]`: The user Id that is being reported
-    - `[UserName <String>]`: The User Name that is being reported
-    - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
-  - `[ErrorDeviceCount <Int32?>]`: Number of error devices
-  - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
-  - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
-  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
-  - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
-  - `[Setting <String>]`: The setting class name and property name.
-  - `[SettingName <String>]`: Name of the setting.
-  - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
+    \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+    \[DeviceId \<String\>\]: The Device Id that is being reported
+    \[DeviceModel \<String\>\]: The device model that is being reported
+    \[DeviceName \<String\>\]: The Device Name that is being reported
+    \[PlatformType \<DeviceType?\>\]: Device type.
+    \[Setting \<String\>\]: The setting class name and property name.
+    \[SettingName \<String\>\]: The Setting Name that is being reported
+    \[State \<String\>\]: complianceStatus
+    \[UserEmail \<String\>\]: The User email address that is being reported
+    \[UserId \<String\>\]: The user Id that is being reported
+    \[UserName \<String\>\]: The User Name that is being reported
+    \[UserPrincipalName \<String\>\]: The User PrincipalName that is being reported
+  \[ErrorDeviceCount \<Int32?\>\]: Number of error devices
+  \[NonCompliantDeviceCount \<Int32?\>\]: Number of NonCompliant devices
+  \[NotApplicableDeviceCount \<Int32?\>\]: Number of not applicable devices
+  \[PlatformType \<PolicyPlatformType?\>\]: Supported platform types for policies.
+  \[RemediatedDeviceCount \<Int32?\>\]: Number of remediated devices
+  \[Setting \<String\>\]: The setting class name and property name.
+  \[SettingName \<String\>\]: Name of the setting.
+  \[UnknownDeviceCount \<Int32?\>\]: Number of unknown devices
 
-DEVICECOMPLIANCESETTINGSTATES `<IMicrosoftGraphDeviceComplianceSettingState- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+DEVICECOMPLIANCESETTINGSTATES \<IMicrosoftGraphDeviceComplianceSettingState\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceId <String>]`: The Device Id that is being reported
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[DeviceName <String>]`: The Device Name that is being reported
-  - `[PlatformType <DeviceType?>]`: Device type.
-  - `[Setting <String>]`: The setting class name and property name.
-  - `[SettingName <String>]`: The Setting Name that is being reported
-  - `[State <String>]`: complianceStatus
-  - `[UserEmail <String>]`: The User email address that is being reported
-  - `[UserId <String>]`: The user Id that is being reported
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
+  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+  \[DeviceId \<String\>\]: The Device Id that is being reported
+  \[DeviceModel \<String\>\]: The device model that is being reported
+  \[DeviceName \<String\>\]: The Device Name that is being reported
+  \[PlatformType \<DeviceType?\>\]: Device type.
+  \[Setting \<String\>\]: The setting class name and property name.
+  \[SettingName \<String\>\]: The Setting Name that is being reported
+  \[State \<String\>\]: complianceStatus
+  \[UserEmail \<String\>\]: The User email address that is being reported
+  \[UserId \<String\>\]: The user Id that is being reported
+  \[UserName \<String\>\]: The User Name that is being reported
+  \[UserPrincipalName \<String\>\]: The User PrincipalName that is being reported
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicysettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicysettingstatesummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

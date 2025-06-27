@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity
@@ -30,13 +30,17 @@ Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity
 ## DESCRIPTION
 Invoke action searchExistingIdentities
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -56,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -87,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImportedDeviceIdentities
-
+.
 To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
@@ -179,56 +183,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ImportedDeviceIdentities \<IMicrosoftGraphImportedDeviceIdentity\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
-    - `[Description <String>]`: The description of the device
-    - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-    - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
-    - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
-    - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
-    - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
-    - `[Platform <Platform?>]`: Supported platform types for policies.
+    \[CreatedDateTime \<DateTime?\>\]: Created Date Time of the device
+    \[Description \<String\>\]: The description of the device
+    \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+    \[ImportedDeviceIdentifier \<String\>\]: Imported Device Identifier
+    \[ImportedDeviceIdentityType \<ImportedDeviceIdentityType?\>\]: importedDeviceIdentityType
+    \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
+    \[LastModifiedDateTime \<DateTime?\>\]: Last Modified DateTime of the description
+    \[Platform \<Platform?\>\]: Supported platform types for policies.
 
-IMPORTEDDEVICEIDENTITIES `<IMicrosoftGraphImportedDeviceIdentity- `[]`>`: .
-  - `[Id <String>]`: The unique identifier for an entity.
+IMPORTEDDEVICEIDENTITIES \<IMicrosoftGraphImportedDeviceIdentity\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
-  - `[Description <String>]`: The description of the device
-  - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-  - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
-  - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
-  - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
-  - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
-  - `[Platform <Platform?>]`: Supported platform types for policies.
+  \[CreatedDateTime \<DateTime?\>\]: Created Date Time of the device
+  \[Description \<String\>\]: The description of the device
+  \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+  \[ImportedDeviceIdentifier \<String\>\]: Imported Device Identifier
+  \[ImportedDeviceIdentityType \<ImportedDeviceIdentityType?\>\]: importedDeviceIdentityType
+  \[LastContactedDateTime \<DateTime?\>\]: Last Contacted Date Time of the device
+  \[LastModifiedDateTime \<DateTime?\>\]: Last Modified DateTime of the description
+  \[Platform \<Platform?\>\]: Supported platform types for policies.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
