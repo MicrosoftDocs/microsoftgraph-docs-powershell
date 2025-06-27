@@ -52,18 +52,6 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -InputObjec
 ## DESCRIPTION
 Update the navigation property forwardingProfiles in networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -2093,6 +2081,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkforwardingprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkforwardingprofile)
+
 
 
 

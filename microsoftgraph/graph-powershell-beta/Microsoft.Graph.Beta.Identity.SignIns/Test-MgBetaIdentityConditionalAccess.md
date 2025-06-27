@@ -32,18 +32,6 @@ Test-MgBetaIdentityConditionalAccess
 ## DESCRIPTION
 Evaluates the applicability of Conditional Access Policies in your tenant based on the provided sign-in properties.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -336,6 +324,7 @@ This property is set by Intune.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentityconditionalaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentityconditionalaccess)
 
 [https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-beta)
+
 
 
 

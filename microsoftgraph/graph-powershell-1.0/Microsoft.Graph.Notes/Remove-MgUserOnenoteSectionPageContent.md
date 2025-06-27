@@ -32,18 +32,6 @@ Remove-MgUserOnenoteSectionPageContent -InputObject <INotesIdentity> [-IfMatch <
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -246,6 +234,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mguseronenotesectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mguseronenotesectionpagecontent)
+
 
 
 

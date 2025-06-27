@@ -29,18 +29,6 @@ Get-MgBetaNetworkAccessLogTrafficDevice -InputObject <INetworkAccessIdentity> [-
 ## DESCRIPTION
 Represents the device associated with the network traffic, providing details about the hardware or virtual machine involved in the transaction.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -189,6 +177,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogtrafficdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogtrafficdevice)
+
 
 
 

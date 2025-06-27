@@ -32,18 +32,6 @@ Invoke-MgPreviewGroupOnenoteNotebookSectionPage -InputObject <INotesIdentity>
 ## DESCRIPTION
 Invoke function preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -200,6 +188,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/invoke-mgpreviewgrouponenotenotebooksectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/invoke-mgpreviewgrouponenotenotebooksectionpage)
+
 
 
 

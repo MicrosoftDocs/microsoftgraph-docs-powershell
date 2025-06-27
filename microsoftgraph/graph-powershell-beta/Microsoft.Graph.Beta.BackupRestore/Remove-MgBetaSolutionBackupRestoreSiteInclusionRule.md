@@ -32,18 +32,6 @@ Remove-MgBetaSolutionBackupRestoreSiteInclusionRule -InputObject <IBackupRestore
 ## DESCRIPTION
 Delete navigation property siteInclusionRules for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -231,6 +219,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresiteinclusionrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresiteinclusionrule)
+
 
 
 

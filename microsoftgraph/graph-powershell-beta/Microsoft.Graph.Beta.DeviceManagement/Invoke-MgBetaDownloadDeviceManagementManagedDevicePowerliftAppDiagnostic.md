@@ -31,18 +31,6 @@ Invoke-MgBetaDownloadDeviceManagementManagedDevicePowerliftAppDiagnostic -OutFil
 ## DESCRIPTION
 Invoke action downloadPowerliftAppDiagnostic
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -229,6 +217,7 @@ REQUEST `<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>`: This type cont
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementmanageddevicepowerliftappdiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementmanageddevicepowerliftappdiagnostic)
+
 
 
 

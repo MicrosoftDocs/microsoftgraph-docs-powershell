@@ -58,18 +58,6 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackup
 ## DESCRIPTION
 Update the navigation property sharePointRestoreSessions in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -685,6 +673,7 @@ Future value; don't use.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresession)
+
 
 
 
