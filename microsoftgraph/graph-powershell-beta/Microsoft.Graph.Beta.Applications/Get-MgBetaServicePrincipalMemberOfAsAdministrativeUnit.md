@@ -43,6 +43,8 @@ Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit -InputObject <IApplicatio
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -23,6 +23,8 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrength [-ExpandProperty <Stri
 DEPRECATED.
 See the authenticationStrength relationship instead.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

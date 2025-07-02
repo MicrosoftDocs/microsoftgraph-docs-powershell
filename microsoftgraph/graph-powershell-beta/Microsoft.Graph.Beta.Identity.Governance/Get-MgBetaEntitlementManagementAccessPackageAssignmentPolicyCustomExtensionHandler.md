@@ -42,6 +42,8 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandl
 The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject 
 ## DESCRIPTION
 Delete navigation property windowsProtectionStates for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

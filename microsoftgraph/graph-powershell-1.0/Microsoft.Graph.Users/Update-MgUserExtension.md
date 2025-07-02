@@ -46,6 +46,8 @@ Update-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable>
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

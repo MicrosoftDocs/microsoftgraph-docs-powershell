@@ -32,6 +32,8 @@ Get-MgBetaGroupTeamInstalledAppCount -InputObject <ITeamsIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

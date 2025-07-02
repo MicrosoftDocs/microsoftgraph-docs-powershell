@@ -43,6 +43,8 @@ Currently, only shared channels are supported.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

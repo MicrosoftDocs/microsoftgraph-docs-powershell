@@ -32,6 +32,8 @@ Get-MgBetaReportMailboxUsageQuotaStatusMailboxCount -InputObject <IReportsIdenti
 ## DESCRIPTION
 Invoke function getMailboxUsageQuotaStatusMailboxCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

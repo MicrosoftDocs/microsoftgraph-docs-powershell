@@ -29,6 +29,8 @@ Remove-MgBetaIdentityGovernanceAccessReviewDecisionInsight -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property insights for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

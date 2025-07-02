@@ -21,6 +21,8 @@ Remove-MgBetaIdentityGovernancePermissionManagement [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete navigation property permissionsManagement for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

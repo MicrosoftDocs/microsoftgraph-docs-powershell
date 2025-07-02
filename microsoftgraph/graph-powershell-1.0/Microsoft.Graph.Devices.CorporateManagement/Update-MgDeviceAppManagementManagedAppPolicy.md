@@ -49,6 +49,8 @@ Update-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Update the navigation property managedAppPolicies in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

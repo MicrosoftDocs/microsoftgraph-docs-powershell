@@ -56,6 +56,8 @@ New-MgBetaGroupSiteGetByPathPageTemplate -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to pageTemplates for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

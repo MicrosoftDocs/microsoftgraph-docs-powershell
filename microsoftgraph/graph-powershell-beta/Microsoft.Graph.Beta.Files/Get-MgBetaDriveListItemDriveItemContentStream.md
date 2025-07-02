@@ -29,6 +29,8 @@ Get-MgBetaDriveListItemDriveItemContentStream -InputObject <IFilesIdentity> -Out
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -32,6 +32,8 @@ Get-MgApplicationSynchronizationSecretCount -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

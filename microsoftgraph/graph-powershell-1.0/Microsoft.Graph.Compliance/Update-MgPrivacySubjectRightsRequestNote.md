@@ -48,6 +48,8 @@ Update-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Update the navigation property notes in privacy
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportUnhealthyDefenderAgentReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getUnhealthyDefenderAgentsReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

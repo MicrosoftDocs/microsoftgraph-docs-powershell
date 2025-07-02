@@ -31,6 +31,8 @@ Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope
 ## DESCRIPTION
 Delete navigation property resourceScope for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

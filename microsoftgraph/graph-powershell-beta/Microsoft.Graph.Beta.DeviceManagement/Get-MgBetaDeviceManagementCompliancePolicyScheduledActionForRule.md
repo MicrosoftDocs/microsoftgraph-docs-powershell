@@ -46,6 +46,8 @@ The list of scheduled action for this rule
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

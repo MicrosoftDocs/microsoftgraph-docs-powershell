@@ -32,6 +32,8 @@ New-MgBetaDirectoryRoleTemplate -BodyParameter <IMicrosoftGraphDirectoryRoleTemp
 ## DESCRIPTION
 Add new entity to directoryRoleTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

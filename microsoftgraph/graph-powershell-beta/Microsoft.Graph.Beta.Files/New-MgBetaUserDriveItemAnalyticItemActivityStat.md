@@ -56,6 +56,8 @@ New-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

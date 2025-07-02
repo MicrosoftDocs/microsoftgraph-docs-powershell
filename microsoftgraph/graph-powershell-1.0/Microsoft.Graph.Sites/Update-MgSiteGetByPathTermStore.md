@@ -48,6 +48,8 @@ Update-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property termStore in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

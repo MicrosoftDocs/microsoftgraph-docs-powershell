@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveItemPermanent -InputObject <IFilesIdentity> [-ResponseHea
 ## DESCRIPTION
 Invoke action permanentDelete
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

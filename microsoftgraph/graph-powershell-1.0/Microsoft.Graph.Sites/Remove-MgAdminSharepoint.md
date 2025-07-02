@@ -23,6 +23,8 @@ Remove-MgAdminSharepoint [-IfMatch <String>] [-ResponseHeadersVariable <String>]
 ## DESCRIPTION
 Delete navigation property sharepoint for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

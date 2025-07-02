@@ -42,6 +42,8 @@ Read-only.
 Nullable.
 The collection of tasks in the bucket.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

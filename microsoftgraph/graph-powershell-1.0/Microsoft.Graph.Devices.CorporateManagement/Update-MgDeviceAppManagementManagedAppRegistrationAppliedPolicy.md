@@ -52,6 +52,8 @@ Update-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy
 ## DESCRIPTION
 Update the navigation property appliedPolicies in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

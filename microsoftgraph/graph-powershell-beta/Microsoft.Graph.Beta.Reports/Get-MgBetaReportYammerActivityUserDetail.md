@@ -44,6 +44,8 @@ Get-MgBetaReportYammerActivityUserDetail -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Invoke function getYammerActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

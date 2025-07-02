@@ -47,6 +47,8 @@ Update-MgBetaOrganizationPartnerInformation -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Update the navigation property partnerInformation in organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

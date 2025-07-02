@@ -36,6 +36,8 @@ Read-only.
 Nullable.
 Extra details about the plan.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

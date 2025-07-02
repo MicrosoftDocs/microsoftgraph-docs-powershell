@@ -61,6 +61,8 @@ Update-MgGroupSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property items in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

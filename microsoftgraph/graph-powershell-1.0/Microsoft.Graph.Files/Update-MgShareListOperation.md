@@ -51,6 +51,8 @@ Update-MgShareListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

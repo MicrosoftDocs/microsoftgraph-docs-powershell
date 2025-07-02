@@ -29,6 +29,8 @@ Revoke-MgBetaUserManagedDeviceAppleVppLicense -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Revoke all Apple Vpp licenses for a device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

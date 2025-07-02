@@ -32,6 +32,8 @@ Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-ResponseHea
 ## DESCRIPTION
 Update search
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Acronyms

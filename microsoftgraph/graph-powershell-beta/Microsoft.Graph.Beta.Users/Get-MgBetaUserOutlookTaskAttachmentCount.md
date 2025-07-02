@@ -37,6 +37,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Tasks.Read,  |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

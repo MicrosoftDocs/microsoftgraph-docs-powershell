@@ -74,6 +74,8 @@ Remove-MgBetaGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property allMembers for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

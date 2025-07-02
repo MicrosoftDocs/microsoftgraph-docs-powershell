@@ -49,6 +49,8 @@ Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage
 ## DESCRIPTION
 Update the navigation property stages in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

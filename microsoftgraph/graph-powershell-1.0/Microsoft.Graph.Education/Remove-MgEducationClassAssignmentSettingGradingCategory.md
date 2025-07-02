@@ -33,6 +33,8 @@ Remove-MgEducationClassAssignmentSettingGradingCategory -InputObject <IEducation
 ## DESCRIPTION
 Delete navigation property gradingCategories for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

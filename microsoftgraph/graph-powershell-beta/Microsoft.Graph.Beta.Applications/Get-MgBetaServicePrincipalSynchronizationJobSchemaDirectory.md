@@ -42,6 +42,8 @@ Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IAppli
 ## DESCRIPTION
 Contains the collection of directories and all of their objects.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

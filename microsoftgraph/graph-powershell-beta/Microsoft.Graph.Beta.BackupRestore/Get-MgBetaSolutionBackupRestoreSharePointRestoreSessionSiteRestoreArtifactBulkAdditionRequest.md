@@ -42,6 +42,8 @@ Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAd
 ## DESCRIPTION
 Get a siteRestoreArtifactsBulkAdditionRequest object by its id, associated with a sharePointRestoreSession.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

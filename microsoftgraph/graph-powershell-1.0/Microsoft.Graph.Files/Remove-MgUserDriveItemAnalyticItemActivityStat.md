@@ -33,6 +33,8 @@ Remove-MgUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-I
 ## DESCRIPTION
 Delete navigation property itemActivityStats for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

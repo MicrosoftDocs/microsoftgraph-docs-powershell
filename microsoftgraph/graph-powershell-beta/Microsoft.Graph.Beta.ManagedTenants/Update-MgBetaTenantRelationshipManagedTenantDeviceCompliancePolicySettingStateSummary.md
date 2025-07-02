@@ -56,6 +56,8 @@ Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSu
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicySettingStateSummaries in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property presences for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

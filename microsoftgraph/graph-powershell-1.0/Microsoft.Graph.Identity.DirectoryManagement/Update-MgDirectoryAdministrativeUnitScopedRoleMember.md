@@ -51,6 +51,8 @@ Update-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDire
 ## DESCRIPTION
 Update the navigation property scopedRoleMembers in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

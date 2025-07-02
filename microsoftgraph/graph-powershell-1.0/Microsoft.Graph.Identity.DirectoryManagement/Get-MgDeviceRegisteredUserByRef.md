@@ -36,6 +36,8 @@ For cloud joined devices and registered personal devices, registered users are s
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

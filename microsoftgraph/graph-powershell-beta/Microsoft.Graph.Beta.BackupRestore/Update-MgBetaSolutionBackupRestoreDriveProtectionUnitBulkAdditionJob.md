@@ -51,6 +51,8 @@ Update-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob -InputObjec
 ## DESCRIPTION
 Update the navigation property driveProtectionUnitsBulkAdditionJobs in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

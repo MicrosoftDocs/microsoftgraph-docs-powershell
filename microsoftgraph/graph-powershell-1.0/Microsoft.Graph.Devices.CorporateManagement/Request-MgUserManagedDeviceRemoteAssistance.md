@@ -33,6 +33,8 @@ Request-MgUserManagedDeviceRemoteAssistance -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 Request remote assistance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

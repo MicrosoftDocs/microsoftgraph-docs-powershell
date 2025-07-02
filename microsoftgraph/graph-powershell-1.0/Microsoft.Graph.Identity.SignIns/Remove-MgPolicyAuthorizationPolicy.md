@@ -24,6 +24,8 @@ Remove-MgPolicyAuthorizationPolicy [-IfMatch <String>] [-ResponseHeadersVariable
 ## DESCRIPTION
 Delete navigation property authorizationPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

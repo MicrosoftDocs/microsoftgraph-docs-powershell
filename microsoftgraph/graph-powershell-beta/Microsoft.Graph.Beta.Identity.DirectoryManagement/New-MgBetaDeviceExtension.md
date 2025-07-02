@@ -45,6 +45,8 @@ New-MgBetaDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity> -B
 ## DESCRIPTION
 Create new navigation property to extensions for devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

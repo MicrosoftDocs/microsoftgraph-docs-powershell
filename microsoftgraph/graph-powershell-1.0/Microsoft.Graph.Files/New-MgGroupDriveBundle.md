@@ -82,6 +82,8 @@ New-MgGroupDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to bundles for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

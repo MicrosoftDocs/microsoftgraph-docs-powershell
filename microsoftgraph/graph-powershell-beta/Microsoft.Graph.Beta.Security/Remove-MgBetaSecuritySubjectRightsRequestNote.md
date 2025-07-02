@@ -32,6 +32,8 @@ Remove-MgBetaSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Delete navigation property notes for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthoredNoteId

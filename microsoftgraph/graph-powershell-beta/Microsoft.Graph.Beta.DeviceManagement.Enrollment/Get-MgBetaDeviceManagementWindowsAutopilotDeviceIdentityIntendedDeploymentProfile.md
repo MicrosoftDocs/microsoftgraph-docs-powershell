@@ -39,6 +39,8 @@ Deployment profile intended to be assigned to the Windows autopilot device.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -45,6 +45,8 @@ Update-MgBetaDirectoryOutboundSharedUserProfile -InputObject <IIdentityDirectory
 ## DESCRIPTION
 Update the navigation property outboundSharedUserProfiles in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

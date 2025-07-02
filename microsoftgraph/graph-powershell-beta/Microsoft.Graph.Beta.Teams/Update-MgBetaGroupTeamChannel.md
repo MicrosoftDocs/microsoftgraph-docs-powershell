@@ -60,6 +60,8 @@ Update-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property channels in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

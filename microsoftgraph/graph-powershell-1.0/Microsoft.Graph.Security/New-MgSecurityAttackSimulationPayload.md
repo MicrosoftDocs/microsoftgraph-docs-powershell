@@ -38,6 +38,8 @@ New-MgSecurityAttackSimulationPayload -BodyParameter <IMicrosoftGraphPayload>
 ## DESCRIPTION
 Create new navigation property to payloads for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

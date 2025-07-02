@@ -62,6 +62,8 @@ New-MgGroupSiteGetByPathList -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to lists for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

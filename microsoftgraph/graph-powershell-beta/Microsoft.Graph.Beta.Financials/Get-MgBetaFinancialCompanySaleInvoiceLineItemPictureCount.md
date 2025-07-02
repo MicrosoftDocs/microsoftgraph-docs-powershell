@@ -43,6 +43,8 @@ Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount -InputObject <IFinanci
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

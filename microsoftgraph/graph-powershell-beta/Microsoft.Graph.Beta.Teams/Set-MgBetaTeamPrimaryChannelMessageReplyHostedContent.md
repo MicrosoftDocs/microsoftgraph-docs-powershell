@@ -35,6 +35,8 @@ Set-MgBetaTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdenti
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageHostedContentId

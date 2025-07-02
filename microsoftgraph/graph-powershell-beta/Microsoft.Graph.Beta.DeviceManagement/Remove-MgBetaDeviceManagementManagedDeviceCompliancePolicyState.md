@@ -32,6 +32,8 @@ Remove-MgBetaDeviceManagementManagedDeviceCompliancePolicyState -InputObject <ID
 ## DESCRIPTION
 Delete navigation property deviceCompliancePolicyStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceCompliancePolicyStateId

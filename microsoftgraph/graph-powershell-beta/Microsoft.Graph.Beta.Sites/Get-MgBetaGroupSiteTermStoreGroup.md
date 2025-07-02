@@ -40,6 +40,8 @@ Get-MgBetaGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 Collection of all groups available in the term store.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

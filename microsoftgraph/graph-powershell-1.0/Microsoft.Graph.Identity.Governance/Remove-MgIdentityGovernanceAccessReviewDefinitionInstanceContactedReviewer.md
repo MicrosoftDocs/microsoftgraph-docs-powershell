@@ -34,6 +34,8 @@ Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer
 ## DESCRIPTION
 Delete navigation property contactedReviewers for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId

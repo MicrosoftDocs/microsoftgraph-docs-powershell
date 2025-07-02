@@ -50,6 +50,8 @@ Update-MgAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> -BodyPa
 ## DESCRIPTION
 Update the navigation property versions in agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

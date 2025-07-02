@@ -30,6 +30,8 @@ New-MgBetaExternalIndustryDataOperation -BodyParameter <IMicrosoftGraphLongRunni
 ## DESCRIPTION
 Create new navigation property to operations for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

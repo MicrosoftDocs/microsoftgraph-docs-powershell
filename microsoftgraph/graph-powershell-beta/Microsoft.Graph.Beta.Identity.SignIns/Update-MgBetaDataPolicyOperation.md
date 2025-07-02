@@ -48,6 +48,8 @@ Update-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update entity in dataPolicyOperations
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

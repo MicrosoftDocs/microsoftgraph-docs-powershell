@@ -32,6 +32,8 @@ Remove-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property itemInsights for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -29,6 +29,8 @@ Get-MgEntitlementManagementResourceRequestCatalog -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Get catalog from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

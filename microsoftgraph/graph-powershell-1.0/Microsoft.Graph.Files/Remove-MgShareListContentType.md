@@ -32,6 +32,8 @@ Remove-MgShareListContentType -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property contentTypes for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

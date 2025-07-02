@@ -39,6 +39,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp
 ## DESCRIPTION
 The collection of contained apps in a mobileApp acting as a package.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

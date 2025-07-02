@@ -29,6 +29,8 @@ Get-MgBetaUserOnlineMeetingBroadcastRecording -InputObject <ICloudCommunications
 ## DESCRIPTION
 Get broadcastRecording for the navigation property onlineMeetings from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

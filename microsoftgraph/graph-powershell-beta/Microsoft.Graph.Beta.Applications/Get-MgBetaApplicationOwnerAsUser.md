@@ -41,6 +41,8 @@ Get-MgBetaApplicationOwnerAsUser -InputObject <IApplicationsIdentity> [-ExpandPr
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

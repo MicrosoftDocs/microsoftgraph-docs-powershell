@@ -24,6 +24,8 @@ Get-MgBetaSecurityThreatIntelligenceProfileIndicatorCount [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

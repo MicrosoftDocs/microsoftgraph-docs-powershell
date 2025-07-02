@@ -53,6 +53,8 @@ New-MgBetaUserManagedDeviceSecurityBaselineStateSettingState -InputObject <IDevi
 ## DESCRIPTION
 Create new navigation property to settingStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

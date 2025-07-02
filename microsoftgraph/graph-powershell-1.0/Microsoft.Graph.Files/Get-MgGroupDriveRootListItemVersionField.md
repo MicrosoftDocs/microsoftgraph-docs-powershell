@@ -32,6 +32,8 @@ Get-MgGroupDriveRootListItemVersionField -InputObject <IFilesIdentity> [-ExpandP
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

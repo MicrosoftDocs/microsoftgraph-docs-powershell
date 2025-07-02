@@ -29,6 +29,8 @@ Remove-MgBetaUserDriveListPermission -InputObject <IFilesIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property permissions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

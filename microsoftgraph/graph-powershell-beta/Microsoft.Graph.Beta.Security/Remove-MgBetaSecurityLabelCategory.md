@@ -32,6 +32,8 @@ Remove-MgBetaSecurityLabelCategory -InputObject <ISecurityIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property categories for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CategoryTemplateId

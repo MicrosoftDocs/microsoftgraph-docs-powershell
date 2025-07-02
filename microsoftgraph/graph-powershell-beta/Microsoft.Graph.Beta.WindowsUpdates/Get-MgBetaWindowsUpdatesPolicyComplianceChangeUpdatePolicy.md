@@ -30,6 +30,8 @@ Get-MgBetaWindowsUpdatesPolicyComplianceChangeUpdatePolicy -InputObject <IWindow
 ## DESCRIPTION
 The policy this compliance change is a member of.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ComplianceChangeId

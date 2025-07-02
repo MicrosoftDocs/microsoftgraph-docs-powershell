@@ -29,6 +29,8 @@ Get-MgBetaNetworkAccessLogTrafficDevice -InputObject <INetworkAccessIdentity> [-
 ## DESCRIPTION
 Get device from networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

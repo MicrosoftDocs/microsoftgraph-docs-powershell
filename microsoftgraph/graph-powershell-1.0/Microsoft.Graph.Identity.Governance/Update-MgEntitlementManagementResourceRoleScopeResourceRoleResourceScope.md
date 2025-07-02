@@ -51,6 +51,8 @@ Update-MgEntitlementManagementResourceRoleScopeResourceRoleResourceScope
 ## DESCRIPTION
 Update the navigation property scopes in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleId

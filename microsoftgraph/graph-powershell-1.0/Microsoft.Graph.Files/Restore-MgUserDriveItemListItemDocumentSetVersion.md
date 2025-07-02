@@ -33,6 +33,8 @@ Restore-MgUserDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Restore a document set version.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

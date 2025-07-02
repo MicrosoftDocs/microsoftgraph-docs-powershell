@@ -43,6 +43,8 @@ New-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSectionWebpart -InputObject <I
 ## DESCRIPTION
 Create new navigation property to webparts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

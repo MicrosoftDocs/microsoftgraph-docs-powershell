@@ -29,6 +29,8 @@ New-MgBetaBusinessFlowTemplate -BodyParameter <IMicrosoftGraphBusinessFlowTempla
 ## DESCRIPTION
 Add new entity to businessFlowTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

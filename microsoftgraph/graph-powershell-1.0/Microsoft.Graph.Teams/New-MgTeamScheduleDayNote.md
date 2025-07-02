@@ -58,6 +58,8 @@ Create new navigation property to dayNotes for teams
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

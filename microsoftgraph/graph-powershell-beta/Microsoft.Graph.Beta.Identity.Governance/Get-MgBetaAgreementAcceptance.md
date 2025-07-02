@@ -42,6 +42,8 @@ Get-MgBetaAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-Expan
 Read-only.
 Information about acceptances of this agreement.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId

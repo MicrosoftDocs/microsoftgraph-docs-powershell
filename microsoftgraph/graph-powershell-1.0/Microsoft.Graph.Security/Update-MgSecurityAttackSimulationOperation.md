@@ -50,6 +50,8 @@ Update-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property operations in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

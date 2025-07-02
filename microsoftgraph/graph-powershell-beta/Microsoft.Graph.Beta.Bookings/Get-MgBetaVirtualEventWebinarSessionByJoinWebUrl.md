@@ -32,6 +32,8 @@ Get-MgBetaVirtualEventWebinarSessionByJoinWebUrl -InputObject <IBookingsIdentity
 Read the properties and relationships of a virtualEventSession object.
 Currently, the following virtual event types are supported: virtualEventTownhall and virtualEventWebinar.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

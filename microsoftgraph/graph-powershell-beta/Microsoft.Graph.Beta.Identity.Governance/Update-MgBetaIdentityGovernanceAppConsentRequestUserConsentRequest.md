@@ -52,6 +52,8 @@ Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject 
 ## DESCRIPTION
 Update the navigation property userConsentRequests in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

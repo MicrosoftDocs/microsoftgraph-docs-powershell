@@ -49,6 +49,8 @@ Update-MgBetaInformationProtectionThreatAssessmentRequestResult -InputObject <II
 ## DESCRIPTION
 Update the navigation property results in informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

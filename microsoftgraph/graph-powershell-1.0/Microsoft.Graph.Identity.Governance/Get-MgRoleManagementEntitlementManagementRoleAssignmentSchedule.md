@@ -40,6 +40,8 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule -InputObject <II
 ## DESCRIPTION
 Schedules for active role assignment operations.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

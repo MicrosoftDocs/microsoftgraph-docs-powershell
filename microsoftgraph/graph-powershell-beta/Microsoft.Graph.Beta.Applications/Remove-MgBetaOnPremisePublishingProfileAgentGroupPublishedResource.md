@@ -30,6 +30,8 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource -InputObject 
 ## DESCRIPTION
 Delete navigation property publishedResources for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

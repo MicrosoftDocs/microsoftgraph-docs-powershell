@@ -48,6 +48,8 @@ Set-MgBetaDeviceManagementManagedDeviceCategoryByRef -InputObject <IDeviceManage
 ## DESCRIPTION
 Update the ref of navigation property deviceCategory in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

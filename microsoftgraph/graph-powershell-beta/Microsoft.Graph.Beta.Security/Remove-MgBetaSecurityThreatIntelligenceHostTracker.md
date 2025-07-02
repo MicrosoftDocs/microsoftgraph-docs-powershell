@@ -32,6 +32,8 @@ Remove-MgBetaSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Delete navigation property hostTrackers for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

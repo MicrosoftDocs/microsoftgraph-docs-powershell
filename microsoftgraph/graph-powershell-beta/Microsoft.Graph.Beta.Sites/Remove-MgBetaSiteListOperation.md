@@ -32,6 +32,8 @@ Remove-MgBetaSiteListOperation -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property operations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

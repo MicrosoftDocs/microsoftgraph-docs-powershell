@@ -32,6 +32,8 @@ Remove-MgEducationUserAssignmentRubric -InputObject <IEducationIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property rubric for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

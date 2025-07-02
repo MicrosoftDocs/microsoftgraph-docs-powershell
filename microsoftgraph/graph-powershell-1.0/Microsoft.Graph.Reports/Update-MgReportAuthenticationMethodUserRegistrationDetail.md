@@ -54,6 +54,8 @@ Update-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReports
 ## DESCRIPTION
 Update the navigation property userRegistrationDetails in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

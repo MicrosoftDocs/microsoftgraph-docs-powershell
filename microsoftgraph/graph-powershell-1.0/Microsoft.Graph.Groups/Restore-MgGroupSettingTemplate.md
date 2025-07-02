@@ -40,6 +40,8 @@ You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupSettingTemplateId

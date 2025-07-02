@@ -32,6 +32,8 @@ Get-MgBetaReportYammerDeviceUsageDistributionUserCount -InputObject <IReportsIde
 ## DESCRIPTION
 Invoke function getYammerDeviceUsageDistributionUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

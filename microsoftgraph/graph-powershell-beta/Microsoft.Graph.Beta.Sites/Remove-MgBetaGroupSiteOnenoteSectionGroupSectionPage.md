@@ -33,6 +33,8 @@ Remove-MgBetaGroupSiteOnenoteSectionGroupSectionPage -InputObject <ISitesIdentit
 ## DESCRIPTION
 Delete navigation property pages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

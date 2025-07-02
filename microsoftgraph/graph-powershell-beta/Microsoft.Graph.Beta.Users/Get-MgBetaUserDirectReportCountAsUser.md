@@ -32,6 +32,8 @@ Get-MgBetaUserDirectReportCountAsUser -InputObject <IUsersIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

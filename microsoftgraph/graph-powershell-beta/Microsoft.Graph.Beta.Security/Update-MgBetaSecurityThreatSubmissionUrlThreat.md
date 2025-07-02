@@ -51,6 +51,8 @@ Update-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property urlThreats in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

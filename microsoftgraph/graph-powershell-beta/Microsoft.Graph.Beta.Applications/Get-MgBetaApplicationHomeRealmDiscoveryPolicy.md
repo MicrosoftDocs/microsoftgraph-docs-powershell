@@ -40,6 +40,8 @@ Get-MgBetaApplicationHomeRealmDiscoveryPolicy -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Get homeRealmDiscoveryPolicies from applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

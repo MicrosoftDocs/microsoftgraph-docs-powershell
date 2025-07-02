@@ -50,6 +50,8 @@ New-MgBetaUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity
 ## DESCRIPTION
 Create new navigation property to attachments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -75,6 +75,8 @@ Update-MgBetaProgramControlProgram -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property program in programControls
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -56,6 +56,8 @@ New-MgGroupSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to pages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

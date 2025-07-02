@@ -29,6 +29,8 @@ Get-MgBetaTenantRelationshipManagedTenantAlertLogAlert -InputObject <IManagedTen
 ## DESCRIPTION
 Get alert from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -41,6 +41,8 @@ Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion
 ## DESCRIPTION
 The list of content versions for this app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

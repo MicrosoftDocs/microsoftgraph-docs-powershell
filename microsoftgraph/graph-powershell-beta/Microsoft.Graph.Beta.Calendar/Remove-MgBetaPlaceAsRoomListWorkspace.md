@@ -29,6 +29,8 @@ Remove-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property workspaces for places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

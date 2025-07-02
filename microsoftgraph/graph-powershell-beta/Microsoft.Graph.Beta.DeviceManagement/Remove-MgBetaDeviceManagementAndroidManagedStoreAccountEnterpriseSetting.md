@@ -21,6 +21,8 @@ Remove-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-IfMat
 ## DESCRIPTION
 Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

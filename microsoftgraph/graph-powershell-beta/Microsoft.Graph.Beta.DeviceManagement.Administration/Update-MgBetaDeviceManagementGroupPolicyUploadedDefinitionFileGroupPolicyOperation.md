@@ -51,6 +51,8 @@ Update-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperati
 ## DESCRIPTION
 Update the navigation property groupPolicyOperations in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

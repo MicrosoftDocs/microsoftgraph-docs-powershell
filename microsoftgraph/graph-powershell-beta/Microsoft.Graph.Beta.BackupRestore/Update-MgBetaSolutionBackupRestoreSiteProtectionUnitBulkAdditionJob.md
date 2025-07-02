@@ -51,6 +51,8 @@ Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob -InputObject
 ## DESCRIPTION
 Update the navigation property siteProtectionUnitsBulkAdditionJobs in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

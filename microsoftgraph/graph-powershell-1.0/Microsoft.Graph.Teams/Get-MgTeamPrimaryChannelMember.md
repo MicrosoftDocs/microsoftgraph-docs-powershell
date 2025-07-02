@@ -62,6 +62,8 @@ Get-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

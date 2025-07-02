@@ -50,6 +50,8 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <II
 ## DESCRIPTION
 Create new navigation property to operations for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

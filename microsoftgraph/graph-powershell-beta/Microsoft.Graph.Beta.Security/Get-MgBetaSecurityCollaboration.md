@@ -21,6 +21,8 @@ Get-MgBetaSecurityCollaboration [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Enables read and other actions on collaborative entities in Microsoft Defender.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

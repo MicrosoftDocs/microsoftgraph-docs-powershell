@@ -56,6 +56,8 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property custodians in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AcknowledgedDateTime

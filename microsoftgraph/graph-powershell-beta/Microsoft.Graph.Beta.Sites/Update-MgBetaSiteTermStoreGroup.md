@@ -50,6 +50,8 @@ Update-MgBetaSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property groups in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

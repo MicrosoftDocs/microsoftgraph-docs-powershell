@@ -29,6 +29,8 @@ Remove-MgBetaReportHealthMonitoringAlert -InputObject <IReportsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property alerts for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

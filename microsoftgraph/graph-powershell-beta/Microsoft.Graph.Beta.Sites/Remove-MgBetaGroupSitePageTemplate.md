@@ -29,6 +29,8 @@ Remove-MgBetaGroupSitePageTemplate -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property pageTemplates for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

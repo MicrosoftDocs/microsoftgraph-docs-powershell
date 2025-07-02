@@ -51,6 +51,8 @@ Update-MgBetaGroupSitePageTemplateCreatedByUserMailboxSetting -InputObject <ISit
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

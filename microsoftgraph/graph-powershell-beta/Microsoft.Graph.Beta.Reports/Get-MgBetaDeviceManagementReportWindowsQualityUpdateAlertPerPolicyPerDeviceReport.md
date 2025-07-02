@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportWindowsQualityUpdateAlertPerPolicyPerDeviceRepor
 ## DESCRIPTION
 Invoke action getWindowsQualityUpdateAlertsPerPolicyPerDeviceReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

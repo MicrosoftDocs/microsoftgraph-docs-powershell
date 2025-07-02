@@ -40,6 +40,8 @@ Delete navigation property pages for sites
 | Delegated (personal Microsoft account) | Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

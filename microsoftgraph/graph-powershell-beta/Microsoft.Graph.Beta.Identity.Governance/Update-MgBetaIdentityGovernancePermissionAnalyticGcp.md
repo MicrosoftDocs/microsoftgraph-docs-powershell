@@ -30,6 +30,8 @@ Update-MgBetaIdentityGovernancePermissionAnalyticGcp -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property gcp in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

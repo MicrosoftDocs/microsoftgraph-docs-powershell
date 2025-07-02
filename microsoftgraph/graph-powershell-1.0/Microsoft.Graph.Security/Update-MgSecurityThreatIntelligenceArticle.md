@@ -52,6 +52,8 @@ Update-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property articles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

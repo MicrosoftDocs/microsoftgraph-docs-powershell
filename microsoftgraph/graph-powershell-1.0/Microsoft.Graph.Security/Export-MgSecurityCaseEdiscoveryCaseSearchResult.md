@@ -65,6 +65,8 @@ For details, see Manage a collection estimate.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalOptions

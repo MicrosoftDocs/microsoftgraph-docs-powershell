@@ -32,6 +32,8 @@ Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IRep
 ## DESCRIPTION
 Delete navigation property userRegistrationDetails for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -34,6 +34,8 @@ Remove-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy
 ## DESCRIPTION
 Delete navigation property appliedPolicies for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

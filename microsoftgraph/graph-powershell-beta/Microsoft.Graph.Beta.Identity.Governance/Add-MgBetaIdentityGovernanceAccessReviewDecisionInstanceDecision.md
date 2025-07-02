@@ -32,6 +32,8 @@ Add-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject <I
 Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is false in the review's accessReviewScheduleSettings.
 The status of the accessReviewInstance must be Completed to call this method.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

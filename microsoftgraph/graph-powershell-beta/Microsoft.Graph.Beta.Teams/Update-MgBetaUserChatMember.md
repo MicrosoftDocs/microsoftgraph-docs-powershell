@@ -48,6 +48,8 @@ Update-MgBetaUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property members in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

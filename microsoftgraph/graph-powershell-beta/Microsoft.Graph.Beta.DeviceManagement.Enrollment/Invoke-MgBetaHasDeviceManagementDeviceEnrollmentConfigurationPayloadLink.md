@@ -30,6 +30,8 @@ Invoke-MgBetaHasDeviceManagementDeviceEnrollmentConfigurationPayloadLink
 ## DESCRIPTION
 Invoke action hasPayloadLinks
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

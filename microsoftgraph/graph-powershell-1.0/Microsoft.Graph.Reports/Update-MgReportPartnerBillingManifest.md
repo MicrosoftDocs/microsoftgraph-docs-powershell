@@ -50,6 +50,8 @@ Update-MgReportPartnerBillingManifest -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Update the navigation property manifests in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

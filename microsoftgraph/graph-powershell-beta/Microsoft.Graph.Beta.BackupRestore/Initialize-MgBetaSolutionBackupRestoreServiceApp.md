@@ -49,6 +49,8 @@ Initialize-MgBetaSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIde
 ## DESCRIPTION
 Activate a serviceApp.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

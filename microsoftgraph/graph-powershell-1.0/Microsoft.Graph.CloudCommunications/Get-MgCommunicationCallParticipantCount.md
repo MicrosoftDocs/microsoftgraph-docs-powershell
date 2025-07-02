@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallId

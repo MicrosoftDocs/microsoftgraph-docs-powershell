@@ -32,6 +32,8 @@ Remove-MgUserOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property notebooks for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

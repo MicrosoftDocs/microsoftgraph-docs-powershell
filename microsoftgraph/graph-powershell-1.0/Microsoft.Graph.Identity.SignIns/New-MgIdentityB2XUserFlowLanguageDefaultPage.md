@@ -47,6 +47,8 @@ New-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Create new navigation property to defaultPages for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

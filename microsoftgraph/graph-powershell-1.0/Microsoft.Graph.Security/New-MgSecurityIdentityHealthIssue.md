@@ -35,6 +35,8 @@ New-MgSecurityIdentityHealthIssue -BodyParameter <IMicrosoftGraphSecurityHealthI
 ## DESCRIPTION
 Create new navigation property to healthIssues for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

@@ -29,6 +29,8 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

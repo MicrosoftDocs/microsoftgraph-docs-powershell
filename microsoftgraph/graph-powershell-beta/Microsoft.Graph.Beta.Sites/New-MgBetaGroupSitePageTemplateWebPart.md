@@ -43,6 +43,8 @@ New-MgBetaGroupSitePageTemplateWebPart -InputObject <ISitesIdentity> -BodyParame
 ## DESCRIPTION
 Create new navigation property to webParts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

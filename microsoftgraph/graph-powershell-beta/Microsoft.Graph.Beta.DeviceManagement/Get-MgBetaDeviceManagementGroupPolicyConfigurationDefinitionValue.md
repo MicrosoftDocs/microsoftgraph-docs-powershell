@@ -46,6 +46,8 @@ The list of enabled or disabled group policy definition values for the configura
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

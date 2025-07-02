@@ -32,6 +32,8 @@ Remove-MgTeamOperation -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property operations for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

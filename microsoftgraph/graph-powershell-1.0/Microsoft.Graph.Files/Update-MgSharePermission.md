@@ -56,6 +56,8 @@ Update-MgSharePermission -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property permission in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

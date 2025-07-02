@@ -23,6 +23,8 @@ Get-MgBetaSecurityLabel [-ExpandProperty <String[]>] [-Property <String[]>] [-Re
 ## DESCRIPTION
 Get labels from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

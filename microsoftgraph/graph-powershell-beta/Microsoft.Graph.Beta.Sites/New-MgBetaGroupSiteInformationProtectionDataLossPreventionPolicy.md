@@ -43,6 +43,8 @@ New-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy -InputObject <I
 ## DESCRIPTION
 Create new navigation property to dataLossPreventionPolicies for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

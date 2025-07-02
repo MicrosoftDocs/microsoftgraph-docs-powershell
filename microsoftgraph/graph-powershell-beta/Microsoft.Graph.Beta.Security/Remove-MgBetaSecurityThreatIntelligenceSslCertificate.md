@@ -32,6 +32,8 @@ Remove-MgBetaSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIde
 ## DESCRIPTION
 Delete navigation property sslCertificates for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

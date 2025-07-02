@@ -48,6 +48,8 @@ Update-MgBetaUserTeamwork -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property teamwork in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

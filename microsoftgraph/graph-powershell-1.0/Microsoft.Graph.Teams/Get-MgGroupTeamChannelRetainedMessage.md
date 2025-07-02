@@ -45,6 +45,8 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

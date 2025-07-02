@@ -41,6 +41,8 @@ Get-MgDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceMan
 ## DESCRIPTION
 List of log collection requests
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -35,6 +35,8 @@ Remove-MgBetaGroupCalendarPermanent -InputObject <ICalendarIdentity> [-ResponseH
 Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

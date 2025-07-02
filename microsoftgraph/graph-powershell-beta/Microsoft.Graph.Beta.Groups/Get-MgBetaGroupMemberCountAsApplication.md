@@ -32,6 +32,8 @@ Get-MgBetaGroupMemberCountAsApplication -InputObject <IGroupsIdentity> [-Filter 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

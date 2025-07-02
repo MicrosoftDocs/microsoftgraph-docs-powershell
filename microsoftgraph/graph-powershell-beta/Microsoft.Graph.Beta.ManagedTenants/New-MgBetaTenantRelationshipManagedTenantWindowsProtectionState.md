@@ -36,6 +36,8 @@ New-MgBetaTenantRelationshipManagedTenantWindowsProtectionState
 ## DESCRIPTION
 Create new navigation property to windowsProtectionStates for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

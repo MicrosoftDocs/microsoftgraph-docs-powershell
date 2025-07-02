@@ -31,6 +31,8 @@ Remove-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethod
 ## DESCRIPTION
 Delete navigation property authenticationMethodModes for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationMethodModeDetailId

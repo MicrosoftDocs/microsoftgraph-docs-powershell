@@ -33,6 +33,8 @@ Remove-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IAp
 ## DESCRIPTION
 Delete navigation property directories for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryDefinitionId

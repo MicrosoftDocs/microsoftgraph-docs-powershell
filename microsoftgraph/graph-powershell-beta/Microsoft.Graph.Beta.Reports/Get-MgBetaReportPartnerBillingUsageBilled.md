@@ -24,6 +24,8 @@ Get-MgBetaReportPartnerBillingUsageBilled [-ExpandProperty <String[]>] [-Propert
 ## DESCRIPTION
 Represents details for billed Azure usage data.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

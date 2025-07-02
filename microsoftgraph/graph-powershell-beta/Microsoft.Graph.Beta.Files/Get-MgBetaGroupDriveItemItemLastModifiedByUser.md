@@ -32,6 +32,8 @@ Get-MgBetaGroupDriveItemItemLastModifiedByUser -InputObject <IFilesIdentity> [-E
 ## DESCRIPTION
 Get lastModifiedByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

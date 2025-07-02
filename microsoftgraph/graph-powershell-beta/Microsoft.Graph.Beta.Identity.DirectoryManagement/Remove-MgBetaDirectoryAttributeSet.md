@@ -32,6 +32,8 @@ Remove-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Delete navigation property attributeSets for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttributeSetId

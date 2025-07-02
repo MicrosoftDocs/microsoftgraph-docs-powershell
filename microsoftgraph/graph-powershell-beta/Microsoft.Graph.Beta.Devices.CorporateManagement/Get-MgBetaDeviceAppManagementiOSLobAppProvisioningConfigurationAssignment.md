@@ -48,6 +48,8 @@ The associated group assignments for IosLobAppProvisioningConfiguration, this de
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

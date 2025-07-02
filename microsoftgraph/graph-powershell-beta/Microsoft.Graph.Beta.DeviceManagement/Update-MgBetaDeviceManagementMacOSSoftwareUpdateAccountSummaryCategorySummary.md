@@ -61,6 +61,8 @@ Update the navigation property categorySummaries in deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

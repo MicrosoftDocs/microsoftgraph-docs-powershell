@@ -41,6 +41,8 @@ Get-MgBetaUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporate
 ## DESCRIPTION
 List of log collection requests
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

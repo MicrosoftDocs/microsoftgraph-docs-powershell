@@ -32,6 +32,8 @@ Remove-MgAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property versions for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

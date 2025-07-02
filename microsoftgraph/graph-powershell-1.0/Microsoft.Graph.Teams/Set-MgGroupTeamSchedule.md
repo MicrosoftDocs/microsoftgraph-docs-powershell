@@ -64,6 +64,8 @@ Set-MgGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property schedule in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

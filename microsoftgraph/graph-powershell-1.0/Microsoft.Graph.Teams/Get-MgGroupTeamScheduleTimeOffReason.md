@@ -40,6 +40,8 @@ Get-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-ExpandPrope
 ## DESCRIPTION
 The set of reasons for a time off in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

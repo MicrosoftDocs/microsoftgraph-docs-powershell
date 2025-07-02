@@ -42,6 +42,8 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource -InputObject <ISecu
 ## DESCRIPTION
 noncustodialDataSource sources that are included in the eDiscovery search
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

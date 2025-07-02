@@ -42,6 +42,8 @@ Get-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact -InputOb
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore Exchange mailboxes.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

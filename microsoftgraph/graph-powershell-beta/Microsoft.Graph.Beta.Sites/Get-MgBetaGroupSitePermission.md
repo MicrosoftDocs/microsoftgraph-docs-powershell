@@ -42,6 +42,8 @@ Get-MgBetaGroupSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <St
 The permissions associated with the site.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

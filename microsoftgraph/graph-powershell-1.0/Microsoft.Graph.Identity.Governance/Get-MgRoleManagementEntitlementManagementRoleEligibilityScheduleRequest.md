@@ -42,6 +42,8 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 ## DESCRIPTION
 Requests for role eligibilities for principals through PIM.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

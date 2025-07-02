@@ -25,6 +25,8 @@ Get-MgGroupSiteGetByPathColumn -GroupId <String> -Path <String> -SiteId <String>
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

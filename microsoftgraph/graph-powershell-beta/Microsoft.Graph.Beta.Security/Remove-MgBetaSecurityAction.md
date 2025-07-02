@@ -29,6 +29,8 @@ Remove-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property securityActions for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

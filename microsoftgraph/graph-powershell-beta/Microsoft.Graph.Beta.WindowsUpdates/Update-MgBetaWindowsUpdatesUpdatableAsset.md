@@ -43,6 +43,8 @@ Update-MgBetaWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Update the navigation property updatableAssets in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

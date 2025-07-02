@@ -29,6 +29,8 @@ Get-MgBetaUserInformationProtectionSensitivityPolicySetting -InputObject <IIdent
 ## DESCRIPTION
 Get sensitivityPolicySettings from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -36,6 +36,8 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirec
 The directory object that is the scope of the assignment or role eligibility.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

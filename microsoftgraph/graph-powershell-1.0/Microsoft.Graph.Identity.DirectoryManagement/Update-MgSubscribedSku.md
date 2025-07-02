@@ -52,6 +52,8 @@ Update-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Update entity in subscribedSkus
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountId

@@ -59,6 +59,8 @@ The PolicySet of Policies and Applications
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

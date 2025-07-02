@@ -35,6 +35,8 @@ Update-MgBetaReportUserInsightMonthly -BodyParameter <IMicrosoftGraphMonthlyUser
 ## DESCRIPTION
 Update the navigation property monthly in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveUsers

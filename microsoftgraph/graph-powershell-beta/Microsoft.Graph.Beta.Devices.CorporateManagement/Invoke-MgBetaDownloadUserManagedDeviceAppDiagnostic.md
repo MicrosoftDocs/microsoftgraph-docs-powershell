@@ -48,6 +48,8 @@ Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Invoke action downloadAppDiagnostics
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

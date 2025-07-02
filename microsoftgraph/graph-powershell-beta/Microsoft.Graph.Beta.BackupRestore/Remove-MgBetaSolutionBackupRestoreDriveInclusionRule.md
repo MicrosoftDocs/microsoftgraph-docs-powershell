@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreDriveInclusionRule -InputObject <IBackupRestor
 ## DESCRIPTION
 Delete navigation property driveInclusionRules for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveProtectionRuleId

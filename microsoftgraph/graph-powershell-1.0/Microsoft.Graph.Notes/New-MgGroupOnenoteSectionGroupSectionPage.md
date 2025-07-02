@@ -54,6 +54,8 @@ New-MgGroupOnenoteSectionGroupSectionPage -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create new navigation property to pages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

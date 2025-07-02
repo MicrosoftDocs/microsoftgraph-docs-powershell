@@ -36,6 +36,8 @@ New-MgVirtualEvent -BodyParameter <IMicrosoftGraphVirtualEvent> [-ResponseHeader
 ## DESCRIPTION
 Create new navigation property to events for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

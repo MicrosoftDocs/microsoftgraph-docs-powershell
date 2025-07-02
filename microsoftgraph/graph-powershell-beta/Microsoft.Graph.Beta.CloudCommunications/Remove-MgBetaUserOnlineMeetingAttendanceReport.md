@@ -46,6 +46,8 @@ Remove-MgBetaUserOnlineMeetingAttendanceReport -InputObject <ICloudCommunication
 ## DESCRIPTION
 Delete navigation property attendanceReports for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

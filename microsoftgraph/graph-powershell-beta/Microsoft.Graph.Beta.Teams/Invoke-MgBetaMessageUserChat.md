@@ -39,6 +39,8 @@ Invoke function allMessages
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.ReadBasic.WhereInstalled, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

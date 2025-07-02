@@ -49,6 +49,8 @@ Update-MgUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorporat
 ## DESCRIPTION
 Update the navigation property deviceManagementTroubleshootingEvents in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

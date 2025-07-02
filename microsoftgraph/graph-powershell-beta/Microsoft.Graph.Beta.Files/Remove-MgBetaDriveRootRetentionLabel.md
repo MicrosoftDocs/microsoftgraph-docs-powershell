@@ -32,6 +32,8 @@ Remove-MgBetaDriveRootRetentionLabel -InputObject <IFilesIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property retentionLabel for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

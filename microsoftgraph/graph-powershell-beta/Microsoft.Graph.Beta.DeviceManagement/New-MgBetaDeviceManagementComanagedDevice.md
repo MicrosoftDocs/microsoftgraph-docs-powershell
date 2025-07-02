@@ -63,6 +63,8 @@ Create new navigation property to comanagedDevices for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

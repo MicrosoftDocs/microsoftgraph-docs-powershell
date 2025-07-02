@@ -23,6 +23,8 @@ Get-MgCommunicationCallCount [-Filter <String>] [-Search <String>] [-ResponseHea
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

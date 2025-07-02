@@ -29,6 +29,8 @@ Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef -InputObject <ICrossDe
 ## DESCRIPTION
 Delete ref of navigation property registeredUsers for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

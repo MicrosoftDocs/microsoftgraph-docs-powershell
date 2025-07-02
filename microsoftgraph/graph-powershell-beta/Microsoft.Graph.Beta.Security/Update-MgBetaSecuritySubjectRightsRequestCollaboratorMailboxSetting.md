@@ -54,6 +54,8 @@ Update-MgBetaSecuritySubjectRightsRequestCollaboratorMailboxSetting -InputObject
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

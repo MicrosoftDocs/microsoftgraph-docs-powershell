@@ -48,6 +48,8 @@ Update-MgBetaIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySign
 ## DESCRIPTION
 Update the navigation property overridesPages in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

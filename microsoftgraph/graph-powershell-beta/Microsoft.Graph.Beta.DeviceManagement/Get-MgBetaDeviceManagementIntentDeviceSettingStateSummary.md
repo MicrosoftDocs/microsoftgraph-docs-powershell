@@ -46,6 +46,8 @@ Collection of settings and their states and counts of devices that belong to cor
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

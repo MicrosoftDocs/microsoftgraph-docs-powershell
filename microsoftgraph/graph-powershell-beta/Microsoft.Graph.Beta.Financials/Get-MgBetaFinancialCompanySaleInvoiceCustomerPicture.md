@@ -38,6 +38,8 @@ Get-MgBetaFinancialCompanySaleInvoiceCustomerPicture -InputObject <IFinancialsId
 ## DESCRIPTION
 Get picture from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -46,6 +46,8 @@ New-MgBetaChatMessageHostedContent -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Create new navigation property to hostedContents for chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

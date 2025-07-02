@@ -48,6 +48,8 @@ Update-MgBetaUserContactFolderChildFolderContactExtension -InputObject <IPersona
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

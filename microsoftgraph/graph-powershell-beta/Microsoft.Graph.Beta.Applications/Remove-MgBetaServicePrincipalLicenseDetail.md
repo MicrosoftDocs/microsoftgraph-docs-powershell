@@ -29,6 +29,8 @@ Remove-MgBetaServicePrincipalLicenseDetail -InputObject <IApplicationsIdentity> 
 ## DESCRIPTION
 Delete navigation property licenseDetails for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

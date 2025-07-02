@@ -33,6 +33,8 @@ Remove-MgBetaIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Delete navigation property languages for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

@@ -30,6 +30,8 @@ Invoke-MgBetaCrossNetworkAccessReportTenantAccessReport -InputObject <INetworkAc
 ## DESCRIPTION
 Invoke function crossTenantAccessReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

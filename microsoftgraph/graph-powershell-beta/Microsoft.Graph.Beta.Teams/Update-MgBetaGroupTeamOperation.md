@@ -51,6 +51,8 @@ Update-MgBetaGroupTeamOperation -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property operations in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -52,6 +52,8 @@ New-MgGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to swapShiftsChangeRequests for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

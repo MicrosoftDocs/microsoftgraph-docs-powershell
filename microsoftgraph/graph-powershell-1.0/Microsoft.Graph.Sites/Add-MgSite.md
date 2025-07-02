@@ -33,6 +33,8 @@ Add-MgSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbodyCont
 ## DESCRIPTION
 Follow a user's site or multiple sites.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

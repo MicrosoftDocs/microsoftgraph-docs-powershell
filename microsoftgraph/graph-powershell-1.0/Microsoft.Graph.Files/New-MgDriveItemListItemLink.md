@@ -52,6 +52,8 @@ New-MgDriveItemListItemLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action createLink
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

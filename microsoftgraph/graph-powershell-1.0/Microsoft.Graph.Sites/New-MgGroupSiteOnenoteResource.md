@@ -48,6 +48,8 @@ New-MgGroupSiteOnenoteResource -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to resources for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

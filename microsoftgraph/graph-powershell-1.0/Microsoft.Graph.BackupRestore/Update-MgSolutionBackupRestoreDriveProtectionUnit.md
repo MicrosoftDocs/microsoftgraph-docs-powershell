@@ -52,6 +52,8 @@ Update-MgSolutionBackupRestoreDriveProtectionUnit -InputObject <IBackupRestoreId
 ## DESCRIPTION
 Update the navigation property driveProtectionUnits in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

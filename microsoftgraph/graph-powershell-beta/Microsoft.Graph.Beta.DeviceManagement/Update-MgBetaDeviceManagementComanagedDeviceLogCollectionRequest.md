@@ -51,6 +51,8 @@ Update-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest -InputObject <I
 ## DESCRIPTION
 Update the navigation property logCollectionRequests in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

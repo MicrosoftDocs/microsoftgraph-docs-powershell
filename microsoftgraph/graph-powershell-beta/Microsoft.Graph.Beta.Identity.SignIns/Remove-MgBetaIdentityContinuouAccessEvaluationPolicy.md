@@ -21,6 +21,8 @@ Remove-MgBetaIdentityContinuouAccessEvaluationPolicy [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property continuousAccessEvaluationPolicy for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

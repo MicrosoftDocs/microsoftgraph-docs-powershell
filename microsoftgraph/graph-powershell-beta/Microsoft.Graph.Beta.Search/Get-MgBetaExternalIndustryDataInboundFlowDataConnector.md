@@ -37,6 +37,8 @@ The data connector to the source system from where this flow gets its data.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-DataConnector.Read.All, IndustryData-DataConnector.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

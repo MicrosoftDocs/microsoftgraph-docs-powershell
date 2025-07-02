@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteContentTypeCount -InputObject <ISitesIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

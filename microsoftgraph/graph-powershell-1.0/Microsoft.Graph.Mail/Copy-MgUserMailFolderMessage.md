@@ -57,6 +57,8 @@ Copy a message to a folder within the user's mailbox.
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

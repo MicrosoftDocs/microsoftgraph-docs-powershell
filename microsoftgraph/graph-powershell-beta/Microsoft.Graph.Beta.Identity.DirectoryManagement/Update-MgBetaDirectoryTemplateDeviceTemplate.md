@@ -50,6 +50,8 @@ Update-MgBetaDirectoryTemplateDeviceTemplate -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Update the navigation property deviceTemplates in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

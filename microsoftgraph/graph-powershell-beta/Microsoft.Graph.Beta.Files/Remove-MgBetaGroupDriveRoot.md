@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveRoot -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property root for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -37,6 +37,8 @@ New-MgBetaSecurityAttackSimulationTraining -BodyParameter <IMicrosoftGraphTraini
 ## DESCRIPTION
 Create new navigation property to trainings for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

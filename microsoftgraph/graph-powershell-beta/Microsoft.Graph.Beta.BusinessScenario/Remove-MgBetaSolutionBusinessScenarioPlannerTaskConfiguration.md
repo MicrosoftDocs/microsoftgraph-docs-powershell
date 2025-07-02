@@ -29,6 +29,8 @@ Remove-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -InputObject <IBus
 ## DESCRIPTION
 Delete navigation property taskConfiguration for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BusinessScenarioId

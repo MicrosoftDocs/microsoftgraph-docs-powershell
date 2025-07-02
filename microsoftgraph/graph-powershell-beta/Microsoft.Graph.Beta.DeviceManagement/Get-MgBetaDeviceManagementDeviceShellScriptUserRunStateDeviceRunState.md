@@ -40,6 +40,8 @@ Get-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState -InputObje
 ## DESCRIPTION
 List of run states for this script across all devices of specific user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

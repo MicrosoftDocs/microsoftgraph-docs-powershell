@@ -33,6 +33,8 @@ Remove-MgBetaUserSettingWindows -InputObject <IUsersIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property windows for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

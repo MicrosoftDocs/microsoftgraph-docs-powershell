@@ -29,6 +29,8 @@ Remove-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property authorizationSystems for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthorizationSystemId

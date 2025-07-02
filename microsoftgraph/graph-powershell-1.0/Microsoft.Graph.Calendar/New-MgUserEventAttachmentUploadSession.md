@@ -71,6 +71,8 @@ The following are the steps to attach a file to an Outlook item using an upload 
 | Delegated (personal Microsoft account) | Calendars.ReadWrite, Mail.ReadWrite,  |
 | Application | Calendars.ReadWrite, Mail.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

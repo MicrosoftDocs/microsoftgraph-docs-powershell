@@ -32,6 +32,8 @@ Get-MgGroupSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-ExpandP
 ## DESCRIPTION
 Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical sections.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

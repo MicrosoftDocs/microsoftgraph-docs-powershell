@@ -29,6 +29,8 @@ Get-MgBetaReportBrowserDistributionUserCount -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Invoke function getBrowserDistributionUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

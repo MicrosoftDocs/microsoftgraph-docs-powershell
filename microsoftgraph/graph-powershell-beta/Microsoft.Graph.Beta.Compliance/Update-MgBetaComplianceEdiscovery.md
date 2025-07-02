@@ -29,6 +29,8 @@ Update-MgBetaComplianceEdiscovery -BodyParameter <IMicrosoftGraphEdiscoveryEdisc
 ## DESCRIPTION
 Update the navigation property ediscovery in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

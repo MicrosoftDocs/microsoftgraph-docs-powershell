@@ -68,6 +68,8 @@ Update-MgBetaGroupSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property columns in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

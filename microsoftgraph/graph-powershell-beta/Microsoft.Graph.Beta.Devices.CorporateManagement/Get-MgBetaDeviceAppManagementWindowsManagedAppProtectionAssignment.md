@@ -47,6 +47,8 @@ Navigation property to list of inclusion and exclusion groups to which the polic
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

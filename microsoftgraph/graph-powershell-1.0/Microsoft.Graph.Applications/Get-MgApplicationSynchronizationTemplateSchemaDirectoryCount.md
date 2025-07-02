@@ -32,6 +32,8 @@ Get-MgApplicationSynchronizationTemplateSchemaDirectoryCount -InputObject <IAppl
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

@@ -23,6 +23,8 @@ Get-MgBetaOnPremisePublishingProfileConnectorGroupMember -ConnectorGroupId <Stri
 ## DESCRIPTION
 Get members from onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

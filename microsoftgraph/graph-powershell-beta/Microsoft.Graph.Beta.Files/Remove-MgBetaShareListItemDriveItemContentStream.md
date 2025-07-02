@@ -43,6 +43,8 @@ Remove-MgBetaShareListItemDriveItemContentStream -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

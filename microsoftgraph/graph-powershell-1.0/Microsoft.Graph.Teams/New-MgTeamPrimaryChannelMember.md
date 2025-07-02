@@ -78,6 +78,8 @@ New-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to allMembers for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

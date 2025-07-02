@@ -32,6 +32,8 @@ Remove-MgSiteList -InputObject <ISitesIdentity> [-IfMatch <String>] [-ResponseHe
 ## DESCRIPTION
 Delete navigation property lists for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

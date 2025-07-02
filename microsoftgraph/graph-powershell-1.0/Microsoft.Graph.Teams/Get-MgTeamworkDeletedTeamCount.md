@@ -31,6 +31,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Team.ReadBasic.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

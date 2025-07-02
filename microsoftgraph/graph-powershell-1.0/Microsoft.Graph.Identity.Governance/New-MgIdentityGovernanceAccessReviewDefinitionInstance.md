@@ -56,6 +56,8 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityGo
 ## DESCRIPTION
 Create new navigation property to instances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId

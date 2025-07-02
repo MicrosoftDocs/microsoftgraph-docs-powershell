@@ -21,6 +21,8 @@ Get-MgBetaDirectoryTemplate [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 A container for templates, such as device templates used for onboarding devices in Microsoft Entra ID.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -31,6 +31,8 @@ Invoke-MgBetaDownloadDeviceManagementComanagedDevicePowerliftAppDiagnostic -OutF
 ## DESCRIPTION
 Invoke action downloadPowerliftAppDiagnostic
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

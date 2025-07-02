@@ -43,6 +43,8 @@ Remove-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorp
 ## DESCRIPTION
 Delete navigation property mobileAppRelationships for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

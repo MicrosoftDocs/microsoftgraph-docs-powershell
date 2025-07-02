@@ -32,6 +32,8 @@ Remove-MgIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGovern
 ## DESCRIPTION
 Delete navigation property file for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

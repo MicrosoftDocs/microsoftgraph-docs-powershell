@@ -32,6 +32,8 @@ Remove-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 The profile photo for the team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

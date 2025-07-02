@@ -30,6 +30,8 @@ Get-MgBetaUserManagedDevicePowerliftAppDiagnosticDetail -InputObject <IDevicesCo
 ## DESCRIPTION
 Invoke function retrievePowerliftAppDiagnosticsDetails
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

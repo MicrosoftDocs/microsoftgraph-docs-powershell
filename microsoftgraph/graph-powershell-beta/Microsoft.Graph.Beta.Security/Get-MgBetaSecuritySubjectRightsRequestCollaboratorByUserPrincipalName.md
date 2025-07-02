@@ -33,6 +33,8 @@ Get-MgBetaSecuritySubjectRightsRequestCollaboratorByUserPrincipalName -InputObje
 ## DESCRIPTION
 Get collaborators from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

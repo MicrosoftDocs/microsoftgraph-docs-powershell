@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementGroupPolicyDefinitionFile -InputObject <IDeviceMana
 ## DESCRIPTION
 Delete navigation property groupPolicyDefinitionFiles for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupPolicyDefinitionFileId

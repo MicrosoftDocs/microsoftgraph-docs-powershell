@@ -47,6 +47,8 @@ New-MgTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to hostedContents for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

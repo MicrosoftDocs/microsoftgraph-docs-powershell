@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property contentTypes for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

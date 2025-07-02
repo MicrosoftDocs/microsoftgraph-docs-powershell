@@ -43,6 +43,8 @@ Update-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property quota in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

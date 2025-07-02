@@ -37,6 +37,8 @@ Get-MgBetaReportUserInsightDailyInactiveUserByApplication -InputObject <IReports
 ## DESCRIPTION
 Get inactiveUsersByApplication from reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

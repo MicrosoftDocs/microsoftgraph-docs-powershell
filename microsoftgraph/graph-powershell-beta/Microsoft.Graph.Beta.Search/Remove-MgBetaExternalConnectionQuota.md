@@ -29,6 +29,8 @@ Remove-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property quota for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExternalConnectionId

@@ -45,6 +45,8 @@ Update-MgBetaDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDir
 ## DESCRIPTION
 Update the navigation property tenants in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

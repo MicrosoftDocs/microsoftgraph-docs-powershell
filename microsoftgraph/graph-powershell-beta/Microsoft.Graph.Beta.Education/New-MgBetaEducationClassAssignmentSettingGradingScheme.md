@@ -54,6 +54,8 @@ Create a new educationGradingScheme object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

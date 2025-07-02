@@ -49,6 +49,8 @@ Invoke-MgScanUserManagedDeviceWindowsDefender -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Not yet documented
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -53,6 +53,8 @@ New-MgBetaGroupDriveItemListItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to permissions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

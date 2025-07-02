@@ -32,6 +32,8 @@ Remove-MgTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPartner
 ## DESCRIPTION
 Delete navigation property delegatedAdminCustomers for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DelegatedAdminCustomerId

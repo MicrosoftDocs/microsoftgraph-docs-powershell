@@ -24,6 +24,8 @@ Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

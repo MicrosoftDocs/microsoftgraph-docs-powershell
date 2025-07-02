@@ -29,6 +29,8 @@ Get-MgBetaUserManagedDeviceDetectedAppCount -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

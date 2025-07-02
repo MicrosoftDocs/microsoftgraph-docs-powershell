@@ -50,6 +50,8 @@ Create a new privilegedAccessGroupAssignmentScheduleRequest object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup, PrivilegedAssignmentSchedule.Remove.AzureADGroup,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId

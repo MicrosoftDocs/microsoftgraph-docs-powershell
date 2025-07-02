@@ -50,6 +50,8 @@ Update-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject 
 ## DESCRIPTION
 Update the navigation property threatAssessmentRequests in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

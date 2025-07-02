@@ -47,6 +47,8 @@ New-MgBetaIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Create new navigation property to defaultPages for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgDeviceManagementManagedDeviceConfigurationState -InputObject <IDeviceMa
 ## DESCRIPTION
 Delete navigation property deviceConfigurationStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceConfigurationStateId

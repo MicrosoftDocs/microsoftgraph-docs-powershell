@@ -32,6 +32,8 @@ Remove-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Delete navigation property managedAppPolicies for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

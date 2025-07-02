@@ -53,6 +53,8 @@ New-MgBetaDriveListItemPermission -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to permissions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

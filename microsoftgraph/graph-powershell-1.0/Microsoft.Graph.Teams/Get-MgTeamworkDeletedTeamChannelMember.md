@@ -64,6 +64,8 @@ Get-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandPro
 ## DESCRIPTION
 A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

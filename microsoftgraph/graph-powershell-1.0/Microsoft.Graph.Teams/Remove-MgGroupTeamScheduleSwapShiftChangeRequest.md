@@ -32,6 +32,8 @@ Remove-MgGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [
 ## DESCRIPTION
 Delete navigation property swapShiftsChangeRequests for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

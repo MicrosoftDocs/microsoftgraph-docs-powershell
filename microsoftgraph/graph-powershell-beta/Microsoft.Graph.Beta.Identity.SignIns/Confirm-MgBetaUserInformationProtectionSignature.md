@@ -47,6 +47,8 @@ Confirm-MgBetaUserInformationProtectionSignature -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Invoke action verifySignature
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

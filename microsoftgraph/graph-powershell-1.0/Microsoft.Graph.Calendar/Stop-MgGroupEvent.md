@@ -65,6 +65,8 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 | Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
 | Application | Calendars.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

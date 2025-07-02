@@ -41,6 +41,8 @@ Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Get appliesTo from policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityBasedTimeoutPolicyId

@@ -33,6 +33,8 @@ Set-MgSiteOnenoteNotebookSectionGroupSectionPageContent -InputObject <INotesIden
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

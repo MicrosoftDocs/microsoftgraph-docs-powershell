@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBul
 ## DESCRIPTION
 Delete a siteRestoreArtifactsBulkAdditionRequest object associated with a sharepointRestoreSession.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

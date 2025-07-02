@@ -55,6 +55,8 @@ New-MgGroupSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to subscriptions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

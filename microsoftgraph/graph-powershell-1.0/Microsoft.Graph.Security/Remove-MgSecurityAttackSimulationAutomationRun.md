@@ -33,6 +33,8 @@ Remove-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property runs for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

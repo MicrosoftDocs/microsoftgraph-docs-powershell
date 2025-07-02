@@ -32,6 +32,8 @@ Invoke-MgBetaFilterIdentityGovernancePermissionManagementScheduledPermissionRequ
 ## DESCRIPTION
 Invoke function filterByCurrentUser
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

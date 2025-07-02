@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedApprovalRoleInfo -InputObject <IIdentityGovernanceIdentit
 ## DESCRIPTION
 Delete navigation property roleInfo for privilegedApproval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

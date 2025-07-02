@@ -37,6 +37,8 @@ Invoke function getExpiringVppTokenCount
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpiringBeforeDateTime

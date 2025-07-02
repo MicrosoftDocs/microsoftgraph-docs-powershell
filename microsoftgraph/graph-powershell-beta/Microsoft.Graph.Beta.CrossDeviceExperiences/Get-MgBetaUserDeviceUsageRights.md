@@ -37,6 +37,8 @@ Get-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity> [
 ## DESCRIPTION
 Represents the usage rights a device has been granted.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -45,6 +45,8 @@ Get labels from informationProtection
 | Delegated (personal Microsoft account) | Not supported |
 | Application | InformationProtectionPolicy.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

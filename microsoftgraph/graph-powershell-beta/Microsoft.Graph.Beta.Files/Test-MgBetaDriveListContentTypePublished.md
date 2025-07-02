@@ -32,6 +32,8 @@ Test-MgBetaDriveListContentTypePublished -InputObject <IFilesIdentity> [-Respons
 ## DESCRIPTION
 Invoke function isPublished
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

@@ -47,6 +47,8 @@ Set-MgBetaEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity> -Bo
 ## DESCRIPTION
 Update the ref of navigation property rubric in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

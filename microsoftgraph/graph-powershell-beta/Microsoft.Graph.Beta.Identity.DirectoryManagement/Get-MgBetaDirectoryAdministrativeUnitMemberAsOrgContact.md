@@ -43,6 +43,8 @@ Get-MgBetaDirectoryAdministrativeUnitMemberAsOrgContact -InputObject <IIdentityD
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId

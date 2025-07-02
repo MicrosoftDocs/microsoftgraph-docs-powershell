@@ -45,6 +45,8 @@ Stop-MgBetaCommunicationCallRecording -InputObject <ICloudCommunicationsIdentity
 ## DESCRIPTION
 Invoke action stopRecording
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

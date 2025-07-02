@@ -61,6 +61,8 @@ Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
 ## DESCRIPTION
 Update the navigation property iosLobAppProvisioningConfigurations in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

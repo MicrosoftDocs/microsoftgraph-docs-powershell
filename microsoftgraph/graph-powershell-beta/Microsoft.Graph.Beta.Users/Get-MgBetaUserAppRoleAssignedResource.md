@@ -37,6 +37,8 @@ Get-MgBetaUserAppRoleAssignedResource -InputObject <IUsersIdentity> [-ExpandProp
 ## DESCRIPTION
 Get appRoleAssignedResources from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

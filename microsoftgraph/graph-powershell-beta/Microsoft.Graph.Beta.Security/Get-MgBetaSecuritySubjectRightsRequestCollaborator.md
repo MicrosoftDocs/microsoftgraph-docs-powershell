@@ -40,6 +40,8 @@ Get-MgBetaSecuritySubjectRightsRequestCollaborator -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Get collaborators from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

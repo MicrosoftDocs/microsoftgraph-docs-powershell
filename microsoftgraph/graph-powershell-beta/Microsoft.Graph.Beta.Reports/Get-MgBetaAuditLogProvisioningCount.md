@@ -31,6 +31,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All, AuditLog.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

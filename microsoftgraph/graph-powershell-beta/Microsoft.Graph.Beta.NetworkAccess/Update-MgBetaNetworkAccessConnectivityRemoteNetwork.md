@@ -51,6 +51,8 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetwork -InputObject <INetworkAccess
 ## DESCRIPTION
 Update the navigation property remoteNetworks in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -43,6 +43,8 @@ Groups and administrative units that this device is a member of.
 This operation is transitive.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

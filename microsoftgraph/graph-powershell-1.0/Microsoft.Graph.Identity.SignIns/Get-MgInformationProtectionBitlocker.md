@@ -24,6 +24,8 @@ Get-MgInformationProtectionBitlocker [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get bitlocker from informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

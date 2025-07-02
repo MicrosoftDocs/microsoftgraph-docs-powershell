@@ -34,6 +34,8 @@ Get-MgSecurityThreatIntelligenceHostTrackerHost -InputObject <ISecurityIdentity>
 The host related to this hostTracker.
 When navigating to a hostTracker from a host, this should be assumed to be a return reference.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -37,6 +37,8 @@ Get-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-Exp
 ## DESCRIPTION
 Set of commands sent to this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

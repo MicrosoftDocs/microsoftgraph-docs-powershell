@@ -41,6 +41,8 @@ Read the properties and relationships of a federatedIdentityCredential object.
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
 | Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

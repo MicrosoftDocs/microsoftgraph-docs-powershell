@@ -42,6 +42,8 @@ Must have at least one identity provider linked.
 Supports $filter (eq).
 See support for filtering on user flows for syntax information.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId

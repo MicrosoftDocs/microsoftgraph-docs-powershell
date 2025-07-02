@@ -31,6 +31,8 @@ Update-MgBetaSecurityInformationProtection -BodyParameter <IMicrosoftGraphSecuri
 ## DESCRIPTION
 Update the navigation property informationProtection in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Invoke-MgBetaCommentSecurityAlert -InputObject <ISecurityIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

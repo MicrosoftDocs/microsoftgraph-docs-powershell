@@ -32,6 +32,8 @@ Get-MgBetaSecurityLabelRetentionEventType -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Represents the type associated with a retention event.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

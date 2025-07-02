@@ -45,6 +45,8 @@ New-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Create new navigation property to connectors for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

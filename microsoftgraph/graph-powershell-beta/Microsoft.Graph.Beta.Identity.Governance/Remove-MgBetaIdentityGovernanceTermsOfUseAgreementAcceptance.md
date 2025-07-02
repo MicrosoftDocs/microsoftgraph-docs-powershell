@@ -46,6 +46,8 @@ Remove-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance -InputObject <IIden
 ## DESCRIPTION
 Delete navigation property agreementAcceptances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId

@@ -35,6 +35,8 @@ Set-MgUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> [-Dat
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

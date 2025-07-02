@@ -48,6 +48,8 @@ Update-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdent
 ## DESCRIPTION
 Update the navigation property labels in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

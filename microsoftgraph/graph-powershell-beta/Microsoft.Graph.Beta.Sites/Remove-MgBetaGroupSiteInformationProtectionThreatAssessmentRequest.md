@@ -30,6 +30,8 @@ Remove-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject 
 ## DESCRIPTION
 Delete navigation property threatAssessmentRequests for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

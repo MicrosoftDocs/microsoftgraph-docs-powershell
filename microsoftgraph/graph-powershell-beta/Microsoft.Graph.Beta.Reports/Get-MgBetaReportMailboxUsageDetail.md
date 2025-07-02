@@ -31,6 +31,8 @@ Get-MgBetaReportMailboxUsageDetail -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Invoke function getMailboxUsageDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

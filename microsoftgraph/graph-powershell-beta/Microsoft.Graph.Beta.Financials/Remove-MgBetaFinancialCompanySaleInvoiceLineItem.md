@@ -43,6 +43,8 @@ Remove-MgBetaFinancialCompanySaleInvoiceLineItem -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Delete navigation property item for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

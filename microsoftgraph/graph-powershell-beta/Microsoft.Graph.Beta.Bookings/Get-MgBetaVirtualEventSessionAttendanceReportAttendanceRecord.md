@@ -44,6 +44,8 @@ Get-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <IBoo
 List of attendance records of an attendance report.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

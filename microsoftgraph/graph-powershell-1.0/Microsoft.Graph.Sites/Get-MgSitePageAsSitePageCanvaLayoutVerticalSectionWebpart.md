@@ -40,6 +40,8 @@ Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISitesId
 ## DESCRIPTION
 The set of web parts in this section.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

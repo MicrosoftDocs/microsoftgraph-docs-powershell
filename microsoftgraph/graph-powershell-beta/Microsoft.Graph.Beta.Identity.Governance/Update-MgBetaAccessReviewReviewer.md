@@ -45,6 +45,8 @@ Update-MgBetaAccessReviewReviewer -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property reviewers in accessReviews
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

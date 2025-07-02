@@ -55,6 +55,8 @@ New-MgBetaUserManagedDeviceHealthScriptState -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Create new navigation property to deviceHealthScriptStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

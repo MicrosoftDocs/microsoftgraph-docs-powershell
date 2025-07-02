@@ -48,6 +48,8 @@ Get-MgBetaGroupSiteTermStoreGroupSetChildRelationSet -InputObject <ISitesIdentit
 ## DESCRIPTION
 The \[set\] in which the relation is relevant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

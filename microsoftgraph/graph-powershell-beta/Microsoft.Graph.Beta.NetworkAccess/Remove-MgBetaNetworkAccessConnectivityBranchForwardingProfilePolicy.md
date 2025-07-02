@@ -30,6 +30,8 @@ Remove-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy -InputObject
 ## DESCRIPTION
 Delete navigation property policies for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BranchSiteId

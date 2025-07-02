@@ -48,6 +48,8 @@ New-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Create new navigation property to runs for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

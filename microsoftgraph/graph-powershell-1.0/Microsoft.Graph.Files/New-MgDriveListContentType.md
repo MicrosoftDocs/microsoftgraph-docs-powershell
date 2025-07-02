@@ -58,6 +58,8 @@ New-MgDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to contentTypes for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

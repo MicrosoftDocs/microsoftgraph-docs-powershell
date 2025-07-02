@@ -35,6 +35,8 @@ New-MgBetaSolutionBackupRestoreServiceApp -BodyParameter <IMicrosoftGraphService
 ## DESCRIPTION
 Create a new serviceApp.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

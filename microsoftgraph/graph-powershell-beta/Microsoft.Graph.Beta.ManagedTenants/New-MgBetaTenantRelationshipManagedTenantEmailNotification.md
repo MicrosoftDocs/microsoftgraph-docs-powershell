@@ -33,6 +33,8 @@ New-MgBetaTenantRelationshipManagedTenantEmailNotification
 ## DESCRIPTION
 Create new navigation property to managedTenantEmailNotifications for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

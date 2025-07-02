@@ -47,6 +47,8 @@ New-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource -InputObject <ICom
 ## DESCRIPTION
 Create new navigation property to unifiedGroupSources for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

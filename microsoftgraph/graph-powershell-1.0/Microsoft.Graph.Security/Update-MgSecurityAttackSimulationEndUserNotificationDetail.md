@@ -51,6 +51,8 @@ Update-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecuri
 ## DESCRIPTION
 Update the navigation property details in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

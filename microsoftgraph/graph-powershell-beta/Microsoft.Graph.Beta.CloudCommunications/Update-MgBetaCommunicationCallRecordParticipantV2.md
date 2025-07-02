@@ -50,6 +50,8 @@ Update-MgBetaCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunicat
 ## DESCRIPTION
 Update the navigation property participants_v2 in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

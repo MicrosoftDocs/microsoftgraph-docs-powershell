@@ -77,6 +77,8 @@ Create columnDefinition for a content type
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

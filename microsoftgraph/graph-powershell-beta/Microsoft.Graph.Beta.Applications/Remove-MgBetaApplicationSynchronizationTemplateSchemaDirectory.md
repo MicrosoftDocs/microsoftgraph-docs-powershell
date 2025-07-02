@@ -33,6 +33,8 @@ Remove-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IAp
 ## DESCRIPTION
 Delete navigation property directories for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

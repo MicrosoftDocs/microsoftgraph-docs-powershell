@@ -31,6 +31,8 @@ New-MgBetaSecurityPartnerSecurityScoreRequirement -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to requirements for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionUrl

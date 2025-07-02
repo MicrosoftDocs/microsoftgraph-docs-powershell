@@ -32,6 +32,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

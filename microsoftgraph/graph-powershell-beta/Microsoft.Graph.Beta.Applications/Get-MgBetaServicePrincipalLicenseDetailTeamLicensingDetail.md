@@ -30,6 +30,8 @@ Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail -InputObject <IApplic
 ## DESCRIPTION
 Get the license status of a user in Microsoft Teams.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

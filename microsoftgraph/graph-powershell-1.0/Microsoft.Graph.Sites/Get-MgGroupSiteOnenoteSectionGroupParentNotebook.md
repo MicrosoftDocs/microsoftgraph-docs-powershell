@@ -34,6 +34,8 @@ Get-MgGroupSiteOnenoteSectionGroupParentNotebook -InputObject <ISitesIdentity> [
 The notebook that contains the section group.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

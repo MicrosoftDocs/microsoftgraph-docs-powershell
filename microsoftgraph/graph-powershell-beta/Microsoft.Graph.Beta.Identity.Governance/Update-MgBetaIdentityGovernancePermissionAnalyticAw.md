@@ -30,6 +30,8 @@ Update-MgBetaIdentityGovernancePermissionAnalyticAw -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property aws in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -40,6 +40,8 @@ Get-MgBetaUserSettingWindows -InputObject <IUsersIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The Windows settings of the user stored in the cloud.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

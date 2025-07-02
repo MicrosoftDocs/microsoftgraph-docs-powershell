@@ -24,6 +24,8 @@ Remove-MgPolicyDefaultAppManagementPolicy [-IfMatch <String>] [-ResponseHeadersV
 ## DESCRIPTION
 Delete navigation property defaultAppManagementPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

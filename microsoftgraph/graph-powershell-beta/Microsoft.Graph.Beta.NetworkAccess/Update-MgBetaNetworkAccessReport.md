@@ -28,6 +28,8 @@ Update-MgBetaNetworkAccessReport -BodyParameter <Hashtable> [-ResponseHeadersVar
 ## DESCRIPTION
 Update the navigation property reports in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

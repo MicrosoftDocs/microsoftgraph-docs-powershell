@@ -29,6 +29,8 @@ Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanDetail -InputObject <ITeamsIde
 ## DESCRIPTION
 Delete navigation property details for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

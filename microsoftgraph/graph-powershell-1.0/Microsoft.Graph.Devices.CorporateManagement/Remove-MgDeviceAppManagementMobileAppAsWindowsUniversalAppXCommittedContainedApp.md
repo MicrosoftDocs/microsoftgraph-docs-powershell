@@ -34,6 +34,8 @@ Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp
 ## DESCRIPTION
 Delete navigation property committedContainedApps for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

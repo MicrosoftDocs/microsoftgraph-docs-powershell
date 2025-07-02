@@ -41,6 +41,8 @@ Get the order of identityUserFlowAttributeAssignments being collected within a u
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

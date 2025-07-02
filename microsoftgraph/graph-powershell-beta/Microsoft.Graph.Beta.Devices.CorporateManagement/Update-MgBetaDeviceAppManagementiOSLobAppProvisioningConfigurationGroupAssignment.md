@@ -56,6 +56,8 @@ Update the navigation property groupAssignments in deviceAppManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

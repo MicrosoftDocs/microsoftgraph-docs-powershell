@@ -43,6 +43,8 @@ Remove-MgBetaProgramControlProgram -InputObject <IIdentityGovernanceIdentity> [-
 ## DESCRIPTION
 Delete navigation property program for programControls
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

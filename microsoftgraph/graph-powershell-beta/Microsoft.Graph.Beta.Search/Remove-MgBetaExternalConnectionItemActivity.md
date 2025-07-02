@@ -32,6 +32,8 @@ Remove-MgBetaExternalConnectionItemActivity -InputObject <ISearchIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property activities for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExternalActivityId

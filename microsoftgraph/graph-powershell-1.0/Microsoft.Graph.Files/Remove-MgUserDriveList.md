@@ -32,6 +32,8 @@ Remove-MgUserDriveList -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property list for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

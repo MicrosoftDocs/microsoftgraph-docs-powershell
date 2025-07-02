@@ -33,6 +33,8 @@ Find-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [-Re
 ## DESCRIPTION
 Locate a device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

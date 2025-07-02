@@ -31,6 +31,8 @@ Invoke-MgBetaReportNetworkAccessReportUser -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Invoke function userReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

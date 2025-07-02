@@ -46,6 +46,8 @@ Get-MgBetaReportOneDriveActivityUserDetail -InputObject <IReportsIdentity> -OutF
 ## DESCRIPTION
 Invoke function getOneDriveActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

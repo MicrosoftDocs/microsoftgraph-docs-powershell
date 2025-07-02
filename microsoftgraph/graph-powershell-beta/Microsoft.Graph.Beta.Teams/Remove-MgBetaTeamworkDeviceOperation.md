@@ -29,6 +29,8 @@ Remove-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property operations for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

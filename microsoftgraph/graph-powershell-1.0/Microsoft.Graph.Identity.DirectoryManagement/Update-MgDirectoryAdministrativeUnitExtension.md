@@ -46,6 +46,8 @@ Update-MgDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Update the navigation property extensions in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

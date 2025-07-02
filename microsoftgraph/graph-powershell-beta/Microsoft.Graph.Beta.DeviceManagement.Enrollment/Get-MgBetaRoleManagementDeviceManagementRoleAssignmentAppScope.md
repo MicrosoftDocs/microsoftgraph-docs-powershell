@@ -43,6 +43,8 @@ Read-only collection with details of the app specific scopes when the assignment
 Containment entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

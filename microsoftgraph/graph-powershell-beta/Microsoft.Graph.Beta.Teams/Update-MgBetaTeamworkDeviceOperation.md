@@ -49,6 +49,8 @@ Update-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property operations in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

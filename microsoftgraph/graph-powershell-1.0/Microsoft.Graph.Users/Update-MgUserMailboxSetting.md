@@ -62,6 +62,8 @@ Update property mailboxSettings value.
 | Delegated (personal Microsoft account) | MailboxSettings.ReadWrite,  |
 | Application | MailboxSettings.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Complete-MgBetaUserChatMigration -InputObject <ITeamsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Invoke action completeMigration
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

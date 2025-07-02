@@ -39,6 +39,8 @@ Only teachers and students can perform this operation.
 Note that files must be located in this folder in order to be added as resources.
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

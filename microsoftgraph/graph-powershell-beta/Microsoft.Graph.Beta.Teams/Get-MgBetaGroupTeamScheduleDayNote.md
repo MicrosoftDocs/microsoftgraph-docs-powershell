@@ -40,6 +40,8 @@ Get-MgBetaGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 The day notes in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

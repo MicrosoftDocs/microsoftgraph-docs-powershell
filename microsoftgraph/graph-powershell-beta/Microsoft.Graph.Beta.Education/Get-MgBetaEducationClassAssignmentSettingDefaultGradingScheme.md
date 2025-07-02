@@ -29,6 +29,8 @@ Get-MgBetaEducationClassAssignmentSettingDefaultGradingScheme -InputObject <IEdu
 ## DESCRIPTION
 Get defaultGradingScheme from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

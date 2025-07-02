@@ -21,6 +21,8 @@ Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummari
 ## DESCRIPTION
 Invoke action refreshDeviceComplianceReportSummarization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

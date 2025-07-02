@@ -34,6 +34,8 @@ Retrieve a list of owners for an application that are directoryObject types.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

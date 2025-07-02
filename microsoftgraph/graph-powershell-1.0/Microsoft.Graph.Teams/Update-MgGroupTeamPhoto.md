@@ -46,6 +46,8 @@ Update-MgGroupTeamPhoto -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property photo in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

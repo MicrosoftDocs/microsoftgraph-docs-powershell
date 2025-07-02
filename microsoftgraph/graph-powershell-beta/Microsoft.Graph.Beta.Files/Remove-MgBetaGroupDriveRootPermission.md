@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveRootPermission -InputObject <IFilesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property permissions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

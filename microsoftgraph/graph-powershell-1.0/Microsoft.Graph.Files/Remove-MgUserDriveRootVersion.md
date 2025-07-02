@@ -32,6 +32,8 @@ Remove-MgUserDriveRootVersion -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property versions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

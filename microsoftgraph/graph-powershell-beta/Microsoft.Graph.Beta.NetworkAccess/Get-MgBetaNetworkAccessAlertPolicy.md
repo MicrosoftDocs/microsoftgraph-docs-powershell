@@ -29,6 +29,8 @@ Get-MgBetaNetworkAccessAlertPolicy -InputObject <INetworkAccessIdentity> [-Expan
 ## DESCRIPTION
 Get policy from networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

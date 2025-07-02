@@ -40,6 +40,8 @@ Get-MgBetaUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [
 ## DESCRIPTION
 The managed devices associated with the user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

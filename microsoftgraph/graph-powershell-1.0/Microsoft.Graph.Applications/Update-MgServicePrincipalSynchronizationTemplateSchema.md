@@ -51,6 +51,8 @@ Update-MgServicePrincipalSynchronizationTemplateSchema -InputObject <IApplicatio
 ## DESCRIPTION
 Update the navigation property schema in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

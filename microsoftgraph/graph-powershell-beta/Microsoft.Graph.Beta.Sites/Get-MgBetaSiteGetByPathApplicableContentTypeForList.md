@@ -35,6 +35,8 @@ Get-MgBetaSiteGetByPathApplicableContentTypeForList -InputObject <ISitesIdentity
 ## DESCRIPTION
 Get site contentTypes that can be added to a list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

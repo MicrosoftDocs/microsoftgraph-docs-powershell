@@ -32,6 +32,8 @@ Get-MgUserDirectReportCountAsOrgContact -InputObject <IUsersIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

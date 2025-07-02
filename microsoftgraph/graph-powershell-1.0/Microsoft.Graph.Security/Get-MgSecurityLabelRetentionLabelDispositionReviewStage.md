@@ -41,6 +41,8 @@ Get-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityI
 ## DESCRIPTION
 When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -34,6 +34,8 @@ Get-MgGroupCalendar -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>
 The group's calendar.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

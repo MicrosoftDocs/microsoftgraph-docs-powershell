@@ -35,6 +35,8 @@ New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
 ## DESCRIPTION
 Create new navigation property to eligibilitySchedules for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId

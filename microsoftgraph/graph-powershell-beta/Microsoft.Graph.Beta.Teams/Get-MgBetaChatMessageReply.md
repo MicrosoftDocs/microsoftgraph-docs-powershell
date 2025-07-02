@@ -42,6 +42,8 @@ Get-MgBetaChatMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 Replies for a specified message.
 Supports $expand for channel messages.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

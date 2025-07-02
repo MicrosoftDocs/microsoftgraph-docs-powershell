@@ -32,6 +32,8 @@ Remove-MgTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property channels for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

@@ -43,6 +43,8 @@ New-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId <Strin
 ## DESCRIPTION
 Create new navigation property to assignmentPolicies for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackage

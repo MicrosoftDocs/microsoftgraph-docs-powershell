@@ -43,6 +43,8 @@ Read-only.
 | Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
 | Application | Tasks.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentBaseId

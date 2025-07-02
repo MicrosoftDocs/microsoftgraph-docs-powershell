@@ -33,6 +33,8 @@ Retrieve a list of groups that have been granted access to submit print jobs to 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Get-MgBetaSecurityThreatIntelligenceHostPairChildHost -InputObject <ISecurityIde
 ## DESCRIPTION
 Host reached via the parentHost.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

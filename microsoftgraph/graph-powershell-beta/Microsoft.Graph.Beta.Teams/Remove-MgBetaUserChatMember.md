@@ -60,6 +60,8 @@ Remove-MgBetaUserChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property members for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -53,6 +53,8 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
 ## DESCRIPTION
 Create new navigation property to siteRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

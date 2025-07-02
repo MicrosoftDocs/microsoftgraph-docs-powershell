@@ -32,6 +32,8 @@ Remove-MgEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity> [-If
 ## DESCRIPTION
 Delete ref of navigation property rubric for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

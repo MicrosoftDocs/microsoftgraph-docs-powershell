@@ -47,6 +47,8 @@ Update-MgBetaDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDeta
 ## DESCRIPTION
 Update the navigation property assignmentFilterEvaluationStatusDetails in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

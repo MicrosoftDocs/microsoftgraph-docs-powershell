@@ -28,6 +28,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ThreatIndicators.ReadWrite.OwnedBy,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

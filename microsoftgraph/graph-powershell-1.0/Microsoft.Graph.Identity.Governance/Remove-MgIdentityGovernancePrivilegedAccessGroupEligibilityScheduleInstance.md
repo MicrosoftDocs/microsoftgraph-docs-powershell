@@ -34,6 +34,8 @@ Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance
 ## DESCRIPTION
 Delete navigation property eligibilityScheduleInstances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

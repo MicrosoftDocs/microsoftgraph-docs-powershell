@@ -65,6 +65,8 @@ If you get the DirectoryResultSizeLimitExceeded error code, use the List group t
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Application.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, User.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

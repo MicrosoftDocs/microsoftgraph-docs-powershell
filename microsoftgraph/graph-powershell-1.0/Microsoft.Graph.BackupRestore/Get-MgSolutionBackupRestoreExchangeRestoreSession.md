@@ -40,6 +40,8 @@ Get-MgSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRestoreId
 ## DESCRIPTION
 The list of Exchange restore sessions available in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

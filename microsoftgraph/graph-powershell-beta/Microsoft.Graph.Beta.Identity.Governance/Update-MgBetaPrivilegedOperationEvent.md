@@ -50,6 +50,8 @@ Update-MgBetaPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update entity in privilegedOperationEvents
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

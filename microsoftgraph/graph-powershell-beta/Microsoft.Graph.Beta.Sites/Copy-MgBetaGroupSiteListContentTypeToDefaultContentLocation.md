@@ -52,6 +52,8 @@ Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -InputObject <ISites
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

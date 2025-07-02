@@ -48,6 +48,8 @@ Update-MgEntitlementManagementResourceEnvironmentResourceRole -InputObject <IIde
 ## DESCRIPTION
 Update the navigation property roles in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId

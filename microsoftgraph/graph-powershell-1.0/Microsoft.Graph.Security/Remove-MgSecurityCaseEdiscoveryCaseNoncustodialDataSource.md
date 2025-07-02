@@ -33,6 +33,8 @@ Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurit
 ## DESCRIPTION
 Delete navigation property noncustodialDataSources for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

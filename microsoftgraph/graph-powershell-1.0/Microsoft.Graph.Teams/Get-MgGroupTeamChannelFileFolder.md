@@ -32,6 +32,8 @@ Get-MgGroupTeamChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Metadata for the location where the channel's files are stored.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

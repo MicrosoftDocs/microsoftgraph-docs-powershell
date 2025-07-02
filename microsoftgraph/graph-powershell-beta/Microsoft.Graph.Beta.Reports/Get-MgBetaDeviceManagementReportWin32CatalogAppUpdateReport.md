@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportWin32CatalogAppUpdateReport -OutFile <String>
 ## DESCRIPTION
 Invoke action retrieveWin32CatalogAppsUpdateReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

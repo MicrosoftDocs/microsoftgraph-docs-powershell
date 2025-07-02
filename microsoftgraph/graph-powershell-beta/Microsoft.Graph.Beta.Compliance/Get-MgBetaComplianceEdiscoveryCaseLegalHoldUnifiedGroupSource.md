@@ -38,6 +38,8 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource -InputObject <ICom
 ## DESCRIPTION
 Get unifiedGroupSources from compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

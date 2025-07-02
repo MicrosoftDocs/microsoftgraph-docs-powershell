@@ -32,6 +32,8 @@ Remove-MgShareItemContent -InputObject <IFilesIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveItemId

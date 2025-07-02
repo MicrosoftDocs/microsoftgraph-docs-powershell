@@ -35,6 +35,8 @@ Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice -InputObject <IIdenti
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device isn't registered for passwordless Phone Sign-In.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

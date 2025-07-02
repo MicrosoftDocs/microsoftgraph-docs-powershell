@@ -44,6 +44,8 @@ These pages are used to customize the values shown to the user during a user jou
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

@@ -48,6 +48,8 @@ Update-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property analytics in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -35,6 +35,8 @@ Update-MgEducationMeUserMailboxSetting -BodyParameter <IMicrosoftGraphMailboxSet
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

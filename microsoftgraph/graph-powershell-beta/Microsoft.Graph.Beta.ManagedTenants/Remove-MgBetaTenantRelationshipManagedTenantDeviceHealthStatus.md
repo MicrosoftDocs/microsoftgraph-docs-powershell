@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus -InputObject <IMa
 ## DESCRIPTION
 Delete navigation property deviceHealthStatuses for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceHealthStatusId

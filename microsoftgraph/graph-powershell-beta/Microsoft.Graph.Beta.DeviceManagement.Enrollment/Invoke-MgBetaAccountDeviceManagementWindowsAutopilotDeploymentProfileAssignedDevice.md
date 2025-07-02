@@ -31,6 +31,8 @@ Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeploymentProfileAssignedDev
 ## DESCRIPTION
 Unassigns the resource account from an Autopilot device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

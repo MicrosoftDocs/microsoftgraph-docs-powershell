@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementManagedDeviceCleanupRule -InputObject <IDeviceManag
 ## DESCRIPTION
 Delete navigation property managedDeviceCleanupRules for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

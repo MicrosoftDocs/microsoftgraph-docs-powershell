@@ -24,6 +24,8 @@ Get-MgDeviceManagementVirtualEndpoint [-ExpandProperty <String[]>] [-Property <S
 ## DESCRIPTION
 Virtual endpoint
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

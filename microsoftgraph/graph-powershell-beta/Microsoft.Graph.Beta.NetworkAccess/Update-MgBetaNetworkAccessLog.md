@@ -30,6 +30,8 @@ Update-MgBetaNetworkAccessLog -BodyParameter <IMicrosoftGraphNetworkaccessLogs>
 ## DESCRIPTION
 Update the navigation property logs in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

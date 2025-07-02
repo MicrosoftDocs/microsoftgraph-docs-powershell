@@ -45,6 +45,8 @@ Represents the definition of the policy ruleset that makes up the core definitio
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

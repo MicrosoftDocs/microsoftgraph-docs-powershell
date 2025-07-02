@@ -48,6 +48,8 @@ Invoke-MgBetaScanUserManagedDeviceWindowsDefender -InputObject <IDevicesCorporat
 ## DESCRIPTION
 Invoke action windowsDefenderScan
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

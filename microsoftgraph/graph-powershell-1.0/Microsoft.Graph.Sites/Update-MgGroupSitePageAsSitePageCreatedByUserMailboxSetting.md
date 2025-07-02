@@ -54,6 +54,8 @@ Update-MgGroupSitePageAsSitePageCreatedByUserMailboxSetting -InputObject <ISites
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

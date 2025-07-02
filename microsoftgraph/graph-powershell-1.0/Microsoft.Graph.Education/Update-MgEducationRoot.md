@@ -32,6 +32,8 @@ Update-MgEducationRoot -BodyParameter <IMicrosoftGraphEducationRoot> [-ResponseH
 ## DESCRIPTION
 Update education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

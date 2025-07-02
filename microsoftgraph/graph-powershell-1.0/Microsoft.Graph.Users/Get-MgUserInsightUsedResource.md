@@ -44,6 +44,8 @@ For linked attachments, the type is driveItem.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

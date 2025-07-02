@@ -32,6 +32,8 @@ Remove-MgRoleManagementEntitlementManagementRoleAssignmentSchedule -InputObject 
 ## DESCRIPTION
 Delete navigation property roleAssignmentSchedules for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -32,6 +32,8 @@ Remove-MgBetaCommunicationCallRecordSession -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Delete navigation property sessions for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordId

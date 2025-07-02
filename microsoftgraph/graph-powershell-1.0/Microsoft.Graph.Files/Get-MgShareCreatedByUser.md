@@ -34,6 +34,8 @@ Get-MgShareCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <String[
 Identity of the user who created the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

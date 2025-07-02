@@ -45,6 +45,8 @@ Start-MgBetaCommunicationCallRecording -InputObject <ICloudCommunicationsIdentit
 ## DESCRIPTION
 Invoke action startRecording
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

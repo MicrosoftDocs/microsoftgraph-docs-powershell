@@ -44,6 +44,8 @@ Get-MgBetaReportM365AppUserDetail -InputObject <IReportsIdentity> -OutFile <Stri
 ## DESCRIPTION
 Get a report that provides the details about which apps and platforms users have used.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

@@ -55,6 +55,8 @@ Update-MgDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property itemActivityStats in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

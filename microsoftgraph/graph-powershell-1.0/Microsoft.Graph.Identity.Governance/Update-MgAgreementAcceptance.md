@@ -53,6 +53,8 @@ Update-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property acceptances in agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

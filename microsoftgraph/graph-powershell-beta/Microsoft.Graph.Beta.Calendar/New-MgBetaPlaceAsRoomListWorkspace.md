@@ -51,6 +51,8 @@ New-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to workspaces for places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

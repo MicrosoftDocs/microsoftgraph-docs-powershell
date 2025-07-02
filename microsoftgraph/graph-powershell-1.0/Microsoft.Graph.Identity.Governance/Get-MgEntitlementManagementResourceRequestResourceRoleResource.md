@@ -30,6 +30,8 @@ Get-MgEntitlementManagementResourceRequestResourceRoleResource -InputObject <IId
 ## DESCRIPTION
 Get resource from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

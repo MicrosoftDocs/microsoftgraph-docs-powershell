@@ -68,6 +68,8 @@ New-MgBetaGroupSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

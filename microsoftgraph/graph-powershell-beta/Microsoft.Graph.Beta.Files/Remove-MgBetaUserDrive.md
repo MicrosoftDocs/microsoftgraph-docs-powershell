@@ -32,6 +32,8 @@ Remove-MgBetaUserDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property drives for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -21,6 +21,8 @@ Get-MgBetaDirectoryPublicKeyInfrastructure [-ExpandProperty <String[]>] [-Proper
 ## DESCRIPTION
 The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

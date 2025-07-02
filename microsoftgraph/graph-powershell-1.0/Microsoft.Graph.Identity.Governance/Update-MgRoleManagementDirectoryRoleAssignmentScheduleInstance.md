@@ -60,6 +60,8 @@ Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject <IId
 ## DESCRIPTION
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivatedUsing

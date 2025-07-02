@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoCustomer -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Get customer from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

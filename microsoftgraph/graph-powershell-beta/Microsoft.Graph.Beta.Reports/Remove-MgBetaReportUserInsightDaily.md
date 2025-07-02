@@ -21,6 +21,8 @@ Remove-MgBetaReportUserInsightDaily [-IfMatch <String>] [-ResponseHeadersVariabl
 ## DESCRIPTION
 Delete navigation property daily for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

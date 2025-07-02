@@ -31,6 +31,8 @@ Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionAuthentic
 ## DESCRIPTION
 Get authenticationContext from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

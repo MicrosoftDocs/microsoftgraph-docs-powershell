@@ -48,6 +48,8 @@ New-MgBetaGroupThreadPostMention -InputObject <IGroupsIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to mentions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

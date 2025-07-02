@@ -32,6 +32,8 @@ Remove-MgBetaTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property tabs for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

@@ -50,6 +50,8 @@ Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice -InputObject <IDevicesCo
 ## DESCRIPTION
 Delete user from shared Apple device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

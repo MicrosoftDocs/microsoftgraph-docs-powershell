@@ -33,6 +33,8 @@ New-MgBetaPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-Respon
 ## DESCRIPTION
 Create new navigation property to connectors for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -47,6 +47,8 @@ This allows you to maintain and synchronize a local store of a user's contact fo
 | Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite,  |
 | Application | Contacts.Read, Contacts.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgDeviceManagementManagedDeviceCategory -InputObject <IDeviceManagementId
 ## DESCRIPTION
 Delete navigation property deviceCategory for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -60,6 +60,8 @@ After the review is completed, use this API again to set the Cloud PC back to a 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

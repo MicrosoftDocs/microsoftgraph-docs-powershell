@@ -32,6 +32,8 @@ Set-MgUserDriveRootContent -InputObject <IFilesIdentity> [-Data <Stream>] [-Resp
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

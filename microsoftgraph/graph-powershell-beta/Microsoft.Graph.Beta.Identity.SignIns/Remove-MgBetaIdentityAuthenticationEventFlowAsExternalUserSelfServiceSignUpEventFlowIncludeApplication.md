@@ -34,6 +34,8 @@ Remove-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEvent
 ## DESCRIPTION
 Delete navigation property includeApplications for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationConditionApplicationAppId

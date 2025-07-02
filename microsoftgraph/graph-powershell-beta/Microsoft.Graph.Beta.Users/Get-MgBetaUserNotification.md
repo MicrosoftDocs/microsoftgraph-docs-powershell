@@ -37,6 +37,8 @@ Get-MgBetaUserNotification -InputObject <IUsersIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Get notifications from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

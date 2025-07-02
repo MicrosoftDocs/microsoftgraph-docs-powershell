@@ -32,6 +32,8 @@ Remove-MgBetaGroupThreadPostAttachment -InputObject <IGroupsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property attachments for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId

@@ -56,6 +56,8 @@ Update-MgBetaUserManagedDeviceHealthScriptState -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Update the navigation property deviceHealthScriptStates in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaAllUserDeviceFromManagement -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Retire all devices from management for this user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -37,6 +37,8 @@ Generate a public key to use to encrypt the Apple device enrollment program toke
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DepOnboardingSettingId

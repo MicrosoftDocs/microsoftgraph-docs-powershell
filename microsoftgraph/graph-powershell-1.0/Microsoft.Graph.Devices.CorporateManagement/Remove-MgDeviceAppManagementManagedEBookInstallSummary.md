@@ -32,6 +32,8 @@ Remove-MgDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCor
 ## DESCRIPTION
 Delete navigation property installSummary for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

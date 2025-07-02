@@ -43,6 +43,8 @@ Get-MgBetaExternalConnectionItemActivity -InputObject <ISearchIdentity> [-Expand
 Returns a list of activities performed on the item.
 Write-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Get-MgSiteOnenoteNotebookSectionPageContent -InputObject <INotesIdentity> -OutFi
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

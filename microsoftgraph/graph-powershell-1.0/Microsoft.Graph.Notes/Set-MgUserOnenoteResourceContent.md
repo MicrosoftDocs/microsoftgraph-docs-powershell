@@ -32,6 +32,8 @@ Set-MgUserOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

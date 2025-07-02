@@ -49,6 +49,8 @@ Update-MgBetaSolutionBackupRestorePoint -InputObject <IBackupRestoreIdentity>
 ## DESCRIPTION
 Update the navigation property restorePoints in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

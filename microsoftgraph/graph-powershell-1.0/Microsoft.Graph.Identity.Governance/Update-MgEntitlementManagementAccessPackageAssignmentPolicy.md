@@ -69,6 +69,8 @@ Update-MgEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property assignmentPolicies in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackage

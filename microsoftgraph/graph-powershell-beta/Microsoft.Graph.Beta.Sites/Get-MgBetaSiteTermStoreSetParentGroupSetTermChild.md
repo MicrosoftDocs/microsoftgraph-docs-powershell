@@ -41,6 +41,8 @@ Get-MgBetaSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesIdentity> 
 ## DESCRIPTION
 Children of current term.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

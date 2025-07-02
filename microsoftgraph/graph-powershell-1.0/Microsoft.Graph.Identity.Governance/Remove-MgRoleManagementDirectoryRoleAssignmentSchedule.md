@@ -32,6 +32,8 @@ Remove-MgRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property roleAssignmentSchedules for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

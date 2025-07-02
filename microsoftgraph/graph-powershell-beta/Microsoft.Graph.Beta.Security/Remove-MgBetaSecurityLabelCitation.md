@@ -32,6 +32,8 @@ Remove-MgBetaSecurityLabelCitation -InputObject <ISecurityIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property citations for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CitationTemplateId

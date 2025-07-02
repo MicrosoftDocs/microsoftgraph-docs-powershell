@@ -50,6 +50,8 @@ Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject <
 ## DESCRIPTION
 Update the navigation property columns in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -39,6 +39,8 @@ Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction
 ## DESCRIPTION
 Operations that an authorized principal is allowed to perform.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

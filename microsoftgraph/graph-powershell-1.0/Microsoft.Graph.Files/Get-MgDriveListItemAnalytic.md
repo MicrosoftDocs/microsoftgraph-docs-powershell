@@ -32,6 +32,8 @@ Get-MgDriveListItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

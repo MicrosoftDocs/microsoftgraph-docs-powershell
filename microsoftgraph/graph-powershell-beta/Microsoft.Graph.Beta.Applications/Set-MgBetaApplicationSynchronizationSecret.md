@@ -49,6 +49,8 @@ Set-MgBetaApplicationSynchronizationSecret -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update property secrets value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

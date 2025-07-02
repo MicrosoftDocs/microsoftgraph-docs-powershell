@@ -29,6 +29,8 @@ Remove-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity
 ## DESCRIPTION
 Delete navigation property usageRights for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

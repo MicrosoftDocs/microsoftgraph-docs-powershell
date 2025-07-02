@@ -32,6 +32,8 @@ Get-MgSecurityThreatIntelligenceWhoisHistoryRecordHost -InputObject <ISecurityId
 ## DESCRIPTION
 The host associated to this WHOIS object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

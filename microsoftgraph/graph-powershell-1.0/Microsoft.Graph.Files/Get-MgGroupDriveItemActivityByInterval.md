@@ -54,6 +54,8 @@ Get-MgGroupDriveItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-
 Get a collection of itemActivityStats resources for the activities that took place on this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

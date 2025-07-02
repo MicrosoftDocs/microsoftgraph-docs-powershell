@@ -34,6 +34,8 @@ New-MgBetaDirectoryRecommendation -BodyParameter <Hashtable> [-ResponseHeadersVa
 ## DESCRIPTION
 Create new navigation property to recommendations for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionSteps

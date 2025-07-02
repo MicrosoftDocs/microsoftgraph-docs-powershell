@@ -40,6 +40,8 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CustomTaskExtensionId

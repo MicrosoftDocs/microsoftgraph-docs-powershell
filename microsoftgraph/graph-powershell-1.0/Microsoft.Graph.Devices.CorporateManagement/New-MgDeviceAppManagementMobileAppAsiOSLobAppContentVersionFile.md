@@ -51,6 +51,8 @@ New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile
 ## DESCRIPTION
 Create new navigation property to files for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

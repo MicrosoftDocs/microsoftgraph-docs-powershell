@@ -29,6 +29,8 @@ Remove-MgBetaDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity> [
 ## DESCRIPTION
 Delete navigation property commands for devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CommandId

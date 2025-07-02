@@ -49,6 +49,8 @@ New-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

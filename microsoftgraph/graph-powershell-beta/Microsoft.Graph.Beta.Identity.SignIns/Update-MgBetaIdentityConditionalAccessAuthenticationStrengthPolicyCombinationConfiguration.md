@@ -48,6 +48,8 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationCon
 ## DESCRIPTION
 Update the navigation property combinationConfigurations in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

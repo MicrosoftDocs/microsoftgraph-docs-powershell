@@ -41,6 +41,8 @@ Get-MgGroupTransitiveMemberAsOrgContact -InputObject <IGroupsIdentity> [-ExpandP
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

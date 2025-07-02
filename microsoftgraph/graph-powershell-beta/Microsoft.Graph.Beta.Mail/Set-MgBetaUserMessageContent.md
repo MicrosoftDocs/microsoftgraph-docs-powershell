@@ -34,6 +34,8 @@ Set-MgBetaUserMessageContent -InputObject <IMailIdentity> [-Data <Stream>] [-Res
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

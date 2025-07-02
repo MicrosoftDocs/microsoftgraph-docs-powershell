@@ -52,6 +52,8 @@ New-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to openShifts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

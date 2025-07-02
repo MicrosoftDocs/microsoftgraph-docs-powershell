@@ -39,6 +39,8 @@ New-MgDrive -BodyParameter <IMicrosoftGraphDrive> [-ResponseHeadersVariable <Str
 ## DESCRIPTION
 Add new entity to drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

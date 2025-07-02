@@ -57,6 +57,8 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedB
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

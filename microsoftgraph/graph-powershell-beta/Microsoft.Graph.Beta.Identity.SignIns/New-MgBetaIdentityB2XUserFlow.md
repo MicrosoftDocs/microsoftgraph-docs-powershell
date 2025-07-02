@@ -46,6 +46,8 @@ Create a new b2xIdentityUserFlow object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

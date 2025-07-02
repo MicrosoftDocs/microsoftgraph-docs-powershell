@@ -41,6 +41,8 @@ Create new navigation property to telecomExpenseManagementPartners for deviceMan
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -46,6 +46,8 @@ New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice -InputObjec
 ## DESCRIPTION
 Create new navigation property to matchedDevices for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

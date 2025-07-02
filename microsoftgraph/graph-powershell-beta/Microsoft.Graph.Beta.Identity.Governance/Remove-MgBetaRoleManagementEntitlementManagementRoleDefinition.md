@@ -32,6 +32,8 @@ Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition -InputObject <IId
 ## DESCRIPTION
 Delete navigation property roleDefinitions for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

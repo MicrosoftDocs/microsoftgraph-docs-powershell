@@ -38,6 +38,8 @@ Update the properties of a namePronunciationSettings object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PeopleSettings.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

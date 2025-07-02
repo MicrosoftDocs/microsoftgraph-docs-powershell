@@ -43,6 +43,8 @@ You can get or set a photo for a contact.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Contacts.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId

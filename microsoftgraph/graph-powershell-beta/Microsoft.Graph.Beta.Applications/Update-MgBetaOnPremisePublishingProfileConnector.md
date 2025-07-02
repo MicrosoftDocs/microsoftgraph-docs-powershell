@@ -45,6 +45,8 @@ Update-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIden
 ## DESCRIPTION
 Update the navigation property connectors in onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

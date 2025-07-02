@@ -33,6 +33,8 @@ Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResource -InputObject <IE
 ## DESCRIPTION
 Delete navigation property submittedResources for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

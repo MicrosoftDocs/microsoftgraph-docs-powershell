@@ -33,6 +33,8 @@ New-MgSecurityThreatIntelligenceHostPair -BodyParameter <IMicrosoftGraphSecurity
 ## DESCRIPTION
 Create new navigation property to hostPairs for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

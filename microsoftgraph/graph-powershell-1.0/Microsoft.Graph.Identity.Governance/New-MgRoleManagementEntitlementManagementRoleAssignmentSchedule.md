@@ -38,6 +38,8 @@ New-MgRoleManagementEntitlementManagementRoleAssignmentSchedule
 ## DESCRIPTION
 Create new navigation property to roleAssignmentSchedules for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivatedUsing

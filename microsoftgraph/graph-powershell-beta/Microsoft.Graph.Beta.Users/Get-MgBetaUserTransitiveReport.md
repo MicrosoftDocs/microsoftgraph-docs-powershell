@@ -40,6 +40,8 @@ Get-MgBetaUserTransitiveReport -InputObject <IUsersIdentity> [-ExpandProperty <S
 The transitive reports for a user.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

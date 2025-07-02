@@ -32,6 +32,8 @@ Get-MgUserDriveListColumnSourceColumn -InputObject <IFilesIdentity> [-ExpandProp
 ## DESCRIPTION
 The source column for the content type column.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

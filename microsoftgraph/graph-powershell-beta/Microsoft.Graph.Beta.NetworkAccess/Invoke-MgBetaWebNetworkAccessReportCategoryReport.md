@@ -29,6 +29,8 @@ Invoke-MgBetaWebNetworkAccessReportCategoryReport -InputObject <INetworkAccessId
 ## DESCRIPTION
 Invoke function webCategoryReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

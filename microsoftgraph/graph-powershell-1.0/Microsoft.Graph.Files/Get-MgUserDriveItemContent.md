@@ -32,6 +32,8 @@ Get-MgUserDriveItemContent -InputObject <IFilesIdentity> [-Format <String>] -Out
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

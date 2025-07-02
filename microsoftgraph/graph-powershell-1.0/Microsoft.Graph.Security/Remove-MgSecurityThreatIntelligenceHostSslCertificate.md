@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIde
 ## DESCRIPTION
 Delete navigation property hostSslCertificates for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

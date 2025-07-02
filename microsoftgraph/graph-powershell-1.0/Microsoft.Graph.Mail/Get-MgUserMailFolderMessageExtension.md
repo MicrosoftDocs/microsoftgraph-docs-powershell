@@ -42,6 +42,8 @@ Get-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> [-ExpandProper
 The collection of open extensions defined for the message.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

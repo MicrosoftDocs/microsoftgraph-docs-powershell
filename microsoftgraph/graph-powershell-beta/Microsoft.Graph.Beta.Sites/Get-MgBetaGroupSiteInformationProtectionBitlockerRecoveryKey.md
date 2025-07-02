@@ -37,6 +37,8 @@ Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKey -InputObject <ISite
 ## DESCRIPTION
 The recovery keys associated with the bitlocker entity.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

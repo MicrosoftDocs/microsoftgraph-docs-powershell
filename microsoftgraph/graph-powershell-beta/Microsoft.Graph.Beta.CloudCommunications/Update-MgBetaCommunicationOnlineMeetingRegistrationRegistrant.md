@@ -45,6 +45,8 @@ Update-MgBetaCommunicationOnlineMeetingRegistrationRegistrant -InputObject <IClo
 ## DESCRIPTION
 Update the navigation property registrants in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

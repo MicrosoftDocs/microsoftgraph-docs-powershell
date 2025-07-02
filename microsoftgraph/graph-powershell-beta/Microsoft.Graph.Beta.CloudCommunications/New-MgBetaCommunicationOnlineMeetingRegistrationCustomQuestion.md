@@ -45,6 +45,8 @@ New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICl
 ## DESCRIPTION
 Create new navigation property to customQuestions for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

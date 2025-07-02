@@ -40,6 +40,8 @@ Get-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Device compliance policy states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -58,6 +58,8 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkA
 Create a new mailboxRestoreArtifactsBulkAdditionRequest object associated with an exchangeRestoreSession.
 The following steps describe how to create and manage an exchangeRestoreSession with bulk artifact additions:
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,6 +50,8 @@ Get-MgSiteTermStoreSetParentGroupSetTermChildRelationToTerm -InputObject <ISites
 The to \[term\] of the relation.
 The term to which the relationship is defined.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

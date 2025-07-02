@@ -30,6 +30,8 @@ Remove-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer -Inpu
 ## DESCRIPTION
 Delete navigation property customer for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

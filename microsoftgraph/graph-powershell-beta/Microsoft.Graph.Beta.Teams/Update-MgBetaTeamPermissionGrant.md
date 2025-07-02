@@ -49,6 +49,8 @@ Update-MgBetaTeamPermissionGrant -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property permissionGrants in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

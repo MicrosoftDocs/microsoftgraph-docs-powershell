@@ -48,6 +48,8 @@ Update-MgUserSettingWindows -InputObject <IUsersIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property windows in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

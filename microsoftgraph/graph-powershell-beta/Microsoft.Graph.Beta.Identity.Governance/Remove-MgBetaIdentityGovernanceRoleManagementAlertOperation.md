@@ -29,6 +29,8 @@ Remove-MgBetaIdentityGovernanceRoleManagementAlertOperation -InputObject <IIdent
 ## DESCRIPTION
 Delete navigation property operations for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

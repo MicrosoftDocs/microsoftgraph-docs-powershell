@@ -29,6 +29,8 @@ Get-MgBetaUserEventExceptionOccurrenceCount -InputObject <ICalendarIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

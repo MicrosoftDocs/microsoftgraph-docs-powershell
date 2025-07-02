@@ -32,6 +32,8 @@ Get-MgRoleManagementDirectoryRoleEligibilitySchedulePrincipal -InputObject <IIde
 ## DESCRIPTION
 The principal that's getting a role assignment or that's eligible for a role through the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -24,6 +24,8 @@ Remove-MgPolicyAdminConsentRequestPolicy [-IfMatch <String>] [-ResponseHeadersVa
 ## DESCRIPTION
 Delete navigation property adminConsentRequestPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

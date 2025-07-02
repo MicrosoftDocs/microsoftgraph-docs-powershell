@@ -40,6 +40,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.win32LobApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Get-MgBetaApplicationSynchronizationSecretCount -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

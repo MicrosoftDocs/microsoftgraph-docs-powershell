@@ -54,6 +54,8 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersion
 ## DESCRIPTION
 Commits a file of a given app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

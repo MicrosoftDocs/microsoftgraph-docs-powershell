@@ -53,6 +53,8 @@ New-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule -InputObject <IIden
 ## DESCRIPTION
 Create new navigation property to roleEligibilitySchedules for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

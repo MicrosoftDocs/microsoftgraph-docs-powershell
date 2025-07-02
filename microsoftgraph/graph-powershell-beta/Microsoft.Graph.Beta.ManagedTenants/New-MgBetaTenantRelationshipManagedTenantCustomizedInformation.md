@@ -32,6 +32,8 @@ New-MgBetaTenantRelationshipManagedTenantCustomizedInformation
 ## DESCRIPTION
 Create new navigation property to tenantsCustomizedInformation for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

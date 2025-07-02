@@ -53,6 +53,8 @@ Update-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <I
 ## DESCRIPTION
 Update the navigation property instances in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId

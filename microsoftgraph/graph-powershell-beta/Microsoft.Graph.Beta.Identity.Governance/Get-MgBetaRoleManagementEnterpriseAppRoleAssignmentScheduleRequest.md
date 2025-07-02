@@ -38,6 +38,8 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest -InputObject 
 ## DESCRIPTION
 Get roleAssignmentScheduleRequests from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

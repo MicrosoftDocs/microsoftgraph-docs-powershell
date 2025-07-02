@@ -40,6 +40,8 @@ Sends test message using the specified notificationMessageTemplate in the defaul
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -31,6 +31,8 @@ Update-MgBetaNetworkAccessConnectivity -BodyParameter <IMicrosoftGraphNetworkacc
 ## DESCRIPTION
 Update the navigation property connectivity in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

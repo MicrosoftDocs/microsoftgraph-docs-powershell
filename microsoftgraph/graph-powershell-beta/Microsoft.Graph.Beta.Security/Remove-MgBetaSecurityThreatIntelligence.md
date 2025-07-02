@@ -24,6 +24,8 @@ Remove-MgBetaSecurityThreatIntelligence [-IfMatch <String>] [-ResponseHeadersVar
 ## DESCRIPTION
 Delete navigation property threatIntelligence for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -38,6 +38,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BusinessScenarioId

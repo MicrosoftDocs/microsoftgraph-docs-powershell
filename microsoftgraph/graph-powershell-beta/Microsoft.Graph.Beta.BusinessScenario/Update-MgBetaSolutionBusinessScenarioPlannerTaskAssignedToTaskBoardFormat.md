@@ -49,6 +49,8 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskAssignedToTaskBoardFormat
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

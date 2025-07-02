@@ -46,6 +46,8 @@ Restore-MgBetaShareListItemVersion -InputObject <IFilesIdentity> [-ResponseHeade
 ## DESCRIPTION
 Invoke action restoreVersion
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

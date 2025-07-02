@@ -32,6 +32,8 @@ Remove-MgBetaSiteTermStoreGroupSetParentGroup -InputObject <ISitesIdentity> [-If
 ## DESCRIPTION
 Delete navigation property parentGroup for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

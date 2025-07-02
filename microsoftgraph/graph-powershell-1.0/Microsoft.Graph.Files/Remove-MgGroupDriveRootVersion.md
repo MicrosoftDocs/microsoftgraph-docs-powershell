@@ -32,6 +32,8 @@ Remove-MgGroupDriveRootVersion -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property versions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

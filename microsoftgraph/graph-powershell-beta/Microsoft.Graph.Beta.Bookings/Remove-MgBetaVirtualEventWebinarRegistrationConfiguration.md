@@ -32,6 +32,8 @@ Remove-MgBetaVirtualEventWebinarRegistrationConfiguration -InputObject <IBooking
 ## DESCRIPTION
 Delete navigation property registrationConfiguration for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

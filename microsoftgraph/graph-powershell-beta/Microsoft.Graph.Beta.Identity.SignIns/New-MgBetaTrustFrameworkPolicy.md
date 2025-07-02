@@ -36,6 +36,8 @@ Create new navigation property to policies for trustFramework
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.TrustFramework,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

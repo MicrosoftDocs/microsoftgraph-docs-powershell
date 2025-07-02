@@ -48,6 +48,8 @@ The list of user installation states for this mobile app configuration.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

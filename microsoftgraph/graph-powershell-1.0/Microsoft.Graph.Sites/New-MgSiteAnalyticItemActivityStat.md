@@ -54,6 +54,8 @@ New-MgSiteAnalyticItemActivityStat -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

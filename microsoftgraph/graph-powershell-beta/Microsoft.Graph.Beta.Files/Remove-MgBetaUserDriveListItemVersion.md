@@ -32,6 +32,8 @@ Remove-MgBetaUserDriveListItemVersion -InputObject <IFilesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property versions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -34,6 +34,8 @@ Remove-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom
 ## DESCRIPTION
 Delete navigation property inheritsPermissionsFrom for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

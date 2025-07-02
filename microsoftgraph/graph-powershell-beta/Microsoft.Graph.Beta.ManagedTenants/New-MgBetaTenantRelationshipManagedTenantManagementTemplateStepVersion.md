@@ -35,6 +35,8 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
 ## DESCRIPTION
 Create new navigation property to managementTemplateStepVersions for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AcceptedFor

@@ -29,6 +29,8 @@ Invoke-MgBetaRotateUserManagedDeviceFileVaultKey -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Invoke action rotateFileVaultKey
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

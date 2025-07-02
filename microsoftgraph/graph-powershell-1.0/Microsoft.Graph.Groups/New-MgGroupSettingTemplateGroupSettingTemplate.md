@@ -30,6 +30,8 @@ New-MgGroupSettingTemplateGroupSettingTemplate -BodyParameter <IMicrosoftGraphGr
 ## DESCRIPTION
 Add new entity to groupSettingTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

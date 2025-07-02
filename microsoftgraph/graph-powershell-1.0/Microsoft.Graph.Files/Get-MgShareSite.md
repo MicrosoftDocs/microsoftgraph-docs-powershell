@@ -32,6 +32,8 @@ Get-MgShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 Used to access the underlying site
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

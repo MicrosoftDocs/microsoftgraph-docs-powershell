@@ -63,6 +63,8 @@ Update-MgBetaUserProfile -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property profile in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

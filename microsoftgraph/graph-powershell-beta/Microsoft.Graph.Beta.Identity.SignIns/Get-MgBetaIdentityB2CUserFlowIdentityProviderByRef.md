@@ -31,6 +31,8 @@ Get the identity providers in a b2cIdentityUserFlow object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

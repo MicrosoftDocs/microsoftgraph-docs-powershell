@@ -68,6 +68,8 @@ New-MgGroupSiteGetByPathColumn -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Delete navigation property reviewSets for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

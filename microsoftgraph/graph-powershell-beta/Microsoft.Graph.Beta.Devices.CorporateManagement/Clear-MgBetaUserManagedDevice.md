@@ -52,6 +52,8 @@ Clear-MgBetaUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
 ## DESCRIPTION
 Wipe a device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

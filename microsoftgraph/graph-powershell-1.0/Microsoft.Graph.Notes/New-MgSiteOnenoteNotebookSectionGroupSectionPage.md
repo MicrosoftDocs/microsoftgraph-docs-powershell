@@ -56,6 +56,8 @@ New-MgSiteOnenoteNotebookSectionGroupSectionPage -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create new navigation property to pages for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

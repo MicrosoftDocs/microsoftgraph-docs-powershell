@@ -31,6 +31,8 @@ Remove-MgBetaWindowsUpdatesDeploymentAudienceApplicableContentMatchedDevice
 ## DESCRIPTION
 Delete navigation property matchedDevices for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicableContentCatalogEntryId

@@ -31,6 +31,8 @@ Get-MgBetaReportEmailActivityCount -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Invoke function getEmailActivityCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

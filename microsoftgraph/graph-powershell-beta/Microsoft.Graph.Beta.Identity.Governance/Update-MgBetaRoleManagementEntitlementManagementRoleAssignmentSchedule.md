@@ -62,6 +62,8 @@ Update-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule
 ## DESCRIPTION
 Update the navigation property roleAssignmentSchedules in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivatedUsing

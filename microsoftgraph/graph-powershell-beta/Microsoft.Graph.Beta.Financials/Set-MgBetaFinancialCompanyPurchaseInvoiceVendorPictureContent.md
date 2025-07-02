@@ -30,6 +30,8 @@ Set-MgBetaFinancialCompanyPurchaseInvoiceVendorPictureContent -InputObject <IFin
 ## DESCRIPTION
 Update content for the navigation property picture in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

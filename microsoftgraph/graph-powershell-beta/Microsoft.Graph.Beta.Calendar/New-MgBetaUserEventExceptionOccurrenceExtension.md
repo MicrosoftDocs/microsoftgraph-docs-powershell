@@ -43,6 +43,8 @@ New-MgBetaUserEventExceptionOccurrenceExtension -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

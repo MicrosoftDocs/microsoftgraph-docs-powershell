@@ -51,6 +51,8 @@ New-MgBetaGroupSiteListOperation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

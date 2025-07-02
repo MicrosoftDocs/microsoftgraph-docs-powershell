@@ -29,6 +29,8 @@ Remove-MgBetaAccessReviewInstance -InputObject <IIdentityGovernanceIdentity> [-I
 ## DESCRIPTION
 Delete navigation property instances for accessReviews
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

@@ -48,6 +48,8 @@ Update-MgBetaTenantRelationshipManagedTenant -InputObject <IManagedTenantsIdenti
 ## DESCRIPTION
 Update the navigation property tenants in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -59,6 +59,8 @@ Update the navigation property threads in groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

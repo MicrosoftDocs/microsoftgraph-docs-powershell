@@ -24,6 +24,8 @@ Get-MgBetaSecurityIdentity [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 A container for security identities APIs.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

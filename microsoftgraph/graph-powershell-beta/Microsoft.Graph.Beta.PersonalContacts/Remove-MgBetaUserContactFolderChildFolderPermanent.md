@@ -43,6 +43,8 @@ For more information about item retention, see Configure Deleted Item retention 
 | Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
 | Application | Contacts.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId

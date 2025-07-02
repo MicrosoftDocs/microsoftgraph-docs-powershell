@@ -40,6 +40,8 @@ Get-MgBetaGroupDriveListOperation -InputObject <IFilesIdentity> [-ExpandProperty
 ## DESCRIPTION
 The collection of long-running operations on the list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

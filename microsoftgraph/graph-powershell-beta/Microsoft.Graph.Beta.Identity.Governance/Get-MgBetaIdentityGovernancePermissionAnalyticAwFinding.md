@@ -37,6 +37,8 @@ Get-MgBetaIdentityGovernancePermissionAnalyticAwFinding -InputObject <IIdentityG
 ## DESCRIPTION
 The output of the permissions usage data analysis performed by Permissions Management to assess risk with identities and resources.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -46,6 +46,8 @@ This includes URLs, file attachments, and reference attachments to OneDrive for 
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

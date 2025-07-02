@@ -33,6 +33,8 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentLinkedEligibleRoleAssignment
 Read-only.
 If this is an active assignment and created due to activation on an eligible assignment, it represents the object of that eligible assignment; Otherwise, the value is null.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

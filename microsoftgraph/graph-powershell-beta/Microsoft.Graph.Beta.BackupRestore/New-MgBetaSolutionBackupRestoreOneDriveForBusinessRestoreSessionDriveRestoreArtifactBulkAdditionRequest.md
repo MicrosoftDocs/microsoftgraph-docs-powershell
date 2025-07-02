@@ -58,6 +58,8 @@ New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArti
 Create a driveRestoreArtifactsBulkAdditionRequest object associated with a oneDriveForBusinessRestoreSession.
 The following steps describe how to create and manage a oneDriveForBusinessRestoreSession with bulk artifact additions.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -61,6 +61,8 @@ New-MgUserDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDri
 ## DESCRIPTION
 Create new navigation property to drives for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

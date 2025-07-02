@@ -29,6 +29,8 @@ Update-MgBetaSecurityAuditLog -BodyParameter <IMicrosoftGraphSecurityAuditCoreRo
 ## DESCRIPTION
 Update the navigation property auditLog in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

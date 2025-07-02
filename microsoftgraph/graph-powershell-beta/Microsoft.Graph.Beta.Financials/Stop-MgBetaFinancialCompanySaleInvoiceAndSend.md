@@ -29,6 +29,8 @@ Stop-MgBetaFinancialCompanySaleInvoiceAndSend -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Invoke action cancelAndSend
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

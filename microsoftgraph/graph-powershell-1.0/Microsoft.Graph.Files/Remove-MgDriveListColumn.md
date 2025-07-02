@@ -32,6 +32,8 @@ Remove-MgDriveListColumn -InputObject <IFilesIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property columns for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

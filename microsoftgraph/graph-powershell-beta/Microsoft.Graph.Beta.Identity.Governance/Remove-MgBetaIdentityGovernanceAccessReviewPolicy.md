@@ -21,6 +21,8 @@ Remove-MgBetaIdentityGovernanceAccessReviewPolicy [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete navigation property policy for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

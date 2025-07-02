@@ -48,6 +48,8 @@ Test-MgDriveItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action validatePermission
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

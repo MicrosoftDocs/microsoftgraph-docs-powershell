@@ -56,6 +56,8 @@ Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdent
 ## DESCRIPTION
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

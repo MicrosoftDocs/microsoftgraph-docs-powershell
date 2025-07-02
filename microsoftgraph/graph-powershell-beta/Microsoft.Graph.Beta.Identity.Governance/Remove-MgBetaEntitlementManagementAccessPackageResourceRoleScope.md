@@ -33,6 +33,8 @@ Remove-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <I
 ## DESCRIPTION
 Delete navigation property accessPackageResourceRoleScopes for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageId

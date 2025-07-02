@@ -51,6 +51,8 @@ Invoke-MgCleanUserManagedDeviceWindowsDevice -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Clean Windows device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

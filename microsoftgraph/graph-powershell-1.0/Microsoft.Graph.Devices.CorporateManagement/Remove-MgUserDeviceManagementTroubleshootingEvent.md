@@ -32,6 +32,8 @@ Remove-MgUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorporat
 ## DESCRIPTION
 Delete navigation property deviceManagementTroubleshootingEvents for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementTroubleshootingEventId

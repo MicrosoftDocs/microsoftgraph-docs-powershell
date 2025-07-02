@@ -52,6 +52,8 @@ Update-MgBetaGroupOnenote -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property onenote in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

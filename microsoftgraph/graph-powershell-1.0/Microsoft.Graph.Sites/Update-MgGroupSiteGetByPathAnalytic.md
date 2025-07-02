@@ -49,6 +49,8 @@ Update-MgGroupSiteGetByPathAnalytic -InputObject <ISitesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property analytics in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

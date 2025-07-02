@@ -32,6 +32,8 @@ Get-MgGroupDriveItemCount -InputObject <IFilesIdentity> [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

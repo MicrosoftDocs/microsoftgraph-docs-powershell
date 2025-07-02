@@ -33,6 +33,8 @@ Unpublish-MgGroupSiteContentType -InputObject <ISitesIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

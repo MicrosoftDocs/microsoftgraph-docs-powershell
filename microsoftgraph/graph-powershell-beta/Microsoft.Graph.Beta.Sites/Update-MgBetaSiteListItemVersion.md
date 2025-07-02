@@ -50,6 +50,8 @@ Update-MgBetaSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property versions in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

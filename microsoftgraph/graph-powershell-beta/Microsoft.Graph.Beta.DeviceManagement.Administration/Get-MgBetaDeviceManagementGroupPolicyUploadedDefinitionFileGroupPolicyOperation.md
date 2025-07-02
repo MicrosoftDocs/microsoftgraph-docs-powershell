@@ -40,6 +40,8 @@ Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 ## DESCRIPTION
 The list of operations on the uploaded ADMX file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

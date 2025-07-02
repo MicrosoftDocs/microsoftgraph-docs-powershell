@@ -32,6 +32,8 @@ Remove-MgSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property canvasLayout for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

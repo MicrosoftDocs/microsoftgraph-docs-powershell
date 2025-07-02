@@ -51,6 +51,8 @@ Get-MgCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicationsIden
 The recordings of an online meeting.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

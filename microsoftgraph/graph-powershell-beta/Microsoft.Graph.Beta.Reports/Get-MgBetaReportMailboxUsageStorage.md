@@ -31,6 +31,8 @@ Get-MgBetaReportMailboxUsageStorage -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Invoke function getMailboxUsageStorage
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

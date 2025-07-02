@@ -31,6 +31,8 @@ New-MgBetaSecurityInformationProtectionSensitivityLabel
 ## DESCRIPTION
 Create new navigation property to sensitivityLabels for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

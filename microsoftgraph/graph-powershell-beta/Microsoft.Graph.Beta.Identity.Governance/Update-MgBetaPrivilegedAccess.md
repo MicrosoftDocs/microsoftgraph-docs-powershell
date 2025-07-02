@@ -53,6 +53,8 @@ Update-MgBetaPrivilegedAccess -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update entity in privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

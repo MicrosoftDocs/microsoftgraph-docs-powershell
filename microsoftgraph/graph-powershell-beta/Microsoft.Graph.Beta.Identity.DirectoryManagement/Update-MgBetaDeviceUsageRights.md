@@ -45,6 +45,8 @@ Update-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Update the navigation property usageRights in devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

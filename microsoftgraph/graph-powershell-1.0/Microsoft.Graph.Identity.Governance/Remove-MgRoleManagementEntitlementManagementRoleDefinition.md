@@ -32,6 +32,8 @@ Remove-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property roleDefinitions for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

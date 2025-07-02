@@ -42,6 +42,8 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
 ## DESCRIPTION
 Requests for active role assignments to principals through PIM.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

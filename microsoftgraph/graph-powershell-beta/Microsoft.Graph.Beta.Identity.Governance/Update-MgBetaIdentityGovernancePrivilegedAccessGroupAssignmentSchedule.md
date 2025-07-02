@@ -58,6 +58,8 @@ Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule
 ## DESCRIPTION
 Update the navigation property assignmentSchedules in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId

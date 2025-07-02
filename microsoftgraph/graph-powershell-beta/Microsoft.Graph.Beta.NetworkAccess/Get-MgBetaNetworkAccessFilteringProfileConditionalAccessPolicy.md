@@ -40,6 +40,8 @@ Get-MgBetaNetworkAccessFilteringProfileConditionalAccessPolicy -InputObject <INe
 A set of associated policies defined to regulate access to resources or systems based on specific conditions.
 Automatically expanded.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

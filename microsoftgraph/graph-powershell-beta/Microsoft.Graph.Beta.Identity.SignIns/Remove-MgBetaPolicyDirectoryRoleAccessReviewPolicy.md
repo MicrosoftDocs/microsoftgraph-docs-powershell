@@ -21,6 +21,8 @@ Remove-MgBetaPolicyDirectoryRoleAccessReviewPolicy [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property directoryRoleAccessReviewPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

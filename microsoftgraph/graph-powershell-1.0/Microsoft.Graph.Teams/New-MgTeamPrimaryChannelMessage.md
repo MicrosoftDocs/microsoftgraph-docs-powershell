@@ -62,6 +62,8 @@ New-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to messages for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

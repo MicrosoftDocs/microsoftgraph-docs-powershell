@@ -29,6 +29,8 @@ Remove-MgBetaGroupTeamPrimaryChannelPlannerPlan -InputObject <ITeamsIdentity> [-
 ## DESCRIPTION
 Delete navigation property plans for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

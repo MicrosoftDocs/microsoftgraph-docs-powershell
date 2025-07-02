@@ -40,6 +40,8 @@ A Team is archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

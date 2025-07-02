@@ -31,6 +31,8 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperati
 ## DESCRIPTION
 Delete navigation property groupPolicyOperations for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupPolicyOperationId

@@ -40,6 +40,8 @@ Get-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-ExpandPro
 ## DESCRIPTION
 The logical grouping of users in the schedule (usually by role).
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

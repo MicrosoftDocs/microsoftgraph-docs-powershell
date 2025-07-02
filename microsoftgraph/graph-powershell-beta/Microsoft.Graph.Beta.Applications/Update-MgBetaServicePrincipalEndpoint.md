@@ -49,6 +49,8 @@ Update-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property endpoints in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -41,6 +41,8 @@ Delete navigation property roleAssignments for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

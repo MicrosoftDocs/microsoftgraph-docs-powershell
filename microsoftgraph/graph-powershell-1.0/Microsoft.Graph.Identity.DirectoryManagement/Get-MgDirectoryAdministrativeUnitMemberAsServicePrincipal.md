@@ -43,6 +43,8 @@ Get-MgDirectoryAdministrativeUnitMemberAsServicePrincipal -InputObject <IIdentit
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId

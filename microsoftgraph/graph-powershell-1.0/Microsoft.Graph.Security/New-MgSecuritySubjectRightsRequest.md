@@ -42,6 +42,8 @@ New-MgSecuritySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRightsR
 ## DESCRIPTION
 Create new navigation property to subjectRightsRequests for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

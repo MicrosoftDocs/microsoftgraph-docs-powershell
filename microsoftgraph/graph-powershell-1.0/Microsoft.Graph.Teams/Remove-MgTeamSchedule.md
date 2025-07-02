@@ -32,6 +32,8 @@ Remove-MgTeamSchedule -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete navigation property schedule for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

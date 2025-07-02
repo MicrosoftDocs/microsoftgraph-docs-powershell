@@ -50,6 +50,8 @@ Update-MgBetaSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityI
 ## DESCRIPTION
 Update the navigation property passiveDnsRecords in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

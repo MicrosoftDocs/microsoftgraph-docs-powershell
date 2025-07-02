@@ -32,6 +32,8 @@ Get-MgBetaChatInstalledAppTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty
 ## DESCRIPTION
 The app that is installed.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

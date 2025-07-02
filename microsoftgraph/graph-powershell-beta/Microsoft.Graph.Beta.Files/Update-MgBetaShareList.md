@@ -64,6 +64,8 @@ Update-MgBetaShareList -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property list in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

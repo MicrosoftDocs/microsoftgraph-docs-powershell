@@ -29,6 +29,8 @@ Remove-MgBetaIdentityB2XUserFlowPreTokenIssuance -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Delete navigation property preTokenIssuance for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

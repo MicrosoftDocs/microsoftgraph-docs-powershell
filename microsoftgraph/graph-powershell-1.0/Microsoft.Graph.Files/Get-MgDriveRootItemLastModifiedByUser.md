@@ -34,6 +34,8 @@ Get-MgDriveRootItemLastModifiedByUser -InputObject <IFilesIdentity> [-ExpandProp
 Identity of the user who last modified the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -34,6 +34,8 @@ Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContaine
 ## DESCRIPTION
 Delete navigation property committedContainedApps for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

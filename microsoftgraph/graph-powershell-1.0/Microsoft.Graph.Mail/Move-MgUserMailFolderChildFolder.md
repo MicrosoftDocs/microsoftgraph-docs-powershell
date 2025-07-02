@@ -49,6 +49,8 @@ Move-MgUserMailFolderChildFolder -InputObject <IMailIdentity>
 ## DESCRIPTION
 Move a mailfolder and its contents to another mailfolder.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

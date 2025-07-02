@@ -31,6 +31,8 @@ Remove-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
 ## DESCRIPTION
 Delete navigation property assignmentFilterEvaluationStatusDetails for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AssignmentFilterEvaluationStatusDetailsId

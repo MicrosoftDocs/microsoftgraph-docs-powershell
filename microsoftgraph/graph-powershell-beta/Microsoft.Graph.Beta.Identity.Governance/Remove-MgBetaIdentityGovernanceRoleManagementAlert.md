@@ -29,6 +29,8 @@ Remove-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovern
 ## DESCRIPTION
 Delete navigation property alerts for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

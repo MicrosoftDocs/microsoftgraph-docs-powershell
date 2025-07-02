@@ -34,6 +34,8 @@ Set-MgBetaServicePrincipalSynchronizationJobBulkUploadContent -InputObject <IApp
 ## DESCRIPTION
 The bulk upload operation for the job.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

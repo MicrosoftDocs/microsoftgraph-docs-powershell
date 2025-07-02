@@ -32,6 +32,8 @@ Get-MgUserManagedDeviceCategoryByRef -InputObject <IDevicesCorporateManagementId
 ## DESCRIPTION
 Device category
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

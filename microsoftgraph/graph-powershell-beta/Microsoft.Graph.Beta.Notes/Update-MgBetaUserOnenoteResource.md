@@ -48,6 +48,8 @@ Update-MgBetaUserOnenoteResource -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property resources in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

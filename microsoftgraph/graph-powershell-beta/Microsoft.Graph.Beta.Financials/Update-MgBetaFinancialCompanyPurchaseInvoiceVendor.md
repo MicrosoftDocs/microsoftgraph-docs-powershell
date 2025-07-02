@@ -55,6 +55,8 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceVendor -InputObject <IFinancialsIden
 ## DESCRIPTION
 Update the navigation property vendor in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

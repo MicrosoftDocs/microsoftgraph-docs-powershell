@@ -51,6 +51,8 @@ Update-MgDeviceManagementManagedDeviceConfigurationState -InputObject <IDeviceMa
 ## DESCRIPTION
 Update the navigation property deviceConfigurationStates in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

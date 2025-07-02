@@ -29,6 +29,8 @@ Remove-MgBetaSecurityPartnerSecurityScoreHistory -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property history for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

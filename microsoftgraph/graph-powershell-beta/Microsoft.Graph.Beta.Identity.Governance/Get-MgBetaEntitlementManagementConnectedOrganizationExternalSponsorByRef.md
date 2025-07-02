@@ -36,6 +36,8 @@ The external sponsors are a set of users who can approve requests on behalf of o
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

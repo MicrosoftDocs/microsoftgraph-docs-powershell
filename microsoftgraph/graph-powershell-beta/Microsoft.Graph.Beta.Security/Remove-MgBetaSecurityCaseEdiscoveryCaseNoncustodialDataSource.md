@@ -33,6 +33,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISec
 ## DESCRIPTION
 Delete navigation property noncustodialDataSources for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

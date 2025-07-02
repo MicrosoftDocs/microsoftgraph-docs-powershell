@@ -29,6 +29,8 @@ Get-MgBetaNetworkAccessForwardingProfileServicePrincipal -InputObject <INetworkA
 ## DESCRIPTION
 Get servicePrincipal from networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

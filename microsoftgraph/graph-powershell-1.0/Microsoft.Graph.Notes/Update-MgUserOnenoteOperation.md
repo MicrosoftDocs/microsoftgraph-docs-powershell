@@ -50,6 +50,8 @@ Update-MgUserOnenoteOperation -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property operations in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

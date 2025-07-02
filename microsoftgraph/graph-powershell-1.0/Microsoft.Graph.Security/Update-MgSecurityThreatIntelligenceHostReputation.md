@@ -48,6 +48,8 @@ Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Update the navigation property reputation in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

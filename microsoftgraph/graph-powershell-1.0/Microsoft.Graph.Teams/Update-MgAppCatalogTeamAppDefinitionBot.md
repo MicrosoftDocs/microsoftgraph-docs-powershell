@@ -46,6 +46,8 @@ Update-MgAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property bot in appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

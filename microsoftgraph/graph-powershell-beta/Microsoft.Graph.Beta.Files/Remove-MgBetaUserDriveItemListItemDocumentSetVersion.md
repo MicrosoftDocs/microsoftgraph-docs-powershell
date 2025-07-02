@@ -33,6 +33,8 @@ Remove-MgBetaUserDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentit
 ## DESCRIPTION
 Delete navigation property documentSetVersions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

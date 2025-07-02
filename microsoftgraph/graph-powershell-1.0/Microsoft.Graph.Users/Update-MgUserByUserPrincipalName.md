@@ -164,6 +164,8 @@ Update-MgUserByUserPrincipalName -InputObject <IUsersIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the properties of a user object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AboutMe

@@ -29,6 +29,8 @@ Remove-MgBetaOrganizationSettingItemInsight -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Delete navigation property itemInsights for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

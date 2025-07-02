@@ -29,6 +29,8 @@ Disable-MgBetaUserAuthenticationMethodSmsSignIn -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Invoke action disableSmsSignIn
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationMethodId

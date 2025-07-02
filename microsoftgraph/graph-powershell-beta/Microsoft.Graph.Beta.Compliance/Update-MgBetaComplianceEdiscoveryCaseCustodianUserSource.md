@@ -48,6 +48,8 @@ Update-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplian
 ## DESCRIPTION
 Update the navigation property userSources in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

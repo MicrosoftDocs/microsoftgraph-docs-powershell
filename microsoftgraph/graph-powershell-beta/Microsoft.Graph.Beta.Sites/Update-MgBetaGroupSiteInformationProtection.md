@@ -54,6 +54,8 @@ Update-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property informationProtection in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

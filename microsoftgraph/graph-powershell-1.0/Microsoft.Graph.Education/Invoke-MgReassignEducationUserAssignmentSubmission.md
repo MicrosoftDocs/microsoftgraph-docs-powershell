@@ -43,6 +43,8 @@ This means that the reassigned status is mapped to the returned status, and reas
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

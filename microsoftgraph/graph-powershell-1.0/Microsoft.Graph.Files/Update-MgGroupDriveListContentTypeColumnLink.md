@@ -47,6 +47,8 @@ Update-MgGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property columnLinks in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

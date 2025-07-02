@@ -48,6 +48,8 @@ New-MgSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-ResponseHeadersVaria
 ## DESCRIPTION
 Create new navigation property to alerts for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupName

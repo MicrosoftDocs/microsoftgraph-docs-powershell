@@ -32,6 +32,8 @@ Remove-MgBetaTeamPermissionGrant -InputObject <ITeamsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property permissionGrants for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

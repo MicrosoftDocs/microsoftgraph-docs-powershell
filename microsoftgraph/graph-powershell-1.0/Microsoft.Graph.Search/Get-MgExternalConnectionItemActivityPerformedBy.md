@@ -33,6 +33,8 @@ Get-MgExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentity> [
 ## DESCRIPTION
 Represents an identity used to identify who is responsible for the activity.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

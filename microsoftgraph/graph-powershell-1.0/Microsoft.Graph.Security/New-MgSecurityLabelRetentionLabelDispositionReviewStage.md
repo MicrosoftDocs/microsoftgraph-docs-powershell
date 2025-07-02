@@ -48,6 +48,8 @@ New-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityI
 ## DESCRIPTION
 Create new navigation property to dispositionReviewStages for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

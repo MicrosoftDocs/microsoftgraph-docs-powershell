@@ -30,6 +30,8 @@ Remove-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Delete navigation property dashboardCards for appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

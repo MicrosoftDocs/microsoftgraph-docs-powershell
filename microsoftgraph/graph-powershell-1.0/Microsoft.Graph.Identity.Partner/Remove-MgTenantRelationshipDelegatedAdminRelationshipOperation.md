@@ -33,6 +33,8 @@ Remove-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IId
 ## DESCRIPTION
 Delete navigation property operations for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DelegatedAdminRelationshipId

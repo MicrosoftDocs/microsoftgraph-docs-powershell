@@ -25,6 +25,8 @@ Get-MgBetaSiteGetByPathColumn -Path <String> -SiteId <String> [-ExpandProperty <
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

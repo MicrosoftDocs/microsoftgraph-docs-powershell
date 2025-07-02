@@ -37,6 +37,8 @@ Delete navigation property roleAssignments for roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.ReadWrite.Defender,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

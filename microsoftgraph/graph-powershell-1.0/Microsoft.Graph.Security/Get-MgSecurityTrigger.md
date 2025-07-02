@@ -23,6 +23,8 @@ Get-MgSecurityTrigger [-ExpandProperty <String[]>] [-Property <String[]>] [-Resp
 ## DESCRIPTION
 Get triggers from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

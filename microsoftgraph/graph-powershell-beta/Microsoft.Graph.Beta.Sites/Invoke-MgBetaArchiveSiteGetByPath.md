@@ -30,6 +30,8 @@ Invoke-MgBetaArchiveSiteGetByPath -InputObject <ISitesIdentity> [-ResponseHeader
 ## DESCRIPTION
 Archive an active SharePoint site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

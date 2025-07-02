@@ -34,6 +34,8 @@ Remove-MgUserOnlineMeetingTranscriptMetadataContent -InputObject <ICloudCommunic
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallTranscriptId

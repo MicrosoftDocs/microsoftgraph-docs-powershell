@@ -43,6 +43,8 @@ Get-MgBetaReportFormUserActivityUserDetail -InputObject <IReportsIdentity> -OutF
 ## DESCRIPTION
 Invoke function getFormsUserActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

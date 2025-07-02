@@ -48,6 +48,8 @@ Grant-MgBetaGroupDriveItemListItemPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

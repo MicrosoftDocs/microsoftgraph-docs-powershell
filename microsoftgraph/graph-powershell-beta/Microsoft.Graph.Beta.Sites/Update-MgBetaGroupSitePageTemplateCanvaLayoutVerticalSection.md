@@ -45,6 +45,8 @@ Update-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSection -InputObject <ISite
 ## DESCRIPTION
 Update the navigation property verticalSection in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

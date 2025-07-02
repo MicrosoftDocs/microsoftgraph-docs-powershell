@@ -57,6 +57,8 @@ New-MgBetaPrivilegedAccessResourceRoleAssignment -InputObject <IIdentityGovernan
 ## DESCRIPTION
 Create new navigation property to roleAssignments for privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

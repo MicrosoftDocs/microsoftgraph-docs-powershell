@@ -29,6 +29,8 @@ Remove-MgBetaTeamPrimaryChannelFileFolderContentStream -InputObject <ITeamsIdent
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

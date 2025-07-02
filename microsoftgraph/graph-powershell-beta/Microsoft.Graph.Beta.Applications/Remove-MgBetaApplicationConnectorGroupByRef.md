@@ -29,6 +29,8 @@ Remove-MgBetaApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Delete ref of navigation property connectorGroup for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

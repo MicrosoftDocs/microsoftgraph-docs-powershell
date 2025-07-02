@@ -54,6 +54,8 @@ Update-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property jobs in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AcknowledgedDateTime

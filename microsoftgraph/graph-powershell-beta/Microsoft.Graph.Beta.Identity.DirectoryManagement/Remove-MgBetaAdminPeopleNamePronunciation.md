@@ -21,6 +21,8 @@ Remove-MgBetaAdminPeopleNamePronunciation [-IfMatch <String>] [-ResponseHeadersV
 ## DESCRIPTION
 Delete navigation property namePronunciation for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

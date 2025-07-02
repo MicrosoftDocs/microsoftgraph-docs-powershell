@@ -43,6 +43,8 @@ Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
 ## DESCRIPTION
 Get resourceActions from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -47,6 +47,8 @@ Invoke-MgBetaSelfPrivilegedRoleAssignmentRequestRoleInfoActivate -InputObject <I
 ## DESCRIPTION
 Invoke action selfActivate
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

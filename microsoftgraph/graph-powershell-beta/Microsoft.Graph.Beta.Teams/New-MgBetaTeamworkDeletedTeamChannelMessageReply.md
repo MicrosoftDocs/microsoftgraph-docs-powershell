@@ -66,6 +66,8 @@ New-MgBetaTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to replies for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

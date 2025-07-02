@@ -25,6 +25,8 @@ Get-MgBetaUserManagedDeviceUser -ManagedDeviceId <String> -UserId <String> [-Exp
 ## DESCRIPTION
 The primary users associated with the managed device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

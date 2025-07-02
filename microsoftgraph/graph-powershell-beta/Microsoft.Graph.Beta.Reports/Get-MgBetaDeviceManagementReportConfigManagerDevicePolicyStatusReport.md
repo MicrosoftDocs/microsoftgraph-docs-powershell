@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportConfigManagerDevicePolicyStatusReport -OutFile <
 ## DESCRIPTION
 Invoke action getConfigManagerDevicePolicyStatusReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

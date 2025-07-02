@@ -51,6 +51,8 @@ Invoke-MgBetaGraphUserChat -InputObject <ITeamsIdentity> [-ResponseHeadersVariab
 ## DESCRIPTION
 Unhide a chat for a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

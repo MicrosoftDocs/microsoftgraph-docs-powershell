@@ -30,6 +30,8 @@ Remove-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property alertIncidents for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -48,6 +48,8 @@ New-MgBetaUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdent
 ## DESCRIPTION
 Create new navigation property to scopedRoleMemberOf for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

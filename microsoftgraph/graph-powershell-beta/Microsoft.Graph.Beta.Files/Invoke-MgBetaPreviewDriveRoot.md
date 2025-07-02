@@ -50,6 +50,8 @@ Invoke-MgBetaPreviewDriveRoot -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

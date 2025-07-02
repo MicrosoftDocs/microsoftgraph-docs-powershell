@@ -40,6 +40,8 @@ Get-MgPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get rooms from places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity> [-I
 ## DESCRIPTION
 Delete navigation property synchronization for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

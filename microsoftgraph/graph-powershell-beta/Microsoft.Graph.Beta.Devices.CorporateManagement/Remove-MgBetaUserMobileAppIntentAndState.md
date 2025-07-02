@@ -37,6 +37,8 @@ Delete navigation property mobileAppIntentAndStates for users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

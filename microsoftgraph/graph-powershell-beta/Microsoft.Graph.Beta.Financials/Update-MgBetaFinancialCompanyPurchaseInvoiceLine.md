@@ -97,6 +97,8 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Update the navigation property purchaseInvoiceLines in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

@@ -39,6 +39,8 @@ Get-MgBetaAdministrativeUnitExtension -InputObject <IIdentityDirectoryManagement
 The collection of open extensions defined for this administrative unit.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId

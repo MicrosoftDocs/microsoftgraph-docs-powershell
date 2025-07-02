@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportDeviceConfigurationPolicySettingSummaryReport -O
 ## DESCRIPTION
 Invoke action getDeviceConfigurationPolicySettingsSummaryReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

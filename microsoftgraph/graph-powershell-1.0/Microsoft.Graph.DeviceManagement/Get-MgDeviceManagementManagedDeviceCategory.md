@@ -32,6 +32,8 @@ Get-MgDeviceManagementManagedDeviceCategory -InputObject <IDeviceManagementIdent
 ## DESCRIPTION
 Device category
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

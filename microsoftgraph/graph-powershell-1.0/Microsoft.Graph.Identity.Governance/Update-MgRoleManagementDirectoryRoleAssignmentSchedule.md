@@ -58,6 +58,8 @@ Update-MgRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IIdentityGo
 ## DESCRIPTION
 Update the navigation property roleAssignmentSchedules in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivatedUsing

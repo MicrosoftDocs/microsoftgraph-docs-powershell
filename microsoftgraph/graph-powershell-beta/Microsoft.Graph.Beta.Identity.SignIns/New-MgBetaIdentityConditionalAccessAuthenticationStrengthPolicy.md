@@ -32,6 +32,8 @@ New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy
 ## DESCRIPTION
 Create new navigation property to policies for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

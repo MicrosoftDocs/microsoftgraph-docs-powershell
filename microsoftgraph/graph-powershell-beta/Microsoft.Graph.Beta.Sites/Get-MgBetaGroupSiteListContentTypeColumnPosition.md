@@ -41,6 +41,8 @@ Get-MgBetaGroupSiteListContentTypeColumnPosition -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 Column order information in a content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

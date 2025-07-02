@@ -31,6 +31,8 @@ Invoke-MgBetaMessageTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-C
 ## DESCRIPTION
 Invoke function allMessages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

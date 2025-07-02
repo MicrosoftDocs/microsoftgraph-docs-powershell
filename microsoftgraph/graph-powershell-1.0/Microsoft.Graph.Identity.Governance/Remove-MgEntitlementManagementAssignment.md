@@ -29,6 +29,8 @@ Remove-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 Delete navigation property assignments for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentId

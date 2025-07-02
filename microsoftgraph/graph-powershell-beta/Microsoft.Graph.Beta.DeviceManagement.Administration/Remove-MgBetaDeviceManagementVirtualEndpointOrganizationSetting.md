@@ -21,6 +21,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointOrganizationSetting [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property organizationSettings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

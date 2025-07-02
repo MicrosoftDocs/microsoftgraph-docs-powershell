@@ -32,6 +32,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BrowserSiteLists.Read.All, BrowserSiteLists.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

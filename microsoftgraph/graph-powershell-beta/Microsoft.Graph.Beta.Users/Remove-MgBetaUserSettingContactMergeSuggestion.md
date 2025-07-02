@@ -29,6 +29,8 @@ Remove-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-I
 ## DESCRIPTION
 Delete navigation property contactMergeSuggestions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

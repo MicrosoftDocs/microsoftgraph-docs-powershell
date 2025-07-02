@@ -29,6 +29,8 @@ Remove-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Delete navigation property recommendations for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

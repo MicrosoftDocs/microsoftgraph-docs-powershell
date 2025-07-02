@@ -33,6 +33,8 @@ Retrieve a list of users at a school.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

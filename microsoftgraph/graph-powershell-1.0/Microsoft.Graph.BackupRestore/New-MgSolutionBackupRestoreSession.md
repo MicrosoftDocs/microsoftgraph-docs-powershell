@@ -34,6 +34,8 @@ New-MgSolutionBackupRestoreSession -BodyParameter <IMicrosoftGraphRestoreSession
 ## DESCRIPTION
 Create new navigation property to restoreSessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

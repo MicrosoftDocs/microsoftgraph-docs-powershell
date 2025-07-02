@@ -32,6 +32,8 @@ Remove-MgGroupEventInstanceExtension -InputObject <ICalendarIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

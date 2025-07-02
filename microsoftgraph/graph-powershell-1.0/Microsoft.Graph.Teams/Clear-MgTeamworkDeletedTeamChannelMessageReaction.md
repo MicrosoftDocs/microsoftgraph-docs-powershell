@@ -51,6 +51,8 @@ Clear-MgTeamworkDeletedTeamChannelMessageReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action unsetReaction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -46,6 +46,8 @@ Update-MgUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyPara
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

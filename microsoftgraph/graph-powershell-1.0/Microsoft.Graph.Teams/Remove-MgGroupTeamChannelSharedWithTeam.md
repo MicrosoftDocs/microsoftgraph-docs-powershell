@@ -33,6 +33,8 @@ Remove-MgGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property sharedWithTeams for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

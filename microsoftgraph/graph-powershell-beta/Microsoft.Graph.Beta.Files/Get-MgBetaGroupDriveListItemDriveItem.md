@@ -32,6 +32,8 @@ Get-MgBetaGroupDriveListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProp
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

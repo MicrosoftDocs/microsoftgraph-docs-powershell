@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantManagementIntent -InputObject <IMana
 ## DESCRIPTION
 Delete navigation property managementIntents for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

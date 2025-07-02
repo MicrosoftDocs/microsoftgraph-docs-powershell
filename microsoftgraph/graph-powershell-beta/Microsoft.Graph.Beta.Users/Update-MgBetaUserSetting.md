@@ -66,6 +66,8 @@ Update the navigation property settings in users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

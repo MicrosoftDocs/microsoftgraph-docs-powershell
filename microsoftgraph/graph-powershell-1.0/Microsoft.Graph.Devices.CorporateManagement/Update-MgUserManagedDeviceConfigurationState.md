@@ -50,6 +50,8 @@ Update-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Update the navigation property deviceConfigurationStates in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

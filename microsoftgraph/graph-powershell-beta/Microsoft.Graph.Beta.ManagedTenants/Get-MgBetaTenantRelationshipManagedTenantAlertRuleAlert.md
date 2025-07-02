@@ -38,6 +38,8 @@ Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlert -InputObject <IManagedTe
 ## DESCRIPTION
 Get alerts from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

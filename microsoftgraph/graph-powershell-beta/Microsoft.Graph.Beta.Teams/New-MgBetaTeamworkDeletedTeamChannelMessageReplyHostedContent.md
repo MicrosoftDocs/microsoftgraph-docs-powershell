@@ -49,6 +49,8 @@ New-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <ITea
 ## DESCRIPTION
 Create new navigation property to hostedContents for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

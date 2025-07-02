@@ -29,6 +29,8 @@ Get-MgBetaNetworkAccessLogTrafficUser -InputObject <INetworkAccessIdentity> [-Ex
 ## DESCRIPTION
 Get user from networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -37,6 +37,8 @@ Get-MgBetaWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdenti
 ## DESCRIPTION
 Specifies the assets to include in the audience.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

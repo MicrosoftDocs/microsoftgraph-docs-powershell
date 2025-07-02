@@ -61,6 +61,8 @@ Update the navigation property auditEvents in deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

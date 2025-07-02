@@ -21,6 +21,8 @@ Get-MgBetaNetworkAccessRootNetworkAccessRoot [-ExpandProperty <String[]>] [-Prop
 ## DESCRIPTION
 Get networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

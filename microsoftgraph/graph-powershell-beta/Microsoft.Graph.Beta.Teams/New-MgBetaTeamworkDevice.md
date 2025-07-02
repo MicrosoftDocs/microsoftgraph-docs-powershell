@@ -34,6 +34,8 @@ New-MgBetaTeamworkDevice -BodyParameter <IMicrosoftGraphTeamworkDevice> [-Respon
 ## DESCRIPTION
 Create new navigation property to devices for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

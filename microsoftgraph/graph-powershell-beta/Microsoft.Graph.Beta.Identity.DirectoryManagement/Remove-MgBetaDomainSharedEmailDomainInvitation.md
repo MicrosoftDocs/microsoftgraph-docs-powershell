@@ -29,6 +29,8 @@ Remove-MgBetaDomainSharedEmailDomainInvitation -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Delete navigation property sharedEmailDomainInvitations for domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DomainId

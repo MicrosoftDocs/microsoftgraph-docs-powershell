@@ -50,6 +50,8 @@ Update-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property presence in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

@@ -48,6 +48,8 @@ Update-MgBetaDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Update entity in directoryRoleTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

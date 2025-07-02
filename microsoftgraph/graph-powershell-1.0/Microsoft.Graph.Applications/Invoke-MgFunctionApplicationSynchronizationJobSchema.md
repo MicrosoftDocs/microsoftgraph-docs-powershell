@@ -35,6 +35,8 @@ Invoke-MgFunctionApplicationSynchronizationJobSchema -InputObject <IApplications
 ## DESCRIPTION
 List all the functions currently supported in the attributeMappingSource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

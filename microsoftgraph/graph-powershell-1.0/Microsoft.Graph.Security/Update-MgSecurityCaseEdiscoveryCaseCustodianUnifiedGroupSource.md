@@ -52,6 +52,8 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISe
 ## DESCRIPTION
 Update the navigation property unifiedGroupSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

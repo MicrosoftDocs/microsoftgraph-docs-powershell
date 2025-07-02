@@ -39,6 +39,8 @@ Delete navigation property localizations for solutions
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BusinessScenarioId

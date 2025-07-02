@@ -29,6 +29,8 @@ Get-MgBetaComplianceEdiscoveryCaseTagParent -InputObject <IComplianceIdentity> [
 ## DESCRIPTION
 Returns the parent tag of the specified tag.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

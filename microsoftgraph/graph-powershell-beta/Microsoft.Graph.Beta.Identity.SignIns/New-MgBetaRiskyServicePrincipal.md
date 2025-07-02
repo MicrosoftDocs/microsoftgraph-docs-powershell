@@ -35,6 +35,8 @@ New-MgBetaRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrinc
 ## DESCRIPTION
 Create new navigation property to riskyServicePrincipals for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled

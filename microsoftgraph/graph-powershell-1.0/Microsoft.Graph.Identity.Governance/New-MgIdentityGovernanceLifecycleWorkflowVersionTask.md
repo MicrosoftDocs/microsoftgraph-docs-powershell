@@ -52,6 +52,8 @@ New-MgIdentityGovernanceLifecycleWorkflowVersionTask -InputObject <IIdentityGove
 ## DESCRIPTION
 Create new navigation property to tasks for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

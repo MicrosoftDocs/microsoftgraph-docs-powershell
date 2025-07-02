@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleQuoteCount -InputObject <IFinancialsIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

@@ -41,6 +41,8 @@ Get-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <I
 ## DESCRIPTION
 Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

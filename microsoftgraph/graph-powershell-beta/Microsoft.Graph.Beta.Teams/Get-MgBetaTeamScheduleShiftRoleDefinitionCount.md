@@ -37,6 +37,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.Read.All, SchedulePermissions.ReadWrite.All, Schedule.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

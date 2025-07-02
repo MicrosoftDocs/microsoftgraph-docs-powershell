@@ -48,6 +48,8 @@ New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <I
 ## DESCRIPTION
 Create new navigation property to combinationConfigurations for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

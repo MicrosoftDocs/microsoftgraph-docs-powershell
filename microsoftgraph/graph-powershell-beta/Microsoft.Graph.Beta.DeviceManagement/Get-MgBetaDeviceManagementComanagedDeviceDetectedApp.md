@@ -37,6 +37,8 @@ Get-MgBetaDeviceManagementComanagedDeviceDetectedApp -InputObject <IDeviceManage
 ## DESCRIPTION
 All applications currently installed on the device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -51,6 +51,8 @@ Update-MgSiteOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property operations in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

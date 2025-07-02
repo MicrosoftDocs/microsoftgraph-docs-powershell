@@ -50,6 +50,8 @@ New-MgBetaUserChatInstalledApp -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to installedApps for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

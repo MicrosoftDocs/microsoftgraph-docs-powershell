@@ -60,6 +60,8 @@ Update-MgUserDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property listItem in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaInformationProtectionThreatAssessmentRequest -InputObject <IIdentit
 ## DESCRIPTION
 Delete navigation property threatAssessmentRequests for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

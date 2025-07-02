@@ -35,6 +35,8 @@ New-MgBetaSecurityAttackSimulationLoginPage -BodyParameter <IMicrosoftGraphLogin
 ## DESCRIPTION
 Create new navigation property to loginPages for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

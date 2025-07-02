@@ -54,6 +54,8 @@ Update-MgUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Update the navigation property transcripts in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

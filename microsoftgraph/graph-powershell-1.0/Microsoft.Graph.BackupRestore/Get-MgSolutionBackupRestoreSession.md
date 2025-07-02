@@ -42,6 +42,8 @@ Get-MgSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> [-Expan
 ## DESCRIPTION
 Get the properties of a restoreSession object by ID.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

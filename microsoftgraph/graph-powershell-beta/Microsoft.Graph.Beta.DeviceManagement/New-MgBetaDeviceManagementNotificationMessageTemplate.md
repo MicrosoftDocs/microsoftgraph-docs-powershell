@@ -43,6 +43,8 @@ Create new navigation property to notificationMessageTemplates for deviceManagem
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

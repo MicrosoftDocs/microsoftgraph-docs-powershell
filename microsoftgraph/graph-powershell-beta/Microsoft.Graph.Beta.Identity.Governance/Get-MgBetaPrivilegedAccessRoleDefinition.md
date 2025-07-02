@@ -37,6 +37,8 @@ Get-MgBetaPrivilegedAccessRoleDefinition -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 A collection of role definitions for the provider.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -43,6 +43,8 @@ Update-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdent
 ## DESCRIPTION
 Update the navigation property resourceConnections in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

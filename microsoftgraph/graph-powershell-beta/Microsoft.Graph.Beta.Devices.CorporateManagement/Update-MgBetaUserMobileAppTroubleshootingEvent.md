@@ -55,6 +55,8 @@ Update-MgBetaUserMobileAppTroubleshootingEvent -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 Update the navigation property mobileAppTroubleshootingEvents in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

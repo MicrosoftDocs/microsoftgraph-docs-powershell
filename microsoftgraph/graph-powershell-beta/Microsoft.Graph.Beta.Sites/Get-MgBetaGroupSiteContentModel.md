@@ -37,6 +37,8 @@ Get-MgBetaGroupSiteContentModel -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The collection of content models applied to this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

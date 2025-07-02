@@ -60,6 +60,8 @@ New-MgBetaBookingBusiness [-ResponseHeadersVariable <String>] [-AdditionalProper
 ## DESCRIPTION
 Add new entity to bookingBusinesses
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

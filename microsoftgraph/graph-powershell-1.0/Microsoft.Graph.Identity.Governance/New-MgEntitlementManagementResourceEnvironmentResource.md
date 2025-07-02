@@ -53,6 +53,8 @@ New-MgEntitlementManagementResourceEnvironmentResource -InputObject <IIdentityGo
 ## DESCRIPTION
 Create new navigation property to resources for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId

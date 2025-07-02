@@ -33,6 +33,8 @@ Remove-MgBetaUserMailFolderChildFolderMessageExtension -InputObject <IMailIdenti
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExtensionId

@@ -48,6 +48,8 @@ Set-MgUserManagedDeviceCategoryByRef -InputObject <IDevicesCorporateManagementId
 ## DESCRIPTION
 Update the ref of navigation property deviceCategory in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

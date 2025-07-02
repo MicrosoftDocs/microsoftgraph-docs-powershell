@@ -42,6 +42,8 @@ Get-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-Expand
 Endpoints available for discovery.
 Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

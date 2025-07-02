@@ -39,6 +39,8 @@ Delete navigation property androidDeviceOwnerEnrollmentProfiles for deviceManage
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AndroidDeviceOwnerEnrollmentProfileId

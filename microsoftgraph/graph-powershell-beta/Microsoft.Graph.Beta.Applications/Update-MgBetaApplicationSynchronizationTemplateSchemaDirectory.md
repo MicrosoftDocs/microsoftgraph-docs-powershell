@@ -51,6 +51,8 @@ Update-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IAp
 ## DESCRIPTION
 Update the navigation property directories in applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

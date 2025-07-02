@@ -51,6 +51,8 @@ Update-MgBetaGroupSiteTermStoreGroupSetTermRelation -InputObject <ISitesIdentity
 ## DESCRIPTION
 Update the navigation property relations in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

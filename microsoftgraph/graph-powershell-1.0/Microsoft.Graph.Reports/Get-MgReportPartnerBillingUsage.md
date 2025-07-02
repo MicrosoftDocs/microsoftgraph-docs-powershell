@@ -24,6 +24,8 @@ Get-MgReportPartnerBillingUsage [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Represents details for billed and unbilled Azure usage data.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

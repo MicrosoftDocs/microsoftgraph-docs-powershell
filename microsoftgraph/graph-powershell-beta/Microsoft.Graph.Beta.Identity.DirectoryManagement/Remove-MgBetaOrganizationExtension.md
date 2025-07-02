@@ -32,6 +32,8 @@ Remove-MgBetaOrganizationExtension -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Delete navigation property extensions for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExtensionId

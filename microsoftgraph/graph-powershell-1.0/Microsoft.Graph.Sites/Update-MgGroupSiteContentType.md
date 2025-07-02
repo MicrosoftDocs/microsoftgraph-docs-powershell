@@ -59,6 +59,8 @@ Update-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property contentTypes in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

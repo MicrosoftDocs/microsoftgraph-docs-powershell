@@ -42,6 +42,8 @@ Get-MgBetaShareItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 All driveItems contained in the sharing root.
 This collection cannot be enumerated.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

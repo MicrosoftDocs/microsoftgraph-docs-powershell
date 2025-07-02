@@ -29,6 +29,8 @@ Remove-MgBetaUserNotification -InputObject <IUsersIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property notifications for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

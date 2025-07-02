@@ -50,6 +50,8 @@ This can be used to prepare to configure the incompatible access packages for a 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageId

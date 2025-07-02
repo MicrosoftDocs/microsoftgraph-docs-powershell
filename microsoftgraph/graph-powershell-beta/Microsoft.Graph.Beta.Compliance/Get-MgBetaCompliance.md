@@ -23,6 +23,8 @@ Get-MgBetaCompliance [-ExpandProperty <String[]>] [-Property <String[]>] [-Respo
 ## DESCRIPTION
 Get compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -38,6 +38,8 @@ User source or SharePoint site data source as noncustodial data source.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

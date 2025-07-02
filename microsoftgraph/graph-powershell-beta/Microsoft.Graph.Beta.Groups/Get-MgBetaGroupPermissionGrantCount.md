@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | GroupMember.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

@@ -29,6 +29,8 @@ Get-MgBetaVirtualEventTownhallSessionByJoinWebUrl -InputObject <IBookingsIdentit
 ## DESCRIPTION
 The sessions for the virtual event.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentRoleDefinition -InputObject <IId
 Read-only.
 The role definition associated with the role assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

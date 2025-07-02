@@ -30,6 +30,8 @@ Get-MgBetaSiteContentModelGetByNameAppliedDrive -InputObject <ISitesIdentity> [-
 ## DESCRIPTION
 List all the contentModelUsage information related to a contentModel applied to a SharePoint document library.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

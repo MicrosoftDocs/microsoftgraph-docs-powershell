@@ -51,6 +51,8 @@ New-MgBetaUserInformationProtectionSensitivityLabelSublabel -InputObject <IIdent
 ## DESCRIPTION
 Create new navigation property to sublabels for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

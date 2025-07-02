@@ -32,6 +32,8 @@ Remove-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property messages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

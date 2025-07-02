@@ -21,6 +21,8 @@ Remove-MgBetaSecurityDataDiscoveryCloudAppDiscovery [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete navigation property cloudAppDiscovery for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

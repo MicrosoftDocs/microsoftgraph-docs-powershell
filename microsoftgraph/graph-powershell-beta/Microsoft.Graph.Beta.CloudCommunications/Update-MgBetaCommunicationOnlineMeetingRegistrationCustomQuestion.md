@@ -46,6 +46,8 @@ Update-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <
 ## DESCRIPTION
 Update the navigation property customQuestions in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

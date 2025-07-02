@@ -32,6 +32,8 @@ Remove-MgBetaVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property sessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

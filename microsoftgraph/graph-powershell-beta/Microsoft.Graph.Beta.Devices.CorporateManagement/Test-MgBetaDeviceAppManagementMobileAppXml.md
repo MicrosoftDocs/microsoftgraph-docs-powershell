@@ -38,6 +38,8 @@ Invoke action validateXml
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

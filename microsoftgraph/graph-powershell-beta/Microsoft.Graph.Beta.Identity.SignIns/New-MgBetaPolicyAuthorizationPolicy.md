@@ -34,6 +34,8 @@ New-MgBetaPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorization
 ## DESCRIPTION
 Create new navigation property to authorizationPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

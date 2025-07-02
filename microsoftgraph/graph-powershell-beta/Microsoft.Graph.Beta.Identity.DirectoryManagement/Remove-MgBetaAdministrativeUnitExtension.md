@@ -29,6 +29,8 @@ Remove-MgBetaAdministrativeUnitExtension -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Delete navigation property extensions for administrativeUnits
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId

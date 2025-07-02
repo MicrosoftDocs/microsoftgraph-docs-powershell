@@ -31,6 +31,8 @@ Invoke-MgBetaBufferInformationProtectionDecrypt -OutFile <String>
 ## DESCRIPTION
 Invoke action decryptBuffer
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> 
 ## DESCRIPTION
 Delete navigation property progressTaskBoardFormat for planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

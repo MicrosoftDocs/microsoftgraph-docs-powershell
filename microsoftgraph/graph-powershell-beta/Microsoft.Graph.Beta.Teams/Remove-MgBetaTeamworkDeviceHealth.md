@@ -29,6 +29,8 @@ Remove-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property health for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

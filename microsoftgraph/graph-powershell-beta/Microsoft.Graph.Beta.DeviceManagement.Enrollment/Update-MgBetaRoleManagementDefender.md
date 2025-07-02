@@ -31,6 +31,8 @@ Update-MgBetaRoleManagementDefender -BodyParameter <IMicrosoftGraphRbacApplicati
 ## DESCRIPTION
 Update the navigation property defender in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

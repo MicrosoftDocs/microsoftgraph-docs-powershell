@@ -40,6 +40,8 @@ Get-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdent
 ## DESCRIPTION
 The detail information for a landing page associated with a simulation during its creation.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

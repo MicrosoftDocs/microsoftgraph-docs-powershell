@@ -40,6 +40,8 @@ Update the navigation property deviceManagement in roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

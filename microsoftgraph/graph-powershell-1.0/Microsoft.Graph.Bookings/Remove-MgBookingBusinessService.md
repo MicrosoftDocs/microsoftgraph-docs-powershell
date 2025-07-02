@@ -41,6 +41,8 @@ Delete a bookingService object in the specified bookingBusiness.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BookingBusinessId

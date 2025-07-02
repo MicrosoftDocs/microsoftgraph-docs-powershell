@@ -31,6 +31,8 @@ Get-MgBetaReportTeamDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Invoke function getTeamsDeviceUsageUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

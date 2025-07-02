@@ -38,6 +38,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreApp
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidManagedStoreApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

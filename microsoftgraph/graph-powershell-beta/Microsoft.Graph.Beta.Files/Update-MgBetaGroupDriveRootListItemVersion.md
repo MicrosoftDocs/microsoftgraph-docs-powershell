@@ -50,6 +50,8 @@ Update-MgBetaGroupDriveRootListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property versions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

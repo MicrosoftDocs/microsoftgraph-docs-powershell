@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite,  |
 | Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

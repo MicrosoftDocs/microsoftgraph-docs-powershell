@@ -32,6 +32,8 @@ Remove-MgBetaUserTeamwork -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete navigation property teamwork for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

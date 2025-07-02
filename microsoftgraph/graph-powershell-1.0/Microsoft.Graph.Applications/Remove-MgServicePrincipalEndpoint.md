@@ -32,6 +32,8 @@ Remove-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property endpoints for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndpointId

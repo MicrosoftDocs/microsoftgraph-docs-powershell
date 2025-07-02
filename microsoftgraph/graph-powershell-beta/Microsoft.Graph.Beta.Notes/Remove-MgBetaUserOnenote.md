@@ -32,6 +32,8 @@ Remove-MgBetaUserOnenote -InputObject <INotesIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property onenote for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

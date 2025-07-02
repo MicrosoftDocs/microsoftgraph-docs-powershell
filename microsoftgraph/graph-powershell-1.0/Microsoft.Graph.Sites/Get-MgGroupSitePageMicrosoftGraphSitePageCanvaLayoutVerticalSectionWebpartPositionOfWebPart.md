@@ -33,6 +33,8 @@ Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositi
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

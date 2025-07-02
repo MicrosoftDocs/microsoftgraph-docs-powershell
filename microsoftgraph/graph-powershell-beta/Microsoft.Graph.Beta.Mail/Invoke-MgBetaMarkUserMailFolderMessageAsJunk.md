@@ -48,6 +48,8 @@ Invoke-MgBetaMarkUserMailFolderMessageAsJunk -InputObject <IMailIdentity>
 Mark a message as junk.
 This API adds the sender to the list of blocked senders and moves the message to the Junk Email folder, when moveToJunk is true.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

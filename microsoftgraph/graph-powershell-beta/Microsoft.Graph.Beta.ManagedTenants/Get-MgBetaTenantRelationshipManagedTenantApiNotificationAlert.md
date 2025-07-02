@@ -29,6 +29,8 @@ Get-MgBetaTenantRelationshipManagedTenantApiNotificationAlert -InputObject <IMan
 ## DESCRIPTION
 Get alert from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

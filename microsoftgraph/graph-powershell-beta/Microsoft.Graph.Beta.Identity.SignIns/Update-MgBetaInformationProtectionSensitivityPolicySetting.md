@@ -30,6 +30,8 @@ Update-MgBetaInformationProtectionSensitivityPolicySetting
 ## DESCRIPTION
 Update the navigation property sensitivityPolicySettings in informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -26,6 +26,8 @@ Get-MgUserDriveItemAnalyticItemActivityStatActivity -DriveId <String> -DriveItem
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property replies for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

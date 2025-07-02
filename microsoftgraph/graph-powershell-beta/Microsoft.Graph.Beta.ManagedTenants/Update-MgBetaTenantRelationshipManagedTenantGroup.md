@@ -48,6 +48,8 @@ Update-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsI
 ## DESCRIPTION
 Update the navigation property tenantGroups in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property bot for appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

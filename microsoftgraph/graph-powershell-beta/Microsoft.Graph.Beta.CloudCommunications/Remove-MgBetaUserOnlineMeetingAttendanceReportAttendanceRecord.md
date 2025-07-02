@@ -48,6 +48,8 @@ Remove-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICl
 ## DESCRIPTION
 Delete navigation property attendanceRecords for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttendanceRecordId

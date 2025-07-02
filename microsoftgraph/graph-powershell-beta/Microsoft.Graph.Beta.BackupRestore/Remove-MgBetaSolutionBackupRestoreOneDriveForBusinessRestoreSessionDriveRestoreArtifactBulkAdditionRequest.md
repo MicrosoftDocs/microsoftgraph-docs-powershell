@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreA
 ## DESCRIPTION
 Delete a driveRestoreArtifactsBulkAdditionRequest object associated with a oneDriveForBusinessRestoreSession.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveRestoreArtifactsBulkAdditionRequestId

@@ -34,6 +34,8 @@ Remove-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy
 ## DESCRIPTION
 Delete navigation property intendedPolicies for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

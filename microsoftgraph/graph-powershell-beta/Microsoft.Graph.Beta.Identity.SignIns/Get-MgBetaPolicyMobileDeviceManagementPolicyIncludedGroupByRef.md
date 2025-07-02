@@ -31,6 +31,8 @@ Get the list of groups that are included in a mobile device management policy.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

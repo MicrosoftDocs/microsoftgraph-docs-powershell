@@ -32,6 +32,8 @@ Remove-MgBetaDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-ResponseH
 ## DESCRIPTION
 Delete entity from drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

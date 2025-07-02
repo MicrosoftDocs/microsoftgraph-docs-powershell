@@ -45,6 +45,8 @@ Update-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy -InputObject
 ## DESCRIPTION
 Update the navigation property dataLossPreventionPolicies in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

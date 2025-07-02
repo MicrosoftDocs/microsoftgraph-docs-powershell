@@ -40,6 +40,8 @@ Get-MgGroupTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Members and owners of the team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

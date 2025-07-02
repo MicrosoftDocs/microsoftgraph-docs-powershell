@@ -32,6 +32,8 @@ Remove-MgBetaRoleManagementEntitlementManagementResourceNamespace -InputObject <
 ## DESCRIPTION
 Delete navigation property resourceNamespaces for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

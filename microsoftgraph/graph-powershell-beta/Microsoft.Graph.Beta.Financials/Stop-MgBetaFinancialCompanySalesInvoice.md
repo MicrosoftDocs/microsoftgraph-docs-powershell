@@ -29,6 +29,8 @@ Stop-MgBetaFinancialCompanySalesInvoice -InputObject <IFinancialsIdentity> [-Res
 ## DESCRIPTION
 Invoke action cancel
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

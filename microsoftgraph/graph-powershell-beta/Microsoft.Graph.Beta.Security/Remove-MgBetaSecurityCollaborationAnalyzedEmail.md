@@ -29,6 +29,8 @@ Remove-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property analyzedEmails for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AnalyzedEmailId

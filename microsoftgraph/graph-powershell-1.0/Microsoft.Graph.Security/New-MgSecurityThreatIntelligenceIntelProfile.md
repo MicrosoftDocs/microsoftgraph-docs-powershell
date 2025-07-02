@@ -37,6 +37,8 @@ New-MgSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecu
 ## DESCRIPTION
 Create new navigation property to intelProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

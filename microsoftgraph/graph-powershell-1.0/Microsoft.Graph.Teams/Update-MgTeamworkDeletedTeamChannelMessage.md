@@ -63,6 +63,8 @@ Update-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property messages in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

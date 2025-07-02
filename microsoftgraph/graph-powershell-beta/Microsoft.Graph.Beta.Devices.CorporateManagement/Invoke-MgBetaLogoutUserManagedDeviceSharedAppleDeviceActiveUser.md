@@ -33,6 +33,8 @@ Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser
 ## DESCRIPTION
 Logout shared Apple device active user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

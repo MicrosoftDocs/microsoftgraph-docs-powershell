@@ -29,6 +29,8 @@ Remove-MgBetaUserSecurityInformationProtectionSensitivityLabelParent -InputObjec
 ## DESCRIPTION
 Delete navigation property parent for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

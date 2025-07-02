@@ -40,6 +40,8 @@ Create new navigation property to deviceAppManagementTasks for deviceAppManageme
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

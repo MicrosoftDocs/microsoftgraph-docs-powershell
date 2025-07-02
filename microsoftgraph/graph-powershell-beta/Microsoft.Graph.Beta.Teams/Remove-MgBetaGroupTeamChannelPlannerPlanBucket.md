@@ -29,6 +29,8 @@ Remove-MgBetaGroupTeamChannelPlannerPlanBucket -InputObject <ITeamsIdentity> [-I
 ## DESCRIPTION
 Delete navigation property buckets for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

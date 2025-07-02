@@ -42,6 +42,8 @@ Invoke function delta
 | Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

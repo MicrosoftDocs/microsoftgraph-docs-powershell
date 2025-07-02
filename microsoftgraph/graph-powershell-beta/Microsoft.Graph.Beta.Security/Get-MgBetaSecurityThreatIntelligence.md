@@ -24,6 +24,8 @@ Get-MgBetaSecurityThreatIntelligence [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get threatIntelligence from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

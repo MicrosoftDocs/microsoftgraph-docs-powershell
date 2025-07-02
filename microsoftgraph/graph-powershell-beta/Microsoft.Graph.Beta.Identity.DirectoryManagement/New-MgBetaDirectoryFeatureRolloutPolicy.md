@@ -30,6 +30,8 @@ New-MgBetaDirectoryFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRo
 ## DESCRIPTION
 Create new navigation property to featureRolloutPolicies for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

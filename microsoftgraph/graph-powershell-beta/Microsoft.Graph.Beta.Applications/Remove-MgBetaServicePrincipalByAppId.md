@@ -33,6 +33,8 @@ Remove-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-IfMa
 ## DESCRIPTION
 Delete a servicePrincipal object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppId

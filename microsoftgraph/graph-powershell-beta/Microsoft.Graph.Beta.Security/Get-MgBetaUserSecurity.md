@@ -29,6 +29,8 @@ Get-MgBetaUserSecurity -InputObject <ISecurityIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Get security from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

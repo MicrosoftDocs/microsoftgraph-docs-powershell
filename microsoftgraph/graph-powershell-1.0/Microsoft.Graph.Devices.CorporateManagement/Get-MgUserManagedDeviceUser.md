@@ -25,6 +25,8 @@ Get-MgUserManagedDeviceUser -ManagedDeviceId <String> -UserId <String> [-ExpandP
 ## DESCRIPTION
 The primary users associated with the managed device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

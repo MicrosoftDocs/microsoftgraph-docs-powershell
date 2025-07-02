@@ -27,6 +27,8 @@ Get-MgPolicyFeatureRolloutPolicyApplyTo -FeatureRolloutPolicyId <String> [-Expan
 Nullable.
 Specifies a list of directoryObject resources that feature is enabled for.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

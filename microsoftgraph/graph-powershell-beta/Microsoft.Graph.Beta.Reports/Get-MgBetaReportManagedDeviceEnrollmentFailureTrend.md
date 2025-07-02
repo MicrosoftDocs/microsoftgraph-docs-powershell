@@ -20,6 +20,8 @@ Get-MgBetaReportManagedDeviceEnrollmentFailureTrend -OutFile <String> [-Response
 ## DESCRIPTION
 Metadata for the enrollment failure trends report
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

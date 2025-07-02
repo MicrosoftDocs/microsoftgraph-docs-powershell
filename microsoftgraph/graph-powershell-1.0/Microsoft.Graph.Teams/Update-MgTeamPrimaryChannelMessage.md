@@ -62,6 +62,8 @@ Update-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property messages in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

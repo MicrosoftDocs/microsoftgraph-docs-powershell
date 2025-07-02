@@ -42,6 +42,8 @@ Read-only.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -40,6 +40,8 @@ Get-MgBetaSolutionBackupRestoreMailboxInclusionRule -InputObject <IBackupRestore
 ## DESCRIPTION
 The list of mailbox inclusion rules applied to the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -56,6 +56,8 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtif
 ## DESCRIPTION
 Create new navigation property to granularMailboxRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

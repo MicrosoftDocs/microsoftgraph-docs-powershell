@@ -46,6 +46,8 @@ New-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Create new navigation property to endpoints for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

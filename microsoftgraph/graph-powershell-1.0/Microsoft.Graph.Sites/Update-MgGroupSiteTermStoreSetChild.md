@@ -167,6 +167,8 @@ Update-MgGroupSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property children in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

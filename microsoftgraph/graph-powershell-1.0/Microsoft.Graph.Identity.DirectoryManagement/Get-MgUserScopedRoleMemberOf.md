@@ -40,6 +40,8 @@ Get-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Get scopedRoleMemberOf from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

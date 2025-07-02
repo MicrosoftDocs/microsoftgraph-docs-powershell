@@ -50,6 +50,8 @@ Update-MgUserDriveItemRetentionLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property retentionLabel in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

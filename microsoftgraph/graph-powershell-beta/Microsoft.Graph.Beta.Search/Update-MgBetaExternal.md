@@ -34,6 +34,8 @@ Update-MgBetaExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal>
 ## DESCRIPTION
 Update external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

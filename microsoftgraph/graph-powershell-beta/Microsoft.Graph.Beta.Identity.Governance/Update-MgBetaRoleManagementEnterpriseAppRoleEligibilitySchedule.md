@@ -55,6 +55,8 @@ Update-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule -InputObject <II
 ## DESCRIPTION
 Update the navigation property roleEligibilitySchedules in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -53,6 +53,8 @@ Update the navigation property paymentMethods in financials
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Financials.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -33,6 +33,8 @@ Disable-MgUserManagedDeviceLostMode -InputObject <IDevicesCorporateManagementIde
 ## DESCRIPTION
 Disable lost mode
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

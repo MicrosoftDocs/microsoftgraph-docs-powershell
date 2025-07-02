@@ -33,6 +33,8 @@ Remove-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart -InputO
 ## DESCRIPTION
 Delete navigation property webparts for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

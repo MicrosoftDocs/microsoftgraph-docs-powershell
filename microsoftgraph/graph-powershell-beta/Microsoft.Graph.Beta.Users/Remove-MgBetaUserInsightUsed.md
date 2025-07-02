@@ -32,6 +32,8 @@ Remove-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property used for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -57,6 +57,8 @@ Update the navigation property enterpriseCodeSigningCertificates in deviceAppMan
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

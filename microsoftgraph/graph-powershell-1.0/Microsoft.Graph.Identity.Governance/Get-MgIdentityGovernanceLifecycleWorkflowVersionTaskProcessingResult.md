@@ -42,6 +42,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult -InputObjec
 ## DESCRIPTION
 The result of processing the task.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

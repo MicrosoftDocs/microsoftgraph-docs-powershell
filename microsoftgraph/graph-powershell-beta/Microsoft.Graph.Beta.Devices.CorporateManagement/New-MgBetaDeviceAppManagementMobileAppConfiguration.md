@@ -48,6 +48,8 @@ Create new navigation property to mobileAppConfigurations for deviceAppManagemen
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

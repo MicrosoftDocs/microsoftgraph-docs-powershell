@@ -32,6 +32,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleAssignmentSchedule.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

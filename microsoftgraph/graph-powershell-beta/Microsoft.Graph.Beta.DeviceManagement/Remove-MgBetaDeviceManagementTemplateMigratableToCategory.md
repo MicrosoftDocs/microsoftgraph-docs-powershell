@@ -30,6 +30,8 @@ Remove-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceM
 ## DESCRIPTION
 Delete navigation property categories for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementTemplateId

@@ -40,6 +40,8 @@ Delete navigation property pages for groups
 | Delegated (personal Microsoft account) | Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

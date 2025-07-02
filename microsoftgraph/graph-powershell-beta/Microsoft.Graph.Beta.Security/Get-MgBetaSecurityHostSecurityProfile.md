@@ -37,6 +37,8 @@ Get-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Get hostSecurityProfiles from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

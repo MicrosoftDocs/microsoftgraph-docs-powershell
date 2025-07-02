@@ -38,6 +38,8 @@ Get-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob -InputObject <
 ## DESCRIPTION
 Get driveProtectionUnitsBulkAdditionJobs from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

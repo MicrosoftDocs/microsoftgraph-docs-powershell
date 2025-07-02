@@ -32,6 +32,8 @@ Get-MgBetaEducationMeAssignmentSubmissionCount -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

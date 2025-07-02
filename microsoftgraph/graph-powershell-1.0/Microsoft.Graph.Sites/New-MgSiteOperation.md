@@ -50,6 +50,8 @@ New-MgSiteOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to operations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

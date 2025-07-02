@@ -48,6 +48,8 @@ Update-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Update the navigation property defaultPages in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

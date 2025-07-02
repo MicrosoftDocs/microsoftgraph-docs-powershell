@@ -48,6 +48,8 @@ Invoke-MgBetaEnrollWindowsUpdatesPolicyAudienceExclusionAsset -InputObject <IWin
 ## DESCRIPTION
 Invoke action enrollAssets
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Invoke-MgBetaFollowGroupDriveItem -InputObject <IFilesIdentity> [-ResponseHeader
 ## DESCRIPTION
 Follow a driveItem.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

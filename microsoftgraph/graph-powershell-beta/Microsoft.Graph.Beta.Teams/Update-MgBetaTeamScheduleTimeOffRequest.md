@@ -52,6 +52,8 @@ Update-MgBetaTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property timeOffRequests in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

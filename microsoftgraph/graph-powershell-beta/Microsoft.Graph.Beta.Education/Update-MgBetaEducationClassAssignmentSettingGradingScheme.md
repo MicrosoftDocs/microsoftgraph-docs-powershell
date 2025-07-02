@@ -55,6 +55,8 @@ Update the navigation property gradingSchemes in education
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

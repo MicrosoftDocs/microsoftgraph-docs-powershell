@@ -74,6 +74,8 @@ New-MgBetaVirtualEventSession -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to sessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

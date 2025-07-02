@@ -31,6 +31,8 @@ New-MgBetaTenantRelationshipManagedTenant -BodyParameter <IMicrosoftGraphManaged
 ## DESCRIPTION
 Create new navigation property to tenants for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

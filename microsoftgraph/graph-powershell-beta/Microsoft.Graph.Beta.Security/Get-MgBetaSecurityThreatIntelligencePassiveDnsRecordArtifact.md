@@ -32,6 +32,8 @@ Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact -InputObject <ISecu
 ## DESCRIPTION
 The artifact related to this passiveDnsRecord entry.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

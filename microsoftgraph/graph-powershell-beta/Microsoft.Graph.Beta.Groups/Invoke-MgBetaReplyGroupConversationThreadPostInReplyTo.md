@@ -51,6 +51,8 @@ Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo -InputObject <IGroupsIden
 ## DESCRIPTION
 Invoke action reply
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

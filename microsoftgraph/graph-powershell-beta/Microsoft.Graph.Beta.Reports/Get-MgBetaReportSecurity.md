@@ -24,6 +24,8 @@ Get-MgBetaReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Provides the ability to launch a simulated phishing attack that organizations can learn from.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

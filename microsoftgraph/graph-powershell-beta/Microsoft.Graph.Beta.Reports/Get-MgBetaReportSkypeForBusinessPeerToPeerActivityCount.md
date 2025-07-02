@@ -32,6 +32,8 @@ Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount -InputObject <IReportsId
 ## DESCRIPTION
 Invoke function getSkypeForBusinessPeerToPeerActivityCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

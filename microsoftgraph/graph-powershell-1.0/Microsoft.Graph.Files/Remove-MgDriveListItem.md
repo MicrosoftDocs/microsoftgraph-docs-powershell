@@ -32,6 +32,8 @@ Remove-MgDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property items for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

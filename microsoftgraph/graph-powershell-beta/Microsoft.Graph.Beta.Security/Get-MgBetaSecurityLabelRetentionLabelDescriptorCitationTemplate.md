@@ -32,6 +32,8 @@ Get-MgBetaSecurityLabelRetentionLabelDescriptorCitationTemplate -InputObject <IS
 ## DESCRIPTION
 The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

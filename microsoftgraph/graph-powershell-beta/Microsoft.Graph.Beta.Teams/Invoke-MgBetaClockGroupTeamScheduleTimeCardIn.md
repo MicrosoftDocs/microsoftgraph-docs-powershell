@@ -51,6 +51,8 @@ Invoke-MgBetaClockGroupTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Clock in to start a timeCard.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

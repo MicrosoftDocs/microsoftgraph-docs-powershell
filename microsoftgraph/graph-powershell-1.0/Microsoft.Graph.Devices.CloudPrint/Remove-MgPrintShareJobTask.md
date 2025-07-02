@@ -32,6 +32,8 @@ Remove-MgPrintShareJobTask -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property tasks for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

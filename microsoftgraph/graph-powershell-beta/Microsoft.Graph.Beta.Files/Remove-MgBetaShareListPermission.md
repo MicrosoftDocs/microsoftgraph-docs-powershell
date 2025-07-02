@@ -29,6 +29,8 @@ Remove-MgBetaShareListPermission -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property permissions for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -40,6 +40,8 @@ Get-MgGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-Ex
 ## DESCRIPTION
 The swap requests for shifts in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

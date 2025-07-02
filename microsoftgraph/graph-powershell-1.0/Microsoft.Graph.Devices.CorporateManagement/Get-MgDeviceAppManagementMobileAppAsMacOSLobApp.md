@@ -40,6 +40,8 @@ Get-MgDeviceAppManagementMobileAppAsMacOSLobApp -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSLobApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

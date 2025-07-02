@@ -30,6 +30,8 @@ Remove-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment -InputObject <I
 ## DESCRIPTION
 Delete navigation property transitiveRoleAssignments for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

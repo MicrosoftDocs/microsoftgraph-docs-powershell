@@ -45,6 +45,8 @@ New-MgBetaRoleManagementEnterpriseAppResourceNamespace -InputObject <IIdentityGo
 ## DESCRIPTION
 Create new navigation property to resourceNamespaces for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

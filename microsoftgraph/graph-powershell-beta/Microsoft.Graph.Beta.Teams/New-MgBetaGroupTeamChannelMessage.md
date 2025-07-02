@@ -64,6 +64,8 @@ New-MgBetaGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to messages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgApplicationSynchronization -InputObject <IApplicationsIdentity> [-ExpandPr
 ## DESCRIPTION
 Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

@@ -43,6 +43,8 @@ New-MgBetaWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUpdatesIde
 ## DESCRIPTION
 Create new navigation property to exclusions for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

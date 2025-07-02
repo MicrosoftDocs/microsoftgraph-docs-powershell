@@ -50,6 +50,8 @@ New-MgGroupSiteOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to operations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

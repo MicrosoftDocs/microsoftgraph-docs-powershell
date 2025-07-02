@@ -48,6 +48,8 @@ Update-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Update the navigation property audience in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

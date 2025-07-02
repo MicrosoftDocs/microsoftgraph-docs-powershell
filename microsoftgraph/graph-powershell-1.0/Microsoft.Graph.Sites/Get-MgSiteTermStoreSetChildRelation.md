@@ -107,6 +107,8 @@ Get-MgSiteTermStoreSetChildRelation -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 To indicate which terms are related to the current term as either pinned or reused.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

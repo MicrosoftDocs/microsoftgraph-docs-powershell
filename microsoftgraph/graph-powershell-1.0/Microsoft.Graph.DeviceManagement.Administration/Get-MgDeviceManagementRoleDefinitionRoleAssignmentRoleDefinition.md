@@ -42,6 +42,8 @@ Role definition this assignment is part of.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

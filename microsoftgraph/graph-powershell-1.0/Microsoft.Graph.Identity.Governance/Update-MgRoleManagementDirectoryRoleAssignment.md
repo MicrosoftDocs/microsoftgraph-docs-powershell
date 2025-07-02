@@ -52,6 +52,8 @@ Update-MgRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Update the navigation property roleAssignments in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

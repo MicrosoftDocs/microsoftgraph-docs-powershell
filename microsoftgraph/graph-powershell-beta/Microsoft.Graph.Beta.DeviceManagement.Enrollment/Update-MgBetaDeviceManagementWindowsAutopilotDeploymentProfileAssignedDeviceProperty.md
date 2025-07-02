@@ -53,6 +53,8 @@ Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProp
 ## DESCRIPTION
 Updates properties on Autopilot devices.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

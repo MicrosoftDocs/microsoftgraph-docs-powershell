@@ -50,6 +50,8 @@ Update-MgUserSettingStorageQuota -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the navigation property quota in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

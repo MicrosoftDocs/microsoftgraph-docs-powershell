@@ -48,6 +48,8 @@ Update-MgBetaDeviceManagementManagedDeviceCategory -InputObject <IDeviceManageme
 ## DESCRIPTION
 Update the navigation property deviceCategory in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

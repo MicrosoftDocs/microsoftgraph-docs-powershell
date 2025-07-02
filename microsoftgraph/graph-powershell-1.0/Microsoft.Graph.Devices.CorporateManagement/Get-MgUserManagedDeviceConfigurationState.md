@@ -40,6 +40,8 @@ Get-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Device configuration states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

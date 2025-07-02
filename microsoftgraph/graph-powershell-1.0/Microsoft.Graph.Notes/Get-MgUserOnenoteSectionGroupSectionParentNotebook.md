@@ -34,6 +34,8 @@ Get-MgUserOnenoteSectionGroupSectionParentNotebook -InputObject <INotesIdentity>
 The notebook that contains the section.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

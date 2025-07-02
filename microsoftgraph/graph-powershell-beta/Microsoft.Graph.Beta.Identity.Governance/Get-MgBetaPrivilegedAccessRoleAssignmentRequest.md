@@ -38,6 +38,8 @@ Get-MgBetaPrivilegedAccessRoleAssignmentRequest -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 A collection of role assignment requests for the provider.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

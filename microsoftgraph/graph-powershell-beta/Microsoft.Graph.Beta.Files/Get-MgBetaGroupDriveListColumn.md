@@ -40,6 +40,8 @@ Get-MgBetaGroupDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of field definitions for this list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

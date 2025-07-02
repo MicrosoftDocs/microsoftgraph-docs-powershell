@@ -58,6 +58,8 @@ Invoke action reply
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

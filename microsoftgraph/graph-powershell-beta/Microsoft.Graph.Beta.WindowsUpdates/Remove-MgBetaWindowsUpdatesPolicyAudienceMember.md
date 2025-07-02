@@ -63,6 +63,8 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIde
 ## DESCRIPTION
 Delete navigation property members for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

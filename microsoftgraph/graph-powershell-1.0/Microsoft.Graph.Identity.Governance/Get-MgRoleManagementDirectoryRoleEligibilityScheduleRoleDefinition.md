@@ -32,6 +32,8 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleRoleDefinition -InputObject 
 ## DESCRIPTION
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

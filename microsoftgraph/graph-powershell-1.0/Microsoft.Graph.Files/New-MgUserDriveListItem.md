@@ -60,6 +60,8 @@ New-MgUserDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to items for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

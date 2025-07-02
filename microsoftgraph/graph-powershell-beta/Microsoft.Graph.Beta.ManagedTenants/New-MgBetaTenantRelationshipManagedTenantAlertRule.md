@@ -36,6 +36,8 @@ New-MgBetaTenantRelationshipManagedTenantAlertRule
 ## DESCRIPTION
 Create new navigation property to managedTenantAlertRules for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

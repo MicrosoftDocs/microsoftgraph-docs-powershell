@@ -44,6 +44,8 @@ Get-MgBetaFinancialCompanySaleInvoiceLineItemCategory -InputObject <IFinancialsI
 ## DESCRIPTION
 Get itemCategory from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

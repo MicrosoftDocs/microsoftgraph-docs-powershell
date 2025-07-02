@@ -30,6 +30,8 @@ New-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMod
 ## DESCRIPTION
 Create new navigation property to authenticationMethodModes for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Invoke-MgFollowGroupDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Follow a driveItem.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

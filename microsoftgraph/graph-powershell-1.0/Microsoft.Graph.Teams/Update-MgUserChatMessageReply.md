@@ -64,6 +64,8 @@ Update-MgUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property replies in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

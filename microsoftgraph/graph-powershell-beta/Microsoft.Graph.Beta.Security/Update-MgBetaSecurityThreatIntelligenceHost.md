@@ -65,6 +65,8 @@ Update-MgBetaSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hosts in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

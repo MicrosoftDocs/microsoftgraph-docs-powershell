@@ -22,6 +22,8 @@ Get-MgBetaGroupSiteGetByPathDocumentProcessingJob -GroupId <String> -Path <Strin
 ## DESCRIPTION
 The document processing jobs running on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

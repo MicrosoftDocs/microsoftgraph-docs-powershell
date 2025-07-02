@@ -51,6 +51,8 @@ Update-MgGroupTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property operations in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

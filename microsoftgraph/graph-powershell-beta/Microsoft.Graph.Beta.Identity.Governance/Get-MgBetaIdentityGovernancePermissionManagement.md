@@ -21,6 +21,8 @@ Get-MgBetaIdentityGovernancePermissionManagement [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Get permissionsManagement from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

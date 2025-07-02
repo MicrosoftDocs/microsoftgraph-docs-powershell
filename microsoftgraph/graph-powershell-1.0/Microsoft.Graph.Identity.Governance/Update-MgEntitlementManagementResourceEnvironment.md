@@ -49,6 +49,8 @@ Update-MgEntitlementManagementResourceEnvironment -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Update the navigation property resourceEnvironments in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId

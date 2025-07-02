@@ -34,6 +34,8 @@ Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile
 ## DESCRIPTION
 Delete navigation property files for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

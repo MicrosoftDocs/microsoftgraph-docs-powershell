@@ -58,6 +58,8 @@ New-MgGroupDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

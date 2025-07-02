@@ -52,6 +52,8 @@ New-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact -InputOb
 ## DESCRIPTION
 Create new navigation property to mailboxRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -34,6 +34,8 @@ Restore-MgBetaIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGoverna
 Restore a workflow that has been deleted.
 You can only restore a workflow that was deleted within the last 30 days before Microsoft Entra ID automatically permanently deletes it.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

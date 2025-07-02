@@ -63,6 +63,8 @@ Update-MgBetaFinancialCompanyPurchaseInvoice -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property purchaseInvoices in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

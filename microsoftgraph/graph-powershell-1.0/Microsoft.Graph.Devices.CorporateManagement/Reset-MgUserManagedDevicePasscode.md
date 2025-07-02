@@ -33,6 +33,8 @@ Reset-MgUserManagedDevicePasscode -InputObject <IDevicesCorporateManagementIdent
 ## DESCRIPTION
 Reset passcode
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

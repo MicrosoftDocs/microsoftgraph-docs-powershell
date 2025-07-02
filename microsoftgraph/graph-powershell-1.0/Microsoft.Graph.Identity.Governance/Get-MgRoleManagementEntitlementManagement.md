@@ -24,6 +24,8 @@ Get-MgRoleManagementEntitlementManagement [-ExpandProperty <String[]>] [-Propert
 ## DESCRIPTION
 Container for roles and assignments for entitlement management resources.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

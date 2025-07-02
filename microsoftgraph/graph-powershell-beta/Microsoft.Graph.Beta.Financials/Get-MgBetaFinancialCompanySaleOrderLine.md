@@ -59,6 +59,8 @@ Get-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity> [-Exp
 ## DESCRIPTION
 Get salesOrderLines from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

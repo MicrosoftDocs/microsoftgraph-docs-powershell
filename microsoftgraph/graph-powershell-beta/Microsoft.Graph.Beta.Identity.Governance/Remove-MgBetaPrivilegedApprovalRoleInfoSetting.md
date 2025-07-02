@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedApprovalRoleInfoSetting -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Delete navigation property settings for privilegedApproval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

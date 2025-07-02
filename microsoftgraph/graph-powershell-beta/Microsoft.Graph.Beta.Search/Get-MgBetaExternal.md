@@ -23,6 +23,8 @@ Get-MgBetaExternal [-ExpandProperty <String[]>] [-Property <String[]>] [-Respons
 ## DESCRIPTION
 Get external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

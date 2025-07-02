@@ -50,6 +50,8 @@ New-MgBetaCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunication
 ## DESCRIPTION
 Create new navigation property to participants_v2 for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

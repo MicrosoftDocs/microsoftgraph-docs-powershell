@@ -30,6 +30,8 @@ Get-MgSiteByPath -InputObject <ISitesIdentity> [-ResponseHeadersVariable <String
 ## DESCRIPTION
 Invoke function getByPath
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

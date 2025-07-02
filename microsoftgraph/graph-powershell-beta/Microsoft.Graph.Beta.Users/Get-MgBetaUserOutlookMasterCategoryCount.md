@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | MailboxSettings.Read,  |
 | Application | MailboxSettings.Read,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

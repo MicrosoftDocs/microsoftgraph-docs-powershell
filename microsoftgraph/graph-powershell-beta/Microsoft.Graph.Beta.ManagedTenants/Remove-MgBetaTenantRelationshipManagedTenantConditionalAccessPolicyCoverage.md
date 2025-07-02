@@ -31,6 +31,8 @@ Remove-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
 ## DESCRIPTION
 Delete navigation property conditionalAccessPolicyCoverages for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConditionalAccessPolicyCoverageId

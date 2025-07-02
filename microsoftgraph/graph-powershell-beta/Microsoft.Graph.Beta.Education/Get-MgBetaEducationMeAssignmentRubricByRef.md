@@ -31,6 +31,8 @@ Get-MgBetaEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity>
 ## DESCRIPTION
 When set, the grading rubric attached to this assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

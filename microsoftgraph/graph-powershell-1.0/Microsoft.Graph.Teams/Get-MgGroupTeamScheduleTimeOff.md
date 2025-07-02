@@ -40,6 +40,8 @@ Get-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The instances of times off in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

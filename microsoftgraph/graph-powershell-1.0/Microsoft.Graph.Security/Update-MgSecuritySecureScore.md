@@ -54,6 +54,8 @@ Update-MgSecuritySecureScore -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property secureScores in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveUserCount

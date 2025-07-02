@@ -33,6 +33,8 @@ Lock-MgUserManagedDeviceRemote -InputObject <IDevicesCorporateManagementIdentity
 ## DESCRIPTION
 Remote lock
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

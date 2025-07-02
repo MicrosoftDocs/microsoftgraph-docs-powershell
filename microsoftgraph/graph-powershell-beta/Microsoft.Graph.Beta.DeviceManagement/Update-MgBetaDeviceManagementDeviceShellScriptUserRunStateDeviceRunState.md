@@ -52,6 +52,8 @@ Update-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState
 ## DESCRIPTION
 Update the navigation property deviceRunStates in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

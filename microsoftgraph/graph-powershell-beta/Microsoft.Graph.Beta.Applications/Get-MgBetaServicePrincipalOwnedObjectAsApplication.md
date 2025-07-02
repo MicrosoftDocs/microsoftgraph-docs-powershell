@@ -40,6 +40,8 @@ Get-MgBetaServicePrincipalOwnedObjectAsApplication -InputObject <IApplicationsId
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

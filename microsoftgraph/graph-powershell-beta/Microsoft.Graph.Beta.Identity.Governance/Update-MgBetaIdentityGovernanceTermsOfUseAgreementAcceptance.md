@@ -90,6 +90,8 @@ Update-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property agreementAcceptances in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

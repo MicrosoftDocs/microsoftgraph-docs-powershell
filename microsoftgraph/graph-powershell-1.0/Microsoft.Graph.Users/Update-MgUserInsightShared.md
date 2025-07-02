@@ -54,6 +54,8 @@ Update-MgUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property shared in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

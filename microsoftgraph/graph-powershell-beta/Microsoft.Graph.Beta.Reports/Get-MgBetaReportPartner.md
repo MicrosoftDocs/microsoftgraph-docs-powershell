@@ -23,6 +23,8 @@ Get-MgBetaReportPartner [-ExpandProperty <String[]>] [-Property <String[]>] [-Re
 ## DESCRIPTION
 Represents billing details for a Microsoft direct partner.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -33,6 +33,8 @@ Remove-MgBetaEducationClassTeacherByRef -InputObject <IEducationIdentity> [-IfMa
 ## DESCRIPTION
 Remove a teacher from an educationClass.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

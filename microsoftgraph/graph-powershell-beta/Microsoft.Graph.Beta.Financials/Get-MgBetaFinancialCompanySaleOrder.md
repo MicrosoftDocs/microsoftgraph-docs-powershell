@@ -37,6 +37,8 @@ Get-MgBetaFinancialCompanySaleOrder -InputObject <IFinancialsIdentity> [-ExpandP
 ## DESCRIPTION
 Get salesOrders from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

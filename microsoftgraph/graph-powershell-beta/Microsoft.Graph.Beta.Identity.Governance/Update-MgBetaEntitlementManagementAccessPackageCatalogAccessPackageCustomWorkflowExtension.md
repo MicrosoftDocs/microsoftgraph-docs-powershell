@@ -52,6 +52,8 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflo
 ## DESCRIPTION
 Update the properties of an accessPackageAssignmentRequestWorkflowExtension object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

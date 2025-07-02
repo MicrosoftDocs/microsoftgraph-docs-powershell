@@ -32,6 +32,8 @@ Get-MgShareRootContent -InputObject <IFilesIdentity> [-Format <String>] -OutFile
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Format

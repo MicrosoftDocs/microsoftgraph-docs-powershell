@@ -51,6 +51,8 @@ Set-MgBetaDeviceManagementScript -InputObject <IDeviceManagementIdentity>
 ## DESCRIPTION
 Invoke action assign
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

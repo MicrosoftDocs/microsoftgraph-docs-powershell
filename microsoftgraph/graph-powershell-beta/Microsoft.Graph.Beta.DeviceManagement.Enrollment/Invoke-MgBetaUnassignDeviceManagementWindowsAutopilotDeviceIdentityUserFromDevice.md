@@ -41,6 +41,8 @@ Unassigns the user from an Autopilot device.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

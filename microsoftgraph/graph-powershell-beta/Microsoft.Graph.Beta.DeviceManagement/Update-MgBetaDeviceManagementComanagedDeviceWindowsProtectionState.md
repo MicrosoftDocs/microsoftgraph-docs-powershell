@@ -57,6 +57,8 @@ Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState -InputObject 
 ## DESCRIPTION
 Update the navigation property windowsProtectionState in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

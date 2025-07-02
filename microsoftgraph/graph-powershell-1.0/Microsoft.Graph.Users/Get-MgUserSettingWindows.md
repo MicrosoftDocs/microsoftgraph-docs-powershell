@@ -40,6 +40,8 @@ Get-MgUserSettingWindows -InputObject <IUsersIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get windows from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -52,6 +52,8 @@ Update-MgSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIde
 ## DESCRIPTION
 Update the navigation property hostSslCertificates in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

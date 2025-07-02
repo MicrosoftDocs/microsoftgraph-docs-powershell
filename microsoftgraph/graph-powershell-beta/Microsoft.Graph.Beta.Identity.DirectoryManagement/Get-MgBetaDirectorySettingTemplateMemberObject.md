@@ -45,6 +45,8 @@ Get-MgBetaDirectorySettingTemplateMemberObject -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Invoke action getMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

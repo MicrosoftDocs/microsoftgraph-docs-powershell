@@ -40,6 +40,8 @@ Get-MgGroupSiteListSubscription -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The set of subscriptions on the list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

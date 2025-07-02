@@ -33,6 +33,8 @@ Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentRoleDefinition
 The roleDefinition the assignment is for.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -60,6 +60,8 @@ Update the navigation property tasks in identityGovernance
 | Delegated (personal Microsoft account) | Not supported |
 | Application | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

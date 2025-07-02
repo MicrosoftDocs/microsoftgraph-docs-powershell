@@ -32,6 +32,8 @@ Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResource
 ## DESCRIPTION
 Get resource from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId

@@ -32,6 +32,8 @@ Get-MgIdentityGovernanceTermsOfUseAgreementFileVersionCount -InputObject <IIdent
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

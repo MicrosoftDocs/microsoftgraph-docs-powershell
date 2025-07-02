@@ -51,6 +51,8 @@ Update-MgGroupOnenote -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property onenote in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

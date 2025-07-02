@@ -73,6 +73,8 @@ Update-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyPara
 ## DESCRIPTION
 Update the navigation property devices in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled

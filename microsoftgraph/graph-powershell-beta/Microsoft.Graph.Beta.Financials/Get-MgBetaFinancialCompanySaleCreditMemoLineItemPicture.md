@@ -38,6 +38,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoLineItemPicture -InputObject <IFinancial
 ## DESCRIPTION
 Get picture from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

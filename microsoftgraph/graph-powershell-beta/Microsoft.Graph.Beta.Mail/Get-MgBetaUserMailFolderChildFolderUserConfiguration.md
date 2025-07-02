@@ -38,6 +38,8 @@ Get-MgBetaUserMailFolderChildFolderUserConfiguration -InputObject <IMailIdentity
 ## DESCRIPTION
 Get userConfigurations from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

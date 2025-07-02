@@ -50,6 +50,8 @@ New-MgGroupDriveItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to versions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

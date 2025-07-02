@@ -44,6 +44,8 @@ Get-MgReportTeamDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get details about Microsoft Teams device usage by user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

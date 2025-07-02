@@ -29,6 +29,8 @@ Get-MgBetaGroupSiteRecycleBinCreatedByUser -InputObject <ISitesIdentity> [-Expan
 ## DESCRIPTION
 Get createdByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

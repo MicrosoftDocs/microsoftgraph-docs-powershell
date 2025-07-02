@@ -29,6 +29,8 @@ Get-MgBetaWindowsUpdatesPolicyAudienceMemberCount -InputObject <IWindowsUpdatesI
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

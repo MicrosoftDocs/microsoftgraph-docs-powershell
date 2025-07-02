@@ -43,6 +43,8 @@ Get-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom -InputObjec
 Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

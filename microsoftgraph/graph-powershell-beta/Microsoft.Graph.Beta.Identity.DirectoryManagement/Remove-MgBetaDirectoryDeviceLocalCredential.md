@@ -32,6 +32,8 @@ Remove-MgBetaDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Delete navigation property deviceLocalCredentials for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceLocalCredentialInfoId

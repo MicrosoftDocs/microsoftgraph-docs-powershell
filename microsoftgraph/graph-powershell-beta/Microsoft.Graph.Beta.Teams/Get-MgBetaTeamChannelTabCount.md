@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsTab.Read.Group, Group.Read.All, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWrite.Group, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All, TeamsTab.Read.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

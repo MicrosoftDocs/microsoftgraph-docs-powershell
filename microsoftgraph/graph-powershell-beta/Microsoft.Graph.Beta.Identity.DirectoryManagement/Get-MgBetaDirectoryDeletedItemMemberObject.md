@@ -48,6 +48,8 @@ Get-MgBetaDirectoryDeletedItemMemberObject -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Invoke action getMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

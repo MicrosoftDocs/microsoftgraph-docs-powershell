@@ -62,6 +62,8 @@ New-MgUserChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to messages for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

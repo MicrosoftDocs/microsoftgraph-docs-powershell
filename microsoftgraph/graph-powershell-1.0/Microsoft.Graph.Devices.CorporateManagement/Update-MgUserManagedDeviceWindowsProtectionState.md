@@ -60,6 +60,8 @@ Update-MgUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Update the navigation property windowsProtectionState in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

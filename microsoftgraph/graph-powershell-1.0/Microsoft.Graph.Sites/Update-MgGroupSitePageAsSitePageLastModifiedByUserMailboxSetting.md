@@ -54,6 +54,8 @@ Update-MgGroupSitePageAsSitePageLastModifiedByUserMailboxSetting -InputObject <I
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -36,6 +36,8 @@ New-MgBetaSecurityThreatIntelligenceSslCertificate -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to sslCertificates for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

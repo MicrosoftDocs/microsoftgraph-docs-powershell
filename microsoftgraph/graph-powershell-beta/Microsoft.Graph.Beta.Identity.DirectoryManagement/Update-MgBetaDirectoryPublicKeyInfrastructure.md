@@ -30,6 +30,8 @@ Update-MgBetaDirectoryPublicKeyInfrastructure -BodyParameter <IMicrosoftGraphPub
 ## DESCRIPTION
 Update the navigation property publicKeyInfrastructure in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

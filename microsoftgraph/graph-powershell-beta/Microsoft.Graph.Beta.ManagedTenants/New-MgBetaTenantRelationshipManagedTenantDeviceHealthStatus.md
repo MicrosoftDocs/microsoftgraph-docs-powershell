@@ -33,6 +33,8 @@ New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus
 ## DESCRIPTION
 Create new navigation property to deviceHealthStatuses for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

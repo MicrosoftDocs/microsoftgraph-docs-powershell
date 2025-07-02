@@ -29,6 +29,8 @@ Remove-MgBetaUserSecurity -InputObject <ISecurityIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property security for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

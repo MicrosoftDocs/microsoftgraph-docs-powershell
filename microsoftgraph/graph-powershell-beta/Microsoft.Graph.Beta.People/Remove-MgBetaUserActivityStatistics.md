@@ -29,6 +29,8 @@ Remove-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property activityStatistics for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityStatisticsId

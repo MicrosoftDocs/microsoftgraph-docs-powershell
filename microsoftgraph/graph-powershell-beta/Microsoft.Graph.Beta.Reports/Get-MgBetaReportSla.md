@@ -20,6 +20,8 @@ Get-MgBetaReportSla [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ## DESCRIPTION
 Reports that relate to tenant-level Microsoft Entra Health SLA attainment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

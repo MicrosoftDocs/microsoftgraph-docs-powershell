@@ -33,6 +33,8 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSourceSite -InputObject <ISecur
 ## DESCRIPTION
 The SharePoint site associated with the siteSource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

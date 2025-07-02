@@ -31,6 +31,8 @@ Update-MgReportPartnerBillingUsageBilled -BodyParameter <Hashtable> [-ResponseHe
 ## DESCRIPTION
 Update the navigation property billed in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

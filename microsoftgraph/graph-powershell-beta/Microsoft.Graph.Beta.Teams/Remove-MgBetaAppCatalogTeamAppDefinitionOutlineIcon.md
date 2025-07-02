@@ -29,6 +29,8 @@ Remove-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity
 ## DESCRIPTION
 Delete navigation property outlineIcon for appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -50,6 +50,8 @@ Update-MgBetaGroupSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property canvasLayout in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

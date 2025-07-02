@@ -33,6 +33,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy
 ## DESCRIPTION
 The user who created the workflow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

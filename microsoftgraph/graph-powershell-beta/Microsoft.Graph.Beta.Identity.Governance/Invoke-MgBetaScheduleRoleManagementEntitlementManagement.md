@@ -24,6 +24,8 @@ Invoke-MgBetaScheduleRoleManagementEntitlementManagement [-AppScopeId <String>] 
 ## DESCRIPTION
 Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppScopeId

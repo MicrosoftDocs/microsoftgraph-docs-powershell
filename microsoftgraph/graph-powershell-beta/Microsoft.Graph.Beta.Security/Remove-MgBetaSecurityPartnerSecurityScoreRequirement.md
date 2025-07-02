@@ -29,6 +29,8 @@ Remove-MgBetaSecurityPartnerSecurityScoreRequirement -InputObject <ISecurityIden
 ## DESCRIPTION
 Delete navigation property requirements for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

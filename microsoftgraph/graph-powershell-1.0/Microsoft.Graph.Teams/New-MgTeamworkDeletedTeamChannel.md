@@ -58,6 +58,8 @@ New-MgTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to channels for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

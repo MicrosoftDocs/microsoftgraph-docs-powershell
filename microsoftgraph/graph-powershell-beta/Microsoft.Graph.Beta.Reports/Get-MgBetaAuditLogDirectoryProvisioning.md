@@ -37,6 +37,8 @@ Get-MgBetaAuditLogDirectoryProvisioning -InputObject <IReportsIdentity> [-Expand
 ## DESCRIPTION
 Get directoryProvisioning from auditLogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Get deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

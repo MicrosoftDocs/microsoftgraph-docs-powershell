@@ -37,6 +37,8 @@ Get-MgBetaReportUserInsightDailyMfaTelecomFraud -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Get mfaTelecomFraud from reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

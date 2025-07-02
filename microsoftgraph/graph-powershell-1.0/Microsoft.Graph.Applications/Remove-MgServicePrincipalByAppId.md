@@ -33,6 +33,8 @@ Remove-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete a servicePrincipal object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppId

@@ -52,6 +52,8 @@ Update-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property roleDefinitions in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

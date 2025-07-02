@@ -37,6 +37,8 @@ Get-MgBetaReportUserInsightMonthlyMfaRegisteredUser -InputObject <IReportsIdenti
 ## DESCRIPTION
 Get mfaRegisteredUsers from reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -40,6 +40,8 @@ Get-MgGroupSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-ExpandPr
 ## DESCRIPTION
 Get itemActivityStats from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

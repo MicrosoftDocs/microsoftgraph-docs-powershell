@@ -35,6 +35,8 @@ Set-MgChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-Data <Stream
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

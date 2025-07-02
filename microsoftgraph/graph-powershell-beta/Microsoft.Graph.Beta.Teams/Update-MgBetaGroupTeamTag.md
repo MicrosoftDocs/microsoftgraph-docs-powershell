@@ -48,6 +48,8 @@ Update-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property tags in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

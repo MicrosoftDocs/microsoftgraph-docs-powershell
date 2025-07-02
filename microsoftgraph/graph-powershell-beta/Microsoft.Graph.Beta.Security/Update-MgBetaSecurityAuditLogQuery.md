@@ -51,6 +51,8 @@ Update-MgBetaSecurityAuditLogQuery -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property queries in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

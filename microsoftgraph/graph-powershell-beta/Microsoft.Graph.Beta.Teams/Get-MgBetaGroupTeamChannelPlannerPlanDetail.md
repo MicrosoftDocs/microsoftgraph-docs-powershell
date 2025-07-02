@@ -33,6 +33,8 @@ Extra details about the plan.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

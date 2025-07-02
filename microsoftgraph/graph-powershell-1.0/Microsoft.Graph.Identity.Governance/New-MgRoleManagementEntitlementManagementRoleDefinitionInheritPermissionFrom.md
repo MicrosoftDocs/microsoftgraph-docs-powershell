@@ -54,6 +54,8 @@ New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom
 ## DESCRIPTION
 Create new navigation property to inheritsPermissionsFrom for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

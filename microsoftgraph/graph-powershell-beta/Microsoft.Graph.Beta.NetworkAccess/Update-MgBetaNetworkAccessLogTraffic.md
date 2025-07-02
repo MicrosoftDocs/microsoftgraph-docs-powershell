@@ -72,6 +72,8 @@ Update-MgBetaNetworkAccessLogTraffic -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Update the navigation property traffic in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessHeaders

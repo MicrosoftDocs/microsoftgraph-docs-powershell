@@ -24,6 +24,8 @@ Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest [-Exp
 Represents a permissions request that Permissions Management uses to manage permissions for an identity on resources in the authorization system.
 This request can be granted, rejected or canceled by identities in Permissions Management.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -31,6 +31,8 @@ Get-MgBetaReportMailboxUsageMailboxCount -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Invoke function getMailboxUsageMailboxCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -42,6 +42,8 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
 ## DESCRIPTION
 Instances for role eligibility requests.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -51,6 +51,8 @@ Update-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Update the navigation property workspaces in places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaIdentityProductChange -InputObject <IIdentitySignInsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property productChanges for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChangeItemBaseId

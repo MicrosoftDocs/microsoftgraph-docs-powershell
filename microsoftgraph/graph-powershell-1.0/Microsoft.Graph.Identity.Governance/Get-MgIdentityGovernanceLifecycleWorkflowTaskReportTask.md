@@ -32,6 +32,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTask -InputObject <IIdentityG
 ## DESCRIPTION
 The related lifecycle workflow task.Supports $filter(eq, ne) and $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

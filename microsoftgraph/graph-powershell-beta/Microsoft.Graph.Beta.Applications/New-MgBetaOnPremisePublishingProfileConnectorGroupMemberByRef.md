@@ -46,6 +46,8 @@ New-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef -InputObject <IApp
 ## DESCRIPTION
 Create new navigation property ref to members for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

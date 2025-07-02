@@ -48,6 +48,8 @@ Test-MgBetaUserInformationProtectionSensitivityLabel -InputObject <IIdentitySign
 ## DESCRIPTION
 Invoke action evaluate
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

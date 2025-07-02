@@ -29,6 +29,8 @@ Invoke-MgBetaReenableUserManagedDevice -InputObject <IDevicesCorporateManagement
 ## DESCRIPTION
 Invoke action reenable
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

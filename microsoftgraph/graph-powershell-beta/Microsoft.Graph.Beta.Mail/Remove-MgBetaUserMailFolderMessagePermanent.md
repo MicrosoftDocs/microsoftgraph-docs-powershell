@@ -47,6 +47,8 @@ For more information about item retention, see Configure Deleted Item retention 
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

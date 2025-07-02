@@ -36,6 +36,8 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTarget
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand and $select nested in $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

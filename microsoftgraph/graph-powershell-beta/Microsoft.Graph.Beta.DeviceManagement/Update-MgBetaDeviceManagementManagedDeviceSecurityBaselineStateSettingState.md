@@ -55,6 +55,8 @@ Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState
 ## DESCRIPTION
 Update the navigation property settingStates in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

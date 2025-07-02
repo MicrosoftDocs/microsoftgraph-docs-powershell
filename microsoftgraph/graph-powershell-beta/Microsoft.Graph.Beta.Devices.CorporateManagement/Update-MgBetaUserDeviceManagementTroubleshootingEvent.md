@@ -53,6 +53,8 @@ Update-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorp
 ## DESCRIPTION
 Update the navigation property deviceManagementTroubleshootingEvents in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

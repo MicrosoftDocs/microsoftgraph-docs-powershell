@@ -33,6 +33,8 @@ You can use this URL to download the installer to install the sensor on a server
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

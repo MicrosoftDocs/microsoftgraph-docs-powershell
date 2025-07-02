@@ -44,6 +44,8 @@ New-MgBetaGroupEventExceptionOccurrenceInstanceExtension -InputObject <ICalendar
 ## DESCRIPTION
 Create new navigation property to extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

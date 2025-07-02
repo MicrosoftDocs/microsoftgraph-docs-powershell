@@ -52,6 +52,8 @@ New-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to recordings for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

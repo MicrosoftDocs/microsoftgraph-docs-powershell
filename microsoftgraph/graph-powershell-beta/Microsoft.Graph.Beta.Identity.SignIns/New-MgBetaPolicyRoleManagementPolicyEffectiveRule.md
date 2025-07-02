@@ -48,6 +48,8 @@ New-MgBetaPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Create new navigation property to effectiveRules for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

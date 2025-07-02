@@ -31,6 +31,8 @@ New-MgBetaPrintService -BodyParameter <IMicrosoftGraphPrintService> [-ResponseHe
 ## DESCRIPTION
 Create new navigation property to services for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

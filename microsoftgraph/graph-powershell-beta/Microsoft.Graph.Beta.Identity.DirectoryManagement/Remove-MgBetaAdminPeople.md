@@ -20,6 +20,8 @@ Remove-MgBetaAdminPeople [-IfMatch <String>] [-ResponseHeadersVariable <String>]
 ## DESCRIPTION
 Delete navigation property people for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -60,6 +60,8 @@ Update the navigation property taskFolders in users
 | Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

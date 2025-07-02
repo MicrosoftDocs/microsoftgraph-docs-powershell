@@ -23,6 +23,8 @@ Get-MgReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [-Respo
 ## DESCRIPTION
 Represents an abstract type that contains resources for attack simulation and training reports.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -31,6 +31,8 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfileServicePrincipa
 ## DESCRIPTION
 Get servicePrincipal from networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

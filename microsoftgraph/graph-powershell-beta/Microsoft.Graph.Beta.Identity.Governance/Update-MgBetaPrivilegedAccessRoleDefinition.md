@@ -47,6 +47,8 @@ Update-MgBetaPrivilegedAccessRoleDefinition -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Update the navigation property roleDefinitions in privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

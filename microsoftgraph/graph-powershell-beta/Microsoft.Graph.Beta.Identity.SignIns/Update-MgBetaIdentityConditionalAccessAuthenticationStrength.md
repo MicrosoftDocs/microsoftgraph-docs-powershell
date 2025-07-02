@@ -31,6 +31,8 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrength
 ## DESCRIPTION
 Update the navigation property authenticationStrengths in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

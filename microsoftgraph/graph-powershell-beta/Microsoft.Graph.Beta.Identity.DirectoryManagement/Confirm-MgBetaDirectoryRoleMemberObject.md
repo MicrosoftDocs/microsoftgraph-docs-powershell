@@ -48,6 +48,8 @@ Confirm-MgBetaDirectoryRoleMemberObject -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

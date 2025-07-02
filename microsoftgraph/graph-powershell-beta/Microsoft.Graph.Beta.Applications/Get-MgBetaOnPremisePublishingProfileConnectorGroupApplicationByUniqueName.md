@@ -30,6 +30,8 @@ Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationByUniqueName -Input
 ## DESCRIPTION
 Get applications from onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConnectorGroupId

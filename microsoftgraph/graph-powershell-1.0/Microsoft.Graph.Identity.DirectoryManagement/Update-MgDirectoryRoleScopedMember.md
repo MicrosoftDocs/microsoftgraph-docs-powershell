@@ -48,6 +48,8 @@ Update-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Update the navigation property scopedMembers in directoryRoles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

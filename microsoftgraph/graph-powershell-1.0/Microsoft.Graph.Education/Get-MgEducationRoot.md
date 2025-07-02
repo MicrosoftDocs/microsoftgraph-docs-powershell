@@ -23,6 +23,8 @@ Get-MgEducationRoot [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ## DESCRIPTION
 Get education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

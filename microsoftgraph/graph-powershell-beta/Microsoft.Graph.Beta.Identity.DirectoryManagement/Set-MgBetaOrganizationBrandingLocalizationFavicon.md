@@ -42,6 +42,8 @@ A custom icon (favicon) to replace a default Microsoft product favicon on a Micr
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

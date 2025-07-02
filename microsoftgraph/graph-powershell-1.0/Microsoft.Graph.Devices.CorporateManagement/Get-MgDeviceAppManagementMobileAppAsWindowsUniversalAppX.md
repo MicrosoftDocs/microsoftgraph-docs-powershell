@@ -40,6 +40,8 @@ Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX -InputObject <IDevicesC
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsUniversalAppX
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

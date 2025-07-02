@@ -21,6 +21,8 @@ Remove-MgBetaDeviceManagementWindowsAutopilotSetting [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property windowsAutopilotSettings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

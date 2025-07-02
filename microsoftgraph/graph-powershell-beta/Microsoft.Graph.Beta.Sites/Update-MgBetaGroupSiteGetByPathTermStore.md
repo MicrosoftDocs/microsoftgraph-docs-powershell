@@ -49,6 +49,8 @@ Update-MgBetaGroupSiteGetByPathTermStore -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property termStore in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Delete navigation property subdomains for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

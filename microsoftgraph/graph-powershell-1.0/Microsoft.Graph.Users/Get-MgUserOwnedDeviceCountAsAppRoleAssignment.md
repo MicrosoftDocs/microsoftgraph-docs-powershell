@@ -32,6 +32,8 @@ Get-MgUserOwnedDeviceCountAsAppRoleAssignment -InputObject <IUsersIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

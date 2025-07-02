@@ -40,6 +40,8 @@ Get-MgBetaSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Collection of webparts on the SharePoint page.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

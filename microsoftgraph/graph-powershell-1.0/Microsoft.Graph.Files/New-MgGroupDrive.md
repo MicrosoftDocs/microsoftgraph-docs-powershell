@@ -61,6 +61,8 @@ New-MgGroupDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDr
 ## DESCRIPTION
 Create new navigation property to drives for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

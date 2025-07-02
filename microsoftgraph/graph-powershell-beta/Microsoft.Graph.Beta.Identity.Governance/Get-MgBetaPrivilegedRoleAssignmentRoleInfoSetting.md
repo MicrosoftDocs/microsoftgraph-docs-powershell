@@ -29,6 +29,8 @@ Get-MgBetaPrivilegedRoleAssignmentRoleInfoSetting -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Get settings from privilegedRoleAssignments
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

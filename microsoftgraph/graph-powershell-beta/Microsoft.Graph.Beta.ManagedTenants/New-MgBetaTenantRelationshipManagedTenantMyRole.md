@@ -30,6 +30,8 @@ New-MgBetaTenantRelationshipManagedTenantMyRole -BodyParameter <IMicrosoftGraphM
 ## DESCRIPTION
 Create new navigation property to myRoles for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

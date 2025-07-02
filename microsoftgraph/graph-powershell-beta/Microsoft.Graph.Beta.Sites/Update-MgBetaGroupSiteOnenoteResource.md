@@ -48,6 +48,8 @@ Update-MgBetaGroupSiteOnenoteResource -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property resources in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

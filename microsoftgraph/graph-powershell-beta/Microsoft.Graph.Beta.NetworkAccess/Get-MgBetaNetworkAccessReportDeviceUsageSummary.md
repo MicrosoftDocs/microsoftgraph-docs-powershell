@@ -39,6 +39,8 @@ This summary includes the total number of devices, active devices, and inactive 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess-Reports.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityPivotDateTime

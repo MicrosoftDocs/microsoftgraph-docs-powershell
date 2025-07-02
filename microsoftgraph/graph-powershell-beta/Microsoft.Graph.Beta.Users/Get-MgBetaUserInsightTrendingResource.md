@@ -40,6 +40,8 @@ Used for navigating to the trending document.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

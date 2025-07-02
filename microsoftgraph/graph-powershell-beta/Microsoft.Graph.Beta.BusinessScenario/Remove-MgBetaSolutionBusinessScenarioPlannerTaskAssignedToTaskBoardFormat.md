@@ -31,6 +31,8 @@ Remove-MgBetaSolutionBusinessScenarioPlannerTaskAssignedToTaskBoardFormat
 ## DESCRIPTION
 Delete navigation property assignedToTaskBoardFormat for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BusinessScenarioId

@@ -73,6 +73,8 @@ New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to devices for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled

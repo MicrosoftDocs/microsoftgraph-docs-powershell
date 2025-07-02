@@ -45,6 +45,8 @@ Update-MgBetaIdentityGovernancePermissionAnalyticGcpFinding -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property findings in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

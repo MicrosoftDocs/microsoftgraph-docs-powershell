@@ -37,6 +37,8 @@ Get-MgBetaWindowsUpdatesProductRevision -InputObject <IWindowsUpdatesIdentity> [
 ## DESCRIPTION
 Represents a product revision.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

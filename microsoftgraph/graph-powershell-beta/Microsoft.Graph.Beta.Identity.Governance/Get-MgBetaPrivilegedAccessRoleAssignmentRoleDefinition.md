@@ -32,6 +32,8 @@ Get-MgBetaPrivilegedAccessRoleAssignmentRoleDefinition -InputObject <IIdentityGo
 Read-only.
 The role definition associated with the role assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

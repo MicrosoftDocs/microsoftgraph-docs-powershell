@@ -33,6 +33,8 @@ Remove-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval
 ## DESCRIPTION
 Delete navigation property assignmentApprovals for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

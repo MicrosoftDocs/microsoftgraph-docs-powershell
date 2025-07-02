@@ -47,6 +47,8 @@ New-MgBetaOrganization -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHe
 ## DESCRIPTION
 Add new entity to organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

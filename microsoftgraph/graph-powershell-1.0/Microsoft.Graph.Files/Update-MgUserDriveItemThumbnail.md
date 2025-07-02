@@ -49,6 +49,8 @@ Update-MgUserDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property thumbnails in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

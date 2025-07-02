@@ -32,6 +32,8 @@ Remove-MgDriveRootListItemVersion -InputObject <IFilesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property versions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

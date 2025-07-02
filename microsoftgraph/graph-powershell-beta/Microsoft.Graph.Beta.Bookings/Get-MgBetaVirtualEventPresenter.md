@@ -40,6 +40,8 @@ Get-MgBetaVirtualEventPresenter -InputObject <IBookingsIdentity> [-ExpandPropert
 ## DESCRIPTION
 The virtual event presenters.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

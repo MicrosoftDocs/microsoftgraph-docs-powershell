@@ -40,6 +40,8 @@ Get-MgSiteListContentTypeColumnLink -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 The collection of columns that are required by this content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

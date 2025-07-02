@@ -33,6 +33,8 @@ Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion
 ## DESCRIPTION
 Delete navigation property contentVersions for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

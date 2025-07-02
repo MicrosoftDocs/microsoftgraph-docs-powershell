@@ -29,6 +29,8 @@ Send-MgBetaFinancialCompanySalesQuote -InputObject <IFinancialsIdentity> [-Respo
 ## DESCRIPTION
 Invoke action send
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

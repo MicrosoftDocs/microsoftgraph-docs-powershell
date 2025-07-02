@@ -46,6 +46,8 @@ Update-MgBetaRoleManagementEntitlementManagementRoleAssignmentApproval
 ## DESCRIPTION
 Update the navigation property roleAssignmentApprovals in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

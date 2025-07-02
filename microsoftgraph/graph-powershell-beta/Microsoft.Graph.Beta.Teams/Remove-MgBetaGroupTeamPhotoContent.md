@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 The team photo.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

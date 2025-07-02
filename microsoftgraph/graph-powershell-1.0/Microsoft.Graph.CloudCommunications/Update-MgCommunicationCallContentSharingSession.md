@@ -46,6 +46,8 @@ Update-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Update the navigation property contentSharingSessions in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -56,6 +56,8 @@ Update-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 ## DESCRIPTION
 Update the navigation property credentialUserRegistrationsSummaries in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

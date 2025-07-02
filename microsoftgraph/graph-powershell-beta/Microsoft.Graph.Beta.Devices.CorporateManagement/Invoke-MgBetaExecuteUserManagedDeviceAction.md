@@ -52,6 +52,8 @@ Invoke-MgBetaExecuteUserManagedDeviceAction -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 Invoke action executeAction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionName

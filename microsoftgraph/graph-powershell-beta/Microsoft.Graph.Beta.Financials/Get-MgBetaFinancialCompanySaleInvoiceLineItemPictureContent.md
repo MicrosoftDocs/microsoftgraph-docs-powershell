@@ -43,6 +43,8 @@ Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureContent -InputObject <IFinan
 ## DESCRIPTION
 Get content for the navigation property picture from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

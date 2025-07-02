@@ -32,6 +32,8 @@ Get-MgBetaDriveContentTypeBase -InputObject <IFilesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

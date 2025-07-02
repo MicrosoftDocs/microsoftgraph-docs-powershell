@@ -42,6 +42,8 @@ Get-MgBetaUserChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <S
 A collection of all the apps in the chat.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

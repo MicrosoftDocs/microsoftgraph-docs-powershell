@@ -40,6 +40,8 @@ The printer that this printer share is related to.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Printer.Read.All, Printer.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

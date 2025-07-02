@@ -32,6 +32,8 @@ Remove-MgDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDevic
 ## DESCRIPTION
 Delete navigation property deviceCompliancePolicyStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceCompliancePolicyStateId

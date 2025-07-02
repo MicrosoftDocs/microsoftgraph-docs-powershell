@@ -32,6 +32,8 @@ Remove-MgBetaUserDriveItemAnalytic -InputObject <IFilesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property analytics for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

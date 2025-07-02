@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantAlertLog -InputObject <IManagedTenan
 ## DESCRIPTION
 Delete navigation property managedTenantAlertLogs for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

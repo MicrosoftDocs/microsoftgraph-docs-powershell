@@ -48,6 +48,8 @@ New-MgTeamPermissionGrant -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to permissionGrants for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

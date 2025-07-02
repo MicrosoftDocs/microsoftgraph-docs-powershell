@@ -32,6 +32,8 @@ Get-MgGroupPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Entry-point to Planner resource that might exist for a Unified Group.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

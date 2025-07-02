@@ -33,6 +33,8 @@ Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestPrincipal
 The principal that's getting a role eligibility through the request.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

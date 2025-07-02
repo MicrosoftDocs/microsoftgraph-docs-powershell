@@ -25,6 +25,8 @@ Get-MgBetaSolutionBackupRestore [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

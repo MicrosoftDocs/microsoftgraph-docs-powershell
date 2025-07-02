@@ -48,6 +48,8 @@ Update-MgUserChatMessageReplyHostedContent -InputObject <ITeamsIdentity> -BodyPa
 ## DESCRIPTION
 Update the navigation property hostedContents in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

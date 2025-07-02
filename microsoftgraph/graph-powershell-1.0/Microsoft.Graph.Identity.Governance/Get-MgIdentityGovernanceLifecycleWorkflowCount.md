@@ -32,6 +32,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | LifecycleWorkflows-Workflow.ReadBasic.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows-Workflow.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

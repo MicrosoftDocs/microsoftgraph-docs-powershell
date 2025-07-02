@@ -49,6 +49,8 @@ Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action reply
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

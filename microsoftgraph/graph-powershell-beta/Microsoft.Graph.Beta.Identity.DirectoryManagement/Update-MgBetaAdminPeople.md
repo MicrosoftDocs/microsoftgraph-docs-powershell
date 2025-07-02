@@ -31,6 +31,8 @@ Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings>
 ## DESCRIPTION
 Update the navigation property people in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

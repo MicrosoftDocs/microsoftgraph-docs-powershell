@@ -33,6 +33,8 @@ Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId -InputObject <IIdentityD
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CommerceSubscriptionId

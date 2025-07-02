@@ -30,6 +30,8 @@ Remove-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -In
 ## DESCRIPTION
 Delete navigation property provisioningFlows for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

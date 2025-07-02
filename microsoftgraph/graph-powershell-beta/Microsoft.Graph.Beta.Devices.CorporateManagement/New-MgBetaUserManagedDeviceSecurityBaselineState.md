@@ -47,6 +47,8 @@ New-MgBetaUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Create new navigation property to securityBaselineStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

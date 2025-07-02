@@ -41,6 +41,8 @@ New-MgSecurityThreatIntelligenceHost -BodyParameter <IMicrosoftGraphSecurityHost
 ## DESCRIPTION
 Create new navigation property to hosts for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

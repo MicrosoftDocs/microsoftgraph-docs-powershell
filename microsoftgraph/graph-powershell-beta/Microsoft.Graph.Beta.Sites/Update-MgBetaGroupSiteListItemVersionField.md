@@ -47,6 +47,8 @@ Update-MgBetaGroupSiteListItemVersionField -InputObject <ISitesIdentity> -BodyPa
 ## DESCRIPTION
 Update the navigation property fields in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

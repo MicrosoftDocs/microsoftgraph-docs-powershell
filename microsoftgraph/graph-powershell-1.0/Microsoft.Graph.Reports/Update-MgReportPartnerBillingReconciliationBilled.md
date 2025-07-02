@@ -32,6 +32,8 @@ Update-MgReportPartnerBillingReconciliationBilled -BodyParameter <Hashtable>
 ## DESCRIPTION
 Update the navigation property billed in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

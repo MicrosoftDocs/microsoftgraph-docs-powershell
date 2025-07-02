@@ -47,6 +47,8 @@ Update-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResult -InputO
 ## DESCRIPTION
 Update the navigation property results in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -47,6 +47,8 @@ Update-MgBetaEducationReportReflectCheck -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property reflectCheckInResponses in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

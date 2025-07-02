@@ -34,6 +34,8 @@ Get-MgUserDriveListDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

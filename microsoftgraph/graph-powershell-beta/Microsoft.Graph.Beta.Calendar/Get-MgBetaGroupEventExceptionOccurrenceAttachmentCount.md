@@ -29,6 +29,8 @@ Get-MgBetaGroupEventExceptionOccurrenceAttachmentCount -InputObject <ICalendarId
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

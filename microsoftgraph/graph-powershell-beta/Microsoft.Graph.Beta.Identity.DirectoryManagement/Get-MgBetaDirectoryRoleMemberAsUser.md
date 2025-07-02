@@ -42,6 +42,8 @@ Get-MgBetaDirectoryRoleMemberAsUser -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

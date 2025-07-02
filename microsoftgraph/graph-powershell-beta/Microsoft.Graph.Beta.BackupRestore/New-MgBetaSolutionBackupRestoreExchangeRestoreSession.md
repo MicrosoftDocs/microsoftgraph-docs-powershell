@@ -39,6 +39,8 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSession -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to exchangeRestoreSessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

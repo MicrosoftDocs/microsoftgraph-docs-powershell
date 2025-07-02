@@ -29,6 +29,8 @@ Remove-MgBetaExternalIndustryDataOutboundProvisioningFlowSet -InputObject <ISear
 ## DESCRIPTION
 Delete navigation property outboundProvisioningFlowSets for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

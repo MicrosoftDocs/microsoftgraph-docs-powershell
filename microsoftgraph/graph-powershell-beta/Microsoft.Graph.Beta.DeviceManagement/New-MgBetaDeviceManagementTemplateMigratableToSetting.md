@@ -46,6 +46,8 @@ New-MgBetaDeviceManagementTemplateMigratableToSetting -InputObject <IDeviceManag
 ## DESCRIPTION
 Create new navigation property to settings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

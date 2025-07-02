@@ -56,6 +56,8 @@ Invoke action createUploadSession
 | Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Sites.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyCurrencyCount -InputObject <IFinancialsIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

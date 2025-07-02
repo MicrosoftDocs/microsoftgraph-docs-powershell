@@ -32,6 +32,8 @@ Get-MgGroupDriveListContentTypeColumnCount -InputObject <IFilesIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

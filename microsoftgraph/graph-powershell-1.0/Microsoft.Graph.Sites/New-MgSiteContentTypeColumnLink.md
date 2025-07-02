@@ -46,6 +46,8 @@ New-MgSiteContentTypeColumnLink -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to columnLinks for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

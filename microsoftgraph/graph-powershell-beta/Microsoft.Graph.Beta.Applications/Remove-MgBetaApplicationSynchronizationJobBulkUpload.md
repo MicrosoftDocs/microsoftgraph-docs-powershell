@@ -32,6 +32,8 @@ Remove-MgBetaApplicationSynchronizationJobBulkUpload -InputObject <IApplications
 ## DESCRIPTION
 Delete navigation property bulkUpload for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

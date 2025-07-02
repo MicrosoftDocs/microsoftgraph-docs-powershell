@@ -39,6 +39,8 @@ Get-MgBetaGroupDriveItemExtension -InputObject <IFilesIdentity> [-ExpandProperty
 The collection of open extensions defined for this item.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

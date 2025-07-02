@@ -49,6 +49,8 @@ Update-MgBetaTenantRelationshipManagedTenantAppPerformance -InputObject <IManage
 ## DESCRIPTION
 Update the navigation property appPerformances in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

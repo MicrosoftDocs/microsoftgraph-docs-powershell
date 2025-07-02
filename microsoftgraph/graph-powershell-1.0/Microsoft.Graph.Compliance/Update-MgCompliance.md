@@ -30,6 +30,8 @@ Update-MgCompliance -BodyParameter <Hashtable> [-ResponseHeadersVariable <String
 ## DESCRIPTION
 Update compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

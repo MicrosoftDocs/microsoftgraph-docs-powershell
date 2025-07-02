@@ -20,6 +20,8 @@ Remove-MgBetaSecurityPartner [-IfMatch <String>] [-ResponseHeadersVariable <Stri
 ## DESCRIPTION
 Delete navigation property partner for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

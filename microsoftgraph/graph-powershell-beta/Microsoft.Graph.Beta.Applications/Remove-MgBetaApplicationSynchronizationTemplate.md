@@ -32,6 +32,8 @@ Remove-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Delete navigation property templates for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

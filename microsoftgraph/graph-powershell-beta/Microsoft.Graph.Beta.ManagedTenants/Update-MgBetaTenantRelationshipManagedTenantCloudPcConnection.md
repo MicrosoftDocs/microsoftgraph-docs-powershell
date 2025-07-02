@@ -47,6 +47,8 @@ Update-MgBetaTenantRelationshipManagedTenantCloudPcConnection -InputObject <IMan
 ## DESCRIPTION
 Update the navigation property cloudPcConnections in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

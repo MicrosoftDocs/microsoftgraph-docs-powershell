@@ -50,6 +50,8 @@ New-MgGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to activities for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

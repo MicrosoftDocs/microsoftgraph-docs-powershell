@@ -32,6 +32,8 @@ Get-MgBetaIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuth
 ## DESCRIPTION
 Get the item of type microsoft.graph.onAuthenticationMethodLoadStartHandler as microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId

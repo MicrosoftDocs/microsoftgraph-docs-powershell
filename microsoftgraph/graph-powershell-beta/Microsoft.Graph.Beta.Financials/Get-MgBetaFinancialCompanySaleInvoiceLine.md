@@ -60,6 +60,8 @@ Get-MgBetaFinancialCompanySaleInvoiceLine -InputObject <IFinancialsIdentity> [-E
 ## DESCRIPTION
 Get salesInvoiceLines from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

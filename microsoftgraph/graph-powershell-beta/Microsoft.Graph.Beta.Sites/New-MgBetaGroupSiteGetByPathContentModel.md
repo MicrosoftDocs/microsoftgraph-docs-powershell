@@ -48,6 +48,8 @@ New-MgBetaGroupSiteGetByPathContentModel -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to contentModels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

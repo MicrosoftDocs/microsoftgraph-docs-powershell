@@ -33,6 +33,8 @@ Remove-MgUserDriveListItemDocumentSetVersionField -InputObject <IFilesIdentity> 
 ## DESCRIPTION
 Delete navigation property fields for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

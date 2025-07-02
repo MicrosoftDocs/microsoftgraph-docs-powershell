@@ -48,6 +48,8 @@ Update-MgDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property thumbnails in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgBetaPrintPrinterShareJobTaskDefinition -InputObject <IDevicesCloudPrintIde
 The printTaskDefinition that was used to create this task.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

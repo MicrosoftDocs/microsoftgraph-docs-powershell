@@ -48,6 +48,8 @@ Get-MgBetaContractMemberObject -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Invoke action getMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

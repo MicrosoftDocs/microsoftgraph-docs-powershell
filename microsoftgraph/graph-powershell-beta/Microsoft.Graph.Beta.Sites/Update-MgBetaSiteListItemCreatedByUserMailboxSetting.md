@@ -54,6 +54,8 @@ Update-MgBetaSiteListItemCreatedByUserMailboxSetting -InputObject <ISitesIdentit
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

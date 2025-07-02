@@ -28,6 +28,8 @@ New-MgBetaTeamworkTeamTemplate -BodyParameter <IMicrosoftGraphTeamTemplate> [-Re
 ## DESCRIPTION
 Create new navigation property to teamTemplates for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -82,6 +82,8 @@ Update-MgBetaShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property versions in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

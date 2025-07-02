@@ -28,6 +28,8 @@ Get-MgBetaReportBrowserUserCount -InputObject <IReportsIdentity> -OutFile <Strin
 ## DESCRIPTION
 Invoke function getBrowserUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -32,6 +32,8 @@ New-MgBetaDeviceManagementGroupPolicyDefinitionFile -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to groupPolicyDefinitionFiles for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

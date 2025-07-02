@@ -25,6 +25,8 @@ Get-MgGroupSiteGetByPathSite -GroupId <String> -Path <String> -SiteId <String> [
 ## DESCRIPTION
 The collection of the sub-sites under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

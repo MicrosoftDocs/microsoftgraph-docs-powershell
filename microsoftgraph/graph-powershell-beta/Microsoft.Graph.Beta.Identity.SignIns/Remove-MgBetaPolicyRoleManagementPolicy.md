@@ -32,6 +32,8 @@ Remove-MgBetaPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Delete navigation property roleManagementPolicies for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

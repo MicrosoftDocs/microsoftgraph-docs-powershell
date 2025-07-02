@@ -24,6 +24,8 @@ Remove-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentit
 ## DESCRIPTION
 Delete navigation property multiTenantOrganizationIdentitySynchronization for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

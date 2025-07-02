@@ -59,6 +59,8 @@ Update-MgBetaShareListContentType -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property contentTypes in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

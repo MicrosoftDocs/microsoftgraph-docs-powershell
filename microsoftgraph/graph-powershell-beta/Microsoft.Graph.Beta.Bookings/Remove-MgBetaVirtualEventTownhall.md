@@ -32,6 +32,8 @@ Remove-MgBetaVirtualEventTownhall -InputObject <IBookingsIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property townhalls for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

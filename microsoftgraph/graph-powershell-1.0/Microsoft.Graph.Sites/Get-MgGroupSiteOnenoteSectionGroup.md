@@ -67,6 +67,8 @@ The section groups in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

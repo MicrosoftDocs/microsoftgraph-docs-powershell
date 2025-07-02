@@ -47,6 +47,8 @@ Update-MgBetaFinancialCompanySaleQuoteCustomerPaymentTerm -InputObject <IFinanci
 ## DESCRIPTION
 Update the navigation property paymentTerm in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

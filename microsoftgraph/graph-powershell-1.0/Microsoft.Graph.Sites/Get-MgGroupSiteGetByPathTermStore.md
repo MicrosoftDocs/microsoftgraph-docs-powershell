@@ -40,6 +40,8 @@ Get-MgGroupSiteGetByPathTermStore -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 The default termStore under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

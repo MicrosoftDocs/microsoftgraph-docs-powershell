@@ -41,6 +41,8 @@ Delete a custom authenticationStrengthPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationStrengthPolicyId

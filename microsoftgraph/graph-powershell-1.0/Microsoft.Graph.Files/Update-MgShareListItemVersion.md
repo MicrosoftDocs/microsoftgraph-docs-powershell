@@ -82,6 +82,8 @@ Update-MgShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property versions in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -57,6 +57,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProgramControl.Read.All, ProgramControl.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

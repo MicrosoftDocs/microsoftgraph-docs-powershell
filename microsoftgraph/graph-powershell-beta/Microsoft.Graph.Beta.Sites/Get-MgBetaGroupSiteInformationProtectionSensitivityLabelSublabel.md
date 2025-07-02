@@ -38,6 +38,8 @@ Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -InputObject <I
 ## DESCRIPTION
 Get sublabels from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

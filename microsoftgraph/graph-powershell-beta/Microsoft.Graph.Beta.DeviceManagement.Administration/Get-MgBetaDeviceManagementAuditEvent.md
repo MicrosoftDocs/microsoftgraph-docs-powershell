@@ -48,6 +48,8 @@ The Audit Events
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -57,6 +57,8 @@ Update the navigation property androidForWorkEnrollmentProfiles in deviceManagem
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountId

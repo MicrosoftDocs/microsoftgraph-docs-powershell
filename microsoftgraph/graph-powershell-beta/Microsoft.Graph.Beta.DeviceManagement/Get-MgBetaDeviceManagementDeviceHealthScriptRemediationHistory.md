@@ -37,6 +37,8 @@ Function to get the number of remediations by a device health scripts
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementScripts.ReadWrite.All, DeviceManagementScripts.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceHealthScriptId

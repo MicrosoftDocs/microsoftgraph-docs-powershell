@@ -48,6 +48,8 @@ Update-MgBetaTeamPrimaryChannelPlannerPlanTaskAssignedToTaskBoardFormat -InputOb
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

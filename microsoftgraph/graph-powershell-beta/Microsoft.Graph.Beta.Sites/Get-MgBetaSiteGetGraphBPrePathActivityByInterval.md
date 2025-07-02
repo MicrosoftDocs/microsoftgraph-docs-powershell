@@ -35,6 +35,8 @@ Get-MgBetaSiteGetGraphBPrePathActivityByInterval -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

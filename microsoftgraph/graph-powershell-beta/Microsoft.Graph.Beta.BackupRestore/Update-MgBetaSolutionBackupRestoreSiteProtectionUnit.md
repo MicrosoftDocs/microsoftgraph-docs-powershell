@@ -52,6 +52,8 @@ Update-MgBetaSolutionBackupRestoreSiteProtectionUnit -InputObject <IBackupRestor
 ## DESCRIPTION
 Update the navigation property siteProtectionUnits in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

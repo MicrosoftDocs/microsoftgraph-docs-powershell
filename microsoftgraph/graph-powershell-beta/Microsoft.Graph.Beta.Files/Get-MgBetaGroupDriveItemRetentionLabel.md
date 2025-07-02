@@ -34,6 +34,8 @@ Get-MgBetaGroupDriveItemRetentionLabel -InputObject <IFilesIdentity> [-ExpandPro
 Information about retention label and settings enforced on the driveItem.
 Read-write.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

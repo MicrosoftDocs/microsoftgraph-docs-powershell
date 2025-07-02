@@ -48,6 +48,8 @@ New-MgUserOnenoteResource -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to resources for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,6 +50,8 @@ New-MgExternalConnectionItem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create new navigation property to items for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Acl

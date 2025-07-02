@@ -32,6 +32,8 @@ Remove-MgGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property dayNotes for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DayNoteId

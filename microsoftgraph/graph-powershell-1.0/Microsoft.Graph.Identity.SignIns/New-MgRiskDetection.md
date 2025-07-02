@@ -36,6 +36,8 @@ New-MgRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-ResponseHead
 ## DESCRIPTION
 Create new navigation property to riskDetections for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

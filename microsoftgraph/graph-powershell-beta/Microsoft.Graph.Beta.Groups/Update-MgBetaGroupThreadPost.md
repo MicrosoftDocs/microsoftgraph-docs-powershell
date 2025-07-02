@@ -61,6 +61,8 @@ Update-MgBetaGroupThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property posts in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

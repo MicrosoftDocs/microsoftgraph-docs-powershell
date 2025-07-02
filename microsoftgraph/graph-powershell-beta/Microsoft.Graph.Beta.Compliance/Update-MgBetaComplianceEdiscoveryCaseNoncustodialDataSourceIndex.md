@@ -29,6 +29,8 @@ Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <I
 ## DESCRIPTION
 Invoke action updateIndex
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

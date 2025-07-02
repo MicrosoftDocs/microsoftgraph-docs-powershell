@@ -32,6 +32,8 @@ Remove-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property history for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

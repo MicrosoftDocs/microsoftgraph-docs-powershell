@@ -32,6 +32,8 @@ Remove-MgApplicationSynchronization -InputObject <IApplicationsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property synchronization for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

@@ -29,6 +29,8 @@ Update-MgBetaSecurityDataDiscovery -BodyParameter <IMicrosoftGraphSecurityDataDi
 ## DESCRIPTION
 Update the navigation property dataDiscovery in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

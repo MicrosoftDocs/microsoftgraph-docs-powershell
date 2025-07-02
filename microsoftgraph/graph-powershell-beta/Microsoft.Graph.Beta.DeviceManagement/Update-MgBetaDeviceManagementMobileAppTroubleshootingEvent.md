@@ -64,6 +64,8 @@ Update the navigation property mobileAppTroubleshootingEvents in deviceManagemen
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

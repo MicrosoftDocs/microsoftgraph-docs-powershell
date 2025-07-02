@@ -37,6 +37,8 @@ Invoke action unshareForSchoolDataSyncService
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DepOnboardingSettingId

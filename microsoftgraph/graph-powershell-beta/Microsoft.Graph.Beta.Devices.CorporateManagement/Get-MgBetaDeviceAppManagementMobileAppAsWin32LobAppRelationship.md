@@ -39,6 +39,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship
 ## DESCRIPTION
 List of relationships for this mobile app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

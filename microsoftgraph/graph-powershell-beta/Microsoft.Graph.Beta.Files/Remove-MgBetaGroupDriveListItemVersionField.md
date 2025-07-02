@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveListItemVersionField -InputObject <IFilesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property fields for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

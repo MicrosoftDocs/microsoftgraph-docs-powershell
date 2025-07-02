@@ -32,6 +32,8 @@ Remove-MgBetaDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevice
 ## DESCRIPTION
 Delete navigation property installSummary for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

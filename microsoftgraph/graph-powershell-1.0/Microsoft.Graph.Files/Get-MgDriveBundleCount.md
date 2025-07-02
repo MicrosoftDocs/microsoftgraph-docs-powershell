@@ -32,6 +32,8 @@ Get-MgDriveBundleCount -InputObject <IFilesIdentity> [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

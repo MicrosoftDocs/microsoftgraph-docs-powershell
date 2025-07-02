@@ -56,6 +56,8 @@ New-MgBetaSiteGetByPathPermission -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to permissions for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -45,6 +45,8 @@ Confirm-MgBetaAdministrativeUnitMemberObject -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

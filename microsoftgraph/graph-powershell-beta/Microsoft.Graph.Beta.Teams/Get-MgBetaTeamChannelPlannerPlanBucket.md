@@ -41,6 +41,8 @@ Collection of buckets in the plan.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -28,6 +28,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityActions.Read.All, SecurityActions.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

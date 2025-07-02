@@ -36,6 +36,8 @@ Update-MgBetaInvitationInvitedUserMailboxSetting -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -37,6 +37,8 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSumma
 ## DESCRIPTION
 Create new navigation property to managementTemplateCollectionTenantSummaries for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

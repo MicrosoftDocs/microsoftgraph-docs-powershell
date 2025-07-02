@@ -29,6 +29,8 @@ Remove-MgBetaRoleManagementDirectoryTransitiveRoleAssignment -InputObject <IIden
 ## DESCRIPTION
 Delete navigation property transitiveRoleAssignments for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

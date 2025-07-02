@@ -34,6 +34,8 @@ Get-MgGroupDriveCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <St
 Identity of the user who created the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -48,6 +48,8 @@ Update-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property associatedTeams in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

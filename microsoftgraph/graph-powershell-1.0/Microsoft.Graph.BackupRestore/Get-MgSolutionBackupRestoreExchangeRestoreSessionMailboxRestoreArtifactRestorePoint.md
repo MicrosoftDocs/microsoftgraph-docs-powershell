@@ -34,6 +34,8 @@ Get-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePo
 ## DESCRIPTION
 Represents the date and time when an artifact is protected by a protectionPolicy and can be restored.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExchangeRestoreSessionId

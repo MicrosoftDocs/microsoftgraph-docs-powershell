@@ -49,6 +49,8 @@ New-MgBetaUserInformationProtectionThreatAssessmentRequest -InputObject <IIdenti
 ## DESCRIPTION
 Create new navigation property to threatAssessmentRequests for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

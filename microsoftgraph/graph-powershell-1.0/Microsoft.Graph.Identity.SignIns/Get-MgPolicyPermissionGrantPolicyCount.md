@@ -32,6 +32,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

@@ -63,6 +63,8 @@ Update-MgUserChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property messages in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

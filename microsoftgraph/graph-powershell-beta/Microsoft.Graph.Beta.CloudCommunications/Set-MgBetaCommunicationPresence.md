@@ -51,6 +51,8 @@ Set-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Set the availability and activity status in a presence session of an application for a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

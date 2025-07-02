@@ -35,6 +35,8 @@ New-MgPolicyRoleManagementPolicy -BodyParameter <IMicrosoftGraphUnifiedRoleManag
 ## DESCRIPTION
 Create new navigation property to roleManagementPolicies for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

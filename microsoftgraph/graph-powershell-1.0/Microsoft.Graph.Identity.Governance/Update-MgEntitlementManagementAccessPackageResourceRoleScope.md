@@ -51,6 +51,8 @@ Update-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property resourceRoleScopes in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageId

@@ -40,6 +40,8 @@ Get-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The set of open shifts in a scheduling group in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

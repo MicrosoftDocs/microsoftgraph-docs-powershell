@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteGetByPathTermStore -InputObject <ISitesIdentity> [-ExpandProp
 ## DESCRIPTION
 The termStore under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

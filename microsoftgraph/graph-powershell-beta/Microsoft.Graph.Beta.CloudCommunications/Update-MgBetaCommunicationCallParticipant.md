@@ -54,6 +54,8 @@ Update-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIden
 ## DESCRIPTION
 Update the navigation property participants in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

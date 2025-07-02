@@ -33,6 +33,8 @@ Remove-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplic
 ## DESCRIPTION
 Delete navigation property directories for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryDefinitionId

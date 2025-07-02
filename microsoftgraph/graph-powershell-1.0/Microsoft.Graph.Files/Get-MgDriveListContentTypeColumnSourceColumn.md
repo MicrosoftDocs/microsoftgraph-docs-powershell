@@ -32,6 +32,8 @@ Get-MgDriveListContentTypeColumnSourceColumn -InputObject <IFilesIdentity> [-Exp
 ## DESCRIPTION
 The source column for the content type column.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

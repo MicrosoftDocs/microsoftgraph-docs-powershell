@@ -44,6 +44,8 @@ Get-MgVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <IBooking
 List of attendance records of an attendance report.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property timesOff for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

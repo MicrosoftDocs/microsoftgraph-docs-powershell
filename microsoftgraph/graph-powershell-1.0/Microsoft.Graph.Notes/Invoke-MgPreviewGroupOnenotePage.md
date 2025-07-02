@@ -30,6 +30,8 @@ Invoke-MgPreviewGroupOnenotePage -InputObject <INotesIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

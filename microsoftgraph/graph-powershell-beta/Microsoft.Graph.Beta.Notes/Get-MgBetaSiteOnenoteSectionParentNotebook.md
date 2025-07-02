@@ -34,6 +34,8 @@ Get-MgBetaSiteOnenoteSectionParentNotebook -InputObject <INotesIdentity> [-Expan
 The notebook that contains the section.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

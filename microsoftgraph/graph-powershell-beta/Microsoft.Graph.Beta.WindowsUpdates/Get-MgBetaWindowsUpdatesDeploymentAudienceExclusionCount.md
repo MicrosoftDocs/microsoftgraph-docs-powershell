@@ -29,6 +29,8 @@ Get-MgBetaWindowsUpdatesDeploymentAudienceExclusionCount -InputObject <IWindowsU
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeploymentId

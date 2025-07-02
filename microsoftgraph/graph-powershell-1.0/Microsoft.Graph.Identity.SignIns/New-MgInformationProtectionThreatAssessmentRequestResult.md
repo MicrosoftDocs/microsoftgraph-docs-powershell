@@ -48,6 +48,8 @@ New-MgInformationProtectionThreatAssessmentRequestResult -InputObject <IIdentity
 ## DESCRIPTION
 Create new navigation property to results for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -20,6 +20,8 @@ Remove-MgBetaEducationReport [-IfMatch <String>] [-ResponseHeadersVariable <Stri
 ## DESCRIPTION
 Delete navigation property reports for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

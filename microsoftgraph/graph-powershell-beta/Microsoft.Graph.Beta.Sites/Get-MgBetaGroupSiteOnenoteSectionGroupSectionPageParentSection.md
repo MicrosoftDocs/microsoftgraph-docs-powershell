@@ -35,6 +35,8 @@ Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageParentSection -InputObject <ISi
 The section that contains the page.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

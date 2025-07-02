@@ -71,6 +71,8 @@ New-MgBetaTeamChannelPlannerPlanTask -InputObject <ITeamsIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to tasks for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount

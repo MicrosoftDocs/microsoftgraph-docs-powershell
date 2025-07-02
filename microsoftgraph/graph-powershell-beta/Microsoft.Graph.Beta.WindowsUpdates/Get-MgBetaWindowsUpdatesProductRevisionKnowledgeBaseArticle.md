@@ -29,6 +29,8 @@ Get-MgBetaWindowsUpdatesProductRevisionKnowledgeBaseArticle -InputObject <IWindo
 ## DESCRIPTION
 The knowledge base article associated with the product revision.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

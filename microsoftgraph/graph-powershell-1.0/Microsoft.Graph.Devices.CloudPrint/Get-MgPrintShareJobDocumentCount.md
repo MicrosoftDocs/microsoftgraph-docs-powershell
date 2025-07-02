@@ -32,6 +32,8 @@ Get-MgPrintShareJobDocumentCount -InputObject <IDevicesCloudPrintIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

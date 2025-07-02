@@ -48,6 +48,8 @@ Update-MgEntitlementManagementResourceScope -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Update the navigation property scopes in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

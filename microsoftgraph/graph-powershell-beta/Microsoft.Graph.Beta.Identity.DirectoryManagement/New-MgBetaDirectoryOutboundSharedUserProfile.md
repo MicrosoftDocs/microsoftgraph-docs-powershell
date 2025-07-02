@@ -29,6 +29,8 @@ New-MgBetaDirectoryOutboundSharedUserProfile -BodyParameter <IMicrosoftGraphOutb
 ## DESCRIPTION
 Create new navigation property to outboundSharedUserProfiles for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Remove-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSu
 ## DESCRIPTION
 Delete navigation property deviceCompliancePolicySettingStateSummaries for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceCompliancePolicySettingStateSummaryId

@@ -42,6 +42,8 @@ Get-MgBetaServicePrincipalTokenIssuancePolicy -InputObject <IApplicationsIdentit
 The tokenIssuancePolicies assigned to this service principal.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

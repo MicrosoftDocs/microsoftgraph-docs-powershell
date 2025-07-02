@@ -43,6 +43,8 @@ Get-MgBetaGroupMemberWithLicenseError -InputObject <IGroupsIdentity> [-ExpandPro
 A list of group members with license errors from this group-based license assignment.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

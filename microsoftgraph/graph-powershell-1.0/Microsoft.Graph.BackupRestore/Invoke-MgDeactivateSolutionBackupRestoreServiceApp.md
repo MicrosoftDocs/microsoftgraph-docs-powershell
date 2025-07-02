@@ -32,6 +32,8 @@ Invoke-MgDeactivateSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreI
 ## DESCRIPTION
 Deactivate a serviceApp.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

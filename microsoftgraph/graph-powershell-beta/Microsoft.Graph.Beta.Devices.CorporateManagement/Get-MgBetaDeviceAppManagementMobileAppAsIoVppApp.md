@@ -40,6 +40,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosVppApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

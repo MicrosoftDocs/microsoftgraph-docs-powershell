@@ -46,6 +46,8 @@ Update-MgBookingCurrency -InputObject <IBookingsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property bookingCurrencies in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

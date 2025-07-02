@@ -51,6 +51,8 @@ Update-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIden
 ## DESCRIPTION
 Update the properties of an accessPackageAssignmentWorkflowExtension object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

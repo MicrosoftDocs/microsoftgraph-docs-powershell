@@ -29,6 +29,8 @@ Remove-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIden
 ## DESCRIPTION
 Delete navigation property connectors for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConnectorId

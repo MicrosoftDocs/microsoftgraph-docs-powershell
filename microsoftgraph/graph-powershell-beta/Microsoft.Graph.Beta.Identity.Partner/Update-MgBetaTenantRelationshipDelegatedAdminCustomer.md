@@ -48,6 +48,8 @@ Update-MgBetaTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPar
 ## DESCRIPTION
 Update the navigation property delegatedAdminCustomers in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

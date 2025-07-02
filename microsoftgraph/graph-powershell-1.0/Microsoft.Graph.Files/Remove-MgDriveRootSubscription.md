@@ -32,6 +32,8 @@ Remove-MgDriveRootSubscription -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property subscriptions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

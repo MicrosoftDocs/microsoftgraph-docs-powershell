@@ -68,6 +68,8 @@ New-MgGroupDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

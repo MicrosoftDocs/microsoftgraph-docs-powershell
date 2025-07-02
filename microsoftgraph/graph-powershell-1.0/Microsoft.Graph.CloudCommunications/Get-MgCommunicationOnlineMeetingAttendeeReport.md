@@ -34,6 +34,8 @@ Get-MgCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunication
 The content stream of the attendee report of a Microsoft Teams live event.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -21,6 +21,8 @@ Remove-MgBetaRoleManagementCloudPc [-IfMatch <String>] [-ResponseHeadersVariable
 ## DESCRIPTION
 Delete navigation property cloudPC for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

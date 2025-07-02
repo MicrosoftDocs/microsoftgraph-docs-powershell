@@ -31,6 +31,8 @@ Remove-MgBetaCommunicationCallContentSharingSessionPngOfCurrentSlide
 ## DESCRIPTION
 Delete pngOfCurrentSlide for the navigation property contentSharingSessions in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallId

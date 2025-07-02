@@ -46,6 +46,8 @@ Remove-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property documentSetVersions for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

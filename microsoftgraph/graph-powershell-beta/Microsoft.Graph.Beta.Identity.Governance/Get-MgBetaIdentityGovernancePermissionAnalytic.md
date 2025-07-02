@@ -21,6 +21,8 @@ Get-MgBetaIdentityGovernancePermissionAnalytic [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Get permissionsAnalytics from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

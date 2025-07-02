@@ -33,6 +33,8 @@ Update-MgBetaRoleManagementExchange -BodyParameter <IMicrosoftGraphUnifiedRbacAp
 ## DESCRIPTION
 Update the navigation property exchange in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

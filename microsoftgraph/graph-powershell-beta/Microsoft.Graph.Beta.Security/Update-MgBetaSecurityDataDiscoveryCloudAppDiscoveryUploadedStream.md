@@ -51,6 +51,8 @@ Update-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream -InputObject <
 ## DESCRIPTION
 Update the navigation property uploadedStreams in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

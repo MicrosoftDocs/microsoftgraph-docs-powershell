@@ -52,6 +52,8 @@ Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <IId
 ## DESCRIPTION
 Update the navigation property localizations in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

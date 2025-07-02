@@ -45,6 +45,8 @@ Create new navigation property to wdacSupplementalPolicies for deviceAppManageme
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -56,6 +56,8 @@ Update-MgUserDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property itemActivityStats in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

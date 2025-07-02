@@ -23,6 +23,8 @@ Get-MgVirtualEventCount [-Filter <String>] [-Search <String>] [-ResponseHeadersV
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

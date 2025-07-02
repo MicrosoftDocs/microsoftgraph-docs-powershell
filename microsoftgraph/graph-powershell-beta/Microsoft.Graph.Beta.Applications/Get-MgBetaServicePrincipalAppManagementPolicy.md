@@ -40,6 +40,8 @@ Get-MgBetaServicePrincipalAppManagementPolicy -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 The appManagementPolicy applied to this service principal.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -92,6 +92,8 @@ New-MgGroupSiteTermStoreSetTerm -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to terms for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

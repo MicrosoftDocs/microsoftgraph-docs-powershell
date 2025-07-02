@@ -48,6 +48,8 @@ Update-MgBetaUserSettingWindows -InputObject <IUsersIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property windows in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

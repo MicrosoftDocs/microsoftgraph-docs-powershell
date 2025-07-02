@@ -30,6 +30,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointReportExportJob
 ## DESCRIPTION
 Delete navigation property exportJobs for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcExportJobId

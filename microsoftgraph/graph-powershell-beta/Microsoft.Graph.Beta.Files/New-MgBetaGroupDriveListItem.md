@@ -64,6 +64,8 @@ New-MgBetaGroupDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to items for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

@@ -22,6 +22,8 @@ Request-MgBetaPrivilegedApprovalMy [-Count] [-ExpandProperty <String[]>] [-Filte
 ## DESCRIPTION
 Invoke function myRequests
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

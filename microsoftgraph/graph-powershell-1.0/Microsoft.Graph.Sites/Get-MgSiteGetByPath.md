@@ -25,6 +25,8 @@ Get-MgSiteGetByPath -Path <String> -SiteId <String> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 The collection of lists under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

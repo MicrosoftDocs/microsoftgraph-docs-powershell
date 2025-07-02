@@ -78,6 +78,8 @@ Remove-MgSiteTermStoreSetParentGroupSetChildRelation -InputObject <ISitesIdentit
 ## DESCRIPTION
 Delete navigation property relations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

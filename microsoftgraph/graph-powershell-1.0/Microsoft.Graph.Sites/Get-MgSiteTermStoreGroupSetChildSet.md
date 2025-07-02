@@ -75,6 +75,8 @@ Get-MgSiteTermStoreGroupSetChildSet -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 The \[set\] in which the term is created.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

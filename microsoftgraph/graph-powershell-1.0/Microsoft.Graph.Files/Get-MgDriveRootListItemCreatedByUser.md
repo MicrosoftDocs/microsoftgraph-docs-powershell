@@ -34,6 +34,8 @@ Get-MgDriveRootListItemCreatedByUser -InputObject <IFilesIdentity> [-ExpandPrope
 Identity of the user who created the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

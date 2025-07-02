@@ -50,6 +50,8 @@ Update-MgGroupDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property versions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

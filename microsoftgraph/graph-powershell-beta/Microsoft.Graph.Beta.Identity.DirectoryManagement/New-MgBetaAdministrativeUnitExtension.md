@@ -43,6 +43,8 @@ New-MgBetaAdministrativeUnitExtension -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 Create new navigation property to extensions for administrativeUnits
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

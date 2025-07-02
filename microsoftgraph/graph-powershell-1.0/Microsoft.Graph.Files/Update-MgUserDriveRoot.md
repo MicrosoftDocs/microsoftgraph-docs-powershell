@@ -82,6 +82,8 @@ Update-MgUserDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property root in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

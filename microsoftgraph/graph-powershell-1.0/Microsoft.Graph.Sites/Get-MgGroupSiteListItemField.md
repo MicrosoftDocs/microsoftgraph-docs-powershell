@@ -32,6 +32,8 @@ Get-MgGroupSiteListItemField -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The values of the columns set on this list item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ Remove-MgRoleManagementDirectoryRoleAssignmentAppScope -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property appScope for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

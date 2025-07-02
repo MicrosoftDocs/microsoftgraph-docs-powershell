@@ -50,6 +50,8 @@ Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdent
 ## DESCRIPTION
 Update the navigation property settings in organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

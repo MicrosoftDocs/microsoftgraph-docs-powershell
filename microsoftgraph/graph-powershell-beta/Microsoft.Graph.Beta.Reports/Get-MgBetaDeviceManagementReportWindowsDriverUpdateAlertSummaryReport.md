@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportWindowsDriverUpdateAlertSummaryReport -OutFile <
 ## DESCRIPTION
 Invoke action getWindowsDriverUpdateAlertSummaryReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

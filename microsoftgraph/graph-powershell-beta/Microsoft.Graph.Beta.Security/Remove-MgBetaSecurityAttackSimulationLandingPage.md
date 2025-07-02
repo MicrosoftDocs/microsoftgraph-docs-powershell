@@ -32,6 +32,8 @@ Remove-MgBetaSecurityAttackSimulationLandingPage -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property landingPages for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -44,6 +44,8 @@ Collection of common folders available in OneDrive.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

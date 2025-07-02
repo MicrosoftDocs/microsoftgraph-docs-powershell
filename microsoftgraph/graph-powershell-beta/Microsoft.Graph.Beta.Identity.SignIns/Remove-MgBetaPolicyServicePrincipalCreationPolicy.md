@@ -29,6 +29,8 @@ Remove-MgBetaPolicyServicePrincipalCreationPolicy -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Delete navigation property servicePrincipalCreationPolicies for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

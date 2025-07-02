@@ -60,6 +60,8 @@ Update-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParamet
 ## DESCRIPTION
 Update the navigation property childFolders in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

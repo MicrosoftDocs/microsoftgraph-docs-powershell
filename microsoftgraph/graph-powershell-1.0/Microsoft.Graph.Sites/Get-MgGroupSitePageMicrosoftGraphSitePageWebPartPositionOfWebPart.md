@@ -32,6 +32,8 @@ Get-MgGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart -InputObject <
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

@@ -31,6 +31,8 @@ Update-MgBetaPolicyFederatedTokenValidationPolicy
 ## DESCRIPTION
 Update the properties of a federatedTokenValidationPolicy object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

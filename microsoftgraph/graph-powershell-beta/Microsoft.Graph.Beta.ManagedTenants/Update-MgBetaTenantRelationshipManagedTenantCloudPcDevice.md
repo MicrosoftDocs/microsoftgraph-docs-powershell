@@ -51,6 +51,8 @@ Update-MgBetaTenantRelationshipManagedTenantCloudPcDevice -InputObject <IManaged
 ## DESCRIPTION
 Update the navigation property cloudPcDevices in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

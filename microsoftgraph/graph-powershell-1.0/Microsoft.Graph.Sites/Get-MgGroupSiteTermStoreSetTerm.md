@@ -62,6 +62,8 @@ Get-MgGroupSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 All the terms under the set.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

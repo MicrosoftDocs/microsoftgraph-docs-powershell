@@ -41,6 +41,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport
 ## DESCRIPTION
 Represents the aggregation of task execution data for tasks within a workflow object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

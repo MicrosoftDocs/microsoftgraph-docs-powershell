@@ -50,6 +50,8 @@ New-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Create new navigation property to deviceCompliancePolicyStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

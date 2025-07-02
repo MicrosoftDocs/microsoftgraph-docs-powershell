@@ -50,6 +50,8 @@ Update-MgBetaUserInsightTrending -InputObject <IUsersIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property trending in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

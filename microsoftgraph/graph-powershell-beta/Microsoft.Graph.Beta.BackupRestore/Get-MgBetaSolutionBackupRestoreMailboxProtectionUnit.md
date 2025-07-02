@@ -40,6 +40,8 @@ Get-MgBetaSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRestor
 ## DESCRIPTION
 The list of mailbox protection units in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

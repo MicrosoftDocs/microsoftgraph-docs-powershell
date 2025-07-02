@@ -30,6 +30,8 @@ Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation -Inpu
 ## DESCRIPTION
 Get lastIndexOperation from compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

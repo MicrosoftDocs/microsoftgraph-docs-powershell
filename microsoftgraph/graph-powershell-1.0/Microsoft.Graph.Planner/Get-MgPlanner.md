@@ -23,6 +23,8 @@ Get-MgPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHead
 ## DESCRIPTION
 Get planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

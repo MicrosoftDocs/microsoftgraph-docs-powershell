@@ -33,6 +33,8 @@ Remove-MgVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <IBook
 ## DESCRIPTION
 Delete navigation property attendanceRecords for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttendanceRecordId

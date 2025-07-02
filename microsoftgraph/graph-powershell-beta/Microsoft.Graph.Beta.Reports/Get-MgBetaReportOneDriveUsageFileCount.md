@@ -31,6 +31,8 @@ Get-MgBetaReportOneDriveUsageFileCount -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Invoke function getOneDriveUsageFileCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

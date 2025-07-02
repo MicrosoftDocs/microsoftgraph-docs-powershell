@@ -44,6 +44,8 @@ Provided so that callers can get the directory objects using $expand at the same
 Read-only.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

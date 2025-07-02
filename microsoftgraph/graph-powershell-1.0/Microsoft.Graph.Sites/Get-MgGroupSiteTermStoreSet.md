@@ -64,6 +64,8 @@ Get-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 Collection of all sets available in the term store.
 This relationship can only be used to load a specific term set.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

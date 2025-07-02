@@ -37,6 +37,8 @@ Get-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IIdent
 ## DESCRIPTION
 Get dataLossPreventionPolicies from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

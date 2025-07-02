@@ -29,6 +29,8 @@ Remove-MgBetaOrganizationSettingContactInsight -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Delete navigation property contactInsights for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

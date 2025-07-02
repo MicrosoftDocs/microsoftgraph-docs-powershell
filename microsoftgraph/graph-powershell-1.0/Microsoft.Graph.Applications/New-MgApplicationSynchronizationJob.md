@@ -52,6 +52,8 @@ New-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to jobs for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

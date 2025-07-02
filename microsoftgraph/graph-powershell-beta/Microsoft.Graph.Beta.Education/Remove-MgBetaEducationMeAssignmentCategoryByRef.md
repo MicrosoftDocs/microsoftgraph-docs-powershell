@@ -32,6 +32,8 @@ Remove-MgBetaEducationMeAssignmentCategoryByRef -InputObject <IEducationIdentity
 ## DESCRIPTION
 Delete ref of navigation property categories for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

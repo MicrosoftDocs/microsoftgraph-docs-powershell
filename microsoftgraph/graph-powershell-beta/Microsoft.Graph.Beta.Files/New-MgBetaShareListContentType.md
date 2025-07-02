@@ -58,6 +58,8 @@ New-MgBetaShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to contentTypes for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

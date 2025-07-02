@@ -52,6 +52,8 @@ New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile
 ## DESCRIPTION
 Create new navigation property to files for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -69,6 +69,8 @@ Create new navigation property to tasks for users
 | Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -34,6 +34,8 @@ Remove-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Delete navigation property allowedValues for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AllowedValueId

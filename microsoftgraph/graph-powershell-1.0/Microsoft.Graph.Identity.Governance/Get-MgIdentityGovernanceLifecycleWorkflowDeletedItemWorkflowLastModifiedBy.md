@@ -33,6 +33,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra identity that last modified the workflow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

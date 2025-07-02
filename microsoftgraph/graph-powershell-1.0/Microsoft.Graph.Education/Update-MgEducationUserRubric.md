@@ -52,6 +52,8 @@ Update-MgEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property rubrics in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

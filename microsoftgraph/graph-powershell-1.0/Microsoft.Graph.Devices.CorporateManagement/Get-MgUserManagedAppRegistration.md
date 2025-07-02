@@ -40,6 +40,8 @@ Get-MgUserManagedAppRegistration -InputObject <IDevicesCorporateManagementIdenti
 ## DESCRIPTION
 Zero or more managed app registrations that belong to the user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

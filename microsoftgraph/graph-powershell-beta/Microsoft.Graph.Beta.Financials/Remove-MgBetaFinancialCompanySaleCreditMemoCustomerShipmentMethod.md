@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanySaleCreditMemoCustomerShipmentMethod -InputObject <
 ## DESCRIPTION
 Delete navigation property shipmentMethod for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

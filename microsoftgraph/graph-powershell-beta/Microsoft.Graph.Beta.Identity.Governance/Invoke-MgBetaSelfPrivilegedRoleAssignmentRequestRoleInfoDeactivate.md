@@ -29,6 +29,8 @@ Invoke-MgBetaSelfPrivilegedRoleAssignmentRequestRoleInfoDeactivate -InputObject 
 ## DESCRIPTION
 Invoke action selfDeactivate
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

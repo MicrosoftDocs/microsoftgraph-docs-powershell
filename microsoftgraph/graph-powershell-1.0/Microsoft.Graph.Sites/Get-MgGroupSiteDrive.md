@@ -40,6 +40,8 @@ Get-MgGroupSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 The collection of drives (document libraries) under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -43,6 +43,8 @@ This method doesn't delete the rubric itself and can only be performed by teache
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

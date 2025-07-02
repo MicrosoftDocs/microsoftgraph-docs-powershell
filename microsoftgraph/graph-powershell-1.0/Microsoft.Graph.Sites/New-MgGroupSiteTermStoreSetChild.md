@@ -166,6 +166,8 @@ New-MgGroupSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to children for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

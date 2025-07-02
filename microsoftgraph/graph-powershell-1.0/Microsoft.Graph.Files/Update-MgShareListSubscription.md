@@ -55,6 +55,8 @@ Update-MgShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property subscriptions in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

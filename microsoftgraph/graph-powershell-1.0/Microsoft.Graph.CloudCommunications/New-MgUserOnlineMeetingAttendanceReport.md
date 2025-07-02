@@ -50,6 +50,8 @@ New-MgUserOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Create new navigation property to attendanceReports for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

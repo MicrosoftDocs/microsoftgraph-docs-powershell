@@ -32,6 +32,8 @@ Remove-MgBetaTeamworkDeletedChat -InputObject <ITeamsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property deletedChats for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeletedChatId

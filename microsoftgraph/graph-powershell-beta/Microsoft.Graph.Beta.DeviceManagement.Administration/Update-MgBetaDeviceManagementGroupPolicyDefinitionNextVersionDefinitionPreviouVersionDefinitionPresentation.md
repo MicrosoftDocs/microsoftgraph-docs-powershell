@@ -49,6 +49,8 @@ Update-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVe
 ## DESCRIPTION
 Update the navigation property presentations in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

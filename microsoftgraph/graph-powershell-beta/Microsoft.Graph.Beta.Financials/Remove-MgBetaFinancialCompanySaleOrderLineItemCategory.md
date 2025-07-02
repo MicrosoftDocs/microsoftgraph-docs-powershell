@@ -43,6 +43,8 @@ Remove-MgBetaFinancialCompanySaleOrderLineItemCategory -InputObject <IFinancials
 ## DESCRIPTION
 Delete navigation property itemCategory for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

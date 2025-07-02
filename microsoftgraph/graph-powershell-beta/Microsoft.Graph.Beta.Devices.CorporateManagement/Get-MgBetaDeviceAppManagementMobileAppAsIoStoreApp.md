@@ -40,6 +40,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp -InputObject <IDevicesCorpora
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosStoreApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

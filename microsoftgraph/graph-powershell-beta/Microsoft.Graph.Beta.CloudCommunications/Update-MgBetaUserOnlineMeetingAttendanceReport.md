@@ -86,6 +86,8 @@ Update-MgBetaUserOnlineMeetingAttendanceReport -InputObject <ICloudCommunication
 ## DESCRIPTION
 Update the navigation property attendanceReports in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

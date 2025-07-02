@@ -33,6 +33,8 @@ New-MgDeviceAppManagementManagedAppPolicy -BodyParameter <IMicrosoftGraphManaged
 ## DESCRIPTION
 Create new navigation property to managedAppPolicies for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

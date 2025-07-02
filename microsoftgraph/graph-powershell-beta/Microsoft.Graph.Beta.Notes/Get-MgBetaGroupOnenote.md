@@ -32,6 +32,8 @@ Get-MgBetaGroupOnenote -InputObject <INotesIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Get onenote from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

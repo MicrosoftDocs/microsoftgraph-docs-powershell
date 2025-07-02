@@ -48,6 +48,8 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource -InputObject 
 ## DESCRIPTION
 Update the navigation property publishedResources in onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

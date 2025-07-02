@@ -32,6 +32,8 @@ Invoke-MgBetaUnfollowDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVa
 ## DESCRIPTION
 Unfollow a driveItem.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

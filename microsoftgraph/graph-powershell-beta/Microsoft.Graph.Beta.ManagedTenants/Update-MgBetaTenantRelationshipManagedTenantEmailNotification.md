@@ -51,6 +51,8 @@ Update-MgBetaTenantRelationshipManagedTenantEmailNotification -InputObject <IMan
 ## DESCRIPTION
 Update the navigation property managedTenantEmailNotifications in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

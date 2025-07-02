@@ -30,6 +30,8 @@ Remove-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition
 ## DESCRIPTION
 Delete navigation property previousVersionDefinition for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupPolicyDefinitionId

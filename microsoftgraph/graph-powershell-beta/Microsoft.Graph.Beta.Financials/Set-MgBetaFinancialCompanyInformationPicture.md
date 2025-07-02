@@ -30,6 +30,8 @@ Set-MgBetaFinancialCompanyInformationPicture -InputObject <IFinancialsIdentity> 
 ## DESCRIPTION
 Update picture for the navigation property companyInformation in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

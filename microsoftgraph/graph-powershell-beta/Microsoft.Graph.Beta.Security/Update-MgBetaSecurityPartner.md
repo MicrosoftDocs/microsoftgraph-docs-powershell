@@ -30,6 +30,8 @@ Update-MgBetaSecurityPartner -BodyParameter <IMicrosoftGraphPartnerSecurity>
 ## DESCRIPTION
 Update the navigation property partner in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

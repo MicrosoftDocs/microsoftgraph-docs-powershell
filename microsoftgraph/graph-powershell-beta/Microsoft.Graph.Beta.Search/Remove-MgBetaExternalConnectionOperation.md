@@ -32,6 +32,8 @@ Remove-MgBetaExternalConnectionOperation -InputObject <ISearchIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property operations for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConnectionOperationId

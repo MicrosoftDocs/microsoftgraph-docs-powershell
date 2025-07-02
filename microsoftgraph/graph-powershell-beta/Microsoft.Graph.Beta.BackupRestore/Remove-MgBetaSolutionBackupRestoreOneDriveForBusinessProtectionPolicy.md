@@ -33,6 +33,8 @@ Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy -InputObje
 ## DESCRIPTION
 Delete navigation property oneDriveForBusinessProtectionPolicies for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

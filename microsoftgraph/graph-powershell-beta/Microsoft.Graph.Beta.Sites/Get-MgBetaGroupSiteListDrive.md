@@ -34,6 +34,8 @@ Get-MgBetaGroupSiteListDrive -InputObject <ISitesIdentity> [-ExpandProperty <Str
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

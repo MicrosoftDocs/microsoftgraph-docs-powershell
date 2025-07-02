@@ -35,6 +35,8 @@ New-MgBetaDirectorySubscription -BodyParameter <IMicrosoftGraphCompanySubscripti
 ## DESCRIPTION
 Create new navigation property to subscriptions for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -52,6 +52,8 @@ Update-MgSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackupRest
 ## DESCRIPTION
 Update the navigation property sharePointRestoreSessions in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

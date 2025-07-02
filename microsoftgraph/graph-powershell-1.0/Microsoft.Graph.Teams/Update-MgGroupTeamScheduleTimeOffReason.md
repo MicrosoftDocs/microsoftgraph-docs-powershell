@@ -50,6 +50,8 @@ Update-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property timeOffReasons in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

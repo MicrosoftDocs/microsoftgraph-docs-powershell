@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedAccessResource -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Delete navigation property resources for privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GovernanceResourceId

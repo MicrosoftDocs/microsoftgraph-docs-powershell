@@ -64,6 +64,8 @@ New-MgBetaUserChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to messages for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

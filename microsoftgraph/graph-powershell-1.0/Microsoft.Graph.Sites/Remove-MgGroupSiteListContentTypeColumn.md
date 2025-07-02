@@ -33,6 +33,8 @@ Remove-MgGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

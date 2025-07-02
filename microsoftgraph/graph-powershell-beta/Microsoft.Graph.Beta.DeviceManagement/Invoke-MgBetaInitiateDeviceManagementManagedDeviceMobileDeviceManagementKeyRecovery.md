@@ -37,6 +37,8 @@ Perform MDM key recovery and TPM attestation
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

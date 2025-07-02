@@ -29,6 +29,8 @@ Get-MgBetaCommunicationCallRecordSmLog -InputObject <ICloudCommunicationsIdentit
 ## DESCRIPTION
 Get the log of a sent/received SMS as a collection of smsLogRow entries.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

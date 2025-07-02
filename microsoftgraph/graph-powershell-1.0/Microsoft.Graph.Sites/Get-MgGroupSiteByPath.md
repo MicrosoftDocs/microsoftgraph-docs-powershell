@@ -30,6 +30,8 @@ Get-MgGroupSiteByPath -InputObject <ISitesIdentity> [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Invoke function getByPath
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

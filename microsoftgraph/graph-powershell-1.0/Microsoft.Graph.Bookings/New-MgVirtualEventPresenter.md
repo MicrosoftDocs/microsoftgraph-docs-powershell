@@ -48,6 +48,8 @@ New-MgVirtualEventPresenter -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to presenters for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -33,6 +33,8 @@ Set-MgBetaUserOnenoteSectionGroupSectionPageContent -InputObject <INotesIdentity
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

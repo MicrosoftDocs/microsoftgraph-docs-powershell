@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property hostComponents for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

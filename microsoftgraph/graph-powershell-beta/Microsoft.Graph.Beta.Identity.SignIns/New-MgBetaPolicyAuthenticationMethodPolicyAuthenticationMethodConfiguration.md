@@ -33,6 +33,8 @@ New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 ## DESCRIPTION
 Create new navigation property to authenticationMethodConfigurations for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

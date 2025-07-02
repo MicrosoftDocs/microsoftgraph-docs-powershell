@@ -48,6 +48,8 @@ New-MgEducationMeAssignmentResource -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to resources for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval -InputObject 
 ## DESCRIPTION
 Delete navigation property assignmentApprovals for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

@@ -34,6 +34,8 @@ Get-MgBetaUserDeviceDelta -InputObject <ICrossDeviceExperiencesIdentity> [-Expan
 Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

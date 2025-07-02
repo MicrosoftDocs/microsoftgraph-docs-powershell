@@ -48,6 +48,8 @@ New-MgBetaGroupTeamChannelPlannerPlanBucket -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to buckets for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

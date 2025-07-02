@@ -34,6 +34,8 @@ Get-MgSecurityThreatIntelligencePassiveDnsRecordParentHost -InputObject <ISecuri
 The parent host related to this passiveDnsRecord entry.
 Generally, this is the value that you can search to discover this passiveDnsRecord value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

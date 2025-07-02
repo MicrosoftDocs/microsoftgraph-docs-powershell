@@ -49,6 +49,8 @@ Add-MgBetaGroupSiteContentTypeCopy -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Invoke action addCopy
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

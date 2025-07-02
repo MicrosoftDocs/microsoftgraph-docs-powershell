@@ -48,6 +48,8 @@ Update-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property teamsApps in appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

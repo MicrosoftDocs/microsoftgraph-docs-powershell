@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property articles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ArticleId

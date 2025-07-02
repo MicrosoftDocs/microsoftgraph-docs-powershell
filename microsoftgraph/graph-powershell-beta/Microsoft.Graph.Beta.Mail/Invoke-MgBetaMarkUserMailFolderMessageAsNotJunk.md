@@ -48,6 +48,8 @@ Invoke-MgBetaMarkUserMailFolderMessageAsNotJunk -InputObject <IMailIdentity>
 Mark a message as not junk.
 This API removes the sender from the list of blocked senders and moves the message to the Inbox folder, when moveToInbox is true.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

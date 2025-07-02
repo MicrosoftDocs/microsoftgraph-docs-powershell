@@ -21,6 +21,8 @@ Remove-MgBetaSecurityInformationProtectionLabelPolicySetting [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property labelPolicySettings for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

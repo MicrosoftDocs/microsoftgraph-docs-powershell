@@ -29,6 +29,8 @@ Get-MgBetaUserInformationProtectionBitlockerRecoveryKeyCount -InputObject <IIden
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

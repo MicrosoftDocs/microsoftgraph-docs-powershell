@@ -49,6 +49,8 @@ New-MgSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to activities for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

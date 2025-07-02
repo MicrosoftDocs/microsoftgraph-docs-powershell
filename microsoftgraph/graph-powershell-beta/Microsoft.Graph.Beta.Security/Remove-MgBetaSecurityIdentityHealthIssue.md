@@ -32,6 +32,8 @@ Remove-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property healthIssues for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

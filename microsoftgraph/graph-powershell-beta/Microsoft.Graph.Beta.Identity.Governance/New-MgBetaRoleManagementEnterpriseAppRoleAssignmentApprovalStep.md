@@ -47,6 +47,8 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -InputObject <II
 ## DESCRIPTION
 Create new navigation property to steps for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

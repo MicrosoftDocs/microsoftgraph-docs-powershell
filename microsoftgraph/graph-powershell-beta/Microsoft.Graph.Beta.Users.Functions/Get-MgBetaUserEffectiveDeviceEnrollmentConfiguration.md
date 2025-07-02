@@ -31,6 +31,8 @@ Get-MgBetaUserEffectiveDeviceEnrollmentConfiguration -InputObject <IUsersFunctio
 ## DESCRIPTION
 Invoke function getEffectiveDeviceEnrollmentConfigurations
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

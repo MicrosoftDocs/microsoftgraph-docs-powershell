@@ -29,6 +29,8 @@ Remove-MgBetaAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 Delete navigation property colorIcon for appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

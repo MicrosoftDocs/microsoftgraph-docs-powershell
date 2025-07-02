@@ -32,6 +32,8 @@ Remove-MgDriveItemVersionContent -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 The content stream for this version of the item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

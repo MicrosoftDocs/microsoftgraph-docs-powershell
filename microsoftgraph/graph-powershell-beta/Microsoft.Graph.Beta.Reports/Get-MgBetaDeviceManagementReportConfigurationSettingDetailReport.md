@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportConfigurationSettingDetailReport -OutFile <Strin
 ## DESCRIPTION
 Invoke action getConfigurationSettingDetailsReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

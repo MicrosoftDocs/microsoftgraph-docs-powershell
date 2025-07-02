@@ -32,6 +32,8 @@ Remove-MgRoleManagementEntitlementManagementResourceNamespace -InputObject <IIde
 ## DESCRIPTION
 Delete navigation property resourceNamespaces for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

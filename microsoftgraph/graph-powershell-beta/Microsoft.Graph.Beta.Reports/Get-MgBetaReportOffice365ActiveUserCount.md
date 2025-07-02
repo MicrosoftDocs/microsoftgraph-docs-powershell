@@ -34,6 +34,8 @@ Get-MgBetaReportOffice365ActiveUserCount -InputObject <IReportsIdentity> [-Count
 ## DESCRIPTION
 Invoke function getOffice365ActiveUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

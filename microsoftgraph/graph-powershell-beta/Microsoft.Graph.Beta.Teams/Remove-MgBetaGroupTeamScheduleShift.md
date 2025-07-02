@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property shifts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

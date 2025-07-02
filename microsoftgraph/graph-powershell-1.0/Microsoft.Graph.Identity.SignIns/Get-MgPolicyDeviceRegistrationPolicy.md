@@ -32,6 +32,8 @@ Get deviceRegistrationPolicy from policies
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

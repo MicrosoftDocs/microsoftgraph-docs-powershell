@@ -49,6 +49,8 @@ Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 ## DESCRIPTION
 Update the navigation property permissionsRequestChanges in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveOccurrenceStatus

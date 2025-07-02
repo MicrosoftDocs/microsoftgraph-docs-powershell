@@ -46,6 +46,8 @@ Update-MgBetaDeviceManagementTemplateMigratableToSetting -InputObject <IDeviceMa
 ## DESCRIPTION
 Update the navigation property settings in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

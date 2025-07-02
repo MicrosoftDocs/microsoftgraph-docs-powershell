@@ -29,6 +29,8 @@ Update-MgBetaInformationProtectionPolicy -BodyParameter <IMicrosoftGraphInformat
 ## DESCRIPTION
 Update the navigation property policy in informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

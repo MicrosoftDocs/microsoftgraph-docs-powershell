@@ -47,6 +47,8 @@ Update-MgUserInsight -InputObject <IUsersIdentity> -BodyParameter <Hashtable>
 ## DESCRIPTION
 Update the navigation property insights in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

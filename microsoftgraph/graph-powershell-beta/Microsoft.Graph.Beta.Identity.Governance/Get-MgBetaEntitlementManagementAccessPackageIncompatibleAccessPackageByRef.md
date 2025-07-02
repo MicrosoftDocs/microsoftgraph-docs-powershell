@@ -34,6 +34,8 @@ Retrieve a list of the accessPackage objects marked as incompatible on an access
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageId

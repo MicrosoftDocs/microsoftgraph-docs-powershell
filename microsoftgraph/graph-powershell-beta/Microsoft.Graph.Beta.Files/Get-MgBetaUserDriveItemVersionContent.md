@@ -32,6 +32,8 @@ Get-MgBetaUserDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <St
 ## DESCRIPTION
 Get content for the navigation property versions from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

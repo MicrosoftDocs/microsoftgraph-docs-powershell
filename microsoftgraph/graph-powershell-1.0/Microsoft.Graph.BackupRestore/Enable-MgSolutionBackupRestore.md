@@ -34,6 +34,8 @@ Enable-MgSolutionBackupRestore
 ## DESCRIPTION
 Enable the Microsoft 365 Backup Storage service for a tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

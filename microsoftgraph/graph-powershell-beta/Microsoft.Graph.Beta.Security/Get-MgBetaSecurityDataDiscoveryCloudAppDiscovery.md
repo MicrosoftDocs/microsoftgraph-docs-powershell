@@ -21,6 +21,8 @@ Get-MgBetaSecurityDataDiscoveryCloudAppDiscovery [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 The available entities are IP addresses, devices, and users who access a cloud app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

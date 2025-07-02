@@ -37,6 +37,8 @@ Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment -InputObject <IDeviceMa
 ## DESCRIPTION
 Resource to grant access to users or groups that are transitive.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

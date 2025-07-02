@@ -34,6 +34,8 @@ Get-MgPrintPrinterTaskTriggerDefinition -InputObject <IDevicesCloudPrintIdentity
 An abstract definition that is used to create a printTask when triggered by a print event.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

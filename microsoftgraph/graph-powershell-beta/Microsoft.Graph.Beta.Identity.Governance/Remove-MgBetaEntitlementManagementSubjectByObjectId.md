@@ -29,6 +29,8 @@ Remove-MgBetaEntitlementManagementSubjectByObjectId -InputObject <IIdentityGover
 ## DESCRIPTION
 Delete navigation property subjects for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -56,6 +56,8 @@ Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 A collection of teams with which a channel is shared.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

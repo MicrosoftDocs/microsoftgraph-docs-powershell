@@ -43,6 +43,8 @@ Update-MgBetaGroupTeamChannelPlanner -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property planner in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

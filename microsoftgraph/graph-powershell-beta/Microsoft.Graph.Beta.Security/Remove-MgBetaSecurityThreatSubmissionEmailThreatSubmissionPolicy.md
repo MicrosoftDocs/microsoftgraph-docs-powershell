@@ -29,6 +29,8 @@ Remove-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <I
 ## DESCRIPTION
 Delete navigation property emailThreatSubmissionPolicies for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EmailThreatSubmissionPolicyId

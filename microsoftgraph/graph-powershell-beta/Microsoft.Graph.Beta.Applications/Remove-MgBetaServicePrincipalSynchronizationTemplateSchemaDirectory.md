@@ -33,6 +33,8 @@ Remove-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject
 ## DESCRIPTION
 Delete navigation property directories for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryDefinitionId

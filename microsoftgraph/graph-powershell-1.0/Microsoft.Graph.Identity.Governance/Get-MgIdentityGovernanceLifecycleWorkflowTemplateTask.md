@@ -42,6 +42,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask -InputObject <IIdentityGov
 Represents the configured tasks to execute and their execution sequence within a workflow.
 This relationship is expanded by default.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -49,6 +49,8 @@ Update-MgBetaPrivilegedApprovalRoleInfoSetting -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Update the navigation property settings in privilegedApproval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

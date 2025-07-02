@@ -31,6 +31,8 @@ Set-MgBetaCommunicationCallContentSharingSessionPngOfCurrentSlide -InputObject <
 ## DESCRIPTION
 Update pngOfCurrentSlide for the navigation property contentSharingSessions in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallId

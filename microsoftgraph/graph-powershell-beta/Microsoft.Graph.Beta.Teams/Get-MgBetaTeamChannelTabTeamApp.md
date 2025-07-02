@@ -32,6 +32,8 @@ Get-MgBetaTeamChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The application that is linked to the tab.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

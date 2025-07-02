@@ -34,6 +34,8 @@ New-MgBetaSecurityThreatIntelligenceHostSslCertificate
 ## DESCRIPTION
 Create new navigation property to hostSslCertificates for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

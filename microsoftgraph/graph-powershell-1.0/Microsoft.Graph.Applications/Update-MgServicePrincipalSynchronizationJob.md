@@ -52,6 +52,8 @@ Update-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property jobs in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

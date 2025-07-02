@@ -51,6 +51,8 @@ Update-MgBetaGroupTeamOwnerMailboxSetting -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

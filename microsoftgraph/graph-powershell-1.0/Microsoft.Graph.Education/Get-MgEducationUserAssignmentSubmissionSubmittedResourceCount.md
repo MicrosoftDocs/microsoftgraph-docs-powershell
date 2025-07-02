@@ -33,6 +33,8 @@ Get-MgEducationUserAssignmentSubmissionSubmittedResourceCount -InputObject <IEdu
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

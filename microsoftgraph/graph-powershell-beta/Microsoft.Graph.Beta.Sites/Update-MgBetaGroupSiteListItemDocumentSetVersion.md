@@ -56,6 +56,8 @@ Update-MgBetaGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property documentSetVersions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

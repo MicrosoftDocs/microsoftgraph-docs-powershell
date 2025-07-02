@@ -81,6 +81,8 @@ Update the navigation property messages in users
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -53,6 +53,8 @@ For information on using advanced hunting in the Microsoft 365 Defender portal, 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ThreatHunting.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

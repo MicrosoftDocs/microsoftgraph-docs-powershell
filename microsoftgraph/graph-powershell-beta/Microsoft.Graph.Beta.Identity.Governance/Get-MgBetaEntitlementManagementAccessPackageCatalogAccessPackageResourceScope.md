@@ -22,6 +22,8 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceScope -A
 ## DESCRIPTION
 Get accessPackageResourceScopes from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

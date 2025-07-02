@@ -30,6 +30,8 @@ Remove-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope
 ## DESCRIPTION
 Delete navigation property appScope for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

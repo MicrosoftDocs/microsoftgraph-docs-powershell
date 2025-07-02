@@ -54,6 +54,8 @@ Update-MgBetaSecuritySubjectRightsRequestApproverMailboxSetting -InputObject <IS
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

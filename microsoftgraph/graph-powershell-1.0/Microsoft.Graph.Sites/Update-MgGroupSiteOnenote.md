@@ -52,6 +52,8 @@ Update-MgGroupSiteOnenote -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property onenote in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

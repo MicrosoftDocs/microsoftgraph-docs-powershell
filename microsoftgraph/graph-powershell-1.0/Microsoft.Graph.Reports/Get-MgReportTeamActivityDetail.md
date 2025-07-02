@@ -46,6 +46,8 @@ Get-MgReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String>
 Get details about Microsoft Teams activity by team.
 The numbers include activities for both licensed and nonlicensed users.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

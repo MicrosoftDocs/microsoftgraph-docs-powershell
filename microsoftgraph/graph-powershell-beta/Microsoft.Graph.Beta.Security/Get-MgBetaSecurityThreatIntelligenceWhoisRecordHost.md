@@ -32,6 +32,8 @@ Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost -InputObject <ISecurityIdent
 ## DESCRIPTION
 The host associated to this WHOIS object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

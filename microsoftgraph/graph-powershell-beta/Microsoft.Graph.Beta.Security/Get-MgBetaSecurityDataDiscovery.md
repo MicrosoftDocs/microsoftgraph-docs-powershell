@@ -21,6 +21,8 @@ Get-MgBetaSecurityDataDiscovery [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Get dataDiscovery from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

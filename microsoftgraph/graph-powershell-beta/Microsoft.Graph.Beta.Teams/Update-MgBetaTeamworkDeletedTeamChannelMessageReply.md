@@ -67,6 +67,8 @@ Update-MgBetaTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity
 ## DESCRIPTION
 Update the navigation property replies in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

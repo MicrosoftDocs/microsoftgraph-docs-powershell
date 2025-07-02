@@ -36,6 +36,8 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDe
 Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
 Supports $expand and $select nested in $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

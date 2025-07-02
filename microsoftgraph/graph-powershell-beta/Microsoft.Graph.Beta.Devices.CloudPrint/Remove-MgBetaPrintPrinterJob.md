@@ -32,6 +32,8 @@ Remove-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property jobs for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

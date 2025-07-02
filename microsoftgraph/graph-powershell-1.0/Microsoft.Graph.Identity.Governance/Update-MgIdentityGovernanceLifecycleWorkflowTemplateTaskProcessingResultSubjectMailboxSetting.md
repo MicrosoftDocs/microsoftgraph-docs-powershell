@@ -58,6 +58,8 @@ Update-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectM
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Set-MgBetaUserOnlineMeetingBroadcastRecording -InputObject <ICloudCommunications
 ## DESCRIPTION
 Update broadcastRecording for the navigation property onlineMeetings in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

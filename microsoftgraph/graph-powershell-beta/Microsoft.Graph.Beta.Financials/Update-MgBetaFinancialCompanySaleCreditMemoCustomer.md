@@ -57,6 +57,8 @@ Update-MgBetaFinancialCompanySaleCreditMemoCustomer -InputObject <IFinancialsIde
 ## DESCRIPTION
 Update the navigation property customer in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

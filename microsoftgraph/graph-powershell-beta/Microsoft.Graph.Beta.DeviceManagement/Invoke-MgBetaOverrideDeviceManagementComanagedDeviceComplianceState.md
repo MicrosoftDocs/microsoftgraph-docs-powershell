@@ -49,6 +49,8 @@ Invoke-MgBetaOverrideDeviceManagementComanagedDeviceComplianceState -InputObject
 ## DESCRIPTION
 Invoke action overrideComplianceState
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

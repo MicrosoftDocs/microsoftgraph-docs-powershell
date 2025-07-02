@@ -49,6 +49,8 @@ Invoke-MgBetaAcceptGroupEventExceptionOccurrenceInstance -InputObject <ICalendar
 ## DESCRIPTION
 Accept the specified event in a user calendar.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

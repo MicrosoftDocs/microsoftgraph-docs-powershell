@@ -48,6 +48,8 @@ Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation
 ## DESCRIPTION
 Perform On Demand Proactive Remediation
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -40,6 +40,8 @@ Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPicture
 ## DESCRIPTION
 Get picture from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

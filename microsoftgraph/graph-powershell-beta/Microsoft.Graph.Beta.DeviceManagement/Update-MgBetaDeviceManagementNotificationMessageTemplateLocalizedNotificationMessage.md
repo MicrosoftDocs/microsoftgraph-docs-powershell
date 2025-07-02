@@ -60,6 +60,8 @@ Update the navigation property localizedNotificationMessages in deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

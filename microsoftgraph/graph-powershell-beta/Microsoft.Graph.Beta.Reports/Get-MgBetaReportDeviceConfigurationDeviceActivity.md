@@ -31,6 +31,8 @@ Metadata for the device configuration device activity report
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

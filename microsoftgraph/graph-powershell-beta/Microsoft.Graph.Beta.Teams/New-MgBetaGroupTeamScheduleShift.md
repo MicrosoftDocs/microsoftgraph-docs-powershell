@@ -54,6 +54,8 @@ New-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to shifts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -58,6 +58,8 @@ Update-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResour
 ## DESCRIPTION
 Update the navigation property resource in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId

@@ -33,6 +33,8 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup -InputObject <I
 ## DESCRIPTION
 Represents a group.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

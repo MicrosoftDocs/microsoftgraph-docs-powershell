@@ -32,6 +32,8 @@ Get-MgBetaSecurityThreatIntelligenceProfileIndicatorArtifact -InputObject <ISecu
 ## DESCRIPTION
 The artifact related to this indicator.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

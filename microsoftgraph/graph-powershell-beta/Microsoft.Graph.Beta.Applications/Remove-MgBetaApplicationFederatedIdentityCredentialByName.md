@@ -33,6 +33,8 @@ Remove-MgBetaApplicationFederatedIdentityCredentialByName -InputObject <IApplica
 ## DESCRIPTION
 Deletes a federatedIdentityCredential object from an application.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

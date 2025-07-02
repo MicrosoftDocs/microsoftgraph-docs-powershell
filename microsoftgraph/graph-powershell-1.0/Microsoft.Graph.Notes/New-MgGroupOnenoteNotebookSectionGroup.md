@@ -64,6 +64,8 @@ Create new navigation property to sectionGroups for groups
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

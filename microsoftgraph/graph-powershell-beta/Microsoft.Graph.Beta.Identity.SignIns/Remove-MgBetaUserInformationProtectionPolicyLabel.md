@@ -29,6 +29,8 @@ Remove-MgBetaUserInformationProtectionPolicyLabel -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Delete navigation property labels for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

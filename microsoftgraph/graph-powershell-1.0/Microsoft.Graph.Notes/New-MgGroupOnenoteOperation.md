@@ -50,6 +50,8 @@ New-MgGroupOnenoteOperation -InputObject <INotesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to operations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Set-MgBetaUserDriveItemVersionContent -InputObject <IFilesIdentity> [-Data <Stre
 ## DESCRIPTION
 Update content for the navigation property versions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

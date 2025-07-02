@@ -50,6 +50,8 @@ Update-MgDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property versions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

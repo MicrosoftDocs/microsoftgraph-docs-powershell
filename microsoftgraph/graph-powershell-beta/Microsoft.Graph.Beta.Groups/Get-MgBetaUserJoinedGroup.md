@@ -22,6 +22,8 @@ Get-MgBetaUserJoinedGroup -UserId <String> [-ExpandProperty <String[]>] [-Filter
 ## DESCRIPTION
 Get joinedGroups from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

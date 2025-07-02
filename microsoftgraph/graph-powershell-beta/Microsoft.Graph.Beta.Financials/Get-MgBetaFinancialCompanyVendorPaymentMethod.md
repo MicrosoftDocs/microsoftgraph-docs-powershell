@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyVendorPaymentMethod -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Get paymentMethod from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

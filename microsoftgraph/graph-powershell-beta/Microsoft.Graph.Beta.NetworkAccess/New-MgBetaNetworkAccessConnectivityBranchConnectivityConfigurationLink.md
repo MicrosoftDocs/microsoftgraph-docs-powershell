@@ -47,6 +47,8 @@ New-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLink -InputObj
 ## DESCRIPTION
 Create new navigation property to links for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

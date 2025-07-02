@@ -102,6 +102,8 @@ Update-MgShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property listItem in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

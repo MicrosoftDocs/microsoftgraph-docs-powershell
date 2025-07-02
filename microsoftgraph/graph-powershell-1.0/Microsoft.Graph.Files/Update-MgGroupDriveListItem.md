@@ -61,6 +61,8 @@ Update-MgGroupDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property items in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

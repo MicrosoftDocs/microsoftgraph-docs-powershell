@@ -50,6 +50,8 @@ New-MgBetaGroupSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to groups for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

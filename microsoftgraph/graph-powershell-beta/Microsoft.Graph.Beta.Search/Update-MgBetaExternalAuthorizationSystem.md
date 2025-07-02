@@ -45,6 +45,8 @@ Update-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property authorizationSystems in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

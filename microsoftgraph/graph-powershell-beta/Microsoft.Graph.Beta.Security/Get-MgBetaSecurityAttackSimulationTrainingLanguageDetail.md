@@ -41,6 +41,8 @@ Get-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurity
 ## DESCRIPTION
 Details about the language used in the training.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

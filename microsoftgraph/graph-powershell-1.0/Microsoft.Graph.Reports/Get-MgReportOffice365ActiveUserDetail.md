@@ -45,6 +45,8 @@ Get-MgReportOffice365ActiveUserDetail -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get details about Microsoft 365 active users.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

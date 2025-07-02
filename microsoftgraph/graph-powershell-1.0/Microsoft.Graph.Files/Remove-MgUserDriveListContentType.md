@@ -32,6 +32,8 @@ Remove-MgUserDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property contentTypes for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

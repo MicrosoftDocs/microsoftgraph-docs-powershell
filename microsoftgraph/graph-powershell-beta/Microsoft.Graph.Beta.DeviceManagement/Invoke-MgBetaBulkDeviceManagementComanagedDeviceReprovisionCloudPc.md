@@ -31,6 +31,8 @@ Invoke-MgBetaBulkDeviceManagementComanagedDeviceReprovisionCloudPc
 ## DESCRIPTION
 Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

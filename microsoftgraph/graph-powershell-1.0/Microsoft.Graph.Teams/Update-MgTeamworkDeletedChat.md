@@ -46,6 +46,8 @@ Update-MgTeamworkDeletedChat -InputObject <ITeamsIdentity> -BodyParameter <Hasht
 ## DESCRIPTION
 Update the navigation property deletedChats in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

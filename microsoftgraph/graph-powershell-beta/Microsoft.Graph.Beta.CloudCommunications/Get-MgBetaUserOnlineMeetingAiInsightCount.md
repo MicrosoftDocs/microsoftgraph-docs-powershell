@@ -37,6 +37,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetingAiInsight.Read.All, OnlineMeetingAiInsight.Read.Chat,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

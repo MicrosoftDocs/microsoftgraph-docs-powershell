@@ -42,6 +42,8 @@ Get-MgChatMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 Replies for a specified message.
 Supports $expand for channel messages.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

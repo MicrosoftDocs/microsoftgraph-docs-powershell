@@ -90,6 +90,8 @@ New-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to documentSetVersions for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

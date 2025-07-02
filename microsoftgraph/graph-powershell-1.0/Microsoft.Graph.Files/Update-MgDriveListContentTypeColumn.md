@@ -68,6 +68,8 @@ Update-MgDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property columns in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

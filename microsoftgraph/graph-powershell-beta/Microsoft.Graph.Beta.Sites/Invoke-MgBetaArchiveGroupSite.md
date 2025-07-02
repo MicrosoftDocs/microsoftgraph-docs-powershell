@@ -30,6 +30,8 @@ Invoke-MgBetaArchiveGroupSite -InputObject <ISitesIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Archive an active SharePoint site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

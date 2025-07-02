@@ -42,6 +42,8 @@ Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
 ## DESCRIPTION
 Get roleEligibilityScheduleInstances from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

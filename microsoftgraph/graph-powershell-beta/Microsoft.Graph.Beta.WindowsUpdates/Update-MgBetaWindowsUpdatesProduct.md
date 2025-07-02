@@ -49,6 +49,8 @@ Update-MgBetaWindowsUpdatesProduct -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Update the navigation property products in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

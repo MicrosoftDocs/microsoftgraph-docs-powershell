@@ -40,6 +40,8 @@ Get-MgTeamOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 The async operations that ran or are running on this team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

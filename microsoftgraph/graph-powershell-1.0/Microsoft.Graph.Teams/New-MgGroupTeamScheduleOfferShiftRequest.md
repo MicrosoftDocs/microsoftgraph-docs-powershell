@@ -52,6 +52,8 @@ New-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to offerShiftRequests for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

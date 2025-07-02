@@ -32,6 +32,8 @@ Get-MgBetaApplicationSynchronizationTemplateSchemaDirectoryCount -InputObject <I
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

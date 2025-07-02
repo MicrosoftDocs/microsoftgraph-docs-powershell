@@ -30,6 +30,8 @@ Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail -InputObject <IBusinessSc
 ## DESCRIPTION
 Delete navigation property details for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BusinessScenarioId

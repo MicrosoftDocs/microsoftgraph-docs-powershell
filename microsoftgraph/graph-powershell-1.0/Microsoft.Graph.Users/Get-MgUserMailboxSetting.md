@@ -44,6 +44,8 @@ Returned only on $select.
 | Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
 | Application | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

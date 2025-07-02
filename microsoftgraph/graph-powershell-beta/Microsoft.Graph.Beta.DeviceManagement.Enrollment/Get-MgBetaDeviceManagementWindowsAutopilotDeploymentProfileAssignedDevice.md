@@ -40,6 +40,8 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
 ## DESCRIPTION
 The list of assigned devices for the profile.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

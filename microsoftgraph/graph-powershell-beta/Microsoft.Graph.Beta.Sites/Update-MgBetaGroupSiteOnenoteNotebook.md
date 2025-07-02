@@ -55,6 +55,8 @@ Update-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> -BodyParamet
 ## DESCRIPTION
 Update the navigation property notebooks in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

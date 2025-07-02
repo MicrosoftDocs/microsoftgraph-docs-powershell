@@ -30,6 +30,8 @@ Set-MgBetaFinancialCompanySaleCreditMemoLineItemPictureContent -InputObject <IFi
 ## DESCRIPTION
 Update content for the navigation property picture in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

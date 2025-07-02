@@ -34,6 +34,8 @@ Get-MgTeamPrimaryChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandPropert
 The application that is linked to the tab.
 This can't be changed after tab creation.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

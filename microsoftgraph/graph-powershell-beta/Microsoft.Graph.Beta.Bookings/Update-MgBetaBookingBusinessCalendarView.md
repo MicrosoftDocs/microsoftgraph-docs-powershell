@@ -122,6 +122,8 @@ Update-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the navigation property calendarView in bookingBusinesses
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

@@ -58,6 +58,8 @@ New-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

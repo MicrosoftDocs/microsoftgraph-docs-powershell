@@ -53,6 +53,8 @@ Update-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -InputObject
 ## DESCRIPTION
 Update the navigation property sublabels in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

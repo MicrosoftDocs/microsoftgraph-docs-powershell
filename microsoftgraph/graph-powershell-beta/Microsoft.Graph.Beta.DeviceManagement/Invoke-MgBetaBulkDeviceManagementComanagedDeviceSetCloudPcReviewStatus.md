@@ -32,6 +32,8 @@ Invoke-MgBetaBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus
 ## DESCRIPTION
 Invoke action bulkSetCloudPcReviewStatus
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

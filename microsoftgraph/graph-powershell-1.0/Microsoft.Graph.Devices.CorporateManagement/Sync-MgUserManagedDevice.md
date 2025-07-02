@@ -33,6 +33,8 @@ Sync-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [-Re
 ## DESCRIPTION
 Not yet documented
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

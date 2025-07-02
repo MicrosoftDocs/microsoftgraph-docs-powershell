@@ -49,6 +49,8 @@ Set-MgBetaVirtualEventExternalEventInformation -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Invoke action setExternalEventInformation
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

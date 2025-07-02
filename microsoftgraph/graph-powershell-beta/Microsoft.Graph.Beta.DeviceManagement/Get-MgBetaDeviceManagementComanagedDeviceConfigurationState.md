@@ -38,6 +38,8 @@ Get-MgBetaDeviceManagementComanagedDeviceConfigurationState -InputObject <IDevic
 ## DESCRIPTION
 Device configuration states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

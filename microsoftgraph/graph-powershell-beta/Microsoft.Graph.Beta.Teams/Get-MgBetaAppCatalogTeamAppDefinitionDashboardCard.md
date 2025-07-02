@@ -38,6 +38,8 @@ Get-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Dashboard cards specified in the Teams app manifest.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

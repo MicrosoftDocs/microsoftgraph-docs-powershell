@@ -45,6 +45,8 @@ Update-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITe
 ## DESCRIPTION
 Update the navigation property hostedContent in appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

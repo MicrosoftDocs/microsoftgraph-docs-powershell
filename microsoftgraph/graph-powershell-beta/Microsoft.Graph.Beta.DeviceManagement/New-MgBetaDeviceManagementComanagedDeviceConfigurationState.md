@@ -49,6 +49,8 @@ New-MgBetaDeviceManagementComanagedDeviceConfigurationState -InputObject <IDevic
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

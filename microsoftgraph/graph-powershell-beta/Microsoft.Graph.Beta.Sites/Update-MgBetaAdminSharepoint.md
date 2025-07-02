@@ -31,6 +31,8 @@ Update-MgBetaAdminSharepoint -BodyParameter <IMicrosoftGraphSharepoint> [-Respon
 ## DESCRIPTION
 Update the navigation property sharepoint in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

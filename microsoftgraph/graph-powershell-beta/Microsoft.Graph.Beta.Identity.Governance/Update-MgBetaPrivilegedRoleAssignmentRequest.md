@@ -49,6 +49,8 @@ Update-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceId
 ## DESCRIPTION
 Update entity in privilegedRoleAssignmentRequests
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -40,6 +40,8 @@ Delete navigation property roleAssignments for roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

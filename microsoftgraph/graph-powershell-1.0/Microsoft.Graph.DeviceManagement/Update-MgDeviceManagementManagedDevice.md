@@ -94,6 +94,8 @@ Update the navigation property managedDevices in deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

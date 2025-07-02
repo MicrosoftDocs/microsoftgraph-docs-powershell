@@ -48,6 +48,8 @@ The managed app statuses.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

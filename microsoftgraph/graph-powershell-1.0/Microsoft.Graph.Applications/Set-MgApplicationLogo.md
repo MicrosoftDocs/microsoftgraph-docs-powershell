@@ -42,6 +42,8 @@ Not nullable.
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
 | Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

@@ -46,6 +46,8 @@ Create new navigation property to windowsAutopilotDeploymentProfiles for deviceM
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

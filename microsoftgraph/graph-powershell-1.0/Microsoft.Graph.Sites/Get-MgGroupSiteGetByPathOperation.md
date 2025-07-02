@@ -25,6 +25,8 @@ Get-MgGroupSiteGetByPathOperation -GroupId <String> -Path <String> -SiteId <Stri
 ## DESCRIPTION
 The collection of long-running operations on the site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

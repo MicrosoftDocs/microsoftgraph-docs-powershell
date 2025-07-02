@@ -46,6 +46,8 @@ New-MgExternalConnectionOperation -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

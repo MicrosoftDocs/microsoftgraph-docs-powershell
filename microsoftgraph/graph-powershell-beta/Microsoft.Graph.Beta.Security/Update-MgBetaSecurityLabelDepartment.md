@@ -48,6 +48,8 @@ Update-MgBetaSecurityLabelDepartment -InputObject <ISecurityIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property departments in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

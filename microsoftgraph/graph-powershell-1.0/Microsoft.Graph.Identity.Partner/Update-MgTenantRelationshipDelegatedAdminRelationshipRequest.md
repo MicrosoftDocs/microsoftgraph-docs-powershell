@@ -50,6 +50,8 @@ Update-MgTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property requests in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

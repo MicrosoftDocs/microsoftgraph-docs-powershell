@@ -64,6 +64,8 @@ Update-MgBetaGroupSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property items in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

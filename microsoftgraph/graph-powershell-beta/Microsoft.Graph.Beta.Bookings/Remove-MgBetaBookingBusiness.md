@@ -54,6 +54,8 @@ Delete entity from bookingBusinesses
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BookingsAppointment.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BookingBusinessId

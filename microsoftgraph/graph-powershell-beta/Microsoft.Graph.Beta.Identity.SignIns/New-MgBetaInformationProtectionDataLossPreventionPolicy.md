@@ -29,6 +29,8 @@ New-MgBetaInformationProtectionDataLossPreventionPolicy
 ## DESCRIPTION
 Create new navigation property to dataLossPreventionPolicies for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

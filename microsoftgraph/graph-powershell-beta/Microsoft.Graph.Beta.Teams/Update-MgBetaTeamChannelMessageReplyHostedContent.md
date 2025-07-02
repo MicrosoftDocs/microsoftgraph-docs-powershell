@@ -49,6 +49,8 @@ Update-MgBetaTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 Update the navigation property hostedContents in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

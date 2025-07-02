@@ -43,6 +43,8 @@ New-MgBetaCommunicationOnlineMeetingRegistrationRegistrant -InputObject <ICloudC
 ## DESCRIPTION
 Create new navigation property to registrants for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

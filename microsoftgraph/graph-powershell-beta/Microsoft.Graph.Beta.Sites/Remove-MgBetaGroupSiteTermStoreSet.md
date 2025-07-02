@@ -32,6 +32,8 @@ Remove-MgBetaGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property sets for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

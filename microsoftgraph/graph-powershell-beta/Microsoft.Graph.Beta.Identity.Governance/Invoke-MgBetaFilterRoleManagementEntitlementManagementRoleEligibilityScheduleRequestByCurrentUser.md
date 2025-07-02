@@ -36,6 +36,8 @@ Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleEligibilityScheduleReq
 ## DESCRIPTION
 Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties associated with the currently signed in principal object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

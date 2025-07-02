@@ -47,6 +47,8 @@ Update-MgBetaDeviceManagementDerivedCredential -InputObject <IDeviceManagementId
 ## DESCRIPTION
 Update the navigation property derivedCredentials in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

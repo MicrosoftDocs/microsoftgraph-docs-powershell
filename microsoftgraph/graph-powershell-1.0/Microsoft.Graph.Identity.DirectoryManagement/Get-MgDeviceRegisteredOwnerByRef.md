@@ -40,6 +40,8 @@ Currently, there can be only one owner.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

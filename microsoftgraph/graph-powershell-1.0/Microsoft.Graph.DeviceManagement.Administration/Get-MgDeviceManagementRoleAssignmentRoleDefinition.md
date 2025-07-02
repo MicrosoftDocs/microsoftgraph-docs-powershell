@@ -32,6 +32,8 @@ Get-MgDeviceManagementRoleAssignmentRoleDefinition -InputObject <IDeviceManageme
 ## DESCRIPTION
 Role definition this assignment is part of.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceAndAppManagementRoleAssignmentId

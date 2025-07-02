@@ -51,6 +51,8 @@ New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion
 ## DESCRIPTION
 Create new navigation property to contentVersions for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

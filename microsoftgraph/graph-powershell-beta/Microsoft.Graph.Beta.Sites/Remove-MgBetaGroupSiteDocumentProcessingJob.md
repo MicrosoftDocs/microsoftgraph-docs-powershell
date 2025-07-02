@@ -29,6 +29,8 @@ Remove-MgBetaGroupSiteDocumentProcessingJob -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property documentProcessingJobs for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentProcessingJobId

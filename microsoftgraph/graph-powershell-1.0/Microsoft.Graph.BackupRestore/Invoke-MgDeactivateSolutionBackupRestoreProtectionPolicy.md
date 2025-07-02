@@ -33,6 +33,8 @@ Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy -InputObject <IBackupRe
 ## DESCRIPTION
 Deactivate a protectionPolicyBase.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

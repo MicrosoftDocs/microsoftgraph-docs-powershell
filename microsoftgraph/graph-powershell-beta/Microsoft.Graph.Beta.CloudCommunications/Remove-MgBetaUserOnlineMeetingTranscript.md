@@ -32,6 +32,8 @@ Remove-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdent
 ## DESCRIPTION
 Delete navigation property transcripts for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallTranscriptId

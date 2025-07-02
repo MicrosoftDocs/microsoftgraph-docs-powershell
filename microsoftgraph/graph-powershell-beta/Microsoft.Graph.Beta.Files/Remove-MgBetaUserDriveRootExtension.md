@@ -29,6 +29,8 @@ Remove-MgBetaUserDriveRootExtension -InputObject <IFilesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportCompliancePolicyDeviceSummaryReport -OutFile <St
 ## DESCRIPTION
 Invoke action getCompliancePolicyDeviceSummaryReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

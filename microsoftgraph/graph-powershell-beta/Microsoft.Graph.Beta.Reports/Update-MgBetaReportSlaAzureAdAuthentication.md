@@ -30,6 +30,8 @@ Update-MgBetaReportSlaAzureAdAuthentication -BodyParameter <IMicrosoftGraphAzure
 ## DESCRIPTION
 Update the navigation property azureADAuthentication in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

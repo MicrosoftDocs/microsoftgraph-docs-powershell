@@ -40,6 +40,8 @@ Delete navigation property contacts for users
 | Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
 | Application | Contacts.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId

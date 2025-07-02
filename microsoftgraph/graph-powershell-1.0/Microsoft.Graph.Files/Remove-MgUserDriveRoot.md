@@ -32,6 +32,8 @@ Remove-MgUserDriveRoot -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property root for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

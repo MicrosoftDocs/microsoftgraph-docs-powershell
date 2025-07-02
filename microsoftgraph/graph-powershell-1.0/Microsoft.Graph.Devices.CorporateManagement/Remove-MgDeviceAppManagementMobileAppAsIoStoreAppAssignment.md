@@ -32,6 +32,8 @@ Remove-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment -InputObject <IDevic
 ## DESCRIPTION
 Delete navigation property assignments for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

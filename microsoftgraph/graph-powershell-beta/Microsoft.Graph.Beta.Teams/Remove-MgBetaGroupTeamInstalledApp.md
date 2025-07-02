@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property installedApps for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

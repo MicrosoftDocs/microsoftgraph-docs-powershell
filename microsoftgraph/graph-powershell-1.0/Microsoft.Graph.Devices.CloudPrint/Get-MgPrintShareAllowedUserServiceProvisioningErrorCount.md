@@ -32,6 +32,8 @@ Get-MgPrintShareAllowedUserServiceProvisioningErrorCount -InputObject <IDevicesC
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

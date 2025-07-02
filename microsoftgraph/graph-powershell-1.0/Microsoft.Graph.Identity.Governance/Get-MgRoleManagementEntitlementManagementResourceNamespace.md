@@ -40,6 +40,8 @@ Get-MgRoleManagementEntitlementManagementResourceNamespace -InputObject <IIdenti
 ## DESCRIPTION
 Get resourceNamespaces from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

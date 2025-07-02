@@ -48,6 +48,8 @@ Remove-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <I
 ## DESCRIPTION
 Delete navigation property hostedContents for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

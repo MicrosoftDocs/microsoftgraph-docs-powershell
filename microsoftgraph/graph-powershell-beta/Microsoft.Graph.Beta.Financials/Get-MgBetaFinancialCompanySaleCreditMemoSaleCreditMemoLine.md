@@ -38,6 +38,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLine -InputObject <IFinanc
 ## DESCRIPTION
 Get salesCreditMemoLines from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

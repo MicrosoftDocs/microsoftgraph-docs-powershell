@@ -46,6 +46,8 @@ Update-MgSiteContentTypeColumnLink -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property columnLinks in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

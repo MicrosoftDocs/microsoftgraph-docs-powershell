@@ -33,6 +33,8 @@ New-MgBetaPolicyRoleManagementPolicyAssignment
 ## DESCRIPTION
 Create new navigation property to roleManagementPolicyAssignments for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

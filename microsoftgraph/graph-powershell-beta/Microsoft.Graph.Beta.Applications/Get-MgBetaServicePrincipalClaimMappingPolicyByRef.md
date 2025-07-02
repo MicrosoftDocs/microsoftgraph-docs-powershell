@@ -34,6 +34,8 @@ List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

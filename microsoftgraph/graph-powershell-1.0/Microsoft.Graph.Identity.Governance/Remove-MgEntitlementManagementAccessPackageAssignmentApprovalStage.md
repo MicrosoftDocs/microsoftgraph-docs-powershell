@@ -29,6 +29,8 @@ Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject 
 ## DESCRIPTION
 Delete navigation property stages for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApprovalId

@@ -47,6 +47,8 @@ New-MgBetaWindowsUpdatesPolicyAudienceApplicableContent -InputObject <IWindowsUp
 ## DESCRIPTION
 Create new navigation property to applicableContent for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

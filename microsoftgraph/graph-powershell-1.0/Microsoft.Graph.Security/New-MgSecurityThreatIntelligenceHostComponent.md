@@ -34,6 +34,8 @@ New-MgSecurityThreatIntelligenceHostComponent -BodyParameter <IMicrosoftGraphSec
 ## DESCRIPTION
 Create new navigation property to hostComponents for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

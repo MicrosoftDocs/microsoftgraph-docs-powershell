@@ -33,6 +33,8 @@ New-MgBetaDeviceManagementExchangeOnPremisePolicy
 ## DESCRIPTION
 Create new navigation property to exchangeOnPremisesPolicies for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessRules

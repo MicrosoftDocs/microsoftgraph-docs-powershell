@@ -29,6 +29,8 @@ Remove-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Delete navigation property audience for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

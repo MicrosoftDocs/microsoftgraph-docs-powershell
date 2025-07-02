@@ -81,6 +81,8 @@ Update-MgBetaUserOnlineMeetingByJoinWebUrl -InputObject <ICloudCommunicationsIde
 ## DESCRIPTION
 Update the navigation property onlineMeetings in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -24,6 +24,8 @@ Get-MgBetaDeviceManagementVirtualEndpoint [-ExpandProperty <String[]>] [-Propert
 ## DESCRIPTION
 Get virtualEndpoint from deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -29,6 +29,8 @@ Remove-MgBetaSecurityPartnerSecurityAlert -InputObject <ISecurityIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property securityAlerts for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

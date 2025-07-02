@@ -43,6 +43,8 @@ Update-MgBetaUserDriveItemExtension -InputObject <IFilesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

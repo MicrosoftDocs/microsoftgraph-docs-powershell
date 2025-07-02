@@ -65,6 +65,8 @@ Update-MgBetaRoleManagementEnterpriseApp -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 Update the navigation property enterpriseApps in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

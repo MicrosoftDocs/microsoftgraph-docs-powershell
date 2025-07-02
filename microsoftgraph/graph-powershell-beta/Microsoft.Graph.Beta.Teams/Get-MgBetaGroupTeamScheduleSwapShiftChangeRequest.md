@@ -40,6 +40,8 @@ Get-MgBetaGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 The swap requests for shifts in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

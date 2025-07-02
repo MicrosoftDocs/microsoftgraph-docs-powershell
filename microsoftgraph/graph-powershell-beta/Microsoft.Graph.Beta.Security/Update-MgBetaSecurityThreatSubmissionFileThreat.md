@@ -51,6 +51,8 @@ Update-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property fileThreats in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

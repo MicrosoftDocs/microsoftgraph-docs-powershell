@@ -32,6 +32,8 @@ Restore-MgBetaGroupSiteListItemVersion -InputObject <ISitesIdentity> [-ResponseH
 ## DESCRIPTION
 Invoke action restoreVersion
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

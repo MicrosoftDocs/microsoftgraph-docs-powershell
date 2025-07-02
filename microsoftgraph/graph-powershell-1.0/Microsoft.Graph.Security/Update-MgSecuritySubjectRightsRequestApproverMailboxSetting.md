@@ -54,6 +54,8 @@ Update-MgSecuritySubjectRightsRequestApproverMailboxSetting -InputObject <ISecur
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

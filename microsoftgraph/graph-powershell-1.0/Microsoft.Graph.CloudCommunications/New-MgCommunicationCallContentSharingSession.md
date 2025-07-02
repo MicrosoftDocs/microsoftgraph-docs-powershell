@@ -46,6 +46,8 @@ New-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Create new navigation property to contentSharingSessions for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

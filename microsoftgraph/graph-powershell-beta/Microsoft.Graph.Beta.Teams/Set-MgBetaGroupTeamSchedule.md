@@ -70,6 +70,8 @@ Set-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property schedule in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivitiesIncludedWhenCopyingShiftsEnabled

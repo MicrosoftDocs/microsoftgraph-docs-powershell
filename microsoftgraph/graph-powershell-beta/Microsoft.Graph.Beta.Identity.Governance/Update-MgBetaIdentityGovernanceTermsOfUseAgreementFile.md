@@ -52,6 +52,8 @@ Update-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGo
 ## DESCRIPTION
 Update the navigation property file in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

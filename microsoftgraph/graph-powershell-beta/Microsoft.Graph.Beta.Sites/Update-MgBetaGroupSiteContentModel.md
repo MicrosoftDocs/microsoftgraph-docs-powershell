@@ -48,6 +48,8 @@ Update-MgBetaGroupSiteContentModel -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property contentModels in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

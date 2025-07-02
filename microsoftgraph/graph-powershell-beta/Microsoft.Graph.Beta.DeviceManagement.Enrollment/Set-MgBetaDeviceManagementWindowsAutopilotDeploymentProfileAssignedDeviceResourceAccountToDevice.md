@@ -51,6 +51,8 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceResourc
 ## DESCRIPTION
 Assigns resource account to Autopilot devices.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

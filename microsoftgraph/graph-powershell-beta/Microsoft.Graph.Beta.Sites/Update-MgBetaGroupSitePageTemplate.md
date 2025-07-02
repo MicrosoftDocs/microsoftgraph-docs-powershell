@@ -56,6 +56,8 @@ Update-MgBetaGroupSitePageTemplate -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property pageTemplates in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

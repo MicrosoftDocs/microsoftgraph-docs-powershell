@@ -43,6 +43,8 @@ As a recommended best practice, service principals should have at least two owne
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryObjectId

@@ -46,6 +46,8 @@ Update-MgDriveListItemDocumentSetVersionField -InputObject <IFilesIdentity> -Bod
 ## DESCRIPTION
 Update the navigation property fields in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaGroupExtension -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExtensionId

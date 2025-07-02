@@ -35,6 +35,8 @@ Get-MgSiteOnenoteNotebookSectionGroupSectionPageParentSection -InputObject <INot
 The section that contains the page.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

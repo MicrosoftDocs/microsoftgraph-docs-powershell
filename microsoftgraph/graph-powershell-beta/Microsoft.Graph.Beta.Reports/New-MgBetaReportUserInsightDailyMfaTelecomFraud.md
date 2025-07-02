@@ -31,6 +31,8 @@ New-MgBetaReportUserInsightDailyMfaTelecomFraud -BodyParameter <IMicrosoftGraphM
 ## DESCRIPTION
 Create new navigation property to mfaTelecomFraud for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -45,6 +45,8 @@ New-MgBetaFinancialCompanyTaxArea -InputObject <IFinancialsIdentity> -BodyParame
 ## DESCRIPTION
 Create new navigation property to taxAreas for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -36,6 +36,8 @@ The calendar that contains the event.
 Navigation property.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

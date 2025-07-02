@@ -32,6 +32,8 @@ New-MgBetaTenantRelationshipManagedTenantCloudPcDevice
 ## DESCRIPTION
 Create new navigation property to cloudPcDevices for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -41,6 +41,8 @@ Get-MgBetaDeviceManagementCompliancePolicySettingDefinition -InputObject <IDevic
 List of related Setting Definitions.
 This property is read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

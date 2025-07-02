@@ -38,6 +38,8 @@ When the request activates a membership or ownership assignment in PIM for group
 Otherwise, it is null.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

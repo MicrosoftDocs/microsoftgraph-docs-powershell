@@ -53,6 +53,8 @@ Update-MgBetaUserInformationProtectionSensitivityLabelSublabel -InputObject <IId
 ## DESCRIPTION
 Update the navigation property sublabels in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

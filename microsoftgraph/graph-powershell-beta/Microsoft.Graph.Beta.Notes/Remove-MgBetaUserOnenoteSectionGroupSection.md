@@ -32,6 +32,8 @@ Remove-MgBetaUserOnenoteSectionGroupSection -InputObject <INotesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property sections for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

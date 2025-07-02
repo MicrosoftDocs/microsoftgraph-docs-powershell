@@ -45,6 +45,8 @@ New-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity>
 ## DESCRIPTION
 Create new navigation property to activityStatistics for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

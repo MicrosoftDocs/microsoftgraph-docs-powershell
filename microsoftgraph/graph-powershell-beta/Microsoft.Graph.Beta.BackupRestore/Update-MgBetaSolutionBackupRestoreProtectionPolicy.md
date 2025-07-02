@@ -52,6 +52,8 @@ Update-MgBetaSolutionBackupRestoreProtectionPolicy -InputObject <IBackupRestoreI
 ## DESCRIPTION
 Update the navigation property protectionPolicies in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

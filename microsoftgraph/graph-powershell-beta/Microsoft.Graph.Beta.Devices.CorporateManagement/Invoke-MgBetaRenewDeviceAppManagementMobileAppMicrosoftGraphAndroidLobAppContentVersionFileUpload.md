@@ -34,6 +34,8 @@ Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphAndroidLobAppContent
 ## DESCRIPTION
 Renews the SAS URI for an application file upload.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

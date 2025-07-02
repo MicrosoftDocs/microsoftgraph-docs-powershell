@@ -40,6 +40,8 @@ Get-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnoun
 ## DESCRIPTION
 A collection of issues that happened on the service, with detailed information for each issue.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

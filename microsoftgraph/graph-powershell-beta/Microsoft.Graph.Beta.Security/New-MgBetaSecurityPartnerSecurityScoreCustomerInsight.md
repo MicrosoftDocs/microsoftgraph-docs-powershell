@@ -30,6 +30,8 @@ New-MgBetaSecurityPartnerSecurityScoreCustomerInsight
 ## DESCRIPTION
 Create new navigation property to customerInsights for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

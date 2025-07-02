@@ -21,6 +21,8 @@ Get-MgBetaPrintPrinterShareAllowedUserByRef -PrinterShareId <String> [-Filter <S
 ## DESCRIPTION
 The users who have access to print using the printer.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

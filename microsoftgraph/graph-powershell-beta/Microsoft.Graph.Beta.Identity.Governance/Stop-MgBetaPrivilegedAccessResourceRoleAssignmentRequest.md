@@ -30,6 +30,8 @@ Stop-MgBetaPrivilegedAccessResourceRoleAssignmentRequest -InputObject <IIdentity
 ## DESCRIPTION
 Invoke action cancel
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GovernanceResourceId

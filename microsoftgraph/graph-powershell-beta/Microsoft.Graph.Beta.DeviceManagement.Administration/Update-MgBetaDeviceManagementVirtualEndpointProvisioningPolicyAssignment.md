@@ -52,6 +52,8 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 ## DESCRIPTION
 Update the navigation property assignments in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

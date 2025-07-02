@@ -64,6 +64,8 @@ New-MgBetaDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to items for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

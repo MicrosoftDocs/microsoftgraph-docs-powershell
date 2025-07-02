@@ -34,6 +34,8 @@ New-MgBetaSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-Response
 ## DESCRIPTION
 Add new entity to subscribedSkus
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountId

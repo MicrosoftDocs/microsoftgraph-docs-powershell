@@ -50,6 +50,8 @@ Update-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Update the navigation property roleManagementPolicyAssignments in policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

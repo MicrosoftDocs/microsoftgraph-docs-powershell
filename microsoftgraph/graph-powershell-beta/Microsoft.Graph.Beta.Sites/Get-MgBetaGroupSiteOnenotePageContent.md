@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteOnenotePageContent -InputObject <ISitesIdentity> -OutFile <St
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

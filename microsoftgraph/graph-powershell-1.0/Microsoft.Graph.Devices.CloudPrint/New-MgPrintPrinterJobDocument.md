@@ -48,6 +48,8 @@ New-MgPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Create new navigation property to documents for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -55,6 +55,8 @@ Update-MgBetaUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Update the navigation property logCollectionRequests in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

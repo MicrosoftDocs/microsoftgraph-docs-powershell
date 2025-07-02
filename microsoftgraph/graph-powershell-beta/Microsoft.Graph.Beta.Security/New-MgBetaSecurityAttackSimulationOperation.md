@@ -34,6 +34,8 @@ New-MgBetaSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttac
 ## DESCRIPTION
 Create new navigation property to operations for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

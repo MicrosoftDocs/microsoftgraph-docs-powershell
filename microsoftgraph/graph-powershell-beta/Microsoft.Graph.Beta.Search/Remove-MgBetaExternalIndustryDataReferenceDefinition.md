@@ -37,6 +37,8 @@ Delete navigation property referenceDefinitions for external
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-ReferenceDefinition.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

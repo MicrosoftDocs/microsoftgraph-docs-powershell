@@ -73,6 +73,8 @@ The following are some examples you can customize for a service:- Price- Typical
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

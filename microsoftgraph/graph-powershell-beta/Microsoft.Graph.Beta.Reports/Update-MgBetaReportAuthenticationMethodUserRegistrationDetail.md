@@ -56,6 +56,8 @@ Update-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IRep
 ## DESCRIPTION
 Update the navigation property userRegistrationDetails in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

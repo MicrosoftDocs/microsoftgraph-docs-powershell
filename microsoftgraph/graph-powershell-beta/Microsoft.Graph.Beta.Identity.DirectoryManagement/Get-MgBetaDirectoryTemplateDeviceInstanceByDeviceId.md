@@ -37,6 +37,8 @@ Collection of device objects created based on this template.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceTemplate.Read.All, DeviceTemplate.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

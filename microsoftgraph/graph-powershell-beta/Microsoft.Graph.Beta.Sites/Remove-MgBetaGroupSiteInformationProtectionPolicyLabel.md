@@ -29,6 +29,8 @@ Remove-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdent
 ## DESCRIPTION
 Delete navigation property labels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

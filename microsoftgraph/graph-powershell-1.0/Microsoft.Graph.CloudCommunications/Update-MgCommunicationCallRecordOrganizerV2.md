@@ -50,6 +50,8 @@ Update-MgCommunicationCallRecordOrganizerV2 -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Update the navigation property organizer_v2 in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

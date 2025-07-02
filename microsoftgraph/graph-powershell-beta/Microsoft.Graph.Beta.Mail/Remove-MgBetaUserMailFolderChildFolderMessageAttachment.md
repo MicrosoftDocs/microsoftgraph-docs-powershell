@@ -33,6 +33,8 @@ Remove-MgBetaUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdent
 ## DESCRIPTION
 Delete navigation property attachments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId

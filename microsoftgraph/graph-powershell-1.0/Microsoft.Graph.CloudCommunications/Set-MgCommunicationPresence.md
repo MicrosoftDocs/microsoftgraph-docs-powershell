@@ -51,6 +51,8 @@ Set-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Set the state of a user's presence session as an application.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

@@ -42,6 +42,8 @@ During the submit process, all the resources are copied to the submittedResource
 The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

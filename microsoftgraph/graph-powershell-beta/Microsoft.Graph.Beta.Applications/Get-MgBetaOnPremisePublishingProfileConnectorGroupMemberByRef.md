@@ -22,6 +22,8 @@ Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef -ConnectorGroupId 
 ## DESCRIPTION
 Get ref of members from onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

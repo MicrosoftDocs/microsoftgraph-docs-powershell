@@ -32,6 +32,8 @@ New-MgBetaPrivilegedAccess -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-Re
 ## DESCRIPTION
 Add new entity to privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

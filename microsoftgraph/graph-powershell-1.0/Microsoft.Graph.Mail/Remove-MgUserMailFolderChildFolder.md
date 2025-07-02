@@ -32,6 +32,8 @@ Remove-MgUserMailFolderChildFolder -InputObject <IMailIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property childFolders for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

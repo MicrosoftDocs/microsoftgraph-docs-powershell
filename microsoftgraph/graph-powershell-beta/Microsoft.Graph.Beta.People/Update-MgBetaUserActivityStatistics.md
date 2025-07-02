@@ -45,6 +45,8 @@ Update-MgBetaUserActivityStatistics -InputObject <IPeopleIdentity>
 ## DESCRIPTION
 Update the navigation property activityStatistics in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

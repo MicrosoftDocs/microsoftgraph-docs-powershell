@@ -29,6 +29,8 @@ Remove-MgBetaPlaceByPlaceId -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete entity from places by placeId
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

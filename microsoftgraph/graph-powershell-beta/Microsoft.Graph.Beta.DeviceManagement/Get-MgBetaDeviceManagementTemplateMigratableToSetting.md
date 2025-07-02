@@ -39,6 +39,8 @@ Get-MgBetaDeviceManagementTemplateMigratableToSetting -InputObject <IDeviceManag
 ## DESCRIPTION
 Collection of all settings this template has
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

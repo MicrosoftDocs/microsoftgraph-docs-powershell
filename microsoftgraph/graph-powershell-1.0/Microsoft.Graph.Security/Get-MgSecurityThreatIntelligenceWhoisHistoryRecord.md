@@ -40,6 +40,8 @@ Get-MgSecurityThreatIntelligenceWhoisHistoryRecord -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Retrieve details about whoisHistoryRecord objects.Note: List retrieval is not yet supported.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

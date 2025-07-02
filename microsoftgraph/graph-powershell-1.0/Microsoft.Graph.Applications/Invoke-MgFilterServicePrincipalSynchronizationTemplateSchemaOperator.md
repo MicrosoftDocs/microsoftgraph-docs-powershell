@@ -44,6 +44,8 @@ List all operators supported in the scoping filters.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

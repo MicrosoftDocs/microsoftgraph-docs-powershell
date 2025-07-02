@@ -21,6 +21,8 @@ Remove-MgBetaNetworkAccessReport [-IfMatch <String>] [-ResponseHeadersVariable <
 ## DESCRIPTION
 Delete navigation property reports for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

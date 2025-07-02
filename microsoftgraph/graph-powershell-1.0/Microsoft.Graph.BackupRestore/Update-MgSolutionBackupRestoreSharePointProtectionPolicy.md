@@ -59,6 +59,8 @@ Update-MgSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBackupRe
 Update a SharePoint protection policy.
 This method adds a siteprotectionunit to or removes it from the protection policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -47,6 +47,8 @@ Update-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdenti
 ## DESCRIPTION
 Update the navigation property documents in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

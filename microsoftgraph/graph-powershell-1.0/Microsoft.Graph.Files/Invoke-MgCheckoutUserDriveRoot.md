@@ -33,6 +33,8 @@ Invoke-MgCheckoutUserDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVa
 ## DESCRIPTION
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

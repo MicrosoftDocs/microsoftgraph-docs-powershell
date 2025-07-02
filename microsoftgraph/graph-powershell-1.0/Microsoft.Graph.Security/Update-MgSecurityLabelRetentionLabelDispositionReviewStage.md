@@ -49,6 +49,8 @@ Update-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecuri
 ## DESCRIPTION
 Update the navigation property dispositionReviewStages in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

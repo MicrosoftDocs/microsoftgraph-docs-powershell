@@ -29,6 +29,8 @@ Get-MgBetaEducationUserAssignmentGradingScheme -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Get gradingScheme from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

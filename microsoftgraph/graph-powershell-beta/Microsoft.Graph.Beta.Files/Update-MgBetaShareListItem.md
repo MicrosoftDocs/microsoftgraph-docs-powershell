@@ -110,6 +110,8 @@ Update-MgBetaShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property listItem in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

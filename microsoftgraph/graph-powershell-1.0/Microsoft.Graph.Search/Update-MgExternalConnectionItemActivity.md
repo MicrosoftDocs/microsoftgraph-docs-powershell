@@ -50,6 +50,8 @@ Update-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property activities in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

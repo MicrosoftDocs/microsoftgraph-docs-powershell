@@ -51,6 +51,8 @@ Update-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend -InputO
 ## DESCRIPTION
 Update the navigation property managedDeviceComplianceTrends in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

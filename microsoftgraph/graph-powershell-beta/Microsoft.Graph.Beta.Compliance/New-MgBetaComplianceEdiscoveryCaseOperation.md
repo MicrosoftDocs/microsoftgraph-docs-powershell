@@ -47,6 +47,8 @@ New-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

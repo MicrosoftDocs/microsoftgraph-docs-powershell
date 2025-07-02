@@ -43,6 +43,8 @@ Get-MgVirtualEventSessionAttendanceReport -InputObject <IBookingsIdentity> [-Exp
 The attendance reports of an online meeting.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

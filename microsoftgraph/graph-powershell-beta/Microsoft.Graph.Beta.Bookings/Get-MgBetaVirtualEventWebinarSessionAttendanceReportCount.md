@@ -32,6 +32,8 @@ Get-MgBetaVirtualEventWebinarSessionAttendanceReportCount -InputObject <IBooking
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

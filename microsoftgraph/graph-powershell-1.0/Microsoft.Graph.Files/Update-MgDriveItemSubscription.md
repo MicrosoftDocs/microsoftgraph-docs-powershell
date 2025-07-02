@@ -55,6 +55,8 @@ Update-MgDriveItemSubscription -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property subscriptions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

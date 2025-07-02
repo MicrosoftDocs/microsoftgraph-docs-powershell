@@ -31,6 +31,8 @@ Invoke-MgExtractUserDriveItemSensitivityLabel -InputObject <IFilesIdentity> [-Re
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

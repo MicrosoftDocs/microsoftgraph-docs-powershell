@@ -47,6 +47,8 @@ Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskBucketTaskBoardFormat -Inp
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

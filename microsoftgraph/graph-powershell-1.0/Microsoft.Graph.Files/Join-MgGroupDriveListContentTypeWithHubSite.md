@@ -51,6 +51,8 @@ Join-MgGroupDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Associate a published content type present in a content type hub with a list of hub sites.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Get-MgGroupOnenoteSectionGroupSectionPageCount -InputObject <INotesIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

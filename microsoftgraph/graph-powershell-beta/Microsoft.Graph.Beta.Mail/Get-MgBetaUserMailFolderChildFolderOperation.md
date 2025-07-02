@@ -38,6 +38,8 @@ Get-MgBetaUserMailFolderChildFolderOperation -InputObject <IMailIdentity> [-Expa
 ## DESCRIPTION
 Get operations from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

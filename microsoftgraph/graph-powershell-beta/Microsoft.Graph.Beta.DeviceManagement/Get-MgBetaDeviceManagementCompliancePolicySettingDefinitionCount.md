@@ -30,6 +30,8 @@ Get-MgBetaDeviceManagementCompliancePolicySettingDefinitionCount -InputObject <I
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementCompliancePolicyId

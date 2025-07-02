@@ -81,6 +81,8 @@ Update-MgDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property root in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

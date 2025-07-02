@@ -49,6 +49,8 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandl
 ## DESCRIPTION
 Create new navigation property to customExtensionHandlers for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

@@ -32,6 +32,8 @@ Remove-MgBetaContract -InputObject <IIdentityDirectoryManagementIdentity> [-IfMa
 ## DESCRIPTION
 Delete entity from contracts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContractId

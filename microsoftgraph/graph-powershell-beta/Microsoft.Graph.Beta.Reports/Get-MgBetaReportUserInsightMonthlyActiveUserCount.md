@@ -21,6 +21,8 @@ Get-MgBetaReportUserInsightMonthlyActiveUserCount [-Filter <String>] [-Search <S
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

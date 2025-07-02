@@ -59,6 +59,8 @@ Get-MgBetaFinancialCompanyDimensionValue -InputObject <IFinancialsIdentity> [-Ex
 ## DESCRIPTION
 Get dimensionValues from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

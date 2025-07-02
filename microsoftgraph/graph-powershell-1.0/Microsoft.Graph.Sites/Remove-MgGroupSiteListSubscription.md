@@ -32,6 +32,8 @@ Remove-MgGroupSiteListSubscription -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property subscriptions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

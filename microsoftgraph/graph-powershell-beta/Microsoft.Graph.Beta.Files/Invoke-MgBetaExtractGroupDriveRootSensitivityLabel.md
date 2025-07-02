@@ -32,6 +32,8 @@ Invoke-MgBetaExtractGroupDriveRootSensitivityLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

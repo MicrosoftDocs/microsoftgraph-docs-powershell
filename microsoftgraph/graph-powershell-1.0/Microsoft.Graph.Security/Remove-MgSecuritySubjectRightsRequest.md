@@ -32,6 +32,8 @@ Remove-MgSecuritySubjectRightsRequest -InputObject <ISecurityIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property subjectRightsRequests for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

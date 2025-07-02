@@ -47,6 +47,8 @@ New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense
 ## DESCRIPTION
 Create new navigation property to assignedLicenses for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

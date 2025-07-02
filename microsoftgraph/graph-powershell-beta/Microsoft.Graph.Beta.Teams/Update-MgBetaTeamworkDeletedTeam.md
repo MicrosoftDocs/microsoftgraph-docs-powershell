@@ -46,6 +46,8 @@ Update-MgBetaTeamworkDeletedTeam -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property deletedTeams in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

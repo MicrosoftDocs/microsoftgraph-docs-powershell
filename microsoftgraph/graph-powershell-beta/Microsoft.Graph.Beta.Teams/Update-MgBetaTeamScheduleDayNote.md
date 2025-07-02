@@ -51,6 +51,8 @@ Update-MgBetaTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the properties of a day note.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

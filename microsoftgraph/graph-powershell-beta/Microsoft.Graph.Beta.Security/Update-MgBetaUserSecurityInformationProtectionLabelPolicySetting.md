@@ -45,6 +45,8 @@ Update-MgBetaUserSecurityInformationProtectionLabelPolicySetting -InputObject <I
 ## DESCRIPTION
 Update the navigation property labelPolicySettings in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

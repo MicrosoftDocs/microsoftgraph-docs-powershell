@@ -32,6 +32,8 @@ Remove-MgUserEventExtension -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

@@ -42,6 +42,8 @@ Update-MgBetaRoleManagementDirectory -BodyParameter <IMicrosoftGraphRbacApplicat
 ## DESCRIPTION
 Update the navigation property directory in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

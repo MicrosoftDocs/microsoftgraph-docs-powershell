@@ -31,6 +31,8 @@ Get me from education
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -38,6 +38,8 @@ Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant -InputObject <ICloudC
 ## DESCRIPTION
 Registrants of the online meeting.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

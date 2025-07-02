@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportEncryptionReportForDevice -OutFile <String>
 ## DESCRIPTION
 Invoke action getEncryptionReportForDevices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

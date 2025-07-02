@@ -56,6 +56,8 @@ Update the navigation property alertConfigurations in identityGovernance
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagementAlert.ReadWrite.Directory,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

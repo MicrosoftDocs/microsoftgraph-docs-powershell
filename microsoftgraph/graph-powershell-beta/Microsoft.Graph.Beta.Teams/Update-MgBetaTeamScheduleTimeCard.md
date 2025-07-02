@@ -55,6 +55,8 @@ Update-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <
 ## DESCRIPTION
 Replace an existing timeCard with updated values.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

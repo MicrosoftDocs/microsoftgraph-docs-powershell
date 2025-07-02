@@ -54,6 +54,8 @@ Update-MgPlaceAsRoomListRoom -InputObject <ICalendarIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property rooms in places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

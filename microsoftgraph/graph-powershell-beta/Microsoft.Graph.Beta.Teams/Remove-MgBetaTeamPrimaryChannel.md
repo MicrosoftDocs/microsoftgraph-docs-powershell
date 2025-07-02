@@ -32,6 +32,8 @@ Remove-MgBetaTeamPrimaryChannel -InputObject <ITeamsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property primaryChannel for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

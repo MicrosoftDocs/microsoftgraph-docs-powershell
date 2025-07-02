@@ -40,6 +40,8 @@ Get-MgBetaGroupTeamOperation -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The async operations that ran or are running on this team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

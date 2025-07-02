@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantEmailNotification -InputObject <IMan
 ## DESCRIPTION
 Delete navigation property managedTenantEmailNotifications for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

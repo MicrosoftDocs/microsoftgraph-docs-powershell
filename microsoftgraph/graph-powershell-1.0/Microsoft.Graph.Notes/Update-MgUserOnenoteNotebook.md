@@ -54,6 +54,8 @@ Update-MgUserOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property notebooks in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

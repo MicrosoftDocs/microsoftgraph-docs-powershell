@@ -55,6 +55,8 @@ Update-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <I
 Replace an existing timeOff.
 If the specified timeOff doesn't exist, this method returns 404 Not found.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

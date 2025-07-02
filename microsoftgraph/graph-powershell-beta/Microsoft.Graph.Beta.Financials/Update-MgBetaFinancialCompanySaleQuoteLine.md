@@ -96,6 +96,8 @@ Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property salesQuoteLines in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

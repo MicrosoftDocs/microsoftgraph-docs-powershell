@@ -34,6 +34,8 @@ Remove-MgUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsId
 The content of the transcript.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallTranscriptId

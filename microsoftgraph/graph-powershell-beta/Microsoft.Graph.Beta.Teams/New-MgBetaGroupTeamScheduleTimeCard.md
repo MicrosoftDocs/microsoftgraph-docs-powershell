@@ -54,6 +54,8 @@ New-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Create new navigation property to timeCards for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -83,6 +83,8 @@ Update the navigation property contacts in users
 | Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
 | Application | Contacts.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

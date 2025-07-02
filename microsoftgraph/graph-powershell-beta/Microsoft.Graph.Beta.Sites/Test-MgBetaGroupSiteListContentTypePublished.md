@@ -32,6 +32,8 @@ Test-MgBetaGroupSiteListContentTypePublished -InputObject <ISitesIdentity> [-Res
 ## DESCRIPTION
 Invoke function isPublished
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

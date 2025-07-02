@@ -32,6 +32,8 @@ Get-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get onenote from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

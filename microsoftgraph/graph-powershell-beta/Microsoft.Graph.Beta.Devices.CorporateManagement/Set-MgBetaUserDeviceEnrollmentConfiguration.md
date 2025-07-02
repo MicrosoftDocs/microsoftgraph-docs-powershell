@@ -49,6 +49,8 @@ Set-MgBetaUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 Invoke action assign
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

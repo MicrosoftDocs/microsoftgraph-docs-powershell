@@ -32,6 +32,8 @@ Get-MgUserDriveRootListItemAnalytic -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

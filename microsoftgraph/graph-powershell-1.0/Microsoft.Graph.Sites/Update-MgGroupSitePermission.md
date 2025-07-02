@@ -56,6 +56,8 @@ Update-MgGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property permissions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

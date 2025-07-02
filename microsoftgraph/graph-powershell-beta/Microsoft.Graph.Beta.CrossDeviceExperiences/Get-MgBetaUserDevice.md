@@ -37,6 +37,8 @@ Get-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProp
 ## DESCRIPTION
 Get devices from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

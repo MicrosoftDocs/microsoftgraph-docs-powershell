@@ -32,6 +32,8 @@ Remove-MgBetaGroupSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-I
 ## DESCRIPTION
 Delete navigation property itemActivityStats for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

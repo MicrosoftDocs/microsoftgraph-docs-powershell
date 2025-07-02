@@ -34,6 +34,8 @@ New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 ## DESCRIPTION
 Create new navigation property to credentialUserRegistrationsSummaries for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

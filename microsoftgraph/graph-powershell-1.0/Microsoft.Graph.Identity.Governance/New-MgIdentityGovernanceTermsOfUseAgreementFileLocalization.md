@@ -50,6 +50,8 @@ New-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <IIdent
 ## DESCRIPTION
 Create new navigation property to localizations for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

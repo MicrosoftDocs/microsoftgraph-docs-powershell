@@ -31,6 +31,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityAlert.Read.All, SecurityAlert.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

@@ -46,6 +46,8 @@ New-MgGroupThreadPostInReplyToExtension -InputObject <IGroupsIdentity> -BodyPara
 ## DESCRIPTION
 Create new navigation property to extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

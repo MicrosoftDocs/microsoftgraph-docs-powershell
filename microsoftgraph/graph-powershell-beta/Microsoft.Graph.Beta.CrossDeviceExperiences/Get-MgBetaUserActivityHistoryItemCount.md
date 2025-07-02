@@ -32,6 +32,8 @@ Get-MgBetaUserActivityHistoryItemCount -InputObject <ICrossDeviceExperiencesIden
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

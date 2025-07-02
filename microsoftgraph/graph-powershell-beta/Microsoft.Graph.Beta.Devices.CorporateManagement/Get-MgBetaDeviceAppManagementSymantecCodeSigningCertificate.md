@@ -29,6 +29,8 @@ The WinPhone Symantec Code Signing Certificate.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

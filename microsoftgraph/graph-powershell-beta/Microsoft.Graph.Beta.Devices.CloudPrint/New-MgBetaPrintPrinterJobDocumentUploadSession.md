@@ -66,6 +66,8 @@ This allows transfer to be resumed, in case the network connection is dropped du
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrintJob.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

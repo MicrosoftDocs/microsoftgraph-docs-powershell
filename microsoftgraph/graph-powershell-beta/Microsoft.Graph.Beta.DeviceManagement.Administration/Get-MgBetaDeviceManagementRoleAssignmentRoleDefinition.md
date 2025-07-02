@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementRoleAssignmentRoleDefinition -InputObject <IDeviceMana
 ## DESCRIPTION
 Role definition this assignment is part of.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceAndAppManagementRoleAssignmentId

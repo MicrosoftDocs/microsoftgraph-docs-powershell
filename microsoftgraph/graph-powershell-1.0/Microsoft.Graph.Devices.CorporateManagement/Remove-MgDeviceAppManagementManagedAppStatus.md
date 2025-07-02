@@ -32,6 +32,8 @@ Remove-MgDeviceAppManagementManagedAppStatus -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Delete navigation property managedAppStatuses for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanyCustomerPayment -InputObject <IFinancialsIdentity> 
 ## DESCRIPTION
 Delete navigation property customerPayments for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

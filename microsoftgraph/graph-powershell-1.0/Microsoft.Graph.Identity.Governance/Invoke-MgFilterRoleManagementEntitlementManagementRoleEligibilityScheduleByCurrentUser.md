@@ -36,6 +36,8 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleByCurre
 ## DESCRIPTION
 Retrieve the schedules for role eligibilities for which the signed-in user is the principal.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

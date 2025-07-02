@@ -46,6 +46,8 @@ New-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to columnLinks for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

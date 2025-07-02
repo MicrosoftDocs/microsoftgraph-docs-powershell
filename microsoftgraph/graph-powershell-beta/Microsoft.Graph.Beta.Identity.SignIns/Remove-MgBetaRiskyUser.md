@@ -32,6 +32,8 @@ Remove-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property riskyUsers for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

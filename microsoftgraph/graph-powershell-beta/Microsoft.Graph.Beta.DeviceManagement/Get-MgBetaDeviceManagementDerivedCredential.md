@@ -37,6 +37,8 @@ Get-MgBetaDeviceManagementDerivedCredential -InputObject <IDeviceManagementIdent
 ## DESCRIPTION
 Collection of Derived credential settings associated with account.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

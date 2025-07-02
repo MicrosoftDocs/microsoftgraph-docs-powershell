@@ -30,6 +30,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItem -InputObject <IFi
 ## DESCRIPTION
 Get item from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

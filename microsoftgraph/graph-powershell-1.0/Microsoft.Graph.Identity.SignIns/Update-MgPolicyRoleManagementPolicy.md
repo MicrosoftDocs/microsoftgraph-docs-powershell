@@ -52,6 +52,8 @@ Update-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property roleManagementPolicies in policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

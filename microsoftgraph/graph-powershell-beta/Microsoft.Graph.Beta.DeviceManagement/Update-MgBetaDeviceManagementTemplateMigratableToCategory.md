@@ -49,6 +49,8 @@ Update-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceM
 ## DESCRIPTION
 Update the navigation property categories in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

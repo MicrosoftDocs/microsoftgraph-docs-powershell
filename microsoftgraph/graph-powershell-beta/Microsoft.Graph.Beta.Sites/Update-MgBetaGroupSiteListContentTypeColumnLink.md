@@ -48,6 +48,8 @@ Update-MgBetaGroupSiteListContentTypeColumnLink -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property columnLinks in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -54,6 +54,8 @@ New-MgBetaGroupDriveListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to documentSetVersions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

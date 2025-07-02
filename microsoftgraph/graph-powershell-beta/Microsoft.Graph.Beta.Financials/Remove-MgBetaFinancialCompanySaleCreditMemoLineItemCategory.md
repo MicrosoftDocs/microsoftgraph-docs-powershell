@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanySaleCreditMemoLineItemCategory -InputObject <IFinan
 ## DESCRIPTION
 Delete navigation property itemCategory for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

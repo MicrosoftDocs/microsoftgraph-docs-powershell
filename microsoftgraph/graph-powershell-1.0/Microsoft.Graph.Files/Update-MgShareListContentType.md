@@ -59,6 +59,8 @@ Update-MgShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property contentTypes in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

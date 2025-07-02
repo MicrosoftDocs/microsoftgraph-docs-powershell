@@ -32,6 +32,8 @@ Get-MgUserActivityHistoryItemCount -InputObject <ICrossDeviceExperiencesIdentity
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

@@ -21,6 +21,8 @@ Get-MgBetaIdentityGovernancePermissionAnalyticAw [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 AWS permissions analytics findings.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -20,6 +20,8 @@ Get-MgBetaSecurityRule [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 ## DESCRIPTION
 Get rules from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -50,6 +50,8 @@ New-MgBetaDriveRootListItemVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to versions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

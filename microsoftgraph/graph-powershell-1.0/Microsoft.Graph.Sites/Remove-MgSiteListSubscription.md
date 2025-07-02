@@ -32,6 +32,8 @@ Remove-MgSiteListSubscription -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property subscriptions for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

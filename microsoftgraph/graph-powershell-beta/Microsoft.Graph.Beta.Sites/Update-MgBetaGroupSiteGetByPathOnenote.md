@@ -52,6 +52,8 @@ Update-MgBetaGroupSiteGetByPathOnenote -InputObject <ISitesIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property onenote in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

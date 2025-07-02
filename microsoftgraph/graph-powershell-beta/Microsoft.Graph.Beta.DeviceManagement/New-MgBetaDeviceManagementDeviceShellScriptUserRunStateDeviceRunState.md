@@ -49,6 +49,8 @@ New-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState -InputObje
 ## DESCRIPTION
 Create new navigation property to deviceRunStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

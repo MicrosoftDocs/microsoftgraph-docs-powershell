@@ -32,6 +32,8 @@ Remove-MgBetaGroupDriveItemRetentionLabel -InputObject <IFilesIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property retentionLabel for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

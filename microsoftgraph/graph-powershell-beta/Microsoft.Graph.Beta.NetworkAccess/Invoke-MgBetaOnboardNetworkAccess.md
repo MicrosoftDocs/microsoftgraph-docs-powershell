@@ -20,6 +20,8 @@ Invoke-MgBetaOnboardNetworkAccess [-ResponseHeadersVariable <String>] [-Headers 
 ## DESCRIPTION
 Invoke action onboard
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

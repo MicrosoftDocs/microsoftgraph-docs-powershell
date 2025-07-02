@@ -50,6 +50,8 @@ Update-MgBetaAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 Update the navigation property localizations in agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

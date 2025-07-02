@@ -26,6 +26,8 @@ Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExtern
 ## DESCRIPTION
 Get the identity providers that are defined for an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

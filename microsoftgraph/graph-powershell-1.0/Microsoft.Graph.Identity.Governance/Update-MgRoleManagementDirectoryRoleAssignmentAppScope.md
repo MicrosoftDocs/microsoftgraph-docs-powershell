@@ -48,6 +48,8 @@ Update-MgRoleManagementDirectoryRoleAssignmentAppScope -InputObject <IIdentityGo
 ## DESCRIPTION
 Update the navigation property appScope in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

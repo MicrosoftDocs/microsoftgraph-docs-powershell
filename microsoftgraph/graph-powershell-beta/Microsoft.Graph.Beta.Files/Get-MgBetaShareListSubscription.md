@@ -40,6 +40,8 @@ Get-MgBetaShareListSubscription -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The set of subscriptions on the list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

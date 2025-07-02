@@ -50,6 +50,8 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMember -InputObject <IWindowsU
 Remove members from an updatableAssetGroup.
 You can also use the method removeMembersById to remove members.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

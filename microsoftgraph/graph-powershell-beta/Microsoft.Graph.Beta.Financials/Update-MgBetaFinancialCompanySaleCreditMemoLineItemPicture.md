@@ -45,6 +45,8 @@ Update-MgBetaFinancialCompanySaleCreditMemoLineItemPicture -InputObject <IFinanc
 ## DESCRIPTION
 Update the navigation property picture in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

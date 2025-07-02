@@ -32,6 +32,8 @@ Invoke-MgBetaDownUserManagedDeviceShut -InputObject <IDevicesCorporateManagement
 ## DESCRIPTION
 Shut down device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

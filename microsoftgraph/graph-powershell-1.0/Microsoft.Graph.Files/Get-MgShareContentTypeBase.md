@@ -32,6 +32,8 @@ Get-MgShareContentTypeBase -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

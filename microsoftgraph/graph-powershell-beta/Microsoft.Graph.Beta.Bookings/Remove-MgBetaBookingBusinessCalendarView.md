@@ -46,6 +46,8 @@ Remove-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property calendarView for bookingBusinesses
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BookingAppointmentId

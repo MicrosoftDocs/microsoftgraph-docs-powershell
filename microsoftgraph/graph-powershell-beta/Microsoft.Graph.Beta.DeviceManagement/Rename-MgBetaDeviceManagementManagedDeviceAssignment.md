@@ -47,6 +47,8 @@ Rename-MgBetaDeviceManagementManagedDeviceAssignment -InputObject <IDeviceManage
 ## DESCRIPTION
 Invoke action changeAssignments
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

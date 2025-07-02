@@ -54,6 +54,8 @@ New-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Create new navigation property to notebooks for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

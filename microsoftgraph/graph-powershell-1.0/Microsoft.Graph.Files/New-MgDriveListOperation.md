@@ -50,6 +50,8 @@ New-MgDriveListOperation -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to operations for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

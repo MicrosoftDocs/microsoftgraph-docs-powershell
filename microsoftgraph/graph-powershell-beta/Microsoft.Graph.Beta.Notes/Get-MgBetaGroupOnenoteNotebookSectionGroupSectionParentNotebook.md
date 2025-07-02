@@ -35,6 +35,8 @@ Get-MgBetaGroupOnenoteNotebookSectionGroupSectionParentNotebook -InputObject <IN
 The notebook that contains the section.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

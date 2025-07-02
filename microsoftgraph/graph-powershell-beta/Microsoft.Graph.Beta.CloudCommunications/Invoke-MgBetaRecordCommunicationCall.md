@@ -51,6 +51,8 @@ Invoke-MgBetaRecordCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Invoke action record
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -49,6 +49,8 @@ Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 Update the navigation property appLogCollectionRequests in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

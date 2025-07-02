@@ -33,6 +33,8 @@ Remove-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISites
 ## DESCRIPTION
 Delete navigation property horizontalSections for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

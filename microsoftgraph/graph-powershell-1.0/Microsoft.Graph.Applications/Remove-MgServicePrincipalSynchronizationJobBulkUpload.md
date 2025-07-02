@@ -33,6 +33,8 @@ Remove-MgServicePrincipalSynchronizationJobBulkUpload -InputObject <IApplication
 ## DESCRIPTION
 Delete navigation property bulkUpload for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

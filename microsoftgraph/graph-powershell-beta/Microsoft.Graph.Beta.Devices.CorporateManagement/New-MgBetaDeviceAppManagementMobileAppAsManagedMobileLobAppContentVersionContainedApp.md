@@ -50,6 +50,8 @@ New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContain
 ## DESCRIPTION
 Create new navigation property to containedApps for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

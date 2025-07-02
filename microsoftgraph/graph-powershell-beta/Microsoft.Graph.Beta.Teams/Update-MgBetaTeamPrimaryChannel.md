@@ -60,6 +60,8 @@ Update-MgBetaTeamPrimaryChannel -InputObject <ITeamsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property primaryChannel in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

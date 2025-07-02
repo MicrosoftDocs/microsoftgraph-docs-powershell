@@ -30,6 +30,8 @@ Remove-MgBetaGroupEventInstanceExceptionOccurrenceAttachment -InputObject <ICale
 ## DESCRIPTION
 Delete navigation property attachments for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId

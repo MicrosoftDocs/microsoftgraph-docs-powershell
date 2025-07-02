@@ -32,6 +32,8 @@ Remove-MgBetaDriveRootThumbnail -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property thumbnails for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

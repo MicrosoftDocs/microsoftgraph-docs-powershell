@@ -31,6 +31,8 @@ Update-MgBetaDirectoryCertificateAuthority -BodyParameter <IMicrosoftGraphCertif
 ## DESCRIPTION
 Update the navigation property certificateAuthorities in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

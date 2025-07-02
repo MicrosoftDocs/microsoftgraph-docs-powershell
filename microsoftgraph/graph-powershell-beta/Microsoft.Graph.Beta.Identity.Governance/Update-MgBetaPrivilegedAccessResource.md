@@ -55,6 +55,8 @@ Update-MgBetaPrivilegedAccessResource -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property resources in privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

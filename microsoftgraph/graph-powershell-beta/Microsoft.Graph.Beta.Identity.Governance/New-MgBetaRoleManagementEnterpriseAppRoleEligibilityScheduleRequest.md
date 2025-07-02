@@ -59,6 +59,8 @@ New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest -InputObject
 ## DESCRIPTION
 Create new navigation property to roleEligibilityScheduleRequests for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

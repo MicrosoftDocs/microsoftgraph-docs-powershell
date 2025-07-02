@@ -31,6 +31,8 @@ Update-MgBetaReportPartnerBillingUsageUnbilled -BodyParameter <Hashtable> [-Resp
 ## DESCRIPTION
 Update the navigation property unbilled in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

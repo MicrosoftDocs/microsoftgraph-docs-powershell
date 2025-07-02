@@ -24,6 +24,8 @@ Remove-MgBetaPolicyCrossTenantAccessPolicy [-IfMatch <String>] [-ResponseHeaders
 ## DESCRIPTION
 Delete navigation property crossTenantAccessPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -57,6 +57,8 @@ Update-MgBetaSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesIdentit
 ## DESCRIPTION
 Update the navigation property children in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

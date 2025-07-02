@@ -43,6 +43,8 @@ Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore SharePoint sites.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

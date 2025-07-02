@@ -60,6 +60,8 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStep -InputObject <IM
 ## DESCRIPTION
 Get managementTemplateSteps from tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

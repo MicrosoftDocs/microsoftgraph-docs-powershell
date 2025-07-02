@@ -50,6 +50,8 @@ New-MgBetaGroupTeamInstalledApp -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to installedApps for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

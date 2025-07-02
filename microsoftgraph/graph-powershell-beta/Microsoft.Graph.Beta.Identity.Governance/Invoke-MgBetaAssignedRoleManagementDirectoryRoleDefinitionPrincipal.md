@@ -48,6 +48,8 @@ To list the direct and transitive role assignments for a specific principal, use
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

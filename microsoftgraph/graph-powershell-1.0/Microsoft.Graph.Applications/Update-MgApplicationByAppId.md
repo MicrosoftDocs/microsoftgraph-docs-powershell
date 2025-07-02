@@ -99,6 +99,8 @@ Update-MgApplicationByAppId -InputObject <IApplicationsIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AddIns

@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsI
 ## DESCRIPTION
 Delete navigation property tenantGroups for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

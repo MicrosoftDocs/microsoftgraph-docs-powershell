@@ -37,6 +37,8 @@ Get-MgBetaReportDailyPrintUsage -InputObject <IReportsIdentity> [-ExpandProperty
 ## DESCRIPTION
 Get dailyPrintUsage from reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

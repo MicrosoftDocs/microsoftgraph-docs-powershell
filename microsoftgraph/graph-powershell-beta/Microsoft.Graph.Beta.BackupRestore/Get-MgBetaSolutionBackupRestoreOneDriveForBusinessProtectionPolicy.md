@@ -41,6 +41,8 @@ Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy -InputObject 
 ## DESCRIPTION
 The list of OneDrive for Business protection policies in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

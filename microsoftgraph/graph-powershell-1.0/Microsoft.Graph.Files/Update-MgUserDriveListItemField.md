@@ -46,6 +46,8 @@ Update-MgUserDriveListItemField -InputObject <IFilesIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Update the navigation property fields in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

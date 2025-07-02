@@ -33,6 +33,8 @@ Remove-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject 
 ## DESCRIPTION
 Delete navigation property userConsentRequests for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppConsentRequestId

@@ -32,6 +32,8 @@ Get-MgBetaGroupDriveRootListItemAnalytic -InputObject <IFilesIdentity> [-ExpandP
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

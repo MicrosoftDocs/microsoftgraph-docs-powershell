@@ -32,6 +32,8 @@ Remove-MgUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Delete navigation property windowsProtectionState for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

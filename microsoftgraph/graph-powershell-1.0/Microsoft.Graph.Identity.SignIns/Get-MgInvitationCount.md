@@ -23,6 +23,8 @@ Get-MgInvitationCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVar
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

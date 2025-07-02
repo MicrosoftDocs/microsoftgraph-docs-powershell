@@ -33,6 +33,8 @@ Publish-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> [-ResponseH
 ## DESCRIPTION
 Invoke action publish
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

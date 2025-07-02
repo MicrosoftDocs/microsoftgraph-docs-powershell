@@ -46,6 +46,8 @@ Update-MgBetaUserEventInstanceExtension -InputObject <ICalendarIdentity> -BodyPa
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

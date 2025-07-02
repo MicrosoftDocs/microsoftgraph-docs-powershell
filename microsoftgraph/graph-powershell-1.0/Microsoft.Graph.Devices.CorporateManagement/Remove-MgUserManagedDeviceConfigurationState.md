@@ -32,6 +32,8 @@ Remove-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Delete navigation property deviceConfigurationStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceConfigurationStateId

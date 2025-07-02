@@ -53,6 +53,8 @@ Update-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update entity in onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

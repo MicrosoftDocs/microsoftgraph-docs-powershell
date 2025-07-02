@@ -40,6 +40,8 @@ Get-MgBetaGroupTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 A collection of all the tabs in the channel.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -25,6 +25,8 @@ Get-MgAllTeamworkDeletedTeamMessage [-Count] [-ExpandProperty <String[]>] [-Filt
 ## DESCRIPTION
 Invoke function getAllMessages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

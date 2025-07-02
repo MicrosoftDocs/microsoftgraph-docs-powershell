@@ -32,6 +32,8 @@ Remove-MgUserTodoListTaskExtension -InputObject <IUsersIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExtensionId

@@ -47,6 +47,8 @@ This allows you to maintain and synchronize a local store of a user's messages w
 | Delegated (personal Microsoft account) | Mail.Read, Mail.ReadBasic,  |
 | Application | Mail.Read, Mail.ReadBasic.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

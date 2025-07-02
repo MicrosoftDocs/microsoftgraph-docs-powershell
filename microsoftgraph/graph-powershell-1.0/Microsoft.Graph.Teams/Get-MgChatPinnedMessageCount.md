@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatMessage.Read.All, Chat.ReadWrite.All, Chat.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

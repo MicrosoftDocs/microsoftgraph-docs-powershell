@@ -32,6 +32,8 @@ Remove-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property notes for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthoredNoteId

@@ -29,6 +29,8 @@ Enable-MgBetaUserAuthenticationMethodSmsSignIn -InputObject <IIdentitySignInsIde
 ## DESCRIPTION
 Invoke action enableSmsSignIn
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationMethodId

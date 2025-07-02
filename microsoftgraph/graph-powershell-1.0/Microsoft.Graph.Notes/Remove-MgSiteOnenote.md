@@ -32,6 +32,8 @@ Remove-MgSiteOnenote -InputObject <INotesIdentity> [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property onenote for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

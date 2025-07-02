@@ -37,6 +37,8 @@ Get-MgBetaDirectorySharedEmailDomain -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Get sharedEmailDomains from directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

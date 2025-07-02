@@ -79,6 +79,8 @@ Update-MgBetaDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled

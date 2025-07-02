@@ -29,6 +29,8 @@ Set-MgBetaFinancialCompanyEmployeePictureContent -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Update content for the navigation property picture in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

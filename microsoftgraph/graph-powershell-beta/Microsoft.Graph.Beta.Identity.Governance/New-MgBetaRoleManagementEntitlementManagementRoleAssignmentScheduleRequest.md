@@ -41,6 +41,8 @@ New-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
 ## DESCRIPTION
 Create new navigation property to roleAssignmentScheduleRequests for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

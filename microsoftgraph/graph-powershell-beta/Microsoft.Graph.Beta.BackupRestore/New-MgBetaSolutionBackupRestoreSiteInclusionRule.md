@@ -35,6 +35,8 @@ New-MgBetaSolutionBackupRestoreSiteInclusionRule -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to siteInclusionRules for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

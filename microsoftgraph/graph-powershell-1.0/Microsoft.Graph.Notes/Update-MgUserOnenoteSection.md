@@ -54,6 +54,8 @@ Update-MgUserOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property sections in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

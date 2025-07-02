@@ -47,6 +47,8 @@ Register-MgBetaPrivilegedAccessResource -InputObject <IIdentityGovernanceIdentit
 ## DESCRIPTION
 Invoke action register
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

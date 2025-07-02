@@ -40,6 +40,8 @@ Get-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> [-ExpandPropert
 ## DESCRIPTION
 The collection of content types present in this list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

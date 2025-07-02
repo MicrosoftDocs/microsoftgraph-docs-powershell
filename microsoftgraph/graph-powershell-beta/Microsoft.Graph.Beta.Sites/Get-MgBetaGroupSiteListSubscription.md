@@ -41,6 +41,8 @@ Get-MgBetaGroupSiteListSubscription -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 The set of subscriptions on the list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

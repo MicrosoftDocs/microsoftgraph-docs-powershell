@@ -64,6 +64,8 @@ Update-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
 ## DESCRIPTION
 Update the navigation property conditionalAccessSettings in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

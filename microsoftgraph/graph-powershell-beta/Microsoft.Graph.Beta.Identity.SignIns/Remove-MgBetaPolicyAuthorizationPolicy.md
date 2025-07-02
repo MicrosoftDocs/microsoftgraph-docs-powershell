@@ -32,6 +32,8 @@ Remove-MgBetaPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete navigation property authorizationPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthorizationPolicyId

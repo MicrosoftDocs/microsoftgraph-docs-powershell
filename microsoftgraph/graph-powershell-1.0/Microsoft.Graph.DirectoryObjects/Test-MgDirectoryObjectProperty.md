@@ -61,6 +61,8 @@ To learn more about configuring naming policies, see Configure naming policy.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

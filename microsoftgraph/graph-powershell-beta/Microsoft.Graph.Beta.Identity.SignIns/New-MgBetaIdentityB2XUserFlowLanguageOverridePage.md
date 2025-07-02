@@ -47,6 +47,8 @@ New-MgBetaIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Create new navigation property to overridesPages for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

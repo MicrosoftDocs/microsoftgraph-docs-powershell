@@ -29,6 +29,8 @@ Remove-MgBetaExternalIndustryDataOperation -InputObject <ISearchIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property operations for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

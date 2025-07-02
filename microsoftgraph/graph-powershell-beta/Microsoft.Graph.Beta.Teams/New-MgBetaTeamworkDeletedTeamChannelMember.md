@@ -78,6 +78,8 @@ New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to allMembers for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

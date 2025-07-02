@@ -32,6 +32,8 @@ Disable-MgBetaUserManagedDeviceLostMode -InputObject <IDevicesCorporateManagemen
 ## DESCRIPTION
 Disable lost mode
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

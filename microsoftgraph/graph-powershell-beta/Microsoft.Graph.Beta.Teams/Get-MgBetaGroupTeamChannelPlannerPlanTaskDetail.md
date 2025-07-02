@@ -34,6 +34,8 @@ Read-only.
 Nullable.
 More details about the task.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

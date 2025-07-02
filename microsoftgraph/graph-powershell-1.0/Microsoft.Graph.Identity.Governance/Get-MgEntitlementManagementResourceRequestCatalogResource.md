@@ -38,6 +38,8 @@ Get-MgEntitlementManagementResourceRequestCatalogResource -InputObject <IIdentit
 ## DESCRIPTION
 Access package resources in this catalog.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

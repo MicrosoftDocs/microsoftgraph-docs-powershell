@@ -21,6 +21,8 @@ Get-MgBetaComplianceEdiscovery [-ExpandProperty <String[]>] [-Property <String[]
 ## DESCRIPTION
 Get ediscovery from compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

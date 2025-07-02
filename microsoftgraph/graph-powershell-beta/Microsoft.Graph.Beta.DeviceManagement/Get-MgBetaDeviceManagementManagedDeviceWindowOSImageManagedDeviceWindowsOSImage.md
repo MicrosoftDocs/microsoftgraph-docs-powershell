@@ -33,6 +33,8 @@ Get-MgBetaDeviceManagementManagedDeviceWindowOSImageManagedDeviceWindowsOSImage
 ## DESCRIPTION
 Invoke function getAllManagedDeviceWindowsOSImages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

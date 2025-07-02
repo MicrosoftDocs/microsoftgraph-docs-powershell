@@ -32,6 +32,8 @@ Get-MgGroupTeamGroup -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Get group from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

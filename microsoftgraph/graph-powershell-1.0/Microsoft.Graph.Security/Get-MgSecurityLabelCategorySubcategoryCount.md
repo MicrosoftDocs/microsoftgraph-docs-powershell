@@ -32,6 +32,8 @@ Get-MgSecurityLabelCategorySubcategoryCount -InputObject <ISecurityIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CategoryTemplateId

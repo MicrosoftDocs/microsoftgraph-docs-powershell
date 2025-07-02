@@ -60,6 +60,8 @@ Remove-MgGroupTeamMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property members for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

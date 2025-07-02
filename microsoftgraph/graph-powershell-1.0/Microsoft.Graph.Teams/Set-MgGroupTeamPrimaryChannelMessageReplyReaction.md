@@ -51,6 +51,8 @@ Set-MgGroupTeamPrimaryChannelMessageReplyReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action setReaction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

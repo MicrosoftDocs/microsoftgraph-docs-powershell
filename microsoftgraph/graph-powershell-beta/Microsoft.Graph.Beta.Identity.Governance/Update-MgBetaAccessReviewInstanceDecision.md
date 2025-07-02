@@ -50,6 +50,8 @@ Update-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdent
 ## DESCRIPTION
 Update the navigation property decisions in accessReviews
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessRecommendation

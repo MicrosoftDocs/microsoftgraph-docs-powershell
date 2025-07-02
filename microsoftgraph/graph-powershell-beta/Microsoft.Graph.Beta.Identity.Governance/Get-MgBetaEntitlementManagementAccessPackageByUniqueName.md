@@ -42,6 +42,8 @@ Each object links to an accessPackageResourceRole and an accessPackageResourceSc
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

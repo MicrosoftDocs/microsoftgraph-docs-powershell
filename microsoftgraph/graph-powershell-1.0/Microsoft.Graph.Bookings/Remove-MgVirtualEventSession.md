@@ -32,6 +32,8 @@ Remove-MgVirtualEventSession -InputObject <IBookingsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property sessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

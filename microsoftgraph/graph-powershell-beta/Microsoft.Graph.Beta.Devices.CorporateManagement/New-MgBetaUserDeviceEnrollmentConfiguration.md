@@ -51,6 +51,8 @@ New-MgBetaUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 Create new navigation property to deviceEnrollmentConfigurations for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

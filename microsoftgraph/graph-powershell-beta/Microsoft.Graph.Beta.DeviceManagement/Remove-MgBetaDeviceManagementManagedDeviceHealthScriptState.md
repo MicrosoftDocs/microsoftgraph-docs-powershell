@@ -30,6 +30,8 @@ Remove-MgBetaDeviceManagementManagedDeviceHealthScriptState -InputObject <IDevic
 ## DESCRIPTION
 Delete navigation property deviceHealthScriptStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

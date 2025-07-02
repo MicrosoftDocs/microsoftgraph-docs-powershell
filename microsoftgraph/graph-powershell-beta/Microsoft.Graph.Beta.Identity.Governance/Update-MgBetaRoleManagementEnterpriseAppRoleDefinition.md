@@ -52,6 +52,8 @@ Update-MgBetaRoleManagementEnterpriseAppRoleDefinition -InputObject <IIdentityGo
 ## DESCRIPTION
 Update the navigation property roleDefinitions in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

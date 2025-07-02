@@ -24,6 +24,8 @@ Remove-MgBetaPolicyCrossTenantAccessPolicyDefault [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete navigation property default for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

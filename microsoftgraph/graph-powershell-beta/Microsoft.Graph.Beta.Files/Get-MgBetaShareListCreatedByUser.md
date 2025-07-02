@@ -32,6 +32,8 @@ Get-MgBetaShareListCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get createdByUser from shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

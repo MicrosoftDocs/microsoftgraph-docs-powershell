@@ -24,6 +24,8 @@ Get-MgBetaRoleManagementEntitlementManagement [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 The RbacApplication for Entitlement Management
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

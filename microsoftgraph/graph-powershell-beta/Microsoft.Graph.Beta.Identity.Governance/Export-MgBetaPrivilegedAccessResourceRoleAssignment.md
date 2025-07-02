@@ -30,6 +30,8 @@ Export-MgBetaPrivilegedAccessResourceRoleAssignment -InputObject <IIdentityGover
 ## DESCRIPTION
 Invoke function export
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

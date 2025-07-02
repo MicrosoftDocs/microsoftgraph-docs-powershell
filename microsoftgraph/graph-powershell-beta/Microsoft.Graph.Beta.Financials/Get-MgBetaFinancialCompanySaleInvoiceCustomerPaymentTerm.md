@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleInvoiceCustomerPaymentTerm -InputObject <IFinancia
 ## DESCRIPTION
 Get paymentTerm from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

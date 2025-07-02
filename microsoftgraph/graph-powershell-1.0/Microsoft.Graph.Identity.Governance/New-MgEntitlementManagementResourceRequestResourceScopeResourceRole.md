@@ -48,6 +48,8 @@ New-MgEntitlementManagementResourceRequestResourceScopeResourceRole -InputObject
 ## DESCRIPTION
 Create new navigation property to roles for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

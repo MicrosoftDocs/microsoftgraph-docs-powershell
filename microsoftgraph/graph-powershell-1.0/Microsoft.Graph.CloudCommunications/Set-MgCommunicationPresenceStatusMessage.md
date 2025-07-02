@@ -53,6 +53,8 @@ Set-MgCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsIdent
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

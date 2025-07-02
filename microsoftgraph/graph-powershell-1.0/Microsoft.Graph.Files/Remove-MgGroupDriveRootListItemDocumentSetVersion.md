@@ -32,6 +32,8 @@ Remove-MgGroupDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity> 
 ## DESCRIPTION
 Delete navigation property documentSetVersions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

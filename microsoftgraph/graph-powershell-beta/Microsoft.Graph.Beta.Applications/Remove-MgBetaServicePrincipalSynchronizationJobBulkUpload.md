@@ -33,6 +33,8 @@ Remove-MgBetaServicePrincipalSynchronizationJobBulkUpload -InputObject <IApplica
 ## DESCRIPTION
 Delete navigation property bulkUpload for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

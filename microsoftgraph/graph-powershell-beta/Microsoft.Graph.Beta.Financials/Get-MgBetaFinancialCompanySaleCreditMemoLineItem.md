@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoLineItem -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Get item from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

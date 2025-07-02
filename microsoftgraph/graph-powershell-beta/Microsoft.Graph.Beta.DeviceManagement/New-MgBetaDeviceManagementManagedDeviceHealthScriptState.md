@@ -55,6 +55,8 @@ New-MgBetaDeviceManagementManagedDeviceHealthScriptState -InputObject <IDeviceMa
 ## DESCRIPTION
 Create new navigation property to deviceHealthScriptStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

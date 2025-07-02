@@ -32,6 +32,8 @@ Remove-MgBetaUserChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property pinnedMessages for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

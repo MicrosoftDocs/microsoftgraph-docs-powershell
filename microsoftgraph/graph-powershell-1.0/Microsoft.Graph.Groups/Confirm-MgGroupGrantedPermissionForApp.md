@@ -30,6 +30,8 @@ Confirm-MgGroupGrantedPermissionForApp -InputObject <IGroupsIdentity> [-Response
 ## DESCRIPTION
 Invoke action checkGrantedPermissionsForApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

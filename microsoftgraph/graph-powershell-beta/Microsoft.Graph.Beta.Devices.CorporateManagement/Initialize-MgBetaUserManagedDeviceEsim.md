@@ -47,6 +47,8 @@ Initialize-MgBetaUserManagedDeviceEsim -InputObject <IDevicesCorporateManagement
 ## DESCRIPTION
 Activate eSIM on the device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

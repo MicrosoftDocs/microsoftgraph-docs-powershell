@@ -47,6 +47,8 @@ Update-MgDeviceAppManagementManagedAppStatus -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Update the navigation property managedAppStatuses in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

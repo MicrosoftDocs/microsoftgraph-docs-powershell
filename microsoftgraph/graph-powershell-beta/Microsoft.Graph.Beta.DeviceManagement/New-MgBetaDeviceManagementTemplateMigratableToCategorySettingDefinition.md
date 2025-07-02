@@ -56,6 +56,8 @@ New-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition
 ## DESCRIPTION
 Create new navigation property to settingDefinitions for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

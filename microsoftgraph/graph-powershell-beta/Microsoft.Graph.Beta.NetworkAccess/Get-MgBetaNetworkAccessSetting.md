@@ -21,6 +21,8 @@ Get-MgBetaNetworkAccessSetting [-ExpandProperty <String[]>] [-Property <String[]
 ## DESCRIPTION
 Global Secure Access settings.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

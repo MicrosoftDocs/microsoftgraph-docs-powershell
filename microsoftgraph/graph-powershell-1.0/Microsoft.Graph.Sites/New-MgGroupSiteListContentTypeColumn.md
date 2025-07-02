@@ -68,6 +68,8 @@ New-MgGroupSiteListContentTypeColumn -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

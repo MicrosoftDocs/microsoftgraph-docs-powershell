@@ -29,6 +29,8 @@ Remove-MgBetaBusinessFlowTemplate -InputObject <IIdentityGovernanceIdentity> [-I
 ## DESCRIPTION
 Delete entity from businessFlowTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BusinessFlowTemplateId

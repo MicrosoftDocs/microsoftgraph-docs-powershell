@@ -33,6 +33,8 @@ Remove-MgBetaTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Delete navigation property sharedWithTeams for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

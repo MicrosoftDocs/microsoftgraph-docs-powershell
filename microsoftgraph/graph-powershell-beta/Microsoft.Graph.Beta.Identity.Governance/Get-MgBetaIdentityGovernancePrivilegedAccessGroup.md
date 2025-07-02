@@ -24,6 +24,8 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroup [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 A group that's governed through Privileged Identity Management (PIM).
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -38,6 +38,8 @@ Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTag -InputObject <IDeviceManage
 ## DESCRIPTION
 The set of Role Scope Tags defined on the Role Assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

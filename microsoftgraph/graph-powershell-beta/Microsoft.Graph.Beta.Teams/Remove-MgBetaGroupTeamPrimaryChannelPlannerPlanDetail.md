@@ -29,6 +29,8 @@ Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanDetail -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Delete navigation property details for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

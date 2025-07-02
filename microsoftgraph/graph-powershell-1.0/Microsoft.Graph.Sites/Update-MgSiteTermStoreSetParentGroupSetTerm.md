@@ -92,6 +92,8 @@ Update-MgSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property terms in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

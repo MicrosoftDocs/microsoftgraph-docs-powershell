@@ -54,6 +54,8 @@ Update-MgBetaSiteListItemLastModifiedByUserMailboxSetting -InputObject <ISitesId
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

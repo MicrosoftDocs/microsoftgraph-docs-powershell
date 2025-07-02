@@ -32,6 +32,8 @@ Remove-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property primaryChannel for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

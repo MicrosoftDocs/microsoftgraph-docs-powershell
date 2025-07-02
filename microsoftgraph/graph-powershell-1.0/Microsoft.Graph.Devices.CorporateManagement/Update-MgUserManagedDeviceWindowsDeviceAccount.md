@@ -53,6 +53,8 @@ Update-MgUserManagedDeviceWindowsDeviceAccount -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 Not yet documented
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

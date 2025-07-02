@@ -32,6 +32,8 @@ Set-MgBetaDriveRootVersionContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 Update content for the navigation property versions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

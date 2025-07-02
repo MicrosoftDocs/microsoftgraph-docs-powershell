@@ -23,6 +23,8 @@ Get-MgBetaVirtualEventTownhallCount [-Filter <String>] [-Search <String>] [-Resp
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

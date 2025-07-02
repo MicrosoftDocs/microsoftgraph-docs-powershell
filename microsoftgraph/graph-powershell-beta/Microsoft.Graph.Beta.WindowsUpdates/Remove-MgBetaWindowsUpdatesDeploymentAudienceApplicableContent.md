@@ -29,6 +29,8 @@ Remove-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent -InputObject <IWi
 ## DESCRIPTION
 Delete navigation property applicableContent for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicableContentCatalogEntryId

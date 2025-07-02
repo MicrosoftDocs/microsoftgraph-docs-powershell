@@ -39,6 +39,8 @@ Get-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecurityI
 ## DESCRIPTION
 Data sources that represent Exchange mailboxes.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -36,6 +36,8 @@ New-MgBetaSecurityThreatIntelligenceHostPort -BodyParameter <IMicrosoftGraphSecu
 ## DESCRIPTION
 Create new navigation property to hostPorts for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

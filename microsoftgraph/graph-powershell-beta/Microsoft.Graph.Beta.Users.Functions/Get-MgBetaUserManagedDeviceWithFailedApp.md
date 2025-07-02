@@ -37,6 +37,8 @@ Retrieves the list of devices with failed or pending apps
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

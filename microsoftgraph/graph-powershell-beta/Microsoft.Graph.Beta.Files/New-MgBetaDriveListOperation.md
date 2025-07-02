@@ -50,6 +50,8 @@ New-MgBetaDriveListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

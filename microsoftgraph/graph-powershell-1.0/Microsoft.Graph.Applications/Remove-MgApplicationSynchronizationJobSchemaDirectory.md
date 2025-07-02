@@ -33,6 +33,8 @@ Remove-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplication
 ## DESCRIPTION
 Delete navigation property directories for applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

@@ -32,6 +32,8 @@ Remove-MgVirtualEvent -InputObject <IBookingsIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property events for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

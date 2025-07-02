@@ -39,6 +39,8 @@ Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment
 ## DESCRIPTION
 Get transitiveRoleAssignments from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

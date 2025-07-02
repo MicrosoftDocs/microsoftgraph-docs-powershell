@@ -52,6 +52,8 @@ Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation -InputObject <IFiles
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementIntentUserStateSummary -InputObject <IDeviceManagem
 ## DESCRIPTION
 Delete navigation property userStateSummary for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementIntentId

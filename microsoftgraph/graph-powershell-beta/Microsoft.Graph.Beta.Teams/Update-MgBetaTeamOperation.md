@@ -50,6 +50,8 @@ Update-MgBetaTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property operations in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

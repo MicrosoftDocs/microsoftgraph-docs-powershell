@@ -48,6 +48,8 @@ Update-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentit
 ## DESCRIPTION
 Update the navigation property hostedContents in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

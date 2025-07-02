@@ -46,6 +46,8 @@ New-MgDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Create new navigation property to extensions for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

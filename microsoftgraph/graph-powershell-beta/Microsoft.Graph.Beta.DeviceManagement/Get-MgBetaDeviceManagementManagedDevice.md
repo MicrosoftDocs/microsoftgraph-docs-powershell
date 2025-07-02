@@ -48,6 +48,8 @@ The list of managed devices.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

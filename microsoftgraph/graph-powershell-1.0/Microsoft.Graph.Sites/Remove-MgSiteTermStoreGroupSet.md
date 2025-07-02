@@ -46,6 +46,8 @@ Remove-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property sets for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

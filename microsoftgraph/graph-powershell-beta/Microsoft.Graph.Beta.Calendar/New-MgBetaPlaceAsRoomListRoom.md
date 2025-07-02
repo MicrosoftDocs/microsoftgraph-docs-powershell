@@ -56,6 +56,8 @@ New-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to rooms for places
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

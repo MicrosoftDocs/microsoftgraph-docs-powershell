@@ -33,6 +33,8 @@ Invoke function delta
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AdministrativeUnit.Read.All, Directory.ReadWrite.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

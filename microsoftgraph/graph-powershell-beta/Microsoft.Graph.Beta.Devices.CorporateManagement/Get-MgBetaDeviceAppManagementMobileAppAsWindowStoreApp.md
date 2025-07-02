@@ -37,6 +37,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreApp -InputObject <IDevicesCor
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsStoreApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -37,6 +37,8 @@ Get-MgBetaDeviceManagementScript -InputObject <IDeviceManagementIdentity> [-Expa
 ## DESCRIPTION
 The list of device management scripts associated with the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

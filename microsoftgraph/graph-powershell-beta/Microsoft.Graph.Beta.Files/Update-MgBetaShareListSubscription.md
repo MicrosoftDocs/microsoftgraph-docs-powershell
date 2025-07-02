@@ -55,6 +55,8 @@ Update-MgBetaShareListSubscription -InputObject <IFilesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property subscriptions in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

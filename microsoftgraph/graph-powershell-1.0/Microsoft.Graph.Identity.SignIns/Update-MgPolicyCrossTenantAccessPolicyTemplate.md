@@ -42,6 +42,8 @@ Update the navigation property templates in policies
 | Delegated (personal Microsoft account) | Not supported |
 | Application | MultiTenantOrganization.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

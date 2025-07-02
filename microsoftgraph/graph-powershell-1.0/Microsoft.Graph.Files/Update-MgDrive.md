@@ -61,6 +61,8 @@ Update-MgDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriv
 ## DESCRIPTION
 Update entity in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

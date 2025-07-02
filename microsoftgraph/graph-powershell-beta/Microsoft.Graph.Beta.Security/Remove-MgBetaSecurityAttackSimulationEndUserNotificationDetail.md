@@ -33,6 +33,8 @@ Remove-MgBetaSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISe
 ## DESCRIPTION
 Delete navigation property details for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndUserNotificationDetailId

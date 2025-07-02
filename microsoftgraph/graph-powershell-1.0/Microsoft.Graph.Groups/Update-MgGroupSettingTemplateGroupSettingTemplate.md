@@ -47,6 +47,8 @@ Update-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Update entity in groupSettingTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

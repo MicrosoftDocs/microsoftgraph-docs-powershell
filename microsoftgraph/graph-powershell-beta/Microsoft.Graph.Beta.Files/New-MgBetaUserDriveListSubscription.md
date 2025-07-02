@@ -54,6 +54,8 @@ New-MgBetaUserDriveListSubscription -InputObject <IFilesIdentity> -BodyParameter
 ## DESCRIPTION
 Create new navigation property to subscriptions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

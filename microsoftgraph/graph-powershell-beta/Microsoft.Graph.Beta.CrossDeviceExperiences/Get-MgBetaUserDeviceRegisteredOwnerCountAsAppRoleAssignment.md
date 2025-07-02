@@ -29,6 +29,8 @@ Get-MgBetaUserDeviceRegisteredOwnerCountAsAppRoleAssignment -InputObject <ICross
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

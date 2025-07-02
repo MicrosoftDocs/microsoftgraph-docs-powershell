@@ -47,6 +47,8 @@ Update-MgSolutionBackupRestore -BodyParameter <IMicrosoftGraphBackupRestoreRoot>
 ## DESCRIPTION
 Update the navigation property backupRestore in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -55,6 +55,8 @@ Update-MgGroupDriveItemSubscription -InputObject <IFilesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property subscriptions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaUserDriveRootListItemDocumentSetVersionField -InputObject <IFilesId
 ## DESCRIPTION
 Delete navigation property fields for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

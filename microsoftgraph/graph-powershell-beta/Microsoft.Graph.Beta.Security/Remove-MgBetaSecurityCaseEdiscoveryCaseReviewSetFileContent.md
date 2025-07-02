@@ -30,6 +30,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent -InputObject <ISecur
 ## DESCRIPTION
 Delete content for the navigation property files in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

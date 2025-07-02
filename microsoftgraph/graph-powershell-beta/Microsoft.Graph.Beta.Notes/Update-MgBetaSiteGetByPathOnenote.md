@@ -52,6 +52,8 @@ Update-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property onenote in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

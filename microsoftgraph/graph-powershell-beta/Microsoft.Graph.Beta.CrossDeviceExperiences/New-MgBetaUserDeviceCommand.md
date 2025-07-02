@@ -47,6 +47,8 @@ New-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Create new navigation property to commands for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -45,6 +45,8 @@ Get roleDefinitions from roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.Read.All, CloudPC.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.Read.Directory, RoleManagement.Read.CloudPC, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory, Directory.Read.All, DeviceManagementRBAC.ReadWrite.All, Directory.ReadWrite.All, CloudPC.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -46,6 +46,8 @@ New-MgGroupSiteContentTypeColumnLink -InputObject <ISitesIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to columnLinks for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

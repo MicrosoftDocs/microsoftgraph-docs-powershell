@@ -30,6 +30,8 @@ Remove-MgEntitlementManagementResourceEnvironmentResourceScope -InputObject <IId
 ## DESCRIPTION
 Delete navigation property scopes for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId

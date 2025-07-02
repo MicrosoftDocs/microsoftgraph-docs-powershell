@@ -32,6 +32,8 @@ Get-MgGroupSiteOnenote -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Calls the OneNote service for notebook related operations.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

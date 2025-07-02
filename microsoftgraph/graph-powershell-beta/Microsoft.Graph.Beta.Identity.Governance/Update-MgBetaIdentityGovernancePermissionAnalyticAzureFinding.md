@@ -45,6 +45,8 @@ Update-MgBetaIdentityGovernancePermissionAnalyticAzureFinding -InputObject <IIde
 ## DESCRIPTION
 Update the navigation property findings in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

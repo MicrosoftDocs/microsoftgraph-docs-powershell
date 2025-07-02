@@ -33,6 +33,8 @@ Test-MgBetaIdentityConditionalAccess
 ## DESCRIPTION
 Invoke action evaluate
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

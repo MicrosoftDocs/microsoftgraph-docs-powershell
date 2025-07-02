@@ -41,6 +41,8 @@ Device template used to instantiate this device.
 Nullable.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

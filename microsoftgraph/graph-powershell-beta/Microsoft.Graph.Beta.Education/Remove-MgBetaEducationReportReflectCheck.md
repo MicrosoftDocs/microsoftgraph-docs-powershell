@@ -29,6 +29,8 @@ Remove-MgBetaEducationReportReflectCheck -InputObject <IEducationIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property reflectCheckInResponses for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

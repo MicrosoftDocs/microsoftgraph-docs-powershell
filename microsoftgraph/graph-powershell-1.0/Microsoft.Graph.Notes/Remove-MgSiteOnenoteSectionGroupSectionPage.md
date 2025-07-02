@@ -33,6 +33,8 @@ Remove-MgSiteOnenoteSectionGroupSectionPage -InputObject <INotesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property pages for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

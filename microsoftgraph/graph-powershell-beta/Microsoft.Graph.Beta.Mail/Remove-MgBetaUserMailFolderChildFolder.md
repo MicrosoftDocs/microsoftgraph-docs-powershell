@@ -32,6 +32,8 @@ Remove-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property childFolders for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

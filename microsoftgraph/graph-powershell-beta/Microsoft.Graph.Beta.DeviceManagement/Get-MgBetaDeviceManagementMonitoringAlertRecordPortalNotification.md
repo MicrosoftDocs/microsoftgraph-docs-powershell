@@ -29,6 +29,8 @@ Get a list of all notifications that one or more users can access, from the Micr
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

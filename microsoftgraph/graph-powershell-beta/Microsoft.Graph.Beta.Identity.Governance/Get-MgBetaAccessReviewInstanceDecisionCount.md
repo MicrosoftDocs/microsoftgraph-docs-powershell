@@ -29,6 +29,8 @@ Get-MgBetaAccessReviewInstanceDecisionCount -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

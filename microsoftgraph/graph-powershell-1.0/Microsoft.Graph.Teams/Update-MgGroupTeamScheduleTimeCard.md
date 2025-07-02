@@ -54,6 +54,8 @@ Update-MgGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property timeCards in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

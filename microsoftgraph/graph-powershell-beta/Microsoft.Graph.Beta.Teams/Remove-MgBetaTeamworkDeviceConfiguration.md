@@ -29,6 +29,8 @@ Remove-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property configuration for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

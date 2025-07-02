@@ -55,6 +55,8 @@ Update-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property health in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

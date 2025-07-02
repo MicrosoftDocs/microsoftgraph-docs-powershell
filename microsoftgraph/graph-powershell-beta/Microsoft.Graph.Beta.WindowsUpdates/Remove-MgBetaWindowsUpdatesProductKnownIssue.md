@@ -29,6 +29,8 @@ Remove-MgBetaWindowsUpdatesProductKnownIssue -InputObject <IWindowsUpdatesIdenti
 ## DESCRIPTION
 Delete navigation property knownIssues for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

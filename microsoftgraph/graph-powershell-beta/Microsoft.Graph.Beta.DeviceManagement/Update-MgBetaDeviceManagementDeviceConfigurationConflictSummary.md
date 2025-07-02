@@ -55,6 +55,8 @@ Update the navigation property deviceConfigurationConflictSummary in deviceManag
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Remove-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
 ## DESCRIPTION
 Delete navigation property settingStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

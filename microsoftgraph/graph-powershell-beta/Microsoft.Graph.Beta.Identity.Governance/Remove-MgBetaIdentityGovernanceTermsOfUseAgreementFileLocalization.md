@@ -32,6 +32,8 @@ Remove-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject 
 ## DESCRIPTION
 Delete navigation property localizations for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId

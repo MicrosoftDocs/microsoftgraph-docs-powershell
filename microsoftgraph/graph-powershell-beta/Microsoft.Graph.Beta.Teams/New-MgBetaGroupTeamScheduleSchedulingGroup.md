@@ -48,6 +48,8 @@ New-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to schedulingGroups for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

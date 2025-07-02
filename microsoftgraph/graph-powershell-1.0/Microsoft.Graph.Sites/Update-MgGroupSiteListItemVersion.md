@@ -52,6 +52,8 @@ Update-MgGroupSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property versions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

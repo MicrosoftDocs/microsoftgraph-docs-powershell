@@ -32,6 +32,8 @@ Invoke-MgBetaFollowUserDriveItem -InputObject <IFilesIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Follow a driveItem.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

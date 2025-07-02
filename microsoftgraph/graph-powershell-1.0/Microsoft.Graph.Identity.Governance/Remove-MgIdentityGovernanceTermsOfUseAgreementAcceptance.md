@@ -46,6 +46,8 @@ Remove-MgIdentityGovernanceTermsOfUseAgreementAcceptance -InputObject <IIdentity
 ## DESCRIPTION
 Delete navigation property agreementAcceptances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId

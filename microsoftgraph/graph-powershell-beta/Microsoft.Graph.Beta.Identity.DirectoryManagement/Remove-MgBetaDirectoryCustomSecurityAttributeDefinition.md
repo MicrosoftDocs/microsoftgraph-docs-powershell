@@ -32,6 +32,8 @@ Remove-MgBetaDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityD
 ## DESCRIPTION
 Delete navigation property customSecurityAttributeDefinitions for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CustomSecurityAttributeDefinitionId

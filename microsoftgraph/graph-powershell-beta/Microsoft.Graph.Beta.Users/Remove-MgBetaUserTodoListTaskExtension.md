@@ -32,6 +32,8 @@ Remove-MgBetaUserTodoListTaskExtension -InputObject <IUsersIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExtensionId

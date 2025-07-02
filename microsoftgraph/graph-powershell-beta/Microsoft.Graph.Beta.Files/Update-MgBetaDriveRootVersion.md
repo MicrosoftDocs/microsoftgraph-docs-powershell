@@ -50,6 +50,8 @@ Update-MgBetaDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property versions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

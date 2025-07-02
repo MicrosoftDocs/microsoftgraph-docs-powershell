@@ -33,6 +33,8 @@ Invoke-MgRetireUserManagedDevice -InputObject <IDevicesCorporateManagementIdenti
 ## DESCRIPTION
 Retire a device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

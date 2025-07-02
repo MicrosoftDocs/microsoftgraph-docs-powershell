@@ -34,6 +34,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultTask
 ## DESCRIPTION
 The related workflow task
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

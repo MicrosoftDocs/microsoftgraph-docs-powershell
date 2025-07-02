@@ -52,6 +52,8 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -InputObjec
 ## DESCRIPTION
 Update the navigation property forwardingProfiles in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

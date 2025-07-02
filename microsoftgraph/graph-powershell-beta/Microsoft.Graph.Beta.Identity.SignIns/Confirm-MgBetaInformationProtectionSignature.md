@@ -31,6 +31,8 @@ Confirm-MgBetaInformationProtectionSignature
 ## DESCRIPTION
 Invoke action verifySignature
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

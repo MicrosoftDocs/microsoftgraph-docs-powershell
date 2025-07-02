@@ -33,6 +33,8 @@ Get-MgGroupSiteAnalyticItemActivityStatActivityDriveItem -InputObject <ISitesIde
 ## DESCRIPTION
 Exposes the driveItem that was the target of this activity.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

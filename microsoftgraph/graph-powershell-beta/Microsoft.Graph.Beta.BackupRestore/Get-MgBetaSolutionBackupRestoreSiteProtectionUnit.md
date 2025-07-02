@@ -40,6 +40,8 @@ Get-MgBetaSolutionBackupRestoreSiteProtectionUnit -InputObject <IBackupRestoreId
 ## DESCRIPTION
 The list of site protection units in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

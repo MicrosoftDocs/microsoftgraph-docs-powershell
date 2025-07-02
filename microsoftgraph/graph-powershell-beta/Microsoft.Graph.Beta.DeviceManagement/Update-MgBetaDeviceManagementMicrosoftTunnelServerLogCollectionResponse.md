@@ -59,6 +59,8 @@ Update the navigation property microsoftTunnelServerLogCollectionResponses in de
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

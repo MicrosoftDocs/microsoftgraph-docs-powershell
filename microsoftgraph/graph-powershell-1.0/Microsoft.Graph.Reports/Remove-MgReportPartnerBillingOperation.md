@@ -32,6 +32,8 @@ Remove-MgReportPartnerBillingOperation -InputObject <IReportsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property operations for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

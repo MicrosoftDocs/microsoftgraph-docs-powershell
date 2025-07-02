@@ -49,6 +49,8 @@ Copy-MgUserMailFolderChildFolder -InputObject <IMailIdentity>
 ## DESCRIPTION
 Copy a mailfolder and its contents to another mailfolder.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ New-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart -InputObject <
 ## DESCRIPTION
 Create new navigation property to webparts for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

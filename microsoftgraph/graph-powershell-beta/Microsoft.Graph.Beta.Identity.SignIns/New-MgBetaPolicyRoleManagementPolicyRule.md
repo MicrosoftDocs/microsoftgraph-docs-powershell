@@ -48,6 +48,8 @@ New-MgBetaPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Create new navigation property to rules for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

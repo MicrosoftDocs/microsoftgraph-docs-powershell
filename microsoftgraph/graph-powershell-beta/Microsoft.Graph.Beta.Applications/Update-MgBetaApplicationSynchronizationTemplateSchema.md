@@ -51,6 +51,8 @@ Update-MgBetaApplicationSynchronizationTemplateSchema -InputObject <IApplication
 ## DESCRIPTION
 Update the navigation property schema in applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

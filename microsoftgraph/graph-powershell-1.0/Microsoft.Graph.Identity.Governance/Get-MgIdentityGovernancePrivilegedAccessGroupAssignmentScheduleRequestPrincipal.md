@@ -36,6 +36,8 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal
 References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM.
 Supports $expand and $select nested in $expand for id only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

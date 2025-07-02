@@ -49,6 +49,8 @@ Update-MgBetaSolutionBusinessScenarioPlanner -InputObject <IBusinessScenarioIden
 ## DESCRIPTION
 Update the navigation property planner in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

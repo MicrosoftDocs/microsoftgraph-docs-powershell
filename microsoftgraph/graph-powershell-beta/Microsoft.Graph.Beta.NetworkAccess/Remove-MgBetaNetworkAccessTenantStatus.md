@@ -21,6 +21,8 @@ Remove-MgBetaNetworkAccessTenantStatus [-IfMatch <String>] [-ResponseHeadersVari
 ## DESCRIPTION
 Delete navigation property tenantStatus for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

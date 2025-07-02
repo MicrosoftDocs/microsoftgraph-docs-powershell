@@ -52,6 +52,8 @@ Update-MgVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <IBook
 ## DESCRIPTION
 Update the navigation property attendanceRecords in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

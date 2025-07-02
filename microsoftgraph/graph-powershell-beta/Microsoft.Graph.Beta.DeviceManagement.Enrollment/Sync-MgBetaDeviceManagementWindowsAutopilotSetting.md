@@ -34,6 +34,8 @@ If this sync action is called within 10 minutes of the previous sync, the action
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

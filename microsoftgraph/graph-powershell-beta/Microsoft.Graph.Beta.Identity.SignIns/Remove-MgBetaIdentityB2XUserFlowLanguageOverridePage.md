@@ -33,6 +33,8 @@ Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySign
 ## DESCRIPTION
 Delete navigation property overridesPages for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

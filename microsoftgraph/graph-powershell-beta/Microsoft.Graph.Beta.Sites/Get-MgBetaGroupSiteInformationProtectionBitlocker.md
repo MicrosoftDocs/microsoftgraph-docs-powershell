@@ -29,6 +29,8 @@ Get-MgBetaGroupSiteInformationProtectionBitlocker -InputObject <ISitesIdentity> 
 ## DESCRIPTION
 Get bitlocker from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -57,6 +57,8 @@ For more information, see the delta query documentation.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatMessage.Read.Chat, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite.All, Chat.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

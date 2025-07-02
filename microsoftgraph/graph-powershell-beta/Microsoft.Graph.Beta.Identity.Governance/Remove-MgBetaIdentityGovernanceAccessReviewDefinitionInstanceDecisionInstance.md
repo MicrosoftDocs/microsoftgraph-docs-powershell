@@ -32,6 +32,8 @@ Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance
 ## DESCRIPTION
 Delete navigation property instance for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

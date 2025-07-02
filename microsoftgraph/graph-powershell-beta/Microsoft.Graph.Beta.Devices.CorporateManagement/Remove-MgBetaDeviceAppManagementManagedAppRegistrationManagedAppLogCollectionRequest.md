@@ -31,6 +31,8 @@ Remove-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReq
 ## DESCRIPTION
 Delete navigation property managedAppLogCollectionRequests for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

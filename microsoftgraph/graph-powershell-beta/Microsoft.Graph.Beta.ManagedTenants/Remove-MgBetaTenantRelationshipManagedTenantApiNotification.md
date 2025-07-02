@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantApiNotification -InputObject <IManag
 ## DESCRIPTION
 Delete navigation property managedTenantApiNotifications for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

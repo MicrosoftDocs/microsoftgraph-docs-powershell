@@ -25,6 +25,8 @@ Get-MgSiteGetByPathOperation -Path <String> -SiteId <String> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of long-running operations on the site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

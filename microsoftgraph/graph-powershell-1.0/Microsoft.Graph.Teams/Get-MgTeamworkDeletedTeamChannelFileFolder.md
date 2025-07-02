@@ -32,6 +32,8 @@ Get-MgTeamworkDeletedTeamChannelFileFolder -InputObject <ITeamsIdentity> [-Expan
 ## DESCRIPTION
 Metadata for the location where the channel's files are stored.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

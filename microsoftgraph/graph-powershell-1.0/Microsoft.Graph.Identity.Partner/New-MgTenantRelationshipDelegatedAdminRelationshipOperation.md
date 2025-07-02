@@ -50,6 +50,8 @@ New-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IIdent
 ## DESCRIPTION
 Create new navigation property to operations for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -40,6 +40,8 @@ Get-MgGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The time cards in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

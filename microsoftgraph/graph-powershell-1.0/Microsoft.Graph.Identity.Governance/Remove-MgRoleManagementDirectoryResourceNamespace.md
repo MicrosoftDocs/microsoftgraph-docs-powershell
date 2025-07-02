@@ -32,6 +32,8 @@ Remove-MgRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Delete navigation property resourceNamespaces for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

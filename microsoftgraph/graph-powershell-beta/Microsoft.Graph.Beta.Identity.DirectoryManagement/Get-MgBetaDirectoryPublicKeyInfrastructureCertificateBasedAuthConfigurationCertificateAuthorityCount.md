@@ -38,6 +38,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PublicKeyInfrastructure.Read.All, PublicKeyInfrastructure.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CertificateBasedAuthPkiId

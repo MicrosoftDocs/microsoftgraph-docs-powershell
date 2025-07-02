@@ -45,6 +45,8 @@ Read the Microsoft Purview Information Protection labels for the user or organiz
 | Delegated (personal Microsoft account) | Not supported |
 | Application | InformationProtectionPolicy.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

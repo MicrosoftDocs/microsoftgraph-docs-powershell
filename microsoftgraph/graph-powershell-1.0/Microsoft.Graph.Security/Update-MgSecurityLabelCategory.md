@@ -48,6 +48,8 @@ Update-MgSecurityLabelCategory -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property categories in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

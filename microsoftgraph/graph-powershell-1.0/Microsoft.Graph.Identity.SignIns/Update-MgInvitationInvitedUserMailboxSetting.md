@@ -36,6 +36,8 @@ Update-MgInvitationInvitedUserMailboxSetting -BodyParameter <IMicrosoftGraphMail
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

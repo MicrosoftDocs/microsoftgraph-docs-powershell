@@ -49,6 +49,8 @@ Update-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property userSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Accounts

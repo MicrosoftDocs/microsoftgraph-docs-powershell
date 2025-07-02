@@ -31,6 +31,8 @@ Stop-MgVirtualEvent -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <
 ## DESCRIPTION
 Invoke action cancel
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

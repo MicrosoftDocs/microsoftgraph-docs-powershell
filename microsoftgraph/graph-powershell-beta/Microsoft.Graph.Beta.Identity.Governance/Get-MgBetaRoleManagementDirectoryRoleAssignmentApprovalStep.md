@@ -37,6 +37,8 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep -InputObject <IIdent
 ## DESCRIPTION
 Used to represent the decision associated with a single step in the approval process configured in approvalStage.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

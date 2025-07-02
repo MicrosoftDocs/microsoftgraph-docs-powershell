@@ -40,6 +40,8 @@ Specifies the event that will start the retention period for labels that use thi
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

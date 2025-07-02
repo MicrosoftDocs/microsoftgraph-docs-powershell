@@ -31,6 +31,8 @@ Get-MgBetaReportYammerActivityUserCount -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getYammerActivityUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

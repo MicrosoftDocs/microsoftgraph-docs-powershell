@@ -39,6 +39,8 @@ Invoke function findByKbNumber
 | Delegated (personal Microsoft account) | Not supported |
 | Application | WindowsUpdates.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

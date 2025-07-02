@@ -29,6 +29,8 @@ Remove-MgEntitlementManagementResourceRequestCatalog -InputObject <IIdentityGove
 ## DESCRIPTION
 Delete navigation property catalog for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

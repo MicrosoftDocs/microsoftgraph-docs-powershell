@@ -38,6 +38,8 @@ This operation isn't transitive.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | GroupMember.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

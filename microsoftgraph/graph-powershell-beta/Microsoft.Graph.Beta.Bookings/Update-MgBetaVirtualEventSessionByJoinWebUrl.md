@@ -71,6 +71,8 @@ Update-MgBetaVirtualEventSessionByJoinWebUrl -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the navigation property sessions in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

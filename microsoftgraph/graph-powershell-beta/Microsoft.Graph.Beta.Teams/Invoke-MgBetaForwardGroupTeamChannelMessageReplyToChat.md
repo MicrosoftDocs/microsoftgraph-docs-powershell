@@ -49,6 +49,8 @@ Invoke-MgBetaForwardGroupTeamChannelMessageReplyToChat -InputObject <ITeamsIdent
 ## DESCRIPTION
 Forward a chat message, a channel message, or a channel message reply to a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalMessage

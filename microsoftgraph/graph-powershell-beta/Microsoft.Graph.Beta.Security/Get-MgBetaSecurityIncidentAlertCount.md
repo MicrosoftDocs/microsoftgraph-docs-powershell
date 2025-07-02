@@ -32,6 +32,8 @@ Get-MgBetaSecurityIncidentAlertCount -InputObject <ISecurityIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

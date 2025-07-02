@@ -32,6 +32,8 @@ Remove-MgBetaSiteListItemField -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property fields for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

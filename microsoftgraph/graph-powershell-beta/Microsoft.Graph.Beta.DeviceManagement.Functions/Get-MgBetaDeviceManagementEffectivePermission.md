@@ -47,6 +47,8 @@ Invoke function getEffectivePermissions
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

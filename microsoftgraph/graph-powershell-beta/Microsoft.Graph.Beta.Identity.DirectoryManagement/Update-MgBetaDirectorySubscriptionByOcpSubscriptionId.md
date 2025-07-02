@@ -51,6 +51,8 @@ Update-MgBetaDirectorySubscriptionByOcpSubscriptionId -InputObject <IIdentityDir
 ## DESCRIPTION
 Update the navigation property subscriptions in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

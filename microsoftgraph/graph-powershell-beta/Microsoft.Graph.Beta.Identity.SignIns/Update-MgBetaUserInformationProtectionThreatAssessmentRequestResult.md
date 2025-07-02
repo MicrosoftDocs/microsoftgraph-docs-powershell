@@ -47,6 +47,8 @@ Update-MgBetaUserInformationProtectionThreatAssessmentRequestResult -InputObject
 ## DESCRIPTION
 Update the navigation property results in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

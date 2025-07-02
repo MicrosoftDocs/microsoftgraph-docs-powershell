@@ -50,6 +50,8 @@ New-MgDriveItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to versions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

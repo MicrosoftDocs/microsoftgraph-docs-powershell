@@ -53,6 +53,8 @@ Update-MgBetaUserManagedDeviceConfigurationState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Update the navigation property deviceConfigurationStates in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

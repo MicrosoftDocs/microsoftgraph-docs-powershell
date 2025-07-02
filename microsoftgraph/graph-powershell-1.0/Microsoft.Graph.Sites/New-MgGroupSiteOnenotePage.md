@@ -54,6 +54,8 @@ New-MgGroupSiteOnenotePage -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to pages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

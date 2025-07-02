@@ -26,6 +26,8 @@ Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity -DriveId <String> -Drive
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -31,6 +31,8 @@ Get-MgBetaReportOneDriveUsageStorage -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Invoke function getOneDriveUsageStorage
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

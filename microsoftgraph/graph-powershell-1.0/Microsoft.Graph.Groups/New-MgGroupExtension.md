@@ -45,6 +45,8 @@ New-MgGroupExtension -InputObject <IGroupsIdentity> -BodyParameter <Hashtable>
 ## DESCRIPTION
 Create new navigation property to extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

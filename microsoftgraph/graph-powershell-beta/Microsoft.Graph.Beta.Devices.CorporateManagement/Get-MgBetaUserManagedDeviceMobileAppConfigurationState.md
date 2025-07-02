@@ -38,6 +38,8 @@ Get-MgBetaUserManagedDeviceMobileAppConfigurationState -InputObject <IDevicesCor
 ## DESCRIPTION
 Managed device mobile app configuration states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

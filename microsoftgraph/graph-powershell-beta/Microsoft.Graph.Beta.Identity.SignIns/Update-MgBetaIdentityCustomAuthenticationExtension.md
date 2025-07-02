@@ -60,6 +60,8 @@ Update the navigation property customAuthenticationExtensions in identity
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomAuthenticationExtension.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

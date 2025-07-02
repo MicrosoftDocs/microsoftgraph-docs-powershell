@@ -29,6 +29,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-DataConnector.Read.All, IndustryData-DataConnector.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

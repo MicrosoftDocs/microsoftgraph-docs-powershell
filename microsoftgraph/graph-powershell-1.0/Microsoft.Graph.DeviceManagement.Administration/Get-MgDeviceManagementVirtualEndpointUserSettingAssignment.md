@@ -46,6 +46,8 @@ Represents the set of Microsoft 365 groups and security groups in Microsoft Entr
 Returned only on $expand.
 For an example, see Get cloudPcUserSetting.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

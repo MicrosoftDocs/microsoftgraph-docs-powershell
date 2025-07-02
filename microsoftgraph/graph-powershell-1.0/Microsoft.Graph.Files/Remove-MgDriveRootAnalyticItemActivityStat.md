@@ -32,6 +32,8 @@ Remove-MgDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property itemActivityStats for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

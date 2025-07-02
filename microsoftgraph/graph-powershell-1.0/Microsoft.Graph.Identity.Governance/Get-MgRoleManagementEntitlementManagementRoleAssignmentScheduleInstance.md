@@ -42,6 +42,8 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
 ## DESCRIPTION
 Instances for active role assignments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

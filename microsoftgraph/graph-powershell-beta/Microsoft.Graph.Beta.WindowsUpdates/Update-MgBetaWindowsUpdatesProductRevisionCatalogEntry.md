@@ -45,6 +45,8 @@ Update-MgBetaWindowsUpdatesProductRevisionCatalogEntry -InputObject <IWindowsUpd
 ## DESCRIPTION
 Update the navigation property catalogEntry in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

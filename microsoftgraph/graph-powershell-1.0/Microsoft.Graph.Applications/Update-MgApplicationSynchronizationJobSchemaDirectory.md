@@ -51,6 +51,8 @@ Update-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplication
 ## DESCRIPTION
 Update the navigation property directories in applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

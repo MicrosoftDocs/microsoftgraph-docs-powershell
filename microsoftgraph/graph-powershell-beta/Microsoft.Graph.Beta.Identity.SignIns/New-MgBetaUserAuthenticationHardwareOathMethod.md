@@ -53,6 +53,8 @@ Create new navigation property to hardwareOathMethods for users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

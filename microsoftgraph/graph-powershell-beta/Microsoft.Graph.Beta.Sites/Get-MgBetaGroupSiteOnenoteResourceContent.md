@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteOnenoteResourceContent -InputObject <ISitesIdentity> -OutFile
 ## DESCRIPTION
 The content of the resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

@@ -56,6 +56,8 @@ New-MgBetaSiteGetByPathPage -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to pages for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

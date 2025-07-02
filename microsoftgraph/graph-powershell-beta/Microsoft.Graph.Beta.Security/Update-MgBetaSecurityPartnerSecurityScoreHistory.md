@@ -45,6 +45,8 @@ Update-MgBetaSecurityPartnerSecurityScoreHistory -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property history in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

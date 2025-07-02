@@ -40,6 +40,8 @@ Delete navigation property events for groups
 | Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
 | Application | Calendars.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

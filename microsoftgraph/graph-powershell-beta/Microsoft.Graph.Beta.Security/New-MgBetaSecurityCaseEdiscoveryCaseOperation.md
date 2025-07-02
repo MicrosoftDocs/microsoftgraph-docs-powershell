@@ -50,6 +50,8 @@ New-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

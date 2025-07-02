@@ -48,6 +48,8 @@ Update-MgUserMailFolderChildFolderMessageExtension -InputObject <IMailIdentity> 
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

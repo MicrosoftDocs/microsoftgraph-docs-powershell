@@ -41,6 +41,8 @@ Get-MgBetaDeviceManagementManagedDeviceConfigurationState -InputObject <IDeviceM
 ## DESCRIPTION
 Device configuration states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgVirtualEventWebinarPresenter -InputObject <IBookingsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property presenters for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

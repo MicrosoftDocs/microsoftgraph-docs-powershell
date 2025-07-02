@@ -73,6 +73,8 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
 ## DESCRIPTION
 Create new navigation property to assignedDevices for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

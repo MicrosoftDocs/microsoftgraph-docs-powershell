@@ -50,6 +50,8 @@ Update-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIde
 ## DESCRIPTION
 Update the navigation property schema in applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

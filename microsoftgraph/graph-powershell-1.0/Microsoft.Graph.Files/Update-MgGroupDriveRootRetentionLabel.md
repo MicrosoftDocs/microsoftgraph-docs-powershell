@@ -50,6 +50,8 @@ Update-MgGroupDriveRootRetentionLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property retentionLabel in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

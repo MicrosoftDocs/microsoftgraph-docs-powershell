@@ -32,6 +32,8 @@ Remove-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment -InputObject <IDevice
 ## DESCRIPTION
 Delete navigation property assignments for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

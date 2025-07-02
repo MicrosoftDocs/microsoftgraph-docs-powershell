@@ -34,6 +34,8 @@ Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExt
 ## DESCRIPTION
 Delete ref of navigation property identityProviders for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId

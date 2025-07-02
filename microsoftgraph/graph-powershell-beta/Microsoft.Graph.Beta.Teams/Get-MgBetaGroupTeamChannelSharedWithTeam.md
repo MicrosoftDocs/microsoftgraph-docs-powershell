@@ -56,6 +56,8 @@ Get-MgBetaGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandP
 ## DESCRIPTION
 A collection of teams with which a channel is shared.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

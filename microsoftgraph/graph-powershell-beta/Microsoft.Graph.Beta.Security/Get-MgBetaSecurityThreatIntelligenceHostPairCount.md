@@ -39,6 +39,8 @@ Get-MgBetaSecurityThreatIntelligenceHostPairCount -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

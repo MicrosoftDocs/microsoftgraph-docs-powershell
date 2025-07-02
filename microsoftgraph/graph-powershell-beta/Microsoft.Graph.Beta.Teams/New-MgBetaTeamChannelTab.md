@@ -58,6 +58,8 @@ Create new navigation property to tabs for teams
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsTab.Create.Group, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, TeamsTab.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

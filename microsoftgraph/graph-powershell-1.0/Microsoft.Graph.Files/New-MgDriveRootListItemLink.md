@@ -52,6 +52,8 @@ New-MgDriveRootListItemLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action createLink
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -47,6 +47,8 @@ New-MgBetaFinancialCompanyJournal -InputObject <IFinancialsIdentity> -BodyParame
 ## DESCRIPTION
 Create new navigation property to journals for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

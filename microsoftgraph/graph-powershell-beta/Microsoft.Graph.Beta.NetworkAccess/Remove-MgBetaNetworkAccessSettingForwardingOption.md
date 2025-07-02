@@ -21,6 +21,8 @@ Remove-MgBetaNetworkAccessSettingForwardingOption [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete navigation property forwardingOptions for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

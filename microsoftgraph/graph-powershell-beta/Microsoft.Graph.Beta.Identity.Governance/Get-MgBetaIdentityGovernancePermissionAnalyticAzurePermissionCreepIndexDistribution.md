@@ -41,6 +41,8 @@ Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribut
 Represents the Permissions Creep Index (PCI) for the authorization system.
 PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

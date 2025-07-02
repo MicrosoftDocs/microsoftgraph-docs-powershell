@@ -32,6 +32,8 @@ Update-MgBetaPlanner -BodyParameter <IMicrosoftGraphPlanner> [-ResponseHeadersVa
 ## DESCRIPTION
 Update planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ Update-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property taskTriggers in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

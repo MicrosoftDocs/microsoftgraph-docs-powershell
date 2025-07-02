@@ -37,6 +37,8 @@ Get-MgBetaUserMobileAppTroubleshootingEvent -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 The list of mobile app troubleshooting events for this user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -50,6 +50,8 @@ Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <I
 ## DESCRIPTION
 Update the navigation property stages in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

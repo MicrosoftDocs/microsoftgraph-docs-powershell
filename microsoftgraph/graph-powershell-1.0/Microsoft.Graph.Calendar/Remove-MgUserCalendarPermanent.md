@@ -56,6 +56,8 @@ For more information about item retention, see Configure deleted item retention 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calendars.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CalendarId

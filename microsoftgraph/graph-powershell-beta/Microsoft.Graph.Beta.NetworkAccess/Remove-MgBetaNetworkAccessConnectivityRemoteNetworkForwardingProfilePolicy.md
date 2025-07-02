@@ -31,6 +31,8 @@ Remove-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy
 ## DESCRIPTION
 Delete navigation property policies for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ForwardingProfileId

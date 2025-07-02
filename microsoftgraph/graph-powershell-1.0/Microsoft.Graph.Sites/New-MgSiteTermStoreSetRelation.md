@@ -79,6 +79,8 @@ New-MgSiteTermStoreSetRelation -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to relations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

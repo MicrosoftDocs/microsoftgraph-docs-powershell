@@ -37,6 +37,8 @@ Make sure you do not specify the same user or group in the accepted senders and 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

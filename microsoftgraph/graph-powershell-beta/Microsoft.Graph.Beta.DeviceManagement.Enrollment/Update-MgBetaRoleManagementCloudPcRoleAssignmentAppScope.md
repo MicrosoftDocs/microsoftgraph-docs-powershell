@@ -46,6 +46,8 @@ Update-MgBetaRoleManagementCloudPcRoleAssignmentAppScope -InputObject <IDeviceMa
 ## DESCRIPTION
 Update the navigation property appScopes in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

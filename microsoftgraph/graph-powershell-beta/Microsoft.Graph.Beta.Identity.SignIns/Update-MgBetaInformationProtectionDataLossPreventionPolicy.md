@@ -43,6 +43,8 @@ Update-MgBetaInformationProtectionDataLossPreventionPolicy -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property dataLossPreventionPolicies in informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property endpoints for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndpointId

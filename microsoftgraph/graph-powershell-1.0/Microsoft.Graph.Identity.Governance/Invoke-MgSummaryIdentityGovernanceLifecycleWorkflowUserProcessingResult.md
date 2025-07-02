@@ -32,6 +32,8 @@ Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult
 ## DESCRIPTION
 Invoke function summary
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndDateTime

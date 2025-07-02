@@ -47,6 +47,8 @@ Update-MgBetaPrivilegedApprovalRoleInfo -InputObject <IIdentityGovernanceIdentit
 ## DESCRIPTION
 Update the navigation property roleInfo in privilegedApproval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

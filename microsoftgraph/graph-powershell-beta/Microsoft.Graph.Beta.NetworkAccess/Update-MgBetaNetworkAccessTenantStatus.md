@@ -29,6 +29,8 @@ Update-MgBetaNetworkAccessTenantStatus -BodyParameter <IMicrosoftGraphNetworkacc
 ## DESCRIPTION
 Update the navigation property tenantStatus in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

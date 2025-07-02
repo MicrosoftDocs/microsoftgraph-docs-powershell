@@ -21,6 +21,8 @@ Remove-MgBetaSecurityInformationProtection [-IfMatch <String>] [-ResponseHeaders
 ## DESCRIPTION
 Delete navigation property informationProtection for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

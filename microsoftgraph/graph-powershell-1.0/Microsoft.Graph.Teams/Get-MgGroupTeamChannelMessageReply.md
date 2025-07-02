@@ -42,6 +42,8 @@ Get-MgGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> [-ExpandPropert
 Replies for a specified message.
 Supports $expand for channel messages.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

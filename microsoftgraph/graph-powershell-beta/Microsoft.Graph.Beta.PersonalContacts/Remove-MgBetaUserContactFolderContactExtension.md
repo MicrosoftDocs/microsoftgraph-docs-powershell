@@ -33,6 +33,8 @@ Remove-MgBetaUserContactFolderContactExtension -InputObject <IPersonalContactsId
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId

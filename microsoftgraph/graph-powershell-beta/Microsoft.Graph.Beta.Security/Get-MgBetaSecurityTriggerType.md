@@ -24,6 +24,8 @@ Get-MgBetaSecurityTriggerType [-ExpandProperty <String[]>] [-Property <String[]>
 ## DESCRIPTION
 Get triggerTypes from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

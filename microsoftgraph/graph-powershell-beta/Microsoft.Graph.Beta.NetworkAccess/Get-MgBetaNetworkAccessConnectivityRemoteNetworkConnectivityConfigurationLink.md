@@ -39,6 +39,8 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 ## DESCRIPTION
 List of connectivity configurations for deviceLink objects.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

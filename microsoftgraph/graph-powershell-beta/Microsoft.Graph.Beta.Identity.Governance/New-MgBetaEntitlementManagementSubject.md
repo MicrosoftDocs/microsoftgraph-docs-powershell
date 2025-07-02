@@ -33,6 +33,8 @@ New-MgBetaEntitlementManagementSubject -BodyParameter <IMicrosoftGraphAccessPack
 ## DESCRIPTION
 Create new navigation property to subjects for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

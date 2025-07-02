@@ -70,6 +70,8 @@ Update the navigation property messages in chats
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.UpdatePolicyViolation.All, Group.ReadWrite.All, Chat.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

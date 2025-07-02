@@ -24,6 +24,8 @@ Get-MgBetaIdentityGovernancePrivilegedAccess [-ExpandProperty <String[]>] [-Prop
 ## DESCRIPTION
 Get privilegedAccess from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

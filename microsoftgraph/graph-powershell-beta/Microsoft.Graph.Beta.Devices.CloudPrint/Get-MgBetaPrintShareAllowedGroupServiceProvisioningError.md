@@ -25,6 +25,8 @@ Get-MgBetaPrintShareAllowedGroupServiceProvisioningError -GroupId <String> -Prin
 ## DESCRIPTION
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

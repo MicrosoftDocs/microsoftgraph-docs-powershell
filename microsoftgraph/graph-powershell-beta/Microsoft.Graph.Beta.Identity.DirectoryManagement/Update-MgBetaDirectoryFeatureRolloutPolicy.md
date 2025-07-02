@@ -46,6 +46,8 @@ Update-MgBetaDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Update the navigation property featureRolloutPolicies in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

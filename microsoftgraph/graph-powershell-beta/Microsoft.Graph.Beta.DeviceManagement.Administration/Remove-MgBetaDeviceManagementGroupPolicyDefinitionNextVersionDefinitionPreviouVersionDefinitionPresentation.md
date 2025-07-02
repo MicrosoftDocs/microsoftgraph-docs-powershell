@@ -31,6 +31,8 @@ Remove-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVe
 ## DESCRIPTION
 Delete navigation property presentations for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupPolicyDefinitionId

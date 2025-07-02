@@ -33,6 +33,8 @@ Remove-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact -Input
 ## DESCRIPTION
 Delete navigation property siteRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

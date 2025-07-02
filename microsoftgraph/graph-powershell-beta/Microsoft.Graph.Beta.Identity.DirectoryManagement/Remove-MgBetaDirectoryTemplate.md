@@ -20,6 +20,8 @@ Remove-MgBetaDirectoryTemplate [-IfMatch <String>] [-ResponseHeadersVariable <St
 ## DESCRIPTION
 Delete navigation property templates for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

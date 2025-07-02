@@ -50,6 +50,8 @@ Update-MgBetaUserOnenoteOperation -InputObject <INotesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

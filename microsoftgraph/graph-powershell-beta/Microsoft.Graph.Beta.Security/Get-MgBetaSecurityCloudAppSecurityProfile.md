@@ -37,6 +37,8 @@ Get-MgBetaSecurityCloudAppSecurityProfile -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Get cloudAppSecurityProfiles from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

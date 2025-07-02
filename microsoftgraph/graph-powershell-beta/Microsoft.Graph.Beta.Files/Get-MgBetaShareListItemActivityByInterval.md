@@ -51,6 +51,8 @@ Get-MgBetaShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count]
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

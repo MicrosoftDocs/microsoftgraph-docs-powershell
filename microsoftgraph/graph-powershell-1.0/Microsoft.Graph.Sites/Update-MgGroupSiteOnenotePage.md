@@ -54,6 +54,8 @@ Update-MgGroupSiteOnenotePage -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property pages in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

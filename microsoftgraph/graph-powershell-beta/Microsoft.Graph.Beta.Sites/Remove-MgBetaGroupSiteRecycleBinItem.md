@@ -29,6 +29,8 @@ Remove-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property items for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

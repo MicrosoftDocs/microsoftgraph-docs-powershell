@@ -28,6 +28,8 @@ Update-MgBetaTrustFramework -BodyParameter <IMicrosoftGraphTrustFramework> [-Res
 ## DESCRIPTION
 Update trustFramework
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

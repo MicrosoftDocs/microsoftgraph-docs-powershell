@@ -33,6 +33,8 @@ Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp -InputObject <IBackupRest
 ## DESCRIPTION
 Deactivate a serviceApp.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

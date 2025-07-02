@@ -48,6 +48,8 @@ Get-MgBetaApplicationMemberObject -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Invoke action getMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

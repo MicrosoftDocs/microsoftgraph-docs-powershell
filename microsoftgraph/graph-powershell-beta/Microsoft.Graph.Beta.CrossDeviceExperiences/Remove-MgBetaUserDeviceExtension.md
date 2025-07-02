@@ -29,6 +29,8 @@ Remove-MgBetaUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity> 
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

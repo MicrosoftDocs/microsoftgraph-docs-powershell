@@ -32,6 +32,8 @@ Set-MgUserOnenoteSectionPageContent -InputObject <INotesIdentity> [-Data <Stream
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

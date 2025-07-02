@@ -29,6 +29,8 @@ Remove-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting -InputObject
 ## DESCRIPTION
 Delete navigation property sensitivityPolicySettings for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

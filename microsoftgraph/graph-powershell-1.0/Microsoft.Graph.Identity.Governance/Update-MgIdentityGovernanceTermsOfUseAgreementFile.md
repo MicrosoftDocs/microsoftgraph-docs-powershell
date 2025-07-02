@@ -51,6 +51,8 @@ Update-MgIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGovern
 ## DESCRIPTION
 Update the navigation property file in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

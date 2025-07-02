@@ -32,6 +32,8 @@ Remove-MgBetaSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property articles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ArticleId

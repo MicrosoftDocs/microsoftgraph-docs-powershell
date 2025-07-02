@@ -49,6 +49,8 @@ Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property alertDefinitions in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

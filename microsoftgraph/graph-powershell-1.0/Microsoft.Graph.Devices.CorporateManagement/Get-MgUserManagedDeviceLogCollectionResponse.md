@@ -40,6 +40,8 @@ Get-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 List of log collection requests
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

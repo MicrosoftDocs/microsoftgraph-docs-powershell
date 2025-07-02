@@ -33,6 +33,8 @@ Get-MgBetaServicePrincipalSynchronizationJobBulkUpload -InputObject <IApplicatio
 ## DESCRIPTION
 The bulk upload operation for the job.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

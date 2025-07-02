@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteListCreatedByUser -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get createdByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

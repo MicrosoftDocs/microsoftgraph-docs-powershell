@@ -48,6 +48,8 @@ Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property analytics in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

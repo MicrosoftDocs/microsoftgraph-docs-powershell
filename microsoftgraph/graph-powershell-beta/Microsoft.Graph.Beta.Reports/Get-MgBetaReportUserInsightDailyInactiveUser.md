@@ -37,6 +37,8 @@ Get-MgBetaReportUserInsightDailyInactiveUser -InputObject <IReportsIdentity> [-E
 ## DESCRIPTION
 Get inactiveUsers from reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

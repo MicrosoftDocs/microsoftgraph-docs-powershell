@@ -33,6 +33,8 @@ Remove-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity> [-
 ## DESCRIPTION
 Delete navigation property attachments for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId

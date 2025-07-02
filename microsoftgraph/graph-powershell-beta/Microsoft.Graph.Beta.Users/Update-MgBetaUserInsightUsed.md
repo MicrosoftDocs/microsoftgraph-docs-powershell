@@ -50,6 +50,8 @@ Update-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property used in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

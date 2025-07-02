@@ -45,6 +45,8 @@ Update-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property caseMembers in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

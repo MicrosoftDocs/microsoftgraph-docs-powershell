@@ -36,6 +36,8 @@ New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
 ## DESCRIPTION
 Create new navigation property to iosLobAppProvisioningConfigurations for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -46,6 +46,8 @@ Update-MgBetaUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

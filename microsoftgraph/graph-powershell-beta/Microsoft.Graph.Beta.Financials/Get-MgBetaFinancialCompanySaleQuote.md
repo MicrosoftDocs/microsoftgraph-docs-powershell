@@ -37,6 +37,8 @@ Get-MgBetaFinancialCompanySaleQuote -InputObject <IFinancialsIdentity> [-ExpandP
 ## DESCRIPTION
 Get salesQuotes from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

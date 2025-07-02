@@ -45,6 +45,8 @@ Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSummary -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property summary in privilegedRoleAssignmentRequests
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

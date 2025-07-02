@@ -32,6 +32,8 @@ Remove-MgReportPartnerBillingManifest -InputObject <IReportsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property manifests for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

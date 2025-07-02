@@ -52,6 +52,8 @@ Update-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Update the navigation property jobs in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

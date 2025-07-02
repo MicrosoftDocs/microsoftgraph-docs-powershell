@@ -32,6 +32,8 @@ Remove-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property settings for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

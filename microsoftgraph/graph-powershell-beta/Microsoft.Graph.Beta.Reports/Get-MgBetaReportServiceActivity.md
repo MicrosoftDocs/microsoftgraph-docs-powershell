@@ -21,6 +21,8 @@ Get-MgBetaReportServiceActivity [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Reports that relate to tenant-level authentication activities in Microsoft Entra.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

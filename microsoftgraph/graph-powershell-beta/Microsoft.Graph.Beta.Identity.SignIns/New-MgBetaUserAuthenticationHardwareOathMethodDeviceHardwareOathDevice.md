@@ -54,6 +54,8 @@ New-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDevice -InputObj
 ## DESCRIPTION
 Create new navigation property to hardwareOathDevices for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

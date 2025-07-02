@@ -46,6 +46,8 @@ Getting an operations collection isn't supported, but you can get the status of 
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

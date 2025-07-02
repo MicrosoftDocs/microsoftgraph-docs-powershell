@@ -34,6 +34,8 @@ Get-MgApplicationCreatedOnBehalfOf -InputObject <IApplicationsIdentity> [-Expand
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

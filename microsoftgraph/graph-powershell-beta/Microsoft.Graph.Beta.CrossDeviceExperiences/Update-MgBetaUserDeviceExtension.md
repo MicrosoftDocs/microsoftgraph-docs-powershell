@@ -43,6 +43,8 @@ Update-MgBetaUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity> 
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

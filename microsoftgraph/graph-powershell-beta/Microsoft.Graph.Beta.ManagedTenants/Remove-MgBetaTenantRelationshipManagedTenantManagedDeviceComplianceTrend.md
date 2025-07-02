@@ -30,6 +30,8 @@ Remove-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend -InputO
 ## DESCRIPTION
 Delete navigation property managedDeviceComplianceTrends for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

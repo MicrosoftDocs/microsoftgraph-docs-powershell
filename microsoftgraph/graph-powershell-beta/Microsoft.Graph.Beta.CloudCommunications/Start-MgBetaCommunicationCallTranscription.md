@@ -46,6 +46,8 @@ Start-MgBetaCommunicationCallTranscription -InputObject <ICloudCommunicationsIde
 ## DESCRIPTION
 Invoke action startTranscription
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

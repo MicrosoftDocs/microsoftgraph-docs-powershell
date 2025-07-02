@@ -65,6 +65,8 @@ New-MgBetaGroupSiteGetByPathList -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to lists for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

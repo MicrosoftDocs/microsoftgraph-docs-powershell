@@ -50,6 +50,8 @@ Clear-MgBetaTeamChannelMessageReplyReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action unsetReaction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Update-MgBetaReportPartnerBillingUsage -BodyParameter <IMicrosoftGraphPartnersBi
 ## DESCRIPTION
 Update the navigation property usage in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

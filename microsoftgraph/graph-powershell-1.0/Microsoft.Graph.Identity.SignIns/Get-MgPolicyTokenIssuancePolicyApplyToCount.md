@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration, Policy.Read.ApplicationConfiguration, Directory.Read.All, Application.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

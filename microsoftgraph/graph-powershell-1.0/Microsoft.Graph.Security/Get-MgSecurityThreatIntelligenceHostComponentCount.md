@@ -39,6 +39,8 @@ Get-MgSecurityThreatIntelligenceHostComponentCount -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

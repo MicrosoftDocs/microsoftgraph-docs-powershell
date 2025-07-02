@@ -29,6 +29,8 @@ Get-MgBetaGroupSitePageTemplateCreatedByUser -InputObject <ISitesIdentity> [-Exp
 ## DESCRIPTION
 Get createdByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

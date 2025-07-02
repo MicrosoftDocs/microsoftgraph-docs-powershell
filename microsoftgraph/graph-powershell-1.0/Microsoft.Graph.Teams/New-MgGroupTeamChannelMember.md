@@ -78,6 +78,8 @@ New-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to allMembers for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

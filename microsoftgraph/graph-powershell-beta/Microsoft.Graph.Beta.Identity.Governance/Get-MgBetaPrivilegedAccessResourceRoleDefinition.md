@@ -38,6 +38,8 @@ Get-MgBetaPrivilegedAccessResourceRoleDefinition -InputObject <IIdentityGovernan
 ## DESCRIPTION
 The collection of role definitions for the resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -51,6 +51,8 @@ Update-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
 ## DESCRIPTION
 Update the navigation property conditionalAccessPolicyCoverages in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

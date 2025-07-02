@@ -21,6 +21,8 @@ Get-MgBetaRoleManagementExchange [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Get exchange from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

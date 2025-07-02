@@ -41,6 +41,8 @@ Get-MgGroupSiteListItemVersion -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The list of previous versions of the list item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

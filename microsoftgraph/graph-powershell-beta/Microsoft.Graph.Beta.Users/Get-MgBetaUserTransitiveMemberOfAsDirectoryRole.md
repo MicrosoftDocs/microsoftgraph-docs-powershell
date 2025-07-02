@@ -41,6 +41,8 @@ Get-MgBetaUserTransitiveMemberOfAsDirectoryRole -InputObject <IUsersIdentity> [-
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

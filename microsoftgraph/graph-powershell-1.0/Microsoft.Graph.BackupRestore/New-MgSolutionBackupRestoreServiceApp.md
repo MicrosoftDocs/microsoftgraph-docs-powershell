@@ -35,6 +35,8 @@ New-MgSolutionBackupRestoreServiceApp -BodyParameter <IMicrosoftGraphServiceApp>
 ## DESCRIPTION
 Create a new serviceApp.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

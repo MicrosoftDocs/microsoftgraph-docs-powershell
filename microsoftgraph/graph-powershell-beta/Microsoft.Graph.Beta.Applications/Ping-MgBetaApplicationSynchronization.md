@@ -27,6 +27,8 @@ Ping-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity> [-Res
 ## DESCRIPTION
 Invoke function Ping
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

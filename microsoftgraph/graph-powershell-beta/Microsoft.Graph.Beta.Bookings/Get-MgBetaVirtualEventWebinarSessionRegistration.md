@@ -39,6 +39,8 @@ Get-MgBetaVirtualEventWebinarSessionRegistration -InputObject <IBookingsIdentity
 ## DESCRIPTION
 Get registrations from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -38,6 +38,8 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignment -InputObject <IIdentityGovernan
 ## DESCRIPTION
 The collection of role assignments for the resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

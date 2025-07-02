@@ -35,6 +35,8 @@ Set-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentit
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

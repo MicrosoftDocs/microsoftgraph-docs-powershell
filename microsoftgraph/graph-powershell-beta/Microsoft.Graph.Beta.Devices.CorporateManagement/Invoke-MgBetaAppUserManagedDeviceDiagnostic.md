@@ -29,6 +29,8 @@ Invoke-MgBetaAppUserManagedDeviceDiagnostic -InputObject <IDevicesCorporateManag
 ## DESCRIPTION
 Invoke function appDiagnostics
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

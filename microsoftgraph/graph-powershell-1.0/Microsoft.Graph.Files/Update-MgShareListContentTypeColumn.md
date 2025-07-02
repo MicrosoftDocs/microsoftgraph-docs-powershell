@@ -69,6 +69,8 @@ Update-MgShareListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property columns in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

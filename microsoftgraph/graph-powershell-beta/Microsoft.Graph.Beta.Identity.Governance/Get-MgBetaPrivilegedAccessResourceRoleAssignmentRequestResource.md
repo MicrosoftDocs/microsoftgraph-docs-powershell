@@ -32,6 +32,8 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentRequestResource -InputObject <II
 Read-only.
 The resource that the request aims to.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

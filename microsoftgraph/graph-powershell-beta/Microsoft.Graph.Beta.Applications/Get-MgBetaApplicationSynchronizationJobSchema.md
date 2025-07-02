@@ -32,6 +32,8 @@ Get-MgBetaApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 The synchronization schema configured for the job.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

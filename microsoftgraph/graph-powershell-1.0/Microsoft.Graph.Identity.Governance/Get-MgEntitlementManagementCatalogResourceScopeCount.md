@@ -58,6 +58,8 @@ Get-MgEntitlementManagementCatalogResourceScopeCount -InputObject <IIdentityGove
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

@@ -45,6 +45,8 @@ New-MgSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to termStores for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

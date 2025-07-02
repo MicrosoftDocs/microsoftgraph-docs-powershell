@@ -57,6 +57,8 @@ New-MgBetaWindowsUpdatesProductKnownIssue -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Create new navigation property to knownIssues for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

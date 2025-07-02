@@ -43,6 +43,8 @@ Get-MgBetaFinancialCompanySaleQuoteLineItemCategory -InputObject <IFinancialsIde
 ## DESCRIPTION
 Get itemCategory from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

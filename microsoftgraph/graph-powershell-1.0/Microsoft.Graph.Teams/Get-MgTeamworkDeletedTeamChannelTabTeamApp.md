@@ -34,6 +34,8 @@ Get-MgTeamworkDeletedTeamChannelTabTeamApp -InputObject <ITeamsIdentity> [-Expan
 The application that is linked to the tab.
 This can't be changed after tab creation.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

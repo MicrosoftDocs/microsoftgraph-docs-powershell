@@ -33,6 +33,8 @@ Publish-MgBetaUserDriveListContentType -InputObject <IFilesIdentity> [-ResponseH
 ## DESCRIPTION
 Invoke action publish
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

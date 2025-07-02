@@ -32,6 +32,8 @@ Remove-MgUserMailFolderChildFolderMessagePermanent -InputObject <IMailIdentity>
 ## DESCRIPTION
 Invoke action permanentDelete
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

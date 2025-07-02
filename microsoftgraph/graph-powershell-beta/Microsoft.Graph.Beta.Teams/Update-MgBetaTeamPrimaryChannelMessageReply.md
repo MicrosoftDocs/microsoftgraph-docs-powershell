@@ -65,6 +65,8 @@ Update-MgBetaTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property replies in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

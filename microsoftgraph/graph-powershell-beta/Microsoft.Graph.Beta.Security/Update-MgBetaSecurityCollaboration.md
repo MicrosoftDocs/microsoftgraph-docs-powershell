@@ -29,6 +29,8 @@ Update-MgBetaSecurityCollaboration -BodyParameter <IMicrosoftGraphSecurityCollab
 ## DESCRIPTION
 Update the navigation property collaboration in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

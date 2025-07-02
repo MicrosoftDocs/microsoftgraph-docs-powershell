@@ -54,6 +54,8 @@ Update-MgGroupOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property sections in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

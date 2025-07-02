@@ -33,6 +33,8 @@ Remove-MgBetaUserDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-
 ## DESCRIPTION
 Delete navigation property columnLinks for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnLinkId

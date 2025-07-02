@@ -31,6 +31,8 @@ New-MgBetaPolicyServicePrincipalCreationPolicy -BodyParameter <IMicrosoftGraphSe
 ## DESCRIPTION
 Create new navigation property to servicePrincipalCreationPolicies for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

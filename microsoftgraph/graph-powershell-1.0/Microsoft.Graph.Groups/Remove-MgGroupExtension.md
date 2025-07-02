@@ -32,6 +32,8 @@ Remove-MgGroupExtension -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExtensionId

@@ -50,6 +50,8 @@ Set-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property synchronization in applications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

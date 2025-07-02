@@ -29,6 +29,8 @@ Get-MgBetaAppCatalogTeamAppDefinitionDashboardCardCount -InputObject <ITeamsIden
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

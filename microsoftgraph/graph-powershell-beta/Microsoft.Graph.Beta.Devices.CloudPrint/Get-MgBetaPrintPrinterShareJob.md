@@ -37,6 +37,8 @@ Get-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-Expan
 ## DESCRIPTION
 The list of jobs that are queued for printing by the printer/printerShare.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

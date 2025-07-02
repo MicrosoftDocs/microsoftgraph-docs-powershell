@@ -30,6 +30,8 @@ Remove-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment -InputObject <IUsersId
 ## DESCRIPTION
 Delete navigation property attachments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId

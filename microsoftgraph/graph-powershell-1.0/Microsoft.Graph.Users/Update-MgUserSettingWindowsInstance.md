@@ -50,6 +50,8 @@ Update-MgUserSettingWindowsInstance -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the navigation property instances in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

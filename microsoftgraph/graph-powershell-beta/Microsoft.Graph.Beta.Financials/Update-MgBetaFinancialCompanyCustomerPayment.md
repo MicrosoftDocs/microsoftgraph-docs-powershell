@@ -53,6 +53,8 @@ Update-MgBetaFinancialCompanyCustomerPayment -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property customerPayments in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

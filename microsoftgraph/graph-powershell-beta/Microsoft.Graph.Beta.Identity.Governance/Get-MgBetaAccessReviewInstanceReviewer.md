@@ -38,6 +38,8 @@ Get-MgBetaAccessReviewInstanceReviewer -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

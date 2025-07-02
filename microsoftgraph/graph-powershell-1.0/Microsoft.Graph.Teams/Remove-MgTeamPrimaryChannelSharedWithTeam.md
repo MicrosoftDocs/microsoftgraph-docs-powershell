@@ -32,6 +32,8 @@ Remove-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property sharedWithTeams for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

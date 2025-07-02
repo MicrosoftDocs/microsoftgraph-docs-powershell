@@ -30,6 +30,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ## DESCRIPTION
 Delete navigation property externalPartnerSettings for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcExternalPartnerSettingId

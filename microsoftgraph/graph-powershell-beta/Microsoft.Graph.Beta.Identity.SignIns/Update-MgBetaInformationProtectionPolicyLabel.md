@@ -47,6 +47,8 @@ Update-MgBetaInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Update the navigation property labels in informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

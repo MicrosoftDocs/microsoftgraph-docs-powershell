@@ -45,6 +45,8 @@ Update-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentAppScope -InputObjec
 ## DESCRIPTION
 Update the navigation property appScope in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

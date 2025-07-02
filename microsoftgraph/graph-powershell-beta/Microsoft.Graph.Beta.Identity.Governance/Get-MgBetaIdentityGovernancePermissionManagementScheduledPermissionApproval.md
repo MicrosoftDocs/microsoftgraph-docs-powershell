@@ -38,6 +38,8 @@ Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval
 ## DESCRIPTION
 Get scheduledPermissionsApprovals from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -82,6 +82,8 @@ New-MgShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to versions for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

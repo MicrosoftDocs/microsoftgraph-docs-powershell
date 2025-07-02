@@ -62,6 +62,8 @@ Update-MgBetaUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property chats in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

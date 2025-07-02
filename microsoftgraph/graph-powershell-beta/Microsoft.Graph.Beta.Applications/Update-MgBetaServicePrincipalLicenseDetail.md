@@ -45,6 +45,8 @@ Update-MgBetaServicePrincipalLicenseDetail -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property licenseDetails in servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

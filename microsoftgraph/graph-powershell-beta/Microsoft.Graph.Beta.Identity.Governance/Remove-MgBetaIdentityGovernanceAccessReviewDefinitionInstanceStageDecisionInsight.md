@@ -35,6 +35,8 @@ Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsigh
 ## DESCRIPTION
 Delete navigation property insights for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

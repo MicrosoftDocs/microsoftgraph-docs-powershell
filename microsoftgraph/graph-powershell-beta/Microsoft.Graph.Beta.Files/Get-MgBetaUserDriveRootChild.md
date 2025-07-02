@@ -46,6 +46,8 @@ Only items representing folders have children.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

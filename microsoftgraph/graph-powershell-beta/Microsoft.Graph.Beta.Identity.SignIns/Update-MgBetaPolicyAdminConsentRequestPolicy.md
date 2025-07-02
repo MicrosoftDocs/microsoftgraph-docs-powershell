@@ -34,6 +34,8 @@ Update-MgBetaPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdmi
 ## DESCRIPTION
 Update the properties of an adminConsentRequestPolicy object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

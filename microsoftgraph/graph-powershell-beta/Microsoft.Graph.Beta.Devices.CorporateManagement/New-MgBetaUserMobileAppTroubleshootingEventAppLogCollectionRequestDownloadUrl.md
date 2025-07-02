@@ -30,6 +30,8 @@ New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl
 ## DESCRIPTION
 Invoke action createDownloadUrl
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppLogCollectionRequestId

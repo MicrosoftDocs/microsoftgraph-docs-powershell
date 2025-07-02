@@ -32,6 +32,8 @@ Remove-MgUserInsightUsed -InputObject <IUsersIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property used for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

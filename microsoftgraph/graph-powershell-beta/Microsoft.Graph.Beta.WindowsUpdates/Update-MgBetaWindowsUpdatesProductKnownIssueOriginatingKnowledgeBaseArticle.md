@@ -47,6 +47,8 @@ Update-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle
 ## DESCRIPTION
 Update the navigation property originatingKnowledgeBaseArticle in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -40,6 +40,8 @@ Get-MgBetaPrivacySubjectRightsRequestCollaborator -InputObject <IComplianceIdent
 ## DESCRIPTION
 Get collaborators from privacy
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -59,6 +59,8 @@ Update the navigation property roleAssignments in roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.ReadWrite.Exchange,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

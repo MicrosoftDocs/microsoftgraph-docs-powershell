@@ -32,6 +32,8 @@ Remove-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property riskDetections for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -46,6 +46,8 @@ Get-MgBetaReportTeamUserActivityUserDetail -InputObject <IReportsIdentity> -OutF
 ## DESCRIPTION
 Invoke function getTeamsUserActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

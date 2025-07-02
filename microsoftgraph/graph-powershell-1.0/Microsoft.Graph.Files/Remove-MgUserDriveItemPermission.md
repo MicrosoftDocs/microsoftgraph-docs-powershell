@@ -32,6 +32,8 @@ Remove-MgUserDriveItemPermission -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property permissions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

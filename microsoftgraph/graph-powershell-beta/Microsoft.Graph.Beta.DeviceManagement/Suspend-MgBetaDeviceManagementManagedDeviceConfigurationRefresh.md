@@ -47,6 +47,8 @@ Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh -InputObject <ID
 ## DESCRIPTION
 Initiates a command to pause config refresh for the device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

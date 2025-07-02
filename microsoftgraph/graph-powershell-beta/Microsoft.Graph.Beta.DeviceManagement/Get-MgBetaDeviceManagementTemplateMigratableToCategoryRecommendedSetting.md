@@ -41,6 +41,8 @@ Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting
 ## DESCRIPTION
 The settings this category contains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

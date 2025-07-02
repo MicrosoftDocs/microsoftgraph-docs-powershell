@@ -55,6 +55,8 @@ Update-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifa
 ## DESCRIPTION
 Update the navigation property granularMailboxRestoreArtifacts in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

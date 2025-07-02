@@ -31,6 +31,8 @@ New-MgBetaWindowsUpdatesProduct -BodyParameter <IMicrosoftGraphWindowsUpdatesPro
 ## DESCRIPTION
 Create new navigation property to products for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

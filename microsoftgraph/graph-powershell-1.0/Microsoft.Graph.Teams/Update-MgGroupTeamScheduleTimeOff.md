@@ -52,6 +52,8 @@ Update-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property timesOff in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

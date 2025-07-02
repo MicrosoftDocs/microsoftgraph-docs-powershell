@@ -39,6 +39,8 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 ## DESCRIPTION
 Create a new sharePointRestoreSession object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

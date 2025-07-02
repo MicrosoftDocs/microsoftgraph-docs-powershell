@@ -113,6 +113,8 @@ New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Create new navigation property to resourceScopes for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

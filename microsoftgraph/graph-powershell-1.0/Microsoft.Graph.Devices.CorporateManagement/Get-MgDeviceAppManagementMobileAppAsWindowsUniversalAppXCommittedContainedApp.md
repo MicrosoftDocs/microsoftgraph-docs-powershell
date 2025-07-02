@@ -42,6 +42,8 @@ Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp
 ## DESCRIPTION
 The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

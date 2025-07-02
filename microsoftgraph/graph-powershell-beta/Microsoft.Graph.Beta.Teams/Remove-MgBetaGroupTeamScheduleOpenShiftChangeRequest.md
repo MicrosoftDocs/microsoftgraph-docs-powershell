@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentit
 ## DESCRIPTION
 Delete navigation property openShiftChangeRequests for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

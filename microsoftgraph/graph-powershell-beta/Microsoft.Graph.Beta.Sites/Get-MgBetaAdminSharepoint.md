@@ -24,6 +24,8 @@ Get-MgBetaAdminSharepoint [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get sharepoint from admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

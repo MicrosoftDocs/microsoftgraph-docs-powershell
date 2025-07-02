@@ -32,6 +32,8 @@ Remove-MgUserDriveItemListItem -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property listItem for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

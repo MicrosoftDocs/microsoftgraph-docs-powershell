@@ -50,6 +50,8 @@ Stop-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

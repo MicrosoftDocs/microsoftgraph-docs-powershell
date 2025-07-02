@@ -41,6 +41,8 @@ Create new navigation property to authenticationContextClassReferences for ident
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuthenticationContext.ReadWrite.All, Policy.ReadWrite.ConditionalAccess,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

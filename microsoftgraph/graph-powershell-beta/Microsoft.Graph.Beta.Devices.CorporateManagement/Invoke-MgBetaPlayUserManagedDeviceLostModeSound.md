@@ -47,6 +47,8 @@ Invoke-MgBetaPlayUserManagedDeviceLostModeSound -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Play lost mode sound
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

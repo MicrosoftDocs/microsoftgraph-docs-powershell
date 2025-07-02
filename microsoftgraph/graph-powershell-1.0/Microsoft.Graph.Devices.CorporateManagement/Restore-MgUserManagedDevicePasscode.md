@@ -33,6 +33,8 @@ Restore-MgUserManagedDevicePasscode -InputObject <IDevicesCorporateManagementIde
 ## DESCRIPTION
 Recover passcode
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

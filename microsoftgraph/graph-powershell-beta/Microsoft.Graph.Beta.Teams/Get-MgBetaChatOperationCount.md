@@ -37,6 +37,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

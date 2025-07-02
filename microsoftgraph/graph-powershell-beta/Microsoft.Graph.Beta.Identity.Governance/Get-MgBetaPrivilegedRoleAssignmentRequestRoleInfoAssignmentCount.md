@@ -29,6 +29,8 @@ Get-MgBetaPrivilegedRoleAssignmentRequestRoleInfoAssignmentCount -InputObject <I
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

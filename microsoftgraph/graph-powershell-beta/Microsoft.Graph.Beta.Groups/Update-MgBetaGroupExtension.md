@@ -46,6 +46,8 @@ Update-MgBetaGroupExtension -InputObject <IGroupsIdentity> -BodyParameter <Hasht
 ## DESCRIPTION
 Update the navigation property extensions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

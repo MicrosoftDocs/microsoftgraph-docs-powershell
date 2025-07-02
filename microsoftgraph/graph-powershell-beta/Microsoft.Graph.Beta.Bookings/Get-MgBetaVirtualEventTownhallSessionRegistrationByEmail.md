@@ -30,6 +30,8 @@ Get-MgBetaVirtualEventTownhallSessionRegistrationByEmail -InputObject <IBookings
 ## DESCRIPTION
 Get registrations from solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Email

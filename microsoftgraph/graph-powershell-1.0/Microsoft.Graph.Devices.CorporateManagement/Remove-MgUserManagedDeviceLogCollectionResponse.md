@@ -33,6 +33,8 @@ Remove-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Delete navigation property logCollectionRequests for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId

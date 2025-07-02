@@ -43,6 +43,8 @@ Search for the restorePoint objects associated with a protectionUnit.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Search.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

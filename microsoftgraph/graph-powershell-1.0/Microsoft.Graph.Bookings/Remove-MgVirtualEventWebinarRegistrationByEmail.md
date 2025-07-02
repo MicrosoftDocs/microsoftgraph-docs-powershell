@@ -32,6 +32,8 @@ Remove-MgVirtualEventWebinarRegistrationByEmail -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Delete navigation property registrations for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Email

@@ -37,6 +37,8 @@ Get-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 List of the recycleBinItems deleted by a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

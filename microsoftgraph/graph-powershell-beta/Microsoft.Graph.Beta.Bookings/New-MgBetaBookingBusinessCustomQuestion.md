@@ -86,6 +86,8 @@ Create new navigation property to customQuestions for bookingBusinesses
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

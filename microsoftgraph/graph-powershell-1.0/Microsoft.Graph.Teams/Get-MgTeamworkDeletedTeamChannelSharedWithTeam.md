@@ -56,6 +56,8 @@ Get-MgTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-E
 ## DESCRIPTION
 A collection of teams with which a channel is shared.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

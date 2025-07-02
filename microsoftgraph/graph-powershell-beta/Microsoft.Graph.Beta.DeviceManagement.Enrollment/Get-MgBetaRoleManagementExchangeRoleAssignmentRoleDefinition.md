@@ -31,6 +31,8 @@ Get-MgBetaRoleManagementExchangeRoleAssignmentRoleDefinition -InputObject <IDevi
 The roleDefinition the assignment is for.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -32,6 +32,8 @@ New-MgBetaPrivilegedOperationEvent -BodyParameter <IMicrosoftGraphPrivilegedOper
 ## DESCRIPTION
 Add new entity to privilegedOperationEvents
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation

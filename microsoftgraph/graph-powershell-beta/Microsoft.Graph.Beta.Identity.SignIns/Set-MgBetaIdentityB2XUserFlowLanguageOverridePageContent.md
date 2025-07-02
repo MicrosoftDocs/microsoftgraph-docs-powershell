@@ -44,6 +44,8 @@ Read-only.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

@@ -32,6 +32,8 @@ Remove-MgContact -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete entity from contacts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

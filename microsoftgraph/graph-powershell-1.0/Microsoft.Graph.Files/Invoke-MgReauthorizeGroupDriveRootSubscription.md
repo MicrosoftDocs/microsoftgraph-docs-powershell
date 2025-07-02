@@ -33,6 +33,8 @@ Invoke-MgReauthorizeGroupDriveRootSubscription -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

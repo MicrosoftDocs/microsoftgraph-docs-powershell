@@ -28,6 +28,8 @@ Update-MgBetaDirectoryTemplate -BodyParameter <IMicrosoftGraphTemplate> [-Respon
 ## DESCRIPTION
 Update the navigation property templates in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -36,6 +36,8 @@ New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
 ## DESCRIPTION
 Create new navigation property to roleEligibilityScheduleInstances for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

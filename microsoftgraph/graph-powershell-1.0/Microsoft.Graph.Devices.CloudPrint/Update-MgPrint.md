@@ -34,6 +34,8 @@ Update-MgPrint -BodyParameter <IMicrosoftGraphPrint> [-ResponseHeadersVariable <
 ## DESCRIPTION
 Update print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

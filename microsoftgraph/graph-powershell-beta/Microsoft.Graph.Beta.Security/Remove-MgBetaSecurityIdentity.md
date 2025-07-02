@@ -23,6 +23,8 @@ Remove-MgBetaSecurityIdentity [-IfMatch <String>] [-ResponseHeadersVariable <Str
 ## DESCRIPTION
 Delete navigation property identities for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

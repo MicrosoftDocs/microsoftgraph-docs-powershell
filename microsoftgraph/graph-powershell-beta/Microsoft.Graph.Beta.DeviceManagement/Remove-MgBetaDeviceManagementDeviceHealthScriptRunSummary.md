@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceM
 ## DESCRIPTION
 Delete navigation property runSummary for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceHealthScriptId

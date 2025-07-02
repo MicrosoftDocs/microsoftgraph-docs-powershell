@@ -39,6 +39,8 @@ Get-MgBetaUserMessageMention -InputObject <IMailIdentity> [-ExpandProperty <Stri
 A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
 By default, a GET /messages does not return this property unless you apply $expand on the property.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

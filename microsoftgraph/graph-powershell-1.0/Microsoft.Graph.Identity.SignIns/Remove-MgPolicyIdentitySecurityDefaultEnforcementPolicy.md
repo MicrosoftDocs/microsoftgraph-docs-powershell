@@ -24,6 +24,8 @@ Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -32,6 +32,8 @@ New-MgBetaSecurityThreatIntelligenceArticleIndicator -BodyParameter <Hashtable>
 ## DESCRIPTION
 Create new navigation property to articleIndicators for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

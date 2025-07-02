@@ -32,6 +32,8 @@ Remove-MgDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Delete navigation property subscriptions for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanySubscriptionId

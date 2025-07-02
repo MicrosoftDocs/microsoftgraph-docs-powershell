@@ -30,6 +30,8 @@ Remove-MgBetaGroupConversationThreadPostMention -InputObject <IGroupsIdentity> [
 ## DESCRIPTION
 Delete navigation property mentions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConversationId

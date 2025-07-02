@@ -42,6 +42,8 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
 ## DESCRIPTION
 Get roleAssignmentScheduleRequests from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

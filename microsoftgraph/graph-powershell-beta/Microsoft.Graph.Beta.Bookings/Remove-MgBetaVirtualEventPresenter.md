@@ -32,6 +32,8 @@ Remove-MgBetaVirtualEventPresenter -InputObject <IBookingsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property presenters for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -29,6 +29,8 @@ Get-MgBetaPrintPrinterSharePrinter -InputObject <IDevicesCloudPrintIdentity> [-E
 ## DESCRIPTION
 The printer that this printer share is related to.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

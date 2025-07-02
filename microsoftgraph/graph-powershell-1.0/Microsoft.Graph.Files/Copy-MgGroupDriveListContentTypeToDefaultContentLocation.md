@@ -54,6 +54,8 @@ Copy-MgGroupDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIde
 Copy a file to a default content location in a content type.
 The file can then be added as a default file or template via a POST operation.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

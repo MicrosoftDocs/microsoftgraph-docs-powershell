@@ -54,6 +54,8 @@ Invoke action updateAllMessagesReadState
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

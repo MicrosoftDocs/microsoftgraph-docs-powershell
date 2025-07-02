@@ -48,6 +48,8 @@ Confirm-MgBetaOrganizationMemberObject -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

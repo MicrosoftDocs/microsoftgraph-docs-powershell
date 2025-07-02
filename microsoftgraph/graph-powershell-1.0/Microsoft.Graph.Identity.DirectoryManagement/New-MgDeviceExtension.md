@@ -45,6 +45,8 @@ New-MgDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity> -BodyP
 ## DESCRIPTION
 Create new navigation property to extensions for devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

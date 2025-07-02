@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleQuoteCustomerPaymentMethod -InputObject <IFinancia
 ## DESCRIPTION
 Get paymentMethod from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

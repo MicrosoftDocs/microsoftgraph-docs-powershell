@@ -23,6 +23,8 @@ Get-MgPrintOperationCount [-Filter <String>] [-Search <String>] [-ResponseHeader
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

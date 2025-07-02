@@ -49,6 +49,8 @@ Update-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHa
 ## DESCRIPTION
 Update the navigation property customExtensionHandlers in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

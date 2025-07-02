@@ -34,6 +34,8 @@ Get-MgBetaGroupSiteOnenoteNotebookRecentNotebook -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

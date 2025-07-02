@@ -24,6 +24,8 @@ Remove-MgReportPartnerBillingReconciliation [-IfMatch <String>] [-ResponseHeader
 ## DESCRIPTION
 Delete navigation property reconciliation for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

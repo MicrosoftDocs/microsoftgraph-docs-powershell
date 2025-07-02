@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSummary -InputObject <IIdent
 ## DESCRIPTION
 Delete navigation property summary for privilegedRoleAssignmentRequests
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

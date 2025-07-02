@@ -29,6 +29,8 @@ Remove-MgBetaProgramControlType -InputObject <IIdentityGovernanceIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from programControlTypes
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

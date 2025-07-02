@@ -54,6 +54,8 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy -InputOb
 ## DESCRIPTION
 The traffic forwarding policies associated with this profile.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

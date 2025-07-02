@@ -29,6 +29,8 @@ Get-MgBetaUserDeviceByDeviceId -InputObject <ICrossDeviceExperiencesIdentity> [-
 ## DESCRIPTION
 Get devices from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

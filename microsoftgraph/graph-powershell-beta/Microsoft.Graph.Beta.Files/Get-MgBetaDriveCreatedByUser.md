@@ -32,6 +32,8 @@ Get-MgBetaDriveCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get createdByUser from drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

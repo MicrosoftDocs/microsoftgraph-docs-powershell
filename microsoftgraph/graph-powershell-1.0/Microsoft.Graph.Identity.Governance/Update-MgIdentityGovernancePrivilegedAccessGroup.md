@@ -38,6 +38,8 @@ Update-MgIdentityGovernancePrivilegedAccessGroup -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property group in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

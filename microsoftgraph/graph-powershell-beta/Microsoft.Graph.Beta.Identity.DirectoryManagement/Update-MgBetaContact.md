@@ -66,6 +66,8 @@ Update-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Update entity in contacts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

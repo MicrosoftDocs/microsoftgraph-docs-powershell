@@ -53,6 +53,8 @@ Update-MgBetaSecurityDomainSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property domainSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupNames

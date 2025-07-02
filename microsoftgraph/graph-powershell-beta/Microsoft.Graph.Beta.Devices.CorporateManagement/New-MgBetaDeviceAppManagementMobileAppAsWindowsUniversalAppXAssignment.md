@@ -52,6 +52,8 @@ New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment
 ## DESCRIPTION
 Create new navigation property to assignments for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

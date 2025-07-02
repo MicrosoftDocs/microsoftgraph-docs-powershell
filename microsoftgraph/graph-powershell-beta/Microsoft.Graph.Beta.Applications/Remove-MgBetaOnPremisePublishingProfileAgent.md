@@ -30,6 +30,8 @@ Remove-MgBetaOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Delete navigation property agents for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

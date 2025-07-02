@@ -47,6 +47,8 @@ Update-MgEntitlementManagementResourceRequest -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Update the navigation property resourceRequests in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

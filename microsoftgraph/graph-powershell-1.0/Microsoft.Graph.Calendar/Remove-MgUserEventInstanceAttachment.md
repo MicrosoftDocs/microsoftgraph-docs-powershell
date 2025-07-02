@@ -32,6 +32,8 @@ Remove-MgUserEventInstanceAttachment -InputObject <ICalendarIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property attachments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId

@@ -38,6 +38,8 @@ Retrieve a list of trustFrameworkPolicies in the tenant/directory.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.TrustFramework,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

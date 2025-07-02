@@ -29,6 +29,8 @@ Remove-MgBetaReportUserInsightDailyMfaTelecomFraud -InputObject <IReportsIdentit
 ## DESCRIPTION
 Delete navigation property mfaTelecomFraud for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

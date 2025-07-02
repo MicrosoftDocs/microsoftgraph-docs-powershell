@@ -32,6 +32,8 @@ Remove-MgBetaSiteOnenoteOperation -InputObject <INotesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property operations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

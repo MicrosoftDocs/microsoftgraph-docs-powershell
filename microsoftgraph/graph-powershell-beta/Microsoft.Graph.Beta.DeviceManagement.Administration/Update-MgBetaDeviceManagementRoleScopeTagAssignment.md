@@ -46,6 +46,8 @@ Update-MgBetaDeviceManagementRoleScopeTagAssignment -InputObject <IDeviceManagem
 ## DESCRIPTION
 Update the navigation property assignments in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

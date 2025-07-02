@@ -29,6 +29,8 @@ Remove-MgBetaTenantRelationshipManagedTenantCloudPcConnection -InputObject <IMan
 ## DESCRIPTION
 Delete navigation property cloudPcConnections for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcConnectionId

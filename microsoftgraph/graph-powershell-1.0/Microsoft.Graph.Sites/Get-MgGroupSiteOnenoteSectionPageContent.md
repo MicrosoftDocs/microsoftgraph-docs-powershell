@@ -32,6 +32,8 @@ Get-MgGroupSiteOnenoteSectionPageContent -InputObject <ISitesIdentity> -OutFile 
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

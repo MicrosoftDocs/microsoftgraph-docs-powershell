@@ -50,6 +50,8 @@ Set-MgUserDriveItemSensitivityLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

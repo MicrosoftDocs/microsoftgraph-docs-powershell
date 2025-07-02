@@ -53,6 +53,8 @@ Update-MgBetaSecurityAttackSimulationLandingPage -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property landingPages in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

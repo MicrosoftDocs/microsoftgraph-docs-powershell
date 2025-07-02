@@ -40,6 +40,8 @@ Get-MgVirtualEventPresenter -InputObject <IBookingsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The virtual event presenters.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

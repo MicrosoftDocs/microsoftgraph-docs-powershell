@@ -34,6 +34,8 @@ Remove-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule
 ## DESCRIPTION
 Delete navigation property roleEligibilitySchedules for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

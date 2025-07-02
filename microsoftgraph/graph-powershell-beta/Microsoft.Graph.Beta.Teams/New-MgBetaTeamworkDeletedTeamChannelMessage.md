@@ -65,6 +65,8 @@ New-MgBetaTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to messages for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -54,6 +54,8 @@ Update-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Update the navigation property activities in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivationUrl

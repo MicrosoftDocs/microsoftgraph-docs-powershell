@@ -24,6 +24,8 @@ Remove-MgBetaAdminEdgeInternetExplorerMode [-IfMatch <String>] [-ResponseHeaders
 ## DESCRIPTION
 Delete navigation property internetExplorerMode for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

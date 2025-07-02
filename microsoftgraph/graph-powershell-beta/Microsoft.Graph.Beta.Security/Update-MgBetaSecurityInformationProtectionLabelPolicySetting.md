@@ -30,6 +30,8 @@ Update-MgBetaSecurityInformationProtectionLabelPolicySetting
 ## DESCRIPTION
 Update the navigation property labelPolicySettings in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

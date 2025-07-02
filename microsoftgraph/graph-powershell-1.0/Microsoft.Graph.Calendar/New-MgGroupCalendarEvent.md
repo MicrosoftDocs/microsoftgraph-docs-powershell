@@ -78,6 +78,8 @@ New-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to events for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

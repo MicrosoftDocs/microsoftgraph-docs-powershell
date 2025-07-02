@@ -48,6 +48,8 @@ Update-MgGroupOnenoteResource -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property resources in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

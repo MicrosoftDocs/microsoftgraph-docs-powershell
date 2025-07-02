@@ -32,6 +32,8 @@ Remove-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property file for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

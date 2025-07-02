@@ -48,6 +48,8 @@ Update-MgBetaUserDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property analytics in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -30,6 +30,8 @@ Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucket -InputObject <ITeamsIde
 ## DESCRIPTION
 Delete navigation property buckets for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

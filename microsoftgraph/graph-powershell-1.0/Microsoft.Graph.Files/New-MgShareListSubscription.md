@@ -54,6 +54,8 @@ New-MgShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to subscriptions for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

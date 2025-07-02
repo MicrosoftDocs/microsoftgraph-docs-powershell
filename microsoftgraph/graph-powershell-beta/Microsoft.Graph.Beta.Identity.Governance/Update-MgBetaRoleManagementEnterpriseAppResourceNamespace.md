@@ -47,6 +47,8 @@ Update-MgBetaRoleManagementEnterpriseAppResourceNamespace -InputObject <IIdentit
 ## DESCRIPTION
 Update the navigation property resourceNamespaces in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

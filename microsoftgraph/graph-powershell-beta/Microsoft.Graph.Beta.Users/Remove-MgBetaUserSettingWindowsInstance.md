@@ -33,6 +33,8 @@ Remove-MgBetaUserSettingWindowsInstance -InputObject <IUsersIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property instances for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

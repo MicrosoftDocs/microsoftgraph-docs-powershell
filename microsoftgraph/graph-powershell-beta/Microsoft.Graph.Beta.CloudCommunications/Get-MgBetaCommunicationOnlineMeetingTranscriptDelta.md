@@ -34,6 +34,8 @@ Get-MgBetaCommunicationOnlineMeetingTranscriptDelta -InputObject <ICloudCommunic
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -44,6 +44,8 @@ Given contentInfo, which includes existing content metadata key-value pairs, and
 | Delegated (personal Microsoft account) | Not supported |
 | Application | InformationProtectionPolicy.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -53,6 +53,8 @@ Update-MgBetaSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity>
 ## DESCRIPTION
 Update the navigation property restoreSessions in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

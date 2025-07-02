@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportQuietTimePolicyUserReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getQuietTimePolicyUsersReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

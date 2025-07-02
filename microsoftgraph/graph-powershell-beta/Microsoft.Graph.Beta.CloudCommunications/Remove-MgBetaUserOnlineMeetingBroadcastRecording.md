@@ -29,6 +29,8 @@ Remove-MgBetaUserOnlineMeetingBroadcastRecording -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Delete broadcastRecording for the navigation property onlineMeetings in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

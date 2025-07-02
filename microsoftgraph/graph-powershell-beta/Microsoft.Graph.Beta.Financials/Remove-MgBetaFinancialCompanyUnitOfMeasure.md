@@ -37,6 +37,8 @@ Delete navigation property unitsOfMeasure for financials
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Financials.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

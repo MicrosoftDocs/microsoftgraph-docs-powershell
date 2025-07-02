@@ -33,6 +33,8 @@ New-MgSolutionBackupRestorePoint -BodyParameter <IMicrosoftGraphRestorePoint>
 ## DESCRIPTION
 Create new navigation property to restorePoints for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

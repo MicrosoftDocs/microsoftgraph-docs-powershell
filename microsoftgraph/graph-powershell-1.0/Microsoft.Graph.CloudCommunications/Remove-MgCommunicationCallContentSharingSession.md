@@ -32,6 +32,8 @@ Remove-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Delete navigation property contentSharingSessions for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallId

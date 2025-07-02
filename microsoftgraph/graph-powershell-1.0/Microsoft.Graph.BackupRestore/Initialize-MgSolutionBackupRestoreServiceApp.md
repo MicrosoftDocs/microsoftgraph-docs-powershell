@@ -49,6 +49,8 @@ Initialize-MgSolutionBackupRestoreServiceApp -InputObject <IBackupRestoreIdentit
 ## DESCRIPTION
 Activate a serviceApp.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -46,6 +46,8 @@ Remove-MgBetaBookingCurrency -InputObject <IBookingsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete entity from bookingCurrencies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BookingCurrencyId

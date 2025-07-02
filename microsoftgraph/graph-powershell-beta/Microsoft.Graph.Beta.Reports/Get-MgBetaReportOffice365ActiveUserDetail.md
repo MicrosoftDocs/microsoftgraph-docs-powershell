@@ -50,6 +50,8 @@ Get-MgBetaReportOffice365ActiveUserDetail -InputObject <IReportsIdentity> [-Coun
 ## DESCRIPTION
 Invoke function getOffice365ActiveUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

@@ -37,6 +37,8 @@ Get-MgBetaDirectoryAdministrativeUnitDeletedMember -InputObject <IIdentityDirect
 ## DESCRIPTION
 Get deletedMembers from directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId

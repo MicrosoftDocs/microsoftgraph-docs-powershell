@@ -32,6 +32,8 @@ Remove-MgEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property assignmentDefaults for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

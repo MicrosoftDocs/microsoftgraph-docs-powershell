@@ -33,6 +33,8 @@ New-MgBetaOnPremisePublishingProfile -BodyParameter <IMicrosoftGraphOnPremisesPu
 ## DESCRIPTION
 Add new entity to onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-IfMat
 ## DESCRIPTION
 Delete entity from dataPolicyOperations
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DataPolicyOperationId

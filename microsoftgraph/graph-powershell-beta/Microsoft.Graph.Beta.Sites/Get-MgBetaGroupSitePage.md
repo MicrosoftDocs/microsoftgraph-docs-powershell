@@ -40,6 +40,8 @@ Get-MgBetaGroupSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 The collection of pages in the baseSitePages list on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

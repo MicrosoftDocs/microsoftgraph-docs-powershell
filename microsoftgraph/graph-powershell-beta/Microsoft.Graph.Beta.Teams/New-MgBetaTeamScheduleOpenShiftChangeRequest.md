@@ -59,6 +59,8 @@ Create instance of an openShiftChangeRequest object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

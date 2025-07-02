@@ -47,6 +47,8 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile -InputObject <IDevic
 ## DESCRIPTION
 Invoke action assign
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

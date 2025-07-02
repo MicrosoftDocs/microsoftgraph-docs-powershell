@@ -59,6 +59,8 @@ Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject 
 ## DESCRIPTION
 Update the navigation property windowsProtectionStates in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -21,6 +21,8 @@ Remove-MgBetaDirectoryAuthenticationMethodDevice [-IfMatch <String>] [-ResponseH
 ## DESCRIPTION
 Delete navigation property authenticationMethodDevices for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

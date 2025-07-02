@@ -31,6 +31,8 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHa
 ## DESCRIPTION
 Delete navigation property customExtensionHandlers for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

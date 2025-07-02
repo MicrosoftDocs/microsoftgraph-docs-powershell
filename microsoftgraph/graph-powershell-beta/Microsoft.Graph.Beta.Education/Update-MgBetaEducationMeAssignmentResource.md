@@ -51,6 +51,8 @@ Update-MgBetaEducationMeAssignmentResource -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property resources in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

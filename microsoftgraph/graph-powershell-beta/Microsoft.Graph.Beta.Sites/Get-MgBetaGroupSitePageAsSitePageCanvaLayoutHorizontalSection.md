@@ -41,6 +41,8 @@ Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISit
 ## DESCRIPTION
 Collection of horizontal sections on the SharePoint page.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

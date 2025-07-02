@@ -37,6 +37,8 @@ Get-MgBetaFinancialCompanyAgedAccountPayable -InputObject <IFinancialsIdentity> 
 ## DESCRIPTION
 Get agedAccountsPayable from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgedAccountsPayableId

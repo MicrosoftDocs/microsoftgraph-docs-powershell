@@ -47,6 +47,8 @@ Get-MgReportSkypeForBusinessActivityUserDetail -InputObject <IReportsIdentity> -
 ## DESCRIPTION
 Get details about Skype for Business activity by user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

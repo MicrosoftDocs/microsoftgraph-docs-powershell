@@ -45,6 +45,8 @@ Update-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity
 ## DESCRIPTION
 Update the navigation property outlineIcon in appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

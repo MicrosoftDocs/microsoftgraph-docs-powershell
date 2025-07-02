@@ -54,6 +54,8 @@ Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
 Read more about presence sessions and their time-out and expiration.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

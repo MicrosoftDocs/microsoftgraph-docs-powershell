@@ -52,6 +52,8 @@ Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Update the navigation property historyItems in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveDurationSeconds

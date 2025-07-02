@@ -32,6 +32,8 @@ Represents the base policy in the directory for multi-tenant organization settin
 | Delegated (personal Microsoft account) | Not supported |
 | Application | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

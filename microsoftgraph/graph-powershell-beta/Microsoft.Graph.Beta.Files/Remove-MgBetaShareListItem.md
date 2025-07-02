@@ -46,6 +46,8 @@ Remove-MgBetaShareListItem -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property listItem for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

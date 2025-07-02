@@ -68,6 +68,8 @@ New-MgUserDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to columns for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

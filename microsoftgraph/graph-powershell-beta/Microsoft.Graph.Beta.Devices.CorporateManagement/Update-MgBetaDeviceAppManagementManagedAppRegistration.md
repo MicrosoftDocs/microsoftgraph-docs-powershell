@@ -64,6 +64,8 @@ Update-MgBetaDeviceAppManagementManagedAppRegistration -InputObject <IDevicesCor
 ## DESCRIPTION
 Update the navigation property managedAppRegistrations in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

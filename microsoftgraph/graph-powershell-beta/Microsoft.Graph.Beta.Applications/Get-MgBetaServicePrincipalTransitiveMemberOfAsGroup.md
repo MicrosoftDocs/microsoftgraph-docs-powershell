@@ -42,6 +42,8 @@ Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup -InputObject <IApplicationsI
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

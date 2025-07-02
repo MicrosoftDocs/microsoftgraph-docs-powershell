@@ -31,6 +31,8 @@ New-MgBetaDeviceManagementDerivedCredential
 ## DESCRIPTION
 Create new navigation property to derivedCredentials for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

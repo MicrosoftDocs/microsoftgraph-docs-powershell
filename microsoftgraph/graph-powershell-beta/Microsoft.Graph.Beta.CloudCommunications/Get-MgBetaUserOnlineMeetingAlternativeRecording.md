@@ -39,6 +39,8 @@ Read-only.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetingArtifact.Read.All, OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

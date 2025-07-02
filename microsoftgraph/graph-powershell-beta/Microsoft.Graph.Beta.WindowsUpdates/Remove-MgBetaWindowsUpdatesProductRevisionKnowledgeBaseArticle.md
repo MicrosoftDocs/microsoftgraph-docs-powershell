@@ -29,6 +29,8 @@ Remove-MgBetaWindowsUpdatesProductRevisionKnowledgeBaseArticle -InputObject <IWi
 ## DESCRIPTION
 Delete navigation property knowledgeBaseArticle for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

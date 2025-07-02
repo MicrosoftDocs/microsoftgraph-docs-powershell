@@ -38,6 +38,8 @@ Get-MgBetaDeviceManagementGroupPolicyCategoryChild -InputObject <IDeviceManageme
 ## DESCRIPTION
 The children categories
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

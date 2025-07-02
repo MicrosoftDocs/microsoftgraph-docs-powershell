@@ -40,6 +40,8 @@ Get-MgBetaGroupDriveListItem -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 All items contained in the list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

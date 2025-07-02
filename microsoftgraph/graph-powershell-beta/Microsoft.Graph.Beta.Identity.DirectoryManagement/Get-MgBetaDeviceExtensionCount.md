@@ -32,6 +32,8 @@ Get-MgBetaDeviceExtensionCount -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

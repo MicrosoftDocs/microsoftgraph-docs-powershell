@@ -45,6 +45,8 @@ A collection of Windows products.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | WindowsUpdates.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

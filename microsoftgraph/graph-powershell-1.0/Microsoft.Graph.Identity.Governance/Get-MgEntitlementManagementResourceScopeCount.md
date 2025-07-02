@@ -29,6 +29,8 @@ Get-MgEntitlementManagementResourceScopeCount -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

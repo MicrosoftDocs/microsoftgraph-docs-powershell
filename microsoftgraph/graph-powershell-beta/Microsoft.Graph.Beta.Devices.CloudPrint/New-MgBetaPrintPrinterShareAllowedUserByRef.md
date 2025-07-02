@@ -44,6 +44,8 @@ New-MgBetaPrintPrinterShareAllowedUserByRef -InputObject <IDevicesCloudPrintIden
 ## DESCRIPTION
 Create new navigation property ref to allowedUsers for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

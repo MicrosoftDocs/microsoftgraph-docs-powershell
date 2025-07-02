@@ -34,6 +34,8 @@ Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Delete navigation property deploymentSummary for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AndroidManagedAppProtectionId

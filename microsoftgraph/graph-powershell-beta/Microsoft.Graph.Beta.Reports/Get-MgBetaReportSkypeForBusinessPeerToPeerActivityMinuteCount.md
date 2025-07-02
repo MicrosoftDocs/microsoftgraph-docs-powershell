@@ -32,6 +32,8 @@ Get-MgBetaReportSkypeForBusinessPeerToPeerActivityMinuteCount -InputObject <IRep
 ## DESCRIPTION
 Invoke function getSkypeForBusinessPeerToPeerActivityMinuteCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -40,6 +40,8 @@ Get-MgBetaGroupSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-ExpandP
 ## DESCRIPTION
 All the terms under the set.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

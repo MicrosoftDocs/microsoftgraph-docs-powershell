@@ -50,6 +50,8 @@ Update-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputOb
 ## DESCRIPTION
 Update the navigation property combinationConfigurations in policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

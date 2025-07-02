@@ -42,6 +42,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingRe
 ## DESCRIPTION
 Per-user workflow execution results.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -46,6 +46,8 @@ Get-MgGroupSiteTermStoreSetParentGroup -InputObject <ISitesIdentity> [-ExpandPro
 ## DESCRIPTION
 The parent \[group\] that contains the set.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

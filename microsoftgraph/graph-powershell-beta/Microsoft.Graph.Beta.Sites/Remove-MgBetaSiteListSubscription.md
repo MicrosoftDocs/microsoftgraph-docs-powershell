@@ -32,6 +32,8 @@ Remove-MgBetaSiteListSubscription -InputObject <ISitesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property subscriptions for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

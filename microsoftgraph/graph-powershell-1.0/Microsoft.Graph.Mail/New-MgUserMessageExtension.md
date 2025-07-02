@@ -46,6 +46,8 @@ New-MgUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hashtabl
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

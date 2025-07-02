@@ -53,6 +53,8 @@ New-MgEntitlementManagementResourceRequestCatalogResource -InputObject <IIdentit
 ## DESCRIPTION
 Create new navigation property to resources for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

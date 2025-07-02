@@ -32,6 +32,8 @@ Remove-MgBetaDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 Delete navigation property documentSetVersions for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

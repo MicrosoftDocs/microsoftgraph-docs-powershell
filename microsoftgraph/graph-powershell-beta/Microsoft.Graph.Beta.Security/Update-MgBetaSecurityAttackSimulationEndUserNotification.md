@@ -54,6 +54,8 @@ Update-MgBetaSecurityAttackSimulationEndUserNotification -InputObject <ISecurity
 ## DESCRIPTION
 Update the navigation property endUserNotifications in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -29,6 +29,8 @@ Remove-MgBetaWindowsUpdatesProductEdition -InputObject <IWindowsUpdatesIdentity>
 ## DESCRIPTION
 Delete navigation property editions for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EditionId

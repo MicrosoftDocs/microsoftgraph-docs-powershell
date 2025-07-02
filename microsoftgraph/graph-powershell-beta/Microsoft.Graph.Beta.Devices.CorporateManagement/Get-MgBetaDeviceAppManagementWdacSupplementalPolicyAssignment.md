@@ -49,6 +49,8 @@ The associated group assignments for the Windows Defender Application Control Su
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

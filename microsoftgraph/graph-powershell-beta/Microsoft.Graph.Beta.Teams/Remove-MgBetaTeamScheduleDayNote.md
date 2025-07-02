@@ -40,6 +40,8 @@ Delete navigation property dayNotes for teams
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DayNoteId

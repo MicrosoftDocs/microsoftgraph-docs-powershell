@@ -50,6 +50,8 @@ New-MgGroupDriveListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to versions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,6 +50,8 @@ Update-MgBetaDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Update the navigation property managedAppPolicies in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession -InputObject <IB
 ## DESCRIPTION
 Delete navigation property oneDriveForBusinessRestoreSessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

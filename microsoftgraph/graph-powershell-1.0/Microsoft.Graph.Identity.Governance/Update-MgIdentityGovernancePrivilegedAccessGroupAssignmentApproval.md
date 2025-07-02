@@ -48,6 +48,8 @@ Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval -InputObject 
 ## DESCRIPTION
 Update the navigation property assignmentApprovals in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

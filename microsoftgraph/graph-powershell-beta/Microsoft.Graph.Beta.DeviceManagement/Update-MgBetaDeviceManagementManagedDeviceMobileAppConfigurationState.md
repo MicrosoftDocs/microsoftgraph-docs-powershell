@@ -51,6 +51,8 @@ Update-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState -InputObje
 ## DESCRIPTION
 Update the navigation property managedDeviceMobileAppConfigurationStates in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

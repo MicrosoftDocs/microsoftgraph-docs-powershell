@@ -52,6 +52,8 @@ Update-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 Replace an existing schedulingGroup.
 If the specified schedulingGroup doesn't exist, this method returns 404 Not found.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

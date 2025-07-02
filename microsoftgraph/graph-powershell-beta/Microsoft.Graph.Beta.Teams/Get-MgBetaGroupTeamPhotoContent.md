@@ -31,6 +31,8 @@ Get-MgBetaGroupTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String>
 ## DESCRIPTION
 The team photo.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

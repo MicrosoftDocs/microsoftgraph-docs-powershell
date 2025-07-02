@@ -56,6 +56,8 @@ Update the navigation property planner in users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

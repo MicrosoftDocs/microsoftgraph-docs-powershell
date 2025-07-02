@@ -52,6 +52,8 @@ Update-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdenti
 ## DESCRIPTION
 Update the navigation property historyItems in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveDurationSeconds

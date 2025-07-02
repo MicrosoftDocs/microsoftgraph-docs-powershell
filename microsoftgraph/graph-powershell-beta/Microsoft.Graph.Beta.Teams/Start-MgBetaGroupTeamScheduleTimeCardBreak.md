@@ -51,6 +51,8 @@ Start-MgBetaGroupTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Start a break in a specific timeCard.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -58,6 +58,8 @@ Get-MgGroupSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Pro
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

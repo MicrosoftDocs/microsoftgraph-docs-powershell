@@ -51,6 +51,8 @@ New-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 ## DESCRIPTION
 Create new navigation property to customWorkflowExtensions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId

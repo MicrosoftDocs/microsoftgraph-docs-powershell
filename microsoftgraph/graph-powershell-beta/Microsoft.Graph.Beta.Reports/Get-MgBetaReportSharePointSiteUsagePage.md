@@ -31,6 +31,8 @@ Get-MgBetaReportSharePointSiteUsagePage -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getSharePointSiteUsagePages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

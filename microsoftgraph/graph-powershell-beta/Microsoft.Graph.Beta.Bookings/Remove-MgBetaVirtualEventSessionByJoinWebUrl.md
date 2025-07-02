@@ -29,6 +29,8 @@ Remove-MgBetaVirtualEventSessionByJoinWebUrl -InputObject <IBookingsIdentity> [-
 ## DESCRIPTION
 Delete navigation property sessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

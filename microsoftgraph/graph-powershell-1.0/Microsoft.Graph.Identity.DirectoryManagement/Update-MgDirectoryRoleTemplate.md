@@ -48,6 +48,8 @@ Update-MgDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Update entity in directoryRoleTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

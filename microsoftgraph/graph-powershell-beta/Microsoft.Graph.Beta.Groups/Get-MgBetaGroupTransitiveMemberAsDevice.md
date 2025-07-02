@@ -41,6 +41,8 @@ Get-MgBetaGroupTransitiveMemberAsDevice -InputObject <IGroupsIdentity> [-ExpandP
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

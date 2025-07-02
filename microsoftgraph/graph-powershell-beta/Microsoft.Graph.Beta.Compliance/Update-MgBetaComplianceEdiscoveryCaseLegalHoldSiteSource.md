@@ -48,6 +48,8 @@ Update-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplian
 ## DESCRIPTION
 Update the navigation property siteSources in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

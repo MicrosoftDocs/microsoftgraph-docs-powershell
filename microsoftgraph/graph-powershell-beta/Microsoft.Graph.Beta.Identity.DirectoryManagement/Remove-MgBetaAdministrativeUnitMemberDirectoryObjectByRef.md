@@ -37,6 +37,8 @@ Delete ref of navigation property members for administrativeUnits
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AdministrativeUnit.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId

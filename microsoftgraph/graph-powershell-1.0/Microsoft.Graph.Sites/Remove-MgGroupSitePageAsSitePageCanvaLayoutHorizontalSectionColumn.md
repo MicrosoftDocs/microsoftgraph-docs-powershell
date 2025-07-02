@@ -33,6 +33,8 @@ Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject 
 ## DESCRIPTION
 Delete navigation property columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

@@ -40,6 +40,8 @@ The page's HTML content.
 | Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite,  |
 | Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

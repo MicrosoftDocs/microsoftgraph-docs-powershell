@@ -72,6 +72,8 @@ Update-MgBetaGroupTeamChannelPlannerPlanTask -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property tasks in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount

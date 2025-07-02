@@ -56,6 +56,8 @@ Update-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Update the navigation property recommendations in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionSteps

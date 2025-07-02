@@ -31,6 +31,8 @@ Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipmentM
 ## DESCRIPTION
 Get shipmentMethod from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

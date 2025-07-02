@@ -38,6 +38,8 @@ Get-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest -InputObject <IDev
 ## DESCRIPTION
 List of log collection requests
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

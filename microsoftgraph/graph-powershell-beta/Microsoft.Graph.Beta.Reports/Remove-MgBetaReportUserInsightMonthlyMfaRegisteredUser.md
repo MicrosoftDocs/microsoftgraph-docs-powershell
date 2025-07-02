@@ -29,6 +29,8 @@ Remove-MgBetaReportUserInsightMonthlyMfaRegisteredUser -InputObject <IReportsIde
 ## DESCRIPTION
 Delete navigation property mfaRegisteredUsers for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

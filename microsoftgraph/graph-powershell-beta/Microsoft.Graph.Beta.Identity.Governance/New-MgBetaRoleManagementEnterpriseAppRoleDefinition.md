@@ -51,6 +51,8 @@ New-MgBetaRoleManagementEnterpriseAppRoleDefinition -InputObject <IIdentityGover
 ## DESCRIPTION
 Create new navigation property to roleDefinitions for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

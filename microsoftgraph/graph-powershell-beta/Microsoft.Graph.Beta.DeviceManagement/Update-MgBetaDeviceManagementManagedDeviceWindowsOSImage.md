@@ -49,6 +49,8 @@ Update-MgBetaDeviceManagementManagedDeviceWindowsOSImage -InputObject <IDeviceMa
 ## DESCRIPTION
 Update the navigation property managedDeviceWindowsOSImages in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

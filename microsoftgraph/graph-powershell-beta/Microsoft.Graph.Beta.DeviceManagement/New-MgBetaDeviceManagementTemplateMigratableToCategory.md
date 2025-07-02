@@ -49,6 +49,8 @@ New-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceMana
 ## DESCRIPTION
 Create new navigation property to categories for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp
 ## DESCRIPTION
 Create new navigation property to committedContainedApps for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

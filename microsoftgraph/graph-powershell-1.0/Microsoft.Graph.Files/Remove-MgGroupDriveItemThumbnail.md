@@ -32,6 +32,8 @@ Remove-MgGroupDriveItemThumbnail -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property thumbnails for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

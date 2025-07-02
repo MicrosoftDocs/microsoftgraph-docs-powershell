@@ -32,6 +32,8 @@ Remove-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-If
 ## DESCRIPTION
 Delete navigation property subjectRightsRequests for privacy
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

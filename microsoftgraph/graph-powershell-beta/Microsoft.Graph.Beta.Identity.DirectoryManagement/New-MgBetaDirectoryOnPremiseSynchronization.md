@@ -34,6 +34,8 @@ New-MgBetaDirectoryOnPremiseSynchronization -BodyParameter <IMicrosoftGraphOnPre
 ## DESCRIPTION
 Create new navigation property to onPremisesSynchronization for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

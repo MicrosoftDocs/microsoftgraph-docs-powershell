@@ -29,6 +29,8 @@ Reset-MgBetaPrintPrinterDefault -InputObject <IDevicesCloudPrintIdentity> [-Resp
 ## DESCRIPTION
 Invoke action resetDefaults
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

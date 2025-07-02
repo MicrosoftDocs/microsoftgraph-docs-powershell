@@ -23,6 +23,8 @@ Get-MgSecurityCase [-ExpandProperty <String[]>] [-Property <String[]>] [-Respons
 ## DESCRIPTION
 Get cases from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

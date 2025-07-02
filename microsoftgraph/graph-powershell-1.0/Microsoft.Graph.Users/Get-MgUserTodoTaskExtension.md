@@ -42,6 +42,8 @@ Get-MgUserTodoTaskExtension -InputObject <IUsersIdentity> [-ExpandProperty <Stri
 The collection of open extensions defined for the task.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

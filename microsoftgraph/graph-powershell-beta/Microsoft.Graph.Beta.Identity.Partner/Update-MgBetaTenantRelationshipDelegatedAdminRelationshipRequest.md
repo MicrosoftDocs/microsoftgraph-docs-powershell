@@ -50,6 +50,8 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <I
 ## DESCRIPTION
 Update the navigation property requests in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

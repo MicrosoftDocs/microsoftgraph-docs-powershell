@@ -38,6 +38,8 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 In PIM, retrieve the requests for role eligibilities for a particular principal.
 The principal can be the creator or approver of the unifiedRoleEligibilityScheduleRequest object, or they can be the target of the role eligibility.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

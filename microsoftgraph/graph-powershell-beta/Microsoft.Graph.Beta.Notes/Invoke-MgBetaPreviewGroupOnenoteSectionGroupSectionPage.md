@@ -32,6 +32,8 @@ Invoke-MgBetaPreviewGroupOnenoteSectionGroupSectionPage -InputObject <INotesIden
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

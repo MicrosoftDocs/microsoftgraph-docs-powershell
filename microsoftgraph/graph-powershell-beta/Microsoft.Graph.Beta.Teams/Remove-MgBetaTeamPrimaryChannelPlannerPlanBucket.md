@@ -29,6 +29,8 @@ Remove-MgBetaTeamPrimaryChannelPlannerPlanBucket -InputObject <ITeamsIdentity> [
 ## DESCRIPTION
 Delete navigation property buckets for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

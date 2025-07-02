@@ -38,6 +38,8 @@ Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineState -InputObject <IDevi
 ## DESCRIPTION
 Security baseline states for this device.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

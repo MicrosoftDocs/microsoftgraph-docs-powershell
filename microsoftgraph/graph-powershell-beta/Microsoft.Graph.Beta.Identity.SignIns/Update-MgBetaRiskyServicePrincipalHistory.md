@@ -57,6 +57,8 @@ Update-MgBetaRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Update the navigation property history in identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled

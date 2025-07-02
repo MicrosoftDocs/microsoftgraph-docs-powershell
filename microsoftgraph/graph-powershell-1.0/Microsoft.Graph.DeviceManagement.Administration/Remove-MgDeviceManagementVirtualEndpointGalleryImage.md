@@ -32,6 +32,8 @@ Remove-MgDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManage
 ## DESCRIPTION
 Delete navigation property galleryImages for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcGalleryImageId

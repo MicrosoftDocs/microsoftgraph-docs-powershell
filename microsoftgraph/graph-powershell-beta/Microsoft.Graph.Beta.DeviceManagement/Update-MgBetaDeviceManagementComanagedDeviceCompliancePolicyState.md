@@ -50,6 +50,8 @@ Update-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState -InputObject <
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicyStates in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

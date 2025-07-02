@@ -58,6 +58,8 @@ New-MgUserDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to contentTypes for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

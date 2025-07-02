@@ -45,6 +45,8 @@ Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Invoke action signDigest
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

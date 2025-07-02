@@ -48,6 +48,8 @@ New-MgBetaGroupSiteListActivity -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to activities for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action

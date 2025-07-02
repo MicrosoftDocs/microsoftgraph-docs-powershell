@@ -30,6 +30,8 @@ Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentUserAttribute -InputObject <
 ## DESCRIPTION
 The user attribute that you want to add to your user flow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId

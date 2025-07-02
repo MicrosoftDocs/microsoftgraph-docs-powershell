@@ -37,6 +37,8 @@ Get-MgBetaGroupEventExceptionOccurrence -InputObject <ICalendarIdentity> [-Expan
 ## DESCRIPTION
 Get exceptionOccurrences from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

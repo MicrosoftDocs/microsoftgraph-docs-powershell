@@ -40,6 +40,8 @@ Get-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-ExpandProp
 ## DESCRIPTION
 The collection of messages in the mailFolder.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property associatedTeams for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AssociatedTeamInfoId

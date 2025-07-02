@@ -50,6 +50,8 @@ Update-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property operations in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

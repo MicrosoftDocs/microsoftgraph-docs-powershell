@@ -25,6 +25,8 @@ Get-MgBetaApplicationAppManagementPolicy -ApplicationId <String> [-ExpandPropert
 ## DESCRIPTION
 The appManagementPolicy applied to this application.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

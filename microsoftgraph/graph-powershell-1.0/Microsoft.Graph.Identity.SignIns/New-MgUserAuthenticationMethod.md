@@ -45,6 +45,8 @@ New-MgUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> -BodyPara
 ## DESCRIPTION
 Create new navigation property to methods for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

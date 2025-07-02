@@ -50,6 +50,8 @@ New-MgTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to operations for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -45,6 +45,8 @@ New-MgCommunicationOnlineMeeting -BodyParameter <IMicrosoftGraphOnlineMeeting>
 ## DESCRIPTION
 Create new navigation property to onlineMeetings for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ New-MgBetaTeamworkDeletedTeam -BodyParameter <IMicrosoftGraphDeletedTeam> [-Resp
 ## DESCRIPTION
 Create new navigation property to deletedTeams for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

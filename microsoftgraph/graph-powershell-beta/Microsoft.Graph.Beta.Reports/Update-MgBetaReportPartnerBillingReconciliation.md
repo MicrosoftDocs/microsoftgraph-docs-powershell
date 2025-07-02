@@ -32,6 +32,8 @@ Update-MgBetaReportPartnerBillingReconciliation -BodyParameter <IMicrosoftGraphP
 ## DESCRIPTION
 Update the navigation property reconciliation in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

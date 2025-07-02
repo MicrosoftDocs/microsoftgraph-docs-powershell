@@ -30,6 +30,8 @@ Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat -InputO
 ## DESCRIPTION
 Delete navigation property bucketTaskBoardFormat for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

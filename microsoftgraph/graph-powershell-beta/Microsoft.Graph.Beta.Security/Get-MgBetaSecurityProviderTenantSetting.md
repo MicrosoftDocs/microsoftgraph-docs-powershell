@@ -37,6 +37,8 @@ Get-MgBetaSecurityProviderTenantSetting -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Get providerTenantSettings from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

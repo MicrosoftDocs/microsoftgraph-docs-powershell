@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportComplianceSettingReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getComplianceSettingsReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

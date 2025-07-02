@@ -51,6 +51,8 @@ Update-MgBetaSiteListOperation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

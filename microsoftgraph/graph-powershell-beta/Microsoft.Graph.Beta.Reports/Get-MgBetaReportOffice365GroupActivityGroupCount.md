@@ -34,6 +34,8 @@ Get-MgBetaReportOffice365GroupActivityGroupCount -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Invoke function getOffice365GroupsActivityGroupCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

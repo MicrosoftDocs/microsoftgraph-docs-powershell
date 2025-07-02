@@ -30,6 +30,8 @@ Remove-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy -InputObject
 ## DESCRIPTION
 Delete navigation property dataLossPreventionPolicies for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DataLossPreventionPolicyId

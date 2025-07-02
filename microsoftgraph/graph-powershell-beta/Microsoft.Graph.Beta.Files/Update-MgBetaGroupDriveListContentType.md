@@ -59,6 +59,8 @@ Update-MgBetaGroupDriveListContentType -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property contentTypes in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

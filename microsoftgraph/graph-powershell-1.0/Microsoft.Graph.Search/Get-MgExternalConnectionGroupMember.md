@@ -42,6 +42,8 @@ Get-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-ExpandPrope
 A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

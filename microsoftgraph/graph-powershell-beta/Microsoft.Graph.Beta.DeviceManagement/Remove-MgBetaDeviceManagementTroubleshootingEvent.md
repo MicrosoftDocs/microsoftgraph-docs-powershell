@@ -40,6 +40,8 @@ Delete navigation property troubleshootingEvents for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementTroubleshootingEventId

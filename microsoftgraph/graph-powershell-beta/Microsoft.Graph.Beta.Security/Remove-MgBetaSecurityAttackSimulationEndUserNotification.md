@@ -32,6 +32,8 @@ Remove-MgBetaSecurityAttackSimulationEndUserNotification -InputObject <ISecurity
 ## DESCRIPTION
 Delete navigation property endUserNotifications for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndUserNotificationId

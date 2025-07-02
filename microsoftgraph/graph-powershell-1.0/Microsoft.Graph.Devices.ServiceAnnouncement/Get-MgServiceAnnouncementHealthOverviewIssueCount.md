@@ -32,6 +32,8 @@ Get-MgServiceAnnouncementHealthOverviewIssueCount -InputObject <IDevicesServiceA
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

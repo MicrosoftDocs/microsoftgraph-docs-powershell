@@ -32,6 +32,8 @@ Remove-MgBetaIdentityB2XUserFlowPostFederationSignup -InputObject <IIdentitySign
 ## DESCRIPTION
 Delete navigation property postFederationSignup for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

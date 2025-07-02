@@ -45,6 +45,8 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroupOnPremiseAgentGroupByRef -Input
 ## DESCRIPTION
 Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

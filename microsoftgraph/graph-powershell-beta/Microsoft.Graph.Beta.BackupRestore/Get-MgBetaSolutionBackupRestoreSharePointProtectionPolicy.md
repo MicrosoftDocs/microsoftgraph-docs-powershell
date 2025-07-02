@@ -40,6 +40,8 @@ Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBackupR
 ## DESCRIPTION
 The list of SharePoint protection policies in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -51,6 +51,8 @@ Get-MgCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunicationsIde
 The transcripts of an online meeting.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgSiteOnenoteSectionPage -InputObject <INotesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property pages for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

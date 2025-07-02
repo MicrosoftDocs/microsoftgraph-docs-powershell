@@ -48,6 +48,8 @@ New-MgBetaPrintShareJobTask -InputObject <IDevicesCloudPrintIdentity> -BodyParam
 ## DESCRIPTION
 Create new navigation property to tasks for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

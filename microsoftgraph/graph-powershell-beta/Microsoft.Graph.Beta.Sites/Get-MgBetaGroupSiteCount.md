@@ -32,6 +32,8 @@ Get-MgBetaGroupSiteCount -InputObject <ISitesIdentity> [-Filter <String>] [-Sear
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

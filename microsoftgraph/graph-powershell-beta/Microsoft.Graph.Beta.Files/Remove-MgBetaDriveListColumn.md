@@ -32,6 +32,8 @@ Remove-MgBetaDriveListColumn -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property columns for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

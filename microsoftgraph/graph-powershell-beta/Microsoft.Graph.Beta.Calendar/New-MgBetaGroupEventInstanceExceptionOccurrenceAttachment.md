@@ -47,6 +47,8 @@ New-MgBetaGroupEventInstanceExceptionOccurrenceAttachment -InputObject <ICalenda
 ## DESCRIPTION
 Create new navigation property to attachments for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment -InputObject <IDevi
 ## DESCRIPTION
 Delete navigation property assignments for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

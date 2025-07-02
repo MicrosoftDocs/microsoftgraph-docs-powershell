@@ -48,6 +48,8 @@ Remove-MgUserChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property hostedContents for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

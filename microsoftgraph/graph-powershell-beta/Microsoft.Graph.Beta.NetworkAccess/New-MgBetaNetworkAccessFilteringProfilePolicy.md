@@ -45,6 +45,8 @@ New-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIdenti
 ## DESCRIPTION
 Create new navigation property to policies for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

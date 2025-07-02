@@ -41,6 +41,8 @@ Delete navigation property deviceCompliancePolicySettingStateSummaries for devic
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceCompliancePolicySettingStateSummaryId

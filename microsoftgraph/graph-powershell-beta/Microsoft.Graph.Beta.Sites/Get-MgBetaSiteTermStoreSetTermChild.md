@@ -40,6 +40,8 @@ Get-MgBetaSiteTermStoreSetTermChild -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Children of current term.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

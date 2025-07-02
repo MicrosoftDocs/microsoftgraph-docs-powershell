@@ -32,6 +32,8 @@ Remove-MgSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdent
 ## DESCRIPTION
 Delete navigation property articleIndicators for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ArticleIndicatorId

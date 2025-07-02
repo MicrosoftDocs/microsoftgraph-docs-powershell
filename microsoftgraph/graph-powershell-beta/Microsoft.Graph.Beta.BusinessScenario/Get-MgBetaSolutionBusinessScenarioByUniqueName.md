@@ -38,6 +38,8 @@ Read the properties and relationships of a businessScenario object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

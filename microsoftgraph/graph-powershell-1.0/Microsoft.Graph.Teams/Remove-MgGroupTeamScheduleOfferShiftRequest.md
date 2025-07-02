@@ -32,6 +32,8 @@ Remove-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property offerShiftRequests for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

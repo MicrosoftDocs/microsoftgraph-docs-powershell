@@ -49,6 +49,8 @@ New-MgBetaAccessReviewMyDecision -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Create new navigation property to myDecisions for accessReviews
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessRecommendation

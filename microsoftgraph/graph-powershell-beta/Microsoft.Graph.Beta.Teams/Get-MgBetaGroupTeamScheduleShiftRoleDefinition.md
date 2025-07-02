@@ -37,6 +37,8 @@ Get-MgBetaGroupTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity> [-E
 ## DESCRIPTION
 The definitions of the roles in the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

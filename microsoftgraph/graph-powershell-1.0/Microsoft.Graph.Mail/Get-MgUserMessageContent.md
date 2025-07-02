@@ -41,6 +41,8 @@ Read-only.
 | Delegated (personal Microsoft account) | Mail.Read, Mail.ReadBasic,  |
 | Application | Mail.Read, Mail.ReadBasic.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -29,6 +29,8 @@ Get-MgBetaWindowsUpdatesProductKnownIssueResolvingKnowledgeBaseArticle -InputObj
 ## DESCRIPTION
 Knowledge base article associated with the release when the known issue was resolved or mitigated.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

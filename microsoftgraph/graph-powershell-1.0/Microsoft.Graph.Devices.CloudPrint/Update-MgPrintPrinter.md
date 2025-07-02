@@ -67,6 +67,8 @@ Update the properties of a printer object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Printer.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

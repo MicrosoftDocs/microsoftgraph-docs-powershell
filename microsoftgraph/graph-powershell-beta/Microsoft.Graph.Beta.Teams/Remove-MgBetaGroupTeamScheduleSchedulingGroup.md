@@ -32,6 +32,8 @@ Remove-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property schedulingGroups for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

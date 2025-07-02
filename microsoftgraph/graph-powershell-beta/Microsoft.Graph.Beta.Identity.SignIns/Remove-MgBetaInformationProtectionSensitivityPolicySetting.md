@@ -21,6 +21,8 @@ Remove-MgBetaInformationProtectionSensitivityPolicySetting [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property sensitivityPolicySettings for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

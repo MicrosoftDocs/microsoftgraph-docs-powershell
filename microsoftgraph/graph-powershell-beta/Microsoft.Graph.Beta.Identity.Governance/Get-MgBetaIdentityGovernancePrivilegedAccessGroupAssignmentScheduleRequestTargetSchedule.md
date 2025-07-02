@@ -36,6 +36,8 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestTarget
 Schedule created by this request.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

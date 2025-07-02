@@ -32,6 +32,8 @@ Remove-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

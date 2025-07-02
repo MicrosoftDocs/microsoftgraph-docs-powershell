@@ -46,6 +46,8 @@ Update-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 Update entity in directorySettingTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ Update-MgBetaUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesC
 ## DESCRIPTION
 Update the navigation property assignments in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

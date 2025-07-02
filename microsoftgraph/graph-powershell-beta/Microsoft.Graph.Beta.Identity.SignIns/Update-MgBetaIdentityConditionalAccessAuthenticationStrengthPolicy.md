@@ -49,6 +49,8 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject 
 ## DESCRIPTION
 Update the navigation property policies in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

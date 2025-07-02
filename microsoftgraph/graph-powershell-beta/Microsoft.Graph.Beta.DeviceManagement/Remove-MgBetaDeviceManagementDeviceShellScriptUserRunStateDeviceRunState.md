@@ -31,6 +31,8 @@ Remove-MgBetaDeviceManagementDeviceShellScriptUserRunStateDeviceRunState
 ## DESCRIPTION
 Delete navigation property deviceRunStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementScriptDeviceStateId

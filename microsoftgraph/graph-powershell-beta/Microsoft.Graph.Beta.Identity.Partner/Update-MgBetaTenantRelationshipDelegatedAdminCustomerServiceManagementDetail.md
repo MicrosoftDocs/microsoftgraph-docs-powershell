@@ -50,6 +50,8 @@ Update-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 ## DESCRIPTION
 Update the navigation property serviceManagementDetails in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property columnLinks for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnLinkId

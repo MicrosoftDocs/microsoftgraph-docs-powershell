@@ -29,6 +29,8 @@ Remove-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdent
 ## DESCRIPTION
 Delete navigation property settings for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -33,6 +33,8 @@ Remove-MgBetaEducationSchoolClassEducationClassByRef -InputObject <IEducationIde
 ## DESCRIPTION
 Delete a class from a school.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

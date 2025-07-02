@@ -46,6 +46,8 @@ Update-MgBetaGroupSitePageAsSitePageWebPart -InputObject <ISitesIdentity> -BodyP
 ## DESCRIPTION
 Update the navigation property webParts in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

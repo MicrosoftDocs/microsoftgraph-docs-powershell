@@ -31,6 +31,8 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstance -InputObject <IIdentity
 There's exactly one accessReviewInstance associated with each decision.
 The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

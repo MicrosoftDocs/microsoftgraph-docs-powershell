@@ -48,6 +48,8 @@ Update-MgBetaPrintOperation -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property operations in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

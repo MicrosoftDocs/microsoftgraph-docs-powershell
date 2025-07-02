@@ -46,6 +46,8 @@ Get-MgBetaGroupSiteLastModifiedByUser -InputObject <ISitesIdentity> [-ExpandProp
 ## DESCRIPTION
 Get lastModifiedByUser from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

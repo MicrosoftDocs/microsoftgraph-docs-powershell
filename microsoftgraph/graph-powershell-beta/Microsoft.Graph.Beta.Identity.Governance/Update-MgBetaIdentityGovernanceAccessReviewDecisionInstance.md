@@ -57,6 +57,8 @@ Update-MgBetaIdentityGovernanceAccessReviewDecisionInstance -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property instance in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId

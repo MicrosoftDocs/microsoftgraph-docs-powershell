@@ -32,6 +32,8 @@ Sync-MgBetaUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
 ## DESCRIPTION
 Invoke action syncDevice
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

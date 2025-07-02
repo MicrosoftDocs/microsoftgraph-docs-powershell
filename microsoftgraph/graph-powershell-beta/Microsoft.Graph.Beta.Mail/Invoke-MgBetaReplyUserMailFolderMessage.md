@@ -69,6 +69,8 @@ Alternatively, create a draft to reply to a message, and send it later.
 | Delegated (personal Microsoft account) | Mail.Send,  |
 | Application | Mail.Send,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

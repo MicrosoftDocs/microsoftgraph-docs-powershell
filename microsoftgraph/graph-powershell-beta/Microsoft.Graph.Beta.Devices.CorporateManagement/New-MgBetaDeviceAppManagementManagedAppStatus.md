@@ -32,6 +32,8 @@ New-MgBetaDeviceAppManagementManagedAppStatus -BodyParameter <IMicrosoftGraphMan
 ## DESCRIPTION
 Create new navigation property to managedAppStatuses for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

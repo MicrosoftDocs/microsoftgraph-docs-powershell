@@ -34,6 +34,8 @@ New-MgBetaDeviceAppManagementManagedAppPolicy -BodyParameter <IMicrosoftGraphMan
 ## DESCRIPTION
 Create new navigation property to managedAppPolicies for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

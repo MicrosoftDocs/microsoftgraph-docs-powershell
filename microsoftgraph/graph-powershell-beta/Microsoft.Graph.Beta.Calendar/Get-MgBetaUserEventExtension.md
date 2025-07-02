@@ -42,6 +42,8 @@ Get-MgBetaUserEventExtension -InputObject <ICalendarIdentity> [-ExpandProperty <
 The collection of open extensions defined for the event.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -38,6 +38,8 @@ Delete an existing trustFrameworkPolicy.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.TrustFramework,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

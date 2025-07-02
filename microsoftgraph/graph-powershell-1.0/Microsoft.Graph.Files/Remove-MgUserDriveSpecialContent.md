@@ -32,6 +32,8 @@ Remove-MgUserDriveSpecialContent -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

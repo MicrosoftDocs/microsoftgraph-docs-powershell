@@ -45,6 +45,8 @@ Update-MgBetaExternalIndustryDataOutboundProvisioningFlowSet -InputObject <ISear
 ## DESCRIPTION
 Update the navigation property outboundProvisioningFlowSets in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

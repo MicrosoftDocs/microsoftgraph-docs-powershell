@@ -32,6 +32,8 @@ Remove-MgBetaSiteOnenoteResource -InputObject <INotesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property resources for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

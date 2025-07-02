@@ -43,6 +43,8 @@ Update-MgBetaIdentityUserFlow -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property userFlows in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

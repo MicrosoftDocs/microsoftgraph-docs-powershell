@@ -32,6 +32,8 @@ Remove-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property analytics for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

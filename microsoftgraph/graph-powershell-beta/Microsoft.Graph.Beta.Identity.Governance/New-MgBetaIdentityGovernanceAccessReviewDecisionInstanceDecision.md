@@ -59,6 +59,8 @@ New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject <I
 ## DESCRIPTION
 Create new navigation property to decisions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

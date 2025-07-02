@@ -33,6 +33,8 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition
 The definition of the alert that contains its description, impact, and measures to mitigate or prevent it.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

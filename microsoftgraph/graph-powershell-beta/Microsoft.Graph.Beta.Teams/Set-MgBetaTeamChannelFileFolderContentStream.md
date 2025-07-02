@@ -29,6 +29,8 @@ Set-MgBetaTeamChannelFileFolderContentStream -InputObject <ITeamsIdentity> [-Dat
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

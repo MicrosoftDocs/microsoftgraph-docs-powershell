@@ -47,6 +47,8 @@ New-MgBetaPolicyServicePrincipalCreationPolicyExclude -InputObject <IIdentitySig
 ## DESCRIPTION
 Create new navigation property to excludes for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -40,6 +40,8 @@ Get-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 A collection of permissions granted to apps to access the team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

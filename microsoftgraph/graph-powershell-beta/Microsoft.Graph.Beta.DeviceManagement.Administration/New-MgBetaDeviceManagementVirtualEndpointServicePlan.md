@@ -31,6 +31,8 @@ New-MgBetaDeviceManagementVirtualEndpointServicePlan -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to servicePlans for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

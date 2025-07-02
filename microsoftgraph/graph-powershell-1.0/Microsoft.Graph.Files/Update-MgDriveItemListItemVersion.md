@@ -50,6 +50,8 @@ Update-MgDriveItemListItemVersion -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property versions in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

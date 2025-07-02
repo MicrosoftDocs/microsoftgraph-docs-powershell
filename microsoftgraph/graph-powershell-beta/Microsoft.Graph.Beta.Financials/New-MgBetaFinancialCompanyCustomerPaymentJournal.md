@@ -48,6 +48,8 @@ New-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Create new navigation property to customerPaymentJournals for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

@@ -33,6 +33,8 @@ Remove-MgGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Delete navigation property activities for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

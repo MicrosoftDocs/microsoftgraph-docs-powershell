@@ -33,6 +33,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra user that modified the custom task extension last.Supports $filter(eq, ne) and $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CustomTaskExtensionId

@@ -50,6 +50,8 @@ Update-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the navigation property attachmentSessions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

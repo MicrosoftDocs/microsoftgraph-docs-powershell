@@ -21,6 +21,8 @@ Remove-MgBetaSecurityDataDiscovery [-IfMatch <String>] [-ResponseHeadersVariable
 ## DESCRIPTION
 Delete navigation property dataDiscovery for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

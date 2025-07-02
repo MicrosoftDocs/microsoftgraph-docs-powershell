@@ -60,6 +60,8 @@ New-MgGroupDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to items for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

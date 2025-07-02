@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackup
 ## DESCRIPTION
 Delete navigation property exchangeProtectionPolicies for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExchangeProtectionPolicyId

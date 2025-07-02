@@ -47,6 +47,8 @@ Update-MgBetaPrivilegedAccessResourceRoleAssignmentSubject -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property subject in privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

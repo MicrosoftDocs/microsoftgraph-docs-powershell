@@ -52,6 +52,8 @@ New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy
 ## DESCRIPTION
 Create new navigation property to intendedPolicies for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

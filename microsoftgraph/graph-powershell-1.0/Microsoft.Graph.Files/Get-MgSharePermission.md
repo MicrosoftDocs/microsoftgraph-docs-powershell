@@ -32,6 +32,8 @@ Get-MgSharePermission -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Used to access the permission representing the underlying sharing link
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

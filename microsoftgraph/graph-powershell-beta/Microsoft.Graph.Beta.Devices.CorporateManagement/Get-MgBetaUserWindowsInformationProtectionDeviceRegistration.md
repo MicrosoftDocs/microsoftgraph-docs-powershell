@@ -38,6 +38,8 @@ Get-MgBetaUserWindowsInformationProtectionDeviceRegistration -InputObject <IDevi
 ## DESCRIPTION
 Zero or more WIP device registrations that belong to the user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

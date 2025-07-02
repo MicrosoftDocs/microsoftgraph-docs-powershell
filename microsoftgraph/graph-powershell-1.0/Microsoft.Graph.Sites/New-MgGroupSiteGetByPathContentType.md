@@ -59,6 +59,8 @@ New-MgGroupSiteGetByPathContentType -InputObject <ISitesIdentity> -BodyParameter
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

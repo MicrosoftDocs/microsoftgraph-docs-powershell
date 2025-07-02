@@ -68,6 +68,8 @@ New-MgBetaGroupDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to columns for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

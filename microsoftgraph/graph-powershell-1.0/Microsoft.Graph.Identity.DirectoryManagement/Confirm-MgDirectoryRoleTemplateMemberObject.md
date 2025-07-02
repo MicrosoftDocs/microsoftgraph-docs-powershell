@@ -48,6 +48,8 @@ Confirm-MgDirectoryRoleTemplateMemberObject -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

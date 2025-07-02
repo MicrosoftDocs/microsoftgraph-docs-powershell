@@ -58,6 +58,8 @@ New-MgBetaUserDriveListContentType -InputObject <IFilesIdentity> -BodyParameter 
 ## DESCRIPTION
 Create new navigation property to contentTypes for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

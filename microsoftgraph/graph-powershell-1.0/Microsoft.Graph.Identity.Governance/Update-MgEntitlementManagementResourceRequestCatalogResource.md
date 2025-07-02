@@ -54,6 +54,8 @@ Update-MgEntitlementManagementResourceRequestCatalogResource -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property resources in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

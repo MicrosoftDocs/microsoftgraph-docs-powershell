@@ -23,6 +23,8 @@ Remove-MgBetaSecurityLabel [-IfMatch <String>] [-ResponseHeadersVariable <String
 ## DESCRIPTION
 Delete navigation property labels for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

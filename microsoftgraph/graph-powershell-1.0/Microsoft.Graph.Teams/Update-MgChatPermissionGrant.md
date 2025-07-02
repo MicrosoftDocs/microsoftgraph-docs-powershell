@@ -49,6 +49,8 @@ Update-MgChatPermissionGrant -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property permissionGrants in chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

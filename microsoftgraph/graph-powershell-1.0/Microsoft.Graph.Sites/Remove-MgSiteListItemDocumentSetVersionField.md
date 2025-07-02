@@ -33,6 +33,8 @@ Remove-MgSiteListItemDocumentSetVersionField -InputObject <ISitesIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property fields for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

@@ -32,6 +32,8 @@ Remove-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property contentTypes for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

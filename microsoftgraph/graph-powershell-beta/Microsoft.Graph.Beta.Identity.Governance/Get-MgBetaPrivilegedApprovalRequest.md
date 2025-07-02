@@ -29,6 +29,8 @@ Get-MgBetaPrivilegedApprovalRequest -InputObject <IIdentityGovernanceIdentity> [
 ## DESCRIPTION
 Get request from privilegedApproval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

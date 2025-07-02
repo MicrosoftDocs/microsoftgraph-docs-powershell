@@ -33,6 +33,8 @@ Invoke-MgSoftUserChatMessageReplyDelete -InputObject <ITeamsIdentity> [-Response
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

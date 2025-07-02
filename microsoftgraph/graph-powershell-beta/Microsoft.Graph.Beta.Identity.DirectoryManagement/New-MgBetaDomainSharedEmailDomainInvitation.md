@@ -45,6 +45,8 @@ New-MgBetaDomainSharedEmailDomainInvitation -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Create new navigation property to sharedEmailDomainInvitations for domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

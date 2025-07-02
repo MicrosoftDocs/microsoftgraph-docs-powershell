@@ -33,6 +33,8 @@ Remove-MgBetaInformationProtectionThreatAssessmentRequestResult -InputObject <II
 ## DESCRIPTION
 Delete navigation property results for informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

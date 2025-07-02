@@ -54,6 +54,8 @@ Update-MgSiteListItemLastModifiedByUserMailboxSetting -InputObject <ISitesIdenti
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -60,6 +60,8 @@ New-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to channels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

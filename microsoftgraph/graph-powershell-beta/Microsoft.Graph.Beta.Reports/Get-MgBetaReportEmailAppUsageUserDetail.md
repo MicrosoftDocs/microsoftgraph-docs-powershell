@@ -44,6 +44,8 @@ Get-MgBetaReportEmailAppUsageUserDetail -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getEmailAppUsageUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

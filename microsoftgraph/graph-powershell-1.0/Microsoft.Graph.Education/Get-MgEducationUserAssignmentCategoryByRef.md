@@ -29,6 +29,8 @@ When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

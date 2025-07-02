@@ -60,6 +60,8 @@ New-MgBetaDeviceAppManagementMobileAppRelationship -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to mobileAppRelationships for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -38,6 +38,8 @@ New-MgBetaServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePr
 ## DESCRIPTION
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity

@@ -30,6 +30,8 @@ Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskDetail -InputObject <IT
 ## DESCRIPTION
 Delete navigation property details for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

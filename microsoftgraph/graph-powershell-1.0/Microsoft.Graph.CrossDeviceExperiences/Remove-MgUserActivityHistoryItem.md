@@ -40,6 +40,8 @@ Delete navigation property historyItems for users
 | Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp,  |
 | Application | Not supported |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityHistoryItemId

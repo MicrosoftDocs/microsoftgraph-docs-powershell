@@ -32,6 +32,8 @@ Get-MgGroupDriveItemAnalyticLastSevenDay -InputObject <IFilesIdentity> [-ExpandP
 ## DESCRIPTION
 Get lastSevenDays from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

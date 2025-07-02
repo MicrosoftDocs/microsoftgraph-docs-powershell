@@ -54,6 +54,8 @@ New-MgBetaUserOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to sections for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

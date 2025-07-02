@@ -29,6 +29,8 @@ Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy
 ## DESCRIPTION
 Update the navigation property directoryRoleAccessReviewPolicy in policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

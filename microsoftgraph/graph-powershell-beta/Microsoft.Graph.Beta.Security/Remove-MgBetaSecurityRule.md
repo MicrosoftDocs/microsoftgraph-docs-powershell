@@ -20,6 +20,8 @@ Remove-MgBetaSecurityRule [-IfMatch <String>] [-ResponseHeadersVariable <String>
 ## DESCRIPTION
 Delete navigation property rules for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

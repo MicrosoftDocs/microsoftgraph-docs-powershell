@@ -37,6 +37,8 @@ Get-MgBetaRoleManagementEnterpriseApp -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Get enterpriseApps from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

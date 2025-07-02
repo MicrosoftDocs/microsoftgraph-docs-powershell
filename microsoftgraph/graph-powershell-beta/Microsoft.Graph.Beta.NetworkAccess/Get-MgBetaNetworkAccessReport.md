@@ -21,6 +21,8 @@ Get-MgBetaNetworkAccessReport [-ExpandProperty <String[]>] [-Property <String[]>
 ## DESCRIPTION
 Represents the status of the Global Secure Access services for the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

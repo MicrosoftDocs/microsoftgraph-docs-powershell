@@ -46,6 +46,8 @@ Remove-MgSiteTermStore -InputObject <ISitesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property termStore for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -37,6 +37,8 @@ Delete navigation property hardwareOathMethods for users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -HardwareOathAuthenticationMethodId

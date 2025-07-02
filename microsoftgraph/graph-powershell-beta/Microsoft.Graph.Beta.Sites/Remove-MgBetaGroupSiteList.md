@@ -32,6 +32,8 @@ Remove-MgBetaGroupSiteList -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property lists for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

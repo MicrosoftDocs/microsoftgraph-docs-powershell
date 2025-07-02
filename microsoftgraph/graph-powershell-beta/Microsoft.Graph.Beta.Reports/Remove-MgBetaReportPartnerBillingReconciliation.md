@@ -24,6 +24,8 @@ Remove-MgBetaReportPartnerBillingReconciliation [-IfMatch <String>] [-ResponseHe
 ## DESCRIPTION
 Delete navigation property reconciliation for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

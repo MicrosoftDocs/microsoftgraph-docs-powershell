@@ -34,6 +34,8 @@ Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary
 ## DESCRIPTION
 Delete navigation property deviceStatusSummary for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

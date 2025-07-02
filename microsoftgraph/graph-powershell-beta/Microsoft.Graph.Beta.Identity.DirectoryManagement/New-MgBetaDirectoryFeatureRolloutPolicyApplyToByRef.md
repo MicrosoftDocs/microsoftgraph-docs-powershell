@@ -45,6 +45,8 @@ New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDirec
 ## DESCRIPTION
 Create new navigation property ref to appliesTo for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

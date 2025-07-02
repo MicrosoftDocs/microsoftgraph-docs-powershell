@@ -29,6 +29,8 @@ Remove-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property devices for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

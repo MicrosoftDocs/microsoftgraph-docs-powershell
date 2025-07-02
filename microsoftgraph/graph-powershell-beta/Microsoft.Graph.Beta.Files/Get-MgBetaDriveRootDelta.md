@@ -67,6 +67,8 @@ Note: you should only delete a folder locally if it's empty after syncing all th
 | Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
 | Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

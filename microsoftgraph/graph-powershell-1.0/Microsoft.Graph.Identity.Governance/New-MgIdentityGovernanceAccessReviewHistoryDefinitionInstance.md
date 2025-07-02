@@ -52,6 +52,8 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <IIde
 ## DESCRIPTION
 Create new navigation property to instances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId

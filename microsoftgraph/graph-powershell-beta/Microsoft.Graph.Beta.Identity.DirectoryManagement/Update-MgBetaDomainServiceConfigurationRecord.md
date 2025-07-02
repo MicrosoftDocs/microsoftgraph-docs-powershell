@@ -48,6 +48,8 @@ Update-MgBetaDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Update the navigation property serviceConfigurationRecords in domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

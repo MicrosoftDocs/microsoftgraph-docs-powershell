@@ -25,6 +25,8 @@ Get-MgAdminEdge [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHe
 A container for Microsoft Edge resources.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

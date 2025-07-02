@@ -32,6 +32,8 @@ Remove-MgBetaCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunicat
 ## DESCRIPTION
 Delete navigation property participants_v2 for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordId

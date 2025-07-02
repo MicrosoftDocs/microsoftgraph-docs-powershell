@@ -31,6 +31,8 @@ Remove-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary
 ## DESCRIPTION
 Delete navigation property deploySummary for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

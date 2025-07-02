@@ -48,6 +48,8 @@ Update-MgBetaUserChatOperation -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property operations in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

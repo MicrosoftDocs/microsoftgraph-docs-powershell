@@ -50,6 +50,8 @@ Update-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property openShiftChangeRequests in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -21,6 +21,8 @@ Get-MgBetaInformationProtectionSensitivityPolicySetting [-ExpandProperty <String
 ## DESCRIPTION
 Get sensitivityPolicySettings from informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

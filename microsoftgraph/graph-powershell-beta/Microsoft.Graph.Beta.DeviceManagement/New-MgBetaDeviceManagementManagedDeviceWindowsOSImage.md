@@ -32,6 +32,8 @@ New-MgBetaDeviceManagementManagedDeviceWindowsOSImage
 ## DESCRIPTION
 Create new navigation property to managedDeviceWindowsOSImages for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

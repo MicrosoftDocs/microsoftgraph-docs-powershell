@@ -50,6 +50,8 @@ New-MgBetaShareListOperation -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

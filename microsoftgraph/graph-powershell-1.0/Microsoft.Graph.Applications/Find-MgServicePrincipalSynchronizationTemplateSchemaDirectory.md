@@ -33,6 +33,8 @@ Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <IApp
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryDefinitionId

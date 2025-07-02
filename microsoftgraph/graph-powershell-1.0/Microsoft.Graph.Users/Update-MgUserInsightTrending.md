@@ -50,6 +50,8 @@ Update-MgUserInsightTrending -InputObject <IUsersIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property trending in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

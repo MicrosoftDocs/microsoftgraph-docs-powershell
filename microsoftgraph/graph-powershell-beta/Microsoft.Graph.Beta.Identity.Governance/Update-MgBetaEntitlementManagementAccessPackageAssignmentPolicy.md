@@ -69,6 +69,8 @@ Update-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -InputObject <II
 ## DESCRIPTION
 Update the navigation property accessPackageAssignmentPolicies in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackage

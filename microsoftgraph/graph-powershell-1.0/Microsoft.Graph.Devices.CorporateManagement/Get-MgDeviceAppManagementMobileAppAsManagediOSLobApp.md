@@ -40,6 +40,8 @@ Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp -InputObject <IDevicesCorpo
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedIOSLobApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

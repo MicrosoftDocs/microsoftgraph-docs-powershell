@@ -40,6 +40,8 @@ Get-MgGroupDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity> [-Exp
 ## DESCRIPTION
 Get itemActivityStats from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

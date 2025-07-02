@@ -29,6 +29,8 @@ Remove-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -InputObject <IBus
 ## DESCRIPTION
 Delete navigation property planConfiguration for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BusinessScenarioId

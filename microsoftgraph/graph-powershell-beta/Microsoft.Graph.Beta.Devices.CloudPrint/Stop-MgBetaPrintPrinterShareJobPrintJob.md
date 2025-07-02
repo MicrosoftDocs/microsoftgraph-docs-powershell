@@ -29,6 +29,8 @@ Stop-MgBetaPrintPrinterShareJobPrintJob -InputObject <IDevicesCloudPrintIdentity
 ## DESCRIPTION
 Invoke action cancelPrintJob
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

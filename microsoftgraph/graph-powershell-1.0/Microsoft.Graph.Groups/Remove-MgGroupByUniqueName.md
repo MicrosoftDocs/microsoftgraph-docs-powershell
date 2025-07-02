@@ -41,6 +41,8 @@ After that time, they're permanently deleted.
 This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

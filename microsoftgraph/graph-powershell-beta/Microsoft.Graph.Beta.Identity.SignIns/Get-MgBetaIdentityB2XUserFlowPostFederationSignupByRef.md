@@ -32,6 +32,8 @@ Get-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySi
 ## DESCRIPTION
 Get ref of postFederationSignup from identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

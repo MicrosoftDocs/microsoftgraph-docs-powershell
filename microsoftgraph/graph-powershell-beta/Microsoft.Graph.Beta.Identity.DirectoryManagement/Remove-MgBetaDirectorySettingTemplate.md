@@ -29,6 +29,8 @@ Remove-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 Delete entity from directorySettingTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectorySettingTemplateId

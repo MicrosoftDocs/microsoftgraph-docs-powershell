@@ -33,6 +33,8 @@ Set-MgSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject <ISitesI
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

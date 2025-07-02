@@ -52,6 +52,8 @@ Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskDetail -InputObject <ITeam
 ## DESCRIPTION
 Update the navigation property details in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

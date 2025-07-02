@@ -23,6 +23,8 @@ Get-MgPrint [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeader
 ## DESCRIPTION
 Get print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

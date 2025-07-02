@@ -33,6 +33,8 @@ New-MgSecurityThreatIntelligenceSubdomain -BodyParameter <IMicrosoftGraphSecurit
 ## DESCRIPTION
 Create new navigation property to subdomains for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

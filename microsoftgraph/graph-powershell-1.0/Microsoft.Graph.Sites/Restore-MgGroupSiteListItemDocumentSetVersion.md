@@ -33,6 +33,8 @@ Restore-MgGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Re
 ## DESCRIPTION
 Restore a document set version.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

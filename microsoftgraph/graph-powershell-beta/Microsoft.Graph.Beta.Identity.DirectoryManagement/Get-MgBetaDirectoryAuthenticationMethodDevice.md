@@ -21,6 +21,8 @@ Get-MgBetaDirectoryAuthenticationMethodDevice [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 Exposes the hardware OATH method in the directory.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

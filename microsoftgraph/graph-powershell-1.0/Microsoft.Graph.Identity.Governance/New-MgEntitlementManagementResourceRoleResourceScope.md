@@ -48,6 +48,8 @@ New-MgEntitlementManagementResourceRoleResourceScope -InputObject <IIdentityGove
 ## DESCRIPTION
 Create new navigation property to scopes for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId

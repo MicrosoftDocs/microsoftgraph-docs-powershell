@@ -58,6 +58,8 @@ Update-MgDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property contentTypes in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

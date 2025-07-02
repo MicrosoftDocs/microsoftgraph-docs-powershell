@@ -29,6 +29,8 @@ Remove-MgBetaWindowsUpdatesProductRevision -InputObject <IWindowsUpdatesIdentity
 ## DESCRIPTION
 Delete navigation property revisions for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

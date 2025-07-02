@@ -30,6 +30,8 @@ Remove-MgBetaUserManagedDeviceHealthScriptState -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Delete navigation property deviceHealthScriptStates for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceId

@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreSiteInclusionRule -InputObject <IBackupRestore
 ## DESCRIPTION
 Delete navigation property siteInclusionRules for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

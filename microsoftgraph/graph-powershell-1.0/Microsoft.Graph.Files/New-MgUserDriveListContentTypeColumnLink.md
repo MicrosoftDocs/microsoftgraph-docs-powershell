@@ -46,6 +46,8 @@ New-MgUserDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to columnLinks for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

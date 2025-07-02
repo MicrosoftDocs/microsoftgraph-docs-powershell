@@ -29,6 +29,8 @@ Get-MgBetaUserManagedDeviceFileVaultKey -InputObject <IDevicesCorporateManagemen
 ## DESCRIPTION
 Invoke function getFileVaultKey
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

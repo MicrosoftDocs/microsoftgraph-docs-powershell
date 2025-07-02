@@ -58,6 +58,8 @@ Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
 ## DESCRIPTION
 Update the navigation property roleEligibilityScheduleInstances in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,6 +50,8 @@ Update-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property file in agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

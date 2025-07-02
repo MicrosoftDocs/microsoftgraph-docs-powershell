@@ -32,6 +32,8 @@ Get-MgBetaSiteTermStoreSetTermSet -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 The \[set\] in which the term is created.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

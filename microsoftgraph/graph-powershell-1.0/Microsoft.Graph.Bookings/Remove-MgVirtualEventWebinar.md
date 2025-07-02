@@ -32,6 +32,8 @@ Remove-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property webinars for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

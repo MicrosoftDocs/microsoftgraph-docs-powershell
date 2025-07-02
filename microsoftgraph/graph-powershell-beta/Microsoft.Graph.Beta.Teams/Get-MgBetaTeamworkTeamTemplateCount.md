@@ -28,6 +28,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamTemplates.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

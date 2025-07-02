@@ -40,6 +40,8 @@ Get-MgSiteListContentTypeColumnPosition -InputObject <ISitesIdentity> [-ExpandPr
 ## DESCRIPTION
 Column order information in a content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

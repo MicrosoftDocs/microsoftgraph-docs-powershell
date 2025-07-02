@@ -56,6 +56,8 @@ Update-MgUserDriveRootPermission -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property permissions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

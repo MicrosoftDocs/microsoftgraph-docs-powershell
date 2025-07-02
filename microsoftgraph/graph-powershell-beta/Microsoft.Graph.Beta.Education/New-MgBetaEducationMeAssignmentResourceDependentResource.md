@@ -48,6 +48,8 @@ New-MgBetaEducationMeAssignmentResourceDependentResource -InputObject <IEducatio
 ## DESCRIPTION
 Create new navigation property to dependentResources for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

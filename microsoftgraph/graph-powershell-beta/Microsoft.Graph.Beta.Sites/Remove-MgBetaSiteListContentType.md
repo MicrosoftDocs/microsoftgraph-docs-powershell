@@ -40,6 +40,8 @@ Delete navigation property contentTypes for sites
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

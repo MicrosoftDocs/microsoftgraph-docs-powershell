@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanyItemPicture -InputObject <IFinancialsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property picture for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

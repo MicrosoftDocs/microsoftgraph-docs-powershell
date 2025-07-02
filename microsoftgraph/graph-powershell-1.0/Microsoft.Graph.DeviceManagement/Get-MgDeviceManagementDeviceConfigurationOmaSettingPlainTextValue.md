@@ -40,6 +40,8 @@ Invoke function getOmaSettingPlainTextValue
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceConfigurationId

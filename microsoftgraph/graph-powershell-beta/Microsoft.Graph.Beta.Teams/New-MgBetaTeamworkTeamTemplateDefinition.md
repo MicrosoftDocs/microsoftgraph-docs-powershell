@@ -49,6 +49,8 @@ New-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to definitions for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

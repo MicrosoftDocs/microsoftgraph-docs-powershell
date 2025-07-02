@@ -29,6 +29,8 @@ New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval
 ## DESCRIPTION
 Create new navigation property to scheduledPermissionsApprovals for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

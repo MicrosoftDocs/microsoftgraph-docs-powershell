@@ -54,6 +54,8 @@ Update-MgBetaEducationUserMailboxSetting -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

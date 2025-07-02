@@ -33,6 +33,8 @@ Remove-MgBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a bookingBusiness object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BookingBusinessId

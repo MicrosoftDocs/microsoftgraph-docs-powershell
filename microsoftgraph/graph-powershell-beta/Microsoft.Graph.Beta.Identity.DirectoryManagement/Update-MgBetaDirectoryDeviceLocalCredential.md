@@ -50,6 +50,8 @@ Update-MgBetaDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Update the navigation property deviceLocalCredentials in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

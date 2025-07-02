@@ -44,6 +44,8 @@ The collection of open extensions defined for the device.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

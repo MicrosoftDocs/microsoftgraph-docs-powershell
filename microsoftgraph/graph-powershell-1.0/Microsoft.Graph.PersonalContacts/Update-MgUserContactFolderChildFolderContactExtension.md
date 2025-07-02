@@ -48,6 +48,8 @@ Update-MgUserContactFolderChildFolderContactExtension -InputObject <IPersonalCon
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

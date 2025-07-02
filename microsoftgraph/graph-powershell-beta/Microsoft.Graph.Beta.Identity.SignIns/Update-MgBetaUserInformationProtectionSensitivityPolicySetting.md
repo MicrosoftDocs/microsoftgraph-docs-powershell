@@ -45,6 +45,8 @@ Update-MgBetaUserInformationProtectionSensitivityPolicySetting -InputObject <IId
 ## DESCRIPTION
 Update the navigation property sensitivityPolicySettings in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

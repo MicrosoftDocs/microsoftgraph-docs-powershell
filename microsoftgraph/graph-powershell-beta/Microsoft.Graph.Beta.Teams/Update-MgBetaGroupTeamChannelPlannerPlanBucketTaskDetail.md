@@ -53,6 +53,8 @@ Update-MgBetaGroupTeamChannelPlannerPlanBucketTaskDetail -InputObject <ITeamsIde
 ## DESCRIPTION
 Update the navigation property details in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -33,6 +33,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskDefinition
 ## DESCRIPTION
 The taskDefinition associated with the related lifecycle workflow task.Supports $filter(eq, ne) and $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

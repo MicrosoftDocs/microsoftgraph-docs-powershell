@@ -51,6 +51,8 @@ Update-MgBetaGroupSitePageTemplateLastModifiedByUserMailboxSetting -InputObject 
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

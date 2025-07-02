@@ -35,6 +35,8 @@ Read-only property with details of the app-specific scope when the assignment is
 Nullable.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

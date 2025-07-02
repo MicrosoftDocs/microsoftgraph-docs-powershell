@@ -32,6 +32,8 @@ Set-MgGroupSiteOnenoteResourceContent -InputObject <ISitesIdentity> [-Data <Stre
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

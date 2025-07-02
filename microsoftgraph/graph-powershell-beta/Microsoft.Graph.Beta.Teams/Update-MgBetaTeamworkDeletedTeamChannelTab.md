@@ -51,6 +51,8 @@ Update-MgBetaTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property tabs in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

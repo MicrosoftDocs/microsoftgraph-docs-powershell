@@ -33,6 +33,8 @@ New-MgSecurityThreatIntelligenceHostCookie -BodyParameter <IMicrosoftGraphSecuri
 ## DESCRIPTION
 Create new navigation property to hostCookies for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

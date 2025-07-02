@@ -29,6 +29,8 @@ Remove-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream -InputObject <
 ## DESCRIPTION
 Delete navigation property uploadedStreams for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudAppDiscoveryReportId

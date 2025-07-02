@@ -38,6 +38,8 @@ Invoke function retrievePowerliftAppDiagnosticsDetails
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

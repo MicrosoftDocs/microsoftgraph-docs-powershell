@@ -46,6 +46,8 @@ Update-MgDriveListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashta
 ## DESCRIPTION
 Update the navigation property fields in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

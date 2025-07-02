@@ -46,6 +46,8 @@ Get-MgBetaReportSkypeForBusinessActivityUserDetail -InputObject <IReportsIdentit
 ## DESCRIPTION
 Invoke function getSkypeForBusinessActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

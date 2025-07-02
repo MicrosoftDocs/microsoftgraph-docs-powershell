@@ -31,6 +31,8 @@ Remove-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 ## DESCRIPTION
 Delete navigation property credentialUserRegistrationsSummaries for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CredentialUserRegistrationsSummaryId

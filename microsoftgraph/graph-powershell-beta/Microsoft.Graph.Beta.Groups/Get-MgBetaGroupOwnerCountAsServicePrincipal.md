@@ -32,6 +32,8 @@ Get-MgBetaGroupOwnerCountAsServicePrincipal -InputObject <IGroupsIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

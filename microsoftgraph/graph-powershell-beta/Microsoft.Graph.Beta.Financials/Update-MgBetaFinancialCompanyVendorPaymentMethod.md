@@ -45,6 +45,8 @@ Update-MgBetaFinancialCompanyVendorPaymentMethod -InputObject <IFinancialsIdenti
 ## DESCRIPTION
 Update the navigation property paymentMethod in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

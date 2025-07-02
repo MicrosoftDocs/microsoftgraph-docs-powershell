@@ -60,6 +60,8 @@ New-MgDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to items for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgGroupTeam -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseH
 ## DESCRIPTION
 Delete navigation property team for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

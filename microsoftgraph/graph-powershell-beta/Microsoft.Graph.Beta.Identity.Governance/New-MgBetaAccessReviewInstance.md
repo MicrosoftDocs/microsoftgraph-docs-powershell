@@ -55,6 +55,8 @@ New-MgBetaAccessReviewInstance -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Create new navigation property to instances for accessReviews
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

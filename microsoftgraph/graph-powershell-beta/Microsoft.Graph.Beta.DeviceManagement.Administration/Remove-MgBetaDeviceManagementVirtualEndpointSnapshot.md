@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointSnapshot -InputObject <IDeviceManage
 ## DESCRIPTION
 Delete navigation property snapshots for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcSnapshotId

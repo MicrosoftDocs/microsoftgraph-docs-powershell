@@ -32,6 +32,8 @@ Remove-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-If
 ## DESCRIPTION
 Delete navigation property notes for privacy
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthoredNoteId

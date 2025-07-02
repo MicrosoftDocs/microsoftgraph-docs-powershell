@@ -29,6 +29,8 @@ Remove-MgBetaIdentityGovernancePermissionAnalyticAwFinding -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property findings for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FindingId

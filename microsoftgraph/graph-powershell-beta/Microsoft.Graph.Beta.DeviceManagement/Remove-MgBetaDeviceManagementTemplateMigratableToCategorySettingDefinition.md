@@ -32,6 +32,8 @@ Remove-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition
 ## DESCRIPTION
 Delete navigation property settingDefinitions for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementSettingDefinitionId

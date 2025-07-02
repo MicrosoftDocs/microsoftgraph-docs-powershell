@@ -38,6 +38,8 @@ Delete navigation property wdacSupplementalPolicies for deviceAppManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

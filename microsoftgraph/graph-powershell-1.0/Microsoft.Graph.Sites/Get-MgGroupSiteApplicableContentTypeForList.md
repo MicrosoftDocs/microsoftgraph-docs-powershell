@@ -35,6 +35,8 @@ Get-MgGroupSiteApplicableContentTypeForList -InputObject <ISitesIdentity> [-Coun
 ## DESCRIPTION
 Get site contentTypes that can be added to a list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

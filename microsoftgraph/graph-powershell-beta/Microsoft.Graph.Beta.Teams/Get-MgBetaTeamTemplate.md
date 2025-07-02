@@ -34,6 +34,8 @@ Get-MgBetaTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 The template this team was created from.
 See available templates.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

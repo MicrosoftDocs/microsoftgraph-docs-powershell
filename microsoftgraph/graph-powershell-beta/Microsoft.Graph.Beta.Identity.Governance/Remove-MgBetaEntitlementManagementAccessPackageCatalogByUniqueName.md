@@ -30,6 +30,8 @@ Remove-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName -InputObject 
 ## DESCRIPTION
 Delete an accessPackageCatalog.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -33,6 +33,8 @@ New-MgDirectoryDeviceLocalCredential -BodyParameter <IMicrosoftGraphDeviceLocalC
 ## DESCRIPTION
 Create new navigation property to deviceLocalCredentials for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

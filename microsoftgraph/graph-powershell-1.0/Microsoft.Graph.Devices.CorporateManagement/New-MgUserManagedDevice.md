@@ -72,6 +72,8 @@ New-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
 ## DESCRIPTION
 Create new navigation property to managedDevices for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -54,6 +54,8 @@ Update-MgSiteOnenoteNotebookContent -InputObject <INotesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property notebooks in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

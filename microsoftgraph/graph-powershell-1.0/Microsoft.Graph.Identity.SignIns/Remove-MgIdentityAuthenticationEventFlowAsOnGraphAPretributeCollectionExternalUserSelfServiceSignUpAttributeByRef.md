@@ -34,6 +34,8 @@ Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUs
 ## DESCRIPTION
 Delete ref of navigation property attributes for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId

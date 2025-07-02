@@ -40,6 +40,8 @@ Get-MgEntitlementManagementResourceEnvironmentResource -InputObject <IIdentityGo
 Read-only.
 Required.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId

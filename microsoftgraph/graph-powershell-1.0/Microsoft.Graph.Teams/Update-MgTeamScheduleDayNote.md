@@ -50,6 +50,8 @@ Update-MgTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property dayNotes in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

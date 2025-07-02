@@ -32,6 +32,8 @@ Test-MgBetaShareListContentTypePublished -InputObject <IFilesIdentity> [-Respons
 ## DESCRIPTION
 Invoke function isPublished
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

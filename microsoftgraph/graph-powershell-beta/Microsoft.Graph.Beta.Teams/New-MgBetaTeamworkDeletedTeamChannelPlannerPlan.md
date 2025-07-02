@@ -57,6 +57,8 @@ New-MgBetaTeamworkDeletedTeamChannelPlannerPlan -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to plans for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -33,6 +33,8 @@ New-MgTenantRelationshipDelegatedAdminCustomer -BodyParameter <IMicrosoftGraphDe
 ## DESCRIPTION
 Create new navigation property to delegatedAdminCustomers for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

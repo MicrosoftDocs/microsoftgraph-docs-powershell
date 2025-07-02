@@ -50,6 +50,8 @@ Send-MgCommunicationCallDtmfTone -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Invoke action sendDtmfTones
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

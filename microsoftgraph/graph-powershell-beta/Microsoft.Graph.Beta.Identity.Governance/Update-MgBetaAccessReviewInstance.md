@@ -55,6 +55,8 @@ Update-MgBetaAccessReviewInstance -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property instances in accessReviews
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

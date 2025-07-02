@@ -61,6 +61,8 @@ Update-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property channels in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

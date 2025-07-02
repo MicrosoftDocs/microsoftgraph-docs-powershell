@@ -30,6 +30,8 @@ Update-MgBetaDirectoryAuthenticationMethodDevice -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property authenticationMethodDevices in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

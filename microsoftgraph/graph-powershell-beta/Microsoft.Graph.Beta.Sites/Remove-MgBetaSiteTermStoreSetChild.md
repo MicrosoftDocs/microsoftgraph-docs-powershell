@@ -46,6 +46,8 @@ Remove-MgBetaSiteTermStoreSetChild -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property children for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

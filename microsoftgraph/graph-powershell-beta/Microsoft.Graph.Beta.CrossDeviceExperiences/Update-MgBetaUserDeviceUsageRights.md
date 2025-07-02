@@ -45,6 +45,8 @@ Update-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity
 ## DESCRIPTION
 Update the navigation property usageRights in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

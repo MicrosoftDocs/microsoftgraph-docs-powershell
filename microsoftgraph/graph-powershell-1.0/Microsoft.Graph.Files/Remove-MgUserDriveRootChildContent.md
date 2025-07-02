@@ -32,6 +32,8 @@ Remove-MgUserDriveRootChildContent -InputObject <IFilesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

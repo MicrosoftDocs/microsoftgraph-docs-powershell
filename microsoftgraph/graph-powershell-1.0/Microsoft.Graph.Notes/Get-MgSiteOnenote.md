@@ -32,6 +32,8 @@ Get-MgSiteOnenote -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Calls the OneNote service for notebook related operations.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

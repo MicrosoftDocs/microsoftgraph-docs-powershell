@@ -48,6 +48,8 @@ Confirm-MgDirectoryDeletedItemMemberObject -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property sets for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

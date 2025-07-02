@@ -46,6 +46,8 @@ Stop-MgBetaCommunicationCallTranscription -InputObject <ICloudCommunicationsIden
 ## DESCRIPTION
 Invoke action stopTranscription
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

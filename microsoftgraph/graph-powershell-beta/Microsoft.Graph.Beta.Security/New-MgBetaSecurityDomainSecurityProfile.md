@@ -33,6 +33,8 @@ New-MgBetaSecurityDomainSecurityProfile -BodyParameter <IMicrosoftGraphDomainSec
 ## DESCRIPTION
 Create new navigation property to domainSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupNames

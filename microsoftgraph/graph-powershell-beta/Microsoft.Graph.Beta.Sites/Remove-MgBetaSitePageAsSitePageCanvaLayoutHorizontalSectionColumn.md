@@ -33,6 +33,8 @@ Remove-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject <
 ## DESCRIPTION
 Delete navigation property columns for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

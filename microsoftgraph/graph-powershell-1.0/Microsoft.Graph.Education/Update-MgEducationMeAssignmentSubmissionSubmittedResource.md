@@ -50,6 +50,8 @@ Update-MgEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducati
 ## DESCRIPTION
 Update the navigation property submittedResources in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

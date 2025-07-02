@@ -45,6 +45,8 @@ New-MgBetaFinancialCompanySaleCreditMemoCustomerPicture -InputObject <IFinancial
 ## DESCRIPTION
 Create new navigation property to picture for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

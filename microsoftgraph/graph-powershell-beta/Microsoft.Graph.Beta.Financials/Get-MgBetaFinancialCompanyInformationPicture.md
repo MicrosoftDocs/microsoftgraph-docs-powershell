@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyInformationPicture -InputObject <IFinancialsIdentity> 
 ## DESCRIPTION
 Get picture for the navigation property companyInformation from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

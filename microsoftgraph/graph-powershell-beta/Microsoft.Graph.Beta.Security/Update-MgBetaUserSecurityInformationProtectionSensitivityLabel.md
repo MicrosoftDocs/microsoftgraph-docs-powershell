@@ -49,6 +49,8 @@ Update-MgBetaUserSecurityInformationProtectionSensitivityLabel -InputObject <ISe
 ## DESCRIPTION
 Update the navigation property sensitivityLabels in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

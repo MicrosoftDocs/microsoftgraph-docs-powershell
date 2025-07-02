@@ -43,6 +43,8 @@ Create a protection policy for a M365 service SharePoint.
 Policy will be created in inactive state.
 User can also provide a list of protection units under the policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

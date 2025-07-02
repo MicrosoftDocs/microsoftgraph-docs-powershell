@@ -32,6 +32,8 @@ Remove-MgBetaTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property tabs for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -55,6 +55,8 @@ Create new navigation property to members for directory
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AdministrativeUnit.ReadWrite.All, Group.ReadWrite.All, Group.Create, Directory.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

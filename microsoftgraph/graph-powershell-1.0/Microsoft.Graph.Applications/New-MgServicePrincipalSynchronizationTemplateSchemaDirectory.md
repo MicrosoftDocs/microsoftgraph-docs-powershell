@@ -51,6 +51,8 @@ New-MgServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <IAppl
 ## DESCRIPTION
 Create new navigation property to directories for servicePrincipals
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

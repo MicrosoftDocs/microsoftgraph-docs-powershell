@@ -32,6 +32,8 @@ Get-MgGroupDriveContentTypeBase -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId

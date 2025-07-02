@@ -32,6 +32,8 @@ Remove-MgGroupDriveItemPermission -InputObject <IFilesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property permissions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -29,6 +29,8 @@ Remove-MgBetaFinancialCompanyPurchaseInvoiceVendor -InputObject <IFinancialsIden
 ## DESCRIPTION
 Delete navigation property vendor for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

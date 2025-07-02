@@ -56,6 +56,8 @@ Update-MgBetaSharePermission -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property permission in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

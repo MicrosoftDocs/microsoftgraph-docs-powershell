@@ -30,6 +30,8 @@ Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentTerm -InputObject
 ## DESCRIPTION
 Get paymentTerm from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

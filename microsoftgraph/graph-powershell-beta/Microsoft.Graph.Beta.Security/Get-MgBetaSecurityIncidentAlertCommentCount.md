@@ -32,6 +32,8 @@ Get-MgBetaSecurityIncidentAlertCommentCount -InputObject <ISecurityIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId

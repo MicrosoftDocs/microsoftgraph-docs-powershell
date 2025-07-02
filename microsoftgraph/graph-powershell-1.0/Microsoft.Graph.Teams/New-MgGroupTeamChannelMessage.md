@@ -62,6 +62,8 @@ New-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to messages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

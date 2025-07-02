@@ -31,6 +31,8 @@ Get-MgBetaDeviceManagementRoleScopeTagByResource -InputObject <IDeviceManagement
 ## DESCRIPTION
 Invoke function getRoleScopeTagsByResource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

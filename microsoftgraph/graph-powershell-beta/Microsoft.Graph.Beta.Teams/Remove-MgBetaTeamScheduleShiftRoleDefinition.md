@@ -29,6 +29,8 @@ Remove-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property shiftsRoleDefinitions for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

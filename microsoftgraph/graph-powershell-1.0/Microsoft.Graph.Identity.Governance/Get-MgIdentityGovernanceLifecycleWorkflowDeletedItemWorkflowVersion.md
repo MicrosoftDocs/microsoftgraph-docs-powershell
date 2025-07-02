@@ -41,6 +41,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion -InputObject
 ## DESCRIPTION
 The workflow versions that are available.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

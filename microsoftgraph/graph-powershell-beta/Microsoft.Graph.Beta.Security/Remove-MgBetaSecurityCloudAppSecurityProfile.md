@@ -29,6 +29,8 @@ Remove-MgBetaSecurityCloudAppSecurityProfile -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Delete navigation property cloudAppSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudAppSecurityProfileId

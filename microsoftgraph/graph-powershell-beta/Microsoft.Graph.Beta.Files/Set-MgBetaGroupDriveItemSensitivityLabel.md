@@ -50,6 +50,8 @@ Set-MgBetaGroupDriveItemSensitivityLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

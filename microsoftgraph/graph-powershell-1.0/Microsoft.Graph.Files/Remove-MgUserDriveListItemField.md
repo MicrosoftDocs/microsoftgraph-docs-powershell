@@ -32,6 +32,8 @@ Remove-MgUserDriveListItemField -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property fields for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

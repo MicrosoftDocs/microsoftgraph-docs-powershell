@@ -46,6 +46,8 @@ Update-MgBetaOrganizationExtension -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Update the navigation property extensions in organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

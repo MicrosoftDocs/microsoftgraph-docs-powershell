@@ -51,6 +51,8 @@ Update-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance -InputObj
 ## DESCRIPTION
 Update the navigation property aggregatedPolicyCompliances in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

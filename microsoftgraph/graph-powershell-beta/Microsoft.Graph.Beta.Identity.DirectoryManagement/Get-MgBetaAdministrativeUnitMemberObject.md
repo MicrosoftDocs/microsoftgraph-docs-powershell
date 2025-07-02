@@ -45,6 +45,8 @@ Get-MgBetaAdministrativeUnitMemberObject -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Invoke action getMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

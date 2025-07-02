@@ -32,6 +32,8 @@ Remove-MgSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackupRest
 ## DESCRIPTION
 Delete navigation property exchangeProtectionPolicies for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExchangeProtectionPolicyId

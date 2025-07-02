@@ -34,6 +34,8 @@ New-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSumma
 ## DESCRIPTION
 Create new navigation property to deviceCompliancePolicySettingStateSummaries for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

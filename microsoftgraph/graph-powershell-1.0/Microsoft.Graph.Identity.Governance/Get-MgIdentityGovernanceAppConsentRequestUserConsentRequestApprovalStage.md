@@ -40,6 +40,8 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage
 ## DESCRIPTION
 A collection of stages in the approval decision.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

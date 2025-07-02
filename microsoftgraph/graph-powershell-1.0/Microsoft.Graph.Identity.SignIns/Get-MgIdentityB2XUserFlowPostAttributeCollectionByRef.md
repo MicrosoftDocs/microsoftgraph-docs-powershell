@@ -32,6 +32,8 @@ Get-MgIdentityB2XUserFlowPostAttributeCollectionByRef -InputObject <IIdentitySig
 ## DESCRIPTION
 Get ref of postAttributeCollection from identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

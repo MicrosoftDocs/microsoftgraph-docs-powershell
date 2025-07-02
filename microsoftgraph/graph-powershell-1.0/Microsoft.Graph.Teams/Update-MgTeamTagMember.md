@@ -48,6 +48,8 @@ Update-MgTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property members in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

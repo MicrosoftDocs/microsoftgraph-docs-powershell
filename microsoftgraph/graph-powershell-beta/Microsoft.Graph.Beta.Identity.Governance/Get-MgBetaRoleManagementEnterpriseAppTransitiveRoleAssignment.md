@@ -40,6 +40,8 @@ Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment -InputObject <IIde
 ## DESCRIPTION
 Get transitiveRoleAssignments from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

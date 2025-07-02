@@ -57,6 +57,8 @@ Update the navigation property localizations in solutions
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

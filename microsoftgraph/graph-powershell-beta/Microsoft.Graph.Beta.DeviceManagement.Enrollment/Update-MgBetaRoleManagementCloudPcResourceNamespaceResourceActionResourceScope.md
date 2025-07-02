@@ -48,6 +48,8 @@ Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope
 ## DESCRIPTION
 Update the navigation property resourceScope in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

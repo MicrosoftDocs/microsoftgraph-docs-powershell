@@ -32,6 +32,8 @@ Get-MgBetaReportSkypeForBusinessActivityUserCount -InputObject <IReportsIdentity
 ## DESCRIPTION
 Invoke function getSkypeForBusinessActivityUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

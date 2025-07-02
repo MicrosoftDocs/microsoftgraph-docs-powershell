@@ -38,6 +38,8 @@ When the request activates an ownership or membership assignment in PIM for grou
 Otherwise, it's null.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

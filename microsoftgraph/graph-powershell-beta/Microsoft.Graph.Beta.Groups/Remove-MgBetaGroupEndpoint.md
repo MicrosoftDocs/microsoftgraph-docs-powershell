@@ -29,6 +29,8 @@ Remove-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property endpoints for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndpointId

@@ -32,6 +32,8 @@ Invoke-MgBetaPreviewUserOnenoteNotebookSectionGroupSectionPage -InputObject <INo
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

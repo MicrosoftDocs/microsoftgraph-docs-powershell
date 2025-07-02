@@ -32,6 +32,8 @@ Remove-MgBetaUserChatLastMessagePreview -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property lastMessagePreview for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

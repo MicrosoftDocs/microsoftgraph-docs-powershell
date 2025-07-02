@@ -36,6 +36,8 @@ The target object can be either a one-time access review, or an instance of a re
 (To prevent a recurring access review from starting future instances, update it to change its scheduled end date).
 After the access review stops, reviewers can no longer give input, and the access review decisions can be applied.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId

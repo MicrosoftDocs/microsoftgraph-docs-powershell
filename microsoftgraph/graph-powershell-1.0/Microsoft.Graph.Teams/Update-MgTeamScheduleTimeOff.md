@@ -55,6 +55,8 @@ Update-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 Replace an existing timeOff object.
 If the specified timeOff object doesn't exist, this method returns 404 Not found.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

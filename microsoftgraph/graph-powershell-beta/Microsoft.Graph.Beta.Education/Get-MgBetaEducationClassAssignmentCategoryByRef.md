@@ -36,6 +36,8 @@ Only teachers, students, and applications with application permissions can perfo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All, EduAssignments.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

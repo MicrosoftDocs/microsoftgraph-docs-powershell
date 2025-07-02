@@ -45,6 +45,8 @@ The status of the assignment goes back to draft if there is any backend failure 
 To update the properties of a published assignment, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

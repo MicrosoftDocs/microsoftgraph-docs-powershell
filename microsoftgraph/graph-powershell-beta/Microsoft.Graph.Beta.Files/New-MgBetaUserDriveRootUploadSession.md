@@ -48,6 +48,8 @@ New-MgBetaUserDriveRootUploadSession -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action createUploadSession
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

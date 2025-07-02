@@ -29,6 +29,8 @@ Remove-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunic
 ## DESCRIPTION
 Delete navigation property registration for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

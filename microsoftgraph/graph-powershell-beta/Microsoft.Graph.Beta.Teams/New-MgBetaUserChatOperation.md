@@ -47,6 +47,8 @@ New-MgBetaUserChatOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to operations for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

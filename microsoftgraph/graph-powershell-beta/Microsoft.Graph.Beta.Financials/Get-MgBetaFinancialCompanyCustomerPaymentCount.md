@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyCustomerPaymentCount -InputObject <IFinancialsIdentity
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

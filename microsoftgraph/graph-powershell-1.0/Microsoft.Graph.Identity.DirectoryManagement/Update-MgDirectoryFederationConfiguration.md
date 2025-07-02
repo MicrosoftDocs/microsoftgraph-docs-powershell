@@ -54,6 +54,8 @@ Update the navigation property federationConfigurations in directory
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityProvider.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

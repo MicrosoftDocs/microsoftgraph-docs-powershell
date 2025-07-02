@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportSecurityTaskAppReport -OutFile <String>
 ## DESCRIPTION
 Invoke action retrieveSecurityTaskAppsReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

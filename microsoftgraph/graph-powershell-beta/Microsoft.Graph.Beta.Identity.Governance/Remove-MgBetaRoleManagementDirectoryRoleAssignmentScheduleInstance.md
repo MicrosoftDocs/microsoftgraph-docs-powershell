@@ -33,6 +33,8 @@ Remove-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject 
 ## DESCRIPTION
 Delete navigation property roleAssignmentScheduleInstances for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

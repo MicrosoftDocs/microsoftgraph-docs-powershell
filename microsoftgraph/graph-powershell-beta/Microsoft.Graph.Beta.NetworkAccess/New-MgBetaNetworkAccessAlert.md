@@ -33,6 +33,8 @@ New-MgBetaNetworkAccessAlert -BodyParameter <IMicrosoftGraphNetworkaccessAlert>
 ## DESCRIPTION
 Create new navigation property to alerts for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Actions

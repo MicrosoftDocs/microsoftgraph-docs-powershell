@@ -32,6 +32,8 @@ Remove-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Delete navigation property attributeSets for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttributeSetId

@@ -46,6 +46,8 @@ Update-MgBetaDriveListItemDocumentSetVersionField -InputObject <IFilesIdentity> 
 ## DESCRIPTION
 Update the navigation property fields in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

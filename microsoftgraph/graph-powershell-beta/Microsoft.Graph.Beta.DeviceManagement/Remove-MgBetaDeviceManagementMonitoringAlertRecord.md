@@ -29,6 +29,8 @@ Remove-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManageme
 ## DESCRIPTION
 Delete navigation property alertRecords for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertRecordId

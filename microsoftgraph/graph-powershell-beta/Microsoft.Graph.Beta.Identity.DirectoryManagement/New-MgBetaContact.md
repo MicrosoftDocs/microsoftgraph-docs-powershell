@@ -40,6 +40,8 @@ New-MgBetaContact -BodyParameter <IMicrosoftGraphOrgContact> [-ResponseHeadersVa
 ## DESCRIPTION
 Add new entity to contacts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

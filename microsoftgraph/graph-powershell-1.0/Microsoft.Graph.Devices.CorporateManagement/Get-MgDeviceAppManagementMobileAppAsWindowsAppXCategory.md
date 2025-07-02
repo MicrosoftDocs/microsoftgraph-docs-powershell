@@ -40,6 +40,8 @@ Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory -InputObject <IDevicesCo
 ## DESCRIPTION
 The list of categories for this app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -54,6 +54,8 @@ Update-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 ## DESCRIPTION
 Update the navigation property messageRules in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Actions

@@ -29,6 +29,8 @@ Get-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity> [-ExpandP
 ## DESCRIPTION
 Get informationProtection from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -48,6 +48,8 @@ Update-MgGroupConversationThreadPostInReplyToExtension -InputObject <IGroupsIden
 ## DESCRIPTION
 Update the navigation property extensions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

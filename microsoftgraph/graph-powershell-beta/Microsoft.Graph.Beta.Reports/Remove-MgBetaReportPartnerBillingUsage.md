@@ -24,6 +24,8 @@ Remove-MgBetaReportPartnerBillingUsage [-IfMatch <String>] [-ResponseHeadersVari
 ## DESCRIPTION
 Delete navigation property usage for reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

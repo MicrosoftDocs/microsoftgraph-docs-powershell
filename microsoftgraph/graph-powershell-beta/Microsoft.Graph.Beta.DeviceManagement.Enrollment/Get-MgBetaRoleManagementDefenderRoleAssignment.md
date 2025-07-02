@@ -45,6 +45,8 @@ Get roleAssignments from roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.Read.Defender, RoleManagement.ReadWrite.Defender, RoleManagement.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

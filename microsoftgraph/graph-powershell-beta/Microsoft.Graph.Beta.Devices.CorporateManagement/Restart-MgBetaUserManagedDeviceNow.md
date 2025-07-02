@@ -32,6 +32,8 @@ Restart-MgBetaUserManagedDeviceNow -InputObject <IDevicesCorporateManagementIden
 ## DESCRIPTION
 Reboot device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

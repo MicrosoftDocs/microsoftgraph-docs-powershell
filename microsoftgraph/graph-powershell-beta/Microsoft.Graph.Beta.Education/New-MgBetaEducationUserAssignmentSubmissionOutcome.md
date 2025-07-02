@@ -50,6 +50,8 @@ New-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdent
 ## DESCRIPTION
 Create new navigation property to outcomes for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

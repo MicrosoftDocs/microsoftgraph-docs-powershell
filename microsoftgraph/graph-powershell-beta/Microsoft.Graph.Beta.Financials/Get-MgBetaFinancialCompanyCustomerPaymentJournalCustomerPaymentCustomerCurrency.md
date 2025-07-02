@@ -31,6 +31,8 @@ Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerCurrency
 ## DESCRIPTION
 Get currency from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

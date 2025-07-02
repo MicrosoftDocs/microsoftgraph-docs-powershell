@@ -32,6 +32,8 @@ Get-MgSolutionBackupRestorePointProtectionUnit -InputObject <IBackupRestoreIdent
 ## DESCRIPTION
 The site, drive, or mailbox units that are protected under a protection policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

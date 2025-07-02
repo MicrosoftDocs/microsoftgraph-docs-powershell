@@ -44,6 +44,8 @@ Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectio
 ## DESCRIPTION
 Contains the protection units associated with a  OneDrive for Work or School protection policy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

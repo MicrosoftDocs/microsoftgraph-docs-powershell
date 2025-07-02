@@ -23,6 +23,8 @@ Get-MgBetaDirectory [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ## DESCRIPTION
 Get directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

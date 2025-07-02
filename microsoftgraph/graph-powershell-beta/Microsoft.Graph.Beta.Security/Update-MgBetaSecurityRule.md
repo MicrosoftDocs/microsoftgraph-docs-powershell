@@ -28,6 +28,8 @@ Update-MgBetaSecurityRule -BodyParameter <IMicrosoftGraphSecurityRulesRoot> [-Re
 ## DESCRIPTION
 Update the navigation property rules in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

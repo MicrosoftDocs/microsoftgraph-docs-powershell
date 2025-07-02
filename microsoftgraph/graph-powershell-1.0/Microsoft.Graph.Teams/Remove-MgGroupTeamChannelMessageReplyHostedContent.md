@@ -48,6 +48,8 @@ Remove-MgGroupTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Delete navigation property hostedContents for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId

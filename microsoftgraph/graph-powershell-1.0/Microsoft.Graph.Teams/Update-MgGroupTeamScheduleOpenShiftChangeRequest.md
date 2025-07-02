@@ -50,6 +50,8 @@ Update-MgGroupTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property openShiftChangeRequests in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

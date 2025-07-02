@@ -45,6 +45,8 @@ Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get details about SharePoint site usage.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

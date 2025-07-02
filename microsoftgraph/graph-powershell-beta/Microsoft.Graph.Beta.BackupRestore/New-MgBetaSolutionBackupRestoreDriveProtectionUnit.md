@@ -35,6 +35,8 @@ New-MgBetaSolutionBackupRestoreDriveProtectionUnit -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to driveProtectionUnits for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

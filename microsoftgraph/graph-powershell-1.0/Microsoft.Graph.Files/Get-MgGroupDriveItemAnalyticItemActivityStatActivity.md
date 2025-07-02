@@ -26,6 +26,8 @@ Get-MgGroupDriveItemAnalyticItemActivityStatActivity -DriveId <String> -DriveIte
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

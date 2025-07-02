@@ -51,6 +51,8 @@ Update the navigation property policyRules in networkAccess
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

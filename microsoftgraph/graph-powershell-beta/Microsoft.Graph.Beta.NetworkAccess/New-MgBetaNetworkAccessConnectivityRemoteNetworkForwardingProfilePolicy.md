@@ -46,6 +46,8 @@ New-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy -InputOb
 ## DESCRIPTION
 Create new navigation property to policies for networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

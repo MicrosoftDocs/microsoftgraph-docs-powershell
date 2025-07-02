@@ -38,6 +38,8 @@ The MicrosoftTunnelConfiguration that has been applied to this MicrosoftTunnelSi
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

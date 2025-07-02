@@ -48,6 +48,8 @@ New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 Create new navigation property to appLogCollectionRequests for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

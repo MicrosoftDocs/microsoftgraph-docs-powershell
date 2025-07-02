@@ -42,6 +42,8 @@ Get-MgBetaServicePrincipalOwnerAsServicePrincipal -InputObject <IApplicationsIde
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

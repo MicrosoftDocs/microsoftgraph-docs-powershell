@@ -24,6 +24,8 @@ Remove-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConf
 ## DESCRIPTION
 Delete navigation property multiTenantOrganizationPartnerConfiguration for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

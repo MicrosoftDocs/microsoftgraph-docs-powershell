@@ -37,6 +37,8 @@ Get-MgBetaDirectoryTemplateDeviceInstance -InputObject <IIdentityDirectoryManage
 ## DESCRIPTION
 Collection of device objects created based on this template.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

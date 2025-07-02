@@ -47,6 +47,8 @@ Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskProgressTaskBoardFormat -I
 ## DESCRIPTION
 Update the navigation property progressTaskBoardFormat in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

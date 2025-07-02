@@ -34,6 +34,8 @@ Remove-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
 ## DESCRIPTION
 Delete navigation property eligibilitySchedules for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

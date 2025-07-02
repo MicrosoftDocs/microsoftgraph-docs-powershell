@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoLineItemPictureCount -InputObject <IFina
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

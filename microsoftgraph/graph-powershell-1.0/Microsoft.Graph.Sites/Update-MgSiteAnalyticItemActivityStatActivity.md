@@ -49,6 +49,8 @@ Update-MgSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property activities in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access

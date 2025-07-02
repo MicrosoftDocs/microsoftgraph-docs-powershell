@@ -32,6 +32,8 @@ Set-MgBetaUserOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Strea
 ## DESCRIPTION
 The content of the resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType

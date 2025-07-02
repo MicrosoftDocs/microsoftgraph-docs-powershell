@@ -32,6 +32,8 @@ Update-MgBetaIdentityGovernancePermissionManagement -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property permissionsManagement in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

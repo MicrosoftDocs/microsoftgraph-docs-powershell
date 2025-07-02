@@ -32,6 +32,8 @@ Get-MgBetaAgreementFileCount -InputObject <IIdentityGovernanceIdentity> [-Filter
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId

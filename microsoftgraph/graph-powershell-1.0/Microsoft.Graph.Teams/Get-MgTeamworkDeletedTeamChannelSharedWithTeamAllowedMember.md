@@ -42,6 +42,8 @@ Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMember -InputObject <ITeams
 ## DESCRIPTION
 A collection of team members who have access to the shared channel.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

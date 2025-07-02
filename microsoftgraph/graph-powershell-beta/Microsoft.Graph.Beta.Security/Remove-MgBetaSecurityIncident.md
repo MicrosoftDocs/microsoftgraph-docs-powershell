@@ -32,6 +32,8 @@ Remove-MgBetaSecurityIncident -InputObject <ISecurityIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property incidents for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

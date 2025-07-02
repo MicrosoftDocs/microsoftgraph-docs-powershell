@@ -32,6 +32,8 @@ Get-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

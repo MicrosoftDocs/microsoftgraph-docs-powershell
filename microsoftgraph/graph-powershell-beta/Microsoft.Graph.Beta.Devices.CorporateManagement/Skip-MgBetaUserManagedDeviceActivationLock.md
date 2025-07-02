@@ -32,6 +32,8 @@ Skip-MgBetaUserManagedDeviceActivationLock -InputObject <IDevicesCorporateManage
 ## DESCRIPTION
 Bypass activation lock
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

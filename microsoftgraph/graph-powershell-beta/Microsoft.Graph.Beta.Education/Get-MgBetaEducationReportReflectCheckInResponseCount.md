@@ -29,6 +29,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduReports-Reflect.Read.All, EduReports-Reflect.ReadAnonymous.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

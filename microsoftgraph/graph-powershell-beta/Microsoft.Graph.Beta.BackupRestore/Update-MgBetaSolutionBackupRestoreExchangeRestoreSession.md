@@ -61,6 +61,8 @@ Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -InputObject <IBackupRe
 ## DESCRIPTION
 Update the properties of an exchangeRestoreSession.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

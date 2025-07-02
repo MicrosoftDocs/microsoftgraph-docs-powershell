@@ -47,6 +47,8 @@ New-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity
 ## DESCRIPTION
 Create new navigation property to labels for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

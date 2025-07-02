@@ -30,6 +30,8 @@ Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement
 ## DESCRIPTION
 Remove device from Device Firmware Configuration Interface management
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

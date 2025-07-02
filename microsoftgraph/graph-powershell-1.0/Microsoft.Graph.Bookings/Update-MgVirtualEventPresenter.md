@@ -48,6 +48,8 @@ Update-MgVirtualEventPresenter -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the navigation property presenters in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,6 +48,8 @@ New-MgBetaGroupEventInstanceAttachment -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Create new navigation property to attachments for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

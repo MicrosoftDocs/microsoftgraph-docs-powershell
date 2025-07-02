@@ -46,6 +46,8 @@ Update-MgUserDriveListItemVersionField -InputObject <IFilesIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property fields in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

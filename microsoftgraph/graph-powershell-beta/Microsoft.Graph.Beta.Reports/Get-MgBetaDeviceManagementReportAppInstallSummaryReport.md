@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportAppInstallSummaryReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getAppsInstallSummaryReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -73,6 +73,8 @@ New-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTask -InputObject <ITeamsId
 ## DESCRIPTION
 Create new navigation property to tasks for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount

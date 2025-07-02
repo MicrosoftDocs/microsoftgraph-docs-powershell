@@ -55,6 +55,8 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploym
 ## DESCRIPTION
 Update the navigation property deployments in tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

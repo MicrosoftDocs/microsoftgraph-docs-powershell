@@ -55,6 +55,8 @@ Update-MgBetaEducationReportReadingAssignmentSubmission -InputObject <IEducation
 ## DESCRIPTION
 Update the navigation property readingAssignmentSubmissions in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccuracyScore

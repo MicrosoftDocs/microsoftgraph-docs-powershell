@@ -48,6 +48,8 @@ Update-MgBetaGroupTeamChannelPlannerPlanTaskAssignedToTaskBoardFormat -InputObje
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

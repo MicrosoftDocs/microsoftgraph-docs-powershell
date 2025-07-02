@@ -40,6 +40,8 @@ Get-MgSiteGetByPathDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The default drive (document library) for this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

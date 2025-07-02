@@ -42,6 +42,8 @@ Get-MgSolutionBackupRestoreProtectionUnitAsMailboxProtectionUnit -InputObject <I
 ## DESCRIPTION
 Get a list of mailboxProtectionUnit objects.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -59,6 +59,8 @@ Create new navigation property to accessPackageCustomWorkflowExtensions for iden
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId

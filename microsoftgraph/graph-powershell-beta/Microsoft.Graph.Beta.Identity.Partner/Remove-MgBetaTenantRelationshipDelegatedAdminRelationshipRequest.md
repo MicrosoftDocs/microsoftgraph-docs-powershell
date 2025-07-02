@@ -33,6 +33,8 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <I
 ## DESCRIPTION
 Delete navigation property requests for tenantRelationships
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DelegatedAdminRelationshipId

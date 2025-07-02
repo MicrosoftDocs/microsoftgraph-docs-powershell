@@ -53,6 +53,8 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIden
 ## DESCRIPTION
 Create new navigation property to attendanceReports for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

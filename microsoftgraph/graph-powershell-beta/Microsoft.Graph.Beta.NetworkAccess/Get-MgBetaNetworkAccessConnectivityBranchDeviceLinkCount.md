@@ -37,6 +37,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BranchSiteId

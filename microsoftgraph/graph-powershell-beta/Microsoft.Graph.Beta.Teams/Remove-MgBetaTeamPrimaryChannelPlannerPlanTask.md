@@ -29,6 +29,8 @@ Remove-MgBetaTeamPrimaryChannelPlannerPlanTask -InputObject <ITeamsIdentity> [-I
 ## DESCRIPTION
 Delete navigation property tasks for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

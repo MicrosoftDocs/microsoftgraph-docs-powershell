@@ -42,6 +42,8 @@ Get-MgBetaSolutionBackupRestoreProtectionUnitAsDriveProtectionUnit -InputObject 
 ## DESCRIPTION
 Get a list of the driveProtectionUnit objects that are associated with a oneDriveForBusinessProtectionPolicy.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

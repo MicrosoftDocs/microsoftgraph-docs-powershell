@@ -47,6 +47,8 @@ Update-MgBetaUserInformationProtectionPolicyLabel -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Update the navigation property labels in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

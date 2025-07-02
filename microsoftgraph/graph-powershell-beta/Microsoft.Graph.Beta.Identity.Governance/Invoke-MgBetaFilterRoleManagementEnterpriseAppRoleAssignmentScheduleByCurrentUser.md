@@ -33,6 +33,8 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleByCurrentUse
 ## DESCRIPTION
 Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

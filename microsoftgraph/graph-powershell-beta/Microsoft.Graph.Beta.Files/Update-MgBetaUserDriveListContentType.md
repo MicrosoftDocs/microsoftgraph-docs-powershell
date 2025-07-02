@@ -59,6 +59,8 @@ Update-MgBetaUserDriveListContentType -InputObject <IFilesIdentity> -BodyParamet
 ## DESCRIPTION
 Update the navigation property contentTypes in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

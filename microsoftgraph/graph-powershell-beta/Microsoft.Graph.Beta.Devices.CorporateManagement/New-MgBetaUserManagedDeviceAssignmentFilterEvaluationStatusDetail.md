@@ -45,6 +45,8 @@ New-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 ## DESCRIPTION
 Create new navigation property to assignmentFilterEvaluationStatusDetails for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

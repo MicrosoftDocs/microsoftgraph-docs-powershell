@@ -64,6 +64,8 @@ New-MgBetaShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to items for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

@@ -54,6 +54,8 @@ Update-MgBetaSitePageAsSitePageCreatedByUserMailboxSetting -InputObject <ISitesI
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

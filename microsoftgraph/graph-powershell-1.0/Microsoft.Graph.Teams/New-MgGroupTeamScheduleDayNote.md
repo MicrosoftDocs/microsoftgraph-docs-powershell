@@ -50,6 +50,8 @@ New-MgGroupTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to dayNotes for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

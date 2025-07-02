@@ -32,6 +32,8 @@ Remove-MgSolutionBackupRestorePoint -InputObject <IBackupRestoreIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property restorePoints for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

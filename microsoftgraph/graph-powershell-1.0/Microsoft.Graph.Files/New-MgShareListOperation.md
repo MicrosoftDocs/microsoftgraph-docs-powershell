@@ -50,6 +50,8 @@ New-MgShareListOperation -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to operations for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

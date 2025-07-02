@@ -32,6 +32,8 @@ Remove-MgBetaSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackup
 ## DESCRIPTION
 Delete navigation property sharePointRestoreSessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

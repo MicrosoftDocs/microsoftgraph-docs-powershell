@@ -29,6 +29,8 @@ Remove-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity> [-I
 ## DESCRIPTION
 Delete entity from onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -32,6 +32,8 @@ Remove-MgBetaUserInsightTrending -InputObject <IUsersIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property trending for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -29,6 +29,8 @@ Get-MgBetaGroupSiteRecycleBin -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 A container for a collection of recycleBinItem resources in this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

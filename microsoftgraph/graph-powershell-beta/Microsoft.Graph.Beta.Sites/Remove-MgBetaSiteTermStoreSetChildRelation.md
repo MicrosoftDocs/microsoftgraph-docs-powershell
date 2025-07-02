@@ -47,6 +47,8 @@ Remove-MgBetaSiteTermStoreSetChildRelation -InputObject <ISitesIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property relations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

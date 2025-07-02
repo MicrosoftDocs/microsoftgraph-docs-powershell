@@ -51,6 +51,8 @@ Get-MgBetaExternalIndustryDataRunActivity -InputObject <ISearchIdentity> [-Expan
 ## DESCRIPTION
 The set of activities performed during the run.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

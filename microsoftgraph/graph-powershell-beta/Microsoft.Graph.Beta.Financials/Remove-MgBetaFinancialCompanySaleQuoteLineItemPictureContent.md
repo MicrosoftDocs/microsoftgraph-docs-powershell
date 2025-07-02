@@ -44,6 +44,8 @@ Remove-MgBetaFinancialCompanySaleQuoteLineItemPictureContent -InputObject <IFina
 ## DESCRIPTION
 Delete content for the navigation property picture in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

@@ -33,6 +33,8 @@ Remove-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-
 ## DESCRIPTION
 Delete navigation property submissions for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

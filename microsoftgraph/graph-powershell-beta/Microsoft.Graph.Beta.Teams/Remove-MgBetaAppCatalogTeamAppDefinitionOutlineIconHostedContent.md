@@ -43,6 +43,8 @@ Remove-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <I
 ## DESCRIPTION
 Delete navigation property hostedContent for appCatalogs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

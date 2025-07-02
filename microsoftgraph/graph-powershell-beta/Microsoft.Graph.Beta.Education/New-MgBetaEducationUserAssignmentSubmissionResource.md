@@ -52,6 +52,8 @@ New-MgBetaEducationUserAssignmentSubmissionResource -InputObject <IEducationIden
 ## DESCRIPTION
 Create new navigation property to resources for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

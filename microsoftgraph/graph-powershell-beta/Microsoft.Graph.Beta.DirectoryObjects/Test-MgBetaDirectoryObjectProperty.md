@@ -59,6 +59,8 @@ However, you can validate both the mail nickname and the display name and receiv
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

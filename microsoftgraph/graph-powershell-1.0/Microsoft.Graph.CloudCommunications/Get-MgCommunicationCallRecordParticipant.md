@@ -32,6 +32,8 @@ Get-MgCommunicationCallRecordParticipant -InputObject <ICloudCommunicationsIdent
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallRecordId

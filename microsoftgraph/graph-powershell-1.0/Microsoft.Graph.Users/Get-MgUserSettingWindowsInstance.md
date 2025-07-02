@@ -40,6 +40,8 @@ Get-MgUserSettingWindowsInstance -InputObject <IUsersIdentity> [-ExpandProperty 
 ## DESCRIPTION
 A collection of setting values for a given windowsSetting.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

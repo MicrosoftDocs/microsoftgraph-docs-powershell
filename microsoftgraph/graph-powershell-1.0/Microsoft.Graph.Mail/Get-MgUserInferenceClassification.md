@@ -32,6 +32,8 @@ Get-MgUserInferenceClassification -InputObject <IMailIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

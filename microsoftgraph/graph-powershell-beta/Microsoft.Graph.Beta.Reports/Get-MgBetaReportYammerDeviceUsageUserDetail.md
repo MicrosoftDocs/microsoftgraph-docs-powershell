@@ -46,6 +46,8 @@ Get-MgBetaReportYammerDeviceUsageUserDetail -InputObject <IReportsIdentity> -Out
 ## DESCRIPTION
 Invoke function getYammerDeviceUsageUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

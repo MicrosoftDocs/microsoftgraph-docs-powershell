@@ -33,6 +33,8 @@ Remove-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord -InputObject
 ## DESCRIPTION
 Delete navigation property attendanceRecords for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttendanceRecordId

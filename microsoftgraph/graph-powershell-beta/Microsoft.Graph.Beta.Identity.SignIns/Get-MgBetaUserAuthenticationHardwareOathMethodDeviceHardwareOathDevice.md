@@ -39,6 +39,8 @@ Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDevice -InputObj
 ## DESCRIPTION
 Exposes the hardware OATH method in the directory.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

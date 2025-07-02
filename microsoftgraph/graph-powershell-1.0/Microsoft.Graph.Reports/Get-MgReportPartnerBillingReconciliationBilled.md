@@ -24,6 +24,8 @@ Get-MgReportPartnerBillingReconciliationBilled [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Represents details for billed invoice reconciliation data.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

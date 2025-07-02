@@ -52,6 +52,8 @@ Update-MgBetaUserOnenote -InputObject <INotesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property onenote in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgBetaPrintService -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property services for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

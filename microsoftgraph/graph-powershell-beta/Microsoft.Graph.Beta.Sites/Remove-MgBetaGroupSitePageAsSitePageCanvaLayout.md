@@ -32,6 +32,8 @@ Remove-MgBetaGroupSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-
 ## DESCRIPTION
 Delete navigation property canvasLayout for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BaseSitePageId

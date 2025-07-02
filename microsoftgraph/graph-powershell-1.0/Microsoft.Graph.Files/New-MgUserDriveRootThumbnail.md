@@ -48,6 +48,8 @@ New-MgUserDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to thumbnails for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

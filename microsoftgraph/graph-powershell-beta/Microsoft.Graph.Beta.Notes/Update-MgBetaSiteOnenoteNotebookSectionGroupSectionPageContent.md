@@ -52,6 +52,8 @@ Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent -InputObject <INo
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

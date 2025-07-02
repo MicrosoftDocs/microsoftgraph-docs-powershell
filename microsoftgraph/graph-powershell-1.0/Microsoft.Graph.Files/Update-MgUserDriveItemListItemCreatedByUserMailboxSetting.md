@@ -54,6 +54,8 @@ Update-MgUserDriveItemListItemCreatedByUserMailboxSetting -InputObject <IFilesId
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

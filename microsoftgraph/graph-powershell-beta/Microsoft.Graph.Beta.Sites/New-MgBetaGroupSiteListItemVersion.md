@@ -50,6 +50,8 @@ New-MgBetaGroupSiteListItemVersion -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to versions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

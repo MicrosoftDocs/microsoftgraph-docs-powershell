@@ -29,6 +29,8 @@ Remove-MgBetaSiteListItemActivity -InputObject <ISitesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property activities for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

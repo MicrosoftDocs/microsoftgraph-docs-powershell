@@ -36,6 +36,8 @@ Update-MgBetaNetworkAccessRootNetworkAccessRoot -BodyParameter <IMicrosoftGraphN
 ## DESCRIPTION
 Update networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

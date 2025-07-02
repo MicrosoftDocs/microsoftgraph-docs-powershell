@@ -38,6 +38,8 @@ Get-MgBetaRoleManagementEnterpriseAppRoleDefinition -InputObject <IIdentityGover
 ## DESCRIPTION
 Get roleDefinitions from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

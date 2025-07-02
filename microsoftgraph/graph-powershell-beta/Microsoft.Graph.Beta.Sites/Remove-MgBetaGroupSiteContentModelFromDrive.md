@@ -47,6 +47,8 @@ Remove-MgBetaGroupSiteContentModelFromDrive -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Remove a contentModel from a SharePoint document library.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

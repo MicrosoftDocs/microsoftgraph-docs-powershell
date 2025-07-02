@@ -49,6 +49,8 @@ New-MgBetaUserDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to thumbnails for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

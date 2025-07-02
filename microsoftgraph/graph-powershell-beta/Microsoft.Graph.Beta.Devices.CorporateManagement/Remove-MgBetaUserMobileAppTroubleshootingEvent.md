@@ -29,6 +29,8 @@ Remove-MgBetaUserMobileAppTroubleshootingEvent -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 Delete navigation property mobileAppTroubleshootingEvents for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

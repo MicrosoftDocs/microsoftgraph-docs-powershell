@@ -50,6 +50,8 @@ Update-MgUserDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property versions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

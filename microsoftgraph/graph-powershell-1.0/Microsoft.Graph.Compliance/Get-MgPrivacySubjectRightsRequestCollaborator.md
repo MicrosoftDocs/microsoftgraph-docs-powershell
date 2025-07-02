@@ -40,6 +40,8 @@ Get-MgPrivacySubjectRightsRequestCollaborator -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Collection of users who can collaborate on the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

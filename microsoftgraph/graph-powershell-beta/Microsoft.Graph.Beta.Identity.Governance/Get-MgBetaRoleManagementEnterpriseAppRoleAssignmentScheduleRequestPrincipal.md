@@ -33,6 +33,8 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestPrincipal
 The principal that's getting a role assignment through the request.
 Supports $expand and $select nested in $expand for id only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

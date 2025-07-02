@@ -40,6 +40,8 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

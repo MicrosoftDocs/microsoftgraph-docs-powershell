@@ -61,6 +61,8 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

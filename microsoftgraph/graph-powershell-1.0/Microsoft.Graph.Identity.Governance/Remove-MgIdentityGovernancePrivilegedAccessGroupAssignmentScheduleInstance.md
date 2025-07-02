@@ -34,6 +34,8 @@ Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 ## DESCRIPTION
 Delete navigation property assignmentScheduleInstances for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

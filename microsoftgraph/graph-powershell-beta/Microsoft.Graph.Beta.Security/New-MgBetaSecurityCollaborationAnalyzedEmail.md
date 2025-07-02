@@ -46,6 +46,8 @@ New-MgBetaSecurityCollaborationAnalyzedEmail -BodyParameter <IMicrosoftGraphSecu
 ## DESCRIPTION
 Create new navigation property to analyzedEmails for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

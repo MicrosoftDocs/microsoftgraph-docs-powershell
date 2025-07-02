@@ -32,6 +32,8 @@ Get-MgBetaSecuritySubjectRightsRequestTeam -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Information about the Microsoft Teams team that was created for the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

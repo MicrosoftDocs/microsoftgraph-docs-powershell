@@ -34,6 +34,8 @@ Remove-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact
 ## DESCRIPTION
 Delete navigation property mailboxRestoreArtifacts for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExchangeRestoreSessionId

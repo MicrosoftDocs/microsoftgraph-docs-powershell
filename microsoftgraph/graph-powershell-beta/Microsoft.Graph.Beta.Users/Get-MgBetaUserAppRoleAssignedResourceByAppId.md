@@ -37,6 +37,8 @@ Get appRoleAssignedResources from users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppId

@@ -46,6 +46,8 @@ Get-MgSiteTermStoreSetTermSet -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 The \[set\] in which the term is created.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -38,6 +38,8 @@ Delete navigation property enterpriseCodeSigningCertificates for deviceAppManage
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EnterpriseCodeSigningCertificateId

@@ -50,6 +50,8 @@ New-MgSiteOnenoteOperation -InputObject <INotesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to operations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

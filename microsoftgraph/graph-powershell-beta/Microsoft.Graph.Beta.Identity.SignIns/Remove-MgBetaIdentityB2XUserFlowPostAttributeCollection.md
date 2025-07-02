@@ -32,6 +32,8 @@ Remove-MgBetaIdentityB2XUserFlowPostAttributeCollection -InputObject <IIdentityS
 ## DESCRIPTION
 Delete navigation property postAttributeCollection for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

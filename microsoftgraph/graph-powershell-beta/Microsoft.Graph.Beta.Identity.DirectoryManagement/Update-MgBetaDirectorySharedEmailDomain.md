@@ -44,6 +44,8 @@ Update-MgBetaDirectorySharedEmailDomain -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Update the navigation property sharedEmailDomains in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -99,6 +99,8 @@ Update-MgBetaFinancialCompanySaleInvoiceLine -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property salesInvoiceLines in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

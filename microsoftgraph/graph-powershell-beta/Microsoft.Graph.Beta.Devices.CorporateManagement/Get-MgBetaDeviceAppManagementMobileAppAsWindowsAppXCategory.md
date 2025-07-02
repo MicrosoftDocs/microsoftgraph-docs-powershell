@@ -40,6 +40,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategory -InputObject <IDevic
 ## DESCRIPTION
 The list of categories for this app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

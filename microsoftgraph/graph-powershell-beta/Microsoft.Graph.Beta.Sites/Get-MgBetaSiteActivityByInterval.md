@@ -34,6 +34,8 @@ Get-MgBetaSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Expand
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

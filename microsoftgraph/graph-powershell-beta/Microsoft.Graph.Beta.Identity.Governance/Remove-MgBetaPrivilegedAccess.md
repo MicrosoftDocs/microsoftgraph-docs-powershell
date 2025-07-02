@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedAccess -InputObject <IIdentityGovernanceIdentity> [-IfMat
 ## DESCRIPTION
 Delete entity from privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

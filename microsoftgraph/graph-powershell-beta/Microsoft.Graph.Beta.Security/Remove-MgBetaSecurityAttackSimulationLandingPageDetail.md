@@ -32,6 +32,8 @@ Remove-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityId
 ## DESCRIPTION
 Delete navigation property details for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

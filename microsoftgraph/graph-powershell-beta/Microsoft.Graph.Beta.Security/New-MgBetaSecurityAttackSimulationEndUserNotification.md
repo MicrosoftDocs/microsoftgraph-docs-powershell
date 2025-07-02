@@ -35,6 +35,8 @@ New-MgBetaSecurityAttackSimulationEndUserNotification -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to endUserNotifications for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

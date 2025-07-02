@@ -23,6 +23,8 @@ Get-MgDirectory [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHe
 ## DESCRIPTION
 Get directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

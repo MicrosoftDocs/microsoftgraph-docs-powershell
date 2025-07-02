@@ -50,6 +50,8 @@ New-MgUserInsightTrending -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to trending for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

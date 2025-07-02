@@ -21,6 +21,8 @@ Get-MgBetaSecurityPartner [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 A container that safeguards the Microsoft Azure resources of Microsoft Cloud Solution Provider (CSP) partners' customers, including alerts, scores, and all aspects of security.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

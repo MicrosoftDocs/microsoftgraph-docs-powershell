@@ -43,6 +43,8 @@ New-MgBetaUserDriveItemExtension -InputObject <IFilesIdentity> -BodyParameter <H
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

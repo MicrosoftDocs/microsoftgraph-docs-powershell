@@ -46,6 +46,8 @@ Get-MgBetaReportTeamDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Invoke function getTeamsDeviceUsageUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date

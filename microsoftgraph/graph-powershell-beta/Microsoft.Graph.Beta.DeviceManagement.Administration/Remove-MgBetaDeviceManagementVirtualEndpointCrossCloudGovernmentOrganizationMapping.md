@@ -21,6 +21,8 @@ Remove-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapp
 ## DESCRIPTION
 Delete navigation property crossCloudGovernmentOrganizationMapping for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

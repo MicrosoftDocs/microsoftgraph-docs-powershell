@@ -48,6 +48,8 @@ Update-MgTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> -Bod
 ## DESCRIPTION
 Update the navigation property hostedContents in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

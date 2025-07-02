@@ -48,6 +48,8 @@ Update-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -Body
 ## DESCRIPTION
 Update the navigation property subcategories in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

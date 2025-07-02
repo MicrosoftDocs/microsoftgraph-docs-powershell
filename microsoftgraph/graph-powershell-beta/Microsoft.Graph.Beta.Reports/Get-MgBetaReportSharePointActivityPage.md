@@ -31,6 +31,8 @@ Get-MgBetaReportSharePointActivityPage -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Invoke function getSharePointActivityPages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

@@ -32,6 +32,8 @@ Remove-MgBetaUserSetting -InputObject <IUsersIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property settings for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

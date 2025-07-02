@@ -35,6 +35,8 @@ New-MgRoleManagementEntitlementManagementRoleDefinition -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to roleDefinitions for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

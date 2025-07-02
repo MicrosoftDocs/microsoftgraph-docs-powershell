@@ -33,6 +33,8 @@ Stop-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGoverna
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancelable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId

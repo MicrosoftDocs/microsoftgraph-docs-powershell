@@ -33,6 +33,8 @@ Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation -InputO
 ## DESCRIPTION
 Operation entity that represents the latest indexing for the noncustodial data source.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

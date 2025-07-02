@@ -56,6 +56,8 @@ New-MgGroupDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to permissions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

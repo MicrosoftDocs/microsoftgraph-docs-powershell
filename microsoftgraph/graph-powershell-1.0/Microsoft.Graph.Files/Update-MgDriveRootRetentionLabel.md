@@ -50,6 +50,8 @@ Update-MgDriveRootRetentionLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property retentionLabel in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

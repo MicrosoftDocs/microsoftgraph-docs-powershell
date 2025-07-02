@@ -40,6 +40,8 @@ Get-MgSolutionBackupRestorePoint -InputObject <IBackupRestoreIdentity> [-ExpandP
 ## DESCRIPTION
 List of restore points in the tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

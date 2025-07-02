@@ -23,6 +23,8 @@ Get-MgBetaEducationRoot [-ExpandProperty <String[]>] [-Property <String[]>] [-Re
 ## DESCRIPTION
 Get education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

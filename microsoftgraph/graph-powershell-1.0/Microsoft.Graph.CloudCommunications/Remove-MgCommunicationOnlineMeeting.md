@@ -32,6 +32,8 @@ Remove-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity> 
 ## DESCRIPTION
 Delete navigation property onlineMeetings for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

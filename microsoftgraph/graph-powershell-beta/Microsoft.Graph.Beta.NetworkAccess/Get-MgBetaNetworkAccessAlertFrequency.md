@@ -37,6 +37,8 @@ Invoke function getAlertFrequencies
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess-Reports.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

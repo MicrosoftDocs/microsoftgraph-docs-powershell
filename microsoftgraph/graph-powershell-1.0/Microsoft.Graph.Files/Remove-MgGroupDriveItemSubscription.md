@@ -32,6 +32,8 @@ Remove-MgGroupDriveItemSubscription -InputObject <IFilesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property subscriptions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

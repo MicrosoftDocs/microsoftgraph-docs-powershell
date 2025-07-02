@@ -32,6 +32,8 @@ Remove-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity> [
 ## DESCRIPTION
 Delete navigation property childFolders for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId

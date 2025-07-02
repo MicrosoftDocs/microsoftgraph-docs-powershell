@@ -29,6 +29,8 @@ Remove-MgBetaRoleManagementExchangeRoleAssignmentAppScope -InputObject <IDeviceM
 ## DESCRIPTION
 Delete navigation property appScope for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

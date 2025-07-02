@@ -34,6 +34,8 @@ Get-MgBetaUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> -
 The unique identifier for an entity.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

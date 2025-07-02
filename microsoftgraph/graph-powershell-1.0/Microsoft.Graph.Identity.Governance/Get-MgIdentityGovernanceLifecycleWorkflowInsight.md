@@ -24,6 +24,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowInsight [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 The insight container holding workflow insight summaries for a tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

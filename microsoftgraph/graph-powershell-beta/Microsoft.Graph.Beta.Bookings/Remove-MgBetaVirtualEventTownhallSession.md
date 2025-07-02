@@ -32,6 +32,8 @@ Remove-MgBetaVirtualEventTownhallSession -InputObject <IBookingsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property sessions for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

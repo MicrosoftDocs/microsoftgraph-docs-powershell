@@ -47,6 +47,8 @@ Update-MgBetaNetworkAccessForwardingPolicy -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Update the navigation property forwardingPolicies in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

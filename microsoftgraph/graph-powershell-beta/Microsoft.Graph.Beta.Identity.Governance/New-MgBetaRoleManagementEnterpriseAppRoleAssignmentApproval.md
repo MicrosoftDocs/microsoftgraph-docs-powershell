@@ -45,6 +45,8 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval -InputObject <IIdent
 ## DESCRIPTION
 Create new navigation property to roleAssignmentApprovals for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

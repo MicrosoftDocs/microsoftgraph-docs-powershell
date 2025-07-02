@@ -30,6 +30,8 @@ Remove-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState -InputObject <
 ## DESCRIPTION
 Delete navigation property securityBaselineStates for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

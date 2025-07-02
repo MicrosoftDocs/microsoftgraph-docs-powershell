@@ -32,6 +32,8 @@ Remove-MgBookingCurrency -InputObject <IBookingsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property bookingCurrencies for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -BookingCurrencyId

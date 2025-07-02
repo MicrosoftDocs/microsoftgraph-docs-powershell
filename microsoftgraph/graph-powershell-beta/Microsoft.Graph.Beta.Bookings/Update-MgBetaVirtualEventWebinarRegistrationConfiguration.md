@@ -52,6 +52,8 @@ Update-MgBetaVirtualEventWebinarRegistrationConfiguration -InputObject <IBooking
 ## DESCRIPTION
 Update the navigation property registrationConfiguration in solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

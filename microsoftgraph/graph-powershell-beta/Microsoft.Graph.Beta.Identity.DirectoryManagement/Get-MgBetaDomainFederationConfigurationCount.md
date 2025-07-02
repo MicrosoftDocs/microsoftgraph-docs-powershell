@@ -32,6 +32,8 @@ Get-MgBetaDomainFederationConfigurationCount -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DomainId

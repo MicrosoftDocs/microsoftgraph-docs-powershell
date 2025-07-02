@@ -43,6 +43,8 @@ Update-MgBetaDeviceAppManagementMobileAppCatalogPackage -InputObject <IDevicesCo
 ## DESCRIPTION
 Update the navigation property mobileAppCatalogPackages in deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

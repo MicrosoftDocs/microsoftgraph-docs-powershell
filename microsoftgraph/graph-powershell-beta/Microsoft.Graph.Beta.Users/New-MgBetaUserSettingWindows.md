@@ -48,6 +48,8 @@ New-MgBetaUserSettingWindows -InputObject <IUsersIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to windows for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -56,6 +56,8 @@ Update-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDevice
 ## DESCRIPTION
 Update the navigation property hardwareOathDevices in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

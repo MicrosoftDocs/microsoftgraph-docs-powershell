@@ -49,6 +49,8 @@ Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal
 ## DESCRIPTION
 Invoke action sendCustomNotificationToCompanyPortal
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

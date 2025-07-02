@@ -30,6 +30,8 @@ Remove-MgBetaUserEventInstanceExceptionOccurrenceAttachment -InputObject <ICalen
 ## DESCRIPTION
 Delete navigation property attachments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId

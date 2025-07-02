@@ -54,6 +54,8 @@ Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <I
 ## DESCRIPTION
 Update the navigation property accessPackageResourceRoleScopes in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageId

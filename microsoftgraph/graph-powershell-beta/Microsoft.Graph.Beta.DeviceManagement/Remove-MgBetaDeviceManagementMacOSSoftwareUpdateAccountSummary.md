@@ -37,6 +37,8 @@ Delete navigation property macOSSoftwareUpdateAccountSummaries for deviceManagem
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

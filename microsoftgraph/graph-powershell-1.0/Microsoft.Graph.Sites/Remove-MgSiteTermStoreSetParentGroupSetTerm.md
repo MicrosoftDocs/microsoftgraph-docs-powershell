@@ -46,6 +46,8 @@ Remove-MgSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property terms for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

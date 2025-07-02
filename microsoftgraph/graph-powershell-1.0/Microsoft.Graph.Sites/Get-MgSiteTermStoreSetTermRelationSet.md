@@ -46,6 +46,8 @@ Get-MgSiteTermStoreSetTermRelationSet -InputObject <ISitesIdentity> [-ExpandProp
 ## DESCRIPTION
 The \[set\] in which the relation is relevant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

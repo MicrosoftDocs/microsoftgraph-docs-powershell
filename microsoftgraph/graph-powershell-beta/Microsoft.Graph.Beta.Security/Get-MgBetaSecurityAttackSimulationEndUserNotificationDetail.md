@@ -41,6 +41,8 @@ Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecur
 ## DESCRIPTION
 Get details from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

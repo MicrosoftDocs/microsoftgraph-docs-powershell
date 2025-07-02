@@ -33,6 +33,8 @@ Remove-MgVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIdent
 ## DESCRIPTION
 Delete navigation property attendanceReports for solutions
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

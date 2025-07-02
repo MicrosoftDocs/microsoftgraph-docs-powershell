@@ -32,6 +32,8 @@ Remove-MgUserDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property items for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

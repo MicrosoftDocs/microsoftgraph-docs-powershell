@@ -29,6 +29,8 @@ Remove-MgBetaDeviceAppManagementMobileAppCatalogPackage -InputObject <IDevicesCo
 ## DESCRIPTION
 Delete navigation property mobileAppCatalogPackages for deviceAppManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

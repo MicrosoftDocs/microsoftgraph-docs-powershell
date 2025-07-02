@@ -43,6 +43,8 @@ Remove-MgBetaPrintPrinterShareAllowedGroupByRef -InputObject <IDevicesCloudPrint
 ## DESCRIPTION
 Delete ref of navigation property allowedGroups for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

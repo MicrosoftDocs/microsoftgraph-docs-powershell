@@ -24,6 +24,8 @@ Remove-MgBetaRoleManagementDirectory [-IfMatch <String>] [-ResponseHeadersVariab
 ## DESCRIPTION
 Delete navigation property directory for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

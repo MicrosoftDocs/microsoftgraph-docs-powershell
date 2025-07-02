@@ -41,6 +41,8 @@ Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment
 ## DESCRIPTION
 The list of group assignments for this mobile app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

@@ -32,6 +32,8 @@ Remove-MgBetaDriveList -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property list for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

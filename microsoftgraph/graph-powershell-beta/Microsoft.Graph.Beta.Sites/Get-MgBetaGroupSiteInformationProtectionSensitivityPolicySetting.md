@@ -29,6 +29,8 @@ Get-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting -InputObject <I
 ## DESCRIPTION
 Get sensitivityPolicySettings from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

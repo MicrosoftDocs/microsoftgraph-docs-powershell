@@ -32,6 +32,8 @@ Remove-MgBetaUserDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property items for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

@@ -48,6 +48,8 @@ Update-MgBetaSiteAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property analytics in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

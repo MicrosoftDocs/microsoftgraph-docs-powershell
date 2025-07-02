@@ -84,6 +84,8 @@ New-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Create new navigation property to journalLines for financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

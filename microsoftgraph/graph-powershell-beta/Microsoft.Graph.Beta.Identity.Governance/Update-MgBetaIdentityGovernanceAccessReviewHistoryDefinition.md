@@ -58,6 +58,8 @@ Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property historyDefinitions in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId

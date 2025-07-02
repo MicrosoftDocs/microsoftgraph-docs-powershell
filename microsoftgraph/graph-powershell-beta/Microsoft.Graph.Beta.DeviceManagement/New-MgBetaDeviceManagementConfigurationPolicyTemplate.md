@@ -44,6 +44,8 @@ Create new navigation property to configurationPolicyTemplates for deviceManagem
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

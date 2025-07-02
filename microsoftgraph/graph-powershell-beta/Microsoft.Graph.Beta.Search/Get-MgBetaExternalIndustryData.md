@@ -21,6 +21,8 @@ Get-MgBetaExternalIndustryData [-ExpandProperty <String[]>] [-Property <String[]
 ## DESCRIPTION
 Get industryData from external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

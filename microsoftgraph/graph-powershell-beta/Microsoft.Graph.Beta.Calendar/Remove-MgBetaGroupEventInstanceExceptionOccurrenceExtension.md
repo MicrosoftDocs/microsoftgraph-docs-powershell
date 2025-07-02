@@ -30,6 +30,8 @@ Remove-MgBetaGroupEventInstanceExceptionOccurrenceExtension -InputObject <ICalen
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId

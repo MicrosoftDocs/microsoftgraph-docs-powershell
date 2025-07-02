@@ -32,6 +32,8 @@ Get-MgBetaSiteColumnSourceColumn -InputObject <ISitesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The source column for content type column.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId

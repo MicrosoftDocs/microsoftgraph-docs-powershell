@@ -46,6 +46,8 @@ New-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISi
 ## DESCRIPTION
 Create new navigation property to webparts for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

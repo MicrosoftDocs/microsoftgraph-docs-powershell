@@ -54,6 +54,8 @@ Update-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity>
 ## DESCRIPTION
 Update the navigation property childFolders in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

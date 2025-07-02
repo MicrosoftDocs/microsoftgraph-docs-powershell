@@ -51,6 +51,8 @@ Update-MgBetaNetworkAccessAlert -InputObject <INetworkAccessIdentity>
 ## DESCRIPTION
 Update the navigation property alerts in networkAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Actions

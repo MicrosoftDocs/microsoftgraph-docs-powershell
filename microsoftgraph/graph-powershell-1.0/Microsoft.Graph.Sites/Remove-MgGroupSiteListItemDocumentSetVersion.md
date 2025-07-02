@@ -33,6 +33,8 @@ Remove-MgGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property documentSetVersions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId

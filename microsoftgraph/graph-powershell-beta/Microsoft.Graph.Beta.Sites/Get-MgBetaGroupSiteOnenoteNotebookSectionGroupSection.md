@@ -46,6 +46,8 @@ The sections in the section group.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

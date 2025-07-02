@@ -41,6 +41,8 @@ The set of permissions for the item.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

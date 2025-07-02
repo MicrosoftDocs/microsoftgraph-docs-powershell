@@ -64,6 +64,8 @@ Update-MgBetaGroupDriveList -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property list in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

@@ -33,6 +33,8 @@ Remove-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> [-IfMatch 
 ## DESCRIPTION
 Remove a teacher from an educationClass.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationClassId

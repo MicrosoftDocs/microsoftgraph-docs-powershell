@@ -32,6 +32,8 @@ Remove-MgGroupSiteGetByPathOnenote -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property onenote for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId

@@ -60,6 +60,8 @@ Update-MgBetaUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorpo
 ## DESCRIPTION
 Update the navigation property windowsProtectionState in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

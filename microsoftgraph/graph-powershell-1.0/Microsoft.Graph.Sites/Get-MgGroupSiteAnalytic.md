@@ -32,6 +32,8 @@ Get-MgGroupSiteAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Analytics about the view activities that took place on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

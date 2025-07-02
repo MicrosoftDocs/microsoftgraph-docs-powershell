@@ -32,6 +32,8 @@ Get-MgBetaOnPremisePublishingProfileConnectorGroupApplicationLogo -InputObject <
 The main logo for the application.
 Not nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId

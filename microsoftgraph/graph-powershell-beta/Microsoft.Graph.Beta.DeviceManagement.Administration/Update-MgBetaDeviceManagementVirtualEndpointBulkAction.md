@@ -49,6 +49,8 @@ Update-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceMana
 ## DESCRIPTION
 Update the navigation property bulkActions in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionSummary

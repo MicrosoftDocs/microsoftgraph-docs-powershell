@@ -47,6 +47,8 @@ Invoke-MgBetaDeprovisionUserManagedDevice -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Invoke action deprovision
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

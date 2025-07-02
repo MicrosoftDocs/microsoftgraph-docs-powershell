@@ -29,6 +29,8 @@ Get-MgBetaReportTeamUserActivityDistributionUserCount -InputObject <IReportsIden
 ## DESCRIPTION
 Invoke function getTeamsUserActivityDistributionUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

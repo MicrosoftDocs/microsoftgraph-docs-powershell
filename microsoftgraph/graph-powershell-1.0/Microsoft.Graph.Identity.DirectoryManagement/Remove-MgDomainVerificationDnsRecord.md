@@ -32,6 +32,8 @@ Remove-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Delete navigation property verificationDnsRecords for domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DomainDnsRecordId

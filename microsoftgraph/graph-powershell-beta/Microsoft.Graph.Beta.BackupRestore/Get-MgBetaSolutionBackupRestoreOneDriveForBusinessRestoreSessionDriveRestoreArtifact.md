@@ -44,6 +44,8 @@ Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArti
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore a OneDrive for work or school drive.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

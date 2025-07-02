@@ -21,6 +21,8 @@ Remove-MgBetaIdentityGovernancePermissionAnalyticAzure [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property azure for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

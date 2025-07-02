@@ -33,6 +33,8 @@ New-MgBetaRoleManagementDirectoryResourceNamespace -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to resourceNamespaces for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

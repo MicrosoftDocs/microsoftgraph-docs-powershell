@@ -33,6 +33,8 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentRequestRoleDefinitionResource
 Read-only.
 The associated resource for the role definition.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

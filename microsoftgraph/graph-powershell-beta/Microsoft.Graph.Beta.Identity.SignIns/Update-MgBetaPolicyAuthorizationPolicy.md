@@ -57,6 +57,8 @@ Update-MgBetaPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property authorizationPolicy in policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

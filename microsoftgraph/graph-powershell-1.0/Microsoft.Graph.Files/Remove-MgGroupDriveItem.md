@@ -32,6 +32,8 @@ Remove-MgGroupDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Resp
 ## DESCRIPTION
 Delete navigation property items for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

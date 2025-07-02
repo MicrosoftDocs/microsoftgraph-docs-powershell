@@ -32,6 +32,8 @@ Remove-MgUserChatPermissionGrant -InputObject <ITeamsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property permissionGrants for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId

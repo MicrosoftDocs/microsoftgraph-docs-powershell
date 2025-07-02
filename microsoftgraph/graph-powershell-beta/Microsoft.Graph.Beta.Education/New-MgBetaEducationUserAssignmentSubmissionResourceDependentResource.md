@@ -49,6 +49,8 @@ New-MgBetaEducationUserAssignmentSubmissionResourceDependentResource -InputObjec
 ## DESCRIPTION
 Create new navigation property to dependentResources for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

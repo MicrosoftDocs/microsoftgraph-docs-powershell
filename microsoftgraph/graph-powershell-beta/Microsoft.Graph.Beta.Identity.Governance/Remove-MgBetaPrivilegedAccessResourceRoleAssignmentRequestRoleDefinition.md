@@ -31,6 +31,8 @@ Remove-MgBetaPrivilegedAccessResourceRoleAssignmentRequestRoleDefinition
 ## DESCRIPTION
 Delete navigation property roleDefinition for privilegedAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GovernanceResourceId

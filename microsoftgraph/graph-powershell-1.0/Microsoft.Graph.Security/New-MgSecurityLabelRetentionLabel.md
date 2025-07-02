@@ -42,6 +42,8 @@ New-MgSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRetenti
 Create a new retentionLabel object.
 To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionAfterRetentionPeriod

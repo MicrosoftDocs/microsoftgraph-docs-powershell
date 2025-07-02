@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportWindowsQualityUpdateAlertSummaryReport -OutFile 
 ## DESCRIPTION
 Invoke action getWindowsQualityUpdateAlertSummaryReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

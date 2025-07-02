@@ -29,6 +29,8 @@ Invoke-MgBetaReportNetworkAccessReportDevice -InputObject <INetworkAccessIdentit
 ## DESCRIPTION
 Invoke function deviceReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

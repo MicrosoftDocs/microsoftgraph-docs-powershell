@@ -82,6 +82,8 @@ Update-MgGroupSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property groups in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

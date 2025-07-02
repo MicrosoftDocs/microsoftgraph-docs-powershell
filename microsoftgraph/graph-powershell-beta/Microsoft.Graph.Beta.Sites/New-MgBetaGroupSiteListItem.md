@@ -64,6 +64,8 @@ New-MgBetaGroupSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to items for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activities

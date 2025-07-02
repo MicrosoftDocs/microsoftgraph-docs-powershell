@@ -61,6 +61,8 @@ New-MgBetaUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to chats for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

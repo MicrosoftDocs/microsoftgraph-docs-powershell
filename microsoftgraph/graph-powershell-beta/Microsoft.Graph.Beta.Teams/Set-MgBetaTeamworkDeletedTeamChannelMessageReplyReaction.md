@@ -51,6 +51,8 @@ Set-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction -InputObject <ITeamsIde
 ## DESCRIPTION
 Invoke action setReaction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

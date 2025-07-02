@@ -48,6 +48,8 @@ Update-MgBetaDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property analytics in drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

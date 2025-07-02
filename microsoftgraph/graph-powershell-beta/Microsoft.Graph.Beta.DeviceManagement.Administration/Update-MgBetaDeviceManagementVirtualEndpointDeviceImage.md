@@ -54,6 +54,8 @@ Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceMan
 ## DESCRIPTION
 Update the navigation property deviceImages in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

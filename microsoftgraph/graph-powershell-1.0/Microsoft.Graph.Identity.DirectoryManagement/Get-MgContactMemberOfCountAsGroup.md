@@ -32,6 +32,8 @@ Get-MgContactMemberOfCountAsGroup -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

@@ -37,6 +37,8 @@ Delete navigation property detectionRules for security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomDetection.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DetectionRuleId

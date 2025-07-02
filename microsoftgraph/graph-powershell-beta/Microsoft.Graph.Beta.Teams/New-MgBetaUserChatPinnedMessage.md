@@ -46,6 +46,8 @@ New-MgBetaUserChatPinnedMessage -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to pinnedMessages for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

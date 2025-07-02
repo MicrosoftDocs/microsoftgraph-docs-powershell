@@ -36,6 +36,8 @@ Represents relationships between a user and items such as OneDrive for work or s
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -29,6 +29,8 @@ Remove-MgBetaPrivilegedRoleAssignmentRoleInfo -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Delete navigation property roleInfo for privilegedRoleAssignments
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

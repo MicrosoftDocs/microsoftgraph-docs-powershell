@@ -50,6 +50,8 @@ Update-MgSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property versions in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

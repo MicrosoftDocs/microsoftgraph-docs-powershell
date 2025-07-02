@@ -55,6 +55,8 @@ New-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 ## DESCRIPTION
 Create new navigation property to resourceActions for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionVerb

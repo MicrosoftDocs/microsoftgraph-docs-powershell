@@ -59,6 +59,8 @@ Update the navigation property embeddedSIMActivationCodePools in deviceManagemen
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivationCodeCount

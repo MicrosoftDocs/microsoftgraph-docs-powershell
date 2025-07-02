@@ -29,6 +29,8 @@ Remove-MgBetaEducationReportReadingAssignmentSubmission -InputObject <IEducation
 ## DESCRIPTION
 Delete navigation property readingAssignmentSubmissions for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers

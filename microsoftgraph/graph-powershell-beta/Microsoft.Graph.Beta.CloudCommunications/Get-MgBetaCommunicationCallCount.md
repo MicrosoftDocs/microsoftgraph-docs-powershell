@@ -23,6 +23,8 @@ Get-MgBetaCommunicationCallCount [-Filter <String>] [-Search <String>] [-Respons
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

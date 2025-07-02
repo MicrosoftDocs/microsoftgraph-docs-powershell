@@ -57,6 +57,8 @@ New-MgBetaGroupSiteOnenoteNotebookSectionGroupSection -InputObject <ISitesIdenti
 ## DESCRIPTION
 Create new navigation property to sections for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

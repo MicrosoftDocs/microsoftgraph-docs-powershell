@@ -46,6 +46,8 @@ Get-MgBetaShareListItemDocumentSetVersionCount -InputObject <IFilesIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter

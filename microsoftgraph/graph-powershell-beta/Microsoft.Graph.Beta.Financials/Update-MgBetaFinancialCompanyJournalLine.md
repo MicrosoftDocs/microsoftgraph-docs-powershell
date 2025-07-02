@@ -85,6 +85,8 @@ Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property journalLines in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account

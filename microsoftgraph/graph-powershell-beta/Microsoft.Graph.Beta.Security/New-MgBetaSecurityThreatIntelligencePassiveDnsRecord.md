@@ -34,6 +34,8 @@ New-MgBetaSecurityThreatIntelligencePassiveDnsRecord -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to passiveDnsRecords for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,6 +50,8 @@ New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
 ## DESCRIPTION
 Create new navigation property to steps for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

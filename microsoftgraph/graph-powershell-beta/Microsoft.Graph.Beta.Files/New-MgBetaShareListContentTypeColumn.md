@@ -68,6 +68,8 @@ New-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to columns for shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

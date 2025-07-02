@@ -40,6 +40,8 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -InputObject <
 Each forwarding profile associated with a remote network is specified.
 Supports $expand and $select.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

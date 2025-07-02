@@ -29,6 +29,8 @@ Update-MgBetaEducationReport -BodyParameter <IMicrosoftGraphReportsRoot> [-Respo
 ## DESCRIPTION
 Update the navigation property reports in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -52,6 +52,8 @@ Join-MgBetaGroupSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Invoke action associateWithHubSites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

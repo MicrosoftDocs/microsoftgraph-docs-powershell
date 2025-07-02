@@ -61,6 +61,8 @@ An archived plan can be unarchived.
 All archived entities can be deleted.
 Archived tasks are not included in the response for list of tasks assigned to a user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

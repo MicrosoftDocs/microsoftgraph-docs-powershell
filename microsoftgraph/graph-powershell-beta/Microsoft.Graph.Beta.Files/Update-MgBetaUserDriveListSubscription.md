@@ -55,6 +55,8 @@ Update-MgBetaUserDriveListSubscription -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property subscriptions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

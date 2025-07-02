@@ -31,6 +31,8 @@ Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfConnectorGroupByRef
 ## DESCRIPTION
 Delete ref of navigation property memberOf for onPremisesPublishingProfiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConnectorGroupId

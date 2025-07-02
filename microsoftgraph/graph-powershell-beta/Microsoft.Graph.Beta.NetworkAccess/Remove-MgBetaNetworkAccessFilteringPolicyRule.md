@@ -37,6 +37,8 @@ Delete navigation property policyRules for networkAccess
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FilteringPolicyId

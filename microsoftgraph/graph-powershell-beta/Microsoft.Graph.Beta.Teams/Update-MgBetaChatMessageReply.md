@@ -66,6 +66,8 @@ Update-MgBetaChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property replies in chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,6 +32,8 @@ Remove-MgDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Delete navigation property extensions for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId

@@ -32,6 +32,8 @@ Remove-MgBetaDriveRootListItem -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property listItem for drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId

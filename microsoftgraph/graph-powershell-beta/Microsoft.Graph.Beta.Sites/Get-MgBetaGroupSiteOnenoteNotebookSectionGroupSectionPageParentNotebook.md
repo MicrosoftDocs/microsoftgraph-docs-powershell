@@ -35,6 +35,8 @@ Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageParentNotebook -InputOb
 The notebook that contains the page.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -47,6 +47,8 @@ Update-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumn -InputObjec
 ## DESCRIPTION
 Update the navigation property columns in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -31,6 +31,8 @@ Update-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapp
 ## DESCRIPTION
 Update the navigation property crossCloudGovernmentOrganizationMapping in deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -38,6 +38,8 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGover
 ## DESCRIPTION
 Get roleAssignments from roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

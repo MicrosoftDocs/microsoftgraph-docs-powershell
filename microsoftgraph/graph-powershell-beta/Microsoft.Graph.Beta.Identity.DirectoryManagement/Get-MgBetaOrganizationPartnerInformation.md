@@ -29,6 +29,8 @@ Get-MgBetaOrganizationPartnerInformation -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Get partnerInformation from organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

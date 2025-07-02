@@ -46,6 +46,8 @@ Get-MgBetaUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CalendarId

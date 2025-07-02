@@ -32,6 +32,8 @@ New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl -InputObj
 ## DESCRIPTION
 Invoke action createDownloadUrl
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId

@@ -50,6 +50,8 @@ New-MgBetaSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecur
 ## DESCRIPTION
 Create new navigation property to details for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

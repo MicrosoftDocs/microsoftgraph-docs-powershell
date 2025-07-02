@@ -68,6 +68,8 @@ New-MgUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to columns for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

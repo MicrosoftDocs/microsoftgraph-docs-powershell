@@ -48,6 +48,8 @@ Update-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Update the navigation property operations in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

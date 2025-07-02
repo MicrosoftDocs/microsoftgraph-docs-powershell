@@ -48,6 +48,8 @@ Update-MgBetaDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Update the navigation property verificationDnsRecords in domains
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

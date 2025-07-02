@@ -43,6 +43,8 @@ Get-MgExternalConnectionItemActivity -InputObject <ISearchIdentity> [-ExpandProp
 Returns a list of activities performed on the item.
 Write-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All

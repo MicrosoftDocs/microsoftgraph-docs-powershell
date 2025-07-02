@@ -45,6 +45,8 @@ New-MgGroupSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to termStores for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

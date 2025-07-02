@@ -50,6 +50,8 @@ Update-MgBetaGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property sharedWithTeams in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

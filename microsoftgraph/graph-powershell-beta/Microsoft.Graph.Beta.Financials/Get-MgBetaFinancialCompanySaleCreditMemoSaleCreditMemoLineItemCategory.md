@@ -30,6 +30,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemCategory -InputObj
 ## DESCRIPTION
 Get itemCategory from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

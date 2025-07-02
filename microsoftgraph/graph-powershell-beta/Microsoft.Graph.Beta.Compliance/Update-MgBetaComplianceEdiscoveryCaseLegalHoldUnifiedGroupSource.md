@@ -48,6 +48,8 @@ Update-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource -InputObject <I
 ## DESCRIPTION
 Update the navigation property unifiedGroupSources in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

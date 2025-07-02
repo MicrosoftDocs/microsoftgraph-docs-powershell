@@ -32,6 +32,8 @@ Get-MgBetaDeviceManagementReportEnrollmentConfigurationPolicyByDevice -OutFile <
 ## DESCRIPTION
 Invoke action getEnrollmentConfigurationPoliciesByDevice
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

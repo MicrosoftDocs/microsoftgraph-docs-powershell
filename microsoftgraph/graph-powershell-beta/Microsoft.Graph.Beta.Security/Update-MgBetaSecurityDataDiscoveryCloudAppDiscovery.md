@@ -30,6 +30,8 @@ Update-MgBetaSecurityDataDiscoveryCloudAppDiscovery -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property cloudAppDiscovery in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

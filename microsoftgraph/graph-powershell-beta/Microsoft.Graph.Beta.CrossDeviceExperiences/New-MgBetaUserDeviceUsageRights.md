@@ -45,6 +45,8 @@ New-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Create new navigation property to usageRights for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

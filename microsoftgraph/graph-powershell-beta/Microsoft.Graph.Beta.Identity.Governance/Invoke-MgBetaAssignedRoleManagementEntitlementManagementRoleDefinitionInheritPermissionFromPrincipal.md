@@ -42,6 +42,8 @@ You can use the $count query parameter to also get the count.
 This API is supported for the directory (Microsoft Entra ID) provider only.
 To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

@@ -29,6 +29,8 @@ Get-MgBetaPrivilegedRoleAssignmentRoleInfoSummary -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Get summary from privilegedRoleAssignments
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

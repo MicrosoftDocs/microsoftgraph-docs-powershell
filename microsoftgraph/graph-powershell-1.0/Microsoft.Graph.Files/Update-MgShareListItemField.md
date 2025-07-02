@@ -74,6 +74,8 @@ Update-MgShareListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashta
 ## DESCRIPTION
 Update the navigation property fields in shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

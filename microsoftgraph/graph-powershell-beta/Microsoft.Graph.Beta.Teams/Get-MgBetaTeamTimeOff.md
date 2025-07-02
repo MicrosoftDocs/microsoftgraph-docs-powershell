@@ -30,6 +30,8 @@ Get all time off objects across all teams to which a user is a direct member.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamSettings.Read.Group, TeamSettings.ReadWrite.Group, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Team.ReadBasic.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count

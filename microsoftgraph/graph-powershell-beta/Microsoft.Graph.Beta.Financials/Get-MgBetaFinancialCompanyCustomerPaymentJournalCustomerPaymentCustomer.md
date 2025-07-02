@@ -30,6 +30,8 @@ Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer -InputOb
 ## DESCRIPTION
 Get customer from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId

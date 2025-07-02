@@ -29,6 +29,8 @@ Remove-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Delete navigation property operations for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId

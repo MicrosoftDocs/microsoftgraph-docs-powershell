@@ -48,6 +48,8 @@ Update-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipme
 ## DESCRIPTION
 Update the navigation property shipmentMethod in financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

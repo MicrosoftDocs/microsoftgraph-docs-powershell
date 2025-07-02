@@ -38,6 +38,8 @@ Get-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy -InputObject <I
 ## DESCRIPTION
 Get dataLossPreventionPolicies from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
