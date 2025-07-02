@@ -1,15 +1,15 @@
 ### YamlMime:Landing
 
-title: Microsoft Graph PowerShell documentation # < 60 chars
-summary: The Microsoft Graph PowerShell SDK acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use in PowerShell. Learn how to use Microsoft Graph PowerShell to manage identities at scale and automate bulk administrative tasks. # < 160 chars
+title: Microsoft Graph PowerShell # < 60 chars
+summary: Use Microsoft Graph PowerShell to manage identities and automate administrative tasks at scale. # < 160 chars
 
 metadata:
   title: Microsoft Graph PowerShell documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to use Microsoft Graph PowerShell to manage identities at scale and automate bulk administrative tasks.   # Required; article description that is displayed in search results. < 160 chars.
+  description: Discover advanced automation, reporting, and identity management capabilities with Microsoft Graph PowerShell, including migration guidance and troubleshooting resources.   # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page # Required
   author: msewaweru #Required; your GitHub user alias, with correct capitalization.
   ms.author: eunicewaweru #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/17/2024 #Required; mm/dd/yyyy format.
+  ms.date: 07/01/2025 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -32,17 +32,17 @@ landingContent:
           - text: Navigate the SDK
             url: navigating.md  
 
-  # Card
-  - title: Upgrade to Microsoft Graph PowerShell from Azure AD PowerShell
+  # Card (optional)
+  - title: Upgrade from Azure AD PowerShell
     linkLists:
       - linkListType: get-started
         links:
           - text: Migration steps
             url: migration-steps.md
-          - text: Cmdlet map
+          - text: Azure AD to Microsoft Graph cmdlet Map
             url: azuread-msoline-cmdlet-map.md
           - text: Migration FAQ
-            url:  /powershell/azure/active-directory/migration-faq?view=azureadps-2.0 
+            url: /powershell/azure/active-directory/migration-faq?view=azureadps-2.0 
 
   # Card (optional)
   - title: Common use cases
@@ -51,7 +51,7 @@ landingContent:
         links:
           - text: Discover commands using Find-MgGraphCommand
             url: find-mg-graph-command.md
-          - text: Discover command permissions using  Find-MgGraphPermission 
+          - text: Discover command permissions using Find-MgGraphPermission
             url: find-mg-graph-permission.md
           - text: Discover Microsoft Graph PowerShell authentication cmdlets
             url: authentication-commands.md
@@ -64,13 +64,13 @@ landingContent:
           - text: Assign Microsoft Entra roles in PIM
             url: how-to-assign-microsoft-entra-roles-in-pim.md
           - text: Manage PIM policies  
-            url: how-to-manage-pim-policies.md 
+            url: how-to-manage-pim-policies.md
           - text: Grant and revoke API permissions
             url: how-to-grant-revoke-api-permissions.md 
 
   
-  # Card
-  - title: Microsoft Graph PowerShell reference
+  # Card (optional)
+  - title: Explore Microsoft Graph PowerShell reference
     linkLists:
       - linkListType: reference 
         links:
@@ -82,7 +82,7 @@ landingContent:
 
 
   # Card (optional)
-  - title: Help & support
+  - title: Help and support
     linkLists:
       - linkListType: reference
         links:
